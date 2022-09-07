@@ -1,0 +1,4 @@
+<map id="mip::CmdQueue" name="mip::CmdQueue">
+<area shape="rect" id="node1" title="C++ wrapper around a command queue." alt="" coords="29,80,145,107"/>
+<area shape="rect" id="node2" href="$structmip_1_1_c_1_1mip__cmd__queue.html" title="Holds a list of pending commands." alt="" coords="5,5,168,32"/>
+</map>

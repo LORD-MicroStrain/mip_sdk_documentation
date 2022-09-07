@@ -1,0 +1,5 @@
+<map id="mip::data_gnss::ClockInfo2" name="mip::data_gnss::ClockInfo2">
+<area shape="rect" id="node1" title=" " alt="" coords="5,185,184,212"/>
+<area shape="rect" id="node2" href="$structmip_1_1data__gnss_1_1_clock_info2_1_1_valid_flags.html" title=" " alt="" coords="5,81,184,123"/>
+<area shape="rect" id="node3" href="$structmip_1_1_bitfield.html" title=" " alt="" coords="7,5,182,32"/>
+</map>

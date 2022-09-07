@@ -1,0 +1,7 @@
+<map id="mip::data_gnss::BaseStationInfo" name="mip::data_gnss::BaseStationInfo">
+<area shape="rect" id="node1" title=" " alt="" coords="532,46,743,73"/>
+<area shape="rect" id="node2" href="$structmip_1_1data__gnss_1_1_base_station_info_1_1_indicator_flags.html" title=" " alt="" coords="229,5,420,47"/>
+<area shape="rect" id="node3" href="$structmip_1_1_bitfield.html" title=" " alt="" coords="17,5,168,47"/>
+<area shape="rect" id="node4" href="$structmip_1_1data__gnss_1_1_base_station_info_1_1_valid_flags.html" title=" " alt="" coords="229,71,420,112"/>
+<area shape="rect" id="node5" href="$structmip_1_1_bitfield.html" title=" " alt="" coords="5,78,180,105"/>
+</map>

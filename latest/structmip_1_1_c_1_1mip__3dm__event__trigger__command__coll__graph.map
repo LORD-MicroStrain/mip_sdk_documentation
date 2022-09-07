@@ -1,0 +1,7 @@
+<map id="mip::C::mip_3dm_event_trigger_command" name="mip::C::mip_3dm_event_trigger_command">
+<area shape="rect" id="node1" title=" " alt="" coords="653,93,812,134"/>
+<area shape="rect" id="node2" href="$unionmip_1_1_c_1_1mip__3dm__event__trigger__command__parameters.html" title=" " alt="" coords="335,93,536,134"/>
+<area shape="rect" id="node3" href="$structmip_1_1_c_1_1mip__3dm__event__trigger__command__combination__params.html" title=" " alt="" coords="5,5,212,61"/>
+<area shape="rect" id="node4" href="$structmip_1_1_c_1_1mip__3dm__event__trigger__command__threshold__params.html" title=" " alt="" coords="14,85,203,141"/>
+<area shape="rect" id="node5" href="$structmip_1_1_c_1_1mip__3dm__event__trigger__command__gpio__params.html" title=" " alt="" coords="29,165,189,221"/>
+</map>

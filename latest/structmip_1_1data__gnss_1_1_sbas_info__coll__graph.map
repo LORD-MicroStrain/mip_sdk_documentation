@@ -1,0 +1,7 @@
+<map id="mip::data_gnss::SbasInfo" name="mip::data_gnss::SbasInfo">
+<area shape="rect" id="node1" title=" " alt="" coords="107,185,276,212"/>
+<area shape="rect" id="node2" href="$structmip_1_1data__gnss_1_1_sbas_info_1_1_valid_flags.html" title=" " alt="" coords="11,81,180,123"/>
+<area shape="rect" id="node3" href="$structmip_1_1_bitfield.html" title=" " alt="" coords="5,5,180,32"/>
+<area shape="rect" id="node4" href="$structmip_1_1data__gnss_1_1_sbas_info_1_1_sbas_status.html" title=" " alt="" coords="208,81,377,123"/>
+<area shape="rect" id="node5" href="$structmip_1_1_bitfield.html" title=" " alt="" coords="204,5,387,32"/>
+</map>
