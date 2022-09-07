@@ -1,0 +1,6 @@
+<map id="Mip Packet [C]" name="Mip Packet [C]">
+<area shape="rect" id="node1" href="$group___packet_building.html" title="Functions for building new MIP packets." alt="" coords="325,5,460,31"/>
+<area shape="rect" id="node2" href="$group___accessors.html" title=" " alt="" coords="293,55,492,109"/>
+<area shape="rect" id="node3" title="Functions for handling MIP packets." alt="" coords="136,37,245,63"/>
+<area shape="rect" id="node4" href="$group__mip__c.html" title="This module contains all of the C submodules." alt="" coords="5,37,88,63"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="Shared Data [C]" name="Shared Data [C]">
+<area shape="rect" id="node1" href="$group__c__shared__external__timestamp.html" title=" " alt="" coords="345,5,492,45"/>
+<area shape="rect" id="node2" href="$group__c__shared__gps__timestamp.html" title=" " alt="" coords="313,70,524,95"/>
+<area shape="rect" id="node3" href="$group__c__shared__delta__time.html" title=" " alt="" coords="328,119,509,145"/>
+<area shape="rect" id="node4" href="$group__c__shared__external__time__delta.html" title=" " alt="" coords="345,169,492,209"/>
+<area shape="rect" id="node5" href="$group__c__shared__event__source.html" title=" " alt="" coords="321,234,517,259"/>
+<area shape="rect" id="node6" title=" " alt="" coords="151,234,265,259"/>
+<area shape="rect" id="node7" href="$group__c__shared__ticks.html" title=" " alt="" coords="343,283,494,309"/>
+<area shape="rect" id="node8" href="$group__c__shared__delta__ticks.html" title=" " alt="" coords="327,333,511,358"/>
+<area shape="rect" id="node9" href="$group__c__shared__reference__timestamp.html" title=" " alt="" coords="341,383,497,423"/>
+<area shape="rect" id="node11" href="$group__c__shared__reference__time__delta.html" title=" " alt="" coords="341,447,497,487"/>
+<area shape="rect" id="node10" href="$group___mip_data__c.html" title=" " alt="" coords="5,234,103,259"/>
+</map>

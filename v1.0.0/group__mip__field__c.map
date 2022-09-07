@@ -1,0 +1,6 @@
+<map id="Mip Fields [C]" name="Mip Fields [C]">
+<area shape="rect" id="node1" title="Functions for processing received MIP fields." alt="" coords="136,31,239,56"/>
+<area shape="rect" id="node2" href="$group___field_iteration__c.html" title="Functions for iterating over fields in a MIP packet." alt="" coords="295,5,416,31"/>
+<area shape="rect" id="node3" href="$group___field_access.html" title="Functions for inspecting a MIP field." alt="" coords="287,55,424,80"/>
+<area shape="rect" id="node4" href="$group__mip__c.html" title="This module contains all of the C submodules." alt="" coords="5,31,88,56"/>
+</map>

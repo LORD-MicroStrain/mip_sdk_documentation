@@ -1,0 +1,5 @@
+<map id="mip::C::mip_3dm_event_action_command_parameters" name="mip::C::mip_3dm_event_action_command_parameters">
+<area shape="rect" id="node1" title=" " alt="" coords="299,53,499,94"/>
+<area shape="rect" id="node2" href="$structmip_1_1_c_1_1mip__3dm__event__action__command__message__params.html" title=" " alt="" coords="5,5,193,61"/>
+<area shape="rect" id="node3" href="$structmip_1_1_c_1_1mip__3dm__event__action__command__gpio__params.html" title=" " alt="" coords="20,85,179,141"/>
+</map>

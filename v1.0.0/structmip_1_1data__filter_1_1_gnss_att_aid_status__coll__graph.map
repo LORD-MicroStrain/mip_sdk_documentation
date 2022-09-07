@@ -1,0 +1,5 @@
+<map id="mip::data_filter::GnssAttAidStatus" name="mip::data_filter::GnssAttAidStatus">
+<area shape="rect" id="node1" title=" " alt="" coords="19,200,182,241"/>
+<area shape="rect" id="node2" href="$structmip_1_1data__filter_1_1_gnss_aid_status_flags.html" title=" " alt="" coords="18,96,183,137"/>
+<area shape="rect" id="node3" href="$structmip_1_1_bitfield.html" title=" " alt="" coords="5,5,196,47"/>
+</map>

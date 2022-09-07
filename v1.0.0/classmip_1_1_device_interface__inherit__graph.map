@@ -1,0 +1,4 @@
+<map id="mip::DeviceInterface" name="mip::DeviceInterface">
+<area shape="rect" id="node1" title="Represents a connected MIP device." alt="" coords="9,80,147,107"/>
+<area shape="rect" id="node2" href="$structmip_1_1_c_1_1mip__interface.html" title="State of the interface for communicating with a MIP device." alt="" coords="5,5,151,32"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="mip::data_gnss::GalileoIonoCorr" name="mip::data_gnss::GalileoIonoCorr">
+<area shape="rect" id="node1" title=" " alt="" coords="5,185,212,212"/>
+<area shape="rect" id="node2" href="$structmip_1_1data__gnss_1_1_galileo_iono_corr_1_1_valid_flags.html" title=" " alt="" coords="17,81,200,123"/>
+<area shape="rect" id="node3" href="$structmip_1_1_bitfield.html" title=" " alt="" coords="21,5,196,32"/>
+</map>

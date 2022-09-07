@@ -1,0 +1,6 @@
+<map id="Mip Command Queue [C]" name="Mip Command Queue [C]">
+<area shape="rect" id="node1" title="Functions for handling command responses." alt="" coords="136,31,305,56"/>
+<area shape="rect" id="node2" href="$group___pending_command.html" title=" " alt="" coords="353,5,557,31"/>
+<area shape="rect" id="node3" href="$group___command_queue.html" title=" " alt="" coords="358,55,553,80"/>
+<area shape="rect" id="node4" href="$group__mip__c.html" title="This module contains all of the C submodules." alt="" coords="5,31,88,56"/>
+</map>

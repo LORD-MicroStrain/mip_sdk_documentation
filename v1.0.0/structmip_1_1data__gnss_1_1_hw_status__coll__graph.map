@@ -1,0 +1,5 @@
+<map id="mip::data_gnss::HwStatus" name="mip::data_gnss::HwStatus">
+<area shape="rect" id="node1" title=" " alt="" coords="5,185,180,212"/>
+<area shape="rect" id="node2" href="$structmip_1_1data__gnss_1_1_hw_status_1_1_valid_flags.html" title=" " alt="" coords="5,81,180,123"/>
+<area shape="rect" id="node3" href="$structmip_1_1_bitfield.html" title=" " alt="" coords="5,5,180,32"/>
+</map>
