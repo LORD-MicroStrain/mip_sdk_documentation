@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-5-g3329bf5</span>
+   &#160;<span id="projectnumber">v1.0.0-6-g3b89084</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -301,10 +301,10 @@ $(function() {
 <div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> Object, <span class="keywordtype">void</span> (Object::*Callback)(const Packet&amp;, Timestamp)&gt;</div>
 <div class="line"><a name="l00361"></a><span class="lineno"><a class="line" href="group__mip__cpp.html#gaf71804365b4c7a3bffc6cced5f21ba46">  361</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classmip_1_1_device_interface.html#a8e92b1ca105746b58c0250df2796b77a">DeviceInterface::registerPacketCallback</a>(<a class="code" href="structmip_1_1_c_1_1mip__dispatch__handler.html">C::mip_dispatch_handler</a>&amp; handler, uint8_t descriptorSet, <span class="keywordtype">bool</span> afterFields, Object* <span class="keywordtype">object</span>)</div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;{</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    <span class="keyword">auto</span> callback = [](<span class="keywordtype">void</span>* pointer, <span class="keyword">const</span> <a class="code" href="classmip_1_1_packet.html">Packet</a>&amp; packet, <a class="code" href="namespacemip.html#a4d99303b1d7588a4e9d020e6210ded41">Timestamp</a> timestamp)</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    <span class="keyword">auto</span> callback = [](<span class="keywordtype">void</span>* pointer, <span class="keyword">const</span> <a class="code" href="structmip_1_1_c_1_1mip__packet.html">mip::C::mip_packet</a>* packet, <a class="code" href="namespacemip.html#a4d99303b1d7588a4e9d020e6210ded41">Timestamp</a> timestamp)</div>
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    {</div>
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;        Object* obj = <span class="keyword">static_cast&lt;</span>Object*<span class="keyword">&gt;</span>(pointer);</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;        (obj-&gt;*Callback)(<a class="code" href="classmip_1_1_packet.html">Packet</a>(packet), timestamp);</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;        (obj-&gt;*Callback)(<a class="code" href="classmip_1_1_packet.html">Packet</a>(*packet), timestamp);</div>
 <div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    };</div>
 <div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160; </div>
 <div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    <a class="code" href="classmip_1_1_device_interface.html#a8e92b1ca105746b58c0250df2796b77a">registerPacketCallback</a>(handler, descriptorSet, afterFields, callback, <span class="keywordtype">object</span>);</div>
