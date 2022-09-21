@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-6-g3b89084</span>
+   &#160;<span id="projectnumber">v1.0.0-7-gedd5374</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -244,7 +244,7 @@ template&lt;class Function &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class DataField , class Object , void(Object::*)(const DataField &amp;, Timestamp) Callback&gt; </div>
+template&lt;class DataField , class Object , void(Object::*)(const DataField &amp;, uint8_t, Timestamp) Callback&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void mip::DeviceInterface::registerDataCallback </td>
@@ -305,6 +305,35 @@ template&lt;class DataField , class Object , void(Object::*)(const DataField &am
 <div class="ttc" id="aclassmip_1_1_device_interface_html_a507523f0325153f1d4d2939fe3a9cf24"><div class="ttname"><a href="classmip_1_1_device_interface.html#a507523f0325153f1d4d2939fe3a9cf24">mip::DeviceInterface::DeviceInterface</a></div><div class="ttdeci">DeviceInterface(Connection *connection, uint8_t *parseBuffer, size_t parseBufferSize, Timeout parseTimeout, Timeout baseReplyTimeout)</div><div class="ttdef"><b>Definition:</b> mip_device.hpp:155</div></div>
 <div class="ttc" id="agroup__mip__cpp_html_ga22fdf60376fa438a3282cdf32d641f3b"><div class="ttname"><a href="group__mip__cpp.html#ga22fdf60376fa438a3282cdf32d641f3b">mip::DispatchHandler</a></div><div class="ttdeci">C::mip_dispatch_handler DispatchHandler</div><div class="ttdef"><b>Definition:</b> mip_device.hpp:16</div></div>
 <div class="ttc" id="anamespacemip_html_a4d99303b1d7588a4e9d020e6210ded41"><div class="ttname"><a href="namespacemip.html#a4d99303b1d7588a4e9d020e6210ded41">mip::Timestamp</a></div><div class="ttdeci">C::timestamp_type Timestamp</div><div class="ttdef"><b>Definition:</b> mip_types.h:43</div></div>
+</div><!-- fragment --><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Callback</td><td>A pointer to the function to call. This must be a constant member function pointer.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handler</td><td>This must exist as long as the hander remains registered.</td></tr>
+    <tr><td class="paramname">object</td><td>A pointer to the object. The object must exist while the handler remains registered.</td></tr>
+    <tr><td class="paramname">descriptorSet</td><td>If specified, overrides the descriptor set. Intended to be used with with shared data quantities.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Example usage: </p><div class="fragment"><div class="line"><span class="keyword">class </span>MySystem</div>
+<div class="line">{</div>
+<div class="line">  <span class="keywordtype">void</span> handleAccel(<span class="keyword">const</span> ScaledAccel&amp; accel, uint8_t descriptorSet, <a class="code" href="namespacemip.html#a4d99303b1d7588a4e9d020e6210ded41">Timestamp</a> timestamp)</div>
+<div class="line">  {</div>
+<div class="line">  }</div>
+<div class="line"> </div>
+<div class="line">  <span class="keywordtype">void</span> setup()</div>
+<div class="line">  {</div>
+<div class="line">    <span class="comment">// setup device...</span></div>
+<div class="line">    device.registerDataHandler&lt;ScaledAccel, MySystem, &amp;MySystem::handleAccel&gt;(accelHandler, <span class="keyword">this</span>);</div>
+<div class="line">  }</div>
+<div class="line"> </div>
+<div class="line">  <a class="code" href="classmip_1_1_device_interface.html#a507523f0325153f1d4d2939fe3a9cf24">DeviceInterface</a> device;</div>
+<div class="line">  <a class="code" href="group__mip__cpp.html#ga22fdf60376fa438a3282cdf32d641f3b">DispatchHandler</a> accelHandler;</div>
+<div class="line">};</div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -314,7 +343,7 @@ template&lt;class DataField , class Object , void(Object::*)(const DataField &am
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class DataField , void(*)(void *, const DataField &amp;, Timestamp) Callback&gt; </div>
+template&lt;class DataField , void(*)(void *, const DataField &amp;, uint8_t, Timestamp) Callback&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void mip::DeviceInterface::registerDataCallback </td>
@@ -358,6 +387,34 @@ template&lt;class DataField , void(*)(void *, const DataField &amp;, Timestamp) 
   </dd>
 </dl>
 <p>Example usage: </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> handle_packet(<span class="keywordtype">void</span>* context, <span class="keyword">const</span> Packet&amp; packet, <a class="code" href="namespacemip.html#a4d99303b1d7588a4e9d020e6210ded41">Timestamp</a> timestamp)</div>
+<div class="line">{</div>
+<div class="line">  <span class="comment">// Use the packet data</span></div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><a class="code" href="classmip_1_1_device_interface.html#a507523f0325153f1d4d2939fe3a9cf24">DeviceInterface</a> device;</div>
+<div class="line"><a class="code" href="group__mip__cpp.html#ga22fdf60376fa438a3282cdf32d641f3b">DispatchHandler</a> handler;</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> setup()</div>
+<div class="line">{</div>
+<div class="line">  <span class="comment">// Set up device...</span></div>
+<div class="line"> </div>
+<div class="line">  device.registerDataCallback&lt;&amp;handle_packet&gt;(handler, descriptorSet, <span class="keyword">nullptr</span>);</div>
+<div class="line">}</div>
+</div><!-- fragment --><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Callback</td><td>A pointer to the function to call. This must be a constant function pointer.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handler</td><td>This must exist as long as the hander remains registered.</td></tr>
+    <tr><td class="paramname">userData</td><td>Optional data to pass to the callback function.</td></tr>
+    <tr><td class="paramname">descriptorSet</td><td>If specified, overrides the descriptor set. Intended to be used with with shared data quantities.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Example usage: </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> handle_packet(<span class="keywordtype">void</span>* context, uint8_t descriptorSet, <span class="keyword">const</span> Packet&amp; packet, <a class="code" href="namespacemip.html#a4d99303b1d7588a4e9d020e6210ded41">Timestamp</a> timestamp)</div>
 <div class="line">{</div>
 <div class="line">  <span class="comment">// Use the packet data</span></div>
 <div class="line">}</div>

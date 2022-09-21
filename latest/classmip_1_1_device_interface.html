@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-6-g3b89084</span>
+   &#160;<span id="projectnumber">v1.0.0-7-gedd5374</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -176,10 +176,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:gaca474f5975ff342a77f10d82d02e6fe6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#gaca474f5975ff342a77f10d82d02e6fe6">registerDataCallback</a> (<a class="el" href="structmip_1_1_c_1_1mip__dispatch__handler.html">C::mip_dispatch_handler</a> &amp;handler, void *userData=nullptr, uint8_t descriptorSet=DataField::DESCRIPTOR_SET)</td></tr>
 <tr class="memdesc:gaca474f5975ff342a77f10d82d02e6fe6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a data callback (free function version).  <a href="group__mip__cpp.html#gaca474f5975ff342a77f10d82d02e6fe6">More...</a><br /></td></tr>
 <tr class="separator:gaca474f5975ff342a77f10d82d02e6fe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca474f5975ff342a77f10d82d02e6fe6"><td class="memTemplParams" colspan="2">template&lt;class DataField , void(*)(void *, const DataField &amp;, uint8_t, Timestamp) Callback&gt; </td></tr>
+<tr class="memitem:aca474f5975ff342a77f10d82d02e6fe6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmip_1_1_device_interface.html#aca474f5975ff342a77f10d82d02e6fe6">registerDataCallback</a> (<a class="el" href="structmip_1_1_c_1_1mip__dispatch__handler.html">C::mip_dispatch_handler</a> &amp;handler, void *userData=nullptr, uint8_t descriptorSet=DataField::DESCRIPTOR_SET)</td></tr>
+<tr class="separator:aca474f5975ff342a77f10d82d02e6fe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga61dd7d1aa7704fb3482d517cb67e980a"><td class="memTemplParams" colspan="2">template&lt;class DataField , class Object , void(Object::*)(const DataField &amp;, Timestamp) Callback&gt; </td></tr>
 <tr class="memitem:ga61dd7d1aa7704fb3482d517cb67e980a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga61dd7d1aa7704fb3482d517cb67e980a">registerDataCallback</a> (<a class="el" href="structmip_1_1_c_1_1mip__dispatch__handler.html">C::mip_dispatch_handler</a> &amp;handler, Object *object, uint8_t descriptorSet=DataField::DESCRIPTOR_SET)</td></tr>
 <tr class="memdesc:ga61dd7d1aa7704fb3482d517cb67e980a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a data callback (member function version).  <a href="group__mip__cpp.html#ga61dd7d1aa7704fb3482d517cb67e980a">More...</a><br /></td></tr>
 <tr class="separator:ga61dd7d1aa7704fb3482d517cb67e980a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61dd7d1aa7704fb3482d517cb67e980a"><td class="memTemplParams" colspan="2">template&lt;class DataField , class Object , void(Object::*)(const DataField &amp;, uint8_t, Timestamp) Callback&gt; </td></tr>
+<tr class="memitem:a61dd7d1aa7704fb3482d517cb67e980a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmip_1_1_device_interface.html#a61dd7d1aa7704fb3482d517cb67e980a">registerDataCallback</a> (<a class="el" href="structmip_1_1_c_1_1mip__dispatch__handler.html">C::mip_dispatch_handler</a> &amp;handler, Object *object, uint8_t descriptorSet=DataField::DESCRIPTOR_SET)</td></tr>
+<tr class="separator:a61dd7d1aa7704fb3482d517cb67e980a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6cc40c642fe4de908b3b67c8f7c740ec"><td class="memTemplParams" colspan="2">template&lt;class DataField &gt; </td></tr>
 <tr class="memitem:ga6cc40c642fe4de908b3b67c8f7c740ec"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga6cc40c642fe4de908b3b67c8f7c740ec">registerExtractor</a> (<a class="el" href="structmip_1_1_c_1_1mip__dispatch__handler.html">C::mip_dispatch_handler</a> &amp;handler, DataField *field, uint8_t descriptorSet=DataField::DESCRIPTOR_SET)</td></tr>
 <tr class="separator:ga6cc40c642fe4de908b3b67c8f7c740ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -687,6 +693,78 @@ Public Member Functions</h2></td></tr>
 <span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a61dd7d1aa7704fb3482d517cb67e980a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61dd7d1aa7704fb3482d517cb67e980a">&#9670;&nbsp;</a></span>registerDataCallback() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DataField , class Object , void(Object::*)(const DataField &amp;, uint8_t, Timestamp) Callback&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::DeviceInterface::registerDataCallback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1_c_1_1mip__dispatch__handler.html">C::mip_dispatch_handler</a> &amp;&#160;</td>
+          <td class="paramname"><em>handler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Object *&#160;</td>
+          <td class="paramname"><em>object</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>descriptorSet</em> = <code>DataField::DESCRIPTOR_SET</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aca474f5975ff342a77f10d82d02e6fe6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca474f5975ff342a77f10d82d02e6fe6">&#9670;&nbsp;</a></span>registerDataCallback() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DataField , void(*)(void *, const DataField &amp;, uint8_t, Timestamp) Callback&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::DeviceInterface::registerDataCallback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1_c_1_1mip__dispatch__handler.html">C::mip_dispatch_handler</a> &amp;&#160;</td>
+          <td class="paramname"><em>handler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>userData</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>descriptorSet</em> = <code>DataField::DESCRIPTOR_SET</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>
