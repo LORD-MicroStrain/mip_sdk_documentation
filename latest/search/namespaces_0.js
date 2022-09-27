@@ -12,6 +12,7 @@ var searchData=
   ['data_5fsensor_5554',['data_sensor',['../namespacemip_1_1data__sensor.html',1,'mip']]],
   ['data_5fshared_5555',['data_shared',['../namespacemip_1_1data__shared.html',1,'mip']]],
   ['data_5fsystem_5556',['data_system',['../namespacemip_1_1data__system.html',1,'mip']]],
-  ['mip_5557',['mip',['../namespacemip.html',1,'']]],
-  ['platform_5558',['platform',['../namespacemip_1_1platform.html',1,'mip']]]
+  ['extras_5557',['extras',['../namespacemip_1_1extras.html',1,'mip']]],
+  ['mip_5558',['mip',['../namespacemip.html',1,'']]],
+  ['platform_5559',['platform',['../namespacemip_1_1platform.html',1,'mip']]]
 ];

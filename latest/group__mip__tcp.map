@@ -1,4 +1,4 @@
 <map id="TCP Client" name="TCP Client">
-<area shape="rect" id="node1" title="Simple implementation for reading and writing to a tcp client socket." alt="" coords="152,5,236,31"/>
-<area shape="rect" id="node2" href="$group__mip__extras.html" title=" " alt="" coords="5,5,104,31"/>
+<area shape="rect" id="node1" title="Simple implementation for reading and writing to a tcp client socket." alt="" coords="216,5,300,31"/>
+<area shape="rect" id="node2" href="$group__mip__platform.html" title=" " alt="" coords="5,5,168,31"/>
 </map>

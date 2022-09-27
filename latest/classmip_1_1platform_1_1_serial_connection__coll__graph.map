@@ -1,4 +1,4 @@
 <map id="mip::platform::SerialConnection" name="mip::platform::SerialConnection">
-<area shape="rect" id="node1" title=" " alt="" coords="5,80,208,107"/>
+<area shape="rect" id="node1" title="Can be used on Windows, OSX, or linux to communicate with a MIP device over serial." alt="" coords="5,80,208,107"/>
 <area shape="rect" id="node2" href="$classmip_1_1_connection.html" title="Represents a type of connection to a MIP device." alt="" coords="49,5,165,32"/>
 </map>

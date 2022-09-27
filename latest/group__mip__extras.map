@@ -1,5 +1,0 @@
-<map id="Extra utilities" name="Extra utilities">
-<area shape="rect" id="node1" href="$group__mip__tcp.html" title="Simple implementation for reading and writing to a tcp client socket." alt="" coords="152,5,236,31"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,31,104,56"/>
-<area shape="rect" id="node3" href="$group__mip__serial.html" title="A simple implementation for reading and writing to/from a serial port." alt="" coords="153,55,235,80"/>
-</map>

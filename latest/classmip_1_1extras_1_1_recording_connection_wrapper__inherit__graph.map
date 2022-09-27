@@ -1,0 +1,5 @@
+<map id="mip::extras::RecordingConnectionWrapper&lt; ConnectionType &gt;" name="mip::extras::RecordingConnectionWrapper&lt; ConnectionType &gt;">
+<area shape="rect" id="node1" title="Template wrapper for a recording connection." alt="" coords="5,155,224,196"/>
+<area shape="rect" id="node2" href="$classmip_1_1extras_1_1_recording_connection.html" title="Can be used with another connection to communicate with a device, and record the data at the same tim..." alt="" coords="5,80,224,107"/>
+<area shape="rect" id="node3" href="$classmip_1_1_connection.html" title="Represents a type of connection to a MIP device." alt="" coords="57,5,173,32"/>
+</map>
