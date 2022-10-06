@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-8-g9a736a2</span>
+   &#160;<span id="projectnumber">v1.0.0-12-gb085152</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -129,8 +129,6 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__gnss_1_1_rtk_dongle_configuration_1_1_response.html">mip::commands_gnss::RtkDongleConfiguration::Response</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__gnss_1_1_receiver_safe_mode.html">mip::commands_gnss::ReceiverSafeMode</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -150,8 +148,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="group__gnss__commands__cpp.html#gga473efec39aa75259755ae146f9c3e1e7a385990a249bf726e18ed618c655c5892">mip::commands_gnss::CMD_SIGNAL_CONFIGURATION</a> = 0x02
 , <a class="el" href="group__gnss__commands__cpp.html#gga473efec39aa75259755ae146f9c3e1e7aa3e581c6e292fbda4ca4d9b004e1cb4f">mip::commands_gnss::CMD_RTK_DONGLE_CONFIGURATION</a> = 0x10
 , <br />
-&#160;&#160;<a class="el" href="group__gnss__commands__cpp.html#gga473efec39aa75259755ae146f9c3e1e7a117d65a05ec0a091893b1b4b98209d1a">mip::commands_gnss::CMD_RECEIVER_SAFE_MODE</a> = 0x60
-, <a class="el" href="group__gnss__commands__cpp.html#gga473efec39aa75259755ae146f9c3e1e7a92181a8bf0dc289bfb0f0603c886eb74">mip::commands_gnss::REPLY_LIST_RECEIVERS</a> = 0x81
+&#160;&#160;<a class="el" href="group__gnss__commands__cpp.html#gga473efec39aa75259755ae146f9c3e1e7a92181a8bf0dc289bfb0f0603c886eb74">mip::commands_gnss::REPLY_LIST_RECEIVERS</a> = 0x81
 , <a class="el" href="group__gnss__commands__cpp.html#gga473efec39aa75259755ae146f9c3e1e7ada7c33b7c99ba7e439ea6838d7def6b1">mip::commands_gnss::REPLY_SIGNAL_CONFIGURATION</a> = 0x82
 , <a class="el" href="group__gnss__commands__cpp.html#gga473efec39aa75259755ae146f9c3e1e7af1571f028b115dab0124c32149b448c4">mip::commands_gnss::REPLY_RTK_DONGLE_CONFIGURATION</a> = 0x90
 <br />
@@ -210,12 +207,6 @@ Functions</h2></td></tr>
 <tr class="separator:ga1d921b542d2f7d28ecf1730c638daf11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf656c0ea846a465248a796146e2bf869"><td class="memItemLeft" align="right" valign="top">CmdResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__gnss__rtk__dongle__configuration.html#gaf656c0ea846a465248a796146e2bf869">mip::commands_gnss::defaultRtkDongleConfiguration</a> (C::mip_interface &amp;device)</td></tr>
 <tr class="separator:gaf656c0ea846a465248a796146e2bf869"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaacb0c516f9c6d18bdab73ffe7d204611"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__gnss__receiver__safe__mode.html#gaacb0c516f9c6d18bdab73ffe7d204611">mip::commands_gnss::insert</a> (Serializer &amp;serializer, const ReceiverSafeMode &amp;self)</td></tr>
-<tr class="separator:gaacb0c516f9c6d18bdab73ffe7d204611"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf1d6c894c3d95a6823e7cc7e1ab3054f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__gnss__receiver__safe__mode.html#gaf1d6c894c3d95a6823e7cc7e1ab3054f">mip::commands_gnss::extract</a> (Serializer &amp;serializer, ReceiverSafeMode &amp;self)</td></tr>
-<tr class="separator:gaf1d6c894c3d95a6823e7cc7e1ab3054f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga39ad99357d0bc7df6030643894b80d94"><td class="memItemLeft" align="right" valign="top">CmdResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__gnss__receiver__safe__mode.html#ga39ad99357d0bc7df6030643894b80d94">mip::commands_gnss::receiverSafeMode</a> (C::mip_interface &amp;device, uint8_t receiverId, uint8_t enable)</td></tr>
-<tr class="separator:ga39ad99357d0bc7df6030643894b80d94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

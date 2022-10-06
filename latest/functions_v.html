@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-8-g9a736a2</span>
+   &#160;<span id="projectnumber">v1.0.0-12-gb085152</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -140,6 +140,7 @@ $(function() {
 , <a class="el" href="structmip_1_1_c_1_1mip__gnss__dgps__info__data.html#a6cdae3ce9ecab795284d0e5c53df34ea">mip::C::mip_gnss_dgps_info_data</a>
 , <a class="el" href="structmip_1_1_c_1_1mip__gnss__dop__data.html#ae2eab26533d2f05ecb541437e470b31d">mip::C::mip_gnss_dop_data</a>
 , <a class="el" href="structmip_1_1_c_1_1mip__gnss__fix__info__data.html#ab4ac9d0ef75a732891c0ad0c9bf9279a">mip::C::mip_gnss_fix_info_data</a>
+, <a class="el" href="structmip_1_1_c_1_1mip__gnss__galileo__ephemeris__data.html#a0d25d3b74d6170633b909a52e435d7cd">mip::C::mip_gnss_galileo_ephemeris_data</a>
 , <a class="el" href="structmip_1_1_c_1_1mip__gnss__galileo__iono__corr__data.html#afd6a1e2686b192fdb321eecc44cb6339">mip::C::mip_gnss_galileo_iono_corr_data</a>
 , <a class="el" href="structmip_1_1_c_1_1mip__gnss__glo__ephemeris__data.html#a648570d97d4228de2798b15b7af5ebca">mip::C::mip_gnss_glo_ephemeris_data</a>
 , <a class="el" href="structmip_1_1_c_1_1mip__gnss__gps__ephemeris__data.html#af76e7ebdc41a3e0fb9790302115399ba">mip::C::mip_gnss_gps_ephemeris_data</a>
@@ -221,6 +222,7 @@ $(function() {
 , <a class="el" href="structmip_1_1data__gnss_1_1_dgps_info.html#a9767a3286c8f83ec1091460b478d9fa4">mip::data_gnss::DgpsInfo</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1_dop.html#a03f56c81d97617f0a11e8463823b1c53">mip::data_gnss::Dop</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1_fix_info.html#a648925b5036f86c61a316f3a5e21c54a">mip::data_gnss::FixInfo</a>
+, <a class="el" href="structmip_1_1data__gnss_1_1_galileo_ephemeris.html#adec578974097dab96f9aa3b71a383905">mip::data_gnss::GalileoEphemeris</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1_galileo_iono_corr.html#a930a78b8769509bef8d05313c3dd237c">mip::data_gnss::GalileoIonoCorr</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1_glo_ephemeris.html#ab652bde8515f18f13822062bf48de9b3">mip::data_gnss::GloEphemeris</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1_gps_ephemeris.html#a1eb0a1d8dc464860a53817e4ef022257">mip::data_gnss::GpsEphemeris</a>
@@ -247,31 +249,32 @@ $(function() {
 , <a class="el" href="structmip_1_1data__shared_1_1_gps_timestamp.html#a0a4e4fe4efe9916a92e11f2fdf4ad1f1">mip::data_shared::GpsTimestamp</a>
 </li>
 <li>ValidFlags()
-: <a class="el" href="structmip_1_1data__gnss_1_1_base_station_info_1_1_valid_flags.html#a54517d9cf3f130ce0ae2dbcae64c4858">mip::data_gnss::BaseStationInfo::ValidFlags</a>
+: <a class="el" href="structmip_1_1data__gnss_1_1_base_station_info_1_1_valid_flags.html#aa273d6e124a8477d148e5a0b840e63e7">mip::data_gnss::BaseStationInfo::ValidFlags</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1_clock_info2_1_1_valid_flags.html#aacda4bfdd11d5e5c6db653bfcfff8ae2">mip::data_gnss::ClockInfo2::ValidFlags</a>
-, <a class="el" href="structmip_1_1data__gnss_1_1_clock_info_1_1_valid_flags.html#acd7a891bf107a6970838360aa39efd69">mip::data_gnss::ClockInfo::ValidFlags</a>
+, <a class="el" href="structmip_1_1data__gnss_1_1_clock_info_1_1_valid_flags.html#ae201fde84bac06d46a99c1fc09bfb7db">mip::data_gnss::ClockInfo::ValidFlags</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1_dgps_channel_1_1_valid_flags.html#a0c8a60ae249053934e2e6b81a72d30d6">mip::data_gnss::DgpsChannel::ValidFlags</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1_dgps_info_1_1_valid_flags.html#a9692ce6d6ca2f564a4bc6c4f1383fd77">mip::data_gnss::DgpsInfo::ValidFlags</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1_dop_1_1_valid_flags.html#ac723968db60cb753552b6cce1fe56f92">mip::data_gnss::Dop::ValidFlags</a>
-, <a class="el" href="structmip_1_1data__gnss_1_1_fix_info_1_1_valid_flags.html#a1099ca679ff63f8a644a69f742f35c9e">mip::data_gnss::FixInfo::ValidFlags</a>
-, <a class="el" href="structmip_1_1data__gnss_1_1_galileo_iono_corr_1_1_valid_flags.html#af27451b83d478750be519316f3377646">mip::data_gnss::GalileoIonoCorr::ValidFlags</a>
-, <a class="el" href="structmip_1_1data__gnss_1_1_glo_ephemeris_1_1_valid_flags.html#a0779a2c414fea15b7396b6aae9db46b4">mip::data_gnss::GloEphemeris::ValidFlags</a>
-, <a class="el" href="structmip_1_1data__gnss_1_1_gps_ephemeris_1_1_valid_flags.html#aa42070ff12008b3e316696ee56f4bd55">mip::data_gnss::GpsEphemeris::ValidFlags</a>
-, <a class="el" href="structmip_1_1data__gnss_1_1_gps_iono_corr_1_1_valid_flags.html#af17395ea3d1cbff851f21dce53613ec2">mip::data_gnss::GpsIonoCorr::ValidFlags</a>
+, <a class="el" href="structmip_1_1data__gnss_1_1_fix_info_1_1_valid_flags.html#a7d1fec22c23041700b0b212c87b76e78">mip::data_gnss::FixInfo::ValidFlags</a>
+, <a class="el" href="structmip_1_1data__gnss_1_1_galileo_ephemeris_1_1_valid_flags.html#a27c66ca99f3de281d86c8b750321abae">mip::data_gnss::GalileoEphemeris::ValidFlags</a>
+, <a class="el" href="structmip_1_1data__gnss_1_1_galileo_iono_corr_1_1_valid_flags.html#ae50579a4785761411ff4a2726b959e19">mip::data_gnss::GalileoIonoCorr::ValidFlags</a>
+, <a class="el" href="structmip_1_1data__gnss_1_1_glo_ephemeris_1_1_valid_flags.html#af9303ac6009719e1b35fbb27a6c55bb2">mip::data_gnss::GloEphemeris::ValidFlags</a>
+, <a class="el" href="structmip_1_1data__gnss_1_1_gps_ephemeris_1_1_valid_flags.html#a723747339500cb7b751f921e123f9538">mip::data_gnss::GpsEphemeris::ValidFlags</a>
+, <a class="el" href="structmip_1_1data__gnss_1_1_gps_iono_corr_1_1_valid_flags.html#a0504b19c79911fcc08a22ffe53baa242">mip::data_gnss::GpsIonoCorr::ValidFlags</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1_gps_leap_seconds_1_1_valid_flags.html#a0a3f69daa0d8a3e72367899f0ecb1427">mip::data_gnss::GpsLeapSeconds::ValidFlags</a>
-, <a class="el" href="structmip_1_1data__gnss_1_1_gps_time_1_1_valid_flags.html#afff368c89b55eb465d424e57715ef78a">mip::data_gnss::GpsTime::ValidFlags</a>
+, <a class="el" href="structmip_1_1data__gnss_1_1_gps_time_1_1_valid_flags.html#a5f3d7b10d233a0e79ae7fe7e954497de">mip::data_gnss::GpsTime::ValidFlags</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1_hw_status_1_1_valid_flags.html#ac83def953a4b79b1c4378b9749c0330a">mip::data_gnss::HwStatus::ValidFlags</a>
-, <a class="el" href="structmip_1_1data__gnss_1_1_pos_ecef_1_1_valid_flags.html#a672f623c96255633a82f3bb8acd88c3b">mip::data_gnss::PosEcef::ValidFlags</a>
-, <a class="el" href="structmip_1_1data__gnss_1_1_pos_llh_1_1_valid_flags.html#aad140f9d5e2c8865fd816f1a478a0098">mip::data_gnss::PosLlh::ValidFlags</a>
-, <a class="el" href="structmip_1_1data__gnss_1_1_raw_1_1_valid_flags.html#a153fd4eb74ee9ca7e83db57ea6eed472">mip::data_gnss::Raw::ValidFlags</a>
+, <a class="el" href="structmip_1_1data__gnss_1_1_pos_ecef_1_1_valid_flags.html#a249cca82aa006c9673fdd2fa03edabde">mip::data_gnss::PosEcef::ValidFlags</a>
+, <a class="el" href="structmip_1_1data__gnss_1_1_pos_llh_1_1_valid_flags.html#a8136f57cc8607af8d8f76f9a77ef8334">mip::data_gnss::PosLlh::ValidFlags</a>
+, <a class="el" href="structmip_1_1data__gnss_1_1_raw_1_1_valid_flags.html#a74461174bedbb7e06eab502ecd873989">mip::data_gnss::Raw::ValidFlags</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1_rf_error_detection_1_1_valid_flags.html#a3eb227bfbad276cfd0a8a42be9f0d4bc">mip::data_gnss::RfErrorDetection::ValidFlags</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1_rtk_corrections_status_1_1_valid_flags.html#aa25f730c8b326d97a862b5419e5f8345">mip::data_gnss::RtkCorrectionsStatus::ValidFlags</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1_satellite_status_1_1_valid_flags.html#ab7ea5e9ef673c2544ea8fc024ccd1bd4">mip::data_gnss::SatelliteStatus::ValidFlags</a>
-, <a class="el" href="structmip_1_1data__gnss_1_1_sbas_correction_1_1_valid_flags.html#a493ec6abccc0a0d865e6c703b9d8550c">mip::data_gnss::SbasCorrection::ValidFlags</a>
-, <a class="el" href="structmip_1_1data__gnss_1_1_sbas_info_1_1_valid_flags.html#ae88588a7797d3416851746515bd702c6">mip::data_gnss::SbasInfo::ValidFlags</a>
-, <a class="el" href="structmip_1_1data__gnss_1_1_sv_info_1_1_valid_flags.html#ad37b4b41003b118cb09e5affce641d27">mip::data_gnss::SvInfo::ValidFlags</a>
-, <a class="el" href="structmip_1_1data__gnss_1_1_utc_time_1_1_valid_flags.html#aa14c9c6a5220075a5af7f6393845dfe7">mip::data_gnss::UtcTime::ValidFlags</a>
-, <a class="el" href="structmip_1_1data__gnss_1_1_vel_ecef_1_1_valid_flags.html#a9f4ae62e29734d969b2df3f868f1734a">mip::data_gnss::VelEcef::ValidFlags</a>
+, <a class="el" href="structmip_1_1data__gnss_1_1_sbas_correction_1_1_valid_flags.html#ac9a8ad4ba59c95f9c61146a8899725e4">mip::data_gnss::SbasCorrection::ValidFlags</a>
+, <a class="el" href="structmip_1_1data__gnss_1_1_sbas_info_1_1_valid_flags.html#ac666a5fc6b5ba22f5742ca59835e9915">mip::data_gnss::SbasInfo::ValidFlags</a>
+, <a class="el" href="structmip_1_1data__gnss_1_1_sv_info_1_1_valid_flags.html#a344139542b66c68e2b7f3ef093469c1e">mip::data_gnss::SvInfo::ValidFlags</a>
+, <a class="el" href="structmip_1_1data__gnss_1_1_utc_time_1_1_valid_flags.html#ab531c93e90481a43a27136e552a694df">mip::data_gnss::UtcTime::ValidFlags</a>
+, <a class="el" href="structmip_1_1data__gnss_1_1_vel_ecef_1_1_valid_flags.html#a1d3637ed8bf55262ce845c6a836473f3">mip::data_gnss::VelEcef::ValidFlags</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1_vel_ned_1_1_valid_flags.html#add2c6d772cfd81c20aea040f46070d59">mip::data_gnss::VelNed::ValidFlags</a>
 , <a class="el" href="structmip_1_1data__sensor_1_1_gps_timestamp_1_1_valid_flags.html#a8994563d715130524eb20b53b1173844">mip::data_sensor::GpsTimestamp::ValidFlags</a>
 , <a class="el" href="structmip_1_1data__shared_1_1_external_time_delta_1_1_valid_flags.html#a687212e795a3ce0930a499ea157da8ab">mip::data_shared::ExternalTimeDelta::ValidFlags</a>
@@ -306,6 +309,7 @@ $(function() {
 , <a class="el" href="structmip_1_1data__gnss_1_1_dop_1_1_valid_flags.html#a82339ca0a1053d6e277a8d7f9573d1be">mip::data_gnss::Dop::ValidFlags</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1_fix_info_1_1_fix_flags.html#a4bc852ce06f50ecc8e5b7978ef92c5ec">mip::data_gnss::FixInfo::FixFlags</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1_fix_info_1_1_valid_flags.html#aad45c84a6fec778cdb6f4a604f105109">mip::data_gnss::FixInfo::ValidFlags</a>
+, <a class="el" href="structmip_1_1data__gnss_1_1_galileo_ephemeris_1_1_valid_flags.html#af3ed7f04693f37f82bbfdef95d02b471">mip::data_gnss::GalileoEphemeris::ValidFlags</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1_galileo_iono_corr_1_1_valid_flags.html#a85e1ac28de347d8519b1878d63bed180">mip::data_gnss::GalileoIonoCorr::ValidFlags</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1_glo_ephemeris_1_1_valid_flags.html#ac492c8ef72489228b5904e049bf8e839">mip::data_gnss::GloEphemeris::ValidFlags</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1_gps_ephemeris_1_1_valid_flags.html#a559994f59960f95b9a2249cead4638ed">mip::data_gnss::GpsEphemeris::ValidFlags</a>

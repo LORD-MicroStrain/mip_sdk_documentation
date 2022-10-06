@@ -6,25 +6,26 @@
 <area shape="rect" id="node5" href="$group__c__gnss__sbas__correction.html" title=" " alt="" coords="304,219,512,244"/>
 <area shape="rect" id="node6" href="$group__c__gnss__pos__llh.html" title=" " alt="" coords="329,268,487,293"/>
 <area shape="rect" id="node7" href="$group__c__gnss__gps__time.html" title=" " alt="" coords="323,317,493,343"/>
-<area shape="rect" id="node8" href="$group__c__gnss__satellite__status.html" title=" " alt="" coords="337,367,479,407"/>
-<area shape="rect" id="node9" href="$group__c__gnss__hw__status.html" title=" " alt="" coords="319,432,497,457"/>
-<area shape="rect" id="node10" href="$group__c__gnss__dop.html" title=" " alt="" coords="339,481,477,507"/>
-<area shape="rect" id="node11" href="$group__c__gnss__gps__ephemeris.html" title=" " alt="" coords="305,531,511,556"/>
-<area shape="rect" id="node12" href="$group__c__gnss__base__station__info.html" title=" " alt="" coords="323,581,493,621"/>
-<area shape="rect" id="node13" href="$group__c__gnss__fix__info.html" title=" " alt="" coords="329,645,487,671"/>
-<area shape="rect" id="node14" href="$group__c__gnss__gps__leap__seconds.html" title=" " alt="" coords="333,695,483,735"/>
-<area shape="rect" id="node15" href="$group__c__gnss__utc__time.html" title=" " alt="" coords="325,760,491,785"/>
-<area shape="rect" id="node16" href="$group__c__gnss__dgps__info.html" title=" " alt="" coords="323,809,493,835"/>
-<area shape="rect" id="node17" href="$group__c__gnss__vel__ecef.html" title=" " alt="" coords="326,859,490,884"/>
-<area shape="rect" id="node18" title=" " alt="" coords="151,675,256,700"/>
-<area shape="rect" id="node19" href="$group__c__gnss__galileo__iono__corr.html" title=" " alt="" coords="341,909,475,949"/>
-<area shape="rect" id="node20" href="$group__c__gnss__raw.html" title=" " alt="" coords="338,973,478,999"/>
-<area shape="rect" id="node21" href="$group__c__gnss__clock__info__2.html" title=" " alt="" coords="333,1023,483,1063"/>
-<area shape="rect" id="node22" href="$group__c__gnss__gps__iono__corr.html" title=" " alt="" coords="335,1087,481,1127"/>
-<area shape="rect" id="node23" href="$group__c__gnss__sbas__info.html" title=" " alt="" coords="323,1152,493,1177"/>
-<area shape="rect" id="node25" href="$group__c__gnss__glo__ephemeris.html" title=" " alt="" coords="307,1201,509,1227"/>
-<area shape="rect" id="node26" href="$group__c__gnss__dgps__channel.html" title=" " alt="" coords="309,1251,507,1276"/>
-<area shape="rect" id="node27" href="$group__c__gnss__rf__error__detection.html" title=" " alt="" coords="339,1301,477,1341"/>
-<area shape="rect" id="node28" href="$group__c__gnss__pos__ecef.html" title=" " alt="" coords="324,1365,492,1391"/>
-<area shape="rect" id="node24" href="$group___mip_data__c.html" title=" " alt="" coords="5,675,103,700"/>
+<area shape="rect" id="node8" href="$group__c__gnss__galileo__ephemeris.html" title=" " alt="" coords="341,367,475,407"/>
+<area shape="rect" id="node9" href="$group__c__gnss__satellite__status.html" title=" " alt="" coords="337,431,479,471"/>
+<area shape="rect" id="node10" href="$group__c__gnss__hw__status.html" title=" " alt="" coords="319,496,497,521"/>
+<area shape="rect" id="node11" href="$group__c__gnss__dop.html" title=" " alt="" coords="339,545,477,571"/>
+<area shape="rect" id="node12" href="$group__c__gnss__gps__ephemeris.html" title=" " alt="" coords="305,595,511,620"/>
+<area shape="rect" id="node13" href="$group__c__gnss__base__station__info.html" title=" " alt="" coords="323,645,493,685"/>
+<area shape="rect" id="node14" href="$group__c__gnss__fix__info.html" title=" " alt="" coords="329,709,487,735"/>
+<area shape="rect" id="node15" href="$group__c__gnss__gps__leap__seconds.html" title=" " alt="" coords="333,759,483,799"/>
+<area shape="rect" id="node16" href="$group__c__gnss__utc__time.html" title=" " alt="" coords="325,824,491,849"/>
+<area shape="rect" id="node17" href="$group__c__gnss__dgps__info.html" title=" " alt="" coords="323,873,493,899"/>
+<area shape="rect" id="node18" href="$group__c__gnss__vel__ecef.html" title=" " alt="" coords="326,923,490,948"/>
+<area shape="rect" id="node19" title=" " alt="" coords="151,709,256,735"/>
+<area shape="rect" id="node20" href="$group__c__gnss__galileo__iono__corr.html" title=" " alt="" coords="341,973,475,1013"/>
+<area shape="rect" id="node21" href="$group__c__gnss__raw.html" title=" " alt="" coords="338,1037,478,1063"/>
+<area shape="rect" id="node22" href="$group__c__gnss__clock__info__2.html" title=" " alt="" coords="333,1087,483,1127"/>
+<area shape="rect" id="node23" href="$group__c__gnss__gps__iono__corr.html" title=" " alt="" coords="335,1151,481,1191"/>
+<area shape="rect" id="node24" href="$group__c__gnss__sbas__info.html" title=" " alt="" coords="323,1216,493,1241"/>
+<area shape="rect" id="node26" href="$group__c__gnss__glo__ephemeris.html" title=" " alt="" coords="307,1265,509,1291"/>
+<area shape="rect" id="node27" href="$group__c__gnss__dgps__channel.html" title=" " alt="" coords="309,1315,507,1340"/>
+<area shape="rect" id="node28" href="$group__c__gnss__rf__error__detection.html" title=" " alt="" coords="339,1365,477,1405"/>
+<area shape="rect" id="node29" href="$group__c__gnss__pos__ecef.html" title=" " alt="" coords="324,1429,492,1455"/>
+<area shape="rect" id="node25" href="$group___mip_data__c.html" title=" " alt="" coords="5,709,103,735"/>
 </map>

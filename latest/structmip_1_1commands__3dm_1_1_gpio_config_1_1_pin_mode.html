@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-8-g9a736a2</span>
+   &#160;<span id="projectnumber">v1.0.0-12-gb085152</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -142,11 +142,11 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a19d0ba116be16369e03b98c098adf551aca33887e859dabdb04ab870c9c625266"></a>NONE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a19d0ba116be16369e03b98c098adf551a9c571c0c89d4edbec47b680466075d71"></a>OPEN_DRAIN&#160;</td><td class="fielddoc"><p>The pin will be an open-drain output. The state will be either LOW or FLOATING instead of LOW or HIGH, respectively. This is used to connect multiple open-drain outputs from several devices. An internal or external pullup resistor is typically used in combination. The maximum voltage of an open drain output is subject to the device maximum input voltage range found in the specifications. </p>
+<tr><td class="fieldname"><a id="a19d0ba116be16369e03b98c098adf551a9c571c0c89d4edbec47b680466075d71"></a>OPEN_DRAIN&#160;</td><td class="fielddoc"><p>The pin will be an open-drain output. The state will be either LOW or FLOATING instead of LOW or HIGH, respectively. This is used to connect multiple open-drain outputs from several devices. An internal or external pull-up resistor is typically used in combination. The maximum voltage of an open drain output is subject to the device maximum input voltage range found in the specifications. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a19d0ba116be16369e03b98c098adf551ae3e82677c3c15c7fe7faf6cb2786e2c7"></a>PULLDOWN&#160;</td><td class="fielddoc"><p>The pin will have an internal pulldown resistor enabled. This is useful for connecting inputs to signals which can only be pulled high such as mechanical switches. Cannot be used in combination with pullup. See the device specifications for the resistance value. </p>
+<tr><td class="fieldname"><a id="a19d0ba116be16369e03b98c098adf551ae3e82677c3c15c7fe7faf6cb2786e2c7"></a>PULLDOWN&#160;</td><td class="fielddoc"><p>The pin will have an internal pull-down resistor enabled. This is useful for connecting inputs to signals which can only be pulled high such as mechanical switches. Cannot be used in combination with pull-up. See the device specifications for the resistance value. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a19d0ba116be16369e03b98c098adf551aa81f09f45e281e5d4d2843f4a385f00b"></a>PULLUP&#160;</td><td class="fielddoc"><p>The pin will have an internal pullup resistor enabled. Useful for connecting inputs to signals which can only be pulled low such as mechanical switches, or in combination with an open drain output. Cannot be used in combination with pulldown. See the device specifications for the resistance value. Use of this mode may restrict the maximum allowed input voltage. See the device datasheet for details. </p>
+<tr><td class="fieldname"><a id="a19d0ba116be16369e03b98c098adf551aa81f09f45e281e5d4d2843f4a385f00b"></a>PULLUP&#160;</td><td class="fielddoc"><p>The pin will have an internal pull-up resistor enabled. Useful for connecting inputs to signals which can only be pulled low such as mechanical switches, or in combination with an open drain output. Cannot be used in combination with pull-down. See the device specifications for the resistance value. Use of this mode may restrict the maximum allowed input voltage. See the device datasheet for details. </p>
 </td></tr>
 </table>
 

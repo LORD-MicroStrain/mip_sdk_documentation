@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-8-g9a736a2</span>
+   &#160;<span id="projectnumber">v1.0.0-12-gb085152</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -128,8 +128,6 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_c_1_1mip__gnss__rtk__dongle__configuration__response.html">mip::C::mip_gnss_rtk_dongle_configuration_response</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_c_1_1mip__gnss__receiver__safe__mode__command.html">mip::C::mip_gnss_receiver_safe_mode_command</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -153,8 +151,6 @@ Typedefs</h2></td></tr>
 <tr class="separator:ga69918cf844be333eaddaaa81cf7e4d81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1cf00b104ed83221ee7e3c43e017d7ce"><td class="memItemLeft" align="right" valign="top">typedef struct mip_gnss_rtk_dongle_configuration_response&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__gnss__rtk__dongle__configuration.html#ga1cf00b104ed83221ee7e3c43e017d7ce">mip::C::mip_gnss_rtk_dongle_configuration_response</a></td></tr>
 <tr class="separator:ga1cf00b104ed83221ee7e3c43e017d7ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga52b50733f72dd2431a7abf12bdb853a6"><td class="memItemLeft" align="right" valign="top">typedef struct mip_gnss_receiver_safe_mode_command&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__gnss__receiver__safe__mode.html#ga52b50733f72dd2431a7abf12bdb853a6">mip::C::mip_gnss_receiver_safe_mode_command</a></td></tr>
-<tr class="separator:ga52b50733f72dd2431a7abf12bdb853a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -164,8 +160,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="group__gnss__commands__c.html#gga4beab48f0a088e1771c46b96daada63aade3682aabb840c2b23b58c6d6f4e5fe8">mip::C::MIP_CMD_DESC_GNSS_SIGNAL_CONFIGURATION</a> = 0x02
 , <a class="el" href="group__gnss__commands__c.html#gga4beab48f0a088e1771c46b96daada63aa02056f701a7b264d6ebbcddc6948167d">mip::C::MIP_CMD_DESC_GNSS_RTK_DONGLE_CONFIGURATION</a> = 0x10
 , <br />
-&#160;&#160;<a class="el" href="group__gnss__commands__c.html#gga4beab48f0a088e1771c46b96daada63aab1123f7ebfb848784e14dec2a8b3a3ac">mip::C::MIP_CMD_DESC_GNSS_RECEIVER_SAFE_MODE</a> = 0x60
-, <a class="el" href="group__gnss__commands__c.html#gga4beab48f0a088e1771c46b96daada63aacb23e2ee31b7af8fe1e3dd5428bc2f4e">mip::C::MIP_REPLY_DESC_GNSS_LIST_RECEIVERS</a> = 0x81
+&#160;&#160;<a class="el" href="group__gnss__commands__c.html#gga4beab48f0a088e1771c46b96daada63aacb23e2ee31b7af8fe1e3dd5428bc2f4e">mip::C::MIP_REPLY_DESC_GNSS_LIST_RECEIVERS</a> = 0x81
 , <a class="el" href="group__gnss__commands__c.html#gga4beab48f0a088e1771c46b96daada63aa0203befb6c245404c72767d3143c3504">mip::C::MIP_REPLY_DESC_GNSS_SIGNAL_CONFIGURATION</a> = 0x82
 , <a class="el" href="group__gnss__commands__c.html#gga4beab48f0a088e1771c46b96daada63aa096c2f8c70d79a3e302b9c36f3378034">mip::C::MIP_REPLY_DESC_GNSS_RTK_DONGLE_CONFIGURATION</a> = 0x90
 <br />
@@ -244,12 +239,6 @@ Functions</h2></td></tr>
 <tr class="separator:ga6d4d1d9ef1e6d6936d3ac4d617f5bb05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1282aad58d19ae2d7141d6466a9ed934"><td class="memItemLeft" align="right" valign="top">mip_cmd_result&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__gnss__rtk__dongle__configuration.html#ga1282aad58d19ae2d7141d6466a9ed934">mip::C::mip_gnss_default_rtk_dongle_configuration</a> (struct mip_interface *device)</td></tr>
 <tr class="separator:ga1282aad58d19ae2d7141d6466a9ed934"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga192a3aba1637a03ca1ec247364f9487d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__gnss__receiver__safe__mode.html#ga192a3aba1637a03ca1ec247364f9487d">mip::C::insert_mip_gnss_receiver_safe_mode_command</a> (mip_serializer *serializer, const mip_gnss_receiver_safe_mode_command *self)</td></tr>
-<tr class="separator:ga192a3aba1637a03ca1ec247364f9487d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1865791361d421c6f0159f9c93722ab1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__gnss__receiver__safe__mode.html#ga1865791361d421c6f0159f9c93722ab1">mip::C::extract_mip_gnss_receiver_safe_mode_command</a> (mip_serializer *serializer, mip_gnss_receiver_safe_mode_command *self)</td></tr>
-<tr class="separator:ga1865791361d421c6f0159f9c93722ab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga28909e4f442e766d820179601ddd8061"><td class="memItemLeft" align="right" valign="top">mip_cmd_result&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__gnss__receiver__safe__mode.html#ga28909e4f442e766d820179601ddd8061">mip::C::mip_gnss_receiver_safe_mode</a> (struct mip_interface *device, uint8_t receiver_id, uint8_t enable)</td></tr>
-<tr class="separator:ga28909e4f442e766d820179601ddd8061"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-8-g9a736a2</span>
+   &#160;<span id="projectnumber">v1.0.0-12-gb085152</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -75,12 +75,6 @@ $(function() {
 <li>mip_3dm_accel_bias_response
 : <a class="el" href="group__c__3dm__accel__bias.html#gadc334d315d95cb95e862b20ca4b0f334">mip::C</a>
 </li>
-<li>mip_3dm_adv_lowpass_filter_command
-: <a class="el" href="group__c__3dm__adv__lowpass__filter.html#gacc2bec1d8feefda869099403725cdfcc">mip::C</a>
-</li>
-<li>mip_3dm_adv_lowpass_filter_response
-: <a class="el" href="group__c__3dm__adv__lowpass__filter.html#ga6087ea0db1bd447c73b7634dc4c1588b">mip::C</a>
-</li>
 <li>mip_3dm_calibrated_sensor_ranges()
 : <a class="el" href="group__c__3dm__calibrated__sensor__ranges.html#ga0efb19c4c5acf042382c85dfe1f0f445">mip::C</a>
 </li>
@@ -132,9 +126,6 @@ $(function() {
 <li>mip_3dm_default_accel_bias()
 : <a class="el" href="group__c__3dm__accel__bias.html#ga2637087ec06fa944cf3940a16e0e39a8">mip::C</a>
 </li>
-<li>mip_3dm_default_adv_lowpass_filter()
-: <a class="el" href="group__c__3dm__adv__lowpass__filter.html#ga0d1d47064a2563956c642b0d2ec13b48">mip::C</a>
-</li>
 <li>mip_3dm_default_complementary_filter()
 : <a class="el" href="group__c__3dm__complementary__filter.html#gae2dae2f9f595e30bc07adb2f5225cdba">mip::C</a>
 </li>
@@ -168,6 +159,9 @@ $(function() {
 <li>mip_3dm_default_gyro_bias()
 : <a class="el" href="group__c__3dm__gyro__bias.html#gab02154d67f42559cf093a52543a438ed">mip::C</a>
 </li>
+<li>mip_3dm_default_imu_lowpass_filter()
+: <a class="el" href="group__c__3dm__imu__lowpass__filter.html#ga54c700184eeb10db3e69c3009cd50749">mip::C</a>
+</li>
 <li>mip_3dm_default_imu_message_format()
 : <a class="el" href="group__c__3dm__imu__message__format.html#ga9910751692582da5df7be8d202b1f4b9">mip::C</a>
 </li>
@@ -179,6 +173,9 @@ $(function() {
 </li>
 <li>mip_3dm_default_message_format()
 : <a class="el" href="group__c__3dm__message__format.html#ga749383826cb70678c99e5aa5416e8185">mip::C</a>
+</li>
+<li>mip_3dm_default_mip_cmd_3dm_lowpass_filter()
+: <a class="el" href="group__c__3dm__mip__cmd__3dm__lowpass__filter.html#gaeb2b32315aaac5a97bafe26b74016bca">mip::C</a>
 </li>
 <li>mip_3dm_default_nmea_message_format()
 : <a class="el" href="group__c__3dm__nmea__message__format.html#gaa8fd2c926271dd4d0530dec57ebaae8e">mip::C</a>
@@ -435,6 +432,12 @@ $(function() {
 <li>mip_3dm_imu_get_base_rate_response
 : <a class="el" href="group__c__3dm__imu__get__base__rate.html#ga72e7b9b76285eaef73292fd7f0ec1de7">mip::C</a>
 </li>
+<li>mip_3dm_imu_lowpass_filter_command
+: <a class="el" href="group__c__3dm__imu__lowpass__filter.html#gab4282628fd4d5f6d22ef36a15b00b3a5">mip::C</a>
+</li>
+<li>mip_3dm_imu_lowpass_filter_response
+: <a class="el" href="group__c__3dm__imu__lowpass__filter.html#ga78ae2d1bb3c909c9c96f47a1919096aa">mip::C</a>
+</li>
 <li>mip_3dm_imu_message_format_command
 : <a class="el" href="group__c__3dm__imu__message__format.html#gade6d459726a0cf811ee644bb3bacb9f1">mip::C</a>
 </li>
@@ -443,9 +446,6 @@ $(function() {
 </li>
 <li>mip_3dm_load_accel_bias()
 : <a class="el" href="group__c__3dm__accel__bias.html#gae23867e1687e6b5f1d681547553c2f32">mip::C</a>
-</li>
-<li>mip_3dm_load_adv_lowpass_filter()
-: <a class="el" href="group__c__3dm__adv__lowpass__filter.html#ga9ca1f921d5bfe1c26d7ba81d6314f60e">mip::C</a>
 </li>
 <li>mip_3dm_load_complementary_filter()
 : <a class="el" href="group__c__3dm__complementary__filter.html#ga32007dd37f0baa716a91deb15ba7fd3b">mip::C</a>
@@ -480,6 +480,9 @@ $(function() {
 <li>mip_3dm_load_gyro_bias()
 : <a class="el" href="group__c__3dm__gyro__bias.html#gab7c82f5d23a29bbd2d3133c683bd580d">mip::C</a>
 </li>
+<li>mip_3dm_load_imu_lowpass_filter()
+: <a class="el" href="group__c__3dm__imu__lowpass__filter.html#ga2d8f410e0c513829107ecdea09c21203">mip::C</a>
+</li>
 <li>mip_3dm_load_imu_message_format()
 : <a class="el" href="group__c__3dm__imu__message__format.html#gaa5ea35bdf22b0568e0ddae500f9f7ca6">mip::C</a>
 </li>
@@ -491,6 +494,9 @@ $(function() {
 </li>
 <li>mip_3dm_load_message_format()
 : <a class="el" href="group__c__3dm__message__format.html#ga8a51384a8f88c0d1b1ce2aea34a86164">mip::C</a>
+</li>
+<li>mip_3dm_load_mip_cmd_3dm_lowpass_filter()
+: <a class="el" href="group__c__3dm__mip__cmd__3dm__lowpass__filter.html#gac662d88bf9fd063890b76fcddce9ff7c">mip::C</a>
 </li>
 <li>mip_3dm_load_nmea_message_format()
 : <a class="el" href="group__c__3dm__nmea__message__format.html#gaeeb48239c3c1be24e0aaeaf9a56fe053">mip::C</a>
@@ -533,6 +539,12 @@ $(function() {
 </li>
 <li>mip_3dm_message_format_response
 : <a class="el" href="group__c__3dm__message__format.html#ga3614a369c50359b2e187e64a4cf77423">mip::C</a>
+</li>
+<li>mip_3dm_mip_cmd_3dm_lowpass_filter_command
+: <a class="el" href="group__c__3dm__mip__cmd__3dm__lowpass__filter.html#ga9d1058a468abb7310f7458c4fb1a14b6">mip::C</a>
+</li>
+<li>mip_3dm_mip_cmd_3dm_lowpass_filter_response
+: <a class="el" href="group__c__3dm__mip__cmd__3dm__lowpass__filter.html#ga07978cc238f9e31b23346ccad10ae044">mip::C</a>
 </li>
 <li>mip_3dm_nmea_message_format_command
 : <a class="el" href="group__c__3dm__nmea__message__format.html#ga7b0db120e83c11055f8de0e635407c4e">mip::C</a>
@@ -591,9 +603,6 @@ $(function() {
 <li>mip_3dm_read_accel_bias()
 : <a class="el" href="group__c__3dm__accel__bias.html#ga0cc15a665e9cebd31971dd20ff37704c">mip::C</a>
 </li>
-<li>mip_3dm_read_adv_lowpass_filter()
-: <a class="el" href="group__c__3dm__adv__lowpass__filter.html#ga40f101b72929299e09c6b8d26df500dc">mip::C</a>
-</li>
 <li>mip_3dm_read_complementary_filter()
 : <a class="el" href="group__c__3dm__complementary__filter.html#gabad56a467a6a07fb84f741dd9b86173a">mip::C</a>
 </li>
@@ -630,6 +639,9 @@ $(function() {
 <li>mip_3dm_read_gyro_bias()
 : <a class="el" href="group__c__3dm__gyro__bias.html#ga6c97b3bd87715e0d4828ffc05e1086ab">mip::C</a>
 </li>
+<li>mip_3dm_read_imu_lowpass_filter()
+: <a class="el" href="group__c__3dm__imu__lowpass__filter.html#ga0d58eed039efde1907d51994ecadbbdd">mip::C</a>
+</li>
 <li>mip_3dm_read_imu_message_format()
 : <a class="el" href="group__c__3dm__imu__message__format.html#ga89406289247ee07d1799c91a5d3bc930">mip::C</a>
 </li>
@@ -641,6 +653,9 @@ $(function() {
 </li>
 <li>mip_3dm_read_message_format()
 : <a class="el" href="group__c__3dm__message__format.html#gac640682130ed61d2ec796f052260aaff">mip::C</a>
+</li>
+<li>mip_3dm_read_mip_cmd_3dm_lowpass_filter()
+: <a class="el" href="group__c__3dm__mip__cmd__3dm__lowpass__filter.html#gaa7760b8a7f447d858c9f1ad548cdee25">mip::C</a>
 </li>
 <li>mip_3dm_read_nmea_message_format()
 : <a class="el" href="group__c__3dm__nmea__message__format.html#ga81c03878db5c3210e8d05da0f21b81c3">mip::C</a>
@@ -668,9 +683,6 @@ $(function() {
 </li>
 <li>mip_3dm_save_accel_bias()
 : <a class="el" href="group__c__3dm__accel__bias.html#ga56fd487c493b70cff09c8868a672ec50">mip::C</a>
-</li>
-<li>mip_3dm_save_adv_lowpass_filter()
-: <a class="el" href="group__c__3dm__adv__lowpass__filter.html#ga8bcdd9d3597d32fd8b63483110ca0c16">mip::C</a>
 </li>
 <li>mip_3dm_save_complementary_filter()
 : <a class="el" href="group__c__3dm__complementary__filter.html#gaa3e4b4710b0f05b3b5f8936af3877b0c">mip::C</a>
@@ -705,6 +717,9 @@ $(function() {
 <li>mip_3dm_save_gyro_bias()
 : <a class="el" href="group__c__3dm__gyro__bias.html#ga867ded725a0f472b848422af0bfdffd6">mip::C</a>
 </li>
+<li>mip_3dm_save_imu_lowpass_filter()
+: <a class="el" href="group__c__3dm__imu__lowpass__filter.html#ga7de5af1c8e6681d90ef3ba4489ce49a3">mip::C</a>
+</li>
 <li>mip_3dm_save_imu_message_format()
 : <a class="el" href="group__c__3dm__imu__message__format.html#gabff5c71dc2974d076bfa580185677687">mip::C</a>
 </li>
@@ -716,6 +731,9 @@ $(function() {
 </li>
 <li>mip_3dm_save_message_format()
 : <a class="el" href="group__c__3dm__message__format.html#gadfb55ea2984ea3820d2549e9615e2679">mip::C</a>
+</li>
+<li>mip_3dm_save_mip_cmd_3dm_lowpass_filter()
+: <a class="el" href="group__c__3dm__mip__cmd__3dm__lowpass__filter.html#gac2bdbbcd145fdb63b46e4478f386fac8">mip::C</a>
 </li>
 <li>mip_3dm_save_nmea_message_format()
 : <a class="el" href="group__c__3dm__nmea__message__format.html#ga1d0c5eb2f3194699d332616e45345af7">mip::C</a>
@@ -774,9 +792,6 @@ $(function() {
 <li>mip_3dm_write_accel_bias()
 : <a class="el" href="group__c__3dm__accel__bias.html#ga03280017eddabe798feb16e5396f2f41">mip::C</a>
 </li>
-<li>mip_3dm_write_adv_lowpass_filter()
-: <a class="el" href="group__c__3dm__adv__lowpass__filter.html#ga213bc4a71bad5ef137351ebf2c5d4603">mip::C</a>
-</li>
 <li>mip_3dm_write_complementary_filter()
 : <a class="el" href="group__c__3dm__complementary__filter.html#gae91b8c02930c070fb61f0c8fb4928a7f">mip::C</a>
 </li>
@@ -813,6 +828,9 @@ $(function() {
 <li>mip_3dm_write_gyro_bias()
 : <a class="el" href="group__c__3dm__gyro__bias.html#gad85d8ee49a3516982d1192d70ec64848">mip::C</a>
 </li>
+<li>mip_3dm_write_imu_lowpass_filter()
+: <a class="el" href="group__c__3dm__imu__lowpass__filter.html#ga3caf7e94ab3ef4eb39a81b99c7c4ab56">mip::C</a>
+</li>
 <li>mip_3dm_write_imu_message_format()
 : <a class="el" href="group__c__3dm__imu__message__format.html#gac1efbca4e58eb9420a7dbe9e610f29f3">mip::C</a>
 </li>
@@ -824,6 +842,9 @@ $(function() {
 </li>
 <li>mip_3dm_write_message_format()
 : <a class="el" href="group__c__3dm__message__format.html#gabdcf800986bfea4d3db4dc1b5abccf0d">mip::C</a>
+</li>
+<li>mip_3dm_write_mip_cmd_3dm_lowpass_filter()
+: <a class="el" href="group__c__3dm__mip__cmd__3dm__lowpass__filter.html#gaf74772f3316ea5c6756ed4a05f1ab5ea">mip::C</a>
 </li>
 <li>mip_3dm_write_nmea_message_format()
 : <a class="el" href="group__c__3dm__nmea__message__format.html#ga69ea7dd964148abab6e9248466aa36bc">mip::C</a>
@@ -939,9 +960,6 @@ $(function() {
 <li>MIP_CMD_DESC_3DM_ACCEL_BIAS
 : <a class="el" href="group__dm__commands__c.html#gga8a4dcb7bfdf7a4ba042cfc9950ffe232a99d61859c5a41e8bdc37ab60c1fd4f8a">mip::C</a>
 </li>
-<li>MIP_CMD_DESC_3DM_ADVANCED_DATA_FILTER
-: <a class="el" href="group__dm__commands__c.html#gga8a4dcb7bfdf7a4ba042cfc9950ffe232a0e6f6f72141bfdced6029a3128f4168b">mip::C</a>
-</li>
 <li>MIP_CMD_DESC_3DM_CALIBRATED_RANGES
 : <a class="el" href="group__dm__commands__c.html#gga8a4dcb7bfdf7a4ba042cfc9950ffe232ae12aca04a221536c82a586f417fe8d23">mip::C</a>
 </li>
@@ -1029,11 +1047,17 @@ $(function() {
 <li>MIP_CMD_DESC_3DM_HARD_IRON_OFFSET
 : <a class="el" href="group__dm__commands__c.html#gga8a4dcb7bfdf7a4ba042cfc9950ffe232a1b8dd1ca5277d941e680a7880ac49598">mip::C</a>
 </li>
+<li>MIP_CMD_DESC_3DM_IMU_LOWPASS_FILTER
+: <a class="el" href="group__dm__commands__c.html#gga8a4dcb7bfdf7a4ba042cfc9950ffe232a734cd90a34853b62e577218b131391da">mip::C</a>
+</li>
 <li>MIP_CMD_DESC_3DM_IMU_MESSAGE_FORMAT
 : <a class="el" href="group__dm__commands__c.html#gga8a4dcb7bfdf7a4ba042cfc9950ffe232a6e85a68d74a9bffd01d389394c73068c">mip::C</a>
 </li>
 <li>MIP_CMD_DESC_3DM_LEGACY_COMP_FILTER
 : <a class="el" href="group__dm__commands__c.html#gga8a4dcb7bfdf7a4ba042cfc9950ffe232aa00b7e597ca703f061fef52c76464cc7">mip::C</a>
+</li>
+<li>MIP_CMD_DESC_3DM_LOWPASS_FILTER
+: <a class="el" href="group__dm__commands__c.html#gga8a4dcb7bfdf7a4ba042cfc9950ffe232aafa64e993598a27e90a351c30cfc4f2f">mip::C</a>
 </li>
 <li>MIP_CMD_DESC_3DM_MESSAGE_FORMAT
 : <a class="el" href="group__dm__commands__c.html#gga8a4dcb7bfdf7a4ba042cfc9950ffe232ad75900d4c98aa03a9aadc1d4967dfa37">mip::C</a>
@@ -1325,9 +1349,6 @@ $(function() {
 </li>
 <li>MIP_CMD_DESC_GNSS_LIST_RECEIVERS
 : <a class="el" href="group__gnss__commands__c.html#gga4beab48f0a088e1771c46b96daada63aa7a95b84b8b187d538ef5cf30df596449">mip::C</a>
-</li>
-<li>MIP_CMD_DESC_GNSS_RECEIVER_SAFE_MODE
-: <a class="el" href="group__gnss__commands__c.html#gga4beab48f0a088e1771c46b96daada63aab1123f7ebfb848784e14dec2a8b3a3ac">mip::C</a>
 </li>
 <li>MIP_CMD_DESC_GNSS_RTK_DONGLE_CONFIGURATION
 : <a class="el" href="group__gnss__commands__c.html#gga4beab48f0a088e1771c46b96daada63aa02056f701a7b264d6ebbcddc6948167d">mip::C</a>
@@ -2866,6 +2887,12 @@ $(function() {
 <li>MIP_GNSS_GALILEO_ENABLE_E5B
 : <a class="el" href="group__gnss__commands__c.html#gga105ba58e05ff63890d4ffd9531ae083eafc1e48cb6652d89082c8d563b0dcc009">mip::C</a>
 </li>
+<li>mip_gnss_galileo_ephemeris_data
+: <a class="el" href="group__c__gnss__galileo__ephemeris.html#ga7647573fe1b32b99482040fc01df2062">mip::C</a>
+</li>
+<li>mip_gnss_galileo_ephemeris_data_valid_flags
+: <a class="el" href="group__c__gnss__galileo__ephemeris.html#gacdd32e02f47ae3759984341943ebd7cd">mip::C</a>
+</li>
 <li>mip_gnss_galileo_iono_corr_data
 : <a class="el" href="group__c__gnss__galileo__iono__corr.html#ga711a75a9e8f1fb9c0d6ebae1f2440e27">mip::C</a>
 </li>
@@ -2970,12 +2997,6 @@ $(function() {
 </li>
 <li>mip_gnss_receiver_info_response
 : <a class="el" href="group__c__gnss__receiver__info.html#gafd8d67c5f9797d81b56658b047e42ce8">mip::C</a>
-</li>
-<li>mip_gnss_receiver_safe_mode()
-: <a class="el" href="group__c__gnss__receiver__safe__mode.html#ga28909e4f442e766d820179601ddd8061">mip::C</a>
-</li>
-<li>mip_gnss_receiver_safe_mode_command
-: <a class="el" href="group__c__gnss__receiver__safe__mode.html#ga52b50733f72dd2431a7abf12bdb853a6">mip::C</a>
 </li>
 <li>mip_gnss_rf_error_detection_data
 : <a class="el" href="group__c__gnss__rf__error__detection.html#gac23465e8b9d0e133a9fe3096fe488bf7">mip::C</a>
@@ -3515,6 +3536,9 @@ $(function() {
 <li>MIP_REPLY_DESC_3DM_LEGACY_COMP_FILTER
 : <a class="el" href="group__dm__commands__c.html#gga8a4dcb7bfdf7a4ba042cfc9950ffe232a100a7ce0f65c77d69fd3c1471760b28f">mip::C</a>
 </li>
+<li>MIP_REPLY_DESC_3DM_LOWPASS_FILTER
+: <a class="el" href="group__dm__commands__c.html#gga8a4dcb7bfdf7a4ba042cfc9950ffe232aa860e4695c1249275ccb74b87bb9e74e">mip::C</a>
+</li>
 <li>MIP_REPLY_DESC_3DM_MESSAGE_FORMAT
 : <a class="el" href="group__dm__commands__c.html#gga8a4dcb7bfdf7a4ba042cfc9950ffe232a97d67fa7e480fc8379895cddaa45171e">mip::C</a>
 </li>
@@ -3882,7 +3906,7 @@ $(function() {
 : <a class="el" href="group__c__rtk__connected__device__type.html#gad928e8b66b3dc039d4548544bf07f4a1">mip::C</a>
 </li>
 <li>mip_rtk_service_status()
-: <a class="el" href="group__c__rtk__service__status.html#gab4d920c22fb1de3a188e3d0657d73160">mip::C</a>
+: <a class="el" href="group__c__rtk__service__status.html#gacefb6d49b7ed75852d78923d0aec9ad1">mip::C</a>
 </li>
 <li>mip_rtk_service_status_command
 : <a class="el" href="group__c__rtk__service__status.html#gaa9f7caf403700bf5a8bad8908121ffc4">mip::C</a>

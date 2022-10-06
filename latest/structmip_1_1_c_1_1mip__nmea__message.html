@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-8-g9a736a2</span>
+   &#160;<span id="projectnumber">v1.0.0-12-gb085152</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -80,16 +80,16 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:aa078953eadce6172157de884f49f924c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__dm__commands__c.html#ga1543dd08e97014f79b722966f9f5c1df">mip_nmea_message_message_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_c_1_1mip__nmea__message.html#aa078953eadce6172157de884f49f924c">message_id</a></td></tr>
-<tr class="memdesc:aa078953eadce6172157de884f49f924c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Message type (GGA, GLL, etc)  <a href="structmip_1_1_c_1_1mip__nmea__message.html#aa078953eadce6172157de884f49f924c">More...</a><br /></td></tr>
+<tr class="memdesc:aa078953eadce6172157de884f49f924c"><td class="mdescLeft">&#160;</td><td class="mdescRight">NMEA sentence type.  <a href="structmip_1_1_c_1_1mip__nmea__message.html#aa078953eadce6172157de884f49f924c">More...</a><br /></td></tr>
 <tr class="separator:aa078953eadce6172157de884f49f924c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ab9d1d8414e55f3ec9948525ed8f050"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__dm__commands__c.html#gae7819348ca23a3f681d003d3eb1fc1a1">mip_nmea_message_talker_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_c_1_1mip__nmea__message.html#a6ab9d1d8414e55f3ec9948525ed8f050">talker_id</a></td></tr>
-<tr class="memdesc:a6ab9d1d8414e55f3ec9948525ed8f050"><td class="mdescLeft">&#160;</td><td class="mdescRight">Talker ID (GN, GP, etc)  <a href="structmip_1_1_c_1_1mip__nmea__message.html#a6ab9d1d8414e55f3ec9948525ed8f050">More...</a><br /></td></tr>
+<tr class="memdesc:a6ab9d1d8414e55f3ec9948525ed8f050"><td class="mdescLeft">&#160;</td><td class="mdescRight">NMEA talker ID. Ignored for proprietary sentences.  <a href="structmip_1_1_c_1_1mip__nmea__message.html#a6ab9d1d8414e55f3ec9948525ed8f050">More...</a><br /></td></tr>
 <tr class="separator:a6ab9d1d8414e55f3ec9948525ed8f050"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a953a13a808286b30350cb1c42708d627"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_c_1_1mip__nmea__message.html#a953a13a808286b30350cb1c42708d627">source_desc_set</a></td></tr>
-<tr class="memdesc:a953a13a808286b30350cb1c42708d627"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data source descriptor set (Filter, GNSS, etc)  <a href="structmip_1_1_c_1_1mip__nmea__message.html#a953a13a808286b30350cb1c42708d627">More...</a><br /></td></tr>
+<tr class="memdesc:a953a13a808286b30350cb1c42708d627"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data descriptor set where the data will be sourced. Available options depend on the sentence.  <a href="structmip_1_1_c_1_1mip__nmea__message.html#a953a13a808286b30350cb1c42708d627">More...</a><br /></td></tr>
 <tr class="separator:a953a13a808286b30350cb1c42708d627"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad777b7c13363764f7c6994e9b74f3df3"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_c_1_1mip__nmea__message.html#ad777b7c13363764f7c6994e9b74f3df3">decimation</a></td></tr>
-<tr class="memdesc:ad777b7c13363764f7c6994e9b74f3df3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decimation from the base rate of the source descriptor set.  <a href="structmip_1_1_c_1_1mip__nmea__message.html#ad777b7c13363764f7c6994e9b74f3df3">More...</a><br /></td></tr>
+<tr class="memdesc:ad777b7c13363764f7c6994e9b74f3df3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decimation from the base rate for source_desc_set. Frequency is limited to 10 Hz or the base rate, whichever is lower.  <a href="structmip_1_1_c_1_1mip__nmea__message.html#ad777b7c13363764f7c6994e9b74f3df3">More...</a><br /></td></tr>
 <tr class="separator:ad777b7c13363764f7c6994e9b74f3df3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -105,7 +105,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Decimation from the base rate of the source descriptor set. </p>
+<p>Decimation from the base rate for source_desc_set. Frequency is limited to 10 Hz or the base rate, whichever is lower. </p>
 
 </div>
 </div>
@@ -121,7 +121,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Message type (GGA, GLL, etc) </p>
+<p>NMEA sentence type. </p>
 
 </div>
 </div>
@@ -137,7 +137,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Data source descriptor set (Filter, GNSS, etc) </p>
+<p>Data descriptor set where the data will be sourced. Available options depend on the sentence. </p>
 
 </div>
 </div>
@@ -153,7 +153,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Talker ID (GN, GP, etc) </p>
+<p>NMEA talker ID. Ignored for proprietary sentences. </p>
 
 </div>
 </div>

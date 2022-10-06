@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-8-g9a736a2</span>
+   &#160;<span id="projectnumber">v1.0.0-12-gb085152</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -107,7 +107,13 @@ Functions</h2></td></tr>
 <tr class="separator:ga9ed6b09491106fe8efbaace3916ceb91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Lever arm offset with respect to the sensor for the indicated point of reference. This is used to change the location of the indicated point of reference, and will affect filter position and velocity outputs. Changing this setting from default will result in a global position offset that depends on vehicle attitude, and a velocity offset that depends on vehicle attitude and angular rate. The lever arm is defined by a 3-element vector that points from the sensor to the desired reference point, with (x,y,z) components given in the vehicle's reference frame. Note, if the reference point selector is set to VEH (1), this setting will affect the following data fields: (0x82, 0x01), (0x82, 0x02), (0x82, 0x40), (0x82, 0x41), and (0x82, 42) </p>
+<p>Lever arm offset with respect to the sensor for the indicated point of reference. This is used to change the location of the indicated point of reference, and will affect filter position and velocity outputs. Changing this setting from default will result in a global position offset that depends on vehicle attitude, and a velocity offset that depends on vehicle attitude and angular rate. <br  />
+The lever arm is defined by a 3-element vector that points from the sensor to the desired reference point, with (x,y,z) components given in the vehicle's reference frame. <br  />
+<br  />
+Note, if the reference point selector is set to VEH (1), this setting will affect the following data fields: (0x82, 0x01), (0x82, 0x02), (0x82, 0x40), (0x82, 0x41), and (0x82, 42) <br  />
+<br  />
+<b>Offset Limits</b> <br  />
+Reference Point VEH (1): 10 m magnitude (default) </p>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ga9ed6b09491106fe8efbaace3916ceb91"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga9ed6b09491106fe8efbaace3916ceb91">&#9670;&nbsp;</a></span>defaultRefPointLeverArm()</h2>

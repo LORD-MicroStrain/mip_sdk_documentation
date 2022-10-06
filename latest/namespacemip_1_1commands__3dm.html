@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-8-g9a736a2</span>
+   &#160;<span id="projectnumber">v1.0.0-12-gb085152</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -120,7 +120,7 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_gnss_time_assistance.html">GnssTimeAssistance</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_adv_lowpass_filter.html">AdvLowpassFilter</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_imu_lowpass_filter.html">ImuLowpassFilter</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_pps_source.html">PpsSource</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,6 +163,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_sensor_range.html">SensorRange</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_calibrated_sensor_ranges.html">CalibratedSensorRanges</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_mip_cmd3dm_lowpass_filter.html">MipCmd3dmLowpassFilter</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
@@ -228,75 +230,78 @@ Enumerations</h2></td></tr>
 , <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a1c276033050e2505b57ce4cea71d4fed">CMD_GPIO_STATE</a> = 0x42
 , <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a1a9cde36910c59c368c6ebe9fbe40fd0">CMD_ODOMETER_CONFIG</a> = 0x43
 , <br />
-&#160;&#160;<a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a35ba75db204dda7b9a0ab9c0f8f6beb4">CMD_ADVANCED_DATA_FILTER</a> = 0x50
+&#160;&#160;<a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073aac35505392b879f27adb082b4bae8a3e">CMD_IMU_LOWPASS_FILTER</a> = 0x50
 , <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073afa3910517aebb7bf46d663ccacd995f8">CMD_LEGACY_COMP_FILTER</a> = 0x51
 , <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a34ced1189abb5cc4dc5664d37152c623">CMD_SENSOR_RANGE</a> = 0x52
 , <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a8782cf0fe55feff02a46a11c62bbb276">CMD_CALIBRATED_RANGES</a> = 0x53
 , <br />
-&#160;&#160;<a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073ac0899e063089239ab3008fafe7b5bad8">CMD_DATASTREAM_FORMAT</a> = 0x60
+&#160;&#160;<a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073af3f0ca998109c3e04b9da06e6f149edb">CMD_LOWPASS_FILTER</a> = 0x54
+, <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073ac0899e063089239ab3008fafe7b5bad8">CMD_DATASTREAM_FORMAT</a> = 0x60
 , <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073ab15e06909c994622dfd8016be9a04e7e">CMD_DEVICE_POWER_STATE</a> = 0x61
 , <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a2e6c8a031e82267b5395e670d9b4104f">CMD_SAVE_RESTORE_GPS_SETTINGS</a> = 0x62
-, <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a02adfb2d2974b25e24eda96076ce45f2">CMD_DEVICE_SETTINGS</a> = 0x63
 , <br />
-&#160;&#160;<a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a61d127adb8246c97a1e7914d8915e736">CMD_RAW_CLIP_SETTINGS</a> = 0x70
+&#160;&#160;<a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a02adfb2d2974b25e24eda96076ce45f2">CMD_DEVICE_SETTINGS</a> = 0x63
+, <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a61d127adb8246c97a1e7914d8915e736">CMD_RAW_CLIP_SETTINGS</a> = 0x70
 , <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a259c040789062b5583b79302900e2729">REPLY_IMU_MESSAGE_FORMAT</a> = 0x80
 , <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a4040ea1c08d148e725f32410d9c1cb30">REPLY_GNSS_MESSAGE_FORMAT</a> = 0x81
-, <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a9973c7517cd1e5f90e3a29b7c018f643">REPLY_FILTER_MESSAGE_FORMAT</a> = 0x82
 , <br />
-&#160;&#160;<a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a752c69448453c94b6fe26b6552ad99a8">REPLY_IMU_BASE_RATE</a> = 0x83
+&#160;&#160;<a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a9973c7517cd1e5f90e3a29b7c018f643">REPLY_FILTER_MESSAGE_FORMAT</a> = 0x82
+, <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a752c69448453c94b6fe26b6552ad99a8">REPLY_IMU_BASE_RATE</a> = 0x83
 , <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073ad0c1d46e82627007d1ba8542d6357ce6">REPLY_GNSS_BASE_RATE</a> = 0x84
 , <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a95fbf786f7451bded34e4b777261823a">REPLY_DATASTREAM_ENABLE</a> = 0x85
-, <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a66ea99737994c893a8108bcc778ca3db">REPLY_IMU_SIGNAL_SETTINGS</a> = 0x86
 , <br />
-&#160;&#160;<a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a433400a3d1fd3360e1cdbe0dc63ad034">REPLY_UART_BAUDRATE</a> = 0x87
+&#160;&#160;<a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a66ea99737994c893a8108bcc778ca3db">REPLY_IMU_SIGNAL_SETTINGS</a> = 0x86
+, <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a433400a3d1fd3360e1cdbe0dc63ad034">REPLY_UART_BAUDRATE</a> = 0x87
 , <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073af7aa82fa088c61bd1bbce3d71af5de7e">REPLY_DATASTREAM_FORMAT</a> = 0x88
 , <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073aa863c2e0ad8c05212010dbce618f2716">REPLY_POWER_STATE</a> = 0x89
-, <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a7dc815c72762caa9a1e4c3e34e6a0393">REPLY_FILTER_BASE_RATE</a> = 0x8A
 , <br />
-&#160;&#160;<a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a9b576eeb006999a64d1a0ecfb5a500fb">REPLY_ADVANCED_DATA_FILTER</a> = 0x8B
+&#160;&#160;<a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a7dc815c72762caa9a1e4c3e34e6a0393">REPLY_FILTER_BASE_RATE</a> = 0x8A
+, <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a9b576eeb006999a64d1a0ecfb5a500fb">REPLY_ADVANCED_DATA_FILTER</a> = 0x8B
 , <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a8055e36576d9e4938e4170b3af44ebdf">REPLY_POLL_DATA</a> = 0x8D
 , <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a57419ccf06f33dd2318553d8142742a2">REPLY_BASE_RATE</a> = 0x8E
-, <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a390740794dad9b49da47225e2a4ecc11">REPLY_MESSAGE_FORMAT</a> = 0x8F
 , <br />
-&#160;&#160;<a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a306674e6bde52455dbfa099508878383">REPLY_COMMUNICATIONS_MODE</a> = 0x91
+&#160;&#160;<a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a390740794dad9b49da47225e2a4ecc11">REPLY_MESSAGE_FORMAT</a> = 0x8F
+, <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a306674e6bde52455dbfa099508878383">REPLY_COMMUNICATIONS_MODE</a> = 0x91
 , <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073ac359948c5a6b611a85cf0e263b31864e">REPLY_GNSS_DYNAMICS_MODE</a> = 0x92
 , <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073ab528fa346dfc12e002970dbdd65b0612">REPLY_IMU_TIMESTAMP_VALUE</a> = 0x93
-, <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a2ff64d89f083664e30c0e5747382f763">REPLY_IMU_BASIC_STATUS</a> = 0x94
 , <br />
-&#160;&#160;<a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073adf9d5f2c7dbba66a4fd17a6ca3a93360">REPLY_IMU_ADVANCED_STATUS</a> = 0x95
+&#160;&#160;<a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a2ff64d89f083664e30c0e5747382f763">REPLY_IMU_BASIC_STATUS</a> = 0x94
+, <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073adf9d5f2c7dbba66a4fd17a6ca3a93360">REPLY_IMU_ADVANCED_STATUS</a> = 0x95
 , <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a899b029f5c34362b73b9c1a9ddb0d89e">REPLY_RAW_CLIP_SETTINGS</a> = 0x96
 , <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a1eeaa38b2ef2bfe23f1b23e726f065b5">REPLY_LEGACY_COMP_FILTER</a> = 0x97
-, <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a46cae0d390b7fc451861f8dcba1d20a8">REPLY_ACCEL_BIAS_VECTOR</a> = 0x9A
 , <br />
-&#160;&#160;<a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a2a0e1dd4fb2af97aa515e5c6fc8ec5dd">REPLY_GYRO_BIAS_VECTOR</a> = 0x9B
+&#160;&#160;<a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a46cae0d390b7fc451861f8dcba1d20a8">REPLY_ACCEL_BIAS_VECTOR</a> = 0x9A
+, <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a2a0e1dd4fb2af97aa515e5c6fc8ec5dd">REPLY_GYRO_BIAS_VECTOR</a> = 0x9B
 , <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a6c65f67948a5d1fb1920cdf8870cbb0d">REPLY_HARD_IRON_OFFSET_VECTOR</a> = 0x9C
 , <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073aeb3916fb2d15b13c1ad8167c8d712dda">REPLY_SOFT_IRON_COMP_MATRIX</a> = 0x9D
-, <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a3c4498f732e53c78f4f7f6146163b08a">REPLY_CONING_AND_SCULLING_ENABLE</a> = 0x9E
 , <br />
-&#160;&#160;<a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073ad47065c430e8a3905a825888842bcd14">REPLY_GNSS_CONSTELLATION_SETTINGS</a> = 0xA0
+&#160;&#160;<a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a3c4498f732e53c78f4f7f6146163b08a">REPLY_CONING_AND_SCULLING_ENABLE</a> = 0x9E
+, <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073ad47065c430e8a3905a825888842bcd14">REPLY_GNSS_CONSTELLATION_SETTINGS</a> = 0xA0
 , <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a4e230dfe5429fe118f18981fdaec0e52">REPLY_GNSS_SBAS_SETTINGS</a> = 0xA1
 , <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073adc49e29e8d4dfc9095d5d6d5b4a84308">REPLY_GNSS_ASSISTED_FIX_SETTINGS</a> = 0xA2
-, <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073aad590d283f7ee53200d44cee1bc291d6">REPLY_GNSS_TIME_ASSISTANCE</a> = 0xA3
 , <br />
-&#160;&#160;<a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a61935c9a64e2e27ee2fee18e3fa1466c">REPLY_SENSOR2VEHICLE_TRANSFORM_EUL</a> = 0xB1
+&#160;&#160;<a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073aad590d283f7ee53200d44cee1bc291d6">REPLY_GNSS_TIME_ASSISTANCE</a> = 0xA3
+, <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a61935c9a64e2e27ee2fee18e3fa1466c">REPLY_SENSOR2VEHICLE_TRANSFORM_EUL</a> = 0xB1
 , <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a30b4cbc7c8562e3bd1f39752941c6a1b">REPLY_SENSOR2VEHICLE_TRANSFORM_QUAT</a> = 0xB2
 , <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a1237c83ed0cde63ba03dd7cfca650dcd">REPLY_SENSOR2VEHICLE_TRANSFORM_DCM</a> = 0xB3
-, <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073af39efa2ca1b6bf6695452ca97fbc9a53">REPLY_EVENT_SUPPORT</a> = 0xB4
 , <br />
-&#160;&#160;<a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a08d19643823736b3e4b5a8a392f5f50d">REPLY_EVENT_CONTROL</a> = 0xB5
+&#160;&#160;<a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073af39efa2ca1b6bf6695452ca97fbc9a53">REPLY_EVENT_SUPPORT</a> = 0xB4
+, <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a08d19643823736b3e4b5a8a392f5f50d">REPLY_EVENT_CONTROL</a> = 0xB5
 , <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a5c762181c27eb8916f4b54cef84dda64">REPLY_EVENT_TRIGGER_STATUS</a> = 0xB6
 , <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a39601abe409164d158b75ffa2aca506e">REPLY_EVENT_ACTION_STATUS</a> = 0xB7
-, <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073ac4d6beb13f82dcb32f0f8552b6841116">REPLY_EVENT_TRIGGER_CONFIG</a> = 0xB8
 , <br />
-&#160;&#160;<a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a5b6684dd7653a5aa9ab540e35c3f0ba9">REPLY_EVENT_ACTION_CONFIG</a> = 0xB9
+&#160;&#160;<a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073ac4d6beb13f82dcb32f0f8552b6841116">REPLY_EVENT_TRIGGER_CONFIG</a> = 0xB8
+, <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a5b6684dd7653a5aa9ab540e35c3f0ba9">REPLY_EVENT_ACTION_CONFIG</a> = 0xB9
 , <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a73f43f1fa26f72ba02fd3bcf2bd3324a">REPLY_NMEA_MESSAGE_FORMAT</a> = 0x8C
 , <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a0ddb4c175c27fd486893ff0ffd918a11">REPLY_PPS_SOURCE</a> = 0xA8
-, <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073ad161028809d45d45494d9b5575b95f09">REPLY_GPIO_CONFIG</a> = 0xC1
 , <br />
-&#160;&#160;<a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073af057c64b11494d79644c5cfac8c66d07">REPLY_GPIO_STATE</a> = 0xC2
+&#160;&#160;<a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073ad161028809d45d45494d9b5575b95f09">REPLY_GPIO_CONFIG</a> = 0xC1
+, <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073af057c64b11494d79644c5cfac8c66d07">REPLY_GPIO_STATE</a> = 0xC2
 , <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a323d7af71925be9be7a01529764b18be">REPLY_ODOMETER_CONFIG</a> = 0xC3
 , <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a05366858d0af01a78779092ebe9bb4a0">REPLY_SENSOR_RANGE</a> = 0xD2
-, <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073aba7d9fedf0692ad68634f64eded27f0c">REPLY_CALIBRATED_RANGES</a> = 0xD3
+, <br />
+&#160;&#160;<a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073aba7d9fedf0692ad68634f64eded27f0c">REPLY_CALIBRATED_RANGES</a> = 0xD3
+, <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073ad0d3db04d742da65044f77390877864e">REPLY_LOWPASS_FILTER</a> = 0xD4
 <br />
  }</td></tr>
 <tr class="separator:gabc83d28da1b1e334732e8a740c1cf073"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -559,24 +564,24 @@ Functions</h2></td></tr>
 <tr class="separator:ga750ee132bc49db99ba052d8fd311c9ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae8c538d5ba79cab1499f9d5bca5ed570"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__gnss__time__assistance.html#gae8c538d5ba79cab1499f9d5bca5ed570">readGnssTimeAssistance</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, double *towOut, uint16_t *weekNumberOut, float *accuracyOut)</td></tr>
 <tr class="separator:gae8c538d5ba79cab1499f9d5bca5ed570"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga77c2558f3b86b61a0206ea71acf76601"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__adv__lowpass__filter.html#ga77c2558f3b86b61a0206ea71acf76601">insert</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, const <a class="el" href="structmip_1_1commands__3dm_1_1_adv_lowpass_filter.html">AdvLowpassFilter</a> &amp;self)</td></tr>
-<tr class="separator:ga77c2558f3b86b61a0206ea71acf76601"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga313474f37b53e22e9382109963d3b8b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__adv__lowpass__filter.html#ga313474f37b53e22e9382109963d3b8b3">extract</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, <a class="el" href="structmip_1_1commands__3dm_1_1_adv_lowpass_filter.html">AdvLowpassFilter</a> &amp;self)</td></tr>
-<tr class="separator:ga313474f37b53e22e9382109963d3b8b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2dcc0a97347e719396f0dbce66bc910f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__adv__lowpass__filter.html#ga2dcc0a97347e719396f0dbce66bc910f">insert</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, const <a class="el" href="structmip_1_1commands__3dm_1_1_adv_lowpass_filter_1_1_response.html">AdvLowpassFilter::Response</a> &amp;self)</td></tr>
-<tr class="separator:ga2dcc0a97347e719396f0dbce66bc910f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6099652105e53b877ca41fa6dadebcfa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__adv__lowpass__filter.html#ga6099652105e53b877ca41fa6dadebcfa">extract</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, <a class="el" href="structmip_1_1commands__3dm_1_1_adv_lowpass_filter_1_1_response.html">AdvLowpassFilter::Response</a> &amp;self)</td></tr>
-<tr class="separator:ga6099652105e53b877ca41fa6dadebcfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga950ec45851395e0123f9b7973b432b6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__adv__lowpass__filter.html#ga950ec45851395e0123f9b7973b432b6d">writeAdvLowpassFilter</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, uint8_t targetDescriptor, bool enable, bool manual, uint16_t frequency, uint8_t reserved)</td></tr>
-<tr class="separator:ga950ec45851395e0123f9b7973b432b6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2c34f8f29bb114992e3ffc3a17f44420"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__adv__lowpass__filter.html#ga2c34f8f29bb114992e3ffc3a17f44420">readAdvLowpassFilter</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, uint8_t targetDescriptor, bool *enableOut, bool *manualOut, uint16_t *frequencyOut, uint8_t *reservedOut)</td></tr>
-<tr class="separator:ga2c34f8f29bb114992e3ffc3a17f44420"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga83f71568b0815e3692848d9de9444fda"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__adv__lowpass__filter.html#ga83f71568b0815e3692848d9de9444fda">saveAdvLowpassFilter</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, uint8_t targetDescriptor)</td></tr>
-<tr class="separator:ga83f71568b0815e3692848d9de9444fda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad75e1fe569875403341a3aee39d6924a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__adv__lowpass__filter.html#gad75e1fe569875403341a3aee39d6924a">loadAdvLowpassFilter</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, uint8_t targetDescriptor)</td></tr>
-<tr class="separator:gad75e1fe569875403341a3aee39d6924a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4e6cf0ab84323859eb615de6f5da76a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__adv__lowpass__filter.html#ga4e6cf0ab84323859eb615de6f5da76a3">defaultAdvLowpassFilter</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, uint8_t targetDescriptor)</td></tr>
-<tr class="separator:ga4e6cf0ab84323859eb615de6f5da76a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3677b914172b07d4df2fc19aec28caa1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__imu__lowpass__filter.html#ga3677b914172b07d4df2fc19aec28caa1">insert</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, const <a class="el" href="structmip_1_1commands__3dm_1_1_imu_lowpass_filter.html">ImuLowpassFilter</a> &amp;self)</td></tr>
+<tr class="separator:ga3677b914172b07d4df2fc19aec28caa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga65e2a2c453645f1de6360e545275a345"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__imu__lowpass__filter.html#ga65e2a2c453645f1de6360e545275a345">extract</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, <a class="el" href="structmip_1_1commands__3dm_1_1_imu_lowpass_filter.html">ImuLowpassFilter</a> &amp;self)</td></tr>
+<tr class="separator:ga65e2a2c453645f1de6360e545275a345"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7ddd39c1afe2f926865abf7a0640c6b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__imu__lowpass__filter.html#ga7ddd39c1afe2f926865abf7a0640c6b3">insert</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, const <a class="el" href="structmip_1_1commands__3dm_1_1_imu_lowpass_filter_1_1_response.html">ImuLowpassFilter::Response</a> &amp;self)</td></tr>
+<tr class="separator:ga7ddd39c1afe2f926865abf7a0640c6b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga916644297755ff4863eeebde1709d19d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__imu__lowpass__filter.html#ga916644297755ff4863eeebde1709d19d">extract</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, <a class="el" href="structmip_1_1commands__3dm_1_1_imu_lowpass_filter_1_1_response.html">ImuLowpassFilter::Response</a> &amp;self)</td></tr>
+<tr class="separator:ga916644297755ff4863eeebde1709d19d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1e80540c8da7c19178a2765f1bcf338f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__imu__lowpass__filter.html#ga1e80540c8da7c19178a2765f1bcf338f">writeImuLowpassFilter</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, uint8_t targetDescriptor, bool enable, bool manual, uint16_t frequency, uint8_t reserved)</td></tr>
+<tr class="separator:ga1e80540c8da7c19178a2765f1bcf338f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2c9b26d2de504f747eb806473fd8df2f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__imu__lowpass__filter.html#ga2c9b26d2de504f747eb806473fd8df2f">readImuLowpassFilter</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, uint8_t targetDescriptor, bool *enableOut, bool *manualOut, uint16_t *frequencyOut, uint8_t *reservedOut)</td></tr>
+<tr class="separator:ga2c9b26d2de504f747eb806473fd8df2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8de54cd8863c3175d45eb5b07a098d1f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__imu__lowpass__filter.html#ga8de54cd8863c3175d45eb5b07a098d1f">saveImuLowpassFilter</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, uint8_t targetDescriptor)</td></tr>
+<tr class="separator:ga8de54cd8863c3175d45eb5b07a098d1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5c28be8d974b4705cc1556d313fff9fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__imu__lowpass__filter.html#ga5c28be8d974b4705cc1556d313fff9fb">loadImuLowpassFilter</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, uint8_t targetDescriptor)</td></tr>
+<tr class="separator:ga5c28be8d974b4705cc1556d313fff9fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga423659a240f83638335eb731dae561ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__imu__lowpass__filter.html#ga423659a240f83638335eb731dae561ea">defaultImuLowpassFilter</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, uint8_t targetDescriptor)</td></tr>
+<tr class="separator:ga423659a240f83638335eb731dae561ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gada52a3a54a0cdbb0890481ad558f2bb8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__pps__source.html#gada52a3a54a0cdbb0890481ad558f2bb8">insert</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, const <a class="el" href="structmip_1_1commands__3dm_1_1_pps_source.html">PpsSource</a> &amp;self)</td></tr>
 <tr class="separator:gada52a3a54a0cdbb0890481ad558f2bb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2820ddb256aecba67e28789529957290"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__pps__source.html#ga2820ddb256aecba67e28789529957290">extract</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, <a class="el" href="structmip_1_1commands__3dm_1_1_pps_source.html">PpsSource</a> &amp;self)</td></tr>
@@ -945,6 +950,24 @@ Functions</h2></td></tr>
 <tr class="separator:gae27e9a826fce8265f06d00f5aa7a1bc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga96dc270d6e921318c03f7977d9110536"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__calibrated__sensor__ranges.html#ga96dc270d6e921318c03f7977d9110536">calibratedSensorRanges</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, <a class="el" href="group__dm__commands__cpp.html#gad5372f4174629781926a83e03d9bcfbc">SensorRangeType</a> sensor, uint8_t *numRangesOut, uint8_t numRangesOutMax, <a class="el" href="structmip_1_1commands__3dm_1_1_calibrated_sensor_ranges_1_1_entry.html">CalibratedSensorRanges::Entry</a> *rangesOut)</td></tr>
 <tr class="separator:ga96dc270d6e921318c03f7977d9110536"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9860cb365f8b7ef1dc6d5704aa5ff476"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__mip__cmd__3dm__lowpass__filter.html#ga9860cb365f8b7ef1dc6d5704aa5ff476">insert</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, const <a class="el" href="structmip_1_1commands__3dm_1_1_mip_cmd3dm_lowpass_filter.html">MipCmd3dmLowpassFilter</a> &amp;self)</td></tr>
+<tr class="separator:ga9860cb365f8b7ef1dc6d5704aa5ff476"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7d1241befcabab5869fa009b24fccc05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__mip__cmd__3dm__lowpass__filter.html#ga7d1241befcabab5869fa009b24fccc05">extract</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, <a class="el" href="structmip_1_1commands__3dm_1_1_mip_cmd3dm_lowpass_filter.html">MipCmd3dmLowpassFilter</a> &amp;self)</td></tr>
+<tr class="separator:ga7d1241befcabab5869fa009b24fccc05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabb873dfac25205c1c0c1105a7abd46a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__mip__cmd__3dm__lowpass__filter.html#gabb873dfac25205c1c0c1105a7abd46a2">insert</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, const <a class="el" href="structmip_1_1commands__3dm_1_1_mip_cmd3dm_lowpass_filter_1_1_response.html">MipCmd3dmLowpassFilter::Response</a> &amp;self)</td></tr>
+<tr class="separator:gabb873dfac25205c1c0c1105a7abd46a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5efe88a7f363c2a393f416c3618f4837"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__mip__cmd__3dm__lowpass__filter.html#ga5efe88a7f363c2a393f416c3618f4837">extract</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, <a class="el" href="structmip_1_1commands__3dm_1_1_mip_cmd3dm_lowpass_filter_1_1_response.html">MipCmd3dmLowpassFilter::Response</a> &amp;self)</td></tr>
+<tr class="separator:ga5efe88a7f363c2a393f416c3618f4837"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaca353518e8553f67b207a7548dbd22c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__mip__cmd__3dm__lowpass__filter.html#gaca353518e8553f67b207a7548dbd22c7">writeMipCmd3dmLowpassFilter</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, uint8_t descSet, uint8_t fieldDesc, bool enable, bool manual, float frequency)</td></tr>
+<tr class="separator:gaca353518e8553f67b207a7548dbd22c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6f82ad99d8df40ccdac0890e19f1a729"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__mip__cmd__3dm__lowpass__filter.html#ga6f82ad99d8df40ccdac0890e19f1a729">readMipCmd3dmLowpassFilter</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, uint8_t descSet, uint8_t fieldDesc, bool *enableOut, bool *manualOut, float *frequencyOut)</td></tr>
+<tr class="separator:ga6f82ad99d8df40ccdac0890e19f1a729"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9f90cf990f1b2433a7173369c6565104"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__mip__cmd__3dm__lowpass__filter.html#ga9f90cf990f1b2433a7173369c6565104">saveMipCmd3dmLowpassFilter</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, uint8_t descSet, uint8_t fieldDesc)</td></tr>
+<tr class="separator:ga9f90cf990f1b2433a7173369c6565104"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2e93c4790a219aa5f1c03ee61a6f82e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__mip__cmd__3dm__lowpass__filter.html#ga2e93c4790a219aa5f1c03ee61a6f82e4">loadMipCmd3dmLowpassFilter</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, uint8_t descSet, uint8_t fieldDesc)</td></tr>
+<tr class="separator:ga2e93c4790a219aa5f1c03ee61a6f82e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabdc5fb49213ac8cff23bc1527dc2044e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__mip__cmd__3dm__lowpass__filter.html#gabdc5fb49213ac8cff23bc1527dc2044e">defaultMipCmd3dmLowpassFilter</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, uint8_t descSet, uint8_t fieldDesc)</td></tr>
+<tr class="separator:gabdc5fb49213ac8cff23bc1527dc2044e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

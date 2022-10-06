@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-8-g9a736a2</span>
+   &#160;<span id="projectnumber">v1.0.0-12-gb085152</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -89,32 +89,36 @@ Public Types</h2></td></tr>
 &#160;&#160;<a class="el" href="structmip_1_1commands__3dm_1_1_nmea_message.html#af4e93784c35351426df2086fc4c56bf2afc115cccaf1643937623d7ecd0bddb8e">VTG</a> = 5
 , <a class="el" href="structmip_1_1commands__3dm_1_1_nmea_message.html#af4e93784c35351426df2086fc4c56bf2a1d2b7a7b79745325f4b270a38f24a7be">HDT</a> = 6
 , <a class="el" href="structmip_1_1commands__3dm_1_1_nmea_message.html#af4e93784c35351426df2086fc4c56bf2a177ec88f1770157c912abd69c5051d44">ZDA</a> = 7
-, <a class="el" href="structmip_1_1commands__3dm_1_1_nmea_message.html#af4e93784c35351426df2086fc4c56bf2aabbf89667f2946d06bca37047ebf30e6">PRKA</a> = 100
+, <a class="el" href="structmip_1_1commands__3dm_1_1_nmea_message.html#af4e93784c35351426df2086fc4c56bf2aabbf89667f2946d06bca37047ebf30e6">PRKA</a> = 129
 , <br />
-&#160;&#160;<a class="el" href="structmip_1_1commands__3dm_1_1_nmea_message.html#af4e93784c35351426df2086fc4c56bf2a130bad0225c6c208ce65eae5085717d8">PRKR</a> = 101
+&#160;&#160;<a class="el" href="structmip_1_1commands__3dm_1_1_nmea_message.html#af4e93784c35351426df2086fc4c56bf2a130bad0225c6c208ce65eae5085717d8">PRKR</a> = 130
 <br />
  }</td></tr>
 <tr class="separator:af4e93784c35351426df2086fc4c56bf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a798330819a16bc370e28ac7006e61145"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_nmea_message.html#a798330819a16bc370e28ac7006e61145">TalkerID</a> : uint8_t { <a class="el" href="structmip_1_1commands__3dm_1_1_nmea_message.html#a798330819a16bc370e28ac7006e61145ad6f7806b5d17e3c6493a6578ab64fd5a">GNSS</a> = 1
+<tr class="memitem:a798330819a16bc370e28ac7006e61145"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_nmea_message.html#a798330819a16bc370e28ac7006e61145">TalkerID</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="structmip_1_1commands__3dm_1_1_nmea_message.html#a798330819a16bc370e28ac7006e61145a83c7f2aa8c3ac10ed8beb75cad162827">RESERVED</a> = 0
+, <a class="el" href="structmip_1_1commands__3dm_1_1_nmea_message.html#a798330819a16bc370e28ac7006e61145ad6f7806b5d17e3c6493a6578ab64fd5a">GNSS</a> = 1
 , <a class="el" href="structmip_1_1commands__3dm_1_1_nmea_message.html#a798330819a16bc370e28ac7006e61145a8c578de37278ada488d763ea86c5cf20">GPS</a> = 2
 , <a class="el" href="structmip_1_1commands__3dm_1_1_nmea_message.html#a798330819a16bc370e28ac7006e61145a002aa3295f27b9c1aa3c602fd2a37c35">GALILEO</a> = 3
-, <a class="el" href="structmip_1_1commands__3dm_1_1_nmea_message.html#a798330819a16bc370e28ac7006e61145a48549df6f41418cb94b963fe84894cd6">GLONASS</a> = 4
+, <br />
+&#160;&#160;<a class="el" href="structmip_1_1commands__3dm_1_1_nmea_message.html#a798330819a16bc370e28ac7006e61145a48549df6f41418cb94b963fe84894cd6">GLONASS</a> = 4
+<br />
  }</td></tr>
 <tr class="separator:a798330819a16bc370e28ac7006e61145"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a13ab3d2d25604819bbd07dd5dc087e50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1commands__3dm_1_1_nmea_message.html#af4e93784c35351426df2086fc4c56bf2">MessageID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_nmea_message.html#a13ab3d2d25604819bbd07dd5dc087e50">message_id</a> = static_cast&lt;<a class="el" href="structmip_1_1commands__3dm_1_1_nmea_message.html#af4e93784c35351426df2086fc4c56bf2">MessageID</a>&gt;(0)</td></tr>
-<tr class="memdesc:a13ab3d2d25604819bbd07dd5dc087e50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Message type (GGA, GLL, etc)  <a href="structmip_1_1commands__3dm_1_1_nmea_message.html#a13ab3d2d25604819bbd07dd5dc087e50">More...</a><br /></td></tr>
+<tr class="memdesc:a13ab3d2d25604819bbd07dd5dc087e50"><td class="mdescLeft">&#160;</td><td class="mdescRight">NMEA sentence type.  <a href="structmip_1_1commands__3dm_1_1_nmea_message.html#a13ab3d2d25604819bbd07dd5dc087e50">More...</a><br /></td></tr>
 <tr class="separator:a13ab3d2d25604819bbd07dd5dc087e50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8673b48893c7a5d4fd52471fbbe5c6e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1commands__3dm_1_1_nmea_message.html#a798330819a16bc370e28ac7006e61145">TalkerID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_nmea_message.html#a8673b48893c7a5d4fd52471fbbe5c6e0">talker_id</a> = static_cast&lt;<a class="el" href="structmip_1_1commands__3dm_1_1_nmea_message.html#a798330819a16bc370e28ac7006e61145">TalkerID</a>&gt;(0)</td></tr>
-<tr class="memdesc:a8673b48893c7a5d4fd52471fbbe5c6e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Talker ID (GN, GP, etc)  <a href="structmip_1_1commands__3dm_1_1_nmea_message.html#a8673b48893c7a5d4fd52471fbbe5c6e0">More...</a><br /></td></tr>
+<tr class="memdesc:a8673b48893c7a5d4fd52471fbbe5c6e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">NMEA talker ID. Ignored for proprietary sentences.  <a href="structmip_1_1commands__3dm_1_1_nmea_message.html#a8673b48893c7a5d4fd52471fbbe5c6e0">More...</a><br /></td></tr>
 <tr class="separator:a8673b48893c7a5d4fd52471fbbe5c6e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42b7f724bcb92d2076c12d50073aa6ff"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_nmea_message.html#a42b7f724bcb92d2076c12d50073aa6ff">source_desc_set</a> = 0</td></tr>
-<tr class="memdesc:a42b7f724bcb92d2076c12d50073aa6ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data source descriptor set (Filter, GNSS, etc)  <a href="structmip_1_1commands__3dm_1_1_nmea_message.html#a42b7f724bcb92d2076c12d50073aa6ff">More...</a><br /></td></tr>
+<tr class="memdesc:a42b7f724bcb92d2076c12d50073aa6ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data descriptor set where the data will be sourced. Available options depend on the sentence.  <a href="structmip_1_1commands__3dm_1_1_nmea_message.html#a42b7f724bcb92d2076c12d50073aa6ff">More...</a><br /></td></tr>
 <tr class="separator:a42b7f724bcb92d2076c12d50073aa6ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac31c0e90e64c03a4748013d963b12793"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_nmea_message.html#ac31c0e90e64c03a4748013d963b12793">decimation</a> = 0</td></tr>
-<tr class="memdesc:ac31c0e90e64c03a4748013d963b12793"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decimation from the base rate of the source descriptor set.  <a href="structmip_1_1commands__3dm_1_1_nmea_message.html#ac31c0e90e64c03a4748013d963b12793">More...</a><br /></td></tr>
+<tr class="memdesc:ac31c0e90e64c03a4748013d963b12793"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decimation from the base rate for source_desc_set. Frequency is limited to 10 Hz or the base rate, whichever is lower.  <a href="structmip_1_1commands__3dm_1_1_nmea_message.html#ac31c0e90e64c03a4748013d963b12793">More...</a><br /></td></tr>
 <tr class="separator:ac31c0e90e64c03a4748013d963b12793"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
@@ -138,23 +142,23 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af4e93784c35351426df2086fc4c56bf2a5d71fd547f20684c4f5463766c0f2b04"></a>GGA&#160;</td><td class="fielddoc"><p>GPS System Fix Data. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af4e93784c35351426df2086fc4c56bf2a5d71fd547f20684c4f5463766c0f2b04"></a>GGA&#160;</td><td class="fielddoc"><p>GPS System Fix Data. Source can be the Filter or GNSS1/2 datasets. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="af4e93784c35351426df2086fc4c56bf2abd74b2f73e432ae0558de08adc0a6fec"></a>GLL&#160;</td><td class="fielddoc"><p>Geographic Position Lat/Lon. </p>
+<tr><td class="fieldname"><a id="af4e93784c35351426df2086fc4c56bf2abd74b2f73e432ae0558de08adc0a6fec"></a>GLL&#160;</td><td class="fielddoc"><p>Geographic Position Lat/Lon. Source can be the Filter or GNSS1/2 datasets. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="af4e93784c35351426df2086fc4c56bf2a7e09375ecdd19f32e510ff7cf14ccca8"></a>GSV&#160;</td><td class="fielddoc"><p>GNSS Satellites in View. </p>
+<tr><td class="fieldname"><a id="af4e93784c35351426df2086fc4c56bf2a7e09375ecdd19f32e510ff7cf14ccca8"></a>GSV&#160;</td><td class="fielddoc"><p>GNSS Satellites in View. Source must be either GNSS1 or GNSS2 datasets. The talker ID is ignored (talker depends on the satellite). </p>
 </td></tr>
-<tr><td class="fieldname"><a id="af4e93784c35351426df2086fc4c56bf2a37831c6008f4cc78a6d72aa54739b828"></a>RMC&#160;</td><td class="fielddoc"><p>Recommended Minimum Specific GNSS Data. </p>
+<tr><td class="fieldname"><a id="af4e93784c35351426df2086fc4c56bf2a37831c6008f4cc78a6d72aa54739b828"></a>RMC&#160;</td><td class="fielddoc"><p>Recommended Minimum Specific GNSS Data. Source can be the Filter or GNSS1/2 datasets. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="af4e93784c35351426df2086fc4c56bf2afc115cccaf1643937623d7ecd0bddb8e"></a>VTG&#160;</td><td class="fielddoc"><p>Course over Ground. </p>
+<tr><td class="fieldname"><a id="af4e93784c35351426df2086fc4c56bf2afc115cccaf1643937623d7ecd0bddb8e"></a>VTG&#160;</td><td class="fielddoc"><p>Course over Ground. Source can be the Filter or GNSS1/2 datasets. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="af4e93784c35351426df2086fc4c56bf2a1d2b7a7b79745325f4b270a38f24a7be"></a>HDT&#160;</td><td class="fielddoc"><p>Heading, True. </p>
+<tr><td class="fieldname"><a id="af4e93784c35351426df2086fc4c56bf2a1d2b7a7b79745325f4b270a38f24a7be"></a>HDT&#160;</td><td class="fielddoc"><p>Heading, True. Source can be the Filter or GNSS1/2 datasets. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="af4e93784c35351426df2086fc4c56bf2a177ec88f1770157c912abd69c5051d44"></a>ZDA&#160;</td><td class="fielddoc"><p>Time &amp; Date. </p>
+<tr><td class="fieldname"><a id="af4e93784c35351426df2086fc4c56bf2a177ec88f1770157c912abd69c5051d44"></a>ZDA&#160;</td><td class="fielddoc"><p>Time &amp; Date. Source must be the GNSS1 or GNSS2 datasets. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="af4e93784c35351426df2086fc4c56bf2aabbf89667f2946d06bca37047ebf30e6"></a>PRKA&#160;</td><td class="fielddoc"><p>Parker proprietary Euler angles. </p>
+<tr><td class="fieldname"><a id="af4e93784c35351426df2086fc4c56bf2aabbf89667f2946d06bca37047ebf30e6"></a>PRKA&#160;</td><td class="fielddoc"><p>Parker proprietary Euler angles. Source must be the Filter dataset. The talker ID is ignored. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="af4e93784c35351426df2086fc4c56bf2a130bad0225c6c208ce65eae5085717d8"></a>PRKR&#160;</td><td class="fielddoc"><p>Parker proprietary Angular Rate/Acceleration. </p>
+<tr><td class="fieldname"><a id="af4e93784c35351426df2086fc4c56bf2a130bad0225c6c208ce65eae5085717d8"></a>PRKR&#160;</td><td class="fielddoc"><p>Parker proprietary Angular Rate/Acceleration. Source must be the Sensor dataset. The talker ID is ignored. </p>
 </td></tr>
 </table>
 
@@ -180,7 +184,8 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a798330819a16bc370e28ac7006e61145ad6f7806b5d17e3c6493a6578ab64fd5a"></a>GNSS&#160;</td><td class="fielddoc"><p>NMEA message will be produced with talker id "GN". </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a798330819a16bc370e28ac7006e61145a83c7f2aa8c3ac10ed8beb75cad162827"></a>RESERVED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a798330819a16bc370e28ac7006e61145ad6f7806b5d17e3c6493a6578ab64fd5a"></a>GNSS&#160;</td><td class="fielddoc"><p>NMEA message will be produced with talker id "GN". </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a798330819a16bc370e28ac7006e61145a8c578de37278ada488d763ea86c5cf20"></a>GPS&#160;</td><td class="fielddoc"><p>NMEA message will be produced with talker id "GP". </p>
 </td></tr>
@@ -205,7 +210,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Decimation from the base rate of the source descriptor set. </p>
+<p>Decimation from the base rate for source_desc_set. Frequency is limited to 10 Hz or the base rate, whichever is lower. </p>
 
 </div>
 </div>
@@ -221,7 +226,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Message type (GGA, GLL, etc) </p>
+<p>NMEA sentence type. </p>
 
 </div>
 </div>
@@ -237,7 +242,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Data source descriptor set (Filter, GNSS, etc) </p>
+<p>Data descriptor set where the data will be sourced. Available options depend on the sentence. </p>
 
 </div>
 </div>
@@ -253,7 +258,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Talker ID (GN, GP, etc) </p>
+<p>NMEA talker ID. Ignored for proprietary sentences. </p>
 
 </div>
 </div>
