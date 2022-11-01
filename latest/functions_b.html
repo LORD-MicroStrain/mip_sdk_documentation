@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-15-gd36b454</span>
+   &#160;<span id="projectnumber">v1.0.0-16-gc5f4833</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -76,6 +76,12 @@ $(function() {
 : <a class="el" href="structmip_1_1_cmd_queue.html#a08644fd4c154adfdcd9c9b75fe3bbc3d">mip::CmdQueue</a>
 , <a class="el" href="classmip_1_1_device_interface.html#a54497e15633bebfd3c442e0943dda3d9">mip::DeviceInterface</a>
 </li>
+<li>baseStationId()
+: <a class="el" href="structmip_1_1data__gnss_1_1_dgps_info_1_1_valid_flags.html#a93b05e87d03e5b67e497257de8895bf4">mip::data_gnss::DgpsInfo::ValidFlags</a>
+</li>
+<li>baseStationStatus()
+: <a class="el" href="structmip_1_1data__gnss_1_1_dgps_info_1_1_valid_flags.html#af8c8b90c0c1b488828a4c63f727a53ae">mip::data_gnss::DgpsInfo::ValidFlags</a>
+</li>
 <li>baud
 : <a class="el" href="structmip_1_1_c_1_1mip__3dm__uart__baudrate__command.html#ae09204efd2eca7ecbcc956487050934b">mip::C::mip_3dm_uart_baudrate_command</a>
 , <a class="el" href="structmip_1_1_c_1_1mip__3dm__uart__baudrate__response.html#aafa44c25d8d8b5e1d3d2582065ac3515">mip::C::mip_3dm_uart_baudrate_response</a>
@@ -92,13 +98,13 @@ $(function() {
 <li>behavior
 : <a class="el" href="structmip_1_1_c_1_1mip__3dm__gpio__config__command.html#a7c6cc55fe2539b008f2254c787e05d1d">mip::C::mip_3dm_gpio_config_command</a>
 , <a class="el" href="structmip_1_1_c_1_1mip__3dm__gpio__config__response.html#aa2c54d2f26a588ae313a1f753e68ee46">mip::C::mip_3dm_gpio_config_response</a>
+, <a class="el" href="structmip_1_1commands__3dm_1_1_gpio_config.html#aecae753718d1d8490c1854e9cfa18332">mip::commands_3dm::GpioConfig</a>
 </li>
 <li>Behavior
 : <a class="el" href="structmip_1_1commands__3dm_1_1_gpio_config.html#addcf8e9c83c0fbb3a237165364a05e06">mip::commands_3dm::GpioConfig</a>
 </li>
 <li>behavior
-: <a class="el" href="structmip_1_1commands__3dm_1_1_gpio_config.html#aecae753718d1d8490c1854e9cfa18332">mip::commands_3dm::GpioConfig</a>
-, <a class="el" href="structmip_1_1commands__3dm_1_1_gpio_config_1_1_response.html#aa585a58b018151e2a9c8c6150613038f">mip::commands_3dm::GpioConfig::Response</a>
+: <a class="el" href="structmip_1_1commands__3dm_1_1_gpio_config_1_1_response.html#aa585a58b018151e2a9c8c6150613038f">mip::commands_3dm::GpioConfig::Response</a>
 </li>
 <li>BEI_B1
 : <a class="el" href="structmip_1_1data__filter_1_1_gnss_aid_status_flags.html#a1ce836756563662c0d8c76698b3943bea2e819459fd007cc92f771e95e238151b">mip::data_filter::GnssAidStatusFlags</a>
@@ -108,6 +114,18 @@ $(function() {
 </li>
 <li>BEI_B3
 : <a class="el" href="structmip_1_1data__filter_1_1_gnss_aid_status_flags.html#a1ce836756563662c0d8c76698b3943bea2eb871d24f10de7a99d94777851ef6d7">mip::data_filter::GnssAidStatusFlags</a>
+</li>
+<li>beiB1()
+: <a class="el" href="structmip_1_1data__filter_1_1_gnss_aid_status_flags.html#a84eb46a489745e7f8ef0881389a73913">mip::data_filter::GnssAidStatusFlags</a>
+</li>
+<li>beiB2()
+: <a class="el" href="structmip_1_1data__filter_1_1_gnss_aid_status_flags.html#ad3a45f384460a86b87aa41a65f652950">mip::data_filter::GnssAidStatusFlags</a>
+</li>
+<li>beiB3()
+: <a class="el" href="structmip_1_1data__filter_1_1_gnss_aid_status_flags.html#a055203fd7e526f04ce701e16c4ea2e91">mip::data_filter::GnssAidStatusFlags</a>
+</li>
+<li>beidou()
+: <a class="el" href="structmip_1_1data__gnss_1_1_base_station_info_1_1_indicator_flags.html#a9ccc6e04ae0d89335ae4a3a746456006">mip::data_gnss::BaseStationInfo::IndicatorFlags</a>
 </li>
 <li>BEIDOU
 : <a class="el" href="structmip_1_1data__gnss_1_1_base_station_info_1_1_indicator_flags.html#a0cb42756376b4898f423979191ab2944a5c7d305f2ad6eae7d42f5a30f18cd19c">mip::data_gnss::BaseStationInfo::IndicatorFlags</a>
@@ -128,12 +146,21 @@ $(function() {
 <li>BEIDOU_RECEIVED
 : <a class="el" href="structmip_1_1data__gnss_1_1_rtk_corrections_status_1_1_epoch_status.html#ad535fefd8edff612616e8283ce9dbe7aa637cbd7d10befacd77a279a896294627">mip::data_gnss::RtkCorrectionsStatus::EpochStatus</a>
 </li>
+<li>beidouLatency()
+: <a class="el" href="structmip_1_1data__gnss_1_1_rtk_corrections_status_1_1_valid_flags.html#a6f6400d753028edea52520127e898a4b">mip::data_gnss::RtkCorrectionsStatus::ValidFlags</a>
+</li>
+<li>beidouReceived()
+: <a class="el" href="structmip_1_1data__gnss_1_1_rtk_corrections_status_1_1_epoch_status.html#acb0aff42a2569e7e7173d17552f6aa21">mip::data_gnss::RtkCorrectionsStatus::EpochStatus</a>
+</li>
 <li>beta
 : <a class="el" href="structmip_1_1_c_1_1mip__gnss__gps__iono__corr__data.html#a45bd2b432a7296676d0a82ea06d36364">mip::C::mip_gnss_gps_iono_corr_data</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1_gps_iono_corr.html#afa6641f0893fc2cee254957395ce49b0">mip::data_gnss::GpsIonoCorr</a>
 </li>
 <li>BETA
 : <a class="el" href="structmip_1_1data__gnss_1_1_gps_iono_corr_1_1_valid_flags.html#a666d0e4bd85f634a9698dce7946464fca6ca52ea8b4ede3c91d0f13e0b5560e49">mip::data_gnss::GpsIonoCorr::ValidFlags</a>
+</li>
+<li>beta()
+: <a class="el" href="structmip_1_1data__gnss_1_1_gps_iono_corr_1_1_valid_flags.html#ac5e0c97cf78d4927002e2c7273cac2a7">mip::data_gnss::GpsIonoCorr::ValidFlags</a>
 </li>
 <li>bias
 : <a class="el" href="structmip_1_1_c_1_1mip__3dm__accel__bias__command.html#afc86a03f0e6d064c2be34562fcd89e83">mip::C::mip_3dm_accel_bias_command</a>
@@ -161,11 +188,16 @@ $(function() {
 <li>BIAS
 : <a class="el" href="structmip_1_1data__gnss_1_1_clock_info2_1_1_valid_flags.html#adf3c4705c42457407973c9b1cffd365ca2ef739df60137819041be225d6405b18">mip::data_gnss::ClockInfo2::ValidFlags</a>
 </li>
-<li>bias
-: <a class="el" href="structmip_1_1data__gnss_1_1_clock_info.html#a0fc935733730f4aa46ac0f689fe2b4ce">mip::data_gnss::ClockInfo</a>
+<li>bias()
+: <a class="el" href="structmip_1_1data__gnss_1_1_clock_info2_1_1_valid_flags.html#a90d6e7ea56c4876b125b0251bd89c889">mip::data_gnss::ClockInfo2::ValidFlags</a>
+, <a class="el" href="structmip_1_1data__gnss_1_1_clock_info.html#a0fc935733730f4aa46ac0f689fe2b4ce">mip::data_gnss::ClockInfo</a>
+, <a class="el" href="structmip_1_1data__gnss_1_1_clock_info_1_1_valid_flags.html#a3d3f08fa0c08babefaddf2bfed72f6ed">mip::data_gnss::ClockInfo::ValidFlags</a>
 </li>
 <li>BIAS
 : <a class="el" href="structmip_1_1data__gnss_1_1_clock_info_1_1_valid_flags.html#a8d66dacf948a9eedf2287c88b5383b96a44daf88694f1ffebacd77f6c3d6dd7cc">mip::data_gnss::ClockInfo::ValidFlags</a>
+</li>
+<li>bias()
+: <a class="el" href="structmip_1_1data__gnss_1_1_clock_info_1_1_valid_flags.html#ad99df717fdfed98cdf64dce9044b2929">mip::data_gnss::ClockInfo::ValidFlags</a>
 </li>
 <li>BIAS_ACCURACY
 : <a class="el" href="structmip_1_1data__gnss_1_1_clock_info2_1_1_valid_flags.html#adf3c4705c42457407973c9b1cffd365ca3512c125a09a9e2ecb620d46795a41ab">mip::data_gnss::ClockInfo2::ValidFlags</a>
@@ -194,11 +226,17 @@ $(function() {
 : <a class="el" href="structmip_1_1_c_1_1mip__filter__clock__correction__uncertainty__data.html#a8226800b8a834b9f3db2076e0df357f7">mip::C::mip_filter_clock_correction_uncertainty_data</a>
 , <a class="el" href="structmip_1_1data__filter_1_1_clock_correction_uncertainty.html#a86680a0da70dc04a3b5d474f211d9417">mip::data_filter::ClockCorrectionUncertainty</a>
 </li>
+<li>biasAccuracy()
+: <a class="el" href="structmip_1_1data__gnss_1_1_clock_info2_1_1_valid_flags.html#a156cfad09b9fb2281c9554b833479052">mip::data_gnss::ClockInfo2::ValidFlags</a>
+</li>
 <li>buffer
 : <a class="el" href="structbyte__ring__state.html#a497143e9cfcb195046b9dfbde2ff0a26">byte_ring_state</a>
 </li>
 <li>BUFFER_OVERRUN
 : <a class="el" href="structmip_1_1commands__base_1_1_commanded_test_bits_gq7.html#a4b36e7f5d0669a98642f4859ccd9c3c4a6ca2940016ff5d6cc26a6b09d6b06ed2">mip::commands_base::CommandedTestBitsGq7</a>
+</li>
+<li>bufferOverrun()
+: <a class="el" href="structmip_1_1commands__base_1_1_commanded_test_bits_gq7.html#ae9b403a3bb4c067044d1b2e4d374dfb0">mip::commands_base::CommandedTestBitsGq7</a>
 </li>
 <li>bufferSize()
 : <a class="el" href="classmip_1_1_packet.html#ad0531baf1f00fc4f7b748fee3a8dbf32">mip::Packet</a>

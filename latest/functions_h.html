@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-15-gd36b454</span>
+   &#160;<span id="projectnumber">v1.0.0-16-gc5f4833</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -552,6 +552,7 @@ $(function() {
 <li>hdop
 : <a class="el" href="structmip_1_1_c_1_1mip__gnss__dop__data.html#ab2fe3a828623c35e864d98827d57f119">mip::C::mip_gnss_dop_data</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1_dop.html#a464005f532bdea5bbbc40a590d4f0080">mip::data_gnss::Dop</a>
+, <a class="el" href="structmip_1_1data__gnss_1_1_dop_1_1_valid_flags.html#a66df5d9fc8808170849c4a9bcad2010a">mip::data_gnss::Dop::ValidFlags</a>
 </li>
 <li>HDOP
 : <a class="el" href="structmip_1_1data__gnss_1_1_dop_1_1_valid_flags.html#a1fc83277f187678def65baa8a1e86833aeb4287a95f7e02c595d418eb6c35986e">mip::data_gnss::Dop::ValidFlags</a>
@@ -577,6 +578,9 @@ $(function() {
 </li>
 <li>HEADING
 : <a class="el" href="structmip_1_1data__gnss_1_1_vel_ned_1_1_valid_flags.html#a974696cf6499ed4357b93896747ec928a0ab451e0a6575b03594c8e2bc3252037">mip::data_gnss::VelNed::ValidFlags</a>
+</li>
+<li>heading()
+: <a class="el" href="structmip_1_1data__gnss_1_1_vel_ned_1_1_valid_flags.html#aa01361a258976307749fa5602cfdcf27">mip::data_gnss::VelNed::ValidFlags</a>
 </li>
 <li>heading_1sigma
 : <a class="el" href="structmip_1_1_c_1_1mip__filter__heading__update__state__data.html#a85b81edcb8f92a4a1117e824fe734b9b">mip::C::mip_filter_heading_update_state_data</a>
@@ -611,6 +615,9 @@ $(function() {
 , <a class="el" href="structmip_1_1commands__filter_1_1_external_heading_update.html#a94c63fa7442a2850145dd3879a9a9528">mip::commands_filter::ExternalHeadingUpdate</a>
 , <a class="el" href="structmip_1_1commands__filter_1_1_external_heading_update_with_time.html#a9c17ef0d7ab645319e509705afeecdf3">mip::commands_filter::ExternalHeadingUpdateWithTime</a>
 </li>
+<li>headingAccuracy()
+: <a class="el" href="structmip_1_1data__gnss_1_1_vel_ned_1_1_valid_flags.html#aa4dcb66f3873b0335776f74c1548cc0c">mip::data_gnss::VelNed::ValidFlags</a>
+</li>
 <li>HeadingAidType
 : <a class="el" href="structmip_1_1data__filter_1_1_head_aid_status.html#a4516193e5fc02ad0ced5aca9508448ae">mip::data_filter::HeadAidStatus</a>
 </li>
@@ -626,9 +633,13 @@ $(function() {
 , <a class="el" href="structmip_1_1data__gnss_1_1_glo_ephemeris.html#a1fe66aab2b0552012f87d92c8e4858f7">mip::data_gnss::GloEphemeris</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1_gps_ephemeris.html#a6066e478e6feba3c35e802cbbecaa64a">mip::data_gnss::GpsEphemeris</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1_satellite_status.html#a826ef2fcd18a80b376730e128dcad7ef">mip::data_gnss::SatelliteStatus</a>
+, <a class="el" href="structmip_1_1data__gnss_1_1_satellite_status_1_1_valid_flags.html#a9371525b8cd4783ccd8ce5d248e4031c">mip::data_gnss::SatelliteStatus::ValidFlags</a>
 </li>
 <li>HEALTH
 : <a class="el" href="structmip_1_1data__gnss_1_1_satellite_status_1_1_valid_flags.html#aa7e176bb3873568c8c5bc2930d32c2f3a449726f33f8d23b85ad106e04d81596d">mip::data_gnss::SatelliteStatus::ValidFlags</a>
+</li>
+<li>healthy()
+: <a class="el" href="structmip_1_1data__gnss_1_1_sv_info_1_1_s_v_flags.html#a72b5eca4d75b1d0b9e5ebc26b4501f7a">mip::data_gnss::SvInfo::SVFlags</a>
 </li>
 <li>HEALTHY
 : <a class="el" href="structmip_1_1data__gnss_1_1_sv_info_1_1_s_v_flags.html#aba955f80c3ef8980b3ee4e23778d5757ac1d28d6691f690ee0ee278a309811f72">mip::data_gnss::SvInfo::SVFlags</a>
@@ -642,6 +653,9 @@ $(function() {
 <li>HEIGHT
 : <a class="el" href="structmip_1_1data__gnss_1_1_base_station_info_1_1_valid_flags.html#ada30f4639178ea79e264dc8e8ee76a80ac4c1c615dd2b3e7e319914210559cab2">mip::data_gnss::BaseStationInfo::ValidFlags</a>
 </li>
+<li>height()
+: <a class="el" href="structmip_1_1data__gnss_1_1_base_station_info_1_1_valid_flags.html#a28b75fc157020873becdaa3766fd46b2">mip::data_gnss::BaseStationInfo::ValidFlags</a>
+</li>
 <li>high_thres
 : <a class="el" href="structmip_1_1_c_1_1mip__3dm__event__trigger__command__threshold__params.html#a98c0cdcba4aa9cf1597b91220370dce7">mip::C::mip_3dm_event_trigger_command_threshold_params</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1_event_trigger_1_1_threshold_params.html#a0f0ecf4145c6df65043ef30dce0776b4">mip::commands_3dm::EventTrigger::ThresholdParams</a>
@@ -652,6 +666,9 @@ $(function() {
 </li>
 <li>HORIZONTAL_ACCURACY
 : <a class="el" href="structmip_1_1data__gnss_1_1_pos_llh_1_1_valid_flags.html#a39f074b01674201d486553b2f231913ba1752f6b835f5fc76078989d4f1c4376b">mip::data_gnss::PosLlh::ValidFlags</a>
+</li>
+<li>horizontalAccuracy()
+: <a class="el" href="structmip_1_1data__gnss_1_1_pos_llh_1_1_valid_flags.html#aac556dc3aadfffc346fe74626710c8d5">mip::data_gnss::PosLlh::ValidFlags</a>
 </li>
 <li>hour
 : <a class="el" href="structmip_1_1_c_1_1mip__gnss__utc__time__data.html#ab3ca8652df3155ff7734a1aade1bffcb">mip::C::mip_gnss_utc_time_data</a>

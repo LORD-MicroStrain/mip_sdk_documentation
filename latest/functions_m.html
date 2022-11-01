@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-15-gd36b454</span>
+   &#160;<span id="projectnumber">v1.0.0-16-gc5f4833</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -84,9 +84,21 @@ $(function() {
 <li>MAGNETOMETER
 : <a class="el" href="structmip_1_1commands__filter_1_1_initialization_configuration_1_1_alignment_selector.html#a8ae75177fa0b0950e6b277a40e968a73a6d9dd956ed79e10b930948ca02ccfb09">mip::commands_filter::InitializationConfiguration::AlignmentSelector</a>
 </li>
+<li>magnetometer()
+: <a class="el" href="structmip_1_1commands__filter_1_1_initialization_configuration_1_1_alignment_selector.html#a73e8b82ee71f4ec94bfadd2a009dd1f1">mip::commands_filter::InitializationConfiguration::AlignmentSelector</a>
+</li>
 <li>magnitude
 : <a class="el" href="structmip_1_1_c_1_1mip__filter__wgs84__gravity__mag__data.html#a8ff8df8cd61ec602507dc86529bb6766">mip::C::mip_filter_wgs84_gravity_mag_data</a>
 , <a class="el" href="structmip_1_1data__filter_1_1_wgs84_gravity_mag.html#a1cb30f9ca04454be17428513c604432a">mip::data_filter::Wgs84GravityMag</a>
+</li>
+<li>magX()
+: <a class="el" href="structmip_1_1data__sensor_1_1_overrange_status_1_1_status.html#a7ba80b99bedb5025751bfd69341275d7">mip::data_sensor::OverrangeStatus::Status</a>
+</li>
+<li>magY()
+: <a class="el" href="structmip_1_1data__sensor_1_1_overrange_status_1_1_status.html#a2f9acd55096474f084dc6b2ae694d4ec">mip::data_sensor::OverrangeStatus::Status</a>
+</li>
+<li>magZ()
+: <a class="el" href="structmip_1_1data__sensor_1_1_overrange_status_1_1_status.html#a190dd0590ec96901733aefecfdc493cf">mip::data_sensor::OverrangeStatus::Status</a>
 </li>
 <li>manual
 : <a class="el" href="structmip_1_1_c_1_1mip__3dm__imu__lowpass__filter__command.html#ae4521d8ec3db4c3ee26e681ab718488c">mip::C::mip_3dm_imu_lowpass_filter_command</a>
@@ -114,6 +126,9 @@ $(function() {
 <li>max_temp
 : <a class="el" href="structmip_1_1_c_1_1mip__sensor__temperature__abs__data.html#abfe40e5e2e12581b7833274790d26b04">mip::C::mip_sensor_temperature_abs_data</a>
 , <a class="el" href="structmip_1_1data__sensor_1_1_temperature_abs.html#a8a1a8a35077ea15eb73663c0dee408fa">mip::data_sensor::TemperatureAbs</a>
+</li>
+<li>maxNumMeasExceeded()
+: <a class="el" href="structmip_1_1data__filter_1_1_filter_measurement_indicator.html#a07928ef4c0dee18f05dfa732b6c8fce9">mip::data_filter::FilterMeasurementIndicator</a>
 </li>
 <li>maxPacketsPerPoll()
 : <a class="el" href="classmip_1_1_device_interface.html#a770844a9a32777e56ed9289cdd94708f">mip::DeviceInterface</a>
@@ -170,32 +185,32 @@ $(function() {
 , <a class="el" href="structmip_1_1_c_1_1mip__3dm__odometer__response.html#abcffdf723bac731346e879bb11e9c30a">mip::C::mip_3dm_odometer_response</a>
 , <a class="el" href="structmip_1_1_c_1_1mip__system__comm__mode__command.html#a9347ef8293459ba0edfc80a64d6f30e2">mip::C::mip_system_comm_mode_command</a>
 , <a class="el" href="structmip_1_1_c_1_1mip__system__comm__mode__response.html#a63b17d3cf4a0e485e29363d38d820d48">mip::C::mip_system_comm_mode_response</a>
+, <a class="el" href="structmip_1_1commands__3dm_1_1_event_action_1_1_gpio_params.html#ad639bc3fbbd0926405814d6660028a75">mip::commands_3dm::EventAction::GpioParams</a>
 </li>
 <li>Mode
 : <a class="el" href="structmip_1_1commands__3dm_1_1_event_action_1_1_gpio_params.html#a2194f9181c735e3186dac9198751123b">mip::commands_3dm::EventAction::GpioParams</a>
 </li>
 <li>mode
-: <a class="el" href="structmip_1_1commands__3dm_1_1_event_action_1_1_gpio_params.html#ad639bc3fbbd0926405814d6660028a75">mip::commands_3dm::EventAction::GpioParams</a>
+: <a class="el" href="structmip_1_1commands__3dm_1_1_event_control.html#a658445c82d236c191e50769947eb2424">mip::commands_3dm::EventControl</a>
 </li>
 <li>Mode
 : <a class="el" href="structmip_1_1commands__3dm_1_1_event_control.html#a0e8c29b4839a750801634e36a802304b">mip::commands_3dm::EventControl</a>
 </li>
 <li>mode
-: <a class="el" href="structmip_1_1commands__3dm_1_1_event_control.html#a658445c82d236c191e50769947eb2424">mip::commands_3dm::EventControl</a>
-, <a class="el" href="structmip_1_1commands__3dm_1_1_event_control_1_1_response.html#aba545980d539f85b55ccc9f6fbb1a67f">mip::commands_3dm::EventControl::Response</a>
+: <a class="el" href="structmip_1_1commands__3dm_1_1_event_control_1_1_response.html#aba545980d539f85b55ccc9f6fbb1a67f">mip::commands_3dm::EventControl::Response</a>
+, <a class="el" href="structmip_1_1commands__3dm_1_1_event_trigger_1_1_gpio_params.html#a2406eacc989a6efa4d132772949504b7">mip::commands_3dm::EventTrigger::GpioParams</a>
 </li>
 <li>Mode
 : <a class="el" href="structmip_1_1commands__3dm_1_1_event_trigger_1_1_gpio_params.html#af224059a574b67245c5b2f12ff16ef43">mip::commands_3dm::EventTrigger::GpioParams</a>
 </li>
 <li>mode
-: <a class="el" href="structmip_1_1commands__3dm_1_1_event_trigger_1_1_gpio_params.html#a2406eacc989a6efa4d132772949504b7">mip::commands_3dm::EventTrigger::GpioParams</a>
+: <a class="el" href="structmip_1_1commands__3dm_1_1_odometer.html#aa83d149348d77e43c3c39f8c9b0838dc">mip::commands_3dm::Odometer</a>
 </li>
 <li>Mode
 : <a class="el" href="structmip_1_1commands__3dm_1_1_odometer.html#a1044ca5024a6b5a8e608bf9ab65acd76">mip::commands_3dm::Odometer</a>
 </li>
 <li>mode
-: <a class="el" href="structmip_1_1commands__3dm_1_1_odometer.html#aa83d149348d77e43c3c39f8c9b0838dc">mip::commands_3dm::Odometer</a>
-, <a class="el" href="structmip_1_1commands__3dm_1_1_odometer_1_1_response.html#a34a29a7fad4ee34ac2016b1f7332b892">mip::commands_3dm::Odometer::Response</a>
+: <a class="el" href="structmip_1_1commands__3dm_1_1_odometer_1_1_response.html#a34a29a7fad4ee34ac2016b1f7332b892">mip::commands_3dm::Odometer::Response</a>
 , <a class="el" href="structmip_1_1commands__system_1_1_comm_mode.html#a46db0dd2c2785d08468c794ec5079600">mip::commands_system::CommMode</a>
 , <a class="el" href="structmip_1_1commands__system_1_1_comm_mode_1_1_response.html#ad5f5c60aa39a73828348c4e4dbc346fa">mip::commands_system::CommMode::Response</a>
 </li>
@@ -214,9 +229,16 @@ $(function() {
 : <a class="el" href="structmip_1_1_c_1_1mip__rtk__get__modem__firmware__version__response.html#ad5ee9dea84b7a12f070d51ae19dc37ce">mip::C::mip_rtk_get_modem_firmware_version_response</a>
 , <a class="el" href="structmip_1_1commands__rtk_1_1_get_modem_firmware_version_1_1_response.html#aa11310aeba844513319ae76a3c5553e6">mip::commands_rtk::GetModemFirmwareVersion::Response</a>
 </li>
+<li>modemState()
+: <a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags.html#a4182f01df24ecdcd3506df671a731847">mip::commands_rtk::GetStatusFlags::StatusFlags</a>
+</li>
 <li>MODERN_DATA
 : <a class="el" href="structmip_1_1data__gnss_1_1_galileo_ephemeris_1_1_valid_flags.html#a9edacecc0689734cef44a7e3e6b4445ca1ae62b1c2780dd963bf1ecbf4bceec25">mip::data_gnss::GalileoEphemeris::ValidFlags</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1_gps_ephemeris_1_1_valid_flags.html#aaaac31a8df25562f47cca420ee1715e7a957f57a1c33d618a16ed8ee0a2e3e8fc">mip::data_gnss::GpsEphemeris::ValidFlags</a>
+</li>
+<li>modernData()
+: <a class="el" href="structmip_1_1data__gnss_1_1_galileo_ephemeris_1_1_valid_flags.html#a35b71ddcab20c49d3052104ac418dc96">mip::data_gnss::GalileoEphemeris::ValidFlags</a>
+, <a class="el" href="structmip_1_1data__gnss_1_1_gps_ephemeris_1_1_valid_flags.html#a8547f497bedc90a381594b68e0d68674">mip::data_gnss::GpsEphemeris::ValidFlags</a>
 </li>
 <li>month
 : <a class="el" href="structmip_1_1_c_1_1mip__gnss__utc__time__data.html#a66bd4bed2693fb7896ab2803a6d10c26">mip::C::mip_gnss_utc_time_data</a>
@@ -238,6 +260,9 @@ $(function() {
 </li>
 <li>MSL_HEIGHT
 : <a class="el" href="structmip_1_1data__gnss_1_1_pos_llh_1_1_valid_flags.html#a39f074b01674201d486553b2f231913ba295c352a13a95dce5c3fe1838177156a">mip::data_gnss::PosLlh::ValidFlags</a>
+</li>
+<li>mslHeight()
+: <a class="el" href="structmip_1_1data__gnss_1_1_pos_llh_1_1_valid_flags.html#aa78d3eb680318c9b0d4a3f34a7f730eb">mip::data_gnss::PosLlh::ValidFlags</a>
 </li>
 </ul>
 </div><!-- contents -->

@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['name_7261',['name',['../structmip_1_1_cmd_result.html#a1b995beb4eaee95b85645dc84eaae79c',1,'mip::CmdResult']]],
-  ['next_7262',['next',['../classmip_1_1_field.html#a86ef1fb7a22af90cb193be9ead79ab0b',1,'mip::Field']]],
-  ['nextafter_7263',['nextAfter',['../classmip_1_1_field.html#a2858c1febd20a44ddd65e7dfc34149ec',1,'mip::Field']]],
-  ['nmeapolldata_7264',['nmeaPollData',['../group__cpp__3dm__nmea__poll__data.html#ga62286edaa61d1db573b4075519f9ac4c',1,'mip::commands_3dm']]]
+  ['kinematic_7146',['kinematic',['../structmip_1_1commands__filter_1_1_initialization_configuration_1_1_alignment_selector.html#a76b486b313d6744a5cf274ad2503ac1e',1,'mip::commands_filter::InitializationConfiguration::AlignmentSelector::kinematic() const'],['../structmip_1_1commands__filter_1_1_initialization_configuration_1_1_alignment_selector.html#a9c1a9f9a21185b97111804427eee9b68',1,'mip::commands_filter::InitializationConfiguration::AlignmentSelector::kinematic(bool val)']]]
 ];

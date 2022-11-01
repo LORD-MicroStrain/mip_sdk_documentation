@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-15-gd36b454</span>
+   &#160;<span id="projectnumber">v1.0.0-16-gc5f4833</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -524,6 +524,9 @@ $(function() {
 <li>DeviceInterface()
 : <a class="el" href="classmip_1_1_device_interface.html#a507523f0325153f1d4d2939fe3a9cf24">mip::DeviceInterface</a>
 </li>
+<li>deviceOutOfRange()
+: <a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags.html#ac0cc29e541e49f5a4c5cc3e59181b8e8">mip::commands_rtk::GetStatusFlags::StatusFlags</a>
+</li>
 <li>devType
 : <a class="el" href="structmip_1_1_c_1_1mip__rtk__connected__device__type__command.html#a985f44ac4398df5ff168b8853d8a8703">mip::C::mip_rtk_connected_device_type_command</a>
 , <a class="el" href="structmip_1_1_c_1_1mip__rtk__connected__device__type__response.html#a13b32ca6b23d6126f64e65f52a796846">mip::C::mip_rtk_connected_device_type_response</a>
@@ -532,6 +535,12 @@ $(function() {
 </li>
 <li>DGNSS_USED
 : <a class="el" href="structmip_1_1data__gnss_1_1_fix_info_1_1_fix_flags.html#a0f919ca3c734e9d28011962dccd5dcf4aff9bccf72fdb75a858efe43b9b5809cc">mip::data_gnss::FixInfo::FixFlags</a>
+</li>
+<li>dgnssUsed()
+: <a class="el" href="structmip_1_1data__gnss_1_1_fix_info_1_1_fix_flags.html#ad7f02a999dd6dfc952953a8d400e7101">mip::data_gnss::FixInfo::FixFlags</a>
+</li>
+<li>differential()
+: <a class="el" href="structmip_1_1data__filter_1_1_gnss_aid_status_flags.html#abbdd7886f2d7baaf30cb9a6e78420840">mip::data_filter::GnssAidStatusFlags</a>
 </li>
 <li>DIFFERENTIAL
 : <a class="el" href="structmip_1_1data__filter_1_1_gnss_aid_status_flags.html#a1ce836756563662c0d8c76698b3943bea32c12876d2577d3574ace6c992a38b25">mip::data_filter::GnssAidStatusFlags</a>
@@ -543,6 +552,9 @@ $(function() {
 <li>DISTURBANCE_FLAGS
 : <a class="el" href="structmip_1_1data__gnss_1_1_galileo_iono_corr_1_1_valid_flags.html#a838ba25631d1f30b05f7a6597fe68a20a702683c51387ef02659e9448c978ca22">mip::data_gnss::GalileoIonoCorr::ValidFlags</a>
 </li>
+<li>disturbanceFlags()
+: <a class="el" href="structmip_1_1data__gnss_1_1_galileo_iono_corr_1_1_valid_flags.html#a62453211dd2099ca8d4805617fdd20c0">mip::data_gnss::GalileoIonoCorr::ValidFlags</a>
+</li>
 <li>dongle_status
 : <a class="el" href="structmip_1_1_c_1_1mip__gnss__rtk__corrections__status__data.html#add99978e24537f8a262db8d621df7d3a">mip::C::mip_gnss_rtk_corrections_status_data</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1_rtk_corrections_status.html#a6a4680cc20bce1ccca62bb9648850bda">mip::data_gnss::RtkCorrectionsStatus</a>
@@ -553,9 +565,16 @@ $(function() {
 <li>DONGLE_STATUS_READ_FAILED
 : <a class="el" href="structmip_1_1data__gnss_1_1_rtk_corrections_status_1_1_epoch_status.html#ad535fefd8edff612616e8283ce9dbe7aa3c25b1da7efa175e78cc1e6f790931c2">mip::data_gnss::RtkCorrectionsStatus::EpochStatus</a>
 </li>
+<li>dongleStatus()
+: <a class="el" href="structmip_1_1data__gnss_1_1_rtk_corrections_status_1_1_valid_flags.html#aa746818a51c1f4d0b98bde8984ba3f89">mip::data_gnss::RtkCorrectionsStatus::ValidFlags</a>
+</li>
+<li>dongleStatusReadFailed()
+: <a class="el" href="structmip_1_1data__gnss_1_1_rtk_corrections_status_1_1_epoch_status.html#aab0c39940f6d3af4c63cd12dd1f3ffe2">mip::data_gnss::RtkCorrectionsStatus::EpochStatus</a>
+</li>
 <li>doppler
 : <a class="el" href="structmip_1_1_c_1_1mip__gnss__raw__data.html#a087c37d28da8942d5468bd7e46e8f53f">mip::C::mip_gnss_raw_data</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1_raw.html#ad4f537db4589b406c6471d9b80cff55e">mip::data_gnss::Raw</a>
+, <a class="el" href="structmip_1_1data__gnss_1_1_raw_1_1_valid_flags.html#ac2f0e990228a0f762f383081b7856a22">mip::data_gnss::Raw::ValidFlags</a>
 </li>
 <li>DOPPLER
 : <a class="el" href="structmip_1_1data__gnss_1_1_raw_1_1_valid_flags.html#a896b931f26ab3d9d16bd4e80b3dff2bea6276528e49e688c0b09989e5b1835109">mip::data_gnss::Raw::ValidFlags</a>
@@ -566,6 +585,9 @@ $(function() {
 </li>
 <li>DOPPLER_UNCERTAINTY
 : <a class="el" href="structmip_1_1data__gnss_1_1_raw_1_1_valid_flags.html#a896b931f26ab3d9d16bd4e80b3dff2beaeec7659d9622b822ba05496a434626de">mip::data_gnss::Raw::ValidFlags</a>
+</li>
+<li>dopplerUncertainty()
+: <a class="el" href="structmip_1_1data__gnss_1_1_raw_1_1_valid_flags.html#a3cf67d79a0ed022fda1654723e41f34a">mip::data_gnss::Raw::ValidFlags</a>
 </li>
 <li>down
 : <a class="el" href="structmip_1_1_c_1_1mip__filter__position__llh__uncertainty__data.html#ae08184d3d9572ae6cede4f818e77d918">mip::C::mip_filter_position_llh_uncertainty_data</a>
@@ -579,12 +601,14 @@ $(function() {
 : <a class="el" href="structmip_1_1_c_1_1mip__gnss__clock__info__2__data.html#adbc443d616e12291b8eb60501bc2dbe7">mip::C::mip_gnss_clock_info_2_data</a>
 , <a class="el" href="structmip_1_1_c_1_1mip__gnss__clock__info__data.html#aeb5a35eb6bced5244c60d88ba99d6ad8">mip::C::mip_gnss_clock_info_data</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1_clock_info2.html#af937c24e29f58e7068f4c10d8ffbcfc3">mip::data_gnss::ClockInfo2</a>
+, <a class="el" href="structmip_1_1data__gnss_1_1_clock_info2_1_1_valid_flags.html#a548435788c53b11c6a85ce616247438a">mip::data_gnss::ClockInfo2::ValidFlags</a>
 </li>
 <li>DRIFT
 : <a class="el" href="structmip_1_1data__gnss_1_1_clock_info2_1_1_valid_flags.html#adf3c4705c42457407973c9b1cffd365ca0d7e405fa4a3293f802a8923a3c3b641">mip::data_gnss::ClockInfo2::ValidFlags</a>
 </li>
 <li>drift
 : <a class="el" href="structmip_1_1data__gnss_1_1_clock_info.html#a82b0343b60e0ef02da21628122d7323b">mip::data_gnss::ClockInfo</a>
+, <a class="el" href="structmip_1_1data__gnss_1_1_clock_info_1_1_valid_flags.html#a359a8c1f679e268e588d80c375bf46f6">mip::data_gnss::ClockInfo::ValidFlags</a>
 </li>
 <li>DRIFT
 : <a class="el" href="structmip_1_1data__gnss_1_1_clock_info_1_1_valid_flags.html#a8d66dacf948a9eedf2287c88b5383b96abe4a121ab52ecaec255973c8665b6efa">mip::data_gnss::ClockInfo::ValidFlags</a>
@@ -595,6 +619,9 @@ $(function() {
 <li>drift_accuracy_estimate
 : <a class="el" href="structmip_1_1_c_1_1mip__gnss__clock__info__2__data.html#a80befc0b57c0d000f8a9544fa4b506a3">mip::C::mip_gnss_clock_info_2_data</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1_clock_info2.html#a615e71c328a4819103667ad6f9a9da70">mip::data_gnss::ClockInfo2</a>
+</li>
+<li>driftAccuracy()
+: <a class="el" href="structmip_1_1data__gnss_1_1_clock_info2_1_1_valid_flags.html#ae75e5d9e3eba444b64c795e7d013ba34">mip::data_gnss::ClockInfo2::ValidFlags</a>
 </li>
 <li>dt_nanos
 : <a class="el" href="structmip_1_1_c_1_1mip__shared__external__time__delta__data.html#a0a0edbcd8caebdeb713e428a045d1381">mip::C::mip_shared_external_time_delta_data</a>
@@ -607,8 +634,14 @@ $(function() {
 <li>dt_nanos
 : <a class="el" href="structmip_1_1data__shared_1_1_reference_time_delta.html#a2a77249d3ddc1e75e6b2107c7976d4fd">mip::data_shared::ReferenceTimeDelta</a>
 </li>
+<li>dtNanos()
+: <a class="el" href="structmip_1_1data__shared_1_1_external_time_delta_1_1_valid_flags.html#a9d7ba3386041c154fb46b27d4a7432de">mip::data_shared::ExternalTimeDelta::ValidFlags</a>
+</li>
 <li>DUAL_ANTENNA
 : <a class="el" href="structmip_1_1commands__filter_1_1_initialization_configuration_1_1_alignment_selector.html#a8ae75177fa0b0950e6b277a40e968a73a7b822ad5b5aa37383b505b1716b803e3">mip::commands_filter::InitializationConfiguration::AlignmentSelector</a>
+</li>
+<li>dualAntenna()
+: <a class="el" href="structmip_1_1commands__filter_1_1_initialization_configuration_1_1_alignment_selector.html#a949220cdc4e984abf38eb66badaa1d2f">mip::commands_filter::InitializationConfiguration::AlignmentSelector</a>
 </li>
 <li>DualAntennaStatusFlags()
 : <a class="el" href="structmip_1_1data__filter_1_1_gnss_dual_antenna_status_1_1_dual_antenna_status_flags.html#a85c9013b82f7e7a4a410bc8f19ffaf96">mip::data_filter::GnssDualAntennaStatus::DualAntennaStatusFlags</a>

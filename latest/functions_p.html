@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-15-gd36b454</span>
+   &#160;<span id="projectnumber">v1.0.0-16-gc5f4833</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -137,6 +137,9 @@ $(function() {
 <li>PDOP
 : <a class="el" href="structmip_1_1data__gnss_1_1_dop_1_1_valid_flags.html#a1fc83277f187678def65baa8a1e86833afb1cfcabbea1c8a8ceb79b6611bb7bea">mip::data_gnss::Dop::ValidFlags</a>
 </li>
+<li>pdop()
+: <a class="el" href="structmip_1_1data__gnss_1_1_dop_1_1_valid_flags.html#a9b7a0aa8203b800c9966c8f48c8eb8f6">mip::data_gnss::Dop::ValidFlags</a>
+</li>
 <li>PendingCmd()
 : <a class="el" href="structmip_1_1_pending_cmd.html#a7de966b0a5bb556ac8650f024ef96e59">mip::PendingCmd</a>
 </li>
@@ -185,6 +188,7 @@ $(function() {
 , <a class="el" href="structmip_1_1commands__filter_1_1_sensor_to_vehicle_rotation_euler.html#ade667c54da18184e1f23c2dfb3533721">mip::commands_filter::SensorToVehicleRotationEuler</a>
 , <a class="el" href="structmip_1_1commands__filter_1_1_sensor_to_vehicle_rotation_euler_1_1_response.html#a9d5f295fea2855039ca737f38dc6bd39">mip::commands_filter::SensorToVehicleRotationEuler::Response</a>
 , <a class="el" href="structmip_1_1commands__filter_1_1_set_initial_attitude.html#a177ac1ac7bdb82b476e7035956b3151a">mip::commands_filter::SetInitialAttitude</a>
+, <a class="el" href="structmip_1_1commands__filter_1_1_tare_orientation_1_1_mip_tare_axes.html#a5107469042525049cf66f9d8a91d3fd2">mip::commands_filter::TareOrientation::MipTareAxes</a>
 </li>
 <li>PITCH
 : <a class="el" href="structmip_1_1commands__filter_1_1_tare_orientation_1_1_mip_tare_axes.html#a0c7b08afc596579b3e324d56bfabdcebae85c5a53361ca420e3c3011371e56253">mip::commands_filter::TareOrientation::MipTareAxes</a>
@@ -206,8 +210,14 @@ $(function() {
 , <a class="el" href="structmip_1_1commands__3dm_1_1_complementary_filter.html#a990d6fafc972cdc121f12b89a27b5848">mip::commands_3dm::ComplementaryFilter</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1_complementary_filter_1_1_response.html#a29ebe17f1a735dcc18f28c48125aa530">mip::commands_3dm::ComplementaryFilter::Response</a>
 </li>
+<li>platformstate()
+: <a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags_legacy.html#a252112ec5bc67b272455e65167b68a51">mip::commands_rtk::GetStatusFlags::StatusFlagsLegacy</a>
+</li>
 <li>PLATFORMSTATE
 : <a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags_legacy.html#a6d952630b90a4cae4177646db34a96eea63acb2bbe2728d9d325c15d50687dc3a">mip::commands_rtk::GetStatusFlags::StatusFlagsLegacy</a>
+</li>
+<li>platformstatuscode()
+: <a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags_legacy.html#a20e08190f25abe4587967c2f2e865715">mip::commands_rtk::GetStatusFlags::StatusFlagsLegacy</a>
 </li>
 <li>PLATFORMSTATUSCODE
 : <a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags_legacy.html#a6d952630b90a4cae4177646db34a96eeaad9cff7913f634a62be235bb5f16ead1">mip::commands_rtk::GetStatusFlags::StatusFlagsLegacy</a>
@@ -227,6 +237,9 @@ $(function() {
 , <a class="el" href="structmip_1_1commands__filter_1_1_external_gnss_update.html#a67596f988c9323da252134db32c8086f">mip::commands_filter::ExternalGnssUpdate</a>
 , <a class="el" href="structmip_1_1data__filter_1_1_ecef_pos_uncertainty.html#acd326d0a5d8baa45ec7c737292804563">mip::data_filter::EcefPosUncertainty</a>
 </li>
+<li>position()
+: <a class="el" href="structmip_1_1data__gnss_1_1_pos_ecef_1_1_valid_flags.html#a6064245d7b89ddc7614dde19e2e13b36">mip::data_gnss::PosEcef::ValidFlags</a>
+</li>
 <li>POSITION
 : <a class="el" href="structmip_1_1data__gnss_1_1_pos_ecef_1_1_valid_flags.html#adf59fc0f4b0ed0f92be827ce62550be6a4858044cb03cc1f273dd992ba7055546">mip::data_gnss::PosEcef::ValidFlags</a>
 </li>
@@ -237,11 +250,20 @@ $(function() {
 : <a class="el" href="structmip_1_1_c_1_1mip__filter__ecef__pos__data.html#a5369663efc72f01b369341a70a6c0477">mip::C::mip_filter_ecef_pos_data</a>
 , <a class="el" href="structmip_1_1data__filter_1_1_ecef_pos.html#a37aef500a12f58d3cb4233850b167240">mip::data_filter::EcefPos</a>
 </li>
+<li>positionAccuracy()
+: <a class="el" href="structmip_1_1data__gnss_1_1_pos_ecef_1_1_valid_flags.html#ae661365b311e3a281637baea7f82113f">mip::data_gnss::PosEcef::ValidFlags</a>
+</li>
 <li>PPS_VALID
 : <a class="el" href="structmip_1_1data__sensor_1_1_gps_timestamp_1_1_valid_flags.html#a64c4d0d3ea3cccb6d1c81dacfd2107beaba98b0c31d3e06a8d5b963aeb58adcfd">mip::data_sensor::GpsTimestamp::ValidFlags</a>
 </li>
+<li>ppsValid()
+: <a class="el" href="structmip_1_1data__sensor_1_1_gps_timestamp_1_1_valid_flags.html#aa4c4f23e0f13c7740a38d36ffb0b2216">mip::data_sensor::GpsTimestamp::ValidFlags</a>
+</li>
 <li>PRESS
 : <a class="el" href="structmip_1_1data__sensor_1_1_overrange_status_1_1_status.html#a3c294de3ba5dc98ab2d634392a076bdcaeb77bee3aacd105f58efea7fd56c89f1">mip::data_sensor::OverrangeStatus::Status</a>
+</li>
+<li>press()
+: <a class="el" href="structmip_1_1data__sensor_1_1_overrange_status_1_1_status.html#a2d13cb7c88060828c4d13db535559832">mip::data_sensor::OverrangeStatus::Status</a>
 </li>
 <li>pressure_altitude
 : <a class="el" href="structmip_1_1_c_1_1mip__filter__pressure__altitude__data.html#a8de44b55a039b4fd450df2ba60f5b839">mip::C::mip_filter_pressure_altitude_data</a>
@@ -264,6 +286,9 @@ $(function() {
 <li>PSEUDORANGE
 : <a class="el" href="structmip_1_1data__gnss_1_1_raw_1_1_valid_flags.html#a896b931f26ab3d9d16bd4e80b3dff2bea1ba64ee3d70434420f23d9170911f0d9">mip::data_gnss::Raw::ValidFlags</a>
 </li>
+<li>pseudorange()
+: <a class="el" href="structmip_1_1data__gnss_1_1_raw_1_1_valid_flags.html#a3d7b787ad24e44a20ba95f628a273f80">mip::data_gnss::Raw::ValidFlags</a>
+</li>
 <li>pseudorange_correction
 : <a class="el" href="structmip_1_1_c_1_1mip__gnss__sbas__correction__data.html#a01a8193c5f27d5ba4673e42a45b7c010">mip::C::mip_gnss_sbas_correction_data</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1_sbas_correction.html#a0eb36e07a19ca87118ba1991998600c9">mip::data_gnss::SbasCorrection</a>
@@ -271,11 +296,20 @@ $(function() {
 <li>PSEUDORANGE_CORRECTION
 : <a class="el" href="structmip_1_1data__gnss_1_1_sbas_correction_1_1_valid_flags.html#aa80a35527c4d138e6c626410ebb23673a1f7a2d1df272250a3d7001f167951d32">mip::data_gnss::SbasCorrection::ValidFlags</a>
 </li>
+<li>pseudorangeCorrection()
+: <a class="el" href="structmip_1_1data__gnss_1_1_sbas_correction_1_1_valid_flags.html#aeff886d3e0963d293eaa4d582ea82171">mip::data_gnss::SbasCorrection::ValidFlags</a>
+</li>
 <li>PULLDOWN
 : <a class="el" href="structmip_1_1commands__3dm_1_1_gpio_config_1_1_pin_mode.html#a19d0ba116be16369e03b98c098adf551ae3e82677c3c15c7fe7faf6cb2786e2c7">mip::commands_3dm::GpioConfig::PinMode</a>
 </li>
+<li>pulldown()
+: <a class="el" href="structmip_1_1commands__3dm_1_1_gpio_config_1_1_pin_mode.html#abd6be6916a8b96c77310c935984c0bf3">mip::commands_3dm::GpioConfig::PinMode</a>
+</li>
 <li>PULLUP
 : <a class="el" href="structmip_1_1commands__3dm_1_1_gpio_config_1_1_pin_mode.html#a19d0ba116be16369e03b98c098adf551aa81f09f45e281e5d4d2843f4a385f00b">mip::commands_3dm::GpioConfig::PinMode</a>
+</li>
+<li>pullup()
+: <a class="el" href="structmip_1_1commands__3dm_1_1_gpio_config_1_1_pin_mode.html#adb81571341bcd60c9e5bdedc949a3c05">mip::commands_3dm::GpioConfig::PinMode</a>
 </li>
 </ul>
 </div><!-- contents -->

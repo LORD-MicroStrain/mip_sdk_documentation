@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-15-gd36b454</span>
+   &#160;<span id="projectnumber">v1.0.0-16-gc5f4833</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -102,9 +102,21 @@ $(function() {
 <li>RANGE_UNCERTAINTY
 : <a class="el" href="structmip_1_1data__gnss_1_1_raw_1_1_valid_flags.html#a896b931f26ab3d9d16bd4e80b3dff2beaca01e80bff5bd415c65cfd3bbb72645e">mip::data_gnss::Raw::ValidFlags</a>
 </li>
+<li>rangeAvailable()
+: <a class="el" href="structmip_1_1data__gnss_1_1_sbas_info_1_1_sbas_status.html#a4d9235ddc154e0f08e0353ec6952b5c8">mip::data_gnss::SbasInfo::SbasStatus</a>
+</li>
+<li>rangeCorrection()
+: <a class="el" href="structmip_1_1data__gnss_1_1_dgps_channel_1_1_valid_flags.html#a36efb2629982fa8c545d85ab5b8743d6">mip::data_gnss::DgpsChannel::ValidFlags</a>
+</li>
+<li>rangeRateCorrection()
+: <a class="el" href="structmip_1_1data__gnss_1_1_dgps_channel_1_1_valid_flags.html#aa367ad71eadae465fbf6b24a1d6db55c">mip::data_gnss::DgpsChannel::ValidFlags</a>
+</li>
 <li>ranges
 : <a class="el" href="structmip_1_1_c_1_1mip__3dm__calibrated__sensor__ranges__response.html#ad97dcc455da0aab8b8cf827a088c7e25">mip::C::mip_3dm_calibrated_sensor_ranges_response</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1_calibrated_sensor_ranges_1_1_response.html#aff72716e191d4ce805c6432a9415c6ee">mip::commands_3dm::CalibratedSensorRanges::Response</a>
+</li>
+<li>rangeUncertainty()
+: <a class="el" href="structmip_1_1data__gnss_1_1_raw_1_1_valid_flags.html#a9d544a40b0f69851f3372cc8689c8236">mip::data_gnss::Raw::ValidFlags</a>
 </li>
 <li>rate
 : <a class="el" href="structmip_1_1_c_1_1mip__3dm__filter__get__base__rate__response.html#ac06caf7f845f9af92cb3472e55ae7f89">mip::C::mip_3dm_filter_get_base_rate_response</a>
@@ -135,6 +147,12 @@ $(function() {
 <li>raw_temp
 : <a class="el" href="structmip_1_1_c_1_1mip__sensor__orientation__raw__temp__data.html#af7ac4f5198df2ae32345cea4ae3bd42f">mip::C::mip_sensor_orientation_raw_temp_data</a>
 , <a class="el" href="structmip_1_1data__sensor_1_1_orientation_raw_temp.html#abdc3d4f7f7f432b71878265984ccd1a0">mip::data_sensor::OrientationRawTemp</a>
+</li>
+<li>rcv1DataValid()
+: <a class="el" href="structmip_1_1data__filter_1_1_gnss_dual_antenna_status_1_1_dual_antenna_status_flags.html#ad96fc461a496267583b7312a1b2faf20">mip::data_filter::GnssDualAntennaStatus::DualAntennaStatusFlags</a>
+</li>
+<li>rcv2DataValid()
+: <a class="el" href="structmip_1_1data__filter_1_1_gnss_dual_antenna_status_1_1_dual_antenna_status_flags.html#a42f456525a682b658faf02750cb78192">mip::data_filter::GnssDualAntennaStatus::DualAntennaStatusFlags</a>
 </li>
 <li>RCV_1_DATA_VALID
 : <a class="el" href="structmip_1_1data__filter_1_1_gnss_dual_antenna_status_1_1_dual_antenna_status_flags.html#a695462c978d5d1812d5d966df8414613a38f890cc631c56efd7aaeda216220413">mip::data_filter::GnssDualAntennaStatus::DualAntennaStatusFlags</a>
@@ -186,6 +204,9 @@ $(function() {
 : <a class="el" href="structmip_1_1_c_1_1mip__gnss__hw__status__data.html#a405609b7f55823a4d144a72da7f15e19">mip::C::mip_gnss_hw_status_data</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1_hw_status.html#ac36e9cba4934f97f78e2320e684b8bac">mip::data_gnss::HwStatus</a>
 </li>
+<li>receiverId()
+: <a class="el" href="structmip_1_1data__gnss_1_1_raw_1_1_valid_flags.html#a98ef7ad689f75864f81df8c804aff234">mip::data_gnss::Raw::ValidFlags</a>
+</li>
 <li>ReceiverState
 : <a class="el" href="structmip_1_1data__gnss_1_1_hw_status.html#abb23ed74fbc9723868bf60f7a6d352e3">mip::data_gnss::HwStatus</a>
 </li>
@@ -229,6 +250,9 @@ $(function() {
 </li>
 <li>ReferencePointSelector
 : <a class="el" href="structmip_1_1commands__filter_1_1_ref_point_lever_arm.html#a64351ac012aa1c5feaf4b7fcb2301e1a">mip::commands_filter::RefPointLeverArm</a>
+</li>
+<li>refStation()
+: <a class="el" href="structmip_1_1data__gnss_1_1_base_station_info_1_1_indicator_flags.html#abaa402a8624719126e5821ebd4ec10d1">mip::data_gnss::BaseStationInfo::IndicatorFlags</a>
 </li>
 <li>registerDataCallback()
 : <a class="el" href="group__mip__cpp.html#gaca474f5975ff342a77f10d82d02e6fe6">mip::DeviceInterface</a>
@@ -280,6 +304,7 @@ $(function() {
 , <a class="el" href="structmip_1_1commands__3dm_1_1_factory_streaming.html#ac250514a1253e31ef437e76d42785a3a">mip::commands_3dm::FactoryStreaming</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1_imu_lowpass_filter.html#ac112a5a18769e13d24bb473f7f262717">mip::commands_3dm::ImuLowpassFilter</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1_imu_lowpass_filter_1_1_response.html#abf04556d346f83e33cc9f21024ef7bac">mip::commands_3dm::ImuLowpassFilter::Response</a>
+, <a class="el" href="structmip_1_1commands__base_1_1_commanded_test_bits_gq7.html#afd76418bb367b28ee163a9dbfc4a5d31">mip::commands_base::CommandedTestBitsGq7</a>
 </li>
 <li>RESERVED
 : <a class="el" href="structmip_1_1commands__base_1_1_commanded_test_bits_gq7.html#a4b36e7f5d0669a98642f4859ccd9c3c4af1bbecf89b288e61b6b6a1d55e1ba5c6">mip::commands_base::CommandedTestBitsGq7</a>
@@ -289,11 +314,22 @@ $(function() {
 , <a class="el" href="structmip_1_1commands__gnss_1_1_rtk_dongle_configuration_1_1_response.html#aaa0f24da6c911c646f7676476dba57c3">mip::commands_gnss::RtkDongleConfiguration::Response</a>
 , <a class="el" href="structmip_1_1commands__gnss_1_1_signal_configuration.html#a2a7a9dbf111fca3e14380dab366e5ce7">mip::commands_gnss::SignalConfiguration</a>
 , <a class="el" href="structmip_1_1commands__gnss_1_1_signal_configuration_1_1_response.html#a52186911b63cc3af1c00726af03f4f77">mip::commands_gnss::SignalConfiguration::Response</a>
+, <a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags.html#ac67c0df41eddd101d8548c6c930c0199">mip::commands_rtk::GetStatusFlags::StatusFlags</a>
 </li>
 <li>RESERVED
 : <a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags.html#aadc3e79c243bb77702f4a323cbae6879a5f329740cfe515fdb6cefbb4015a9b36">mip::commands_rtk::GetStatusFlags::StatusFlags</a>
-, <a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags_legacy.html#a6d952630b90a4cae4177646db34a96eea51e992e7cf322d6169f87ca72dd4ce63">mip::commands_rtk::GetStatusFlags::StatusFlagsLegacy</a>
-, <a class="el" href="structmip_1_1commands__rtk_1_1_service_status_1_1_service_flags.html#a4f2c8b4f1e8b0c50836f8cc594ef5fa9a000107a3e9a4d19c897697f0d049ce02">mip::commands_rtk::ServiceStatus::ServiceFlags</a>
+</li>
+<li>reserved()
+: <a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags_legacy.html#a6eae1df6f28988a3e434220288a4bf41">mip::commands_rtk::GetStatusFlags::StatusFlagsLegacy</a>
+</li>
+<li>RESERVED
+: <a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags_legacy.html#a6d952630b90a4cae4177646db34a96eea51e992e7cf322d6169f87ca72dd4ce63">mip::commands_rtk::GetStatusFlags::StatusFlagsLegacy</a>
+</li>
+<li>reserved()
+: <a class="el" href="structmip_1_1commands__rtk_1_1_service_status_1_1_service_flags.html#a8ada0677c74b5292d06f790b2ff594e0">mip::commands_rtk::ServiceStatus::ServiceFlags</a>
+</li>
+<li>RESERVED
+: <a class="el" href="structmip_1_1commands__rtk_1_1_service_status_1_1_service_flags.html#a4f2c8b4f1e8b0c50836f8cc594ef5fa9a000107a3e9a4d19c897697f0d049ce02">mip::commands_rtk::ServiceStatus::ServiceFlags</a>
 </li>
 <li>reserved
 : <a class="el" href="structmip_1_1data__filter_1_1_gnss_att_aid_status.html#a960d3b257c679649d85a688737f820b3">mip::data_filter::GnssAttAidStatus</a>
@@ -314,6 +350,9 @@ $(function() {
 : <a class="el" href="classmip_1_1_packet.html#a297092eb834b6ea04eb9ff7ba3281297">mip::Packet</a>
 , <a class="el" href="classmip_1_1_parser.html#a351071906127cac5cb56cfde1a3d6ea6">mip::Parser</a>
 </li>
+<li>resetcode()
+: <a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags_legacy.html#a681ac4241b5ca9f8b1a6018660378a2a">mip::commands_rtk::GetStatusFlags::StatusFlagsLegacy</a>
+</li>
 <li>RESETCODE
 : <a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags_legacy.html#a6d952630b90a4cae4177646db34a96eea87ca77ad804bfe5c85a6a595e8e6a79b">mip::commands_rtk::GetStatusFlags::StatusFlagsLegacy</a>
 </li>
@@ -323,6 +362,9 @@ $(function() {
 </li>
 <li>RESIDUAL_HIGH_WARNING
 : <a class="el" href="structmip_1_1data__filter_1_1_filter_measurement_indicator.html#a5f32bf9315a578292ebcb6c99df6929faa5b90626edcd8cde773e854b2c5ac68f">mip::data_filter::FilterMeasurementIndicator</a>
+</li>
+<li>residualHighWarning()
+: <a class="el" href="structmip_1_1data__filter_1_1_filter_measurement_indicator.html#a1573cfd8bcb3af973af649413cb21474">mip::data_filter::FilterMeasurementIndicator</a>
 </li>
 <li>response()
 : <a class="el" href="structmip_1_1_pending_cmd.html#a34a279c6864390fcd2539d8ce0add5d8">mip::PendingCmd</a>
@@ -348,6 +390,9 @@ $(function() {
 <li>RFBand
 : <a class="el" href="structmip_1_1data__gnss_1_1_rf_error_detection.html#aa35cd0d58dda76b6a22e116b5df1fa24">mip::data_gnss::RfErrorDetection</a>
 </li>
+<li>rfBand()
+: <a class="el" href="structmip_1_1data__gnss_1_1_rf_error_detection_1_1_valid_flags.html#af23ff5e3a01a17307c9d2d5e15d7fb65">mip::data_gnss::RfErrorDetection::ValidFlags</a>
+</li>
 <li>roll
 : <a class="el" href="structmip_1_1_c_1_1mip__3dm__sensor__2__vehicle__transform__euler__command.html#ae26fba5b7e5d3e83501b00c0a15e0339">mip::C::mip_3dm_sensor_2_vehicle_transform_euler_command</a>
 , <a class="el" href="structmip_1_1_c_1_1mip__3dm__sensor__2__vehicle__transform__euler__response.html#acbcdecd88e2d493edd06d8ef74ed3f39">mip::C::mip_3dm_sensor_2_vehicle_transform_euler_response</a>
@@ -366,13 +411,20 @@ $(function() {
 <li>ROLL
 : <a class="el" href="structmip_1_1commands__filter_1_1_tare_orientation_1_1_mip_tare_axes.html#a0c7b08afc596579b3e324d56bfabdceba8f078f57518d9f8a3bfc50d38d35b0b8">mip::commands_filter::TareOrientation::MipTareAxes</a>
 </li>
-<li>roll
-: <a class="el" href="structmip_1_1data__filter_1_1_euler_angles.html#a63070b2b790b23fec4f9c4758252187f">mip::data_filter::EulerAngles</a>
+<li>roll()
+: <a class="el" href="structmip_1_1commands__filter_1_1_tare_orientation_1_1_mip_tare_axes.html#a5767268d82601e125ceb6a6d8cc82477">mip::commands_filter::TareOrientation::MipTareAxes</a>
+, <a class="el" href="structmip_1_1data__filter_1_1_euler_angles.html#a63070b2b790b23fec4f9c4758252187f">mip::data_filter::EulerAngles</a>
 , <a class="el" href="structmip_1_1data__filter_1_1_euler_angles_uncertainty.html#a235b8af669d3455b14eb75597c4e926b">mip::data_filter::EulerAnglesUncertainty</a>
 , <a class="el" href="structmip_1_1data__sensor_1_1_comp_euler_angles.html#a766e53daac22647777035b9a7142a8ef">mip::data_sensor::CompEulerAngles</a>
 </li>
+<li>rsrp()
+: <a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags_legacy.html#ada9ae32bfa1524f444eb76983a5408b2">mip::commands_rtk::GetStatusFlags::StatusFlagsLegacy</a>
+</li>
 <li>RSRP
 : <a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags_legacy.html#a6d952630b90a4cae4177646db34a96eea9c4d58ea500d472e17fe9376ab121df6">mip::commands_rtk::GetStatusFlags::StatusFlagsLegacy</a>
+</li>
+<li>rsrq()
+: <a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags_legacy.html#a80b9dfb65ccda1b63d7cd9a62038d466">mip::commands_rtk::GetStatusFlags::StatusFlagsLegacy</a>
 </li>
 <li>RSRQ
 : <a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags_legacy.html#a6d952630b90a4cae4177646db34a96eea934c555131d62af039c281feab02e325">mip::commands_rtk::GetStatusFlags::StatusFlagsLegacy</a>
@@ -380,13 +432,22 @@ $(function() {
 <li>rssi
 : <a class="el" href="structmip_1_1_c_1_1mip__rtk__get__rssi__response.html#a496230332c3ceacd796d48ce21589994">mip::C::mip_rtk_get_rssi_response</a>
 , <a class="el" href="structmip_1_1commands__rtk_1_1_get_rssi_1_1_response.html#ac785aff6c687e06b27bf380e26147e40">mip::commands_rtk::GetRssi::Response</a>
+, <a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags.html#a23cdf5a37b8d928edbbe864ae0147e0c">mip::commands_rtk::GetStatusFlags::StatusFlags</a>
 </li>
 <li>RSSI
 : <a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags.html#aadc3e79c243bb77702f4a323cbae6879afbabc3879b1cd6e9e162830ccb60d9bf">mip::commands_rtk::GetStatusFlags::StatusFlags</a>
-, <a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags_legacy.html#a6d952630b90a4cae4177646db34a96eeac6641d35e0c1d56f4617fca855dd7c35">mip::commands_rtk::GetStatusFlags::StatusFlagsLegacy</a>
+</li>
+<li>rssi()
+: <a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags_legacy.html#a7a5cd44b1824d6bafa52084434c638c5">mip::commands_rtk::GetStatusFlags::StatusFlagsLegacy</a>
+</li>
+<li>RSSI
+: <a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags_legacy.html#a6d952630b90a4cae4177646db34a96eeac6641d35e0c1d56f4617fca855dd7c35">mip::commands_rtk::GetStatusFlags::StatusFlagsLegacy</a>
 </li>
 <li>RTCM_TIMEOUT
 : <a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags.html#aadc3e79c243bb77702f4a323cbae6879a55606354a5fa781edf0383bb8a3c812b">mip::commands_rtk::GetStatusFlags::StatusFlags</a>
+</li>
+<li>rtcmTimeout()
+: <a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags.html#ac6ac15edfdb65d63b27049185a3f3ee7">mip::commands_rtk::GetStatusFlags::StatusFlags</a>
 </li>
 <li>runCommand()
 : <a class="el" href="classmip_1_1_device_interface.html#af7b5368e337286c094cf89e61a35c34a">mip::DeviceInterface</a>
