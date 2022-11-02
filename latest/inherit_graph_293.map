@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structmip_1_1_c_1_1mip__sensor__north__vector__data.html" title=" " alt="" coords="5,5,140,47"/>
+<area shape="rect" id="node1" href="$structmip_1_1_c_1_1mip__pending__cmd.html" title="Represents a command awaiting a reply from the device." alt="" coords="5,5,179,32"/>
+<area shape="rect" id="node2" href="$structmip_1_1_pending_cmd.html" title="C++ class representing the state of a MIP command." alt="" coords="227,5,352,32"/>
 </map>
