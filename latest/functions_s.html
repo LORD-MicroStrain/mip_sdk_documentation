@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-17-g8564902</span>
+   &#160;<span id="projectnumber">v1.0.0-18-g1273781</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -200,8 +200,11 @@ $(function() {
 , <a class="el" href="structmip_1_1data__sensor_1_1_pps_timestamp.html#abb2f320d5c1715ccb19f7be6923b88a6">mip::data_sensor::PpsTimestamp</a>
 , <a class="el" href="structmip_1_1data__shared_1_1_delta_time.html#aedf05a7f116efbb692f702b032f425ca">mip::data_shared::DeltaTime</a>
 </li>
+<li>sendFunction()
+: <a class="el" href="classmip_1_1_device_interface.html#a390fdfdc929aa197a7511ca58a6f2792">mip::DeviceInterface</a>
+</li>
 <li>sendToDevice()
-: <a class="el" href="classmip_1_1_connection.html#ad8b776d34aa55fb20e2e184035b365a0">mip::Connection</a>
+: <a class="el" href="classmip_1_1_connection.html#ad56be6630183ec4cc9cf5f59b4d46e53">mip::Connection</a>
 , <a class="el" href="classmip_1_1_device_interface.html#a406e3e4300e82a86b0c865ce59b5bc58">mip::DeviceInterface</a>
 , <a class="el" href="classmip_1_1extras_1_1_recording_connection.html#a0e411566380cebe82d739da62d246e5a">mip::extras::RecordingConnection</a>
 , <a class="el" href="classmip_1_1platform_1_1_serial_connection.html#a78f3cc5429af9fa9b24889cec1295ae9">mip::platform::SerialConnection</a>
@@ -249,11 +252,17 @@ $(function() {
 <li>setCallback()
 : <a class="el" href="group__mip__cpp.html#ga3c099d19ac77cc922c8b2f87441cf6f7">mip::Parser</a>
 </li>
-<li>setConnection()
-: <a class="el" href="classmip_1_1_device_interface.html#af343edaf4201e23c3b7ed8dd4c1ec19a">mip::DeviceInterface</a>
+<li>setCallbacks()
+: <a class="el" href="group__mip__cpp.html#gaae160182bd1d469e40caa477a0244333">mip::DeviceInterface</a>
 </li>
 <li>setMaxPacketsPerPoll()
 : <a class="el" href="classmip_1_1_device_interface.html#acfb2c5c465d14a6062dc9e88183952ca">mip::DeviceInterface</a>
+</li>
+<li>setRecvFunction()
+: <a class="el" href="classmip_1_1_device_interface.html#aa48f4f6ac1db404f0c5da25627c04f26">mip::DeviceInterface</a>
+</li>
+<li>setSendFunction()
+: <a class="el" href="classmip_1_1_device_interface.html#ab8b3ae78dfc7774a599d323a63969a12">mip::DeviceInterface</a>
 </li>
 <li>setTimeout()
 : <a class="el" href="classmip_1_1_parser.html#abb3290444b447a92aace90c33c4ffc9e">mip::Parser</a>
@@ -294,11 +303,11 @@ $(function() {
 , <a class="el" href="structmip_1_1commands__rtk_1_1_get_rssi_1_1_response.html#a8fa4eaad2101e5ecb8f5038c98ddd093">mip::commands_rtk::GetRssi::Response</a>
 , <a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags.html#a23f9fe6b8ed4c66569d30ab5b63326fb">mip::commands_rtk::GetStatusFlags::StatusFlags</a>
 </li>
-<li>signalquality()
-: <a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags_legacy.html#ad3f41a998f69ef3f3f09003b98ec4410">mip::commands_rtk::GetStatusFlags::StatusFlagsLegacy</a>
-</li>
 <li>SIGNALQUALITY
 : <a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags_legacy.html#a6d952630b90a4cae4177646db34a96eead747fe2c58c1d0d111b68a968a5ecff0">mip::commands_rtk::GetStatusFlags::StatusFlagsLegacy</a>
+</li>
+<li>signalquality()
+: <a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags_legacy.html#ad3f41a998f69ef3f3f09003b98ec4410">mip::commands_rtk::GetStatusFlags::StatusFlagsLegacy</a>
 </li>
 <li>signalStrength()
 : <a class="el" href="structmip_1_1data__gnss_1_1_raw_1_1_valid_flags.html#ac4f2b26a33e20d2ad80328e07decea8b">mip::data_gnss::Raw::ValidFlags</a>
@@ -309,11 +318,11 @@ $(function() {
 <li>singleReceiver()
 : <a class="el" href="structmip_1_1data__gnss_1_1_base_station_info_1_1_indicator_flags.html#a58eb4b2fb79961132a49ae8c7e14b2a1">mip::data_gnss::BaseStationInfo::IndicatorFlags</a>
 </li>
-<li>sinr()
-: <a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags_legacy.html#aeb60373d5491c5d3906da48f90e334be">mip::commands_rtk::GetStatusFlags::StatusFlagsLegacy</a>
-</li>
 <li>SINR
 : <a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags_legacy.html#a6d952630b90a4cae4177646db34a96eeaa5a3383be1517e00998f07a791cbfc5f">mip::commands_rtk::GetStatusFlags::StatusFlagsLegacy</a>
+</li>
+<li>sinr()
+: <a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags_legacy.html#aeb60373d5491c5d3906da48f90e334be">mip::commands_rtk::GetStatusFlags::StatusFlagsLegacy</a>
 </li>
 <li>size
 : <a class="el" href="structbyte__ring__state.html#ac227220f798d272d9b3806e1a5176712">byte_ring_state</a>
@@ -343,27 +352,27 @@ $(function() {
 , <a class="el" href="structmip_1_1_c_1_1mip__filter__speed__lever__arm__response.html#a058aba31e630e166ec19440dc0716422">mip::C::mip_filter_speed_lever_arm_response</a>
 , <a class="el" href="structmip_1_1_c_1_1mip__filter__speed__measurement__command.html#ad7ca40c3fed6b0e0b4b90c9630963d4e">mip::C::mip_filter_speed_measurement_command</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1_pps_source_1_1_response.html#a064bdbd2510e9fedf2dd548f53d1bc12">mip::commands_3dm::PpsSource::Response</a>
-, <a class="el" href="structmip_1_1commands__3dm_1_1_pps_source.html#a02fa6c61930f7071e904f766bfbf74d6">mip::commands_3dm::PpsSource</a>
 </li>
 <li>Source
 : <a class="el" href="structmip_1_1commands__3dm_1_1_pps_source.html#a8b008a6819a38ee38ff29a221396c02f">mip::commands_3dm::PpsSource</a>
 </li>
 <li>source
-: <a class="el" href="structmip_1_1commands__filter_1_1_gnss_source_1_1_response.html#af20d94ca657eda1b096a03485729ed52">mip::commands_filter::GnssSource::Response</a>
-, <a class="el" href="structmip_1_1commands__filter_1_1_gnss_source.html#a88bab5961224d42d225baece2d5ddabf">mip::commands_filter::GnssSource</a>
+: <a class="el" href="structmip_1_1commands__3dm_1_1_pps_source.html#a02fa6c61930f7071e904f766bfbf74d6">mip::commands_3dm::PpsSource</a>
+, <a class="el" href="structmip_1_1commands__filter_1_1_gnss_source_1_1_response.html#af20d94ca657eda1b096a03485729ed52">mip::commands_filter::GnssSource::Response</a>
 </li>
 <li>Source
 : <a class="el" href="structmip_1_1commands__filter_1_1_gnss_source.html#ae8e2581226880694b8e70b3dde491331">mip::commands_filter::GnssSource</a>
 </li>
 <li>source
-: <a class="el" href="structmip_1_1commands__filter_1_1_heading_source_1_1_response.html#a97a93a01f598e88365b4b27d99b8bd4b">mip::commands_filter::HeadingSource::Response</a>
-, <a class="el" href="structmip_1_1commands__filter_1_1_heading_source.html#af48f6cbe153301c390a292baee557e3f">mip::commands_filter::HeadingSource</a>
+: <a class="el" href="structmip_1_1commands__filter_1_1_gnss_source.html#a88bab5961224d42d225baece2d5ddabf">mip::commands_filter::GnssSource</a>
+, <a class="el" href="structmip_1_1commands__filter_1_1_heading_source_1_1_response.html#a97a93a01f598e88365b4b27d99b8bd4b">mip::commands_filter::HeadingSource::Response</a>
 </li>
 <li>Source
 : <a class="el" href="structmip_1_1commands__filter_1_1_heading_source.html#a8b60e40aa069f286ed3b2577f0a7cf7c">mip::commands_filter::HeadingSource</a>
 </li>
 <li>source
-: <a class="el" href="structmip_1_1commands__filter_1_1_magnetic_declination_source_1_1_response.html#a700948d6621d23c04eea34bb110c90a3">mip::commands_filter::MagneticDeclinationSource::Response</a>
+: <a class="el" href="structmip_1_1commands__filter_1_1_heading_source.html#af48f6cbe153301c390a292baee557e3f">mip::commands_filter::HeadingSource</a>
+, <a class="el" href="structmip_1_1commands__filter_1_1_magnetic_declination_source_1_1_response.html#a700948d6621d23c04eea34bb110c90a3">mip::commands_filter::MagneticDeclinationSource::Response</a>
 , <a class="el" href="structmip_1_1commands__filter_1_1_magnetic_declination_source.html#abcbe389f1a88e3cb8bc3c5d714f5ca07">mip::commands_filter::MagneticDeclinationSource</a>
 , <a class="el" href="structmip_1_1commands__filter_1_1_rel_pos_configuration_1_1_response.html#a1a6282df92fe4b92ed5258d952323c5b">mip::commands_filter::RelPosConfiguration::Response</a>
 , <a class="el" href="structmip_1_1commands__filter_1_1_rel_pos_configuration.html#a669c307e4c8bd1dbdbec9b3b1d088acf">mip::commands_filter::RelPosConfiguration</a>

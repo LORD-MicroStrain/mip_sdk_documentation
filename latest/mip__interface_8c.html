@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-17-g8564902</span>
+   &#160;<span id="projectnumber">v1.0.0-18-g1273781</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -108,18 +108,27 @@ Include dependency graph for mip_interface.c:</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a5bdb1f88c2b5f6c800f361497be587a4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__interface_8c.html#a5bdb1f88c2b5f6c800f361497be587a4">mip_interface_parse_callback</a> (void *device, const mip_packet *packet, timestamp_type timestamp)</td></tr>
-<tr class="memdesc:a5bdb1f88c2b5f6c800f361497be587a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper around mip_interface_receive_packet for use with mip_parser.  <a href="mip__interface_8c.html#a5bdb1f88c2b5f6c800f361497be587a4">More...</a><br /></td></tr>
-<tr class="separator:a5bdb1f88c2b5f6c800f361497be587a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b0675420a97a8b4306b06bf30ca9817"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__interface_8c.html#a7b0675420a97a8b4306b06bf30ca9817">mip_interface_init</a> (mip_interface *device, uint8_t *parse_buffer, size_t parse_buffer_size, timeout_type parse_timeout, timeout_type base_reply_timeout)</td></tr>
-<tr class="memdesc:a7b0675420a97a8b4306b06bf30ca9817"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the mip_interface components.  <a href="mip__interface_8c.html#a7b0675420a97a8b4306b06bf30ca9817">More...</a><br /></td></tr>
-<tr class="separator:a7b0675420a97a8b4306b06bf30ca9817"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6477f4984132f560fe4d738278ea925"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__interface_8c.html#ad6477f4984132f560fe4d738278ea925">mip_interface_set_update_function</a> (struct mip_interface *device, mip_update_callback function)</td></tr>
-<tr class="memdesc:ad6477f4984132f560fe4d738278ea925"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the update function.  <a href="mip__interface_8c.html#ad6477f4984132f560fe4d738278ea925">More...</a><br /></td></tr>
-<tr class="separator:ad6477f4984132f560fe4d738278ea925"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad511591bd8ea26939239b2339e89b74b"><td class="memItemLeft" align="right" valign="top">mip_update_callback&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__interface_8c.html#ad511591bd8ea26939239b2339e89b74b">mip_interface_update_function</a> (struct mip_interface *device)</td></tr>
-<tr class="memdesc:ad511591bd8ea26939239b2339e89b74b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the update function pointer.  <a href="mip__interface_8c.html#ad511591bd8ea26939239b2339e89b74b">More...</a><br /></td></tr>
-<tr class="separator:ad511591bd8ea26939239b2339e89b74b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a0bb8b6c05a5f721d787c7bdc2f2bbe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__interface_8c.html#a9a0bb8b6c05a5f721d787c7bdc2f2bbe">mip_interface_init</a> (mip_interface *device, uint8_t *parse_buffer, size_t parse_buffer_size, timeout_type parse_timeout, timeout_type base_reply_timeout, mip_send_callback send, mip_recv_callback recv, mip_update_callback update, void *user_pointer)</td></tr>
+<tr class="memdesc:a9a0bb8b6c05a5f721d787c7bdc2f2bbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the mip_interface components.  <a href="mip__interface_8c.html#a9a0bb8b6c05a5f721d787c7bdc2f2bbe">More...</a><br /></td></tr>
+<tr class="separator:a9a0bb8b6c05a5f721d787c7bdc2f2bbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56443be8aaa8400a01788798364a93b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__interface_8c.html#a56443be8aaa8400a01788798364a93b3">mip_interface_set_send_function</a> (mip_interface *device, mip_send_callback callback)</td></tr>
+<tr class="memdesc:a56443be8aaa8400a01788798364a93b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the send callback function.  <a href="mip__interface_8c.html#a56443be8aaa8400a01788798364a93b3">More...</a><br /></td></tr>
+<tr class="separator:a56443be8aaa8400a01788798364a93b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a275705400661bcdc0787b2fff3585f72"><td class="memItemLeft" align="right" valign="top">mip_send_callback&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__interface_8c.html#a275705400661bcdc0787b2fff3585f72">mip_interface_send_function</a> (const mip_interface *device)</td></tr>
+<tr class="memdesc:a275705400661bcdc0787b2fff3585f72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the send function pointer.  <a href="mip__interface_8c.html#a275705400661bcdc0787b2fff3585f72">More...</a><br /></td></tr>
+<tr class="separator:a275705400661bcdc0787b2fff3585f72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48683f89916015e012a78288585f0fa7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__interface_8c.html#a48683f89916015e012a78288585f0fa7">mip_interface_set_recv_function</a> (mip_interface *device, mip_recv_callback callback)</td></tr>
+<tr class="memdesc:a48683f89916015e012a78288585f0fa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the receive callback function.  <a href="mip__interface_8c.html#a48683f89916015e012a78288585f0fa7">More...</a><br /></td></tr>
+<tr class="separator:a48683f89916015e012a78288585f0fa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f602cf7cbfead68999acd2a364a450d"><td class="memItemLeft" align="right" valign="top">mip_recv_callback&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__interface_8c.html#a2f602cf7cbfead68999acd2a364a450d">mip_interface_recv_function</a> (const mip_interface *device)</td></tr>
+<tr class="memdesc:a2f602cf7cbfead68999acd2a364a450d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the receive function pointer.  <a href="mip__interface_8c.html#a2f602cf7cbfead68999acd2a364a450d">More...</a><br /></td></tr>
+<tr class="separator:a2f602cf7cbfead68999acd2a364a450d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08600beae9c11f5b7da8fa26f56ddd05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__interface_8c.html#a08600beae9c11f5b7da8fa26f56ddd05">mip_interface_set_update_function</a> (mip_interface *device, mip_update_callback callback)</td></tr>
+<tr class="memdesc:a08600beae9c11f5b7da8fa26f56ddd05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the update function.  <a href="mip__interface_8c.html#a08600beae9c11f5b7da8fa26f56ddd05">More...</a><br /></td></tr>
+<tr class="separator:a08600beae9c11f5b7da8fa26f56ddd05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab71ae7dda149826ada48fd8baca3b06f"><td class="memItemLeft" align="right" valign="top">mip_update_callback&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__interface_8c.html#ab71ae7dda149826ada48fd8baca3b06f">mip_interface_update_function</a> (const mip_interface *device)</td></tr>
+<tr class="memdesc:ab71ae7dda149826ada48fd8baca3b06f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the update function pointer.  <a href="mip__interface_8c.html#ab71ae7dda149826ada48fd8baca3b06f">More...</a><br /></td></tr>
+<tr class="separator:ab71ae7dda149826ada48fd8baca3b06f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9a4657f0544a232b95ea152f3561c8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__interface_8c.html#af9a4657f0544a232b95ea152f3561c8f">mip_interface_set_user_pointer</a> (mip_interface *device, void *pointer)</td></tr>
 <tr class="memdesc:af9a4657f0544a232b95ea152f3561c8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets an optional user data pointer which can be retrieved later.  <a href="mip__interface_8c.html#af9a4657f0544a232b95ea152f3561c8f">More...</a><br /></td></tr>
 <tr class="separator:af9a4657f0544a232b95ea152f3561c8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,19 +139,28 @@ Functions</h2></td></tr>
 <tr class="memdesc:a122ab5c17a49bb116c7e1fd4932fa7dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the maximum number of packets to parser per update call.  <a href="mip__interface_8c.html#a122ab5c17a49bb116c7e1fd4932fa7dd">More...</a><br /></td></tr>
 <tr class="separator:a122ab5c17a49bb116c7e1fd4932fa7dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9f1100f168bc9aa76be51d661c38c99"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__interface_8c.html#ac9f1100f168bc9aa76be51d661c38c99">mip_interface_set_max_packets_per_update</a> (mip_interface *device, unsigned int max_packets)</td></tr>
-<tr class="memdesc:ac9f1100f168bc9aa76be51d661c38c99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a limit on the number of packets which can be processed in one call to the <a class="el" href="mip__interface_8c.html#a21fa1e2d19192bbaa2460ac458f39de4" title="Receive data from the port (i.e. the physical device) into the parser.">mip_interface_receive_bytes()</a> function.  <a href="mip__interface_8c.html#ac9f1100f168bc9aa76be51d661c38c99">More...</a><br /></td></tr>
+<tr class="memdesc:ac9f1100f168bc9aa76be51d661c38c99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a limit on the number of packets which can be processed in one call to the <a class="el" href="mip__interface_8c.html#a21fa1e2d19192bbaa2460ac458f39de4" title="Passes data from the device into the parser.">mip_interface_receive_bytes()</a> function.  <a href="mip__interface_8c.html#ac9f1100f168bc9aa76be51d661c38c99">More...</a><br /></td></tr>
 <tr class="separator:ac9f1100f168bc9aa76be51d661c38c99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13b0de14d922e5777972acc8bf8875c3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__interface_8c.html#a13b0de14d922e5777972acc8bf8875c3">mip_interface_update</a> (struct mip_interface *device, bool blocking)</td></tr>
-<tr class="memdesc:a13b0de14d922e5777972acc8bf8875c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call to process data from the device.  <a href="mip__interface_8c.html#a13b0de14d922e5777972acc8bf8875c3">More...</a><br /></td></tr>
-<tr class="separator:a13b0de14d922e5777972acc8bf8875c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad52889282bc7930bc0d46bc707b93ef"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__interface_8c.html#aad52889282bc7930bc0d46bc707b93ef">mip_interface_default_update</a> (struct mip_interface *device, bool blocking)</td></tr>
-<tr class="memdesc:aad52889282bc7930bc0d46bc707b93ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Polls the port for new data or command replies.  <a href="mip__interface_8c.html#aad52889282bc7930bc0d46bc707b93ef">More...</a><br /></td></tr>
-<tr class="separator:aad52889282bc7930bc0d46bc707b93ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24d2821bb9d8aee6fe7e81a25da4b0a5"><td class="memItemLeft" align="right" valign="top">mip_parser *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__interface_8c.html#a24d2821bb9d8aee6fe7e81a25da4b0a5">mip_interface_parser</a> (mip_interface *device)</td></tr>
+<tr class="memdesc:a24d2821bb9d8aee6fe7e81a25da4b0a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the MIP parser for the device.  <a href="mip__interface_8c.html#a24d2821bb9d8aee6fe7e81a25da4b0a5">More...</a><br /></td></tr>
+<tr class="separator:a24d2821bb9d8aee6fe7e81a25da4b0a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16f1e9d05e47c50ca9c98d73630b9711"><td class="memItemLeft" align="right" valign="top">mip_cmd_queue *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__interface_8c.html#a16f1e9d05e47c50ca9c98d73630b9711">mip_interface_cmd_queue</a> (mip_interface *device)</td></tr>
+<tr class="memdesc:a16f1e9d05e47c50ca9c98d73630b9711"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the commmand queue for the device.  <a href="mip__interface_8c.html#a16f1e9d05e47c50ca9c98d73630b9711">More...</a><br /></td></tr>
+<tr class="separator:a16f1e9d05e47c50ca9c98d73630b9711"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2fa9fd65c16218bd12716658f70f680"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__interface_8c.html#ae2fa9fd65c16218bd12716658f70f680">mip_interface_send_to_device</a> (mip_interface *device, const uint8_t *data, size_t length)</td></tr>
 <tr class="memdesc:ae2fa9fd65c16218bd12716658f70f680"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends data to the port (i.e. from this library to the physical device).  <a href="mip__interface_8c.html#ae2fa9fd65c16218bd12716658f70f680">More...</a><br /></td></tr>
 <tr class="separator:ae2fa9fd65c16218bd12716658f70f680"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8372409f325c91245c5e3f84ea8de330"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__interface_8c.html#a8372409f325c91245c5e3f84ea8de330">mip_interface_recv_from_device</a> (mip_interface *device, uint8_t *buffer, size_t max_length, timeout_type wait_time, size_t *length_out, timestamp_type *timestamp_out)</td></tr>
+<tr class="memdesc:a8372409f325c91245c5e3f84ea8de330"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks for data at the port and reads it into buffer.  <a href="mip__interface_8c.html#a8372409f325c91245c5e3f84ea8de330">More...</a><br /></td></tr>
+<tr class="separator:a8372409f325c91245c5e3f84ea8de330"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69893613898c516362811eeec8abaeda"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__interface_8c.html#a69893613898c516362811eeec8abaeda">mip_interface_update</a> (struct mip_interface *device, timeout_type wait_time)</td></tr>
+<tr class="memdesc:a69893613898c516362811eeec8abaeda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call to process data from the device.  <a href="mip__interface_8c.html#a69893613898c516362811eeec8abaeda">More...</a><br /></td></tr>
+<tr class="separator:a69893613898c516362811eeec8abaeda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a403a6ec65d5ca5d345e12c619d4330e5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__interface_8c.html#a403a6ec65d5ca5d345e12c619d4330e5">mip_interface_default_update</a> (struct mip_interface *device, timeout_type wait_time)</td></tr>
+<tr class="memdesc:a403a6ec65d5ca5d345e12c619d4330e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Polls the port for new data or command replies.  <a href="mip__interface_8c.html#a403a6ec65d5ca5d345e12c619d4330e5">More...</a><br /></td></tr>
+<tr class="separator:a403a6ec65d5ca5d345e12c619d4330e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21fa1e2d19192bbaa2460ac458f39de4"><td class="memItemLeft" align="right" valign="top">remaining_count&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__interface_8c.html#a21fa1e2d19192bbaa2460ac458f39de4">mip_interface_receive_bytes</a> (mip_interface *device, const uint8_t *data, size_t length, timestamp_type timestamp)</td></tr>
-<tr class="memdesc:a21fa1e2d19192bbaa2460ac458f39de4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive data from the port (i.e. the physical device) into the parser.  <a href="mip__interface_8c.html#a21fa1e2d19192bbaa2460ac458f39de4">More...</a><br /></td></tr>
+<tr class="memdesc:a21fa1e2d19192bbaa2460ac458f39de4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Passes data from the device into the parser.  <a href="mip__interface_8c.html#a21fa1e2d19192bbaa2460ac458f39de4">More...</a><br /></td></tr>
 <tr class="separator:a21fa1e2d19192bbaa2460ac458f39de4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8625171b2cc6ee76ad7b52f64ed8c0a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__interface_8c.html#a8625171b2cc6ee76ad7b52f64ed8c0a0">mip_interface_process_unparsed_packets</a> (mip_interface *device)</td></tr>
 <tr class="memdesc:a8625171b2cc6ee76ad7b52f64ed8c0a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process more packets from the internal buffer.  <a href="mip__interface_8c.html#a8625171b2cc6ee76ad7b52f64ed8c0a0">More...</a><br /></td></tr>
@@ -150,12 +168,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a02366ef13b50d6cf0d7a1cd1751c5ee2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__interface_8c.html#a02366ef13b50d6cf0d7a1cd1751c5ee2">mip_interface_receive_packet</a> (mip_interface *device, const mip_packet *packet, timestamp_type timestamp)</td></tr>
 <tr class="memdesc:a02366ef13b50d6cf0d7a1cd1751c5ee2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes a pre-parsed packet for command replies and data.  <a href="mip__interface_8c.html#a02366ef13b50d6cf0d7a1cd1751c5ee2">More...</a><br /></td></tr>
 <tr class="separator:a02366ef13b50d6cf0d7a1cd1751c5ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24d2821bb9d8aee6fe7e81a25da4b0a5"><td class="memItemLeft" align="right" valign="top">mip_parser *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__interface_8c.html#a24d2821bb9d8aee6fe7e81a25da4b0a5">mip_interface_parser</a> (mip_interface *device)</td></tr>
-<tr class="memdesc:a24d2821bb9d8aee6fe7e81a25da4b0a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the MIP parser for the device.  <a href="mip__interface_8c.html#a24d2821bb9d8aee6fe7e81a25da4b0a5">More...</a><br /></td></tr>
-<tr class="separator:a24d2821bb9d8aee6fe7e81a25da4b0a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16f1e9d05e47c50ca9c98d73630b9711"><td class="memItemLeft" align="right" valign="top">mip_cmd_queue *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__interface_8c.html#a16f1e9d05e47c50ca9c98d73630b9711">mip_interface_cmd_queue</a> (mip_interface *device)</td></tr>
-<tr class="memdesc:a16f1e9d05e47c50ca9c98d73630b9711"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the commmand queue for the device.  <a href="mip__interface_8c.html#a16f1e9d05e47c50ca9c98d73630b9711">More...</a><br /></td></tr>
-<tr class="separator:a16f1e9d05e47c50ca9c98d73630b9711"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bdb1f88c2b5f6c800f361497be587a4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__interface_8c.html#a5bdb1f88c2b5f6c800f361497be587a4">mip_interface_parse_callback</a> (void *device, const mip_packet *packet, timestamp_type timestamp)</td></tr>
+<tr class="memdesc:a5bdb1f88c2b5f6c800f361497be587a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper around mip_interface_receive_packet for use with mip_parser.  <a href="mip__interface_8c.html#a5bdb1f88c2b5f6c800f361497be587a4">More...</a><br /></td></tr>
+<tr class="separator:a5bdb1f88c2b5f6c800f361497be587a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e9949aed4b255ea362978c33c32043d"><td class="memItemLeft" align="right" valign="top">enum mip_cmd_result&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__interface_8c.html#a2e9949aed4b255ea362978c33c32043d">mip_interface_wait_for_reply</a> (mip_interface *device, mip_pending_cmd *cmd)</td></tr>
 <tr class="memdesc:a2e9949aed4b255ea362978c33c32043d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocks until the pending command completes or times out.  <a href="mip__interface_8c.html#a2e9949aed4b255ea362978c33c32043d">More...</a><br /></td></tr>
 <tr class="separator:a2e9949aed4b255ea362978c33c32043d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -202,8 +217,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aad52889282bc7930bc0d46bc707b93ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad52889282bc7930bc0d46bc707b93ef">&#9670;&nbsp;</a></span>mip_interface_default_update()</h2>
+<a id="a403a6ec65d5ca5d345e12c619d4330e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a403a6ec65d5ca5d345e12c619d4330e5">&#9670;&nbsp;</a></span>mip_interface_default_update()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -217,8 +232,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>blocking</em>&#160;</td>
+          <td class="paramtype">timeout_type&#160;</td>
+          <td class="paramname"><em>wait_time</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -232,8 +247,8 @@ Functions</h2></td></tr>
 <p>This is the default choice for the user update function. It ignores the blocking flag and always reads data from the device.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">device</td><td>The mip_interface object. </td></tr>
-    <tr><td class="paramname">blocking</td><td>Ignored.</td></tr>
+    <tr><td class="paramname">device</td><td></td></tr>
+    <tr><td class="paramname">wait_time</td><td>Time to wait for data to be received. Passed directly to <a class="el" href="mip__interface_8c.html#a8372409f325c91245c5e3f84ea8de330" title="Checks for data at the port and reads it into buffer.">mip_interface_recv_from_device()</a>.</td></tr>
   </table>
   </dd>
 </dl>
@@ -241,8 +256,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a7b0675420a97a8b4306b06bf30ca9817"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b0675420a97a8b4306b06bf30ca9817">&#9670;&nbsp;</a></span>mip_interface_init()</h2>
+<a id="a9a0bb8b6c05a5f721d787c7bdc2f2bbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a0bb8b6c05a5f721d787c7bdc2f2bbe">&#9670;&nbsp;</a></span>mip_interface_init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -275,7 +290,31 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">timeout_type&#160;</td>
-          <td class="paramname"><em>base_reply_timeout</em>&#160;</td>
+          <td class="paramname"><em>base_reply_timeout</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">mip_send_callback&#160;</td>
+          <td class="paramname"><em>send</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">mip_recv_callback&#160;</td>
+          <td class="paramname"><em>recv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">mip_update_callback&#160;</td>
+          <td class="paramname"><em>update</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>user_pointer</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -401,7 +440,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Process more packets from the internal buffer. </p>
-<p>This is an alternative to <a class="el" href="mip__interface_8c.html#a21fa1e2d19192bbaa2460ac458f39de4" title="Receive data from the port (i.e. the physical device) into the parser.">mip_interface_receive_bytes()</a> for the case when no new input data is available and max_packets is nonzero. The timestamp is reused from the last call to receive_bytes.</p>
+<p>This is an alternative to <a class="el" href="mip__interface_8c.html#a21fa1e2d19192bbaa2460ac458f39de4" title="Passes data from the device into the parser.">mip_interface_receive_bytes()</a> for the case when no new input data is available and max_packets is nonzero. The timestamp is reused from the last call to receive_bytes.</p>
 <p>This function obeys the max_packets_per_update setting.</p>
 <dl class="section note"><dt>Note</dt><dd>Calling this function when max_packets_per_update is zero is unnecessary and has no effect. </dd></dl>
 
@@ -445,7 +484,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Receive data from the port (i.e. the physical device) into the parser. </p>
+<p>Passes data from the device into the parser. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">device</td><td></td></tr>
@@ -500,6 +539,103 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a8372409f325c91245c5e3f84ea8de330"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8372409f325c91245c5e3f84ea8de330">&#9670;&nbsp;</a></span>mip_interface_recv_from_device()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip_interface_recv_from_device </td>
+          <td>(</td>
+          <td class="paramtype">mip_interface *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>max_length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">timeout_type&#160;</td>
+          <td class="paramname"><em>wait_time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>length_out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">timestamp_type *&#160;</td>
+          <td class="paramname"><em>timestamp_out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks for data at the port and reads it into buffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td></td></tr>
+    <tr><td class="paramname">buffer</td><td>A place to store the data. </td></tr>
+    <tr><td class="paramname">max_length</td><td>Maximum number of bytes to read into buffer. </td></tr>
+    <tr><td class="paramname">wait_time</td><td>Maximum time to wait for data. May be 0. </td></tr>
+    <tr><td class="paramname">length_out</td><td>The number of bytes successfully read into buffer. </td></tr>
+    <tr><td class="paramname">timestamp_out</td><td>The timestamp of the received data.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if successful (even if 0 bytes were read). </dd>
+<dd>
+False if the receive callback is NULL. </dd>
+<dd>
+False if the receive callback failed (i.e. if it returned false). </dd></dl>
+
+</div>
+</div>
+<a id="a2f602cf7cbfead68999acd2a364a450d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f602cf7cbfead68999acd2a364a450d">&#9670;&nbsp;</a></span>mip_interface_recv_function()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mip_recv_callback mip_interface_recv_function </td>
+          <td>(</td>
+          <td class="paramtype">const mip_interface *&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the receive function pointer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The receive callback function. May be NULL. </dd></dl>
 
 </div>
 </div>
@@ -887,6 +1023,33 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a275705400661bcdc0787b2fff3585f72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a275705400661bcdc0787b2fff3585f72">&#9670;&nbsp;</a></span>mip_interface_send_function()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mip_send_callback mip_interface_send_function </td>
+          <td>(</td>
+          <td class="paramtype">const mip_interface *&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the send function pointer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The send callback function. May be NULL. </dd></dl>
+
+</div>
+</div>
 <a id="ae2fa9fd65c16218bd12716658f70f680"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae2fa9fd65c16218bd12716658f70f680">&#9670;&nbsp;</a></span>mip_interface_send_to_device()</h2>
 
@@ -928,7 +1091,11 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the data was sent successfully, false if some or all data could not be sent.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the data was sent successfully. </dd>
+<dd>
+False if the send callback is NULL. </dd>
+<dd>
+False if some or all data could not be sent.</dd></dl>
 <p>This is called whenever bytes must be sent to the physical device. </p>
 
 </div>
@@ -959,7 +1126,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sets a limit on the number of packets which can be processed in one call to the <a class="el" href="mip__interface_8c.html#a21fa1e2d19192bbaa2460ac458f39de4" title="Receive data from the port (i.e. the physical device) into the parser.">mip_interface_receive_bytes()</a> function. </p>
+<p>Sets a limit on the number of packets which can be processed in one call to the <a class="el" href="mip__interface_8c.html#a21fa1e2d19192bbaa2460ac458f39de4" title="Passes data from the device into the parser.">mip_interface_receive_bytes()</a> function. </p>
 <p>Use this when receiving data in bursts to smooth out the processing load over time.</p>
 <dl class="section note"><dt>Note</dt><dd>Make sure the parsing buffer is large enough to hold the data in between receive calls.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -972,8 +1139,82 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad6477f4984132f560fe4d738278ea925"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6477f4984132f560fe4d738278ea925">&#9670;&nbsp;</a></span>mip_interface_set_update_function()</h2>
+<a id="a48683f89916015e012a78288585f0fa7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48683f89916015e012a78288585f0fa7">&#9670;&nbsp;</a></span>mip_interface_set_recv_function()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip_interface_set_recv_function </td>
+          <td>(</td>
+          <td class="paramtype">mip_interface *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">mip_recv_callback&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the receive callback function. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td></td></tr>
+    <tr><td class="paramname">function</td><td>Function which gets data from the device connection. If this is NULL then commands will fail and no data will be received. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a56443be8aaa8400a01788798364a93b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56443be8aaa8400a01788798364a93b3">&#9670;&nbsp;</a></span>mip_interface_set_send_function()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip_interface_set_send_function </td>
+          <td>(</td>
+          <td class="paramtype">mip_interface *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">mip_send_callback&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the send callback function. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td></td></tr>
+    <tr><td class="paramname">function</td><td>Function which sends raw bytes to the device. This can be NULL if no commands will be issued (they would fail). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a08600beae9c11f5b7da8fa26f56ddd05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08600beae9c11f5b7da8fa26f56ddd05">&#9670;&nbsp;</a></span>mip_interface_set_update_function()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -981,14 +1222,14 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void mip_interface_set_update_function </td>
           <td>(</td>
-          <td class="paramtype">struct mip_interface *&#160;</td>
+          <td class="paramtype">mip_interface *&#160;</td>
           <td class="paramname"><em>device</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">mip_update_callback&#160;</td>
-          <td class="paramname"><em>function</em>&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1002,7 +1243,7 @@ Functions</h2></td></tr>
 <p>By default, the update function is mip_interface_default_update.</p>
 <dl class="section see"><dt>See also</dt><dd>mip_update_callback </dd>
 <dd>
-<a class="el" href="mip__interface_8c.html#a13b0de14d922e5777972acc8bf8875c3" title="Call to process data from the device.">mip_interface_update</a></dd></dl>
+<a class="el" href="mip__interface_8c.html#a69893613898c516362811eeec8abaeda" title="Call to process data from the device.">mip_interface_update</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">device</td><td></td></tr>
@@ -1097,8 +1338,8 @@ False on error sending the packet. No cleanup is necessary and cmd can be destro
 
 </div>
 </div>
-<a id="a13b0de14d922e5777972acc8bf8875c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13b0de14d922e5777972acc8bf8875c3">&#9670;&nbsp;</a></span>mip_interface_update()</h2>
+<a id="a69893613898c516362811eeec8abaeda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69893613898c516362811eeec8abaeda">&#9670;&nbsp;</a></span>mip_interface_update()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1112,8 +1353,8 @@ False on error sending the packet. No cleanup is necessary and cmd can be destro
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>blocking</em>&#160;</td>
+          <td class="paramtype">timeout_type&#160;</td>
+          <td class="paramname"><em>wait_time</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1125,11 +1366,11 @@ False on error sending the packet. No cleanup is necessary and cmd can be destro
 
 <p>Call to process data from the device. </p>
 <p>This function is also called while waiting for command replies.</p>
-<p>Call this periodically to process packets received from the device. It should be called at a suitably-high rate to prevent the connection buffers from overflowing. The update rate affects the reception timestamp resolution.</p>
+<p>Call this periodically to process packets received from the device. It should be called at a suitably high rate to prevent the connection buffers from overflowing. The update rate affects the reception timestamp resolution.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">device</td><td></td></tr>
-    <tr><td class="paramname">blocking</td><td>This is true when called from within a blocking command function. Applications should generally set this to false, e.g. when calling this to process incoming data packets.</td></tr>
+    <tr><td class="paramname">wait_time</td><td>Time to wait for data from the device. This will be nonzero when waiting for command replies. Applications calling this function can pass 0 to avoid blocking when checking for new data.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1137,8 +1378,8 @@ False on error sending the packet. No cleanup is necessary and cmd can be destro
 
 </div>
 </div>
-<a id="ad511591bd8ea26939239b2339e89b74b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad511591bd8ea26939239b2339e89b74b">&#9670;&nbsp;</a></span>mip_interface_update_function()</h2>
+<a id="ab71ae7dda149826ada48fd8baca3b06f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab71ae7dda149826ada48fd8baca3b06f">&#9670;&nbsp;</a></span>mip_interface_update_function()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1146,7 +1387,7 @@ False on error sending the packet. No cleanup is necessary and cmd can be destro
         <tr>
           <td class="memname">mip_update_callback mip_interface_update_function </td>
           <td>(</td>
-          <td class="paramtype">struct mip_interface *&#160;</td>
+          <td class="paramtype">const mip_interface *&#160;</td>
           <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
         </tr>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-17-g8564902</span>
+   &#160;<span id="projectnumber">v1.0.0-18-g1273781</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -109,6 +109,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga214bfb288c01e463e86b779388794cba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8d9425e3d3d8066cd2c01b65b585ca11"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___pending_command.html#ga8d9425e3d3d8066cd2c01b65b585ca11">mip::C::mip_pending_cmd_response_length</a> (const <a class="el" href="structmip_1_1_c_1_1mip__pending__cmd.html">mip_pending_cmd</a> *cmd)</td></tr>
 <tr class="separator:ga8d9425e3d3d8066cd2c01b65b585ca11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab34d21529c5e739b6258b940f6bad32e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___pending_command.html#gab34d21529c5e739b6258b940f6bad32e">mip::C::mip_pending_cmd_remaining_time</a> (const <a class="el" href="structmip_1_1_c_1_1mip__pending__cmd.html">mip_pending_cmd</a> *cmd, <a class="el" href="namespacemip_1_1_c.html#ad30c32b29ea61ed004670241c967cf2c">timestamp_type</a> now)</td></tr>
+<tr class="separator:gab34d21529c5e739b6258b940f6bad32e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga94c240fc84bc540a21fd9a63e8c6b2a2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___pending_command.html#ga94c240fc84bc540a21fd9a63e8c6b2a2">mip::C::mip_pending_cmd_check_timeout</a> (const <a class="el" href="structmip_1_1_c_1_1mip__pending__cmd.html">mip_pending_cmd</a> *cmd, <a class="el" href="namespacemip_1_1_c.html#ad30c32b29ea61ed004670241c967cf2c">timestamp_type</a> now)</td></tr>
 <tr class="separator:ga94c240fc84bc540a21fd9a63e8c6b2a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -333,6 +335,34 @@ Functions</h2></td></tr>
           <td></td>
           <td class="paramtype"><a class="el" href="namespacemip_1_1_c.html#a55eec9e5e11dfac627dd92b10d8bec5d">timeout_type</a>&#160;</td>
           <td class="paramname"><em>additional_time</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gab34d21529c5e739b6258b940f6bad32e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab34d21529c5e739b6258b940f6bad32e">&#9670;&nbsp;</a></span>mip_pending_cmd_remaining_time()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mip::C::mip_pending_cmd_remaining_time </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structmip_1_1_c_1_1mip__pending__cmd.html">mip_pending_cmd</a> *&#160;</td>
+          <td class="paramname"><em>cmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacemip_1_1_c.html#ad30c32b29ea61ed004670241c967cf2c">timestamp_type</a>&#160;</td>
+          <td class="paramname"><em>now</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

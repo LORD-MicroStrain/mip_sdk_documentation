@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-17-g8564902</span>
+   &#160;<span id="projectnumber">v1.0.0-18-g1273781</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -74,11 +74,12 @@ $(function() {
 
 <p>This is the complete list of members for <a class="el" href="classmip_1_1platform_1_1_tcp_connection.html">mip::platform::TcpConnection</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classmip_1_1platform_1_1_tcp_connection.html#a48772332dfda85f5322841bd9d3e5b6f">recvFromDevice</a>(uint8_t *buffer, size_t max_length, size_t *length_out, mip::Timestamp *timestamp) final</td><td class="entry"><a class="el" href="classmip_1_1platform_1_1_tcp_connection.html">mip::platform::TcpConnection</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classmip_1_1platform_1_1_tcp_connection.html#adbc6c6392def5cb39207307e74eeff67">sendToDevice</a>(const uint8_t *data, size_t length) final</td><td class="entry"><a class="el" href="classmip_1_1platform_1_1_tcp_connection.html">mip::platform::TcpConnection</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classmip_1_1platform_1_1_tcp_connection.html#a362e3ceb01b757ba3c09d5835585465c">TcpConnection</a>()=default</td><td class="entry"><a class="el" href="classmip_1_1platform_1_1_tcp_connection.html">mip::platform::TcpConnection</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classmip_1_1platform_1_1_tcp_connection.html#a8de7776e8fbb12dd95cbcb496cfa965b">TcpConnection</a>(const std::string &amp;hostname, uint16_t port)</td><td class="entry"><a class="el" href="classmip_1_1platform_1_1_tcp_connection.html">mip::platform::TcpConnection</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classmip_1_1platform_1_1_tcp_connection.html#aefbe225861a5bc71f4199a031451d45c">~TcpConnection</a>()</td><td class="entry"><a class="el" href="classmip_1_1platform_1_1_tcp_connection.html">mip::platform::TcpConnection</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmip_1_1_connection.html#ac143ab4318741a4a3d1c9db24336833e">connect_interface</a>(C::mip_interface *device)</td><td class="entry"><a class="el" href="classmip_1_1_connection.html">mip::Connection</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classmip_1_1platform_1_1_tcp_connection.html#a58084181a8db98e8e77b2f221ce3ed10">recvFromDevice</a>(uint8_t *buffer, size_t max_length, Timeout wait_time, size_t *length_out, mip::Timestamp *timestamp) final</td><td class="entry"><a class="el" href="classmip_1_1platform_1_1_tcp_connection.html">mip::platform::TcpConnection</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmip_1_1platform_1_1_tcp_connection.html#adbc6c6392def5cb39207307e74eeff67">sendToDevice</a>(const uint8_t *data, size_t length) final</td><td class="entry"><a class="el" href="classmip_1_1platform_1_1_tcp_connection.html">mip::platform::TcpConnection</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classmip_1_1platform_1_1_tcp_connection.html#a362e3ceb01b757ba3c09d5835585465c">TcpConnection</a>()=default</td><td class="entry"><a class="el" href="classmip_1_1platform_1_1_tcp_connection.html">mip::platform::TcpConnection</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmip_1_1platform_1_1_tcp_connection.html#a8de7776e8fbb12dd95cbcb496cfa965b">TcpConnection</a>(const std::string &amp;hostname, uint16_t port)</td><td class="entry"><a class="el" href="classmip_1_1platform_1_1_tcp_connection.html">mip::platform::TcpConnection</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classmip_1_1platform_1_1_tcp_connection.html#aefbe225861a5bc71f4199a031451d45c">~TcpConnection</a>()</td><td class="entry"><a class="el" href="classmip_1_1platform_1_1_tcp_connection.html">mip::platform::TcpConnection</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

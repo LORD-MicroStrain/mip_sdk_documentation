@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-17-g8564902</span>
+   &#160;<span id="projectnumber">v1.0.0-18-g1273781</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -74,8 +74,9 @@ $(function() {
 
 <p>This is the complete list of members for <a class="el" href="classmip_1_1_connection.html">mip::Connection</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classmip_1_1_connection.html#ac14c2a28fdc3e4a484c91a62137a7561">recvFromDevice</a>(uint8_t *buffer, size_t max_length, size_t *length_out, Timestamp *timestamp)=0</td><td class="entry"><a class="el" href="classmip_1_1_connection.html">mip::Connection</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classmip_1_1_connection.html#ad8b776d34aa55fb20e2e184035b365a0">sendToDevice</a>(const uint8_t *data, size_t length)=0</td><td class="entry"><a class="el" href="classmip_1_1_connection.html">mip::Connection</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmip_1_1_connection.html#ac143ab4318741a4a3d1c9db24336833e">connect_interface</a>(C::mip_interface *device)</td><td class="entry"><a class="el" href="classmip_1_1_connection.html">mip::Connection</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classmip_1_1_connection.html#a07b2f8cd73574f0da74fbb0b82a7f1c3">recvFromDevice</a>(uint8_t *buffer, size_t max_length, Timeout wait_time, size_t *length_out, Timestamp *timestamp_out)=0</td><td class="entry"><a class="el" href="classmip_1_1_connection.html">mip::Connection</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmip_1_1_connection.html#ad56be6630183ec4cc9cf5f59b4d46e53">sendToDevice</a>(const uint8_t *data, size_t length)=0</td><td class="entry"><a class="el" href="classmip_1_1_connection.html">mip::Connection</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

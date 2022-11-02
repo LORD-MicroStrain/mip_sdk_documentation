@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-17-g8564902</span>
+   &#160;<span id="projectnumber">v1.0.0-18-g1273781</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -1269,10 +1269,10 @@ $(function() {
 : <a class="el" href="group__mip__interface__c.html#ga91b32cd19578b6f4c430d87807f53082">mip::C</a>
 </li>
 <li>mip_interface_default_update()
-: <a class="el" href="group__mip__interface__c.html#ga5773eb6cf4060d78630117395671686a">mip::C</a>
+: <a class="el" href="group__mip__interface__c.html#gae2a8cafd388fe9c5a4e011556171acf7">mip::C</a>
 </li>
 <li>mip_interface_init()
-: <a class="el" href="group__mip__interface__c.html#gac1f6b358d02d203731bbf2106b4c3ac7">mip::C</a>
+: <a class="el" href="group__mip__interface__c.html#gae6e34d3bdbb97343cc2f77904cd1f92f">mip::C</a>
 </li>
 <li>mip_interface_max_packets_per_update()
 : <a class="el" href="group__mip__interface__c.html#ga880ba030c8d3b29b35919c0f23c6c2a2">mip::C</a>
@@ -1292,6 +1292,12 @@ $(function() {
 <li>mip_interface_receive_packet()
 : <a class="el" href="group__mip__interface__c.html#gab8bb95dcac03748fc294784a67813fc1">mip::C</a>
 </li>
+<li>mip_interface_recv_from_device()
+: <a class="el" href="group__mip__interface__c.html#ga5dd8e5fd39d74311e07525867b77320f">mip::C</a>
+</li>
+<li>mip_interface_recv_function()
+: <a class="el" href="group__mip__interface__c.html#ga648c3178e6495eadc3eefbbfd0db4ddc">mip::C</a>
+</li>
 <li>mip_interface_register_extractor()
 : <a class="el" href="group__mip__interface__c.html#gaf5fda8650c9ce57ce0510900cb33556a">mip::C</a>
 </li>
@@ -1310,11 +1316,20 @@ $(function() {
 <li>mip_interface_run_command_with_response()
 : <a class="el" href="group__mip__interface__c.html#ga217e18ec21fbd93308057241cd7285ce">mip::C</a>
 </li>
+<li>mip_interface_send_function()
+: <a class="el" href="group__mip__interface__c.html#ga4bb1a462c7cfb3d80aca3dd8c2e102c4">mip::C</a>
+</li>
 <li>mip_interface_send_to_device()
 : <a class="el" href="group__mip__interface__c.html#ga04a725bcf412e0c7bc4c7c53b74c5553">mip::C</a>
 </li>
 <li>mip_interface_set_max_packets_per_update()
 : <a class="el" href="group__mip__interface__c.html#ga389694dbfcfa633cfde009dbec9a9625">mip::C</a>
+</li>
+<li>mip_interface_set_recv_function()
+: <a class="el" href="group__mip__interface__c.html#gae183bfa58e9d41b6d2613696e1c80506">mip::C</a>
+</li>
+<li>mip_interface_set_send_function()
+: <a class="el" href="group__mip__interface__c.html#gaf5bb85180ae8514b5019f4f4fac05af4">mip::C</a>
 </li>
 <li>mip_interface_set_update_function()
 : <a class="el" href="group__mip__interface__c.html#ga28d194306edbc64b81c7197c53705ccb">mip::C</a>
@@ -1326,19 +1341,13 @@ $(function() {
 : <a class="el" href="group__mip__interface__c.html#ga57d45247bb851072be8e90faa3826fe6">mip::C</a>
 </li>
 <li>mip_interface_update()
-: <a class="el" href="group__mip__interface__c.html#ga3c90fd0f0f381fd46d815ca541b6864b">mip::C</a>
+: <a class="el" href="group__mip__interface__c.html#gad205df3fa2113261e0171b7c36390e50">mip::C</a>
 </li>
 <li>mip_interface_update_function()
-: <a class="el" href="group__mip__interface__c.html#gab1656942cc3d4c48bbfb041c2c099667">mip::C</a>
+: <a class="el" href="group__mip__interface__c.html#ga808240bdd0466d64bb39914552d99626">mip::C</a>
 </li>
 <li>mip_interface_user_pointer()
 : <a class="el" href="group__mip__interface__c.html#gacf41afc32d29fb3af5e4d55f5cd1763c">mip::C</a>
-</li>
-<li>mip_interface_user_recv_from_device()
-: <a class="el" href="group__user__callbacks.html#gaa684764c004d511b624014d34f2cbf60">mip::C</a>
-</li>
-<li>mip_interface_user_send_to_device()
-: <a class="el" href="group__user__callbacks.html#gac70dff4bac4b540aed368ce12f26cf47">mip::C</a>
 </li>
 <li>mip_interface_wait_for_reply()
 : <a class="el" href="group__mip__interface__c.html#gaaaedad73f9ab28beb69e2a1a8c9da636">mip::C</a>
@@ -1499,6 +1508,9 @@ $(function() {
 </li>
 <li>mip_pending_cmd_init_with_timeout()
 : <a class="el" href="group___pending_command.html#ga903c6e54a7a28a59f641e42114805b07">mip::C</a>
+</li>
+<li>mip_pending_cmd_remaining_time()
+: <a class="el" href="group___pending_command.html#gab34d21529c5e739b6258b940f6bad32e">mip::C</a>
 </li>
 <li>mip_pending_cmd_response()
 : <a class="el" href="group___pending_command.html#ga214bfb288c01e463e86b779388794cba">mip::C</a>

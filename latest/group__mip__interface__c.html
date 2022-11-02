@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-17-g8564902</span>
+   &#160;<span id="projectnumber">v1.0.0-18-g1273781</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -92,27 +92,32 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga0a871a93db64b5a90775e5d4b29b7793"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__interface__c.html#ga0a871a93db64b5a90775e5d4b29b7793">mip::C::mip_update_callback</a>) (struct <a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *device, bool blocking)</td></tr>
-<tr class="memdesc:ga0a871a93db64b5a90775e5d4b29b7793"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function typedef for custom update behavior.  <a href="group__mip__interface__c.html#ga0a871a93db64b5a90775e5d4b29b7793">More...</a><br /></td></tr>
-<tr class="separator:ga0a871a93db64b5a90775e5d4b29b7793"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga714cf58d781b9cb481058bbbd9da8552"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__interface__c.html#ga714cf58d781b9cb481058bbbd9da8552">mip::C::mip_send_callback</a>) (struct <a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *device, const uint8_t *data, size_t length)</td></tr>
+<tr class="separator:ga714cf58d781b9cb481058bbbd9da8552"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga99a016f0324d1ee29d980471fdfddc92"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__interface__c.html#ga99a016f0324d1ee29d980471fdfddc92">mip::C::mip_recv_callback</a>) (struct <a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *device, uint8_t *buffer, size_t max_length, <a class="el" href="namespacemip_1_1_c.html#a55eec9e5e11dfac627dd92b10d8bec5d">timeout_type</a> wait_time, size_t *out_length, <a class="el" href="namespacemip_1_1_c.html#ad30c32b29ea61ed004670241c967cf2c">timestamp_type</a> *timestamp_out)</td></tr>
+<tr class="separator:ga99a016f0324d1ee29d980471fdfddc92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad9ff4c63455184e9b92c0c71d76317ad"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__interface__c.html#gad9ff4c63455184e9b92c0c71d76317ad">mip::C::mip_update_callback</a>) (struct <a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *device, <a class="el" href="namespacemip_1_1_c.html#a55eec9e5e11dfac627dd92b10d8bec5d">timeout_type</a> timeout)</td></tr>
+<tr class="separator:gad9ff4c63455184e9b92c0c71d76317ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaad6898733d3e1d41d14a84280c5435fa"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip::C::mip_interface</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__interface__c.html#gaad6898733d3e1d41d14a84280c5435fa">mip::C::mip_interface</a></td></tr>
 <tr class="memdesc:gaad6898733d3e1d41d14a84280c5435fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">State of the interface for communicating with a MIP device.  <a href="group__mip__interface__c.html#gaad6898733d3e1d41d14a84280c5435fa">More...</a><br /></td></tr>
 <tr class="separator:gaad6898733d3e1d41d14a84280c5435fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gac1f6b358d02d203731bbf2106b4c3ac7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__interface__c.html#gac1f6b358d02d203731bbf2106b4c3ac7">mip::C::mip_interface_init</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *device, uint8_t *parse_buffer, size_t parse_buffer_size, <a class="el" href="namespacemip_1_1_c.html#a55eec9e5e11dfac627dd92b10d8bec5d">timeout_type</a> parse_timeout, <a class="el" href="namespacemip_1_1_c.html#a55eec9e5e11dfac627dd92b10d8bec5d">timeout_type</a> base_reply_timeout)</td></tr>
-<tr class="separator:gac1f6b358d02d203731bbf2106b4c3ac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae6e34d3bdbb97343cc2f77904cd1f92f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__interface__c.html#gae6e34d3bdbb97343cc2f77904cd1f92f">mip::C::mip_interface_init</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *device, uint8_t *parse_buffer, size_t parse_buffer_size, <a class="el" href="namespacemip_1_1_c.html#a55eec9e5e11dfac627dd92b10d8bec5d">timeout_type</a> parse_timeout, <a class="el" href="namespacemip_1_1_c.html#a55eec9e5e11dfac627dd92b10d8bec5d">timeout_type</a> base_reply_timeout, <a class="el" href="group__mip__interface__c.html#ga714cf58d781b9cb481058bbbd9da8552">mip_send_callback</a> send, <a class="el" href="group__mip__interface__c.html#ga99a016f0324d1ee29d980471fdfddc92">mip_recv_callback</a> recv, <a class="el" href="group__mip__interface__c.html#gad9ff4c63455184e9b92c0c71d76317ad">mip_update_callback</a> update, void *user_pointer)</td></tr>
+<tr class="separator:gae6e34d3bdbb97343cc2f77904cd1f92f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga04a725bcf412e0c7bc4c7c53b74c5553"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__interface__c.html#ga04a725bcf412e0c7bc4c7c53b74c5553">mip::C::mip_interface_send_to_device</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *device, const uint8_t *data, size_t length)</td></tr>
+<tr class="separator:ga04a725bcf412e0c7bc4c7c53b74c5553"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5dd8e5fd39d74311e07525867b77320f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__interface__c.html#ga5dd8e5fd39d74311e07525867b77320f">mip::C::mip_interface_recv_from_device</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *device, uint8_t *buffer, size_t max_length, <a class="el" href="namespacemip_1_1_c.html#a55eec9e5e11dfac627dd92b10d8bec5d">timeout_type</a> timeout, size_t *length_out, <a class="el" href="namespacemip_1_1_c.html#ad30c32b29ea61ed004670241c967cf2c">timestamp_type</a> *now)</td></tr>
+<tr class="separator:ga5dd8e5fd39d74311e07525867b77320f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad205df3fa2113261e0171b7c36390e50"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__interface__c.html#gad205df3fa2113261e0171b7c36390e50">mip::C::mip_interface_update</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *device, <a class="el" href="namespacemip_1_1_c.html#a55eec9e5e11dfac627dd92b10d8bec5d">timeout_type</a> wait_time)</td></tr>
+<tr class="separator:gad205df3fa2113261e0171b7c36390e50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae2a8cafd388fe9c5a4e011556171acf7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__interface__c.html#gae2a8cafd388fe9c5a4e011556171acf7">mip::C::mip_interface_default_update</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *device, <a class="el" href="namespacemip_1_1_c.html#a55eec9e5e11dfac627dd92b10d8bec5d">timeout_type</a> wait_time)</td></tr>
+<tr class="separator:gae2a8cafd388fe9c5a4e011556171acf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae72025a190df0671329afc8ab8014a3e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemip_1_1_c.html#a824d5367b775daf33493d7e7ab21d8c5">remaining_count</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__interface__c.html#gae72025a190df0671329afc8ab8014a3e">mip::C::mip_interface_receive_bytes</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *device, const uint8_t *data, size_t length, <a class="el" href="namespacemip_1_1_c.html#ad30c32b29ea61ed004670241c967cf2c">timestamp_type</a> timestamp)</td></tr>
 <tr class="separator:gae72025a190df0671329afc8ab8014a3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaea74cf83ea2501be750c95740eaf4524"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__interface__c.html#gaea74cf83ea2501be750c95740eaf4524">mip::C::mip_interface_process_unparsed_packets</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *device)</td></tr>
 <tr class="separator:gaea74cf83ea2501be750c95740eaf4524"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3c90fd0f0f381fd46d815ca541b6864b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__interface__c.html#ga3c90fd0f0f381fd46d815ca541b6864b">mip::C::mip_interface_update</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *device, bool blocking)</td></tr>
-<tr class="separator:ga3c90fd0f0f381fd46d815ca541b6864b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5773eb6cf4060d78630117395671686a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__interface__c.html#ga5773eb6cf4060d78630117395671686a">mip::C::mip_interface_default_update</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *device, bool blocking)</td></tr>
-<tr class="separator:ga5773eb6cf4060d78630117395671686a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga04a725bcf412e0c7bc4c7c53b74c5553"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__interface__c.html#ga04a725bcf412e0c7bc4c7c53b74c5553">mip::C::mip_interface_send_to_device</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *device, const uint8_t *data, size_t length)</td></tr>
-<tr class="separator:ga04a725bcf412e0c7bc4c7c53b74c5553"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacc8b1ac03d26e86964d163044b938de5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__interface__c.html#gacc8b1ac03d26e86964d163044b938de5">mip::C::mip_interface_parse_callback</a> (void *device, const <a class="el" href="structmip_1_1_c_1_1mip__packet.html">mip_packet</a> *packet, <a class="el" href="namespacemip_1_1_c.html#ad30c32b29ea61ed004670241c967cf2c">timestamp_type</a> timestamp)</td></tr>
 <tr class="separator:gacc8b1ac03d26e86964d163044b938de5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab8bb95dcac03748fc294784a67813fc1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__interface__c.html#gab8bb95dcac03748fc294784a67813fc1">mip::C::mip_interface_receive_packet</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *device, const <a class="el" href="structmip_1_1_c_1_1mip__packet.html">mip_packet</a> *packet, <a class="el" href="namespacemip_1_1_c.html#ad30c32b29ea61ed004670241c967cf2c">timestamp_type</a> timestamp)</td></tr>
@@ -133,7 +138,11 @@ Functions</h2></td></tr>
 <tr class="separator:ga61695d9789777b9f1e5c88f7e2fb4f96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf5fda8650c9ce57ce0510900cb33556a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__interface__c.html#gaf5fda8650c9ce57ce0510900cb33556a">mip::C::mip_interface_register_extractor</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *device, <a class="el" href="structmip_1_1_c_1_1mip__dispatch__handler.html">mip_dispatch_handler</a> *handler, uint8_t descriptor_set, uint8_t field_descriptor, <a class="el" href="group___mip_dispatch__c.html#ga44c0a5b2338201f0ef85db07f8a0364c">mip_dispatch_extractor</a> callback, void *field_ptr)</td></tr>
 <tr class="separator:gaf5fda8650c9ce57ce0510900cb33556a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga28d194306edbc64b81c7197c53705ccb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__interface__c.html#ga28d194306edbc64b81c7197c53705ccb">mip::C::mip_interface_set_update_function</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *device, <a class="el" href="group__mip__interface__c.html#ga0a871a93db64b5a90775e5d4b29b7793">mip_update_callback</a> function)</td></tr>
+<tr class="memitem:gae183bfa58e9d41b6d2613696e1c80506"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__interface__c.html#gae183bfa58e9d41b6d2613696e1c80506">mip::C::mip_interface_set_recv_function</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *device, <a class="el" href="group__mip__interface__c.html#ga99a016f0324d1ee29d980471fdfddc92">mip_recv_callback</a> function)</td></tr>
+<tr class="separator:gae183bfa58e9d41b6d2613696e1c80506"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf5bb85180ae8514b5019f4f4fac05af4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__interface__c.html#gaf5bb85180ae8514b5019f4f4fac05af4">mip::C::mip_interface_set_send_function</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *device, <a class="el" href="group__mip__interface__c.html#ga714cf58d781b9cb481058bbbd9da8552">mip_send_callback</a> function)</td></tr>
+<tr class="separator:gaf5bb85180ae8514b5019f4f4fac05af4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga28d194306edbc64b81c7197c53705ccb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__interface__c.html#ga28d194306edbc64b81c7197c53705ccb">mip::C::mip_interface_set_update_function</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *device, <a class="el" href="group__mip__interface__c.html#gad9ff4c63455184e9b92c0c71d76317ad">mip_update_callback</a> function)</td></tr>
 <tr class="separator:ga28d194306edbc64b81c7197c53705ccb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf1f9785e21e20bd4fea3e18f7be54d97"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__interface__c.html#gaf1f9785e21e20bd4fea3e18f7be54d97">mip::C::mip_interface_set_user_pointer</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *device, void *pointer)</td></tr>
 <tr class="separator:gaf1f9785e21e20bd4fea3e18f7be54d97"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,8 +150,12 @@ Functions</h2></td></tr>
 <tr class="separator:ga389694dbfcfa633cfde009dbec9a9625"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga880ba030c8d3b29b35919c0f23c6c2a2"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__interface__c.html#ga880ba030c8d3b29b35919c0f23c6c2a2">mip::C::mip_interface_max_packets_per_update</a> (const <a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *device)</td></tr>
 <tr class="separator:ga880ba030c8d3b29b35919c0f23c6c2a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab1656942cc3d4c48bbfb041c2c099667"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__mip__interface__c.html#ga0a871a93db64b5a90775e5d4b29b7793">mip_update_callback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__interface__c.html#gab1656942cc3d4c48bbfb041c2c099667">mip::C::mip_interface_update_function</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *device)</td></tr>
-<tr class="separator:gab1656942cc3d4c48bbfb041c2c099667"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga648c3178e6495eadc3eefbbfd0db4ddc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__mip__interface__c.html#ga99a016f0324d1ee29d980471fdfddc92">mip_recv_callback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__interface__c.html#ga648c3178e6495eadc3eefbbfd0db4ddc">mip::C::mip_interface_recv_function</a> (const <a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *device)</td></tr>
+<tr class="separator:ga648c3178e6495eadc3eefbbfd0db4ddc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4bb1a462c7cfb3d80aca3dd8c2e102c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__mip__interface__c.html#ga714cf58d781b9cb481058bbbd9da8552">mip_send_callback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__interface__c.html#ga4bb1a462c7cfb3d80aca3dd8c2e102c4">mip::C::mip_interface_send_function</a> (const <a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *device)</td></tr>
+<tr class="separator:ga4bb1a462c7cfb3d80aca3dd8c2e102c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga808240bdd0466d64bb39914552d99626"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__mip__interface__c.html#gad9ff4c63455184e9b92c0c71d76317ad">mip_update_callback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__interface__c.html#ga808240bdd0466d64bb39914552d99626">mip::C::mip_interface_update_function</a> (const <a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *device)</td></tr>
+<tr class="separator:ga808240bdd0466d64bb39914552d99626"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacf41afc32d29fb3af5e4d55f5cd1763c"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__interface__c.html#gacf41afc32d29fb3af5e4d55f5cd1763c">mip::C::mip_interface_user_pointer</a> (const <a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *device)</td></tr>
 <tr class="separator:gacf41afc32d29fb3af5e4d55f5cd1763c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaad8a1db455695a53ddee83ea7698f48a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_c_1_1mip__parser.html">mip_parser</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__interface__c.html#gaad8a1db455695a53ddee83ea7698f48a">mip::C::mip_interface_parser</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *device)</td></tr>
@@ -174,29 +187,45 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga0a871a93db64b5a90775e5d4b29b7793"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0a871a93db64b5a90775e5d4b29b7793">&#9670;&nbsp;</a></span>mip_update_callback</h2>
+<a id="ga99a016f0324d1ee29d980471fdfddc92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga99a016f0324d1ee29d980471fdfddc92">&#9670;&nbsp;</a></span>mip_recv_callback</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef bool(* mip::C::mip_update_callback) (struct <a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *device, bool blocking)</td>
+          <td class="memname">typedef bool(* mip::C::mip_recv_callback) (struct <a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *device, uint8_t *buffer, size_t max_length, <a class="el" href="namespacemip_1_1_c.html#a55eec9e5e11dfac627dd92b10d8bec5d">timeout_type</a> wait_time, size_t *out_length, <a class="el" href="namespacemip_1_1_c.html#ad30c32b29ea61ed004670241c967cf2c">timestamp_type</a> *timestamp_out)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Callback function typedef for custom update behavior. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">device</td><td>The <a class="el" href="structmip_1_1_c_1_1mip__interface.html" title="State of the interface for communicating with a MIP device.">mip_interface</a> object being updated. </td></tr>
-    <tr><td class="paramname">blocking</td><td>True if called from within a blocking command function.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>False if an error occurs and the port cannot be read (e.g. if the port is closed). Returning false will cause any pending commands to fail with a status error code. </dd>
-<dd>
-True if successful (even if no data is received). </dd></dl>
+</div>
+</div>
+<a id="ga714cf58d781b9cb481058bbbd9da8552"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga714cf58d781b9cb481058bbbd9da8552">&#9670;&nbsp;</a></span>mip_send_callback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef bool(* mip::C::mip_send_callback) (struct <a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *device, const uint8_t *data, size_t length)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gad9ff4c63455184e9b92c0c71d76317ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad9ff4c63455184e9b92c0c71d76317ad">&#9670;&nbsp;</a></span>mip_update_callback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef bool(* mip::C::mip_update_callback) (struct <a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *device, <a class="el" href="namespacemip_1_1_c.html#a55eec9e5e11dfac627dd92b10d8bec5d">timeout_type</a> timeout)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -219,8 +248,8 @@ True if successful (even if no data is received). </dd></dl>
 
 </div>
 </div>
-<a id="ga5773eb6cf4060d78630117395671686a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5773eb6cf4060d78630117395671686a">&#9670;&nbsp;</a></span>mip_interface_default_update()</h2>
+<a id="gae2a8cafd388fe9c5a4e011556171acf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae2a8cafd388fe9c5a4e011556171acf7">&#9670;&nbsp;</a></span>mip_interface_default_update()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -234,8 +263,8 @@ True if successful (even if no data is received). </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>blocking</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemip_1_1_c.html#a55eec9e5e11dfac627dd92b10d8bec5d">timeout_type</a>&#160;</td>
+          <td class="paramname"><em>wait_time</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -247,8 +276,8 @@ True if successful (even if no data is received). </dd></dl>
 
 </div>
 </div>
-<a id="gac1f6b358d02d203731bbf2106b4c3ac7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac1f6b358d02d203731bbf2106b4c3ac7">&#9670;&nbsp;</a></span>mip_interface_init()</h2>
+<a id="gae6e34d3bdbb97343cc2f77904cd1f92f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae6e34d3bdbb97343cc2f77904cd1f92f">&#9670;&nbsp;</a></span>mip_interface_init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -281,7 +310,31 @@ True if successful (even if no data is received). </dd></dl>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="namespacemip_1_1_c.html#a55eec9e5e11dfac627dd92b10d8bec5d">timeout_type</a>&#160;</td>
-          <td class="paramname"><em>base_reply_timeout</em>&#160;</td>
+          <td class="paramname"><em>base_reply_timeout</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__mip__interface__c.html#ga714cf58d781b9cb481058bbbd9da8552">mip_send_callback</a>&#160;</td>
+          <td class="paramname"><em>send</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__mip__interface__c.html#ga99a016f0324d1ee29d980471fdfddc92">mip_recv_callback</a>&#160;</td>
+          <td class="paramname"><em>recv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__mip__interface__c.html#gad9ff4c63455184e9b92c0c71d76317ad">mip_update_callback</a>&#160;</td>
+          <td class="paramname"><em>update</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>user_pointer</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -449,6 +502,76 @@ True if successful (even if no data is received). </dd></dl>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga5dd8e5fd39d74311e07525867b77320f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5dd8e5fd39d74311e07525867b77320f">&#9670;&nbsp;</a></span>mip_interface_recv_from_device()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::C::mip_interface_recv_from_device </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>max_length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacemip_1_1_c.html#a55eec9e5e11dfac627dd92b10d8bec5d">timeout_type</a>&#160;</td>
+          <td class="paramname"><em>timeout</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>length_out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacemip_1_1_c.html#ad30c32b29ea61ed004670241c967cf2c">timestamp_type</a> *&#160;</td>
+          <td class="paramname"><em>now</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga648c3178e6495eadc3eefbbfd0db4ddc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga648c3178e6495eadc3eefbbfd0db4ddc">&#9670;&nbsp;</a></span>mip_interface_recv_function()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__mip__interface__c.html#ga99a016f0324d1ee29d980471fdfddc92">mip_recv_callback</a> mip::C::mip_interface_recv_function </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -755,6 +878,24 @@ True if successful (even if no data is received). </dd></dl>
 
 </div>
 </div>
+<a id="ga4bb1a462c7cfb3d80aca3dd8c2e102c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4bb1a462c7cfb3d80aca3dd8c2e102c4">&#9670;&nbsp;</a></span>mip_interface_send_function()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__mip__interface__c.html#ga714cf58d781b9cb481058bbbd9da8552">mip_send_callback</a> mip::C::mip_interface_send_function </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ga04a725bcf412e0c7bc4c7c53b74c5553"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga04a725bcf412e0c7bc4c7c53b74c5553">&#9670;&nbsp;</a></span>mip_interface_send_to_device()</h2>
 
@@ -817,6 +958,62 @@ True if successful (even if no data is received). </dd></dl>
 
 </div>
 </div>
+<a id="gae183bfa58e9d41b6d2613696e1c80506"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae183bfa58e9d41b6d2613696e1c80506">&#9670;&nbsp;</a></span>mip_interface_set_recv_function()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::C::mip_interface_set_recv_function </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__mip__interface__c.html#ga99a016f0324d1ee29d980471fdfddc92">mip_recv_callback</a>&#160;</td>
+          <td class="paramname"><em>function</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaf5bb85180ae8514b5019f4f4fac05af4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf5bb85180ae8514b5019f4f4fac05af4">&#9670;&nbsp;</a></span>mip_interface_set_send_function()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::C::mip_interface_set_send_function </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__mip__interface__c.html#ga714cf58d781b9cb481058bbbd9da8552">mip_send_callback</a>&#160;</td>
+          <td class="paramname"><em>function</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ga28d194306edbc64b81c7197c53705ccb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga28d194306edbc64b81c7197c53705ccb">&#9670;&nbsp;</a></span>mip_interface_set_update_function()</h2>
 
@@ -832,7 +1029,7 @@ True if successful (even if no data is received). </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__mip__interface__c.html#ga0a871a93db64b5a90775e5d4b29b7793">mip_update_callback</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__mip__interface__c.html#gad9ff4c63455184e9b92c0c71d76317ad">mip_update_callback</a>&#160;</td>
           <td class="paramname"><em>function</em>&#160;</td>
         </tr>
         <tr>
@@ -907,8 +1104,8 @@ True if successful (even if no data is received). </dd></dl>
 
 </div>
 </div>
-<a id="ga3c90fd0f0f381fd46d815ca541b6864b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3c90fd0f0f381fd46d815ca541b6864b">&#9670;&nbsp;</a></span>mip_interface_update()</h2>
+<a id="gad205df3fa2113261e0171b7c36390e50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad205df3fa2113261e0171b7c36390e50">&#9670;&nbsp;</a></span>mip_interface_update()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -922,8 +1119,8 @@ True if successful (even if no data is received). </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>blocking</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemip_1_1_c.html#a55eec9e5e11dfac627dd92b10d8bec5d">timeout_type</a>&#160;</td>
+          <td class="paramname"><em>wait_time</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -935,16 +1132,16 @@ True if successful (even if no data is received). </dd></dl>
 
 </div>
 </div>
-<a id="gab1656942cc3d4c48bbfb041c2c099667"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab1656942cc3d4c48bbfb041c2c099667">&#9670;&nbsp;</a></span>mip_interface_update_function()</h2>
+<a id="ga808240bdd0466d64bb39914552d99626"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga808240bdd0466d64bb39914552d99626">&#9670;&nbsp;</a></span>mip_interface_update_function()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__interface__c.html#ga0a871a93db64b5a90775e5d4b29b7793">mip_update_callback</a> mip::C::mip_interface_update_function </td>
+          <td class="memname"><a class="el" href="group__mip__interface__c.html#gad9ff4c63455184e9b92c0c71d76317ad">mip_update_callback</a> mip::C::mip_interface_update_function </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *&#160;</td>
           <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
         </tr>

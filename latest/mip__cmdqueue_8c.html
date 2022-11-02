@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-17-g8564902</span>
+   &#160;<span id="projectnumber">v1.0.0-18-g1273781</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -130,6 +130,9 @@ Functions</h2></td></tr>
 <tr class="memitem:adaf8d966ede3ebcbbc45eca4ddfb57f6"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__cmdqueue_8c.html#adaf8d966ede3ebcbbc45eca4ddfb57f6">mip_pending_cmd_response_length</a> (const mip_pending_cmd *cmd)</td></tr>
 <tr class="memdesc:adaf8d966ede3ebcbbc45eca4ddfb57f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the length of the response data.  <a href="mip__cmdqueue_8c.html#adaf8d966ede3ebcbbc45eca4ddfb57f6">More...</a><br /></td></tr>
 <tr class="separator:adaf8d966ede3ebcbbc45eca4ddfb57f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13f3d718434974e332c51dff913b2bb2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__cmdqueue_8c.html#a13f3d718434974e332c51dff913b2bb2">mip_pending_cmd_remaining_time</a> (const mip_pending_cmd *cmd, timestamp_type now)</td></tr>
+<tr class="memdesc:a13f3d718434974e332c51dff913b2bb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines how much time is remaining before the command times out.  <a href="mip__cmdqueue_8c.html#a13f3d718434974e332c51dff913b2bb2">More...</a><br /></td></tr>
+<tr class="separator:a13f3d718434974e332c51dff913b2bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b104ec5cbbdf5fdd344d613b25afa3a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__cmdqueue_8c.html#a9b104ec5cbbdf5fdd344d613b25afa3a">mip_pending_cmd_check_timeout</a> (const mip_pending_cmd *cmd, timestamp_type now)</td></tr>
 <tr class="memdesc:a9b104ec5cbbdf5fdd344d613b25afa3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the command should time out.  <a href="mip__cmdqueue_8c.html#a9b104ec5cbbdf5fdd344d613b25afa3a">More...</a><br /></td></tr>
 <tr class="separator:a9b104ec5cbbdf5fdd344d613b25afa3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -746,6 +749,46 @@ false if the command should not time out. </dd></dl>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a13f3d718434974e332c51dff913b2bb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13f3d718434974e332c51dff913b2bb2">&#9670;&nbsp;</a></span>mip_pending_cmd_remaining_time()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mip_pending_cmd_remaining_time </td>
+          <td>(</td>
+          <td class="paramtype">const mip_pending_cmd *&#160;</td>
+          <td class="paramname"><em>cmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">timestamp_type&#160;</td>
+          <td class="paramname"><em>now</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determines how much time is remaining before the command times out. </p>
+<p>For most cases you should instead call <a class="el" href="mip__cmdqueue_8c.html#a9b104ec5cbbdf5fdd344d613b25afa3a" title="Checks if the command should time out.">mip_pending_cmd_check_timeout()</a> to know if the command has timed out or not.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmd</td><td>The command to check. Must be in MIP_STATUS_WAITING state. </td></tr>
+    <tr><td class="paramname">now</td><td>The current timestamp.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>Warning</dt><dd>The command must be in the MIP_STATUS_WAITING state, otherwise the result is unspecified.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The time remaining before the command times out. The value will be negative if the timeout time has passed. </dd></dl>
 
 </div>
 </div>

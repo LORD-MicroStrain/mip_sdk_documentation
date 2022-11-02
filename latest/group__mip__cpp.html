@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-17-g8564902</span>
+   &#160;<span id="projectnumber">v1.0.0-18-g1273781</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -128,10 +128,34 @@ Functions</h2></td></tr>
 <tr class="memitem:ga3c099d19ac77cc922c8b2f87441cf6f7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga3c099d19ac77cc922c8b2f87441cf6f7">mip::Parser::setCallback</a> (T &amp;object)</td></tr>
 <tr class="memdesc:ga3c099d19ac77cc922c8b2f87441cf6f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the MIP <a class="el" href="classmip_1_1_parser.html" title="C++ class representing a MIP parser.">Parser</a>.  <a href="group__mip__cpp.html#ga3c099d19ac77cc922c8b2f87441cf6f7">More...</a><br /></td></tr>
 <tr class="separator:ga3c099d19ac77cc922c8b2f87441cf6f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga366225ba5c31c4906f56be549688ae16"><td class="memTemplParams" colspan="2">template&lt;bool(*)(DeviceInterface &amp;, bool) Function&gt; </td></tr>
+<tr class="memitem:gab157c25d6da10be3887e16d996298998"><td class="memTemplParams" colspan="2">template&lt;bool(*)(DeviceInterface &amp;, const uint8_t *, size_t) Send&gt; </td></tr>
+<tr class="memitem:gab157c25d6da10be3887e16d996298998"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#gab157c25d6da10be3887e16d996298998">mip::DeviceInterface::setSendFunction</a> ()</td></tr>
+<tr class="memdesc:gab157c25d6da10be3887e16d996298998"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the send callback function (free function version).  <a href="group__mip__cpp.html#gab157c25d6da10be3887e16d996298998">More...</a><br /></td></tr>
+<tr class="separator:gab157c25d6da10be3887e16d996298998"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaec766448adf8a4b7ad818018c45bec1a"><td class="memTemplParams" colspan="2">template&lt;bool(*)(DeviceInterface &amp;, uint8_t *, size_t, Timeout, size_t *, Timestamp *) Recv&gt; </td></tr>
+<tr class="memitem:gaec766448adf8a4b7ad818018c45bec1a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#gaec766448adf8a4b7ad818018c45bec1a">mip::DeviceInterface::setRecvFunction</a> ()</td></tr>
+<tr class="memdesc:gaec766448adf8a4b7ad818018c45bec1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the receive callback function (free function version).  <a href="group__mip__cpp.html#gaec766448adf8a4b7ad818018c45bec1a">More...</a><br /></td></tr>
+<tr class="separator:gaec766448adf8a4b7ad818018c45bec1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga366225ba5c31c4906f56be549688ae16"><td class="memTemplParams" colspan="2">template&lt;bool(*)(DeviceInterface &amp;, Timeout) Update&gt; </td></tr>
 <tr class="memitem:ga366225ba5c31c4906f56be549688ae16"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga366225ba5c31c4906f56be549688ae16">mip::DeviceInterface::setUpdateFunction</a> ()</td></tr>
-<tr class="memdesc:ga366225ba5c31c4906f56be549688ae16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the update function to a function taking a MipDevice reference.  <a href="group__mip__cpp.html#ga366225ba5c31c4906f56be549688ae16">More...</a><br /></td></tr>
+<tr class="memdesc:ga366225ba5c31c4906f56be549688ae16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the update callback function (free function version).  <a href="group__mip__cpp.html#ga366225ba5c31c4906f56be549688ae16">More...</a><br /></td></tr>
 <tr class="separator:ga366225ba5c31c4906f56be549688ae16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab1e718a8c63ecdfe8648a253d090004d"><td class="memTemplParams" colspan="2">template&lt;class Derived , bool(Derived::*)(const uint8_t *, size_t) Send&gt; </td></tr>
+<tr class="memitem:gab1e718a8c63ecdfe8648a253d090004d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#gab1e718a8c63ecdfe8648a253d090004d">mip::DeviceInterface::setSendFunction</a> ()</td></tr>
+<tr class="memdesc:gab1e718a8c63ecdfe8648a253d090004d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the send callback function (derived member function version).  <a href="group__mip__cpp.html#gab1e718a8c63ecdfe8648a253d090004d">More...</a><br /></td></tr>
+<tr class="separator:gab1e718a8c63ecdfe8648a253d090004d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2a19c50505d3a527449ca99d9df90cac"><td class="memTemplParams" colspan="2">template&lt;class Derived , bool(Derived::*)(uint8_t *, size_t, Timeout, size_t *, Timestamp *) Recv&gt; </td></tr>
+<tr class="memitem:ga2a19c50505d3a527449ca99d9df90cac"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga2a19c50505d3a527449ca99d9df90cac">mip::DeviceInterface::setRecvFunction</a> ()</td></tr>
+<tr class="memdesc:ga2a19c50505d3a527449ca99d9df90cac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the receive callback function (derived member function version).  <a href="group__mip__cpp.html#ga2a19c50505d3a527449ca99d9df90cac">More...</a><br /></td></tr>
+<tr class="separator:ga2a19c50505d3a527449ca99d9df90cac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga63e5cee11d633a44ec4cee9ce9c1b603"><td class="memTemplParams" colspan="2">template&lt;class Derived , bool(Derived::*)(Timeout) Update&gt; </td></tr>
+<tr class="memitem:ga63e5cee11d633a44ec4cee9ce9c1b603"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga63e5cee11d633a44ec4cee9ce9c1b603">mip::DeviceInterface::setUpdateFunction</a> ()</td></tr>
+<tr class="memdesc:ga63e5cee11d633a44ec4cee9ce9c1b603"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the update callback function (derived member function version).  <a href="group__mip__cpp.html#ga63e5cee11d633a44ec4cee9ce9c1b603">More...</a><br /></td></tr>
+<tr class="separator:ga63e5cee11d633a44ec4cee9ce9c1b603"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaae160182bd1d469e40caa477a0244333"><td class="memTemplParams" colspan="2">template&lt;class T , bool(T::*)(const uint8_t *, size_t) Send, bool(T::*)(uint8_t *, size_t, Timeout, size_t *, Timestamp *) Recv, bool(T::*)(Timeout) Update = nullptr&gt; </td></tr>
+<tr class="memitem:gaae160182bd1d469e40caa477a0244333"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#gaae160182bd1d469e40caa477a0244333">mip::DeviceInterface::setCallbacks</a> (T *object)</td></tr>
+<tr class="memdesc:gaae160182bd1d469e40caa477a0244333"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the callback functions to a common class object.  <a href="group__mip__cpp.html#gaae160182bd1d469e40caa477a0244333">More...</a><br /></td></tr>
+<tr class="separator:gaae160182bd1d469e40caa477a0244333"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacc59b0f8fe307b7d1a14fff523068950"><td class="memTemplParams" colspan="2">template&lt;void(*)(void *, const Packet &amp;, Timestamp) Callback&gt; </td></tr>
 <tr class="memitem:gacc59b0f8fe307b7d1a14fff523068950"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#gacc59b0f8fe307b7d1a14fff523068950">mip::DeviceInterface::registerPacketCallback</a> (<a class="el" href="structmip_1_1_c_1_1mip__dispatch__handler.html">C::mip_dispatch_handler</a> &amp;handler, uint8_t descriptorSet, bool afterFields, void *userData=nullptr)</td></tr>
 <tr class="memdesc:gacc59b0f8fe307b7d1a14fff523068950"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a packet callback (free function version).  <a href="group__mip__cpp.html#gacc59b0f8fe307b7d1a14fff523068950">More...</a><br /></td></tr>
@@ -299,10 +323,10 @@ template&lt;class DataField , class Object , void(Object::*)(const DataField &am
 <div class="line">    device.registerDataHandler&lt;ScaledAccel, MySystem, &amp;MySystem::handleAccel&gt;(accelHandler, <span class="keyword">this</span>);</div>
 <div class="line">  }</div>
 <div class="line"> </div>
-<div class="line">  <a class="code" href="classmip_1_1_device_interface.html#a507523f0325153f1d4d2939fe3a9cf24">DeviceInterface</a> device;</div>
+<div class="line">  <a class="code" href="classmip_1_1_device_interface.html#a27349396858a0b6af509b1b818fa251c">DeviceInterface</a> device;</div>
 <div class="line">  <a class="code" href="group__mip__cpp.html#ga22fdf60376fa438a3282cdf32d641f3b">DispatchHandler</a> accelHandler;</div>
 <div class="line">};</div>
-<div class="ttc" id="aclassmip_1_1_device_interface_html_a507523f0325153f1d4d2939fe3a9cf24"><div class="ttname"><a href="classmip_1_1_device_interface.html#a507523f0325153f1d4d2939fe3a9cf24">mip::DeviceInterface::DeviceInterface</a></div><div class="ttdeci">DeviceInterface(Connection *connection, uint8_t *parseBuffer, size_t parseBufferSize, Timeout parseTimeout, Timeout baseReplyTimeout)</div><div class="ttdef"><b>Definition:</b> mip_device.hpp:166</div></div>
+<div class="ttc" id="aclassmip_1_1_device_interface_html_a27349396858a0b6af509b1b818fa251c"><div class="ttname"><a href="classmip_1_1_device_interface.html#a27349396858a0b6af509b1b818fa251c">mip::DeviceInterface::DeviceInterface</a></div><div class="ttdeci">DeviceInterface(uint8_t *parseBuffer, size_t parseBufferSize, Timeout parseTimeout, Timeout baseReplyTimeout)</div><div class="ttdef"><b>Definition:</b> mip_device.hpp:157</div></div>
 <div class="ttc" id="agroup__mip__cpp_html_ga22fdf60376fa438a3282cdf32d641f3b"><div class="ttname"><a href="group__mip__cpp.html#ga22fdf60376fa438a3282cdf32d641f3b">mip::DispatchHandler</a></div><div class="ttdeci">C::mip_dispatch_handler DispatchHandler</div><div class="ttdef"><b>Definition:</b> mip_device.hpp:16</div></div>
 <div class="ttc" id="anamespacemip_html_a4d99303b1d7588a4e9d020e6210ded41"><div class="ttname"><a href="namespacemip.html#a4d99303b1d7588a4e9d020e6210ded41">mip::Timestamp</a></div><div class="ttdeci">C::timestamp_type Timestamp</div><div class="ttdef"><b>Definition:</b> mip_types.h:43</div></div>
 </div><!-- fragment --><dl class="tparams"><dt>Template Parameters</dt><dd>
@@ -331,7 +355,7 @@ template&lt;class DataField , class Object , void(Object::*)(const DataField &am
 <div class="line">    device.registerDataHandler&lt;ScaledAccel, MySystem, &amp;MySystem::handleAccel&gt;(accelHandler, <span class="keyword">this</span>);</div>
 <div class="line">  }</div>
 <div class="line"> </div>
-<div class="line">  <a class="code" href="classmip_1_1_device_interface.html#a507523f0325153f1d4d2939fe3a9cf24">DeviceInterface</a> device;</div>
+<div class="line">  <a class="code" href="classmip_1_1_device_interface.html#a27349396858a0b6af509b1b818fa251c">DeviceInterface</a> device;</div>
 <div class="line">  <a class="code" href="group__mip__cpp.html#ga22fdf60376fa438a3282cdf32d641f3b">DispatchHandler</a> accelHandler;</div>
 <div class="line">};</div>
 </div><!-- fragment --> 
@@ -391,7 +415,7 @@ template&lt;class DataField , void(*)(void *, const DataField &amp;, uint8_t, Ti
 <div class="line">  <span class="comment">// Use the packet data</span></div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><a class="code" href="classmip_1_1_device_interface.html#a507523f0325153f1d4d2939fe3a9cf24">DeviceInterface</a> device;</div>
+<div class="line"><a class="code" href="classmip_1_1_device_interface.html#a27349396858a0b6af509b1b818fa251c">DeviceInterface</a> device;</div>
 <div class="line"><a class="code" href="group__mip__cpp.html#ga22fdf60376fa438a3282cdf32d641f3b">DispatchHandler</a> handler;</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup()</div>
@@ -419,7 +443,7 @@ template&lt;class DataField , void(*)(void *, const DataField &amp;, uint8_t, Ti
 <div class="line">  <span class="comment">// Use the packet data</span></div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><a class="code" href="classmip_1_1_device_interface.html#a507523f0325153f1d4d2939fe3a9cf24">DeviceInterface</a> device;</div>
+<div class="line"><a class="code" href="classmip_1_1_device_interface.html#a27349396858a0b6af509b1b818fa251c">DeviceInterface</a> device;</div>
 <div class="line"><a class="code" href="group__mip__cpp.html#ga22fdf60376fa438a3282cdf32d641f3b">DispatchHandler</a> handler;</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup()</div>
@@ -531,7 +555,7 @@ template&lt;class Object , void(Object::*)(const Field &amp;, Timestamp) Callbac
 <div class="line">    device.registerFieldHandler&lt;MySystem, &amp;MySystem::handleField&gt;(fieldHandler, descriptorSet, fieldDescriptor, <span class="keyword">this</span>);</div>
 <div class="line">  }</div>
 <div class="line"> </div>
-<div class="line">  <a class="code" href="classmip_1_1_device_interface.html#a507523f0325153f1d4d2939fe3a9cf24">DeviceInterface</a> device;</div>
+<div class="line">  <a class="code" href="classmip_1_1_device_interface.html#a27349396858a0b6af509b1b818fa251c">DeviceInterface</a> device;</div>
 <div class="line">  <a class="code" href="group__mip__cpp.html#ga22fdf60376fa438a3282cdf32d641f3b">DispatchHandler</a> fieldHandler;</div>
 <div class="line">};</div>
 </div><!-- fragment --> </td></tr>
@@ -598,7 +622,7 @@ template&lt;void(*)(void *, const Field &amp;, Timestamp) Callback&gt; </div>
 <div class="line">  <span class="comment">// Use the field data</span></div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><a class="code" href="classmip_1_1_device_interface.html#a507523f0325153f1d4d2939fe3a9cf24">DeviceInterface</a> device;</div>
+<div class="line"><a class="code" href="classmip_1_1_device_interface.html#a27349396858a0b6af509b1b818fa251c">DeviceInterface</a> device;</div>
 <div class="line"><a class="code" href="group__mip__cpp.html#ga22fdf60376fa438a3282cdf32d641f3b">DispatchHandler</a> handler;</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup()</div>
@@ -678,7 +702,7 @@ template&lt;class Object , void(Object::*)(const Packet &amp;, Timestamp) Callba
 <div class="line">    device.registerPacketHandler&lt;MySystem, &amp;MySystem::handlePacket&gt;(packetHandler, descriptorSet, <span class="keyword">this</span>);</div>
 <div class="line">  }</div>
 <div class="line"> </div>
-<div class="line">  <a class="code" href="classmip_1_1_device_interface.html#a507523f0325153f1d4d2939fe3a9cf24">DeviceInterface</a> device;</div>
+<div class="line">  <a class="code" href="classmip_1_1_device_interface.html#a27349396858a0b6af509b1b818fa251c">DeviceInterface</a> device;</div>
 <div class="line">  <a class="code" href="group__mip__cpp.html#ga22fdf60376fa438a3282cdf32d641f3b">DispatchHandler</a> packetHandler;</div>
 <div class="line">};</div>
 </div><!-- fragment --> </td></tr>
@@ -745,7 +769,7 @@ template&lt;void(*)(void *, const Packet &amp;, Timestamp) Callback&gt; </div>
 <div class="line">  <span class="comment">// Use the packet data</span></div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><a class="code" href="classmip_1_1_device_interface.html#a507523f0325153f1d4d2939fe3a9cf24">DeviceInterface</a> device;</div>
+<div class="line"><a class="code" href="classmip_1_1_device_interface.html#a27349396858a0b6af509b1b818fa251c">DeviceInterface</a> device;</div>
 <div class="line"><a class="code" href="group__mip__cpp.html#ga22fdf60376fa438a3282cdf32d641f3b">DispatchHandler</a> handler;</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup()</div>
@@ -919,13 +943,176 @@ template&lt;class T , bool(T::*)(const Packet &amp;, Timestamp) Callback&gt; </d
 
 </div>
 </div>
-<a id="ga366225ba5c31c4906f56be549688ae16"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga366225ba5c31c4906f56be549688ae16">&#9670;&nbsp;</a></span>setUpdateFunction()</h2>
+<a id="gaae160182bd1d469e40caa477a0244333"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaae160182bd1d469e40caa477a0244333">&#9670;&nbsp;</a></span>setCallbacks()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;bool(*)(DeviceInterface &amp;, bool) Function&gt; </div>
+template&lt;class T , bool(T::*)(const uint8_t *, size_t) Send, bool(T::*)(uint8_t *, size_t, Timeout, size_t *, Timestamp *) Recv, bool(T::*)(Timeout) Update&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::DeviceInterface::setCallbacks </td>
+          <td>(</td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>object</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the callback functions to a common class object. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>A class type.</td></tr>
+    <tr><td class="paramname">Send</td><td>A member function pointer for sending bytes to the device. May be NULL.</td></tr>
+    <tr><td class="paramname">Recv</td><td>A member function pointer for receiving bytes from the device. May be NULL.</td></tr>
+    <tr><td class="paramname">Update</td><td>A member function pointer for updating the device. If both this and Recv are NULL, no update function is set. If Update is NULL but Recv is not, the default update function is used instead.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">object</td><td>An instance of T. The interface's user pointer will be set to this value. All of the callbacks will be invoked on this instance.</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><span class="keyword">class </span>DeviceConnection</div>
+<div class="line">{</div>
+<div class="line">    <span class="keywordtype">bool</span> send(<span class="keyword">const</span> uint8_t* data, <span class="keywordtype">size_t</span> length);</div>
+<div class="line">    <span class="keywordtype">bool</span> recv(uint8_t* buffer, <span class="keywordtype">size_t</span> max_length, <a class="code" href="namespacemip.html#a6b00d9d7a48550fcad5056184ad1fbae">Timeout</a> wait_time, <span class="keywordtype">size_t</span>* length_out, <a class="code" href="namespacemip.html#a4d99303b1d7588a4e9d020e6210ded41">Timestamp</a>* timestamp_out);</div>
+<div class="line">};</div>
+<div class="line"> </div>
+<div class="line">DeviceConnection connection;</div>
+<div class="line"><a class="code" href="classmip_1_1_device_interface.html">mip::DeviceInterface</a> interface;</div>
+<div class="line"> </div>
+<div class="line">interface.<a class="code" href="group__mip__cpp.html#gaae160182bd1d469e40caa477a0244333">setCallbacks</a>&lt;DeviceConnection, &amp;DeviceConnection::send, &amp;DeviceConnection::recv, <span class="keyword">nullptr</span>&gt;(&amp;connection);</div>
+<div class="ttc" id="aclassmip_1_1_device_interface_html"><div class="ttname"><a href="classmip_1_1_device_interface.html">mip::DeviceInterface</a></div><div class="ttdoc">Represents a connected MIP device.</div><div class="ttdef"><b>Definition:</b> mip_device.hpp:149</div></div>
+<div class="ttc" id="agroup__mip__cpp_html_gaae160182bd1d469e40caa477a0244333"><div class="ttname"><a href="group__mip__cpp.html#gaae160182bd1d469e40caa477a0244333">mip::DeviceInterface::setCallbacks</a></div><div class="ttdeci">void setCallbacks(T *object)</div><div class="ttdoc">Sets the callback functions to a common class object.</div><div class="ttdef"><b>Definition:</b> mip_device.hpp:476</div></div>
+</div><!-- fragment --> 
+</div>
+</div>
+<a id="gaec766448adf8a4b7ad818018c45bec1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaec766448adf8a4b7ad818018c45bec1a">&#9670;&nbsp;</a></span>setRecvFunction() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;bool(*)(DeviceInterface &amp;, uint8_t *, size_t, Timeout, size_t *, Timestamp *) Recv&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::DeviceInterface::setRecvFunction</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the receive callback function (free function version). </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Send</td><td>A compile-time pointer to the callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga2a19c50505d3a527449ca99d9df90cac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2a19c50505d3a527449ca99d9df90cac">&#9670;&nbsp;</a></span>setRecvFunction() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived , bool(Derived::*)(uint8_t *, size_t, Timeout, size_t *, Timestamp *) Recv&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::DeviceInterface::setRecvFunction</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the receive callback function (derived member function version). </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Derived</td><td>Derived class type. Must inherit from <a class="el" href="classmip_1_1_device_interface.html" title="Represents a connected MIP device.">DeviceInterface</a>. </td></tr>
+    <tr><td class="paramname">Recv</td><td>Compile-time pointer to member function of Derived.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__mip__cpp.html#gab157c25d6da10be3887e16d996298998" title="Sets the send callback function (free function version).">DeviceInterface::setSendFunction()</a> </dd></dl>
+
+</div>
+</div>
+<a id="gab157c25d6da10be3887e16d996298998"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab157c25d6da10be3887e16d996298998">&#9670;&nbsp;</a></span>setSendFunction() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;bool(*)(DeviceInterface &amp;, const uint8_t *, size_t) Send&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::DeviceInterface::setSendFunction</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the send callback function (free function version). </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Send</td><td>A compile-time pointer to the callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gab1e718a8c63ecdfe8648a253d090004d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab1e718a8c63ecdfe8648a253d090004d">&#9670;&nbsp;</a></span>setSendFunction() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived , bool(Derived::*)(const uint8_t *, size_t) Send&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::DeviceInterface::setSendFunction</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the send callback function (derived member function version). </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Derived</td><td>Derived class type. Must inherit from <a class="el" href="classmip_1_1_device_interface.html" title="Represents a connected MIP device.">DeviceInterface</a>. </td></tr>
+    <tr><td class="paramname">Send</td><td>Compile-time pointer to member function of Derived.</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><span class="keyword">class </span>MyClass : <span class="keyword">public</span> <a class="code" href="classmip_1_1_device_interface.html">mip::DeviceInterface</a></div>
+<div class="line">{</div>
+<div class="line">    <span class="keywordtype">bool</span> <a class="code" href="classmip_1_1_device_interface.html#a406e3e4300e82a86b0c865ce59b5bc58">sendToDevice</a>(<span class="keyword">const</span> uint8_t* data, <span class="keywordtype">size_t</span> size);</div>
+<div class="line">    <span class="keywordtype">bool</span> <a class="code" href="classmip_1_1_device_interface.html#a6945bb14b90436bf2ea253694a34fdf6">recvFromDevice</a>(uint8_t* data, <span class="keywordtype">size_t</span> max_length, <a class="code" href="namespacemip.html#a6b00d9d7a48550fcad5056184ad1fbae">Timeout</a> wait_time, <span class="keywordtype">size_t</span>* length_out, <a class="code" href="namespacemip.html#a4d99303b1d7588a4e9d020e6210ded41">Timestamp</a>* timestamp_out);</div>
+<div class="line">};</div>
+<div class="line"> </div>
+<div class="line">MyClass instance;</div>
+<div class="line">instance.setSendFunction&lt;MyClass, &amp;MyClass::sendToDevice&gt;();</div>
+<div class="line">instance.setRecvFunction&lt;MyClass, &amp;MyClass::recvFromDevice&gt;();</div>
+<div class="line"> </div>
+<div class="line">instance.setCallbacks&lt;Connection, &amp;<a class="code" href="classmip_1_1_connection.html#ad56be6630183ec4cc9cf5f59b4d46e53">Connection::sendToDevice</a>, &amp;<a class="code" href="classmip_1_1_connection.html#a07b2f8cd73574f0da74fbb0b82a7f1c3">Connection::recvFromDevice</a>&gt;(connection);</div>
+<div class="ttc" id="aclassmip_1_1_connection_html_a07b2f8cd73574f0da74fbb0b82a7f1c3"><div class="ttname"><a href="classmip_1_1_connection.html#a07b2f8cd73574f0da74fbb0b82a7f1c3">mip::Connection::recvFromDevice</a></div><div class="ttdeci">virtual bool recvFromDevice(uint8_t *buffer, size_t max_length, Timeout wait_time, size_t *length_out, Timestamp *timestamp_out)=0</div><div class="ttdoc">Receives bytes from the device.</div></div>
+<div class="ttc" id="aclassmip_1_1_connection_html_ad56be6630183ec4cc9cf5f59b4d46e53"><div class="ttname"><a href="classmip_1_1_connection.html#ad56be6630183ec4cc9cf5f59b4d46e53">mip::Connection::sendToDevice</a></div><div class="ttdeci">virtual bool sendToDevice(const uint8_t *data, size_t length)=0</div><div class="ttdoc">Sends bytes to the device.</div></div>
+<div class="ttc" id="aclassmip_1_1_device_interface_html_a406e3e4300e82a86b0c865ce59b5bc58"><div class="ttname"><a href="classmip_1_1_device_interface.html#a406e3e4300e82a86b0c865ce59b5bc58">mip::DeviceInterface::sendToDevice</a></div><div class="ttdeci">bool sendToDevice(const uint8_t *data, size_t length)</div><div class="ttdef"><b>Definition:</b> mip_device.hpp:243</div></div>
+<div class="ttc" id="aclassmip_1_1_device_interface_html_a6945bb14b90436bf2ea253694a34fdf6"><div class="ttname"><a href="classmip_1_1_device_interface.html#a6945bb14b90436bf2ea253694a34fdf6">mip::DeviceInterface::recvFromDevice</a></div><div class="ttdeci">bool recvFromDevice(uint8_t *buffer, size_t max_length, Timeout wait_time, size_t *length_out, Timestamp *timestamp)</div><div class="ttdef"><b>Definition:</b> mip_device.hpp:245</div></div>
+</div><!-- fragment --> 
+</div>
+</div>
+<a id="ga366225ba5c31c4906f56be549688ae16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga366225ba5c31c4906f56be549688ae16">&#9670;&nbsp;</a></span>setUpdateFunction() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;bool(*)(DeviceInterface &amp;, Timeout) Update&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void mip::DeviceInterface::setUpdateFunction</td>
@@ -933,14 +1120,40 @@ template&lt;bool(*)(DeviceInterface &amp;, bool) Function&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Sets the update function to a function taking a MipDevice reference. </p>
-<div class="fragment"><div class="line"><span class="keywordtype">bool</span> updateDevice(<a class="code" href="classmip_1_1_device_interface.html#a507523f0325153f1d4d2939fe3a9cf24">DeviceInterface</a>&amp; device, <span class="keywordtype">bool</span> blocking)</div>
-<div class="line">{</div>
-<div class="line">    <span class="keywordflow">return</span> device.defaultUpdate(blocking);</div>
-<div class="line">}</div>
-<div class="line"> </div>
-<div class="line">device.setUpdateFunction&lt;&amp;updateDevice&gt;();</div>
-</div><!-- fragment --> 
+<p>Sets the update callback function (free function version). </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Send</td><td>A compile-time pointer to the callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga63e5cee11d633a44ec4cee9ce9c1b603"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga63e5cee11d633a44ec4cee9ce9c1b603">&#9670;&nbsp;</a></span>setUpdateFunction() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived , bool(Derived::*)(Timeout) Update&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::DeviceInterface::setUpdateFunction</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the update callback function (derived member function version). </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Derived</td><td>Derived class type. Must inherit from <a class="el" href="classmip_1_1_device_interface.html" title="Represents a connected MIP device.">DeviceInterface</a>. </td></tr>
+    <tr><td class="paramname">Update</td><td>Compile-time pointer to member function of Derived.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__mip__cpp.html#gab157c25d6da10be3887e16d996298998" title="Sets the send callback function (free function version).">DeviceInterface::setSendFunction()</a> </dd></dl>
+
 </div>
 </div>
 <a id="ga4d95114a9b56c889629509e9e51d9587"></a>

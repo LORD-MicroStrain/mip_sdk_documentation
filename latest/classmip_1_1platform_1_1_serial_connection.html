@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-17-g8564902</span>
+   &#160;<span id="projectnumber">v1.0.0-18-g1273781</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -108,12 +108,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6ed82cd7b7c9d379f63e6075f49ffc71"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1platform_1_1_serial_connection.html#a6ed82cd7b7c9d379f63e6075f49ffc71">~SerialConnection</a> ()</td></tr>
 <tr class="memdesc:a6ed82cd7b7c9d379f63e6075f49ffc71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes the underlying serial port.  <a href="classmip_1_1platform_1_1_serial_connection.html#a6ed82cd7b7c9d379f63e6075f49ffc71">More...</a><br /></td></tr>
 <tr class="separator:a6ed82cd7b7c9d379f63e6075f49ffc71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a669fbdcb7d86c0c16585e0037a9deb9a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1platform_1_1_serial_connection.html#a669fbdcb7d86c0c16585e0037a9deb9a">recvFromDevice</a> (uint8_t *buffer, size_t max_length, size_t *length_out, <a class="el" href="namespacemip.html#a4d99303b1d7588a4e9d020e6210ded41">mip::Timestamp</a> *timestamp) final</td></tr>
-<tr class="memdesc:a669fbdcb7d86c0c16585e0037a9deb9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receives bytes from the device.  <a href="classmip_1_1platform_1_1_serial_connection.html#a669fbdcb7d86c0c16585e0037a9deb9a">More...</a><br /></td></tr>
-<tr class="separator:a669fbdcb7d86c0c16585e0037a9deb9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4b77ac378ef0d3bbe2ee14acb56532e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1platform_1_1_serial_connection.html#ae4b77ac378ef0d3bbe2ee14acb56532e">recvFromDevice</a> (uint8_t *buffer, size_t max_length, <a class="el" href="namespacemip.html#a6b00d9d7a48550fcad5056184ad1fbae">Timeout</a> wait_time, size_t *length_out, <a class="el" href="namespacemip.html#a4d99303b1d7588a4e9d020e6210ded41">mip::Timestamp</a> *timestamp) final</td></tr>
+<tr class="memdesc:ae4b77ac378ef0d3bbe2ee14acb56532e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receives bytes from the device.  <a href="classmip_1_1platform_1_1_serial_connection.html#ae4b77ac378ef0d3bbe2ee14acb56532e">More...</a><br /></td></tr>
+<tr class="separator:ae4b77ac378ef0d3bbe2ee14acb56532e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78f3cc5429af9fa9b24889cec1295ae9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1platform_1_1_serial_connection.html#a78f3cc5429af9fa9b24889cec1295ae9">sendToDevice</a> (const uint8_t *data, size_t length) final</td></tr>
 <tr class="memdesc:a78f3cc5429af9fa9b24889cec1295ae9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends bytes to the device.  <a href="classmip_1_1platform_1_1_serial_connection.html#a78f3cc5429af9fa9b24889cec1295ae9">More...</a><br /></td></tr>
 <tr class="separator:a78f3cc5429af9fa9b24889cec1295ae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classmip_1_1_connection"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classmip_1_1_connection')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classmip_1_1_connection.html">mip::Connection</a></td></tr>
+<tr class="memitem:ac143ab4318741a4a3d1c9db24336833e inherit pub_methods_classmip_1_1_connection"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_connection.html#ac143ab4318741a4a3d1c9db24336833e">connect_interface</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> *device)</td></tr>
+<tr class="memdesc:ac143ab4318741a4a3d1c9db24336833e inherit pub_methods_classmip_1_1_connection"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets up the mip interface callbacks to point at this object.  <a href="classmip_1_1_connection.html#ac143ab4318741a4a3d1c9db24336833e">More...</a><br /></td></tr>
+<tr class="separator:ac143ab4318741a4a3d1c9db24336833e inherit pub_methods_classmip_1_1_connection"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Can be used on Windows, OSX, or linux to communicate with a MIP device over serial. </p>
@@ -173,8 +177,7 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">portName</td><td>Path to the port to connect to. On Windows, this usually looks like "COM&lt;N&gt;", on linux, "/dev/tty&lt;N&gt;" </td></tr>
-    <tr><td class="paramname">baudrate</td><td>Baud rate to open the device at. Note that the device needs to be configured to <br  />
- </td></tr>
+    <tr><td class="paramname">baudrate</td><td>Baud rate to open the device at. Note that the device needs to be configured to </td></tr>
   </table>
   </dd>
 </dl>
@@ -201,8 +204,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a669fbdcb7d86c0c16585e0037a9deb9a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a669fbdcb7d86c0c16585e0037a9deb9a">&#9670;&nbsp;</a></span>recvFromDevice()</h2>
+<a id="ae4b77ac378ef0d3bbe2ee14acb56532e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4b77ac378ef0d3bbe2ee14acb56532e">&#9670;&nbsp;</a></span>recvFromDevice()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -221,6 +224,12 @@ Public Member Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>max_length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacemip.html#a6b00d9d7a48550fcad5056184ad1fbae">Timeout</a>&#160;</td>
+          <td class="paramname"><em>wait_time</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -258,7 +267,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classmip_1_1_connection.html#ac14c2a28fdc3e4a484c91a62137a7561">mip::Connection</a>.</p>
+<p>Implements <a class="el" href="classmip_1_1_connection.html#a07b2f8cd73574f0da74fbb0b82a7f1c3">mip::Connection</a>.</p>
 
 </div>
 </div>
@@ -305,7 +314,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classmip_1_1_connection.html#ad8b776d34aa55fb20e2e184035b365a0">mip::Connection</a>.</p>
+<p>Implements <a class="el" href="classmip_1_1_connection.html#ad56be6630183ec4cc9cf5f59b4d46e53">mip::Connection</a>.</p>
 
 </div>
 </div>
