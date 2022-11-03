@@ -1,9 +1,10 @@
 <map id="MIP C API" name="MIP C API">
 <area shape="rect" id="node1" href="$group__mip__field__c.html" title="Functions for processing received MIP fields." alt="" coords="169,5,272,31"/>
-<area shape="rect" id="node2" href="$group___mip_dispatch__c.html" title="System for issuing callbacks from MIP packets or fields." alt="" coords="161,55,280,80"/>
-<area shape="rect" id="node3" href="$group__mip__parser__c.html" title="Functions for parsing MIP packets." alt="" coords="167,104,274,129"/>
-<area shape="rect" id="node4" href="$group___mip_command_queue__c.html" title="Functions for handling command responses." alt="" coords="136,153,305,179"/>
-<area shape="rect" id="node5" href="$group__mip__packet__c.html" title="Functions for handling MIP packets." alt="" coords="166,203,275,228"/>
-<area shape="rect" id="node6" href="$group__mip__interface__c.html" title="High&#45;level C functions for controlling a MIP device." alt="" coords="162,252,279,277"/>
-<area shape="rect" id="node7" title="This module contains all of the C submodules." alt="" coords="5,129,88,155"/>
+<area shape="rect" id="node2" href="$group__mip__logging.html" title="High&#45;level C functions for logging information from within the MIP SDK." alt="" coords="164,55,277,80"/>
+<area shape="rect" id="node3" href="$group___mip_dispatch__c.html" title="System for issuing callbacks from MIP packets or fields." alt="" coords="161,104,280,129"/>
+<area shape="rect" id="node4" href="$group__mip__parser__c.html" title="Functions for parsing MIP packets." alt="" coords="167,153,274,179"/>
+<area shape="rect" id="node5" href="$group___mip_command_queue__c.html" title="Functions for handling command responses." alt="" coords="136,203,305,228"/>
+<area shape="rect" id="node6" href="$group__mip__packet__c.html" title="Functions for handling MIP packets." alt="" coords="166,252,275,277"/>
+<area shape="rect" id="node7" href="$group__mip__interface__c.html" title="High&#45;level C functions for controlling a MIP device." alt="" coords="162,301,279,327"/>
+<area shape="rect" id="node8" title="This module contains all of the C submodules." alt="" coords="5,153,88,179"/>
 </map>
