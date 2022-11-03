@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-19-gbde9e1e</span>
+   &#160;<span id="projectnumber">v1.0.0-20-g3d51bf4</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -328,7 +328,7 @@ template&lt;class DataField , class Object , void(Object::*)(const DataField &am
 <div class="line">};</div>
 <div class="ttc" id="aclassmip_1_1_device_interface_html_a27349396858a0b6af509b1b818fa251c"><div class="ttname"><a href="classmip_1_1_device_interface.html#a27349396858a0b6af509b1b818fa251c">mip::DeviceInterface::DeviceInterface</a></div><div class="ttdeci">DeviceInterface(uint8_t *parseBuffer, size_t parseBufferSize, Timeout parseTimeout, Timeout baseReplyTimeout)</div><div class="ttdef"><b>Definition:</b> mip_device.hpp:157</div></div>
 <div class="ttc" id="agroup__mip__cpp_html_ga22fdf60376fa438a3282cdf32d641f3b"><div class="ttname"><a href="group__mip__cpp.html#ga22fdf60376fa438a3282cdf32d641f3b">mip::DispatchHandler</a></div><div class="ttdeci">C::mip_dispatch_handler DispatchHandler</div><div class="ttdef"><b>Definition:</b> mip_device.hpp:16</div></div>
-<div class="ttc" id="anamespacemip_html_a4d99303b1d7588a4e9d020e6210ded41"><div class="ttname"><a href="namespacemip.html#a4d99303b1d7588a4e9d020e6210ded41">mip::Timestamp</a></div><div class="ttdeci">C::timestamp_type Timestamp</div><div class="ttdef"><b>Definition:</b> mip_types.h:43</div></div>
+<div class="ttc" id="anamespacemip_html_a4d99303b1d7588a4e9d020e6210ded41"><div class="ttname"><a href="namespacemip.html#a4d99303b1d7588a4e9d020e6210ded41">mip::Timestamp</a></div><div class="ttdeci">C::timestamp_type Timestamp</div><div class="ttdef"><b>Definition:</b> mip_types.h:61</div></div>
 </div><!-- fragment --><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">Callback</td><td>A pointer to the function to call. This must be a constant member function pointer.</td></tr>
@@ -926,7 +926,7 @@ template&lt;class T , bool(T::*)(const Packet &amp;, Timestamp) Callback&gt; </d
 <div class="line"><a class="code" href="classmip_1_1_parser.html#a3d3fbb83ce13bad184d327e845f95fc2">Parser</a> parser&lt;MyClass, &amp;MyClass::handlePacket&gt;(myInstance);</div>
 <div class="ttc" id="aclassmip_1_1_parser_html_a3d3fbb83ce13bad184d327e845f95fc2"><div class="ttname"><a href="classmip_1_1_parser.html#a3d3fbb83ce13bad184d327e845f95fc2">mip::Parser::Parser</a></div><div class="ttdeci">Parser(uint8_t *buffer, size_t bufferSize, C::mip_packet_callback callback, void *callbackObject, Timeout timeout)</div><div class="ttdef"><b>Definition:</b> mip.hpp:227</div></div>
 <div class="ttc" id="aclassmip_1_1_parser_html_a642ce6426bc3d3483f031e5c64c05d91"><div class="ttname"><a href="classmip_1_1_parser.html#a642ce6426bc3d3483f031e5c64c05d91">mip::Parser::timeout</a></div><div class="ttdeci">Timeout timeout() const</div><div class="ttdef"><b>Definition:</b> mip.hpp:243</div></div>
-<div class="ttc" id="anamespacemip_html_a6b00d9d7a48550fcad5056184ad1fbae"><div class="ttname"><a href="namespacemip.html#a6b00d9d7a48550fcad5056184ad1fbae">mip::Timeout</a></div><div class="ttdeci">C::timeout_type Timeout</div><div class="ttdef"><b>Definition:</b> mip_types.h:44</div></div>
+<div class="ttc" id="anamespacemip_html_a6b00d9d7a48550fcad5056184ad1fbae"><div class="ttname"><a href="namespacemip.html#a6b00d9d7a48550fcad5056184ad1fbae">mip::Timeout</a></div><div class="ttdeci">C::timeout_type Timeout</div><div class="ttdef"><b>Definition:</b> mip_types.h:62</div></div>
 </div><!-- fragment --><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>Class type containing the member function to be called. </td></tr>

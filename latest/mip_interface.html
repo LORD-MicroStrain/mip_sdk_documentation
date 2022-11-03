@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-19-gbde9e1e</span>
+   &#160;<span id="projectnumber">v1.0.0-20-g3d51bf4</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -98,7 +98,7 @@ The Dispatch System</h1>
 <p>An application must register callbacks with the system during initialization. Each method requires a pointer and the MIP descriptor associated with the data of interest. There is no limit on the number of registered dispatchers, though performance may be affected by using too many. Multiple dispatchers may be registered to the same data.</p>
 <dl class="section user"><dt>Packet callbacks</dt><dd></dd></dl>
 <div class="fragment"><div class="line"><span class="keywordtype">void</span> packet_callback(<span class="keywordtype">void</span>* userdata, <span class="keyword">const</span> Packet&amp; packet, <a class="code" href="namespacemip.html#a4d99303b1d7588a4e9d020e6210ded41">Timestamp</a> parseTime)</div>
-<div class="ttc" id="anamespacemip_html_a4d99303b1d7588a4e9d020e6210ded41"><div class="ttname"><a href="namespacemip.html#a4d99303b1d7588a4e9d020e6210ded41">mip::Timestamp</a></div><div class="ttdeci">C::timestamp_type Timestamp</div><div class="ttdef"><b>Definition:</b> mip_types.h:43</div></div>
+<div class="ttc" id="anamespacemip_html_a4d99303b1d7588a4e9d020e6210ded41"><div class="ttname"><a href="namespacemip.html#a4d99303b1d7588a4e9d020e6210ded41">mip::Timestamp</a></div><div class="ttdeci">C::timestamp_type Timestamp</div><div class="ttdef"><b>Definition:</b> mip_types.h:61</div></div>
 </div><!-- fragment --><p>Packet callbacks are invoked when a packet is received which matches the registered descriptor set. The descriptor set may also be a wildcard, allowing the application to process any type of packet.</p>
 <p>An application can register a packet callback to occur either before or after the field callbacks for the data in the same packet. For example, to print a summary of the packet before displaying information about each field, an application would set the callback to occur first. Usually applications will set a packet callback to occur last, so that they can determine if all of the fields have been processed.</p>
 <dl class="section user"><dt>Field callbacks</dt><dd></dd></dl>
