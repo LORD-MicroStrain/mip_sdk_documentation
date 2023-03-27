@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-27-g411d175</span>
+   &#160;<span id="projectnumber">v1.0.0-28-g950e651</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -99,10 +99,14 @@ Collaboration diagram for mip::commands_3dm::GpioConfig::PinMode:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a19d0ba116be16369e03b98c098adf551"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_gpio_config_1_1_pin_mode.html#a19d0ba116be16369e03b98c098adf551">_enumType</a> : uint8_t { <a class="el" href="structmip_1_1commands__3dm_1_1_gpio_config_1_1_pin_mode.html#a19d0ba116be16369e03b98c098adf551aca33887e859dabdb04ab870c9c625266">NONE</a> = 0x00
+<tr class="memitem:a19d0ba116be16369e03b98c098adf551"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_gpio_config_1_1_pin_mode.html#a19d0ba116be16369e03b98c098adf551">_enumType</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="structmip_1_1commands__3dm_1_1_gpio_config_1_1_pin_mode.html#a19d0ba116be16369e03b98c098adf551aca33887e859dabdb04ab870c9c625266">NONE</a> = 0x00
 , <a class="el" href="structmip_1_1commands__3dm_1_1_gpio_config_1_1_pin_mode.html#a19d0ba116be16369e03b98c098adf551a9c571c0c89d4edbec47b680466075d71">OPEN_DRAIN</a> = 0x01
 , <a class="el" href="structmip_1_1commands__3dm_1_1_gpio_config_1_1_pin_mode.html#a19d0ba116be16369e03b98c098adf551ae3e82677c3c15c7fe7faf6cb2786e2c7">PULLDOWN</a> = 0x02
 , <a class="el" href="structmip_1_1commands__3dm_1_1_gpio_config_1_1_pin_mode.html#a19d0ba116be16369e03b98c098adf551aa81f09f45e281e5d4d2843f4a385f00b">PULLUP</a> = 0x04
+, <br />
+&#160;&#160;<a class="el" href="structmip_1_1commands__3dm_1_1_gpio_config_1_1_pin_mode.html#a19d0ba116be16369e03b98c098adf551ac82b0f5be4498469a376d8ff961cd4ec">ALL</a> = 0x07
+<br />
  }</td></tr>
 <tr class="separator:a19d0ba116be16369e03b98c098adf551"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -134,6 +138,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:adb81571341bcd60c9e5bdedc949a3c05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afabf74225bdfae14cf97aa4d78343f3c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_gpio_config_1_1_pin_mode.html#afabf74225bdfae14cf97aa4d78343f3c">pullup</a> (bool val)</td></tr>
 <tr class="separator:afabf74225bdfae14cf97aa4d78343f3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1eb1766cc683076f42ccf1ecb63398d8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_gpio_config_1_1_pin_mode.html#a1eb1766cc683076f42ccf1ecb63398d8">allSet</a> () const</td></tr>
+<tr class="separator:a1eb1766cc683076f42ccf1ecb63398d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a376e12acb408aec0e2e81663a92d0f66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_gpio_config_1_1_pin_mode.html#a376e12acb408aec0e2e81663a92d0f66">setAll</a> ()</td></tr>
+<tr class="separator:a376e12acb408aec0e2e81663a92d0f66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -160,6 +168,7 @@ Public Attributes</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a19d0ba116be16369e03b98c098adf551aa81f09f45e281e5d4d2843f4a385f00b"></a>PULLUP&#160;</td><td class="fielddoc"><p>The pin will have an internal pull-up resistor enabled. Useful for connecting inputs to signals which can only be pulled low such as mechanical switches, or in combination with an open drain output. Cannot be used in combination with pull-down. See the device specifications for the resistance value. Use of this mode may restrict the maximum allowed input voltage. See the device datasheet for details. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="a19d0ba116be16369e03b98c098adf551ac82b0f5be4498469a376d8ff961cd4ec"></a>ALL&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -217,6 +226,31 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a1eb1766cc683076f42ccf1ecb63398d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1eb1766cc683076f42ccf1ecb63398d8">&#9670;&nbsp;</a></span>allSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::commands_3dm::GpioConfig::PinMode::allSet </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="af574343224043c0d14be6adf4f80ae8e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af574343224043c0d14be6adf4f80ae8e">&#9670;&nbsp;</a></span>openDrain() <span class="overload">[1/2]</span></h2>
 
@@ -487,6 +521,31 @@ Public Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a376e12acb408aec0e2e81663a92d0f66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a376e12acb408aec0e2e81663a92d0f66">&#9670;&nbsp;</a></span>setAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::commands_3dm::GpioConfig::PinMode::setAll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>

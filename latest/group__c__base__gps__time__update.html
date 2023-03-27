@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-27-g411d175</span>
+   &#160;<span id="projectnumber">v1.0.0-28-g950e651</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -107,7 +107,7 @@ Functions</h2></td></tr>
 <tr class="separator:gab263e8391a29e4ddfc5147fd42f0fd3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>When combined with a PPS input signal applied to the I/O connector, this command enables complete synchronization of data outputs with an external time base, such as GPS system time. Since the hardware PPS synchronization can only detect the fractional number of seconds when pulses arrive, complete synchronization requires that the user provide the whole number of seconds via this command. After achieving PPS synchronization, this command should be sent twice: once to set the time-of-week and once to set the week number. PPS synchronization can be verified by monitoring the time sync status message (0xA0, 0x02) or the valid flags of any shared external timestamp (0x&ndash;, D7) data field. </p>
+<p>Set device internal GPS time When combined with a PPS input signal applied to the I/O connector, this command enables complete synchronization of data outputs with an external time base, such as GPS system time. Since the hardware PPS synchronization can only detect the fractional number of seconds when pulses arrive, complete synchronization requires that the user provide the whole number of seconds via this command. After achieving PPS synchronization, this command should be sent twice: once to set the time-of-week and once to set the week number. PPS synchronization can be verified by monitoring the time sync status message (0xA0, 0x02) or the valid flags of any shared external timestamp (0x&ndash;, D7) data field. </p>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="ga99253b025e760d8efc49b26c27d43031"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga99253b025e760d8efc49b26c27d43031">&#9670;&nbsp;</a></span>mip_base_gps_time_update_command</h2>

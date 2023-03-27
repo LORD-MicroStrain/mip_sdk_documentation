@@ -32,9 +32,9 @@
 <area shape="rect" id="node30" href="$group__cpp__3dm__complementary__filter.html" title=" " alt="" coords="413,1845,600,1885"/>
 <area shape="rect" id="node31" href="$group__cpp__3dm__poll__imu__message.html" title=" " alt="" coords="435,1909,578,1949"/>
 <area shape="rect" id="node32" href="$group__cpp__3dm__coning__sculling__enable.html" title=" " alt="" coords="429,1973,584,2013"/>
-<area shape="rect" id="node33" href="$group__cpp__3dm__mip__cmd__3dm__lowpass__filter.html" title=" " alt="" coords="417,2037,597,2077"/>
-<area shape="rect" id="node34" href="$group__cpp__3dm__gpio__config.html" title=" " alt="" coords="425,2101,588,2141"/>
-<area shape="rect" id="node35" href="$group__cpp__3dm__get__event__action__status.html" title=" " alt="" coords="429,2165,584,2205"/>
+<area shape="rect" id="node33" href="$group__cpp__3dm__gpio__config.html" title=" " alt="" coords="425,2037,588,2077"/>
+<area shape="rect" id="node34" href="$group__cpp__3dm__get__event__action__status.html" title=" " alt="" coords="429,2101,584,2141"/>
+<area shape="rect" id="node35" href="$group__cpp__3dm__lowpass__filter.html" title=" " alt="" coords="433,2165,580,2205"/>
 <area shape="rect" id="node36" href="$group__cpp__3dm__factory__streaming.html" title=" " alt="" coords="437,2229,577,2269"/>
 <area shape="rect" id="node37" href="$group__cpp__3dm__device__settings.html" title=" " alt="" coords="439,2293,574,2333"/>
 <area shape="rect" id="node38" href="$group__cpp__3dm__filter__message__format.html" title=" " alt="" coords="425,2357,588,2397"/>

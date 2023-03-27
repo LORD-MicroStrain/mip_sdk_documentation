@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-27-g411d175</span>
+   &#160;<span id="projectnumber">v1.0.0-28-g950e651</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -99,10 +99,14 @@ Collaboration diagram for mip::data_gnss::GalileoEphemeris::ValidFlags:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a9edacecc0689734cef44a7e3e6b4445c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_galileo_ephemeris_1_1_valid_flags.html#a9edacecc0689734cef44a7e3e6b4445c">_enumType</a> : uint16_t { <a class="el" href="structmip_1_1data__gnss_1_1_galileo_ephemeris_1_1_valid_flags.html#a9edacecc0689734cef44a7e3e6b4445ca30b6eb63f9dd3115bb642e4ff5e8444f">NONE</a> = 0x0000
+<tr class="memitem:a9edacecc0689734cef44a7e3e6b4445c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_galileo_ephemeris_1_1_valid_flags.html#a9edacecc0689734cef44a7e3e6b4445c">_enumType</a> : uint16_t { <br />
+&#160;&#160;<a class="el" href="structmip_1_1data__gnss_1_1_galileo_ephemeris_1_1_valid_flags.html#a9edacecc0689734cef44a7e3e6b4445ca30b6eb63f9dd3115bb642e4ff5e8444f">NONE</a> = 0x0000
 , <a class="el" href="structmip_1_1data__gnss_1_1_galileo_ephemeris_1_1_valid_flags.html#a9edacecc0689734cef44a7e3e6b4445ca726857326dcaded0b41411ec89f2927b">EPHEMERIS</a> = 0x0001
 , <a class="el" href="structmip_1_1data__gnss_1_1_galileo_ephemeris_1_1_valid_flags.html#a9edacecc0689734cef44a7e3e6b4445ca1ae62b1c2780dd963bf1ecbf4bceec25">MODERN_DATA</a> = 0x0002
 , <a class="el" href="structmip_1_1data__gnss_1_1_galileo_ephemeris_1_1_valid_flags.html#a9edacecc0689734cef44a7e3e6b4445cacfb4411ef58dc89d761bff8161f8fbe2">FLAGS</a> = 0x0003
+, <br />
+&#160;&#160;<a class="el" href="structmip_1_1data__gnss_1_1_galileo_ephemeris_1_1_valid_flags.html#a9edacecc0689734cef44a7e3e6b4445caf908c29de05979f99c75b4815c1453c7">ALL</a> = 0x0003
+<br />
  }</td></tr>
 <tr class="separator:a9edacecc0689734cef44a7e3e6b4445c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -134,6 +138,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad4a1f1687441d6e4f775ddd9e2061ca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6242875a4b153a772dd17ca6d6c2b1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_galileo_ephemeris_1_1_valid_flags.html#aa6242875a4b153a772dd17ca6d6c2b1b">flags</a> (uint16_t val)</td></tr>
 <tr class="separator:aa6242875a4b153a772dd17ca6d6c2b1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae36ef73f07c8d21d4a9a1f130b53126"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_galileo_ephemeris_1_1_valid_flags.html#aae36ef73f07c8d21d4a9a1f130b53126">allSet</a> () const</td></tr>
+<tr class="separator:aae36ef73f07c8d21d4a9a1f130b53126"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af48196a0295ee4b994f69e8a96df1d66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_galileo_ephemeris_1_1_valid_flags.html#af48196a0295ee4b994f69e8a96df1d66">setAll</a> ()</td></tr>
+<tr class="separator:af48196a0295ee4b994f69e8a96df1d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -157,6 +165,7 @@ Public Attributes</h2></td></tr>
 <tr><td class="fieldname"><a id="a9edacecc0689734cef44a7e3e6b4445ca726857326dcaded0b41411ec89f2927b"></a>EPHEMERIS&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a9edacecc0689734cef44a7e3e6b4445ca1ae62b1c2780dd963bf1ecbf4bceec25"></a>MODERN_DATA&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a9edacecc0689734cef44a7e3e6b4445cacfb4411ef58dc89d761bff8161f8fbe2"></a>FLAGS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9edacecc0689734cef44a7e3e6b4445caf908c29de05979f99c75b4815c1453c7"></a>ALL&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -214,6 +223,31 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aae36ef73f07c8d21d4a9a1f130b53126"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae36ef73f07c8d21d4a9a1f130b53126">&#9670;&nbsp;</a></span>allSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::data_gnss::GalileoEphemeris::ValidFlags::allSet </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="adbd2591d7a0d5891ef12b110f30721be"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adbd2591d7a0d5891ef12b110f30721be">&#9670;&nbsp;</a></span>ephemeris() <span class="overload">[1/2]</span></h2>
 
@@ -484,6 +518,31 @@ Public Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype">uint16_t&#160;</td>
           <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af48196a0295ee4b994f69e8a96df1d66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af48196a0295ee4b994f69e8a96df1d66">&#9670;&nbsp;</a></span>setAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::data_gnss::GalileoEphemeris::ValidFlags::setAll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>

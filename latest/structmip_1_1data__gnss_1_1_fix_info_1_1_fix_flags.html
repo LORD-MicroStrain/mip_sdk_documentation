@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-27-g411d175</span>
+   &#160;<span id="projectnumber">v1.0.0-28-g950e651</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -102,6 +102,7 @@ Public Types</h2></td></tr>
 <tr class="memitem:a0f919ca3c734e9d28011962dccd5dcf4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_fix_info_1_1_fix_flags.html#a0f919ca3c734e9d28011962dccd5dcf4">_enumType</a> : uint16_t { <a class="el" href="structmip_1_1data__gnss_1_1_fix_info_1_1_fix_flags.html#a0f919ca3c734e9d28011962dccd5dcf4ad43b971da439166cdd70cbe2d009338f">NONE</a> = 0x0000
 , <a class="el" href="structmip_1_1data__gnss_1_1_fix_info_1_1_fix_flags.html#a0f919ca3c734e9d28011962dccd5dcf4acdd034f2ed535bae2ebd49690427f177">SBAS_USED</a> = 0x0001
 , <a class="el" href="structmip_1_1data__gnss_1_1_fix_info_1_1_fix_flags.html#a0f919ca3c734e9d28011962dccd5dcf4aff9bccf72fdb75a858efe43b9b5809cc">DGNSS_USED</a> = 0x0002
+, <a class="el" href="structmip_1_1data__gnss_1_1_fix_info_1_1_fix_flags.html#a0f919ca3c734e9d28011962dccd5dcf4a3968ffabec017b49222b878347cde1f6">ALL</a> = 0x0003
  }</td></tr>
 <tr class="separator:a0f919ca3c734e9d28011962dccd5dcf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -129,6 +130,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad7f02a999dd6dfc952953a8d400e7101"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac13cc9ff2643b2b73ab3e537392a8688"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_fix_info_1_1_fix_flags.html#ac13cc9ff2643b2b73ab3e537392a8688">dgnssUsed</a> (bool val)</td></tr>
 <tr class="separator:ac13cc9ff2643b2b73ab3e537392a8688"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f0ca3fcde6e37e00b74f4842f7ff553"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_fix_info_1_1_fix_flags.html#a1f0ca3fcde6e37e00b74f4842f7ff553">allSet</a> () const</td></tr>
+<tr class="separator:a1f0ca3fcde6e37e00b74f4842f7ff553"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a090a03f5a5cbbd0da8cb19391f7a12f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_fix_info_1_1_fix_flags.html#a090a03f5a5cbbd0da8cb19391f7a12f7">setAll</a> ()</td></tr>
+<tr class="separator:a090a03f5a5cbbd0da8cb19391f7a12f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -151,6 +156,7 @@ Public Attributes</h2></td></tr>
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0f919ca3c734e9d28011962dccd5dcf4ad43b971da439166cdd70cbe2d009338f"></a>NONE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a0f919ca3c734e9d28011962dccd5dcf4acdd034f2ed535bae2ebd49690427f177"></a>SBAS_USED&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a0f919ca3c734e9d28011962dccd5dcf4aff9bccf72fdb75a858efe43b9b5809cc"></a>DGNSS_USED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0f919ca3c734e9d28011962dccd5dcf4a3968ffabec017b49222b878347cde1f6"></a>ALL&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -208,6 +214,31 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a1f0ca3fcde6e37e00b74f4842f7ff553"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f0ca3fcde6e37e00b74f4842f7ff553">&#9670;&nbsp;</a></span>allSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::data_gnss::FixInfo::FixFlags::allSet </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ad7f02a999dd6dfc952953a8d400e7101"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad7f02a999dd6dfc952953a8d400e7101">&#9670;&nbsp;</a></span>dgnssUsed() <span class="overload">[1/2]</span></h2>
 
@@ -427,6 +458,31 @@ Public Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a090a03f5a5cbbd0da8cb19391f7a12f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a090a03f5a5cbbd0da8cb19391f7a12f7">&#9670;&nbsp;</a></span>setAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::data_gnss::FixInfo::FixFlags::setAll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>

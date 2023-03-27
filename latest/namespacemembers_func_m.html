@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-27-g411d175</span>
+   &#160;<span id="projectnumber">v1.0.0-28-g950e651</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -117,6 +117,9 @@ $(function() {
 <li>mip_3dm_default_imu_message_format()
 : <a class="el" href="group__c__3dm__imu__message__format.html#ga9910751692582da5df7be8d202b1f4b9">mip::C</a>
 </li>
+<li>mip_3dm_default_lowpass_filter()
+: <a class="el" href="group__c__3dm__lowpass__filter.html#ga9290df173e2dbe97df55fec64e85fa91">mip::C</a>
+</li>
 <li>mip_3dm_default_mag_hard_iron_offset()
 : <a class="el" href="group__c__3dm__mag__hard__iron__offset.html#gae64e1c27050b13430dab3797e264a1a2">mip::C</a>
 </li>
@@ -125,9 +128,6 @@ $(function() {
 </li>
 <li>mip_3dm_default_message_format()
 : <a class="el" href="group__c__3dm__message__format.html#ga749383826cb70678c99e5aa5416e8185">mip::C</a>
-</li>
-<li>mip_3dm_default_mip_cmd_3dm_lowpass_filter()
-: <a class="el" href="group__c__3dm__mip__cmd__3dm__lowpass__filter.html#gaeb2b32315aaac5a97bafe26b74016bca">mip::C</a>
 </li>
 <li>mip_3dm_default_nmea_message_format()
 : <a class="el" href="group__c__3dm__nmea__message__format.html#gaa8fd2c926271dd4d0530dec57ebaae8e">mip::C</a>
@@ -222,6 +222,9 @@ $(function() {
 <li>mip_3dm_load_imu_message_format()
 : <a class="el" href="group__c__3dm__imu__message__format.html#gaa5ea35bdf22b0568e0ddae500f9f7ca6">mip::C</a>
 </li>
+<li>mip_3dm_load_lowpass_filter()
+: <a class="el" href="group__c__3dm__lowpass__filter.html#gabf40f46adb968f9f2e547c62499789d3">mip::C</a>
+</li>
 <li>mip_3dm_load_mag_hard_iron_offset()
 : <a class="el" href="group__c__3dm__mag__hard__iron__offset.html#gad10bcbeb4203e5eed6c6979f3fff8549">mip::C</a>
 </li>
@@ -230,9 +233,6 @@ $(function() {
 </li>
 <li>mip_3dm_load_message_format()
 : <a class="el" href="group__c__3dm__message__format.html#ga8a51384a8f88c0d1b1ce2aea34a86164">mip::C</a>
-</li>
-<li>mip_3dm_load_mip_cmd_3dm_lowpass_filter()
-: <a class="el" href="group__c__3dm__mip__cmd__3dm__lowpass__filter.html#gac662d88bf9fd063890b76fcddce9ff7c">mip::C</a>
 </li>
 <li>mip_3dm_load_nmea_message_format()
 : <a class="el" href="group__c__3dm__nmea__message__format.html#gaeeb48239c3c1be24e0aaeaf9a56fe053">mip::C</a>
@@ -321,6 +321,9 @@ $(function() {
 <li>mip_3dm_read_imu_message_format()
 : <a class="el" href="group__c__3dm__imu__message__format.html#ga89406289247ee07d1799c91a5d3bc930">mip::C</a>
 </li>
+<li>mip_3dm_read_lowpass_filter()
+: <a class="el" href="group__c__3dm__lowpass__filter.html#gaa8470ab0115e23abf15fd7ff80a13f29">mip::C</a>
+</li>
 <li>mip_3dm_read_mag_hard_iron_offset()
 : <a class="el" href="group__c__3dm__mag__hard__iron__offset.html#ga1edd908b07e37675fb265a820defd686">mip::C</a>
 </li>
@@ -329,9 +332,6 @@ $(function() {
 </li>
 <li>mip_3dm_read_message_format()
 : <a class="el" href="group__c__3dm__message__format.html#gac640682130ed61d2ec796f052260aaff">mip::C</a>
-</li>
-<li>mip_3dm_read_mip_cmd_3dm_lowpass_filter()
-: <a class="el" href="group__c__3dm__mip__cmd__3dm__lowpass__filter.html#gaa7760b8a7f447d858c9f1ad548cdee25">mip::C</a>
 </li>
 <li>mip_3dm_read_nmea_message_format()
 : <a class="el" href="group__c__3dm__nmea__message__format.html#ga81c03878db5c3210e8d05da0f21b81c3">mip::C</a>
@@ -402,6 +402,9 @@ $(function() {
 <li>mip_3dm_save_imu_message_format()
 : <a class="el" href="group__c__3dm__imu__message__format.html#gabff5c71dc2974d076bfa580185677687">mip::C</a>
 </li>
+<li>mip_3dm_save_lowpass_filter()
+: <a class="el" href="group__c__3dm__lowpass__filter.html#gafea0ff4887ba1974a6c9a9b703844482">mip::C</a>
+</li>
 <li>mip_3dm_save_mag_hard_iron_offset()
 : <a class="el" href="group__c__3dm__mag__hard__iron__offset.html#ga0aa72956208e860a6af0afc263703ee4">mip::C</a>
 </li>
@@ -410,9 +413,6 @@ $(function() {
 </li>
 <li>mip_3dm_save_message_format()
 : <a class="el" href="group__c__3dm__message__format.html#gadfb55ea2984ea3820d2549e9615e2679">mip::C</a>
-</li>
-<li>mip_3dm_save_mip_cmd_3dm_lowpass_filter()
-: <a class="el" href="group__c__3dm__mip__cmd__3dm__lowpass__filter.html#gac2bdbbcd145fdb63b46e4478f386fac8">mip::C</a>
 </li>
 <li>mip_3dm_save_nmea_message_format()
 : <a class="el" href="group__c__3dm__nmea__message__format.html#ga1d0c5eb2f3194699d332616e45345af7">mip::C</a>
@@ -486,6 +486,9 @@ $(function() {
 <li>mip_3dm_write_imu_message_format()
 : <a class="el" href="group__c__3dm__imu__message__format.html#gac1efbca4e58eb9420a7dbe9e610f29f3">mip::C</a>
 </li>
+<li>mip_3dm_write_lowpass_filter()
+: <a class="el" href="group__c__3dm__lowpass__filter.html#ga9ee7e5b2080244050a42cd4f06200f34">mip::C</a>
+</li>
 <li>mip_3dm_write_mag_hard_iron_offset()
 : <a class="el" href="group__c__3dm__mag__hard__iron__offset.html#gac6ccd17d5faedf130fe7bae17c1a6648">mip::C</a>
 </li>
@@ -494,9 +497,6 @@ $(function() {
 </li>
 <li>mip_3dm_write_message_format()
 : <a class="el" href="group__c__3dm__message__format.html#gabdcf800986bfea4d3db4dc1b5abccf0d">mip::C</a>
-</li>
-<li>mip_3dm_write_mip_cmd_3dm_lowpass_filter()
-: <a class="el" href="group__c__3dm__mip__cmd__3dm__lowpass__filter.html#gaf74772f3316ea5c6756ed4a05f1ab5ea">mip::C</a>
 </li>
 <li>mip_3dm_write_nmea_message_format()
 : <a class="el" href="group__c__3dm__nmea__message__format.html#ga69ea7dd964148abab6e9248466aa36bc">mip::C</a>

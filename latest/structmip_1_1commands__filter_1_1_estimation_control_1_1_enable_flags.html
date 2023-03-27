@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-27-g411d175</span>
+   &#160;<span id="projectnumber">v1.0.0-28-g950e651</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -109,6 +109,8 @@ Public Types</h2></td></tr>
 , <a class="el" href="structmip_1_1commands__filter_1_1_estimation_control_1_1_enable_flags.html#ab64fbda244aa8ed8cf8157990d87ef3ba37983d6eb472f17addba220b80191f66">ANTENNA_OFFSET</a> = 0x0010
 , <a class="el" href="structmip_1_1commands__filter_1_1_estimation_control_1_1_enable_flags.html#ab64fbda244aa8ed8cf8157990d87ef3baeaec2c1600304922741638860e7d7708">AUTO_MAG_HARD_IRON</a> = 0x0020
 , <a class="el" href="structmip_1_1commands__filter_1_1_estimation_control_1_1_enable_flags.html#ab64fbda244aa8ed8cf8157990d87ef3baa2a2233c76f32c2a6b402300b723e8c6">AUTO_MAG_SOFT_IRON</a> = 0x0040
+, <br />
+&#160;&#160;<a class="el" href="structmip_1_1commands__filter_1_1_estimation_control_1_1_enable_flags.html#ab64fbda244aa8ed8cf8157990d87ef3bacf1027cf1361c25504cd9e80be7ccd1f">ALL</a> = 0x007F
 <br />
  }</td></tr>
 <tr class="separator:ab64fbda244aa8ed8cf8157990d87ef3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,6 +159,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acb1d67011e29f0c06a447a9a4e224319"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5612416a6ebbdab1cb053130d373e69d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_estimation_control_1_1_enable_flags.html#a5612416a6ebbdab1cb053130d373e69d">autoMagSoftIron</a> (bool val)</td></tr>
 <tr class="separator:a5612416a6ebbdab1cb053130d373e69d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad558d309415b22fe0f21032d79a36a54"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_estimation_control_1_1_enable_flags.html#ad558d309415b22fe0f21032d79a36a54">allSet</a> () const</td></tr>
+<tr class="separator:ad558d309415b22fe0f21032d79a36a54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8e6e261b570cca4807b5d291d28bcc6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_estimation_control_1_1_enable_flags.html#ae8e6e261b570cca4807b5d291d28bcc6">setAll</a> ()</td></tr>
+<tr class="separator:ae8e6e261b570cca4807b5d291d28bcc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -184,6 +190,7 @@ Public Attributes</h2></td></tr>
 <tr><td class="fieldname"><a id="ab64fbda244aa8ed8cf8157990d87ef3ba37983d6eb472f17addba220b80191f66"></a>ANTENNA_OFFSET&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ab64fbda244aa8ed8cf8157990d87ef3baeaec2c1600304922741638860e7d7708"></a>AUTO_MAG_HARD_IRON&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ab64fbda244aa8ed8cf8157990d87ef3baa2a2233c76f32c2a6b402300b723e8c6"></a>AUTO_MAG_SOFT_IRON&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab64fbda244aa8ed8cf8157990d87ef3bacf1027cf1361c25504cd9e80be7ccd1f"></a>ALL&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -332,6 +339,31 @@ Public Attributes</h2></td></tr>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>val</em></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad558d309415b22fe0f21032d79a36a54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad558d309415b22fe0f21032d79a36a54">&#9670;&nbsp;</a></span>allSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::commands_filter::EstimationControl::EnableFlags::allSet </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -715,6 +747,31 @@ Public Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype">uint16_t&#160;</td>
           <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae8e6e261b570cca4807b5d291d28bcc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8e6e261b570cca4807b5d291d28bcc6">&#9670;&nbsp;</a></span>setAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::commands_filter::EstimationControl::EnableFlags::setAll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>

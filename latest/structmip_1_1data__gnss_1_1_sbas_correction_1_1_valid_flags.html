@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-27-g411d175</span>
+   &#160;<span id="projectnumber">v1.0.0-28-g950e651</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -106,6 +106,7 @@ Public Types</h2></td></tr>
 , <a class="el" href="structmip_1_1data__gnss_1_1_sbas_correction_1_1_valid_flags.html#aa80a35527c4d138e6c626410ebb23673a87bfdec8f9f372b49f4dc3dc73eb61ee">IONO_CORRECTION</a> = 0x0004
 , <br />
 &#160;&#160;<a class="el" href="structmip_1_1data__gnss_1_1_sbas_correction_1_1_valid_flags.html#aa80a35527c4d138e6c626410ebb23673a10ebec80d07a9458078bb153d047f947">FLAGS</a> = 0x0007
+, <a class="el" href="structmip_1_1data__gnss_1_1_sbas_correction_1_1_valid_flags.html#aa80a35527c4d138e6c626410ebb23673a56f272b432fe184097e16b41a0eea0eb">ALL</a> = 0x0007
 <br />
  }</td></tr>
 <tr class="separator:aa80a35527c4d138e6c626410ebb23673"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,6 +143,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4285a32644251be46ae7e5b6680bbd92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af30926174e6f1f85156937ae75de0f1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_sbas_correction_1_1_valid_flags.html#af30926174e6f1f85156937ae75de0f1f">flags</a> (uint16_t val)</td></tr>
 <tr class="separator:af30926174e6f1f85156937ae75de0f1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a978d125eb539e22c3f07587aacf64bc3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_sbas_correction_1_1_valid_flags.html#a978d125eb539e22c3f07587aacf64bc3">allSet</a> () const</td></tr>
+<tr class="separator:a978d125eb539e22c3f07587aacf64bc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3b0c00b83beea13f35a76e2183f4c0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_sbas_correction_1_1_valid_flags.html#ae3b0c00b83beea13f35a76e2183f4c0e">setAll</a> ()</td></tr>
+<tr class="separator:ae3b0c00b83beea13f35a76e2183f4c0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -166,6 +171,7 @@ Public Attributes</h2></td></tr>
 <tr><td class="fieldname"><a id="aa80a35527c4d138e6c626410ebb23673a1f7a2d1df272250a3d7001f167951d32"></a>PSEUDORANGE_CORRECTION&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="aa80a35527c4d138e6c626410ebb23673a87bfdec8f9f372b49f4dc3dc73eb61ee"></a>IONO_CORRECTION&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="aa80a35527c4d138e6c626410ebb23673a10ebec80d07a9458078bb153d047f947"></a>FLAGS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa80a35527c4d138e6c626410ebb23673a56f272b432fe184097e16b41a0eea0eb"></a>ALL&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -223,6 +229,31 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a978d125eb539e22c3f07587aacf64bc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a978d125eb539e22c3f07587aacf64bc3">&#9670;&nbsp;</a></span>allSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::data_gnss::SbasCorrection::ValidFlags::allSet </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a4285a32644251be46ae7e5b6680bbd92"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4285a32644251be46ae7e5b6680bbd92">&#9670;&nbsp;</a></span>flags() <span class="overload">[1/2]</span></h2>
 
@@ -493,6 +524,31 @@ Public Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae3b0c00b83beea13f35a76e2183f4c0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3b0c00b83beea13f35a76e2183f4c0e">&#9670;&nbsp;</a></span>setAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::data_gnss::SbasCorrection::ValidFlags::setAll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>

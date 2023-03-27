@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-27-g411d175</span>
+   &#160;<span id="projectnumber">v1.0.0-28-g950e651</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -112,6 +112,7 @@ Public Types</h2></td></tr>
 , <br />
 &#160;&#160;<a class="el" href="structmip_1_1data__gnss_1_1_base_station_info_1_1_indicator_flags.html#a0cb42756376b4898f423979191ab2944a8cbde1bf60b6f0a12ba4b5300eca8a85">QUARTER_CYCLE_BIT2</a> = 0x0080
 , <a class="el" href="structmip_1_1data__gnss_1_1_base_station_info_1_1_indicator_flags.html#a0cb42756376b4898f423979191ab2944a61dcbcc68cca54979a98f1d7854fe1b8">QUARTER_CYCLE_BITS</a> = 0x00C0
+, <a class="el" href="structmip_1_1data__gnss_1_1_base_station_info_1_1_indicator_flags.html#a0cb42756376b4898f423979191ab2944ade988cd1f4998e6851b83ebc1b244b02">ALL</a> = 0x00FF
 <br />
  }</td></tr>
 <tr class="separator:a0cb42756376b4898f423979191ab2944"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -168,6 +169,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aef48fd9468d821d93a139c91d59ec615"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a315b8f1ff7d16be185440076c2994810"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_base_station_info_1_1_indicator_flags.html#a315b8f1ff7d16be185440076c2994810">quarterCycleBits</a> (uint16_t val)</td></tr>
 <tr class="separator:a315b8f1ff7d16be185440076c2994810"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a313467d4da985d5034384f15e6b75d56"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_base_station_info_1_1_indicator_flags.html#a313467d4da985d5034384f15e6b75d56">allSet</a> () const</td></tr>
+<tr class="separator:a313467d4da985d5034384f15e6b75d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e85f1bcadd46c083bff68c122de9785"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_base_station_info_1_1_indicator_flags.html#a1e85f1bcadd46c083bff68c122de9785">setAll</a> ()</td></tr>
+<tr class="separator:a1e85f1bcadd46c083bff68c122de9785"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -197,6 +202,7 @@ Public Attributes</h2></td></tr>
 <tr><td class="fieldname"><a id="a0cb42756376b4898f423979191ab2944a7c223341cd1668c520265e76a52fb56b"></a>QUARTER_CYCLE_BIT1&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a0cb42756376b4898f423979191ab2944a8cbde1bf60b6f0a12ba4b5300eca8a85"></a>QUARTER_CYCLE_BIT2&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a0cb42756376b4898f423979191ab2944a61dcbcc68cca54979a98f1d7854fe1b8"></a>QUARTER_CYCLE_BITS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0cb42756376b4898f423979191ab2944ade988cd1f4998e6851b83ebc1b244b02"></a>ALL&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -254,6 +260,31 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a313467d4da985d5034384f15e6b75d56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a313467d4da985d5034384f15e6b75d56">&#9670;&nbsp;</a></span>allSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::data_gnss::BaseStationInfo::IndicatorFlags::allSet </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a9ccc6e04ae0d89335ae4a3a746456006"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9ccc6e04ae0d89335ae4a3a746456006">&#9670;&nbsp;</a></span>beidou() <span class="overload">[1/2]</span></h2>
 
@@ -779,6 +810,31 @@ Public Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1e85f1bcadd46c083bff68c122de9785"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e85f1bcadd46c083bff68c122de9785">&#9670;&nbsp;</a></span>setAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::data_gnss::BaseStationInfo::IndicatorFlags::setAll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>

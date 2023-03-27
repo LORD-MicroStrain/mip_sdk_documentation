@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-27-g411d175</span>
+   &#160;<span id="projectnumber">v1.0.0-28-g950e651</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -107,6 +107,7 @@ Public Types</h2></td></tr>
 , <br />
 &#160;&#160;<a class="el" href="structmip_1_1data__sensor_1_1_gps_timestamp_1_1_valid_flags.html#a64c4d0d3ea3cccb6d1c81dacfd2107bea879017ff979fabad493a35b1db54e4b7">TOW_VALID</a> = 0x0008
 , <a class="el" href="structmip_1_1data__sensor_1_1_gps_timestamp_1_1_valid_flags.html#a64c4d0d3ea3cccb6d1c81dacfd2107bea90df909334554645d9a8a831dec8f2a1">WEEK_NUMBER_VALID</a> = 0x0010
+, <a class="el" href="structmip_1_1data__sensor_1_1_gps_timestamp_1_1_valid_flags.html#a64c4d0d3ea3cccb6d1c81dacfd2107beaef6f45a3ed3707ac448ab99a8f96c16d">ALL</a> = 0x001F
 <br />
  }</td></tr>
 <tr class="separator:a64c4d0d3ea3cccb6d1c81dacfd2107be"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,6 +148,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af9091312d64929c2853ec29f4cc6711d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af229b4e15f2165e5159b951dbe39f976"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__sensor_1_1_gps_timestamp_1_1_valid_flags.html#af229b4e15f2165e5159b951dbe39f976">weekNumberValid</a> (bool val)</td></tr>
 <tr class="separator:af229b4e15f2165e5159b951dbe39f976"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa1cca6b63f500a24b75914a27f4395e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__sensor_1_1_gps_timestamp_1_1_valid_flags.html#aaa1cca6b63f500a24b75914a27f4395e">allSet</a> () const</td></tr>
+<tr class="separator:aaa1cca6b63f500a24b75914a27f4395e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae558250e1ed538c2c978b3504f3de6cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__sensor_1_1_gps_timestamp_1_1_valid_flags.html#ae558250e1ed538c2c978b3504f3de6cf">setAll</a> ()</td></tr>
+<tr class="separator:ae558250e1ed538c2c978b3504f3de6cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -177,6 +182,7 @@ Public Attributes</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a64c4d0d3ea3cccb6d1c81dacfd2107bea90df909334554645d9a8a831dec8f2a1"></a>WEEK_NUMBER_VALID&#160;</td><td class="fielddoc"><p>True if the week number is valid. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="a64c4d0d3ea3cccb6d1c81dacfd2107beaef6f45a3ed3707ac448ab99a8f96c16d"></a>ALL&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -234,6 +240,31 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aaa1cca6b63f500a24b75914a27f4395e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa1cca6b63f500a24b75914a27f4395e">&#9670;&nbsp;</a></span>allSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::data_sensor::GpsTimestamp::ValidFlags::allSet </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ae2179228bde659a7f3fbf56994ebc2fd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae2179228bde659a7f3fbf56994ebc2fd">&#9670;&nbsp;</a></span>operator uint16_t()</h2>
 
@@ -402,6 +433,31 @@ Public Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae558250e1ed538c2c978b3504f3de6cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae558250e1ed538c2c978b3504f3de6cf">&#9670;&nbsp;</a></span>setAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::data_sensor::GpsTimestamp::ValidFlags::setAll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>

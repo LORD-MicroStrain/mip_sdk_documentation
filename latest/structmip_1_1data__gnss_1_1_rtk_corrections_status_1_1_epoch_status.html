@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-27-g411d175</span>
+   &#160;<span id="projectnumber">v1.0.0-28-g950e651</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -112,6 +112,7 @@ Public Types</h2></td></tr>
 , <br />
 &#160;&#160;<a class="el" href="structmip_1_1data__gnss_1_1_rtk_corrections_status_1_1_epoch_status.html#ad535fefd8edff612616e8283ce9dbe7aa328f4f6774b5750ed5bacc355d742247">USING_GLONASS_MSM_MESSAGES</a> = 0x0080
 , <a class="el" href="structmip_1_1data__gnss_1_1_rtk_corrections_status_1_1_epoch_status.html#ad535fefd8edff612616e8283ce9dbe7aa3c25b1da7efa175e78cc1e6f790931c2">DONGLE_STATUS_READ_FAILED</a> = 0x0100
+, <a class="el" href="structmip_1_1data__gnss_1_1_rtk_corrections_status_1_1_epoch_status.html#ad535fefd8edff612616e8283ce9dbe7aa6afbc24f6b1119d5fbcb428c5a300e74">ALL</a> = 0x01FF
 <br />
  }</td></tr>
 <tr class="separator:ad535fefd8edff612616e8283ce9dbe7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -168,6 +169,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aab0c39940f6d3af4c63cd12dd1f3ffe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a516e332d7268043b85f14099d02282e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_rtk_corrections_status_1_1_epoch_status.html#a516e332d7268043b85f14099d02282e6">dongleStatusReadFailed</a> (bool val)</td></tr>
 <tr class="separator:a516e332d7268043b85f14099d02282e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa23fb7c3856d2062346bf0ee99c8f60c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_rtk_corrections_status_1_1_epoch_status.html#aa23fb7c3856d2062346bf0ee99c8f60c">allSet</a> () const</td></tr>
+<tr class="separator:aa23fb7c3856d2062346bf0ee99c8f60c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c87c78c1ed4f3a328f758716e3e574d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_rtk_corrections_status_1_1_epoch_status.html#a3c87c78c1ed4f3a328f758716e3e574d">setAll</a> ()</td></tr>
+<tr class="separator:a3c87c78c1ed4f3a328f758716e3e574d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -200,6 +205,7 @@ Public Attributes</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ad535fefd8edff612616e8283ce9dbe7aa3c25b1da7efa175e78cc1e6f790931c2"></a>DONGLE_STATUS_READ_FAILED&#160;</td><td class="fielddoc"><p>A read of the dongle status was attempted, but failed. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="ad535fefd8edff612616e8283ce9dbe7aa6afbc24f6b1119d5fbcb428c5a300e74"></a>ALL&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -257,6 +263,31 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa23fb7c3856d2062346bf0ee99c8f60c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa23fb7c3856d2062346bf0ee99c8f60c">&#9670;&nbsp;</a></span>allSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::data_gnss::RtkCorrectionsStatus::EpochStatus::allSet </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a4b3da62ff895edb8d36c1effee3947ad"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4b3da62ff895edb8d36c1effee3947ad">&#9670;&nbsp;</a></span>antennaDescriptionReceived() <span class="overload">[1/2]</span></h2>
 
@@ -731,6 +762,31 @@ Public Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype">uint16_t&#160;</td>
           <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3c87c78c1ed4f3a328f758716e3e574d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c87c78c1ed4f3a328f758716e3e574d">&#9670;&nbsp;</a></span>setAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::data_gnss::RtkCorrectionsStatus::EpochStatus::setAll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>

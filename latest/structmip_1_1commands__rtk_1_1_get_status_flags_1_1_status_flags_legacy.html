@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-27-g411d175</span>
+   &#160;<span id="projectnumber">v1.0.0-28-g950e651</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -114,6 +114,8 @@ Public Types</h2></td></tr>
 , <a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags_legacy.html#a6d952630b90a4cae4177646db34a96eea9c4d58ea500d472e17fe9376ab121df6">RSRP</a> = 0x0C000000
 , <a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags_legacy.html#a6d952630b90a4cae4177646db34a96eea934c555131d62af039c281feab02e325">RSRQ</a> = 0x30000000
 , <a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags_legacy.html#a6d952630b90a4cae4177646db34a96eeaa5a3383be1517e00998f07a791cbfc5f">SINR</a> = 0xC0000000
+, <br />
+&#160;&#160;<a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags_legacy.html#a6d952630b90a4cae4177646db34a96eea278cf6afbf47e3f25c13f2cd6b4977ca">ALL</a> = 0xFFFFFFFF
 <br />
  }</td></tr>
 <tr class="separator:a6d952630b90a4cae4177646db34a96ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -178,6 +180,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aeb60373d5491c5d3906da48f90e334be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed4d75659dd26d5e8200f02f61f05c28"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags_legacy.html#aed4d75659dd26d5e8200f02f61f05c28">sinr</a> (uint32_t val)</td></tr>
 <tr class="separator:aed4d75659dd26d5e8200f02f61f05c28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab660c512a0e6a0b36ba739539761882e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags_legacy.html#ab660c512a0e6a0b36ba739539761882e">allSet</a> () const</td></tr>
+<tr class="separator:ab660c512a0e6a0b36ba739539761882e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada58204a3aa7b43c4ff0473adbacd034"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags_legacy.html#ada58204a3aa7b43c4ff0473adbacd034">setAll</a> ()</td></tr>
+<tr class="separator:ada58204a3aa7b43c4ff0473adbacd034"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -209,6 +215,7 @@ Public Attributes</h2></td></tr>
 <tr><td class="fieldname"><a id="a6d952630b90a4cae4177646db34a96eea9c4d58ea500d472e17fe9376ab121df6"></a>RSRP&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a6d952630b90a4cae4177646db34a96eea934c555131d62af039c281feab02e325"></a>RSRQ&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a6d952630b90a4cae4177646db34a96eeaa5a3383be1517e00998f07a791cbfc5f"></a>SINR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6d952630b90a4cae4177646db34a96eea278cf6afbf47e3f25c13f2cd6b4977ca"></a>ALL&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -266,6 +273,31 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab660c512a0e6a0b36ba739539761882e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab660c512a0e6a0b36ba739539761882e">&#9670;&nbsp;</a></span>allSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::commands_rtk::GetStatusFlags::StatusFlagsLegacy::allSet </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a42dc8fb59b2c136bb540275d6ee260b5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a42dc8fb59b2c136bb540275d6ee260b5">&#9670;&nbsp;</a></span>controllerstate() <span class="overload">[1/2]</span></h2>
 
@@ -842,6 +874,31 @@ Public Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ada58204a3aa7b43c4ff0473adbacd034"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada58204a3aa7b43c4ff0473adbacd034">&#9670;&nbsp;</a></span>setAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::commands_rtk::GetStatusFlags::StatusFlagsLegacy::setAll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>

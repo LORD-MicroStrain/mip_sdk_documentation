@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-27-g411d175</span>
+   &#160;<span id="projectnumber">v1.0.0-28-g950e651</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -122,6 +122,7 @@ Public Types</h2></td></tr>
 , <br />
 &#160;&#160;<a class="el" href="structmip_1_1data__gnss_1_1_raw_1_1_valid_flags.html#a896b931f26ab3d9d16bd4e80b3dff2beafb542989324d5b711b07711c39d8b365">LOCK_TIME</a> = 0x8000
 , <a class="el" href="structmip_1_1data__gnss_1_1_raw_1_1_valid_flags.html#a896b931f26ab3d9d16bd4e80b3dff2bead88a72a8b7e4357deb477297d36f8742">FLAGS</a> = 0xFFFF
+, <a class="el" href="structmip_1_1data__gnss_1_1_raw_1_1_valid_flags.html#a896b931f26ab3d9d16bd4e80b3dff2bea8be35594eda747fbe5cf724ca6e94bea">ALL</a> = 0xFFFF
 <br />
  }</td></tr>
 <tr class="separator:a896b931f26ab3d9d16bd4e80b3dff2be"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -210,6 +211,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a835bda111fef5329226d2e9e394b99a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41d2f657af131b324af06bbab046c00a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_raw_1_1_valid_flags.html#a41d2f657af131b324af06bbab046c00a">flags</a> (uint16_t val)</td></tr>
 <tr class="separator:a41d2f657af131b324af06bbab046c00a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa66c053660c8f1aea00717ee51db7446"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_raw_1_1_valid_flags.html#aa66c053660c8f1aea00717ee51db7446">allSet</a> () const</td></tr>
+<tr class="separator:aa66c053660c8f1aea00717ee51db7446"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa063f7a1cd820f7e46bf749d3928ce9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_raw_1_1_valid_flags.html#aa063f7a1cd820f7e46bf749d3928ce9a">setAll</a> ()</td></tr>
+<tr class="separator:aa063f7a1cd820f7e46bf749d3928ce9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -247,6 +252,7 @@ Public Attributes</h2></td></tr>
 <tr><td class="fieldname"><a id="a896b931f26ab3d9d16bd4e80b3dff2beaeec7659d9622b822ba05496a434626de"></a>DOPPLER_UNCERTAINTY&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a896b931f26ab3d9d16bd4e80b3dff2beafb542989324d5b711b07711c39d8b365"></a>LOCK_TIME&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a896b931f26ab3d9d16bd4e80b3dff2bead88a72a8b7e4357deb477297d36f8742"></a>FLAGS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a896b931f26ab3d9d16bd4e80b3dff2bea8be35594eda747fbe5cf724ca6e94bea"></a>ALL&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -304,6 +310,31 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa66c053660c8f1aea00717ee51db7446"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa66c053660c8f1aea00717ee51db7446">&#9670;&nbsp;</a></span>allSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::data_gnss::Raw::ValidFlags::allSet </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a00780d76d870caf4259dff85352d7ba4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a00780d76d870caf4259dff85352d7ba4">&#9670;&nbsp;</a></span>carrierPhase() <span class="overload">[1/2]</span></h2>
 
@@ -1033,6 +1064,31 @@ Public Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa063f7a1cd820f7e46bf749d3928ce9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa063f7a1cd820f7e46bf749d3928ce9a">&#9670;&nbsp;</a></span>setAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::data_gnss::Raw::ValidFlags::setAll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>

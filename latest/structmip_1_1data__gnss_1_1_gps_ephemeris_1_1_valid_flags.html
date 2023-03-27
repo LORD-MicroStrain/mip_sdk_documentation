@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-27-g411d175</span>
+   &#160;<span id="projectnumber">v1.0.0-28-g950e651</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -99,10 +99,14 @@ Collaboration diagram for mip::data_gnss::GpsEphemeris::ValidFlags:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:aaaac31a8df25562f47cca420ee1715e7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_gps_ephemeris_1_1_valid_flags.html#aaaac31a8df25562f47cca420ee1715e7">_enumType</a> : uint16_t { <a class="el" href="structmip_1_1data__gnss_1_1_gps_ephemeris_1_1_valid_flags.html#aaaac31a8df25562f47cca420ee1715e7a5da0a25a6f2e2a26627690f91f252c03">NONE</a> = 0x0000
+<tr class="memitem:aaaac31a8df25562f47cca420ee1715e7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_gps_ephemeris_1_1_valid_flags.html#aaaac31a8df25562f47cca420ee1715e7">_enumType</a> : uint16_t { <br />
+&#160;&#160;<a class="el" href="structmip_1_1data__gnss_1_1_gps_ephemeris_1_1_valid_flags.html#aaaac31a8df25562f47cca420ee1715e7a5da0a25a6f2e2a26627690f91f252c03">NONE</a> = 0x0000
 , <a class="el" href="structmip_1_1data__gnss_1_1_gps_ephemeris_1_1_valid_flags.html#aaaac31a8df25562f47cca420ee1715e7ae47f253efc62ed2b27478be5e621601d">EPHEMERIS</a> = 0x0001
 , <a class="el" href="structmip_1_1data__gnss_1_1_gps_ephemeris_1_1_valid_flags.html#aaaac31a8df25562f47cca420ee1715e7a957f57a1c33d618a16ed8ee0a2e3e8fc">MODERN_DATA</a> = 0x0002
 , <a class="el" href="structmip_1_1data__gnss_1_1_gps_ephemeris_1_1_valid_flags.html#aaaac31a8df25562f47cca420ee1715e7ae25f85ac32a57f553fb26a225d91e704">FLAGS</a> = 0x0003
+, <br />
+&#160;&#160;<a class="el" href="structmip_1_1data__gnss_1_1_gps_ephemeris_1_1_valid_flags.html#aaaac31a8df25562f47cca420ee1715e7a3b5e20344738ba8be111e9ec72445858">ALL</a> = 0x0003
+<br />
  }</td></tr>
 <tr class="separator:aaaac31a8df25562f47cca420ee1715e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -134,6 +138,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af9d9bf105803d0e4dd183a35b40b9cbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae23412611bc6ca91ef44ae1ba800a7f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_gps_ephemeris_1_1_valid_flags.html#ae23412611bc6ca91ef44ae1ba800a7f4">flags</a> (uint16_t val)</td></tr>
 <tr class="separator:ae23412611bc6ca91ef44ae1ba800a7f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf6d6572798bda6f67f9aee9cb0733a9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_gps_ephemeris_1_1_valid_flags.html#abf6d6572798bda6f67f9aee9cb0733a9">allSet</a> () const</td></tr>
+<tr class="separator:abf6d6572798bda6f67f9aee9cb0733a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcd99ec6abfda0e74fa62dca18a2c73c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_gps_ephemeris_1_1_valid_flags.html#afcd99ec6abfda0e74fa62dca18a2c73c">setAll</a> ()</td></tr>
+<tr class="separator:afcd99ec6abfda0e74fa62dca18a2c73c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -157,6 +165,7 @@ Public Attributes</h2></td></tr>
 <tr><td class="fieldname"><a id="aaaac31a8df25562f47cca420ee1715e7ae47f253efc62ed2b27478be5e621601d"></a>EPHEMERIS&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="aaaac31a8df25562f47cca420ee1715e7a957f57a1c33d618a16ed8ee0a2e3e8fc"></a>MODERN_DATA&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="aaaac31a8df25562f47cca420ee1715e7ae25f85ac32a57f553fb26a225d91e704"></a>FLAGS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaaac31a8df25562f47cca420ee1715e7a3b5e20344738ba8be111e9ec72445858"></a>ALL&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -214,6 +223,31 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="abf6d6572798bda6f67f9aee9cb0733a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf6d6572798bda6f67f9aee9cb0733a9">&#9670;&nbsp;</a></span>allSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::data_gnss::GpsEphemeris::ValidFlags::allSet </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a347caafe52122e24811f288d188fc698"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a347caafe52122e24811f288d188fc698">&#9670;&nbsp;</a></span>ephemeris() <span class="overload">[1/2]</span></h2>
 
@@ -484,6 +518,31 @@ Public Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype">uint16_t&#160;</td>
           <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afcd99ec6abfda0e74fa62dca18a2c73c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcd99ec6abfda0e74fa62dca18a2c73c">&#9670;&nbsp;</a></span>setAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::data_gnss::GpsEphemeris::ValidFlags::setAll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>

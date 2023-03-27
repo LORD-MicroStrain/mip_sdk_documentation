@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-27-g411d175</span>
+   &#160;<span id="projectnumber">v1.0.0-28-g950e651</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -101,6 +101,7 @@ Collaboration diagram for mip::data_shared::ExternalTimeDelta::ValidFlags:</div>
 Public Types</h2></td></tr>
 <tr class="memitem:a0e836da5ee7b30ad4bec7c80ca73be5a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__shared_1_1_external_time_delta_1_1_valid_flags.html#a0e836da5ee7b30ad4bec7c80ca73be5a">_enumType</a> : uint16_t { <a class="el" href="structmip_1_1data__shared_1_1_external_time_delta_1_1_valid_flags.html#a0e836da5ee7b30ad4bec7c80ca73be5aaddce5ae4611da5554d62f940a0a05658">NONE</a> = 0x0000
 , <a class="el" href="structmip_1_1data__shared_1_1_external_time_delta_1_1_valid_flags.html#a0e836da5ee7b30ad4bec7c80ca73be5aa196b3afcd78efa1ddb15486f49d0e412">DT_NANOS</a> = 0x0001
+, <a class="el" href="structmip_1_1data__shared_1_1_external_time_delta_1_1_valid_flags.html#a0e836da5ee7b30ad4bec7c80ca73be5aac5db7e4c27af6a4ccf80fcc1ce0e042d">ALL</a> = 0x0001
  }</td></tr>
 <tr class="separator:a0e836da5ee7b30ad4bec7c80ca73be5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -124,6 +125,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9d7ba3386041c154fb46b27d4a7432de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa199859cb96b45823c7cae88d891d9ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__shared_1_1_external_time_delta_1_1_valid_flags.html#aa199859cb96b45823c7cae88d891d9ea">dtNanos</a> (bool val)</td></tr>
 <tr class="separator:aa199859cb96b45823c7cae88d891d9ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ac8c1efdeba1ec30c6aa9aa08886b7b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__shared_1_1_external_time_delta_1_1_valid_flags.html#a6ac8c1efdeba1ec30c6aa9aa08886b7b">allSet</a> () const</td></tr>
+<tr class="separator:a6ac8c1efdeba1ec30c6aa9aa08886b7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a836edc66aa9d750b8b5b3dc29ce17d21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__shared_1_1_external_time_delta_1_1_valid_flags.html#a836edc66aa9d750b8b5b3dc29ce17d21">setAll</a> ()</td></tr>
+<tr class="separator:a836edc66aa9d750b8b5b3dc29ce17d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -145,6 +150,7 @@ Public Attributes</h2></td></tr>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0e836da5ee7b30ad4bec7c80ca73be5aaddce5ae4611da5554d62f940a0a05658"></a>NONE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a0e836da5ee7b30ad4bec7c80ca73be5aa196b3afcd78efa1ddb15486f49d0e412"></a>DT_NANOS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0e836da5ee7b30ad4bec7c80ca73be5aac5db7e4c27af6a4ccf80fcc1ce0e042d"></a>ALL&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -202,6 +208,31 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6ac8c1efdeba1ec30c6aa9aa08886b7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ac8c1efdeba1ec30c6aa9aa08886b7b">&#9670;&nbsp;</a></span>allSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::data_shared::ExternalTimeDelta::ValidFlags::allSet </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a9d7ba3386041c154fb46b27d4a7432de"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9d7ba3386041c154fb46b27d4a7432de">&#9670;&nbsp;</a></span>dtNanos() <span class="overload">[1/2]</span></h2>
 
@@ -370,6 +401,31 @@ Public Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype">uint16_t&#160;</td>
           <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a836edc66aa9d750b8b5b3dc29ce17d21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a836edc66aa9d750b8b5b3dc29ce17d21">&#9670;&nbsp;</a></span>setAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::data_shared::ExternalTimeDelta::ValidFlags::setAll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>

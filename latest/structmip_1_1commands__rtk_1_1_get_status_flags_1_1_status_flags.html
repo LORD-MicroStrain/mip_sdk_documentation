@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-27-g411d175</span>
+   &#160;<span id="projectnumber">v1.0.0-28-g950e651</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -110,12 +110,13 @@ Public Types</h2></td></tr>
 , <a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags.html#aadc3e79c243bb77702f4a323cbae6879a3da5451407b695e60d2c172f210f8582">NMEA_TIMEOUT</a> = 0x01000000
 , <a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags.html#aadc3e79c243bb77702f4a323cbae6879a6f335c0a9cce5ee6865a69e6a47675bd">SERVER_TIMEOUT</a> = 0x02000000
 , <br />
-&#160;&#160;<a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags.html#aadc3e79c243bb77702f4a323cbae6879a55606354a5fa781edf0383bb8a3c812b">RTCM_TIMEOUT</a> = 0x04000000
+&#160;&#160;<a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags.html#aadc3e79c243bb77702f4a323cbae6879af7e18a37656fbcb0f46bda5556925f98">CORRECTIONS_TIMEOUT</a> = 0x04000000
 , <a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags.html#aadc3e79c243bb77702f4a323cbae6879a7235403d2380f1ba0c35ec61d0efb979">DEVICE_OUT_OF_RANGE</a> = 0x08000000
 , <a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags.html#aadc3e79c243bb77702f4a323cbae6879aeee8203ba9072e3650f74878175dc2f5">CORRECTIONS_UNAVAILABLE</a> = 0x10000000
 , <a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags.html#aadc3e79c243bb77702f4a323cbae6879a5f329740cfe515fdb6cefbb4015a9b36">RESERVED</a> = 0x20000000
 , <br />
 &#160;&#160;<a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags.html#aadc3e79c243bb77702f4a323cbae6879a593dc72bd1172a2f0b2916ec4af53c68">VERSION</a> = 0xC0000000
+, <a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags.html#aadc3e79c243bb77702f4a323cbae6879a1dc09fc89d08caeed7b8c98db34d4d67">ALL</a> = 0xFFFFFFFF
 <br />
  }</td></tr>
 <tr class="separator:aadc3e79c243bb77702f4a323cbae6879"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -164,10 +165,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa5bb098c88a12e2bedb67c4aad235d9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f62ee1e1ab39b4183339322f093974d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags.html#a7f62ee1e1ab39b4183339322f093974d">serverTimeout</a> (bool val)</td></tr>
 <tr class="separator:a7f62ee1e1ab39b4183339322f093974d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6ac15edfdb65d63b27049185a3f3ee7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags.html#ac6ac15edfdb65d63b27049185a3f3ee7">rtcmTimeout</a> () const</td></tr>
-<tr class="separator:ac6ac15edfdb65d63b27049185a3f3ee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5106569b128403c9e197077d6e8d40fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags.html#a5106569b128403c9e197077d6e8d40fd">rtcmTimeout</a> (bool val)</td></tr>
-<tr class="separator:a5106569b128403c9e197077d6e8d40fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63cbf77f4d4d8a7ab3ebbc20d6e67112"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags.html#a63cbf77f4d4d8a7ab3ebbc20d6e67112">correctionsTimeout</a> () const</td></tr>
+<tr class="separator:a63cbf77f4d4d8a7ab3ebbc20d6e67112"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f8ed160cf47cabfd294bcc9712d497d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags.html#a4f8ed160cf47cabfd294bcc9712d497d">correctionsTimeout</a> (bool val)</td></tr>
+<tr class="separator:a4f8ed160cf47cabfd294bcc9712d497d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0cc29e541e49f5a4c5cc3e59181b8e8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags.html#ac0cc29e541e49f5a4c5cc3e59181b8e8">deviceOutOfRange</a> () const</td></tr>
 <tr class="separator:ac0cc29e541e49f5a4c5cc3e59181b8e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae41adbd32e60db1e30f9a16b0bdc3802"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags.html#ae41adbd32e60db1e30f9a16b0bdc3802">deviceOutOfRange</a> (bool val)</td></tr>
@@ -184,6 +185,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a23ff3211cfc113314d7854d14d30d3ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc7a497276571e4720d21fbcc4609c11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags.html#afc7a497276571e4720d21fbcc4609c11">version</a> (uint32_t val)</td></tr>
 <tr class="separator:afc7a497276571e4720d21fbcc4609c11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ba92d4547a2ce7bd7f2e950c2948872"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags.html#a8ba92d4547a2ce7bd7f2e950c2948872">allSet</a> () const</td></tr>
+<tr class="separator:a8ba92d4547a2ce7bd7f2e950c2948872"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a260e8a09c2f857755e039b8abd38575f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags.html#a260e8a09c2f857755e039b8abd38575f">setAll</a> ()</td></tr>
+<tr class="separator:a260e8a09c2f857755e039b8abd38575f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -211,11 +216,12 @@ Public Attributes</h2></td></tr>
 <tr><td class="fieldname"><a id="aadc3e79c243bb77702f4a323cbae6879a0a0566385c17e1f379b7da73a3b7fb98"></a>TOWER_CHANGE_INDICATOR&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="aadc3e79c243bb77702f4a323cbae6879a3da5451407b695e60d2c172f210f8582"></a>NMEA_TIMEOUT&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="aadc3e79c243bb77702f4a323cbae6879a6f335c0a9cce5ee6865a69e6a47675bd"></a>SERVER_TIMEOUT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aadc3e79c243bb77702f4a323cbae6879a55606354a5fa781edf0383bb8a3c812b"></a>RTCM_TIMEOUT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aadc3e79c243bb77702f4a323cbae6879af7e18a37656fbcb0f46bda5556925f98"></a>CORRECTIONS_TIMEOUT&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="aadc3e79c243bb77702f4a323cbae6879a7235403d2380f1ba0c35ec61d0efb979"></a>DEVICE_OUT_OF_RANGE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="aadc3e79c243bb77702f4a323cbae6879aeee8203ba9072e3650f74878175dc2f5"></a>CORRECTIONS_UNAVAILABLE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="aadc3e79c243bb77702f4a323cbae6879a5f329740cfe515fdb6cefbb4015a9b36"></a>RESERVED&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="aadc3e79c243bb77702f4a323cbae6879a593dc72bd1172a2f0b2916ec4af53c68"></a>VERSION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aadc3e79c243bb77702f4a323cbae6879a1dc09fc89d08caeed7b8c98db34d4d67"></a>ALL&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -273,6 +279,31 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a8ba92d4547a2ce7bd7f2e950c2948872"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ba92d4547a2ce7bd7f2e950c2948872">&#9670;&nbsp;</a></span>allSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::commands_rtk::GetStatusFlags::StatusFlags::allSet </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aa068b77f79c3dc6edacc5f19f5af8327"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa068b77f79c3dc6edacc5f19f5af8327">&#9670;&nbsp;</a></span>connectionType() <span class="overload">[1/2]</span></h2>
 
@@ -311,6 +342,57 @@ Public Attributes</h2></td></tr>
           <td class="memname">void mip::commands_rtk::GetStatusFlags::StatusFlags::connectionType </td>
           <td>(</td>
           <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a63cbf77f4d4d8a7ab3ebbc20d6e67112"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63cbf77f4d4d8a7ab3ebbc20d6e67112">&#9670;&nbsp;</a></span>correctionsTimeout() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::commands_rtk::GetStatusFlags::StatusFlags::correctionsTimeout </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4f8ed160cf47cabfd294bcc9712d497d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f8ed160cf47cabfd294bcc9712d497d">&#9670;&nbsp;</a></span>correctionsTimeout() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::commands_rtk::GetStatusFlags::StatusFlags::correctionsTimeout </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>val</em></td><td>)</td>
           <td></td>
         </tr>
@@ -759,57 +841,6 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ac6ac15edfdb65d63b27049185a3f3ee7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6ac15edfdb65d63b27049185a3f3ee7">&#9670;&nbsp;</a></span>rtcmTimeout() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool mip::commands_rtk::GetStatusFlags::StatusFlags::rtcmTimeout </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5106569b128403c9e197077d6e8d40fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5106569b128403c9e197077d6e8d40fd">&#9670;&nbsp;</a></span>rtcmTimeout() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::commands_rtk::GetStatusFlags::StatusFlags::rtcmTimeout </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>val</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="aa5bb098c88a12e2bedb67c4aad235d9c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa5bb098c88a12e2bedb67c4aad235d9c">&#9670;&nbsp;</a></span>serverTimeout() <span class="overload">[1/2]</span></h2>
 
@@ -849,6 +880,31 @@ Public Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a260e8a09c2f857755e039b8abd38575f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a260e8a09c2f857755e039b8abd38575f">&#9670;&nbsp;</a></span>setAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::commands_rtk::GetStatusFlags::StatusFlags::setAll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-27-g411d175</span>
+   &#160;<span id="projectnumber">v1.0.0-28-g950e651</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -109,6 +109,8 @@ Public Types</h2></td></tr>
 , <a class="el" href="structmip_1_1data__gnss_1_1_sbas_info_1_1_valid_flags.html#a95f83338072706af37b336056fb58eb8ac10451c5a62a72e8530898b915001731">COUNT</a> = 0x0010
 , <a class="el" href="structmip_1_1data__gnss_1_1_sbas_info_1_1_valid_flags.html#a95f83338072706af37b336056fb58eb8a023b98de20b1451d404f4c463bf276d6">SBAS_STATUS</a> = 0x0020
 , <a class="el" href="structmip_1_1data__gnss_1_1_sbas_info_1_1_valid_flags.html#a95f83338072706af37b336056fb58eb8a7616aa65af28cd4db8d7efef823dff17">FLAGS</a> = 0x003F
+, <br />
+&#160;&#160;<a class="el" href="structmip_1_1data__gnss_1_1_sbas_info_1_1_valid_flags.html#a95f83338072706af37b336056fb58eb8a1886ab8b1f851c8d09b763642834f773">ALL</a> = 0x003F
 <br />
  }</td></tr>
 <tr class="separator:a95f83338072706af37b336056fb58eb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,6 +159,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a46b20c91e8838b55bc49fe98568a1643"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ca9c162f6f55f29b04699e633727ba0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_sbas_info_1_1_valid_flags.html#a9ca9c162f6f55f29b04699e633727ba0">flags</a> (uint16_t val)</td></tr>
 <tr class="separator:a9ca9c162f6f55f29b04699e633727ba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab030b2b66d05ceb290d5e840684e617"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_sbas_info_1_1_valid_flags.html#aab030b2b66d05ceb290d5e840684e617">allSet</a> () const</td></tr>
+<tr class="separator:aab030b2b66d05ceb290d5e840684e617"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73b77efe148a363271511d5528c7e68a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_sbas_info_1_1_valid_flags.html#a73b77efe148a363271511d5528c7e68a">setAll</a> ()</td></tr>
+<tr class="separator:a73b77efe148a363271511d5528c7e68a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -184,6 +190,7 @@ Public Attributes</h2></td></tr>
 <tr><td class="fieldname"><a id="a95f83338072706af37b336056fb58eb8ac10451c5a62a72e8530898b915001731"></a>COUNT&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a95f83338072706af37b336056fb58eb8a023b98de20b1451d404f4c463bf276d6"></a>SBAS_STATUS&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a95f83338072706af37b336056fb58eb8a7616aa65af28cd4db8d7efef823dff17"></a>FLAGS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a95f83338072706af37b336056fb58eb8a1886ab8b1f851c8d09b763642834f773"></a>ALL&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -241,6 +248,31 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aab030b2b66d05ceb290d5e840684e617"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab030b2b66d05ceb290d5e840684e617">&#9670;&nbsp;</a></span>allSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::data_gnss::SbasInfo::ValidFlags::allSet </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a8221b0e493707d635e9399d3c67db48c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8221b0e493707d635e9399d3c67db48c">&#9670;&nbsp;</a></span>count() <span class="overload">[1/2]</span></h2>
 
@@ -613,6 +645,31 @@ Public Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a73b77efe148a363271511d5528c7e68a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73b77efe148a363271511d5528c7e68a">&#9670;&nbsp;</a></span>setAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::data_gnss::SbasInfo::ValidFlags::setAll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-27-g411d175</span>
+   &#160;<span id="projectnumber">v1.0.0-28-g950e651</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -99,10 +99,14 @@ Collaboration diagram for mip::data_gnss::PosEcef::ValidFlags:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:adf59fc0f4b0ed0f92be827ce62550be6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_pos_ecef_1_1_valid_flags.html#adf59fc0f4b0ed0f92be827ce62550be6">_enumType</a> : uint16_t { <a class="el" href="structmip_1_1data__gnss_1_1_pos_ecef_1_1_valid_flags.html#adf59fc0f4b0ed0f92be827ce62550be6a771fb7070876b7080f2240800afe38a2">NONE</a> = 0x0000
+<tr class="memitem:adf59fc0f4b0ed0f92be827ce62550be6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_pos_ecef_1_1_valid_flags.html#adf59fc0f4b0ed0f92be827ce62550be6">_enumType</a> : uint16_t { <br />
+&#160;&#160;<a class="el" href="structmip_1_1data__gnss_1_1_pos_ecef_1_1_valid_flags.html#adf59fc0f4b0ed0f92be827ce62550be6a771fb7070876b7080f2240800afe38a2">NONE</a> = 0x0000
 , <a class="el" href="structmip_1_1data__gnss_1_1_pos_ecef_1_1_valid_flags.html#adf59fc0f4b0ed0f92be827ce62550be6a4858044cb03cc1f273dd992ba7055546">POSITION</a> = 0x0001
 , <a class="el" href="structmip_1_1data__gnss_1_1_pos_ecef_1_1_valid_flags.html#adf59fc0f4b0ed0f92be827ce62550be6a4e79890e9873d165cada6f568e7d353a">POSITION_ACCURACY</a> = 0x0002
 , <a class="el" href="structmip_1_1data__gnss_1_1_pos_ecef_1_1_valid_flags.html#adf59fc0f4b0ed0f92be827ce62550be6a6366025f039b38f48097bc267d4f98db">FLAGS</a> = 0x0003
+, <br />
+&#160;&#160;<a class="el" href="structmip_1_1data__gnss_1_1_pos_ecef_1_1_valid_flags.html#adf59fc0f4b0ed0f92be827ce62550be6a7084932d1811a8b73ebfaa7430f273e8">ALL</a> = 0x0003
+<br />
  }</td></tr>
 <tr class="separator:adf59fc0f4b0ed0f92be827ce62550be6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -134,6 +138,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae516463691027a2d3213fac197e1e98c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86f8dd0d25e0dc221311fa94472a1dc4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_pos_ecef_1_1_valid_flags.html#a86f8dd0d25e0dc221311fa94472a1dc4">flags</a> (uint16_t val)</td></tr>
 <tr class="separator:a86f8dd0d25e0dc221311fa94472a1dc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a066795dbe9b1787f0319a43511e21085"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_pos_ecef_1_1_valid_flags.html#a066795dbe9b1787f0319a43511e21085">allSet</a> () const</td></tr>
+<tr class="separator:a066795dbe9b1787f0319a43511e21085"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e044ba27f02b9c688d99064657e2cc6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_pos_ecef_1_1_valid_flags.html#a3e044ba27f02b9c688d99064657e2cc6">setAll</a> ()</td></tr>
+<tr class="separator:a3e044ba27f02b9c688d99064657e2cc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -157,6 +165,7 @@ Public Attributes</h2></td></tr>
 <tr><td class="fieldname"><a id="adf59fc0f4b0ed0f92be827ce62550be6a4858044cb03cc1f273dd992ba7055546"></a>POSITION&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="adf59fc0f4b0ed0f92be827ce62550be6a4e79890e9873d165cada6f568e7d353a"></a>POSITION_ACCURACY&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="adf59fc0f4b0ed0f92be827ce62550be6a6366025f039b38f48097bc267d4f98db"></a>FLAGS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adf59fc0f4b0ed0f92be827ce62550be6a7084932d1811a8b73ebfaa7430f273e8"></a>ALL&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -214,6 +223,31 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a066795dbe9b1787f0319a43511e21085"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a066795dbe9b1787f0319a43511e21085">&#9670;&nbsp;</a></span>allSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::data_gnss::PosEcef::ValidFlags::allSet </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ae516463691027a2d3213fac197e1e98c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae516463691027a2d3213fac197e1e98c">&#9670;&nbsp;</a></span>flags() <span class="overload">[1/2]</span></h2>
 
@@ -484,6 +518,31 @@ Public Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3e044ba27f02b9c688d99064657e2cc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e044ba27f02b9c688d99064657e2cc6">&#9670;&nbsp;</a></span>setAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::data_gnss::PosEcef::ValidFlags::setAll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-27-g411d175</span>
+   &#160;<span id="projectnumber">v1.0.0-28-g950e651</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -113,6 +113,7 @@ Public Types</h2></td></tr>
 &#160;&#160;<a class="el" href="structmip_1_1data__sensor_1_1_overrange_status_1_1_status.html#a3c294de3ba5dc98ab2d634392a076bdcaea8b15cd9d510e33708aeb04d02536a0">MAG_Y</a> = 0x0200
 , <a class="el" href="structmip_1_1data__sensor_1_1_overrange_status_1_1_status.html#a3c294de3ba5dc98ab2d634392a076bdca3c80193cc83f97391d9809d146049263">MAG_Z</a> = 0x0400
 , <a class="el" href="structmip_1_1data__sensor_1_1_overrange_status_1_1_status.html#a3c294de3ba5dc98ab2d634392a076bdcaeb77bee3aacd105f58efea7fd56c89f1">PRESS</a> = 0x1000
+, <a class="el" href="structmip_1_1data__sensor_1_1_overrange_status_1_1_status.html#a3c294de3ba5dc98ab2d634392a076bdca95fe9bee86ac7b21fafed82ceaecdbee">ALL</a> = 0x1777
 <br />
  }</td></tr>
 <tr class="separator:a3c294de3ba5dc98ab2d634392a076bdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -173,6 +174,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2d13cb7c88060828c4d13db535559832"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d0ab9b2468e0640dd8359e47bb68ca5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__sensor_1_1_overrange_status_1_1_status.html#a0d0ab9b2468e0640dd8359e47bb68ca5">press</a> (bool val)</td></tr>
 <tr class="separator:a0d0ab9b2468e0640dd8359e47bb68ca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b87747d8afcfa31cddefb9af5583178"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__sensor_1_1_overrange_status_1_1_status.html#a7b87747d8afcfa31cddefb9af5583178">allSet</a> () const</td></tr>
+<tr class="separator:a7b87747d8afcfa31cddefb9af5583178"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c0d3bec919062d0ae0b7b1d3e41758f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__sensor_1_1_overrange_status_1_1_status.html#a3c0d3bec919062d0ae0b7b1d3e41758f">setAll</a> ()</td></tr>
+<tr class="separator:a3c0d3bec919062d0ae0b7b1d3e41758f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -203,6 +208,7 @@ Public Attributes</h2></td></tr>
 <tr><td class="fieldname"><a id="a3c294de3ba5dc98ab2d634392a076bdcaea8b15cd9d510e33708aeb04d02536a0"></a>MAG_Y&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a3c294de3ba5dc98ab2d634392a076bdca3c80193cc83f97391d9809d146049263"></a>MAG_Z&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a3c294de3ba5dc98ab2d634392a076bdcaeb77bee3aacd105f58efea7fd56c89f1"></a>PRESS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3c294de3ba5dc98ab2d634392a076bdca95fe9bee86ac7b21fafed82ceaecdbee"></a>ALL&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -402,6 +408,31 @@ Public Attributes</h2></td></tr>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>val</em></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7b87747d8afcfa31cddefb9af5583178"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b87747d8afcfa31cddefb9af5583178">&#9670;&nbsp;</a></span>allSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::data_sensor::OverrangeStatus::Status::allSet </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -887,6 +918,31 @@ Public Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3c0d3bec919062d0ae0b7b1d3e41758f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c0d3bec919062d0ae0b7b1d3e41758f">&#9670;&nbsp;</a></span>setAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::data_sensor::OverrangeStatus::Status::setAll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>

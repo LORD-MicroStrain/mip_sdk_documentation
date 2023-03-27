@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-27-g411d175</span>
+   &#160;<span id="projectnumber">v1.0.0-28-g950e651</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -136,6 +136,7 @@ Public Types</h2></td></tr>
 , <a class="el" href="structmip_1_1data__filter_1_1_filter_status_flags.html#acc48c933f3b7a3a7aa66c4934c02df5aa5a01e7342a71d78fa465b8856d12e5e5">GQ7_TIME_SYNC_WARNING</a> = 0x0400
 , <br />
 &#160;&#160;<a class="el" href="structmip_1_1data__filter_1_1_filter_status_flags.html#acc48c933f3b7a3a7aa66c4934c02df5aae2939ded25764f9c804de24f12263412">GQ7_SOLUTION_ERROR</a> = 0xF000
+, <a class="el" href="structmip_1_1data__filter_1_1_filter_status_flags.html#acc48c933f3b7a3a7aa66c4934c02df5aa6b76380c35f7c8544543f0a313879714">ALL</a> = 0xFFFF
 <br />
  }</td></tr>
 <tr class="separator:acc48c933f3b7a3a7aa66c4934c02df5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -268,6 +269,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7cfe47e284f5e2eb4e24d95d5b3da89c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a312156c84b69a5451c5cac378bb6dd49"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__filter_1_1_filter_status_flags.html#a312156c84b69a5451c5cac378bb6dd49">gq7SolutionError</a> (uint16_t val)</td></tr>
 <tr class="separator:a312156c84b69a5451c5cac378bb6dd49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dc8639a8832cd7213c1acd797871847"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__filter_1_1_filter_status_flags.html#a0dc8639a8832cd7213c1acd797871847">allSet</a> () const</td></tr>
+<tr class="separator:a0dc8639a8832cd7213c1acd797871847"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42492ab4059f42835bbbfd4f3df530cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__filter_1_1_filter_status_flags.html#a42492ab4059f42835bbbfd4f3df530cf">setAll</a> ()</td></tr>
+<tr class="separator:a42492ab4059f42835bbbfd4f3df530cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -318,6 +323,7 @@ Public Attributes</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="acc48c933f3b7a3a7aa66c4934c02df5aae2939ded25764f9c804de24f12263412"></a>GQ7_SOLUTION_ERROR&#160;</td><td class="fielddoc"><p>Filter computation warning flags. If any bits 12-15 are set, and all filter outputs will be invalid. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="acc48c933f3b7a3a7aa66c4934c02df5aa6b76380c35f7c8544543f0a313879714"></a>ALL&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -375,6 +381,31 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0dc8639a8832cd7213c1acd797871847"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0dc8639a8832cd7213c1acd797871847">&#9670;&nbsp;</a></span>allSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::data_filter::FilterStatusFlags::allSet </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a722dd42ece8befcdeac664f2078d6390"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a722dd42ece8befcdeac664f2078d6390">&#9670;&nbsp;</a></span>gq7AntennaLeverArmWarning() <span class="overload">[1/2]</span></h2>
 
@@ -1920,6 +1951,31 @@ Public Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype">uint16_t&#160;</td>
           <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a42492ab4059f42835bbbfd4f3df530cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42492ab4059f42835bbbfd4f3df530cf">&#9670;&nbsp;</a></span>setAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::data_filter::FilterStatusFlags::setAll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>

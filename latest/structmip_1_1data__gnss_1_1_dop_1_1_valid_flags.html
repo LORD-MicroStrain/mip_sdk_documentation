@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-27-g411d175</span>
+   &#160;<span id="projectnumber">v1.0.0-28-g950e651</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -111,6 +111,7 @@ Public Types</h2></td></tr>
 , <a class="el" href="structmip_1_1data__gnss_1_1_dop_1_1_valid_flags.html#a1fc83277f187678def65baa8a1e86833ab79b7a85bd4e3aac41435da904db5a98">EDOP</a> = 0x0040
 , <br />
 &#160;&#160;<a class="el" href="structmip_1_1data__gnss_1_1_dop_1_1_valid_flags.html#a1fc83277f187678def65baa8a1e86833a53510e48752babcea411a8633d5085a0">FLAGS</a> = 0x007F
+, <a class="el" href="structmip_1_1data__gnss_1_1_dop_1_1_valid_flags.html#a1fc83277f187678def65baa8a1e86833a4f978b61fb997459309a53b32fc92c76">ALL</a> = 0x007F
 <br />
  }</td></tr>
 <tr class="separator:a1fc83277f187678def65baa8a1e86833"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,6 +164,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4b23a955308980193cbd3a6fc175afa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0ffa4028a1e2be7e446ac021194f76f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_dop_1_1_valid_flags.html#ac0ffa4028a1e2be7e446ac021194f76f">flags</a> (uint16_t val)</td></tr>
 <tr class="separator:ac0ffa4028a1e2be7e446ac021194f76f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45e1346470fc09b9eac042a6d084db09"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_dop_1_1_valid_flags.html#a45e1346470fc09b9eac042a6d084db09">allSet</a> () const</td></tr>
+<tr class="separator:a45e1346470fc09b9eac042a6d084db09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eb68b60f1e5d2a87b0f972d90044f1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_dop_1_1_valid_flags.html#a7eb68b60f1e5d2a87b0f972d90044f1b">setAll</a> ()</td></tr>
+<tr class="separator:a7eb68b60f1e5d2a87b0f972d90044f1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -191,6 +196,7 @@ Public Attributes</h2></td></tr>
 <tr><td class="fieldname"><a id="a1fc83277f187678def65baa8a1e86833ac3e136db1d1da9f932e05675c89d8a53"></a>NDOP&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a1fc83277f187678def65baa8a1e86833ab79b7a85bd4e3aac41435da904db5a98"></a>EDOP&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a1fc83277f187678def65baa8a1e86833a53510e48752babcea411a8633d5085a0"></a>FLAGS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1fc83277f187678def65baa8a1e86833a4f978b61fb997459309a53b32fc92c76"></a>ALL&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -248,6 +254,31 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a45e1346470fc09b9eac042a6d084db09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45e1346470fc09b9eac042a6d084db09">&#9670;&nbsp;</a></span>allSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::data_gnss::Dop::ValidFlags::allSet </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a1c9a3dc1492180010e861fd4e200774a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1c9a3dc1492180010e861fd4e200774a">&#9670;&nbsp;</a></span>edop() <span class="overload">[1/2]</span></h2>
 
@@ -671,6 +702,31 @@ Public Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7eb68b60f1e5d2a87b0f972d90044f1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7eb68b60f1e5d2a87b0f972d90044f1b">&#9670;&nbsp;</a></span>setAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::data_gnss::Dop::ValidFlags::setAll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>

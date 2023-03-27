@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-27-g411d175</span>
+   &#160;<span id="projectnumber">v1.0.0-28-g950e651</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -106,6 +106,7 @@ Public Types</h2></td></tr>
 , <a class="el" href="structmip_1_1data__gnss_1_1_rf_error_detection_1_1_valid_flags.html#acc28d70bad11518bde554f57faec7f71adcb12b2b6073aafcfe5beb8521a4ca11">SPOOFING_STATE</a> = 0x0004
 , <br />
 &#160;&#160;<a class="el" href="structmip_1_1data__gnss_1_1_rf_error_detection_1_1_valid_flags.html#acc28d70bad11518bde554f57faec7f71afda18ed49ef645f183ba758505ef7af9">FLAGS</a> = 0x0007
+, <a class="el" href="structmip_1_1data__gnss_1_1_rf_error_detection_1_1_valid_flags.html#acc28d70bad11518bde554f57faec7f71a3d957f920e8c6ea7f68711a1a5c82667">ALL</a> = 0x0007
 <br />
  }</td></tr>
 <tr class="separator:acc28d70bad11518bde554f57faec7f71"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,6 +143,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab6ec668911de41640aa0bf86d182a41c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e656eae6bcc002de5916aa0238995f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_rf_error_detection_1_1_valid_flags.html#a0e656eae6bcc002de5916aa0238995f0">flags</a> (uint16_t val)</td></tr>
 <tr class="separator:a0e656eae6bcc002de5916aa0238995f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91e62aa1a417055a4787dd96332e7353"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_rf_error_detection_1_1_valid_flags.html#a91e62aa1a417055a4787dd96332e7353">allSet</a> () const</td></tr>
+<tr class="separator:a91e62aa1a417055a4787dd96332e7353"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e8eac380cac5f82a002f56df7268ee2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_rf_error_detection_1_1_valid_flags.html#a0e8eac380cac5f82a002f56df7268ee2">setAll</a> ()</td></tr>
+<tr class="separator:a0e8eac380cac5f82a002f56df7268ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -166,6 +171,7 @@ Public Attributes</h2></td></tr>
 <tr><td class="fieldname"><a id="acc28d70bad11518bde554f57faec7f71a1a6de21f1444c00b97e982660c0f4699"></a>JAMMING_STATE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="acc28d70bad11518bde554f57faec7f71adcb12b2b6073aafcfe5beb8521a4ca11"></a>SPOOFING_STATE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="acc28d70bad11518bde554f57faec7f71afda18ed49ef645f183ba758505ef7af9"></a>FLAGS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acc28d70bad11518bde554f57faec7f71a3d957f920e8c6ea7f68711a1a5c82667"></a>ALL&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -223,6 +229,31 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a91e62aa1a417055a4787dd96332e7353"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91e62aa1a417055a4787dd96332e7353">&#9670;&nbsp;</a></span>allSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::data_gnss::RfErrorDetection::ValidFlags::allSet </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ab6ec668911de41640aa0bf86d182a41c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab6ec668911de41640aa0bf86d182a41c">&#9670;&nbsp;</a></span>flags() <span class="overload">[1/2]</span></h2>
 
@@ -493,6 +524,31 @@ Public Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0e8eac380cac5f82a002f56df7268ee2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e8eac380cac5f82a002f56df7268ee2">&#9670;&nbsp;</a></span>setAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::data_gnss::RfErrorDetection::ValidFlags::setAll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>

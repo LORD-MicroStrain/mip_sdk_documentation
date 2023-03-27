@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-27-g411d175</span>
+   &#160;<span id="projectnumber">v1.0.0-28-g950e651</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -303,9 +303,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_calibrated_sensor_ranges_1_1_response.html">mip::commands_3dm::CalibratedSensorRanges::Response</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_mip_cmd3dm_lowpass_filter.html">mip::commands_3dm::MipCmd3dmLowpassFilter</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_lowpass_filter.html">mip::commands_3dm::LowpassFilter</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_mip_cmd3dm_lowpass_filter_1_1_response.html">mip::commands_3dm::MipCmd3dmLowpassFilter::Response</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_lowpass_filter_1_1_response.html">mip::commands_3dm::LowpassFilter::Response</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -1119,24 +1119,24 @@ Functions</h2></td></tr>
 <tr class="separator:ga6f4d7dd8c3d5d5ffdbbcf22649fc9f5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga96dc270d6e921318c03f7977d9110536"><td class="memItemLeft" align="right" valign="top">CmdResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__calibrated__sensor__ranges.html#ga96dc270d6e921318c03f7977d9110536">mip::commands_3dm::calibratedSensorRanges</a> (C::mip_interface &amp;device, SensorRangeType sensor, uint8_t *numRangesOut, uint8_t numRangesOutMax, CalibratedSensorRanges::Entry *rangesOut)</td></tr>
 <tr class="separator:ga96dc270d6e921318c03f7977d9110536"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9860cb365f8b7ef1dc6d5704aa5ff476"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__mip__cmd__3dm__lowpass__filter.html#ga9860cb365f8b7ef1dc6d5704aa5ff476">mip::commands_3dm::insert</a> (Serializer &amp;serializer, const MipCmd3dmLowpassFilter &amp;self)</td></tr>
-<tr class="separator:ga9860cb365f8b7ef1dc6d5704aa5ff476"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7d1241befcabab5869fa009b24fccc05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__mip__cmd__3dm__lowpass__filter.html#ga7d1241befcabab5869fa009b24fccc05">mip::commands_3dm::extract</a> (Serializer &amp;serializer, MipCmd3dmLowpassFilter &amp;self)</td></tr>
-<tr class="separator:ga7d1241befcabab5869fa009b24fccc05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabb873dfac25205c1c0c1105a7abd46a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__mip__cmd__3dm__lowpass__filter.html#gabb873dfac25205c1c0c1105a7abd46a2">mip::commands_3dm::insert</a> (Serializer &amp;serializer, const MipCmd3dmLowpassFilter::Response &amp;self)</td></tr>
-<tr class="separator:gabb873dfac25205c1c0c1105a7abd46a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5efe88a7f363c2a393f416c3618f4837"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__mip__cmd__3dm__lowpass__filter.html#ga5efe88a7f363c2a393f416c3618f4837">mip::commands_3dm::extract</a> (Serializer &amp;serializer, MipCmd3dmLowpassFilter::Response &amp;self)</td></tr>
-<tr class="separator:ga5efe88a7f363c2a393f416c3618f4837"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaca353518e8553f67b207a7548dbd22c7"><td class="memItemLeft" align="right" valign="top">CmdResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__mip__cmd__3dm__lowpass__filter.html#gaca353518e8553f67b207a7548dbd22c7">mip::commands_3dm::writeMipCmd3dmLowpassFilter</a> (C::mip_interface &amp;device, uint8_t descSet, uint8_t fieldDesc, bool enable, bool manual, float frequency)</td></tr>
-<tr class="separator:gaca353518e8553f67b207a7548dbd22c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6f82ad99d8df40ccdac0890e19f1a729"><td class="memItemLeft" align="right" valign="top">CmdResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__mip__cmd__3dm__lowpass__filter.html#ga6f82ad99d8df40ccdac0890e19f1a729">mip::commands_3dm::readMipCmd3dmLowpassFilter</a> (C::mip_interface &amp;device, uint8_t descSet, uint8_t fieldDesc, bool *enableOut, bool *manualOut, float *frequencyOut)</td></tr>
-<tr class="separator:ga6f82ad99d8df40ccdac0890e19f1a729"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9f90cf990f1b2433a7173369c6565104"><td class="memItemLeft" align="right" valign="top">CmdResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__mip__cmd__3dm__lowpass__filter.html#ga9f90cf990f1b2433a7173369c6565104">mip::commands_3dm::saveMipCmd3dmLowpassFilter</a> (C::mip_interface &amp;device, uint8_t descSet, uint8_t fieldDesc)</td></tr>
-<tr class="separator:ga9f90cf990f1b2433a7173369c6565104"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2e93c4790a219aa5f1c03ee61a6f82e4"><td class="memItemLeft" align="right" valign="top">CmdResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__mip__cmd__3dm__lowpass__filter.html#ga2e93c4790a219aa5f1c03ee61a6f82e4">mip::commands_3dm::loadMipCmd3dmLowpassFilter</a> (C::mip_interface &amp;device, uint8_t descSet, uint8_t fieldDesc)</td></tr>
-<tr class="separator:ga2e93c4790a219aa5f1c03ee61a6f82e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabdc5fb49213ac8cff23bc1527dc2044e"><td class="memItemLeft" align="right" valign="top">CmdResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__mip__cmd__3dm__lowpass__filter.html#gabdc5fb49213ac8cff23bc1527dc2044e">mip::commands_3dm::defaultMipCmd3dmLowpassFilter</a> (C::mip_interface &amp;device, uint8_t descSet, uint8_t fieldDesc)</td></tr>
-<tr class="separator:gabdc5fb49213ac8cff23bc1527dc2044e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac4ecb03db6b5066bce783ff9df62cbfb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__lowpass__filter.html#gac4ecb03db6b5066bce783ff9df62cbfb">mip::commands_3dm::insert</a> (Serializer &amp;serializer, const LowpassFilter &amp;self)</td></tr>
+<tr class="separator:gac4ecb03db6b5066bce783ff9df62cbfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga98e9a537f50b5dc03dd68c0d3871f6f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__lowpass__filter.html#ga98e9a537f50b5dc03dd68c0d3871f6f7">mip::commands_3dm::extract</a> (Serializer &amp;serializer, LowpassFilter &amp;self)</td></tr>
+<tr class="separator:ga98e9a537f50b5dc03dd68c0d3871f6f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9872ba3bda371c54c7f0badf03c6d582"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__lowpass__filter.html#ga9872ba3bda371c54c7f0badf03c6d582">mip::commands_3dm::insert</a> (Serializer &amp;serializer, const LowpassFilter::Response &amp;self)</td></tr>
+<tr class="separator:ga9872ba3bda371c54c7f0badf03c6d582"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga50fb6d19b30a9778dc263e8d6c00a22d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__lowpass__filter.html#ga50fb6d19b30a9778dc263e8d6c00a22d">mip::commands_3dm::extract</a> (Serializer &amp;serializer, LowpassFilter::Response &amp;self)</td></tr>
+<tr class="separator:ga50fb6d19b30a9778dc263e8d6c00a22d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga46c4fcc10336560d036e3c8ceb8a888d"><td class="memItemLeft" align="right" valign="top">CmdResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__lowpass__filter.html#ga46c4fcc10336560d036e3c8ceb8a888d">mip::commands_3dm::writeLowpassFilter</a> (C::mip_interface &amp;device, uint8_t descSet, uint8_t fieldDesc, bool enable, bool manual, float frequency)</td></tr>
+<tr class="separator:ga46c4fcc10336560d036e3c8ceb8a888d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadc62a33f6603778c506613bc65a2335e"><td class="memItemLeft" align="right" valign="top">CmdResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__lowpass__filter.html#gadc62a33f6603778c506613bc65a2335e">mip::commands_3dm::readLowpassFilter</a> (C::mip_interface &amp;device, uint8_t descSet, uint8_t fieldDesc, bool *enableOut, bool *manualOut, float *frequencyOut)</td></tr>
+<tr class="separator:gadc62a33f6603778c506613bc65a2335e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga289c14c7f1b25eb0e113a0f4d4bc6cae"><td class="memItemLeft" align="right" valign="top">CmdResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__lowpass__filter.html#ga289c14c7f1b25eb0e113a0f4d4bc6cae">mip::commands_3dm::saveLowpassFilter</a> (C::mip_interface &amp;device, uint8_t descSet, uint8_t fieldDesc)</td></tr>
+<tr class="separator:ga289c14c7f1b25eb0e113a0f4d4bc6cae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga980510b82ee4b9877f210bd70498cd40"><td class="memItemLeft" align="right" valign="top">CmdResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__lowpass__filter.html#ga980510b82ee4b9877f210bd70498cd40">mip::commands_3dm::loadLowpassFilter</a> (C::mip_interface &amp;device, uint8_t descSet, uint8_t fieldDesc)</td></tr>
+<tr class="separator:ga980510b82ee4b9877f210bd70498cd40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf8d16322bc49fcd443bfc4c457b0d965"><td class="memItemLeft" align="right" valign="top">CmdResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__lowpass__filter.html#gaf8d16322bc49fcd443bfc4c457b0d965">mip::commands_3dm::defaultLowpassFilter</a> (C::mip_interface &amp;device, uint8_t descSet, uint8_t fieldDesc)</td></tr>
+<tr class="separator:gaf8d16322bc49fcd443bfc4c457b0d965"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

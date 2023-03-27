@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-27-g411d175</span>
+   &#160;<span id="projectnumber">v1.0.0-28-g950e651</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -102,6 +102,7 @@ Public Types</h2></td></tr>
 <tr class="memitem:a0f26ff3cbcdb3069e3c39736b0186f3d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_glo_ephemeris_1_1_valid_flags.html#a0f26ff3cbcdb3069e3c39736b0186f3d">_enumType</a> : uint16_t { <a class="el" href="structmip_1_1data__gnss_1_1_glo_ephemeris_1_1_valid_flags.html#a0f26ff3cbcdb3069e3c39736b0186f3da43aec43b0c1205754805045df4a6fdb3">NONE</a> = 0x0000
 , <a class="el" href="structmip_1_1data__gnss_1_1_glo_ephemeris_1_1_valid_flags.html#a0f26ff3cbcdb3069e3c39736b0186f3daef5d58ded34de15702b95dde1277b955">EPHEMERIS</a> = 0x0001
 , <a class="el" href="structmip_1_1data__gnss_1_1_glo_ephemeris_1_1_valid_flags.html#a0f26ff3cbcdb3069e3c39736b0186f3da7fa36e939c56e67d3d8d3cc12ea4194f">FLAGS</a> = 0x0001
+, <a class="el" href="structmip_1_1data__gnss_1_1_glo_ephemeris_1_1_valid_flags.html#a0f26ff3cbcdb3069e3c39736b0186f3da83cbfe346d56ed3209ca2681fc6524d3">ALL</a> = 0x0001
  }</td></tr>
 <tr class="separator:a0f26ff3cbcdb3069e3c39736b0186f3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -129,6 +130,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3aa9dd1a9a815e44e9a47bfd286625d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1e748c41c5840254334be2870cdf1eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_glo_ephemeris_1_1_valid_flags.html#ae1e748c41c5840254334be2870cdf1eb">flags</a> (bool val)</td></tr>
 <tr class="separator:ae1e748c41c5840254334be2870cdf1eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a519ea32becf581e5c9552f1f2e89238c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_glo_ephemeris_1_1_valid_flags.html#a519ea32becf581e5c9552f1f2e89238c">allSet</a> () const</td></tr>
+<tr class="separator:a519ea32becf581e5c9552f1f2e89238c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaf12d8febe6b411ce4932f9a7b07b85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_glo_ephemeris_1_1_valid_flags.html#aaaf12d8febe6b411ce4932f9a7b07b85">setAll</a> ()</td></tr>
+<tr class="separator:aaaf12d8febe6b411ce4932f9a7b07b85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -151,6 +156,7 @@ Public Attributes</h2></td></tr>
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0f26ff3cbcdb3069e3c39736b0186f3da43aec43b0c1205754805045df4a6fdb3"></a>NONE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a0f26ff3cbcdb3069e3c39736b0186f3daef5d58ded34de15702b95dde1277b955"></a>EPHEMERIS&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a0f26ff3cbcdb3069e3c39736b0186f3da7fa36e939c56e67d3d8d3cc12ea4194f"></a>FLAGS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0f26ff3cbcdb3069e3c39736b0186f3da83cbfe346d56ed3209ca2681fc6524d3"></a>ALL&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -208,6 +214,31 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a519ea32becf581e5c9552f1f2e89238c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a519ea32becf581e5c9552f1f2e89238c">&#9670;&nbsp;</a></span>allSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::data_gnss::GloEphemeris::ValidFlags::allSet </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a85d563e1d0f4e44e8dcb9f0cf3c71841"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a85d563e1d0f4e44e8dcb9f0cf3c71841">&#9670;&nbsp;</a></span>ephemeris() <span class="overload">[1/2]</span></h2>
 
@@ -427,6 +458,31 @@ Public Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype">uint16_t&#160;</td>
           <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaaf12d8febe6b411ce4932f9a7b07b85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaaf12d8febe6b411ce4932f9a7b07b85">&#9670;&nbsp;</a></span>setAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::data_gnss::GloEphemeris::ValidFlags::setAll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>

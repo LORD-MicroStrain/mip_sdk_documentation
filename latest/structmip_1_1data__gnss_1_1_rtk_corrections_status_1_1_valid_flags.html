@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-27-g411d175</span>
+   &#160;<span id="projectnumber">v1.0.0-28-g950e651</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -112,6 +112,7 @@ Public Types</h2></td></tr>
 , <br />
 &#160;&#160;<a class="el" href="structmip_1_1data__gnss_1_1_rtk_corrections_status_1_1_valid_flags.html#a5ca333cd032829f95b61a21cc703070ea498477b3df8c79c6c08417fb6e9c1688">BEIDOU_LATENCY</a> = 0x0080
 , <a class="el" href="structmip_1_1data__gnss_1_1_rtk_corrections_status_1_1_valid_flags.html#a5ca333cd032829f95b61a21cc703070eac10ac547e5bde29f8b3edcdcf137c26d">FLAGS</a> = 0x00FF
+, <a class="el" href="structmip_1_1data__gnss_1_1_rtk_corrections_status_1_1_valid_flags.html#a5ca333cd032829f95b61a21cc703070ea7646b63b3e3e49e6a3c16f076d12a819">ALL</a> = 0x00FF
 <br />
  }</td></tr>
 <tr class="separator:a5ca333cd032829f95b61a21cc703070e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -168,6 +169,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab38f462969e56e197739b24f0ded3d04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae80ec9f47130a1dc4237515c38dfa1d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_rtk_corrections_status_1_1_valid_flags.html#ae80ec9f47130a1dc4237515c38dfa1d4">flags</a> (uint16_t val)</td></tr>
 <tr class="separator:ae80ec9f47130a1dc4237515c38dfa1d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d83f15ef23a8ce0ef73c4d5c80df334"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_rtk_corrections_status_1_1_valid_flags.html#a7d83f15ef23a8ce0ef73c4d5c80df334">allSet</a> () const</td></tr>
+<tr class="separator:a7d83f15ef23a8ce0ef73c4d5c80df334"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e5f4729b2212995e76dee4140ba6eb7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_rtk_corrections_status_1_1_valid_flags.html#a9e5f4729b2212995e76dee4140ba6eb7">setAll</a> ()</td></tr>
+<tr class="separator:a9e5f4729b2212995e76dee4140ba6eb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -197,6 +202,7 @@ Public Attributes</h2></td></tr>
 <tr><td class="fieldname"><a id="a5ca333cd032829f95b61a21cc703070ea9d3ae7fb7e3323db7226fd7a026ffdbd"></a>GALILEO_LATENCY&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a5ca333cd032829f95b61a21cc703070ea498477b3df8c79c6c08417fb6e9c1688"></a>BEIDOU_LATENCY&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a5ca333cd032829f95b61a21cc703070eac10ac547e5bde29f8b3edcdcf137c26d"></a>FLAGS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5ca333cd032829f95b61a21cc703070ea7646b63b3e3e49e6a3c16f076d12a819"></a>ALL&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -254,6 +260,31 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a7d83f15ef23a8ce0ef73c4d5c80df334"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d83f15ef23a8ce0ef73c4d5c80df334">&#9670;&nbsp;</a></span>allSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::data_gnss::RtkCorrectionsStatus::ValidFlags::allSet </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a6f6400d753028edea52520127e898a4b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6f6400d753028edea52520127e898a4b">&#9670;&nbsp;</a></span>beidouLatency() <span class="overload">[1/2]</span></h2>
 
@@ -728,6 +759,31 @@ Public Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype">uint16_t&#160;</td>
           <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9e5f4729b2212995e76dee4140ba6eb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e5f4729b2212995e76dee4140ba6eb7">&#9670;&nbsp;</a></span>setAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::data_gnss::RtkCorrectionsStatus::ValidFlags::setAll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-27-g411d175</span>
+   &#160;<span id="projectnumber">v1.0.0-28-g950e651</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -121,6 +121,7 @@ Public Types</h2></td></tr>
 , <a class="el" href="structmip_1_1data__filter_1_1_gnss_aid_status_flags.html#a1ce836756563662c0d8c76698b3943bea4489ff856861bcac772e363fbac1423d">NO_FIX</a> = 0x4000
 , <br />
 &#160;&#160;<a class="el" href="structmip_1_1data__filter_1_1_gnss_aid_status_flags.html#a1ce836756563662c0d8c76698b3943bea769aafc3ee0745e64b35e27a6c8d4d73">CONFIG_ERROR</a> = 0x8000
+, <a class="el" href="structmip_1_1data__filter_1_1_gnss_aid_status_flags.html#a1ce836756563662c0d8c76698b3943bea0f9ffd033ff30678257721130e58ac3c">ALL</a> = 0xFFFF
 <br />
  }</td></tr>
 <tr class="separator:a1ce836756563662c0d8c76698b3943be"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -205,6 +206,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a29d9bdb3dc9d7cba7f717bd20beb7227"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fda8436d9b51792e68177361a118104"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__filter_1_1_gnss_aid_status_flags.html#a3fda8436d9b51792e68177361a118104">configError</a> (bool val)</td></tr>
 <tr class="separator:a3fda8436d9b51792e68177361a118104"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf825f5ffe9a9b30176ae285067741b9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__filter_1_1_gnss_aid_status_flags.html#aaf825f5ffe9a9b30176ae285067741b9">allSet</a> () const</td></tr>
+<tr class="separator:aaf825f5ffe9a9b30176ae285067741b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab98685bb090209a6fc768e8be6ade8aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__filter_1_1_gnss_aid_status_flags.html#ab98685bb090209a6fc768e8be6ade8aa">setAll</a> ()</td></tr>
+<tr class="separator:ab98685bb090209a6fc768e8be6ade8aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -257,6 +262,7 @@ Public Attributes</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a1ce836756563662c0d8c76698b3943bea769aafc3ee0745e64b35e27a6c8d4d73"></a>CONFIG_ERROR&#160;</td><td class="fielddoc"><p>If 1, there is likely an issue with the antenna offset for this GNSS module. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="a1ce836756563662c0d8c76698b3943bea0f9ffd033ff30678257721130e58ac3c"></a>ALL&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -314,6 +320,31 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aaf825f5ffe9a9b30176ae285067741b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf825f5ffe9a9b30176ae285067741b9">&#9670;&nbsp;</a></span>allSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::data_filter::GnssAidStatusFlags::allSet </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a84eb46a489745e7f8ef0881389a73913"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a84eb46a489745e7f8ef0881389a73913">&#9670;&nbsp;</a></span>beiB1() <span class="overload">[1/2]</span></h2>
 
@@ -1196,6 +1227,31 @@ Public Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype">uint16_t&#160;</td>
           <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab98685bb090209a6fc768e8be6ade8aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab98685bb090209a6fc768e8be6ade8aa">&#9670;&nbsp;</a></span>setAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::data_filter::GnssAidStatusFlags::setAll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>

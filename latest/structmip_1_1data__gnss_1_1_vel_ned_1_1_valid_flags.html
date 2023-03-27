@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-27-g411d175</span>
+   &#160;<span id="projectnumber">v1.0.0-28-g950e651</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -109,6 +109,8 @@ Public Types</h2></td></tr>
 , <a class="el" href="structmip_1_1data__gnss_1_1_vel_ned_1_1_valid_flags.html#a974696cf6499ed4357b93896747ec928ac2003fc7693fd5eff6577fbd1087ca82">SPEED_ACCURACY</a> = 0x0010
 , <a class="el" href="structmip_1_1data__gnss_1_1_vel_ned_1_1_valid_flags.html#a974696cf6499ed4357b93896747ec928ad7f857edf9d92617957f8aba41ad2324">HEADING_ACCURACY</a> = 0x0020
 , <a class="el" href="structmip_1_1data__gnss_1_1_vel_ned_1_1_valid_flags.html#a974696cf6499ed4357b93896747ec928a60095e837582a75a71edddd98fe71553">FLAGS</a> = 0x003F
+, <br />
+&#160;&#160;<a class="el" href="structmip_1_1data__gnss_1_1_vel_ned_1_1_valid_flags.html#a974696cf6499ed4357b93896747ec928a572fd6a2fdc082d190a7e54c8453da11">ALL</a> = 0x003F
 <br />
  }</td></tr>
 <tr class="separator:a974696cf6499ed4357b93896747ec928"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,6 +159,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4d79abd5e255a843e280a9b7934b1740"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd20dfaa46baf0173c7fca16caeafbaa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_vel_ned_1_1_valid_flags.html#afd20dfaa46baf0173c7fca16caeafbaa">flags</a> (uint16_t val)</td></tr>
 <tr class="separator:afd20dfaa46baf0173c7fca16caeafbaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57ef414c8d6d0aa08d0160bda72ea553"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_vel_ned_1_1_valid_flags.html#a57ef414c8d6d0aa08d0160bda72ea553">allSet</a> () const</td></tr>
+<tr class="separator:a57ef414c8d6d0aa08d0160bda72ea553"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad7ff2a30f45f1b7c7b54b4726290cae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_vel_ned_1_1_valid_flags.html#aad7ff2a30f45f1b7c7b54b4726290cae">setAll</a> ()</td></tr>
+<tr class="separator:aad7ff2a30f45f1b7c7b54b4726290cae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -184,6 +190,7 @@ Public Attributes</h2></td></tr>
 <tr><td class="fieldname"><a id="a974696cf6499ed4357b93896747ec928ac2003fc7693fd5eff6577fbd1087ca82"></a>SPEED_ACCURACY&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a974696cf6499ed4357b93896747ec928ad7f857edf9d92617957f8aba41ad2324"></a>HEADING_ACCURACY&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a974696cf6499ed4357b93896747ec928a60095e837582a75a71edddd98fe71553"></a>FLAGS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a974696cf6499ed4357b93896747ec928a572fd6a2fdc082d190a7e54c8453da11"></a>ALL&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -241,6 +248,31 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a57ef414c8d6d0aa08d0160bda72ea553"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57ef414c8d6d0aa08d0160bda72ea553">&#9670;&nbsp;</a></span>allSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::data_gnss::VelNed::ValidFlags::allSet </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a4d79abd5e255a843e280a9b7934b1740"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4d79abd5e255a843e280a9b7934b1740">&#9670;&nbsp;</a></span>flags() <span class="overload">[1/2]</span></h2>
 
@@ -562,6 +594,31 @@ Public Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype">uint16_t&#160;</td>
           <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aad7ff2a30f45f1b7c7b54b4726290cae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad7ff2a30f45f1b7c7b54b4726290cae">&#9670;&nbsp;</a></span>setAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::data_gnss::VelNed::ValidFlags::setAll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>

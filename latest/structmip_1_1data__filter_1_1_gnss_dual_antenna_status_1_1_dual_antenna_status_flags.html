@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-27-g411d175</span>
+   &#160;<span id="projectnumber">v1.0.0-28-g950e651</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -99,10 +99,14 @@ Collaboration diagram for mip::data_filter::GnssDualAntennaStatus::DualAntennaSt
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a695462c978d5d1812d5d966df8414613"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__filter_1_1_gnss_dual_antenna_status_1_1_dual_antenna_status_flags.html#a695462c978d5d1812d5d966df8414613">_enumType</a> : uint16_t { <a class="el" href="structmip_1_1data__filter_1_1_gnss_dual_antenna_status_1_1_dual_antenna_status_flags.html#a695462c978d5d1812d5d966df8414613a517fc049aa05e4b393d53d1c47e9bfe2">NONE</a> = 0x0000
+<tr class="memitem:a695462c978d5d1812d5d966df8414613"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__filter_1_1_gnss_dual_antenna_status_1_1_dual_antenna_status_flags.html#a695462c978d5d1812d5d966df8414613">_enumType</a> : uint16_t { <br />
+&#160;&#160;<a class="el" href="structmip_1_1data__filter_1_1_gnss_dual_antenna_status_1_1_dual_antenna_status_flags.html#a695462c978d5d1812d5d966df8414613a517fc049aa05e4b393d53d1c47e9bfe2">NONE</a> = 0x0000
 , <a class="el" href="structmip_1_1data__filter_1_1_gnss_dual_antenna_status_1_1_dual_antenna_status_flags.html#a695462c978d5d1812d5d966df8414613a38f890cc631c56efd7aaeda216220413">RCV_1_DATA_VALID</a> = 0x0001
 , <a class="el" href="structmip_1_1data__filter_1_1_gnss_dual_antenna_status_1_1_dual_antenna_status_flags.html#a695462c978d5d1812d5d966df8414613ac72134fa88f45c3cddb31507c4692282">RCV_2_DATA_VALID</a> = 0x0002
 , <a class="el" href="structmip_1_1data__filter_1_1_gnss_dual_antenna_status_1_1_dual_antenna_status_flags.html#a695462c978d5d1812d5d966df8414613a6f76c019418d8f481be82e5036ea7b4e">ANTENNA_OFFSETS_VALID</a> = 0x0004
+, <br />
+&#160;&#160;<a class="el" href="structmip_1_1data__filter_1_1_gnss_dual_antenna_status_1_1_dual_antenna_status_flags.html#a695462c978d5d1812d5d966df8414613a8c778684ae631a501f94e156a03a5574">ALL</a> = 0x0007
+<br />
  }</td></tr>
 <tr class="separator:a695462c978d5d1812d5d966df8414613"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -134,6 +138,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa2bbdfb06a90530d40429d3ee9666285"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1d056707e71b980867124c5df3e358d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__filter_1_1_gnss_dual_antenna_status_1_1_dual_antenna_status_flags.html#af1d056707e71b980867124c5df3e358d">antennaOffsetsValid</a> (bool val)</td></tr>
 <tr class="separator:af1d056707e71b980867124c5df3e358d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d1974b62ed162dc24f9e78b6cabe2f3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__filter_1_1_gnss_dual_antenna_status_1_1_dual_antenna_status_flags.html#a8d1974b62ed162dc24f9e78b6cabe2f3">allSet</a> () const</td></tr>
+<tr class="separator:a8d1974b62ed162dc24f9e78b6cabe2f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cd73a6314446264594483ca4efc2289"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__filter_1_1_gnss_dual_antenna_status_1_1_dual_antenna_status_flags.html#a7cd73a6314446264594483ca4efc2289">setAll</a> ()</td></tr>
+<tr class="separator:a7cd73a6314446264594483ca4efc2289"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -157,6 +165,7 @@ Public Attributes</h2></td></tr>
 <tr><td class="fieldname"><a id="a695462c978d5d1812d5d966df8414613a38f890cc631c56efd7aaeda216220413"></a>RCV_1_DATA_VALID&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a695462c978d5d1812d5d966df8414613ac72134fa88f45c3cddb31507c4692282"></a>RCV_2_DATA_VALID&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a695462c978d5d1812d5d966df8414613a6f76c019418d8f481be82e5036ea7b4e"></a>ANTENNA_OFFSETS_VALID&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a695462c978d5d1812d5d966df8414613a8c778684ae631a501f94e156a03a5574"></a>ALL&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -214,6 +223,31 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a8d1974b62ed162dc24f9e78b6cabe2f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d1974b62ed162dc24f9e78b6cabe2f3">&#9670;&nbsp;</a></span>allSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::data_filter::GnssDualAntennaStatus::DualAntennaStatusFlags::allSet </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aa2bbdfb06a90530d40429d3ee9666285"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa2bbdfb06a90530d40429d3ee9666285">&#9670;&nbsp;</a></span>antennaOffsetsValid() <span class="overload">[1/2]</span></h2>
 
@@ -484,6 +518,31 @@ Public Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7cd73a6314446264594483ca4efc2289"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cd73a6314446264594483ca4efc2289">&#9670;&nbsp;</a></span>setAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::data_filter::GnssDualAntennaStatus::DualAntennaStatusFlags::setAll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
