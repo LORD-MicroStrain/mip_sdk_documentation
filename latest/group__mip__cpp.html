@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-28-g950e651</span>
+   &#160;<span id="projectnumber">v1.0.0-29-g5d23781</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -254,7 +254,7 @@ template&lt;class Function &gt; </div>
   <table class="params">
     <tr><td class="paramname">parser</td><td></td></tr>
     <tr><td class="paramname">reader</td><td>A callback function, lambda, or similar which will read data into the buffer and capture the timestamp. It should return true if successful or false otherwise. If it returns false, parsing is skipped. The read function may also throw an exception instead of returning false.</td></tr>
-    <tr><td class="paramname">maxPackets</td><td>Maximum number of packets to parse, just like for <a class="el" href="classmip_1_1_parser.html#a94eab0663cc5720a607d1027422d5bf5">Parser::parse()</a>.</td></tr>
+    <tr><td class="paramname">maxPackets</td><td>Maximum number of packets to parse, just like for <a class="el" href="classmip_1_1_parser.html#a0b86bfca850f06c200796cc4c2a6665f">Parser::parse()</a>.</td></tr>
   </table>
   </dd>
 </dl>
@@ -326,7 +326,7 @@ template&lt;class DataField , class Object , void(Object::*)(const DataField &am
 <div class="line">  <a class="code" href="classmip_1_1_device_interface.html#a27349396858a0b6af509b1b818fa251c">DeviceInterface</a> device;</div>
 <div class="line">  <a class="code" href="group__mip__cpp.html#ga22fdf60376fa438a3282cdf32d641f3b">DispatchHandler</a> accelHandler;</div>
 <div class="line">};</div>
-<div class="ttc" id="aclassmip_1_1_device_interface_html_a27349396858a0b6af509b1b818fa251c"><div class="ttname"><a href="classmip_1_1_device_interface.html#a27349396858a0b6af509b1b818fa251c">mip::DeviceInterface::DeviceInterface</a></div><div class="ttdeci">DeviceInterface(uint8_t *parseBuffer, size_t parseBufferSize, Timeout parseTimeout, Timeout baseReplyTimeout)</div><div class="ttdef"><b>Definition:</b> mip_device.hpp:157</div></div>
+<div class="ttc" id="aclassmip_1_1_device_interface_html_a27349396858a0b6af509b1b818fa251c"><div class="ttname"><a href="classmip_1_1_device_interface.html#a27349396858a0b6af509b1b818fa251c">mip::DeviceInterface::DeviceInterface</a></div><div class="ttdeci">DeviceInterface(uint8_t *parseBuffer, size_t parseBufferSize, Timeout parseTimeout, Timeout baseReplyTimeout)</div><div class="ttdef"><b>Definition:</b> mip_device.hpp:167</div></div>
 <div class="ttc" id="agroup__mip__cpp_html_ga22fdf60376fa438a3282cdf32d641f3b"><div class="ttname"><a href="group__mip__cpp.html#ga22fdf60376fa438a3282cdf32d641f3b">mip::DispatchHandler</a></div><div class="ttdeci">C::mip_dispatch_handler DispatchHandler</div><div class="ttdef"><b>Definition:</b> mip_device.hpp:16</div></div>
 <div class="ttc" id="anamespacemip_html_a4d99303b1d7588a4e9d020e6210ded41"><div class="ttname"><a href="namespacemip.html#a4d99303b1d7588a4e9d020e6210ded41">mip::Timestamp</a></div><div class="ttdeci">C::timestamp_type Timestamp</div><div class="ttdef"><b>Definition:</b> mip_types.h:61</div></div>
 </div><!-- fragment --><dl class="tparams"><dt>Template Parameters</dt><dd>
@@ -924,8 +924,8 @@ template&lt;class T , bool(T::*)(const Packet &amp;, Timestamp) Callback&gt; </d
 <div class="line">};</div>
 <div class="line">MyClass myInstance;</div>
 <div class="line"><a class="code" href="classmip_1_1_parser.html#a3d3fbb83ce13bad184d327e845f95fc2">Parser</a> parser&lt;MyClass, &amp;MyClass::handlePacket&gt;(myInstance);</div>
-<div class="ttc" id="aclassmip_1_1_parser_html_a3d3fbb83ce13bad184d327e845f95fc2"><div class="ttname"><a href="classmip_1_1_parser.html#a3d3fbb83ce13bad184d327e845f95fc2">mip::Parser::Parser</a></div><div class="ttdeci">Parser(uint8_t *buffer, size_t bufferSize, C::mip_packet_callback callback, void *callbackObject, Timeout timeout)</div><div class="ttdef"><b>Definition:</b> mip.hpp:227</div></div>
-<div class="ttc" id="aclassmip_1_1_parser_html_a642ce6426bc3d3483f031e5c64c05d91"><div class="ttname"><a href="classmip_1_1_parser.html#a642ce6426bc3d3483f031e5c64c05d91">mip::Parser::timeout</a></div><div class="ttdeci">Timeout timeout() const</div><div class="ttdef"><b>Definition:</b> mip.hpp:243</div></div>
+<div class="ttc" id="aclassmip_1_1_parser_html_a3d3fbb83ce13bad184d327e845f95fc2"><div class="ttname"><a href="classmip_1_1_parser.html#a3d3fbb83ce13bad184d327e845f95fc2">mip::Parser::Parser</a></div><div class="ttdeci">Parser(uint8_t *buffer, size_t bufferSize, C::mip_packet_callback callback, void *callbackObject, Timeout timeout)</div><div class="ttdef"><b>Definition:</b> mip.hpp:315</div></div>
+<div class="ttc" id="aclassmip_1_1_parser_html_a642ce6426bc3d3483f031e5c64c05d91"><div class="ttname"><a href="classmip_1_1_parser.html#a642ce6426bc3d3483f031e5c64c05d91">mip::Parser::timeout</a></div><div class="ttdeci">Timeout timeout() const</div><div class="ttdef"><b>Definition:</b> mip.hpp:331</div></div>
 <div class="ttc" id="anamespacemip_html_a6b00d9d7a48550fcad5056184ad1fbae"><div class="ttname"><a href="namespacemip.html#a6b00d9d7a48550fcad5056184ad1fbae">mip::Timeout</a></div><div class="ttdeci">C::timeout_type Timeout</div><div class="ttdef"><b>Definition:</b> mip_types.h:62</div></div>
 </div><!-- fragment --><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
@@ -987,8 +987,8 @@ template&lt;class T , bool(T::*)(const uint8_t *, size_t) Send, bool(T::*)(uint8
 <div class="line"><a class="code" href="classmip_1_1_device_interface.html">mip::DeviceInterface</a> interface;</div>
 <div class="line"> </div>
 <div class="line">interface.<a class="code" href="group__mip__cpp.html#gaae160182bd1d469e40caa477a0244333">setCallbacks</a>&lt;DeviceConnection, &amp;DeviceConnection::send, &amp;DeviceConnection::recv, <span class="keyword">nullptr</span>&gt;(&amp;connection);</div>
-<div class="ttc" id="aclassmip_1_1_device_interface_html"><div class="ttname"><a href="classmip_1_1_device_interface.html">mip::DeviceInterface</a></div><div class="ttdoc">Represents a connected MIP device.</div><div class="ttdef"><b>Definition:</b> mip_device.hpp:149</div></div>
-<div class="ttc" id="agroup__mip__cpp_html_gaae160182bd1d469e40caa477a0244333"><div class="ttname"><a href="group__mip__cpp.html#gaae160182bd1d469e40caa477a0244333">mip::DeviceInterface::setCallbacks</a></div><div class="ttdeci">void setCallbacks(T *object)</div><div class="ttdoc">Sets the callback functions to a common class object.</div><div class="ttdef"><b>Definition:</b> mip_device.hpp:476</div></div>
+<div class="ttc" id="aclassmip_1_1_device_interface_html"><div class="ttname"><a href="classmip_1_1_device_interface.html">mip::DeviceInterface</a></div><div class="ttdoc">Represents a connected MIP device.</div><div class="ttdef"><b>Definition:</b> mip_device.hpp:159</div></div>
+<div class="ttc" id="agroup__mip__cpp_html_gaae160182bd1d469e40caa477a0244333"><div class="ttname"><a href="group__mip__cpp.html#gaae160182bd1d469e40caa477a0244333">mip::DeviceInterface::setCallbacks</a></div><div class="ttdeci">void setCallbacks(T *object)</div><div class="ttdoc">Sets the callback functions to a common class object.</div><div class="ttdef"><b>Definition:</b> mip_device.hpp:486</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -1101,8 +1101,8 @@ template&lt;class Derived , bool(Derived::*)(const uint8_t *, size_t) Send&gt; <
 <div class="line">instance.setCallbacks&lt;Connection, &amp;<a class="code" href="classmip_1_1_connection.html#ad56be6630183ec4cc9cf5f59b4d46e53">Connection::sendToDevice</a>, &amp;<a class="code" href="classmip_1_1_connection.html#a07b2f8cd73574f0da74fbb0b82a7f1c3">Connection::recvFromDevice</a>&gt;(connection);</div>
 <div class="ttc" id="aclassmip_1_1_connection_html_a07b2f8cd73574f0da74fbb0b82a7f1c3"><div class="ttname"><a href="classmip_1_1_connection.html#a07b2f8cd73574f0da74fbb0b82a7f1c3">mip::Connection::recvFromDevice</a></div><div class="ttdeci">virtual bool recvFromDevice(uint8_t *buffer, size_t max_length, Timeout wait_time, size_t *length_out, Timestamp *timestamp_out)=0</div><div class="ttdoc">Receives bytes from the device.</div></div>
 <div class="ttc" id="aclassmip_1_1_connection_html_ad56be6630183ec4cc9cf5f59b4d46e53"><div class="ttname"><a href="classmip_1_1_connection.html#ad56be6630183ec4cc9cf5f59b4d46e53">mip::Connection::sendToDevice</a></div><div class="ttdeci">virtual bool sendToDevice(const uint8_t *data, size_t length)=0</div><div class="ttdoc">Sends bytes to the device.</div></div>
-<div class="ttc" id="aclassmip_1_1_device_interface_html_a406e3e4300e82a86b0c865ce59b5bc58"><div class="ttname"><a href="classmip_1_1_device_interface.html#a406e3e4300e82a86b0c865ce59b5bc58">mip::DeviceInterface::sendToDevice</a></div><div class="ttdeci">bool sendToDevice(const uint8_t *data, size_t length)</div><div class="ttdef"><b>Definition:</b> mip_device.hpp:243</div></div>
-<div class="ttc" id="aclassmip_1_1_device_interface_html_a6945bb14b90436bf2ea253694a34fdf6"><div class="ttname"><a href="classmip_1_1_device_interface.html#a6945bb14b90436bf2ea253694a34fdf6">mip::DeviceInterface::recvFromDevice</a></div><div class="ttdeci">bool recvFromDevice(uint8_t *buffer, size_t max_length, Timeout wait_time, size_t *length_out, Timestamp *timestamp)</div><div class="ttdef"><b>Definition:</b> mip_device.hpp:245</div></div>
+<div class="ttc" id="aclassmip_1_1_device_interface_html_a406e3e4300e82a86b0c865ce59b5bc58"><div class="ttname"><a href="classmip_1_1_device_interface.html#a406e3e4300e82a86b0c865ce59b5bc58">mip::DeviceInterface::sendToDevice</a></div><div class="ttdeci">bool sendToDevice(const uint8_t *data, size_t length)</div><div class="ttdef"><b>Definition:</b> mip_device.hpp:253</div></div>
+<div class="ttc" id="aclassmip_1_1_device_interface_html_a6945bb14b90436bf2ea253694a34fdf6"><div class="ttname"><a href="classmip_1_1_device_interface.html#a6945bb14b90436bf2ea253694a34fdf6">mip::DeviceInterface::recvFromDevice</a></div><div class="ttdeci">bool recvFromDevice(uint8_t *buffer, size_t max_length, Timeout wait_time, size_t *length_out, Timestamp *timestamp)</div><div class="ttdef"><b>Definition:</b> mip_device.hpp:255</div></div>
 </div><!-- fragment --> 
 </div>
 </div>

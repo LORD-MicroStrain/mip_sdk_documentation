@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-28-g950e651</span>
+   &#160;<span id="projectnumber">v1.0.0-29-g5d23781</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -74,7 +74,7 @@ $(function() {
 </div>
 <h1><a class="anchor" id="parsing_data"></a>
 Parsing Data</h1>
-<p>Data is supplied by calling <a class="el" href="mip__parser_8c.html#a40b1a30bddaa52c4814c0a5fd3a6ed07" title="Parses packets from the input data buffer.">mip_parser_parse()</a> / <a class="el" href="classmip_1_1_parser.html#a94eab0663cc5720a607d1027422d5bf5">mip::Parser::parse()</a> with a buffer and length. Along with the data, the user must provide a timestamp. The timestamp serves two purposes: to provide a time of reception indicator and to allow the parser to time out waiting for more data.</p>
+<p>Data is supplied by calling <a class="el" href="mip__parser_8c.html#a40b1a30bddaa52c4814c0a5fd3a6ed07" title="Parses packets from the input data buffer.">mip_parser_parse()</a> / <a class="el" href="classmip_1_1_parser.html#a0b86bfca850f06c200796cc4c2a6665f">mip::Parser::parse()</a> with a buffer and length. Along with the data, the user must provide a timestamp. The timestamp serves two purposes: to provide a time of reception indicator and to allow the parser to time out waiting for more data.</p>
 <p>The parse function takes an additional parameter, <code>max_packets</code>, which limits the number of packets parsed. This can be used to prevent a large quantity of packets from consuming too much CPU time and denying service to other subsystems. If the limit is reached, parsing stops and the unparsed portion of the data remains in the ring buffer. The constant value <a class="el" href="group__mip__parser__c.html#ga0d610cd9ccf7b165bba3097ef9ab5090">MIPPARSER_UNLIMITED_PACKETS</a> disables this limit.</p>
 <p>To continue parsing, call the parse function again. You may choose to not supply any new data by passing NULL and a length of 0. The timestamp should be unchanged from the previous call for highest accuracy, but it's permissible to use the current time as well. If new data is supplied, the new data is appended to the ring buffer and parsing resumes. The timestamp should be the time of the new data. Previously received but unparsed packets will be assigned the new timestamp.</p>
 <p>The application must parse enough packets to keep up with the incoming data stream. Failure to do so will result in the ring buffer becoming full. If this happens, the parse function will return a negative number, indicating the number of bytes that couldn't be copied. This will never happen if max_packets is <code>MIPPARSER_UNLIMITED_PACKETS</code> because all of the data will be processed as soon as it is received.</p>

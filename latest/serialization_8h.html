@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-28-g950e651</span>
+   &#160;<span id="projectnumber">v1.0.0-29-g5d23781</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -78,22 +78,23 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;stdbool.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="mip__types_8h_source.html">../mip_types.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mip__field_8h_source.html">../mip_field.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mip__packet_8h_source.html">../mip_packet.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mip__types_8h_source.html">../mip_types.h</a>&quot;</code><br />
 <code>#include &lt;type_traits&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for serialization.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="serialization_8h__incl.png" border="0" usemap="#asrc_2mip_2utils_2serialization_8h" alt=""/></div>
 <map name="asrc_2mip_2utils_2serialization_8h" id="asrc_2mip_2utils_2serialization_8h">
-<area shape="rect" title=" " alt="" coords="41,5,219,32"/>
+<area shape="rect" title=" " alt="" coords="152,5,329,32"/>
 <area shape="rect" title=" " alt="" coords="5,304,71,331"/>
 <area shape="rect" title=" " alt="" coords="187,304,262,331"/>
-<area shape="rect" href="mip__types_8h.html" title=" " alt="" coords="76,229,181,256"/>
-<area shape="rect" href="mip__field_8h.html" title=" " alt="" coords="82,80,178,107"/>
-<area shape="rect" title=" " alt="" coords="307,80,390,107"/>
+<area shape="rect" href="mip__field_8h.html" title=" " alt="" coords="79,80,175,107"/>
+<area shape="rect" href="mip__packet_8h.html" title=" " alt="" coords="77,155,177,181"/>
+<area shape="rect" href="mip__types_8h.html" title=" " alt="" coords="82,229,175,256"/>
+<area shape="rect" title=" " alt="" coords="354,80,437,107"/>
 <area shape="rect" title=" " alt="" coords="95,304,163,331"/>
-<area shape="rect" href="mip__packet_8h.html" title=" " alt="" coords="80,155,180,181"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -185,6 +186,10 @@ Functions</h2></td></tr>
 <tr class="separator:ga16e0e0d5580bfbaf76700e502f9c7a8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga054a104b0bbbbe465c93212181da9f83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__serialization__c.html#ga054a104b0bbbbe465c93212181da9f83">mip::C::mip_serializer_init_extraction</a> (mip_serializer *serializer, const uint8_t *buffer, size_t buffer_size)</td></tr>
 <tr class="separator:ga054a104b0bbbbe465c93212181da9f83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga72e1f3e2d0f01f058726cc18a92b3869"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__serialization__c.html#ga72e1f3e2d0f01f058726cc18a92b3869">mip::C::mip_serializer_init_new_field</a> (mip_serializer *serializer, mip_packet *packet, uint8_t field_descriptor)</td></tr>
+<tr class="separator:ga72e1f3e2d0f01f058726cc18a92b3869"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf85a3441fe565da392e733e0ead3c091"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__serialization__c.html#gaf85a3441fe565da392e733e0ead3c091">mip::C::mip_serializer_finish_new_field</a> (const mip_serializer *serializer, mip_packet *packet)</td></tr>
+<tr class="separator:gaf85a3441fe565da392e733e0ead3c091"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0aeee92aceab99e86ba28ab8b4213baa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__serialization__c.html#ga0aeee92aceab99e86ba28ab8b4213baa">mip::C::mip_serializer_init_from_field</a> (mip_serializer *serializer, const mip_field *field)</td></tr>
 <tr class="separator:ga0aeee92aceab99e86ba28ab8b4213baa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3848059362de83fecd132c72a4fc41f8"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__serialization__c.html#ga3848059362de83fecd132c72a4fc41f8">mip::C::mip_serializer_capacity</a> (const mip_serializer *serializer)</td></tr>

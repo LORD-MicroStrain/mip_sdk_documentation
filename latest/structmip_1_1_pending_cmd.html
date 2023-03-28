@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-28-g950e651</span>
+   &#160;<span id="projectnumber">v1.0.0-29-g5d23781</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -106,7 +106,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa5420555ceb9e2704c46d195d835b051"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_pending_cmd.html#aa5420555ceb9e2704c46d195d835b051">PendingCmd</a> (uint8_t descriptorSet, uint8_t fieldDescriptor, <a class="el" href="namespacemip.html#a6b00d9d7a48550fcad5056184ad1fbae">Timeout</a> additionalTime=0)</td></tr>
 <tr class="memdesc:aa5420555ceb9e2704c46d195d835b051"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a pending command for the given descriptor pair.  <a href="structmip_1_1_pending_cmd.html#aa5420555ceb9e2704c46d195d835b051">More...</a><br /></td></tr>
 <tr class="separator:aa5420555ceb9e2704c46d195d835b051"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fc191669056ec51ca3aacbbbb02992a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_pending_cmd.html#a9fc191669056ec51ca3aacbbbb02992a">PendingCmd</a> (uint8_t descriptorSet, uint8_t fieldDescriptor, uint8_t responseDescriptor, uint8_t *responseBuffer, uint8_t responseBufferSize, <a class="el" href="namespacemip.html#a6b00d9d7a48550fcad5056184ad1fbae">Timeout</a> additionalTime)</td></tr>
+<tr class="memitem:a9fc191669056ec51ca3aacbbbb02992a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_pending_cmd.html#a9fc191669056ec51ca3aacbbbb02992a">PendingCmd</a> (uint8_t descriptorSet, uint8_t fieldDescriptor, uint8_t <a class="el" href="structmip_1_1_pending_cmd.html#a07225b2bfd43b8c3623deb0186bb23e4">responseDescriptor</a>, uint8_t *responseBuffer, uint8_t responseBufferSize, <a class="el" href="namespacemip.html#a6b00d9d7a48550fcad5056184ad1fbae">Timeout</a> additionalTime)</td></tr>
 <tr class="memdesc:a9fc191669056ec51ca3aacbbbb02992a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a pending command with expected response.  <a href="structmip_1_1_pending_cmd.html#a9fc191669056ec51ca3aacbbbb02992a">More...</a><br /></td></tr>
 <tr class="separator:a9fc191669056ec51ca3aacbbbb02992a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83dd326adada2e98024f696dc41ac93d"><td class="memTemplParams" colspan="2">template&lt;class Cmd &gt; </td></tr>
@@ -128,6 +128,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3419b44ea83dfbb1e81905916106cca8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_pending_cmd.html#a3419b44ea83dfbb1e81905916106cca8">status</a> () const</td></tr>
 <tr class="memdesc:a3419b44ea83dfbb1e81905916106cca8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the status of the pending command.  <a href="structmip_1_1_pending_cmd.html#a3419b44ea83dfbb1e81905916106cca8">More...</a><br /></td></tr>
 <tr class="separator:a3419b44ea83dfbb1e81905916106cca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07225b2bfd43b8c3623deb0186bb23e4"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_pending_cmd.html#a07225b2bfd43b8c3623deb0186bb23e4">responseDescriptor</a> () const</td></tr>
+<tr class="separator:a07225b2bfd43b8c3623deb0186bb23e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34a279c6864390fcd2539d8ce0add5d8"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_pending_cmd.html#a34a279c6864390fcd2539d8ce0add5d8">response</a> () const</td></tr>
 <tr class="separator:a34a279c6864390fcd2539d8ce0add5d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e4ce3053fa80f0c7bb9c1976e816f26"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_pending_cmd.html#a8e4ce3053fa80f0c7bb9c1976e816f26">responseLength</a> () const</td></tr>
@@ -496,6 +498,33 @@ template&lt;class Cmd &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">const uint8_t* mip::PendingCmd::response </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p></p>
+
+</div>
+</div>
+<a id="a07225b2bfd43b8c3623deb0186bb23e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07225b2bfd43b8c3623deb0186bb23e4">&#9670;&nbsp;</a></span>responseDescriptor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t mip::PendingCmd::responseDescriptor </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-28-g950e651</span>
+   &#160;<span id="projectnumber">v1.0.0-29-g5d23781</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -281,8 +281,14 @@ Functions</h2></td></tr>
 <tr class="memdesc:ae4c7775221d517cdf4a98307963dc677"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a serialization struct for insertion into a buffer.  <a href="namespacemip.html#ae4c7775221d517cdf4a98307963dc677">More...</a><br /></td></tr>
 <tr class="separator:ae4c7775221d517cdf4a98307963dc677"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9a4efd8379e47993562110cff21847e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip.html#aa9a4efd8379e47993562110cff21847e">mip_serializer_init_extraction</a> (mip_serializer *serializer, const uint8_t *buffer, size_t buffer_size)</td></tr>
-<tr class="memdesc:aa9a4efd8379e47993562110cff21847e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a serialization struct for extract from a buffer.  <a href="namespacemip.html#aa9a4efd8379e47993562110cff21847e">More...</a><br /></td></tr>
+<tr class="memdesc:aa9a4efd8379e47993562110cff21847e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a serialization struct for extraction from a buffer.  <a href="namespacemip.html#aa9a4efd8379e47993562110cff21847e">More...</a><br /></td></tr>
 <tr class="separator:aa9a4efd8379e47993562110cff21847e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb4a2107a06afb3d7ebf54168f1a81d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip.html#aeb4a2107a06afb3d7ebf54168f1a81d5">mip_serializer_init_new_field</a> (mip_serializer *serializer, mip_packet *packet, uint8_t field_descriptor)</td></tr>
+<tr class="memdesc:aeb4a2107a06afb3d7ebf54168f1a81d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializer a serialization struct for creation of a new field at the end of the packet.  <a href="namespacemip.html#aeb4a2107a06afb3d7ebf54168f1a81d5">More...</a><br /></td></tr>
+<tr class="separator:aeb4a2107a06afb3d7ebf54168f1a81d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa48594822fcf7bfea333e0b3d6d99491"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip.html#aa48594822fcf7bfea333e0b3d6d99491">mip_serializer_finish_new_field</a> (const mip_serializer *serializer, mip_packet *packet)</td></tr>
+<tr class="memdesc:aa48594822fcf7bfea333e0b3d6d99491"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this after a new field allocated by mip_serializer_init_new_field has been written.  <a href="namespacemip.html#aa48594822fcf7bfea333e0b3d6d99491">More...</a><br /></td></tr>
+<tr class="separator:aa48594822fcf7bfea333e0b3d6d99491"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea1cb04a77051c072d53903d76aa5ef5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip.html#aea1cb04a77051c072d53903d76aa5ef5">mip_serializer_init_from_field</a> (mip_serializer *serializer, const mip_field *field)</td></tr>
 <tr class="memdesc:aea1cb04a77051c072d53903d76aa5ef5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a serialization struct from a MIP field payload.  <a href="namespacemip.html#aea1cb04a77051c072d53903d76aa5ef5">More...</a><br /></td></tr>
 <tr class="separator:aea1cb04a77051c072d53903d76aa5ef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1430,6 +1436,44 @@ template&lt;class Derived &gt; </div>
 
 </div>
 </div>
+<a id="aa48594822fcf7bfea333e0b3d6d99491"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa48594822fcf7bfea333e0b3d6d99491">&#9670;&nbsp;</a></span>mip_serializer_finish_new_field()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::mip_serializer_finish_new_field </td>
+          <td>(</td>
+          <td class="paramtype">const mip_serializer *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">mip_packet *&#160;</td>
+          <td class="paramname"><em>packet</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Call this after a new field allocated by mip_serializer_init_new_field has been written. </p>
+<p>This will either finish the field, or abort it if the serializer overflowed.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">serializer</td><td>Must be created from mip_serializer_init_new_field. </td></tr>
+    <tr><td class="paramname">packet</td><td>Must be the original packet. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="aa9a4efd8379e47993562110cff21847e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa9a4efd8379e47993562110cff21847e">&#9670;&nbsp;</a></span>mip_serializer_init_extraction()</h2>
 
@@ -1462,7 +1506,7 @@ template&lt;class Derived &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Initialize a serialization struct for extract from a buffer. </p>
+<p>Initialize a serialization struct for extraction from a buffer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">serializer</td><td></td></tr>
@@ -1549,6 +1593,53 @@ template&lt;class Derived &gt; </div>
     <tr><td class="paramname">serializer</td><td></td></tr>
     <tr><td class="paramname">buffer</td><td>Buffer into which data will be written. Can be NULL if buffer_size==0. </td></tr>
     <tr><td class="paramname">buffer_size</td><td>Size of the buffer. Data will not be written beyond this size. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aeb4a2107a06afb3d7ebf54168f1a81d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb4a2107a06afb3d7ebf54168f1a81d5">&#9670;&nbsp;</a></span>mip_serializer_init_new_field()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::mip_serializer_init_new_field </td>
+          <td>(</td>
+          <td class="paramtype">mip_serializer *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">mip_packet *&#160;</td>
+          <td class="paramname"><em>packet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>field_descriptor</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializer a serialization struct for creation of a new field at the end of the packet. </p>
+<dl class="section note"><dt>Note</dt><dd>Call mip_serializer_finiish_new_field after the data has been serialized.</dd>
+<dd>
+Only one new field per packet can be in progress at a time.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">serializer</td><td></td></tr>
+    <tr><td class="paramname">packet</td><td>Allocate the new field on the end of this packet. </td></tr>
+    <tr><td class="paramname">field_descriptor</td><td><a class="el" href="classmip_1_1_field.html" title="C++ class representing a MIP field.">Field</a> descriptor of the new field. </td></tr>
   </table>
   </dd>
 </dl>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-28-g950e651</span>
+   &#160;<span id="projectnumber">v1.0.0-29-g5d23781</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -124,6 +124,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ab7b1be6fa39c9ae116c14a713c08e767"><td class="memItemLeft" align="right" valign="top">enum mip_cmd_result&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__cmdqueue_8c.html#ab7b1be6fa39c9ae116c14a713c08e767">mip_pending_cmd_status</a> (const mip_pending_cmd *cmd)</td></tr>
 <tr class="memdesc:ab7b1be6fa39c9ae116c14a713c08e767"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the status of the pending command.  <a href="mip__cmdqueue_8c.html#ab7b1be6fa39c9ae116c14a713c08e767">More...</a><br /></td></tr>
 <tr class="separator:ab7b1be6fa39c9ae116c14a713c08e767"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac410245430104d37942fe82d261ccedf"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__cmdqueue_8c.html#ac410245430104d37942fe82d261ccedf">mip_pending_cmd_response_descriptor</a> (const mip_pending_cmd *cmd)</td></tr>
+<tr class="memdesc:ac410245430104d37942fe82d261ccedf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the response descriptor.  <a href="mip__cmdqueue_8c.html#ac410245430104d37942fe82d261ccedf">More...</a><br /></td></tr>
+<tr class="separator:ac410245430104d37942fe82d261ccedf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fa69f108fce070f34358d98f04df8f5"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__cmdqueue_8c.html#a6fa69f108fce070f34358d98f04df8f5">mip_pending_cmd_response</a> (const mip_pending_cmd *cmd)</td></tr>
 <tr class="memdesc:a6fa69f108fce070f34358d98f04df8f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the response payload pointer.  <a href="mip__cmdqueue_8c.html#a6fa69f108fce070f34358d98f04df8f5">More...</a><br /></td></tr>
 <tr class="separator:a6fa69f108fce070f34358d98f04df8f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -810,6 +813,26 @@ false if the command should not time out. </dd></dl>
 
 <p>Returns the response payload pointer. </p>
 <p>This function may only be called after the command finishes with an ACK. </p>
+
+</div>
+</div>
+<a id="ac410245430104d37942fe82d261ccedf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac410245430104d37942fe82d261ccedf">&#9670;&nbsp;</a></span>mip_pending_cmd_response_descriptor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t mip_pending_cmd_response_descriptor </td>
+          <td>(</td>
+          <td class="paramtype">const mip_pending_cmd *&#160;</td>
+          <td class="paramname"><em>cmd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the response descriptor. </p>
 
 </div>
 </div>

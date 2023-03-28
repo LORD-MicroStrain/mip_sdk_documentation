@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-28-g950e651</span>
+   &#160;<span id="projectnumber">v1.0.0-29-g5d23781</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -102,6 +102,10 @@ Functions</h2></td></tr>
 <tr class="separator:ga16e0e0d5580bfbaf76700e502f9c7a8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga054a104b0bbbbe465c93212181da9f83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__serialization__c.html#ga054a104b0bbbbe465c93212181da9f83">mip::C::mip_serializer_init_extraction</a> (<a class="el" href="structmip_1_1_c_1_1mip__serializer.html">mip_serializer</a> *serializer, const uint8_t *buffer, size_t buffer_size)</td></tr>
 <tr class="separator:ga054a104b0bbbbe465c93212181da9f83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga72e1f3e2d0f01f058726cc18a92b3869"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__serialization__c.html#ga72e1f3e2d0f01f058726cc18a92b3869">mip::C::mip_serializer_init_new_field</a> (<a class="el" href="structmip_1_1_c_1_1mip__serializer.html">mip_serializer</a> *serializer, <a class="el" href="structmip_1_1_c_1_1mip__packet.html">mip_packet</a> *packet, uint8_t field_descriptor)</td></tr>
+<tr class="separator:ga72e1f3e2d0f01f058726cc18a92b3869"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf85a3441fe565da392e733e0ead3c091"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__serialization__c.html#gaf85a3441fe565da392e733e0ead3c091">mip::C::mip_serializer_finish_new_field</a> (const <a class="el" href="structmip_1_1_c_1_1mip__serializer.html">mip_serializer</a> *serializer, <a class="el" href="structmip_1_1_c_1_1mip__packet.html">mip_packet</a> *packet)</td></tr>
+<tr class="separator:gaf85a3441fe565da392e733e0ead3c091"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0aeee92aceab99e86ba28ab8b4213baa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__serialization__c.html#ga0aeee92aceab99e86ba28ab8b4213baa">mip::C::mip_serializer_init_from_field</a> (<a class="el" href="structmip_1_1_c_1_1mip__serializer.html">mip_serializer</a> *serializer, const <a class="el" href="structmip_1_1_c_1_1mip__field.html">mip_field</a> *field)</td></tr>
 <tr class="separator:ga0aeee92aceab99e86ba28ab8b4213baa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3848059362de83fecd132c72a4fc41f8"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__serialization__c.html#ga3848059362de83fecd132c72a4fc41f8">mip::C::mip_serializer_capacity</a> (const <a class="el" href="structmip_1_1_c_1_1mip__serializer.html">mip_serializer</a> *serializer)</td></tr>
@@ -910,6 +914,34 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="gaf85a3441fe565da392e733e0ead3c091"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf85a3441fe565da392e733e0ead3c091">&#9670;&nbsp;</a></span>mip_serializer_finish_new_field()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::C::mip_serializer_finish_new_field </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structmip_1_1_c_1_1mip__serializer.html">mip_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1_c_1_1mip__packet.html">mip_packet</a> *&#160;</td>
+          <td class="paramname"><em>packet</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ga054a104b0bbbbe465c93212181da9f83"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga054a104b0bbbbe465c93212181da9f83">&#9670;&nbsp;</a></span>mip_serializer_init_extraction()</h2>
 
@@ -995,6 +1027,40 @@ Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>buffer_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga72e1f3e2d0f01f058726cc18a92b3869"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga72e1f3e2d0f01f058726cc18a92b3869">&#9670;&nbsp;</a></span>mip_serializer_init_new_field()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::C::mip_serializer_init_new_field </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1_c_1_1mip__serializer.html">mip_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1_c_1_1mip__packet.html">mip_packet</a> *&#160;</td>
+          <td class="paramname"><em>packet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>field_descriptor</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

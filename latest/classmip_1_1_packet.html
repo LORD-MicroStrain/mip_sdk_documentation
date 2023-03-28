@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-28-g950e651</span>
+   &#160;<span id="projectnumber">v1.0.0-29-g5d23781</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -68,6 +68,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classmip_1_1_packet-members.html">List of all members</a>  </div>
@@ -99,6 +100,11 @@ Collaboration diagram for mip::Packet:</div>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_packet_1_1_field_iterator.html">FieldIterator</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae5c1b8d1a658e53a4d1f2b1a7b0969a0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_packet.html#ae5c1b8d1a658e53a4d1f2b1a7b0969a0">Packet</a> (uint8_t *buffer, size_t <a class="el" href="classmip_1_1_packet.html#ad0531baf1f00fc4f7b748fee3a8dbf32">bufferSize</a>, uint8_t <a class="el" href="classmip_1_1_packet.html#a020dc243088ac91069ea78beddfd7c99">descriptorSet</a>)</td></tr>
@@ -120,8 +126,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af6f6e625c17ca2bd07a2b4dc5edc6cda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9facfa2d7bc36a6de36e2b17805362de"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_packet.html#a9facfa2d7bc36a6de36e2b17805362de">isData</a> () const</td></tr>
 <tr class="separator:a9facfa2d7bc36a6de36e2b17805362de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47f68eb00dc07cafe49f5c17bc5d1433"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_packet.html#a47f68eb00dc07cafe49f5c17bc5d1433">isCommand</a> () const</td></tr>
-<tr class="separator:a47f68eb00dc07cafe49f5c17bc5d1433"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91f79ccfb3cc4ca86c764a96186db492"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_packet.html#a91f79ccfb3cc4ca86c764a96186db492">pointer</a> () const</td></tr>
 <tr class="separator:a91f79ccfb3cc4ca86c764a96186db492"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a955eda3b4437bf7606e8848a6a1bfde1"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_packet.html#a955eda3b4437bf7606e8848a6a1bfde1">payload</a> () const</td></tr>
@@ -155,26 +159,30 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a081780a022c805c616387e41e7357967"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_packet.html#a081780a022c805c616387e41e7357967">reset</a> ()</td></tr>
 <tr class="memdesc:a081780a022c805c616387e41e7357967"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the packet using the same descriptor set.  <a href="classmip_1_1_packet.html#a081780a022c805c616387e41e7357967">More...</a><br /></td></tr>
 <tr class="separator:a081780a022c805c616387e41e7357967"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15e35eaebbbf06d875dbc8b2c8e1856e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmip_1_1_packet_1_1_field_iterator.html">FieldIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_packet.html#a15e35eaebbbf06d875dbc8b2c8e1856e">begin</a> () const</td></tr>
+<tr class="separator:a15e35eaebbbf06d875dbc8b2c8e1856e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade423dd6ae7e57d1b61d711f87623b3d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmip_1_1_packet_1_1_field_iterator.html">FieldIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_packet.html#ade423dd6ae7e57d1b61d711f87623b3d">end</a> () const</td></tr>
+<tr class="separator:ade423dd6ae7e57d1b61d711f87623b3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5610e560a48e3a5167a612bb15ba5caa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmip_1_1_field.html">Field</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_packet.html#a5610e560a48e3a5167a612bb15ba5caa">firstField</a> () const</td></tr>
 <tr class="memdesc:a5610e560a48e3a5167a612bb15ba5caa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the first field in the packet.  <a href="classmip_1_1_packet.html#a5610e560a48e3a5167a612bb15ba5caa">More...</a><br /></td></tr>
 <tr class="separator:a5610e560a48e3a5167a612bb15ba5caa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15e35eaebbbf06d875dbc8b2c8e1856e"><td class="memItemLeft" align="right" valign="top">FieldIterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_packet.html#a15e35eaebbbf06d875dbc8b2c8e1856e">begin</a> () const</td></tr>
-<tr class="separator:a15e35eaebbbf06d875dbc8b2c8e1856e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade423dd6ae7e57d1b61d711f87623b3d"><td class="memItemLeft" align="right" valign="top">FieldIterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_packet.html#ade423dd6ae7e57d1b61d711f87623b3d">end</a> () const</td></tr>
-<tr class="separator:ade423dd6ae7e57d1b61d711f87623b3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa66666b0fcaef3d1c676bbc5921ae4f7"><td class="memTemplParams" colspan="2">template&lt;class Field &gt; </td></tr>
-<tr class="memitem:aa66666b0fcaef3d1c676bbc5921ae4f7"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmip_1_1_packet.html#aa66666b0fcaef3d1c676bbc5921ae4f7">addField</a> (const <a class="el" href="classmip_1_1_field.html">Field</a> &amp;field, uint8_t fieldDescriptor=Field::FIELD_DESCRIPTOR)</td></tr>
-<tr class="separator:aa66666b0fcaef3d1c676bbc5921ae4f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16e708e75aca6c3b5374a44f674b94ce"><td class="memTemplParams" colspan="2">template&lt;class FieldType &gt; </td></tr>
+<tr class="memitem:a16e708e75aca6c3b5374a44f674b94ce"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmip_1_1_packet.html#a16e708e75aca6c3b5374a44f674b94ce">addField</a> (const FieldType &amp;field, uint8_t fieldDescriptor=INVALID_FIELD_DESCRIPTOR)</td></tr>
+<tr class="memdesc:a16e708e75aca6c3b5374a44f674b94ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a field of the given type to the packet.  <a href="classmip_1_1_packet.html#a16e708e75aca6c3b5374a44f674b94ce">More...</a><br /></td></tr>
+<tr class="separator:a16e708e75aca6c3b5374a44f674b94ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a67d0ae9c0a695399e663f7007090805f"><td class="memTemplParams" colspan="2">template&lt;class Field &gt; </td></tr>
-<tr class="memitem:a67d0ae9c0a695399e663f7007090805f"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classmip_1_1_packet.html">Packet</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmip_1_1_packet.html#a67d0ae9c0a695399e663f7007090805f">createFromField</a> (uint8_t *buffer, size_t <a class="el" href="classmip_1_1_packet.html#ad0531baf1f00fc4f7b748fee3a8dbf32">bufferSize</a>, const <a class="el" href="classmip_1_1_field.html">Field</a> &amp;field, uint8_t fieldDescriptor=Field::FIELD_DESCRIPTOR)</td></tr>
-<tr class="separator:a67d0ae9c0a695399e663f7007090805f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7f72a0a7113d1eb8f3cd6dba0a69109"><td class="memTemplParams" colspan="2">template&lt;class FieldType &gt; </td></tr>
+<tr class="memitem:ab7f72a0a7113d1eb8f3cd6dba0a69109"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classmip_1_1_packet.html">Packet</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmip_1_1_packet.html#ab7f72a0a7113d1eb8f3cd6dba0a69109">createFromField</a> (uint8_t *buffer, size_t <a class="el" href="classmip_1_1_packet.html#ad0531baf1f00fc4f7b748fee3a8dbf32">bufferSize</a>, const FieldType &amp;field, uint8_t fieldDescriptor=INVALID_FIELD_DESCRIPTOR)</td></tr>
+<tr class="memdesc:ab7f72a0a7113d1eb8f3cd6dba0a69109"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="classmip_1_1_packet.html" title="C++ class representing a MIP Packet.">Packet</a> containing a single MIP field from an instance of the field type.  <a href="classmip_1_1_packet.html#ab7f72a0a7113d1eb8f3cd6dba0a69109">More...</a><br /></td></tr>
+<tr class="separator:ab7f72a0a7113d1eb8f3cd6dba0a69109"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>C++ class representing a MIP <a class="el" href="classmip_1_1_packet.html" title="C++ class representing a MIP Packet.">Packet</a>. </p>
-<p>Fields may be iterated over using the C-style method or with a range-based for loop: </p><div class="fragment"><div class="line"><span class="keywordflow">for</span>(Field field : packet) { ... }</div>
+<p>This is a thin wrapper around the mip_packet <a class="el" href="namespacemip_1_1_c.html">C</a> structure. Like the <a class="el" href="namespacemip_1_1_c.html">C</a> version, it does not contain or own the data buffer. Any of the <a class="el" href="namespacemip_1_1_c.html">C</a> functions can be used with the C++ packet class because it inherits from the <a class="el" href="namespacemip_1_1_c.html">C</a> struct.</p>
+<p>Fields may be iterated over using the C-style methods, with an iterator, or with a range-based for loop: </p><div class="fragment"><div class="line"><span class="keywordflow">for</span>(Packet::Iterator iter = packet.begin(); iter != packet.end(); ++iter) { ... }</div>
+<div class="line"><span class="keywordflow">for</span>(Field field : packet) { ... }</div>
 </div><!-- fragment --> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae5c1b8d1a658e53a4d1f2b1a7b0969a0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae5c1b8d1a658e53a4d1f2b1a7b0969a0">&#9670;&nbsp;</a></span>Packet() <span class="overload">[1/4]</span></h2>
@@ -326,13 +334,13 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa66666b0fcaef3d1c676bbc5921ae4f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa66666b0fcaef3d1c676bbc5921ae4f7">&#9670;&nbsp;</a></span>addField() <span class="overload">[1/2]</span></h2>
+<a id="a16e708e75aca6c3b5374a44f674b94ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16e708e75aca6c3b5374a44f674b94ce">&#9670;&nbsp;</a></span>addField() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Field &gt; </div>
+template&lt;class FieldType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -340,14 +348,14 @@ template&lt;class Field &gt; </div>
         <tr>
           <td class="memname">bool mip::Packet::addField </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classmip_1_1_field.html">Field</a> &amp;&#160;</td>
+          <td class="paramtype">const FieldType &amp;&#160;</td>
           <td class="paramname"><em>field</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>fieldDescriptor</em> = <code>Field::FIELD_DESCRIPTOR</code>&#160;</td>
+          <td class="paramname"><em>fieldDescriptor</em> = <code>INVALID_FIELD_DESCRIPTOR</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -361,6 +369,22 @@ template&lt;class Field &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Adds a field of the given type to the packet. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">FieldType</td><td>Any field class from a file in the mip/definitions directory.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">field</td><td>Instance of the field to add to the packet. </td></tr>
+    <tr><td class="paramname">fieldDescriptor</td><td>If specified, overrides the field descriptor.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the field was added, false if the packet has insufficient space. </dd></dl>
 
 </div>
 </div>
@@ -462,7 +486,7 @@ template&lt;class Field &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">FieldIterator mip::Packet::begin </td>
+          <td class="memname"><a class="el" href="classmip_1_1_packet_1_1_field_iterator.html">FieldIterator</a> mip::Packet::begin </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -587,13 +611,13 @@ template&lt;class Field &gt; </div>
 
 </div>
 </div>
-<a id="a67d0ae9c0a695399e663f7007090805f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a67d0ae9c0a695399e663f7007090805f">&#9670;&nbsp;</a></span>createFromField()</h2>
+<a id="ab7f72a0a7113d1eb8f3cd6dba0a69109"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7f72a0a7113d1eb8f3cd6dba0a69109">&#9670;&nbsp;</a></span>createFromField()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Field &gt; </div>
+template&lt;class FieldType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -613,14 +637,14 @@ template&lt;class Field &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classmip_1_1_field.html">Field</a> &amp;&#160;</td>
+          <td class="paramtype">const FieldType &amp;&#160;</td>
           <td class="paramname"><em>field</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>fieldDescriptor</em> = <code>Field::FIELD_DESCRIPTOR</code>&#160;</td>
+          <td class="paramname"><em>fieldDescriptor</em> = <code>INVALID_FIELD_DESCRIPTOR</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -634,6 +658,25 @@ template&lt;class Field &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Creates a new <a class="el" href="classmip_1_1_packet.html" title="C++ class representing a MIP Packet.">Packet</a> containing a single MIP field from an instance of the field type. </p>
+<p>This works just like the <a class="el" href="classmip_1_1_packet.html#ae139b74469cc335f54f04e2d2d09bacb">addField&lt;FieldType&gt;()</a> function but also initializes and finalizes the packet. It is assumed that the field will fit in an empty packet; otherwise the field can't ever be used. The field classes are predefined so this doesn't need runtime checking.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">FieldType</td><td>Any field class from a file in the mip/definitions directory.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>Buffer to hold the packet bytes. </td></tr>
+    <tr><td class="paramname">bufferSize</td><td>Size of buffer in bytes. </td></tr>
+    <tr><td class="paramname">field</td><td>Instance of the field to add to the packet. </td></tr>
+    <tr><td class="paramname">fieldDescriptor</td><td>If specified, overrides the field descriptor.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="classmip_1_1_packet.html" title="C++ class representing a MIP Packet.">Packet</a> object containing the field. </dd></dl>
 
 </div>
 </div>
@@ -674,7 +717,7 @@ template&lt;class Field &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">FieldIterator mip::Packet::end </td>
+          <td class="memname"><a class="el" href="classmip_1_1_packet_1_1_field_iterator.html">FieldIterator</a> mip::Packet::end </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -741,31 +784,9 @@ template&lt;class Field &gt; </div>
 </div><div class="memdoc">
 
 <p>Returns the first field in the packet. </p>
-
-</div>
-</div>
-<a id="a47f68eb00dc07cafe49f5c17bc5d1433"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47f68eb00dc07cafe49f5c17bc5d1433">&#9670;&nbsp;</a></span>isCommand()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool mip::Packet::isCommand </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>Subsequent fields can be obtained via the returned <a class="el" href="classmip_1_1_field.html" title="C++ class representing a MIP field.">Field</a> class, but iteration is best done with <a class="el" href="classmip_1_1_packet.html#a15e35eaebbbf06d875dbc8b2c8e1856e">begin()</a>/end() or the range-based for loop.</p>
+<dl class="section note"><dt>Note</dt><dd>Packets can be empty, so make sure that the returned field is valid before using it.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="classmip_1_1_field.html" title="C++ class representing a MIP field.">Field</a> instance representing the first field (if any). </dd></dl>
 
 </div>
 </div>

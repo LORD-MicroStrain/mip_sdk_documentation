@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-28-g950e651</span>
+   &#160;<span id="projectnumber">v1.0.0-29-g5d23781</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -77,22 +77,27 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="serialization_8h_source.html">serialization.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mip__field_8h_source.html">../mip_field.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mip__packet_8h_source.html">../mip_packet.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mip__offsets_8h_source.html">../mip_offsets.h</a>&quot;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;assert.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for serialization.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="serialization_8c__incl.png" border="0" usemap="#asrc_2mip_2utils_2serialization_8c" alt=""/></div>
 <map name="asrc_2mip_2utils_2serialization_8c" id="asrc_2mip_2utils_2serialization_8c">
-<area shape="rect" title=" " alt="" coords="101,5,278,32"/>
-<area shape="rect" href="serialization_8h.html" title=" " alt="" coords="44,80,146,107"/>
-<area shape="rect" href="mip__field_8h.html" title=" " alt="" coords="148,155,244,181"/>
-<area shape="rect" title=" " alt="" coords="228,80,293,107"/>
-<area shape="rect" title=" " alt="" coords="22,379,88,405"/>
-<area shape="rect" title=" " alt="" coords="204,379,279,405"/>
-<area shape="rect" href="mip__types_8h.html" title=" " alt="" coords="93,304,198,331"/>
-<area shape="rect" title=" " alt="" coords="42,155,124,181"/>
-<area shape="rect" title=" " alt="" coords="112,379,180,405"/>
-<area shape="rect" href="mip__packet_8h.html" title=" " alt="" coords="97,229,197,256"/>
+<area shape="rect" title=" " alt="" coords="280,5,457,32"/>
+<area shape="rect" href="serialization_8h.html" title=" " alt="" coords="181,80,284,107"/>
+<area shape="rect" href="mip__field_8h.html" title=" " alt="" coords="338,155,434,181"/>
+<area shape="rect" href="mip__packet_8h.html" title=" " alt="" coords="5,229,105,256"/>
+<area shape="rect" href="mip__offsets_8h.html" title=" " alt="" coords="360,80,471,107"/>
+<area shape="rect" title=" " alt="" coords="495,80,560,107"/>
+<area shape="rect" title=" " alt="" coords="585,80,654,107"/>
+<area shape="rect" title=" " alt="" coords="353,379,419,405"/>
+<area shape="rect" title=" " alt="" coords="163,379,238,405"/>
+<area shape="rect" href="mip__types_8h.html" title=" " alt="" coords="63,304,157,331"/>
+<area shape="rect" title=" " alt="" coords="231,155,314,181"/>
+<area shape="rect" title=" " alt="" coords="71,379,139,405"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -115,8 +120,14 @@ Functions</h2></td></tr>
 <tr class="memdesc:ae4c7775221d517cdf4a98307963dc677"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a serialization struct for insertion into a buffer.  <a href="namespacemip.html#ae4c7775221d517cdf4a98307963dc677">More...</a><br /></td></tr>
 <tr class="separator:ae4c7775221d517cdf4a98307963dc677"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9a4efd8379e47993562110cff21847e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip.html#aa9a4efd8379e47993562110cff21847e">mip::mip_serializer_init_extraction</a> (mip_serializer *serializer, const uint8_t *buffer, size_t buffer_size)</td></tr>
-<tr class="memdesc:aa9a4efd8379e47993562110cff21847e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a serialization struct for extract from a buffer.  <a href="namespacemip.html#aa9a4efd8379e47993562110cff21847e">More...</a><br /></td></tr>
+<tr class="memdesc:aa9a4efd8379e47993562110cff21847e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a serialization struct for extraction from a buffer.  <a href="namespacemip.html#aa9a4efd8379e47993562110cff21847e">More...</a><br /></td></tr>
 <tr class="separator:aa9a4efd8379e47993562110cff21847e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb4a2107a06afb3d7ebf54168f1a81d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip.html#aeb4a2107a06afb3d7ebf54168f1a81d5">mip::mip_serializer_init_new_field</a> (mip_serializer *serializer, mip_packet *packet, uint8_t field_descriptor)</td></tr>
+<tr class="memdesc:aeb4a2107a06afb3d7ebf54168f1a81d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializer a serialization struct for creation of a new field at the end of the packet.  <a href="namespacemip.html#aeb4a2107a06afb3d7ebf54168f1a81d5">More...</a><br /></td></tr>
+<tr class="separator:aeb4a2107a06afb3d7ebf54168f1a81d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa48594822fcf7bfea333e0b3d6d99491"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip.html#aa48594822fcf7bfea333e0b3d6d99491">mip::mip_serializer_finish_new_field</a> (const mip_serializer *serializer, mip_packet *packet)</td></tr>
+<tr class="memdesc:aa48594822fcf7bfea333e0b3d6d99491"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this after a new field allocated by mip_serializer_init_new_field has been written.  <a href="namespacemip.html#aa48594822fcf7bfea333e0b3d6d99491">More...</a><br /></td></tr>
+<tr class="separator:aa48594822fcf7bfea333e0b3d6d99491"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea1cb04a77051c072d53903d76aa5ef5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip.html#aea1cb04a77051c072d53903d76aa5ef5">mip::mip_serializer_init_from_field</a> (mip_serializer *serializer, const mip_field *field)</td></tr>
 <tr class="memdesc:aea1cb04a77051c072d53903d76aa5ef5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a serialization struct from a MIP field payload.  <a href="namespacemip.html#aea1cb04a77051c072d53903d76aa5ef5">More...</a><br /></td></tr>
 <tr class="separator:aea1cb04a77051c072d53903d76aa5ef5"><td class="memSeparator" colspan="2">&#160;</td></tr>

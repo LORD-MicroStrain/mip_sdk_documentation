@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-28-g950e651</span>
+   &#160;<span id="projectnumber">v1.0.0-29-g5d23781</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -168,8 +168,8 @@ Functions</h2></td></tr>
 <li>Enums, bitfields, and nested structs for commands</li>
 </ul>
 <p>Additionally, there are overloads with a different signature which allow one to avoid creating a <a class="el" href="classmip_1_1_serializer.html" title="Serialization class.">Serializer</a> object every time. These overloads create a serializer internally and pass it on to the regular version. </p><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="keywordtype">bool</span> <a class="code" href="namespacemip.html#a6a81402aa7f571152391c49eb4734b98">mip::insert</a>(<span class="keyword">const</span> T&amp; value, uint8_t* buffer, <span class="keywordtype">size_t</span> bufferSize);</div>
-<div class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="keywordtype">bool</span> <a class="code" href="classmip_1_1_field.html#ac7e2e2c14bdb5bf961f360551ee09d75">mip::Field::extract</a>(T&amp; value);</div>
-<div class="ttc" id="aclassmip_1_1_field_html_ac7e2e2c14bdb5bf961f360551ee09d75"><div class="ttname"><a href="classmip_1_1_field.html#ac7e2e2c14bdb5bf961f360551ee09d75">mip::Field::extract</a></div><div class="ttdeci">bool extract(Field &amp;field) const</div><div class="ttdef"><b>Definition:</b> mip.hpp:68</div></div>
+<div class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="keywordtype">bool</span> <a class="code" href="classmip_1_1_field.html#ac64daca27b30a5ae00d735ad60dc69c5">mip::Field::extract</a>(T&amp; value);</div>
+<div class="ttc" id="aclassmip_1_1_field_html_ac64daca27b30a5ae00d735ad60dc69c5"><div class="ttname"><a href="classmip_1_1_field.html#ac64daca27b30a5ae00d735ad60dc69c5">mip::Field::extract</a></div><div class="ttdeci">bool extract(FieldType &amp;field, bool exact_size=true) const</div><div class="ttdoc">Deserializes the field data to specific field struct.</div><div class="ttdef"><b>Definition:</b> mip.hpp:101</div></div>
 </div><!-- fragment --><p> This makes it easy to extract data from a field: </p><div class="fragment"><div class="line">data_sensor::ScaledAccel accel;</div>
 <div class="line">MipField field(...);</div>
 <div class="line"><span class="keywordflow">if</span>( field.extract(accel) )</div>

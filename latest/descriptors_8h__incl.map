@@ -1,12 +1,12 @@
 <map id="src/mip/definitions/descriptors.h" name="src/mip/definitions/descriptors.h">
-<area shape="rect" id="node1" title=" " alt="" coords="393,5,520,47"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,393,73,420"/>
-<area shape="rect" id="node3" title=" " alt="" coords="103,393,168,420"/>
-<area shape="rect" id="node4" title=" " alt="" coords="353,393,427,420"/>
-<area shape="rect" id="node5" href="$serialization_8h.html" title=" " alt="" coords="321,95,464,121"/>
-<area shape="rect" id="node9" title=" " alt="" coords="475,169,558,196"/>
-<area shape="rect" id="node10" title=" " alt="" coords="633,95,683,121"/>
-<area shape="rect" id="node6" href="$mip__types_8h.html" title=" " alt="" coords="199,319,304,345"/>
-<area shape="rect" id="node7" href="$mip__field_8h.html" title=" " alt="" coords="227,169,323,196"/>
-<area shape="rect" id="node8" href="$mip__packet_8h.html" title=" " alt="" coords="199,244,299,271"/>
+<area shape="rect" id="node1" title=" " alt="" coords="349,5,475,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="18,393,86,420"/>
+<area shape="rect" id="node3" title=" " alt="" coords="115,393,181,420"/>
+<area shape="rect" id="node4" title=" " alt="" coords="372,393,447,420"/>
+<area shape="rect" id="node5" href="$serialization_8h.html" title=" " alt="" coords="259,95,402,121"/>
+<area shape="rect" id="node9" title=" " alt="" coords="453,169,536,196"/>
+<area shape="rect" id="node10" title=" " alt="" coords="611,95,661,121"/>
+<area shape="rect" id="node6" href="$mip__field_8h.html" title=" " alt="" coords="283,169,379,196"/>
+<area shape="rect" id="node7" href="$mip__packet_8h.html" title=" " alt="" coords="195,244,295,271"/>
+<area shape="rect" id="node8" href="$mip__types_8h.html" title=" " alt="" coords="144,319,237,345"/>
 </map>
