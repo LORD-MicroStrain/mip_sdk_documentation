@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-36-g369efd8</span>
+   &#160;<span id="projectnumber">v1.0.0-41-gaef3276</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -115,6 +115,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adbc6c6392def5cb39207307e74eeff67"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1platform_1_1_tcp_connection.html#adbc6c6392def5cb39207307e74eeff67">sendToDevice</a> (const uint8_t *data, size_t length) final</td></tr>
 <tr class="memdesc:adbc6c6392def5cb39207307e74eeff67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receives bytes from the device.  <a href="classmip_1_1platform_1_1_tcp_connection.html#adbc6c6392def5cb39207307e74eeff67">More...</a><br /></td></tr>
 <tr class="separator:adbc6c6392def5cb39207307e74eeff67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66869e51122f8eb4cead8ac24e73bcf6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1platform_1_1_tcp_connection.html#a66869e51122f8eb4cead8ac24e73bcf6">isConnected</a> ()</td></tr>
+<tr class="memdesc:a66869e51122f8eb4cead8ac24e73bcf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the socket is connected.  <a href="classmip_1_1platform_1_1_tcp_connection.html#a66869e51122f8eb4cead8ac24e73bcf6">More...</a><br /></td></tr>
+<tr class="separator:a66869e51122f8eb4cead8ac24e73bcf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae191fc73f3287be0d112b1425cb7dc5b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1platform_1_1_tcp_connection.html#ae191fc73f3287be0d112b1425cb7dc5b">connect</a> ()</td></tr>
+<tr class="memdesc:ae191fc73f3287be0d112b1425cb7dc5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to the socket.  <a href="classmip_1_1platform_1_1_tcp_connection.html#ae191fc73f3287be0d112b1425cb7dc5b">More...</a><br /></td></tr>
+<tr class="separator:ae191fc73f3287be0d112b1425cb7dc5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b181de094c802b0449c2724169bffe0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1platform_1_1_tcp_connection.html#a2b181de094c802b0449c2724169bffe0">disconnect</a> ()</td></tr>
+<tr class="memdesc:a2b181de094c802b0449c2724169bffe0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnect from the socket.  <a href="classmip_1_1platform_1_1_tcp_connection.html#a2b181de094c802b0449c2724169bffe0">More...</a><br /></td></tr>
+<tr class="separator:a2b181de094c802b0449c2724169bffe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18959631daf61f7e4ef738342f791546"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1platform_1_1_tcp_connection.html#a18959631daf61f7e4ef738342f791546">connectionInfo</a> (std::string &amp;host_name, uint32_t &amp;port)</td></tr>
 <tr class="separator:a18959631daf61f7e4ef738342f791546"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classmip_1_1_connection"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classmip_1_1_connection')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classmip_1_1_connection.html">mip::Connection</a></td></tr>
@@ -227,6 +236,35 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae191fc73f3287be0d112b1425cb7dc5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae191fc73f3287be0d112b1425cb7dc5b">&#9670;&nbsp;</a></span>connect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::platform::TcpConnection::connect </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Connect to the socket. </p>
+
+<p>Implements <a class="el" href="classmip_1_1_connection.html#ad265390ebd3b6116b141e241faacc141">mip::Connection</a>.</p>
+
+</div>
+</div>
 <a id="a18959631daf61f7e4ef738342f791546"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a18959631daf61f7e4ef738342f791546">&#9670;&nbsp;</a></span>connectionInfo()</h2>
 
@@ -260,6 +298,64 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2b181de094c802b0449c2724169bffe0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b181de094c802b0449c2724169bffe0">&#9670;&nbsp;</a></span>disconnect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::platform::TcpConnection::disconnect </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Disconnect from the socket. </p>
+
+<p>Implements <a class="el" href="classmip_1_1_connection.html#a855f4edd0554e757847da59463693fd1">mip::Connection</a>.</p>
+
+</div>
+</div>
+<a id="a66869e51122f8eb4cead8ac24e73bcf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66869e51122f8eb4cead8ac24e73bcf6">&#9670;&nbsp;</a></span>isConnected()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::platform::TcpConnection::isConnected </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if the socket is connected. </p>
+
+<p>Implements <a class="el" href="classmip_1_1_connection.html#a5f3e9391a11ea24595b7c4dd16621f4c">mip::Connection</a>.</p>
 
 </div>
 </div>
