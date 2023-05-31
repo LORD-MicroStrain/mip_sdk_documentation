@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-33-g6033520</span>
+   &#160;<span id="projectnumber">v1.0.0-36-g369efd8</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -69,6 +69,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="classmip_1_1platform_1_1_tcp_connection-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">mip::platform::TcpConnection Class Reference<div class="ingroups"><a class="el" href="group__mip__platform.html">Platform specific utilities</a></div></div>  </div>
@@ -114,12 +115,32 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adbc6c6392def5cb39207307e74eeff67"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1platform_1_1_tcp_connection.html#adbc6c6392def5cb39207307e74eeff67">sendToDevice</a> (const uint8_t *data, size_t length) final</td></tr>
 <tr class="memdesc:adbc6c6392def5cb39207307e74eeff67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receives bytes from the device.  <a href="classmip_1_1platform_1_1_tcp_connection.html#adbc6c6392def5cb39207307e74eeff67">More...</a><br /></td></tr>
 <tr class="separator:adbc6c6392def5cb39207307e74eeff67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18959631daf61f7e4ef738342f791546"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1platform_1_1_tcp_connection.html#a18959631daf61f7e4ef738342f791546">connectionInfo</a> (std::string &amp;host_name, uint32_t &amp;port)</td></tr>
+<tr class="separator:a18959631daf61f7e4ef738342f791546"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classmip_1_1_connection"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classmip_1_1_connection')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classmip_1_1_connection.html">mip::Connection</a></td></tr>
+<tr class="memitem:a2e5ec6bdd1e55003c254e18294729017 inherit pub_methods_classmip_1_1_connection"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_connection.html#a2e5ec6bdd1e55003c254e18294729017">Connection</a> ()</td></tr>
+<tr class="separator:a2e5ec6bdd1e55003c254e18294729017 inherit pub_methods_classmip_1_1_connection"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e868ff72425aee5e86c5c108ed5f6f8 inherit pub_methods_classmip_1_1_connection"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_connection.html#a2e868ff72425aee5e86c5c108ed5f6f8">~Connection</a> ()</td></tr>
 <tr class="separator:a2e868ff72425aee5e86c5c108ed5f6f8 inherit pub_methods_classmip_1_1_connection"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac143ab4318741a4a3d1c9db24336833e inherit pub_methods_classmip_1_1_connection"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_connection.html#ac143ab4318741a4a3d1c9db24336833e">connect_interface</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> *device)</td></tr>
 <tr class="memdesc:ac143ab4318741a4a3d1c9db24336833e inherit pub_methods_classmip_1_1_connection"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets up the mip interface callbacks to point at this object.  <a href="classmip_1_1_connection.html#ac143ab4318741a4a3d1c9db24336833e">More...</a><br /></td></tr>
 <tr class="separator:ac143ab4318741a4a3d1c9db24336833e inherit pub_methods_classmip_1_1_connection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0253ea1881fd00c06abde5b4d4723aa inherit pub_methods_classmip_1_1_connection"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_connection.html#ac0253ea1881fd00c06abde5b4d4723aa">type</a> ()</td></tr>
+<tr class="separator:ac0253ea1881fd00c06abde5b4d4723aa inherit pub_methods_classmip_1_1_connection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a5f9d8c51b069583c40b69d0ead386efa"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1platform_1_1_tcp_connection.html#a5f9d8c51b069583c40b69d0ead386efa">TYPE</a> = &quot;TCP&quot;</td></tr>
+<tr class="separator:a5f9d8c51b069583c40b69d0ead386efa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_attribs_classmip_1_1_connection"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classmip_1_1_connection')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="classmip_1_1_connection.html">mip::Connection</a></td></tr>
+<tr class="memitem:a8275613f4595970fc39a2d817e3677eb inherit pub_static_attribs_classmip_1_1_connection"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_connection.html#a8275613f4595970fc39a2d817e3677eb">TYPE</a> = &quot;None&quot;</td></tr>
+<tr class="separator:a8275613f4595970fc39a2d817e3677eb inherit pub_static_attribs_classmip_1_1_connection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_attribs_classmip_1_1_connection"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classmip_1_1_connection')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classmip_1_1_connection.html">mip::Connection</a></td></tr>
+<tr class="memitem:a1dddc240b5c0b280490a605f40da2b42 inherit pro_attribs_classmip_1_1_connection"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_connection.html#a1dddc240b5c0b280490a605f40da2b42">mType</a></td></tr>
+<tr class="separator:a1dddc240b5c0b280490a605f40da2b42 inherit pro_attribs_classmip_1_1_connection"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Can be used on Windows, OSX, or linux to communicate with a MIP device over TCP. </p>
@@ -206,6 +227,42 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a18959631daf61f7e4ef738342f791546"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18959631daf61f7e4ef738342f791546">&#9670;&nbsp;</a></span>connectionInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::platform::TcpConnection::connectionInfo </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>host_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t &amp;&#160;</td>
+          <td class="paramname"><em>port</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a58084181a8db98e8e77b2f221ce3ed10"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a58084181a8db98e8e77b2f221ce3ed10">&#9670;&nbsp;</a></span>recvFromDevice()</h2>
 
@@ -317,6 +374,29 @@ Public Member Functions</h2></td></tr>
 </dl>
 
 <p>Implements <a class="el" href="classmip_1_1_connection.html#ad56be6630183ec4cc9cf5f59b4d46e53">mip::Connection</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a5f9d8c51b069583c40b69d0ead386efa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f9d8c51b069583c40b69d0ead386efa">&#9670;&nbsp;</a></span>TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto mip::platform::TcpConnection::TYPE = &quot;TCP&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
