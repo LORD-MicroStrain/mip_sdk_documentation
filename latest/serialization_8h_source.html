@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-44-g7ab5c18</span>
+   &#160;<span id="projectnumber">v1.0.0-45-g1427a72</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -193,9 +193,9 @@ $(function() {
 <div class="line"><a name="l00191"></a><span class="lineno"><a class="line" href="group__mip__serialization__cpp.html#gafd85c1899cd238b61a308e45d129fcd7">  191</a></span>&#160;<span class="comment">/*void*/</span> <a class="code" href="namespacemip.html#a6a81402aa7f571152391c49eb4734b98">insert</a>(<a class="code" href="classmip_1_1_serializer.html">Serializer</a>&amp; serializer, Enum value) { <span class="keywordflow">return</span> <a class="code" href="namespacemip.html#a6a81402aa7f571152391c49eb4734b98">insert</a>(serializer, <span class="keyword">static_cast&lt;</span> typename std::underlying_type&lt;Enum&gt;::type <span class="keyword">&gt;</span>(value) ); }</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00206"></a><span class="lineno"><a class="line" href="group__mip__serialization__cpp.html#ga58d03af3b935d2eca2c2263d5344c660">  206</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="namespacemip.html#a6a81402aa7f571152391c49eb4734b98">insert</a>(<span class="keyword">const</span> T&amp; value, uint8_t* buffer, <span class="keywordtype">size_t</span> bufferSize)</div>
+<div class="line"><a name="l00206"></a><span class="lineno"><a class="line" href="group__mip__serialization__cpp.html#ga39f6578b7d7cb23b11d2f3db4b064741">  206</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="namespacemip.html#a6a81402aa7f571152391c49eb4734b98">insert</a>(<span class="keyword">const</span> T&amp; value, uint8_t* buffer, <span class="keywordtype">size_t</span> bufferSize, <span class="keywordtype">size_t</span> offset=0)</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;{</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <a class="code" href="classmip_1_1_serializer.html">Serializer</a> serializer(buffer, bufferSize);</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <a class="code" href="classmip_1_1_serializer.html">Serializer</a> serializer(buffer, bufferSize, offset);</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <a class="code" href="namespacemip.html#a6a81402aa7f571152391c49eb4734b98">insert</a>(serializer, value);</div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keywordflow">return</span> !!serializer;</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;}</div>
