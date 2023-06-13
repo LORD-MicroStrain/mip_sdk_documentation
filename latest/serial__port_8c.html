@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-45-g1427a72</span>
+   &#160;<span id="projectnumber">v1.0.0-47-g8f90815</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -102,11 +102,15 @@ Include dependency graph for serial_port.c:</div>
 Macros</h2></td></tr>
 <tr class="memitem:a52aea8ccf62eb25ad3392ff1cb65c043"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="serial__port_8c.html#a52aea8ccf62eb25ad3392ff1cb65c043">COM_PORT_BUFFER_SIZE</a>&#160;&#160;&#160;0x200</td></tr>
 <tr class="separator:a52aea8ccf62eb25ad3392ff1cb65c043"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fdc7facea201bfce4ad308105f88d0c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="serial__port_8c.html#a5fdc7facea201bfce4ad308105f88d0c">INVALID_HANDLE_VALUE</a>&#160;&#160;&#160;-1</td></tr>
+<tr class="separator:a5fdc7facea201bfce4ad308105f88d0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ae85d6622d86de772888fe42bf9cdd229"><td class="memItemLeft" align="right" valign="top">speed_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="serial__port_8c.html#ae85d6622d86de772888fe42bf9cdd229">baud_rate_to_speed</a> (int baud_rate)</td></tr>
 <tr class="separator:ae85d6622d86de772888fe42bf9cdd229"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabec163ed108c049634b34e43e48c9cd2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__serial.html#gabec163ed108c049634b34e43e48c9cd2">serial_port_init</a> (<a class="el" href="structserial__port.html">serial_port</a> *port)</td></tr>
+<tr class="separator:gabec163ed108c049634b34e43e48c9cd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga21191ddf667e39e8ee411b31989ddd18"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__serial.html#ga21191ddf667e39e8ee411b31989ddd18">serial_port_open</a> (<a class="el" href="structserial__port.html">serial_port</a> *port, const char *port_str, int baudrate)</td></tr>
 <tr class="separator:ga21191ddf667e39e8ee411b31989ddd18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab22be2d843a33c8e421bec2dbecfe9b8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__serial.html#gab22be2d843a33c8e421bec2dbecfe9b8">serial_port_close</a> (<a class="el" href="structserial__port.html">serial_port</a> *port)</td></tr>
@@ -117,8 +121,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga4134cf0b7afa1e0d463ab3757b99c571"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga274b8566702fcf030b3266aaec09b17c"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__serial.html#ga274b8566702fcf030b3266aaec09b17c">serial_port_read_count</a> (<a class="el" href="structserial__port.html">serial_port</a> *port)</td></tr>
 <tr class="separator:ga274b8566702fcf030b3266aaec09b17c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga97308783ea48d20abfc1b85606723763"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__serial.html#ga97308783ea48d20abfc1b85606723763">serial_port_is_open</a> (<a class="el" href="structserial__port.html">serial_port</a> *port)</td></tr>
-<tr class="separator:ga97308783ea48d20abfc1b85606723763"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga10fccc988cda59890fcd5d3cfd846e61"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__serial.html#ga10fccc988cda59890fcd5d3cfd846e61">serial_port_is_open</a> (const <a class="el" href="structserial__port.html">serial_port</a> *port)</td></tr>
+<tr class="separator:ga10fccc988cda59890fcd5d3cfd846e61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a52aea8ccf62eb25ad3392ff1cb65c043"></a>
@@ -129,6 +133,20 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define COM_PORT_BUFFER_SIZE&#160;&#160;&#160;0x200</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5fdc7facea201bfce4ad308105f88d0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fdc7facea201bfce4ad308105f88d0c">&#9670;&nbsp;</a></span>INVALID_HANDLE_VALUE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define INVALID_HANDLE_VALUE&#160;&#160;&#160;-1</td>
         </tr>
       </table>
 </div><div class="memdoc">
