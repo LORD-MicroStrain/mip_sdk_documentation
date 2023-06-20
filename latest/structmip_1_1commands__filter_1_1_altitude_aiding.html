@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-47-g8f90815</span>
+   &#160;<span id="projectnumber">v1.0.0-66-g08856cd</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -69,6 +69,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="structmip_1_1commands__filter_1_1_altitude_aiding-members.html">List of all members</a>  </div>
@@ -84,13 +85,20 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_altitude_aiding_1_1_response.html">Response</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a9cc2259d82c82d67867caf4b9ae0b72f"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_altitude_aiding.html#a9cc2259d82c82d67867caf4b9ae0b72f">AidingSelector</a> : uint8_t { <a class="el" href="structmip_1_1commands__filter_1_1_altitude_aiding.html#a9cc2259d82c82d67867caf4b9ae0b72fab50339a10e1de285ac99d4c3990b8693">NONE</a> = 0
+, <a class="el" href="structmip_1_1commands__filter_1_1_altitude_aiding.html#a9cc2259d82c82d67867caf4b9ae0b72fa499c7b0509639050bca36b53bda4452c">PRESURE</a> = 1
+ }</td></tr>
+<tr class="separator:a9cc2259d82c82d67867caf4b9ae0b72f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:aee6ec6afdbb38d4796d47f0692482dba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemip.html#a2dde9cdf5ebc86cf62e8c2591dcb56de">FunctionSelector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_altitude_aiding.html#aee6ec6afdbb38d4796d47f0692482dba">function</a> = static_cast&lt;<a class="el" href="namespacemip.html#a2dde9cdf5ebc86cf62e8c2591dcb56de">FunctionSelector</a>&gt;(0)</td></tr>
 <tr class="separator:aee6ec6afdbb38d4796d47f0692482dba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a692910e9d3dc47860d0dc36ab0ef326d"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_altitude_aiding.html#a692910e9d3dc47860d0dc36ab0ef326d">aiding_selector</a> = 0</td></tr>
-<tr class="memdesc:a692910e9d3dc47860d0dc36ab0ef326d"><td class="mdescLeft">&#160;</td><td class="mdescRight">See above.  <a href="structmip_1_1commands__filter_1_1_altitude_aiding.html#a692910e9d3dc47860d0dc36ab0ef326d">More...</a><br /></td></tr>
-<tr class="separator:a692910e9d3dc47860d0dc36ab0ef326d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a506e9c10e7ba0ebfef42f707c23dae62"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1commands__filter_1_1_altitude_aiding.html#a9cc2259d82c82d67867caf4b9ae0b72f">AidingSelector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_altitude_aiding.html#a506e9c10e7ba0ebfef42f707c23dae62">selector</a> = static_cast&lt;<a class="el" href="structmip_1_1commands__filter_1_1_altitude_aiding.html#a9cc2259d82c82d67867caf4b9ae0b72f">AidingSelector</a>&gt;(0)</td></tr>
+<tr class="memdesc:a506e9c10e7ba0ebfef42f707c23dae62"><td class="mdescLeft">&#160;</td><td class="mdescRight">See above.  <a href="structmip_1_1commands__filter_1_1_altitude_aiding.html#a506e9c10e7ba0ebfef42f707c23dae62">More...</a><br /></td></tr>
+<tr class="separator:a506e9c10e7ba0ebfef42f707c23dae62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -109,23 +117,36 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:aea04773bc9c76d4b05c4a36dcc8dac23"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_altitude_aiding.html#aea04773bc9c76d4b05c4a36dcc8dac23">HAS_RESET_FUNCTION</a> = true</td></tr>
 <tr class="separator:aea04773bc9c76d4b05c4a36dcc8dac23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a692910e9d3dc47860d0dc36ab0ef326d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a692910e9d3dc47860d0dc36ab0ef326d">&#9670;&nbsp;</a></span>aiding_selector</h2>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a9cc2259d82c82d67867caf4b9ae0b72f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cc2259d82c82d67867caf4b9ae0b72f">&#9670;&nbsp;</a></span>AidingSelector</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t mip::commands_filter::AltitudeAiding::aiding_selector = 0</td>
+          <td class="memname">enum <a class="el" href="structmip_1_1commands__filter_1_1_altitude_aiding.html#a9cc2259d82c82d67867caf4b9ae0b72f">mip::commands_filter::AltitudeAiding::AidingSelector</a> : uint8_t</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-
-<p>See above. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a9cc2259d82c82d67867caf4b9ae0b72fab50339a10e1de285ac99d4c3990b8693"></a>NONE&#160;</td><td class="fielddoc"><p>No altitude aiding. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9cc2259d82c82d67867caf4b9ae0b72fa499c7b0509639050bca36b53bda4452c"></a>PRESURE&#160;</td><td class="fielddoc"><p>Enable pressure sensor aiding. </p>
+</td></tr>
+</table>
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
 <a id="ad398775005211c9ebc7dad711dc13422"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad398775005211c9ebc7dad711dc13422">&#9670;&nbsp;</a></span>DESCRIPTOR_SET</h2>
 
@@ -291,6 +312,22 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a506e9c10e7ba0ebfef42f707c23dae62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a506e9c10e7ba0ebfef42f707c23dae62">&#9670;&nbsp;</a></span>selector</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structmip_1_1commands__filter_1_1_altitude_aiding.html#a9cc2259d82c82d67867caf4b9ae0b72f">AidingSelector</a> mip::commands_filter::AltitudeAiding::selector = static_cast&lt;<a class="el" href="structmip_1_1commands__filter_1_1_altitude_aiding.html#a9cc2259d82c82d67867caf4b9ae0b72f">AidingSelector</a>&gt;(0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>See above. </p>
 
 </div>
 </div>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-47-g8f90815</span>
+   &#160;<span id="projectnumber">v1.0.0-66-g08856cd</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -173,6 +173,8 @@ $(function() {
 , <a class="el" href="structmip_1_1commands__3dm_1_1_complementary_filter_1_1_response.html#a6d41ef215e88680ecc2c6bb3184b8d3f">mip::commands_3dm::ComplementaryFilter::Response</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1_coning_sculling_enable.html#afc9a26447553730d67dda5318e16b520">mip::commands_3dm::ConingScullingEnable</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1_coning_sculling_enable_1_1_response.html#afdb636df9593047dc59bed0b06711e10">mip::commands_3dm::ConingScullingEnable::Response</a>
+, <a class="el" href="structmip_1_1commands__3dm_1_1_constellation_settings.html#a7673ab3d01bb15b848af21a195927224">mip::commands_3dm::ConstellationSettings</a>
+, <a class="el" href="structmip_1_1commands__3dm_1_1_constellation_settings_1_1_response.html#a187bcf0a3ad863262b83d5ed8aa11053">mip::commands_3dm::ConstellationSettings::Response</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1_datastream_control.html#a73b2f48caa713fa976e7ac44fd91cd46">mip::commands_3dm::DatastreamControl</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1_datastream_control_1_1_response.html#a14e46cd83c8e3b688476f3ab9a2fbf5f">mip::commands_3dm::DatastreamControl::Response</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1_device_settings.html#a4d421d7f24748af39e737543c2d38028">mip::commands_3dm::DeviceSettings</a>
@@ -195,6 +197,8 @@ $(function() {
 , <a class="el" href="structmip_1_1commands__3dm_1_1_get_event_support_1_1_response.html#a7d697098420f3a3ca3cd1d565aaaabca">mip::commands_3dm::GetEventSupport::Response</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1_get_event_trigger_status.html#a5f60deca996483f7ce321592cc25be44">mip::commands_3dm::GetEventTriggerStatus</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1_get_event_trigger_status_1_1_response.html#a434bccec80143b02053729ce189c58f6">mip::commands_3dm::GetEventTriggerStatus::Response</a>
+, <a class="el" href="structmip_1_1commands__3dm_1_1_gnss_assisted_fix.html#a14a1151fa1364a53859d224324725639">mip::commands_3dm::GnssAssistedFix</a>
+, <a class="el" href="structmip_1_1commands__3dm_1_1_gnss_assisted_fix_1_1_response.html#a67c1b106e8f2880ef21d010b61954232">mip::commands_3dm::GnssAssistedFix::Response</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1_gnss_sbas_settings.html#a3b0ade2221f2a165cd1f3332ee7ed3a9">mip::commands_3dm::GnssSbasSettings</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1_gnss_sbas_settings_1_1_response.html#a6db23ca8397fc85e42b5bcfc84b7282b">mip::commands_3dm::GnssSbasSettings::Response</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1_gnss_time_assistance.html#a58602137229aa03c2bab204ce86caf82">mip::commands_3dm::GnssTimeAssistance</a>
@@ -292,6 +296,8 @@ $(function() {
 , <a class="el" href="structmip_1_1commands__filter_1_1_gnss_antenna_cal_control_1_1_response.html#abee767f5f702c11efc633d54df860b6c">mip::commands_filter::GnssAntennaCalControl::Response</a>
 , <a class="el" href="structmip_1_1commands__filter_1_1_gnss_source.html#a056d80a6074fdb6159cd54ecbb3e072e">mip::commands_filter::GnssSource</a>
 , <a class="el" href="structmip_1_1commands__filter_1_1_gnss_source_1_1_response.html#a16d71845927915b90330b1122fb703ff">mip::commands_filter::GnssSource::Response</a>
+, <a class="el" href="structmip_1_1commands__filter_1_1_gravity_noise.html#a3000ec1240a6a3908d4b3a3addc5ecdc">mip::commands_filter::GravityNoise</a>
+, <a class="el" href="structmip_1_1commands__filter_1_1_gravity_noise_1_1_response.html#ac422c0d5659b5184da2951a42bf20090">mip::commands_filter::GravityNoise::Response</a>
 , <a class="el" href="structmip_1_1commands__filter_1_1_gyro_bias_model.html#a38a5cd17928d4e6f5a9f9097c381b7ac">mip::commands_filter::GyroBiasModel</a>
 , <a class="el" href="structmip_1_1commands__filter_1_1_gyro_bias_model_1_1_response.html#acf6b905f899c464d5690a378edf5e532">mip::commands_filter::GyroBiasModel::Response</a>
 , <a class="el" href="structmip_1_1commands__filter_1_1_gyro_noise.html#a7ee9fbe28b4815d2898637a092446b36">mip::commands_filter::GyroNoise</a>
@@ -300,18 +306,29 @@ $(function() {
 , <a class="el" href="structmip_1_1commands__filter_1_1_hard_iron_offset_noise_1_1_response.html#a590ad7fe4c1d822d197579afeee4177a">mip::commands_filter::HardIronOffsetNoise::Response</a>
 , <a class="el" href="structmip_1_1commands__filter_1_1_heading_source.html#aecb4949ed881feb6a05f83db9de71cba">mip::commands_filter::HeadingSource</a>
 , <a class="el" href="structmip_1_1commands__filter_1_1_heading_source_1_1_response.html#a31b4a1567a7a4eb1dba62e6d53862177">mip::commands_filter::HeadingSource::Response</a>
+, <a class="el" href="structmip_1_1commands__filter_1_1_inclination_source.html#af9c7a3c9d2ed51c7a5bd41ac5568d077">mip::commands_filter::InclinationSource</a>
+, <a class="el" href="structmip_1_1commands__filter_1_1_inclination_source_1_1_response.html#ac31379da63bd288510f2ef02c5c19204">mip::commands_filter::InclinationSource::Response</a>
 , <a class="el" href="structmip_1_1commands__filter_1_1_initialization_configuration.html#a9705d2abbb223e97808775cef9b4c63c">mip::commands_filter::InitializationConfiguration</a>
 , <a class="el" href="structmip_1_1commands__filter_1_1_initialization_configuration_1_1_response.html#a5d45265631247ef7bb28146737ba5385">mip::commands_filter::InitializationConfiguration::Response</a>
 , <a class="el" href="structmip_1_1commands__filter_1_1_kinematic_constraint.html#a7a6f03f027d638816d005656375ad121">mip::commands_filter::KinematicConstraint</a>
 , <a class="el" href="structmip_1_1commands__filter_1_1_kinematic_constraint_1_1_response.html#a7f4b7861dadba02eed12d303b7d1146e">mip::commands_filter::KinematicConstraint::Response</a>
+, <a class="el" href="structmip_1_1commands__filter_1_1_mag_capture_auto_cal.html#a0a739b6d9f0c5ed77d078428e1db7bbb">mip::commands_filter::MagCaptureAutoCal</a>
 , <a class="el" href="structmip_1_1commands__filter_1_1_mag_dip_angle_error_adaptive_measurement.html#a22acc56c7c50a430d3d4964ddb7b5f33">mip::commands_filter::MagDipAngleErrorAdaptiveMeasurement</a>
 , <a class="el" href="structmip_1_1commands__filter_1_1_mag_dip_angle_error_adaptive_measurement_1_1_response.html#ad12802b4b2c77ef8b4d7650d1c7ea89c">mip::commands_filter::MagDipAngleErrorAdaptiveMeasurement::Response</a>
+, <a class="el" href="structmip_1_1commands__filter_1_1_mag_field_magnitude_source.html#a8cf78b5e0a60d3f5e6623f9d31fdff20">mip::commands_filter::MagFieldMagnitudeSource</a>
+, <a class="el" href="structmip_1_1commands__filter_1_1_mag_field_magnitude_source_1_1_response.html#a5dde7b7d09ceffa3133cc3690166104b">mip::commands_filter::MagFieldMagnitudeSource::Response</a>
 , <a class="el" href="structmip_1_1commands__filter_1_1_mag_magnitude_error_adaptive_measurement.html#a46bd4e7a762a4ece6b392b3c1f9ffd8b">mip::commands_filter::MagMagnitudeErrorAdaptiveMeasurement</a>
 , <a class="el" href="structmip_1_1commands__filter_1_1_mag_magnitude_error_adaptive_measurement_1_1_response.html#a5763969073c81c7a1f9be172cb288873">mip::commands_filter::MagMagnitudeErrorAdaptiveMeasurement::Response</a>
 , <a class="el" href="structmip_1_1commands__filter_1_1_magnetic_declination_source.html#ae9b1c5a098ffd05fed7f55bdd7cdf62c">mip::commands_filter::MagneticDeclinationSource</a>
 , <a class="el" href="structmip_1_1commands__filter_1_1_magnetic_declination_source_1_1_response.html#a0f77fd0acf20cb28298438348c802965">mip::commands_filter::MagneticDeclinationSource::Response</a>
+, <a class="el" href="structmip_1_1commands__filter_1_1_mag_noise.html#a650117db3f4990129795232e1188774b">mip::commands_filter::MagNoise</a>
+, <a class="el" href="structmip_1_1commands__filter_1_1_mag_noise_1_1_response.html#a47404b53727871de16d5fa89b249015e">mip::commands_filter::MagNoise::Response</a>
 , <a class="el" href="structmip_1_1commands__filter_1_1_multi_antenna_offset.html#a4605c59fd13eb97282b380c148f99c3c">mip::commands_filter::MultiAntennaOffset</a>
 , <a class="el" href="structmip_1_1commands__filter_1_1_multi_antenna_offset_1_1_response.html#a8be737360b5be452f8e2e29fc77e5de2">mip::commands_filter::MultiAntennaOffset::Response</a>
+, <a class="el" href="structmip_1_1commands__filter_1_1_pitch_roll_aiding.html#a452adce438dbac2283383f70fc11a7bf">mip::commands_filter::PitchRollAiding</a>
+, <a class="el" href="structmip_1_1commands__filter_1_1_pitch_roll_aiding_1_1_response.html#afbd882a0010514cc7c0e2efca92a334f">mip::commands_filter::PitchRollAiding::Response</a>
+, <a class="el" href="structmip_1_1commands__filter_1_1_pressure_altitude_noise.html#ae19336c1ae0339c070762a2fb205d667">mip::commands_filter::PressureAltitudeNoise</a>
+, <a class="el" href="structmip_1_1commands__filter_1_1_pressure_altitude_noise_1_1_response.html#a520e009cdecd15931b74e9c0532cb376">mip::commands_filter::PressureAltitudeNoise::Response</a>
 , <a class="el" href="structmip_1_1commands__filter_1_1_reference_position.html#a8af115887af2b79ba1bb30d065edd7c9">mip::commands_filter::ReferencePosition</a>
 , <a class="el" href="structmip_1_1commands__filter_1_1_reference_position_1_1_response.html#abe00c6e9b542f851076d83b36b1ba662">mip::commands_filter::ReferencePosition::Response</a>
 , <a class="el" href="structmip_1_1commands__filter_1_1_ref_point_lever_arm.html#ab5a5d525f21b37b49fbb71cb9e9f98db">mip::commands_filter::RefPointLeverArm</a>
@@ -330,6 +347,8 @@ $(function() {
 , <a class="el" href="structmip_1_1commands__filter_1_1_sensor_to_vehicle_rotation_quaternion_1_1_response.html#ade3cb7dcca6865a5e2d6bfb32af314d8">mip::commands_filter::SensorToVehicleRotationQuaternion::Response</a>
 , <a class="el" href="structmip_1_1commands__filter_1_1_set_initial_attitude.html#af0c0a88701705ec52eafedf057aead27">mip::commands_filter::SetInitialAttitude</a>
 , <a class="el" href="structmip_1_1commands__filter_1_1_set_initial_heading.html#ad9d4b6e7a4254b1323c2ec7eee13eb15">mip::commands_filter::SetInitialHeading</a>
+, <a class="el" href="structmip_1_1commands__filter_1_1_soft_iron_matrix_noise.html#ac301c9200c0f53cb3cd689ebcd1df6f7">mip::commands_filter::SoftIronMatrixNoise</a>
+, <a class="el" href="structmip_1_1commands__filter_1_1_soft_iron_matrix_noise_1_1_response.html#aa74b64630773182b22e038298f5d3331">mip::commands_filter::SoftIronMatrixNoise::Response</a>
 , <a class="el" href="structmip_1_1commands__filter_1_1_speed_lever_arm.html#a6a833c55851d7e7486184b57f1be2d68">mip::commands_filter::SpeedLeverArm</a>
 , <a class="el" href="structmip_1_1commands__filter_1_1_speed_lever_arm_1_1_response.html#a78cebddbb73d881b3792b8dd0c6c2e85">mip::commands_filter::SpeedLeverArm::Response</a>
 , <a class="el" href="structmip_1_1commands__filter_1_1_speed_measurement.html#ae9918b8ea4b88a45f0f0a80716c7dd22">mip::commands_filter::SpeedMeasurement</a>
@@ -561,11 +580,11 @@ $(function() {
 <li>dgnssUsed()
 : <a class="el" href="structmip_1_1data__gnss_1_1_fix_info_1_1_fix_flags.html#ad7f02a999dd6dfc952953a8d400e7101">mip::data_gnss::FixInfo::FixFlags</a>
 </li>
-<li>DIFFERENTIAL
-: <a class="el" href="structmip_1_1data__filter_1_1_gnss_aid_status_flags.html#a1ce836756563662c0d8c76698b3943bea32c12876d2577d3574ace6c992a38b25">mip::data_filter::GnssAidStatusFlags</a>
-</li>
 <li>differential()
 : <a class="el" href="structmip_1_1data__filter_1_1_gnss_aid_status_flags.html#abbdd7886f2d7baaf30cb9a6e78420840">mip::data_filter::GnssAidStatusFlags</a>
+</li>
+<li>DIFFERENTIAL
+: <a class="el" href="structmip_1_1data__filter_1_1_gnss_aid_status_flags.html#a1ce836756563662c0d8c76698b3943bea32c12876d2577d3574ace6c992a38b25">mip::data_filter::GnssAidStatusFlags</a>
 </li>
 <li>disconnect()
 : <a class="el" href="classmip_1_1_connection.html#a855f4edd0554e757847da59463693fd1">mip::Connection</a>
@@ -602,12 +621,10 @@ $(function() {
 <li>doppler
 : <a class="el" href="structmip_1_1_c_1_1mip__gnss__raw__data.html#a087c37d28da8942d5468bd7e46e8f53f">mip::C::mip_gnss_raw_data</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1_raw.html#ad4f537db4589b406c6471d9b80cff55e">mip::data_gnss::Raw</a>
+, <a class="el" href="structmip_1_1data__gnss_1_1_raw_1_1_valid_flags.html#ac2f0e990228a0f762f383081b7856a22">mip::data_gnss::Raw::ValidFlags</a>
 </li>
 <li>DOPPLER
 : <a class="el" href="structmip_1_1data__gnss_1_1_raw_1_1_valid_flags.html#a896b931f26ab3d9d16bd4e80b3dff2bea6276528e49e688c0b09989e5b1835109">mip::data_gnss::Raw::ValidFlags</a>
-</li>
-<li>doppler()
-: <a class="el" href="structmip_1_1data__gnss_1_1_raw_1_1_valid_flags.html#ac2f0e990228a0f762f383081b7856a22">mip::data_gnss::Raw::ValidFlags</a>
 </li>
 <li>doppler_uncert
 : <a class="el" href="structmip_1_1_c_1_1mip__gnss__raw__data.html#acd3e2fb381e7aa3855f170f6bbf049a6">mip::C::mip_gnss_raw_data</a>
@@ -631,19 +648,17 @@ $(function() {
 : <a class="el" href="structmip_1_1_c_1_1mip__gnss__clock__info__2__data.html#adbc443d616e12291b8eb60501bc2dbe7">mip::C::mip_gnss_clock_info_2_data</a>
 , <a class="el" href="structmip_1_1_c_1_1mip__gnss__clock__info__data.html#aeb5a35eb6bced5244c60d88ba99d6ad8">mip::C::mip_gnss_clock_info_data</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1_clock_info2.html#af937c24e29f58e7068f4c10d8ffbcfc3">mip::data_gnss::ClockInfo2</a>
+, <a class="el" href="structmip_1_1data__gnss_1_1_clock_info2_1_1_valid_flags.html#a548435788c53b11c6a85ce616247438a">mip::data_gnss::ClockInfo2::ValidFlags</a>
 </li>
 <li>DRIFT
 : <a class="el" href="structmip_1_1data__gnss_1_1_clock_info2_1_1_valid_flags.html#adf3c4705c42457407973c9b1cffd365ca0d7e405fa4a3293f802a8923a3c3b641">mip::data_gnss::ClockInfo2::ValidFlags</a>
 </li>
-<li>drift()
-: <a class="el" href="structmip_1_1data__gnss_1_1_clock_info2_1_1_valid_flags.html#a548435788c53b11c6a85ce616247438a">mip::data_gnss::ClockInfo2::ValidFlags</a>
-, <a class="el" href="structmip_1_1data__gnss_1_1_clock_info.html#a82b0343b60e0ef02da21628122d7323b">mip::data_gnss::ClockInfo</a>
+<li>drift
+: <a class="el" href="structmip_1_1data__gnss_1_1_clock_info.html#a82b0343b60e0ef02da21628122d7323b">mip::data_gnss::ClockInfo</a>
+, <a class="el" href="structmip_1_1data__gnss_1_1_clock_info_1_1_valid_flags.html#a359a8c1f679e268e588d80c375bf46f6">mip::data_gnss::ClockInfo::ValidFlags</a>
 </li>
 <li>DRIFT
 : <a class="el" href="structmip_1_1data__gnss_1_1_clock_info_1_1_valid_flags.html#a8d66dacf948a9eedf2287c88b5383b96abe4a121ab52ecaec255973c8665b6efa">mip::data_gnss::ClockInfo::ValidFlags</a>
-</li>
-<li>drift()
-: <a class="el" href="structmip_1_1data__gnss_1_1_clock_info_1_1_valid_flags.html#a359a8c1f679e268e588d80c375bf46f6">mip::data_gnss::ClockInfo::ValidFlags</a>
 </li>
 <li>DRIFT_ACCURACY
 : <a class="el" href="structmip_1_1data__gnss_1_1_clock_info2_1_1_valid_flags.html#adf3c4705c42457407973c9b1cffd365caba3f32aed8c8e24b444a95ce56693524">mip::data_gnss::ClockInfo2::ValidFlags</a>

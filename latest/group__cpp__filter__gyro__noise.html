@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-47-g8f90815</span>
+   &#160;<span id="projectnumber">v1.0.0-66-g08856cd</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -95,10 +95,10 @@ Functions</h2></td></tr>
 <tr class="separator:gad0c7dbe2ac7d97308f50a27b217706f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga26d0bbe4eeff87ed4c66dce969f16e93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__filter__gyro__noise.html#ga26d0bbe4eeff87ed4c66dce969f16e93">mip::commands_filter::extract</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, <a class="el" href="structmip_1_1commands__filter_1_1_gyro_noise_1_1_response.html">GyroNoise::Response</a> &amp;self)</td></tr>
 <tr class="separator:ga26d0bbe4eeff87ed4c66dce969f16e93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga56b6edef504a3b95483f5b3dfc9145da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__filter__gyro__noise.html#ga56b6edef504a3b95483f5b3dfc9145da">mip::commands_filter::writeGyroNoise</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, float x, float y, float z)</td></tr>
-<tr class="separator:ga56b6edef504a3b95483f5b3dfc9145da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga05d9a77ef8ae31e08ef1935ea0010bf8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__filter__gyro__noise.html#ga05d9a77ef8ae31e08ef1935ea0010bf8">mip::commands_filter::readGyroNoise</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, float *xOut, float *yOut, float *zOut)</td></tr>
-<tr class="separator:ga05d9a77ef8ae31e08ef1935ea0010bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga089afa01899b4cb8c8fa05be3ba2451a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__filter__gyro__noise.html#ga089afa01899b4cb8c8fa05be3ba2451a">mip::commands_filter::writeGyroNoise</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, const float *noise)</td></tr>
+<tr class="separator:ga089afa01899b4cb8c8fa05be3ba2451a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga27995eacc0e7466e9944ea9ebebbcd18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__filter__gyro__noise.html#ga27995eacc0e7466e9944ea9ebebbcd18">mip::commands_filter::readGyroNoise</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, float *noiseOut)</td></tr>
+<tr class="separator:ga27995eacc0e7466e9944ea9ebebbcd18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4fda36ffee8de69bc97f67de1ce52883"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__filter__gyro__noise.html#ga4fda36ffee8de69bc97f67de1ce52883">mip::commands_filter::saveGyroNoise</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device)</td></tr>
 <tr class="separator:ga4fda36ffee8de69bc97f67de1ce52883"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad6501aaf69ea6b95c2265bcfc51fde7f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__filter__gyro__noise.html#gad6501aaf69ea6b95c2265bcfc51fde7f">mip::commands_filter::loadGyroNoise</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device)</td></tr>
@@ -109,7 +109,7 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Gyroscope Noise Standard Deviation</p>
 <p>Each of the noise values must be greater than 0.0</p>
-<p>The noise value represents process noise in the 3DM-GX5-45 NAV Estimation Filter. Changing this value modifies how the filter responds to dynamic input and can be used to tune the performance of the filter. Default values provide good performance for most laboratory conditions. </p>
+<p>The noise value represents process noise in the Estimation Filter. Changing this value modifies how the filter responds to dynamic input and can be used to tune the performance of the filter. Default values provide good performance for most laboratory conditions. </p>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ga30753cddd0cee139ef1e72555ae2747e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga30753cddd0cee139ef1e72555ae2747e">&#9670;&nbsp;</a></span>defaultGyroNoise()</h2>
@@ -259,8 +259,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga05d9a77ef8ae31e08ef1935ea0010bf8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga05d9a77ef8ae31e08ef1935ea0010bf8">&#9670;&nbsp;</a></span>readGyroNoise()</h2>
+<a id="ga27995eacc0e7466e9944ea9ebebbcd18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga27995eacc0e7466e9944ea9ebebbcd18">&#9670;&nbsp;</a></span>readGyroNoise()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -275,19 +275,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float *&#160;</td>
-          <td class="paramname"><em>xOut</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float *&#160;</td>
-          <td class="paramname"><em>yOut</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float *&#160;</td>
-          <td class="paramname"><em>zOut</em>&#160;</td>
+          <td class="paramname"><em>noiseOut</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -317,8 +305,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga56b6edef504a3b95483f5b3dfc9145da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga56b6edef504a3b95483f5b3dfc9145da">&#9670;&nbsp;</a></span>writeGyroNoise()</h2>
+<a id="ga089afa01899b4cb8c8fa05be3ba2451a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga089afa01899b4cb8c8fa05be3ba2451a">&#9670;&nbsp;</a></span>writeGyroNoise()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -332,20 +320,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>y</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>z</em>&#160;</td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>noise</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

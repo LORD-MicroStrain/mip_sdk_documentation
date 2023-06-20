@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['talkerid_9452',['TalkerID',['../structmip_1_1commands__3dm_1_1_nmea_message.html#a798330819a16bc370e28ac7006e61145',1,'mip::commands_3dm::NmeaMessage']]],
-  ['timeformat_9453',['TimeFormat',['../group__base__commands__cpp.html#gac8e513d1e146840aec0e51ba48a0ccf8',1,'mip::commands_base']]],
-  ['type_9454',['Type',['../structmip_1_1commands__3dm_1_1_event_trigger_1_1_threshold_params.html#af7ad474c722e8f4b32f9015be04cf4be',1,'mip::commands_3dm::EventTrigger::ThresholdParams::Type()'],['../structmip_1_1commands__3dm_1_1_event_trigger.html#a6c69d89e9e11917903fa0636224fbaa4',1,'mip::commands_3dm::EventTrigger::Type()'],['../structmip_1_1commands__3dm_1_1_event_action.html#acaaa3fb9ee82b5942ebada494863723b',1,'mip::commands_3dm::EventAction::Type()'],['../structmip_1_1commands__rtk_1_1_connected_device_type.html#a99e9a523b4dba56c5ebb25754d36a9f0',1,'mip::commands_rtk::ConnectedDeviceType::Type()']]]
+  ['sbassystem_9885',['SbasSystem',['../group__gnss__data__cpp.html#ga2606b441c814f29d42b58da25e1f5604',1,'mip::data_gnss']]],
+  ['sensorrangetype_9886',['SensorRangeType',['../group__dm__commands__cpp.html#gad5372f4174629781926a83e03d9bcfbc',1,'mip::commands_3dm']]],
+  ['source_9887',['Source',['../structmip_1_1commands__3dm_1_1_pps_source.html#a8b008a6819a38ee38ff29a221396c02f',1,'mip::commands_3dm::PpsSource::Source()'],['../structmip_1_1commands__filter_1_1_gnss_source.html#ae8e2581226880694b8e70b3dde491331',1,'mip::commands_filter::GnssSource::Source()'],['../structmip_1_1commands__filter_1_1_heading_source.html#a8b60e40aa069f286ed3b2577f0a7cf7c',1,'mip::commands_filter::HeadingSource::Source()']]],
+  ['spoofingstate_9888',['SpoofingState',['../structmip_1_1data__gnss_1_1_rf_error_detection.html#ae1f3a6075734429f58964e3c1f3a63f8',1,'mip::data_gnss::RfErrorDetection']]]
 ];
