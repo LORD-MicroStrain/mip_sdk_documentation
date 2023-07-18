@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-85-g099088f</span>
+   &#160;<span id="projectnumber">v1.0.0-92-ge4aecbb</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -103,7 +103,7 @@ $(function() {
 , <a class="el" href="structmip_1_1data__gnss_1_1_gps_ephemeris.html#ad0b41b5332a5aaa4b9df4878af8f462c">mip::data_gnss::GpsEphemeris</a>
 </li>
 <li>cancelLastField()
-: <a class="el" href="classmip_1_1_packet.html#ac5708eef018b1d3d53d773f209fd9420">mip::Packet</a>
+: <a class="el" href="classmip_1_1_packet_ref.html#a759d3ea98721c9cc1e1e674c880af55f">mip::PacketRef</a>
 </li>
 <li>capacity()
 : <a class="el" href="classmip_1_1_serializer.html#ad95231be8327e8e93ac685021dc3f1a1">mip::Serializer</a>
@@ -143,7 +143,7 @@ $(function() {
 : <a class="el" href="structmip_1_1data__gnss_1_1_sv_info_1_1_valid_flags.html#a176dc2b0a091f62c53c67795d6311487af3094c04994f7a2e0873b6b5377c0af3">mip::data_gnss::SvInfo::ValidFlags</a>
 </li>
 <li>checksumValue()
-: <a class="el" href="classmip_1_1_packet.html#adb6e79158827a8f021060aad32f990f2">mip::Packet</a>
+: <a class="el" href="classmip_1_1_packet_ref.html#a604c1c3cb03bf73d22bb0aa9c8e49f3c">mip::PacketRef</a>
 </li>
 <li>clear()
 : <a class="el" href="structmip_1_1_cmd_queue.html#a5a2963dc7f728507374ecce272dfb90d">mip::CmdQueue</a>
@@ -174,7 +174,7 @@ $(function() {
 : <a class="el" href="structmip_1_1_composite_descriptor.html#a520c462913514dc2aa5f4fcf24129e84">mip::CompositeDescriptor</a>
 </li>
 <li>computeChecksum()
-: <a class="el" href="classmip_1_1_packet.html#a88bf8b7af50e295e516872ecd4ceda9c">mip::Packet</a>
+: <a class="el" href="classmip_1_1_packet_ref.html#a3661b83f2e72b7176fc9b273862d96c5">mip::PacketRef</a>
 </li>
 <li>config_count
 : <a class="el" href="structmip_1_1_c_1_1mip__3dm__constellation__settings__command.html#a97169bc646184aa21e6c356a0c09b615">mip::C::mip_3dm_constellation_settings_command</a>
@@ -235,6 +235,12 @@ $(function() {
 <li>controllerstatuscode()
 : <a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags_legacy.html#a99dc2db1b1ab43a5e0cae911b21a34d6">mip::commands_rtk::GetStatusFlags::StatusFlagsLegacy</a>
 </li>
+<li>copyFrom()
+: <a class="el" href="classmip_1_1_sized_packet_buf.html#ac7b44db9b2956904249e0ee2b447a824">mip::SizedPacketBuf&lt; BufferSize &gt;</a>
+</li>
+<li>copyTo()
+: <a class="el" href="classmip_1_1_sized_packet_buf.html#a773e3f68256f2552a65ff32325e5ce2c">mip::SizedPacketBuf&lt; BufferSize &gt;</a>
+</li>
 <li>CORRECTIONS_AVAILABLE
 : <a class="el" href="structmip_1_1data__gnss_1_1_sbas_info_1_1_sbas_status.html#a99263d339a1d4ede15c98a36ddccc059a9b4620e0338742c3d0b36210d2e82aa7">mip::data_gnss::SbasInfo::SbasStatus</a>
 </li>
@@ -282,10 +288,12 @@ $(function() {
 , <a class="el" href="structmip_1_1data__gnss_1_1_satellite_status.html#a56258d193a7fb0409543186ac720c533">mip::data_gnss::SatelliteStatus</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1_sbas_correction.html#afc3bc809059ff16a95fb98605e572530">mip::data_gnss::SbasCorrection</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1_sbas_info.html#aef5afff153b9ebd53a35038e2806ac93">mip::data_gnss::SbasInfo</a>
-, <a class="el" href="structmip_1_1data__gnss_1_1_sbas_info_1_1_valid_flags.html#a8221b0e493707d635e9399d3c67db48c">mip::data_gnss::SbasInfo::ValidFlags</a>
 </li>
 <li>COUNT
 : <a class="el" href="structmip_1_1data__gnss_1_1_sbas_info_1_1_valid_flags.html#a95f83338072706af37b336056fb58eb8ac10451c5a62a72e8530898b915001731">mip::data_gnss::SbasInfo::ValidFlags</a>
+</li>
+<li>count()
+: <a class="el" href="structmip_1_1data__gnss_1_1_sbas_info_1_1_valid_flags.html#a8221b0e493707d635e9399d3c67db48c">mip::data_gnss::SbasInfo::ValidFlags</a>
 </li>
 <li>counts
 : <a class="el" href="structmip_1_1_c_1_1mip__sensor__internal__timestamp__data.html#a8651ba720a1296e33a0900612c5acbc1">mip::C::mip_sensor_internal_timestamp_data</a>
@@ -296,7 +304,7 @@ $(function() {
 , <a class="el" href="structmip_1_1data__filter_1_1_magnetometer_covariance_matrix.html#a89c182e9c0eac711ec85148321143f7b">mip::data_filter::MagnetometerCovarianceMatrix</a>
 </li>
 <li>createFromField()
-: <a class="el" href="classmip_1_1_packet.html#ab7f72a0a7113d1eb8f3cd6dba0a69109">mip::Packet</a>
+: <a class="el" href="classmip_1_1_packet_ref.html#a0453f90443bd1513e2eaa21a713c213f">mip::PacketRef</a>
 </li>
 </ul>
 </div><!-- contents -->

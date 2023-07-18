@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-85-g099088f</span>
+   &#160;<span id="projectnumber">v1.0.0-92-ge4aecbb</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -102,11 +102,11 @@ Collaboration diagram for mip::Parser:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a3d3fbb83ce13bad184d327e845f95fc2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_parser.html#a3d3fbb83ce13bad184d327e845f95fc2">Parser</a> (uint8_t *buffer, size_t bufferSize, <a class="el" href="group__mip__parser__c.html#gab0495b5f9154a90a3d9aa6df9a980753">C::mip_packet_callback</a> callback, void *callbackObject, <a class="el" href="namespacemip.html#a6b00d9d7a48550fcad5056184ad1fbae">Timeout</a> <a class="el" href="classmip_1_1_parser.html#a642ce6426bc3d3483f031e5c64c05d91">timeout</a>)</td></tr>
 <tr class="separator:a3d3fbb83ce13bad184d327e845f95fc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3fdd7d3575242c8ed257b0f36bb8960"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_parser.html#ab3fdd7d3575242c8ed257b0f36bb8960">Parser</a> (uint8_t *buffer, size_t bufferSize, bool(*callback)(void *, const <a class="el" href="classmip_1_1_packet.html">Packet</a> *, <a class="el" href="namespacemip.html#a4d99303b1d7588a4e9d020e6210ded41">Timestamp</a>), void *callbackObject, <a class="el" href="namespacemip.html#a6b00d9d7a48550fcad5056184ad1fbae">Timeout</a> <a class="el" href="classmip_1_1_parser.html#a642ce6426bc3d3483f031e5c64c05d91">timeout</a>)</td></tr>
-<tr class="separator:ab3fdd7d3575242c8ed257b0f36bb8960"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5980cbbd4f858b9d215d210b784dd38d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_parser.html#a5980cbbd4f858b9d215d210b784dd38d">Parser</a> (uint8_t *buffer, size_t bufferSize, bool(*callback)(void *, const <a class="el" href="classmip_1_1_packet_ref.html">PacketRef</a> *, <a class="el" href="namespacemip.html#a4d99303b1d7588a4e9d020e6210ded41">Timestamp</a>), void *callbackObject, <a class="el" href="namespacemip.html#a6b00d9d7a48550fcad5056184ad1fbae">Timeout</a> <a class="el" href="classmip_1_1_parser.html#a642ce6426bc3d3483f031e5c64c05d91">timeout</a>)</td></tr>
+<tr class="separator:a5980cbbd4f858b9d215d210b784dd38d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d91c1d52cf5b0f9f5baa1d639b71af0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_parser.html#a4d91c1d52cf5b0f9f5baa1d639b71af0">Parser</a> (uint8_t *buffer, size_t bufferSize, <a class="el" href="namespacemip.html#a6b00d9d7a48550fcad5056184ad1fbae">Timeout</a> <a class="el" href="classmip_1_1_parser.html#a642ce6426bc3d3483f031e5c64c05d91">timeout</a>)</td></tr>
 <tr class="separator:a4d91c1d52cf5b0f9f5baa1d639b71af0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3c099d19ac77cc922c8b2f87441cf6f7"><td class="memTemplParams" colspan="2">template&lt;class T , bool(T::*)(const Packet &amp;, Timestamp) Callback&gt; </td></tr>
+<tr class="memitem:ga3c099d19ac77cc922c8b2f87441cf6f7"><td class="memTemplParams" colspan="2">template&lt;class T , bool(T::*)(const PacketRef &amp;, Timestamp) Callback&gt; </td></tr>
 <tr class="memitem:ga3c099d19ac77cc922c8b2f87441cf6f7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga3c099d19ac77cc922c8b2f87441cf6f7">setCallback</a> (T &amp;object)</td></tr>
 <tr class="memdesc:ga3c099d19ac77cc922c8b2f87441cf6f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the MIP <a class="el" href="classmip_1_1_parser.html" title="C++ class representing a MIP parser.">Parser</a>.  <a href="group__mip__cpp.html#ga3c099d19ac77cc922c8b2f87441cf6f7">More...</a><br /></td></tr>
 <tr class="separator:ga3c099d19ac77cc922c8b2f87441cf6f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -179,8 +179,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ab3fdd7d3575242c8ed257b0f36bb8960"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab3fdd7d3575242c8ed257b0f36bb8960">&#9670;&nbsp;</a></span>Parser() <span class="overload">[2/3]</span></h2>
+<a id="a5980cbbd4f858b9d215d210b784dd38d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5980cbbd4f858b9d215d210b784dd38d">&#9670;&nbsp;</a></span>Parser() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -203,7 +203,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool(*)(void *, const <a class="el" href="classmip_1_1_packet.html">Packet</a> *, <a class="el" href="namespacemip.html#a4d99303b1d7588a4e9d020e6210ded41">Timestamp</a>)&#160;</td>
+          <td class="paramtype">bool(*)(void *, const <a class="el" href="classmip_1_1_packet_ref.html">PacketRef</a> *, <a class="el" href="namespacemip.html#a4d99303b1d7588a4e9d020e6210ded41">Timestamp</a>)&#160;</td>
           <td class="paramname"><em>callback</em>, </td>
         </tr>
         <tr>

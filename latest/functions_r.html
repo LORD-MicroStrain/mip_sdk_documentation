@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-85-g099088f</span>
+   &#160;<span id="projectnumber">v1.0.0-92-ge4aecbb</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -161,7 +161,7 @@ $(function() {
 : <a class="el" href="structmip_1_1data__filter_1_1_gnss_dual_antenna_status_1_1_dual_antenna_status_flags.html#a695462c978d5d1812d5d966df8414613ac72134fa88f45c3cddb31507c4692282">mip::data_filter::GnssDualAntennaStatus::DualAntennaStatusFlags</a>
 </li>
 <li>reallocLastField()
-: <a class="el" href="classmip_1_1_packet.html#a4478e5b0bb8db9d9ca4e463e0a01fb4b">mip::Packet</a>
+: <a class="el" href="classmip_1_1_packet_ref.html#a173b6fd547d60fab551619029cfa181c">mip::PacketRef</a>
 </li>
 <li>receiveBytes()
 : <a class="el" href="classmip_1_1_device_interface.html#a8343136e65ffe81b3c3255202fc09a5a">mip::DeviceInterface</a>
@@ -226,6 +226,9 @@ $(function() {
 <li>recvFunction()
 : <a class="el" href="classmip_1_1_device_interface.html#a1edf99d04fda8affbe0f875c6c2ef447">mip::DeviceInterface</a>
 </li>
+<li>ref()
+: <a class="el" href="classmip_1_1_sized_packet_buf.html#a87d3dde4467616683d1f7eef0deca72a">mip::SizedPacketBuf&lt; BufferSize &gt;</a>
+</li>
 <li>ref_point_sel
 : <a class="el" href="structmip_1_1_c_1_1mip__filter__ref__point__lever__arm__command.html#ae753e8cdc5d498b055bbb6b681c9583d">mip::C::mip_filter_ref_point_lever_arm_command</a>
 , <a class="el" href="structmip_1_1_c_1_1mip__filter__ref__point__lever__arm__response.html#ab90c74a076047b7c5cd7a7edbb1cbded">mip::C::mip_filter_ref_point_lever_arm_response</a>
@@ -277,7 +280,7 @@ $(function() {
 : <a class="el" href="classmip_1_1_serializer.html#a8a30c45c55d75c04b3e9228c65d13f42">mip::Serializer</a>
 </li>
 <li>remainingSpace()
-: <a class="el" href="classmip_1_1_packet.html#a0bf8b41663ff049324503fe56aadca5d">mip::Packet</a>
+: <a class="el" href="classmip_1_1_packet_ref.html#af91f26b9fe7d52b2075c606e01810546">mip::PacketRef</a>
 </li>
 <li>removeAllHandlers()
 : <a class="el" href="structmip_1_1_dispatcher.html#a619c46c0a23093b43a4be11c8b4d1c0b">mip::Dispatcher</a>
@@ -361,14 +364,14 @@ $(function() {
 , <a class="el" href="structmip_1_1commands__3dm_1_1_constellation_settings_1_1_settings.html#a027f333cd21a1cf96bb6f621ef941f0d">mip::commands_3dm::ConstellationSettings::Settings</a>
 </li>
 <li>reset()
-: <a class="el" href="classmip_1_1_packet.html#a297092eb834b6ea04eb9ff7ba3281297">mip::Packet</a>
+: <a class="el" href="classmip_1_1_packet_ref.html#a0f55737a3426b3ed5f39b0354541ef24">mip::PacketRef</a>
 , <a class="el" href="classmip_1_1_parser.html#a351071906127cac5cb56cfde1a3d6ea6">mip::Parser</a>
-</li>
-<li>RESETCODE
-: <a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags_legacy.html#a6d952630b90a4cae4177646db34a96eea87ca77ad804bfe5c85a6a595e8e6a79b">mip::commands_rtk::GetStatusFlags::StatusFlagsLegacy</a>
 </li>
 <li>resetcode()
 : <a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags_legacy.html#a681ac4241b5ca9f8b1a6018660378a2a">mip::commands_rtk::GetStatusFlags::StatusFlagsLegacy</a>
+</li>
+<li>RESETCODE
+: <a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags_legacy.html#a6d952630b90a4cae4177646db34a96eea87ca77ad804bfe5c85a6a595e8e6a79b">mip::commands_rtk::GetStatusFlags::StatusFlagsLegacy</a>
 </li>
 <li>residual
 : <a class="el" href="structmip_1_1_c_1_1mip__filter__magnetometer__residual__vector__data.html#a75dd4a34edfc48f15bc5b81a257af36b">mip::C::mip_filter_magnetometer_residual_vector_data</a>
@@ -424,13 +427,13 @@ $(function() {
 , <a class="el" href="structmip_1_1commands__filter_1_1_sensor_to_vehicle_rotation_euler_1_1_response.html#a980eeb20ceb27e03c025091e68f0fcf8">mip::commands_filter::SensorToVehicleRotationEuler::Response</a>
 , <a class="el" href="structmip_1_1commands__filter_1_1_sensor_to_vehicle_rotation_euler.html#aeddad7011713055fcd70a64b7ed12d59">mip::commands_filter::SensorToVehicleRotationEuler</a>
 , <a class="el" href="structmip_1_1commands__filter_1_1_set_initial_attitude.html#a0525628034e6a7aafcf3f489c9f06dfe">mip::commands_filter::SetInitialAttitude</a>
-, <a class="el" href="structmip_1_1commands__filter_1_1_tare_orientation_1_1_mip_tare_axes.html#a5767268d82601e125ceb6a6d8cc82477">mip::commands_filter::TareOrientation::MipTareAxes</a>
 </li>
 <li>ROLL
 : <a class="el" href="structmip_1_1commands__filter_1_1_tare_orientation_1_1_mip_tare_axes.html#a0c7b08afc596579b3e324d56bfabdceba8f078f57518d9f8a3bfc50d38d35b0b8">mip::commands_filter::TareOrientation::MipTareAxes</a>
 </li>
-<li>roll
-: <a class="el" href="structmip_1_1data__filter_1_1_euler_angles.html#a63070b2b790b23fec4f9c4758252187f">mip::data_filter::EulerAngles</a>
+<li>roll()
+: <a class="el" href="structmip_1_1commands__filter_1_1_tare_orientation_1_1_mip_tare_axes.html#a5767268d82601e125ceb6a6d8cc82477">mip::commands_filter::TareOrientation::MipTareAxes</a>
+, <a class="el" href="structmip_1_1data__filter_1_1_euler_angles.html#a63070b2b790b23fec4f9c4758252187f">mip::data_filter::EulerAngles</a>
 , <a class="el" href="structmip_1_1data__filter_1_1_euler_angles_uncertainty.html#a235b8af669d3455b14eb75597c4e926b">mip::data_filter::EulerAnglesUncertainty</a>
 , <a class="el" href="structmip_1_1data__sensor_1_1_comp_euler_angles.html#a766e53daac22647777035b9a7142a8ef">mip::data_sensor::CompEulerAngles</a>
 </li>

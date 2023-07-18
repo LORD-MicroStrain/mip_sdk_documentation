@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-85-g099088f</span>
+   &#160;<span id="projectnumber">v1.0.0-92-ge4aecbb</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -121,8 +121,11 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_field.html">Field</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++ class representing a MIP field.  <a href="classmip_1_1_field.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_packet.html">Packet</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++ class representing a MIP <a class="el" href="classmip_1_1_packet.html" title="C++ class representing a MIP Packet.">Packet</a>.  <a href="classmip_1_1_packet.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_packet_ref.html">PacketRef</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++ class representing a MIP <a class="el" href="classmip_1_1_packet_ref.html" title="C++ class representing a MIP PacketRef.">PacketRef</a>.  <a href="classmip_1_1_packet_ref.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_sized_packet_buf.html">SizedPacketBuf</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A mip packet with a self-contained buffer (useful with std::vector).  <a href="classmip_1_1_sized_packet_buf.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_parser.html">Parser</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++ class representing a MIP parser.  <a href="classmip_1_1_parser.html#details">More...</a><br /></td></tr>
@@ -154,6 +157,9 @@ Typedefs</h2></td></tr>
 <tr class="separator:a1db336862215280515a9f6b4ac6568c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83b899541bb5e6096310b8e625c0a52e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip.html#a83b899541bb5e6096310b8e625c0a52e">PacketLength</a> = <a class="el" href="group__mip__packet__c.html#ga4a696c95e757eb0a554e27995df3f461">C::packet_length</a></td></tr>
 <tr class="separator:a83b899541bb5e6096310b8e625c0a52e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafc42c8a567309e43d95e372b1ea0d2c5"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classmip_1_1_sized_packet_buf.html">SizedPacketBuf</a>&lt; mip::PACKET_LENGTH_MAX &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#gafc42c8a567309e43d95e372b1ea0d2c5">PacketBuf</a></td></tr>
+<tr class="memdesc:gafc42c8a567309e43d95e372b1ea0d2c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Typedef for <a class="el" href="classmip_1_1_sized_packet_buf.html" title="A mip packet with a self-contained buffer (useful with std::vector).">SizedPacketBuf</a> of max possible size.  <a href="group__mip__cpp.html#gafc42c8a567309e43d95e372b1ea0d2c5">More...</a><br /></td></tr>
+<tr class="separator:gafc42c8a567309e43d95e372b1ea0d2c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga22fdf60376fa438a3282cdf32d641f3b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga22fdf60376fa438a3282cdf32d641f3b">DispatchHandler</a> = <a class="el" href="structmip_1_1_c_1_1mip__dispatch__handler.html">C::mip_dispatch_handler</a></td></tr>
 <tr class="separator:ga22fdf60376fa438a3282cdf32d641f3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7d23da52058e88b66b3b4f132dc0fee"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip.html#ac7d23da52058e88b66b3b4f132dc0fee">RemainingCount</a> = <a class="el" href="namespacemip_1_1_c.html#a824d5367b775daf33493d7e7ab21d8c5">C::remaining_count</a></td></tr>
