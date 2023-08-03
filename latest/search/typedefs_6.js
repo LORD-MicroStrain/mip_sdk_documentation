@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['serial_5fport_10252',['serial_port',['../group__mip__serial.html#ga18e467111ee2c4ad7249fac8cc6ac47f',1,'serial_port.h']]]
+  ['serial_5fport_10249',['serial_port',['../group__mip__serial.html#ga18e467111ee2c4ad7249fac8cc6ac47f',1,'serial_port.h']]]
 ];
