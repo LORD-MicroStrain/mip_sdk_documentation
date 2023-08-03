@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-92-ge4aecbb</span>
+   &#160;<span id="projectnumber">v1.0.0-127-gb109f1a</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -71,17 +71,18 @@ $(function() {
 </li>
 <li>insert()
 : <a class="el" href="group__dm__commands__cpp.html#ga163413ad357700ffaad26dd6303af388">mip::commands_3dm</a>
+, <a class="el" href="group__aiding__commands__cpp.html#ga39b3ed3c2839e59bd3d0c5abcdfd8ba8">mip::commands_aiding</a>
 , <a class="el" href="group__base__commands__cpp.html#gae197019a859ec975b4a304d8c9d2e3e7">mip::commands_base</a>
 , <a class="el" href="group__cpp__filter__reset.html#gadac51d069d01f0c296d2a9b6953ece45">mip::commands_filter</a>
 , <a class="el" href="group__cpp__gnss__receiver__info.html#ga8eacc85c03617538aaa7fe173ac693d8">mip::commands_gnss</a>
 , <a class="el" href="group__cpp__rtk__get__status__flags.html#gaa0ce166f4559cd071137a392fcfdbc5c">mip::commands_rtk</a>
 , <a class="el" href="group__cpp__system__comm__mode.html#gae52fdd4f8d75e79d3eb6b19e88c7beaa">mip::commands_system</a>
-, <a class="el" href="group__cpp__filter__position__llh.html#ga1ff85aeed0f11f7f9e5d280cd026003c">mip::data_filter</a>
-, <a class="el" href="group__cpp__gnss__pos__llh.html#gaa81d0282bb9ad39ab7a711b4a34f1e7e">mip::data_gnss</a>
-, <a class="el" href="group__cpp__sensor__raw__accel.html#gae0053314fb77a0dc00d4ccfa83896bf1">mip::data_sensor</a>
+, <a class="el" href="group__cpp__filter__odometer__scale__factor__error__uncertainty.html#ga4f9a465191a954ca60b76886019fce8e">mip::data_filter</a>
+, <a class="el" href="group__cpp__gnss__gps__iono__corr.html#gaec7a6cc7b3017b08ec6f28ec44772dd9">mip::data_gnss</a>
+, <a class="el" href="group__cpp__sensor__comp__orientation__matrix.html#ga30279a7bbbbf8403485d43665d56ce50">mip::data_sensor</a>
 , <a class="el" href="group__cpp__shared__event__source.html#ga38beb8b574f4f3c52153d32bf332ce63">mip::data_shared</a>
-, <a class="el" href="group__cpp__system__built__in__test.html#ga306b56591ee9021f62ef3bc03d7bfd14">mip::data_system</a>
-, <a class="el" href="namespacemip.html#a6a81402aa7f571152391c49eb4734b98">mip</a>
+, <a class="el" href="group__cpp__system__gpio__state.html#gadd44ca51d143b55887f2fe721788bb05">mip::data_system</a>
+, <a class="el" href="namespacemip.html#a2c4bde1ee7005b4451d3f8b27ef0fe7a">mip</a>
 </li>
 <li>insert_bool()
 : <a class="el" href="group__mip__serialization__c.html#ga670bda9b9e9c12bb7e2ccf314dcb96f7">mip::C</a>
@@ -425,6 +426,63 @@ $(function() {
 <li>insert_mip_3dm_uart_baudrate_response()
 : <a class="el" href="group__c__3dm__uart__baudrate.html#gadd4ebf47e25b8c3b5b4a2a7d11706da4">mip::C</a>
 </li>
+<li>insert_mip_aiding_aiding_echo_control_command()
+: <a class="el" href="group__c__aiding__aiding__echo__control.html#gabfcc27ad1b125a7d3efcff348121d4ac">mip::C</a>
+</li>
+<li>insert_mip_aiding_aiding_echo_control_command_mode()
+: <a class="el" href="group__c__aiding__aiding__echo__control.html#ga094861b1e4441d3baa87080391dca749">mip::C</a>
+</li>
+<li>insert_mip_aiding_aiding_echo_control_response()
+: <a class="el" href="group__c__aiding__aiding__echo__control.html#gaaa68dddac68c6e9c67001c8762900387">mip::C</a>
+</li>
+<li>insert_mip_aiding_ecef_pos_command()
+: <a class="el" href="group__c__aiding__ecef__pos.html#gae7193b630bf2bc8b93442d83aef92963">mip::C</a>
+</li>
+<li>insert_mip_aiding_ecef_pos_command_valid_flags()
+: <a class="el" href="group__c__aiding__ecef__pos.html#ga60b64e8b52e822c933c81e2097179b84">mip::C</a>
+</li>
+<li>insert_mip_aiding_ecef_vel_command()
+: <a class="el" href="group__c__aiding__ecef__vel.html#gaf46f5b89cc7af684a20c3e93191ea444">mip::C</a>
+</li>
+<li>insert_mip_aiding_ecef_vel_command_valid_flags()
+: <a class="el" href="group__c__aiding__ecef__vel.html#ga77bf14227b67c1f656b09b4b03229a79">mip::C</a>
+</li>
+<li>insert_mip_aiding_llh_pos_command()
+: <a class="el" href="group__c__aiding__llh__pos.html#ga747cd08aca2e85961193b00cc616d11d">mip::C</a>
+</li>
+<li>insert_mip_aiding_llh_pos_command_valid_flags()
+: <a class="el" href="group__c__aiding__llh__pos.html#gaa92c6c7ea2f17c284a266e35cedd32d2">mip::C</a>
+</li>
+<li>insert_mip_aiding_ned_vel_command()
+: <a class="el" href="group__c__aiding__ned__vel.html#gaa6419bb2c85c3af198bb8da04d32cde6">mip::C</a>
+</li>
+<li>insert_mip_aiding_ned_vel_command_valid_flags()
+: <a class="el" href="group__c__aiding__ned__vel.html#ga7d297a59f75a27e99b46225235e9aa7e">mip::C</a>
+</li>
+<li>insert_mip_aiding_reference_frame_command()
+: <a class="el" href="group__c__aiding__reference__frame.html#ga361dc2686b99996415043500b26743ce">mip::C</a>
+</li>
+<li>insert_mip_aiding_reference_frame_command_format()
+: <a class="el" href="group__c__aiding__reference__frame.html#ga3f44cc9756b0e72c9916c037cd9bb6aa">mip::C</a>
+</li>
+<li>insert_mip_aiding_reference_frame_response()
+: <a class="el" href="group__c__aiding__reference__frame.html#ga075d30d3499e9af198df47061d0614ce">mip::C</a>
+</li>
+<li>insert_mip_aiding_sensor_frame_mapping_command()
+: <a class="el" href="group__c__aiding__sensor__frame__mapping.html#gaaee25357c74efff7ae3440aaff521aca">mip::C</a>
+</li>
+<li>insert_mip_aiding_sensor_frame_mapping_response()
+: <a class="el" href="group__c__aiding__sensor__frame__mapping.html#gab73c11730f328d1225d623e894185f00">mip::C</a>
+</li>
+<li>insert_mip_aiding_true_heading_command()
+: <a class="el" href="group__c__aiding__true__heading.html#ga29da5c6d1d3ba15a52433f9deecd659b">mip::C</a>
+</li>
+<li>insert_mip_aiding_vehicle_fixed_frame_velocity_command()
+: <a class="el" href="group__c__aiding__vehicle__fixed__frame__velocity.html#ga26d89c854a1dbc919f9608d02b371d62">mip::C</a>
+</li>
+<li>insert_mip_aiding_vehicle_fixed_frame_velocity_command_valid_flags()
+: <a class="el" href="group__c__aiding__vehicle__fixed__frame__velocity.html#ga378b1ea8874a4bc162586234bddb9425">mip::C</a>
+</li>
 <li>insert_mip_base_built_in_test_response()
 : <a class="el" href="group__c__base__built__in__test.html#ga1e23664127a9617c4e275c9787a26316">mip::C</a>
 </li>
@@ -460,7 +518,6 @@ $(function() {
 </li>
 <li>insert_mip_descriptor_rate()
 : <a class="el" href="namespacemip_1_1_c.html#a77f4350013526882ba5d889823f10a76">mip::C</a>
-, <a class="el" href="namespacemip.html#a407160b1d0c2b85288a24a046a6d7419">mip</a>
 </li>
 <li>insert_mip_filter_accel_bias_data()
 : <a class="el" href="group__c__filter__accel__bias.html#ga595507e969147f2f60bc7f4b027b579d">mip::C</a>
@@ -1402,8 +1459,14 @@ $(function() {
 <li>insert_mip_system_time_sync_status_data()
 : <a class="el" href="group__c__system__time__sync__status.html#gae12b1aaa7f2ee79349211fa23f062290">mip::C</a>
 </li>
+<li>insert_mip_time()
+: <a class="el" href="group__aiding__commands__c.html#ga526540f6bfba69572efa1ec125719a26">mip::C</a>
+</li>
 <li>insert_mip_time_format()
 : <a class="el" href="group__base__commands__c.html#gabb95800f68d6dd4cd7668ccf65a7cd62">mip::C</a>
+</li>
+<li>insert_mip_time_timebase()
+: <a class="el" href="group__aiding__commands__c.html#ga1302d12c85d0760968c649779915a079">mip::C</a>
 </li>
 <li>insert_s16()
 : <a class="el" href="group__mip__serialization__c.html#gaabeffc476d7ca259bcc820b871071e60">mip::C</a>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-92-ge4aecbb</span>
+   &#160;<span id="projectnumber">v1.0.0-127-gb109f1a</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -188,13 +188,13 @@ $(function() {
 , <a class="el" href="structmip_1_1commands__filter_1_1_sensor_to_vehicle_rotation_euler.html#ade667c54da18184e1f23c2dfb3533721">mip::commands_filter::SensorToVehicleRotationEuler</a>
 , <a class="el" href="structmip_1_1commands__filter_1_1_sensor_to_vehicle_rotation_euler_1_1_response.html#a9d5f295fea2855039ca737f38dc6bd39">mip::commands_filter::SensorToVehicleRotationEuler::Response</a>
 , <a class="el" href="structmip_1_1commands__filter_1_1_set_initial_attitude.html#a177ac1ac7bdb82b476e7035956b3151a">mip::commands_filter::SetInitialAttitude</a>
-, <a class="el" href="structmip_1_1commands__filter_1_1_tare_orientation_1_1_mip_tare_axes.html#a5107469042525049cf66f9d8a91d3fd2">mip::commands_filter::TareOrientation::MipTareAxes</a>
 </li>
 <li>PITCH
 : <a class="el" href="structmip_1_1commands__filter_1_1_tare_orientation_1_1_mip_tare_axes.html#a0c7b08afc596579b3e324d56bfabdcebae85c5a53361ca420e3c3011371e56253">mip::commands_filter::TareOrientation::MipTareAxes</a>
 </li>
-<li>pitch
-: <a class="el" href="structmip_1_1data__filter_1_1_euler_angles.html#a38a90c3515afabf333e6850dd29b79dd">mip::data_filter::EulerAngles</a>
+<li>pitch()
+: <a class="el" href="structmip_1_1commands__filter_1_1_tare_orientation_1_1_mip_tare_axes.html#a5107469042525049cf66f9d8a91d3fd2">mip::commands_filter::TareOrientation::MipTareAxes</a>
+, <a class="el" href="structmip_1_1data__filter_1_1_euler_angles.html#a38a90c3515afabf333e6850dd29b79dd">mip::data_filter::EulerAngles</a>
 , <a class="el" href="structmip_1_1data__filter_1_1_euler_angles_uncertainty.html#a9a160b8d9d92efb382eefaf789af8dfb">mip::data_filter::EulerAnglesUncertainty</a>
 , <a class="el" href="structmip_1_1data__sensor_1_1_comp_euler_angles.html#aecd8f7cd36902b50968615b885aa4787">mip::data_sensor::CompEulerAngles</a>
 </li>
@@ -210,17 +210,17 @@ $(function() {
 , <a class="el" href="structmip_1_1commands__3dm_1_1_complementary_filter.html#a990d6fafc972cdc121f12b89a27b5848">mip::commands_3dm::ComplementaryFilter</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1_complementary_filter_1_1_response.html#a29ebe17f1a735dcc18f28c48125aa530">mip::commands_3dm::ComplementaryFilter::Response</a>
 </li>
-<li>PLATFORMSTATE
-: <a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags_legacy.html#a6d952630b90a4cae4177646db34a96eea63acb2bbe2728d9d325c15d50687dc3a">mip::commands_rtk::GetStatusFlags::StatusFlagsLegacy</a>
-</li>
 <li>platformstate()
 : <a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags_legacy.html#a252112ec5bc67b272455e65167b68a51">mip::commands_rtk::GetStatusFlags::StatusFlagsLegacy</a>
 </li>
-<li>platformstatuscode()
-: <a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags_legacy.html#a20e08190f25abe4587967c2f2e865715">mip::commands_rtk::GetStatusFlags::StatusFlagsLegacy</a>
+<li>PLATFORMSTATE
+: <a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags_legacy.html#a6d952630b90a4cae4177646db34a96eea63acb2bbe2728d9d325c15d50687dc3a">mip::commands_rtk::GetStatusFlags::StatusFlagsLegacy</a>
 </li>
 <li>PLATFORMSTATUSCODE
 : <a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags_legacy.html#a6d952630b90a4cae4177646db34a96eeaad9cff7913f634a62be235bb5f16ead1">mip::commands_rtk::GetStatusFlags::StatusFlagsLegacy</a>
+</li>
+<li>platformstatuscode()
+: <a class="el" href="structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags_legacy.html#a20e08190f25abe4587967c2f2e865715">mip::commands_rtk::GetStatusFlags::StatusFlagsLegacy</a>
 </li>
 <li>pointer()
 : <a class="el" href="classmip_1_1_packet_ref.html#a9be98dfcad57e1f20f615f9c5f6e70cb">mip::PacketRef</a>
@@ -232,13 +232,15 @@ $(function() {
 , <a class="el" href="structmip_1_1commands__base_1_1_comm_speed_1_1_response.html#aab121f624ed336e83cb2b930cd6c5aae">mip::commands_base::CommSpeed::Response</a>
 </li>
 <li>pos_uncertainty
-: <a class="el" href="structmip_1_1_c_1_1mip__filter__ecef__pos__uncertainty__data.html#a625069052a7e694db7d0543c45cb0d95">mip::C::mip_filter_ecef_pos_uncertainty_data</a>
-, <a class="el" href="structmip_1_1_c_1_1mip__filter__external__gnss__update__command.html#ab7650e67c60e7ca1248a7d11844147e9">mip::C::mip_filter_external_gnss_update_command</a>
-, <a class="el" href="structmip_1_1commands__filter_1_1_external_gnss_update.html#a67596f988c9323da252134db32c8086f">mip::commands_filter::ExternalGnssUpdate</a>
-, <a class="el" href="structmip_1_1data__filter_1_1_ecef_pos_uncertainty.html#acd326d0a5d8baa45ec7c737292804563">mip::data_filter::EcefPosUncertainty</a>
+: <a class="el" href="structmip_1_1_c_1_1mip__filter__ecef__pos__uncertainty__data.html#a11e0158ef789645d005e86bfdeec0860">mip::C::mip_filter_ecef_pos_uncertainty_data</a>
+, <a class="el" href="structmip_1_1_c_1_1mip__filter__external__gnss__update__command.html#aa3701f5ea492187a0ba85e8175e7c10d">mip::C::mip_filter_external_gnss_update_command</a>
+, <a class="el" href="structmip_1_1commands__filter_1_1_external_gnss_update.html#a2cb6b8b902a974a7a80e8a95be6a4c13">mip::commands_filter::ExternalGnssUpdate</a>
+, <a class="el" href="structmip_1_1data__filter_1_1_ecef_pos_uncertainty.html#a7286a85a21c7b0a1a06263aec9b8cd38">mip::data_filter::EcefPosUncertainty</a>
 </li>
-<li>position()
-: <a class="el" href="structmip_1_1data__gnss_1_1_pos_ecef_1_1_valid_flags.html#a6064245d7b89ddc7614dde19e2e13b36">mip::data_gnss::PosEcef::ValidFlags</a>
+<li>position
+: <a class="el" href="structmip_1_1_c_1_1mip__aiding__ecef__pos__command.html#ae49c52695c24af5376aeb7fbbe828b55">mip::C::mip_aiding_ecef_pos_command</a>
+, <a class="el" href="structmip_1_1commands__aiding_1_1_ecef_pos.html#a8cf260642d1c2e1ff408b40a7eced254">mip::commands_aiding::EcefPos</a>
+, <a class="el" href="structmip_1_1data__gnss_1_1_pos_ecef_1_1_valid_flags.html#a6064245d7b89ddc7614dde19e2e13b36">mip::data_gnss::PosEcef::ValidFlags</a>
 </li>
 <li>POSITION
 : <a class="el" href="structmip_1_1data__gnss_1_1_pos_ecef_1_1_valid_flags.html#adf59fc0f4b0ed0f92be827ce62550be6a4858044cb03cc1f273dd992ba7055546">mip::data_gnss::PosEcef::ValidFlags</a>
@@ -247,8 +249,8 @@ $(function() {
 : <a class="el" href="structmip_1_1data__gnss_1_1_pos_ecef_1_1_valid_flags.html#adf59fc0f4b0ed0f92be827ce62550be6a4e79890e9873d165cada6f568e7d353a">mip::data_gnss::PosEcef::ValidFlags</a>
 </li>
 <li>position_ecef
-: <a class="el" href="structmip_1_1_c_1_1mip__filter__ecef__pos__data.html#a5369663efc72f01b369341a70a6c0477">mip::C::mip_filter_ecef_pos_data</a>
-, <a class="el" href="structmip_1_1data__filter_1_1_ecef_pos.html#a37aef500a12f58d3cb4233850b167240">mip::data_filter::EcefPos</a>
+: <a class="el" href="structmip_1_1_c_1_1mip__filter__ecef__pos__data.html#a3afa7eb6f23db0a6330063094271ce78">mip::C::mip_filter_ecef_pos_data</a>
+, <a class="el" href="structmip_1_1data__filter_1_1_ecef_pos.html#abc3f39fe76cd79c304c3dc5e59ee19d9">mip::data_filter::EcefPos</a>
 </li>
 <li>positionAccuracy()
 : <a class="el" href="structmip_1_1data__gnss_1_1_pos_ecef_1_1_valid_flags.html#ae661365b311e3a281637baea7f82113f">mip::data_gnss::PosEcef::ValidFlags</a>
@@ -282,10 +284,12 @@ $(function() {
 <li>pseudorange
 : <a class="el" href="structmip_1_1_c_1_1mip__gnss__raw__data.html#aa7188c7778ea7c163d9f5b89e14f03ac">mip::C::mip_gnss_raw_data</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1_raw.html#ae77d3f56109218bfad52806a527104d9">mip::data_gnss::Raw</a>
-, <a class="el" href="structmip_1_1data__gnss_1_1_raw_1_1_valid_flags.html#a3d7b787ad24e44a20ba95f628a273f80">mip::data_gnss::Raw::ValidFlags</a>
 </li>
 <li>PSEUDORANGE
 : <a class="el" href="structmip_1_1data__gnss_1_1_raw_1_1_valid_flags.html#a896b931f26ab3d9d16bd4e80b3dff2bea1ba64ee3d70434420f23d9170911f0d9">mip::data_gnss::Raw::ValidFlags</a>
+</li>
+<li>pseudorange()
+: <a class="el" href="structmip_1_1data__gnss_1_1_raw_1_1_valid_flags.html#a3d7b787ad24e44a20ba95f628a273f80">mip::data_gnss::Raw::ValidFlags</a>
 </li>
 <li>pseudorange_correction
 : <a class="el" href="structmip_1_1_c_1_1mip__gnss__sbas__correction__data.html#a01a8193c5f27d5ba4673e42a45b7c010">mip::C::mip_gnss_sbas_correction_data</a>

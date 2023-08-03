@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-92-ge4aecbb</span>
+   &#160;<span id="projectnumber">v1.0.0-127-gb109f1a</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -69,6 +69,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="structmip_1_1commands__base_1_1_comm_speed-members.html">List of all members</a>  </div>
@@ -84,6 +86,16 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__base_1_1_comm_speed_1_1_response.html">Response</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a212208119d1a9c372a1e0329b4fb6cda"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__base_1_1_comm_speed.html#a212208119d1a9c372a1e0329b4fb6cda">as_tuple</a> () const</td></tr>
+<tr class="separator:a212208119d1a9c372a1e0329b4fb6cda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:abf14d7b5b9c98c2f19b5af13e6ec97f4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structmip_1_1commands__base_1_1_comm_speed.html">CommSpeed</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__base_1_1_comm_speed.html#abf14d7b5b9c98c2f19b5af13e6ec97f4">create_sld_all</a> (::<a class="el" href="namespacemip.html#a2dde9cdf5ebc86cf62e8c2591dcb56de">mip::FunctionSelector</a> <a class="el" href="structmip_1_1commands__base_1_1_comm_speed.html#aae62d75ca32e216c01a98303eb02dc74">function</a>)</td></tr>
+<tr class="separator:abf14d7b5b9c98c2f19b5af13e6ec97f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:aae62d75ca32e216c01a98303eb02dc74"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemip.html#a2dde9cdf5ebc86cf62e8c2591dcb56de">FunctionSelector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__base_1_1_comm_speed.html#aae62d75ca32e216c01a98303eb02dc74">function</a> = static_cast&lt;<a class="el" href="namespacemip.html#a2dde9cdf5ebc86cf62e8c2591dcb56de">FunctionSelector</a>&gt;(0)</td></tr>
@@ -97,23 +109,81 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a88779a541ce5339c5b7ae0dfb7a17b9b"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__base_1_1_comm_speed.html#a88779a541ce5339c5b7ae0dfb7a17b9b">DESCRIPTOR_SET</a> = ::mip::commands_base::DESCRIPTOR_SET</td></tr>
-<tr class="separator:a88779a541ce5339c5b7ae0dfb7a17b9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cc5ff6b8b2e92e5a6cad3e40976037e"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__base_1_1_comm_speed.html#a6cc5ff6b8b2e92e5a6cad3e40976037e">FIELD_DESCRIPTOR</a> = ::<a class="el" href="group__base__commands__cpp.html#gga0b2ee54abd74a789672b45ae6029c550a45abe7c86da3655eeb5558b04d799797">mip::commands_base::CMD_COMM_SPEED</a></td></tr>
-<tr class="separator:a6cc5ff6b8b2e92e5a6cad3e40976037e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a678280f6c7a3d0f8b53fcfaa7555f1dc"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__base_1_1_comm_speed.html#a678280f6c7a3d0f8b53fcfaa7555f1dc">HAS_WRITE_FUNCTION</a> = true</td></tr>
-<tr class="separator:a678280f6c7a3d0f8b53fcfaa7555f1dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc4b9e38737363c4c534a738f9763a1d"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__base_1_1_comm_speed.html#adc4b9e38737363c4c534a738f9763a1d">HAS_READ_FUNCTION</a> = true</td></tr>
-<tr class="separator:adc4b9e38737363c4c534a738f9763a1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e22455f92c90047537bc085949f0401"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__base_1_1_comm_speed.html#a1e22455f92c90047537bc085949f0401">HAS_SAVE_FUNCTION</a> = true</td></tr>
-<tr class="separator:a1e22455f92c90047537bc085949f0401"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0ece2dbdc936cf340a636753340f5d2"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__base_1_1_comm_speed.html#aa0ece2dbdc936cf340a636753340f5d2">HAS_LOAD_FUNCTION</a> = true</td></tr>
-<tr class="separator:aa0ece2dbdc936cf340a636753340f5d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad93fcaafc220efb9f17279a489e16b90"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__base_1_1_comm_speed.html#ad93fcaafc220efb9f17279a489e16b90">HAS_RESET_FUNCTION</a> = true</td></tr>
-<tr class="separator:ad93fcaafc220efb9f17279a489e16b90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24619d42af50597b732e3adf49d99df0"><td class="memItemLeft" align="right" valign="top">static const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__base_1_1_comm_speed.html#a24619d42af50597b732e3adf49d99df0">ALL_PORTS</a> = 0</td></tr>
 <tr class="separator:a24619d42af50597b732e3adf49d99df0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88779a541ce5339c5b7ae0dfb7a17b9b"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__base_1_1_comm_speed.html#a88779a541ce5339c5b7ae0dfb7a17b9b">DESCRIPTOR_SET</a> = ::mip::commands_base::DESCRIPTOR_SET</td></tr>
+<tr class="separator:a88779a541ce5339c5b7ae0dfb7a17b9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cc5ff6b8b2e92e5a6cad3e40976037e"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__base_1_1_comm_speed.html#a6cc5ff6b8b2e92e5a6cad3e40976037e">FIELD_DESCRIPTOR</a> = ::<a class="el" href="group__base__commands__cpp.html#gga3873ee3c6a97bdcd9ac79175f17bc136a45abe7c86da3655eeb5558b04d799797">mip::commands_base::CMD_COMM_SPEED</a></td></tr>
+<tr class="separator:a6cc5ff6b8b2e92e5a6cad3e40976037e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2acdc6d7a6e3766a5163937eabe6002d"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__base_1_1_comm_speed.html#a2acdc6d7a6e3766a5163937eabe6002d">HAS_FUNCTION_SELECTOR</a> = true</td></tr>
+<tr class="separator:a2acdc6d7a6e3766a5163937eabe6002d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a080287c7b92967a897fcd90e92b24bd1"><td class="memItemLeft" align="right" valign="top">static const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__base_1_1_comm_speed.html#a080287c7b92967a897fcd90e92b24bd1">WRITE_PARAMS</a> = 0x8003</td></tr>
+<tr class="separator:a080287c7b92967a897fcd90e92b24bd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcb8c54139d31886ce30123971d6cd0e"><td class="memItemLeft" align="right" valign="top">static const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__base_1_1_comm_speed.html#adcb8c54139d31886ce30123971d6cd0e">READ_PARAMS</a> = 0x8001</td></tr>
+<tr class="separator:adcb8c54139d31886ce30123971d6cd0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92ed24fd906ebd070e10edb3018fb85b"><td class="memItemLeft" align="right" valign="top">static const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__base_1_1_comm_speed.html#a92ed24fd906ebd070e10edb3018fb85b">SAVE_PARAMS</a> = 0x8001</td></tr>
+<tr class="separator:a92ed24fd906ebd070e10edb3018fb85b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bc75ff3d93f3c4fffe4230d1ce45e89"><td class="memItemLeft" align="right" valign="top">static const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__base_1_1_comm_speed.html#a6bc75ff3d93f3c4fffe4230d1ce45e89">LOAD_PARAMS</a> = 0x8001</td></tr>
+<tr class="separator:a6bc75ff3d93f3c4fffe4230d1ce45e89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dd9b861e2436cbbc80a5a1ab71cf6b9"><td class="memItemLeft" align="right" valign="top">static const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__base_1_1_comm_speed.html#a5dd9b861e2436cbbc80a5a1ab71cf6b9">DEFAULT_PARAMS</a> = 0x8001</td></tr>
+<tr class="separator:a5dd9b861e2436cbbc80a5a1ab71cf6b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7469827456097022f4c851f0c19058a"><td class="memItemLeft" align="right" valign="top">static const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__base_1_1_comm_speed.html#ae7469827456097022f4c851f0c19058a">ECHOED_PARAMS</a> = 0x0001</td></tr>
+<tr class="separator:ae7469827456097022f4c851f0c19058a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef528ca2fb78e480d4f7d1d381b61133"><td class="memItemLeft" align="right" valign="top">static const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__base_1_1_comm_speed.html#aef528ca2fb78e480d4f7d1d381b61133">COUNTER_PARAMS</a> = 0x00000000</td></tr>
+<tr class="separator:aef528ca2fb78e480d4f7d1d381b61133"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a212208119d1a9c372a1e0329b4fb6cda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a212208119d1a9c372a1e0329b4fb6cda">&#9670;&nbsp;</a></span>as_tuple()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto mip::commands_base::CommSpeed::as_tuple </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abf14d7b5b9c98c2f19b5af13e6ec97f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf14d7b5b9c98c2f19b5af13e6ec97f4">&#9670;&nbsp;</a></span>create_sld_all()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="structmip_1_1commands__base_1_1_comm_speed.html">CommSpeed</a> mip::commands_base::CommSpeed::create_sld_all </td>
+          <td>(</td>
+          <td class="paramtype">::<a class="el" href="namespacemip.html#a2dde9cdf5ebc86cf62e8c2591dcb56de">mip::FunctionSelector</a>&#160;</td>
+          <td class="paramname"><em>function</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a24619d42af50597b732e3adf49d99df0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a24619d42af50597b732e3adf49d99df0">&#9670;&nbsp;</a></span>ALL_PORTS</h2>
@@ -153,6 +223,50 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="aef528ca2fb78e480d4f7d1d381b61133"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef528ca2fb78e480d4f7d1d381b61133">&#9670;&nbsp;</a></span>COUNTER_PARAMS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint32_t mip::commands_base::CommSpeed::COUNTER_PARAMS = 0x00000000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5dd9b861e2436cbbc80a5a1ab71cf6b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dd9b861e2436cbbc80a5a1ab71cf6b9">&#9670;&nbsp;</a></span>DEFAULT_PARAMS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint32_t mip::commands_base::CommSpeed::DEFAULT_PARAMS = 0x8001</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a88779a541ce5339c5b7ae0dfb7a17b9b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a88779a541ce5339c5b7ae0dfb7a17b9b">&#9670;&nbsp;</a></span>DESCRIPTOR_SET</h2>
 
@@ -175,6 +289,28 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ae7469827456097022f4c851f0c19058a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7469827456097022f4c851f0c19058a">&#9670;&nbsp;</a></span>ECHOED_PARAMS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint32_t mip::commands_base::CommSpeed::ECHOED_PARAMS = 0x0001</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a6cc5ff6b8b2e92e5a6cad3e40976037e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6cc5ff6b8b2e92e5a6cad3e40976037e">&#9670;&nbsp;</a></span>FIELD_DESCRIPTOR</h2>
 
@@ -185,7 +321,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const uint8_t mip::commands_base::CommSpeed::FIELD_DESCRIPTOR = ::<a class="el" href="group__base__commands__cpp.html#gga0b2ee54abd74a789672b45ae6029c550a45abe7c86da3655eeb5558b04d799797">mip::commands_base::CMD_COMM_SPEED</a></td>
+          <td class="memname">const uint8_t mip::commands_base::CommSpeed::FIELD_DESCRIPTOR = ::<a class="el" href="group__base__commands__cpp.html#gga3873ee3c6a97bdcd9ac79175f17bc136a45abe7c86da3655eeb5558b04d799797">mip::commands_base::CMD_COMM_SPEED</a></td>
         </tr>
       </table>
   </td>
@@ -211,8 +347,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aa0ece2dbdc936cf340a636753340f5d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa0ece2dbdc936cf340a636753340f5d2">&#9670;&nbsp;</a></span>HAS_LOAD_FUNCTION</h2>
+<a id="a2acdc6d7a6e3766a5163937eabe6002d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2acdc6d7a6e3766a5163937eabe6002d">&#9670;&nbsp;</a></span>HAS_FUNCTION_SELECTOR</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -221,7 +357,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const bool mip::commands_base::CommSpeed::HAS_LOAD_FUNCTION = true</td>
+          <td class="memname">const bool mip::commands_base::CommSpeed::HAS_FUNCTION_SELECTOR = true</td>
         </tr>
       </table>
   </td>
@@ -233,8 +369,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="adc4b9e38737363c4c534a738f9763a1d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc4b9e38737363c4c534a738f9763a1d">&#9670;&nbsp;</a></span>HAS_READ_FUNCTION</h2>
+<a id="a6bc75ff3d93f3c4fffe4230d1ce45e89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bc75ff3d93f3c4fffe4230d1ce45e89">&#9670;&nbsp;</a></span>LOAD_PARAMS</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -243,73 +379,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const bool mip::commands_base::CommSpeed::HAS_READ_FUNCTION = true</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad93fcaafc220efb9f17279a489e16b90"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad93fcaafc220efb9f17279a489e16b90">&#9670;&nbsp;</a></span>HAS_RESET_FUNCTION</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const bool mip::commands_base::CommSpeed::HAS_RESET_FUNCTION = true</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1e22455f92c90047537bc085949f0401"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e22455f92c90047537bc085949f0401">&#9670;&nbsp;</a></span>HAS_SAVE_FUNCTION</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const bool mip::commands_base::CommSpeed::HAS_SAVE_FUNCTION = true</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a678280f6c7a3d0f8b53fcfaa7555f1dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a678280f6c7a3d0f8b53fcfaa7555f1dc">&#9670;&nbsp;</a></span>HAS_WRITE_FUNCTION</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const bool mip::commands_base::CommSpeed::HAS_WRITE_FUNCTION = true</td>
+          <td class="memname">const uint32_t mip::commands_base::CommSpeed::LOAD_PARAMS = 0x8001</td>
         </tr>
       </table>
   </td>
@@ -334,6 +404,72 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Port ID number, starting with 1. When function is SAVE, LOAD, or DEFAULT, this can be 0 to apply to all ports. See the device user manual for details. </p>
+
+</div>
+</div>
+<a id="adcb8c54139d31886ce30123971d6cd0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcb8c54139d31886ce30123971d6cd0e">&#9670;&nbsp;</a></span>READ_PARAMS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint32_t mip::commands_base::CommSpeed::READ_PARAMS = 0x8001</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a92ed24fd906ebd070e10edb3018fb85b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92ed24fd906ebd070e10edb3018fb85b">&#9670;&nbsp;</a></span>SAVE_PARAMS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint32_t mip::commands_base::CommSpeed::SAVE_PARAMS = 0x8001</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a080287c7b92967a897fcd90e92b24bd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a080287c7b92967a897fcd90e92b24bd1">&#9670;&nbsp;</a></span>WRITE_PARAMS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint32_t mip::commands_base::CommSpeed::WRITE_PARAMS = 0x8003</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

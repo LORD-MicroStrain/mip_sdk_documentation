@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-92-ge4aecbb</span>
+   &#160;<span id="projectnumber">v1.0.0-127-gb109f1a</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -68,6 +68,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="structmip_1_1commands__gnss_1_1_receiver_info_1_1_response-members.html">List of all members</a>  </div>
@@ -87,22 +88,79 @@ Collaboration diagram for mip::commands_gnss::ReceiverInfo::Response:</div>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ac60669cda07016bb4d36da268d232b1c"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__gnss_1_1_receiver_info_1_1_response.html#ac60669cda07016bb4d36da268d232b1c">as_tuple</a> ()</td></tr>
+<tr class="separator:ac60669cda07016bb4d36da268d232b1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:ae68275818f09e8be0c9a5d05628b25dd"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__gnss_1_1_receiver_info_1_1_response.html#ae68275818f09e8be0c9a5d05628b25dd">num_receivers</a> = 0</td></tr>
 <tr class="memdesc:ae68275818f09e8be0c9a5d05628b25dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of physical receivers in the device.  <a href="structmip_1_1commands__gnss_1_1_receiver_info_1_1_response.html#ae68275818f09e8be0c9a5d05628b25dd">More...</a><br /></td></tr>
 <tr class="separator:ae68275818f09e8be0c9a5d05628b25dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaed657c693ef05eca8c64d297dc58eec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1commands__gnss_1_1_receiver_info_1_1_info.html">Info</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__gnss_1_1_receiver_info_1_1_response.html#aaed657c693ef05eca8c64d297dc58eec">receiver_info</a> = {nullptr}</td></tr>
-<tr class="separator:aaed657c693ef05eca8c64d297dc58eec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78f0158362dedcae32a79052e20ac4a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1commands__gnss_1_1_receiver_info_1_1_info.html">Info</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__gnss_1_1_receiver_info_1_1_response.html#a78f0158362dedcae32a79052e20ac4a3">receiver_info</a> [5]</td></tr>
+<tr class="separator:a78f0158362dedcae32a79052e20ac4a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:af039919c7d5d50b73c107a486ffc58a4"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__gnss_1_1_receiver_info_1_1_response.html#af039919c7d5d50b73c107a486ffc58a4">DESCRIPTOR_SET</a> = ::mip::commands_gnss::DESCRIPTOR_SET</td></tr>
 <tr class="separator:af039919c7d5d50b73c107a486ffc58a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d5e4ea0fca5f8ba6b1f4cabfb6765e0"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__gnss_1_1_receiver_info_1_1_response.html#a4d5e4ea0fca5f8ba6b1f4cabfb6765e0">FIELD_DESCRIPTOR</a> = ::<a class="el" href="group__gnss__commands__cpp.html#gga473efec39aa75259755ae146f9c3e1e7a92181a8bf0dc289bfb0f0603c886eb74">mip::commands_gnss::REPLY_LIST_RECEIVERS</a></td></tr>
+<tr class="memitem:a4d5e4ea0fca5f8ba6b1f4cabfb6765e0"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__gnss_1_1_receiver_info_1_1_response.html#a4d5e4ea0fca5f8ba6b1f4cabfb6765e0">FIELD_DESCRIPTOR</a> = ::<a class="el" href="group__gnss__commands__cpp.html#gga967273fcfc7d3fa0e312fcd9e436aa81a92181a8bf0dc289bfb0f0603c886eb74">mip::commands_gnss::REPLY_LIST_RECEIVERS</a></td></tr>
 <tr class="separator:a4d5e4ea0fca5f8ba6b1f4cabfb6765e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3c04a86ee928c02074a17151f101a53"><td class="memItemLeft" align="right" valign="top">static const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__gnss_1_1_receiver_info_1_1_response.html#ad3c04a86ee928c02074a17151f101a53">ECHOED_PARAMS</a> = 0x0000</td></tr>
+<tr class="separator:ad3c04a86ee928c02074a17151f101a53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3035c3cb6dd61069db808fd9a1e33e8"><td class="memItemLeft" align="right" valign="top">static const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__gnss_1_1_receiver_info_1_1_response.html#ab3035c3cb6dd61069db808fd9a1e33e8">COUNTER_PARAMS</a> = 0x0000000C</td></tr>
+<tr class="separator:ab3035c3cb6dd61069db808fd9a1e33e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac60669cda07016bb4d36da268d232b1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac60669cda07016bb4d36da268d232b1c">&#9670;&nbsp;</a></span>as_tuple()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto mip::commands_gnss::ReceiverInfo::Response::as_tuple </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="ab3035c3cb6dd61069db808fd9a1e33e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3035c3cb6dd61069db808fd9a1e33e8">&#9670;&nbsp;</a></span>COUNTER_PARAMS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint32_t mip::commands_gnss::ReceiverInfo::Response::COUNTER_PARAMS = 0x0000000C</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="af039919c7d5d50b73c107a486ffc58a4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af039919c7d5d50b73c107a486ffc58a4">&#9670;&nbsp;</a></span>DESCRIPTOR_SET</h2>
 
@@ -125,6 +183,28 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ad3c04a86ee928c02074a17151f101a53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3c04a86ee928c02074a17151f101a53">&#9670;&nbsp;</a></span>ECHOED_PARAMS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint32_t mip::commands_gnss::ReceiverInfo::Response::ECHOED_PARAMS = 0x0000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a4d5e4ea0fca5f8ba6b1f4cabfb6765e0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4d5e4ea0fca5f8ba6b1f4cabfb6765e0">&#9670;&nbsp;</a></span>FIELD_DESCRIPTOR</h2>
 
@@ -135,7 +215,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const uint8_t mip::commands_gnss::ReceiverInfo::Response::FIELD_DESCRIPTOR = ::<a class="el" href="group__gnss__commands__cpp.html#gga473efec39aa75259755ae146f9c3e1e7a92181a8bf0dc289bfb0f0603c886eb74">mip::commands_gnss::REPLY_LIST_RECEIVERS</a></td>
+          <td class="memname">const uint8_t mip::commands_gnss::ReceiverInfo::Response::FIELD_DESCRIPTOR = ::<a class="el" href="group__gnss__commands__cpp.html#gga967273fcfc7d3fa0e312fcd9e436aa81a92181a8bf0dc289bfb0f0603c886eb74">mip::commands_gnss::REPLY_LIST_RECEIVERS</a></td>
         </tr>
       </table>
   </td>
@@ -163,14 +243,14 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aaed657c693ef05eca8c64d297dc58eec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaed657c693ef05eca8c64d297dc58eec">&#9670;&nbsp;</a></span>receiver_info</h2>
+<a id="a78f0158362dedcae32a79052e20ac4a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78f0158362dedcae32a79052e20ac4a3">&#9670;&nbsp;</a></span>receiver_info</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1commands__gnss_1_1_receiver_info_1_1_info.html">Info</a>* mip::commands_gnss::ReceiverInfo::Response::receiver_info = {nullptr}</td>
+          <td class="memname"><a class="el" href="structmip_1_1commands__gnss_1_1_receiver_info_1_1_info.html">Info</a> mip::commands_gnss::ReceiverInfo::Response::receiver_info[5]</td>
         </tr>
       </table>
 </div><div class="memdoc">

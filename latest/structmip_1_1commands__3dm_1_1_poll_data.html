@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-92-ge4aecbb</span>
+   &#160;<span id="projectnumber">v1.0.0-127-gb109f1a</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -68,6 +68,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="structmip_1_1commands__3dm_1_1_poll_data-members.html">List of all members</a>  </div>
@@ -78,6 +80,16 @@ $(function() {
 
 <p><code>#include &lt;<a class="el" href="commands__3dm_8hpp_source.html">commands_3dm.hpp</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a6d0f25a4bb08d6fe9457a1f1679edf51"><td class="memItemLeft" align="right" valign="top">typedef void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_poll_data.html#a6d0f25a4bb08d6fe9457a1f1679edf51">Response</a></td></tr>
+<tr class="separator:a6d0f25a4bb08d6fe9457a1f1679edf51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a6f04f1527531db47b7d58599b3a5f716"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_poll_data.html#a6f04f1527531db47b7d58599b3a5f716">as_tuple</a> () const</td></tr>
+<tr class="separator:a6f04f1527531db47b7d58599b3a5f716"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a7d7be7ad163e7b54f0edd7cb86adac0f"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_poll_data.html#a7d7be7ad163e7b54f0edd7cb86adac0f">desc_set</a> = 0</td></tr>
@@ -89,9 +101,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:aa634262648b551cf4cbda1fde0e97965"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_poll_data.html#aa634262648b551cf4cbda1fde0e97965">num_descriptors</a> = 0</td></tr>
 <tr class="memdesc:aa634262648b551cf4cbda1fde0e97965"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of descriptors in the format list.  <a href="structmip_1_1commands__3dm_1_1_poll_data.html#aa634262648b551cf4cbda1fde0e97965">More...</a><br /></td></tr>
 <tr class="separator:aa634262648b551cf4cbda1fde0e97965"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a281384b3b5f50c635f55cfe2677bde1b"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_poll_data.html#a281384b3b5f50c635f55cfe2677bde1b">descriptors</a> = {nullptr}</td></tr>
-<tr class="memdesc:a281384b3b5f50c635f55cfe2677bde1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Descriptor format list.  <a href="structmip_1_1commands__3dm_1_1_poll_data.html#a281384b3b5f50c635f55cfe2677bde1b">More...</a><br /></td></tr>
-<tr class="separator:a281384b3b5f50c635f55cfe2677bde1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaec9e17923c86b1646bcad07fda1b1ec"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_poll_data.html#aaec9e17923c86b1646bcad07fda1b1ec">descriptors</a> [82] = {0}</td></tr>
+<tr class="memdesc:aaec9e17923c86b1646bcad07fda1b1ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Descriptor format list.  <a href="structmip_1_1commands__3dm_1_1_poll_data.html#aaec9e17923c86b1646bcad07fda1b1ec">More...</a><br /></td></tr>
+<tr class="separator:aaec9e17923c86b1646bcad07fda1b1ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -101,8 +113,73 @@ Static Public Attributes</h2></td></tr>
 <tr class="separator:af51fb7ca0527328a3f60e398075b3068"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0487bf52efcdf93d385b0d39a85cd0dd"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_poll_data.html#a0487bf52efcdf93d385b0d39a85cd0dd">HAS_FUNCTION_SELECTOR</a> = false</td></tr>
 <tr class="separator:a0487bf52efcdf93d385b0d39a85cd0dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f5034289b1fe381b48a75eb3eda4323"><td class="memItemLeft" align="right" valign="top">static const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_poll_data.html#a9f5034289b1fe381b48a75eb3eda4323">COUNTER_PARAMS</a> = 0x000000C0</td></tr>
+<tr class="separator:a9f5034289b1fe381b48a75eb3eda4323"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a6d0f25a4bb08d6fe9457a1f1679edf51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d0f25a4bb08d6fe9457a1f1679edf51">&#9670;&nbsp;</a></span>Response</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void <a class="el" href="structmip_1_1commands__3dm_1_1_poll_data.html#a6d0f25a4bb08d6fe9457a1f1679edf51">mip::commands_3dm::PollData::Response</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6f04f1527531db47b7d58599b3a5f716"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f04f1527531db47b7d58599b3a5f716">&#9670;&nbsp;</a></span>as_tuple()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto mip::commands_3dm::PollData::as_tuple </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a9f5034289b1fe381b48a75eb3eda4323"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f5034289b1fe381b48a75eb3eda4323">&#9670;&nbsp;</a></span>COUNTER_PARAMS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint32_t mip::commands_3dm::PollData::COUNTER_PARAMS = 0x000000C0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a7d7be7ad163e7b54f0edd7cb86adac0f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7d7be7ad163e7b54f0edd7cb86adac0f">&#9670;&nbsp;</a></span>desc_set</h2>
 
@@ -141,14 +218,14 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a281384b3b5f50c635f55cfe2677bde1b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a281384b3b5f50c635f55cfe2677bde1b">&#9670;&nbsp;</a></span>descriptors</h2>
+<a id="aaec9e17923c86b1646bcad07fda1b1ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaec9e17923c86b1646bcad07fda1b1ec">&#9670;&nbsp;</a></span>descriptors</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t* mip::commands_3dm::PollData::descriptors = {nullptr}</td>
+          <td class="memname">uint8_t mip::commands_3dm::PollData::descriptors[82] = {0}</td>
         </tr>
       </table>
 </div><div class="memdoc">

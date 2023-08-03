@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-92-ge4aecbb</span>
+   &#160;<span id="projectnumber">v1.0.0-127-gb109f1a</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -68,6 +68,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="structmip_1_1commands__filter_1_1_external_gnss_update-members.html">List of all members</a>  </div>
@@ -78,6 +80,16 @@ $(function() {
 
 <p><code>#include &lt;<a class="el" href="commands__filter_8hpp_source.html">commands_filter.hpp</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a5c98f6fb5423bc8a8614e959ef7e21f4"><td class="memItemLeft" align="right" valign="top">typedef void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_external_gnss_update.html#a5c98f6fb5423bc8a8614e959ef7e21f4">Response</a></td></tr>
+<tr class="separator:a5c98f6fb5423bc8a8614e959ef7e21f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a9e977a01792e176174d606037fa0c93f"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_external_gnss_update.html#a9e977a01792e176174d606037fa0c93f">as_tuple</a> () const</td></tr>
+<tr class="separator:a9e977a01792e176174d606037fa0c93f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a6ac57a0193876a872ffb00d9cec5ab4d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_external_gnss_update.html#a6ac57a0193876a872ffb00d9cec5ab4d">gps_time</a> = 0</td></tr>
@@ -95,26 +107,91 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a56d04cfe36fee24ad8ac400ec5959ab0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_external_gnss_update.html#a56d04cfe36fee24ad8ac400ec5959ab0">height</a> = 0</td></tr>
 <tr class="memdesc:a56d04cfe36fee24ad8ac400ec5959ab0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Above WGS84 ellipsoid [meters].  <a href="structmip_1_1commands__filter_1_1_external_gnss_update.html#a56d04cfe36fee24ad8ac400ec5959ab0">More...</a><br /></td></tr>
 <tr class="separator:a56d04cfe36fee24ad8ac400ec5959ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f155033b1e93ee63215619d1e6c1815"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_external_gnss_update.html#a9f155033b1e93ee63215619d1e6c1815">velocity</a> [3] = {0}</td></tr>
-<tr class="memdesc:a9f155033b1e93ee63215619d1e6c1815"><td class="mdescLeft">&#160;</td><td class="mdescRight">NED Frame [meters/second].  <a href="structmip_1_1commands__filter_1_1_external_gnss_update.html#a9f155033b1e93ee63215619d1e6c1815">More...</a><br /></td></tr>
-<tr class="separator:a9f155033b1e93ee63215619d1e6c1815"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67596f988c9323da252134db32c8086f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_external_gnss_update.html#a67596f988c9323da252134db32c8086f">pos_uncertainty</a> [3] = {0}</td></tr>
-<tr class="memdesc:a67596f988c9323da252134db32c8086f"><td class="mdescLeft">&#160;</td><td class="mdescRight">NED Frame, 1-sigma [meters].  <a href="structmip_1_1commands__filter_1_1_external_gnss_update.html#a67596f988c9323da252134db32c8086f">More...</a><br /></td></tr>
-<tr class="separator:a67596f988c9323da252134db32c8086f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace634eee37c8fb078c00c2f91495899b"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_external_gnss_update.html#ace634eee37c8fb078c00c2f91495899b">vel_uncertainty</a> [3] = {0}</td></tr>
-<tr class="memdesc:ace634eee37c8fb078c00c2f91495899b"><td class="mdescLeft">&#160;</td><td class="mdescRight">NED Frame, 1-sigma [meters/second].  <a href="structmip_1_1commands__filter_1_1_external_gnss_update.html#ace634eee37c8fb078c00c2f91495899b">More...</a><br /></td></tr>
-<tr class="separator:ace634eee37c8fb078c00c2f91495899b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9423f6bb5677cb6c0c85a93bf21746d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemip.html#a5209d3c0c1d7b0a0613569ba51facda8">Vector3f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_external_gnss_update.html#a9423f6bb5677cb6c0c85a93bf21746d5">velocity</a></td></tr>
+<tr class="memdesc:a9423f6bb5677cb6c0c85a93bf21746d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">NED Frame [meters/second].  <a href="structmip_1_1commands__filter_1_1_external_gnss_update.html#a9423f6bb5677cb6c0c85a93bf21746d5">More...</a><br /></td></tr>
+<tr class="separator:a9423f6bb5677cb6c0c85a93bf21746d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cb6b8b902a974a7a80e8a95be6a4c13"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemip.html#a5209d3c0c1d7b0a0613569ba51facda8">Vector3f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_external_gnss_update.html#a2cb6b8b902a974a7a80e8a95be6a4c13">pos_uncertainty</a></td></tr>
+<tr class="memdesc:a2cb6b8b902a974a7a80e8a95be6a4c13"><td class="mdescLeft">&#160;</td><td class="mdescRight">NED Frame, 1-sigma [meters].  <a href="structmip_1_1commands__filter_1_1_external_gnss_update.html#a2cb6b8b902a974a7a80e8a95be6a4c13">More...</a><br /></td></tr>
+<tr class="separator:a2cb6b8b902a974a7a80e8a95be6a4c13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66059c1b6816391f81dfa473fc3da69e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemip.html#a5209d3c0c1d7b0a0613569ba51facda8">Vector3f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_external_gnss_update.html#a66059c1b6816391f81dfa473fc3da69e">vel_uncertainty</a></td></tr>
+<tr class="memdesc:a66059c1b6816391f81dfa473fc3da69e"><td class="mdescLeft">&#160;</td><td class="mdescRight">NED Frame, 1-sigma [meters/second].  <a href="structmip_1_1commands__filter_1_1_external_gnss_update.html#a66059c1b6816391f81dfa473fc3da69e">More...</a><br /></td></tr>
+<tr class="separator:a66059c1b6816391f81dfa473fc3da69e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a2d1cc93449fed266131899da3ab8af1f"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_external_gnss_update.html#a2d1cc93449fed266131899da3ab8af1f">DESCRIPTOR_SET</a> = ::mip::commands_filter::DESCRIPTOR_SET</td></tr>
 <tr class="separator:a2d1cc93449fed266131899da3ab8af1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e26f72f29f7c0b1ce4568506625349d"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_external_gnss_update.html#a0e26f72f29f7c0b1ce4568506625349d">FIELD_DESCRIPTOR</a> = ::<a class="el" href="group__filter__commands__cpp.html#gga5d6cb1325f7cb8fda843b5a713c468cdabb1a85352cd3188e0c3e2e0611bfa0b0">mip::commands_filter::CMD_EXTERNAL_GNSS_UPDATE</a></td></tr>
+<tr class="memitem:a0e26f72f29f7c0b1ce4568506625349d"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_external_gnss_update.html#a0e26f72f29f7c0b1ce4568506625349d">FIELD_DESCRIPTOR</a> = ::<a class="el" href="group__filter__commands__cpp.html#gga740591bcc84739c1b5acd1a874a2787cabb1a85352cd3188e0c3e2e0611bfa0b0">mip::commands_filter::CMD_EXTERNAL_GNSS_UPDATE</a></td></tr>
 <tr class="separator:a0e26f72f29f7c0b1ce4568506625349d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae008b8f75bf88d84e2f67060798c99fd"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_external_gnss_update.html#ae008b8f75bf88d84e2f67060798c99fd">HAS_FUNCTION_SELECTOR</a> = false</td></tr>
 <tr class="separator:ae008b8f75bf88d84e2f67060798c99fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32066d1c7d69f4c3d488b317ca6626d8"><td class="memItemLeft" align="right" valign="top">static const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_external_gnss_update.html#a32066d1c7d69f4c3d488b317ca6626d8">COUNTER_PARAMS</a> = 0x00000000</td></tr>
+<tr class="separator:a32066d1c7d69f4c3d488b317ca6626d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a5c98f6fb5423bc8a8614e959ef7e21f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c98f6fb5423bc8a8614e959ef7e21f4">&#9670;&nbsp;</a></span>Response</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void <a class="el" href="structmip_1_1commands__filter_1_1_external_gnss_update.html#a5c98f6fb5423bc8a8614e959ef7e21f4">mip::commands_filter::ExternalGnssUpdate::Response</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a9e977a01792e176174d606037fa0c93f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e977a01792e176174d606037fa0c93f">&#9670;&nbsp;</a></span>as_tuple()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto mip::commands_filter::ExternalGnssUpdate::as_tuple </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a32066d1c7d69f4c3d488b317ca6626d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32066d1c7d69f4c3d488b317ca6626d8">&#9670;&nbsp;</a></span>COUNTER_PARAMS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint32_t mip::commands_filter::ExternalGnssUpdate::COUNTER_PARAMS = 0x00000000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a2d1cc93449fed266131899da3ab8af1f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2d1cc93449fed266131899da3ab8af1f">&#9670;&nbsp;</a></span>DESCRIPTOR_SET</h2>
 
@@ -147,7 +224,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const uint8_t mip::commands_filter::ExternalGnssUpdate::FIELD_DESCRIPTOR = ::<a class="el" href="group__filter__commands__cpp.html#gga5d6cb1325f7cb8fda843b5a713c468cdabb1a85352cd3188e0c3e2e0611bfa0b0">mip::commands_filter::CMD_EXTERNAL_GNSS_UPDATE</a></td>
+          <td class="memname">const uint8_t mip::commands_filter::ExternalGnssUpdate::FIELD_DESCRIPTOR = ::<a class="el" href="group__filter__commands__cpp.html#gga740591bcc84739c1b5acd1a874a2787cabb1a85352cd3188e0c3e2e0611bfa0b0">mip::commands_filter::CMD_EXTERNAL_GNSS_UPDATE</a></td>
         </tr>
       </table>
   </td>
@@ -261,14 +338,14 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a67596f988c9323da252134db32c8086f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a67596f988c9323da252134db32c8086f">&#9670;&nbsp;</a></span>pos_uncertainty</h2>
+<a id="a2cb6b8b902a974a7a80e8a95be6a4c13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cb6b8b902a974a7a80e8a95be6a4c13">&#9670;&nbsp;</a></span>pos_uncertainty</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float mip::commands_filter::ExternalGnssUpdate::pos_uncertainty[3] = {0}</td>
+          <td class="memname"><a class="el" href="namespacemip.html#a5209d3c0c1d7b0a0613569ba51facda8">Vector3f</a> mip::commands_filter::ExternalGnssUpdate::pos_uncertainty</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -277,14 +354,14 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ace634eee37c8fb078c00c2f91495899b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace634eee37c8fb078c00c2f91495899b">&#9670;&nbsp;</a></span>vel_uncertainty</h2>
+<a id="a66059c1b6816391f81dfa473fc3da69e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66059c1b6816391f81dfa473fc3da69e">&#9670;&nbsp;</a></span>vel_uncertainty</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float mip::commands_filter::ExternalGnssUpdate::vel_uncertainty[3] = {0}</td>
+          <td class="memname"><a class="el" href="namespacemip.html#a5209d3c0c1d7b0a0613569ba51facda8">Vector3f</a> mip::commands_filter::ExternalGnssUpdate::vel_uncertainty</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -293,14 +370,14 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a9f155033b1e93ee63215619d1e6c1815"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f155033b1e93ee63215619d1e6c1815">&#9670;&nbsp;</a></span>velocity</h2>
+<a id="a9423f6bb5677cb6c0c85a93bf21746d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9423f6bb5677cb6c0c85a93bf21746d5">&#9670;&nbsp;</a></span>velocity</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float mip::commands_filter::ExternalGnssUpdate::velocity[3] = {0}</td>
+          <td class="memname"><a class="el" href="namespacemip.html#a5209d3c0c1d7b0a0613569ba51facda8">Vector3f</a> mip::commands_filter::ExternalGnssUpdate::velocity</td>
         </tr>
       </table>
 </div><div class="memdoc">

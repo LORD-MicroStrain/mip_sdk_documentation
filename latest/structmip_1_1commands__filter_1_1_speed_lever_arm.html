@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-92-ge4aecbb</span>
+   &#160;<span id="projectnumber">v1.0.0-127-gb109f1a</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -69,6 +69,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="structmip_1_1commands__filter_1_1_speed_lever_arm-members.html">List of all members</a>  </div>
@@ -84,6 +86,16 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_speed_lever_arm_1_1_response.html">Response</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ab30fbe5bc277a8c91aeb4bfde21ab2ed"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_speed_lever_arm.html#ab30fbe5bc277a8c91aeb4bfde21ab2ed">as_tuple</a> () const</td></tr>
+<tr class="separator:ab30fbe5bc277a8c91aeb4bfde21ab2ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:aa80d80a1d66335db5b8f5d553f6494ae"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structmip_1_1commands__filter_1_1_speed_lever_arm.html">SpeedLeverArm</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_speed_lever_arm.html#aa80d80a1d66335db5b8f5d553f6494ae">create_sld_all</a> (::<a class="el" href="namespacemip.html#a2dde9cdf5ebc86cf62e8c2591dcb56de">mip::FunctionSelector</a> <a class="el" href="structmip_1_1commands__filter_1_1_speed_lever_arm.html#a31036618133f9aa59e80256e74451824">function</a>)</td></tr>
+<tr class="separator:aa80d80a1d66335db5b8f5d553f6494ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a31036618133f9aa59e80256e74451824"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemip.html#a2dde9cdf5ebc86cf62e8c2591dcb56de">FunctionSelector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_speed_lever_arm.html#a31036618133f9aa59e80256e74451824">function</a> = static_cast&lt;<a class="el" href="namespacemip.html#a2dde9cdf5ebc86cf62e8c2591dcb56de">FunctionSelector</a>&gt;(0)</td></tr>
@@ -91,28 +103,130 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a03912431912f3f90de6360c88d804094"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_speed_lever_arm.html#a03912431912f3f90de6360c88d804094">source</a> = 0</td></tr>
 <tr class="memdesc:a03912431912f3f90de6360c88d804094"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserved, must be 1.  <a href="structmip_1_1commands__filter_1_1_speed_lever_arm.html#a03912431912f3f90de6360c88d804094">More...</a><br /></td></tr>
 <tr class="separator:a03912431912f3f90de6360c88d804094"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06ecc2f68388cf1df8f10f5aa0ba9801"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_speed_lever_arm.html#a06ecc2f68388cf1df8f10f5aa0ba9801">lever_arm_offset</a> [3] = {0}</td></tr>
-<tr class="memdesc:a06ecc2f68388cf1df8f10f5aa0ba9801"><td class="mdescLeft">&#160;</td><td class="mdescRight">[m] Lever arm offset vector in the vehicle's reference frame.  <a href="structmip_1_1commands__filter_1_1_speed_lever_arm.html#a06ecc2f68388cf1df8f10f5aa0ba9801">More...</a><br /></td></tr>
-<tr class="separator:a06ecc2f68388cf1df8f10f5aa0ba9801"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c02bb81bdefcfce02c155fcf7307bdc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemip.html#a5209d3c0c1d7b0a0613569ba51facda8">Vector3f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_speed_lever_arm.html#a3c02bb81bdefcfce02c155fcf7307bdc">lever_arm_offset</a></td></tr>
+<tr class="memdesc:a3c02bb81bdefcfce02c155fcf7307bdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">[m] Lever arm offset vector in the vehicle's reference frame.  <a href="structmip_1_1commands__filter_1_1_speed_lever_arm.html#a3c02bb81bdefcfce02c155fcf7307bdc">More...</a><br /></td></tr>
+<tr class="separator:a3c02bb81bdefcfce02c155fcf7307bdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a6a833c55851d7e7486184b57f1be2d68"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_speed_lever_arm.html#a6a833c55851d7e7486184b57f1be2d68">DESCRIPTOR_SET</a> = ::mip::commands_filter::DESCRIPTOR_SET</td></tr>
 <tr class="separator:a6a833c55851d7e7486184b57f1be2d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1681e6a18b17f70a7ff0430bcc5cb89"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_speed_lever_arm.html#ae1681e6a18b17f70a7ff0430bcc5cb89">FIELD_DESCRIPTOR</a> = ::<a class="el" href="group__filter__commands__cpp.html#gga5d6cb1325f7cb8fda843b5a713c468cdab55ff98f440cd872297e114beb29fb3c">mip::commands_filter::CMD_SPEED_LEVER_ARM</a></td></tr>
+<tr class="memitem:ae1681e6a18b17f70a7ff0430bcc5cb89"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_speed_lever_arm.html#ae1681e6a18b17f70a7ff0430bcc5cb89">FIELD_DESCRIPTOR</a> = ::<a class="el" href="group__filter__commands__cpp.html#gga740591bcc84739c1b5acd1a874a2787cab55ff98f440cd872297e114beb29fb3c">mip::commands_filter::CMD_SPEED_LEVER_ARM</a></td></tr>
 <tr class="separator:ae1681e6a18b17f70a7ff0430bcc5cb89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3c96a17ffc4b5ee1bc2ffabd4f3bc2e"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_speed_lever_arm.html#ad3c96a17ffc4b5ee1bc2ffabd4f3bc2e">HAS_WRITE_FUNCTION</a> = true</td></tr>
-<tr class="separator:ad3c96a17ffc4b5ee1bc2ffabd4f3bc2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec37e8a79a1b9a816166bc11a4780b74"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_speed_lever_arm.html#aec37e8a79a1b9a816166bc11a4780b74">HAS_READ_FUNCTION</a> = true</td></tr>
-<tr class="separator:aec37e8a79a1b9a816166bc11a4780b74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50fe3e43ef18067527f83da6b8cdc060"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_speed_lever_arm.html#a50fe3e43ef18067527f83da6b8cdc060">HAS_SAVE_FUNCTION</a> = true</td></tr>
-<tr class="separator:a50fe3e43ef18067527f83da6b8cdc060"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9326b3bdf637a8c4fc5ee19fd37f4d6a"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_speed_lever_arm.html#a9326b3bdf637a8c4fc5ee19fd37f4d6a">HAS_LOAD_FUNCTION</a> = true</td></tr>
-<tr class="separator:a9326b3bdf637a8c4fc5ee19fd37f4d6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf68959c9ad738a842b66609a27b9adf"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_speed_lever_arm.html#aaf68959c9ad738a842b66609a27b9adf">HAS_RESET_FUNCTION</a> = true</td></tr>
-<tr class="separator:aaf68959c9ad738a842b66609a27b9adf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a572b2254a70a87c180c9d901cb4d12f9"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_speed_lever_arm.html#a572b2254a70a87c180c9d901cb4d12f9">HAS_FUNCTION_SELECTOR</a> = true</td></tr>
+<tr class="separator:a572b2254a70a87c180c9d901cb4d12f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4966fef0a2fdf701a07e889767701b0f"><td class="memItemLeft" align="right" valign="top">static const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_speed_lever_arm.html#a4966fef0a2fdf701a07e889767701b0f">WRITE_PARAMS</a> = 0x8003</td></tr>
+<tr class="separator:a4966fef0a2fdf701a07e889767701b0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54010719add3e94b90990edd24df674a"><td class="memItemLeft" align="right" valign="top">static const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_speed_lever_arm.html#a54010719add3e94b90990edd24df674a">READ_PARAMS</a> = 0x8001</td></tr>
+<tr class="separator:a54010719add3e94b90990edd24df674a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa61d7bef483461d59bd542a16a7c1382"><td class="memItemLeft" align="right" valign="top">static const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_speed_lever_arm.html#aa61d7bef483461d59bd542a16a7c1382">SAVE_PARAMS</a> = 0x8001</td></tr>
+<tr class="separator:aa61d7bef483461d59bd542a16a7c1382"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16f5170fa0d5826cb3d15699774b2d34"><td class="memItemLeft" align="right" valign="top">static const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_speed_lever_arm.html#a16f5170fa0d5826cb3d15699774b2d34">LOAD_PARAMS</a> = 0x8001</td></tr>
+<tr class="separator:a16f5170fa0d5826cb3d15699774b2d34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c6d37aa2b54fbcd0b72fa2bb0d55a0b"><td class="memItemLeft" align="right" valign="top">static const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_speed_lever_arm.html#a2c6d37aa2b54fbcd0b72fa2bb0d55a0b">DEFAULT_PARAMS</a> = 0x8001</td></tr>
+<tr class="separator:a2c6d37aa2b54fbcd0b72fa2bb0d55a0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c738d3673a64a9d5f5ebb6a7f5b0057"><td class="memItemLeft" align="right" valign="top">static const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_speed_lever_arm.html#a8c738d3673a64a9d5f5ebb6a7f5b0057">ECHOED_PARAMS</a> = 0x0001</td></tr>
+<tr class="separator:a8c738d3673a64a9d5f5ebb6a7f5b0057"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed4dfd98005a4981857406854eaa9c06"><td class="memItemLeft" align="right" valign="top">static const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_speed_lever_arm.html#aed4dfd98005a4981857406854eaa9c06">COUNTER_PARAMS</a> = 0x00000000</td></tr>
+<tr class="separator:aed4dfd98005a4981857406854eaa9c06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab30fbe5bc277a8c91aeb4bfde21ab2ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab30fbe5bc277a8c91aeb4bfde21ab2ed">&#9670;&nbsp;</a></span>as_tuple()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto mip::commands_filter::SpeedLeverArm::as_tuple </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa80d80a1d66335db5b8f5d553f6494ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa80d80a1d66335db5b8f5d553f6494ae">&#9670;&nbsp;</a></span>create_sld_all()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="structmip_1_1commands__filter_1_1_speed_lever_arm.html">SpeedLeverArm</a> mip::commands_filter::SpeedLeverArm::create_sld_all </td>
+          <td>(</td>
+          <td class="paramtype">::<a class="el" href="namespacemip.html#a2dde9cdf5ebc86cf62e8c2591dcb56de">mip::FunctionSelector</a>&#160;</td>
+          <td class="paramname"><em>function</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="aed4dfd98005a4981857406854eaa9c06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed4dfd98005a4981857406854eaa9c06">&#9670;&nbsp;</a></span>COUNTER_PARAMS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint32_t mip::commands_filter::SpeedLeverArm::COUNTER_PARAMS = 0x00000000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2c6d37aa2b54fbcd0b72fa2bb0d55a0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c6d37aa2b54fbcd0b72fa2bb0d55a0b">&#9670;&nbsp;</a></span>DEFAULT_PARAMS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint32_t mip::commands_filter::SpeedLeverArm::DEFAULT_PARAMS = 0x8001</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a6a833c55851d7e7486184b57f1be2d68"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6a833c55851d7e7486184b57f1be2d68">&#9670;&nbsp;</a></span>DESCRIPTOR_SET</h2>
 
@@ -135,6 +249,28 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a8c738d3673a64a9d5f5ebb6a7f5b0057"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c738d3673a64a9d5f5ebb6a7f5b0057">&#9670;&nbsp;</a></span>ECHOED_PARAMS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint32_t mip::commands_filter::SpeedLeverArm::ECHOED_PARAMS = 0x0001</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ae1681e6a18b17f70a7ff0430bcc5cb89"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae1681e6a18b17f70a7ff0430bcc5cb89">&#9670;&nbsp;</a></span>FIELD_DESCRIPTOR</h2>
 
@@ -145,7 +281,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const uint8_t mip::commands_filter::SpeedLeverArm::FIELD_DESCRIPTOR = ::<a class="el" href="group__filter__commands__cpp.html#gga5d6cb1325f7cb8fda843b5a713c468cdab55ff98f440cd872297e114beb29fb3c">mip::commands_filter::CMD_SPEED_LEVER_ARM</a></td>
+          <td class="memname">const uint8_t mip::commands_filter::SpeedLeverArm::FIELD_DESCRIPTOR = ::<a class="el" href="group__filter__commands__cpp.html#gga740591bcc84739c1b5acd1a874a2787cab55ff98f440cd872297e114beb29fb3c">mip::commands_filter::CMD_SPEED_LEVER_ARM</a></td>
         </tr>
       </table>
   </td>
@@ -171,8 +307,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a9326b3bdf637a8c4fc5ee19fd37f4d6a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9326b3bdf637a8c4fc5ee19fd37f4d6a">&#9670;&nbsp;</a></span>HAS_LOAD_FUNCTION</h2>
+<a id="a572b2254a70a87c180c9d901cb4d12f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a572b2254a70a87c180c9d901cb4d12f9">&#9670;&nbsp;</a></span>HAS_FUNCTION_SELECTOR</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -181,7 +317,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const bool mip::commands_filter::SpeedLeverArm::HAS_LOAD_FUNCTION = true</td>
+          <td class="memname">const bool mip::commands_filter::SpeedLeverArm::HAS_FUNCTION_SELECTOR = true</td>
         </tr>
       </table>
   </td>
@@ -193,107 +329,85 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aec37e8a79a1b9a816166bc11a4780b74"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec37e8a79a1b9a816166bc11a4780b74">&#9670;&nbsp;</a></span>HAS_READ_FUNCTION</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const bool mip::commands_filter::SpeedLeverArm::HAS_READ_FUNCTION = true</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aaf68959c9ad738a842b66609a27b9adf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf68959c9ad738a842b66609a27b9adf">&#9670;&nbsp;</a></span>HAS_RESET_FUNCTION</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const bool mip::commands_filter::SpeedLeverArm::HAS_RESET_FUNCTION = true</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a50fe3e43ef18067527f83da6b8cdc060"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a50fe3e43ef18067527f83da6b8cdc060">&#9670;&nbsp;</a></span>HAS_SAVE_FUNCTION</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const bool mip::commands_filter::SpeedLeverArm::HAS_SAVE_FUNCTION = true</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad3c96a17ffc4b5ee1bc2ffabd4f3bc2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3c96a17ffc4b5ee1bc2ffabd4f3bc2e">&#9670;&nbsp;</a></span>HAS_WRITE_FUNCTION</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const bool mip::commands_filter::SpeedLeverArm::HAS_WRITE_FUNCTION = true</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a06ecc2f68388cf1df8f10f5aa0ba9801"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06ecc2f68388cf1df8f10f5aa0ba9801">&#9670;&nbsp;</a></span>lever_arm_offset</h2>
+<a id="a3c02bb81bdefcfce02c155fcf7307bdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c02bb81bdefcfce02c155fcf7307bdc">&#9670;&nbsp;</a></span>lever_arm_offset</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float mip::commands_filter::SpeedLeverArm::lever_arm_offset[3] = {0}</td>
+          <td class="memname"><a class="el" href="namespacemip.html#a5209d3c0c1d7b0a0613569ba51facda8">Vector3f</a> mip::commands_filter::SpeedLeverArm::lever_arm_offset</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>[m] Lever arm offset vector in the vehicle's reference frame. </p>
+
+</div>
+</div>
+<a id="a16f5170fa0d5826cb3d15699774b2d34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16f5170fa0d5826cb3d15699774b2d34">&#9670;&nbsp;</a></span>LOAD_PARAMS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint32_t mip::commands_filter::SpeedLeverArm::LOAD_PARAMS = 0x8001</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a54010719add3e94b90990edd24df674a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54010719add3e94b90990edd24df674a">&#9670;&nbsp;</a></span>READ_PARAMS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint32_t mip::commands_filter::SpeedLeverArm::READ_PARAMS = 0x8001</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa61d7bef483461d59bd542a16a7c1382"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa61d7bef483461d59bd542a16a7c1382">&#9670;&nbsp;</a></span>SAVE_PARAMS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint32_t mip::commands_filter::SpeedLeverArm::SAVE_PARAMS = 0x8001</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -310,6 +424,28 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Reserved, must be 1. </p>
+
+</div>
+</div>
+<a id="a4966fef0a2fdf701a07e889767701b0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4966fef0a2fdf701a07e889767701b0f">&#9670;&nbsp;</a></span>WRITE_PARAMS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint32_t mip::commands_filter::SpeedLeverArm::WRITE_PARAMS = 0x8003</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

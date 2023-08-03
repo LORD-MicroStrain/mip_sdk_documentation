@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-92-ge4aecbb</span>
+   &#160;<span id="projectnumber">v1.0.0-127-gb109f1a</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -76,7 +76,8 @@ $(function() {
 <div class="title">data_sensor.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="descriptors_8h_source.html">descriptors.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="common_8h_source.html">common.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="descriptors_8h_source.html">descriptors.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mip__result_8h_source.html">../mip_result.h</a>&quot;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;stddef.h&gt;</code><br />
@@ -86,18 +87,20 @@ Include dependency graph for data_sensor.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="data__sensor_8hpp__incl.png" border="0" usemap="#asrc_2mip_2definitions_2data__sensor_8hpp" alt=""/></div>
 <map name="asrc_2mip_2definitions_2data__sensor_8hpp" id="asrc_2mip_2definitions_2data__sensor_8hpp">
-<area shape="rect" title=" " alt="" coords="551,5,678,47"/>
-<area shape="rect" href="descriptors_8h.html" title=" " alt="" coords="211,95,309,121"/>
-<area shape="rect" title=" " alt="" coords="97,468,165,495"/>
-<area shape="rect" title=" " alt="" coords="487,468,553,495"/>
-<area shape="rect" title=" " alt="" coords="704,468,779,495"/>
-<area shape="rect" href="mip__result_8h.html" title=" " alt="" coords="805,393,910,420"/>
-<area shape="rect" href="serialization_8h.html" title=" " alt="" coords="318,169,461,196"/>
-<area shape="rect" title=" " alt="" coords="219,244,301,271"/>
-<area shape="rect" title=" " alt="" coords="43,169,93,196"/>
-<area shape="rect" href="mip__field_8h.html" title=" " alt="" coords="481,244,577,271"/>
-<area shape="rect" href="mip__packet_8h.html" title=" " alt="" coords="426,319,526,345"/>
-<area shape="rect" href="mip__types_8h.html" title=" " alt="" coords="429,393,523,420"/>
+<area shape="rect" title=" " alt="" coords="437,5,563,47"/>
+<area shape="rect" href="common_8h.html" title=" " alt="" coords="401,95,484,121"/>
+<area shape="rect" title=" " alt="" coords="47,468,115,495"/>
+<area shape="rect" title=" " alt="" coords="338,468,403,495"/>
+<area shape="rect" title=" " alt="" coords="731,468,805,495"/>
+<area shape="rect" href="descriptors_8h.html" title=" " alt="" coords="531,95,629,121"/>
+<area shape="rect" href="mip__result_8h.html" title=" " alt="" coords="625,393,730,420"/>
+<area shape="rect" href="serialization_8h.html" title=" " alt="" coords="371,169,514,196"/>
+<area shape="rect" title=" " alt="" coords="568,244,651,271"/>
+<area shape="rect" title=" " alt="" coords="245,169,296,196"/>
+<area shape="rect" href="mip__field_8h.html" title=" " alt="" coords="397,244,493,271"/>
+<area shape="rect" href="mip__packet_8h.html" title=" " alt="" coords="347,319,447,345"/>
+<area shape="rect" href="mip__types_8h.html" title=" " alt="" coords="324,393,417,420"/>
+<area shape="rect" title=" " alt="" coords="741,169,819,196"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -178,43 +181,43 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ga688fcd3097744eca130052082143853a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="group__sensor__data__cpp.html#gga688fcd3097744eca130052082143853aae97bd19967b3e301a19d9ce7eb77d919">mip::data_sensor::DESCRIPTOR_SET</a> = 0x80
-, <a class="el" href="group__sensor__data__cpp.html#gga688fcd3097744eca130052082143853aaeccf60d456e33eadfd5b31f00e7789b8">mip::data_sensor::DATA_ACCEL_RAW</a> = 0x01
-, <a class="el" href="group__sensor__data__cpp.html#gga688fcd3097744eca130052082143853aa08ee6bc6bfbfa34971f0e95c205bde3d">mip::data_sensor::DATA_GYRO_RAW</a> = 0x02
-, <a class="el" href="group__sensor__data__cpp.html#gga688fcd3097744eca130052082143853aa1639cfebc13d8bd8999c5ce46f197ad2">mip::data_sensor::DATA_MAG_RAW</a> = 0x03
+<tr class="memitem:ga9f7810820a9a03c560eb40e8ce31c404"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="group__sensor__data__cpp.html#gga9f7810820a9a03c560eb40e8ce31c404ae97bd19967b3e301a19d9ce7eb77d919">mip::data_sensor::DESCRIPTOR_SET</a> = 0x80
+, <a class="el" href="group__sensor__data__cpp.html#gga9f7810820a9a03c560eb40e8ce31c404aeccf60d456e33eadfd5b31f00e7789b8">mip::data_sensor::DATA_ACCEL_RAW</a> = 0x01
+, <a class="el" href="group__sensor__data__cpp.html#gga9f7810820a9a03c560eb40e8ce31c404a08ee6bc6bfbfa34971f0e95c205bde3d">mip::data_sensor::DATA_GYRO_RAW</a> = 0x02
+, <a class="el" href="group__sensor__data__cpp.html#gga9f7810820a9a03c560eb40e8ce31c404a1639cfebc13d8bd8999c5ce46f197ad2">mip::data_sensor::DATA_MAG_RAW</a> = 0x03
 , <br />
-&#160;&#160;<a class="el" href="group__sensor__data__cpp.html#gga688fcd3097744eca130052082143853aa4415779010cda889c0eb94520cbc82f5">mip::data_sensor::DATA_ACCEL_SCALED</a> = 0x04
-, <a class="el" href="group__sensor__data__cpp.html#gga688fcd3097744eca130052082143853aaf9c28f893a5b457739618940ee762239">mip::data_sensor::DATA_GYRO_SCALED</a> = 0x05
-, <a class="el" href="group__sensor__data__cpp.html#gga688fcd3097744eca130052082143853aa7a9d924bacc27f743f3ac593bbbb9030">mip::data_sensor::DATA_MAG_SCALED</a> = 0x06
-, <a class="el" href="group__sensor__data__cpp.html#gga688fcd3097744eca130052082143853aafd9fca8f978138e77c92b3799ce18c4c">mip::data_sensor::DATA_DELTA_THETA</a> = 0x07
+&#160;&#160;<a class="el" href="group__sensor__data__cpp.html#gga9f7810820a9a03c560eb40e8ce31c404a4415779010cda889c0eb94520cbc82f5">mip::data_sensor::DATA_ACCEL_SCALED</a> = 0x04
+, <a class="el" href="group__sensor__data__cpp.html#gga9f7810820a9a03c560eb40e8ce31c404af9c28f893a5b457739618940ee762239">mip::data_sensor::DATA_GYRO_SCALED</a> = 0x05
+, <a class="el" href="group__sensor__data__cpp.html#gga9f7810820a9a03c560eb40e8ce31c404a7a9d924bacc27f743f3ac593bbbb9030">mip::data_sensor::DATA_MAG_SCALED</a> = 0x06
+, <a class="el" href="group__sensor__data__cpp.html#gga9f7810820a9a03c560eb40e8ce31c404afd9fca8f978138e77c92b3799ce18c4c">mip::data_sensor::DATA_DELTA_THETA</a> = 0x07
 , <br />
-&#160;&#160;<a class="el" href="group__sensor__data__cpp.html#gga688fcd3097744eca130052082143853aad267fea5053b993766c6320669461745">mip::data_sensor::DATA_DELTA_VELOCITY</a> = 0x08
-, <a class="el" href="group__sensor__data__cpp.html#gga688fcd3097744eca130052082143853aa001d546af5bb7a672aaf388d26cfd8eb">mip::data_sensor::DATA_COMP_ORIENTATION_MATRIX</a> = 0x09
-, <a class="el" href="group__sensor__data__cpp.html#gga688fcd3097744eca130052082143853aa8eb5d5d3948215de5915d46ffba63d03">mip::data_sensor::DATA_COMP_QUATERNION</a> = 0x0A
-, <a class="el" href="group__sensor__data__cpp.html#gga688fcd3097744eca130052082143853aa6d0388316129fc365df30f5762960d04">mip::data_sensor::DATA_COMP_ORIENTATION_UPDATE_MATRIX</a> = 0x0B
+&#160;&#160;<a class="el" href="group__sensor__data__cpp.html#gga9f7810820a9a03c560eb40e8ce31c404ad267fea5053b993766c6320669461745">mip::data_sensor::DATA_DELTA_VELOCITY</a> = 0x08
+, <a class="el" href="group__sensor__data__cpp.html#gga9f7810820a9a03c560eb40e8ce31c404a001d546af5bb7a672aaf388d26cfd8eb">mip::data_sensor::DATA_COMP_ORIENTATION_MATRIX</a> = 0x09
+, <a class="el" href="group__sensor__data__cpp.html#gga9f7810820a9a03c560eb40e8ce31c404a8eb5d5d3948215de5915d46ffba63d03">mip::data_sensor::DATA_COMP_QUATERNION</a> = 0x0A
+, <a class="el" href="group__sensor__data__cpp.html#gga9f7810820a9a03c560eb40e8ce31c404a6d0388316129fc365df30f5762960d04">mip::data_sensor::DATA_COMP_ORIENTATION_UPDATE_MATRIX</a> = 0x0B
 , <br />
-&#160;&#160;<a class="el" href="group__sensor__data__cpp.html#gga688fcd3097744eca130052082143853aa8ba21969090665162c4737048e335c18">mip::data_sensor::DATA_COMP_EULER_ANGLES</a> = 0x0C
-, <a class="el" href="group__sensor__data__cpp.html#gga688fcd3097744eca130052082143853aa7e78be979267529929ebb8f813977db5">mip::data_sensor::DATA_TEMPERATURE_RAW</a> = 0x0D
-, <a class="el" href="group__sensor__data__cpp.html#gga688fcd3097744eca130052082143853aaebfd2279cfc55138855c4f8cab3e34e3">mip::data_sensor::DATA_TIME_STAMP_INTERNAL</a> = 0x0E
-, <a class="el" href="group__sensor__data__cpp.html#gga688fcd3097744eca130052082143853aaf917ab27a7f35d518053373d07b92aa9">mip::data_sensor::DATA_TIME_STAMP_PPS</a> = 0x0F
+&#160;&#160;<a class="el" href="group__sensor__data__cpp.html#gga9f7810820a9a03c560eb40e8ce31c404a8ba21969090665162c4737048e335c18">mip::data_sensor::DATA_COMP_EULER_ANGLES</a> = 0x0C
+, <a class="el" href="group__sensor__data__cpp.html#gga9f7810820a9a03c560eb40e8ce31c404a7e78be979267529929ebb8f813977db5">mip::data_sensor::DATA_TEMPERATURE_RAW</a> = 0x0D
+, <a class="el" href="group__sensor__data__cpp.html#gga9f7810820a9a03c560eb40e8ce31c404aebfd2279cfc55138855c4f8cab3e34e3">mip::data_sensor::DATA_TIME_STAMP_INTERNAL</a> = 0x0E
+, <a class="el" href="group__sensor__data__cpp.html#gga9f7810820a9a03c560eb40e8ce31c404af917ab27a7f35d518053373d07b92aa9">mip::data_sensor::DATA_TIME_STAMP_PPS</a> = 0x0F
 , <br />
-&#160;&#160;<a class="el" href="group__sensor__data__cpp.html#gga688fcd3097744eca130052082143853aa9ee5d2f167368414312f75bb4d266bb5">mip::data_sensor::DATA_STAB_MAG</a> = 0x10
-, <a class="el" href="group__sensor__data__cpp.html#gga688fcd3097744eca130052082143853aad854da64dc2581ffd134e3096bd7cd6f">mip::data_sensor::DATA_STAB_ACCEL</a> = 0x11
-, <a class="el" href="group__sensor__data__cpp.html#gga688fcd3097744eca130052082143853aa3bd8eda1bc2c6ab8971367f0025dcaea">mip::data_sensor::DATA_TIME_STAMP_GPS</a> = 0x12
-, <a class="el" href="group__sensor__data__cpp.html#gga688fcd3097744eca130052082143853aafd1d83e0bea340e55cd3fe6e788df342">mip::data_sensor::DATA_TEMPERATURE_ABS</a> = 0x14
+&#160;&#160;<a class="el" href="group__sensor__data__cpp.html#gga9f7810820a9a03c560eb40e8ce31c404a9ee5d2f167368414312f75bb4d266bb5">mip::data_sensor::DATA_STAB_MAG</a> = 0x10
+, <a class="el" href="group__sensor__data__cpp.html#gga9f7810820a9a03c560eb40e8ce31c404ad854da64dc2581ffd134e3096bd7cd6f">mip::data_sensor::DATA_STAB_ACCEL</a> = 0x11
+, <a class="el" href="group__sensor__data__cpp.html#gga9f7810820a9a03c560eb40e8ce31c404a3bd8eda1bc2c6ab8971367f0025dcaea">mip::data_sensor::DATA_TIME_STAMP_GPS</a> = 0x12
+, <a class="el" href="group__sensor__data__cpp.html#gga9f7810820a9a03c560eb40e8ce31c404afd1d83e0bea340e55cd3fe6e788df342">mip::data_sensor::DATA_TEMPERATURE_ABS</a> = 0x14
 , <br />
-&#160;&#160;<a class="el" href="group__sensor__data__cpp.html#gga688fcd3097744eca130052082143853aa4cf004cf70fd3326f9f6ca3a4d2f1978">mip::data_sensor::DATA_RAW_CLIP_DATA</a> = 0x15
-, <a class="el" href="group__sensor__data__cpp.html#gga688fcd3097744eca130052082143853aa9f8a55d1a86ebbe433f260fec59853a2">mip::data_sensor::DATA_PRESSURE_RAW</a> = 0x16
-, <a class="el" href="group__sensor__data__cpp.html#gga688fcd3097744eca130052082143853aafeac0c2bab788a1f8dff197bd256ab71">mip::data_sensor::DATA_PRESSURE_SCALED</a> = 0x17
-, <a class="el" href="group__sensor__data__cpp.html#gga688fcd3097744eca130052082143853aac12f4bff68c328dccb49cbc0d2b0f225">mip::data_sensor::DATA_OVERRANGE_STATUS</a> = 0x18
+&#160;&#160;<a class="el" href="group__sensor__data__cpp.html#gga9f7810820a9a03c560eb40e8ce31c404a4cf004cf70fd3326f9f6ca3a4d2f1978">mip::data_sensor::DATA_RAW_CLIP_DATA</a> = 0x15
+, <a class="el" href="group__sensor__data__cpp.html#gga9f7810820a9a03c560eb40e8ce31c404a9f8a55d1a86ebbe433f260fec59853a2">mip::data_sensor::DATA_PRESSURE_RAW</a> = 0x16
+, <a class="el" href="group__sensor__data__cpp.html#gga9f7810820a9a03c560eb40e8ce31c404afeac0c2bab788a1f8dff197bd256ab71">mip::data_sensor::DATA_PRESSURE_SCALED</a> = 0x17
+, <a class="el" href="group__sensor__data__cpp.html#gga9f7810820a9a03c560eb40e8ce31c404ac12f4bff68c328dccb49cbc0d2b0f225">mip::data_sensor::DATA_OVERRANGE_STATUS</a> = 0x18
 , <br />
-&#160;&#160;<a class="el" href="group__sensor__data__cpp.html#gga688fcd3097744eca130052082143853aa43f79ca9a80043bdeb532b55741f5918">mip::data_sensor::DATA_ODOMETER</a> = 0x40
-, <a class="el" href="group__sensor__data__cpp.html#gga688fcd3097744eca130052082143853aaaa2ade6b753a666d0df697336a49efa8">mip::data_sensor::MIP_DATA_DESC_ASPP</a> = 0x81
-, <a class="el" href="group__sensor__data__cpp.html#gga688fcd3097744eca130052082143853aad0e187384522024159ad56e6679993b7">mip::data_sensor::MIP_DATA_DESC_GXSB</a> = 0x82
+&#160;&#160;<a class="el" href="group__sensor__data__cpp.html#gga9f7810820a9a03c560eb40e8ce31c404a43f79ca9a80043bdeb532b55741f5918">mip::data_sensor::DATA_ODOMETER</a> = 0x40
+, <a class="el" href="group__sensor__data__cpp.html#gga9f7810820a9a03c560eb40e8ce31c404aaa2ade6b753a666d0df697336a49efa8">mip::data_sensor::MIP_DATA_DESC_ASPP</a> = 0x81
+, <a class="el" href="group__sensor__data__cpp.html#gga9f7810820a9a03c560eb40e8ce31c404ad0e187384522024159ad56e6679993b7">mip::data_sensor::MIP_DATA_DESC_GXSB</a> = 0x82
 <br />
  }</td></tr>
-<tr class="separator:ga688fcd3097744eca130052082143853a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ga9f7810820a9a03c560eb40e8ce31c404"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>

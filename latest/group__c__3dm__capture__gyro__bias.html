@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-92-ge4aecbb</span>
+   &#160;<span id="projectnumber">v1.0.0-127-gb109f1a</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -105,8 +105,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga4e3ec199d151029f5b57d7c293413d78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa0a967f87fb5f9faf9c8c2d297afa20b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__3dm__capture__gyro__bias.html#gaa0a967f87fb5f9faf9c8c2d297afa20b">mip::C::extract_mip_3dm_capture_gyro_bias_response</a> (<a class="el" href="structmip_1_1_c_1_1mip__serializer.html">mip_serializer</a> *serializer, <a class="el" href="structmip_1_1_c_1_1mip__3dm__capture__gyro__bias__response.html">mip_3dm_capture_gyro_bias_response</a> *self)</td></tr>
 <tr class="separator:gaa0a967f87fb5f9faf9c8c2d297afa20b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2ea91272747d45bba6ff83f7175cf612"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__3dm__capture__gyro__bias.html#ga2ea91272747d45bba6ff83f7175cf612">mip::C::mip_3dm_capture_gyro_bias</a> (struct <a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *device, uint16_t averaging_time_ms, float *bias_out)</td></tr>
-<tr class="separator:ga2ea91272747d45bba6ff83f7175cf612"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1f4673ffd2a6ff10ce495ce5361a5323"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__3dm__capture__gyro__bias.html#ga1f4673ffd2a6ff10ce495ce5361a5323">mip::C::mip_3dm_capture_gyro_bias</a> (struct <a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *device, uint16_t averaging_time_ms, mip_vector3f bias_out)</td></tr>
+<tr class="separator:ga1f4673ffd2a6ff10ce495ce5361a5323"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Samples gyro for a specified time range and writes the averaged result to the Gyro Bias vector in RAM</p>
@@ -253,8 +253,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga2ea91272747d45bba6ff83f7175cf612"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2ea91272747d45bba6ff83f7175cf612">&#9670;&nbsp;</a></span>mip_3dm_capture_gyro_bias()</h2>
+<a id="ga1f4673ffd2a6ff10ce495ce5361a5323"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1f4673ffd2a6ff10ce495ce5361a5323">&#9670;&nbsp;</a></span>mip_3dm_capture_gyro_bias()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -274,7 +274,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float *&#160;</td>
+          <td class="paramtype">mip_vector3f&#160;</td>
           <td class="paramname"><em>bias_out</em>&#160;</td>
         </tr>
         <tr>

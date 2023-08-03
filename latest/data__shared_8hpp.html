@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-92-ge4aecbb</span>
+   &#160;<span id="projectnumber">v1.0.0-127-gb109f1a</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -76,7 +76,8 @@ $(function() {
 <div class="title">data_shared.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="descriptors_8h_source.html">descriptors.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="common_8h_source.html">common.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="descriptors_8h_source.html">descriptors.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mip__result_8h_source.html">../mip_result.h</a>&quot;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;stddef.h&gt;</code><br />
@@ -86,18 +87,20 @@ Include dependency graph for data_shared.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="data__shared_8hpp__incl.png" border="0" usemap="#asrc_2mip_2definitions_2data__shared_8hpp" alt=""/></div>
 <map name="asrc_2mip_2definitions_2data__shared_8hpp" id="asrc_2mip_2definitions_2data__shared_8hpp">
-<area shape="rect" title=" " alt="" coords="551,5,678,47"/>
-<area shape="rect" href="descriptors_8h.html" title=" " alt="" coords="211,95,309,121"/>
-<area shape="rect" title=" " alt="" coords="97,468,165,495"/>
-<area shape="rect" title=" " alt="" coords="487,468,553,495"/>
-<area shape="rect" title=" " alt="" coords="704,468,779,495"/>
-<area shape="rect" href="mip__result_8h.html" title=" " alt="" coords="805,393,910,420"/>
-<area shape="rect" href="serialization_8h.html" title=" " alt="" coords="318,169,461,196"/>
-<area shape="rect" title=" " alt="" coords="219,244,301,271"/>
-<area shape="rect" title=" " alt="" coords="43,169,93,196"/>
-<area shape="rect" href="mip__field_8h.html" title=" " alt="" coords="481,244,577,271"/>
-<area shape="rect" href="mip__packet_8h.html" title=" " alt="" coords="426,319,526,345"/>
-<area shape="rect" href="mip__types_8h.html" title=" " alt="" coords="429,393,523,420"/>
+<area shape="rect" title=" " alt="" coords="437,5,563,47"/>
+<area shape="rect" href="common_8h.html" title=" " alt="" coords="401,95,484,121"/>
+<area shape="rect" title=" " alt="" coords="47,468,115,495"/>
+<area shape="rect" title=" " alt="" coords="338,468,403,495"/>
+<area shape="rect" title=" " alt="" coords="731,468,805,495"/>
+<area shape="rect" href="descriptors_8h.html" title=" " alt="" coords="531,95,629,121"/>
+<area shape="rect" href="mip__result_8h.html" title=" " alt="" coords="625,393,730,420"/>
+<area shape="rect" href="serialization_8h.html" title=" " alt="" coords="371,169,514,196"/>
+<area shape="rect" title=" " alt="" coords="568,244,651,271"/>
+<area shape="rect" title=" " alt="" coords="245,169,296,196"/>
+<area shape="rect" href="mip__field_8h.html" title=" " alt="" coords="397,244,493,271"/>
+<area shape="rect" href="mip__packet_8h.html" title=" " alt="" coords="347,319,447,345"/>
+<area shape="rect" href="mip__types_8h.html" title=" " alt="" coords="324,393,417,420"/>
+<area shape="rect" title=" " alt="" coords="741,169,819,196"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -152,23 +155,23 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ga27dd6d66a4df2c5b681862de0428dc43"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="group__shared__data__cpp.html#gga27dd6d66a4df2c5b681862de0428dc43ac3e4c628cbe09ca7ae6ca8423b5596f6">mip::data_shared::DESCRIPTOR_SET</a> = 0xFF
-, <a class="el" href="group__shared__data__cpp.html#gga27dd6d66a4df2c5b681862de0428dc43a8be8a6c690606875f38253662aa37d7d">mip::data_shared::DATA_EVENT_SOURCE</a> = 0xD0
-, <a class="el" href="group__shared__data__cpp.html#gga27dd6d66a4df2c5b681862de0428dc43a6735b85b137ccd7477eec34f21971fb1">mip::data_shared::DATA_TICKS</a> = 0xD1
-, <a class="el" href="group__shared__data__cpp.html#gga27dd6d66a4df2c5b681862de0428dc43aa0aab37080f655dcd3664e99ab01ed99">mip::data_shared::DATA_DELTA_TICKS</a> = 0xD2
+<tr class="memitem:ga5710ff51a47101c58023bf08402ca17e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="group__shared__data__cpp.html#gga5710ff51a47101c58023bf08402ca17eac3e4c628cbe09ca7ae6ca8423b5596f6">mip::data_shared::DESCRIPTOR_SET</a> = 0xFF
+, <a class="el" href="group__shared__data__cpp.html#gga5710ff51a47101c58023bf08402ca17ea8be8a6c690606875f38253662aa37d7d">mip::data_shared::DATA_EVENT_SOURCE</a> = 0xD0
+, <a class="el" href="group__shared__data__cpp.html#gga5710ff51a47101c58023bf08402ca17ea6735b85b137ccd7477eec34f21971fb1">mip::data_shared::DATA_TICKS</a> = 0xD1
+, <a class="el" href="group__shared__data__cpp.html#gga5710ff51a47101c58023bf08402ca17eaa0aab37080f655dcd3664e99ab01ed99">mip::data_shared::DATA_DELTA_TICKS</a> = 0xD2
 , <br />
-&#160;&#160;<a class="el" href="group__shared__data__cpp.html#gga27dd6d66a4df2c5b681862de0428dc43a2bd59bef89c23979451774add793c99e">mip::data_shared::DATA_GPS_TIME</a> = 0xD3
-, <a class="el" href="group__shared__data__cpp.html#gga27dd6d66a4df2c5b681862de0428dc43a94d52d82f016be9ac1bcbf5ac576fc8d">mip::data_shared::DATA_DELTA_TIME</a> = 0xD4
-, <a class="el" href="group__shared__data__cpp.html#gga27dd6d66a4df2c5b681862de0428dc43abef74b73c6add833528482d7fd9e2678">mip::data_shared::DATA_REFERENCE_TIME</a> = 0xD5
-, <a class="el" href="group__shared__data__cpp.html#gga27dd6d66a4df2c5b681862de0428dc43ac61910986111f060bd3b0dce59ae352d">mip::data_shared::DATA_REF_TIME_DELTA</a> = 0xD6
+&#160;&#160;<a class="el" href="group__shared__data__cpp.html#gga5710ff51a47101c58023bf08402ca17ea2bd59bef89c23979451774add793c99e">mip::data_shared::DATA_GPS_TIME</a> = 0xD3
+, <a class="el" href="group__shared__data__cpp.html#gga5710ff51a47101c58023bf08402ca17ea94d52d82f016be9ac1bcbf5ac576fc8d">mip::data_shared::DATA_DELTA_TIME</a> = 0xD4
+, <a class="el" href="group__shared__data__cpp.html#gga5710ff51a47101c58023bf08402ca17eabef74b73c6add833528482d7fd9e2678">mip::data_shared::DATA_REFERENCE_TIME</a> = 0xD5
+, <a class="el" href="group__shared__data__cpp.html#gga5710ff51a47101c58023bf08402ca17eac61910986111f060bd3b0dce59ae352d">mip::data_shared::DATA_REF_TIME_DELTA</a> = 0xD6
 , <br />
-&#160;&#160;<a class="el" href="group__shared__data__cpp.html#gga27dd6d66a4df2c5b681862de0428dc43ad3af68cf196b1c57b6264c5aa60aead0">mip::data_shared::DATA_EXTERNAL_TIME</a> = 0xD7
-, <a class="el" href="group__shared__data__cpp.html#gga27dd6d66a4df2c5b681862de0428dc43a965742bb45ecb6e71189ea45a625a13d">mip::data_shared::DATA_SYS_TIME_DELTA</a> = 0xD8
-, <a class="el" href="group__shared__data__cpp.html#gga27dd6d66a4df2c5b681862de0428dc43ab4064108ab57deba666e8c852b5b51ac">mip::data_shared::DATA_DEBUG_TICKS</a> = 0xFF
+&#160;&#160;<a class="el" href="group__shared__data__cpp.html#gga5710ff51a47101c58023bf08402ca17ead3af68cf196b1c57b6264c5aa60aead0">mip::data_shared::DATA_EXTERNAL_TIME</a> = 0xD7
+, <a class="el" href="group__shared__data__cpp.html#gga5710ff51a47101c58023bf08402ca17ea965742bb45ecb6e71189ea45a625a13d">mip::data_shared::DATA_SYS_TIME_DELTA</a> = 0xD8
+, <a class="el" href="group__shared__data__cpp.html#gga5710ff51a47101c58023bf08402ca17eab4064108ab57deba666e8c852b5b51ac">mip::data_shared::DATA_DEBUG_TICKS</a> = 0xFF
 <br />
  }</td></tr>
-<tr class="separator:ga27dd6d66a4df2c5b681862de0428dc43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ga5710ff51a47101c58023bf08402ca17e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>

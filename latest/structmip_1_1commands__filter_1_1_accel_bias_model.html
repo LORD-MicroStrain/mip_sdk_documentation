@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-92-ge4aecbb</span>
+   &#160;<span id="projectnumber">v1.0.0-127-gb109f1a</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -69,6 +69,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="structmip_1_1commands__filter_1_1_accel_bias_model-members.html">List of all members</a>  </div>
@@ -84,48 +86,160 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_accel_bias_model_1_1_response.html">Response</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a10bdaa158cd08b14c4637ad22d6ffe31"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_accel_bias_model.html#a10bdaa158cd08b14c4637ad22d6ffe31">as_tuple</a> () const</td></tr>
+<tr class="separator:a10bdaa158cd08b14c4637ad22d6ffe31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a9d73785714be776ef74d6487bbe6d4b4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structmip_1_1commands__filter_1_1_accel_bias_model.html">AccelBiasModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_accel_bias_model.html#a9d73785714be776ef74d6487bbe6d4b4">create_sld_all</a> (::<a class="el" href="namespacemip.html#a2dde9cdf5ebc86cf62e8c2591dcb56de">mip::FunctionSelector</a> <a class="el" href="structmip_1_1commands__filter_1_1_accel_bias_model.html#a3ddc8b41b50e38742999f8d14908656c">function</a>)</td></tr>
+<tr class="separator:a9d73785714be776ef74d6487bbe6d4b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a3ddc8b41b50e38742999f8d14908656c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemip.html#a2dde9cdf5ebc86cf62e8c2591dcb56de">FunctionSelector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_accel_bias_model.html#a3ddc8b41b50e38742999f8d14908656c">function</a> = static_cast&lt;<a class="el" href="namespacemip.html#a2dde9cdf5ebc86cf62e8c2591dcb56de">FunctionSelector</a>&gt;(0)</td></tr>
 <tr class="separator:a3ddc8b41b50e38742999f8d14908656c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39b16ca0a8f879529e617705756dad10"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_accel_bias_model.html#a39b16ca0a8f879529e617705756dad10">beta</a> [3] = {0}</td></tr>
-<tr class="memdesc:a39b16ca0a8f879529e617705756dad10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accel Bias Beta [1/second].  <a href="structmip_1_1commands__filter_1_1_accel_bias_model.html#a39b16ca0a8f879529e617705756dad10">More...</a><br /></td></tr>
-<tr class="separator:a39b16ca0a8f879529e617705756dad10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bb31468807fae8cb97da3d7d0f95a0b"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_accel_bias_model.html#a2bb31468807fae8cb97da3d7d0f95a0b">noise</a> [3] = {0}</td></tr>
-<tr class="memdesc:a2bb31468807fae8cb97da3d7d0f95a0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accel Noise 1-sigma [meters/second^2].  <a href="structmip_1_1commands__filter_1_1_accel_bias_model.html#a2bb31468807fae8cb97da3d7d0f95a0b">More...</a><br /></td></tr>
-<tr class="separator:a2bb31468807fae8cb97da3d7d0f95a0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74c48ca6c4f86e1f11f9270d1006cabe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemip.html#a5209d3c0c1d7b0a0613569ba51facda8">Vector3f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_accel_bias_model.html#a74c48ca6c4f86e1f11f9270d1006cabe">beta</a></td></tr>
+<tr class="memdesc:a74c48ca6c4f86e1f11f9270d1006cabe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accel Bias Beta [1/second].  <a href="structmip_1_1commands__filter_1_1_accel_bias_model.html#a74c48ca6c4f86e1f11f9270d1006cabe">More...</a><br /></td></tr>
+<tr class="separator:a74c48ca6c4f86e1f11f9270d1006cabe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5eafd36ee0f2e0c50ab5dc92d5baaf0a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemip.html#a5209d3c0c1d7b0a0613569ba51facda8">Vector3f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_accel_bias_model.html#a5eafd36ee0f2e0c50ab5dc92d5baaf0a">noise</a></td></tr>
+<tr class="memdesc:a5eafd36ee0f2e0c50ab5dc92d5baaf0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accel Noise 1-sigma [meters/second^2].  <a href="structmip_1_1commands__filter_1_1_accel_bias_model.html#a5eafd36ee0f2e0c50ab5dc92d5baaf0a">More...</a><br /></td></tr>
+<tr class="separator:a5eafd36ee0f2e0c50ab5dc92d5baaf0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a1f668a2e290360d6917884825dcc7b2e"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_accel_bias_model.html#a1f668a2e290360d6917884825dcc7b2e">DESCRIPTOR_SET</a> = ::mip::commands_filter::DESCRIPTOR_SET</td></tr>
 <tr class="separator:a1f668a2e290360d6917884825dcc7b2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3def3009690c49a8615d31ef48d5dd58"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_accel_bias_model.html#a3def3009690c49a8615d31ef48d5dd58">FIELD_DESCRIPTOR</a> = ::<a class="el" href="group__filter__commands__cpp.html#gga5d6cb1325f7cb8fda843b5a713c468cda5ceaf03106b174b3fe531960b2c64eb0">mip::commands_filter::CMD_ACCEL_BIAS_MODEL</a></td></tr>
+<tr class="memitem:a3def3009690c49a8615d31ef48d5dd58"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_accel_bias_model.html#a3def3009690c49a8615d31ef48d5dd58">FIELD_DESCRIPTOR</a> = ::<a class="el" href="group__filter__commands__cpp.html#gga740591bcc84739c1b5acd1a874a2787ca5ceaf03106b174b3fe531960b2c64eb0">mip::commands_filter::CMD_ACCEL_BIAS_MODEL</a></td></tr>
 <tr class="separator:a3def3009690c49a8615d31ef48d5dd58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79f7b7c242af5a5e1e6d587238d5802b"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_accel_bias_model.html#a79f7b7c242af5a5e1e6d587238d5802b">HAS_WRITE_FUNCTION</a> = true</td></tr>
-<tr class="separator:a79f7b7c242af5a5e1e6d587238d5802b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85b522c0871ac79bea57c21b274d6e3c"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_accel_bias_model.html#a85b522c0871ac79bea57c21b274d6e3c">HAS_READ_FUNCTION</a> = true</td></tr>
-<tr class="separator:a85b522c0871ac79bea57c21b274d6e3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47b05adefedc87bfb1e6a9486f2b1168"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_accel_bias_model.html#a47b05adefedc87bfb1e6a9486f2b1168">HAS_SAVE_FUNCTION</a> = true</td></tr>
-<tr class="separator:a47b05adefedc87bfb1e6a9486f2b1168"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b43d544c03d54c05328747cf2211e48"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_accel_bias_model.html#a2b43d544c03d54c05328747cf2211e48">HAS_LOAD_FUNCTION</a> = true</td></tr>
-<tr class="separator:a2b43d544c03d54c05328747cf2211e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6d1696f9c5f3874dbe80a34c7dfdc31"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_accel_bias_model.html#ae6d1696f9c5f3874dbe80a34c7dfdc31">HAS_RESET_FUNCTION</a> = true</td></tr>
-<tr class="separator:ae6d1696f9c5f3874dbe80a34c7dfdc31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84f27af16c3dd7515e7a15d8ea990105"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_accel_bias_model.html#a84f27af16c3dd7515e7a15d8ea990105">HAS_FUNCTION_SELECTOR</a> = true</td></tr>
+<tr class="separator:a84f27af16c3dd7515e7a15d8ea990105"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b3b787f57208378e7a3cadf2a845cc3"><td class="memItemLeft" align="right" valign="top">static const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_accel_bias_model.html#a8b3b787f57208378e7a3cadf2a845cc3">WRITE_PARAMS</a> = 0x8003</td></tr>
+<tr class="separator:a8b3b787f57208378e7a3cadf2a845cc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbcae9314194867f6ca2b2041c3a5f28"><td class="memItemLeft" align="right" valign="top">static const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_accel_bias_model.html#acbcae9314194867f6ca2b2041c3a5f28">READ_PARAMS</a> = 0x8000</td></tr>
+<tr class="separator:acbcae9314194867f6ca2b2041c3a5f28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a003148b6983a50faa1feaa038e750962"><td class="memItemLeft" align="right" valign="top">static const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_accel_bias_model.html#a003148b6983a50faa1feaa038e750962">SAVE_PARAMS</a> = 0x8000</td></tr>
+<tr class="separator:a003148b6983a50faa1feaa038e750962"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d290e2fcc25e2d5008943783b6f58ee"><td class="memItemLeft" align="right" valign="top">static const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_accel_bias_model.html#a2d290e2fcc25e2d5008943783b6f58ee">LOAD_PARAMS</a> = 0x8000</td></tr>
+<tr class="separator:a2d290e2fcc25e2d5008943783b6f58ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add34c743fa0395e186f6188714188719"><td class="memItemLeft" align="right" valign="top">static const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_accel_bias_model.html#add34c743fa0395e186f6188714188719">DEFAULT_PARAMS</a> = 0x8000</td></tr>
+<tr class="separator:add34c743fa0395e186f6188714188719"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf024b2ceb27985587800cba4ab7866c"><td class="memItemLeft" align="right" valign="top">static const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_accel_bias_model.html#aaf024b2ceb27985587800cba4ab7866c">ECHOED_PARAMS</a> = 0x0000</td></tr>
+<tr class="separator:aaf024b2ceb27985587800cba4ab7866c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a769b72165b0c7133dcf2a6a56b0863bf"><td class="memItemLeft" align="right" valign="top">static const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_accel_bias_model.html#a769b72165b0c7133dcf2a6a56b0863bf">COUNTER_PARAMS</a> = 0x00000000</td></tr>
+<tr class="separator:a769b72165b0c7133dcf2a6a56b0863bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a10bdaa158cd08b14c4637ad22d6ffe31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10bdaa158cd08b14c4637ad22d6ffe31">&#9670;&nbsp;</a></span>as_tuple()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto mip::commands_filter::AccelBiasModel::as_tuple </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9d73785714be776ef74d6487bbe6d4b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d73785714be776ef74d6487bbe6d4b4">&#9670;&nbsp;</a></span>create_sld_all()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="structmip_1_1commands__filter_1_1_accel_bias_model.html">AccelBiasModel</a> mip::commands_filter::AccelBiasModel::create_sld_all </td>
+          <td>(</td>
+          <td class="paramtype">::<a class="el" href="namespacemip.html#a2dde9cdf5ebc86cf62e8c2591dcb56de">mip::FunctionSelector</a>&#160;</td>
+          <td class="paramname"><em>function</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a39b16ca0a8f879529e617705756dad10"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39b16ca0a8f879529e617705756dad10">&#9670;&nbsp;</a></span>beta</h2>
+<a id="a74c48ca6c4f86e1f11f9270d1006cabe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74c48ca6c4f86e1f11f9270d1006cabe">&#9670;&nbsp;</a></span>beta</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float mip::commands_filter::AccelBiasModel::beta[3] = {0}</td>
+          <td class="memname"><a class="el" href="namespacemip.html#a5209d3c0c1d7b0a0613569ba51facda8">Vector3f</a> mip::commands_filter::AccelBiasModel::beta</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Accel Bias Beta [1/second]. </p>
+
+</div>
+</div>
+<a id="a769b72165b0c7133dcf2a6a56b0863bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a769b72165b0c7133dcf2a6a56b0863bf">&#9670;&nbsp;</a></span>COUNTER_PARAMS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint32_t mip::commands_filter::AccelBiasModel::COUNTER_PARAMS = 0x00000000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="add34c743fa0395e186f6188714188719"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add34c743fa0395e186f6188714188719">&#9670;&nbsp;</a></span>DEFAULT_PARAMS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint32_t mip::commands_filter::AccelBiasModel::DEFAULT_PARAMS = 0x8000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -151,6 +265,28 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="aaf024b2ceb27985587800cba4ab7866c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf024b2ceb27985587800cba4ab7866c">&#9670;&nbsp;</a></span>ECHOED_PARAMS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint32_t mip::commands_filter::AccelBiasModel::ECHOED_PARAMS = 0x0000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a3def3009690c49a8615d31ef48d5dd58"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3def3009690c49a8615d31ef48d5dd58">&#9670;&nbsp;</a></span>FIELD_DESCRIPTOR</h2>
 
@@ -161,7 +297,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const uint8_t mip::commands_filter::AccelBiasModel::FIELD_DESCRIPTOR = ::<a class="el" href="group__filter__commands__cpp.html#gga5d6cb1325f7cb8fda843b5a713c468cda5ceaf03106b174b3fe531960b2c64eb0">mip::commands_filter::CMD_ACCEL_BIAS_MODEL</a></td>
+          <td class="memname">const uint8_t mip::commands_filter::AccelBiasModel::FIELD_DESCRIPTOR = ::<a class="el" href="group__filter__commands__cpp.html#gga740591bcc84739c1b5acd1a874a2787ca5ceaf03106b174b3fe531960b2c64eb0">mip::commands_filter::CMD_ACCEL_BIAS_MODEL</a></td>
         </tr>
       </table>
   </td>
@@ -187,8 +323,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a2b43d544c03d54c05328747cf2211e48"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b43d544c03d54c05328747cf2211e48">&#9670;&nbsp;</a></span>HAS_LOAD_FUNCTION</h2>
+<a id="a84f27af16c3dd7515e7a15d8ea990105"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84f27af16c3dd7515e7a15d8ea990105">&#9670;&nbsp;</a></span>HAS_FUNCTION_SELECTOR</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -197,7 +333,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const bool mip::commands_filter::AccelBiasModel::HAS_LOAD_FUNCTION = true</td>
+          <td class="memname">const bool mip::commands_filter::AccelBiasModel::HAS_FUNCTION_SELECTOR = true</td>
         </tr>
       </table>
   </td>
@@ -209,8 +345,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a85b522c0871ac79bea57c21b274d6e3c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85b522c0871ac79bea57c21b274d6e3c">&#9670;&nbsp;</a></span>HAS_READ_FUNCTION</h2>
+<a id="a2d290e2fcc25e2d5008943783b6f58ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d290e2fcc25e2d5008943783b6f58ee">&#9670;&nbsp;</a></span>LOAD_PARAMS</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -219,7 +355,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const bool mip::commands_filter::AccelBiasModel::HAS_READ_FUNCTION = true</td>
+          <td class="memname">const uint32_t mip::commands_filter::AccelBiasModel::LOAD_PARAMS = 0x8000</td>
         </tr>
       </table>
   </td>
@@ -231,85 +367,85 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ae6d1696f9c5f3874dbe80a34c7dfdc31"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6d1696f9c5f3874dbe80a34c7dfdc31">&#9670;&nbsp;</a></span>HAS_RESET_FUNCTION</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const bool mip::commands_filter::AccelBiasModel::HAS_RESET_FUNCTION = true</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a47b05adefedc87bfb1e6a9486f2b1168"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47b05adefedc87bfb1e6a9486f2b1168">&#9670;&nbsp;</a></span>HAS_SAVE_FUNCTION</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const bool mip::commands_filter::AccelBiasModel::HAS_SAVE_FUNCTION = true</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a79f7b7c242af5a5e1e6d587238d5802b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79f7b7c242af5a5e1e6d587238d5802b">&#9670;&nbsp;</a></span>HAS_WRITE_FUNCTION</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const bool mip::commands_filter::AccelBiasModel::HAS_WRITE_FUNCTION = true</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2bb31468807fae8cb97da3d7d0f95a0b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2bb31468807fae8cb97da3d7d0f95a0b">&#9670;&nbsp;</a></span>noise</h2>
+<a id="a5eafd36ee0f2e0c50ab5dc92d5baaf0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5eafd36ee0f2e0c50ab5dc92d5baaf0a">&#9670;&nbsp;</a></span>noise</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float mip::commands_filter::AccelBiasModel::noise[3] = {0}</td>
+          <td class="memname"><a class="el" href="namespacemip.html#a5209d3c0c1d7b0a0613569ba51facda8">Vector3f</a> mip::commands_filter::AccelBiasModel::noise</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Accel Noise 1-sigma [meters/second^2]. </p>
+
+</div>
+</div>
+<a id="acbcae9314194867f6ca2b2041c3a5f28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbcae9314194867f6ca2b2041c3a5f28">&#9670;&nbsp;</a></span>READ_PARAMS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint32_t mip::commands_filter::AccelBiasModel::READ_PARAMS = 0x8000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a003148b6983a50faa1feaa038e750962"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a003148b6983a50faa1feaa038e750962">&#9670;&nbsp;</a></span>SAVE_PARAMS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint32_t mip::commands_filter::AccelBiasModel::SAVE_PARAMS = 0x8000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8b3b787f57208378e7a3cadf2a845cc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b3b787f57208378e7a3cadf2a845cc3">&#9670;&nbsp;</a></span>WRITE_PARAMS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint32_t mip::commands_filter::AccelBiasModel::WRITE_PARAMS = 0x8003</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

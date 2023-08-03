@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-92-ge4aecbb</span>
+   &#160;<span id="projectnumber">v1.0.0-127-gb109f1a</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -77,7 +77,8 @@ $(function() {
 <div class="title">data_gnss.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="descriptors_8h_source.html">descriptors.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="common_8h_source.html">common.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="descriptors_8h_source.html">descriptors.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mip__result_8h_source.html">../mip_result.h</a>&quot;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;stddef.h&gt;</code><br />
@@ -87,18 +88,20 @@ Include dependency graph for data_gnss.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="data__gnss_8h__incl.png" border="0" usemap="#asrc_2mip_2definitions_2data__gnss_8h" alt=""/></div>
 <map name="asrc_2mip_2definitions_2data__gnss_8h" id="asrc_2mip_2definitions_2data__gnss_8h">
-<area shape="rect" title=" " alt="" coords="551,5,678,47"/>
-<area shape="rect" href="descriptors_8h.html" title=" " alt="" coords="211,95,309,121"/>
-<area shape="rect" title=" " alt="" coords="97,468,165,495"/>
-<area shape="rect" title=" " alt="" coords="487,468,553,495"/>
-<area shape="rect" title=" " alt="" coords="704,468,779,495"/>
-<area shape="rect" href="mip__result_8h.html" title=" " alt="" coords="805,393,910,420"/>
-<area shape="rect" href="serialization_8h.html" title=" " alt="" coords="318,169,461,196"/>
-<area shape="rect" title=" " alt="" coords="219,244,301,271"/>
-<area shape="rect" title=" " alt="" coords="43,169,93,196"/>
-<area shape="rect" href="mip__field_8h.html" title=" " alt="" coords="481,244,577,271"/>
-<area shape="rect" href="mip__packet_8h.html" title=" " alt="" coords="426,319,526,345"/>
-<area shape="rect" href="mip__types_8h.html" title=" " alt="" coords="429,393,523,420"/>
+<area shape="rect" title=" " alt="" coords="437,5,563,47"/>
+<area shape="rect" href="common_8h.html" title=" " alt="" coords="401,95,484,121"/>
+<area shape="rect" title=" " alt="" coords="47,468,115,495"/>
+<area shape="rect" title=" " alt="" coords="338,468,403,495"/>
+<area shape="rect" title=" " alt="" coords="731,468,805,495"/>
+<area shape="rect" href="descriptors_8h.html" title=" " alt="" coords="531,95,629,121"/>
+<area shape="rect" href="mip__result_8h.html" title=" " alt="" coords="625,393,730,420"/>
+<area shape="rect" href="serialization_8h.html" title=" " alt="" coords="371,169,514,196"/>
+<area shape="rect" title=" " alt="" coords="568,244,651,271"/>
+<area shape="rect" title=" " alt="" coords="245,169,296,196"/>
+<area shape="rect" href="mip__field_8h.html" title=" " alt="" coords="397,244,493,271"/>
+<area shape="rect" href="mip__packet_8h.html" title=" " alt="" coords="347,319,447,345"/>
+<area shape="rect" href="mip__types_8h.html" title=" " alt="" coords="324,393,417,420"/>
+<area shape="rect" title=" " alt="" coords="741,169,819,196"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -324,68 +327,68 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ga1c9231af1264857a4f177f11236742bb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="group__gnss__data__c.html#gga1c9231af1264857a4f177f11236742bbaa6bae18783bcc9ce8cea87dd49cc31bd">mip::C::MIP_GNSS_DATA_DESC_SET</a> = 0x81
-, <a class="el" href="group__gnss__data__c.html#gga1c9231af1264857a4f177f11236742bbaa4376e88d4180d1552889057597bab8b">mip::C::MIP_DATA_DESC_GNSS_POSITION_LLH</a> = 0x03
-, <a class="el" href="group__gnss__data__c.html#gga1c9231af1264857a4f177f11236742bba8da98359d39728c1c52c9e370e200656">mip::C::MIP_DATA_DESC_GNSS_POSITION_ECEF</a> = 0x04
-, <a class="el" href="group__gnss__data__c.html#gga1c9231af1264857a4f177f11236742bba244d44baa661c6763bda773ac2b5e180">mip::C::MIP_DATA_DESC_GNSS_VELOCITY_NED</a> = 0x05
+<tr class="memitem:ga9b40f16746e4d7a1ce301113263bc6dc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="group__gnss__data__c.html#gga9b40f16746e4d7a1ce301113263bc6dcaa6bae18783bcc9ce8cea87dd49cc31bd">mip::C::MIP_GNSS_DATA_DESC_SET</a> = 0x81
+, <a class="el" href="group__gnss__data__c.html#gga9b40f16746e4d7a1ce301113263bc6dcaa4376e88d4180d1552889057597bab8b">mip::C::MIP_DATA_DESC_GNSS_POSITION_LLH</a> = 0x03
+, <a class="el" href="group__gnss__data__c.html#gga9b40f16746e4d7a1ce301113263bc6dca8da98359d39728c1c52c9e370e200656">mip::C::MIP_DATA_DESC_GNSS_POSITION_ECEF</a> = 0x04
+, <a class="el" href="group__gnss__data__c.html#gga9b40f16746e4d7a1ce301113263bc6dca244d44baa661c6763bda773ac2b5e180">mip::C::MIP_DATA_DESC_GNSS_VELOCITY_NED</a> = 0x05
 , <br />
-&#160;&#160;<a class="el" href="group__gnss__data__c.html#gga1c9231af1264857a4f177f11236742bbaf045323279527f5c7c61d5fd5e7e3385">mip::C::MIP_DATA_DESC_GNSS_VELOCITY_ECEF</a> = 0x06
-, <a class="el" href="group__gnss__data__c.html#gga1c9231af1264857a4f177f11236742bbad7858e6d4e0bb5e4696d3679212834cb">mip::C::MIP_DATA_DESC_GNSS_DOP</a> = 0x07
-, <a class="el" href="group__gnss__data__c.html#gga1c9231af1264857a4f177f11236742bbaeb1d8c24256805dbc03ff94f67478a34">mip::C::MIP_DATA_DESC_GNSS_UTC_TIME</a> = 0x08
-, <a class="el" href="group__gnss__data__c.html#gga1c9231af1264857a4f177f11236742bba32f75953d89ecc1bf91bf8802c0559fe">mip::C::MIP_DATA_DESC_GNSS_GPS_TIME</a> = 0x09
+&#160;&#160;<a class="el" href="group__gnss__data__c.html#gga9b40f16746e4d7a1ce301113263bc6dcaf045323279527f5c7c61d5fd5e7e3385">mip::C::MIP_DATA_DESC_GNSS_VELOCITY_ECEF</a> = 0x06
+, <a class="el" href="group__gnss__data__c.html#gga9b40f16746e4d7a1ce301113263bc6dcad7858e6d4e0bb5e4696d3679212834cb">mip::C::MIP_DATA_DESC_GNSS_DOP</a> = 0x07
+, <a class="el" href="group__gnss__data__c.html#gga9b40f16746e4d7a1ce301113263bc6dcaeb1d8c24256805dbc03ff94f67478a34">mip::C::MIP_DATA_DESC_GNSS_UTC_TIME</a> = 0x08
+, <a class="el" href="group__gnss__data__c.html#gga9b40f16746e4d7a1ce301113263bc6dca32f75953d89ecc1bf91bf8802c0559fe">mip::C::MIP_DATA_DESC_GNSS_GPS_TIME</a> = 0x09
 , <br />
-&#160;&#160;<a class="el" href="group__gnss__data__c.html#gga1c9231af1264857a4f177f11236742bba6553fda480c64d5ea370153d14d621a7">mip::C::MIP_DATA_DESC_GNSS_CLOCK_INFO</a> = 0x0A
-, <a class="el" href="group__gnss__data__c.html#gga1c9231af1264857a4f177f11236742bbaa5b07eb2804b6ed86797a36773a814b9">mip::C::MIP_DATA_DESC_GNSS_FIX_INFO</a> = 0x0B
-, <a class="el" href="group__gnss__data__c.html#gga1c9231af1264857a4f177f11236742bba2bbda0f8e2a67e1d0a74d3a02d4ff7df">mip::C::MIP_DATA_DESC_GNSS_SV_INFO</a> = 0x0C
-, <a class="el" href="group__gnss__data__c.html#gga1c9231af1264857a4f177f11236742bba9fc636aba3851b7f50f168cef7260c89">mip::C::MIP_DATA_DESC_GNSS_HW_STATUS</a> = 0x0D
+&#160;&#160;<a class="el" href="group__gnss__data__c.html#gga9b40f16746e4d7a1ce301113263bc6dca6553fda480c64d5ea370153d14d621a7">mip::C::MIP_DATA_DESC_GNSS_CLOCK_INFO</a> = 0x0A
+, <a class="el" href="group__gnss__data__c.html#gga9b40f16746e4d7a1ce301113263bc6dcaa5b07eb2804b6ed86797a36773a814b9">mip::C::MIP_DATA_DESC_GNSS_FIX_INFO</a> = 0x0B
+, <a class="el" href="group__gnss__data__c.html#gga9b40f16746e4d7a1ce301113263bc6dca2bbda0f8e2a67e1d0a74d3a02d4ff7df">mip::C::MIP_DATA_DESC_GNSS_SV_INFO</a> = 0x0C
+, <a class="el" href="group__gnss__data__c.html#gga9b40f16746e4d7a1ce301113263bc6dca9fc636aba3851b7f50f168cef7260c89">mip::C::MIP_DATA_DESC_GNSS_HW_STATUS</a> = 0x0D
 , <br />
-&#160;&#160;<a class="el" href="group__gnss__data__c.html#gga1c9231af1264857a4f177f11236742bbae33e76e1eb96c276bc04f9d6691eeb30">mip::C::MIP_DATA_DESC_GNSS_DGPS_INFO</a> = 0x0E
-, <a class="el" href="group__gnss__data__c.html#gga1c9231af1264857a4f177f11236742bbac5bd8fe6a16ef0048ae3ec6ad4a2cb82">mip::C::MIP_DATA_DESC_GNSS_DGPS_CHANNEL_STATUS</a> = 0x0F
-, <a class="el" href="group__gnss__data__c.html#gga1c9231af1264857a4f177f11236742bba58304b14678a5119d6d98f46fe7a93e1">mip::C::MIP_DATA_DESC_GNSS_CLOCK_INFO_2</a> = 0x10
-, <a class="el" href="group__gnss__data__c.html#gga1c9231af1264857a4f177f11236742bba47ec0b87ab0e4f751c2a2ddf5fd6432e">mip::C::MIP_DATA_DESC_GNSS_GPS_LEAP_SECONDS</a> = 0x11
+&#160;&#160;<a class="el" href="group__gnss__data__c.html#gga9b40f16746e4d7a1ce301113263bc6dcae33e76e1eb96c276bc04f9d6691eeb30">mip::C::MIP_DATA_DESC_GNSS_DGPS_INFO</a> = 0x0E
+, <a class="el" href="group__gnss__data__c.html#gga9b40f16746e4d7a1ce301113263bc6dcac5bd8fe6a16ef0048ae3ec6ad4a2cb82">mip::C::MIP_DATA_DESC_GNSS_DGPS_CHANNEL_STATUS</a> = 0x0F
+, <a class="el" href="group__gnss__data__c.html#gga9b40f16746e4d7a1ce301113263bc6dca58304b14678a5119d6d98f46fe7a93e1">mip::C::MIP_DATA_DESC_GNSS_CLOCK_INFO_2</a> = 0x10
+, <a class="el" href="group__gnss__data__c.html#gga9b40f16746e4d7a1ce301113263bc6dca47ec0b87ab0e4f751c2a2ddf5fd6432e">mip::C::MIP_DATA_DESC_GNSS_GPS_LEAP_SECONDS</a> = 0x11
 , <br />
-&#160;&#160;<a class="el" href="group__gnss__data__c.html#gga1c9231af1264857a4f177f11236742bba027ff09ad7338885daa6960d3b855d12">mip::C::MIP_DATA_DESC_GNSS_SBAS_INFO</a> = 0x12
-, <a class="el" href="group__gnss__data__c.html#gga1c9231af1264857a4f177f11236742bbacd38447e8917665e25e01ef8a99f0af5">mip::C::MIP_DATA_DESC_GNSS_SBAS_CORRECTION</a> = 0x13
-, <a class="el" href="group__gnss__data__c.html#gga1c9231af1264857a4f177f11236742bba625fd935cd2c1649a887c779f6bd00d9">mip::C::MIP_DATA_DESC_GNSS_RF_ERROR_DETECTION</a> = 0x14
-, <a class="el" href="group__gnss__data__c.html#gga1c9231af1264857a4f177f11236742bba0807635ea7ff5853394198207b540566">mip::C::MIP_DATA_DESC_GNSS_SATELLITE_STATUS</a> = 0x20
+&#160;&#160;<a class="el" href="group__gnss__data__c.html#gga9b40f16746e4d7a1ce301113263bc6dca027ff09ad7338885daa6960d3b855d12">mip::C::MIP_DATA_DESC_GNSS_SBAS_INFO</a> = 0x12
+, <a class="el" href="group__gnss__data__c.html#gga9b40f16746e4d7a1ce301113263bc6dcacd38447e8917665e25e01ef8a99f0af5">mip::C::MIP_DATA_DESC_GNSS_SBAS_CORRECTION</a> = 0x13
+, <a class="el" href="group__gnss__data__c.html#gga9b40f16746e4d7a1ce301113263bc6dca625fd935cd2c1649a887c779f6bd00d9">mip::C::MIP_DATA_DESC_GNSS_RF_ERROR_DETECTION</a> = 0x14
+, <a class="el" href="group__gnss__data__c.html#gga9b40f16746e4d7a1ce301113263bc6dca0807635ea7ff5853394198207b540566">mip::C::MIP_DATA_DESC_GNSS_SATELLITE_STATUS</a> = 0x20
 , <br />
-&#160;&#160;<a class="el" href="group__gnss__data__c.html#gga1c9231af1264857a4f177f11236742bbaabc15f285f725d712b34441949dc97a5">mip::C::MIP_DATA_DESC_GNSS_SATELLITE_SIGNAL_STATUS</a> = 0x21
-, <a class="el" href="group__gnss__data__c.html#gga1c9231af1264857a4f177f11236742bbaf59e514528e30d7759e40831cf2d8348">mip::C::MIP_DATA_DESC_GNSS_RAW</a> = 0x22
-, <a class="el" href="group__gnss__data__c.html#gga1c9231af1264857a4f177f11236742bba3395edeb4f4b8f3c890717225da8c0e9">mip::C::MIP_DATA_DESC_GNSS_BASE_STATION_INFO</a> = 0x30
-, <a class="el" href="group__gnss__data__c.html#gga1c9231af1264857a4f177f11236742bba59f6e7557e7d52b2063e8427bb1a3c9c">mip::C::MIP_DATA_DESC_GNSS_RTK_CORRECTIONS_STATUS</a> = 0x31
+&#160;&#160;<a class="el" href="group__gnss__data__c.html#gga9b40f16746e4d7a1ce301113263bc6dcaabc15f285f725d712b34441949dc97a5">mip::C::MIP_DATA_DESC_GNSS_SATELLITE_SIGNAL_STATUS</a> = 0x21
+, <a class="el" href="group__gnss__data__c.html#gga9b40f16746e4d7a1ce301113263bc6dcaf59e514528e30d7759e40831cf2d8348">mip::C::MIP_DATA_DESC_GNSS_RAW</a> = 0x22
+, <a class="el" href="group__gnss__data__c.html#gga9b40f16746e4d7a1ce301113263bc6dca3395edeb4f4b8f3c890717225da8c0e9">mip::C::MIP_DATA_DESC_GNSS_BASE_STATION_INFO</a> = 0x30
+, <a class="el" href="group__gnss__data__c.html#gga9b40f16746e4d7a1ce301113263bc6dca59f6e7557e7d52b2063e8427bb1a3c9c">mip::C::MIP_DATA_DESC_GNSS_RTK_CORRECTIONS_STATUS</a> = 0x31
 , <br />
-&#160;&#160;<a class="el" href="group__gnss__data__c.html#gga1c9231af1264857a4f177f11236742bba6304c28a793b412a3ebae51363794579">mip::C::MIP_DATA_DESC_GNSS_GPS_EPHEMERIS</a> = 0x61
-, <a class="el" href="group__gnss__data__c.html#gga1c9231af1264857a4f177f11236742bba531f665a39d51d5c0a2ce389c4688843">mip::C::MIP_DATA_DESC_GNSS_GLONASS_EPHEMERIS</a> = 0x62
-, <a class="el" href="group__gnss__data__c.html#gga1c9231af1264857a4f177f11236742bba7aa2751fa068d15772f7fc34a5dd7911">mip::C::MIP_DATA_DESC_GNSS_GALILEO_EPHEMERIS</a> = 0x63
-, <a class="el" href="group__gnss__data__c.html#gga1c9231af1264857a4f177f11236742bba8a52d64823b747479a6de52ab3502d55">mip::C::MIP_DATA_DESC_GNSS_GPS_IONO_CORR</a> = 0x71
+&#160;&#160;<a class="el" href="group__gnss__data__c.html#gga9b40f16746e4d7a1ce301113263bc6dca6304c28a793b412a3ebae51363794579">mip::C::MIP_DATA_DESC_GNSS_GPS_EPHEMERIS</a> = 0x61
+, <a class="el" href="group__gnss__data__c.html#gga9b40f16746e4d7a1ce301113263bc6dca531f665a39d51d5c0a2ce389c4688843">mip::C::MIP_DATA_DESC_GNSS_GLONASS_EPHEMERIS</a> = 0x62
+, <a class="el" href="group__gnss__data__c.html#gga9b40f16746e4d7a1ce301113263bc6dca7aa2751fa068d15772f7fc34a5dd7911">mip::C::MIP_DATA_DESC_GNSS_GALILEO_EPHEMERIS</a> = 0x63
+, <a class="el" href="group__gnss__data__c.html#gga9b40f16746e4d7a1ce301113263bc6dca8a52d64823b747479a6de52ab3502d55">mip::C::MIP_DATA_DESC_GNSS_GPS_IONO_CORR</a> = 0x71
 , <br />
-&#160;&#160;<a class="el" href="group__gnss__data__c.html#gga1c9231af1264857a4f177f11236742bbaa65765d31d2d36fea7eeac4311404ed0">mip::C::MIP_DATA_DESC_GNSS_GLONASS_IONO_CORR</a> = 0x72
-, <a class="el" href="group__gnss__data__c.html#gga1c9231af1264857a4f177f11236742bba6318a910aa1c9d1447163d2427c0c3fa">mip::C::MIP_DATA_DESC_GNSS_GALILEO_IONO_CORR</a> = 0x73
+&#160;&#160;<a class="el" href="group__gnss__data__c.html#gga9b40f16746e4d7a1ce301113263bc6dcaa65765d31d2d36fea7eeac4311404ed0">mip::C::MIP_DATA_DESC_GNSS_GLONASS_IONO_CORR</a> = 0x72
+, <a class="el" href="group__gnss__data__c.html#gga9b40f16746e4d7a1ce301113263bc6dca6318a910aa1c9d1447163d2427c0c3fa">mip::C::MIP_DATA_DESC_GNSS_GALILEO_IONO_CORR</a> = 0x73
 <br />
  }</td></tr>
-<tr class="separator:ga1c9231af1264857a4f177f11236742bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaffd6575d9baccba32fb1e8b655fc86f8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group__gnss__data__c.html#ggaffd6575d9baccba32fb1e8b655fc86f8a7ae6c8f31eb73e27b50f22f60d4e787f">mip::C::MIP_GNSS1_DATA_DESC_SET</a> = 0x91
- }</td></tr>
-<tr class="separator:gaffd6575d9baccba32fb1e8b655fc86f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9b40f16746e4d7a1ce301113263bc6dc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group__gnss__data__c.html#gga9b40f16746e4d7a1ce301113263bc6dcaff66f86f7be7b97a199c19511f926dd8">mip::C::MIP_GNSS2_DATA_DESC_SET</a> = 0x92
- }</td></tr>
 <tr class="separator:ga9b40f16746e4d7a1ce301113263bc6dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5eef43fd6e7721f6016b9285300be8c5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group__gnss__data__c.html#gga5eef43fd6e7721f6016b9285300be8c5a1a4d6f5e22625392de5b5fbc776afd88">mip::C::MIP_GNSS3_DATA_DESC_SET</a> = 0x93
+<tr class="memitem:ga5eef43fd6e7721f6016b9285300be8c5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group__gnss__data__c.html#gga5eef43fd6e7721f6016b9285300be8c5a7ae6c8f31eb73e27b50f22f60d4e787f">mip::C::MIP_GNSS1_DATA_DESC_SET</a> = 0x91
  }</td></tr>
 <tr class="separator:ga5eef43fd6e7721f6016b9285300be8c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga16a20b279a289d1a5af208421f1746db"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group__gnss__data__c.html#gga16a20b279a289d1a5af208421f1746dbab3e6df21585a6cbc01b9ccf64b60add9">mip::C::MIP_GNSS4_DATA_DESC_SET</a> = 0x94
+<tr class="memitem:ga16a20b279a289d1a5af208421f1746db"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group__gnss__data__c.html#gga16a20b279a289d1a5af208421f1746dbaff66f86f7be7b97a199c19511f926dd8">mip::C::MIP_GNSS2_DATA_DESC_SET</a> = 0x92
  }</td></tr>
 <tr class="separator:ga16a20b279a289d1a5af208421f1746db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7085c2e894a2b3f06e8be6d161ae1e81"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group__gnss__data__c.html#gga7085c2e894a2b3f06e8be6d161ae1e81a60c9bb2f031d98a3dd1d17d8f789e7db">mip::C::MIP_GNSS5_DATA_DESC_SET</a> = 0x95
+<tr class="memitem:ga7085c2e894a2b3f06e8be6d161ae1e81"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group__gnss__data__c.html#gga7085c2e894a2b3f06e8be6d161ae1e81a1a4d6f5e22625392de5b5fbc776afd88">mip::C::MIP_GNSS3_DATA_DESC_SET</a> = 0x93
  }</td></tr>
 <tr class="separator:ga7085c2e894a2b3f06e8be6d161ae1e81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0dba2583e96b7ae90a3057935b19fe78"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group__gnss__data__c.html#gga0dba2583e96b7ae90a3057935b19fe78a9c92cbb8f89daccfb09f24a83ed8907b">mip::C::MIP_GNSS_DGPS_INFO_MAX_CHANNEL_NUMBER</a> = 32
+<tr class="memitem:ga0dba2583e96b7ae90a3057935b19fe78"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group__gnss__data__c.html#gga0dba2583e96b7ae90a3057935b19fe78ab3e6df21585a6cbc01b9ccf64b60add9">mip::C::MIP_GNSS4_DATA_DESC_SET</a> = 0x94
  }</td></tr>
 <tr class="separator:ga0dba2583e96b7ae90a3057935b19fe78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac61ce56ffc0542a13690db3c59373142"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group__gnss__data__c.html#ggac61ce56ffc0542a13690db3c59373142ae3af1a0daf9f4a0af8efa7f24189bfe6">mip::C::MIP_GNSS_SV_INFO_MAX_SV_NUMBER</a> = 32
+<tr class="memitem:gac61ce56ffc0542a13690db3c59373142"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group__gnss__data__c.html#ggac61ce56ffc0542a13690db3c59373142a60c9bb2f031d98a3dd1d17d8f789e7db">mip::C::MIP_GNSS5_DATA_DESC_SET</a> = 0x95
  }</td></tr>
 <tr class="separator:gac61ce56ffc0542a13690db3c59373142"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5d2637c596e7f94e1e45c7147f65abab"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group__gnss__data__c.html#gga5d2637c596e7f94e1e45c7147f65ababa9c92cbb8f89daccfb09f24a83ed8907b">mip::C::MIP_GNSS_DGPS_INFO_MAX_CHANNEL_NUMBER</a> = 32
+ }</td></tr>
+<tr class="separator:ga5d2637c596e7f94e1e45c7147f65abab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf5100307361c84e4825c2176b5c50163"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group__gnss__data__c.html#ggaf5100307361c84e4825c2176b5c50163ae3af1a0daf9f4a0af8efa7f24189bfe6">mip::C::MIP_GNSS_SV_INFO_MAX_SV_NUMBER</a> = 32
+ }</td></tr>
+<tr class="separator:gaf5100307361c84e4825c2176b5c50163"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>

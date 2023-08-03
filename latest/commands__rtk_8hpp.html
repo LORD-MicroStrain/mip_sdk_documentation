@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-92-ge4aecbb</span>
+   &#160;<span id="projectnumber">v1.0.0-127-gb109f1a</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -76,7 +76,8 @@ $(function() {
 <div class="title">commands_rtk.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="descriptors_8h_source.html">descriptors.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="common_8h_source.html">common.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="descriptors_8h_source.html">descriptors.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mip__result_8h_source.html">../mip_result.h</a>&quot;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;stddef.h&gt;</code><br />
@@ -86,18 +87,20 @@ Include dependency graph for commands_rtk.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="commands__rtk_8hpp__incl.png" border="0" usemap="#asrc_2mip_2definitions_2commands__rtk_8hpp" alt=""/></div>
 <map name="asrc_2mip_2definitions_2commands__rtk_8hpp" id="asrc_2mip_2definitions_2commands__rtk_8hpp">
-<area shape="rect" title=" " alt="" coords="546,5,683,47"/>
-<area shape="rect" href="descriptors_8h.html" title=" " alt="" coords="211,95,309,121"/>
-<area shape="rect" title=" " alt="" coords="97,468,165,495"/>
-<area shape="rect" title=" " alt="" coords="487,468,553,495"/>
-<area shape="rect" title=" " alt="" coords="704,468,779,495"/>
-<area shape="rect" href="mip__result_8h.html" title=" " alt="" coords="805,393,910,420"/>
-<area shape="rect" href="serialization_8h.html" title=" " alt="" coords="318,169,461,196"/>
-<area shape="rect" title=" " alt="" coords="219,244,301,271"/>
-<area shape="rect" title=" " alt="" coords="43,169,93,196"/>
-<area shape="rect" href="mip__field_8h.html" title=" " alt="" coords="481,244,577,271"/>
-<area shape="rect" href="mip__packet_8h.html" title=" " alt="" coords="426,319,526,345"/>
-<area shape="rect" href="mip__types_8h.html" title=" " alt="" coords="429,393,523,420"/>
+<area shape="rect" title=" " alt="" coords="431,5,569,47"/>
+<area shape="rect" href="common_8h.html" title=" " alt="" coords="401,95,484,121"/>
+<area shape="rect" title=" " alt="" coords="47,468,115,495"/>
+<area shape="rect" title=" " alt="" coords="338,468,403,495"/>
+<area shape="rect" title=" " alt="" coords="731,468,805,495"/>
+<area shape="rect" href="descriptors_8h.html" title=" " alt="" coords="531,95,629,121"/>
+<area shape="rect" href="mip__result_8h.html" title=" " alt="" coords="625,393,730,420"/>
+<area shape="rect" href="serialization_8h.html" title=" " alt="" coords="371,169,514,196"/>
+<area shape="rect" title=" " alt="" coords="568,244,651,271"/>
+<area shape="rect" title=" " alt="" coords="245,169,296,196"/>
+<area shape="rect" href="mip__field_8h.html" title=" " alt="" coords="397,244,493,271"/>
+<area shape="rect" href="mip__packet_8h.html" title=" " alt="" coords="347,319,447,345"/>
+<area shape="rect" href="mip__types_8h.html" title=" " alt="" coords="324,393,417,420"/>
+<area shape="rect" title=" " alt="" coords="741,169,819,196"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -176,37 +179,37 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ga6227c98ba7a091660ab3b7ea91dd557d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="group__rtk__commands__cpp.html#gga6227c98ba7a091660ab3b7ea91dd557da83c7e1e18354c0a188ce433fa02e75c6">mip::commands_rtk::DESCRIPTOR_SET</a> = 0x0F
-, <a class="el" href="group__rtk__commands__cpp.html#gga6227c98ba7a091660ab3b7ea91dd557da12dc05acc0523232a544b41168e44ee4">mip::commands_rtk::CMD_GET_STATUS_FLAGS</a> = 0x01
-, <a class="el" href="group__rtk__commands__cpp.html#gga6227c98ba7a091660ab3b7ea91dd557da46597cb6f82ee364777050d9d73ae056">mip::commands_rtk::CMD_GET_IMEI</a> = 0x02
-, <a class="el" href="group__rtk__commands__cpp.html#gga6227c98ba7a091660ab3b7ea91dd557dababaccb883d719b1c0973b95205e5623">mip::commands_rtk::CMD_GET_IMSI</a> = 0x03
+<tr class="memitem:ga068bd59f9f1d9bf618d86e4b70a08b86"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="group__rtk__commands__cpp.html#gga068bd59f9f1d9bf618d86e4b70a08b86a83c7e1e18354c0a188ce433fa02e75c6">mip::commands_rtk::DESCRIPTOR_SET</a> = 0x0F
+, <a class="el" href="group__rtk__commands__cpp.html#gga068bd59f9f1d9bf618d86e4b70a08b86a12dc05acc0523232a544b41168e44ee4">mip::commands_rtk::CMD_GET_STATUS_FLAGS</a> = 0x01
+, <a class="el" href="group__rtk__commands__cpp.html#gga068bd59f9f1d9bf618d86e4b70a08b86a46597cb6f82ee364777050d9d73ae056">mip::commands_rtk::CMD_GET_IMEI</a> = 0x02
+, <a class="el" href="group__rtk__commands__cpp.html#gga068bd59f9f1d9bf618d86e4b70a08b86ababaccb883d719b1c0973b95205e5623">mip::commands_rtk::CMD_GET_IMSI</a> = 0x03
 , <br />
-&#160;&#160;<a class="el" href="group__rtk__commands__cpp.html#gga6227c98ba7a091660ab3b7ea91dd557da66d7c758accd8d4f3c571317d23a89a6">mip::commands_rtk::CMD_GET_ICCID</a> = 0x04
-, <a class="el" href="group__rtk__commands__cpp.html#gga6227c98ba7a091660ab3b7ea91dd557daf231118a0bbc81389a3ced2082e70d5d">mip::commands_rtk::CMD_GET_RSSI</a> = 0x05
-, <a class="el" href="group__rtk__commands__cpp.html#gga6227c98ba7a091660ab3b7ea91dd557dae3b87364126794cf41f66bd18e1613da">mip::commands_rtk::CMD_CONNECTED_DEVICE_TYPE</a> = 0x06
-, <a class="el" href="group__rtk__commands__cpp.html#gga6227c98ba7a091660ab3b7ea91dd557dafbb0289a5901c8581ac991a33198e400">mip::commands_rtk::CMD_GET_ACT_CODE</a> = 0x07
+&#160;&#160;<a class="el" href="group__rtk__commands__cpp.html#gga068bd59f9f1d9bf618d86e4b70a08b86a66d7c758accd8d4f3c571317d23a89a6">mip::commands_rtk::CMD_GET_ICCID</a> = 0x04
+, <a class="el" href="group__rtk__commands__cpp.html#gga068bd59f9f1d9bf618d86e4b70a08b86af231118a0bbc81389a3ced2082e70d5d">mip::commands_rtk::CMD_GET_RSSI</a> = 0x05
+, <a class="el" href="group__rtk__commands__cpp.html#gga068bd59f9f1d9bf618d86e4b70a08b86ae3b87364126794cf41f66bd18e1613da">mip::commands_rtk::CMD_CONNECTED_DEVICE_TYPE</a> = 0x06
+, <a class="el" href="group__rtk__commands__cpp.html#gga068bd59f9f1d9bf618d86e4b70a08b86afbb0289a5901c8581ac991a33198e400">mip::commands_rtk::CMD_GET_ACT_CODE</a> = 0x07
 , <br />
-&#160;&#160;<a class="el" href="group__rtk__commands__cpp.html#gga6227c98ba7a091660ab3b7ea91dd557da5eeb1b2eafbb095c5e0cc790ea4ee1ba">mip::commands_rtk::CMD_GET_MODEM_FIRMWARE_VERSION</a> = 0x08
-, <a class="el" href="group__rtk__commands__cpp.html#gga6227c98ba7a091660ab3b7ea91dd557daaef5dda6d5ae05be2954f515779e812a">mip::commands_rtk::CMD_SERVICE_STATUS</a> = 0x0A
-, <a class="el" href="group__rtk__commands__cpp.html#gga6227c98ba7a091660ab3b7ea91dd557da29887e4f9baa39101650164b00e17a31">mip::commands_rtk::CMD_PROD_ERASE_STORAGE</a> = 0x20
-, <a class="el" href="group__rtk__commands__cpp.html#gga6227c98ba7a091660ab3b7ea91dd557da37ce10af80c9660ae4cec2ca2ec8a2b0">mip::commands_rtk::CMD_CONTROL</a> = 0x21
+&#160;&#160;<a class="el" href="group__rtk__commands__cpp.html#gga068bd59f9f1d9bf618d86e4b70a08b86a5eeb1b2eafbb095c5e0cc790ea4ee1ba">mip::commands_rtk::CMD_GET_MODEM_FIRMWARE_VERSION</a> = 0x08
+, <a class="el" href="group__rtk__commands__cpp.html#gga068bd59f9f1d9bf618d86e4b70a08b86aaef5dda6d5ae05be2954f515779e812a">mip::commands_rtk::CMD_SERVICE_STATUS</a> = 0x0A
+, <a class="el" href="group__rtk__commands__cpp.html#gga068bd59f9f1d9bf618d86e4b70a08b86a29887e4f9baa39101650164b00e17a31">mip::commands_rtk::CMD_PROD_ERASE_STORAGE</a> = 0x20
+, <a class="el" href="group__rtk__commands__cpp.html#gga068bd59f9f1d9bf618d86e4b70a08b86a37ce10af80c9660ae4cec2ca2ec8a2b0">mip::commands_rtk::CMD_CONTROL</a> = 0x21
 , <br />
-&#160;&#160;<a class="el" href="group__rtk__commands__cpp.html#gga6227c98ba7a091660ab3b7ea91dd557da7e9363539ca64862eaa26ddd6f6d9def">mip::commands_rtk::CMD_MODEM_HARD_RESET</a> = 0x22
-, <a class="el" href="group__rtk__commands__cpp.html#gga6227c98ba7a091660ab3b7ea91dd557daee19aff66e43e88b44eae767c0a55267">mip::commands_rtk::REPLY_GET_STATUS_FLAGS</a> = 0x81
-, <a class="el" href="group__rtk__commands__cpp.html#gga6227c98ba7a091660ab3b7ea91dd557da4f7a2089d54f78e126c3c20777d671a1">mip::commands_rtk::REPLY_GET_IMEI</a> = 0x82
-, <a class="el" href="group__rtk__commands__cpp.html#gga6227c98ba7a091660ab3b7ea91dd557da8bf32bcdb66ca5d5ee5ca0ae32bc6d4e">mip::commands_rtk::REPLY_GET_IMSI</a> = 0x83
+&#160;&#160;<a class="el" href="group__rtk__commands__cpp.html#gga068bd59f9f1d9bf618d86e4b70a08b86a7e9363539ca64862eaa26ddd6f6d9def">mip::commands_rtk::CMD_MODEM_HARD_RESET</a> = 0x22
+, <a class="el" href="group__rtk__commands__cpp.html#gga068bd59f9f1d9bf618d86e4b70a08b86aee19aff66e43e88b44eae767c0a55267">mip::commands_rtk::REPLY_GET_STATUS_FLAGS</a> = 0x81
+, <a class="el" href="group__rtk__commands__cpp.html#gga068bd59f9f1d9bf618d86e4b70a08b86a4f7a2089d54f78e126c3c20777d671a1">mip::commands_rtk::REPLY_GET_IMEI</a> = 0x82
+, <a class="el" href="group__rtk__commands__cpp.html#gga068bd59f9f1d9bf618d86e4b70a08b86a8bf32bcdb66ca5d5ee5ca0ae32bc6d4e">mip::commands_rtk::REPLY_GET_IMSI</a> = 0x83
 , <br />
-&#160;&#160;<a class="el" href="group__rtk__commands__cpp.html#gga6227c98ba7a091660ab3b7ea91dd557da7e76777bca5c3dc27d2204ec81813f0c">mip::commands_rtk::REPLY_GET_ICCID</a> = 0x84
-, <a class="el" href="group__rtk__commands__cpp.html#gga6227c98ba7a091660ab3b7ea91dd557dab043c0eb1cf4b508c10314eef3251b5b">mip::commands_rtk::REPLY_CONNECTED_DEVICE_TYPE</a> = 0x86
-, <a class="el" href="group__rtk__commands__cpp.html#gga6227c98ba7a091660ab3b7ea91dd557da2cdc2b858eef2ee3cb44fc7dfcffdd2c">mip::commands_rtk::REPLY_GET_ACT_CODE</a> = 0x87
-, <a class="el" href="group__rtk__commands__cpp.html#gga6227c98ba7a091660ab3b7ea91dd557da2b966e8db755d62746226ce8e9fd5a75">mip::commands_rtk::REPLY_GET_MODEM_FIRMWARE_VERSION</a> = 0x88
+&#160;&#160;<a class="el" href="group__rtk__commands__cpp.html#gga068bd59f9f1d9bf618d86e4b70a08b86a7e76777bca5c3dc27d2204ec81813f0c">mip::commands_rtk::REPLY_GET_ICCID</a> = 0x84
+, <a class="el" href="group__rtk__commands__cpp.html#gga068bd59f9f1d9bf618d86e4b70a08b86ab043c0eb1cf4b508c10314eef3251b5b">mip::commands_rtk::REPLY_CONNECTED_DEVICE_TYPE</a> = 0x86
+, <a class="el" href="group__rtk__commands__cpp.html#gga068bd59f9f1d9bf618d86e4b70a08b86a2cdc2b858eef2ee3cb44fc7dfcffdd2c">mip::commands_rtk::REPLY_GET_ACT_CODE</a> = 0x87
+, <a class="el" href="group__rtk__commands__cpp.html#gga068bd59f9f1d9bf618d86e4b70a08b86a2b966e8db755d62746226ce8e9fd5a75">mip::commands_rtk::REPLY_GET_MODEM_FIRMWARE_VERSION</a> = 0x88
 , <br />
-&#160;&#160;<a class="el" href="group__rtk__commands__cpp.html#gga6227c98ba7a091660ab3b7ea91dd557da820763e4b1213d9767241c382608989f">mip::commands_rtk::REPLY_GET_RSSI</a> = 0x85
-, <a class="el" href="group__rtk__commands__cpp.html#gga6227c98ba7a091660ab3b7ea91dd557da19f8ea3c8ead1c68e78ed219aebc5e7b">mip::commands_rtk::REPLY_SERVICE_STATUS</a> = 0x8A
+&#160;&#160;<a class="el" href="group__rtk__commands__cpp.html#gga068bd59f9f1d9bf618d86e4b70a08b86a820763e4b1213d9767241c382608989f">mip::commands_rtk::REPLY_GET_RSSI</a> = 0x85
+, <a class="el" href="group__rtk__commands__cpp.html#gga068bd59f9f1d9bf618d86e4b70a08b86a19f8ea3c8ead1c68e78ed219aebc5e7b">mip::commands_rtk::REPLY_SERVICE_STATUS</a> = 0x8A
 <br />
  }</td></tr>
-<tr class="separator:ga6227c98ba7a091660ab3b7ea91dd557d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ga068bd59f9f1d9bf618d86e4b70a08b86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9d2c3b71c0b9cb9a5ca47e88c84d9498"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rtk__commands__cpp.html#ga9d2c3b71c0b9cb9a5ca47e88c84d9498">mip::commands_rtk::MediaSelector</a> : uint8_t { <a class="el" href="group__rtk__commands__cpp.html#gga9d2c3b71c0b9cb9a5ca47e88c84d9498aa52db4c2e55bc3fbdd3489174345f5be">mip::commands_rtk::MEDIA_EXTERNALFLASH</a> = 0
 , <a class="el" href="group__rtk__commands__cpp.html#gga9d2c3b71c0b9cb9a5ca47e88c84d9498a0a041058d618b48274040344cf4761c6">mip::commands_rtk::MEDIA_SD</a> = 1
  }</td></tr>

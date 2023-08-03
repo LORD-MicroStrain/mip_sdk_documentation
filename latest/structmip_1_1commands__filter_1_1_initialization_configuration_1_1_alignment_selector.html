@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-92-ge4aecbb</span>
+   &#160;<span id="projectnumber">v1.0.0-127-gb109f1a</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -105,7 +105,8 @@ Public Types</h2></td></tr>
 , <a class="el" href="structmip_1_1commands__filter_1_1_initialization_configuration_1_1_alignment_selector.html#a8ae75177fa0b0950e6b277a40e968a73a71c1aa0b864313491872c75850bea448">KINEMATIC</a> = 0x02
 , <a class="el" href="structmip_1_1commands__filter_1_1_initialization_configuration_1_1_alignment_selector.html#a8ae75177fa0b0950e6b277a40e968a73a6d9dd956ed79e10b930948ca02ccfb09">MAGNETOMETER</a> = 0x04
 , <br />
-&#160;&#160;<a class="el" href="structmip_1_1commands__filter_1_1_initialization_configuration_1_1_alignment_selector.html#a8ae75177fa0b0950e6b277a40e968a73acbf9e1b027e0025c8036edee3bfbf1ab">ALL</a> = 0x07
+&#160;&#160;<a class="el" href="structmip_1_1commands__filter_1_1_initialization_configuration_1_1_alignment_selector.html#a8ae75177fa0b0950e6b277a40e968a73a61a4bf5576aa6f199950da9c35b38359">EXTERNAL</a> = 0x08
+, <a class="el" href="structmip_1_1commands__filter_1_1_initialization_configuration_1_1_alignment_selector.html#a8ae75177fa0b0950e6b277a40e968a73acbf9e1b027e0025c8036edee3bfbf1ab">ALL</a> = 0x0F
 <br />
  }</td></tr>
 <tr class="separator:a8ae75177fa0b0950e6b277a40e968a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,6 +139,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a73e8b82ee71f4ec94bfadd2a009dd1f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a288427e2541bb5a20d9606f8a7f1371b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_initialization_configuration_1_1_alignment_selector.html#a288427e2541bb5a20d9606f8a7f1371b">magnetometer</a> (bool val)</td></tr>
 <tr class="separator:a288427e2541bb5a20d9606f8a7f1371b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f66b58ff9386d1c9919399f2be234f8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_initialization_configuration_1_1_alignment_selector.html#a9f66b58ff9386d1c9919399f2be234f8">external</a> () const</td></tr>
+<tr class="separator:a9f66b58ff9386d1c9919399f2be234f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b8e71e23d4e17d355a7f0809bb2c63a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_initialization_configuration_1_1_alignment_selector.html#a4b8e71e23d4e17d355a7f0809bb2c63a">external</a> (bool val)</td></tr>
+<tr class="separator:a4b8e71e23d4e17d355a7f0809bb2c63a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64c7078717109dea9513c1f25c1e825f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_initialization_configuration_1_1_alignment_selector.html#a64c7078717109dea9513c1f25c1e825f">allSet</a> () const</td></tr>
 <tr class="separator:a64c7078717109dea9513c1f25c1e825f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b2d96b623f162710db6659c3360da8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_initialization_configuration_1_1_alignment_selector.html#a4b2d96b623f162710db6659c3360da8f">setAll</a> ()</td></tr>
@@ -166,7 +171,9 @@ Public Attributes</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a8ae75177fa0b0950e6b277a40e968a73a71c1aa0b864313491872c75850bea448"></a>KINEMATIC&#160;</td><td class="fielddoc"><p>GNSS kinematic alignment (GNSS velocity determines initial heading) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a8ae75177fa0b0950e6b277a40e968a73a6d9dd956ed79e10b930948ca02ccfb09"></a>MAGNETOMETER&#160;</td><td class="fielddoc"><p>Magnetometer heading alignment. </p>
+<tr><td class="fieldname"><a id="a8ae75177fa0b0950e6b277a40e968a73a6d9dd956ed79e10b930948ca02ccfb09"></a>MAGNETOMETER&#160;</td><td class="fielddoc"><p>Magnetometer heading alignment (Internal magnetometer determines initial heading) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8ae75177fa0b0950e6b277a40e968a73a61a4bf5576aa6f199950da9c35b38359"></a>EXTERNAL&#160;</td><td class="fielddoc"><p>External heading alignment (External heading input determines heading) </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a8ae75177fa0b0950e6b277a40e968a73acbf9e1b027e0025c8036edee3bfbf1ab"></a>ALL&#160;</td><td class="fielddoc"></td></tr>
 </table>
@@ -287,6 +294,57 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void mip::commands_filter::InitializationConfiguration::AlignmentSelector::dualAntenna </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9f66b58ff9386d1c9919399f2be234f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f66b58ff9386d1c9919399f2be234f8">&#9670;&nbsp;</a></span>external() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::commands_filter::InitializationConfiguration::AlignmentSelector::external </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4b8e71e23d4e17d355a7f0809bb2c63a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b8e71e23d4e17d355a7f0809bb2c63a">&#9670;&nbsp;</a></span>external() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::commands_filter::InitializationConfiguration::AlignmentSelector::external </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>val</em></td><td>)</td>

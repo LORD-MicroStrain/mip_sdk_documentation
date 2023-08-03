@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-92-ge4aecbb</span>
+   &#160;<span id="projectnumber">v1.0.0-127-gb109f1a</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -76,7 +76,8 @@ $(function() {
 <div class="title">commands_3dm.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="descriptors_8h_source.html">descriptors.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="common_8h_source.html">common.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="descriptors_8h_source.html">descriptors.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mip__result_8h_source.html">../mip_result.h</a>&quot;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;stddef.h&gt;</code><br />
@@ -86,18 +87,20 @@ Include dependency graph for commands_3dm.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="commands__3dm_8hpp__incl.png" border="0" usemap="#asrc_2mip_2definitions_2commands__3dm_8hpp" alt=""/></div>
 <map name="asrc_2mip_2definitions_2commands__3dm_8hpp" id="asrc_2mip_2definitions_2commands__3dm_8hpp">
-<area shape="rect" title=" " alt="" coords="541,5,688,47"/>
-<area shape="rect" href="descriptors_8h.html" title=" " alt="" coords="211,95,309,121"/>
-<area shape="rect" title=" " alt="" coords="97,468,165,495"/>
-<area shape="rect" title=" " alt="" coords="487,468,553,495"/>
-<area shape="rect" title=" " alt="" coords="704,468,779,495"/>
-<area shape="rect" href="mip__result_8h.html" title=" " alt="" coords="805,393,910,420"/>
-<area shape="rect" href="serialization_8h.html" title=" " alt="" coords="318,169,461,196"/>
-<area shape="rect" title=" " alt="" coords="219,244,301,271"/>
-<area shape="rect" title=" " alt="" coords="43,169,93,196"/>
-<area shape="rect" href="mip__field_8h.html" title=" " alt="" coords="481,244,577,271"/>
-<area shape="rect" href="mip__packet_8h.html" title=" " alt="" coords="426,319,526,345"/>
-<area shape="rect" href="mip__types_8h.html" title=" " alt="" coords="429,393,523,420"/>
+<area shape="rect" title=" " alt="" coords="427,5,573,47"/>
+<area shape="rect" href="common_8h.html" title=" " alt="" coords="401,95,484,121"/>
+<area shape="rect" title=" " alt="" coords="47,468,115,495"/>
+<area shape="rect" title=" " alt="" coords="338,468,403,495"/>
+<area shape="rect" title=" " alt="" coords="731,468,805,495"/>
+<area shape="rect" href="descriptors_8h.html" title=" " alt="" coords="531,95,629,121"/>
+<area shape="rect" href="mip__result_8h.html" title=" " alt="" coords="625,393,730,420"/>
+<area shape="rect" href="serialization_8h.html" title=" " alt="" coords="371,169,514,196"/>
+<area shape="rect" title=" " alt="" coords="568,244,651,271"/>
+<area shape="rect" title=" " alt="" coords="245,169,296,196"/>
+<area shape="rect" href="mip__field_8h.html" title=" " alt="" coords="397,244,493,271"/>
+<area shape="rect" href="mip__packet_8h.html" title=" " alt="" coords="347,319,447,345"/>
+<area shape="rect" href="mip__types_8h.html" title=" " alt="" coords="324,393,417,420"/>
+<area shape="rect" title=" " alt="" coords="741,169,819,196"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -975,10 +978,10 @@ Functions</h2></td></tr>
 <tr class="separator:ga6b98084677d4d349636850a75423ffad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0e8870901c0953ab5e26a3b501378a3b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__accel__bias.html#ga0e8870901c0953ab5e26a3b501378a3b">mip::commands_3dm::extract</a> (Serializer &amp;serializer, AccelBias::Response &amp;self)</td></tr>
 <tr class="separator:ga0e8870901c0953ab5e26a3b501378a3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaac548266c290c40c44b8dbdb7ecfddaf"><td class="memItemLeft" align="right" valign="top">CmdResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__accel__bias.html#gaac548266c290c40c44b8dbdb7ecfddaf">mip::commands_3dm::writeAccelBias</a> (C::mip_interface &amp;device, const float *bias)</td></tr>
-<tr class="separator:gaac548266c290c40c44b8dbdb7ecfddaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa55667e8c42cb232f3173f4be74d2e82"><td class="memItemLeft" align="right" valign="top">CmdResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__accel__bias.html#gaa55667e8c42cb232f3173f4be74d2e82">mip::commands_3dm::readAccelBias</a> (C::mip_interface &amp;device, float *biasOut)</td></tr>
-<tr class="separator:gaa55667e8c42cb232f3173f4be74d2e82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga71d322cc5ae6fb571cd47a563a93e5d2"><td class="memItemLeft" align="right" valign="top">CmdResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__accel__bias.html#ga71d322cc5ae6fb571cd47a563a93e5d2">mip::commands_3dm::writeAccelBias</a> (C::mip_interface &amp;device, Vector3f bias)</td></tr>
+<tr class="separator:ga71d322cc5ae6fb571cd47a563a93e5d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga820e0bb592981c656f479b19e7cf3881"><td class="memItemLeft" align="right" valign="top">CmdResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__accel__bias.html#ga820e0bb592981c656f479b19e7cf3881">mip::commands_3dm::readAccelBias</a> (C::mip_interface &amp;device, Vector3f biasOut)</td></tr>
+<tr class="separator:ga820e0bb592981c656f479b19e7cf3881"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1882125aa1e6c16eeb219e8e3d1f1c72"><td class="memItemLeft" align="right" valign="top">CmdResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__accel__bias.html#ga1882125aa1e6c16eeb219e8e3d1f1c72">mip::commands_3dm::saveAccelBias</a> (C::mip_interface &amp;device)</td></tr>
 <tr class="separator:ga1882125aa1e6c16eeb219e8e3d1f1c72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga12eb832016fd28ace1e19b53386c1921"><td class="memItemLeft" align="right" valign="top">CmdResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__accel__bias.html#ga12eb832016fd28ace1e19b53386c1921">mip::commands_3dm::loadAccelBias</a> (C::mip_interface &amp;device)</td></tr>
@@ -993,10 +996,10 @@ Functions</h2></td></tr>
 <tr class="separator:gaf08bc10ea9f341d4ad978844afc7dc25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab2352f5f24f2c08a92cc2148ca89a23f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__gyro__bias.html#gab2352f5f24f2c08a92cc2148ca89a23f">mip::commands_3dm::extract</a> (Serializer &amp;serializer, GyroBias::Response &amp;self)</td></tr>
 <tr class="separator:gab2352f5f24f2c08a92cc2148ca89a23f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga45a3d4cf07b92dc98f484dea6527c0b8"><td class="memItemLeft" align="right" valign="top">CmdResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__gyro__bias.html#ga45a3d4cf07b92dc98f484dea6527c0b8">mip::commands_3dm::writeGyroBias</a> (C::mip_interface &amp;device, const float *bias)</td></tr>
-<tr class="separator:ga45a3d4cf07b92dc98f484dea6527c0b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga005ed9f930ee9512207c1a4e452c25a1"><td class="memItemLeft" align="right" valign="top">CmdResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__gyro__bias.html#ga005ed9f930ee9512207c1a4e452c25a1">mip::commands_3dm::readGyroBias</a> (C::mip_interface &amp;device, float *biasOut)</td></tr>
-<tr class="separator:ga005ed9f930ee9512207c1a4e452c25a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaedf70560cee37f40ae9a8ef798db1f19"><td class="memItemLeft" align="right" valign="top">CmdResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__gyro__bias.html#gaedf70560cee37f40ae9a8ef798db1f19">mip::commands_3dm::writeGyroBias</a> (C::mip_interface &amp;device, Vector3f bias)</td></tr>
+<tr class="separator:gaedf70560cee37f40ae9a8ef798db1f19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga22322a9db24ec1981598de1a9fce2336"><td class="memItemLeft" align="right" valign="top">CmdResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__gyro__bias.html#ga22322a9db24ec1981598de1a9fce2336">mip::commands_3dm::readGyroBias</a> (C::mip_interface &amp;device, Vector3f biasOut)</td></tr>
+<tr class="separator:ga22322a9db24ec1981598de1a9fce2336"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga31f53be4c438f50c7e7223365b8c11a3"><td class="memItemLeft" align="right" valign="top">CmdResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__gyro__bias.html#ga31f53be4c438f50c7e7223365b8c11a3">mip::commands_3dm::saveGyroBias</a> (C::mip_interface &amp;device)</td></tr>
 <tr class="separator:ga31f53be4c438f50c7e7223365b8c11a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga00eda4692cb6e7ab263f1ad967cac14e"><td class="memItemLeft" align="right" valign="top">CmdResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__gyro__bias.html#ga00eda4692cb6e7ab263f1ad967cac14e">mip::commands_3dm::loadGyroBias</a> (C::mip_interface &amp;device)</td></tr>
@@ -1011,8 +1014,8 @@ Functions</h2></td></tr>
 <tr class="separator:gabe7ceca08c103c3b4432499caad7cb71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga43aaefe286b6c618141ad257b9da7605"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__capture__gyro__bias.html#ga43aaefe286b6c618141ad257b9da7605">mip::commands_3dm::extract</a> (Serializer &amp;serializer, CaptureGyroBias::Response &amp;self)</td></tr>
 <tr class="separator:ga43aaefe286b6c618141ad257b9da7605"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7741da22ecf03eb0c52bf1b8f26317e2"><td class="memItemLeft" align="right" valign="top">CmdResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__capture__gyro__bias.html#ga7741da22ecf03eb0c52bf1b8f26317e2">mip::commands_3dm::captureGyroBias</a> (C::mip_interface &amp;device, uint16_t averagingTimeMs, float *biasOut)</td></tr>
-<tr class="separator:ga7741da22ecf03eb0c52bf1b8f26317e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga583dcb7d2f82acafcf6fb9fe18ec49f0"><td class="memItemLeft" align="right" valign="top">CmdResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__capture__gyro__bias.html#ga583dcb7d2f82acafcf6fb9fe18ec49f0">mip::commands_3dm::captureGyroBias</a> (C::mip_interface &amp;device, uint16_t averagingTimeMs, Vector3f biasOut)</td></tr>
+<tr class="separator:ga583dcb7d2f82acafcf6fb9fe18ec49f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga777aad8d6fe0cb1b50b2c1f52daf40ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__mag__hard__iron__offset.html#ga777aad8d6fe0cb1b50b2c1f52daf40ab">mip::commands_3dm::insert</a> (Serializer &amp;serializer, const MagHardIronOffset &amp;self)</td></tr>
 <tr class="separator:ga777aad8d6fe0cb1b50b2c1f52daf40ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8002d53192c7753ca25195d9c52c0f7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__mag__hard__iron__offset.html#ga8002d53192c7753ca25195d9c52c0f7f">mip::commands_3dm::extract</a> (Serializer &amp;serializer, MagHardIronOffset &amp;self)</td></tr>
@@ -1021,10 +1024,10 @@ Functions</h2></td></tr>
 <tr class="separator:gac69b55ceb6367d0c5e2b7fe0fcf24c24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2953299ebf74d2df8a160b443ee1c02a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__mag__hard__iron__offset.html#ga2953299ebf74d2df8a160b443ee1c02a">mip::commands_3dm::extract</a> (Serializer &amp;serializer, MagHardIronOffset::Response &amp;self)</td></tr>
 <tr class="separator:ga2953299ebf74d2df8a160b443ee1c02a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga89ebe1c1c6f0e49f76896d439fa01e78"><td class="memItemLeft" align="right" valign="top">CmdResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__mag__hard__iron__offset.html#ga89ebe1c1c6f0e49f76896d439fa01e78">mip::commands_3dm::writeMagHardIronOffset</a> (C::mip_interface &amp;device, const float *offset)</td></tr>
-<tr class="separator:ga89ebe1c1c6f0e49f76896d439fa01e78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae4f65b29dc1dd82831361a76de67fdcf"><td class="memItemLeft" align="right" valign="top">CmdResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__mag__hard__iron__offset.html#gae4f65b29dc1dd82831361a76de67fdcf">mip::commands_3dm::readMagHardIronOffset</a> (C::mip_interface &amp;device, float *offsetOut)</td></tr>
-<tr class="separator:gae4f65b29dc1dd82831361a76de67fdcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2c53e181c0088195385d53259c8c3217"><td class="memItemLeft" align="right" valign="top">CmdResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__mag__hard__iron__offset.html#ga2c53e181c0088195385d53259c8c3217">mip::commands_3dm::writeMagHardIronOffset</a> (C::mip_interface &amp;device, Vector3f offset)</td></tr>
+<tr class="separator:ga2c53e181c0088195385d53259c8c3217"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadc6b9b828c36b43c3e1c157148a540a8"><td class="memItemLeft" align="right" valign="top">CmdResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__mag__hard__iron__offset.html#gadc6b9b828c36b43c3e1c157148a540a8">mip::commands_3dm::readMagHardIronOffset</a> (C::mip_interface &amp;device, Vector3f offsetOut)</td></tr>
+<tr class="separator:gadc6b9b828c36b43c3e1c157148a540a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1e6a91e97311ec47ad33469602307ccf"><td class="memItemLeft" align="right" valign="top">CmdResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__mag__hard__iron__offset.html#ga1e6a91e97311ec47ad33469602307ccf">mip::commands_3dm::saveMagHardIronOffset</a> (C::mip_interface &amp;device)</td></tr>
 <tr class="separator:ga1e6a91e97311ec47ad33469602307ccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6c66dfdc50c41b48e2db160a37a3b2e3"><td class="memItemLeft" align="right" valign="top">CmdResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__mag__hard__iron__offset.html#ga6c66dfdc50c41b48e2db160a37a3b2e3">mip::commands_3dm::loadMagHardIronOffset</a> (C::mip_interface &amp;device)</td></tr>
@@ -1039,10 +1042,10 @@ Functions</h2></td></tr>
 <tr class="separator:ga562cc5d146d13eb5cd6bd5f34eede320"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac402d393e7bc8c4f59e05f1a47bb19d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__mag__soft__iron__matrix.html#gac402d393e7bc8c4f59e05f1a47bb19d4">mip::commands_3dm::extract</a> (Serializer &amp;serializer, MagSoftIronMatrix::Response &amp;self)</td></tr>
 <tr class="separator:gac402d393e7bc8c4f59e05f1a47bb19d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga117dc0c9493d099007ce93b0b70acb04"><td class="memItemLeft" align="right" valign="top">CmdResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__mag__soft__iron__matrix.html#ga117dc0c9493d099007ce93b0b70acb04">mip::commands_3dm::writeMagSoftIronMatrix</a> (C::mip_interface &amp;device, const float *offset)</td></tr>
-<tr class="separator:ga117dc0c9493d099007ce93b0b70acb04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga959dfeca6b2f1c745ed3dec48644fecd"><td class="memItemLeft" align="right" valign="top">CmdResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__mag__soft__iron__matrix.html#ga959dfeca6b2f1c745ed3dec48644fecd">mip::commands_3dm::readMagSoftIronMatrix</a> (C::mip_interface &amp;device, float *offsetOut)</td></tr>
-<tr class="separator:ga959dfeca6b2f1c745ed3dec48644fecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6ad5b3d9889e6e6bcc96b62aee68345e"><td class="memItemLeft" align="right" valign="top">CmdResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__mag__soft__iron__matrix.html#ga6ad5b3d9889e6e6bcc96b62aee68345e">mip::commands_3dm::writeMagSoftIronMatrix</a> (C::mip_interface &amp;device, Matrix3f offset)</td></tr>
+<tr class="separator:ga6ad5b3d9889e6e6bcc96b62aee68345e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2d01894925dfe706e1bf80e792573b0d"><td class="memItemLeft" align="right" valign="top">CmdResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__mag__soft__iron__matrix.html#ga2d01894925dfe706e1bf80e792573b0d">mip::commands_3dm::readMagSoftIronMatrix</a> (C::mip_interface &amp;device, Matrix3f offsetOut)</td></tr>
+<tr class="separator:ga2d01894925dfe706e1bf80e792573b0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga420177c5b68c5351d421b317e46e7004"><td class="memItemLeft" align="right" valign="top">CmdResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__mag__soft__iron__matrix.html#ga420177c5b68c5351d421b317e46e7004">mip::commands_3dm::saveMagSoftIronMatrix</a> (C::mip_interface &amp;device)</td></tr>
 <tr class="separator:ga420177c5b68c5351d421b317e46e7004"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3b5a045a6b2a0158c6443e9a6ef726ba"><td class="memItemLeft" align="right" valign="top">CmdResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__mag__soft__iron__matrix.html#ga3b5a045a6b2a0158c6443e9a6ef726ba">mip::commands_3dm::loadMagSoftIronMatrix</a> (C::mip_interface &amp;device)</td></tr>
@@ -1093,10 +1096,10 @@ Functions</h2></td></tr>
 <tr class="separator:ga94326f246dfa18d16b2ea4f30618e4b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga065a28c210e718ce05bd26837c0f9f44"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__sensor__2__vehicle__transform__quaternion.html#ga065a28c210e718ce05bd26837c0f9f44">mip::commands_3dm::extract</a> (Serializer &amp;serializer, Sensor2VehicleTransformQuaternion::Response &amp;self)</td></tr>
 <tr class="separator:ga065a28c210e718ce05bd26837c0f9f44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9befd8056b3118a82c56ebf6ac5fb4a5"><td class="memItemLeft" align="right" valign="top">CmdResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__sensor__2__vehicle__transform__quaternion.html#ga9befd8056b3118a82c56ebf6ac5fb4a5">mip::commands_3dm::writeSensor2VehicleTransformQuaternion</a> (C::mip_interface &amp;device, const float *q)</td></tr>
-<tr class="separator:ga9befd8056b3118a82c56ebf6ac5fb4a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga19e6434c66fbcc0821a1a0226e80186a"><td class="memItemLeft" align="right" valign="top">CmdResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__sensor__2__vehicle__transform__quaternion.html#ga19e6434c66fbcc0821a1a0226e80186a">mip::commands_3dm::readSensor2VehicleTransformQuaternion</a> (C::mip_interface &amp;device, float *qOut)</td></tr>
-<tr class="separator:ga19e6434c66fbcc0821a1a0226e80186a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga82d51e5e53d51a682b7ae664a6dbc323"><td class="memItemLeft" align="right" valign="top">CmdResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__sensor__2__vehicle__transform__quaternion.html#ga82d51e5e53d51a682b7ae664a6dbc323">mip::commands_3dm::writeSensor2VehicleTransformQuaternion</a> (C::mip_interface &amp;device, Quatf q)</td></tr>
+<tr class="separator:ga82d51e5e53d51a682b7ae664a6dbc323"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga46a56b6fe4831447b9eed9630bd98fb7"><td class="memItemLeft" align="right" valign="top">CmdResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__sensor__2__vehicle__transform__quaternion.html#ga46a56b6fe4831447b9eed9630bd98fb7">mip::commands_3dm::readSensor2VehicleTransformQuaternion</a> (C::mip_interface &amp;device, Quatf qOut)</td></tr>
+<tr class="separator:ga46a56b6fe4831447b9eed9630bd98fb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3a0691013113ada625dcf0b3f8e30367"><td class="memItemLeft" align="right" valign="top">CmdResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__sensor__2__vehicle__transform__quaternion.html#ga3a0691013113ada625dcf0b3f8e30367">mip::commands_3dm::saveSensor2VehicleTransformQuaternion</a> (C::mip_interface &amp;device)</td></tr>
 <tr class="separator:ga3a0691013113ada625dcf0b3f8e30367"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa7b02d1030d9106773e083c5100164be"><td class="memItemLeft" align="right" valign="top">CmdResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__sensor__2__vehicle__transform__quaternion.html#gaa7b02d1030d9106773e083c5100164be">mip::commands_3dm::loadSensor2VehicleTransformQuaternion</a> (C::mip_interface &amp;device)</td></tr>
@@ -1111,10 +1114,10 @@ Functions</h2></td></tr>
 <tr class="separator:ga083ab8c4fb15d0e240d1477eb994e21f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3c7c2624c2bde399b158959d4cdd4138"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__sensor__2__vehicle__transform__dcm.html#ga3c7c2624c2bde399b158959d4cdd4138">mip::commands_3dm::extract</a> (Serializer &amp;serializer, Sensor2VehicleTransformDcm::Response &amp;self)</td></tr>
 <tr class="separator:ga3c7c2624c2bde399b158959d4cdd4138"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac4833de83355fa0de4851d4d929f4d5c"><td class="memItemLeft" align="right" valign="top">CmdResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__sensor__2__vehicle__transform__dcm.html#gac4833de83355fa0de4851d4d929f4d5c">mip::commands_3dm::writeSensor2VehicleTransformDcm</a> (C::mip_interface &amp;device, const float *dcm)</td></tr>
-<tr class="separator:gac4833de83355fa0de4851d4d929f4d5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7c1ccb0d59a76bc21add75c9ff3176bf"><td class="memItemLeft" align="right" valign="top">CmdResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__sensor__2__vehicle__transform__dcm.html#ga7c1ccb0d59a76bc21add75c9ff3176bf">mip::commands_3dm::readSensor2VehicleTransformDcm</a> (C::mip_interface &amp;device, float *dcmOut)</td></tr>
-<tr class="separator:ga7c1ccb0d59a76bc21add75c9ff3176bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0d523496adb110bc01713f1a8681b2a8"><td class="memItemLeft" align="right" valign="top">CmdResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__sensor__2__vehicle__transform__dcm.html#ga0d523496adb110bc01713f1a8681b2a8">mip::commands_3dm::writeSensor2VehicleTransformDcm</a> (C::mip_interface &amp;device, Matrix3f dcm)</td></tr>
+<tr class="separator:ga0d523496adb110bc01713f1a8681b2a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad7e78c1c01e40cd2953d3db4fda49ffe"><td class="memItemLeft" align="right" valign="top">CmdResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__sensor__2__vehicle__transform__dcm.html#gad7e78c1c01e40cd2953d3db4fda49ffe">mip::commands_3dm::readSensor2VehicleTransformDcm</a> (C::mip_interface &amp;device, Matrix3f dcmOut)</td></tr>
+<tr class="separator:gad7e78c1c01e40cd2953d3db4fda49ffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9955d02d123620cc66fe51ca4d0c5dad"><td class="memItemLeft" align="right" valign="top">CmdResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__sensor__2__vehicle__transform__dcm.html#ga9955d02d123620cc66fe51ca4d0c5dad">mip::commands_3dm::saveSensor2VehicleTransformDcm</a> (C::mip_interface &amp;device)</td></tr>
 <tr class="separator:ga9955d02d123620cc66fe51ca4d0c5dad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga90110cb4d4983edf4904a35fa923f5c1"><td class="memItemLeft" align="right" valign="top">CmdResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__sensor__2__vehicle__transform__dcm.html#ga90110cb4d4983edf4904a35fa923f5c1">mip::commands_3dm::loadSensor2VehicleTransformDcm</a> (C::mip_interface &amp;device)</td></tr>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-92-ge4aecbb</span>
+   &#160;<span id="projectnumber">v1.0.0-127-gb109f1a</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -70,6 +70,8 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="structmip_1_1commands__3dm_1_1_event_action-members.html">List of all members</a>  </div>
@@ -110,6 +112,16 @@ Public Types</h2></td></tr>
  }</td></tr>
 <tr class="separator:acaaa3fb9ee82b5942ebada494863723b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a748b85efb5f00f2bd092c245bc31394f"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_event_action.html#a748b85efb5f00f2bd092c245bc31394f">as_tuple</a> () const</td></tr>
+<tr class="separator:a748b85efb5f00f2bd092c245bc31394f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:acfd135b4a5204b1f8691329d65a51c55"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structmip_1_1commands__3dm_1_1_event_action.html">EventAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_event_action.html#acfd135b4a5204b1f8691329d65a51c55">create_sld_all</a> (::<a class="el" href="namespacemip.html#a2dde9cdf5ebc86cf62e8c2591dcb56de">mip::FunctionSelector</a> <a class="el" href="structmip_1_1commands__3dm_1_1_event_action.html#a8a1420ee5e9c39bf1decbcbd941e1449">function</a>)</td></tr>
+<tr class="separator:acfd135b4a5204b1f8691329d65a51c55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a8a1420ee5e9c39bf1decbcbd941e1449"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemip.html#a2dde9cdf5ebc86cf62e8c2591dcb56de">FunctionSelector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_event_action.html#a8a1420ee5e9c39bf1decbcbd941e1449">function</a> = static_cast&lt;<a class="el" href="namespacemip.html#a2dde9cdf5ebc86cf62e8c2591dcb56de">FunctionSelector</a>&gt;(0)</td></tr>
@@ -132,16 +144,22 @@ Static Public Attributes</h2></td></tr>
 <tr class="separator:a51392373750793b0922b9b55c104e2b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11928d4fc37fcd0c2412199816c76662"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_event_action.html#a11928d4fc37fcd0c2412199816c76662">FIELD_DESCRIPTOR</a> = ::<a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073a5be5dacbcc66ede809015a58d45ad70b">mip::commands_3dm::CMD_EVENT_ACTION_CONFIG</a></td></tr>
 <tr class="separator:a11928d4fc37fcd0c2412199816c76662"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af19ca0f257e13b212eae77f81dc1c450"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_event_action.html#af19ca0f257e13b212eae77f81dc1c450">HAS_WRITE_FUNCTION</a> = true</td></tr>
-<tr class="separator:af19ca0f257e13b212eae77f81dc1c450"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d02534df135aa37d78d5f536a1d111c"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_event_action.html#a1d02534df135aa37d78d5f536a1d111c">HAS_READ_FUNCTION</a> = true</td></tr>
-<tr class="separator:a1d02534df135aa37d78d5f536a1d111c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88c73bf325a448354ac2f24d214c3244"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_event_action.html#a88c73bf325a448354ac2f24d214c3244">HAS_SAVE_FUNCTION</a> = true</td></tr>
-<tr class="separator:a88c73bf325a448354ac2f24d214c3244"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25eca1f41b0b2ac3c6e705c34422283b"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_event_action.html#a25eca1f41b0b2ac3c6e705c34422283b">HAS_LOAD_FUNCTION</a> = true</td></tr>
-<tr class="separator:a25eca1f41b0b2ac3c6e705c34422283b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75e019be3d31bed577cbc3419adee458"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_event_action.html#a75e019be3d31bed577cbc3419adee458">HAS_RESET_FUNCTION</a> = true</td></tr>
-<tr class="separator:a75e019be3d31bed577cbc3419adee458"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b84e5b8f43c5013905673bc877d066b"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_event_action.html#a8b84e5b8f43c5013905673bc877d066b">HAS_FUNCTION_SELECTOR</a> = true</td></tr>
+<tr class="separator:a8b84e5b8f43c5013905673bc877d066b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37d38761d5628e0749033a3b421218e1"><td class="memItemLeft" align="right" valign="top">static const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_event_action.html#a37d38761d5628e0749033a3b421218e1">WRITE_PARAMS</a> = 0x800F</td></tr>
+<tr class="separator:a37d38761d5628e0749033a3b421218e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6fbba77f63983224ef216e8d62b8fe2"><td class="memItemLeft" align="right" valign="top">static const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_event_action.html#af6fbba77f63983224ef216e8d62b8fe2">READ_PARAMS</a> = 0x8001</td></tr>
+<tr class="separator:af6fbba77f63983224ef216e8d62b8fe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c62c9789789e04b6f323ef3620fcbc0"><td class="memItemLeft" align="right" valign="top">static const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_event_action.html#a2c62c9789789e04b6f323ef3620fcbc0">SAVE_PARAMS</a> = 0x8001</td></tr>
+<tr class="separator:a2c62c9789789e04b6f323ef3620fcbc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa402aa37d7c0bdd60021df4c9a265e17"><td class="memItemLeft" align="right" valign="top">static const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_event_action.html#aa402aa37d7c0bdd60021df4c9a265e17">LOAD_PARAMS</a> = 0x8001</td></tr>
+<tr class="separator:aa402aa37d7c0bdd60021df4c9a265e17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a908d6c3bda400ff4cd83c9b7ec7a82f4"><td class="memItemLeft" align="right" valign="top">static const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_event_action.html#a908d6c3bda400ff4cd83c9b7ec7a82f4">DEFAULT_PARAMS</a> = 0x8001</td></tr>
+<tr class="separator:a908d6c3bda400ff4cd83c9b7ec7a82f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5d3926ef1aef9bedd1ffa5811e58155"><td class="memItemLeft" align="right" valign="top">static const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_event_action.html#af5d3926ef1aef9bedd1ffa5811e58155">ECHOED_PARAMS</a> = 0x0001</td></tr>
+<tr class="separator:af5d3926ef1aef9bedd1ffa5811e58155"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e29e5c63073e0b8a8d09fa9ac0074b1"><td class="memItemLeft" align="right" valign="top">static const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_event_action.html#a1e29e5c63073e0b8a8d09fa9ac0074b1">COUNTER_PARAMS</a> = 0x00000000</td></tr>
+<tr class="separator:a1e29e5c63073e0b8a8d09fa9ac0074b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="acaaa3fb9ee82b5942ebada494863723b"></a>
@@ -174,7 +192,103 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a748b85efb5f00f2bd092c245bc31394f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a748b85efb5f00f2bd092c245bc31394f">&#9670;&nbsp;</a></span>as_tuple()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto mip::commands_3dm::EventAction::as_tuple </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acfd135b4a5204b1f8691329d65a51c55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfd135b4a5204b1f8691329d65a51c55">&#9670;&nbsp;</a></span>create_sld_all()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="structmip_1_1commands__3dm_1_1_event_action.html">EventAction</a> mip::commands_3dm::EventAction::create_sld_all </td>
+          <td>(</td>
+          <td class="paramtype">::<a class="el" href="namespacemip.html#a2dde9cdf5ebc86cf62e8c2591dcb56de">mip::FunctionSelector</a>&#160;</td>
+          <td class="paramname"><em>function</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a1e29e5c63073e0b8a8d09fa9ac0074b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e29e5c63073e0b8a8d09fa9ac0074b1">&#9670;&nbsp;</a></span>COUNTER_PARAMS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint32_t mip::commands_3dm::EventAction::COUNTER_PARAMS = 0x00000000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a908d6c3bda400ff4cd83c9b7ec7a82f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a908d6c3bda400ff4cd83c9b7ec7a82f4">&#9670;&nbsp;</a></span>DEFAULT_PARAMS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint32_t mip::commands_3dm::EventAction::DEFAULT_PARAMS = 0x8001</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a51392373750793b0922b9b55c104e2b4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a51392373750793b0922b9b55c104e2b4">&#9670;&nbsp;</a></span>DESCRIPTOR_SET</h2>
 
@@ -186,6 +300,28 @@ Static Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">const uint8_t mip::commands_3dm::EventAction::DESCRIPTOR_SET = ::mip::commands_3dm::DESCRIPTOR_SET</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af5d3926ef1aef9bedd1ffa5811e58155"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5d3926ef1aef9bedd1ffa5811e58155">&#9670;&nbsp;</a></span>ECHOED_PARAMS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint32_t mip::commands_3dm::EventAction::ECHOED_PARAMS = 0x0001</td>
         </tr>
       </table>
   </td>
@@ -233,8 +369,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a25eca1f41b0b2ac3c6e705c34422283b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25eca1f41b0b2ac3c6e705c34422283b">&#9670;&nbsp;</a></span>HAS_LOAD_FUNCTION</h2>
+<a id="a8b84e5b8f43c5013905673bc877d066b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b84e5b8f43c5013905673bc877d066b">&#9670;&nbsp;</a></span>HAS_FUNCTION_SELECTOR</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -243,95 +379,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const bool mip::commands_3dm::EventAction::HAS_LOAD_FUNCTION = true</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1d02534df135aa37d78d5f536a1d111c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d02534df135aa37d78d5f536a1d111c">&#9670;&nbsp;</a></span>HAS_READ_FUNCTION</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const bool mip::commands_3dm::EventAction::HAS_READ_FUNCTION = true</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a75e019be3d31bed577cbc3419adee458"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75e019be3d31bed577cbc3419adee458">&#9670;&nbsp;</a></span>HAS_RESET_FUNCTION</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const bool mip::commands_3dm::EventAction::HAS_RESET_FUNCTION = true</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a88c73bf325a448354ac2f24d214c3244"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88c73bf325a448354ac2f24d214c3244">&#9670;&nbsp;</a></span>HAS_SAVE_FUNCTION</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const bool mip::commands_3dm::EventAction::HAS_SAVE_FUNCTION = true</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af19ca0f257e13b212eae77f81dc1c450"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af19ca0f257e13b212eae77f81dc1c450">&#9670;&nbsp;</a></span>HAS_WRITE_FUNCTION</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const bool mip::commands_3dm::EventAction::HAS_WRITE_FUNCTION = true</td>
+          <td class="memname">const bool mip::commands_3dm::EventAction::HAS_FUNCTION_SELECTOR = true</td>
         </tr>
       </table>
   </td>
@@ -359,6 +407,28 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="aa402aa37d7c0bdd60021df4c9a265e17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa402aa37d7c0bdd60021df4c9a265e17">&#9670;&nbsp;</a></span>LOAD_PARAMS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint32_t mip::commands_3dm::EventAction::LOAD_PARAMS = 0x8001</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a4072268cd9c14310a10aaf51cdcbc9b5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4072268cd9c14310a10aaf51cdcbc9b5">&#9670;&nbsp;</a></span>parameters</h2>
 
@@ -369,6 +439,50 @@ Static Public Attributes</h2></td></tr>
           <td class="memname"><a class="el" href="unionmip_1_1commands__3dm_1_1_event_action_1_1_parameters.html">Parameters</a> mip::commands_3dm::EventAction::parameters</td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af6fbba77f63983224ef216e8d62b8fe2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6fbba77f63983224ef216e8d62b8fe2">&#9670;&nbsp;</a></span>READ_PARAMS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint32_t mip::commands_3dm::EventAction::READ_PARAMS = 0x8001</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2c62c9789789e04b6f323ef3620fcbc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c62c9789789e04b6f323ef3620fcbc0">&#9670;&nbsp;</a></span>SAVE_PARAMS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint32_t mip::commands_3dm::EventAction::SAVE_PARAMS = 0x8001</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -402,6 +516,28 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Type of action to configure. </p>
+
+</div>
+</div>
+<a id="a37d38761d5628e0749033a3b421218e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37d38761d5628e0749033a3b421218e1">&#9670;&nbsp;</a></span>WRITE_PARAMS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint32_t mip::commands_3dm::EventAction::WRITE_PARAMS = 0x800F</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
