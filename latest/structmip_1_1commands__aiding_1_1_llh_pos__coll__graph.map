@@ -1,6 +1,7 @@
 <map id="mip::commands_aiding::LlhPos" name="mip::commands_aiding::LlhPos">
-<area shape="rect" id="node1" title=" " alt="" coords="65,185,221,227"/>
-<area shape="rect" id="node2" href="$structmip_1_1commands__aiding_1_1_time.html" title=" " alt="" coords="5,81,161,123"/>
-<area shape="rect" id="node3" href="$structmip_1_1commands__aiding_1_1_llh_pos_1_1_valid_flags.html" title=" " alt="" coords="185,81,341,123"/>
-<area shape="rect" id="node4" href="$structmip_1_1_bitfield.html" title=" " alt="" coords="176,5,351,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="503,71,659,112"/>
+<area shape="rect" id="node2" href="$structmip_1_1commands__aiding_1_1_time.html" title=" " alt="" coords="229,5,385,47"/>
+<area shape="rect" id="node3" href="$structmip_1_1commands__aiding_1_1_llh_pos_1_1_valid_flags.html" title=" " alt="" coords="229,71,385,112"/>
+<area shape="rect" id="node4" href="$structmip_1_1_bitfield.html" title=" " alt="" coords="5,78,180,105"/>
+<area shape="rect" id="node5" href="$structmip_1_1_vector.html" title=" " alt="" coords="231,137,383,163"/>
 </map>

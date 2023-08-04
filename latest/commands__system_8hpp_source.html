@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-128-gd96e509</span>
+   &#160;<span id="projectnumber">v1.0.0-131-g7889c99</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -136,7 +136,7 @@ $(function() {
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    </div>
 <div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="structmip_1_1commands__system_1_1_comm_mode.html#a89b313b1a491d128218f58edd3752f35">   89</a></span>&#160;    <span class="keyword">auto</span> <a class="code" href="structmip_1_1commands__system_1_1_comm_mode.html#a89b313b1a491d128218f58edd3752f35">as_tuple</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordflow">return</span> std::make_tuple(<a class="code" href="structmip_1_1commands__system_1_1_comm_mode.html#a46db0dd2c2785d08468c794ec5079600">mode</a>);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordflow">return</span> std::make_tuple(std::ref(<a class="code" href="structmip_1_1commands__system_1_1_comm_mode.html#a46db0dd2c2785d08468c794ec5079600">mode</a>));</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    </div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    </div>

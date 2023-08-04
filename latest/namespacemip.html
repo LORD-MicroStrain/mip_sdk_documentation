@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-128-gd96e509</span>
+   &#160;<span id="projectnumber">v1.0.0-131-g7889c99</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -112,6 +112,9 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_vector.html">Vector</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structmip_1_1_vector.html" title="Vector is a wrapper around an array of some type T, usually float or double.">Vector</a> is a wrapper around an array of some type T, usually float or double.  <a href="structmip_1_1_vector.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_composite_descriptor.html">CompositeDescriptor</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience struct holding both descriptor set and field descriptor.  <a href="structmip_1_1_composite_descriptor.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,20 +160,17 @@ Classes</h2></td></tr>
 Typedefs</h2></td></tr>
 <tr class="memitem:a1db336862215280515a9f6b4ac6568c6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip.html#a1db336862215280515a9f6b4ac6568c6">DescriptorRate</a> = <a class="el" href="structmip_1_1_c_1_1mip__descriptor__rate.html">C::mip_descriptor_rate</a></td></tr>
 <tr class="separator:a1db336862215280515a9f6b4ac6568c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9749659837d3720b94f2eb6c22006a46"><td class="memTemplParams" colspan="2">template&lt;typename T , size_t N&gt; </td></tr>
-<tr class="memitem:a9749659837d3720b94f2eb6c22006a46"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemip.html#a9749659837d3720b94f2eb6c22006a46">Vector</a> = T[N]</td></tr>
-<tr class="separator:a9749659837d3720b94f2eb6c22006a46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5209d3c0c1d7b0a0613569ba51facda8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip.html#a5209d3c0c1d7b0a0613569ba51facda8">Vector3f</a> = <a class="el" href="namespacemip.html#a9749659837d3720b94f2eb6c22006a46">Vector</a>&lt; float, 3 &gt;</td></tr>
+<tr class="memitem:a5209d3c0c1d7b0a0613569ba51facda8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip.html#a5209d3c0c1d7b0a0613569ba51facda8">Vector3f</a> = <a class="el" href="structmip_1_1_vector.html">Vector</a>&lt; float, 3 &gt;</td></tr>
 <tr class="separator:a5209d3c0c1d7b0a0613569ba51facda8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67fb1a84896d0908efc64965f5e90914"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip.html#a67fb1a84896d0908efc64965f5e90914">Vector4f</a> = <a class="el" href="namespacemip.html#a9749659837d3720b94f2eb6c22006a46">Vector</a>&lt; float, 4 &gt;</td></tr>
+<tr class="memitem:a67fb1a84896d0908efc64965f5e90914"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip.html#a67fb1a84896d0908efc64965f5e90914">Vector4f</a> = <a class="el" href="structmip_1_1_vector.html">Vector</a>&lt; float, 4 &gt;</td></tr>
 <tr class="separator:a67fb1a84896d0908efc64965f5e90914"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40b65ff470e6f1d6982eb464ee3e59ad"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip.html#a40b65ff470e6f1d6982eb464ee3e59ad">Matrix3f</a> = <a class="el" href="namespacemip.html#a9749659837d3720b94f2eb6c22006a46">Vector</a>&lt; float, 9 &gt;</td></tr>
+<tr class="memitem:a40b65ff470e6f1d6982eb464ee3e59ad"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip.html#a40b65ff470e6f1d6982eb464ee3e59ad">Matrix3f</a> = <a class="el" href="structmip_1_1_vector.html">Vector</a>&lt; float, 9 &gt;</td></tr>
 <tr class="separator:a40b65ff470e6f1d6982eb464ee3e59ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1741c14320601c62cd91791e137dc83f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip.html#a1741c14320601c62cd91791e137dc83f">Vector3d</a> = <a class="el" href="namespacemip.html#a9749659837d3720b94f2eb6c22006a46">Vector</a>&lt; double, 3 &gt;</td></tr>
+<tr class="memitem:a1741c14320601c62cd91791e137dc83f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip.html#a1741c14320601c62cd91791e137dc83f">Vector3d</a> = <a class="el" href="structmip_1_1_vector.html">Vector</a>&lt; double, 3 &gt;</td></tr>
 <tr class="separator:a1741c14320601c62cd91791e137dc83f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ec8e25e89406cdcc7e62faf3d0b0558"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip.html#a5ec8e25e89406cdcc7e62faf3d0b0558">Vector4d</a> = <a class="el" href="namespacemip.html#a9749659837d3720b94f2eb6c22006a46">Vector</a>&lt; double, 4 &gt;</td></tr>
+<tr class="memitem:a5ec8e25e89406cdcc7e62faf3d0b0558"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip.html#a5ec8e25e89406cdcc7e62faf3d0b0558">Vector4d</a> = <a class="el" href="structmip_1_1_vector.html">Vector</a>&lt; double, 4 &gt;</td></tr>
 <tr class="separator:a5ec8e25e89406cdcc7e62faf3d0b0558"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3e5a8dd334f15b794de9b1f1d67af23"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip.html#ac3e5a8dd334f15b794de9b1f1d67af23">Matrix3d</a> = <a class="el" href="namespacemip.html#a9749659837d3720b94f2eb6c22006a46">Vector</a>&lt; double, 9 &gt;</td></tr>
+<tr class="memitem:ac3e5a8dd334f15b794de9b1f1d67af23"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip.html#ac3e5a8dd334f15b794de9b1f1d67af23">Matrix3d</a> = <a class="el" href="structmip_1_1_vector.html">Vector</a>&lt; double, 9 &gt;</td></tr>
 <tr class="separator:ac3e5a8dd334f15b794de9b1f1d67af23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae48959b6aedea021e3b2fcb024deb8d4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip.html#ae48959b6aedea021e3b2fcb024deb8d4">Quatf</a> = <a class="el" href="namespacemip.html#a67fb1a84896d0908efc64965f5e90914">Vector4f</a></td></tr>
 <tr class="separator:ae48959b6aedea021e3b2fcb024deb8d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -208,10 +208,10 @@ Functions</h2></td></tr>
 <tr class="memitem:ac0085f5b8075bca1a5e8ae2e321efd11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip.html#ac0085f5b8075bca1a5e8ae2e321efd11">extract</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, <a class="el" href="namespacemip.html#a1db336862215280515a9f6b4ac6568c6">DescriptorRate</a> &amp;self)</td></tr>
 <tr class="separator:ac0085f5b8075bca1a5e8ae2e321efd11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c4bde1ee7005b4451d3f8b27ef0fe7a"><td class="memTemplParams" colspan="2">template&lt;typename T , size_t N&gt; </td></tr>
-<tr class="memitem:a2c4bde1ee7005b4451d3f8b27ef0fe7a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemip.html#a2c4bde1ee7005b4451d3f8b27ef0fe7a">insert</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, const <a class="el" href="namespacemip.html#a9749659837d3720b94f2eb6c22006a46">Vector</a>&lt; T, N &gt; &amp;v)</td></tr>
+<tr class="memitem:a2c4bde1ee7005b4451d3f8b27ef0fe7a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemip.html#a2c4bde1ee7005b4451d3f8b27ef0fe7a">insert</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, const <a class="el" href="structmip_1_1_vector.html">Vector</a>&lt; T, N &gt; &amp;v)</td></tr>
 <tr class="separator:a2c4bde1ee7005b4451d3f8b27ef0fe7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5c90ebed00a6be74fa3d03bd78e0390"><td class="memTemplParams" colspan="2">template&lt;typename T , size_t N&gt; </td></tr>
-<tr class="memitem:ae5c90ebed00a6be74fa3d03bd78e0390"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemip.html#ae5c90ebed00a6be74fa3d03bd78e0390">extract</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, <a class="el" href="namespacemip.html#a9749659837d3720b94f2eb6c22006a46">Vector</a>&lt; T, N &gt; &amp;v)</td></tr>
+<tr class="memitem:ae5c90ebed00a6be74fa3d03bd78e0390"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemip.html#ae5c90ebed00a6be74fa3d03bd78e0390">extract</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, <a class="el" href="structmip_1_1_vector.html">Vector</a>&lt; T, N &gt; &amp;v)</td></tr>
 <tr class="separator:ae5c90ebed00a6be74fa3d03bd78e0390"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaae27667317b9e9ede3cba933532f3f9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip.html#aaae27667317b9e9ede3cba933532f3f9">mip_is_valid_descriptor_set</a> (uint8_t descriptor_set)</td></tr>
 <tr class="memdesc:aaae27667317b9e9ede3cba933532f3f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if the descriptor set is valid.  <a href="namespacemip.html#aaae27667317b9e9ede3cba933532f3f9">More...</a><br /></td></tr>
@@ -430,7 +430,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespacemip.html#ac3e5a8dd334f15b794de9b1f1d67af23">mip::Matrix3d</a> = typedef <a class="el" href="namespacemip.html#a9749659837d3720b94f2eb6c22006a46">Vector</a>&lt;double,9&gt;</td>
+          <td class="memname">using <a class="el" href="namespacemip.html#ac3e5a8dd334f15b794de9b1f1d67af23">mip::Matrix3d</a> = typedef <a class="el" href="structmip_1_1_vector.html">Vector</a>&lt;double,9&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -444,7 +444,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespacemip.html#a40b65ff470e6f1d6982eb464ee3e59ad">mip::Matrix3f</a> = typedef <a class="el" href="namespacemip.html#a9749659837d3720b94f2eb6c22006a46">Vector</a>&lt;float,9&gt;</td>
+          <td class="memname">using <a class="el" href="namespacemip.html#a40b65ff470e6f1d6982eb464ee3e59ad">mip::Matrix3f</a> = typedef <a class="el" href="structmip_1_1_vector.html">Vector</a>&lt;float,9&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -521,22 +521,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a9749659837d3720b94f2eb6c22006a46"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9749659837d3720b94f2eb6c22006a46">&#9670;&nbsp;</a></span>Vector</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , size_t N&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="namespacemip.html#a9749659837d3720b94f2eb6c22006a46">mip::Vector</a> = typedef T[N]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a1741c14320601c62cd91791e137dc83f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1741c14320601c62cd91791e137dc83f">&#9670;&nbsp;</a></span>Vector3d</h2>
 
@@ -544,7 +528,7 @@ template&lt;typename T , size_t N&gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespacemip.html#a1741c14320601c62cd91791e137dc83f">mip::Vector3d</a> = typedef <a class="el" href="namespacemip.html#a9749659837d3720b94f2eb6c22006a46">Vector</a>&lt;double,3&gt;</td>
+          <td class="memname">using <a class="el" href="namespacemip.html#a1741c14320601c62cd91791e137dc83f">mip::Vector3d</a> = typedef <a class="el" href="structmip_1_1_vector.html">Vector</a>&lt;double,3&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -558,7 +542,7 @@ template&lt;typename T , size_t N&gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespacemip.html#a5209d3c0c1d7b0a0613569ba51facda8">mip::Vector3f</a> = typedef <a class="el" href="namespacemip.html#a9749659837d3720b94f2eb6c22006a46">Vector</a>&lt;float,3&gt;</td>
+          <td class="memname">using <a class="el" href="namespacemip.html#a5209d3c0c1d7b0a0613569ba51facda8">mip::Vector3f</a> = typedef <a class="el" href="structmip_1_1_vector.html">Vector</a>&lt;float,3&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -572,7 +556,7 @@ template&lt;typename T , size_t N&gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespacemip.html#a5ec8e25e89406cdcc7e62faf3d0b0558">mip::Vector4d</a> = typedef <a class="el" href="namespacemip.html#a9749659837d3720b94f2eb6c22006a46">Vector</a>&lt;double,4&gt;</td>
+          <td class="memname">using <a class="el" href="namespacemip.html#a5ec8e25e89406cdcc7e62faf3d0b0558">mip::Vector4d</a> = typedef <a class="el" href="structmip_1_1_vector.html">Vector</a>&lt;double,4&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -586,7 +570,7 @@ template&lt;typename T , size_t N&gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespacemip.html#a67fb1a84896d0908efc64965f5e90914">mip::Vector4f</a> = typedef <a class="el" href="namespacemip.html#a9749659837d3720b94f2eb6c22006a46">Vector</a>&lt;float,4&gt;</td>
+          <td class="memname">using <a class="el" href="namespacemip.html#a67fb1a84896d0908efc64965f5e90914">mip::Vector4f</a> = typedef <a class="el" href="structmip_1_1_vector.html">Vector</a>&lt;float,4&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -707,7 +691,7 @@ template&lt;typename T , size_t N&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacemip.html#a9749659837d3720b94f2eb6c22006a46">Vector</a>&lt; T, N &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1_vector.html">Vector</a>&lt; T, N &gt; &amp;&#160;</td>
           <td class="paramname"><em>v</em>&#160;</td>
         </tr>
         <tr>
@@ -876,7 +860,7 @@ template&lt;typename T , size_t N&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespacemip.html#a9749659837d3720b94f2eb6c22006a46">Vector</a>&lt; T, N &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structmip_1_1_vector.html">Vector</a>&lt; T, N &gt; &amp;&#160;</td>
           <td class="paramname"><em>v</em>&#160;</td>
         </tr>
         <tr>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-128-gd96e509</span>
+   &#160;<span id="projectnumber">v1.0.0-131-g7889c99</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -442,7 +442,7 @@ $(function() {
 <div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    </div>
 <div class="line"><a name="l00410"></a><span class="lineno"><a class="line" href="structmip_1_1commands__rtk_1_1_connected_device_type.html#aef057475c696e1978bc6b81fa8aba35a">  410</a></span>&#160;    <span class="keyword">auto</span> <a class="code" href="structmip_1_1commands__rtk_1_1_connected_device_type.html#aef057475c696e1978bc6b81fa8aba35a">as_tuple</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;        <span class="keywordflow">return</span> std::make_tuple(<a class="code" href="structmip_1_1commands__rtk_1_1_connected_device_type.html#a33426e2d048a785b983e36f5ff35bc8b">devType</a>);</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;        <span class="keywordflow">return</span> std::make_tuple(std::ref(<a class="code" href="structmip_1_1commands__rtk_1_1_connected_device_type.html#a33426e2d048a785b983e36f5ff35bc8b">devType</a>));</div>
 <div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    }</div>
 <div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    </div>
 <div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    </div>
@@ -653,7 +653,7 @@ $(function() {
 <div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;    </div>
 <div class="line"><a name="l00647"></a><span class="lineno"><a class="line" href="structmip_1_1commands__rtk_1_1_service_status.html#ae0e7ab56c08b3c77304977a17e9b7305">  647</a></span>&#160;    <span class="keyword">auto</span> <a class="code" href="structmip_1_1commands__rtk_1_1_service_status.html#ae0e7ab56c08b3c77304977a17e9b7305">as_tuple</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;        <span class="keywordflow">return</span> std::make_tuple(<a class="code" href="structmip_1_1commands__rtk_1_1_service_status.html#a6379779edcac5067b7a06873ee10218a">reserved1</a>,<a class="code" href="structmip_1_1commands__rtk_1_1_service_status.html#a9a7ac8c31b658fcc20c239252f3f40e0">reserved2</a>);</div>
+<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;        <span class="keywordflow">return</span> std::make_tuple(std::ref(<a class="code" href="structmip_1_1commands__rtk_1_1_service_status.html#a6379779edcac5067b7a06873ee10218a">reserved1</a>),std::ref(<a class="code" href="structmip_1_1commands__rtk_1_1_service_status.html#a9a7ac8c31b658fcc20c239252f3f40e0">reserved2</a>));</div>
 <div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;    }</div>
 <div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;    </div>
 <div class="line"><a name="l00652"></a><span class="lineno"><a class="line" href="structmip_1_1commands__rtk_1_1_service_status_1_1_response.html">  652</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structmip_1_1commands__rtk_1_1_service_status_1_1_response.html">Response</a></div>
@@ -697,7 +697,7 @@ $(function() {
 <div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;    </div>
 <div class="line"><a name="l00699"></a><span class="lineno"><a class="line" href="structmip_1_1commands__rtk_1_1_prod_erase_storage.html#abb00a7e9720c9169b5ed1e2e1c4f36b4">  699</a></span>&#160;    <span class="keyword">auto</span> <a class="code" href="structmip_1_1commands__rtk_1_1_prod_erase_storage.html#abb00a7e9720c9169b5ed1e2e1c4f36b4">as_tuple</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;        <span class="keywordflow">return</span> std::make_tuple(<a class="code" href="structmip_1_1commands__rtk_1_1_prod_erase_storage.html#ad1f525470d8f087d2c1e31506ed8d0b0">media</a>);</div>
+<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;        <span class="keywordflow">return</span> std::make_tuple(std::ref(<a class="code" href="structmip_1_1commands__rtk_1_1_prod_erase_storage.html#ad1f525470d8f087d2c1e31506ed8d0b0">media</a>));</div>
 <div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;    }</div>
 <div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;    </div>
 <div class="line"><a name="l00704"></a><span class="lineno"><a class="line" href="structmip_1_1commands__rtk_1_1_prod_erase_storage.html#ab5bf98dae855905271352ba1a826c75e">  704</a></span>&#160;    <span class="keyword">typedef</span> <span class="keywordtype">void</span> <a class="code" href="structmip_1_1commands__rtk_1_1_prod_erase_storage.html#ab5bf98dae855905271352ba1a826c75e">Response</a>;</div>
@@ -723,7 +723,7 @@ $(function() {
 <div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;    </div>
 <div class="line"><a name="l00732"></a><span class="lineno"><a class="line" href="structmip_1_1commands__rtk_1_1_led_control.html#a2d35355d4720c1c81f17821c92b77092">  732</a></span>&#160;    <span class="keyword">auto</span> <a class="code" href="structmip_1_1commands__rtk_1_1_led_control.html#a2d35355d4720c1c81f17821c92b77092">as_tuple</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;        <span class="keywordflow">return</span> std::make_tuple(<a class="code" href="structmip_1_1commands__rtk_1_1_led_control.html#af0b9b2361ac07b5e16f4b1633d9acc16">primaryColor</a>,<a class="code" href="structmip_1_1commands__rtk_1_1_led_control.html#a96c4a65815ecfdc77f637b8bea4123f3">altColor</a>,<a class="code" href="structmip_1_1commands__rtk_1_1_led_control.html#a0222610071241a017b77b27cfdd44b16">act</a>,<a class="code" href="structmip_1_1commands__rtk_1_1_led_control.html#a6c77cb82dde8d845a2386808f709293c">period</a>);</div>
+<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;        <span class="keywordflow">return</span> std::make_tuple(std::ref(<a class="code" href="structmip_1_1commands__rtk_1_1_led_control.html#af0b9b2361ac07b5e16f4b1633d9acc16">primaryColor</a>),std::ref(<a class="code" href="structmip_1_1commands__rtk_1_1_led_control.html#a96c4a65815ecfdc77f637b8bea4123f3">altColor</a>),std::ref(<a class="code" href="structmip_1_1commands__rtk_1_1_led_control.html#a0222610071241a017b77b27cfdd44b16">act</a>),std::ref(<a class="code" href="structmip_1_1commands__rtk_1_1_led_control.html#a6c77cb82dde8d845a2386808f709293c">period</a>));</div>
 <div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;    }</div>
 <div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;    </div>
 <div class="line"><a name="l00737"></a><span class="lineno"><a class="line" href="structmip_1_1commands__rtk_1_1_led_control.html#a1a5da5120d9967b46a1ff57914cabb3d">  737</a></span>&#160;    <span class="keyword">typedef</span> <span class="keywordtype">void</span> <a class="code" href="structmip_1_1commands__rtk_1_1_led_control.html#a1a5da5120d9967b46a1ff57914cabb3d">Response</a>;</div>

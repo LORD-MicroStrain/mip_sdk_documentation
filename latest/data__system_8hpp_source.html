@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-128-gd96e509</span>
+   &#160;<span id="projectnumber">v1.0.0-131-g7889c99</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -120,7 +120,7 @@ $(function() {
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    </div>
 <div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="structmip_1_1data__system_1_1_built_in_test.html#ad94c03b8b6bf4d958f3aa3f2f4788969">   83</a></span>&#160;    <span class="keyword">auto</span> <a class="code" href="structmip_1_1data__system_1_1_built_in_test.html#ad94c03b8b6bf4d958f3aa3f2f4788969">as_tuple</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordflow">return</span> std::make_tuple(<a class="code" href="structmip_1_1data__system_1_1_built_in_test.html#a65ecdc52cc76c1c925fb9cefc4c6dc11">result</a>);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordflow">return</span> std::make_tuple(std::ref(<a class="code" href="structmip_1_1data__system_1_1_built_in_test.html#a65ecdc52cc76c1c925fb9cefc4c6dc11">result</a>));</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    }</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    </div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;};</div>
@@ -140,7 +140,7 @@ $(function() {
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    </div>
 <div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="structmip_1_1data__system_1_1_time_sync_status.html#a5c2aef6aed27568f7e5205b6922c29e1">  110</a></span>&#160;    <span class="keyword">auto</span> <a class="code" href="structmip_1_1data__system_1_1_time_sync_status.html#a5c2aef6aed27568f7e5205b6922c29e1">as_tuple</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordflow">return</span> std::make_tuple(<a class="code" href="structmip_1_1data__system_1_1_time_sync_status.html#a8ce94ef3d72820502365d4495c1965da">time_sync</a>,<a class="code" href="structmip_1_1data__system_1_1_time_sync_status.html#a8511695b116a8dc5f970019e2b09e59f">last_pps_rcvd</a>);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordflow">return</span> std::make_tuple(std::ref(<a class="code" href="structmip_1_1data__system_1_1_time_sync_status.html#a8ce94ef3d72820502365d4495c1965da">time_sync</a>),std::ref(<a class="code" href="structmip_1_1data__system_1_1_time_sync_status.html#a8511695b116a8dc5f970019e2b09e59f">last_pps_rcvd</a>));</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    }</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    </div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;};</div>
@@ -159,7 +159,7 @@ $(function() {
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    </div>
 <div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="structmip_1_1data__system_1_1_gpio_state.html#ac0d425ead1524ad7e7ad7752d86b7b55">  154</a></span>&#160;    <span class="keyword">auto</span> <a class="code" href="structmip_1_1data__system_1_1_gpio_state.html#ac0d425ead1524ad7e7ad7752d86b7b55">as_tuple</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <span class="keywordflow">return</span> std::make_tuple(<a class="code" href="structmip_1_1data__system_1_1_gpio_state.html#a4b881134b865ac2c696f3c40e0ce262e">states</a>);</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <span class="keywordflow">return</span> std::make_tuple(std::ref(<a class="code" href="structmip_1_1data__system_1_1_gpio_state.html#a4b881134b865ac2c696f3c40e0ce262e">states</a>));</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    }</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    </div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;};</div>
@@ -179,7 +179,7 @@ $(function() {
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    </div>
 <div class="line"><a name="l00182"></a><span class="lineno"><a class="line" href="structmip_1_1data__system_1_1_gpio_analog_value.html#a1c0adac7d40dc6e189860a5b2401f22c">  182</a></span>&#160;    <span class="keyword">auto</span> <a class="code" href="structmip_1_1data__system_1_1_gpio_analog_value.html#a1c0adac7d40dc6e189860a5b2401f22c">as_tuple</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        <span class="keywordflow">return</span> std::make_tuple(<a class="code" href="structmip_1_1data__system_1_1_gpio_analog_value.html#a2c75c2b0787d84c93c0960153994eb12">gpio_id</a>,<a class="code" href="structmip_1_1data__system_1_1_gpio_analog_value.html#a786add729f63a1c74e1dfcbd1ed404b7">value</a>);</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        <span class="keywordflow">return</span> std::make_tuple(std::ref(<a class="code" href="structmip_1_1data__system_1_1_gpio_analog_value.html#a2c75c2b0787d84c93c0960153994eb12">gpio_id</a>),std::ref(<a class="code" href="structmip_1_1data__system_1_1_gpio_analog_value.html#a786add729f63a1c74e1dfcbd1ed404b7">value</a>));</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    }</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    </div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;};</div>

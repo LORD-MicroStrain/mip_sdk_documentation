@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-128-gd96e509</span>
+   &#160;<span id="projectnumber">v1.0.0-131-g7889c99</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -542,7 +542,7 @@ $(function() {
 <div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;    </div>
 <div class="line"><a name="l00579"></a><span class="lineno"><a class="line" href="structmip_1_1commands__base_1_1_comm_speed.html#a212208119d1a9c372a1e0329b4fb6cda">  579</a></span>&#160;    <span class="keyword">auto</span> <a class="code" href="structmip_1_1commands__base_1_1_comm_speed.html#a212208119d1a9c372a1e0329b4fb6cda">as_tuple</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;        <span class="keywordflow">return</span> std::make_tuple(<a class="code" href="structmip_1_1commands__base_1_1_comm_speed.html#aed3b596a0db08e3ae5b9c1cdf7d47313">port</a>,<a class="code" href="structmip_1_1commands__base_1_1_comm_speed.html#a14b013db8f0368a18dd8c261fdec586f">baud</a>);</div>
+<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;        <span class="keywordflow">return</span> std::make_tuple(std::ref(<a class="code" href="structmip_1_1commands__base_1_1_comm_speed.html#aed3b596a0db08e3ae5b9c1cdf7d47313">port</a>),std::ref(<a class="code" href="structmip_1_1commands__base_1_1_comm_speed.html#a14b013db8f0368a18dd8c261fdec586f">baud</a>));</div>
 <div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;    }</div>
 <div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;    </div>
 <div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;    </div>
@@ -610,7 +610,7 @@ $(function() {
 <div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;    </div>
 <div class="line"><a name="l00657"></a><span class="lineno"><a class="line" href="structmip_1_1commands__base_1_1_gps_time_update.html#ac83f40fb966fe0da43be30ad506f52bc">  657</a></span>&#160;    <span class="keyword">auto</span> <a class="code" href="structmip_1_1commands__base_1_1_gps_time_update.html#ac83f40fb966fe0da43be30ad506f52bc">as_tuple</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;        <span class="keywordflow">return</span> std::make_tuple(<a class="code" href="structmip_1_1commands__base_1_1_gps_time_update.html#a41046bf36b9738e499f8bdf6f3900166">field_id</a>,<a class="code" href="structmip_1_1commands__base_1_1_gps_time_update.html#a96389b228549bcb491a67095f5f75aca">value</a>);</div>
+<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;        <span class="keywordflow">return</span> std::make_tuple(std::ref(<a class="code" href="structmip_1_1commands__base_1_1_gps_time_update.html#a41046bf36b9738e499f8bdf6f3900166">field_id</a>),std::ref(<a class="code" href="structmip_1_1commands__base_1_1_gps_time_update.html#a96389b228549bcb491a67095f5f75aca">value</a>));</div>
 <div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;    }</div>
 <div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;    </div>
 <div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;    </div>

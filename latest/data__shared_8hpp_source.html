@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-128-gd96e509</span>
+   &#160;<span id="projectnumber">v1.0.0-131-g7889c99</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -127,7 +127,7 @@ $(function() {
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    </div>
 <div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="structmip_1_1data__shared_1_1_event_source.html#ace77c6b066c40e441099673dc1865298">   75</a></span>&#160;    <span class="keyword">auto</span> <a class="code" href="structmip_1_1data__shared_1_1_event_source.html#ace77c6b066c40e441099673dc1865298">as_tuple</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordflow">return</span> std::make_tuple(<a class="code" href="structmip_1_1data__shared_1_1_event_source.html#a81f43a4e4dc5a7f885aac5647a3792d7">trigger_id</a>);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordflow">return</span> std::make_tuple(std::ref(<a class="code" href="structmip_1_1data__shared_1_1_event_source.html#a81f43a4e4dc5a7f885aac5647a3792d7">trigger_id</a>));</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    }</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    </div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;};</div>
@@ -146,7 +146,7 @@ $(function() {
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    </div>
 <div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="structmip_1_1data__shared_1_1_ticks.html#ade29cb788bb88a0e6e1081ddd1e49969">  104</a></span>&#160;    <span class="keyword">auto</span> <a class="code" href="structmip_1_1data__shared_1_1_ticks.html#ade29cb788bb88a0e6e1081ddd1e49969">as_tuple</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keywordflow">return</span> std::make_tuple(<a class="code" href="structmip_1_1data__shared_1_1_ticks.html#a9ae22cfdf1da585667c9faa2bf916d41">ticks</a>);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keywordflow">return</span> std::make_tuple(std::ref(<a class="code" href="structmip_1_1data__shared_1_1_ticks.html#a9ae22cfdf1da585667c9faa2bf916d41">ticks</a>));</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    }</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    </div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;};</div>
@@ -165,7 +165,7 @@ $(function() {
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    </div>
 <div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="structmip_1_1data__shared_1_1_delta_ticks.html#a929c3367bb03c80485f9a42f7a738f44">  134</a></span>&#160;    <span class="keyword">auto</span> <a class="code" href="structmip_1_1data__shared_1_1_delta_ticks.html#a929c3367bb03c80485f9a42f7a738f44">as_tuple</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="keywordflow">return</span> std::make_tuple(<a class="code" href="structmip_1_1data__shared_1_1_delta_ticks.html#aa78f6776739aee802d0c84f0c7e3599b">ticks</a>);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="keywordflow">return</span> std::make_tuple(std::ref(<a class="code" href="structmip_1_1data__shared_1_1_delta_ticks.html#aa78f6776739aee802d0c84f0c7e3599b">ticks</a>));</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    }</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    </div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;};</div>
@@ -217,7 +217,7 @@ $(function() {
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    </div>
 <div class="line"><a name="l00196"></a><span class="lineno"><a class="line" href="structmip_1_1data__shared_1_1_gps_timestamp.html#a0530b502fb67a487fcea38af857c9d96">  196</a></span>&#160;    <span class="keyword">auto</span> <a class="code" href="structmip_1_1data__shared_1_1_gps_timestamp.html#a0530b502fb67a487fcea38af857c9d96">as_tuple</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <span class="keywordflow">return</span> std::make_tuple(<a class="code" href="structmip_1_1data__shared_1_1_gps_timestamp.html#a5fec3db1bbd5be447636ec84aed60c01">tow</a>,<a class="code" href="structmip_1_1data__shared_1_1_gps_timestamp.html#ad6e98821ce6f551202db417405a833f5">week_number</a>,<a class="code" href="structmip_1_1data__shared_1_1_gps_timestamp.html#a0a4e4fe4efe9916a92e11f2fdf4ad1f1">valid_flags</a>);</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <span class="keywordflow">return</span> std::make_tuple(std::ref(<a class="code" href="structmip_1_1data__shared_1_1_gps_timestamp.html#a5fec3db1bbd5be447636ec84aed60c01">tow</a>),std::ref(<a class="code" href="structmip_1_1data__shared_1_1_gps_timestamp.html#ad6e98821ce6f551202db417405a833f5">week_number</a>),std::ref(<a class="code" href="structmip_1_1data__shared_1_1_gps_timestamp.html#a0a4e4fe4efe9916a92e11f2fdf4ad1f1">valid_flags</a>));</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    }</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    </div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;};</div>
@@ -236,7 +236,7 @@ $(function() {
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    </div>
 <div class="line"><a name="l00231"></a><span class="lineno"><a class="line" href="structmip_1_1data__shared_1_1_delta_time.html#ac6a0b3a91a5f32013ca53f5d7f992bf0">  231</a></span>&#160;    <span class="keyword">auto</span> <a class="code" href="structmip_1_1data__shared_1_1_delta_time.html#ac6a0b3a91a5f32013ca53f5d7f992bf0">as_tuple</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        <span class="keywordflow">return</span> std::make_tuple(<a class="code" href="structmip_1_1data__shared_1_1_delta_time.html#aedf05a7f116efbb692f702b032f425ca">seconds</a>);</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        <span class="keywordflow">return</span> std::make_tuple(std::ref(<a class="code" href="structmip_1_1data__shared_1_1_delta_time.html#aedf05a7f116efbb692f702b032f425ca">seconds</a>));</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    }</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    </div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;};</div>
@@ -255,7 +255,7 @@ $(function() {
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    </div>
 <div class="line"><a name="l00264"></a><span class="lineno"><a class="line" href="structmip_1_1data__shared_1_1_reference_timestamp.html#a2db8d748f7bb1a680fa066df2e477351">  264</a></span>&#160;    <span class="keyword">auto</span> <a class="code" href="structmip_1_1data__shared_1_1_reference_timestamp.html#a2db8d748f7bb1a680fa066df2e477351">as_tuple</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        <span class="keywordflow">return</span> std::make_tuple(<a class="code" href="structmip_1_1data__shared_1_1_reference_timestamp.html#aa089e852e3fe8bc2459b5fa29e7f8535">nanoseconds</a>);</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        <span class="keywordflow">return</span> std::make_tuple(std::ref(<a class="code" href="structmip_1_1data__shared_1_1_reference_timestamp.html#aa089e852e3fe8bc2459b5fa29e7f8535">nanoseconds</a>));</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    }</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    </div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;};</div>
@@ -274,7 +274,7 @@ $(function() {
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    </div>
 <div class="line"><a name="l00299"></a><span class="lineno"><a class="line" href="structmip_1_1data__shared_1_1_reference_time_delta.html#a21eab71569391d8a5032a5c3e0c6c448">  299</a></span>&#160;    <span class="keyword">auto</span> <a class="code" href="structmip_1_1data__shared_1_1_reference_time_delta.html#a21eab71569391d8a5032a5c3e0c6c448">as_tuple</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        <span class="keywordflow">return</span> std::make_tuple(<a class="code" href="structmip_1_1data__shared_1_1_reference_time_delta.html#a2a77249d3ddc1e75e6b2107c7976d4fd">dt_nanos</a>);</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        <span class="keywordflow">return</span> std::make_tuple(std::ref(<a class="code" href="structmip_1_1data__shared_1_1_reference_time_delta.html#a2a77249d3ddc1e75e6b2107c7976d4fd">dt_nanos</a>));</div>
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    }</div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    </div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;};</div>
@@ -319,7 +319,7 @@ $(function() {
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    </div>
 <div class="line"><a name="l00359"></a><span class="lineno"><a class="line" href="structmip_1_1data__shared_1_1_external_timestamp.html#ae721fbd8333535f7f8796fd09fb8f499">  359</a></span>&#160;    <span class="keyword">auto</span> <a class="code" href="structmip_1_1data__shared_1_1_external_timestamp.html#ae721fbd8333535f7f8796fd09fb8f499">as_tuple</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;        <span class="keywordflow">return</span> std::make_tuple(<a class="code" href="structmip_1_1data__shared_1_1_external_timestamp.html#a70f07bf5b53db9de110d312815a3140d">nanoseconds</a>,<a class="code" href="structmip_1_1data__shared_1_1_external_timestamp.html#a67e965795e8fd912b11ce5a2b911ce0a">valid_flags</a>);</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;        <span class="keywordflow">return</span> std::make_tuple(std::ref(<a class="code" href="structmip_1_1data__shared_1_1_external_timestamp.html#a70f07bf5b53db9de110d312815a3140d">nanoseconds</a>),std::ref(<a class="code" href="structmip_1_1data__shared_1_1_external_timestamp.html#a67e965795e8fd912b11ce5a2b911ce0a">valid_flags</a>));</div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    }</div>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    </div>
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;};</div>
@@ -364,7 +364,7 @@ $(function() {
 <div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    </div>
 <div class="line"><a name="l00423"></a><span class="lineno"><a class="line" href="structmip_1_1data__shared_1_1_external_time_delta.html#a02a81e60503f5e28d0bea6a86b5cd3bf">  423</a></span>&#160;    <span class="keyword">auto</span> <a class="code" href="structmip_1_1data__shared_1_1_external_time_delta.html#a02a81e60503f5e28d0bea6a86b5cd3bf">as_tuple</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;        <span class="keywordflow">return</span> std::make_tuple(<a class="code" href="structmip_1_1data__shared_1_1_external_time_delta.html#acf833abea406a9e2f8f6247c8ab08246">dt_nanos</a>,<a class="code" href="structmip_1_1data__shared_1_1_external_time_delta.html#a6fbcb96abe2fba208b520fe7a9bee879">valid_flags</a>);</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;        <span class="keywordflow">return</span> std::make_tuple(std::ref(<a class="code" href="structmip_1_1data__shared_1_1_external_time_delta.html#acf833abea406a9e2f8f6247c8ab08246">dt_nanos</a>),std::ref(<a class="code" href="structmip_1_1data__shared_1_1_external_time_delta.html#a6fbcb96abe2fba208b520fe7a9bee879">valid_flags</a>));</div>
 <div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;    }</div>
 <div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;    </div>
 <div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;};</div>

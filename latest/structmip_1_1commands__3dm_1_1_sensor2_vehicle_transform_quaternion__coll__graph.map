@@ -1,0 +1,4 @@
+<map id="mip::commands_3dm::Sensor2VehicleTransformQuaternion" name="mip::commands_3dm::Sensor2VehicleTransformQuaternion">
+<area shape="rect" id="node1" title=" " alt="" coords="5,95,239,136"/>
+<area shape="rect" id="node2" href="$structmip_1_1_vector.html" title="Vector is a wrapper around an array of some type T, usually float or double." alt="" coords="53,5,191,32"/>
+</map>
