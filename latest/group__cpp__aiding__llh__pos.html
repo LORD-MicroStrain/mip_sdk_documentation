@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-132-g96cbc11</span>
+   &#160;<span id="projectnumber">v1.0.0-143-g31c2524</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -91,8 +91,8 @@ Functions</h2></td></tr>
 <tr class="separator:gaa874fb696c4bebe98a1b23331286841e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gace38c5bdb84d19020589405d6e9efa18"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__aiding__llh__pos.html#gace38c5bdb84d19020589405d6e9efa18">mip::commands_aiding::extract</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, <a class="el" href="structmip_1_1commands__aiding_1_1_llh_pos.html">LlhPos</a> &amp;self)</td></tr>
 <tr class="separator:gace38c5bdb84d19020589405d6e9efa18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacd74ca9b3ff01c408d42c4dddbed7f37"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__aiding__llh__pos.html#gacd74ca9b3ff01c408d42c4dddbed7f37">mip::commands_aiding::llhPos</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, const <a class="el" href="structmip_1_1commands__aiding_1_1_time.html">Time</a> &amp;time, uint8_t sensorId, double latitude, double longitude, double height, <a class="el" href="namespacemip.html#a5209d3c0c1d7b0a0613569ba51facda8">Vector3f</a> uncertainty, <a class="el" href="structmip_1_1commands__aiding_1_1_llh_pos_1_1_valid_flags.html">LlhPos::ValidFlags</a> validFlags)</td></tr>
-<tr class="separator:gacd74ca9b3ff01c408d42c4dddbed7f37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga19b41386d236ff3dcfe752a108e87d5a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__aiding__llh__pos.html#ga19b41386d236ff3dcfe752a108e87d5a">mip::commands_aiding::llhPos</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, const <a class="el" href="structmip_1_1commands__aiding_1_1_time.html">Time</a> &amp;time, uint8_t sensorId, double latitude, double longitude, double height, const float *uncertainty, <a class="el" href="structmip_1_1commands__aiding_1_1_llh_pos_1_1_valid_flags.html">LlhPos::ValidFlags</a> validFlags)</td></tr>
+<tr class="separator:ga19b41386d236ff3dcfe752a108e87d5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Geodetic position aiding command. Coordinates are given in WGS84 geodetic latitude, longitude, and height above the ellipsoid. Uncertainty is given in NED coordinates, which are parallel to incremental changes in latitude, longitude, and height. </p>
@@ -153,8 +153,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gacd74ca9b3ff01c408d42c4dddbed7f37"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacd74ca9b3ff01c408d42c4dddbed7f37">&#9670;&nbsp;</a></span>llhPos()</h2>
+<a id="ga19b41386d236ff3dcfe752a108e87d5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga19b41386d236ff3dcfe752a108e87d5a">&#9670;&nbsp;</a></span>llhPos()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -198,7 +198,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacemip.html#a5209d3c0c1d7b0a0613569ba51facda8">Vector3f</a>&#160;</td>
+          <td class="paramtype">const float *&#160;</td>
           <td class="paramname"><em>uncertainty</em>, </td>
         </tr>
         <tr>

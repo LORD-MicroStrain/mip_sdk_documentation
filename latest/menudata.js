@@ -167,6 +167,7 @@ var menudata={children:[
 {text:"x",url:"functions_vars_x.html#index_x"},
 {text:"y",url:"functions_vars_y.html#index_y"}]},
 {text:"Typedefs",url:"functions_type.html",children:[
+{text:"a",url:"functions_type.html#index_a"},
 {text:"r",url:"functions_type.html#index_r"}]},
 {text:"Enumerations",url:"functions_enum.html",children:[
 {text:"_",url:"functions_enum.html#index__5F"},

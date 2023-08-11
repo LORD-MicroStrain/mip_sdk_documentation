@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-132-g96cbc11</span>
+   &#160;<span id="projectnumber">v1.0.0-143-g31c2524</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -103,8 +103,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga378b1ea8874a4bc162586234bddb9425"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga011dc89a44899458420233ccef337bd0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__aiding__vehicle__fixed__frame__velocity.html#ga011dc89a44899458420233ccef337bd0">mip::C::extract_mip_aiding_vehicle_fixed_frame_velocity_command_valid_flags</a> (struct <a class="el" href="structmip_1_1_c_1_1mip__serializer.html">mip_serializer</a> *serializer, <a class="el" href="group__c__aiding__vehicle__fixed__frame__velocity.html#gadffd9d1f40300a1a4ea1a7c8a8012d7f">mip_aiding_vehicle_fixed_frame_velocity_command_valid_flags</a> *self)</td></tr>
 <tr class="separator:ga011dc89a44899458420233ccef337bd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaca7529b2ed6ad1ca4d40985392714984"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__aiding__vehicle__fixed__frame__velocity.html#gaca7529b2ed6ad1ca4d40985392714984">mip::C::mip_aiding_vehicle_fixed_frame_velocity</a> (struct <a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *device, const <a class="el" href="structmip_1_1_c_1_1mip__time.html">mip_time</a> *time, uint8_t sensor_id, mip_vector3f velocity, mip_vector3f uncertainty, <a class="el" href="group__c__aiding__vehicle__fixed__frame__velocity.html#gadffd9d1f40300a1a4ea1a7c8a8012d7f">mip_aiding_vehicle_fixed_frame_velocity_command_valid_flags</a> valid_flags)</td></tr>
-<tr class="separator:gaca7529b2ed6ad1ca4d40985392714984"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab1cc8a99e33293aa160ecfb235caa2c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__aiding__vehicle__fixed__frame__velocity.html#gab1cc8a99e33293aa160ecfb235caa2c2">mip::C::mip_aiding_vehicle_fixed_frame_velocity</a> (struct <a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *device, const <a class="el" href="structmip_1_1_c_1_1mip__time.html">mip_time</a> *time, uint8_t sensor_id, const float *velocity, const float *uncertainty, <a class="el" href="group__c__aiding__vehicle__fixed__frame__velocity.html#gadffd9d1f40300a1a4ea1a7c8a8012d7f">mip_aiding_vehicle_fixed_frame_velocity_command_valid_flags</a> valid_flags)</td></tr>
+<tr class="separator:gab1cc8a99e33293aa160ecfb235caa2c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Estimate of velocity of the vehicle in the frame associated with the given sensor ID. </p>
@@ -250,8 +250,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gaca7529b2ed6ad1ca4d40985392714984"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaca7529b2ed6ad1ca4d40985392714984">&#9670;&nbsp;</a></span>mip_aiding_vehicle_fixed_frame_velocity()</h2>
+<a id="gab1cc8a99e33293aa160ecfb235caa2c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab1cc8a99e33293aa160ecfb235caa2c2">&#9670;&nbsp;</a></span>mip_aiding_vehicle_fixed_frame_velocity()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -277,13 +277,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">mip_vector3f&#160;</td>
+          <td class="paramtype">const float *&#160;</td>
           <td class="paramname"><em>velocity</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">mip_vector3f&#160;</td>
+          <td class="paramtype">const float *&#160;</td>
           <td class="paramname"><em>uncertainty</em>, </td>
         </tr>
         <tr>

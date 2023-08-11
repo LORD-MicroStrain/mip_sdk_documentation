@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-132-g96cbc11</span>
+   &#160;<span id="projectnumber">v1.0.0-143-g31c2524</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -91,14 +91,14 @@ Functions</h2></td></tr>
 <tr class="separator:ga69efd63b9ac2738b3c02cc0e7d776e73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3d34bd41507cf700e5200bdce2d37f94"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__aiding__ecef__pos.html#ga3d34bd41507cf700e5200bdce2d37f94">mip::commands_aiding::extract</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, <a class="el" href="structmip_1_1commands__aiding_1_1_ecef_pos.html">EcefPos</a> &amp;self)</td></tr>
 <tr class="separator:ga3d34bd41507cf700e5200bdce2d37f94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2d41433de0638bc4f28ced0c71e59111"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__aiding__ecef__pos.html#ga2d41433de0638bc4f28ced0c71e59111">mip::commands_aiding::ecefPos</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, const <a class="el" href="structmip_1_1commands__aiding_1_1_time.html">Time</a> &amp;time, uint8_t sensorId, <a class="el" href="namespacemip.html#a1741c14320601c62cd91791e137dc83f">Vector3d</a> position, <a class="el" href="namespacemip.html#a5209d3c0c1d7b0a0613569ba51facda8">Vector3f</a> uncertainty, <a class="el" href="structmip_1_1commands__aiding_1_1_ecef_pos_1_1_valid_flags.html">EcefPos::ValidFlags</a> validFlags)</td></tr>
-<tr class="separator:ga2d41433de0638bc4f28ced0c71e59111"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacf3bc39c6cabcbf051a81b5c229efdf6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__aiding__ecef__pos.html#gacf3bc39c6cabcbf051a81b5c229efdf6">mip::commands_aiding::ecefPos</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, const <a class="el" href="structmip_1_1commands__aiding_1_1_time.html">Time</a> &amp;time, uint8_t sensorId, const double *position, const float *uncertainty, <a class="el" href="structmip_1_1commands__aiding_1_1_ecef_pos_1_1_valid_flags.html">EcefPos::ValidFlags</a> validFlags)</td></tr>
+<tr class="separator:gacf3bc39c6cabcbf051a81b5c229efdf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Cartesian vector position aiding command. Coordinates are given in the WGS84 ECEF system. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga2d41433de0638bc4f28ced0c71e59111"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2d41433de0638bc4f28ced0c71e59111">&#9670;&nbsp;</a></span>ecefPos()</h2>
+<a id="gacf3bc39c6cabcbf051a81b5c229efdf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacf3bc39c6cabcbf051a81b5c229efdf6">&#9670;&nbsp;</a></span>ecefPos()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -124,13 +124,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacemip.html#a1741c14320601c62cd91791e137dc83f">Vector3d</a>&#160;</td>
+          <td class="paramtype">const double *&#160;</td>
           <td class="paramname"><em>position</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacemip.html#a5209d3c0c1d7b0a0613569ba51facda8">Vector3f</a>&#160;</td>
+          <td class="paramtype">const float *&#160;</td>
           <td class="paramname"><em>uncertainty</em>, </td>
         </tr>
         <tr>

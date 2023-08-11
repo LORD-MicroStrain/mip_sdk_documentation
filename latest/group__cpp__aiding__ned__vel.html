@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-132-g96cbc11</span>
+   &#160;<span id="projectnumber">v1.0.0-143-g31c2524</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -91,8 +91,8 @@ Functions</h2></td></tr>
 <tr class="separator:gabfac862d1b86db3e6e28edd0b5700e2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5417d9199f12317176f1ae378eb4201b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__aiding__ned__vel.html#ga5417d9199f12317176f1ae378eb4201b">mip::commands_aiding::extract</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, <a class="el" href="structmip_1_1commands__aiding_1_1_ned_vel.html">NedVel</a> &amp;self)</td></tr>
 <tr class="separator:ga5417d9199f12317176f1ae378eb4201b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga20d76034a0770da20cc421d9f551b71f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__aiding__ned__vel.html#ga20d76034a0770da20cc421d9f551b71f">mip::commands_aiding::nedVel</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, const <a class="el" href="structmip_1_1commands__aiding_1_1_time.html">Time</a> &amp;time, uint8_t sensorId, <a class="el" href="namespacemip.html#a5209d3c0c1d7b0a0613569ba51facda8">Vector3f</a> velocity, <a class="el" href="namespacemip.html#a5209d3c0c1d7b0a0613569ba51facda8">Vector3f</a> uncertainty, <a class="el" href="structmip_1_1commands__aiding_1_1_ned_vel_1_1_valid_flags.html">NedVel::ValidFlags</a> validFlags)</td></tr>
-<tr class="separator:ga20d76034a0770da20cc421d9f551b71f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae06db4b8597ae61954d0ddaed67073e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__aiding__ned__vel.html#gae06db4b8597ae61954d0ddaed67073e8">mip::commands_aiding::nedVel</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, const <a class="el" href="structmip_1_1commands__aiding_1_1_time.html">Time</a> &amp;time, uint8_t sensorId, const float *velocity, const float *uncertainty, <a class="el" href="structmip_1_1commands__aiding_1_1_ned_vel_1_1_valid_flags.html">NedVel::ValidFlags</a> validFlags)</td></tr>
+<tr class="separator:gae06db4b8597ae61954d0ddaed67073e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>NED velocity aiding command. Coordinates are given in the local North-East-Down frame. </p>
@@ -153,8 +153,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga20d76034a0770da20cc421d9f551b71f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga20d76034a0770da20cc421d9f551b71f">&#9670;&nbsp;</a></span>nedVel()</h2>
+<a id="gae06db4b8597ae61954d0ddaed67073e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae06db4b8597ae61954d0ddaed67073e8">&#9670;&nbsp;</a></span>nedVel()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -180,13 +180,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacemip.html#a5209d3c0c1d7b0a0613569ba51facda8">Vector3f</a>&#160;</td>
+          <td class="paramtype">const float *&#160;</td>
           <td class="paramname"><em>velocity</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacemip.html#a5209d3c0c1d7b0a0613569ba51facda8">Vector3f</a>&#160;</td>
+          <td class="paramtype">const float *&#160;</td>
           <td class="paramname"><em>uncertainty</em>, </td>
         </tr>
         <tr>

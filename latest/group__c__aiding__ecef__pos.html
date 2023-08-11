@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-132-g96cbc11</span>
+   &#160;<span id="projectnumber">v1.0.0-143-g31c2524</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -103,8 +103,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga60b64e8b52e822c933c81e2097179b84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafaa485db30f44fb72f9d89999843f62f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__aiding__ecef__pos.html#gafaa485db30f44fb72f9d89999843f62f">mip::C::extract_mip_aiding_ecef_pos_command_valid_flags</a> (struct <a class="el" href="structmip_1_1_c_1_1mip__serializer.html">mip_serializer</a> *serializer, <a class="el" href="group__c__aiding__ecef__pos.html#ga3cffd363875097e39c5460f744507c9c">mip_aiding_ecef_pos_command_valid_flags</a> *self)</td></tr>
 <tr class="separator:gafaa485db30f44fb72f9d89999843f62f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaedf0e2d49c17a254037c938f9817bf43"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__aiding__ecef__pos.html#gaedf0e2d49c17a254037c938f9817bf43">mip::C::mip_aiding_ecef_pos</a> (struct <a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *device, const <a class="el" href="structmip_1_1_c_1_1mip__time.html">mip_time</a> *time, uint8_t sensor_id, mip_vector3d position, mip_vector3f uncertainty, <a class="el" href="group__c__aiding__ecef__pos.html#ga3cffd363875097e39c5460f744507c9c">mip_aiding_ecef_pos_command_valid_flags</a> valid_flags)</td></tr>
-<tr class="separator:gaedf0e2d49c17a254037c938f9817bf43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacb99be2e724d26dbeff2bb7d1aa9928f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__aiding__ecef__pos.html#gacb99be2e724d26dbeff2bb7d1aa9928f">mip::C::mip_aiding_ecef_pos</a> (struct <a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *device, const <a class="el" href="structmip_1_1_c_1_1mip__time.html">mip_time</a> *time, uint8_t sensor_id, const double *position, const float *uncertainty, <a class="el" href="group__c__aiding__ecef__pos.html#ga3cffd363875097e39c5460f744507c9c">mip_aiding_ecef_pos_command_valid_flags</a> valid_flags)</td></tr>
+<tr class="separator:gacb99be2e724d26dbeff2bb7d1aa9928f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Cartesian vector position aiding command. Coordinates are given in the WGS84 ECEF system. </p>
@@ -250,8 +250,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gaedf0e2d49c17a254037c938f9817bf43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaedf0e2d49c17a254037c938f9817bf43">&#9670;&nbsp;</a></span>mip_aiding_ecef_pos()</h2>
+<a id="gacb99be2e724d26dbeff2bb7d1aa9928f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacb99be2e724d26dbeff2bb7d1aa9928f">&#9670;&nbsp;</a></span>mip_aiding_ecef_pos()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -277,13 +277,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">mip_vector3d&#160;</td>
+          <td class="paramtype">const double *&#160;</td>
           <td class="paramname"><em>position</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">mip_vector3f&#160;</td>
+          <td class="paramtype">const float *&#160;</td>
           <td class="paramname"><em>uncertainty</em>, </td>
         </tr>
         <tr>

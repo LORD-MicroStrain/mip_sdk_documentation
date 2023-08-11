@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['descriptorrate_9765',['DescriptorRate',['../namespacemip.html#a1db336862215280515a9f6b4ac6568c6',1,'mip']]],
-  ['dispatchhandler_9766',['DispatchHandler',['../group__mip__cpp.html#ga22fdf60376fa438a3282cdf32d641f3b',1,'mip']]]
+  ['byte_5fring_5fstate_9767',['byte_ring_state',['../byte__ring_8h.html#a13b87ec0380569eb80c4a98895b2337b',1,'byte_ring.h']]]
 ];
