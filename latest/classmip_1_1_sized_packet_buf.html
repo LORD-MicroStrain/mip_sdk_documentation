@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-144-g9dbbce4</span>
+   &#160;<span id="projectnumber">v1.0.0-145-g709fdde</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -109,10 +109,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad2bcb9ad2ac766519c53f15e6c2ea5f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ce514d1330f2ba30f11c4c0678a10dd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_sized_packet_buf.html#a9ce514d1330f2ba30f11c4c0678a10dd">SizedPacketBuf</a> (const <a class="el" href="classmip_1_1_packet_ref.html">PacketRef</a> &amp;packet)</td></tr>
 <tr class="separator:a9ce514d1330f2ba30f11c4c0678a10dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d26e6c8645e39e2806845128ffcbf21"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_sized_packet_buf.html#a2d26e6c8645e39e2806845128ffcbf21">SizedPacketBuf</a> (const <a class="el" href="classmip_1_1_sized_packet_buf.html">SizedPacketBuf</a> &amp;other)</td></tr>
+<tr class="memdesc:a2d26e6c8645e39e2806845128ffcbf21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor.  <a href="classmip_1_1_sized_packet_buf.html#a2d26e6c8645e39e2806845128ffcbf21">More...</a><br /></td></tr>
+<tr class="separator:a2d26e6c8645e39e2806845128ffcbf21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18e9499d3558e1379fcd13ca75dd9864"><td class="memTemplParams" colspan="2">template&lt;size_t OtherSize&gt; </td></tr>
 <tr class="memitem:a18e9499d3558e1379fcd13ca75dd9864"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmip_1_1_sized_packet_buf.html#a18e9499d3558e1379fcd13ca75dd9864">SizedPacketBuf</a> (const <a class="el" href="classmip_1_1_sized_packet_buf.html">SizedPacketBuf</a>&lt; OtherSize &gt; &amp;other)</td></tr>
 <tr class="memdesc:a18e9499d3558e1379fcd13ca75dd9864"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor (required to put packets into std::vector in some cases).  <a href="classmip_1_1_sized_packet_buf.html#a18e9499d3558e1379fcd13ca75dd9864">More...</a><br /></td></tr>
 <tr class="separator:a18e9499d3558e1379fcd13ca75dd9864"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b370bd9ed30d31306cffa1decfe202e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmip_1_1_sized_packet_buf.html">SizedPacketBuf</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_sized_packet_buf.html#a9b370bd9ed30d31306cffa1decfe202e">operator=</a> (const <a class="el" href="classmip_1_1_sized_packet_buf.html">SizedPacketBuf</a> &amp;other)</td></tr>
+<tr class="memdesc:a9b370bd9ed30d31306cffa1decfe202e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy assignment operator.  <a href="classmip_1_1_sized_packet_buf.html#a9b370bd9ed30d31306cffa1decfe202e">More...</a><br /></td></tr>
+<tr class="separator:a9b370bd9ed30d31306cffa1decfe202e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd709818657de2bcf81b1fdc960d7c0b"><td class="memTemplParams" colspan="2">template&lt;size_t OtherSize&gt; </td></tr>
 <tr class="memitem:acd709818657de2bcf81b1fdc960d7c0b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classmip_1_1_sized_packet_buf.html">SizedPacketBuf</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmip_1_1_sized_packet_buf.html#acd709818657de2bcf81b1fdc960d7c0b">operator=</a> (const <a class="el" href="classmip_1_1_sized_packet_buf.html">SizedPacketBuf</a>&lt; OtherSize &gt; &amp;other)</td></tr>
 <tr class="memdesc:acd709818657de2bcf81b1fdc960d7c0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assignment operator, copies data from another buffer to this one.  <a href="classmip_1_1_sized_packet_buf.html#acd709818657de2bcf81b1fdc960d7c0b">More...</a><br /></td></tr>
@@ -221,7 +227,7 @@ class mip::SizedPacketBuf&lt; BufferSize &gt;</h3>
 <p>A mip packet with a self-contained buffer (useful with std::vector). </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac92d3224ced59f168ed043b33a83c7bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac92d3224ced59f168ed043b33a83c7bf">&#9670;&nbsp;</a></span>SizedPacketBuf() <span class="overload">[1/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac92d3224ced59f168ed043b33a83c7bf">&#9670;&nbsp;</a></span>SizedPacketBuf() <span class="overload">[1/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -249,7 +255,7 @@ template&lt;size_t BufferSize&gt; </div>
 </div>
 </div>
 <a id="ad2bcb9ad2ac766519c53f15e6c2ea5f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2bcb9ad2ac766519c53f15e6c2ea5f0">&#9670;&nbsp;</a></span>SizedPacketBuf() <span class="overload">[2/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2bcb9ad2ac766519c53f15e6c2ea5f0">&#9670;&nbsp;</a></span>SizedPacketBuf() <span class="overload">[2/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -289,7 +295,7 @@ template&lt;size_t BufferSize&gt; </div>
 </div>
 </div>
 <a id="a9ce514d1330f2ba30f11c4c0678a10dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ce514d1330f2ba30f11c4c0678a10dd">&#9670;&nbsp;</a></span>SizedPacketBuf() <span class="overload">[3/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ce514d1330f2ba30f11c4c0678a10dd">&#9670;&nbsp;</a></span>SizedPacketBuf() <span class="overload">[3/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -316,8 +322,38 @@ template&lt;size_t BufferSize&gt; </div>
 
 </div>
 </div>
+<a id="a2d26e6c8645e39e2806845128ffcbf21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d26e6c8645e39e2806845128ffcbf21">&#9670;&nbsp;</a></span>SizedPacketBuf() <span class="overload">[4/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t BufferSize&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmip_1_1_sized_packet_buf.html">mip::SizedPacketBuf</a>&lt; BufferSize &gt;::<a class="el" href="classmip_1_1_sized_packet_buf.html">SizedPacketBuf</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmip_1_1_sized_packet_buf.html">SizedPacketBuf</a>&lt; BufferSize &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copy constructor. </p>
+
+</div>
+</div>
 <a id="a18e9499d3558e1379fcd13ca75dd9864"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18e9499d3558e1379fcd13ca75dd9864">&#9670;&nbsp;</a></span>SizedPacketBuf() <span class="overload">[4/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a18e9499d3558e1379fcd13ca75dd9864">&#9670;&nbsp;</a></span>SizedPacketBuf() <span class="overload">[5/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -349,7 +385,7 @@ template&lt;size_t OtherSize&gt; </div>
 </div>
 </div>
 <a id="aff3515d1df683e0e070f4d18b6d3cb85"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff3515d1df683e0e070f4d18b6d3cb85">&#9670;&nbsp;</a></span>SizedPacketBuf() <span class="overload">[5/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aff3515d1df683e0e070f4d18b6d3cb85">&#9670;&nbsp;</a></span>SizedPacketBuf() <span class="overload">[6/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -567,8 +603,38 @@ false if maxLength is too short. </dd></dl>
 
 </div>
 </div>
+<a id="a9b370bd9ed30d31306cffa1decfe202e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b370bd9ed30d31306cffa1decfe202e">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t BufferSize&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmip_1_1_sized_packet_buf.html">SizedPacketBuf</a>&amp; <a class="el" href="classmip_1_1_sized_packet_buf.html">mip::SizedPacketBuf</a>&lt; BufferSize &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmip_1_1_sized_packet_buf.html">SizedPacketBuf</a>&lt; BufferSize &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copy assignment operator. </p>
+
+</div>
+</div>
 <a id="acd709818657de2bcf81b1fdc960d7c0b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd709818657de2bcf81b1fdc960d7c0b">&#9670;&nbsp;</a></span>operator=()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#acd709818657de2bcf81b1fdc960d7c0b">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
