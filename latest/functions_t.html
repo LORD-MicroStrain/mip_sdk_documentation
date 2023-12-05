@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP SDK
-   &#160;<span id="projectnumber">v1.0.0-177-gb159e66</span>
+   &#160;<span id="projectnumber">v1.0.0-178-g68203e1</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -114,18 +114,16 @@ $(function() {
 <li>tdop
 : <a class="el" href="structmip_1_1_c_1_1mip__gnss__dop__data.html#a10225f21a07eca27a6535213f1a8ab97">mip::C::mip_gnss_dop_data</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1_dop.html#a2f2736a44b7b637bb20a1fa48931688b">mip::data_gnss::Dop</a>
+, <a class="el" href="structmip_1_1data__gnss_1_1_dop_1_1_valid_flags.html#aeaf8e8984d78955a376da0168535b835">mip::data_gnss::Dop::ValidFlags</a>
 </li>
 <li>TDOP
 : <a class="el" href="structmip_1_1data__gnss_1_1_dop_1_1_valid_flags.html#a1fc83277f187678def65baa8a1e86833a3a0b062d294acb9664e62fe62b004396">mip::data_gnss::Dop::ValidFlags</a>
 </li>
-<li>tdop()
-: <a class="el" href="structmip_1_1data__gnss_1_1_dop_1_1_valid_flags.html#aeaf8e8984d78955a376da0168535b835">mip::data_gnss::Dop::ValidFlags</a>
+<li>test()
+: <a class="el" href="structmip_1_1commands__3dm_1_1_get_event_trigger_status_1_1_status.html#a1d76f30765632d01cf76371c31fa72b1">mip::commands_3dm::GetEventTriggerStatus::Status</a>
 </li>
 <li>TEST
 : <a class="el" href="structmip_1_1commands__3dm_1_1_get_event_trigger_status_1_1_status.html#aa27b06947ab039c8085d495098531560aeaf7a4f4e73d4463b298220c08ed55d8">mip::commands_3dm::GetEventTriggerStatus::Status</a>
-</li>
-<li>test()
-: <a class="el" href="structmip_1_1commands__3dm_1_1_get_event_trigger_status_1_1_status.html#a1d76f30765632d01cf76371c31fa72b1">mip::commands_3dm::GetEventTriggerStatus::Status</a>
 </li>
 <li>TEST_MODE
 : <a class="el" href="structmip_1_1data__gnss_1_1_sbas_info_1_1_sbas_status.html#a99263d339a1d4ede15c98a36ddccc059a9b7c9b65e360954ba63402ef02a73aa8">mip::data_gnss::SbasInfo::SbasStatus</a>
@@ -145,11 +143,11 @@ $(function() {
 , <a class="el" href="structmip_1_1commands__filter_1_1_auto_zupt_1_1_response.html#a7c14f40bf6d8f7fd7d6d5936feb1e09b">mip::commands_filter::AutoZupt::Response</a>
 , <a class="el" href="structmip_1_1commands__filter_1_1_auto_zupt.html#ad48267e7aea135f90dafc1b602760563">mip::commands_filter::AutoZupt</a>
 </li>
-<li>THROTTLE
-: <a class="el" href="structmip_1_1commands__rtk_1_1_service_status_1_1_service_flags.html#a4f2c8b4f1e8b0c50836f8cc594ef5fa9a5d966bb1d84a48296e8988749fd4318a">mip::commands_rtk::ServiceStatus::ServiceFlags</a>
-</li>
 <li>throttle()
 : <a class="el" href="structmip_1_1commands__rtk_1_1_service_status_1_1_service_flags.html#a3ecfc87776bd937533f41ac27a0e5986">mip::commands_rtk::ServiceStatus::ServiceFlags</a>
+</li>
+<li>THROTTLE
+: <a class="el" href="structmip_1_1commands__rtk_1_1_service_status_1_1_service_flags.html#a4f2c8b4f1e8b0c50836f8cc594ef5fa9a5d966bb1d84a48296e8988749fd4318a">mip::commands_rtk::ServiceStatus::ServiceFlags</a>
 </li>
 <li>ticks
 : <a class="el" href="structmip_1_1_c_1_1mip__shared__delta__ticks__data.html#a4ffdd819387c1358b05e2e427d531ead">mip::C::mip_shared_delta_ticks_data</a>
@@ -234,10 +232,12 @@ $(function() {
 </li>
 <li>timebase
 : <a class="el" href="structmip_1_1_c_1_1mip__time.html#a93e153d0a52aa1374f20bb58b6a60246">mip::C::mip_time</a>
-, <a class="el" href="structmip_1_1commands__aiding_1_1_time.html#a56e70ce574b4f91ee837a199f33f4dff">mip::commands_aiding::Time</a>
 </li>
 <li>Timebase
 : <a class="el" href="structmip_1_1commands__aiding_1_1_time.html#acef9f94c3d33abd20de2f78fd09acfc3">mip::commands_aiding::Time</a>
+</li>
+<li>timebase
+: <a class="el" href="structmip_1_1commands__aiding_1_1_time.html#a56e70ce574b4f91ee837a199f33f4dff">mip::commands_aiding::Time</a>
 </li>
 <li>timeInitialized()
 : <a class="el" href="structmip_1_1data__sensor_1_1_gps_timestamp_1_1_valid_flags.html#aab979e852d98d4d196f3f4bfb905e742">mip::data_sensor::GpsTimestamp::ValidFlags</a>
@@ -274,62 +274,63 @@ $(function() {
 , <a class="el" href="structmip_1_1commands__3dm_1_1_gnss_time_assistance_1_1_response.html#afba6b88520922079bba429dbd35aed75">mip::commands_3dm::GnssTimeAssistance::Response</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1_gnss_time_assistance.html#a60a5e428e8cf811746d17c469cbdedec">mip::commands_3dm::GnssTimeAssistance</a>
 , <a class="el" href="structmip_1_1data__filter_1_1_timestamp.html#a5d8b6721a75968b28da492e66928daea">mip::data_filter::Timestamp</a>
-, <a class="el" href="structmip_1_1data__gnss_1_1_base_station_info_1_1_valid_flags.html#a02f39e57b5895ab46511cc5b71697022">mip::data_gnss::BaseStationInfo::ValidFlags</a>
 </li>
 <li>TOW
 : <a class="el" href="structmip_1_1data__gnss_1_1_base_station_info_1_1_valid_flags.html#ada30f4639178ea79e264dc8e8ee76a80a010ab0a1bdc39a59ee7d5385c0625673">mip::data_gnss::BaseStationInfo::ValidFlags</a>
 </li>
 <li>tow()
-: <a class="el" href="structmip_1_1data__gnss_1_1_base_station_info_1_1_valid_flags.html#a673fc31953c88038bb8765ca772e2e73">mip::data_gnss::BaseStationInfo::ValidFlags</a>
-, <a class="el" href="structmip_1_1data__gnss_1_1_galileo_iono_corr_1_1_valid_flags.html#ac8b35d518c180cbecea5d06faec58ef6">mip::data_gnss::GalileoIonoCorr::ValidFlags</a>
+: <a class="el" href="structmip_1_1data__gnss_1_1_base_station_info_1_1_valid_flags.html#a02f39e57b5895ab46511cc5b71697022">mip::data_gnss::BaseStationInfo::ValidFlags</a>
 </li>
 <li>TOW
 : <a class="el" href="structmip_1_1data__gnss_1_1_galileo_iono_corr_1_1_valid_flags.html#a838ba25631d1f30b05f7a6597fe68a20a97fbb5374fc0f3189398544dfca84c94">mip::data_gnss::GalileoIonoCorr::ValidFlags</a>
 </li>
 <li>tow()
-: <a class="el" href="structmip_1_1data__gnss_1_1_gps_iono_corr_1_1_valid_flags.html#ac54357f69615185729f01c1e894c9cfe">mip::data_gnss::GpsIonoCorr::ValidFlags</a>
+: <a class="el" href="structmip_1_1data__gnss_1_1_galileo_iono_corr_1_1_valid_flags.html#a963f74ce9a21fce9bf2229af41ca0165">mip::data_gnss::GalileoIonoCorr::ValidFlags</a>
 </li>
 <li>TOW
 : <a class="el" href="structmip_1_1data__gnss_1_1_gps_iono_corr_1_1_valid_flags.html#a666d0e4bd85f634a9698dce7946464fca9c6d351c598209f4c4bcc13bb23625c1">mip::data_gnss::GpsIonoCorr::ValidFlags</a>
 </li>
-<li>tow
-: <a class="el" href="structmip_1_1data__gnss_1_1_gps_time.html#aa5fc47e77e52f0f523bcf26e12836684">mip::data_gnss::GpsTime</a>
-, <a class="el" href="structmip_1_1data__gnss_1_1_gps_time_1_1_valid_flags.html#a7354aa4360ab306e3896979311225265">mip::data_gnss::GpsTime::ValidFlags</a>
+<li>tow()
+: <a class="el" href="structmip_1_1data__gnss_1_1_gps_iono_corr_1_1_valid_flags.html#ac54357f69615185729f01c1e894c9cfe">mip::data_gnss::GpsIonoCorr::ValidFlags</a>
+, <a class="el" href="structmip_1_1data__gnss_1_1_gps_time.html#aa5fc47e77e52f0f523bcf26e12836684">mip::data_gnss::GpsTime</a>
 </li>
 <li>TOW
 : <a class="el" href="structmip_1_1data__gnss_1_1_gps_time_1_1_valid_flags.html#a3bd5f2315ea95c2247d26282ca02d267aa01a3291226ffdc617bd2e64cb2af4f8">mip::data_gnss::GpsTime::ValidFlags</a>
 </li>
 <li>tow()
-: <a class="el" href="structmip_1_1data__gnss_1_1_raw_1_1_valid_flags.html#a07266b77f3db8c4841bd2040bf9ce244">mip::data_gnss::Raw::ValidFlags</a>
+: <a class="el" href="structmip_1_1data__gnss_1_1_gps_time_1_1_valid_flags.html#a7354aa4360ab306e3896979311225265">mip::data_gnss::GpsTime::ValidFlags</a>
 </li>
 <li>TOW
 : <a class="el" href="structmip_1_1data__gnss_1_1_raw_1_1_valid_flags.html#a896b931f26ab3d9d16bd4e80b3dff2bea669a7b15c70cda12fd876676de8d0270">mip::data_gnss::Raw::ValidFlags</a>
 </li>
 <li>tow()
-: <a class="el" href="structmip_1_1data__gnss_1_1_rtk_corrections_status_1_1_valid_flags.html#ab41f638903dca0e1c03847e5154a84c6">mip::data_gnss::RtkCorrectionsStatus::ValidFlags</a>
+: <a class="el" href="structmip_1_1data__gnss_1_1_raw_1_1_valid_flags.html#a07266b77f3db8c4841bd2040bf9ce244">mip::data_gnss::Raw::ValidFlags</a>
 </li>
 <li>TOW
 : <a class="el" href="structmip_1_1data__gnss_1_1_rtk_corrections_status_1_1_valid_flags.html#a5ca333cd032829f95b61a21cc703070ead3a9b64f32ba75653462fdb285439670">mip::data_gnss::RtkCorrectionsStatus::ValidFlags</a>
 </li>
 <li>tow()
-: <a class="el" href="structmip_1_1data__gnss_1_1_satellite_status_1_1_valid_flags.html#ade3d314b58252f09d20452ca3c96f429">mip::data_gnss::SatelliteStatus::ValidFlags</a>
+: <a class="el" href="structmip_1_1data__gnss_1_1_rtk_corrections_status_1_1_valid_flags.html#ab41f638903dca0e1c03847e5154a84c6">mip::data_gnss::RtkCorrectionsStatus::ValidFlags</a>
 </li>
 <li>TOW
 : <a class="el" href="structmip_1_1data__gnss_1_1_satellite_status_1_1_valid_flags.html#aa7e176bb3873568c8c5bc2930d32c2f3ac49dcf8a12c5de347e04b8b7bb951b18">mip::data_gnss::SatelliteStatus::ValidFlags</a>
 </li>
 <li>tow()
-: <a class="el" href="structmip_1_1data__gnss_1_1_sbas_info_1_1_valid_flags.html#aa809c19ece62896f0d4fb15f6629040b">mip::data_gnss::SbasInfo::ValidFlags</a>
+: <a class="el" href="structmip_1_1data__gnss_1_1_satellite_status_1_1_valid_flags.html#ade3d314b58252f09d20452ca3c96f429">mip::data_gnss::SatelliteStatus::ValidFlags</a>
 </li>
 <li>TOW
 : <a class="el" href="structmip_1_1data__gnss_1_1_sbas_info_1_1_valid_flags.html#a95f83338072706af37b336056fb58eb8ab32b96de773946742d84db1a12ab8f96">mip::data_gnss::SbasInfo::ValidFlags</a>
 </li>
-<li>tow
-: <a class="el" href="structmip_1_1data__sensor_1_1_gps_timestamp.html#a1e8a82be44650cc131253fea6913de2f">mip::data_sensor::GpsTimestamp</a>
+<li>tow()
+: <a class="el" href="structmip_1_1data__gnss_1_1_sbas_info_1_1_valid_flags.html#aa809c19ece62896f0d4fb15f6629040b">mip::data_gnss::SbasInfo::ValidFlags</a>
+, <a class="el" href="structmip_1_1data__sensor_1_1_gps_timestamp.html#a1e8a82be44650cc131253fea6913de2f">mip::data_sensor::GpsTimestamp</a>
 , <a class="el" href="structmip_1_1data__shared_1_1_gps_timestamp.html#a5fec3db1bbd5be447636ec84aed60c01">mip::data_shared::GpsTimestamp</a>
-, <a class="el" href="structmip_1_1data__shared_1_1_gps_timestamp_1_1_valid_flags.html#aaea3f8546b7511575a8d495468681060">mip::data_shared::GpsTimestamp::ValidFlags</a>
 </li>
 <li>TOW
 : <a class="el" href="structmip_1_1data__shared_1_1_gps_timestamp_1_1_valid_flags.html#a06be7c6e53447448e762fd4a240055e2a503e43f5f71f924464c8424b557201c6">mip::data_shared::GpsTimestamp::ValidFlags</a>
+</li>
+<li>tow()
+: <a class="el" href="structmip_1_1data__shared_1_1_gps_timestamp_1_1_valid_flags.html#aaea3f8546b7511575a8d495468681060">mip::data_shared::GpsTimestamp::ValidFlags</a>
 </li>
 <li>TOW_VALID
 : <a class="el" href="structmip_1_1data__sensor_1_1_gps_timestamp_1_1_valid_flags.html#a64c4d0d3ea3cccb6d1c81dacfd2107bea879017ff979fabad493a35b1db54e4b7">mip::data_sensor::GpsTimestamp::ValidFlags</a>
@@ -388,26 +389,26 @@ $(function() {
 , <a class="el" href="structmip_1_1_c_1_1mip__filter__external__heading__update__with__time__command.html#a3742b18149e92471badee25c31392566">mip::C::mip_filter_external_heading_update_with_time_command</a>
 , <a class="el" href="structmip_1_1_c_1_1mip__filter__head__aid__status__data.html#a76f293bb71cd9b9d93f335b90cb0a0bc">mip::C::mip_filter_head_aid_status_data</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1_event_action_1_1_response.html#a29dc5f1695f12dafcb112f96eb196146">mip::commands_3dm::EventAction::Response</a>
-, <a class="el" href="structmip_1_1commands__3dm_1_1_event_action.html#a5a651f36024ae39bd59c24899a8292f6">mip::commands_3dm::EventAction</a>
 </li>
 <li>Type
 : <a class="el" href="structmip_1_1commands__3dm_1_1_event_action.html#acaaa3fb9ee82b5942ebada494863723b">mip::commands_3dm::EventAction</a>
 </li>
 <li>type
-: <a class="el" href="structmip_1_1commands__3dm_1_1_event_trigger_1_1_response.html#a541dd3a3134fe75912edf096695ba2de">mip::commands_3dm::EventTrigger::Response</a>
-, <a class="el" href="structmip_1_1commands__3dm_1_1_event_trigger_1_1_threshold_params.html#add04a7637ae3eb0e9aa3e566db5fa1b9">mip::commands_3dm::EventTrigger::ThresholdParams</a>
+: <a class="el" href="structmip_1_1commands__3dm_1_1_event_action.html#a5a651f36024ae39bd59c24899a8292f6">mip::commands_3dm::EventAction</a>
+, <a class="el" href="structmip_1_1commands__3dm_1_1_event_trigger_1_1_response.html#a541dd3a3134fe75912edf096695ba2de">mip::commands_3dm::EventTrigger::Response</a>
 </li>
 <li>Type
 : <a class="el" href="structmip_1_1commands__3dm_1_1_event_trigger_1_1_threshold_params.html#af7ad474c722e8f4b32f9015be04cf4be">mip::commands_3dm::EventTrigger::ThresholdParams</a>
 </li>
 <li>type
-: <a class="el" href="structmip_1_1commands__3dm_1_1_event_trigger.html#a23d2754a0ef2a06958075b387ccbbb64">mip::commands_3dm::EventTrigger</a>
+: <a class="el" href="structmip_1_1commands__3dm_1_1_event_trigger_1_1_threshold_params.html#add04a7637ae3eb0e9aa3e566db5fa1b9">mip::commands_3dm::EventTrigger::ThresholdParams</a>
 </li>
 <li>Type
 : <a class="el" href="structmip_1_1commands__3dm_1_1_event_trigger.html#a6c69d89e9e11917903fa0636224fbaa4">mip::commands_3dm::EventTrigger</a>
 </li>
 <li>type
-: <a class="el" href="structmip_1_1commands__3dm_1_1_get_event_support_1_1_info.html#a67c756cf6aefb16713e4ec31dbd47f14">mip::commands_3dm::GetEventSupport::Info</a>
+: <a class="el" href="structmip_1_1commands__3dm_1_1_event_trigger.html#a23d2754a0ef2a06958075b387ccbbb64">mip::commands_3dm::EventTrigger</a>
+, <a class="el" href="structmip_1_1commands__3dm_1_1_get_event_support_1_1_info.html#a67c756cf6aefb16713e4ec31dbd47f14">mip::commands_3dm::GetEventSupport::Info</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1_get_event_trigger_status_1_1_entry.html#ae379c877c451de8d6432334c89f74d09">mip::commands_3dm::GetEventTriggerStatus::Entry</a>
 , <a class="el" href="structmip_1_1commands__filter_1_1_external_heading_update.html#a53bbccd7db62021c73d5079124ce8984">mip::commands_filter::ExternalHeadingUpdate</a>
 , <a class="el" href="structmip_1_1commands__filter_1_1_external_heading_update_with_time.html#a271e3885637e6194f164e5b2cb672c94">mip::commands_filter::ExternalHeadingUpdateWithTime</a>
