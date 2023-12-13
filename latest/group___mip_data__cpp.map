@@ -1,8 +1,0 @@
-<map id="MIP Data [CPP]" name="MIP Data [CPP]">
-<area shape="rect" id="node1" href="$group__system__data__cpp.html" title=" " alt="" coords="168,5,305,31"/>
-<area shape="rect" id="node2" href="$group__sensor__data__cpp.html" title=" " alt="" coords="170,55,303,80"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,104,120,129"/>
-<area shape="rect" id="node4" href="$group__gnss__data__cpp.html" title=" " alt="" coords="175,104,298,129"/>
-<area shape="rect" id="node5" href="$group__filter__data__cpp.html" title=" " alt="" coords="176,153,297,179"/>
-<area shape="rect" id="node6" href="$group__shared__data__cpp.html" title=" " alt="" coords="170,203,303,228"/>
-</map>

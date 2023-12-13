@@ -1,7 +1,0 @@
-<map id="mip::data_gnss::RtkCorrectionsStatus" name="mip::data_gnss::RtkCorrectionsStatus">
-<area shape="rect" id="node1" title=" " alt="" coords="580,39,785,80"/>
-<area shape="rect" id="node2" href="$structmip_1_1data__gnss_1_1_rtk_corrections_status_1_1_valid_flags.html" title=" " alt="" coords="244,5,449,47"/>
-<area shape="rect" id="node3" href="$structmip_1_1_bitfield.html" title=" " alt="" coords="13,13,187,39"/>
-<area shape="rect" id="node4" href="$structmip_1_1data__gnss_1_1_rtk_corrections_status_1_1_epoch_status.html" title=" " alt="" coords="244,71,449,112"/>
-<area shape="rect" id="node5" href="$structmip_1_1_bitfield.html" title=" " alt="" coords="5,78,195,105"/>
-</map>

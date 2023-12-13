@@ -1,8 +1,0 @@
-<map id="MIP Data [C]" name="MIP Data [C]">
-<area shape="rect" id="node1" href="$group__filter__data__c.html" title=" " alt="" coords="159,5,261,31"/>
-<area shape="rect" id="node2" href="$group__shared__data__c.html" title=" " alt="" coords="153,55,267,80"/>
-<area shape="rect" id="node3" href="$group__gnss__data__c.html" title=" " alt="" coords="157,104,263,129"/>
-<area shape="rect" id="node4" href="$group__sensor__data__c.html" title=" " alt="" coords="153,153,267,179"/>
-<area shape="rect" id="node5" title=" " alt="" coords="5,104,103,129"/>
-<area shape="rect" id="node6" href="$group__system__data__c.html" title=" " alt="" coords="151,203,269,228"/>
-</map>

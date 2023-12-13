@@ -1,8 +1,0 @@
-<map id="System Data [CPP]" name="System Data [CPP]">
-<area shape="rect" id="node1" title=" " alt="" coords="168,109,305,134"/>
-<area shape="rect" id="node2" href="$group__cpp__system__built__in__test.html" title=" " alt="" coords="369,5,505,45"/>
-<area shape="rect" id="node3" href="$group__cpp__system__gpio__state.html" title=" " alt="" coords="357,69,516,109"/>
-<area shape="rect" id="node4" href="$group__cpp__system__time__sync__status.html" title=" " alt="" coords="357,133,516,173"/>
-<area shape="rect" id="node5" href="$group__cpp__system__gpio__analog__value.html" title=" " alt="" coords="353,197,520,237"/>
-<area shape="rect" id="node6" href="$group___mip_data__cpp.html" title=" " alt="" coords="5,109,120,134"/>
-</map>

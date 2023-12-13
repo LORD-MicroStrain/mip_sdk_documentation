@@ -1,5 +1,0 @@
-<map id="mip::data_gnss::Raw" name="mip::data_gnss::Raw">
-<area shape="rect" id="node1" title=" " alt="" coords="21,185,165,212"/>
-<area shape="rect" id="node2" href="$structmip_1_1data__gnss_1_1_raw_1_1_valid_flags.html" title=" " alt="" coords="21,81,165,123"/>
-<area shape="rect" id="node3" href="$structmip_1_1_bitfield.html" title=" " alt="" coords="5,5,180,32"/>
-</map>

@@ -1,6 +1,0 @@
-<map id="mip::commands_3dm::ConstellationSettings" name="mip::commands_3dm::ConstellationSettings">
-<area shape="rect" id="node1" title=" " alt="" coords="20,319,175,360"/>
-<area shape="rect" id="node2" href="$structmip_1_1commands__3dm_1_1_constellation_settings_1_1_settings.html" title=" " alt="" coords="20,200,175,256"/>
-<area shape="rect" id="node3" href="$structmip_1_1commands__3dm_1_1_constellation_settings_1_1_option_flags.html" title=" " alt="" coords="20,81,175,137"/>
-<area shape="rect" id="node4" href="$structmip_1_1_bitfield.html" title=" " alt="" coords="5,5,189,32"/>
-</map>

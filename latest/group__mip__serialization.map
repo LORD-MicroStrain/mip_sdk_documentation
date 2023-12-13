@@ -1,5 +1,0 @@
-<map id="MIP Serialization" name="MIP Serialization">
-<area shape="rect" id="node1" href="$group__mip__serialization__cpp.html" title="(De)serialization in C++." alt="" coords="173,5,332,31"/>
-<area shape="rect" id="node2" href="$group__mip__serialization__c.html" title="(De)serialization in C." alt="" coords="182,55,323,80"/>
-<area shape="rect" id="node3" title="Serialization Functions for reading and writing to byte buffers." alt="" coords="5,31,125,56"/>
-</map>

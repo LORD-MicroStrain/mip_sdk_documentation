@@ -1,8 +1,0 @@
-<map id="mip::data_gnss::BaseStationInfo" name="mip::data_gnss::BaseStationInfo">
-<area shape="rect" id="node1" title=" " alt="" coords="532,64,743,91"/>
-<area shape="rect" id="node2" href="$structmip_1_1_vector.html" title=" " alt="" coords="241,5,408,32"/>
-<area shape="rect" id="node3" href="$structmip_1_1data__gnss_1_1_base_station_info_1_1_indicator_flags.html" title=" " alt="" coords="229,57,420,98"/>
-<area shape="rect" id="node4" href="$structmip_1_1_bitfield.html" title=" " alt="" coords="17,57,168,98"/>
-<area shape="rect" id="node5" href="$structmip_1_1data__gnss_1_1_base_station_info_1_1_valid_flags.html" title=" " alt="" coords="229,122,420,163"/>
-<area shape="rect" id="node6" href="$structmip_1_1_bitfield.html" title=" " alt="" coords="5,129,180,156"/>
-</map>

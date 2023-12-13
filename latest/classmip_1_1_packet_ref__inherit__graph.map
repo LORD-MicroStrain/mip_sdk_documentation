@@ -1,5 +1,0 @@
-<map id="mip::PacketRef" name="mip::PacketRef">
-<area shape="rect" id="node1" title="C++ class representing a MIP PacketRef." alt="" coords="22,80,133,107"/>
-<area shape="rect" id="node3" href="$classmip_1_1_sized_packet_buf.html" title="A mip packet with a self&#45;contained buffer (useful with std::vector)." alt="" coords="5,155,149,196"/>
-<area shape="rect" id="node2" href="$structmip_1_1_c_1_1mip__packet.html" title="Structure representing a MIP Packet." alt="" coords="10,5,145,32"/>
-</map>

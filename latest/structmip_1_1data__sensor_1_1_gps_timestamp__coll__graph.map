@@ -1,5 +1,0 @@
-<map id="mip::data_sensor::GpsTimestamp" name="mip::data_sensor::GpsTimestamp">
-<area shape="rect" id="node1" title=" " alt="" coords="5,185,224,212"/>
-<area shape="rect" id="node2" href="$structmip_1_1data__sensor_1_1_gps_timestamp_1_1_valid_flags.html" title=" " alt="" coords="5,81,224,123"/>
-<area shape="rect" id="node3" href="$structmip_1_1_bitfield.html" title=" " alt="" coords="27,5,202,32"/>
-</map>

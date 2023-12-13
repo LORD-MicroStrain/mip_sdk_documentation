@@ -1,4 +1,0 @@
-<map id="mip::C::mip_interface" name="mip::C::mip_interface">
-<area shape="rect" id="node1" title="State of the interface for communicating with a MIP device." alt="" coords="5,5,151,32"/>
-<area shape="rect" id="node2" href="$classmip_1_1_device_interface.html" title="Represents a connected MIP device." alt="" coords="9,80,147,107"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="mip::data_gnss::GloEphemeris" name="mip::data_gnss::GloEphemeris">
-<area shape="rect" id="node1" title=" " alt="" coords="543,63,744,89"/>
-<area shape="rect" id="node2" href="$structmip_1_1_vector.html" title=" " alt="" coords="247,5,413,32"/>
-<area shape="rect" id="node3" href="$structmip_1_1data__gnss_1_1_glo_ephemeris_1_1_valid_flags.html" title=" " alt="" coords="229,57,431,98"/>
-<area shape="rect" id="node4" href="$structmip_1_1_bitfield.html" title=" " alt="" coords="5,64,180,91"/>
-<area shape="rect" id="node5" href="$structmip_1_1_vector.html" title=" " alt="" coords="254,123,406,149"/>
-</map>

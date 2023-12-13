@@ -1,7 +1,0 @@
-<map id="Gnss Commands [CPP]" name="Gnss Commands [CPP]">
-<area shape="rect" id="node1" href="$group__cpp__gnss__rtk__dongle__configuration.html" title=" " alt="" coords="419,5,579,45"/>
-<area shape="rect" id="node2" href="$group___mip_commands__cpp.html" title=" " alt="" coords="5,77,160,102"/>
-<area shape="rect" id="node3" title=" " alt="" coords="208,77,371,102"/>
-<area shape="rect" id="node4" href="$group__cpp__gnss__signal__configuration.html" title=" " alt="" coords="429,69,569,109"/>
-<area shape="rect" id="node5" href="$group__cpp__gnss__receiver__info.html" title=" " alt="" coords="426,133,571,173"/>
-</map>

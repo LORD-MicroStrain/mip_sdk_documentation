@@ -1,5 +1,0 @@
-<map id="mip::data_gnss::GpsLeapSeconds" name="mip::data_gnss::GpsLeapSeconds">
-<area shape="rect" id="node1" title=" " alt="" coords="5,185,228,212"/>
-<area shape="rect" id="node2" href="$structmip_1_1data__gnss_1_1_gps_leap_seconds_1_1_valid_flags.html" title=" " alt="" coords="5,81,228,123"/>
-<area shape="rect" id="node3" href="$structmip_1_1_bitfield.html" title=" " alt="" coords="29,5,204,32"/>
-</map>
