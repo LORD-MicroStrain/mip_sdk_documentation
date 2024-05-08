@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-178-g68203e1</span>
+   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-283-g2c4cb6b</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -99,41 +99,41 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:gab0495b5f9154a90a3d9aa6df9a980753" id="r_gab0495b5f9154a90a3d9aa6df9a980753"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__parser__c.html#gab0495b5f9154a90a3d9aa6df9a980753">mip::C::mip_packet_callback</a>) (void *user, const <a class="el" href="structmip_1_1_c_1_1mip__packet.html">mip_packet</a> *packet, <a class="el" href="namespacemip_1_1_c.html#ad30c32b29ea61ed004670241c967cf2c">timestamp_type</a> timestamp)</td></tr>
-<tr class="memdesc:gab0495b5f9154a90a3d9aa6df9a980753"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function which receives parsed MIP packets.  <br /></td></tr>
-<tr class="separator:gab0495b5f9154a90a3d9aa6df9a980753"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae6be203702cde73d43cff933f457d574" id="r_gae6be203702cde73d43cff933f457d574"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__parser__c.html#gae6be203702cde73d43cff933f457d574">mip::C::mip_packet_callback</a>) (void *user, const <a class="el" href="structmip_1_1_c_1_1mip__packet.html">mip_packet</a> *packet, <a class="el" href="namespacemip_1_1_c.html#a7a0c2c95e0e72de587a1e92037fe24b9">mip_timestamp</a> timestamp)</td></tr>
+<tr class="memdesc:gae6be203702cde73d43cff933f457d574"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function which receives parsed MIP packets.  <br /></td></tr>
+<tr class="separator:gae6be203702cde73d43cff933f457d574"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab4e51a2bbfbb2530f5efb93bee705fd2" id="r_gab4e51a2bbfbb2530f5efb93bee705fd2"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structmip_1_1_c_1_1mip__parser.html">mip::C::mip_parser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__parser__c.html#gab4e51a2bbfbb2530f5efb93bee705fd2">mip::C::mip_parser</a></td></tr>
 <tr class="memdesc:gab4e51a2bbfbb2530f5efb93bee705fd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">MIP <a class="el" href="classmip_1_1_parser.html" title="C++ class representing a MIP parser.">Parser</a> state.  <br /></td></tr>
 <tr class="separator:gab4e51a2bbfbb2530f5efb93bee705fd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga44efa16dbb57bb7f327eef499222499a" id="r_ga44efa16dbb57bb7f327eef499222499a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__parser__c.html#ga44efa16dbb57bb7f327eef499222499a">mip::C::mip_parser_init</a> (<a class="el" href="structmip_1_1_c_1_1mip__parser.html">mip_parser</a> *parser, uint8_t *buffer, size_t buffer_size, <a class="el" href="group__mip__parser__c.html#gab0495b5f9154a90a3d9aa6df9a980753">mip_packet_callback</a> callback, void *callback_object, <a class="el" href="namespacemip_1_1_c.html#ad30c32b29ea61ed004670241c967cf2c">timestamp_type</a> timeout)</td></tr>
-<tr class="separator:ga44efa16dbb57bb7f327eef499222499a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8c7dfb7188af27a092b4e13478375c9e" id="r_ga8c7dfb7188af27a092b4e13478375c9e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__parser__c.html#ga8c7dfb7188af27a092b4e13478375c9e">mip::C::mip_parser_parse_one_packet_from_ring</a> (<a class="el" href="structmip_1_1_c_1_1mip__parser.html">mip_parser</a> *parser, <a class="el" href="structmip_1_1_c_1_1mip__packet.html">mip_packet</a> *packet_out, <a class="el" href="namespacemip_1_1_c.html#ad30c32b29ea61ed004670241c967cf2c">timestamp_type</a> timestamp)</td></tr>
-<tr class="separator:ga8c7dfb7188af27a092b4e13478375c9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad4e1b55702e348a1649dd2f1b472c021" id="r_gad4e1b55702e348a1649dd2f1b472c021"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemip_1_1_c.html#a824d5367b775daf33493d7e7ab21d8c5">remaining_count</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__parser__c.html#gad4e1b55702e348a1649dd2f1b472c021">mip::C::mip_parser_parse</a> (<a class="el" href="structmip_1_1_c_1_1mip__parser.html">mip_parser</a> *parser, const uint8_t *input_buffer, size_t input_count, <a class="el" href="namespacemip_1_1_c.html#ad30c32b29ea61ed004670241c967cf2c">timestamp_type</a> timestamp, unsigned int max_packets)</td></tr>
-<tr class="separator:gad4e1b55702e348a1649dd2f1b472c021"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac9af1af2bc9e6c2b814949c84d4f3713" id="r_gac9af1af2bc9e6c2b814949c84d4f3713"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__parser__c.html#gac9af1af2bc9e6c2b814949c84d4f3713">mip::C::mip_parser_init</a> (<a class="el" href="structmip_1_1_c_1_1mip__parser.html">mip_parser</a> *parser, uint8_t *buffer, size_t buffer_size, <a class="el" href="group__mip__parser__c.html#gae6be203702cde73d43cff933f457d574">mip_packet_callback</a> callback, void *callback_object, <a class="el" href="namespacemip_1_1_c.html#a7a0c2c95e0e72de587a1e92037fe24b9">mip_timestamp</a> timeout)</td></tr>
+<tr class="separator:gac9af1af2bc9e6c2b814949c84d4f3713"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9845fce5f0856162b750b89b4d4a3140" id="r_ga9845fce5f0856162b750b89b4d4a3140"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__parser__c.html#ga9845fce5f0856162b750b89b4d4a3140">mip::C::mip_parser_parse_one_packet_from_ring</a> (<a class="el" href="structmip_1_1_c_1_1mip__parser.html">mip_parser</a> *parser, <a class="el" href="structmip_1_1_c_1_1mip__packet.html">mip_packet</a> *packet_out, <a class="el" href="namespacemip_1_1_c.html#a7a0c2c95e0e72de587a1e92037fe24b9">mip_timestamp</a> timestamp)</td></tr>
+<tr class="separator:ga9845fce5f0856162b750b89b4d4a3140"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaef053e67bd8b8e8398b863818a3fc270" id="r_gaef053e67bd8b8e8398b863818a3fc270"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__parser__c.html#gaef053e67bd8b8e8398b863818a3fc270">mip::C::mip_parser_parse</a> (<a class="el" href="structmip_1_1_c_1_1mip__parser.html">mip_parser</a> *parser, const uint8_t *input_buffer, size_t input_count, <a class="el" href="namespacemip_1_1_c.html#a7a0c2c95e0e72de587a1e92037fe24b9">mip_timestamp</a> timestamp, unsigned int max_packets)</td></tr>
+<tr class="separator:gaef053e67bd8b8e8398b863818a3fc270"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0a0efb3d8c6af48d3141b69d763c916f" id="r_ga0a0efb3d8c6af48d3141b69d763c916f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__parser__c.html#ga0a0efb3d8c6af48d3141b69d763c916f">mip::C::mip_parser_reset</a> (<a class="el" href="structmip_1_1_c_1_1mip__parser.html">mip_parser</a> *parser)</td></tr>
 <tr class="separator:ga0a0efb3d8c6af48d3141b69d763c916f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga80cc9664a277eae276e7e7f42b2ccd97" id="r_ga80cc9664a277eae276e7e7f42b2ccd97"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__parser__c.html#ga80cc9664a277eae276e7e7f42b2ccd97">mip::C::mip_parser_get_write_ptr</a> (<a class="el" href="structmip_1_1_c_1_1mip__parser.html">mip_parser</a> *parser, uint8_t **ptr_out)</td></tr>
 <tr class="separator:ga80cc9664a277eae276e7e7f42b2ccd97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga788cd275f7ed47956240a1f12f59164c" id="r_ga788cd275f7ed47956240a1f12f59164c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__parser__c.html#ga788cd275f7ed47956240a1f12f59164c">mip::C::mip_parser_process_written</a> (<a class="el" href="structmip_1_1_c_1_1mip__parser.html">mip_parser</a> *parser, size_t count, <a class="el" href="namespacemip_1_1_c.html#ad30c32b29ea61ed004670241c967cf2c">timestamp_type</a> timestamp, unsigned int max_packets)</td></tr>
-<tr class="separator:ga788cd275f7ed47956240a1f12f59164c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabc09301d0aceee0534c9ae74156eba85" id="r_gabc09301d0aceee0534c9ae74156eba85"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemip_1_1_c.html#a55eec9e5e11dfac627dd92b10d8bec5d">timeout_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__parser__c.html#gabc09301d0aceee0534c9ae74156eba85">mip::C::mip_parser_timeout</a> (const <a class="el" href="structmip_1_1_c_1_1mip__parser.html">mip_parser</a> *parser)</td></tr>
-<tr class="separator:gabc09301d0aceee0534c9ae74156eba85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafc8bcf4a906574f24bf83ff2a8c7e1b3" id="r_gafc8bcf4a906574f24bf83ff2a8c7e1b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__parser__c.html#gafc8bcf4a906574f24bf83ff2a8c7e1b3">mip::C::mip_parser_set_timeout</a> (<a class="el" href="structmip_1_1_c_1_1mip__parser.html">mip_parser</a> *parser, <a class="el" href="namespacemip_1_1_c.html#a55eec9e5e11dfac627dd92b10d8bec5d">timeout_type</a> timeout)</td></tr>
-<tr class="separator:gafc8bcf4a906574f24bf83ff2a8c7e1b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae4d87fe00549f44a43fc835eeae3d7b6" id="r_gae4d87fe00549f44a43fc835eeae3d7b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__parser__c.html#gae4d87fe00549f44a43fc835eeae3d7b6">mip::C::mip_parser_set_callback</a> (<a class="el" href="structmip_1_1_c_1_1mip__parser.html">mip_parser</a> *parser, <a class="el" href="group__mip__parser__c.html#gab0495b5f9154a90a3d9aa6df9a980753">mip_packet_callback</a> callback, void *callback_object)</td></tr>
+<tr class="memitem:ga2d3b5a3755b3d2b379f5471fab7e3657" id="r_ga2d3b5a3755b3d2b379f5471fab7e3657"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__parser__c.html#ga2d3b5a3755b3d2b379f5471fab7e3657">mip::C::mip_parser_process_written</a> (<a class="el" href="structmip_1_1_c_1_1mip__parser.html">mip_parser</a> *parser, size_t count, <a class="el" href="namespacemip_1_1_c.html#a7a0c2c95e0e72de587a1e92037fe24b9">mip_timestamp</a> timestamp, unsigned int max_packets)</td></tr>
+<tr class="separator:ga2d3b5a3755b3d2b379f5471fab7e3657"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6ec005011b45ab2e1d02ac6fb4ba38e8" id="r_ga6ec005011b45ab2e1d02ac6fb4ba38e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemip_1_1_c.html#ac478e9c2b3aea362d06961030e329219">mip_timeout</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__parser__c.html#ga6ec005011b45ab2e1d02ac6fb4ba38e8">mip::C::mip_parser_timeout</a> (const <a class="el" href="structmip_1_1_c_1_1mip__parser.html">mip_parser</a> *parser)</td></tr>
+<tr class="separator:ga6ec005011b45ab2e1d02ac6fb4ba38e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaca7d1f29de32505f98b72c321456b30b" id="r_gaca7d1f29de32505f98b72c321456b30b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__parser__c.html#gaca7d1f29de32505f98b72c321456b30b">mip::C::mip_parser_set_timeout</a> (<a class="el" href="structmip_1_1_c_1_1mip__parser.html">mip_parser</a> *parser, <a class="el" href="namespacemip_1_1_c.html#ac478e9c2b3aea362d06961030e329219">mip_timeout</a> timeout)</td></tr>
+<tr class="separator:gaca7d1f29de32505f98b72c321456b30b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae4d87fe00549f44a43fc835eeae3d7b6" id="r_gae4d87fe00549f44a43fc835eeae3d7b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__parser__c.html#gae4d87fe00549f44a43fc835eeae3d7b6">mip::C::mip_parser_set_callback</a> (<a class="el" href="structmip_1_1_c_1_1mip__parser.html">mip_parser</a> *parser, <a class="el" href="group__mip__parser__c.html#gae6be203702cde73d43cff933f457d574">mip_packet_callback</a> callback, void *callback_object)</td></tr>
 <tr class="separator:gae4d87fe00549f44a43fc835eeae3d7b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac4bbc9c954c86695869a5c17258e03fb" id="r_gac4bbc9c954c86695869a5c17258e03fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__mip__parser__c.html#gab0495b5f9154a90a3d9aa6df9a980753">mip_packet_callback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__parser__c.html#gac4bbc9c954c86695869a5c17258e03fb">mip::C::mip_parser_callback</a> (const <a class="el" href="structmip_1_1_c_1_1mip__parser.html">mip_parser</a> *parser)</td></tr>
+<tr class="memitem:gac4bbc9c954c86695869a5c17258e03fb" id="r_gac4bbc9c954c86695869a5c17258e03fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__mip__parser__c.html#gae6be203702cde73d43cff933f457d574">mip_packet_callback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__parser__c.html#gac4bbc9c954c86695869a5c17258e03fb">mip::C::mip_parser_callback</a> (const <a class="el" href="structmip_1_1_c_1_1mip__parser.html">mip_parser</a> *parser)</td></tr>
 <tr class="separator:gac4bbc9c954c86695869a5c17258e03fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaceb97f49e14df07d85ce08ff17232d32" id="r_gaceb97f49e14df07d85ce08ff17232d32"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__parser__c.html#gaceb97f49e14df07d85ce08ff17232d32">mip::C::mip_parser_callback_object</a> (const <a class="el" href="structmip_1_1_c_1_1mip__parser.html">mip_parser</a> *parser)</td></tr>
 <tr class="separator:gaceb97f49e14df07d85ce08ff17232d32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga235aaac33f4ba7e58b7187f7009cc3b3" id="r_ga235aaac33f4ba7e58b7187f7009cc3b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemip_1_1_c.html#ad30c32b29ea61ed004670241c967cf2c">timestamp_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__parser__c.html#ga235aaac33f4ba7e58b7187f7009cc3b3">mip::C::mip_parser_last_packet_timestamp</a> (const <a class="el" href="structmip_1_1_c_1_1mip__parser.html">mip_parser</a> *parser)</td></tr>
-<tr class="separator:ga235aaac33f4ba7e58b7187f7009cc3b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaae3458b79e40cd1395a6a34f76654dc8" id="r_gaae3458b79e40cd1395a6a34f76654dc8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemip_1_1_c.html#a55eec9e5e11dfac627dd92b10d8bec5d">timeout_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__parser__c.html#gaae3458b79e40cd1395a6a34f76654dc8">mip::C::mip_timeout_from_baudrate</a> (uint32_t baudrate)</td></tr>
-<tr class="separator:gaae3458b79e40cd1395a6a34f76654dc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab846b0b808bbc5b6e24381d13fbda256" id="r_gab846b0b808bbc5b6e24381d13fbda256"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemip_1_1_c.html#a7a0c2c95e0e72de587a1e92037fe24b9">mip_timestamp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__parser__c.html#gab846b0b808bbc5b6e24381d13fbda256">mip::C::mip_parser_last_packet_timestamp</a> (const <a class="el" href="structmip_1_1_c_1_1mip__parser.html">mip_parser</a> *parser)</td></tr>
+<tr class="separator:gab846b0b808bbc5b6e24381d13fbda256"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga519bccb69b9fff2cb3bc8bed2cbcc1f3" id="r_ga519bccb69b9fff2cb3bc8bed2cbcc1f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemip_1_1_c.html#ac478e9c2b3aea362d06961030e329219">mip_timeout</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__parser__c.html#ga519bccb69b9fff2cb3bc8bed2cbcc1f3">mip::C::mip_timeout_from_baudrate</a> (uint32_t baudrate)</td></tr>
+<tr class="separator:ga519bccb69b9fff2cb3bc8bed2cbcc1f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Functions for parsing MIP packets. </p>
@@ -141,9 +141,9 @@ Functions</h2></td></tr>
 <p>Typical usage: </p><ul>
 <li>Declare a <a class="el" href="structmip_1_1_c_1_1mip__parser.html" title="MIP Parser state.">mip_parser</a> struct </li>
 <li>Declare a uint8_t buffer of some size which is at least 512 and a power of 2. </li>
-<li>Determine the packet timeout, e.g. with <a class="el" href="group__mip__parser__c.html#gaae3458b79e40cd1395a6a34f76654dc8">mip_timeout_from_baudrate()</a>. </li>
-<li>Call <a class="el" href="group__mip__parser__c.html#ga44efa16dbb57bb7f327eef499222499a">mip_parser_init()</a>, passing the struct, buffer, buffer size, timeout, and callback function. </li>
-<li>Periodically call <a class="el" href="group__mip__parser__c.html#gad4e1b55702e348a1649dd2f1b472c021">mip_parser_parse()</a>. </li>
+<li>Determine the packet timeout, e.g. with <a class="el" href="group__mip__parser__c.html#ga519bccb69b9fff2cb3bc8bed2cbcc1f3">mip_timeout_from_baudrate()</a>. </li>
+<li>Call <a class="el" href="group__mip__parser__c.html#gac9af1af2bc9e6c2b814949c84d4f3713">mip_parser_init()</a>, passing the struct, buffer, buffer size, timeout, and callback function. </li>
+<li>Periodically call <a class="el" href="group__mip__parser__c.html#gaef053e67bd8b8e8398b863818a3fc270">mip_parser_parse()</a>. </li>
 </ul>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ga0a13a333109e93da5e9a94982be2e0ea" name="ga0a13a333109e93da5e9a94982be2e0ea"></a>
@@ -179,14 +179,14 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="gab0495b5f9154a90a3d9aa6df9a980753" name="gab0495b5f9154a90a3d9aa6df9a980753"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab0495b5f9154a90a3d9aa6df9a980753">&#9670;&#160;</a></span>mip_packet_callback</h2>
+<a id="gae6be203702cde73d43cff933f457d574" name="gae6be203702cde73d43cff933f457d574"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae6be203702cde73d43cff933f457d574">&#9670;&#160;</a></span>mip_packet_callback</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef bool(* mip::C::mip_packet_callback) (void *user, const <a class="el" href="structmip_1_1_c_1_1mip__packet.html">mip_packet</a> *packet, <a class="el" href="namespacemip_1_1_c.html#ad30c32b29ea61ed004670241c967cf2c">timestamp_type</a> timestamp)</td>
+          <td class="memname">typedef bool(* mip::C::mip_packet_callback) (void *user, const <a class="el" href="structmip_1_1_c_1_1mip__packet.html">mip_packet</a> *packet, <a class="el" href="namespacemip_1_1_c.html#a7a0c2c95e0e72de587a1e92037fe24b9">mip_timestamp</a> timestamp)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -195,7 +195,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">user</td><td>A user-specified pointer which will be given the callback_object parameter which was previously passed to mip_parser_init. </td></tr>
-    <tr><td class="paramname">Packet</td><td>A pointer to the MIP packet. Do not store this pointer as it will be invalidated after the callback returns. </td></tr>
+    <tr><td class="paramname">packet</td><td>A pointer to the MIP packet. Do not store this pointer as it will be invalidated after the callback returns. </td></tr>
     <tr><td class="paramname">timestamp</td><td>The approximate time the packet was parsed. </td></tr>
   </table>
   </dd>
@@ -228,7 +228,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__parser__c.html#gab0495b5f9154a90a3d9aa6df9a980753">mip_packet_callback</a> mip::C::mip_parser_callback </td>
+          <td class="memname"><a class="el" href="group__mip__parser__c.html#gae6be203702cde73d43cff933f457d574">mip_packet_callback</a> mip::C::mip_parser_callback </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structmip_1_1_c_1_1mip__parser.html">mip_parser</a> *&#160;</td>
           <td class="paramname"><em>parser</em></td><td>)</td>
@@ -285,8 +285,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga44efa16dbb57bb7f327eef499222499a" name="ga44efa16dbb57bb7f327eef499222499a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga44efa16dbb57bb7f327eef499222499a">&#9670;&#160;</a></span>mip_parser_init()</h2>
+<a id="gac9af1af2bc9e6c2b814949c84d4f3713" name="gac9af1af2bc9e6c2b814949c84d4f3713"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac9af1af2bc9e6c2b814949c84d4f3713">&#9670;&#160;</a></span>mip_parser_init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -312,7 +312,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__mip__parser__c.html#gab0495b5f9154a90a3d9aa6df9a980753">mip_packet_callback</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__mip__parser__c.html#gae6be203702cde73d43cff933f457d574">mip_packet_callback</a>&#160;</td>
           <td class="paramname"><em>callback</em>, </td>
         </tr>
         <tr>
@@ -324,7 +324,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacemip_1_1_c.html#ad30c32b29ea61ed004670241c967cf2c">timestamp_type</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemip_1_1_c.html#a7a0c2c95e0e72de587a1e92037fe24b9">mip_timestamp</a>&#160;</td>
           <td class="paramname"><em>timeout</em>&#160;</td>
         </tr>
         <tr>
@@ -337,14 +337,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga235aaac33f4ba7e58b7187f7009cc3b3" name="ga235aaac33f4ba7e58b7187f7009cc3b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga235aaac33f4ba7e58b7187f7009cc3b3">&#9670;&#160;</a></span>mip_parser_last_packet_timestamp()</h2>
+<a id="gab846b0b808bbc5b6e24381d13fbda256" name="gab846b0b808bbc5b6e24381d13fbda256"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab846b0b808bbc5b6e24381d13fbda256">&#9670;&#160;</a></span>mip_parser_last_packet_timestamp()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacemip_1_1_c.html#ad30c32b29ea61ed004670241c967cf2c">timestamp_type</a> mip::C::mip_parser_last_packet_timestamp </td>
+          <td class="memname"><a class="el" href="namespacemip_1_1_c.html#a7a0c2c95e0e72de587a1e92037fe24b9">mip_timestamp</a> mip::C::mip_parser_last_packet_timestamp </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structmip_1_1_c_1_1mip__parser.html">mip_parser</a> *&#160;</td>
           <td class="paramname"><em>parser</em></td><td>)</td>
@@ -355,14 +355,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gad4e1b55702e348a1649dd2f1b472c021" name="gad4e1b55702e348a1649dd2f1b472c021"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad4e1b55702e348a1649dd2f1b472c021">&#9670;&#160;</a></span>mip_parser_parse()</h2>
+<a id="gaef053e67bd8b8e8398b863818a3fc270" name="gaef053e67bd8b8e8398b863818a3fc270"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaef053e67bd8b8e8398b863818a3fc270">&#9670;&#160;</a></span>mip_parser_parse()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacemip_1_1_c.html#a824d5367b775daf33493d7e7ab21d8c5">remaining_count</a> mip::C::mip_parser_parse </td>
+          <td class="memname">size_t mip::C::mip_parser_parse </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1_c_1_1mip__parser.html">mip_parser</a> *&#160;</td>
           <td class="paramname"><em>parser</em>, </td>
@@ -382,7 +382,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacemip_1_1_c.html#ad30c32b29ea61ed004670241c967cf2c">timestamp_type</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemip_1_1_c.html#a7a0c2c95e0e72de587a1e92037fe24b9">mip_timestamp</a>&#160;</td>
           <td class="paramname"><em>timestamp</em>, </td>
         </tr>
         <tr>
@@ -401,8 +401,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga8c7dfb7188af27a092b4e13478375c9e" name="ga8c7dfb7188af27a092b4e13478375c9e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8c7dfb7188af27a092b4e13478375c9e">&#9670;&#160;</a></span>mip_parser_parse_one_packet_from_ring()</h2>
+<a id="ga9845fce5f0856162b750b89b4d4a3140" name="ga9845fce5f0856162b750b89b4d4a3140"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9845fce5f0856162b750b89b4d4a3140">&#9670;&#160;</a></span>mip_parser_parse_one_packet_from_ring()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -422,7 +422,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacemip_1_1_c.html#ad30c32b29ea61ed004670241c967cf2c">timestamp_type</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemip_1_1_c.html#a7a0c2c95e0e72de587a1e92037fe24b9">mip_timestamp</a>&#160;</td>
           <td class="paramname"><em>timestamp</em>&#160;</td>
         </tr>
         <tr>
@@ -435,8 +435,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga788cd275f7ed47956240a1f12f59164c" name="ga788cd275f7ed47956240a1f12f59164c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga788cd275f7ed47956240a1f12f59164c">&#9670;&#160;</a></span>mip_parser_process_written()</h2>
+<a id="ga2d3b5a3755b3d2b379f5471fab7e3657" name="ga2d3b5a3755b3d2b379f5471fab7e3657"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2d3b5a3755b3d2b379f5471fab7e3657">&#9670;&#160;</a></span>mip_parser_process_written()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -456,7 +456,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacemip_1_1_c.html#ad30c32b29ea61ed004670241c967cf2c">timestamp_type</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemip_1_1_c.html#a7a0c2c95e0e72de587a1e92037fe24b9">mip_timestamp</a>&#160;</td>
           <td class="paramname"><em>timestamp</em>, </td>
         </tr>
         <tr>
@@ -508,7 +508,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__mip__parser__c.html#gab0495b5f9154a90a3d9aa6df9a980753">mip_packet_callback</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__mip__parser__c.html#gae6be203702cde73d43cff933f457d574">mip_packet_callback</a>&#160;</td>
           <td class="paramname"><em>callback</em>, </td>
         </tr>
         <tr>
@@ -527,8 +527,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gafc8bcf4a906574f24bf83ff2a8c7e1b3" name="gafc8bcf4a906574f24bf83ff2a8c7e1b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafc8bcf4a906574f24bf83ff2a8c7e1b3">&#9670;&#160;</a></span>mip_parser_set_timeout()</h2>
+<a id="gaca7d1f29de32505f98b72c321456b30b" name="gaca7d1f29de32505f98b72c321456b30b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaca7d1f29de32505f98b72c321456b30b">&#9670;&#160;</a></span>mip_parser_set_timeout()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -542,7 +542,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacemip_1_1_c.html#a55eec9e5e11dfac627dd92b10d8bec5d">timeout_type</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemip_1_1_c.html#ac478e9c2b3aea362d06961030e329219">mip_timeout</a>&#160;</td>
           <td class="paramname"><em>timeout</em>&#160;</td>
         </tr>
         <tr>
@@ -555,14 +555,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gabc09301d0aceee0534c9ae74156eba85" name="gabc09301d0aceee0534c9ae74156eba85"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabc09301d0aceee0534c9ae74156eba85">&#9670;&#160;</a></span>mip_parser_timeout()</h2>
+<a id="ga6ec005011b45ab2e1d02ac6fb4ba38e8" name="ga6ec005011b45ab2e1d02ac6fb4ba38e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6ec005011b45ab2e1d02ac6fb4ba38e8">&#9670;&#160;</a></span>mip_parser_timeout()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacemip_1_1_c.html#a55eec9e5e11dfac627dd92b10d8bec5d">timeout_type</a> mip::C::mip_parser_timeout </td>
+          <td class="memname"><a class="el" href="namespacemip_1_1_c.html#ac478e9c2b3aea362d06961030e329219">mip_timeout</a> mip::C::mip_parser_timeout </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structmip_1_1_c_1_1mip__parser.html">mip_parser</a> *&#160;</td>
           <td class="paramname"><em>parser</em></td><td>)</td>
@@ -573,14 +573,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gaae3458b79e40cd1395a6a34f76654dc8" name="gaae3458b79e40cd1395a6a34f76654dc8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaae3458b79e40cd1395a6a34f76654dc8">&#9670;&#160;</a></span>mip_timeout_from_baudrate()</h2>
+<a id="ga519bccb69b9fff2cb3bc8bed2cbcc1f3" name="ga519bccb69b9fff2cb3bc8bed2cbcc1f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga519bccb69b9fff2cb3bc8bed2cbcc1f3">&#9670;&#160;</a></span>mip_timeout_from_baudrate()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacemip_1_1_c.html#a55eec9e5e11dfac627dd92b10d8bec5d">timeout_type</a> mip::C::mip_timeout_from_baudrate </td>
+          <td class="memname"><a class="el" href="namespacemip_1_1_c.html#ac478e9c2b3aea362d06961030e329219">mip_timeout</a> mip::C::mip_timeout_from_baudrate </td>
           <td>(</td>
           <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>baudrate</em></td><td>)</td>

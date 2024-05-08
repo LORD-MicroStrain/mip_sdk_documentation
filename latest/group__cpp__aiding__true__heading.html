@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-178-g68203e1</span>
+   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-283-g2c4cb6b</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -88,8 +88,8 @@ Functions</h2></td></tr>
 <tr class="separator:gaaada0fa8c7a1679ee4e43fbaa27ed3d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0c26c64a70d30b40ebd56c1181e603ef" id="r_ga0c26c64a70d30b40ebd56c1181e603ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__aiding__true__heading.html#ga0c26c64a70d30b40ebd56c1181e603ef">mip::commands_aiding::extract</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, <a class="el" href="structmip_1_1commands__aiding_1_1_true_heading.html">TrueHeading</a> &amp;self)</td></tr>
 <tr class="separator:ga0c26c64a70d30b40ebd56c1181e603ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4458beff0b523ccca21d35b2a4f33b11" id="r_ga4458beff0b523ccca21d35b2a4f33b11"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__aiding__true__heading.html#ga4458beff0b523ccca21d35b2a4f33b11">mip::commands_aiding::trueHeading</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, const <a class="el" href="structmip_1_1commands__aiding_1_1_time.html">Time</a> &amp;time, uint8_t sensorId, float heading, float uncertainty, uint16_t validFlags)</td></tr>
-<tr class="separator:ga4458beff0b523ccca21d35b2a4f33b11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga54a41563a63e72ecc92a5a2f78198cf4" id="r_ga54a41563a63e72ecc92a5a2f78198cf4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_typed_result.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__aiding_1_1_true_heading.html">TrueHeading</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__aiding__true__heading.html#ga54a41563a63e72ecc92a5a2f78198cf4">mip::commands_aiding::trueHeading</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, const <a class="el" href="structmip_1_1commands__aiding_1_1_time.html">Time</a> &amp;time, uint8_t frameId, float heading, float uncertainty, uint16_t validFlags)</td></tr>
+<tr class="separator:ga54a41563a63e72ecc92a5a2f78198cf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Function Documentation</h2>
@@ -149,14 +149,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga4458beff0b523ccca21d35b2a4f33b11" name="ga4458beff0b523ccca21d35b2a4f33b11"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4458beff0b523ccca21d35b2a4f33b11">&#9670;&#160;</a></span>trueHeading()</h2>
+<a id="ga54a41563a63e72ecc92a5a2f78198cf4" name="ga54a41563a63e72ecc92a5a2f78198cf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga54a41563a63e72ecc92a5a2f78198cf4">&#9670;&#160;</a></span>trueHeading()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a> mip::commands_aiding::trueHeading </td>
+          <td class="memname"><a class="el" href="structmip_1_1_typed_result.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__aiding_1_1_true_heading.html">TrueHeading</a> &gt; mip::commands_aiding::trueHeading </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
@@ -171,7 +171,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>sensorId</em>, </td>
+          <td class="paramname"><em>frameId</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>

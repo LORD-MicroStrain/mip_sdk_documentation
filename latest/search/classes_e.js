@@ -17,7 +17,8 @@ var searchData=
   ['posllh_14',['PosLlh',['../structmip_1_1data__gnss_1_1_pos_llh.html',1,'mip::data_gnss']]],
   ['ppssource_15',['PpsSource',['../structmip_1_1commands__3dm_1_1_pps_source.html',1,'mip::commands_3dm']]],
   ['ppstimestamp_16',['PpsTimestamp',['../structmip_1_1data__sensor_1_1_pps_timestamp.html',1,'mip::data_sensor']]],
-  ['pressurealtitude_17',['PressureAltitude',['../structmip_1_1data__filter_1_1_pressure_altitude.html',1,'mip::data_filter']]],
-  ['pressurealtitudenoise_18',['PressureAltitudeNoise',['../structmip_1_1commands__filter_1_1_pressure_altitude_noise.html',1,'mip::commands_filter']]],
-  ['proderasestorage_19',['ProdEraseStorage',['../structmip_1_1commands__rtk_1_1_prod_erase_storage.html',1,'mip::commands_rtk']]]
+  ['pressure_17',['Pressure',['../structmip_1_1commands__aiding_1_1_pressure.html',1,'mip::commands_aiding']]],
+  ['pressurealtitude_18',['PressureAltitude',['../structmip_1_1data__filter_1_1_pressure_altitude.html',1,'mip::data_filter']]],
+  ['pressurealtitudenoise_19',['PressureAltitudeNoise',['../structmip_1_1commands__filter_1_1_pressure_altitude_noise.html',1,'mip::commands_filter']]],
+  ['proderasestorage_20',['ProdEraseStorage',['../structmip_1_1commands__rtk_1_1_prod_erase_storage.html',1,'mip::commands_rtk']]]
 ];

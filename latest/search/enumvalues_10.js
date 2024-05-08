@@ -5,7 +5,7 @@ var searchData=
   ['quarter_5fcycle_5fbit1_2',['QUARTER_CYCLE_BIT1',['../structmip_1_1data__gnss_1_1_base_station_info_1_1_indicator_flags.html#a0cb42756376b4898f423979191ab2944a7c223341cd1668c520265e76a52fb56b',1,'mip::data_gnss::BaseStationInfo::IndicatorFlags']]],
   ['quarter_5fcycle_5fbit2_3',['QUARTER_CYCLE_BIT2',['../structmip_1_1data__gnss_1_1_base_station_info_1_1_indicator_flags.html#a0cb42756376b4898f423979191ab2944a8cbde1bf60b6f0a12ba4b5300eca8a85',1,'mip::data_gnss::BaseStationInfo::IndicatorFlags']]],
   ['quarter_5fcycle_5fbits_4',['QUARTER_CYCLE_BITS',['../structmip_1_1data__gnss_1_1_base_station_info_1_1_indicator_flags.html#a0cb42756376b4898f423979191ab2944a61dcbcc68cca54979a98f1d7854fe1b8',1,'mip::data_gnss::BaseStationInfo::IndicatorFlags']]],
-  ['quaternion_5',['QUATERNION',['../structmip_1_1commands__aiding_1_1_reference_frame.html#af01d4b326323eb8f97dca0c6003b0c34a44d211265e86d6d510e6e3d94557e821',1,'mip::commands_aiding::ReferenceFrame']]],
+  ['quaternion_5',['QUATERNION',['../structmip_1_1commands__aiding_1_1_frame_config.html#a72a49d432c88ff2602da2cec723df5a3a44d211265e86d6d510e6e3d94557e821',1,'mip::commands_aiding::FrameConfig']]],
   ['qzss_6',['QZSS',['../structmip_1_1commands__3dm_1_1_constellation_settings.html#a798cf75e0ebb907ec7483033fc91254ca10b5ac7cdca8f06ca82238f8f3b2d119',1,'mip::commands_3dm::ConstellationSettings']]],
   ['qzss_5fl1ca_7',['QZSS_L1CA',['../group__gnss__data__cpp.html#gga8010f58bde30a45d0a29b8cdc587caa2a1e76723677fc6c9cb70b514ea4cd2b1b',1,'mip::data_gnss']]],
   ['qzss_5fl1cd_8',['QZSS_L1CD',['../group__gnss__data__cpp.html#gga8010f58bde30a45d0a29b8cdc587caa2a46d70546e2742573055521566029eaf5',1,'mip::data_gnss']]],

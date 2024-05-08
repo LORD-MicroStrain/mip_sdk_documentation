@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-178-g68203e1</span>
+   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-283-g2c4cb6b</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -101,7 +101,7 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a61dab34eb71c9975bd6abaeae7a56bf5" id="r_a61dab34eb71c9975bd6abaeae7a56bf5"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_glo_ephemeris.html#a61dab34eb71c9975bd6abaeae7a56bf5">index</a> = 0</td></tr>
-<tr class="memdesc:a61dab34eb71c9975bd6abaeae7a56bf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of this field in this epoch.  <br /></td></tr>
+<tr class="memdesc:a61dab34eb71c9975bd6abaeae7a56bf5"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classmip_1_1_index.html" title="Represents an index ranging from 0..N excluding N.">Index</a> of this field in this epoch.  <br /></td></tr>
 <tr class="separator:a61dab34eb71c9975bd6abaeae7a56bf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a732c0bf8d35ade81f0b27e3dd80c8cac" id="r_a732c0bf8d35ade81f0b27e3dd80c8cac"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_glo_ephemeris.html#a732c0bf8d35ade81f0b27e3dd80c8cac">count</a> = 0</td></tr>
 <tr class="memdesc:a732c0bf8d35ade81f0b27e3dd80c8cac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total number of fields in this epoch.  <br /></td></tr>
@@ -177,10 +177,16 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a5ca92d50d32ce4245e5699d85701c590" id="r_a5ca92d50d32ce4245e5699d85701c590"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_glo_ephemeris.html#a5ca92d50d32ce4245e5699d85701c590">DESCRIPTOR_SET</a> = ::mip::data_gnss::DESCRIPTOR_SET</td></tr>
-<tr class="separator:a5ca92d50d32ce4245e5699d85701c590"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9dbfbfce05554637db658ebe3432958" id="r_aa9dbfbfce05554637db658ebe3432958"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_glo_ephemeris.html#aa9dbfbfce05554637db658ebe3432958">FIELD_DESCRIPTOR</a> = <a class="el" href="group__gnss__data__cpp.html#gga457293dfd2db81ba67d9e732113e917ea276c6244aec60a17457469f9951a9984">::mip::data_gnss::DATA_GLONASS_EPHEMERIS</a></td></tr>
-<tr class="separator:aa9dbfbfce05554637db658ebe3432958"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f0cc3f3040cc79913cb9469b4103c29" id="r_a6f0cc3f3040cc79913cb9469b4103c29"><td class="memItemLeft" align="right" valign="top">static constexpr const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_glo_ephemeris.html#a6f0cc3f3040cc79913cb9469b4103c29">DESCRIPTOR_SET</a> = ::mip::data_gnss::DESCRIPTOR_SET</td></tr>
+<tr class="separator:a6f0cc3f3040cc79913cb9469b4103c29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9f800a99515f9da008ff708300bb845" id="r_af9f800a99515f9da008ff708300bb845"><td class="memItemLeft" align="right" valign="top">static constexpr const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_glo_ephemeris.html#af9f800a99515f9da008ff708300bb845">FIELD_DESCRIPTOR</a> = <a class="el" href="group__gnss__data__cpp.html#gga457293dfd2db81ba67d9e732113e917ea276c6244aec60a17457469f9951a9984">::mip::data_gnss::DATA_GLONASS_EPHEMERIS</a></td></tr>
+<tr class="separator:af9f800a99515f9da008ff708300bb845"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bcc6cd4e83caeee5645829c3dd1b1bf" id="r_a3bcc6cd4e83caeee5645829c3dd1b1bf"><td class="memItemLeft" align="right" valign="top">static constexpr const <a class="el" href="structmip_1_1_composite_descriptor.html">CompositeDescriptor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_glo_ephemeris.html#a3bcc6cd4e83caeee5645829c3dd1b1bf">DESCRIPTOR</a> = {<a class="el" href="structmip_1_1data__gnss_1_1_glo_ephemeris.html#a6f0cc3f3040cc79913cb9469b4103c29">DESCRIPTOR_SET</a>, <a class="el" href="structmip_1_1data__gnss_1_1_glo_ephemeris.html#af9f800a99515f9da008ff708300bb845">FIELD_DESCRIPTOR</a>}</td></tr>
+<tr class="separator:a3bcc6cd4e83caeee5645829c3dd1b1bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99e403509e51b8eced74437ec4f59de2" id="r_a99e403509e51b8eced74437ec4f59de2"><td class="memItemLeft" align="right" valign="top">static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_glo_ephemeris.html#a99e403509e51b8eced74437ec4f59de2">NAME</a> = &quot;GloEphemeris&quot;</td></tr>
+<tr class="separator:a99e403509e51b8eced74437ec4f59de2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ff4ec304d713683bbac9f1da0f082d2" id="r_a9ff4ec304d713683bbac9f1da0f082d2"><td class="memItemLeft" align="right" valign="top">static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1_glo_ephemeris.html#a9ff4ec304d713683bbac9f1da0f082d2">DOC_NAME</a> = &quot;Glonass Ephemeris&quot;</td></tr>
+<tr class="separator:a9ff4ec304d713683bbac9f1da0f082d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a6e47d23e0d9d2cde171faceb2fee4184" name="a6e47d23e0d9d2cde171faceb2fee4184"></a>
@@ -282,8 +288,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a5ca92d50d32ce4245e5699d85701c590" name="a5ca92d50d32ce4245e5699d85701c590"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ca92d50d32ce4245e5699d85701c590">&#9670;&#160;</a></span>DESCRIPTOR_SET</h2>
+<a id="a3bcc6cd4e83caeee5645829c3dd1b1bf" name="a3bcc6cd4e83caeee5645829c3dd1b1bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bcc6cd4e83caeee5645829c3dd1b1bf">&#9670;&#160;</a></span>DESCRIPTOR</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -292,12 +298,56 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const uint8_t mip::data_gnss::GloEphemeris::DESCRIPTOR_SET = ::mip::data_gnss::DESCRIPTOR_SET</td>
+          <td class="memname">constexpr const <a class="el" href="structmip_1_1_composite_descriptor.html">CompositeDescriptor</a> mip::data_gnss::GloEphemeris::DESCRIPTOR = {<a class="el" href="structmip_1_1data__gnss_1_1_glo_ephemeris.html#a6f0cc3f3040cc79913cb9469b4103c29">DESCRIPTOR_SET</a>, <a class="el" href="structmip_1_1data__gnss_1_1_glo_ephemeris.html#af9f800a99515f9da008ff708300bb845">FIELD_DESCRIPTOR</a>}</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6f0cc3f3040cc79913cb9469b4103c29" name="a6f0cc3f3040cc79913cb9469b4103c29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f0cc3f3040cc79913cb9469b4103c29">&#9670;&#160;</a></span>DESCRIPTOR_SET</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr const uint8_t mip::data_gnss::GloEphemeris::DESCRIPTOR_SET = ::mip::data_gnss::DESCRIPTOR_SET</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9ff4ec304d713683bbac9f1da0f082d2" name="a9ff4ec304d713683bbac9f1da0f082d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ff4ec304d713683bbac9f1da0f082d2">&#9670;&#160;</a></span>DOC_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr const char* mip::data_gnss::GloEphemeris::DOC_NAME = &quot;Glonass Ephemeris&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -320,8 +370,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aa9dbfbfce05554637db658ebe3432958" name="aa9dbfbfce05554637db658ebe3432958"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa9dbfbfce05554637db658ebe3432958">&#9670;&#160;</a></span>FIELD_DESCRIPTOR</h2>
+<a id="af9f800a99515f9da008ff708300bb845" name="af9f800a99515f9da008ff708300bb845"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9f800a99515f9da008ff708300bb845">&#9670;&#160;</a></span>FIELD_DESCRIPTOR</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -330,12 +380,12 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const uint8_t mip::data_gnss::GloEphemeris::FIELD_DESCRIPTOR = <a class="el" href="group__gnss__data__cpp.html#gga457293dfd2db81ba67d9e732113e917ea276c6244aec60a17457469f9951a9984">::mip::data_gnss::DATA_GLONASS_EPHEMERIS</a></td>
+          <td class="memname">constexpr const uint8_t mip::data_gnss::GloEphemeris::FIELD_DESCRIPTOR = <a class="el" href="group__gnss__data__cpp.html#gga457293dfd2db81ba67d9e732113e917ea276c6244aec60a17457469f9951a9984">::mip::data_gnss::DATA_GLONASS_EPHEMERIS</a></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -418,7 +468,29 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Index of this field in this epoch. </p>
+<p><a class="el" href="classmip_1_1_index.html" title="Represents an index ranging from 0..N excluding N.">Index</a> of this field in this epoch. </p>
+
+</div>
+</div>
+<a id="a99e403509e51b8eced74437ec4f59de2" name="a99e403509e51b8eced74437ec4f59de2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99e403509e51b8eced74437ec4f59de2">&#9670;&#160;</a></span>NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr const char* mip::data_gnss::GloEphemeris::NAME = &quot;GloEphemeris&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

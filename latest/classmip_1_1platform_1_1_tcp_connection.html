@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-178-g68203e1</span>
+   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-283-g2c4cb6b</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -106,7 +106,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aefbe225861a5bc71f4199a031451d45c" id="r_aefbe225861a5bc71f4199a031451d45c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1platform_1_1_tcp_connection.html#aefbe225861a5bc71f4199a031451d45c">~TcpConnection</a> ()</td></tr>
 <tr class="memdesc:aefbe225861a5bc71f4199a031451d45c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes the underlying TCP socket.  <br /></td></tr>
 <tr class="separator:aefbe225861a5bc71f4199a031451d45c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58084181a8db98e8e77b2f221ce3ed10" id="r_a58084181a8db98e8e77b2f221ce3ed10"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1platform_1_1_tcp_connection.html#a58084181a8db98e8e77b2f221ce3ed10">recvFromDevice</a> (uint8_t *buffer, size_t max_length, <a class="el" href="namespacemip.html#a6b00d9d7a48550fcad5056184ad1fbae">Timeout</a> wait_time, size_t *length_out, <a class="el" href="namespacemip.html#a4d99303b1d7588a4e9d020e6210ded41">mip::Timestamp</a> *timestamp) final</td></tr>
+<tr class="memitem:a58084181a8db98e8e77b2f221ce3ed10" id="r_a58084181a8db98e8e77b2f221ce3ed10"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1platform_1_1_tcp_connection.html#a58084181a8db98e8e77b2f221ce3ed10">recvFromDevice</a> (uint8_t *buffer, size_t max_length, <a class="el" href="namespacemip.html#adf3e3dd725a2c4f8abde99c473000878">Timeout</a> wait_time, size_t *length_out, <a class="el" href="namespacemip.html#ac74386034393307fd0de0b553ed4fb37">mip::Timestamp</a> *timestamp) final</td></tr>
 <tr class="memdesc:a58084181a8db98e8e77b2f221ce3ed10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends bytes to the device.    <br /></td></tr>
 <tr class="separator:a58084181a8db98e8e77b2f221ce3ed10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbc6c6392def5cb39207307e74eeff67" id="r_adbc6c6392def5cb39207307e74eeff67"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1platform_1_1_tcp_connection.html#adbc6c6392def5cb39207307e74eeff67">sendToDevice</a> (const uint8_t *data, size_t length) final</td></tr>
@@ -123,6 +123,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2b181de094c802b0449c2724169bffe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2067fd622f60971830741a0d53125f8" id="r_ad2067fd622f60971830741a0d53125f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1platform_1_1_tcp_connection.html#ad2067fd622f60971830741a0d53125f8">connectionInfo</a> (std::string &amp;host_name, uint32_t &amp;port) const</td></tr>
 <tr class="separator:ad2067fd622f60971830741a0d53125f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade01f13c2343e0fb3bf1aab5576dec0d" id="r_ade01f13c2343e0fb3bf1aab5576dec0d"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1platform_1_1_tcp_connection.html#ade01f13c2343e0fb3bf1aab5576dec0d">interfaceName</a> () const override</td></tr>
+<tr class="separator:ade01f13c2343e0fb3bf1aab5576dec0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac436b9fe1a9ae68073fa05e0d5993d83" id="r_ac436b9fe1a9ae68073fa05e0d5993d83"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1platform_1_1_tcp_connection.html#ac436b9fe1a9ae68073fa05e0d5993d83">parameter</a> () const override</td></tr>
+<tr class="separator:ac436b9fe1a9ae68073fa05e0d5993d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classmip_1_1_connection"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classmip_1_1_connection')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classmip_1_1_connection.html">mip::Connection</a></td></tr>
 <tr class="memitem:a2e5ec6bdd1e55003c254e18294729017 inherit pub_methods_classmip_1_1_connection" id="r_a2e5ec6bdd1e55003c254e18294729017"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_connection.html#a2e5ec6bdd1e55003c254e18294729017">Connection</a> ()</td></tr>
 <tr class="separator:a2e5ec6bdd1e55003c254e18294729017 inherit pub_methods_classmip_1_1_connection"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -327,6 +331,33 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="ade01f13c2343e0fb3bf1aab5576dec0d" name="ade01f13c2343e0fb3bf1aab5576dec0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade01f13c2343e0fb3bf1aab5576dec0d">&#9670;&#160;</a></span>interfaceName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * mip::platform::TcpConnection::interfaceName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classmip_1_1_connection.html#a6f600029dec2b8ca97595eea188fc1b0">mip::Connection</a>.</p>
+
+</div>
+</div>
 <a id="abd3a2352c41e20b56d8b31ab4e983c33" name="abd3a2352c41e20b56d8b31ab4e983c33"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abd3a2352c41e20b56d8b31ab4e983c33">&#9670;&#160;</a></span>isConnected()</h2>
 
@@ -356,6 +387,33 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="ac436b9fe1a9ae68073fa05e0d5993d83" name="ac436b9fe1a9ae68073fa05e0d5993d83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac436b9fe1a9ae68073fa05e0d5993d83">&#9670;&#160;</a></span>parameter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t mip::platform::TcpConnection::parameter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classmip_1_1_connection.html#a0891258a7786dd9384d0557d693de829">mip::Connection</a>.</p>
+
+</div>
+</div>
 <a id="a58084181a8db98e8e77b2f221ce3ed10" name="a58084181a8db98e8e77b2f221ce3ed10"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a58084181a8db98e8e77b2f221ce3ed10">&#9670;&#160;</a></span>recvFromDevice()</h2>
 
@@ -380,7 +438,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacemip.html#a6b00d9d7a48550fcad5056184ad1fbae">Timeout</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemip.html#adf3e3dd725a2c4f8abde99c473000878">Timeout</a>&#160;</td>
           <td class="paramname"><em>wait_time</em>, </td>
         </tr>
         <tr>
@@ -392,7 +450,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacemip.html#a4d99303b1d7588a4e9d020e6210ded41">mip::Timestamp</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemip.html#ac74386034393307fd0de0b553ed4fb37">mip::Timestamp</a> *&#160;</td>
           <td class="paramname"><em>timestamp</em>&#160;</td>
         </tr>
         <tr>

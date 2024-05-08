@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-178-g68203e1</span>
+   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-283-g2c4cb6b</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -88,20 +88,20 @@ Functions</h2></td></tr>
 <tr class="separator:ga905b4db08802426e78506879743483dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga41dcb235fa4fb2719a41bba925ae7459" id="r_ga41dcb235fa4fb2719a41bba925ae7459"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__aiding__ecef__vel.html#ga41dcb235fa4fb2719a41bba925ae7459">mip::commands_aiding::extract</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, <a class="el" href="structmip_1_1commands__aiding_1_1_ecef_vel.html">EcefVel</a> &amp;self)</td></tr>
 <tr class="separator:ga41dcb235fa4fb2719a41bba925ae7459"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga10d8045c905bf08bf94c42b50ff10d4a" id="r_ga10d8045c905bf08bf94c42b50ff10d4a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__aiding__ecef__vel.html#ga10d8045c905bf08bf94c42b50ff10d4a">mip::commands_aiding::ecefVel</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, const <a class="el" href="structmip_1_1commands__aiding_1_1_time.html">Time</a> &amp;time, uint8_t sensorId, const float *velocity, const float *uncertainty, <a class="el" href="structmip_1_1commands__aiding_1_1_ecef_vel_1_1_valid_flags.html">EcefVel::ValidFlags</a> validFlags)</td></tr>
-<tr class="separator:ga10d8045c905bf08bf94c42b50ff10d4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7cb5afc1711d04376a4163b8160fa781" id="r_ga7cb5afc1711d04376a4163b8160fa781"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_typed_result.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__aiding_1_1_ecef_vel.html">EcefVel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__aiding__ecef__vel.html#ga7cb5afc1711d04376a4163b8160fa781">mip::commands_aiding::ecefVel</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, const <a class="el" href="structmip_1_1commands__aiding_1_1_time.html">Time</a> &amp;time, uint8_t frameId, const float *velocity, const float *uncertainty, <a class="el" href="structmip_1_1commands__aiding_1_1_ecef_vel_1_1_valid_flags.html">EcefVel::ValidFlags</a> validFlags)</td></tr>
+<tr class="separator:ga7cb5afc1711d04376a4163b8160fa781"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>ECEF velocity aiding command. Coordinates are given in the WGS84 ECEF frame. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga10d8045c905bf08bf94c42b50ff10d4a" name="ga10d8045c905bf08bf94c42b50ff10d4a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga10d8045c905bf08bf94c42b50ff10d4a">&#9670;&#160;</a></span>ecefVel()</h2>
+<a id="ga7cb5afc1711d04376a4163b8160fa781" name="ga7cb5afc1711d04376a4163b8160fa781"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7cb5afc1711d04376a4163b8160fa781">&#9670;&#160;</a></span>ecefVel()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a> mip::commands_aiding::ecefVel </td>
+          <td class="memname"><a class="el" href="structmip_1_1_typed_result.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__aiding_1_1_ecef_vel.html">EcefVel</a> &gt; mip::commands_aiding::ecefVel </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
@@ -116,7 +116,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>sensorId</em>, </td>
+          <td class="paramname"><em>frameId</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>

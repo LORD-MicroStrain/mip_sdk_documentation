@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-178-g68203e1</span>
+   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-283-g2c4cb6b</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -126,20 +126,17 @@ Enumerations</h2></td></tr>
 , <br />
 &#160;&#160;<a class="el" href="group__base__commands__cpp.html#gga3873ee3c6a97bdcd9ac79175f17bc136a48906664b4a08eab7be3c3771621b845">mip::commands_base::CMD_CONTINUOUS_BIT</a> = 0x08
 , <a class="el" href="group__base__commands__cpp.html#gga3873ee3c6a97bdcd9ac79175f17bc136a45abe7c86da3655eeb5558b04d799797">mip::commands_base::CMD_COMM_SPEED</a> = 0x09
-, <a class="el" href="group__base__commands__cpp.html#gga3873ee3c6a97bdcd9ac79175f17bc136ac8228262442c55c4517ca30fb93d9a47">mip::commands_base::CMD_GPS_TIME_BROADCAST</a> = 0x71
-, <a class="el" href="group__base__commands__cpp.html#gga3873ee3c6a97bdcd9ac79175f17bc136ab114ef5bd95d805774f7a3eee6d1fb72">mip::commands_base::CMD_GPS_TIME_BROADCAST_NEW</a> = 0x72
-, <br />
-&#160;&#160;<a class="el" href="group__base__commands__cpp.html#gga3873ee3c6a97bdcd9ac79175f17bc136ab9baa19a9fbd2e91a62afc00ef72d294">mip::commands_base::CMD_SYSTEM_TIME</a> = 0x73
+, <a class="el" href="group__base__commands__cpp.html#gga3873ee3c6a97bdcd9ac79175f17bc136af800e147af4921f520670f206fa42ef3">mip::commands_base::CMD_GPS_TIME_UPDATE</a> = 0x72
 , <a class="el" href="group__base__commands__cpp.html#gga3873ee3c6a97bdcd9ac79175f17bc136a1e6c7d043529f7c2d82f04c48c9266f4">mip::commands_base::CMD_SOFT_RESET</a> = 0x7E
-, <a class="el" href="group__base__commands__cpp.html#gga3873ee3c6a97bdcd9ac79175f17bc136aa8f16ecaf14a847db3d24e4bcc56e75c">mip::commands_base::REPLY_DEVICE_INFO</a> = 0x81
+, <br />
+&#160;&#160;<a class="el" href="group__base__commands__cpp.html#gga3873ee3c6a97bdcd9ac79175f17bc136aa8f16ecaf14a847db3d24e4bcc56e75c">mip::commands_base::REPLY_DEVICE_INFO</a> = 0x81
 , <a class="el" href="group__base__commands__cpp.html#gga3873ee3c6a97bdcd9ac79175f17bc136ab1af69a4d6817896a5968ed4d3e7f0a9">mip::commands_base::REPLY_DEVICE_DESCRIPTORS</a> = 0x82
-, <br />
-&#160;&#160;<a class="el" href="group__base__commands__cpp.html#gga3873ee3c6a97bdcd9ac79175f17bc136acb6ce1eb9ccf2baba1a5d87703ca7f79">mip::commands_base::REPLY_BUILT_IN_TEST</a> = 0x83
+, <a class="el" href="group__base__commands__cpp.html#gga3873ee3c6a97bdcd9ac79175f17bc136acb6ce1eb9ccf2baba1a5d87703ca7f79">mip::commands_base::REPLY_BUILT_IN_TEST</a> = 0x83
 , <a class="el" href="group__base__commands__cpp.html#gga3873ee3c6a97bdcd9ac79175f17bc136a62e6a0c366a1de6e191ab213bc363004">mip::commands_base::REPLY_GPS_CORRELATION_WEEK</a> = 0x84
-, <a class="el" href="group__base__commands__cpp.html#gga3873ee3c6a97bdcd9ac79175f17bc136a20c1f1e562e81e183b14c9a8ec62800d">mip::commands_base::REPLY_GPS_CORRELATION_SECONDS</a> = 0x85
-, <a class="el" href="group__base__commands__cpp.html#gga3873ee3c6a97bdcd9ac79175f17bc136a373b3068fd8839158bc08157ddacffd8">mip::commands_base::REPLY_GET_EXTENDED_DESCRIPTORS</a> = 0x86
 , <br />
-&#160;&#160;<a class="el" href="group__base__commands__cpp.html#gga3873ee3c6a97bdcd9ac79175f17bc136ad0b97613a39de92d4954ae8fc1f770ca">mip::commands_base::REPLY_CONTINUOUS_BIT</a> = 0x88
+&#160;&#160;<a class="el" href="group__base__commands__cpp.html#gga3873ee3c6a97bdcd9ac79175f17bc136a20c1f1e562e81e183b14c9a8ec62800d">mip::commands_base::REPLY_GPS_CORRELATION_SECONDS</a> = 0x85
+, <a class="el" href="group__base__commands__cpp.html#gga3873ee3c6a97bdcd9ac79175f17bc136a373b3068fd8839158bc08157ddacffd8">mip::commands_base::REPLY_GET_EXTENDED_DESCRIPTORS</a> = 0x86
+, <a class="el" href="group__base__commands__cpp.html#gga3873ee3c6a97bdcd9ac79175f17bc136ad0b97613a39de92d4954ae8fc1f770ca">mip::commands_base::REPLY_CONTINUOUS_BIT</a> = 0x88
 , <a class="el" href="group__base__commands__cpp.html#gga3873ee3c6a97bdcd9ac79175f17bc136a98c4aafc5a02f7c899fabca39fe67f33">mip::commands_base::REPLY_COMM_SPEED</a> = 0x89
 <br />
  }</td></tr>
@@ -179,9 +176,7 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="gga3873ee3c6a97bdcd9ac79175f17bc136a4bdf194aa99c7ba569362f6da8f83293" name="gga3873ee3c6a97bdcd9ac79175f17bc136a4bdf194aa99c7ba569362f6da8f83293"></a>CMD_GET_EXTENDED_DESCRIPTORS&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="gga3873ee3c6a97bdcd9ac79175f17bc136a48906664b4a08eab7be3c3771621b845" name="gga3873ee3c6a97bdcd9ac79175f17bc136a48906664b4a08eab7be3c3771621b845"></a>CMD_CONTINUOUS_BIT&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="gga3873ee3c6a97bdcd9ac79175f17bc136a45abe7c86da3655eeb5558b04d799797" name="gga3873ee3c6a97bdcd9ac79175f17bc136a45abe7c86da3655eeb5558b04d799797"></a>CMD_COMM_SPEED&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga3873ee3c6a97bdcd9ac79175f17bc136ac8228262442c55c4517ca30fb93d9a47" name="gga3873ee3c6a97bdcd9ac79175f17bc136ac8228262442c55c4517ca30fb93d9a47"></a>CMD_GPS_TIME_BROADCAST&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga3873ee3c6a97bdcd9ac79175f17bc136ab114ef5bd95d805774f7a3eee6d1fb72" name="gga3873ee3c6a97bdcd9ac79175f17bc136ab114ef5bd95d805774f7a3eee6d1fb72"></a>CMD_GPS_TIME_BROADCAST_NEW&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga3873ee3c6a97bdcd9ac79175f17bc136ab9baa19a9fbd2e91a62afc00ef72d294" name="gga3873ee3c6a97bdcd9ac79175f17bc136ab9baa19a9fbd2e91a62afc00ef72d294"></a>CMD_SYSTEM_TIME&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga3873ee3c6a97bdcd9ac79175f17bc136af800e147af4921f520670f206fa42ef3" name="gga3873ee3c6a97bdcd9ac79175f17bc136af800e147af4921f520670f206fa42ef3"></a>CMD_GPS_TIME_UPDATE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="gga3873ee3c6a97bdcd9ac79175f17bc136a1e6c7d043529f7c2d82f04c48c9266f4" name="gga3873ee3c6a97bdcd9ac79175f17bc136a1e6c7d043529f7c2d82f04c48c9266f4"></a>CMD_SOFT_RESET&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="gga3873ee3c6a97bdcd9ac79175f17bc136aa8f16ecaf14a847db3d24e4bcc56e75c" name="gga3873ee3c6a97bdcd9ac79175f17bc136aa8f16ecaf14a847db3d24e4bcc56e75c"></a>REPLY_DEVICE_INFO&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="gga3873ee3c6a97bdcd9ac79175f17bc136ab1af69a4d6817896a5968ed4d3e7f0a9" name="gga3873ee3c6a97bdcd9ac79175f17bc136ab1af69a4d6817896a5968ed4d3e7f0a9"></a>REPLY_DEVICE_DESCRIPTORS&#160;</td><td class="fielddoc"></td></tr>

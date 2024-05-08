@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-178-g68203e1</span>
+   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-283-g2c4cb6b</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -100,8 +100,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga60b64e8b52e822c933c81e2097179b84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafaa485db30f44fb72f9d89999843f62f" id="r_gafaa485db30f44fb72f9d89999843f62f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__aiding__ecef__pos.html#gafaa485db30f44fb72f9d89999843f62f">mip::C::extract_mip_aiding_ecef_pos_command_valid_flags</a> (struct <a class="el" href="structmip_1_1_c_1_1mip__serializer.html">mip_serializer</a> *serializer, <a class="el" href="group__c__aiding__ecef__pos.html#ga3cffd363875097e39c5460f744507c9c">mip_aiding_ecef_pos_command_valid_flags</a> *self)</td></tr>
 <tr class="separator:gafaa485db30f44fb72f9d89999843f62f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacb99be2e724d26dbeff2bb7d1aa9928f" id="r_gacb99be2e724d26dbeff2bb7d1aa9928f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__aiding__ecef__pos.html#gacb99be2e724d26dbeff2bb7d1aa9928f">mip::C::mip_aiding_ecef_pos</a> (struct <a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *device, const <a class="el" href="structmip_1_1_c_1_1mip__time.html">mip_time</a> *time, uint8_t sensor_id, const double *position, const float *uncertainty, <a class="el" href="group__c__aiding__ecef__pos.html#ga3cffd363875097e39c5460f744507c9c">mip_aiding_ecef_pos_command_valid_flags</a> valid_flags)</td></tr>
-<tr class="separator:gacb99be2e724d26dbeff2bb7d1aa9928f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf20530bc6edfb0caea8a90280e20a88e" id="r_gaf20530bc6edfb0caea8a90280e20a88e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__aiding__ecef__pos.html#gaf20530bc6edfb0caea8a90280e20a88e">mip::C::mip_aiding_ecef_pos</a> (struct <a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *device, const <a class="el" href="structmip_1_1_c_1_1mip__time.html">mip_time</a> *time, uint8_t frame_id, const double *position, const float *uncertainty, <a class="el" href="group__c__aiding__ecef__pos.html#ga3cffd363875097e39c5460f744507c9c">mip_aiding_ecef_pos_command_valid_flags</a> valid_flags)</td></tr>
+<tr class="separator:gaf20530bc6edfb0caea8a90280e20a88e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Cartesian vector position aiding command. Coordinates are given in the WGS84 ECEF system. </p>
@@ -247,8 +247,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gacb99be2e724d26dbeff2bb7d1aa9928f" name="gacb99be2e724d26dbeff2bb7d1aa9928f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacb99be2e724d26dbeff2bb7d1aa9928f">&#9670;&#160;</a></span>mip_aiding_ecef_pos()</h2>
+<a id="gaf20530bc6edfb0caea8a90280e20a88e" name="gaf20530bc6edfb0caea8a90280e20a88e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf20530bc6edfb0caea8a90280e20a88e">&#9670;&#160;</a></span>mip_aiding_ecef_pos()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -269,7 +269,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>sensor_id</em>, </td>
+          <td class="paramname"><em>frame_id</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>

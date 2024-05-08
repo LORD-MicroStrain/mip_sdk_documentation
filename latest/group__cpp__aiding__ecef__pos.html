@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-178-g68203e1</span>
+   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-283-g2c4cb6b</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -88,20 +88,20 @@ Functions</h2></td></tr>
 <tr class="separator:ga69efd63b9ac2738b3c02cc0e7d776e73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3d34bd41507cf700e5200bdce2d37f94" id="r_ga3d34bd41507cf700e5200bdce2d37f94"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__aiding__ecef__pos.html#ga3d34bd41507cf700e5200bdce2d37f94">mip::commands_aiding::extract</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, <a class="el" href="structmip_1_1commands__aiding_1_1_ecef_pos.html">EcefPos</a> &amp;self)</td></tr>
 <tr class="separator:ga3d34bd41507cf700e5200bdce2d37f94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacf3bc39c6cabcbf051a81b5c229efdf6" id="r_gacf3bc39c6cabcbf051a81b5c229efdf6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__aiding__ecef__pos.html#gacf3bc39c6cabcbf051a81b5c229efdf6">mip::commands_aiding::ecefPos</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, const <a class="el" href="structmip_1_1commands__aiding_1_1_time.html">Time</a> &amp;time, uint8_t sensorId, const double *position, const float *uncertainty, <a class="el" href="structmip_1_1commands__aiding_1_1_ecef_pos_1_1_valid_flags.html">EcefPos::ValidFlags</a> validFlags)</td></tr>
-<tr class="separator:gacf3bc39c6cabcbf051a81b5c229efdf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2481bb0d17ebd3dd1f85c13cf2413230" id="r_ga2481bb0d17ebd3dd1f85c13cf2413230"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_typed_result.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__aiding_1_1_ecef_pos.html">EcefPos</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__aiding__ecef__pos.html#ga2481bb0d17ebd3dd1f85c13cf2413230">mip::commands_aiding::ecefPos</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, const <a class="el" href="structmip_1_1commands__aiding_1_1_time.html">Time</a> &amp;time, uint8_t frameId, const double *position, const float *uncertainty, <a class="el" href="structmip_1_1commands__aiding_1_1_ecef_pos_1_1_valid_flags.html">EcefPos::ValidFlags</a> validFlags)</td></tr>
+<tr class="separator:ga2481bb0d17ebd3dd1f85c13cf2413230"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Cartesian vector position aiding command. Coordinates are given in the WGS84 ECEF system. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gacf3bc39c6cabcbf051a81b5c229efdf6" name="gacf3bc39c6cabcbf051a81b5c229efdf6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacf3bc39c6cabcbf051a81b5c229efdf6">&#9670;&#160;</a></span>ecefPos()</h2>
+<a id="ga2481bb0d17ebd3dd1f85c13cf2413230" name="ga2481bb0d17ebd3dd1f85c13cf2413230"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2481bb0d17ebd3dd1f85c13cf2413230">&#9670;&#160;</a></span>ecefPos()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a> mip::commands_aiding::ecefPos </td>
+          <td class="memname"><a class="el" href="structmip_1_1_typed_result.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__aiding_1_1_ecef_pos.html">EcefPos</a> &gt; mip::commands_aiding::ecefPos </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
@@ -116,7 +116,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>sensorId</em>, </td>
+          <td class="paramname"><em>frameId</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>

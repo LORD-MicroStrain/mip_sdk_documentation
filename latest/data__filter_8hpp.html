@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-178-g68203e1</span>
+   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-283-g2c4cb6b</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -211,6 +211,10 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__filter_1_1_gnss_dual_antenna_status_1_1_dual_antenna_status_flags.html">mip::data_filter::GnssDualAntennaStatus::DualAntennaStatusFlags</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__filter_1_1_aiding_frame_config_error.html">mip::data_filter::AidingFrameConfigError</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__filter_1_1_aiding_frame_config_error_uncertainty.html">mip::data_filter::AidingFrameConfigErrorUncertainty</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -301,6 +305,8 @@ Enumerations</h2></td></tr>
 , <a class="el" href="group__filter__data__cpp.html#gga970bd6a5099433773c75378cb60dfb6ba5f4bb04024f115e8e27a8fd063a03b0e">mip::data_filter::DATA_ODOMETER_SCALE_FACTOR_ERROR_UNCERTAINTY</a> = 0x48
 , <br />
 &#160;&#160;<a class="el" href="group__filter__data__cpp.html#gga970bd6a5099433773c75378cb60dfb6baed07dc571836acb0e5379f0c625e857c">mip::data_filter::DATA_GNSS_DUAL_ANTENNA_STATUS</a> = 0x49
+, <a class="el" href="group__filter__data__cpp.html#gga970bd6a5099433773c75378cb60dfb6ba399c436d20efcbc29caca40486d56e1e">mip::data_filter::DATA_FRAME_CONFIG_ERROR</a> = 0x50
+, <a class="el" href="group__filter__data__cpp.html#gga970bd6a5099433773c75378cb60dfb6ba7d6aee549970b6b328ef9749e5811c10">mip::data_filter::DATA_FRAME_CONFIG_ERROR_UNCERTAINTY</a> = 0x51
 <br />
  }</td></tr>
 <tr class="separator:ga970bd6a5099433773c75378cb60dfb6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -331,6 +337,13 @@ Enumerations</h2></td></tr>
 , <br />
 &#160;&#160;<a class="el" href="group__filter__data__cpp.html#gga4546f5a966c2733336e3c689f6e95a35acf29c1440f69cc71f0169036831ef688">mip::data_filter::FilterAidingMeasurementType::MAGNETOMETER</a> = 5
 , <a class="el" href="group__filter__data__cpp.html#gga4546f5a966c2733336e3c689f6e95a35a65a59338b99aee6a451e86b17b462b5a">mip::data_filter::FilterAidingMeasurementType::SPEED</a> = 6
+, <a class="el" href="group__filter__data__cpp.html#gga4546f5a966c2733336e3c689f6e95a35aceac8243d916077e0dbde642de629487">mip::data_filter::FilterAidingMeasurementType::POS_ECEF</a> = 33
+, <a class="el" href="group__filter__data__cpp.html#gga4546f5a966c2733336e3c689f6e95a35acb736ebf4b0e983efe528531a0a2919d">mip::data_filter::FilterAidingMeasurementType::POS_LLH</a> = 34
+, <br />
+&#160;&#160;<a class="el" href="group__filter__data__cpp.html#gga4546f5a966c2733336e3c689f6e95a35ab8e3868f601591775b3f6d8d051f62ef">mip::data_filter::FilterAidingMeasurementType::VEL_ECEF</a> = 40
+, <a class="el" href="group__filter__data__cpp.html#gga4546f5a966c2733336e3c689f6e95a35ad7df6f634caeb7a3d79e84c5c4adbcac">mip::data_filter::FilterAidingMeasurementType::VEL_NED</a> = 41
+, <a class="el" href="group__filter__data__cpp.html#gga4546f5a966c2733336e3c689f6e95a35aa7dece6f8e2d2921e66b5e64537f85ef">mip::data_filter::FilterAidingMeasurementType::VEL_VEHICLE_FRAME</a> = 42
+, <a class="el" href="group__filter__data__cpp.html#gga4546f5a966c2733336e3c689f6e95a35aad4f153a50b15f9f5a627e188687a5c2">mip::data_filter::FilterAidingMeasurementType::HEADING_TRUE</a> = 49
 <br />
  }</td></tr>
 <tr class="separator:ga4546f5a966c2733336e3c689f6e95a35"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -557,6 +570,14 @@ Functions</h2></td></tr>
 <tr class="separator:ga2eb894571ed18b02302df82cafc42ebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac0a912f27de84e3062a75a1da6d2ac31" id="r_gac0a912f27de84e3062a75a1da6d2ac31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__filter__gnss__dual__antenna__status.html#gac0a912f27de84e3062a75a1da6d2ac31">mip::data_filter::extract</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, <a class="el" href="structmip_1_1data__filter_1_1_gnss_dual_antenna_status.html">GnssDualAntennaStatus</a> &amp;self)</td></tr>
 <tr class="separator:gac0a912f27de84e3062a75a1da6d2ac31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga530fd1e17800a6aa3de80036f96c5a12" id="r_ga530fd1e17800a6aa3de80036f96c5a12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__filter__aiding__frame__config__error.html#ga530fd1e17800a6aa3de80036f96c5a12">mip::data_filter::insert</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, const <a class="el" href="structmip_1_1data__filter_1_1_aiding_frame_config_error.html">AidingFrameConfigError</a> &amp;self)</td></tr>
+<tr class="separator:ga530fd1e17800a6aa3de80036f96c5a12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga49fd4b149d84f6c1f739538ca6a1bc3f" id="r_ga49fd4b149d84f6c1f739538ca6a1bc3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__filter__aiding__frame__config__error.html#ga49fd4b149d84f6c1f739538ca6a1bc3f">mip::data_filter::extract</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, <a class="el" href="structmip_1_1data__filter_1_1_aiding_frame_config_error.html">AidingFrameConfigError</a> &amp;self)</td></tr>
+<tr class="separator:ga49fd4b149d84f6c1f739538ca6a1bc3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3dd0f785e3bfa4c92c15d5910bed5951" id="r_ga3dd0f785e3bfa4c92c15d5910bed5951"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__filter__aiding__frame__config__error__uncertainty.html#ga3dd0f785e3bfa4c92c15d5910bed5951">mip::data_filter::insert</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, const <a class="el" href="structmip_1_1data__filter_1_1_aiding_frame_config_error_uncertainty.html">AidingFrameConfigErrorUncertainty</a> &amp;self)</td></tr>
+<tr class="separator:ga3dd0f785e3bfa4c92c15d5910bed5951"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7fbe5dba2717a7aa532b44a9ec819323" id="r_ga7fbe5dba2717a7aa532b44a9ec819323"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__filter__aiding__frame__config__error__uncertainty.html#ga7fbe5dba2717a7aa532b44a9ec819323">mip::data_filter::extract</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, <a class="el" href="structmip_1_1data__filter_1_1_aiding_frame_config_error_uncertainty.html">AidingFrameConfigErrorUncertainty</a> &amp;self)</td></tr>
+<tr class="separator:ga7fbe5dba2717a7aa532b44a9ec819323"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

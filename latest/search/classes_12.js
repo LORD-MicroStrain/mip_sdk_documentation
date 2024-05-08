@@ -9,5 +9,6 @@ var searchData=
   ['time_6',['Time',['../structmip_1_1commands__aiding_1_1_time.html',1,'mip::commands_aiding']]],
   ['timestamp_7',['Timestamp',['../structmip_1_1data__filter_1_1_timestamp.html',1,'mip::data_filter']]],
   ['timesyncstatus_8',['TimeSyncStatus',['../structmip_1_1data__system_1_1_time_sync_status.html',1,'mip::data_system']]],
-  ['trueheading_9',['TrueHeading',['../structmip_1_1commands__aiding_1_1_true_heading.html',1,'mip::commands_aiding']]]
+  ['trueheading_9',['TrueHeading',['../structmip_1_1commands__aiding_1_1_true_heading.html',1,'mip::commands_aiding']]],
+  ['typedresult_10',['TypedResult',['../structmip_1_1_typed_result.html',1,'mip']]]
 ];

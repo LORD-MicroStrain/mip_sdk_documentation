@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-178-g68203e1</span>
+   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-283-g2c4cb6b</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -88,21 +88,21 @@ Functions</h2></td></tr>
 <tr class="separator:gad15d73c64bbf824b6f30412ea3cea4f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga164355b6d5f2dcccf9b176e95bb7c9f1" id="r_ga164355b6d5f2dcccf9b176e95bb7c9f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__filter__external__gnss__update.html#ga164355b6d5f2dcccf9b176e95bb7c9f1">mip::commands_filter::extract</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, <a class="el" href="structmip_1_1commands__filter_1_1_external_gnss_update.html">ExternalGnssUpdate</a> &amp;self)</td></tr>
 <tr class="separator:ga164355b6d5f2dcccf9b176e95bb7c9f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab5a4a6b1eedcf55c45c98f957e8d0b70" id="r_gab5a4a6b1eedcf55c45c98f957e8d0b70"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__filter__external__gnss__update.html#gab5a4a6b1eedcf55c45c98f957e8d0b70">mip::commands_filter::externalGnssUpdate</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, double gpsTime, uint16_t gpsWeek, double latitude, double longitude, double height, const float *velocity, const float *posUncertainty, const float *velUncertainty)</td></tr>
-<tr class="separator:gab5a4a6b1eedcf55c45c98f957e8d0b70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga817e3d30aa94d9dad4f58d7444325061" id="r_ga817e3d30aa94d9dad4f58d7444325061"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_typed_result.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1_external_gnss_update.html">ExternalGnssUpdate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__filter__external__gnss__update.html#ga817e3d30aa94d9dad4f58d7444325061">mip::commands_filter::externalGnssUpdate</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, double gpsTime, uint16_t gpsWeek, double latitude, double longitude, double height, const float *velocity, const float *posUncertainty, const float *velUncertainty)</td></tr>
+<tr class="separator:ga817e3d30aa94d9dad4f58d7444325061"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Provide a filter measurement from an external GNSS</p>
 <p>The GNSS source control must be set to "external" for this command to succeed, otherwise it will be NACK'd. Please refer to your device user manual for information on the maximum rate of this message. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gab5a4a6b1eedcf55c45c98f957e8d0b70" name="gab5a4a6b1eedcf55c45c98f957e8d0b70"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab5a4a6b1eedcf55c45c98f957e8d0b70">&#9670;&#160;</a></span>externalGnssUpdate()</h2>
+<a id="ga817e3d30aa94d9dad4f58d7444325061" name="ga817e3d30aa94d9dad4f58d7444325061"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga817e3d30aa94d9dad4f58d7444325061">&#9670;&#160;</a></span>externalGnssUpdate()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a> mip::commands_filter::externalGnssUpdate </td>
+          <td class="memname"><a class="el" href="structmip_1_1_typed_result.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1_external_gnss_update.html">ExternalGnssUpdate</a> &gt; mip::commands_filter::externalGnssUpdate </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
           <td class="paramname"><em>device</em>, </td>

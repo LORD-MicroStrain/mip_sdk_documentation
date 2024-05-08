@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-178-g68203e1</span>
+   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-283-g2c4cb6b</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -88,8 +88,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga478182ecd1e7d3b1f5e4377b0d39b587"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga26ac02e01c9090f425c980c128070bc9" id="r_ga26ac02e01c9090f425c980c128070bc9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__aiding__vehicle__fixed__frame__velocity.html#ga26ac02e01c9090f425c980c128070bc9">mip::commands_aiding::extract</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, <a class="el" href="structmip_1_1commands__aiding_1_1_vehicle_fixed_frame_velocity.html">VehicleFixedFrameVelocity</a> &amp;self)</td></tr>
 <tr class="separator:ga26ac02e01c9090f425c980c128070bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa2a617c07e61ae0252bc7582f681bdc9" id="r_gaa2a617c07e61ae0252bc7582f681bdc9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__aiding__vehicle__fixed__frame__velocity.html#gaa2a617c07e61ae0252bc7582f681bdc9">mip::commands_aiding::vehicleFixedFrameVelocity</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, const <a class="el" href="structmip_1_1commands__aiding_1_1_time.html">Time</a> &amp;time, uint8_t sensorId, const float *velocity, const float *uncertainty, <a class="el" href="structmip_1_1commands__aiding_1_1_vehicle_fixed_frame_velocity_1_1_valid_flags.html">VehicleFixedFrameVelocity::ValidFlags</a> validFlags)</td></tr>
-<tr class="separator:gaa2a617c07e61ae0252bc7582f681bdc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga43fba718995dd33d83fb08293d56f40e" id="r_ga43fba718995dd33d83fb08293d56f40e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_typed_result.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__aiding_1_1_vehicle_fixed_frame_velocity.html">VehicleFixedFrameVelocity</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__aiding__vehicle__fixed__frame__velocity.html#ga43fba718995dd33d83fb08293d56f40e">mip::commands_aiding::vehicleFixedFrameVelocity</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, const <a class="el" href="structmip_1_1commands__aiding_1_1_time.html">Time</a> &amp;time, uint8_t frameId, const float *velocity, const float *uncertainty, <a class="el" href="structmip_1_1commands__aiding_1_1_vehicle_fixed_frame_velocity_1_1_valid_flags.html">VehicleFixedFrameVelocity::ValidFlags</a> validFlags)</td></tr>
+<tr class="separator:ga43fba718995dd33d83fb08293d56f40e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Estimate of velocity of the vehicle in the frame associated with the given sensor ID. </p>
@@ -150,14 +150,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gaa2a617c07e61ae0252bc7582f681bdc9" name="gaa2a617c07e61ae0252bc7582f681bdc9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa2a617c07e61ae0252bc7582f681bdc9">&#9670;&#160;</a></span>vehicleFixedFrameVelocity()</h2>
+<a id="ga43fba718995dd33d83fb08293d56f40e" name="ga43fba718995dd33d83fb08293d56f40e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga43fba718995dd33d83fb08293d56f40e">&#9670;&#160;</a></span>vehicleFixedFrameVelocity()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a> mip::commands_aiding::vehicleFixedFrameVelocity </td>
+          <td class="memname"><a class="el" href="structmip_1_1_typed_result.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__aiding_1_1_vehicle_fixed_frame_velocity.html">VehicleFixedFrameVelocity</a> &gt; mip::commands_aiding::vehicleFixedFrameVelocity </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
@@ -172,7 +172,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>sensorId</em>, </td>
+          <td class="paramname"><em>frameId</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>

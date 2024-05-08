@@ -47,8 +47,8 @@ var searchData=
   ['pressure_20altitude_20cpp_44',['(0x82,0x21) Pressure Altitude [CPP]',['../group__cpp__filter__pressure__altitude.html',1,'']]],
   ['pressure_20altitude_20noise_20c_45',['(0x0D,0x29) Pressure Altitude Noise [C]',['../group__c__filter__pressure__altitude__noise.html',1,'']]],
   ['pressure_20altitude_20noise_20cpp_46',['(0x0D,0x29) Pressure Altitude Noise [CPP]',['../group__cpp__filter__pressure__altitude__noise.html',1,'']]],
-  ['pressure_20c_47',['pressure c',['../group__c__sensor__raw__pressure.html',1,'(0x80,0x16) Raw Pressure [C]'],['../group__c__sensor__scaled__pressure.html',1,'(0x80,0x17) Scaled Pressure [C]']]],
-  ['pressure_20cpp_48',['pressure cpp',['../group__cpp__sensor__raw__pressure.html',1,'(0x80,0x16) Raw Pressure [CPP]'],['../group__cpp__sensor__scaled__pressure.html',1,'(0x80,0x17) Scaled Pressure [CPP]']]],
+  ['pressure_20c_47',['pressure c',['../group__c__aiding__pressure.html',1,'(0x13,0x33) Pressure [C]'],['../group__c__sensor__raw__pressure.html',1,'(0x80,0x16) Raw Pressure [C]'],['../group__c__sensor__scaled__pressure.html',1,'(0x80,0x17) Scaled Pressure [C]']]],
+  ['pressure_20cpp_48',['pressure cpp',['../group__cpp__aiding__pressure.html',1,'(0x13,0x33) Pressure [CPP]'],['../group__cpp__sensor__raw__pressure.html',1,'(0x80,0x16) Raw Pressure [CPP]'],['../group__cpp__sensor__scaled__pressure.html',1,'(0x80,0x17) Scaled Pressure [CPP]']]],
   ['prod_20erase_20storage_20c_49',['(0x0F,0x20) Prod Erase Storage [C]',['../group__c__rtk__prod__erase__storage.html',1,'']]],
   ['prod_20erase_20storage_20cpp_50',['(0x0F,0x20) Prod Erase Storage [CPP]',['../group__cpp__rtk__prod__erase__storage.html',1,'']]]
 ];

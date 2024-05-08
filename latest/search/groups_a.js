@@ -18,6 +18,8 @@ var searchData=
   ['heading_20update_20state_20cpp_15',['(0x82,0x14) Heading Update State [CPP]',['../group__cpp__filter__heading__update__state.html',1,'']]],
   ['heading_20update_20with_20time_20c_16',['(0x0D,0x1F) External Heading Update With Time [C]',['../group__c__filter__external__heading__update__with__time.html',1,'']]],
   ['heading_20update_20with_20time_20cpp_17',['(0x0D,0x1F) External Heading Update With Time [CPP]',['../group__cpp__filter__external__heading__update__with__time.html',1,'']]],
-  ['hw_20status_20c_18',['(0x81,0x0D) Hw Status [C]',['../group__c__gnss__hw__status.html',1,'']]],
-  ['hw_20status_20cpp_19',['(0x81,0x0D) Hw Status [CPP]',['../group__cpp__gnss__hw__status.html',1,'']]]
+  ['height_20c_18',['(0x13,0x23) Height [C]',['../group__c__aiding__height.html',1,'']]],
+  ['height_20cpp_19',['(0x13,0x23) Height [CPP]',['../group__cpp__aiding__height.html',1,'']]],
+  ['hw_20status_20c_20',['(0x81,0x0D) Hw Status [C]',['../group__c__gnss__hw__status.html',1,'']]],
+  ['hw_20status_20cpp_21',['(0x81,0x0D) Hw Status [CPP]',['../group__cpp__gnss__hw__status.html',1,'']]]
 ];

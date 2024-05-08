@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-178-g68203e1</span>
+   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-283-g2c4cb6b</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -96,21 +96,21 @@ Functions</h2></td></tr>
 <tr class="separator:gabfc31017d292ed96eb74c9c94e4bd14c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6f4d7dd8c3d5d5ffdbbcf22649fc9f5c" id="r_ga6f4d7dd8c3d5d5ffdbbcf22649fc9f5c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__calibrated__sensor__ranges.html#ga6f4d7dd8c3d5d5ffdbbcf22649fc9f5c">mip::commands_3dm::extract</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, <a class="el" href="structmip_1_1commands__3dm_1_1_calibrated_sensor_ranges_1_1_response.html">CalibratedSensorRanges::Response</a> &amp;self)</td></tr>
 <tr class="separator:ga6f4d7dd8c3d5d5ffdbbcf22649fc9f5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga96dc270d6e921318c03f7977d9110536" id="r_ga96dc270d6e921318c03f7977d9110536"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__calibrated__sensor__ranges.html#ga96dc270d6e921318c03f7977d9110536">mip::commands_3dm::calibratedSensorRanges</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, <a class="el" href="group__dm__commands__cpp.html#gad5372f4174629781926a83e03d9bcfbc">SensorRangeType</a> sensor, uint8_t *numRangesOut, uint8_t numRangesOutMax, <a class="el" href="structmip_1_1commands__3dm_1_1_calibrated_sensor_ranges_1_1_entry.html">CalibratedSensorRanges::Entry</a> *rangesOut)</td></tr>
-<tr class="separator:ga96dc270d6e921318c03f7977d9110536"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac3868858d53bfa9c24df27f31043c58a" id="r_gac3868858d53bfa9c24df27f31043c58a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_typed_result.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1_calibrated_sensor_ranges.html">CalibratedSensorRanges</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__calibrated__sensor__ranges.html#gac3868858d53bfa9c24df27f31043c58a">mip::commands_3dm::calibratedSensorRanges</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, <a class="el" href="group__dm__commands__cpp.html#gad5372f4174629781926a83e03d9bcfbc">SensorRangeType</a> sensor, uint8_t *numRangesOut, uint8_t numRangesOutMax, <a class="el" href="structmip_1_1commands__3dm_1_1_calibrated_sensor_ranges_1_1_entry.html">CalibratedSensorRanges::Entry</a> *rangesOut)</td></tr>
+<tr class="separator:gac3868858d53bfa9c24df27f31043c58a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Returns the supported sensor ranges which may be used with the 3DM Sensor Range (0x0C,0x52) command.</p>
 <p>The response includes an array of (u8, float) pairs which map each allowed setting to the corresponding maximum range in physical units. See SensorRangeType for units. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga96dc270d6e921318c03f7977d9110536" name="ga96dc270d6e921318c03f7977d9110536"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga96dc270d6e921318c03f7977d9110536">&#9670;&#160;</a></span>calibratedSensorRanges()</h2>
+<a id="gac3868858d53bfa9c24df27f31043c58a" name="gac3868858d53bfa9c24df27f31043c58a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac3868858d53bfa9c24df27f31043c58a">&#9670;&#160;</a></span>calibratedSensorRanges()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a> mip::commands_3dm::calibratedSensorRanges </td>
+          <td class="memname"><a class="el" href="structmip_1_1_typed_result.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1_calibrated_sensor_ranges.html">CalibratedSensorRanges</a> &gt; mip::commands_3dm::calibratedSensorRanges </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
           <td class="paramname"><em>device</em>, </td>

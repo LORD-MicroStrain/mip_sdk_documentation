@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-178-g68203e1</span>
+   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-283-g2c4cb6b</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -88,8 +88,8 @@ Functions</h2></td></tr>
 <tr class="separator:gaa874fb696c4bebe98a1b23331286841e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gace38c5bdb84d19020589405d6e9efa18" id="r_gace38c5bdb84d19020589405d6e9efa18"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__aiding__llh__pos.html#gace38c5bdb84d19020589405d6e9efa18">mip::commands_aiding::extract</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, <a class="el" href="structmip_1_1commands__aiding_1_1_llh_pos.html">LlhPos</a> &amp;self)</td></tr>
 <tr class="separator:gace38c5bdb84d19020589405d6e9efa18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga19b41386d236ff3dcfe752a108e87d5a" id="r_ga19b41386d236ff3dcfe752a108e87d5a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__aiding__llh__pos.html#ga19b41386d236ff3dcfe752a108e87d5a">mip::commands_aiding::llhPos</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, const <a class="el" href="structmip_1_1commands__aiding_1_1_time.html">Time</a> &amp;time, uint8_t sensorId, double latitude, double longitude, double height, const float *uncertainty, <a class="el" href="structmip_1_1commands__aiding_1_1_llh_pos_1_1_valid_flags.html">LlhPos::ValidFlags</a> validFlags)</td></tr>
-<tr class="separator:ga19b41386d236ff3dcfe752a108e87d5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga78c5758f48a05c5f529413e7aa21684b" id="r_ga78c5758f48a05c5f529413e7aa21684b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_typed_result.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__aiding_1_1_llh_pos.html">LlhPos</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__aiding__llh__pos.html#ga78c5758f48a05c5f529413e7aa21684b">mip::commands_aiding::llhPos</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, const <a class="el" href="structmip_1_1commands__aiding_1_1_time.html">Time</a> &amp;time, uint8_t frameId, double latitude, double longitude, double <a class="el" href="group__cpp__aiding__height.html#ga54d641a8149a308099b150b0413b3f1e">height</a>, const float *uncertainty, <a class="el" href="structmip_1_1commands__aiding_1_1_llh_pos_1_1_valid_flags.html">LlhPos::ValidFlags</a> validFlags)</td></tr>
+<tr class="separator:ga78c5758f48a05c5f529413e7aa21684b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Geodetic position aiding command. Coordinates are given in WGS84 geodetic latitude, longitude, and height above the ellipsoid. Uncertainty is given in NED coordinates, which are parallel to incremental changes in latitude, longitude, and height. </p>
@@ -150,14 +150,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga19b41386d236ff3dcfe752a108e87d5a" name="ga19b41386d236ff3dcfe752a108e87d5a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga19b41386d236ff3dcfe752a108e87d5a">&#9670;&#160;</a></span>llhPos()</h2>
+<a id="ga78c5758f48a05c5f529413e7aa21684b" name="ga78c5758f48a05c5f529413e7aa21684b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga78c5758f48a05c5f529413e7aa21684b">&#9670;&#160;</a></span>llhPos()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a> mip::commands_aiding::llhPos </td>
+          <td class="memname"><a class="el" href="structmip_1_1_typed_result.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__aiding_1_1_llh_pos.html">LlhPos</a> &gt; mip::commands_aiding::llhPos </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
@@ -172,7 +172,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>sensorId</em>, </td>
+          <td class="paramname"><em>frameId</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>

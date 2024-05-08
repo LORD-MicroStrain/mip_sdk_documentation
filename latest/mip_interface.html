@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-178-g68203e1</span>
+   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-283-g2c4cb6b</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -73,17 +73,23 @@ $(function() {
   <div class="headertitle"><div class="title">Mip Interface</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>The MIP interface is a high-level abstraction of a physical device which communicates using the MIP protocol. It provides both data callbacks and command functions for controlling and configuring the device:</p>
+<div class="textblock"><h1><a class="anchor" id="mip_interface_interface"></a>
+Application Interface</h1>
+<p>The MIP interface is a high-level abstraction of a physical device which communicates using the MIP protocol. It provides both data callbacks and command functions for controlling and configuring the device:</p>
 <div class="image">
 <object type="image/svg+xml" data="mip_interface.svg" style="pointer-events: none;"></object>
 </div>
 <p>When an application calls one of the command functions, the MIP interface creates a packet, sends it to the device, and waits for a reply. When the reply is received, the command function returns the reply code to the application. If no reply is received, or if an error occurs, the function will return a status code.</p>
 <p>Sending and receiving to or from the device occurs via two functions: </p><ul>
-<li>mip_interface_user_send_to_device() for transmission and </li>
-<li>mip_interface_user_recv_from_device() for reception.</li>
+<li><a class="el" href="classmip_1_1_device_interface.html#a406e3e4300e82a86b0c865ce59b5bc58">mip::DeviceInterface::sendToDevice()</a> or <a class="el" href="mip__interface_8c.html#ae2fa9fd65c16218bd12716658f70f680" title="Sends data to the port (i.e. from this library to the physical device).">mip_interface_send_to_device()</a> for transmission and </li>
+<li><a class="el" href="classmip_1_1_device_interface.html#a6945bb14b90436bf2ea253694a34fdf6">mip::DeviceInterface::recvFromDevice()</a> or <a class="el" href="mip__interface_8c.html#a383ac1249c4e7706271f48f616b85b93" title="Checks for data at the port and reads it into buffer.">mip_interface_recv_from_device()</a> for reception.</li>
 </ul>
-<p>The application must define these two C functions, or subclass <a class="el" href="classmip_1_1_device_interface.html" title="Represents a connected MIP device.">mip::DeviceInterface</a> and implement the pure virtual functions. This should be straightforward; simply pass the bytes between the MIP interface and the connection.</p>
-<p>Because the device transmits continuously when streaming data, the application must poll the connection for new data frequently. This is done via the <a class="el" href="mip_interface.html#update">update function</a>.</p>
+<p>Each of these has a corresponding callback to the application. The application is expected to implement the required behavior for each as described below. Additionally, there is an <a class="el" href="mip_interface.html#update">update function</a>, which handles periodic tasks such as command timeouts and streaming data collection. An application may optionally override the update callback.</p>
+<ul>
+<li><a class="el" href="group__mip__interface__c.html#ga1ab538fe6a048b11f97174b2f1ecc3de">mip_send_callback</a> </li>
+<li><a class="el" href="group__mip__interface__c.html#ga8e9fcd5f0385bf48c9e4e7d1fe5c4c0c">mip_recv_callback</a> </li>
+<li><a class="el" href="group__mip__interface__c.html#ga459cd09fa6a1623ba02819b14d904a66">mip_update_callback</a></li>
+</ul>
 <p>An application obtains sensor data via the <a class="el" href="mip_interface.html#mip_dispatch">dispatch subsystem</a>. There are 3 ways to do so: </p><ul>
 <li>Packet callbacks, which call a function when a packet matching the MIP descriptor set is received, </li>
 <li>Field callbacks, which call a function when a MIP field matching the descriptor set and field descriptor is called, and </li>
@@ -91,7 +97,9 @@ $(function() {
 </ul>
 <h1><a class="anchor" id="mip_commands"></a>
 Sending Commands</h1>
-<p>Typically an application will configure the device, initialize some settings, and start streaming. To do so, it must send commands. In most cases, applications will call a single function for each needed command. These functions take the command parameters as arguments, send the packet, wait for the reply, and return a result code. When reading from the device, these commands will also report the device response information, assuming the command was successful. The command functions are blocking, that is, they halt execution until the device responds or the command times out.</p>
+<p>Typically an application will configure the device, initialize some settings, and start streaming. To do so, it must send commands. In many cases, applications will call a single function for each needed command (e.g. <a class="el" href="group___mip_commands__c.html">MIP Commands [C]</a> / <a class="el" href="group___mip_commands__cpp.html">MIP Commands [CPP]</a>). These functions take the command parameters as arguments, send the packet, wait for the reply, and return a result code. Additionally some commands can report back responses from the device.</p>
+<p>The command functions are blocking, that is, they halt execution until the device responds or the command times out.</p>
+<p>Note that since MIP data is received serially and is not buffered, data may be received and processed while waiting for command responses. It is recommended (but not required) to set the device to idle during configuration.</p>
 <h1><a class="anchor" id="mip_dispatch"></a>
 The Dispatch System</h1>
 <p>Because of the limited resources on embedded platforms, the MIP SDK will not buffer received data, and instead requires the application to process data as it arrives. The MIP interface will dispatch callbacks to the application when the requested data is received.</p>
@@ -103,36 +111,39 @@ The Dispatch System</h1>
 <p>With the first two options, the callback function will receive a handle to the MIP interface, the associated MIP packet or field, and the reception timestamp.</p>
 <p>An application must register callbacks with the system during initialization. Each method requires a pointer and the MIP descriptor associated with the data of interest. There is no limit on the number of registered dispatchers, though performance may be affected by using too many. Multiple dispatchers may be registered to the same data.</p>
 <dl class="section user"><dt>Packet callbacks</dt><dd></dd></dl>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> packet_callback(<span class="keywordtype">void</span>* userdata, <span class="keyword">const</span> Packet&amp; packet, Timestamp parseTime)</div>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> packet_callback(<span class="keywordtype">void</span>* userdata, <span class="keyword">const</span> <a class="code hl_class" href="classmip_1_1_packet_ref.html">mip::PacketRef</a>&amp; packet, Timestamp parseTime)</div>
+<div class="ttc" id="aclassmip_1_1_packet_ref_html"><div class="ttname"><a href="classmip_1_1_packet_ref.html">mip::PacketRef</a></div><div class="ttdoc">C++ class representing a MIP PacketRef.</div><div class="ttdef"><b>Definition</b> mip.hpp:138</div></div>
 </div><!-- fragment --><p>Packet callbacks are invoked when a packet is received which matches the registered descriptor set. The descriptor set may also be a wildcard, allowing the application to process any type of packet.</p>
 <p>An application can register a packet callback to occur either before or after the field callbacks for the data in the same packet. For example, to print a summary of the packet before displaying information about each field, an application would set the callback to occur first. Usually applications will set a packet callback to occur last, so that they can determine if all of the fields have been processed.</p>
 <dl class="section user"><dt>Field callbacks</dt><dd></dd></dl>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> field_callback(<span class="keywordtype">void</span>* userdata, <span class="keyword">const</span> Field&amp; field, Timestamp parseTime)</div>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> field_callback(<span class="keywordtype">void</span>* userdata, <span class="keyword">const</span> <a class="code hl_class" href="classmip_1_1_field.html">mip::Field</a>&amp; field, Timestamp parseTime)</div>
+<div class="ttc" id="aclassmip_1_1_field_html"><div class="ttname"><a href="classmip_1_1_field.html">mip::Field</a></div><div class="ttdoc">C++ class representing a MIP field.</div><div class="ttdef"><b>Definition</b> mip.hpp:46</div></div>
 </div><!-- fragment --><p>Similar to packet callbacks, field callbacks are invoked when a MIP field is received which matches the specified descriptor set and field descriptor. Either descriptor may be a wildcard.</p>
 <dl class="section user"><dt>Data pointers</dt><dd></dd></dl>
 <p>Data pointer dispatchers can alleviate a lot of boilerplate code having to do with deserializing a MIP field and storing it somewhere. An application can register a pointer one of the MIP data structures, along with the associated descriptors, and have it automatically updated. The descriptors cannot be wildcards because the type of the data structure is fixed.</p>
 <dl class="section user"><dt>Data callbacks</dt><dd></dd></dl>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> data_callback(<span class="keywordtype">void</span>* userdata, <span class="keyword">const</span> data_sensor::ScaledAccel&amp; packet, Timestamp parseTime)</div>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> data_callback(<span class="keywordtype">void</span>* userdata, <span class="keyword">const</span> <a class="code hl_struct" href="structmip_1_1data__sensor_1_1_scaled_accel.html">mip::data_sensor::ScaledAccel</a>&amp; packet, Timestamp parseTime)</div>
+<div class="ttc" id="astructmip_1_1data__sensor_1_1_scaled_accel_html"><div class="ttname"><a href="structmip_1_1data__sensor_1_1_scaled_accel.html">mip::data_sensor::ScaledAccel</a></div><div class="ttdef"><b>Definition</b> data_sensor.hpp:217</div></div>
 </div><!-- fragment --><p>Thanks to the power of templates, one additional dispatch mechanism is available for C++ applications. A data callback is similar to a field callback except that instead of getting the raw MIP field data, the function is passed the fully-deserialized data structure.</p>
 <p>Typically an application will register a series of data or field callbacks and write the data to some kind of data structure. Because the order of these callbacks depends on the device configuration, it can be difficult to know which fields belong together in one sample. The solution is to use a packet callback after all of the fields are received. In the case of wraparound "overflow" MIP packets (see the MIP documentation), packets containing a shared timestamp or event source field at the beginning can be used to group data together.</p>
 <h1><a class="anchor" id="update"></a>
 The Update Function</h1>
-<p>The application should call <a class="el" href="mip__interface_8c.html#a69893613898c516362811eeec8abaeda" title="Call to process data from the device.">mip_interface_update()</a> periodically to process data sent by the device. This update function will call mip_interface_user_recv_from_device() to parse packets. When a data packet is received, the list of packet and data callbacks is checked, and any matching callbacks are invoked. The update function should be called at a high enough rate to avoid overflowing the connection buffers. The precision of the reception timestamp is dependent on the update rate.</p>
-<p>The command functions in <a class="el" href="group___mip_commands__c.html">MIP Commands [C]</a> / <a class="el" href="group___mip_commands__cpp.html">MIP Commands [CPP]</a> (e.g. mip_write_message_format() / mip::writeMessageFormat()) will block execution until the command completes. Either the device will respond with an ack/nack code, or the command will time out. During this time, the system must be able to receive data from the device in order for command replies to be detected. This occurs via the <a class="el" href="mip__interface_8c.html#a69893613898c516362811eeec8abaeda" title="Call to process data from the device.">mip_interface_update()</a> function as well.</p>
+<p>The application should call <a class="el" href="mip__interface_8c.html#a65014a7ec13d14107f5840653ebfab74" title="Call to process data from the device.">mip_interface_update()</a> periodically to process data sent by the device. This update function will call mip_interface_user_recv_from_device() to parse packets. When a data packet is received, the list of packet and data callbacks is checked, and any matching callbacks are invoked. The update function should be called at a high enough rate to avoid overflowing the connection buffers. The precision of the reception timestamp is dependent on the update rate.</p>
+<p>The command functions in <a class="el" href="group___mip_commands__c.html">MIP Commands [C]</a> / <a class="el" href="group___mip_commands__cpp.html">MIP Commands [CPP]</a> (e.g. mip::C::mip_write_message_format() / mip::writeMessageFormat()) will block execution until the command completes. Either the device will respond with an ack/nack code, or the command will time out. During this time, the system must be able to receive data from the device in order for command replies to be detected. This occurs via the <a class="el" href="mip__interface_8c.html#a65014a7ec13d14107f5840653ebfab74" title="Call to process data from the device.">mip_interface_update()</a> function as well.</p>
 <dl class="section user"><dt>Single-threaded applications</dt><dd></dd></dl>
 <p>For single-threaded applications, data can be read from the port directly from within the command function. While the command is waiting (status code MIP_STATUS_WAITING / CmdResult::STATUS_WAITING), repeated calls to the update function will be made. By default, the update function calls mip_interface_user_recv_from_device(). Because the function is called from within a loop, it should sleep for a short time to wait for data if none has been received yet. Doing so prevents excessive CPU usage and lowers power consumption.</p>
-<p>The following diagram shows the typical control flow for a single-threaded application. First, the device is configured by setting the message format. Execution flows down into the command processing functions until <a class="el" href="mip__interface_8c.html#a2e9949aed4b255ea362978c33c32043d" title="Blocks until the pending command completes or times out.">mip_interface_wait_for_reply()</a> is called. This will repeatedly call <a class="el" href="mip__interface_8c.html#a69893613898c516362811eeec8abaeda" title="Call to process data from the device.">mip_interface_update()</a> to pump packets from the device through the system, until either an ack/nack is received or the command times out. Once the device acknowledges the command, control is returned to the application which then registers some data or packet callbacks. It finally goes into a loop in collect_data(). Inside this loop, the update function is called to process data packets.</p>
+<p>The following diagram shows the typical control flow for a single-threaded application. First, the device is configured by setting the message format. Execution flows down into the command processing functions until <a class="el" href="mip__interface_8c.html#a2e9949aed4b255ea362978c33c32043d" title="Blocks until the pending command completes or times out.">mip_interface_wait_for_reply()</a> is called. This will repeatedly call <a class="el" href="mip__interface_8c.html#a65014a7ec13d14107f5840653ebfab74" title="Call to process data from the device.">mip_interface_update()</a> to pump packets from the device through the system, until either an ack/nack is received or the command times out. Once the device acknowledges the command, control is returned to the application which then registers some data or packet callbacks. It finally goes into a loop in collect_data(). Inside this loop, the update function is called to process data packets.</p>
 <p>Notice that the same update function is called from both the command function and the data collection loop. If any data packets are received while waiting for a command reply, associated callbacks may be executed. This is why this example application registers its callbacks after the format is configured properly.</p>
 <div class="image">
 <object type="image/svg+xml" data="device_update.svg" style="pointer-events: none;"></object>
 </div>
 <dl class="section user"><dt>Multi-threaded applications</dt><dd></dd></dl>
 <p>For some applications, it may be desirable to run all of the data collection from a separate thread. In this case, the command functions must not call the update function as that would cause a race condition between the command thread and the data thread. Instead, the command thread should simply sleep or yield and let the data thread process the ack/nack packet.</p>
-<p>To allow this behavior, the update function takes a boolean parameter which is true when waiting on a command and false when processing data. The default update function, <a class="el" href="mip__interface_8c.html#a403a6ec65d5ca5d345e12c619d4330e5" title="Polls the port for new data or command replies.">mip_interface_default_update()</a>, ignores this flag, but applications may override it via <a class="el" href="mip__interface_8c.html#a08600beae9c11f5b7da8fa26f56ddd05" title="Sets the update function.">mip_interface_set_update_function()</a>. In this case, a wrapper function can be created which implements the above behavior: </p><div class="fragment"><div class="line"><span class="keywordtype">bool</span> user_update_function(<span class="keyword">struct</span> mip_device* device, <span class="keywordtype">bool</span> blocking)</div>
+<p>To allow this behavior, the update function takes a boolean parameter which is true when waiting on a command and false when processing data. The default update function, <a class="el" href="mip__interface_8c.html#a038ef43240f17096f64766f6a955fff2" title="Polls the port for new data or command replies.">mip_interface_default_update()</a>, ignores this flag, but applications may override it via <a class="el" href="mip__interface_8c.html#a08600beae9c11f5b7da8fa26f56ddd05" title="Sets the update function.">mip_interface_set_update_function()</a>. In this case, a wrapper function can be created which implements the above behavior: </p><div class="fragment"><div class="line"><span class="keywordtype">bool</span> user_update_function(<span class="keyword">struct</span> mip_device* device, <span class="keywordtype">bool</span> blocking)</div>
 <div class="line">{</div>
 <div class="line">    <span class="comment">// If called from the data thread, do the normal processing.</span></div>
 <div class="line">    <span class="keywordflow">if</span>( !blocking )</div>
-<div class="line">        <span class="keywordflow">return</span> <a class="code hl_function" href="mip__interface_8c.html#a403a6ec65d5ca5d345e12c619d4330e5">mip_interface_default_update</a>(device, blocking);</div>
+<div class="line">        <span class="keywordflow">return</span> <a class="code hl_function" href="mip__interface_8c.html#a038ef43240f17096f64766f6a955fff2">mip_interface_default_update</a>(device, blocking);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Otherwise, sleep and let the data thread process the reply.</span></div>
 <div class="line">    std::this_thread::sleep_for(std::chrono::milliseconds(10));</div>
@@ -140,15 +151,15 @@ The Update Function</h1>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><a class="code hl_function" href="mip__interface_8c.html#a08600beae9c11f5b7da8fa26f56ddd05">mip_interface_set_update_function</a>(device, &amp;user_update_function);</div>
-<div class="ttc" id="amip__interface_8c_html_a08600beae9c11f5b7da8fa26f56ddd05"><div class="ttname"><a href="mip__interface_8c.html#a08600beae9c11f5b7da8fa26f56ddd05">mip_interface_set_update_function</a></div><div class="ttdeci">void mip_interface_set_update_function(mip_interface *device, mip_update_callback callback)</div><div class="ttdoc">Sets the update function.</div><div class="ttdef"><b>Definition</b> mip_interface.c:187</div></div>
-<div class="ttc" id="amip__interface_8c_html_a403a6ec65d5ca5d345e12c619d4330e5"><div class="ttname"><a href="mip__interface_8c.html#a403a6ec65d5ca5d345e12c619d4330e5">mip_interface_default_update</a></div><div class="ttdeci">bool mip_interface_default_update(struct mip_interface *device, timeout_type wait_time)</div><div class="ttdoc">Polls the port for new data or command replies.</div><div class="ttdef"><b>Definition</b> mip_interface.c:362</div></div>
+<div class="ttc" id="amip__interface_8c_html_a038ef43240f17096f64766f6a955fff2"><div class="ttname"><a href="mip__interface_8c.html#a038ef43240f17096f64766f6a955fff2">mip_interface_default_update</a></div><div class="ttdeci">bool mip_interface_default_update(struct mip_interface *device, mip_timeout wait_time)</div><div class="ttdoc">Polls the port for new data or command replies.</div><div class="ttdef"><b>Definition</b> mip_interface.c:415</div></div>
+<div class="ttc" id="amip__interface_8c_html_a08600beae9c11f5b7da8fa26f56ddd05"><div class="ttname"><a href="mip__interface_8c.html#a08600beae9c11f5b7da8fa26f56ddd05">mip_interface_set_update_function</a></div><div class="ttdeci">void mip_interface_set_update_function(mip_interface *device, mip_update_callback callback)</div><div class="ttdoc">Sets the update function.</div><div class="ttdef"><b>Definition</b> mip_interface.c:240</div></div>
 </div><!-- fragment --><div class="image">
 <object type="image/svg+xml" data="device_update_threaded.svg" style="pointer-events: none;"></object>
 </div>
 <p>See the threading demo for an example application.</p>
 <dl class="section user"><dt>Other thread-safety concerns</dt><dd></dd></dl>
 <ul>
-<li>Data transmission to the device (for sending commands) is thread-safe within the MIP SDK. If multiple threads will send to the device, the application should ensure that mip_interface_user_send_to_device() is thread-safe (e.g. by using a mutex).</li>
+<li>Data transmission to the device (but not sending commands) is thread-safe within the MIP SDK. If multiple threads will send to the device, the application should ensure that the device interface is properly protected.</li>
 </ul>
 <ul>
 <li>It is up to the application to ensure that sending and receiving from separate threads is safe. This is true for the built-in serial and TCP connections on most operating systems.</li>
@@ -161,9 +172,9 @@ The Update Function</h1>
 <li>To push data through the system in a different way (e.g. without using mip_interface_user_recv_from_device())</li>
 </ul>
 <p>Data may be pushed into the system by calling any of these functions: </p><ul>
-<li><a class="el" href="mip__interface_8c.html#a403a6ec65d5ca5d345e12c619d4330e5" title="Polls the port for new data or command replies.">mip_interface_default_update()</a> - this is the default behavior. </li>
-<li><a class="el" href="mip__interface_8c.html#a21fa1e2d19192bbaa2460ac458f39de4" title="Passes data from the device into the parser.">mip_interface_receive_bytes()</a> - process bytes, given a buffer. </li>
-<li><a class="el" href="mip__interface_8c.html#a02366ef13b50d6cf0d7a1cd1751c5ee2" title="Processes a pre-parsed packet for command replies and data.">mip_interface_receive_packet()</a> - process pre-parsed packets. </li>
+<li><a class="el" href="mip__interface_8c.html#a038ef43240f17096f64766f6a955fff2" title="Polls the port for new data or command replies.">mip_interface_default_update()</a> - this is the default behavior. </li>
+<li><a class="el" href="mip__interface_8c.html#a82bbc9760a10376fef5862e5d0660e93" title="Passes data from the device into the parser.">mip_interface_receive_bytes()</a> - process bytes, given a buffer. </li>
+<li><a class="el" href="mip__interface_8c.html#a8f5a272e9641737e65ea7ad9b93d00ea" title="Processes a pre-parsed packet for command replies and data.">mip_interface_receive_packet()</a> - process pre-parsed packets. </li>
 <li><a class="el" href="mip__interface_8c.html#a8625171b2cc6ee76ad7b52f64ed8c0a0" title="Process more packets from the internal buffer.">mip_interface_process_unparsed_packets()</a> - continue parsing buffered data. </li>
 </ul>
 </div></div><!-- contents -->

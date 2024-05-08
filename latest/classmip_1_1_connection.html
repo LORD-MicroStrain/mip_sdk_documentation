@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-178-g68203e1</span>
+   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-283-g2c4cb6b</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -97,6 +97,7 @@ Inheritance diagram for mip::Connection:</div>
 <area href="classmip_1_1platform_1_1_serial_connection.html" title="Can be used on Windows, OSX, or linux to communicate with a MIP device over serial." alt="mip::platform::SerialConnection" shape="rect" coords="374,56,738,80"/>
 <area href="classmip_1_1platform_1_1_tcp_connection.html" title="Can be used on Windows, OSX, or linux to communicate with a MIP device over TCP." alt="mip::platform::TcpConnection" shape="rect" coords="748,56,1112,80"/>
 <area href="classmip_1_1extras_1_1_recording_connection_wrapper.html" title="Template wrapper for a recording connection." alt="mip::extras::RecordingConnectionWrapper&lt; ConnectionType &gt;" shape="rect" coords="0,112,364,136"/>
+<area href="classmip_1_1platform_1_1_usb_serial_connection.html" title="A serial connection but indicates that it&#39;s actually a USB connection." alt="mip::platform::UsbSerialConnection" shape="rect" coords="374,112,738,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -109,7 +110,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad56be6630183ec4cc9cf5f59b4d46e53" id="r_ad56be6630183ec4cc9cf5f59b4d46e53"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_connection.html#ad56be6630183ec4cc9cf5f59b4d46e53">sendToDevice</a> (const uint8_t *data, size_t length)=0</td></tr>
 <tr class="memdesc:ad56be6630183ec4cc9cf5f59b4d46e53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends bytes to the device.  <br /></td></tr>
 <tr class="separator:ad56be6630183ec4cc9cf5f59b4d46e53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07b2f8cd73574f0da74fbb0b82a7f1c3" id="r_a07b2f8cd73574f0da74fbb0b82a7f1c3"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_connection.html#a07b2f8cd73574f0da74fbb0b82a7f1c3">recvFromDevice</a> (uint8_t *buffer, size_t max_length, <a class="el" href="namespacemip.html#a6b00d9d7a48550fcad5056184ad1fbae">Timeout</a> wait_time, size_t *length_out, <a class="el" href="namespacemip.html#a4d99303b1d7588a4e9d020e6210ded41">Timestamp</a> *timestamp_out)=0</td></tr>
+<tr class="memitem:a07b2f8cd73574f0da74fbb0b82a7f1c3" id="r_a07b2f8cd73574f0da74fbb0b82a7f1c3"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_connection.html#a07b2f8cd73574f0da74fbb0b82a7f1c3">recvFromDevice</a> (uint8_t *buffer, size_t max_length, <a class="el" href="namespacemip.html#adf3e3dd725a2c4f8abde99c473000878">Timeout</a> wait_time, size_t *length_out, <a class="el" href="namespacemip.html#ac74386034393307fd0de0b553ed4fb37">Timestamp</a> *timestamp_out)=0</td></tr>
 <tr class="memdesc:a07b2f8cd73574f0da74fbb0b82a7f1c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receives bytes from the device.  <br /></td></tr>
 <tr class="separator:a07b2f8cd73574f0da74fbb0b82a7f1c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0bf6f0adc807f047e0b3040a8b99ca49" id="r_a0bf6f0adc807f047e0b3040a8b99ca49"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_connection.html#a0bf6f0adc807f047e0b3040a8b99ca49">isConnected</a> () const =0</td></tr>
@@ -123,6 +124,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac143ab4318741a4a3d1c9db24336833e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaba1bffe5ba6d8717eb0ad2a54550c81" id="r_aaba1bffe5ba6d8717eb0ad2a54550c81"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_connection.html#aaba1bffe5ba6d8717eb0ad2a54550c81">type</a> () const</td></tr>
 <tr class="separator:aaba1bffe5ba6d8717eb0ad2a54550c81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f600029dec2b8ca97595eea188fc1b0" id="r_a6f600029dec2b8ca97595eea188fc1b0"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_connection.html#a6f600029dec2b8ca97595eea188fc1b0">interfaceName</a> () const =0</td></tr>
+<tr class="separator:a6f600029dec2b8ca97595eea188fc1b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0891258a7786dd9384d0557d693de829" id="r_a0891258a7786dd9384d0557d693de829"><td class="memItemLeft" align="right" valign="top">virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_connection.html#a0891258a7786dd9384d0557d693de829">parameter</a> () const =0</td></tr>
+<tr class="separator:a0891258a7786dd9384d0557d693de829"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -215,7 +220,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classmip_1_1extras_1_1_recording_connection.html#a0a5d7df0a249ab45c470025339b5c2b7">mip::extras::RecordingConnection</a>, <a class="el" href="classmip_1_1platform_1_1_serial_connection.html#a3780320c183e084dbd002777a27520f8">mip::platform::SerialConnection</a>, and <a class="el" href="classmip_1_1platform_1_1_tcp_connection.html#ae191fc73f3287be0d112b1425cb7dc5b">mip::platform::TcpConnection</a>.</p>
+<p>Implemented in <a class="el" href="classmip_1_1extras_1_1_recording_connection.html#a0a5d7df0a249ab45c470025339b5c2b7">mip::extras::RecordingConnection</a>, <a class="el" href="classmip_1_1platform_1_1_tcp_connection.html#ae191fc73f3287be0d112b1425cb7dc5b">mip::platform::TcpConnection</a>, and <a class="el" href="classmip_1_1platform_1_1_serial_connection.html#a1c5f38fbab27b90d606b32d5f7ce4403">mip::platform::SerialConnection</a>.</p>
 
 </div>
 </div>
@@ -269,7 +274,34 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classmip_1_1extras_1_1_recording_connection.html#a77d755fd7a79393e7598332aca6ba7a3">mip::extras::RecordingConnection</a>, <a class="el" href="classmip_1_1platform_1_1_serial_connection.html#ac534d159bf8924283d6f40ae29ab7b3a">mip::platform::SerialConnection</a>, and <a class="el" href="classmip_1_1platform_1_1_tcp_connection.html#a2b181de094c802b0449c2724169bffe0">mip::platform::TcpConnection</a>.</p>
+<p>Implemented in <a class="el" href="classmip_1_1extras_1_1_recording_connection.html#a77d755fd7a79393e7598332aca6ba7a3">mip::extras::RecordingConnection</a>, <a class="el" href="classmip_1_1platform_1_1_tcp_connection.html#a2b181de094c802b0449c2724169bffe0">mip::platform::TcpConnection</a>, and <a class="el" href="classmip_1_1platform_1_1_serial_connection.html#a955d34861180743415e38d027e2bb8d6">mip::platform::SerialConnection</a>.</p>
+
+</div>
+</div>
+<a id="a6f600029dec2b8ca97595eea188fc1b0" name="a6f600029dec2b8ca97595eea188fc1b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f600029dec2b8ca97595eea188fc1b0">&#9670;&#160;</a></span>interfaceName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const char * mip::Connection::interfaceName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classmip_1_1extras_1_1_recording_connection.html#aafcd0225963767bdcfdbff8169afc092">mip::extras::RecordingConnection</a>, <a class="el" href="classmip_1_1platform_1_1_serial_connection.html#aeb8cc0d26e126f11abf7b3c6fedab053">mip::platform::SerialConnection</a>, and <a class="el" href="classmip_1_1platform_1_1_tcp_connection.html#ade01f13c2343e0fb3bf1aab5576dec0d">mip::platform::TcpConnection</a>.</p>
 
 </div>
 </div>
@@ -296,7 +328,34 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classmip_1_1extras_1_1_recording_connection.html#a09f545cf54ffd9644d4bb77345a31508">mip::extras::RecordingConnection</a>, <a class="el" href="classmip_1_1platform_1_1_serial_connection.html#af0c5c54802304fbc2a04d42e606ed118">mip::platform::SerialConnection</a>, and <a class="el" href="classmip_1_1platform_1_1_tcp_connection.html#abd3a2352c41e20b56d8b31ab4e983c33">mip::platform::TcpConnection</a>.</p>
+<p>Implemented in <a class="el" href="classmip_1_1extras_1_1_recording_connection.html#a09f545cf54ffd9644d4bb77345a31508">mip::extras::RecordingConnection</a>, <a class="el" href="classmip_1_1platform_1_1_tcp_connection.html#abd3a2352c41e20b56d8b31ab4e983c33">mip::platform::TcpConnection</a>, and <a class="el" href="classmip_1_1platform_1_1_serial_connection.html#aa29ac4cb417ed372241b5b2b827fd6c4">mip::platform::SerialConnection</a>.</p>
+
+</div>
+</div>
+<a id="a0891258a7786dd9384d0557d693de829" name="a0891258a7786dd9384d0557d693de829"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0891258a7786dd9384d0557d693de829">&#9670;&#160;</a></span>parameter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual uint32_t mip::Connection::parameter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classmip_1_1extras_1_1_recording_connection.html#a0d0566ef635105be64dc47912d34a15f">mip::extras::RecordingConnection</a>, <a class="el" href="classmip_1_1platform_1_1_serial_connection.html#ad0e389f73193737f595a70215de4a3ac">mip::platform::SerialConnection</a>, and <a class="el" href="classmip_1_1platform_1_1_tcp_connection.html#ac436b9fe1a9ae68073fa05e0d5993d83">mip::platform::TcpConnection</a>.</p>
 
 </div>
 </div>
@@ -324,7 +383,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacemip.html#a6b00d9d7a48550fcad5056184ad1fbae">Timeout</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemip.html#adf3e3dd725a2c4f8abde99c473000878">Timeout</a>&#160;</td>
           <td class="paramname"><em>wait_time</em>, </td>
         </tr>
         <tr>
@@ -336,7 +395,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacemip.html#a4d99303b1d7588a4e9d020e6210ded41">Timestamp</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemip.html#ac74386034393307fd0de0b553ed4fb37">Timestamp</a> *&#160;</td>
           <td class="paramname"><em>timestamp_out</em>&#160;</td>
         </tr>
         <tr>

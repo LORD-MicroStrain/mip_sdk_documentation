@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-178-g68203e1</span>
+   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-283-g2c4cb6b</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -88,8 +88,8 @@ Functions</h2></td></tr>
 <tr class="separator:gafeaa400b05372d2a537e1fea9b3314f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga08108ca7a0f4d6517b21f225bbd0cef8" id="r_ga08108ca7a0f4d6517b21f225bbd0cef8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__filter__external__heading__update.html#ga08108ca7a0f4d6517b21f225bbd0cef8">mip::commands_filter::extract</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, <a class="el" href="structmip_1_1commands__filter_1_1_external_heading_update.html">ExternalHeadingUpdate</a> &amp;self)</td></tr>
 <tr class="separator:ga08108ca7a0f4d6517b21f225bbd0cef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4682a0fe5c03e4ae982c685938e6a95a" id="r_ga4682a0fe5c03e4ae982c685938e6a95a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__filter__external__heading__update.html#ga4682a0fe5c03e4ae982c685938e6a95a">mip::commands_filter::externalHeadingUpdate</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, float heading, float headingUncertainty, uint8_t type)</td></tr>
-<tr class="separator:ga4682a0fe5c03e4ae982c685938e6a95a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0eea8a692f90f0199e2c20c311bd172b" id="r_ga0eea8a692f90f0199e2c20c311bd172b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_typed_result.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1_external_heading_update.html">ExternalHeadingUpdate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__filter__external__heading__update.html#ga0eea8a692f90f0199e2c20c311bd172b">mip::commands_filter::externalHeadingUpdate</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, float heading, float headingUncertainty, uint8_t type)</td></tr>
+<tr class="separator:ga0eea8a692f90f0199e2c20c311bd172b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Provide a filter measurement from an external heading source</p>
@@ -98,14 +98,14 @@ Functions</h2></td></tr>
 <p>Please refer to your device user manual for information on the maximum rate of this message.</p>
 <p>On -25 models, if the declination source (0x0D, 0x43) is not valid, true heading updates will be NACK'd. On -45 models, if the declination source is invalid, magnetic heading updates will be NACK'd. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga4682a0fe5c03e4ae982c685938e6a95a" name="ga4682a0fe5c03e4ae982c685938e6a95a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4682a0fe5c03e4ae982c685938e6a95a">&#9670;&#160;</a></span>externalHeadingUpdate()</h2>
+<a id="ga0eea8a692f90f0199e2c20c311bd172b" name="ga0eea8a692f90f0199e2c20c311bd172b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0eea8a692f90f0199e2c20c311bd172b">&#9670;&#160;</a></span>externalHeadingUpdate()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a> mip::commands_filter::externalHeadingUpdate </td>
+          <td class="memname"><a class="el" href="structmip_1_1_typed_result.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1_external_heading_update.html">ExternalHeadingUpdate</a> &gt; mip::commands_filter::externalHeadingUpdate </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
           <td class="paramname"><em>device</em>, </td>

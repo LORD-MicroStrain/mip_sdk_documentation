@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-178-g68203e1</span>
+   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-283-g2c4cb6b</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -92,21 +92,21 @@ Functions</h2></td></tr>
 <tr class="separator:gabe7ceca08c103c3b4432499caad7cb71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga43aaefe286b6c618141ad257b9da7605" id="r_ga43aaefe286b6c618141ad257b9da7605"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__capture__gyro__bias.html#ga43aaefe286b6c618141ad257b9da7605">mip::commands_3dm::extract</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, <a class="el" href="structmip_1_1commands__3dm_1_1_capture_gyro_bias_1_1_response.html">CaptureGyroBias::Response</a> &amp;self)</td></tr>
 <tr class="separator:ga43aaefe286b6c618141ad257b9da7605"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7741da22ecf03eb0c52bf1b8f26317e2" id="r_ga7741da22ecf03eb0c52bf1b8f26317e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__capture__gyro__bias.html#ga7741da22ecf03eb0c52bf1b8f26317e2">mip::commands_3dm::captureGyroBias</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, uint16_t averagingTimeMs, float *biasOut)</td></tr>
-<tr class="separator:ga7741da22ecf03eb0c52bf1b8f26317e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gade60b48fe52f7505c736d1b6e58f439d" id="r_gade60b48fe52f7505c736d1b6e58f439d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_typed_result.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1_capture_gyro_bias.html">CaptureGyroBias</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__capture__gyro__bias.html#gade60b48fe52f7505c736d1b6e58f439d">mip::commands_3dm::captureGyroBias</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, uint16_t averagingTimeMs, float *biasOut)</td></tr>
+<tr class="separator:gade60b48fe52f7505c736d1b6e58f439d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Samples gyro for a specified time range and writes the averaged result to the Gyro Bias vector in RAM</p>
 <p>The device will average the gyro output for the duration of "averaging_time_ms." To store the resulting vector in non-volatile memory, use the Set Gyro Bias command. IMPORTANT: The device must be stationary and experiencing minimum vibration for the duration of "averaging_time_ms" Averaging Time range: 1000 to 30,000 </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga7741da22ecf03eb0c52bf1b8f26317e2" name="ga7741da22ecf03eb0c52bf1b8f26317e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7741da22ecf03eb0c52bf1b8f26317e2">&#9670;&#160;</a></span>captureGyroBias()</h2>
+<a id="gade60b48fe52f7505c736d1b6e58f439d" name="gade60b48fe52f7505c736d1b6e58f439d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gade60b48fe52f7505c736d1b6e58f439d">&#9670;&#160;</a></span>captureGyroBias()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a> mip::commands_3dm::captureGyroBias </td>
+          <td class="memname"><a class="el" href="structmip_1_1_typed_result.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1_capture_gyro_bias.html">CaptureGyroBias</a> &gt; mip::commands_3dm::captureGyroBias </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
           <td class="paramname"><em>device</em>, </td>

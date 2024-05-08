@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-178-g68203e1</span>
+   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-283-g2c4cb6b</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -88,32 +88,33 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a66c21d7ee62bf05c8156dc14fcacb1b5" id="r_a66c21d7ee62bf05c8156dc14fcacb1b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_c_1_1mip__time.html">mip_time</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_c_1_1mip__aiding__vehicle__fixed__frame__velocity__command.html#a66c21d7ee62bf05c8156dc14fcacb1b5">time</a></td></tr>
 <tr class="memdesc:a66c21d7ee62bf05c8156dc14fcacb1b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timestamp of the measurement.  <br /></td></tr>
 <tr class="separator:a66c21d7ee62bf05c8156dc14fcacb1b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a021d5c1062f96f0fe079b262e49f5a6c" id="r_a021d5c1062f96f0fe079b262e49f5a6c"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_c_1_1mip__aiding__vehicle__fixed__frame__velocity__command.html#a021d5c1062f96f0fe079b262e49f5a6c">sensor_id</a></td></tr>
-<tr class="memdesc:a021d5c1062f96f0fe079b262e49f5a6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Source ID for this estimate ( source_id == 0 indicates this sensor, source_id &gt; 0 indicates an external estimate )  <br /></td></tr>
-<tr class="separator:a021d5c1062f96f0fe079b262e49f5a6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe2a0e7f855dd71da824bf2f44706b94" id="r_afe2a0e7f855dd71da824bf2f44706b94"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_c_1_1mip__aiding__vehicle__fixed__frame__velocity__command.html#afe2a0e7f855dd71da824bf2f44706b94">frame_id</a></td></tr>
+<tr class="memdesc:afe2a0e7f855dd71da824bf2f44706b94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Source ID for this estimate (source_id == 0 indicates this sensor, source_id &gt; 0 indicates an external estimate).  <br /></td></tr>
+<tr class="separator:afe2a0e7f855dd71da824bf2f44706b94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4980c0daade06203a81995089be96463" id="r_a4980c0daade06203a81995089be96463"><td class="memItemLeft" align="right" valign="top">mip_vector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_c_1_1mip__aiding__vehicle__fixed__frame__velocity__command.html#a4980c0daade06203a81995089be96463">velocity</a></td></tr>
 <tr class="memdesc:a4980c0daade06203a81995089be96463"><td class="mdescLeft">&#160;</td><td class="mdescRight">[m/s]  <br /></td></tr>
 <tr class="separator:a4980c0daade06203a81995089be96463"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af549c852944df6580bbfc85622c78616" id="r_af549c852944df6580bbfc85622c78616"><td class="memItemLeft" align="right" valign="top">mip_vector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_c_1_1mip__aiding__vehicle__fixed__frame__velocity__command.html#af549c852944df6580bbfc85622c78616">uncertainty</a></td></tr>
-<tr class="memdesc:af549c852944df6580bbfc85622c78616"><td class="mdescLeft">&#160;</td><td class="mdescRight">[m/s] 1-sigma uncertainty (if velocity_uncertainty[i] &lt;= 0, then velocity[i] should be treated as invalid and ingnored)  <br /></td></tr>
+<tr class="memdesc:af549c852944df6580bbfc85622c78616"><td class="mdescLeft">&#160;</td><td class="mdescRight">[m/s] 1-sigma uncertainty. Cannot be 0 unless the corresponding valid flags are 0.  <br /></td></tr>
 <tr class="separator:af549c852944df6580bbfc85622c78616"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a797f429e1eff8573de8efaa5dc283a64" id="r_a797f429e1eff8573de8efaa5dc283a64"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__c__aiding__vehicle__fixed__frame__velocity.html#gadffd9d1f40300a1a4ea1a7c8a8012d7f">mip_aiding_vehicle_fixed_frame_velocity_command_valid_flags</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_c_1_1mip__aiding__vehicle__fixed__frame__velocity__command.html#a797f429e1eff8573de8efaa5dc283a64">valid_flags</a></td></tr>
+<tr class="memdesc:a797f429e1eff8573de8efaa5dc283a64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Valid flags. Axes with 0 will be completely ignored.  <br /></td></tr>
 <tr class="separator:a797f429e1eff8573de8efaa5dc283a64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a021d5c1062f96f0fe079b262e49f5a6c" name="a021d5c1062f96f0fe079b262e49f5a6c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a021d5c1062f96f0fe079b262e49f5a6c">&#9670;&#160;</a></span>sensor_id</h2>
+<a id="afe2a0e7f855dd71da824bf2f44706b94" name="afe2a0e7f855dd71da824bf2f44706b94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe2a0e7f855dd71da824bf2f44706b94">&#9670;&#160;</a></span>frame_id</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t mip::C::mip_aiding_vehicle_fixed_frame_velocity_command::sensor_id</td>
+          <td class="memname">uint8_t mip::C::mip_aiding_vehicle_fixed_frame_velocity_command::frame_id</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Source ID for this estimate ( source_id == 0 indicates this sensor, source_id &gt; 0 indicates an external estimate ) </p>
+<p>Source ID for this estimate (source_id == 0 indicates this sensor, source_id &gt; 0 indicates an external estimate). </p>
 
 </div>
 </div>
@@ -145,7 +146,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>[m/s] 1-sigma uncertainty (if velocity_uncertainty[i] &lt;= 0, then velocity[i] should be treated as invalid and ingnored) </p>
+<p>[m/s] 1-sigma uncertainty. Cannot be 0 unless the corresponding valid flags are 0. </p>
 
 </div>
 </div>
@@ -160,6 +161,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Valid flags. Axes with 0 will be completely ignored. </p>
 
 </div>
 </div>

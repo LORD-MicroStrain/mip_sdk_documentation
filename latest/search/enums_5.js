@@ -9,6 +9,6 @@ var searchData=
   ['filtermode_6',['FilterMode',['../group__filter__data__cpp.html#ga5a151a1044bf169f036bf4488469db7e',1,'mip::data_filter']]],
   ['filterreferenceframe_7',['FilterReferenceFrame',['../group__filter__commands__cpp.html#gaf94e37c7eb0f2d82250d876d71ec0311',1,'mip::commands_filter']]],
   ['fixtype_8',['fixtype',['../structmip_1_1data__filter_1_1_gnss_dual_antenna_status.html#a151d3d1d7d42de6fe022f5712aeeb932',1,'mip::data_filter::GnssDualAntennaStatus::FixType'],['../structmip_1_1data__gnss_1_1_fix_info.html#abcd7ffd1393ca62ed3d5a825420333fb',1,'mip::data_gnss::FixInfo::FixType']]],
-  ['format_9',['Format',['../structmip_1_1commands__aiding_1_1_reference_frame.html#af01d4b326323eb8f97dca0c6003b0c34',1,'mip::commands_aiding::ReferenceFrame']]],
+  ['format_9',['Format',['../structmip_1_1commands__aiding_1_1_frame_config.html#a72a49d432c88ff2602da2cec723df5a3',1,'mip::commands_aiding::FrameConfig']]],
   ['functionselector_10',['FunctionSelector',['../namespacemip.html#a2dde9cdf5ebc86cf62e8c2591dcb56de',1,'mip']]]
 ];

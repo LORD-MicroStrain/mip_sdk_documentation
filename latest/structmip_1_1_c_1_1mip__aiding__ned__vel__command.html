@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-178-g68203e1</span>
+   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-283-g2c4cb6b</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -88,33 +88,33 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:af66040651cc08bc95c3663d2347e02af" id="r_af66040651cc08bc95c3663d2347e02af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_c_1_1mip__time.html">mip_time</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_c_1_1mip__aiding__ned__vel__command.html#af66040651cc08bc95c3663d2347e02af">time</a></td></tr>
 <tr class="memdesc:af66040651cc08bc95c3663d2347e02af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timestamp of the measurement.  <br /></td></tr>
 <tr class="separator:af66040651cc08bc95c3663d2347e02af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68461a9e93e8296e226dba43a1dcaa7a" id="r_a68461a9e93e8296e226dba43a1dcaa7a"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_c_1_1mip__aiding__ned__vel__command.html#a68461a9e93e8296e226dba43a1dcaa7a">sensor_id</a></td></tr>
-<tr class="memdesc:a68461a9e93e8296e226dba43a1dcaa7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sensor ID.  <br /></td></tr>
-<tr class="separator:a68461a9e93e8296e226dba43a1dcaa7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf26a83d6181875feaf667e737527c1c" id="r_abf26a83d6181875feaf667e737527c1c"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_c_1_1mip__aiding__ned__vel__command.html#abf26a83d6181875feaf667e737527c1c">frame_id</a></td></tr>
+<tr class="memdesc:abf26a83d6181875feaf667e737527c1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Source ID for this estimate (source_id == 0 indicates this sensor, source_id &gt; 0 indicates an external estimate).  <br /></td></tr>
+<tr class="separator:abf26a83d6181875feaf667e737527c1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a552cd514a79af0b941a4fde679fd95af" id="r_a552cd514a79af0b941a4fde679fd95af"><td class="memItemLeft" align="right" valign="top">mip_vector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_c_1_1mip__aiding__ned__vel__command.html#a552cd514a79af0b941a4fde679fd95af">velocity</a></td></tr>
 <tr class="memdesc:a552cd514a79af0b941a4fde679fd95af"><td class="mdescLeft">&#160;</td><td class="mdescRight">NED velocity [m/s].  <br /></td></tr>
 <tr class="separator:a552cd514a79af0b941a4fde679fd95af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1affa7a498ca5429b276cb2884708051" id="r_a1affa7a498ca5429b276cb2884708051"><td class="memItemLeft" align="right" valign="top">mip_vector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_c_1_1mip__aiding__ned__vel__command.html#a1affa7a498ca5429b276cb2884708051">uncertainty</a></td></tr>
-<tr class="memdesc:a1affa7a498ca5429b276cb2884708051"><td class="mdescLeft">&#160;</td><td class="mdescRight">NED velocity uncertainty [m/s].  <br /></td></tr>
+<tr class="memdesc:a1affa7a498ca5429b276cb2884708051"><td class="mdescLeft">&#160;</td><td class="mdescRight">NED velocity uncertainty [m/s]. Cannot be 0 unless the corresponding valid flags are 0.  <br /></td></tr>
 <tr class="separator:a1affa7a498ca5429b276cb2884708051"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2c805f31627e666a1ec459f5b4dd791" id="r_ad2c805f31627e666a1ec459f5b4dd791"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__c__aiding__ned__vel.html#gaaee263f4fb561514bc6c08341078d1b7">mip_aiding_ned_vel_command_valid_flags</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_c_1_1mip__aiding__ned__vel__command.html#ad2c805f31627e666a1ec459f5b4dd791">valid_flags</a></td></tr>
-<tr class="memdesc:ad2c805f31627e666a1ec459f5b4dd791"><td class="mdescLeft">&#160;</td><td class="mdescRight">Valid flags.  <br /></td></tr>
+<tr class="memdesc:ad2c805f31627e666a1ec459f5b4dd791"><td class="mdescLeft">&#160;</td><td class="mdescRight">Valid flags. Axes with 0 will be completely ignored.  <br /></td></tr>
 <tr class="separator:ad2c805f31627e666a1ec459f5b4dd791"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a68461a9e93e8296e226dba43a1dcaa7a" name="a68461a9e93e8296e226dba43a1dcaa7a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a68461a9e93e8296e226dba43a1dcaa7a">&#9670;&#160;</a></span>sensor_id</h2>
+<a id="abf26a83d6181875feaf667e737527c1c" name="abf26a83d6181875feaf667e737527c1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf26a83d6181875feaf667e737527c1c">&#9670;&#160;</a></span>frame_id</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t mip::C::mip_aiding_ned_vel_command::sensor_id</td>
+          <td class="memname">uint8_t mip::C::mip_aiding_ned_vel_command::frame_id</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sensor ID. </p>
+<p>Source ID for this estimate (source_id == 0 indicates this sensor, source_id &gt; 0 indicates an external estimate). </p>
 
 </div>
 </div>
@@ -146,7 +146,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>NED velocity uncertainty [m/s]. </p>
+<p>NED velocity uncertainty [m/s]. Cannot be 0 unless the corresponding valid flags are 0. </p>
 
 </div>
 </div>
@@ -162,7 +162,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Valid flags. </p>
+<p>Valid flags. Axes with 0 will be completely ignored. </p>
 
 </div>
 </div>

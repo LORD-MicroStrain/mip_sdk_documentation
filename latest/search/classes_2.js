@@ -21,10 +21,11 @@ var searchData=
   ['comporientationmatrix_18',['CompOrientationMatrix',['../structmip_1_1data__sensor_1_1_comp_orientation_matrix.html',1,'mip::data_sensor']]],
   ['comporientationupdatematrix_19',['CompOrientationUpdateMatrix',['../structmip_1_1data__sensor_1_1_comp_orientation_update_matrix.html',1,'mip::data_sensor']]],
   ['compositedescriptor_20',['CompositeDescriptor',['../structmip_1_1_composite_descriptor.html',1,'mip']]],
-  ['compquaternion_21',['CompQuaternion',['../structmip_1_1data__sensor_1_1_comp_quaternion.html',1,'mip::data_sensor']]],
-  ['coningscullingenable_22',['ConingScullingEnable',['../structmip_1_1commands__3dm_1_1_coning_sculling_enable.html',1,'mip::commands_3dm']]],
-  ['connecteddevicetype_23',['ConnectedDeviceType',['../structmip_1_1commands__rtk_1_1_connected_device_type.html',1,'mip::commands_rtk']]],
-  ['connection_24',['Connection',['../classmip_1_1_connection.html',1,'mip']]],
-  ['constellationsettings_25',['ConstellationSettings',['../structmip_1_1commands__3dm_1_1_constellation_settings.html',1,'mip::commands_3dm']]],
-  ['continuousbit_26',['ContinuousBit',['../structmip_1_1commands__base_1_1_continuous_bit.html',1,'mip::commands_base']]]
+  ['compositeresult_21',['CompositeResult',['../classmip_1_1_composite_result.html',1,'mip']]],
+  ['compquaternion_22',['CompQuaternion',['../structmip_1_1data__sensor_1_1_comp_quaternion.html',1,'mip::data_sensor']]],
+  ['coningscullingenable_23',['ConingScullingEnable',['../structmip_1_1commands__3dm_1_1_coning_sculling_enable.html',1,'mip::commands_3dm']]],
+  ['connecteddevicetype_24',['ConnectedDeviceType',['../structmip_1_1commands__rtk_1_1_connected_device_type.html',1,'mip::commands_rtk']]],
+  ['connection_25',['Connection',['../classmip_1_1_connection.html',1,'mip']]],
+  ['constellationsettings_26',['ConstellationSettings',['../structmip_1_1commands__3dm_1_1_constellation_settings.html',1,'mip::commands_3dm']]],
+  ['continuousbit_27',['ContinuousBit',['../structmip_1_1commands__base_1_1_continuous_bit.html',1,'mip::commands_base']]]
 ];

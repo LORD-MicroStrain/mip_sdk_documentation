@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-178-g68203e1</span>
+   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-283-g2c4cb6b</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -99,9 +99,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a3e2f39c21ad04eea8a288264b75af8f4" id="r_a3e2f39c21ad04eea8a288264b75af8f4"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__packet_8c.html#a3e2f39c21ad04eea8a288264b75af8f4">mip_packet_payload_length</a> (const mip_packet *packet)</td></tr>
 <tr class="memdesc:a3e2f39c21ad04eea8a288264b75af8f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the length of the payload (MIP fields).  <br /></td></tr>
 <tr class="separator:a3e2f39c21ad04eea8a288264b75af8f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fe6c0b44285cba0403e61fc72c1528e" id="r_a4fe6c0b44285cba0403e61fc72c1528e"><td class="memItemLeft" align="right" valign="top">packet_length&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__packet_8c.html#a4fe6c0b44285cba0403e61fc72c1528e">mip_packet_total_length</a> (const mip_packet *packet)</td></tr>
-<tr class="memdesc:a4fe6c0b44285cba0403e61fc72c1528e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the total length of the packet, in bytes.  <br /></td></tr>
-<tr class="separator:a4fe6c0b44285cba0403e61fc72c1528e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b2886b6be015dda15c8a7d319776be9" id="r_a6b2886b6be015dda15c8a7d319776be9"><td class="memItemLeft" align="right" valign="top">uint_least16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__packet_8c.html#a6b2886b6be015dda15c8a7d319776be9">mip_packet_total_length</a> (const mip_packet *packet)</td></tr>
+<tr class="memdesc:a6b2886b6be015dda15c8a7d319776be9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the total length of the packet, in bytes.  <br /></td></tr>
+<tr class="separator:a6b2886b6be015dda15c8a7d319776be9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c4b4826cd87f67f645c3746408b08b7" id="r_a8c4b4826cd87f67f645c3746408b08b7"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__packet_8c.html#a8c4b4826cd87f67f645c3746408b08b7">mip_packet_buffer</a> (mip_packet *packet)</td></tr>
 <tr class="memdesc:a8c4b4826cd87f67f645c3746408b08b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a writable pointer to the data buffer.  <br /></td></tr>
 <tr class="separator:a8c4b4826cd87f67f645c3746408b08b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,27 +126,27 @@ Functions</h2></td></tr>
 <tr class="memitem:ae2a71a17dbcf52c5cea2d96aa6f352e0" id="r_ae2a71a17dbcf52c5cea2d96aa6f352e0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__packet_8c.html#ae2a71a17dbcf52c5cea2d96aa6f352e0">mip_packet_is_empty</a> (const mip_packet *packet)</td></tr>
 <tr class="memdesc:ae2a71a17dbcf52c5cea2d96aa6f352e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the mip packet contains no payload.  <br /></td></tr>
 <tr class="separator:ae2a71a17dbcf52c5cea2d96aa6f352e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ccf494722e3c69a937687e91cc4939a" id="r_a1ccf494722e3c69a937687e91cc4939a"><td class="memItemLeft" align="right" valign="top">packet_length&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__packet_8c.html#a1ccf494722e3c69a937687e91cc4939a">mip_packet_buffer_size</a> (const mip_packet *packet)</td></tr>
-<tr class="memdesc:a1ccf494722e3c69a937687e91cc4939a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size of the buffer backing the MIP packet.  <br /></td></tr>
-<tr class="separator:a1ccf494722e3c69a937687e91cc4939a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79bed35aedacc4ef555ba6367d198b2f" id="r_a79bed35aedacc4ef555ba6367d198b2f"><td class="memItemLeft" align="right" valign="top">remaining_count&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__packet_8c.html#a79bed35aedacc4ef555ba6367d198b2f">mip_packet_remaining_space</a> (const mip_packet *packet)</td></tr>
-<tr class="memdesc:a79bed35aedacc4ef555ba6367d198b2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the remaining space available for more payload data.  <br /></td></tr>
-<tr class="separator:a79bed35aedacc4ef555ba6367d198b2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae36532a9a809b934f9792876e979a6a6" id="r_ae36532a9a809b934f9792876e979a6a6"><td class="memItemLeft" align="right" valign="top">uint_least16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__packet_8c.html#ae36532a9a809b934f9792876e979a6a6">mip_packet_buffer_size</a> (const mip_packet *packet)</td></tr>
+<tr class="memdesc:ae36532a9a809b934f9792876e979a6a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size of the buffer backing the MIP packet.  <br /></td></tr>
+<tr class="separator:ae36532a9a809b934f9792876e979a6a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8ccab749f102e09a1cf04fd96d95bb9" id="r_aa8ccab749f102e09a1cf04fd96d95bb9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__packet_8c.html#aa8ccab749f102e09a1cf04fd96d95bb9">mip_packet_remaining_space</a> (const mip_packet *packet)</td></tr>
+<tr class="memdesc:aa8ccab749f102e09a1cf04fd96d95bb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the remaining space available for more payload data.  <br /></td></tr>
+<tr class="separator:aa8ccab749f102e09a1cf04fd96d95bb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37b57c470df20277c41cbc8b819839fe" id="r_a37b57c470df20277c41cbc8b819839fe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__packet_8c.html#a37b57c470df20277c41cbc8b819839fe">mip_packet_is_data</a> (const mip_packet *packet)</td></tr>
 <tr class="memdesc:a37b57c470df20277c41cbc8b819839fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the packet is from a data descriptor set.  <br /></td></tr>
 <tr class="separator:a37b57c470df20277c41cbc8b819839fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd0e8146f1cc442e63c1600b3ee3ec48" id="r_afd0e8146f1cc442e63c1600b3ee3ec48"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__packet_8c.html#afd0e8146f1cc442e63c1600b3ee3ec48">mip_packet_add_field</a> (mip_packet *packet, uint8_t field_descriptor, const uint8_t *payload, uint8_t payload_length)</td></tr>
 <tr class="memdesc:afd0e8146f1cc442e63c1600b3ee3ec48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a pre-constructed MIP field to the packet.  <br /></td></tr>
 <tr class="separator:afd0e8146f1cc442e63c1600b3ee3ec48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7a27d865eb662495d796d5ca032cc8b" id="r_aa7a27d865eb662495d796d5ca032cc8b"><td class="memItemLeft" align="right" valign="top">remaining_count&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__packet_8c.html#aa7a27d865eb662495d796d5ca032cc8b">mip_packet_alloc_field</a> (mip_packet *packet, uint8_t field_descriptor, uint8_t payload_length, uint8_t **const payload_ptr_out)</td></tr>
-<tr class="memdesc:aa7a27d865eb662495d796d5ca032cc8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a MIP field within the packet and return the payload pointer.  <br /></td></tr>
-<tr class="separator:aa7a27d865eb662495d796d5ca032cc8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65bdf78081a347d993e4e905f8d83229" id="r_a65bdf78081a347d993e4e905f8d83229"><td class="memItemLeft" align="right" valign="top">remaining_count&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__packet_8c.html#a65bdf78081a347d993e4e905f8d83229">mip_packet_realloc_last_field</a> (mip_packet *packet, uint8_t *payload_ptr, uint8_t new_payload_length)</td></tr>
-<tr class="memdesc:a65bdf78081a347d993e4e905f8d83229"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the size of the last field in the packet.  <br /></td></tr>
-<tr class="separator:a65bdf78081a347d993e4e905f8d83229"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ab04636d1452785e6bd48dab275a206" id="r_a0ab04636d1452785e6bd48dab275a206"><td class="memItemLeft" align="right" valign="top">remaining_count&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__packet_8c.html#a0ab04636d1452785e6bd48dab275a206">mip_packet_cancel_last_field</a> (mip_packet *packet, uint8_t *payload_ptr)</td></tr>
-<tr class="memdesc:a0ab04636d1452785e6bd48dab275a206"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the last field from the packet after having allocated it.  <br /></td></tr>
-<tr class="separator:a0ab04636d1452785e6bd48dab275a206"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a099d2091645dcffdb8497a6fab454a0c" id="r_a099d2091645dcffdb8497a6fab454a0c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__packet_8c.html#a099d2091645dcffdb8497a6fab454a0c">mip_packet_alloc_field</a> (mip_packet *packet, uint8_t field_descriptor, uint8_t payload_length, uint8_t **const payload_ptr_out)</td></tr>
+<tr class="memdesc:a099d2091645dcffdb8497a6fab454a0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a MIP field within the packet and return the payload pointer.  <br /></td></tr>
+<tr class="separator:a099d2091645dcffdb8497a6fab454a0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fdf8244b2175cd1a851180865f59970" id="r_a5fdf8244b2175cd1a851180865f59970"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__packet_8c.html#a5fdf8244b2175cd1a851180865f59970">mip_packet_realloc_last_field</a> (mip_packet *packet, uint8_t *payload_ptr, uint8_t new_payload_length)</td></tr>
+<tr class="memdesc:a5fdf8244b2175cd1a851180865f59970"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the size of the last field in the packet.  <br /></td></tr>
+<tr class="separator:a5fdf8244b2175cd1a851180865f59970"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac67d5b3e80112a6d5e15ac044ea28699" id="r_ac67d5b3e80112a6d5e15ac044ea28699"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__packet_8c.html#ac67d5b3e80112a6d5e15ac044ea28699">mip_packet_cancel_last_field</a> (mip_packet *packet, uint8_t *payload_ptr)</td></tr>
+<tr class="memdesc:ac67d5b3e80112a6d5e15ac044ea28699"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the last field from the packet after having allocated it.  <br /></td></tr>
+<tr class="separator:ac67d5b3e80112a6d5e15ac044ea28699"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae20201ffa9f957c1e0a046387a11eee5" id="r_ae20201ffa9f957c1e0a046387a11eee5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__packet_8c.html#ae20201ffa9f957c1e0a046387a11eee5">mip_packet_finalize</a> (mip_packet *packet)</td></tr>
 <tr class="memdesc:ae20201ffa9f957c1e0a046387a11eee5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepares the packet for transmission by adding the checksum.  <br /></td></tr>
 <tr class="separator:ae20201ffa9f957c1e0a046387a11eee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -217,14 +217,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa7a27d865eb662495d796d5ca032cc8b" name="aa7a27d865eb662495d796d5ca032cc8b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7a27d865eb662495d796d5ca032cc8b">&#9670;&#160;</a></span>mip_packet_alloc_field()</h2>
+<a id="a099d2091645dcffdb8497a6fab454a0c" name="a099d2091645dcffdb8497a6fab454a0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a099d2091645dcffdb8497a6fab454a0c">&#9670;&#160;</a></span>mip_packet_alloc_field()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">remaining_count mip_packet_alloc_field </td>
+          <td class="memname">int mip_packet_alloc_field </td>
           <td>(</td>
           <td class="paramtype">mip_packet *&#160;</td>
           <td class="paramname"><em>packet</em>, </td>
@@ -297,14 +297,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a1ccf494722e3c69a937687e91cc4939a" name="a1ccf494722e3c69a937687e91cc4939a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ccf494722e3c69a937687e91cc4939a">&#9670;&#160;</a></span>mip_packet_buffer_size()</h2>
+<a id="ae36532a9a809b934f9792876e979a6a6" name="ae36532a9a809b934f9792876e979a6a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae36532a9a809b934f9792876e979a6a6">&#9670;&#160;</a></span>mip_packet_buffer_size()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">packet_length mip_packet_buffer_size </td>
+          <td class="memname">uint_least16_t mip_packet_buffer_size </td>
           <td>(</td>
           <td class="paramtype">const mip_packet *&#160;</td>
           <td class="paramname"><em>packet</em></td><td>)</td>
@@ -318,14 +318,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a0ab04636d1452785e6bd48dab275a206" name="a0ab04636d1452785e6bd48dab275a206"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ab04636d1452785e6bd48dab275a206">&#9670;&#160;</a></span>mip_packet_cancel_last_field()</h2>
+<a id="ac67d5b3e80112a6d5e15ac044ea28699" name="ac67d5b3e80112a6d5e15ac044ea28699"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac67d5b3e80112a6d5e15ac044ea28699">&#9670;&#160;</a></span>mip_packet_cancel_last_field()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">remaining_count mip_packet_cancel_last_field </td>
+          <td class="memname">int mip_packet_cancel_last_field </td>
           <td>(</td>
           <td class="paramtype">mip_packet *&#160;</td>
           <td class="paramname"><em>packet</em>, </td>
@@ -704,14 +704,14 @@ false if it contains commands or replies. </dd></dl>
 
 </div>
 </div>
-<a id="a65bdf78081a347d993e4e905f8d83229" name="a65bdf78081a347d993e4e905f8d83229"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65bdf78081a347d993e4e905f8d83229">&#9670;&#160;</a></span>mip_packet_realloc_last_field()</h2>
+<a id="a5fdf8244b2175cd1a851180865f59970" name="a5fdf8244b2175cd1a851180865f59970"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fdf8244b2175cd1a851180865f59970">&#9670;&#160;</a></span>mip_packet_realloc_last_field()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">remaining_count mip_packet_realloc_last_field </td>
+          <td class="memname">int mip_packet_realloc_last_field </td>
           <td>(</td>
           <td class="paramtype">mip_packet *&#160;</td>
           <td class="paramname"><em>packet</em>, </td>
@@ -737,7 +737,7 @@ false if it contains commands or replies. </dd></dl>
 </div><div class="memdoc">
 
 <p>Changes the size of the last field in the packet. </p>
-<p>Use this in conjunction with <a class="el" href="mip__packet_8c.html#aa7a27d865eb662495d796d5ca032cc8b" title="Allocate a MIP field within the packet and return the payload pointer.">mip_packet_alloc_field()</a> when the size of the field is not known in advance. Pass a payload size of 0 to alloc_field and check that the returned available space is sufficient, then write the payload and call this function with the actual space used.</p>
+<p>Use this in conjunction with <a class="el" href="mip__packet_8c.html#a099d2091645dcffdb8497a6fab454a0c" title="Allocate a MIP field within the packet and return the payload pointer.">mip_packet_alloc_field()</a> when the size of the field is not known in advance. Pass a payload size of 0 to alloc_field and check that the returned available space is sufficient, then write the payload and call this function with the actual space used.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">packet</td><td></td></tr>
@@ -750,14 +750,14 @@ false if it contains commands or replies. </dd></dl>
 
 </div>
 </div>
-<a id="a79bed35aedacc4ef555ba6367d198b2f" name="a79bed35aedacc4ef555ba6367d198b2f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79bed35aedacc4ef555ba6367d198b2f">&#9670;&#160;</a></span>mip_packet_remaining_space()</h2>
+<a id="aa8ccab749f102e09a1cf04fd96d95bb9" name="aa8ccab749f102e09a1cf04fd96d95bb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8ccab749f102e09a1cf04fd96d95bb9">&#9670;&#160;</a></span>mip_packet_remaining_space()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">remaining_count mip_packet_remaining_space </td>
+          <td class="memname">int mip_packet_remaining_space </td>
           <td>(</td>
           <td class="paramtype">const mip_packet *&#160;</td>
           <td class="paramname"><em>packet</em></td><td>)</td>
@@ -767,7 +767,8 @@ false if it contains commands or replies. </dd></dl>
 </div><div class="memdoc">
 
 <p>Returns the remaining space available for more payload data. </p>
-<p>This is equal to the buffer size less the total packet length. </p>
+<p>This is equal to the buffer size less the total packet length.</p>
+<dl class="section warning"><dt>Warning</dt><dd>The result may be negative if the packet length exceeds the actual buffer capacity. Such packets are not 'sane' (mip_packet_is_sane) and can only be produced by manipulating the buffered data directly. </dd></dl>
 
 </div>
 </div>
@@ -809,14 +810,14 @@ false if it contains commands or replies. </dd></dl>
 
 </div>
 </div>
-<a id="a4fe6c0b44285cba0403e61fc72c1528e" name="a4fe6c0b44285cba0403e61fc72c1528e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4fe6c0b44285cba0403e61fc72c1528e">&#9670;&#160;</a></span>mip_packet_total_length()</h2>
+<a id="a6b2886b6be015dda15c8a7d319776be9" name="a6b2886b6be015dda15c8a7d319776be9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b2886b6be015dda15c8a7d319776be9">&#9670;&#160;</a></span>mip_packet_total_length()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">packet_length mip_packet_total_length </td>
+          <td class="memname">uint_least16_t mip_packet_total_length </td>
           <td>(</td>
           <td class="paramtype">const mip_packet *&#160;</td>
           <td class="paramname"><em>packet</em></td><td>)</td>

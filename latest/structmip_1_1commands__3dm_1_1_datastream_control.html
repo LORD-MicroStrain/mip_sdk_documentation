@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-178-g68203e1</span>
+   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-283-g2c4cb6b</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -109,7 +109,7 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ac50ad11ca9049573fbab7d5ac07da8bd" id="r_ac50ad11ca9049573fbab7d5ac07da8bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemip.html#a2dde9cdf5ebc86cf62e8c2591dcb56de">FunctionSelector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_datastream_control.html#ac50ad11ca9049573fbab7d5ac07da8bd">function</a> = static_cast&lt;<a class="el" href="namespacemip.html#a2dde9cdf5ebc86cf62e8c2591dcb56de">FunctionSelector</a>&gt;(0)</td></tr>
 <tr class="separator:ac50ad11ca9049573fbab7d5ac07da8bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4b36196731275049f7c4cf6950262d3" id="r_aa4b36196731275049f7c4cf6950262d3"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_datastream_control.html#aa4b36196731275049f7c4cf6950262d3">desc_set</a> = 0</td></tr>
-<tr class="memdesc:aa4b36196731275049f7c4cf6950262d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The descriptor set of the stream to control. When function is SAVE, LOAD, or DEFAULT, can be <a class="el" href="structmip_1_1commands__3dm_1_1_datastream_control.html#a068c5a0cc270ac5d47bb74995497bdda">ALL_STREAMS(0)</a> to apply to all descriptor sets. On Generation 5 products, this must be one of the above legacy constants.  <br /></td></tr>
+<tr class="memdesc:aa4b36196731275049f7c4cf6950262d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The descriptor set of the stream to control. When function is SAVE, LOAD, or DEFAULT, can be <a class="el" href="structmip_1_1commands__3dm_1_1_datastream_control.html#a3bf9d0a794b48cb0b2eb29bd75a7e961">ALL_STREAMS(0)</a> to apply to all descriptor sets. On Generation 5 products, this must be one of the above legacy constants.  <br /></td></tr>
 <tr class="separator:aa4b36196731275049f7c4cf6950262d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3cbf5aca785b6a3ad966482c2d917cf" id="r_ae3cbf5aca785b6a3ad966482c2d917cf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_datastream_control.html#ae3cbf5aca785b6a3ad966482c2d917cf">enable</a> = 0</td></tr>
 <tr class="memdesc:ae3cbf5aca785b6a3ad966482c2d917cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">True or false to enable or disable the stream.  <br /></td></tr>
@@ -117,34 +117,40 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:ad3fd15b35c1f7b3ef53ec07920597f29" id="r_ad3fd15b35c1f7b3ef53ec07920597f29"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_datastream_control.html#ad3fd15b35c1f7b3ef53ec07920597f29">LEGACY_IMU_STREAM</a> = 0x01</td></tr>
-<tr class="separator:ad3fd15b35c1f7b3ef53ec07920597f29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bb6924d91fe5a961a53a1aaa9120bc4" id="r_a6bb6924d91fe5a961a53a1aaa9120bc4"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_datastream_control.html#a6bb6924d91fe5a961a53a1aaa9120bc4">LEGACY_GNSS_STREAM</a> = 0x02</td></tr>
-<tr class="separator:a6bb6924d91fe5a961a53a1aaa9120bc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93fa103ddcb3affa53ee3d5b59199e32" id="r_a93fa103ddcb3affa53ee3d5b59199e32"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_datastream_control.html#a93fa103ddcb3affa53ee3d5b59199e32">LEGACY_FILTER_STREAM</a> = 0x03</td></tr>
-<tr class="separator:a93fa103ddcb3affa53ee3d5b59199e32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a068c5a0cc270ac5d47bb74995497bdda" id="r_a068c5a0cc270ac5d47bb74995497bdda"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_datastream_control.html#a068c5a0cc270ac5d47bb74995497bdda">ALL_STREAMS</a> = 0x00</td></tr>
-<tr class="separator:a068c5a0cc270ac5d47bb74995497bdda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73b2f48caa713fa976e7ac44fd91cd46" id="r_a73b2f48caa713fa976e7ac44fd91cd46"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_datastream_control.html#a73b2f48caa713fa976e7ac44fd91cd46">DESCRIPTOR_SET</a> = ::mip::commands_3dm::DESCRIPTOR_SET</td></tr>
-<tr class="separator:a73b2f48caa713fa976e7ac44fd91cd46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19f80c1c263373ea340291a52b5445e8" id="r_a19f80c1c263373ea340291a52b5445e8"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_datastream_control.html#a19f80c1c263373ea340291a52b5445e8">FIELD_DESCRIPTOR</a> = <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073afc72570d9d6da122f094332c77bad3bd">::mip::commands_3dm::CMD_CONTROL_DATA_STREAM</a></td></tr>
-<tr class="separator:a19f80c1c263373ea340291a52b5445e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91c9f839699007b2af6ca0adf02995a8" id="r_a91c9f839699007b2af6ca0adf02995a8"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_datastream_control.html#a91c9f839699007b2af6ca0adf02995a8">HAS_FUNCTION_SELECTOR</a> = true</td></tr>
-<tr class="separator:a91c9f839699007b2af6ca0adf02995a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92df4b83aeda96ed9651782158c60ffd" id="r_a92df4b83aeda96ed9651782158c60ffd"><td class="memItemLeft" align="right" valign="top">static const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_datastream_control.html#a92df4b83aeda96ed9651782158c60ffd">WRITE_PARAMS</a> = 0x8003</td></tr>
-<tr class="separator:a92df4b83aeda96ed9651782158c60ffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abad2d839e749fb231649e7bbfb4fcd9b" id="r_abad2d839e749fb231649e7bbfb4fcd9b"><td class="memItemLeft" align="right" valign="top">static const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_datastream_control.html#abad2d839e749fb231649e7bbfb4fcd9b">READ_PARAMS</a> = 0x8001</td></tr>
-<tr class="separator:abad2d839e749fb231649e7bbfb4fcd9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a01bcdf707d6c1cf981c9013747ac6a" id="r_a6a01bcdf707d6c1cf981c9013747ac6a"><td class="memItemLeft" align="right" valign="top">static const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_datastream_control.html#a6a01bcdf707d6c1cf981c9013747ac6a">SAVE_PARAMS</a> = 0x8001</td></tr>
-<tr class="separator:a6a01bcdf707d6c1cf981c9013747ac6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a304f4d2d93c189c94c3e5c1f3fb9ec41" id="r_a304f4d2d93c189c94c3e5c1f3fb9ec41"><td class="memItemLeft" align="right" valign="top">static const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_datastream_control.html#a304f4d2d93c189c94c3e5c1f3fb9ec41">LOAD_PARAMS</a> = 0x8001</td></tr>
-<tr class="separator:a304f4d2d93c189c94c3e5c1f3fb9ec41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa682003a39303fe40ae53e1897dab3c5" id="r_aa682003a39303fe40ae53e1897dab3c5"><td class="memItemLeft" align="right" valign="top">static const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_datastream_control.html#aa682003a39303fe40ae53e1897dab3c5">DEFAULT_PARAMS</a> = 0x8001</td></tr>
-<tr class="separator:aa682003a39303fe40ae53e1897dab3c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d6a969e61d9d56c516e40f98d6452b7" id="r_a9d6a969e61d9d56c516e40f98d6452b7"><td class="memItemLeft" align="right" valign="top">static const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_datastream_control.html#a9d6a969e61d9d56c516e40f98d6452b7">ECHOED_PARAMS</a> = 0x0001</td></tr>
-<tr class="separator:a9d6a969e61d9d56c516e40f98d6452b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5ea6c88dd93c796054af367a487646b" id="r_aa5ea6c88dd93c796054af367a487646b"><td class="memItemLeft" align="right" valign="top">static const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_datastream_control.html#aa5ea6c88dd93c796054af367a487646b">COUNTER_PARAMS</a> = 0x00000000</td></tr>
-<tr class="separator:aa5ea6c88dd93c796054af367a487646b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a601e7e4411a427ba7bd57ecc99fec5e1" id="r_a601e7e4411a427ba7bd57ecc99fec5e1"><td class="memItemLeft" align="right" valign="top">static constexpr const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_datastream_control.html#a601e7e4411a427ba7bd57ecc99fec5e1">LEGACY_IMU_STREAM</a> = 0x01</td></tr>
+<tr class="separator:a601e7e4411a427ba7bd57ecc99fec5e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5da78c96373f26fa90c1889bbc1172f5" id="r_a5da78c96373f26fa90c1889bbc1172f5"><td class="memItemLeft" align="right" valign="top">static constexpr const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_datastream_control.html#a5da78c96373f26fa90c1889bbc1172f5">LEGACY_GNSS_STREAM</a> = 0x02</td></tr>
+<tr class="separator:a5da78c96373f26fa90c1889bbc1172f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65060cab17d65ef98c16e8adfb65cc75" id="r_a65060cab17d65ef98c16e8adfb65cc75"><td class="memItemLeft" align="right" valign="top">static constexpr const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_datastream_control.html#a65060cab17d65ef98c16e8adfb65cc75">LEGACY_FILTER_STREAM</a> = 0x03</td></tr>
+<tr class="separator:a65060cab17d65ef98c16e8adfb65cc75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bf9d0a794b48cb0b2eb29bd75a7e961" id="r_a3bf9d0a794b48cb0b2eb29bd75a7e961"><td class="memItemLeft" align="right" valign="top">static constexpr const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_datastream_control.html#a3bf9d0a794b48cb0b2eb29bd75a7e961">ALL_STREAMS</a> = 0x00</td></tr>
+<tr class="separator:a3bf9d0a794b48cb0b2eb29bd75a7e961"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab38d3c3051749bf9ff02158bfbb1b134" id="r_ab38d3c3051749bf9ff02158bfbb1b134"><td class="memItemLeft" align="right" valign="top">static constexpr const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_datastream_control.html#ab38d3c3051749bf9ff02158bfbb1b134">DESCRIPTOR_SET</a> = ::mip::commands_3dm::DESCRIPTOR_SET</td></tr>
+<tr class="separator:ab38d3c3051749bf9ff02158bfbb1b134"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a534bb22b995a3b791ba30469c10431" id="r_a3a534bb22b995a3b791ba30469c10431"><td class="memItemLeft" align="right" valign="top">static constexpr const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_datastream_control.html#a3a534bb22b995a3b791ba30469c10431">FIELD_DESCRIPTOR</a> = <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073afc72570d9d6da122f094332c77bad3bd">::mip::commands_3dm::CMD_CONTROL_DATA_STREAM</a></td></tr>
+<tr class="separator:a3a534bb22b995a3b791ba30469c10431"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8225fc9786590589c24b3127d3261ea" id="r_aa8225fc9786590589c24b3127d3261ea"><td class="memItemLeft" align="right" valign="top">static constexpr const <a class="el" href="structmip_1_1_composite_descriptor.html">CompositeDescriptor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_datastream_control.html#aa8225fc9786590589c24b3127d3261ea">DESCRIPTOR</a> = {<a class="el" href="structmip_1_1commands__3dm_1_1_datastream_control.html#ab38d3c3051749bf9ff02158bfbb1b134">DESCRIPTOR_SET</a>, <a class="el" href="structmip_1_1commands__3dm_1_1_datastream_control.html#a3a534bb22b995a3b791ba30469c10431">FIELD_DESCRIPTOR</a>}</td></tr>
+<tr class="separator:aa8225fc9786590589c24b3127d3261ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40b68912834ca9058fe1554a53d87390" id="r_a40b68912834ca9058fe1554a53d87390"><td class="memItemLeft" align="right" valign="top">static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_datastream_control.html#a40b68912834ca9058fe1554a53d87390">NAME</a> = &quot;DatastreamControl&quot;</td></tr>
+<tr class="separator:a40b68912834ca9058fe1554a53d87390"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d455282a8270dfb75ddc1ed8fdf188a" id="r_a4d455282a8270dfb75ddc1ed8fdf188a"><td class="memItemLeft" align="right" valign="top">static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_datastream_control.html#a4d455282a8270dfb75ddc1ed8fdf188a">DOC_NAME</a> = &quot;DatastreamControl&quot;</td></tr>
+<tr class="separator:a4d455282a8270dfb75ddc1ed8fdf188a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fbfdcad1f16b9de1d9fa52868b51f42" id="r_a6fbfdcad1f16b9de1d9fa52868b51f42"><td class="memItemLeft" align="right" valign="top">static constexpr const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_datastream_control.html#a6fbfdcad1f16b9de1d9fa52868b51f42">HAS_FUNCTION_SELECTOR</a> = true</td></tr>
+<tr class="separator:a6fbfdcad1f16b9de1d9fa52868b51f42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add5d799564fa56100bda38aff3425434" id="r_add5d799564fa56100bda38aff3425434"><td class="memItemLeft" align="right" valign="top">static constexpr const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_datastream_control.html#add5d799564fa56100bda38aff3425434">WRITE_PARAMS</a> = 0x8003</td></tr>
+<tr class="separator:add5d799564fa56100bda38aff3425434"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ab30f31330d9055b4d0b720537c6019" id="r_a5ab30f31330d9055b4d0b720537c6019"><td class="memItemLeft" align="right" valign="top">static constexpr const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_datastream_control.html#a5ab30f31330d9055b4d0b720537c6019">READ_PARAMS</a> = 0x8001</td></tr>
+<tr class="separator:a5ab30f31330d9055b4d0b720537c6019"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc97c39c016e1e22a23b56238493eac3" id="r_afc97c39c016e1e22a23b56238493eac3"><td class="memItemLeft" align="right" valign="top">static constexpr const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_datastream_control.html#afc97c39c016e1e22a23b56238493eac3">SAVE_PARAMS</a> = 0x8001</td></tr>
+<tr class="separator:afc97c39c016e1e22a23b56238493eac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a5d706b73104010268e76950be68600" id="r_a0a5d706b73104010268e76950be68600"><td class="memItemLeft" align="right" valign="top">static constexpr const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_datastream_control.html#a0a5d706b73104010268e76950be68600">LOAD_PARAMS</a> = 0x8001</td></tr>
+<tr class="separator:a0a5d706b73104010268e76950be68600"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab16d5f308afed90530aabbed038efc8" id="r_aab16d5f308afed90530aabbed038efc8"><td class="memItemLeft" align="right" valign="top">static constexpr const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_datastream_control.html#aab16d5f308afed90530aabbed038efc8">DEFAULT_PARAMS</a> = 0x8001</td></tr>
+<tr class="separator:aab16d5f308afed90530aabbed038efc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca1575e19b18281dfdf32ee6562f5fcf" id="r_aca1575e19b18281dfdf32ee6562f5fcf"><td class="memItemLeft" align="right" valign="top">static constexpr const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_datastream_control.html#aca1575e19b18281dfdf32ee6562f5fcf">ECHOED_PARAMS</a> = 0x0001</td></tr>
+<tr class="separator:aca1575e19b18281dfdf32ee6562f5fcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a241c50677091d9a6db66433d7628902c" id="r_a241c50677091d9a6db66433d7628902c"><td class="memItemLeft" align="right" valign="top">static constexpr const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1_datastream_control.html#a241c50677091d9a6db66433d7628902c">COUNTER_PARAMS</a> = 0x00000000</td></tr>
+<tr class="separator:a241c50677091d9a6db66433d7628902c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ae08641aa8dc1b69b4e00eeabbcf4adf7" name="ae08641aa8dc1b69b4e00eeabbcf4adf7"></a>
@@ -224,8 +230,8 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a068c5a0cc270ac5d47bb74995497bdda" name="a068c5a0cc270ac5d47bb74995497bdda"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a068c5a0cc270ac5d47bb74995497bdda">&#9670;&#160;</a></span>ALL_STREAMS</h2>
+<a id="a3bf9d0a794b48cb0b2eb29bd75a7e961" name="a3bf9d0a794b48cb0b2eb29bd75a7e961"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bf9d0a794b48cb0b2eb29bd75a7e961">&#9670;&#160;</a></span>ALL_STREAMS</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -234,20 +240,20 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const uint8_t mip::commands_3dm::DatastreamControl::ALL_STREAMS = 0x00</td>
+          <td class="memname">constexpr const uint8_t mip::commands_3dm::DatastreamControl::ALL_STREAMS = 0x00</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="aa5ea6c88dd93c796054af367a487646b" name="aa5ea6c88dd93c796054af367a487646b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa5ea6c88dd93c796054af367a487646b">&#9670;&#160;</a></span>COUNTER_PARAMS</h2>
+<a id="a241c50677091d9a6db66433d7628902c" name="a241c50677091d9a6db66433d7628902c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a241c50677091d9a6db66433d7628902c">&#9670;&#160;</a></span>COUNTER_PARAMS</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -256,20 +262,20 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const uint32_t mip::commands_3dm::DatastreamControl::COUNTER_PARAMS = 0x00000000</td>
+          <td class="memname">constexpr const uint32_t mip::commands_3dm::DatastreamControl::COUNTER_PARAMS = 0x00000000</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="aa682003a39303fe40ae53e1897dab3c5" name="aa682003a39303fe40ae53e1897dab3c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa682003a39303fe40ae53e1897dab3c5">&#9670;&#160;</a></span>DEFAULT_PARAMS</h2>
+<a id="aab16d5f308afed90530aabbed038efc8" name="aab16d5f308afed90530aabbed038efc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab16d5f308afed90530aabbed038efc8">&#9670;&#160;</a></span>DEFAULT_PARAMS</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -278,12 +284,12 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const uint32_t mip::commands_3dm::DatastreamControl::DEFAULT_PARAMS = 0x8001</td>
+          <td class="memname">constexpr const uint32_t mip::commands_3dm::DatastreamControl::DEFAULT_PARAMS = 0x8001</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -302,12 +308,12 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The descriptor set of the stream to control. When function is SAVE, LOAD, or DEFAULT, can be <a class="el" href="structmip_1_1commands__3dm_1_1_datastream_control.html#a068c5a0cc270ac5d47bb74995497bdda">ALL_STREAMS(0)</a> to apply to all descriptor sets. On Generation 5 products, this must be one of the above legacy constants. </p>
+<p>The descriptor set of the stream to control. When function is SAVE, LOAD, or DEFAULT, can be <a class="el" href="structmip_1_1commands__3dm_1_1_datastream_control.html#a3bf9d0a794b48cb0b2eb29bd75a7e961">ALL_STREAMS(0)</a> to apply to all descriptor sets. On Generation 5 products, this must be one of the above legacy constants. </p>
 
 </div>
 </div>
-<a id="a73b2f48caa713fa976e7ac44fd91cd46" name="a73b2f48caa713fa976e7ac44fd91cd46"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73b2f48caa713fa976e7ac44fd91cd46">&#9670;&#160;</a></span>DESCRIPTOR_SET</h2>
+<a id="aa8225fc9786590589c24b3127d3261ea" name="aa8225fc9786590589c24b3127d3261ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8225fc9786590589c24b3127d3261ea">&#9670;&#160;</a></span>DESCRIPTOR</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -316,20 +322,20 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const uint8_t mip::commands_3dm::DatastreamControl::DESCRIPTOR_SET = ::mip::commands_3dm::DESCRIPTOR_SET</td>
+          <td class="memname">constexpr const <a class="el" href="structmip_1_1_composite_descriptor.html">CompositeDescriptor</a> mip::commands_3dm::DatastreamControl::DESCRIPTOR = {<a class="el" href="structmip_1_1commands__3dm_1_1_datastream_control.html#ab38d3c3051749bf9ff02158bfbb1b134">DESCRIPTOR_SET</a>, <a class="el" href="structmip_1_1commands__3dm_1_1_datastream_control.html#a3a534bb22b995a3b791ba30469c10431">FIELD_DESCRIPTOR</a>}</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a9d6a969e61d9d56c516e40f98d6452b7" name="a9d6a969e61d9d56c516e40f98d6452b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d6a969e61d9d56c516e40f98d6452b7">&#9670;&#160;</a></span>ECHOED_PARAMS</h2>
+<a id="ab38d3c3051749bf9ff02158bfbb1b134" name="ab38d3c3051749bf9ff02158bfbb1b134"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab38d3c3051749bf9ff02158bfbb1b134">&#9670;&#160;</a></span>DESCRIPTOR_SET</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -338,12 +344,56 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const uint32_t mip::commands_3dm::DatastreamControl::ECHOED_PARAMS = 0x0001</td>
+          <td class="memname">constexpr const uint8_t mip::commands_3dm::DatastreamControl::DESCRIPTOR_SET = ::mip::commands_3dm::DESCRIPTOR_SET</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4d455282a8270dfb75ddc1ed8fdf188a" name="a4d455282a8270dfb75ddc1ed8fdf188a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d455282a8270dfb75ddc1ed8fdf188a">&#9670;&#160;</a></span>DOC_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr const char* mip::commands_3dm::DatastreamControl::DOC_NAME = &quot;DatastreamControl&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aca1575e19b18281dfdf32ee6562f5fcf" name="aca1575e19b18281dfdf32ee6562f5fcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca1575e19b18281dfdf32ee6562f5fcf">&#9670;&#160;</a></span>ECHOED_PARAMS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr const uint32_t mip::commands_3dm::DatastreamControl::ECHOED_PARAMS = 0x0001</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -366,8 +416,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a19f80c1c263373ea340291a52b5445e8" name="a19f80c1c263373ea340291a52b5445e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19f80c1c263373ea340291a52b5445e8">&#9670;&#160;</a></span>FIELD_DESCRIPTOR</h2>
+<a id="a3a534bb22b995a3b791ba30469c10431" name="a3a534bb22b995a3b791ba30469c10431"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a534bb22b995a3b791ba30469c10431">&#9670;&#160;</a></span>FIELD_DESCRIPTOR</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -376,12 +426,12 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const uint8_t mip::commands_3dm::DatastreamControl::FIELD_DESCRIPTOR = <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073afc72570d9d6da122f094332c77bad3bd">::mip::commands_3dm::CMD_CONTROL_DATA_STREAM</a></td>
+          <td class="memname">constexpr const uint8_t mip::commands_3dm::DatastreamControl::FIELD_DESCRIPTOR = <a class="el" href="group__dm__commands__cpp.html#ggabc83d28da1b1e334732e8a740c1cf073afc72570d9d6da122f094332c77bad3bd">::mip::commands_3dm::CMD_CONTROL_DATA_STREAM</a></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -402,8 +452,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a91c9f839699007b2af6ca0adf02995a8" name="a91c9f839699007b2af6ca0adf02995a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91c9f839699007b2af6ca0adf02995a8">&#9670;&#160;</a></span>HAS_FUNCTION_SELECTOR</h2>
+<a id="a6fbfdcad1f16b9de1d9fa52868b51f42" name="a6fbfdcad1f16b9de1d9fa52868b51f42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fbfdcad1f16b9de1d9fa52868b51f42">&#9670;&#160;</a></span>HAS_FUNCTION_SELECTOR</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -412,20 +462,20 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const bool mip::commands_3dm::DatastreamControl::HAS_FUNCTION_SELECTOR = true</td>
+          <td class="memname">constexpr const bool mip::commands_3dm::DatastreamControl::HAS_FUNCTION_SELECTOR = true</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a93fa103ddcb3affa53ee3d5b59199e32" name="a93fa103ddcb3affa53ee3d5b59199e32"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93fa103ddcb3affa53ee3d5b59199e32">&#9670;&#160;</a></span>LEGACY_FILTER_STREAM</h2>
+<a id="a65060cab17d65ef98c16e8adfb65cc75" name="a65060cab17d65ef98c16e8adfb65cc75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65060cab17d65ef98c16e8adfb65cc75">&#9670;&#160;</a></span>LEGACY_FILTER_STREAM</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -434,20 +484,20 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const uint8_t mip::commands_3dm::DatastreamControl::LEGACY_FILTER_STREAM = 0x03</td>
+          <td class="memname">constexpr const uint8_t mip::commands_3dm::DatastreamControl::LEGACY_FILTER_STREAM = 0x03</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a6bb6924d91fe5a961a53a1aaa9120bc4" name="a6bb6924d91fe5a961a53a1aaa9120bc4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6bb6924d91fe5a961a53a1aaa9120bc4">&#9670;&#160;</a></span>LEGACY_GNSS_STREAM</h2>
+<a id="a5da78c96373f26fa90c1889bbc1172f5" name="a5da78c96373f26fa90c1889bbc1172f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5da78c96373f26fa90c1889bbc1172f5">&#9670;&#160;</a></span>LEGACY_GNSS_STREAM</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -456,20 +506,20 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const uint8_t mip::commands_3dm::DatastreamControl::LEGACY_GNSS_STREAM = 0x02</td>
+          <td class="memname">constexpr const uint8_t mip::commands_3dm::DatastreamControl::LEGACY_GNSS_STREAM = 0x02</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ad3fd15b35c1f7b3ef53ec07920597f29" name="ad3fd15b35c1f7b3ef53ec07920597f29"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3fd15b35c1f7b3ef53ec07920597f29">&#9670;&#160;</a></span>LEGACY_IMU_STREAM</h2>
+<a id="a601e7e4411a427ba7bd57ecc99fec5e1" name="a601e7e4411a427ba7bd57ecc99fec5e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a601e7e4411a427ba7bd57ecc99fec5e1">&#9670;&#160;</a></span>LEGACY_IMU_STREAM</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -478,20 +528,20 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const uint8_t mip::commands_3dm::DatastreamControl::LEGACY_IMU_STREAM = 0x01</td>
+          <td class="memname">constexpr const uint8_t mip::commands_3dm::DatastreamControl::LEGACY_IMU_STREAM = 0x01</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a304f4d2d93c189c94c3e5c1f3fb9ec41" name="a304f4d2d93c189c94c3e5c1f3fb9ec41"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a304f4d2d93c189c94c3e5c1f3fb9ec41">&#9670;&#160;</a></span>LOAD_PARAMS</h2>
+<a id="a0a5d706b73104010268e76950be68600" name="a0a5d706b73104010268e76950be68600"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a5d706b73104010268e76950be68600">&#9670;&#160;</a></span>LOAD_PARAMS</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -500,20 +550,20 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const uint32_t mip::commands_3dm::DatastreamControl::LOAD_PARAMS = 0x8001</td>
+          <td class="memname">constexpr const uint32_t mip::commands_3dm::DatastreamControl::LOAD_PARAMS = 0x8001</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="abad2d839e749fb231649e7bbfb4fcd9b" name="abad2d839e749fb231649e7bbfb4fcd9b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abad2d839e749fb231649e7bbfb4fcd9b">&#9670;&#160;</a></span>READ_PARAMS</h2>
+<a id="a40b68912834ca9058fe1554a53d87390" name="a40b68912834ca9058fe1554a53d87390"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40b68912834ca9058fe1554a53d87390">&#9670;&#160;</a></span>NAME</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -522,20 +572,20 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const uint32_t mip::commands_3dm::DatastreamControl::READ_PARAMS = 0x8001</td>
+          <td class="memname">constexpr const char* mip::commands_3dm::DatastreamControl::NAME = &quot;DatastreamControl&quot;</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a6a01bcdf707d6c1cf981c9013747ac6a" name="a6a01bcdf707d6c1cf981c9013747ac6a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a01bcdf707d6c1cf981c9013747ac6a">&#9670;&#160;</a></span>SAVE_PARAMS</h2>
+<a id="a5ab30f31330d9055b4d0b720537c6019" name="a5ab30f31330d9055b4d0b720537c6019"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ab30f31330d9055b4d0b720537c6019">&#9670;&#160;</a></span>READ_PARAMS</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -544,20 +594,20 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const uint32_t mip::commands_3dm::DatastreamControl::SAVE_PARAMS = 0x8001</td>
+          <td class="memname">constexpr const uint32_t mip::commands_3dm::DatastreamControl::READ_PARAMS = 0x8001</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a92df4b83aeda96ed9651782158c60ffd" name="a92df4b83aeda96ed9651782158c60ffd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92df4b83aeda96ed9651782158c60ffd">&#9670;&#160;</a></span>WRITE_PARAMS</h2>
+<a id="afc97c39c016e1e22a23b56238493eac3" name="afc97c39c016e1e22a23b56238493eac3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc97c39c016e1e22a23b56238493eac3">&#9670;&#160;</a></span>SAVE_PARAMS</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -566,12 +616,34 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const uint32_t mip::commands_3dm::DatastreamControl::WRITE_PARAMS = 0x8003</td>
+          <td class="memname">constexpr const uint32_t mip::commands_3dm::DatastreamControl::SAVE_PARAMS = 0x8001</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="add5d799564fa56100bda38aff3425434" name="add5d799564fa56100bda38aff3425434"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add5d799564fa56100bda38aff3425434">&#9670;&#160;</a></span>WRITE_PARAMS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr const uint32_t mip::commands_3dm::DatastreamControl::WRITE_PARAMS = 0x8003</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

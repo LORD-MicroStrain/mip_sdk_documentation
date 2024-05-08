@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-178-g68203e1</span>
+   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-283-g2c4cb6b</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -87,6 +87,7 @@ $(function() {
 <code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;stdbool.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="serialization_8h_source.html">../utils/serialization.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mip__result_8h_source.html">../mip_result.h</a>&quot;</code><br />
 <code>#include &lt;tuple&gt;</code><br />
 <code>#include &lt;type_traits&gt;</code><br />
 <code>#include &lt;functional&gt;</code><br />
@@ -100,6 +101,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_bitfield.html">mip::Bitfield&lt; DerivedT &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A dummy struct which is used to mark bitfield objects.  <a href="structmip_1_1_bitfield.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_typed_result.html">mip::TypedResult&lt; MipCmd &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="structmip_1_1_cmd_result.html" title="Represents the status of a MIP command.">CmdResult</a> that knows the corresponding command type.  <a href="structmip_1_1_typed_result.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -161,6 +165,8 @@ Functions</h2></td></tr>
 <tr class="separator:ad1c6fe18427b27dd7fbfaf84a6b88b32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fe5fa0a26d518e5cca253b1a873c096" id="r_a6fe5fa0a26d518e5cca253b1a873c096"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip_1_1_c.html#a6fe5fa0a26d518e5cca253b1a873c096">mip::C::mip_is_reserved_descriptor_set</a> (uint8_t descriptor_set)</td></tr>
 <tr class="separator:a6fe5fa0a26d518e5cca253b1a873c096"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29c80f792ff233be833f8619737425c8" id="r_a29c80f792ff233be833f8619737425c8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip_1_1_c.html#a29c80f792ff233be833f8619737425c8">mip::C::mip_is_gnss_data_descriptor_set</a> (uint8_t descriptor_set)</td></tr>
+<tr class="separator:a29c80f792ff233be833f8619737425c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d5b5f1aa81effc9255550aaddfe7803" id="r_a7d5b5f1aa81effc9255550aaddfe7803"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip_1_1_c.html#a7d5b5f1aa81effc9255550aaddfe7803">mip::C::mip_is_valid_field_descriptor</a> (uint8_t field_descriptor)</td></tr>
 <tr class="separator:a7d5b5f1aa81effc9255550aaddfe7803"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a054050124338684fdc12687077d942" id="r_a4a054050124338684fdc12687077d942"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip_1_1_c.html#a4a054050124338684fdc12687077d942">mip::C::mip_is_cmd_field_descriptor</a> (uint8_t field_descriptor)</td></tr>
@@ -191,6 +197,8 @@ Functions</h2></td></tr>
 <tr class="separator:afaac6fa695e353f031d16081d83c3381"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a926687c28c7f12a1d12d496198d7d59d" id="r_a926687c28c7f12a1d12d496198d7d59d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip.html#a926687c28c7f12a1d12d496198d7d59d">mip::isReservedDescriptorSet</a> (uint8_t descriptorSet)</td></tr>
 <tr class="separator:a926687c28c7f12a1d12d496198d7d59d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62207c8ff62728c58f13d55d7bb15421" id="r_a62207c8ff62728c58f13d55d7bb15421"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip.html#a62207c8ff62728c58f13d55d7bb15421">mip::isGnssDataDescriptorSet</a> (uint8_t descriptorSet)</td></tr>
+<tr class="separator:a62207c8ff62728c58f13d55d7bb15421"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87c81313d4cd3c71b2e6ec99e3cce386" id="r_a87c81313d4cd3c71b2e6ec99e3cce386"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip.html#a87c81313d4cd3c71b2e6ec99e3cce386">mip::isValidFieldDescriptor</a> (uint8_t fieldDescriptor)</td></tr>
 <tr class="separator:a87c81313d4cd3c71b2e6ec99e3cce386"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79f3e05b931d41d5d0af7db3185e8f34" id="r_a79f3e05b931d41d5d0af7db3185e8f34"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip.html#a79f3e05b931d41d5d0af7db3185e8f34">mip::isCommandFieldDescriptor</a> (uint8_t fieldDescriptor)</td></tr>

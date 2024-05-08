@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-178-g68203e1</span>
+   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-283-g2c4cb6b</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -92,37 +92,40 @@ Inheritance diagram for mip::platform::SerialConnection:</div>
  <div class="center">
   <img src="classmip_1_1platform_1_1_serial_connection.png" usemap="#mip::platform::SerialConnection_map" alt=""/>
   <map id="mip::platform::SerialConnection_map" name="mip::platform::SerialConnection_map">
-<area href="classmip_1_1_connection.html" title="Represents a type of connection to a MIP device." alt="mip::Connection" shape="rect" coords="0,0,185,24"/>
+<area href="classmip_1_1_connection.html" title="Represents a type of connection to a MIP device." alt="mip::Connection" shape="rect" coords="0,0,206,24"/>
+<area href="classmip_1_1platform_1_1_usb_serial_connection.html" title="A serial connection but indicates that it&#39;s actually a USB connection." alt="mip::platform::UsbSerialConnection" shape="rect" coords="0,112,206,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae6c238853700825eba6af8c3d1ddf31c" id="r_ae6c238853700825eba6af8c3d1ddf31c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1platform_1_1_serial_connection.html#ae6c238853700825eba6af8c3d1ddf31c">SerialConnection</a> ()=default</td></tr>
-<tr class="separator:ae6c238853700825eba6af8c3d1ddf31c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e8e20ba2d5b39b652049517e11ffc79" id="r_a7e8e20ba2d5b39b652049517e11ffc79"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1platform_1_1_serial_connection.html#a7e8e20ba2d5b39b652049517e11ffc79">SerialConnection</a> (const std::string &amp;portName, uint32_t baudrate)</td></tr>
 <tr class="memdesc:a7e8e20ba2d5b39b652049517e11ffc79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="classmip_1_1platform_1_1_serial_connection.html" title="Can be used on Windows, OSX, or linux to communicate with a MIP device over serial.">SerialConnection</a> that will communicate with a device over serial.  <br /></td></tr>
 <tr class="separator:a7e8e20ba2d5b39b652049517e11ffc79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ed82cd7b7c9d379f63e6075f49ffc71" id="r_a6ed82cd7b7c9d379f63e6075f49ffc71"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1platform_1_1_serial_connection.html#a6ed82cd7b7c9d379f63e6075f49ffc71">~SerialConnection</a> ()</td></tr>
 <tr class="memdesc:a6ed82cd7b7c9d379f63e6075f49ffc71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes the underlying serial port.  <br /></td></tr>
 <tr class="separator:a6ed82cd7b7c9d379f63e6075f49ffc71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4b77ac378ef0d3bbe2ee14acb56532e" id="r_ae4b77ac378ef0d3bbe2ee14acb56532e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1platform_1_1_serial_connection.html#ae4b77ac378ef0d3bbe2ee14acb56532e">recvFromDevice</a> (uint8_t *buffer, size_t max_length, <a class="el" href="namespacemip.html#a6b00d9d7a48550fcad5056184ad1fbae">Timeout</a> wait_time, size_t *length_out, <a class="el" href="namespacemip.html#a4d99303b1d7588a4e9d020e6210ded41">mip::Timestamp</a> *timestamp) final</td></tr>
+<tr class="memitem:ae4b77ac378ef0d3bbe2ee14acb56532e" id="r_ae4b77ac378ef0d3bbe2ee14acb56532e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1platform_1_1_serial_connection.html#ae4b77ac378ef0d3bbe2ee14acb56532e">recvFromDevice</a> (uint8_t *buffer, size_t max_length, <a class="el" href="namespacemip.html#adf3e3dd725a2c4f8abde99c473000878">Timeout</a> wait_time, size_t *length_out, <a class="el" href="namespacemip.html#ac74386034393307fd0de0b553ed4fb37">mip::Timestamp</a> *timestamp) final</td></tr>
 <tr class="memdesc:ae4b77ac378ef0d3bbe2ee14acb56532e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receives bytes from the device.    <br /></td></tr>
 <tr class="separator:ae4b77ac378ef0d3bbe2ee14acb56532e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78f3cc5429af9fa9b24889cec1295ae9" id="r_a78f3cc5429af9fa9b24889cec1295ae9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1platform_1_1_serial_connection.html#a78f3cc5429af9fa9b24889cec1295ae9">sendToDevice</a> (const uint8_t *data, size_t length) final</td></tr>
 <tr class="memdesc:a78f3cc5429af9fa9b24889cec1295ae9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends bytes to the device.    <br /></td></tr>
 <tr class="separator:a78f3cc5429af9fa9b24889cec1295ae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0c5c54802304fbc2a04d42e606ed118" id="r_af0c5c54802304fbc2a04d42e606ed118"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1platform_1_1_serial_connection.html#af0c5c54802304fbc2a04d42e606ed118">isConnected</a> () const</td></tr>
-<tr class="memdesc:af0c5c54802304fbc2a04d42e606ed118"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the port is connected.  <br /></td></tr>
-<tr class="separator:af0c5c54802304fbc2a04d42e606ed118"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3780320c183e084dbd002777a27520f8" id="r_a3780320c183e084dbd002777a27520f8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1platform_1_1_serial_connection.html#a3780320c183e084dbd002777a27520f8">connect</a> ()</td></tr>
-<tr class="memdesc:a3780320c183e084dbd002777a27520f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to the port.  <br /></td></tr>
-<tr class="separator:a3780320c183e084dbd002777a27520f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac534d159bf8924283d6f40ae29ab7b3a" id="r_ac534d159bf8924283d6f40ae29ab7b3a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1platform_1_1_serial_connection.html#ac534d159bf8924283d6f40ae29ab7b3a">disconnect</a> ()</td></tr>
-<tr class="memdesc:ac534d159bf8924283d6f40ae29ab7b3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnect from the port.  <br /></td></tr>
-<tr class="separator:ac534d159bf8924283d6f40ae29ab7b3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa29ac4cb417ed372241b5b2b827fd6c4" id="r_aa29ac4cb417ed372241b5b2b827fd6c4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1platform_1_1_serial_connection.html#aa29ac4cb417ed372241b5b2b827fd6c4">isConnected</a> () const override</td></tr>
+<tr class="memdesc:aa29ac4cb417ed372241b5b2b827fd6c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the port is connected.  <br /></td></tr>
+<tr class="separator:aa29ac4cb417ed372241b5b2b827fd6c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c5f38fbab27b90d606b32d5f7ce4403" id="r_a1c5f38fbab27b90d606b32d5f7ce4403"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1platform_1_1_serial_connection.html#a1c5f38fbab27b90d606b32d5f7ce4403">connect</a> () override</td></tr>
+<tr class="memdesc:a1c5f38fbab27b90d606b32d5f7ce4403"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to the port.  <br /></td></tr>
+<tr class="separator:a1c5f38fbab27b90d606b32d5f7ce4403"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a955d34861180743415e38d027e2bb8d6" id="r_a955d34861180743415e38d027e2bb8d6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1platform_1_1_serial_connection.html#a955d34861180743415e38d027e2bb8d6">disconnect</a> () override</td></tr>
+<tr class="memdesc:a955d34861180743415e38d027e2bb8d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnect from the port.  <br /></td></tr>
+<tr class="separator:a955d34861180743415e38d027e2bb8d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ecccd19c17744b4a015839cb7aa4a2b" id="r_a6ecccd19c17744b4a015839cb7aa4a2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1platform_1_1_serial_connection.html#a6ecccd19c17744b4a015839cb7aa4a2b">connectionInfo</a> (std::string &amp;name, uint32_t &amp;baudrate) const</td></tr>
 <tr class="separator:a6ecccd19c17744b4a015839cb7aa4a2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb8cc0d26e126f11abf7b3c6fedab053" id="r_aeb8cc0d26e126f11abf7b3c6fedab053"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1platform_1_1_serial_connection.html#aeb8cc0d26e126f11abf7b3c6fedab053">interfaceName</a> () const override</td></tr>
+<tr class="separator:aeb8cc0d26e126f11abf7b3c6fedab053"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0e389f73193737f595a70215de4a3ac" id="r_ad0e389f73193737f595a70215de4a3ac"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1platform_1_1_serial_connection.html#ad0e389f73193737f595a70215de4a3ac">parameter</a> () const override</td></tr>
+<tr class="separator:ad0e389f73193737f595a70215de4a3ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classmip_1_1_connection"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classmip_1_1_connection')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classmip_1_1_connection.html">mip::Connection</a></td></tr>
 <tr class="memitem:a2e5ec6bdd1e55003c254e18294729017 inherit pub_methods_classmip_1_1_connection" id="r_a2e5ec6bdd1e55003c254e18294729017"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_connection.html#a2e5ec6bdd1e55003c254e18294729017">Connection</a> ()</td></tr>
 <tr class="separator:a2e5ec6bdd1e55003c254e18294729017 inherit pub_methods_classmip_1_1_connection"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,33 +154,8 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Can be used on Windows, OSX, or linux to communicate with a MIP device over serial. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ae6c238853700825eba6af8c3d1ddf31c" name="ae6c238853700825eba6af8c3d1ddf31c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6c238853700825eba6af8c3d1ddf31c">&#9670;&#160;</a></span>SerialConnection() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">mip::platform::SerialConnection::SerialConnection </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a7e8e20ba2d5b39b652049517e11ffc79" name="a7e8e20ba2d5b39b652049517e11ffc79"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e8e20ba2d5b39b652049517e11ffc79">&#9670;&#160;</a></span>SerialConnection() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e8e20ba2d5b39b652049517e11ffc79">&#9670;&#160;</a></span>SerialConnection()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -233,8 +211,8 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a3780320c183e084dbd002777a27520f8" name="a3780320c183e084dbd002777a27520f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3780320c183e084dbd002777a27520f8">&#9670;&#160;</a></span>connect()</h2>
+<a id="a1c5f38fbab27b90d606b32d5f7ce4403" name="a1c5f38fbab27b90d606b32d5f7ce4403"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c5f38fbab27b90d606b32d5f7ce4403">&#9670;&#160;</a></span>connect()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -251,7 +229,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -298,8 +276,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="ac534d159bf8924283d6f40ae29ab7b3a" name="ac534d159bf8924283d6f40ae29ab7b3a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac534d159bf8924283d6f40ae29ab7b3a">&#9670;&#160;</a></span>disconnect()</h2>
+<a id="a955d34861180743415e38d027e2bb8d6" name="a955d34861180743415e38d027e2bb8d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a955d34861180743415e38d027e2bb8d6">&#9670;&#160;</a></span>disconnect()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -316,7 +294,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -327,8 +305,35 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="af0c5c54802304fbc2a04d42e606ed118" name="af0c5c54802304fbc2a04d42e606ed118"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0c5c54802304fbc2a04d42e606ed118">&#9670;&#160;</a></span>isConnected()</h2>
+<a id="aeb8cc0d26e126f11abf7b3c6fedab053" name="aeb8cc0d26e126f11abf7b3c6fedab053"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb8cc0d26e126f11abf7b3c6fedab053">&#9670;&#160;</a></span>interfaceName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * mip::platform::SerialConnection::interfaceName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classmip_1_1_connection.html#a6f600029dec2b8ca97595eea188fc1b0">mip::Connection</a>.</p>
+
+</div>
+</div>
+<a id="aa29ac4cb417ed372241b5b2b827fd6c4" name="aa29ac4cb417ed372241b5b2b827fd6c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa29ac4cb417ed372241b5b2b827fd6c4">&#9670;&#160;</a></span>isConnected()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -345,7 +350,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -353,6 +358,33 @@ Additional Inherited Members</h2></td></tr>
 <p>Check if the port is connected. </p>
 
 <p>Implements <a class="el" href="classmip_1_1_connection.html#a0bf6f0adc807f047e0b3040a8b99ca49">mip::Connection</a>.</p>
+
+</div>
+</div>
+<a id="ad0e389f73193737f595a70215de4a3ac" name="ad0e389f73193737f595a70215de4a3ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0e389f73193737f595a70215de4a3ac">&#9670;&#160;</a></span>parameter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t mip::platform::SerialConnection::parameter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classmip_1_1_connection.html#a0891258a7786dd9384d0557d693de829">mip::Connection</a>.</p>
 
 </div>
 </div>
@@ -380,7 +412,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacemip.html#a6b00d9d7a48550fcad5056184ad1fbae">Timeout</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemip.html#adf3e3dd725a2c4f8abde99c473000878">Timeout</a>&#160;</td>
           <td class="paramname"><em>wait_time</em>, </td>
         </tr>
         <tr>
@@ -392,7 +424,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacemip.html#a4d99303b1d7588a4e9d020e6210ded41">mip::Timestamp</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemip.html#ac74386034393307fd0de0b553ed4fb37">mip::Timestamp</a> *&#160;</td>
           <td class="paramname"><em>timestamp</em>&#160;</td>
         </tr>
         <tr>

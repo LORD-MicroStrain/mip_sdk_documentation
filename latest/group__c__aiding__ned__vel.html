@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-178-g68203e1</span>
+   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-283-g2c4cb6b</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -100,8 +100,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga7d297a59f75a27e99b46225235e9aa7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga410446208f1002d41cb55e66615a5e1d" id="r_ga410446208f1002d41cb55e66615a5e1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__aiding__ned__vel.html#ga410446208f1002d41cb55e66615a5e1d">mip::C::extract_mip_aiding_ned_vel_command_valid_flags</a> (struct <a class="el" href="structmip_1_1_c_1_1mip__serializer.html">mip_serializer</a> *serializer, <a class="el" href="group__c__aiding__ned__vel.html#gaaee263f4fb561514bc6c08341078d1b7">mip_aiding_ned_vel_command_valid_flags</a> *self)</td></tr>
 <tr class="separator:ga410446208f1002d41cb55e66615a5e1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga06acfedf1c43a027269f766a414ab854" id="r_ga06acfedf1c43a027269f766a414ab854"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__aiding__ned__vel.html#ga06acfedf1c43a027269f766a414ab854">mip::C::mip_aiding_ned_vel</a> (struct <a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *device, const <a class="el" href="structmip_1_1_c_1_1mip__time.html">mip_time</a> *time, uint8_t sensor_id, const float *velocity, const float *uncertainty, <a class="el" href="group__c__aiding__ned__vel.html#gaaee263f4fb561514bc6c08341078d1b7">mip_aiding_ned_vel_command_valid_flags</a> valid_flags)</td></tr>
-<tr class="separator:ga06acfedf1c43a027269f766a414ab854"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga690aa287955e2e6bee81d3a91e82707b" id="r_ga690aa287955e2e6bee81d3a91e82707b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__aiding__ned__vel.html#ga690aa287955e2e6bee81d3a91e82707b">mip::C::mip_aiding_ned_vel</a> (struct <a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *device, const <a class="el" href="structmip_1_1_c_1_1mip__time.html">mip_time</a> *time, uint8_t frame_id, const float *velocity, const float *uncertainty, <a class="el" href="group__c__aiding__ned__vel.html#gaaee263f4fb561514bc6c08341078d1b7">mip_aiding_ned_vel_command_valid_flags</a> valid_flags)</td></tr>
+<tr class="separator:ga690aa287955e2e6bee81d3a91e82707b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>NED velocity aiding command. Coordinates are given in the local North-East-Down frame. </p>
@@ -247,8 +247,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga06acfedf1c43a027269f766a414ab854" name="ga06acfedf1c43a027269f766a414ab854"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga06acfedf1c43a027269f766a414ab854">&#9670;&#160;</a></span>mip_aiding_ned_vel()</h2>
+<a id="ga690aa287955e2e6bee81d3a91e82707b" name="ga690aa287955e2e6bee81d3a91e82707b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga690aa287955e2e6bee81d3a91e82707b">&#9670;&#160;</a></span>mip_aiding_ned_vel()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -269,7 +269,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>sensor_id</em>, </td>
+          <td class="paramname"><em>frame_id</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>

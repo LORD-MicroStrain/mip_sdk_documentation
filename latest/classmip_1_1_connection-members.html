@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-178-g68203e1</span>
+   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-283-g2c4cb6b</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -84,8 +84,10 @@ $(function() {
   <tr class="odd"><td class="entry"><a class="el" href="classmip_1_1_connection.html#ac143ab4318741a4a3d1c9db24336833e">connect_interface</a>(C::mip_interface *device)</td><td class="entry"><a class="el" href="classmip_1_1_connection.html">mip::Connection</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classmip_1_1_connection.html#a2e5ec6bdd1e55003c254e18294729017">Connection</a>()</td><td class="entry"><a class="el" href="classmip_1_1_connection.html">mip::Connection</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classmip_1_1_connection.html#a855f4edd0554e757847da59463693fd1">disconnect</a>()=0</td><td class="entry"><a class="el" href="classmip_1_1_connection.html">mip::Connection</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classmip_1_1_connection.html#a0bf6f0adc807f047e0b3040a8b99ca49">isConnected</a>() const =0</td><td class="entry"><a class="el" href="classmip_1_1_connection.html">mip::Connection</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classmip_1_1_connection.html#a1dddc240b5c0b280490a605f40da2b42">mType</a></td><td class="entry"><a class="el" href="classmip_1_1_connection.html">mip::Connection</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmip_1_1_connection.html#a6f600029dec2b8ca97595eea188fc1b0">interfaceName</a>() const =0</td><td class="entry"><a class="el" href="classmip_1_1_connection.html">mip::Connection</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmip_1_1_connection.html#a0bf6f0adc807f047e0b3040a8b99ca49">isConnected</a>() const =0</td><td class="entry"><a class="el" href="classmip_1_1_connection.html">mip::Connection</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmip_1_1_connection.html#a1dddc240b5c0b280490a605f40da2b42">mType</a></td><td class="entry"><a class="el" href="classmip_1_1_connection.html">mip::Connection</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmip_1_1_connection.html#a0891258a7786dd9384d0557d693de829">parameter</a>() const =0</td><td class="entry"><a class="el" href="classmip_1_1_connection.html">mip::Connection</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classmip_1_1_connection.html#a07b2f8cd73574f0da74fbb0b82a7f1c3">recvFromDevice</a>(uint8_t *buffer, size_t max_length, Timeout wait_time, size_t *length_out, Timestamp *timestamp_out)=0</td><td class="entry"><a class="el" href="classmip_1_1_connection.html">mip::Connection</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classmip_1_1_connection.html#ad56be6630183ec4cc9cf5f59b4d46e53">sendToDevice</a>(const uint8_t *data, size_t length)=0</td><td class="entry"><a class="el" href="classmip_1_1_connection.html">mip::Connection</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classmip_1_1_connection.html#a8275613f4595970fc39a2d817e3677eb">TYPE</a></td><td class="entry"><a class="el" href="classmip_1_1_connection.html">mip::Connection</a></td><td class="entry"><span class="mlabel">static</span></td></tr>

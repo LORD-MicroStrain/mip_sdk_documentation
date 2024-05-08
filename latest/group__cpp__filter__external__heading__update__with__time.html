@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-178-g68203e1</span>
+   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-283-g2c4cb6b</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -88,8 +88,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga8dc1908ecd3ea43cf1e25f3da9361dd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga81006ea6f169d93f9a9192e3ae83acfb" id="r_ga81006ea6f169d93f9a9192e3ae83acfb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__filter__external__heading__update__with__time.html#ga81006ea6f169d93f9a9192e3ae83acfb">mip::commands_filter::extract</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, <a class="el" href="structmip_1_1commands__filter_1_1_external_heading_update_with_time.html">ExternalHeadingUpdateWithTime</a> &amp;self)</td></tr>
 <tr class="separator:ga81006ea6f169d93f9a9192e3ae83acfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae4285bae9e6d791ce3fdd9d6312bf467" id="r_gae4285bae9e6d791ce3fdd9d6312bf467"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__filter__external__heading__update__with__time.html#gae4285bae9e6d791ce3fdd9d6312bf467">mip::commands_filter::externalHeadingUpdateWithTime</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, double gpsTime, uint16_t gpsWeek, float heading, float headingUncertainty, uint8_t type)</td></tr>
-<tr class="separator:gae4285bae9e6d791ce3fdd9d6312bf467"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabe5c9aa8aef2a7a2f7590de0bbf10456" id="r_gabe5c9aa8aef2a7a2f7590de0bbf10456"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_typed_result.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1_external_heading_update_with_time.html">ExternalHeadingUpdateWithTime</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__filter__external__heading__update__with__time.html#gabe5c9aa8aef2a7a2f7590de0bbf10456">mip::commands_filter::externalHeadingUpdateWithTime</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, double gpsTime, uint16_t gpsWeek, float heading, float headingUncertainty, uint8_t type)</td></tr>
+<tr class="separator:gabe5c9aa8aef2a7a2f7590de0bbf10456"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Provide a filter measurement from an external heading source at a specific GPS time</p>
@@ -99,14 +99,14 @@ Functions</h2></td></tr>
 <p>Please refer to your device user manual for information on the maximum rate of this message.</p>
 <p>On -25 models, if the declination source (0x0D, 0x43) is not valid, true heading updates will be NACK'd. On -45 models, if the declination source is invalid, magnetic heading updates will be NACK'd. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gae4285bae9e6d791ce3fdd9d6312bf467" name="gae4285bae9e6d791ce3fdd9d6312bf467"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae4285bae9e6d791ce3fdd9d6312bf467">&#9670;&#160;</a></span>externalHeadingUpdateWithTime()</h2>
+<a id="gabe5c9aa8aef2a7a2f7590de0bbf10456" name="gabe5c9aa8aef2a7a2f7590de0bbf10456"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabe5c9aa8aef2a7a2f7590de0bbf10456">&#9670;&#160;</a></span>externalHeadingUpdateWithTime()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a> mip::commands_filter::externalHeadingUpdateWithTime </td>
+          <td class="memname"><a class="el" href="structmip_1_1_typed_result.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1_external_heading_update_with_time.html">ExternalHeadingUpdateWithTime</a> &gt; mip::commands_filter::externalHeadingUpdateWithTime </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
           <td class="paramname"><em>device</em>, </td>

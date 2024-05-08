@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-178-g68203e1</span>
+   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-283-g2c4cb6b</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -101,27 +101,36 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:af8f630747e64b44ef3d713086bf08a95" id="r_af8f630747e64b44ef3d713086bf08a95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1commands__aiding_1_1_time.html">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__aiding_1_1_true_heading.html#af8f630747e64b44ef3d713086bf08a95">time</a></td></tr>
+<tr class="memdesc:af8f630747e64b44ef3d713086bf08a95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timestamp of the measurement.  <br /></td></tr>
 <tr class="separator:af8f630747e64b44ef3d713086bf08a95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f5ca51757182e2ee180a735371887ec" id="r_a3f5ca51757182e2ee180a735371887ec"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__aiding_1_1_true_heading.html#a3f5ca51757182e2ee180a735371887ec">sensor_id</a> = 0</td></tr>
-<tr class="separator:a3f5ca51757182e2ee180a735371887ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c84437f1a93f86f3f50b77feacbc29b" id="r_a3c84437f1a93f86f3f50b77feacbc29b"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__aiding_1_1_true_heading.html#a3c84437f1a93f86f3f50b77feacbc29b">frame_id</a> = 0</td></tr>
+<tr class="memdesc:a3c84437f1a93f86f3f50b77feacbc29b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Source ID for this estimate (source_id == 0 indicates this sensor, source_id &gt; 0 indicates an external estimate).  <br /></td></tr>
+<tr class="separator:a3c84437f1a93f86f3f50b77feacbc29b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab872a1af1a27e922756b696ebc5c2817" id="r_ab872a1af1a27e922756b696ebc5c2817"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__aiding_1_1_true_heading.html#ab872a1af1a27e922756b696ebc5c2817">heading</a> = 0</td></tr>
-<tr class="memdesc:ab872a1af1a27e922756b696ebc5c2817"><td class="mdescLeft">&#160;</td><td class="mdescRight">Heading in [radians].  <br /></td></tr>
+<tr class="memdesc:ab872a1af1a27e922756b696ebc5c2817"><td class="mdescLeft">&#160;</td><td class="mdescRight">Heading [radians]. Range +/- Pi.  <br /></td></tr>
 <tr class="separator:ab872a1af1a27e922756b696ebc5c2817"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e84a7c2d569be30ec57da81e0f20a66" id="r_a0e84a7c2d569be30ec57da81e0f20a66"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__aiding_1_1_true_heading.html#a0e84a7c2d569be30ec57da81e0f20a66">uncertainty</a> = 0</td></tr>
+<tr class="memdesc:a0e84a7c2d569be30ec57da81e0f20a66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cannot be 0 unless the valid flags are 0.  <br /></td></tr>
 <tr class="separator:a0e84a7c2d569be30ec57da81e0f20a66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66960e9fbfa2b24e31c6216331641eeb" id="r_a66960e9fbfa2b24e31c6216331641eeb"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__aiding_1_1_true_heading.html#a66960e9fbfa2b24e31c6216331641eeb">valid_flags</a> = 0</td></tr>
 <tr class="separator:a66960e9fbfa2b24e31c6216331641eeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:ab7b5e39e5c93f1677ffd71577108afc9" id="r_ab7b5e39e5c93f1677ffd71577108afc9"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__aiding_1_1_true_heading.html#ab7b5e39e5c93f1677ffd71577108afc9">DESCRIPTOR_SET</a> = ::mip::commands_aiding::DESCRIPTOR_SET</td></tr>
-<tr class="separator:ab7b5e39e5c93f1677ffd71577108afc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d38740b571da7da31cded4d8dcff625" id="r_a2d38740b571da7da31cded4d8dcff625"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__aiding_1_1_true_heading.html#a2d38740b571da7da31cded4d8dcff625">FIELD_DESCRIPTOR</a> = <a class="el" href="group__aiding__commands__cpp.html#gga9c31efbd34019783ab2802a8263d648da5a134c94ba856b8135c0ba2aafec0dc7">::mip::commands_aiding::CMD_HEADING_TRUE</a></td></tr>
-<tr class="separator:a2d38740b571da7da31cded4d8dcff625"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa01e616b53d39bfa7f7e1b2a9de7144d" id="r_aa01e616b53d39bfa7f7e1b2a9de7144d"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__aiding_1_1_true_heading.html#aa01e616b53d39bfa7f7e1b2a9de7144d">HAS_FUNCTION_SELECTOR</a> = false</td></tr>
-<tr class="separator:aa01e616b53d39bfa7f7e1b2a9de7144d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab214ef7fc038eff6f189e1cdaac15b44" id="r_ab214ef7fc038eff6f189e1cdaac15b44"><td class="memItemLeft" align="right" valign="top">static const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__aiding_1_1_true_heading.html#ab214ef7fc038eff6f189e1cdaac15b44">COUNTER_PARAMS</a> = 0x00000000</td></tr>
-<tr class="separator:ab214ef7fc038eff6f189e1cdaac15b44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4c74f1b3d8ac0c0bbe7b6bb1088421a" id="r_aa4c74f1b3d8ac0c0bbe7b6bb1088421a"><td class="memItemLeft" align="right" valign="top">static constexpr const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__aiding_1_1_true_heading.html#aa4c74f1b3d8ac0c0bbe7b6bb1088421a">DESCRIPTOR_SET</a> = ::mip::commands_aiding::DESCRIPTOR_SET</td></tr>
+<tr class="separator:aa4c74f1b3d8ac0c0bbe7b6bb1088421a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afff1efb7b2670f06f6928eae738be3d9" id="r_afff1efb7b2670f06f6928eae738be3d9"><td class="memItemLeft" align="right" valign="top">static constexpr const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__aiding_1_1_true_heading.html#afff1efb7b2670f06f6928eae738be3d9">FIELD_DESCRIPTOR</a> = <a class="el" href="group__aiding__commands__cpp.html#gga9c31efbd34019783ab2802a8263d648da5a134c94ba856b8135c0ba2aafec0dc7">::mip::commands_aiding::CMD_HEADING_TRUE</a></td></tr>
+<tr class="separator:afff1efb7b2670f06f6928eae738be3d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb80a90656773d26eb38ec1cbc60b116" id="r_adb80a90656773d26eb38ec1cbc60b116"><td class="memItemLeft" align="right" valign="top">static constexpr const <a class="el" href="structmip_1_1_composite_descriptor.html">CompositeDescriptor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__aiding_1_1_true_heading.html#adb80a90656773d26eb38ec1cbc60b116">DESCRIPTOR</a> = {<a class="el" href="structmip_1_1commands__aiding_1_1_true_heading.html#aa4c74f1b3d8ac0c0bbe7b6bb1088421a">DESCRIPTOR_SET</a>, <a class="el" href="structmip_1_1commands__aiding_1_1_true_heading.html#afff1efb7b2670f06f6928eae738be3d9">FIELD_DESCRIPTOR</a>}</td></tr>
+<tr class="separator:adb80a90656773d26eb38ec1cbc60b116"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a296bfb15ab5e5ca67e1657262afe7818" id="r_a296bfb15ab5e5ca67e1657262afe7818"><td class="memItemLeft" align="right" valign="top">static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__aiding_1_1_true_heading.html#a296bfb15ab5e5ca67e1657262afe7818">NAME</a> = &quot;TrueHeading&quot;</td></tr>
+<tr class="separator:a296bfb15ab5e5ca67e1657262afe7818"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4330b16c869bd91e7af904e6af7738c7" id="r_a4330b16c869bd91e7af904e6af7738c7"><td class="memItemLeft" align="right" valign="top">static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__aiding_1_1_true_heading.html#a4330b16c869bd91e7af904e6af7738c7">DOC_NAME</a> = &quot;True Heading&quot;</td></tr>
+<tr class="separator:a4330b16c869bd91e7af904e6af7738c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2e07e15a1a91fd6da4fb35f4a4a5c5e" id="r_ae2e07e15a1a91fd6da4fb35f4a4a5c5e"><td class="memItemLeft" align="right" valign="top">static constexpr const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__aiding_1_1_true_heading.html#ae2e07e15a1a91fd6da4fb35f4a4a5c5e">HAS_FUNCTION_SELECTOR</a> = false</td></tr>
+<tr class="separator:ae2e07e15a1a91fd6da4fb35f4a4a5c5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc4e7ea81f5b4d4a206ea51f2ded6cad" id="r_abc4e7ea81f5b4d4a206ea51f2ded6cad"><td class="memItemLeft" align="right" valign="top">static constexpr const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__aiding_1_1_true_heading.html#abc4e7ea81f5b4d4a206ea51f2ded6cad">COUNTER_PARAMS</a> = 0x00000000</td></tr>
+<tr class="separator:abc4e7ea81f5b4d4a206ea51f2ded6cad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a827a4ba53ca5ed899c0818d1b4cfc278" name="a827a4ba53ca5ed899c0818d1b4cfc278"></a>
@@ -190,8 +199,8 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="ab214ef7fc038eff6f189e1cdaac15b44" name="ab214ef7fc038eff6f189e1cdaac15b44"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab214ef7fc038eff6f189e1cdaac15b44">&#9670;&#160;</a></span>COUNTER_PARAMS</h2>
+<a id="abc4e7ea81f5b4d4a206ea51f2ded6cad" name="abc4e7ea81f5b4d4a206ea51f2ded6cad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc4e7ea81f5b4d4a206ea51f2ded6cad">&#9670;&#160;</a></span>COUNTER_PARAMS</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -200,20 +209,20 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const uint32_t mip::commands_aiding::TrueHeading::COUNTER_PARAMS = 0x00000000</td>
+          <td class="memname">constexpr const uint32_t mip::commands_aiding::TrueHeading::COUNTER_PARAMS = 0x00000000</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ab7b5e39e5c93f1677ffd71577108afc9" name="ab7b5e39e5c93f1677ffd71577108afc9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab7b5e39e5c93f1677ffd71577108afc9">&#9670;&#160;</a></span>DESCRIPTOR_SET</h2>
+<a id="adb80a90656773d26eb38ec1cbc60b116" name="adb80a90656773d26eb38ec1cbc60b116"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb80a90656773d26eb38ec1cbc60b116">&#9670;&#160;</a></span>DESCRIPTOR</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -222,20 +231,20 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const uint8_t mip::commands_aiding::TrueHeading::DESCRIPTOR_SET = ::mip::commands_aiding::DESCRIPTOR_SET</td>
+          <td class="memname">constexpr const <a class="el" href="structmip_1_1_composite_descriptor.html">CompositeDescriptor</a> mip::commands_aiding::TrueHeading::DESCRIPTOR = {<a class="el" href="structmip_1_1commands__aiding_1_1_true_heading.html#aa4c74f1b3d8ac0c0bbe7b6bb1088421a">DESCRIPTOR_SET</a>, <a class="el" href="structmip_1_1commands__aiding_1_1_true_heading.html#afff1efb7b2670f06f6928eae738be3d9">FIELD_DESCRIPTOR</a>}</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a2d38740b571da7da31cded4d8dcff625" name="a2d38740b571da7da31cded4d8dcff625"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d38740b571da7da31cded4d8dcff625">&#9670;&#160;</a></span>FIELD_DESCRIPTOR</h2>
+<a id="aa4c74f1b3d8ac0c0bbe7b6bb1088421a" name="aa4c74f1b3d8ac0c0bbe7b6bb1088421a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4c74f1b3d8ac0c0bbe7b6bb1088421a">&#9670;&#160;</a></span>DESCRIPTOR_SET</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -244,20 +253,20 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const uint8_t mip::commands_aiding::TrueHeading::FIELD_DESCRIPTOR = <a class="el" href="group__aiding__commands__cpp.html#gga9c31efbd34019783ab2802a8263d648da5a134c94ba856b8135c0ba2aafec0dc7">::mip::commands_aiding::CMD_HEADING_TRUE</a></td>
+          <td class="memname">constexpr const uint8_t mip::commands_aiding::TrueHeading::DESCRIPTOR_SET = ::mip::commands_aiding::DESCRIPTOR_SET</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="aa01e616b53d39bfa7f7e1b2a9de7144d" name="aa01e616b53d39bfa7f7e1b2a9de7144d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa01e616b53d39bfa7f7e1b2a9de7144d">&#9670;&#160;</a></span>HAS_FUNCTION_SELECTOR</h2>
+<a id="a4330b16c869bd91e7af904e6af7738c7" name="a4330b16c869bd91e7af904e6af7738c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4330b16c869bd91e7af904e6af7738c7">&#9670;&#160;</a></span>DOC_NAME</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -266,12 +275,72 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const bool mip::commands_aiding::TrueHeading::HAS_FUNCTION_SELECTOR = false</td>
+          <td class="memname">constexpr const char* mip::commands_aiding::TrueHeading::DOC_NAME = &quot;True Heading&quot;</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afff1efb7b2670f06f6928eae738be3d9" name="afff1efb7b2670f06f6928eae738be3d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afff1efb7b2670f06f6928eae738be3d9">&#9670;&#160;</a></span>FIELD_DESCRIPTOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr const uint8_t mip::commands_aiding::TrueHeading::FIELD_DESCRIPTOR = <a class="el" href="group__aiding__commands__cpp.html#gga9c31efbd34019783ab2802a8263d648da5a134c94ba856b8135c0ba2aafec0dc7">::mip::commands_aiding::CMD_HEADING_TRUE</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3c84437f1a93f86f3f50b77feacbc29b" name="a3c84437f1a93f86f3f50b77feacbc29b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c84437f1a93f86f3f50b77feacbc29b">&#9670;&#160;</a></span>frame_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t mip::commands_aiding::TrueHeading::frame_id = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Source ID for this estimate (source_id == 0 indicates this sensor, source_id &gt; 0 indicates an external estimate). </p>
+
+</div>
+</div>
+<a id="ae2e07e15a1a91fd6da4fb35f4a4a5c5e" name="ae2e07e15a1a91fd6da4fb35f4a4a5c5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2e07e15a1a91fd6da4fb35f4a4a5c5e">&#9670;&#160;</a></span>HAS_FUNCTION_SELECTOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr const bool mip::commands_aiding::TrueHeading::HAS_FUNCTION_SELECTOR = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -290,20 +359,28 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Heading in [radians]. </p>
+<p>Heading [radians]. Range +/- Pi. </p>
 
 </div>
 </div>
-<a id="a3f5ca51757182e2ee180a735371887ec" name="a3f5ca51757182e2ee180a735371887ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f5ca51757182e2ee180a735371887ec">&#9670;&#160;</a></span>sensor_id</h2>
+<a id="a296bfb15ab5e5ca67e1657262afe7818" name="a296bfb15ab5e5ca67e1657262afe7818"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a296bfb15ab5e5ca67e1657262afe7818">&#9670;&#160;</a></span>NAME</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t mip::commands_aiding::TrueHeading::sensor_id = 0</td>
+          <td class="memname">constexpr const char* mip::commands_aiding::TrueHeading::NAME = &quot;TrueHeading&quot;</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -320,6 +397,8 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Timestamp of the measurement. </p>
+
 </div>
 </div>
 <a id="a0e84a7c2d569be30ec57da81e0f20a66" name="a0e84a7c2d569be30ec57da81e0f20a66"></a>
@@ -333,6 +412,8 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Cannot be 0 unless the valid flags are 0. </p>
 
 </div>
 </div>

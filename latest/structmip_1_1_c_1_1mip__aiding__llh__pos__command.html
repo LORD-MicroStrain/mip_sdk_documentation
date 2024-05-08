@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-178-g68203e1</span>
+   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-283-g2c4cb6b</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -88,9 +88,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a623cf9ba872115b445139e83c8955681" id="r_a623cf9ba872115b445139e83c8955681"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_c_1_1mip__time.html">mip_time</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_c_1_1mip__aiding__llh__pos__command.html#a623cf9ba872115b445139e83c8955681">time</a></td></tr>
 <tr class="memdesc:a623cf9ba872115b445139e83c8955681"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timestamp of the measurement.  <br /></td></tr>
 <tr class="separator:a623cf9ba872115b445139e83c8955681"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae39214a605b20b771f6b43b9bf3ae177" id="r_ae39214a605b20b771f6b43b9bf3ae177"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_c_1_1mip__aiding__llh__pos__command.html#ae39214a605b20b771f6b43b9bf3ae177">sensor_id</a></td></tr>
-<tr class="memdesc:ae39214a605b20b771f6b43b9bf3ae177"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sensor ID.  <br /></td></tr>
-<tr class="separator:ae39214a605b20b771f6b43b9bf3ae177"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62c5ed3a339e89c10a5734615b0e0dee" id="r_a62c5ed3a339e89c10a5734615b0e0dee"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_c_1_1mip__aiding__llh__pos__command.html#a62c5ed3a339e89c10a5734615b0e0dee">frame_id</a></td></tr>
+<tr class="memdesc:a62c5ed3a339e89c10a5734615b0e0dee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Source ID for this estimate (source_id == 0 indicates this sensor, source_id &gt; 0 indicates an external estimate).  <br /></td></tr>
+<tr class="separator:a62c5ed3a339e89c10a5734615b0e0dee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab62480cd717511c6aa9200cb84dfaf5e" id="r_ab62480cd717511c6aa9200cb84dfaf5e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_c_1_1mip__aiding__llh__pos__command.html#ab62480cd717511c6aa9200cb84dfaf5e">latitude</a></td></tr>
 <tr class="memdesc:ab62480cd717511c6aa9200cb84dfaf5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">[deg]  <br /></td></tr>
 <tr class="separator:ab62480cd717511c6aa9200cb84dfaf5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -101,13 +101,29 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:adcb4090f999acf1698cb08a396b9798f"><td class="mdescLeft">&#160;</td><td class="mdescRight">[m]  <br /></td></tr>
 <tr class="separator:adcb4090f999acf1698cb08a396b9798f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7de12f622b9849997ec9d9495cb27cb" id="r_ad7de12f622b9849997ec9d9495cb27cb"><td class="memItemLeft" align="right" valign="top">mip_vector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_c_1_1mip__aiding__llh__pos__command.html#ad7de12f622b9849997ec9d9495cb27cb">uncertainty</a></td></tr>
-<tr class="memdesc:ad7de12f622b9849997ec9d9495cb27cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">NED position uncertainty.  <br /></td></tr>
+<tr class="memdesc:ad7de12f622b9849997ec9d9495cb27cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">NED position uncertainty. Cannot be 0 unless the corresponding valid flags are 0.  <br /></td></tr>
 <tr class="separator:ad7de12f622b9849997ec9d9495cb27cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25e027a5e14828ad065307f5281f6569" id="r_a25e027a5e14828ad065307f5281f6569"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__c__aiding__llh__pos.html#ga0414edd0b6c7d0a71e8f18c8e274e3d8">mip_aiding_llh_pos_command_valid_flags</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_c_1_1mip__aiding__llh__pos__command.html#a25e027a5e14828ad065307f5281f6569">valid_flags</a></td></tr>
-<tr class="memdesc:a25e027a5e14828ad065307f5281f6569"><td class="mdescLeft">&#160;</td><td class="mdescRight">Valid flags.  <br /></td></tr>
+<tr class="memdesc:a25e027a5e14828ad065307f5281f6569"><td class="mdescLeft">&#160;</td><td class="mdescRight">Valid flags. Axes with 0 will be completely ignored.  <br /></td></tr>
 <tr class="separator:a25e027a5e14828ad065307f5281f6569"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a62c5ed3a339e89c10a5734615b0e0dee" name="a62c5ed3a339e89c10a5734615b0e0dee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62c5ed3a339e89c10a5734615b0e0dee">&#9670;&#160;</a></span>frame_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t mip::C::mip_aiding_llh_pos_command::frame_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Source ID for this estimate (source_id == 0 indicates this sensor, source_id &gt; 0 indicates an external estimate). </p>
+
+</div>
+</div>
 <a id="adcb4090f999acf1698cb08a396b9798f" name="adcb4090f999acf1698cb08a396b9798f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adcb4090f999acf1698cb08a396b9798f">&#9670;&#160;</a></span>height</h2>
 
@@ -156,22 +172,6 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ae39214a605b20b771f6b43b9bf3ae177" name="ae39214a605b20b771f6b43b9bf3ae177"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae39214a605b20b771f6b43b9bf3ae177">&#9670;&#160;</a></span>sensor_id</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t mip::C::mip_aiding_llh_pos_command::sensor_id</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sensor ID. </p>
-
-</div>
-</div>
 <a id="a623cf9ba872115b445139e83c8955681" name="a623cf9ba872115b445139e83c8955681"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a623cf9ba872115b445139e83c8955681">&#9670;&#160;</a></span>time</h2>
 
@@ -200,7 +200,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>NED position uncertainty. </p>
+<p>NED position uncertainty. Cannot be 0 unless the corresponding valid flags are 0. </p>
 
 </div>
 </div>
@@ -216,7 +216,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Valid flags. </p>
+<p>Valid flags. Axes with 0 will be completely ignored. </p>
 
 </div>
 </div>

@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-178-g68203e1</span>
+   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v1.0.0-283-g2c4cb6b</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -88,20 +88,36 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a1e714607dd770cb66acb63e671feaa03" id="r_a1e714607dd770cb66acb63e671feaa03"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_c_1_1mip__time.html">mip_time</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_c_1_1mip__aiding__ecef__pos__command.html#a1e714607dd770cb66acb63e671feaa03">time</a></td></tr>
 <tr class="memdesc:a1e714607dd770cb66acb63e671feaa03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timestamp of the measurement.  <br /></td></tr>
 <tr class="separator:a1e714607dd770cb66acb63e671feaa03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3cfb0b97991101b297e6f575b285200" id="r_ae3cfb0b97991101b297e6f575b285200"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_c_1_1mip__aiding__ecef__pos__command.html#ae3cfb0b97991101b297e6f575b285200">sensor_id</a></td></tr>
-<tr class="memdesc:ae3cfb0b97991101b297e6f575b285200"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sensor ID.  <br /></td></tr>
-<tr class="separator:ae3cfb0b97991101b297e6f575b285200"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4228d8a6448426352b0f0733847fedc0" id="r_a4228d8a6448426352b0f0733847fedc0"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_c_1_1mip__aiding__ecef__pos__command.html#a4228d8a6448426352b0f0733847fedc0">frame_id</a></td></tr>
+<tr class="memdesc:a4228d8a6448426352b0f0733847fedc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Source ID for this estimate (source_id == 0 indicates this sensor, source_id &gt; 0 indicates an external estimate).  <br /></td></tr>
+<tr class="separator:a4228d8a6448426352b0f0733847fedc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae49c52695c24af5376aeb7fbbe828b55" id="r_ae49c52695c24af5376aeb7fbbe828b55"><td class="memItemLeft" align="right" valign="top">mip_vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_c_1_1mip__aiding__ecef__pos__command.html#ae49c52695c24af5376aeb7fbbe828b55">position</a></td></tr>
 <tr class="memdesc:ae49c52695c24af5376aeb7fbbe828b55"><td class="mdescLeft">&#160;</td><td class="mdescRight">ECEF position [m].  <br /></td></tr>
 <tr class="separator:ae49c52695c24af5376aeb7fbbe828b55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeca7d7b7f9b95cf42582ed68d1718a19" id="r_aeca7d7b7f9b95cf42582ed68d1718a19"><td class="memItemLeft" align="right" valign="top">mip_vector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_c_1_1mip__aiding__ecef__pos__command.html#aeca7d7b7f9b95cf42582ed68d1718a19">uncertainty</a></td></tr>
-<tr class="memdesc:aeca7d7b7f9b95cf42582ed68d1718a19"><td class="mdescLeft">&#160;</td><td class="mdescRight">ECEF position uncertainty [m].  <br /></td></tr>
+<tr class="memdesc:aeca7d7b7f9b95cf42582ed68d1718a19"><td class="mdescLeft">&#160;</td><td class="mdescRight">ECEF position uncertainty [m]. Cannot be 0 unless the corresponding valid flags are 0.  <br /></td></tr>
 <tr class="separator:aeca7d7b7f9b95cf42582ed68d1718a19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebe0b7915bfac1e600f5a1498b4e84d5" id="r_aebe0b7915bfac1e600f5a1498b4e84d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__c__aiding__ecef__pos.html#ga3cffd363875097e39c5460f744507c9c">mip_aiding_ecef_pos_command_valid_flags</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_c_1_1mip__aiding__ecef__pos__command.html#aebe0b7915bfac1e600f5a1498b4e84d5">valid_flags</a></td></tr>
-<tr class="memdesc:aebe0b7915bfac1e600f5a1498b4e84d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Valid flags.  <br /></td></tr>
+<tr class="memdesc:aebe0b7915bfac1e600f5a1498b4e84d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Valid flags. Axes with 0 will be completely ignored.  <br /></td></tr>
 <tr class="separator:aebe0b7915bfac1e600f5a1498b4e84d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a4228d8a6448426352b0f0733847fedc0" name="a4228d8a6448426352b0f0733847fedc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4228d8a6448426352b0f0733847fedc0">&#9670;&#160;</a></span>frame_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t mip::C::mip_aiding_ecef_pos_command::frame_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Source ID for this estimate (source_id == 0 indicates this sensor, source_id &gt; 0 indicates an external estimate). </p>
+
+</div>
+</div>
 <a id="ae49c52695c24af5376aeb7fbbe828b55" name="ae49c52695c24af5376aeb7fbbe828b55"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae49c52695c24af5376aeb7fbbe828b55">&#9670;&#160;</a></span>position</h2>
 
@@ -115,22 +131,6 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>ECEF position [m]. </p>
-
-</div>
-</div>
-<a id="ae3cfb0b97991101b297e6f575b285200" name="ae3cfb0b97991101b297e6f575b285200"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3cfb0b97991101b297e6f575b285200">&#9670;&#160;</a></span>sensor_id</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t mip::C::mip_aiding_ecef_pos_command::sensor_id</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sensor ID. </p>
 
 </div>
 </div>
@@ -162,7 +162,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>ECEF position uncertainty [m]. </p>
+<p>ECEF position uncertainty [m]. Cannot be 0 unless the corresponding valid flags are 0. </p>
 
 </div>
 </div>
@@ -178,7 +178,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Valid flags. </p>
+<p>Valid flags. Axes with 0 will be completely ignored. </p>
 
 </div>
 </div>
