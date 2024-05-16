@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['mip_20interface_0',['Mip Interface',['../mip_interface.html',1,'']]],
-  ['mip_20parser_1',['Mip Parser',['../parsing_packets.html',1,'']]],
-  ['mip_20sdk_2',['MIP SDK',['../index.html',1,'']]]
+  ['command_20result_0',['Command Result',['../command_results.html',1,'']]],
+  ['considerations_1',['Other Considerations',['../other.html',1,'']]]
 ];

@@ -73,7 +73,6 @@ var menudata={children:[
 {text:"m",url:"namespacemembers_type_m.html#index_m"},
 {text:"p",url:"namespacemembers_type_p.html#index_p"},
 {text:"q",url:"namespacemembers_type_q.html#index_q"},
-{text:"r",url:"namespacemembers_type_r.html#index_r"},
 {text:"t",url:"namespacemembers_type_t.html#index_t"},
 {text:"v",url:"namespacemembers_type_v.html#index_v"}]},
 {text:"Enumerations",url:"namespacemembers_enum.html"},
