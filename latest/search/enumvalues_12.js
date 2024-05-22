@@ -27,9 +27,9 @@ var searchData=
   ['speed_5f3d_24',['SPEED_3D',['../structmip_1_1data__gnss_1_1_vel_ned_1_1_valid_flags.html#a974696cf6499ed4357b93896747ec928a976e52bea29b73bc44e58b493224bdb7',1,'mip::data_gnss::VelNed::ValidFlags']]],
   ['speed_5faccuracy_25',['SPEED_ACCURACY',['../structmip_1_1data__gnss_1_1_vel_ned_1_1_valid_flags.html#a974696cf6499ed4357b93896747ec928ac2003fc7693fd5eff6577fbd1087ca82',1,'mip::data_gnss::VelNed::ValidFlags']]],
   ['spoofing_5fstate_26',['SPOOFING_STATE',['../structmip_1_1data__gnss_1_1_rf_error_detection_1_1_valid_flags.html#acc28d70bad11518bde554f57faec7f71adcb12b2b6073aafcfe5beb8521a4ca11',1,'mip::data_gnss::RfErrorDetection::ValidFlags']]],
-  ['standard_27',['STANDARD',['../structmip_1_1commands__aiding_1_1_aiding_echo_control.html#ae565f376623a5b188e2ca176698c5b64a94e94133f4bdc1794c6b647b8ea134d0',1,'mip::commands_aiding::AidingEchoControl']]],
+  ['standard_27',['STANDARD',['../structmip_1_1commands__aiding_1_1_echo_control.html#ade28dc5af1c8b7c531dc51b3f451a6d6a94e94133f4bdc1794c6b647b8ea134d0',1,'mip::commands_aiding::EchoControl']]],
   ['station_5fid_28',['STATION_ID',['../structmip_1_1data__gnss_1_1_base_station_info_1_1_valid_flags.html#ada30f4639178ea79e264dc8e8ee76a80a7fc5ac33fb5db3ffcb6e8b9f70382a68',1,'mip::data_gnss::BaseStationInfo::ValidFlags']]],
-  ['suppress_5fack_29',['SUPPRESS_ACK',['../structmip_1_1commands__aiding_1_1_aiding_echo_control.html#ae565f376623a5b188e2ca176698c5b64ae6bca279c1707fde1e035a5a57e2581c',1,'mip::commands_aiding::AidingEchoControl']]],
+  ['suppress_5fack_29',['SUPPRESS_ACK',['../structmip_1_1commands__aiding_1_1_echo_control.html#ade28dc5af1c8b7c531dc51b3f451a6d6ae6bca279c1707fde1e035a5a57e2581c',1,'mip::commands_aiding::EchoControl']]],
   ['sv_5fflags_30',['SV_FLAGS',['../structmip_1_1data__gnss_1_1_sv_info_1_1_valid_flags.html#a176dc2b0a091f62c53c67795d6311487ade229444fd112c38df4cdf62abdc0eb0',1,'mip::data_gnss::SvInfo::ValidFlags']]],
   ['sv_5fid_31',['SV_ID',['../structmip_1_1data__gnss_1_1_sv_info_1_1_valid_flags.html#a176dc2b0a091f62c53c67795d6311487afb71ec2ac366f2be712870bd67a25ebc',1,'mip::data_gnss::SvInfo::ValidFlags']]]
 ];

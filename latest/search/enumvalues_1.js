@@ -20,5 +20,6 @@ var searchData=
   ['beta_17',['BETA',['../structmip_1_1data__gnss_1_1_gps_iono_corr_1_1_valid_flags.html#a666d0e4bd85f634a9698dce7946464fca6ca52ea8b4ede3c91d0f13e0b5560e49',1,'mip::data_gnss::GpsIonoCorr::ValidFlags']]],
   ['bias_18',['bias',['../structmip_1_1data__gnss_1_1_clock_info_1_1_valid_flags.html#a8d66dacf948a9eedf2287c88b5383b96a44daf88694f1ffebacd77f6c3d6dd7cc',1,'mip::data_gnss::ClockInfo::ValidFlags::BIAS'],['../structmip_1_1data__gnss_1_1_clock_info2_1_1_valid_flags.html#adf3c4705c42457407973c9b1cffd365ca2ef739df60137819041be225d6405b18',1,'mip::data_gnss::ClockInfo2::ValidFlags::BIAS']]],
   ['bias_5faccuracy_19',['BIAS_ACCURACY',['../structmip_1_1data__gnss_1_1_clock_info2_1_1_valid_flags.html#adf3c4705c42457407973c9b1cffd365ca3512c125a09a9e2ecb620d46795a41ab',1,'mip::data_gnss::ClockInfo2::ValidFlags']]],
-  ['buffer_5foverrun_20',['BUFFER_OVERRUN',['../structmip_1_1commands__base_1_1_commanded_test_bits_gq7.html#a4b36e7f5d0669a98642f4859ccd9c3c4a6ca2940016ff5d6cc26a6b09d6b06ed2',1,'mip::commands_base::CommandedTestBitsGq7']]]
+  ['body_5fframe_5fvel_20',['BODY_FRAME_VEL',['../structmip_1_1commands__filter_1_1_aiding_measurement_enable.html#a48cdfb03a715ea121d179df415ae3db3a9937691bf14361621448ed85300ef590',1,'mip::commands_filter::AidingMeasurementEnable']]],
+  ['buffer_5foverrun_21',['BUFFER_OVERRUN',['../structmip_1_1commands__base_1_1_commanded_test_bits_gq7.html#a4b36e7f5d0669a98642f4859ccd9c3c4a6ca2940016ff5d6cc26a6b09d6b06ed2',1,'mip::commands_base::CommandedTestBitsGq7']]]
 ];

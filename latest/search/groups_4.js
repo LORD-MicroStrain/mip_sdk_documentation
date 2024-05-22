@@ -16,7 +16,9 @@ var searchData=
   ['bias_20uncertainty_20cpp_13',['bias uncertainty cpp',['../group__cpp__filter__gyro__bias__uncertainty.html',1,'(0x82,0x0B) Gyro Bias Uncertainty [CPP]'],['../group__cpp__filter__accel__bias__uncertainty.html',1,'(0x82,0x0C) Accel Bias Uncertainty [CPP]'],['../group__cpp__filter__mag__bias__uncertainty.html',1,'(0x82,0x1B) Mag Bias Uncertainty [CPP]']]],
   ['bit_20c_14',['(0x01,0x08) Continuous Bit [C]',['../group__c__base__continuous__bit.html',1,'']]],
   ['bit_20cpp_15',['(0x01,0x08) Continuous Bit [CPP]',['../group__cpp__base__continuous__bit.html',1,'']]],
-  ['building_20c_16',['Packet Building [C]',['../group___packet_building.html',1,'']]],
-  ['built_20in_20test_20c_17',['built in test c',['../group__c__base__built__in__test.html',1,'(0x01,0x05) Built In Test [C]'],['../group__c__system__built__in__test.html',1,'(0xA0,0x01) Built In Test [C]']]],
-  ['built_20in_20test_20cpp_18',['built in test cpp',['../group__cpp__base__built__in__test.html',1,'(0x01,0x05) Built In Test [CPP]'],['../group__cpp__system__built__in__test.html',1,'(0xA0,0x01) Built In Test [CPP]']]]
+  ['body_20frame_20c_16',['(0x13,0x2A) Vel Body Frame [C]',['../group__c__aiding__vel__body__frame.html',1,'']]],
+  ['body_20frame_20cpp_17',['(0x13,0x2A) Vel Body Frame [CPP]',['../group__cpp__aiding__vel__body__frame.html',1,'']]],
+  ['building_20c_18',['Packet Building [C]',['../group___packet_building.html',1,'']]],
+  ['built_20in_20test_20c_19',['built in test c',['../group__c__base__built__in__test.html',1,'(0x01,0x05) Built In Test [C]'],['../group__c__system__built__in__test.html',1,'(0xA0,0x01) Built In Test [C]']]],
+  ['built_20in_20test_20cpp_20',['built in test cpp',['../group__cpp__base__built__in__test.html',1,'(0x01,0x05) Built In Test [CPP]'],['../group__cpp__system__built__in__test.html',1,'(0xA0,0x01) Built In Test [CPP]']]]
 ];

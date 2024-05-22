@@ -141,7 +141,7 @@ var searchData=
   ['reset_138',['RESET',['../namespacemip.html#a2dde9cdf5ebc86cf62e8c2591dcb56deab5859d8721cfdc0312b2838b9c985bc1',1,'mip']]],
   ['resetcode_139',['RESETCODE',['../structmip_1_1commands__rtk_1_1_get_status_flags_1_1_status_flags_legacy.html#a6d952630b90a4cae4177646db34a96eea87ca77ad804bfe5c85a6a595e8e6a79b',1,'mip::commands_rtk::GetStatusFlags::StatusFlagsLegacy']]],
   ['residual_5fhigh_5fwarning_140',['RESIDUAL_HIGH_WARNING',['../structmip_1_1data__filter_1_1_filter_measurement_indicator.html#a5f32bf9315a578292ebcb6c99df6929faa5b90626edcd8cde773e854b2c5ac68f',1,'mip::data_filter::FilterMeasurementIndicator']]],
-  ['response_141',['RESPONSE',['../structmip_1_1commands__aiding_1_1_aiding_echo_control.html#ae565f376623a5b188e2ca176698c5b64a4fa1a4d2e48aa765093ca6aae57a5150',1,'mip::commands_aiding::AidingEchoControl']]],
+  ['response_141',['RESPONSE',['../structmip_1_1commands__aiding_1_1_echo_control.html#ade28dc5af1c8b7c531dc51b3f451a6d6a4fa1a4d2e48aa765093ca6aae57a5150',1,'mip::commands_aiding::EchoControl']]],
   ['rf_5fband_142',['RF_BAND',['../structmip_1_1data__gnss_1_1_rf_error_detection_1_1_valid_flags.html#acc28d70bad11518bde554f57faec7f71a1c05aa486deb95b15c11528bd840a914',1,'mip::data_gnss::RfErrorDetection::ValidFlags']]],
   ['rmc_143',['RMC',['../structmip_1_1commands__3dm_1_1_nmea_message.html#af4e93784c35351426df2086fc4c56bf2a37831c6008f4cc78a6d72aa54739b828',1,'mip::commands_3dm::NmeaMessage']]],
   ['roll_144',['ROLL',['../structmip_1_1commands__filter_1_1_tare_orientation_1_1_mip_tare_axes.html#a0c7b08afc596579b3e324d56bfabdceba8f078f57518d9f8a3bfc50d38d35b0b8',1,'mip::commands_filter::TareOrientation::MipTareAxes']]],

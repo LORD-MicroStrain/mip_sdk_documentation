@@ -43,8 +43,8 @@ var searchData=
   ['trigger_20cpp_40',['(0x0C,0x2E) Event Trigger [CPP]',['../group__cpp__3dm__event__trigger.html',1,'']]],
   ['trigger_20status_20c_41',['(0x0C,0x2C) Get Event Trigger Status [C]',['../group__c__3dm__get__event__trigger__status.html',1,'']]],
   ['trigger_20status_20cpp_42',['(0x0C,0x2C) Get Event Trigger Status [CPP]',['../group__cpp__3dm__get__event__trigger__status.html',1,'']]],
-  ['true_20heading_20c_43',['(0x13,0x31) True Heading [C]',['../group__c__aiding__true__heading.html',1,'']]],
-  ['true_20heading_20cpp_44',['(0x13,0x31) True Heading [CPP]',['../group__cpp__aiding__true__heading.html',1,'']]],
+  ['true_20c_43',['(0x13,0x31) Heading True [C]',['../group__c__aiding__heading__true.html',1,'']]],
+  ['true_20cpp_44',['(0x13,0x31) Heading True [CPP]',['../group__cpp__aiding__heading__true.html',1,'']]],
   ['type_20c_45',['(0x0F,0x06) Connected Device Type [C]',['../group__c__rtk__connected__device__type.html',1,'']]],
   ['type_20cpp_46',['(0x0F,0x06) Connected Device Type [CPP]',['../group__cpp__rtk__connected__device__type.html',1,'']]]
 ];
