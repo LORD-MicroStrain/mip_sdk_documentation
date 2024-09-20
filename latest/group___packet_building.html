@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MIP SDK: Packet Building [C]</title>
+<title>MIP_SDK: Packet Building [C]</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v2.0.0-1-g65a7b37</span>
+   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-137-g8a814ec</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -81,27 +81,27 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gaba61d03a24b2cec271e4c7eb19c1166a" id="r_gaba61d03a24b2cec271e4c7eb19c1166a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___packet_building.html#gaba61d03a24b2cec271e4c7eb19c1166a">mip::C::mip_packet_create</a> (<a class="el" href="structmip_1_1_c_1_1mip__packet.html">mip_packet</a> *packet, uint8_t *buffer, size_t buffer_size, uint8_t descriptor_set)</td></tr>
-<tr class="separator:gaba61d03a24b2cec271e4c7eb19c1166a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad447d3241c37c78e21b97617a12bc656" id="r_gad447d3241c37c78e21b97617a12bc656"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___packet_building.html#gad447d3241c37c78e21b97617a12bc656">mip::C::mip_packet_add_field</a> (<a class="el" href="structmip_1_1_c_1_1mip__packet.html">mip_packet</a> *packet, uint8_t field_descriptor, const uint8_t *payload, uint8_t payload_length)</td></tr>
-<tr class="separator:gad447d3241c37c78e21b97617a12bc656"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1fdb5f969644cb467363252ed6eed2d4" id="r_ga1fdb5f969644cb467363252ed6eed2d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___packet_building.html#ga1fdb5f969644cb467363252ed6eed2d4">mip::C::mip_packet_alloc_field</a> (<a class="el" href="structmip_1_1_c_1_1mip__packet.html">mip_packet</a> *packet, uint8_t field_descriptor, uint8_t payload_length, uint8_t **payload_ptr_out)</td></tr>
-<tr class="separator:ga1fdb5f969644cb467363252ed6eed2d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9dd0b1f0e82643666b168a771ca04ac6" id="r_ga9dd0b1f0e82643666b168a771ca04ac6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___packet_building.html#ga9dd0b1f0e82643666b168a771ca04ac6">mip::C::mip_packet_realloc_last_field</a> (<a class="el" href="structmip_1_1_c_1_1mip__packet.html">mip_packet</a> *packet, uint8_t *payload_ptr, uint8_t new_payload_length)</td></tr>
-<tr class="separator:ga9dd0b1f0e82643666b168a771ca04ac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4ff21df139b74a7587ec74864d248c5d" id="r_ga4ff21df139b74a7587ec74864d248c5d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___packet_building.html#ga4ff21df139b74a7587ec74864d248c5d">mip::C::mip_packet_cancel_last_field</a> (<a class="el" href="structmip_1_1_c_1_1mip__packet.html">mip_packet</a> *packet, uint8_t *payload_ptr)</td></tr>
-<tr class="separator:ga4ff21df139b74a7587ec74864d248c5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaec80ac8f1094c874448cb9810e21d836" id="r_gaec80ac8f1094c874448cb9810e21d836"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___packet_building.html#gaec80ac8f1094c874448cb9810e21d836">mip::C::mip_packet_finalize</a> (<a class="el" href="structmip_1_1_c_1_1mip__packet.html">mip_packet</a> *packet)</td></tr>
-<tr class="separator:gaec80ac8f1094c874448cb9810e21d836"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga136fdecfb2b42174c8a9436e185c7559" id="r_ga136fdecfb2b42174c8a9436e185c7559"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___packet_building.html#ga136fdecfb2b42174c8a9436e185c7559">mip::C::mip_packet_reset</a> (<a class="el" href="structmip_1_1_c_1_1mip__packet.html">mip_packet</a> *packet, uint8_t descriptor_set)</td></tr>
-<tr class="separator:ga136fdecfb2b42174c8a9436e185c7559"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa0ee7777331b8dc4141c1a08f8ca01cf" id="r_gaa0ee7777331b8dc4141c1a08f8ca01cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___packet_building.html#gaa0ee7777331b8dc4141c1a08f8ca01cf">mip::C::mip_packet_create</a> (<a class="el" href="structmip_1_1_c_1_1mip__packet__view.html">mip_packet_view</a> *packet, uint8_t *buffer, size_t buffer_size, uint8_t descriptor_set)</td></tr>
+<tr class="separator:gaa0ee7777331b8dc4141c1a08f8ca01cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5749e64bb20e3b5e1c44d3ed0b7321eb" id="r_ga5749e64bb20e3b5e1c44d3ed0b7321eb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___packet_building.html#ga5749e64bb20e3b5e1c44d3ed0b7321eb">mip::C::mip_packet_add_field</a> (<a class="el" href="structmip_1_1_c_1_1mip__packet__view.html">mip_packet_view</a> *packet, uint8_t field_descriptor, const uint8_t *payload, uint8_t payload_length)</td></tr>
+<tr class="separator:ga5749e64bb20e3b5e1c44d3ed0b7321eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2be9ce154cf00f89b8aaf0bb4423a6ef" id="r_ga2be9ce154cf00f89b8aaf0bb4423a6ef"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___packet_building.html#ga2be9ce154cf00f89b8aaf0bb4423a6ef">mip::C::mip_packet_alloc_field</a> (<a class="el" href="structmip_1_1_c_1_1mip__packet__view.html">mip_packet_view</a> *packet, uint8_t field_descriptor, uint8_t payload_length, uint8_t **payload_ptr_out)</td></tr>
+<tr class="separator:ga2be9ce154cf00f89b8aaf0bb4423a6ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2f4c565e94e44050dad90e3e7a9e7124" id="r_ga2f4c565e94e44050dad90e3e7a9e7124"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___packet_building.html#ga2f4c565e94e44050dad90e3e7a9e7124">mip::C::mip_packet_realloc_last_field</a> (<a class="el" href="structmip_1_1_c_1_1mip__packet__view.html">mip_packet_view</a> *packet, uint8_t *payload_ptr, uint8_t new_payload_length)</td></tr>
+<tr class="separator:ga2f4c565e94e44050dad90e3e7a9e7124"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaece2d00f4d6cb74109d19c8d0d717561" id="r_gaece2d00f4d6cb74109d19c8d0d717561"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___packet_building.html#gaece2d00f4d6cb74109d19c8d0d717561">mip::C::mip_packet_cancel_last_field</a> (<a class="el" href="structmip_1_1_c_1_1mip__packet__view.html">mip_packet_view</a> *packet, uint8_t *payload_ptr)</td></tr>
+<tr class="separator:gaece2d00f4d6cb74109d19c8d0d717561"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2200d6640283cca2532f82a07fdf6679" id="r_ga2200d6640283cca2532f82a07fdf6679"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___packet_building.html#ga2200d6640283cca2532f82a07fdf6679">mip::C::mip_packet_finalize</a> (<a class="el" href="structmip_1_1_c_1_1mip__packet__view.html">mip_packet_view</a> *packet)</td></tr>
+<tr class="separator:ga2200d6640283cca2532f82a07fdf6679"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa5892c3a54ac524fff31eebc6fc6298d" id="r_gaa5892c3a54ac524fff31eebc6fc6298d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___packet_building.html#gaa5892c3a54ac524fff31eebc6fc6298d">mip::C::mip_packet_reset</a> (<a class="el" href="structmip_1_1_c_1_1mip__packet__view.html">mip_packet_view</a> *packet, uint8_t descriptor_set)</td></tr>
+<tr class="separator:gaa5892c3a54ac524fff31eebc6fc6298d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Functions for building new MIP packets. </p>
 <p>Use these functions to create a new packet, add fields, and write the checksum. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gad447d3241c37c78e21b97617a12bc656" name="gad447d3241c37c78e21b97617a12bc656"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad447d3241c37c78e21b97617a12bc656">&#9670;&#160;</a></span>mip_packet_add_field()</h2>
+<a id="ga5749e64bb20e3b5e1c44d3ed0b7321eb" name="ga5749e64bb20e3b5e1c44d3ed0b7321eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5749e64bb20e3b5e1c44d3ed0b7321eb">&#9670;&#160;</a></span>mip_packet_add_field()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -109,7 +109,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">bool mip::C::mip_packet_add_field </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1_c_1_1mip__packet.html">mip_packet</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1_c_1_1mip__packet__view.html">mip_packet_view</a> *&#160;</td>
           <td class="paramname"><em>packet</em>, </td>
         </tr>
         <tr>
@@ -140,8 +140,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga1fdb5f969644cb467363252ed6eed2d4" name="ga1fdb5f969644cb467363252ed6eed2d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1fdb5f969644cb467363252ed6eed2d4">&#9670;&#160;</a></span>mip_packet_alloc_field()</h2>
+<a id="ga2be9ce154cf00f89b8aaf0bb4423a6ef" name="ga2be9ce154cf00f89b8aaf0bb4423a6ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2be9ce154cf00f89b8aaf0bb4423a6ef">&#9670;&#160;</a></span>mip_packet_alloc_field()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -149,7 +149,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">int mip::C::mip_packet_alloc_field </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1_c_1_1mip__packet.html">mip_packet</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1_c_1_1mip__packet__view.html">mip_packet_view</a> *&#160;</td>
           <td class="paramname"><em>packet</em>, </td>
         </tr>
         <tr>
@@ -180,8 +180,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga4ff21df139b74a7587ec74864d248c5d" name="ga4ff21df139b74a7587ec74864d248c5d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4ff21df139b74a7587ec74864d248c5d">&#9670;&#160;</a></span>mip_packet_cancel_last_field()</h2>
+<a id="gaece2d00f4d6cb74109d19c8d0d717561" name="gaece2d00f4d6cb74109d19c8d0d717561"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaece2d00f4d6cb74109d19c8d0d717561">&#9670;&#160;</a></span>mip_packet_cancel_last_field()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -189,7 +189,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">int mip::C::mip_packet_cancel_last_field </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1_c_1_1mip__packet.html">mip_packet</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1_c_1_1mip__packet__view.html">mip_packet_view</a> *&#160;</td>
           <td class="paramname"><em>packet</em>, </td>
         </tr>
         <tr>
@@ -208,8 +208,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gaba61d03a24b2cec271e4c7eb19c1166a" name="gaba61d03a24b2cec271e4c7eb19c1166a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaba61d03a24b2cec271e4c7eb19c1166a">&#9670;&#160;</a></span>mip_packet_create()</h2>
+<a id="gaa0ee7777331b8dc4141c1a08f8ca01cf" name="gaa0ee7777331b8dc4141c1a08f8ca01cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa0ee7777331b8dc4141c1a08f8ca01cf">&#9670;&#160;</a></span>mip_packet_create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -217,7 +217,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void mip::C::mip_packet_create </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1_c_1_1mip__packet.html">mip_packet</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1_c_1_1mip__packet__view.html">mip_packet_view</a> *&#160;</td>
           <td class="paramname"><em>packet</em>, </td>
         </tr>
         <tr>
@@ -248,8 +248,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gaec80ac8f1094c874448cb9810e21d836" name="gaec80ac8f1094c874448cb9810e21d836"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaec80ac8f1094c874448cb9810e21d836">&#9670;&#160;</a></span>mip_packet_finalize()</h2>
+<a id="ga2200d6640283cca2532f82a07fdf6679" name="ga2200d6640283cca2532f82a07fdf6679"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2200d6640283cca2532f82a07fdf6679">&#9670;&#160;</a></span>mip_packet_finalize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -257,7 +257,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void mip::C::mip_packet_finalize </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1_c_1_1mip__packet.html">mip_packet</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1_c_1_1mip__packet__view.html">mip_packet_view</a> *&#160;</td>
           <td class="paramname"><em>packet</em></td><td>)</td>
           <td></td>
         </tr>
@@ -266,8 +266,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga9dd0b1f0e82643666b168a771ca04ac6" name="ga9dd0b1f0e82643666b168a771ca04ac6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9dd0b1f0e82643666b168a771ca04ac6">&#9670;&#160;</a></span>mip_packet_realloc_last_field()</h2>
+<a id="ga2f4c565e94e44050dad90e3e7a9e7124" name="ga2f4c565e94e44050dad90e3e7a9e7124"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2f4c565e94e44050dad90e3e7a9e7124">&#9670;&#160;</a></span>mip_packet_realloc_last_field()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -275,7 +275,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">int mip::C::mip_packet_realloc_last_field </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1_c_1_1mip__packet.html">mip_packet</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1_c_1_1mip__packet__view.html">mip_packet_view</a> *&#160;</td>
           <td class="paramname"><em>packet</em>, </td>
         </tr>
         <tr>
@@ -300,8 +300,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga136fdecfb2b42174c8a9436e185c7559" name="ga136fdecfb2b42174c8a9436e185c7559"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga136fdecfb2b42174c8a9436e185c7559">&#9670;&#160;</a></span>mip_packet_reset()</h2>
+<a id="gaa5892c3a54ac524fff31eebc6fc6298d" name="gaa5892c3a54ac524fff31eebc6fc6298d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa5892c3a54ac524fff31eebc6fc6298d">&#9670;&#160;</a></span>mip_packet_reset()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -309,7 +309,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void mip::C::mip_packet_reset </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1_c_1_1mip__packet.html">mip_packet</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1_c_1_1mip__packet__view.html">mip_packet_view</a> *&#160;</td>
           <td class="paramname"><em>packet</em>, </td>
         </tr>
         <tr>

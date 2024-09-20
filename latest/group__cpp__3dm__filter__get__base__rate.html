@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MIP SDK: (0x0C,0x0B) Filter Get Base Rate [CPP]</title>
+<title>MIP_SDK: (0x0C,0x0B) Filter Get Base Rate [CPP]</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v2.0.0-1-g65a7b37</span>
+   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-137-g8a814ec</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -84,14 +84,6 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga46cce6e9318515568feef3362f041fc1" id="r_ga46cce6e9318515568feef3362f041fc1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__filter__get__base__rate.html#ga46cce6e9318515568feef3362f041fc1">mip::commands_3dm::insert</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, const <a class="el" href="structmip_1_1commands__3dm_1_1_filter_get_base_rate.html">FilterGetBaseRate</a> &amp;self)</td></tr>
-<tr class="separator:ga46cce6e9318515568feef3362f041fc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad3c849c9a5d23c8a9465043f982d6005" id="r_gad3c849c9a5d23c8a9465043f982d6005"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__filter__get__base__rate.html#gad3c849c9a5d23c8a9465043f982d6005">mip::commands_3dm::extract</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, <a class="el" href="structmip_1_1commands__3dm_1_1_filter_get_base_rate.html">FilterGetBaseRate</a> &amp;self)</td></tr>
-<tr class="separator:gad3c849c9a5d23c8a9465043f982d6005"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab8b5d1435cbe0a3280487e39c3769e54" id="r_gab8b5d1435cbe0a3280487e39c3769e54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__filter__get__base__rate.html#gab8b5d1435cbe0a3280487e39c3769e54">mip::commands_3dm::insert</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, const <a class="el" href="structmip_1_1commands__3dm_1_1_filter_get_base_rate_1_1_response.html">FilterGetBaseRate::Response</a> &amp;self)</td></tr>
-<tr class="separator:gab8b5d1435cbe0a3280487e39c3769e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf26c268c2aa4d72817eba7bf31c63a32" id="r_gaf26c268c2aa4d72817eba7bf31c63a32"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__filter__get__base__rate.html#gaf26c268c2aa4d72817eba7bf31c63a32">mip::commands_3dm::extract</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, <a class="el" href="structmip_1_1commands__3dm_1_1_filter_get_base_rate_1_1_response.html">FilterGetBaseRate::Response</a> &amp;self)</td></tr>
-<tr class="separator:gaf26c268c2aa4d72817eba7bf31c63a32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga30439f232f77a97a7ba859e3918a4b7c" id="r_ga30439f232f77a97a7ba859e3918a4b7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_typed_result.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1_filter_get_base_rate.html">FilterGetBaseRate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__filter__get__base__rate.html#ga30439f232f77a97a7ba859e3918a4b7c">mip::commands_3dm::filterGetBaseRate</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, uint16_t *rateOut)</td></tr>
 <tr class="separator:ga30439f232f77a97a7ba859e3918a4b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -99,62 +91,6 @@ Functions</h2></td></tr>
 <p>Get the base rate for the Estimation Filter data in Hz</p>
 <p>This is the fastest rate for this type of data available on the device. This is used in conjunction with the Estimation Filter Message Format Command to set streaming data at a specified rate. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gad3c849c9a5d23c8a9465043f982d6005" name="gad3c849c9a5d23c8a9465043f982d6005"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad3c849c9a5d23c8a9465043f982d6005">&#9670;&#160;</a></span>extract() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::commands_3dm::extract </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1commands__3dm_1_1_filter_get_base_rate.html">FilterGetBaseRate</a> &amp;&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gaf26c268c2aa4d72817eba7bf31c63a32" name="gaf26c268c2aa4d72817eba7bf31c63a32"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf26c268c2aa4d72817eba7bf31c63a32">&#9670;&#160;</a></span>extract() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::commands_3dm::extract </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1commands__3dm_1_1_filter_get_base_rate_1_1_response.html">FilterGetBaseRate::Response</a> &amp;&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ga30439f232f77a97a7ba859e3918a4b7c" name="ga30439f232f77a97a7ba859e3918a4b7c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga30439f232f77a97a7ba859e3918a4b7c">&#9670;&#160;</a></span>filterGetBaseRate()</h2>
 
@@ -172,62 +108,6 @@ Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">uint16_t *&#160;</td>
           <td class="paramname"><em>rateOut</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga46cce6e9318515568feef3362f041fc1" name="ga46cce6e9318515568feef3362f041fc1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga46cce6e9318515568feef3362f041fc1">&#9670;&#160;</a></span>insert() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::commands_3dm::insert </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structmip_1_1commands__3dm_1_1_filter_get_base_rate.html">FilterGetBaseRate</a> &amp;&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gab8b5d1435cbe0a3280487e39c3769e54" name="gab8b5d1435cbe0a3280487e39c3769e54"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab8b5d1435cbe0a3280487e39c3769e54">&#9670;&#160;</a></span>insert() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::commands_3dm::insert </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structmip_1_1commands__3dm_1_1_filter_get_base_rate_1_1_response.html">FilterGetBaseRate::Response</a> &amp;&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

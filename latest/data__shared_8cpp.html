@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MIP SDK: src/mip/definitions/data_shared.cpp File Reference</title>
+<title>MIP_SDK: src/cpp/mip/definitions/data_shared.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v2.0.0-1-g65a7b37</span>
+   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-137-g8a814ec</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -70,19 +70,18 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0652f4f834e91e7f754984a58c1d13cb.html">mip</a></li><li class="navelem"><a class="el" href="dir_b4757d6490426ba3edc823ae097c67e9.html">definitions</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_dfdbda394c3f7a3aa55229f33a559c41.html">cpp</a></li><li class="navelem"><a class="el" href="dir_d29c97e961aefc9d46d46dac53dee2f3.html">mip</a></li><li class="navelem"><a class="el" href="dir_f7d4aa5ab5923afe83647d208d4f35c0.html">definitions</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle"><div class="title">data_shared.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="data__shared_8hpp_source.html">data_shared.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="serialization_8h_source.html">../utils/serialization.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="mip__interface_8h_source.html">../mip_interface.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="definitions_2data__shared_8hpp_source.html">data_shared.hpp</a>&quot;</code><br />
+<code>#include &lt;<a class="el" href="mip__serialization_8hpp_source.html">mip/mip_serialization.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mip__interface_8h_source.html">mip/mip_interface.h</a>&gt;</code><br />
 <code>#include &lt;assert.h&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -94,45 +93,6 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacemip_1_1data__shared" id="r_namespacemip_1_1data__shared"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip_1_1data__shared.html">mip::data_shared</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ga38beb8b574f4f3c52153d32bf332ce63" id="r_ga38beb8b574f4f3c52153d32bf332ce63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__shared__event__source.html#ga38beb8b574f4f3c52153d32bf332ce63">mip::data_shared::insert</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, const <a class="el" href="structmip_1_1data__shared_1_1_event_source.html">EventSource</a> &amp;self)</td></tr>
-<tr class="separator:ga38beb8b574f4f3c52153d32bf332ce63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga61fc6e82733ba5fa8101b42330d051fc" id="r_ga61fc6e82733ba5fa8101b42330d051fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__shared__event__source.html#ga61fc6e82733ba5fa8101b42330d051fc">mip::data_shared::extract</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, <a class="el" href="structmip_1_1data__shared_1_1_event_source.html">EventSource</a> &amp;self)</td></tr>
-<tr class="separator:ga61fc6e82733ba5fa8101b42330d051fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacd9a9636f7b09e21d888744fe90bacde" id="r_gacd9a9636f7b09e21d888744fe90bacde"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__shared__ticks.html#gacd9a9636f7b09e21d888744fe90bacde">mip::data_shared::insert</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, const <a class="el" href="structmip_1_1data__shared_1_1_ticks.html">Ticks</a> &amp;self)</td></tr>
-<tr class="separator:gacd9a9636f7b09e21d888744fe90bacde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga86b1cf605033e0f4bea3c3a5f3ec59d8" id="r_ga86b1cf605033e0f4bea3c3a5f3ec59d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__shared__ticks.html#ga86b1cf605033e0f4bea3c3a5f3ec59d8">mip::data_shared::extract</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, <a class="el" href="structmip_1_1data__shared_1_1_ticks.html">Ticks</a> &amp;self)</td></tr>
-<tr class="separator:ga86b1cf605033e0f4bea3c3a5f3ec59d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa122d086aa8a4dbe03db408d3fcb122b" id="r_gaa122d086aa8a4dbe03db408d3fcb122b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__shared__delta__ticks.html#gaa122d086aa8a4dbe03db408d3fcb122b">mip::data_shared::insert</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, const <a class="el" href="structmip_1_1data__shared_1_1_delta_ticks.html">DeltaTicks</a> &amp;self)</td></tr>
-<tr class="separator:gaa122d086aa8a4dbe03db408d3fcb122b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0313aefd166ea6e2f26dfb931fe07bae" id="r_ga0313aefd166ea6e2f26dfb931fe07bae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__shared__delta__ticks.html#ga0313aefd166ea6e2f26dfb931fe07bae">mip::data_shared::extract</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, <a class="el" href="structmip_1_1data__shared_1_1_delta_ticks.html">DeltaTicks</a> &amp;self)</td></tr>
-<tr class="separator:ga0313aefd166ea6e2f26dfb931fe07bae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8277aa460c55af8a3daea70a6c91892f" id="r_ga8277aa460c55af8a3daea70a6c91892f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__shared__gps__timestamp.html#ga8277aa460c55af8a3daea70a6c91892f">mip::data_shared::insert</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, const <a class="el" href="structmip_1_1data__shared_1_1_gps_timestamp.html">GpsTimestamp</a> &amp;self)</td></tr>
-<tr class="separator:ga8277aa460c55af8a3daea70a6c91892f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3262e0c7a40f37c2c98e432a6398770a" id="r_ga3262e0c7a40f37c2c98e432a6398770a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__shared__gps__timestamp.html#ga3262e0c7a40f37c2c98e432a6398770a">mip::data_shared::extract</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, <a class="el" href="structmip_1_1data__shared_1_1_gps_timestamp.html">GpsTimestamp</a> &amp;self)</td></tr>
-<tr class="separator:ga3262e0c7a40f37c2c98e432a6398770a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga188c2795cea30fd756434477b208724e" id="r_ga188c2795cea30fd756434477b208724e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__shared__delta__time.html#ga188c2795cea30fd756434477b208724e">mip::data_shared::insert</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, const <a class="el" href="structmip_1_1data__shared_1_1_delta_time.html">DeltaTime</a> &amp;self)</td></tr>
-<tr class="separator:ga188c2795cea30fd756434477b208724e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7e39c227747d43c7bf96304be64bc259" id="r_ga7e39c227747d43c7bf96304be64bc259"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__shared__delta__time.html#ga7e39c227747d43c7bf96304be64bc259">mip::data_shared::extract</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, <a class="el" href="structmip_1_1data__shared_1_1_delta_time.html">DeltaTime</a> &amp;self)</td></tr>
-<tr class="separator:ga7e39c227747d43c7bf96304be64bc259"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0776ee5c266da9a4283197eb275c2057" id="r_ga0776ee5c266da9a4283197eb275c2057"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__shared__reference__timestamp.html#ga0776ee5c266da9a4283197eb275c2057">mip::data_shared::insert</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, const <a class="el" href="structmip_1_1data__shared_1_1_reference_timestamp.html">ReferenceTimestamp</a> &amp;self)</td></tr>
-<tr class="separator:ga0776ee5c266da9a4283197eb275c2057"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacb2bdf498591d173d692197edc8bfaf2" id="r_gacb2bdf498591d173d692197edc8bfaf2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__shared__reference__timestamp.html#gacb2bdf498591d173d692197edc8bfaf2">mip::data_shared::extract</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, <a class="el" href="structmip_1_1data__shared_1_1_reference_timestamp.html">ReferenceTimestamp</a> &amp;self)</td></tr>
-<tr class="separator:gacb2bdf498591d173d692197edc8bfaf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga44cbc3f16941e084340a9e8bd71cbfe8" id="r_ga44cbc3f16941e084340a9e8bd71cbfe8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__shared__reference__time__delta.html#ga44cbc3f16941e084340a9e8bd71cbfe8">mip::data_shared::insert</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, const <a class="el" href="structmip_1_1data__shared_1_1_reference_time_delta.html">ReferenceTimeDelta</a> &amp;self)</td></tr>
-<tr class="separator:ga44cbc3f16941e084340a9e8bd71cbfe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga943d813a68f883429ecd660d85def136" id="r_ga943d813a68f883429ecd660d85def136"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__shared__reference__time__delta.html#ga943d813a68f883429ecd660d85def136">mip::data_shared::extract</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, <a class="el" href="structmip_1_1data__shared_1_1_reference_time_delta.html">ReferenceTimeDelta</a> &amp;self)</td></tr>
-<tr class="separator:ga943d813a68f883429ecd660d85def136"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8ba31c98e3a5998299991c8c79652430" id="r_ga8ba31c98e3a5998299991c8c79652430"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__shared__external__timestamp.html#ga8ba31c98e3a5998299991c8c79652430">mip::data_shared::insert</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, const <a class="el" href="structmip_1_1data__shared_1_1_external_timestamp.html">ExternalTimestamp</a> &amp;self)</td></tr>
-<tr class="separator:ga8ba31c98e3a5998299991c8c79652430"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac9be85de283a23cc62fd26154afd1036" id="r_gac9be85de283a23cc62fd26154afd1036"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__shared__external__timestamp.html#gac9be85de283a23cc62fd26154afd1036">mip::data_shared::extract</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, <a class="el" href="structmip_1_1data__shared_1_1_external_timestamp.html">ExternalTimestamp</a> &amp;self)</td></tr>
-<tr class="separator:gac9be85de283a23cc62fd26154afd1036"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8536dedd388bcfdd069836874b6cb4e4" id="r_ga8536dedd388bcfdd069836874b6cb4e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__shared__external__time__delta.html#ga8536dedd388bcfdd069836874b6cb4e4">mip::data_shared::insert</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, const <a class="el" href="structmip_1_1data__shared_1_1_external_time_delta.html">ExternalTimeDelta</a> &amp;self)</td></tr>
-<tr class="separator:ga8536dedd388bcfdd069836874b6cb4e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa2455f8a758de3e8bbd07ef3c76f7d35" id="r_gaa2455f8a758de3e8bbd07ef3c76f7d35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__shared__external__time__delta.html#gaa2455f8a758de3e8bbd07ef3c76f7d35">mip::data_shared::extract</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, <a class="el" href="structmip_1_1data__shared_1_1_external_time_delta.html">ExternalTimeDelta</a> &amp;self)</td></tr>
-<tr class="separator:gaa2455f8a758de3e8bbd07ef3c76f7d35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

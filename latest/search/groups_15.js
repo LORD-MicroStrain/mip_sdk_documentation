@@ -2,7 +2,7 @@ var searchData=
 [
   ['tare_20orientation_20c_0',['(0x0D,0x21) Tare Orientation [C]',['../group__c__filter__tare__orientation.html',1,'']]],
   ['tare_20orientation_20cpp_1',['(0x0D,0x21) Tare Orientation [CPP]',['../group__cpp__filter__tare__orientation.html',1,'']]],
-  ['tcp_20client_2',['TCP Client',['../group__mip__tcp.html',1,'']]],
+  ['tcp_20client_2',['TCP Client',['../group__microstrain__tcp.html',1,'']]],
   ['temp_20c_3',['(0x80,0x0D) Orientation Raw Temp [C]',['../group__c__sensor__orientation__raw__temp.html',1,'']]],
   ['temp_20cpp_4',['(0x80,0x0D) Orientation Raw Temp [CPP]',['../group__cpp__sensor__orientation__raw__temp.html',1,'']]],
   ['temperature_20abs_20c_5',['(0x80,0x14) Temperature Abs [C]',['../group__c__sensor__temperature__abs.html',1,'']]],

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MIP SDK: (0x0C,0x0D) Poll Data [CPP]</title>
+<title>MIP_SDK: (0x0C,0x0D) Poll Data [CPP]</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v2.0.0-1-g65a7b37</span>
+   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-137-g8a814ec</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -84,10 +84,6 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga6dc2edda2d1e781e5c6f344c9de5186c" id="r_ga6dc2edda2d1e781e5c6f344c9de5186c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__poll__data.html#ga6dc2edda2d1e781e5c6f344c9de5186c">mip::commands_3dm::insert</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, const <a class="el" href="structmip_1_1commands__3dm_1_1_poll_data.html">PollData</a> &amp;self)</td></tr>
-<tr class="separator:ga6dc2edda2d1e781e5c6f344c9de5186c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4e3340522df07c8de53f670c794a6fa7" id="r_ga4e3340522df07c8de53f670c794a6fa7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__poll__data.html#ga4e3340522df07c8de53f670c794a6fa7">mip::commands_3dm::extract</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, <a class="el" href="structmip_1_1commands__3dm_1_1_poll_data.html">PollData</a> &amp;self)</td></tr>
-<tr class="separator:ga4e3340522df07c8de53f670c794a6fa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf50842bcd2d8a87ae7537e00131d71ee" id="r_gaf50842bcd2d8a87ae7537e00131d71ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_typed_result.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1_poll_data.html">PollData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__3dm__poll__data.html#gaf50842bcd2d8a87ae7537e00131d71ee">mip::commands_3dm::pollData</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, uint8_t descSet, bool suppressAck, uint8_t numDescriptors, const uint8_t *descriptors)</td></tr>
 <tr class="separator:gaf50842bcd2d8a87ae7537e00131d71ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -95,62 +91,6 @@ Functions</h2></td></tr>
 <p>Poll the device for a message with the specified descriptor set and format.</p>
 <p>This function polls for a message using the provided format. The resulting message will maintain the order of descriptors sent in the command and any unrecognized descriptors are ignored. If the format is not provided, the device will attempt to use the stored format (set with the Set Message Format command.) If no format is provided and there is no stored format, the device will respond with a NACK. The reply packet contains an ACK/NACK field. The polled data packet is sent separately as a normal Data packet. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga4e3340522df07c8de53f670c794a6fa7" name="ga4e3340522df07c8de53f670c794a6fa7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4e3340522df07c8de53f670c794a6fa7">&#9670;&#160;</a></span>extract()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::commands_3dm::extract </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1commands__3dm_1_1_poll_data.html">PollData</a> &amp;&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga6dc2edda2d1e781e5c6f344c9de5186c" name="ga6dc2edda2d1e781e5c6f344c9de5186c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6dc2edda2d1e781e5c6f344c9de5186c">&#9670;&#160;</a></span>insert()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::commands_3dm::insert </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structmip_1_1commands__3dm_1_1_poll_data.html">PollData</a> &amp;&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="gaf50842bcd2d8a87ae7537e00131d71ee" name="gaf50842bcd2d8a87ae7537e00131d71ee"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaf50842bcd2d8a87ae7537e00131d71ee">&#9670;&#160;</a></span>pollData()</h2>
 

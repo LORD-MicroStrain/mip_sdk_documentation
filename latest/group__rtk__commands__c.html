@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MIP SDK: Rtk Commands [C]</title>
+<title>MIP_SDK: Rtk Commands [C]</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v2.0.0-1-g65a7b37</span>
+   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-137-g8a814ec</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -73,8 +73,7 @@ $(function() {
   <div class="summary">
 <a href="#groups">Modules</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle"><div class="title">Rtk Commands [C]<div class="ingroups"><a class="el" href="group___mip_commands__c.html">MIP Commands [C]</a></div></div></div>
 </div><!--header-->
 <div class="contents">
@@ -108,80 +107,78 @@ Modules</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga1db3f10cb8a9d5e9ef88a9725fd04e13" id="r_ga1db3f10cb8a9d5e9ef88a9725fd04e13"><td class="memItemLeft" align="right" valign="top">typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rtk__commands__c.html#ga1db3f10cb8a9d5e9ef88a9725fd04e13">mip::C::mip_media_selector</a></td></tr>
-<tr class="separator:ga1db3f10cb8a9d5e9ef88a9725fd04e13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4e0ec57c9f4273308c71c68d0a586266" id="r_ga4e0ec57c9f4273308c71c68d0a586266"><td class="memItemLeft" align="right" valign="top">typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rtk__commands__c.html#ga4e0ec57c9f4273308c71c68d0a586266">mip::C::mip_led_action</a></td></tr>
-<tr class="separator:ga4e0ec57c9f4273308c71c68d0a586266"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabec99521f7a7a34d15321a6bc8df8034" id="r_gabec99521f7a7a34d15321a6bc8df8034"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="group__rtk__commands__c.html#gaf7d9f934b9b20db82d5c83427cac6007">mip_media_selector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rtk__commands__c.html#gabec99521f7a7a34d15321a6bc8df8034">mip::C::mip_media_selector</a></td></tr>
+<tr class="separator:gabec99521f7a7a34d15321a6bc8df8034"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa723a91c15a990372b54245453e61b22" id="r_gaa723a91c15a990372b54245453e61b22"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="group__rtk__commands__c.html#ga5e529b1fe46df5b129bb4f5528610904">mip_led_action</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rtk__commands__c.html#gaa723a91c15a990372b54245453e61b22">mip::C::mip_led_action</a></td></tr>
+<tr class="separator:gaa723a91c15a990372b54245453e61b22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ga7e0c7abfa95f77fa5ae580661158478d" id="r_ga7e0c7abfa95f77fa5ae580661158478d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="group__rtk__commands__c.html#gga7e0c7abfa95f77fa5ae580661158478daefe4fd5d906106183c864ba96f11c936">mip::C::MIP_RTK_CMD_DESC_SET</a> = 0x0F
-, <a class="el" href="group__rtk__commands__c.html#gga7e0c7abfa95f77fa5ae580661158478da2f0f81c66a743fd5ae05a7c6b36817e2">mip::C::MIP_CMD_DESC_RTK_GET_STATUS_FLAGS</a> = 0x01
-, <a class="el" href="group__rtk__commands__c.html#gga7e0c7abfa95f77fa5ae580661158478da674d760c72ff4d68719e37f45ab5d1aa">mip::C::MIP_CMD_DESC_RTK_GET_IMEI</a> = 0x02
-, <a class="el" href="group__rtk__commands__c.html#gga7e0c7abfa95f77fa5ae580661158478da1dd8aff2f1a8c9a83342f71c7445a84b">mip::C::MIP_CMD_DESC_RTK_GET_IMSI</a> = 0x03
+<tr class="memitem:ga105ba58e05ff63890d4ffd9531ae083e" id="r_ga105ba58e05ff63890d4ffd9531ae083e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="group__rtk__commands__c.html#gga105ba58e05ff63890d4ffd9531ae083eaefe4fd5d906106183c864ba96f11c936">mip::C::MIP_RTK_CMD_DESC_SET</a> = 0x0F
+, <a class="el" href="group__rtk__commands__c.html#gga105ba58e05ff63890d4ffd9531ae083ea2f0f81c66a743fd5ae05a7c6b36817e2">mip::C::MIP_CMD_DESC_RTK_GET_STATUS_FLAGS</a> = 0x01
+, <a class="el" href="group__rtk__commands__c.html#gga105ba58e05ff63890d4ffd9531ae083ea674d760c72ff4d68719e37f45ab5d1aa">mip::C::MIP_CMD_DESC_RTK_GET_IMEI</a> = 0x02
+, <a class="el" href="group__rtk__commands__c.html#gga105ba58e05ff63890d4ffd9531ae083ea1dd8aff2f1a8c9a83342f71c7445a84b">mip::C::MIP_CMD_DESC_RTK_GET_IMSI</a> = 0x03
 , <br />
-&#160;&#160;<a class="el" href="group__rtk__commands__c.html#gga7e0c7abfa95f77fa5ae580661158478da51cc892007f6e8104fce4ee70d8dde32">mip::C::MIP_CMD_DESC_RTK_GET_ICCID</a> = 0x04
-, <a class="el" href="group__rtk__commands__c.html#gga7e0c7abfa95f77fa5ae580661158478dad3eddd53a5cde1a8608ae7bad64c2924">mip::C::MIP_CMD_DESC_RTK_GET_RSSI</a> = 0x05
-, <a class="el" href="group__rtk__commands__c.html#gga7e0c7abfa95f77fa5ae580661158478daee270ae9663cd5ee7a3b103ab53eaef6">mip::C::MIP_CMD_DESC_RTK_CONNECTED_DEVICE_TYPE</a> = 0x06
-, <a class="el" href="group__rtk__commands__c.html#gga7e0c7abfa95f77fa5ae580661158478da609f3b5bc7f7c01808ecc349021e0406">mip::C::MIP_CMD_DESC_RTK_GET_ACT_CODE</a> = 0x07
+&#160;&#160;<a class="el" href="group__rtk__commands__c.html#gga105ba58e05ff63890d4ffd9531ae083ea51cc892007f6e8104fce4ee70d8dde32">mip::C::MIP_CMD_DESC_RTK_GET_ICCID</a> = 0x04
+, <a class="el" href="group__rtk__commands__c.html#gga105ba58e05ff63890d4ffd9531ae083ead3eddd53a5cde1a8608ae7bad64c2924">mip::C::MIP_CMD_DESC_RTK_GET_RSSI</a> = 0x05
+, <a class="el" href="group__rtk__commands__c.html#gga105ba58e05ff63890d4ffd9531ae083eaee270ae9663cd5ee7a3b103ab53eaef6">mip::C::MIP_CMD_DESC_RTK_CONNECTED_DEVICE_TYPE</a> = 0x06
+, <a class="el" href="group__rtk__commands__c.html#gga105ba58e05ff63890d4ffd9531ae083ea609f3b5bc7f7c01808ecc349021e0406">mip::C::MIP_CMD_DESC_RTK_GET_ACT_CODE</a> = 0x07
 , <br />
-&#160;&#160;<a class="el" href="group__rtk__commands__c.html#gga7e0c7abfa95f77fa5ae580661158478da10ee37eede5dcf9117d1c87ebd115b09">mip::C::MIP_CMD_DESC_RTK_GET_MODEM_FIRMWARE_VERSION</a> = 0x08
-, <a class="el" href="group__rtk__commands__c.html#gga7e0c7abfa95f77fa5ae580661158478dae28a12609cb83f15d65df36696027a5c">mip::C::MIP_CMD_DESC_RTK_SERVICE_STATUS</a> = 0x0A
-, <a class="el" href="group__rtk__commands__c.html#gga7e0c7abfa95f77fa5ae580661158478da047d8acdf22d37f8879955309cb7b668">mip::C::MIP_CMD_DESC_RTK_PROD_ERASE_STORAGE</a> = 0x20
-, <a class="el" href="group__rtk__commands__c.html#gga7e0c7abfa95f77fa5ae580661158478dae995c9c0491ff5051c15cfea5e94fa0d">mip::C::MIP_CMD_DESC_LED_CONTROL</a> = 0x21
+&#160;&#160;<a class="el" href="group__rtk__commands__c.html#gga105ba58e05ff63890d4ffd9531ae083ea10ee37eede5dcf9117d1c87ebd115b09">mip::C::MIP_CMD_DESC_RTK_GET_MODEM_FIRMWARE_VERSION</a> = 0x08
+, <a class="el" href="group__rtk__commands__c.html#gga105ba58e05ff63890d4ffd9531ae083eae28a12609cb83f15d65df36696027a5c">mip::C::MIP_CMD_DESC_RTK_SERVICE_STATUS</a> = 0x0A
+, <a class="el" href="group__rtk__commands__c.html#gga105ba58e05ff63890d4ffd9531ae083ea047d8acdf22d37f8879955309cb7b668">mip::C::MIP_CMD_DESC_RTK_PROD_ERASE_STORAGE</a> = 0x20
+, <a class="el" href="group__rtk__commands__c.html#gga105ba58e05ff63890d4ffd9531ae083eae995c9c0491ff5051c15cfea5e94fa0d">mip::C::MIP_CMD_DESC_LED_CONTROL</a> = 0x21
 , <br />
-&#160;&#160;<a class="el" href="group__rtk__commands__c.html#gga7e0c7abfa95f77fa5ae580661158478da2a74ceac98a5a588647e5e682a2a26e5">mip::C::MIP_CMD_DESC_RTK_MODEM_HARD_RESET</a> = 0x22
-, <a class="el" href="group__rtk__commands__c.html#gga7e0c7abfa95f77fa5ae580661158478da2a54e3932f1a2101d05ff0372d717e93">mip::C::MIP_REPLY_DESC_RTK_GET_STATUS_FLAGS</a> = 0x81
-, <a class="el" href="group__rtk__commands__c.html#gga7e0c7abfa95f77fa5ae580661158478dac3473e97cb22a8449f4daf46ef14f26d">mip::C::MIP_REPLY_DESC_RTK_GET_IMEI</a> = 0x82
-, <a class="el" href="group__rtk__commands__c.html#gga7e0c7abfa95f77fa5ae580661158478dacffa4b60c95b563765ed236913cd42c0">mip::C::MIP_REPLY_DESC_RTK_GET_IMSI</a> = 0x83
+&#160;&#160;<a class="el" href="group__rtk__commands__c.html#gga105ba58e05ff63890d4ffd9531ae083ea2a74ceac98a5a588647e5e682a2a26e5">mip::C::MIP_CMD_DESC_RTK_MODEM_HARD_RESET</a> = 0x22
+, <a class="el" href="group__rtk__commands__c.html#gga105ba58e05ff63890d4ffd9531ae083ea2a54e3932f1a2101d05ff0372d717e93">mip::C::MIP_REPLY_DESC_RTK_GET_STATUS_FLAGS</a> = 0x81
+, <a class="el" href="group__rtk__commands__c.html#gga105ba58e05ff63890d4ffd9531ae083eac3473e97cb22a8449f4daf46ef14f26d">mip::C::MIP_REPLY_DESC_RTK_GET_IMEI</a> = 0x82
+, <a class="el" href="group__rtk__commands__c.html#gga105ba58e05ff63890d4ffd9531ae083eacffa4b60c95b563765ed236913cd42c0">mip::C::MIP_REPLY_DESC_RTK_GET_IMSI</a> = 0x83
 , <br />
-&#160;&#160;<a class="el" href="group__rtk__commands__c.html#gga7e0c7abfa95f77fa5ae580661158478da920f5015dc0be2e37ce88f7b12bc5a29">mip::C::MIP_REPLY_DESC_RTK_GET_ICCID</a> = 0x84
-, <a class="el" href="group__rtk__commands__c.html#gga7e0c7abfa95f77fa5ae580661158478dad7aad2b300d66c587c823076767fe0a5">mip::C::MIP_REPLY_DESC_RTK_CONNECTED_DEVICE_TYPE</a> = 0x86
-, <a class="el" href="group__rtk__commands__c.html#gga7e0c7abfa95f77fa5ae580661158478da8c9c4d41630f36176428aa9651fb2526">mip::C::MIP_REPLY_DESC_RTK_GET_ACT_CODE</a> = 0x87
-, <a class="el" href="group__rtk__commands__c.html#gga7e0c7abfa95f77fa5ae580661158478da2cb8ea351c3827fe5d984ebad0bea727">mip::C::MIP_REPLY_DESC_RTK_GET_MODEM_FIRMWARE_VERSION</a> = 0x88
+&#160;&#160;<a class="el" href="group__rtk__commands__c.html#gga105ba58e05ff63890d4ffd9531ae083ea920f5015dc0be2e37ce88f7b12bc5a29">mip::C::MIP_REPLY_DESC_RTK_GET_ICCID</a> = 0x84
+, <a class="el" href="group__rtk__commands__c.html#gga105ba58e05ff63890d4ffd9531ae083ead7aad2b300d66c587c823076767fe0a5">mip::C::MIP_REPLY_DESC_RTK_CONNECTED_DEVICE_TYPE</a> = 0x86
+, <a class="el" href="group__rtk__commands__c.html#gga105ba58e05ff63890d4ffd9531ae083ea8c9c4d41630f36176428aa9651fb2526">mip::C::MIP_REPLY_DESC_RTK_GET_ACT_CODE</a> = 0x87
+, <a class="el" href="group__rtk__commands__c.html#gga105ba58e05ff63890d4ffd9531ae083ea2cb8ea351c3827fe5d984ebad0bea727">mip::C::MIP_REPLY_DESC_RTK_GET_MODEM_FIRMWARE_VERSION</a> = 0x88
 , <br />
-&#160;&#160;<a class="el" href="group__rtk__commands__c.html#gga7e0c7abfa95f77fa5ae580661158478dab11979c2efb95f97da16654b65ae0249">mip::C::MIP_REPLY_DESC_RTK_GET_RSSI</a> = 0x85
-, <a class="el" href="group__rtk__commands__c.html#gga7e0c7abfa95f77fa5ae580661158478dae9ab95d6c61d93447b9e4d9deacebc8b">mip::C::MIP_REPLY_DESC_RTK_SERVICE_STATUS</a> = 0x8A
+&#160;&#160;<a class="el" href="group__rtk__commands__c.html#gga105ba58e05ff63890d4ffd9531ae083eab11979c2efb95f97da16654b65ae0249">mip::C::MIP_REPLY_DESC_RTK_GET_RSSI</a> = 0x85
+, <a class="el" href="group__rtk__commands__c.html#gga105ba58e05ff63890d4ffd9531ae083eae9ab95d6c61d93447b9e4d9deacebc8b">mip::C::MIP_REPLY_DESC_RTK_SERVICE_STATUS</a> = 0x8A
 <br />
  }</td></tr>
-<tr class="separator:ga7e0c7abfa95f77fa5ae580661158478d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ga90f7ed4d51da6a7794d4649ec9034a23" id="r_ga90f7ed4d51da6a7794d4649ec9034a23"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rtk__commands__c.html#ga90f7ed4d51da6a7794d4649ec9034a23">mip::C::insert_mip_media_selector</a> (struct <a class="el" href="structmip_1_1_c_1_1mip__serializer.html">mip_serializer</a> *serializer, const <a class="el" href="group__rtk__commands__c.html#ga1db3f10cb8a9d5e9ef88a9725fd04e13">mip_media_selector</a> self)</td></tr>
-<tr class="separator:ga90f7ed4d51da6a7794d4649ec9034a23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga654af8c5ef4e86580ac8d201f16b9f4e" id="r_ga654af8c5ef4e86580ac8d201f16b9f4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rtk__commands__c.html#ga654af8c5ef4e86580ac8d201f16b9f4e">mip::C::extract_mip_media_selector</a> (struct <a class="el" href="structmip_1_1_c_1_1mip__serializer.html">mip_serializer</a> *serializer, <a class="el" href="group__rtk__commands__c.html#ga1db3f10cb8a9d5e9ef88a9725fd04e13">mip_media_selector</a> *self)</td></tr>
-<tr class="separator:ga654af8c5ef4e86580ac8d201f16b9f4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga37694c48016a950a0aace7985f322f19" id="r_ga37694c48016a950a0aace7985f322f19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rtk__commands__c.html#ga37694c48016a950a0aace7985f322f19">mip::C::insert_mip_led_action</a> (struct <a class="el" href="structmip_1_1_c_1_1mip__serializer.html">mip_serializer</a> *serializer, const <a class="el" href="group__rtk__commands__c.html#ga4e0ec57c9f4273308c71c68d0a586266">mip_led_action</a> self)</td></tr>
-<tr class="separator:ga37694c48016a950a0aace7985f322f19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadaa8ea63c25c145d94bd5857b2ad440b" id="r_gadaa8ea63c25c145d94bd5857b2ad440b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rtk__commands__c.html#gadaa8ea63c25c145d94bd5857b2ad440b">mip::C::extract_mip_led_action</a> (struct <a class="el" href="structmip_1_1_c_1_1mip__serializer.html">mip_serializer</a> *serializer, <a class="el" href="group__rtk__commands__c.html#ga4e0ec57c9f4273308c71c68d0a586266">mip_led_action</a> *self)</td></tr>
-<tr class="separator:gadaa8ea63c25c145d94bd5857b2ad440b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ga105ba58e05ff63890d4ffd9531ae083e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf7d9f934b9b20db82d5c83427cac6007" id="r_gaf7d9f934b9b20db82d5c83427cac6007"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rtk__commands__c.html#gaf7d9f934b9b20db82d5c83427cac6007">mip::C::mip_media_selector</a> { <a class="el" href="group__rtk__commands__c.html#ggaf7d9f934b9b20db82d5c83427cac6007a946f7c9f67862551d1493926f2e657a5">mip::C::MIP_MEDIA_SELECTOR_MEDIA_EXTERNALFLASH</a> = 0
+, <a class="el" href="group__rtk__commands__c.html#ggaf7d9f934b9b20db82d5c83427cac6007a3e36ec41a2cbdc847c57df6cdb7fde9f">mip::C::MIP_MEDIA_SELECTOR_MEDIA_SD</a> = 1
+ }</td></tr>
+<tr class="separator:gaf7d9f934b9b20db82d5c83427cac6007"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5e529b1fe46df5b129bb4f5528610904" id="r_ga5e529b1fe46df5b129bb4f5528610904"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rtk__commands__c.html#ga5e529b1fe46df5b129bb4f5528610904">mip::C::mip_led_action</a> { <a class="el" href="group__rtk__commands__c.html#gga5e529b1fe46df5b129bb4f5528610904a9c74e873e48800e2e5860f6e8211e130">mip::C::MIP_LED_ACTION_LED_NONE</a> = 0
+, <a class="el" href="group__rtk__commands__c.html#gga5e529b1fe46df5b129bb4f5528610904a6ba93dd58b33cc7c3a0a5f35aef9c249">mip::C::MIP_LED_ACTION_LED_FLASH</a> = 1
+, <a class="el" href="group__rtk__commands__c.html#gga5e529b1fe46df5b129bb4f5528610904a2f0b4cfda893c9a5adbf3f902c8b60a5">mip::C::MIP_LED_ACTION_LED_PULSATE</a> = 2
+ }</td></tr>
+<tr class="separator:ga5e529b1fe46df5b129bb4f5528610904"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="ga4e0ec57c9f4273308c71c68d0a586266" name="ga4e0ec57c9f4273308c71c68d0a586266"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4e0ec57c9f4273308c71c68d0a586266">&#9670;&#160;</a></span>mip_led_action</h2>
+<a id="gaa723a91c15a990372b54245453e61b22" name="gaa723a91c15a990372b54245453e61b22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa723a91c15a990372b54245453e61b22">&#9670;&#160;</a></span>mip_led_action</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef uint8_t <a class="el" href="group__rtk__commands__c.html#ga4e0ec57c9f4273308c71c68d0a586266">mip::C::mip_led_action</a></td>
+          <td class="memname">typedef enum <a class="el" href="group__rtk__commands__c.html#ga5e529b1fe46df5b129bb4f5528610904">mip_led_action</a> <a class="el" href="group__rtk__commands__c.html#ga5e529b1fe46df5b129bb4f5528610904">mip::C::mip_led_action</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ga1db3f10cb8a9d5e9ef88a9725fd04e13" name="ga1db3f10cb8a9d5e9ef88a9725fd04e13"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1db3f10cb8a9d5e9ef88a9725fd04e13">&#9670;&#160;</a></span>mip_media_selector</h2>
+<a id="gabec99521f7a7a34d15321a6bc8df8034" name="gabec99521f7a7a34d15321a6bc8df8034"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabec99521f7a7a34d15321a6bc8df8034">&#9670;&#160;</a></span>mip_media_selector</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef uint8_t <a class="el" href="group__rtk__commands__c.html#ga1db3f10cb8a9d5e9ef88a9725fd04e13">mip::C::mip_media_selector</a></td>
+          <td class="memname">typedef enum <a class="el" href="group__rtk__commands__c.html#gaf7d9f934b9b20db82d5c83427cac6007">mip_media_selector</a> <a class="el" href="group__rtk__commands__c.html#gaf7d9f934b9b20db82d5c83427cac6007">mip::C::mip_media_selector</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -189,8 +186,8 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="ga7e0c7abfa95f77fa5ae580661158478d" name="ga7e0c7abfa95f77fa5ae580661158478d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7e0c7abfa95f77fa5ae580661158478d">&#9670;&#160;</a></span>anonymous enum</h2>
+<a id="ga105ba58e05ff63890d4ffd9531ae083e" name="ga105ba58e05ff63890d4ffd9531ae083e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga105ba58e05ff63890d4ffd9531ae083e">&#9670;&#160;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -201,142 +198,66 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga7e0c7abfa95f77fa5ae580661158478daefe4fd5d906106183c864ba96f11c936" name="gga7e0c7abfa95f77fa5ae580661158478daefe4fd5d906106183c864ba96f11c936"></a>MIP_RTK_CMD_DESC_SET&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga7e0c7abfa95f77fa5ae580661158478da2f0f81c66a743fd5ae05a7c6b36817e2" name="gga7e0c7abfa95f77fa5ae580661158478da2f0f81c66a743fd5ae05a7c6b36817e2"></a>MIP_CMD_DESC_RTK_GET_STATUS_FLAGS&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga7e0c7abfa95f77fa5ae580661158478da674d760c72ff4d68719e37f45ab5d1aa" name="gga7e0c7abfa95f77fa5ae580661158478da674d760c72ff4d68719e37f45ab5d1aa"></a>MIP_CMD_DESC_RTK_GET_IMEI&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga7e0c7abfa95f77fa5ae580661158478da1dd8aff2f1a8c9a83342f71c7445a84b" name="gga7e0c7abfa95f77fa5ae580661158478da1dd8aff2f1a8c9a83342f71c7445a84b"></a>MIP_CMD_DESC_RTK_GET_IMSI&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga7e0c7abfa95f77fa5ae580661158478da51cc892007f6e8104fce4ee70d8dde32" name="gga7e0c7abfa95f77fa5ae580661158478da51cc892007f6e8104fce4ee70d8dde32"></a>MIP_CMD_DESC_RTK_GET_ICCID&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga7e0c7abfa95f77fa5ae580661158478dad3eddd53a5cde1a8608ae7bad64c2924" name="gga7e0c7abfa95f77fa5ae580661158478dad3eddd53a5cde1a8608ae7bad64c2924"></a>MIP_CMD_DESC_RTK_GET_RSSI&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga7e0c7abfa95f77fa5ae580661158478daee270ae9663cd5ee7a3b103ab53eaef6" name="gga7e0c7abfa95f77fa5ae580661158478daee270ae9663cd5ee7a3b103ab53eaef6"></a>MIP_CMD_DESC_RTK_CONNECTED_DEVICE_TYPE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga7e0c7abfa95f77fa5ae580661158478da609f3b5bc7f7c01808ecc349021e0406" name="gga7e0c7abfa95f77fa5ae580661158478da609f3b5bc7f7c01808ecc349021e0406"></a>MIP_CMD_DESC_RTK_GET_ACT_CODE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga7e0c7abfa95f77fa5ae580661158478da10ee37eede5dcf9117d1c87ebd115b09" name="gga7e0c7abfa95f77fa5ae580661158478da10ee37eede5dcf9117d1c87ebd115b09"></a>MIP_CMD_DESC_RTK_GET_MODEM_FIRMWARE_VERSION&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga7e0c7abfa95f77fa5ae580661158478dae28a12609cb83f15d65df36696027a5c" name="gga7e0c7abfa95f77fa5ae580661158478dae28a12609cb83f15d65df36696027a5c"></a>MIP_CMD_DESC_RTK_SERVICE_STATUS&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga7e0c7abfa95f77fa5ae580661158478da047d8acdf22d37f8879955309cb7b668" name="gga7e0c7abfa95f77fa5ae580661158478da047d8acdf22d37f8879955309cb7b668"></a>MIP_CMD_DESC_RTK_PROD_ERASE_STORAGE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga7e0c7abfa95f77fa5ae580661158478dae995c9c0491ff5051c15cfea5e94fa0d" name="gga7e0c7abfa95f77fa5ae580661158478dae995c9c0491ff5051c15cfea5e94fa0d"></a>MIP_CMD_DESC_LED_CONTROL&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga7e0c7abfa95f77fa5ae580661158478da2a74ceac98a5a588647e5e682a2a26e5" name="gga7e0c7abfa95f77fa5ae580661158478da2a74ceac98a5a588647e5e682a2a26e5"></a>MIP_CMD_DESC_RTK_MODEM_HARD_RESET&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga7e0c7abfa95f77fa5ae580661158478da2a54e3932f1a2101d05ff0372d717e93" name="gga7e0c7abfa95f77fa5ae580661158478da2a54e3932f1a2101d05ff0372d717e93"></a>MIP_REPLY_DESC_RTK_GET_STATUS_FLAGS&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga7e0c7abfa95f77fa5ae580661158478dac3473e97cb22a8449f4daf46ef14f26d" name="gga7e0c7abfa95f77fa5ae580661158478dac3473e97cb22a8449f4daf46ef14f26d"></a>MIP_REPLY_DESC_RTK_GET_IMEI&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga7e0c7abfa95f77fa5ae580661158478dacffa4b60c95b563765ed236913cd42c0" name="gga7e0c7abfa95f77fa5ae580661158478dacffa4b60c95b563765ed236913cd42c0"></a>MIP_REPLY_DESC_RTK_GET_IMSI&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga7e0c7abfa95f77fa5ae580661158478da920f5015dc0be2e37ce88f7b12bc5a29" name="gga7e0c7abfa95f77fa5ae580661158478da920f5015dc0be2e37ce88f7b12bc5a29"></a>MIP_REPLY_DESC_RTK_GET_ICCID&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga7e0c7abfa95f77fa5ae580661158478dad7aad2b300d66c587c823076767fe0a5" name="gga7e0c7abfa95f77fa5ae580661158478dad7aad2b300d66c587c823076767fe0a5"></a>MIP_REPLY_DESC_RTK_CONNECTED_DEVICE_TYPE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga7e0c7abfa95f77fa5ae580661158478da8c9c4d41630f36176428aa9651fb2526" name="gga7e0c7abfa95f77fa5ae580661158478da8c9c4d41630f36176428aa9651fb2526"></a>MIP_REPLY_DESC_RTK_GET_ACT_CODE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga7e0c7abfa95f77fa5ae580661158478da2cb8ea351c3827fe5d984ebad0bea727" name="gga7e0c7abfa95f77fa5ae580661158478da2cb8ea351c3827fe5d984ebad0bea727"></a>MIP_REPLY_DESC_RTK_GET_MODEM_FIRMWARE_VERSION&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga7e0c7abfa95f77fa5ae580661158478dab11979c2efb95f97da16654b65ae0249" name="gga7e0c7abfa95f77fa5ae580661158478dab11979c2efb95f97da16654b65ae0249"></a>MIP_REPLY_DESC_RTK_GET_RSSI&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga7e0c7abfa95f77fa5ae580661158478dae9ab95d6c61d93447b9e4d9deacebc8b" name="gga7e0c7abfa95f77fa5ae580661158478dae9ab95d6c61d93447b9e4d9deacebc8b"></a>MIP_REPLY_DESC_RTK_SERVICE_STATUS&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga105ba58e05ff63890d4ffd9531ae083eaefe4fd5d906106183c864ba96f11c936" name="gga105ba58e05ff63890d4ffd9531ae083eaefe4fd5d906106183c864ba96f11c936"></a>MIP_RTK_CMD_DESC_SET&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga105ba58e05ff63890d4ffd9531ae083ea2f0f81c66a743fd5ae05a7c6b36817e2" name="gga105ba58e05ff63890d4ffd9531ae083ea2f0f81c66a743fd5ae05a7c6b36817e2"></a>MIP_CMD_DESC_RTK_GET_STATUS_FLAGS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga105ba58e05ff63890d4ffd9531ae083ea674d760c72ff4d68719e37f45ab5d1aa" name="gga105ba58e05ff63890d4ffd9531ae083ea674d760c72ff4d68719e37f45ab5d1aa"></a>MIP_CMD_DESC_RTK_GET_IMEI&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga105ba58e05ff63890d4ffd9531ae083ea1dd8aff2f1a8c9a83342f71c7445a84b" name="gga105ba58e05ff63890d4ffd9531ae083ea1dd8aff2f1a8c9a83342f71c7445a84b"></a>MIP_CMD_DESC_RTK_GET_IMSI&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga105ba58e05ff63890d4ffd9531ae083ea51cc892007f6e8104fce4ee70d8dde32" name="gga105ba58e05ff63890d4ffd9531ae083ea51cc892007f6e8104fce4ee70d8dde32"></a>MIP_CMD_DESC_RTK_GET_ICCID&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga105ba58e05ff63890d4ffd9531ae083ead3eddd53a5cde1a8608ae7bad64c2924" name="gga105ba58e05ff63890d4ffd9531ae083ead3eddd53a5cde1a8608ae7bad64c2924"></a>MIP_CMD_DESC_RTK_GET_RSSI&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga105ba58e05ff63890d4ffd9531ae083eaee270ae9663cd5ee7a3b103ab53eaef6" name="gga105ba58e05ff63890d4ffd9531ae083eaee270ae9663cd5ee7a3b103ab53eaef6"></a>MIP_CMD_DESC_RTK_CONNECTED_DEVICE_TYPE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga105ba58e05ff63890d4ffd9531ae083ea609f3b5bc7f7c01808ecc349021e0406" name="gga105ba58e05ff63890d4ffd9531ae083ea609f3b5bc7f7c01808ecc349021e0406"></a>MIP_CMD_DESC_RTK_GET_ACT_CODE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga105ba58e05ff63890d4ffd9531ae083ea10ee37eede5dcf9117d1c87ebd115b09" name="gga105ba58e05ff63890d4ffd9531ae083ea10ee37eede5dcf9117d1c87ebd115b09"></a>MIP_CMD_DESC_RTK_GET_MODEM_FIRMWARE_VERSION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga105ba58e05ff63890d4ffd9531ae083eae28a12609cb83f15d65df36696027a5c" name="gga105ba58e05ff63890d4ffd9531ae083eae28a12609cb83f15d65df36696027a5c"></a>MIP_CMD_DESC_RTK_SERVICE_STATUS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga105ba58e05ff63890d4ffd9531ae083ea047d8acdf22d37f8879955309cb7b668" name="gga105ba58e05ff63890d4ffd9531ae083ea047d8acdf22d37f8879955309cb7b668"></a>MIP_CMD_DESC_RTK_PROD_ERASE_STORAGE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga105ba58e05ff63890d4ffd9531ae083eae995c9c0491ff5051c15cfea5e94fa0d" name="gga105ba58e05ff63890d4ffd9531ae083eae995c9c0491ff5051c15cfea5e94fa0d"></a>MIP_CMD_DESC_LED_CONTROL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga105ba58e05ff63890d4ffd9531ae083ea2a74ceac98a5a588647e5e682a2a26e5" name="gga105ba58e05ff63890d4ffd9531ae083ea2a74ceac98a5a588647e5e682a2a26e5"></a>MIP_CMD_DESC_RTK_MODEM_HARD_RESET&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga105ba58e05ff63890d4ffd9531ae083ea2a54e3932f1a2101d05ff0372d717e93" name="gga105ba58e05ff63890d4ffd9531ae083ea2a54e3932f1a2101d05ff0372d717e93"></a>MIP_REPLY_DESC_RTK_GET_STATUS_FLAGS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga105ba58e05ff63890d4ffd9531ae083eac3473e97cb22a8449f4daf46ef14f26d" name="gga105ba58e05ff63890d4ffd9531ae083eac3473e97cb22a8449f4daf46ef14f26d"></a>MIP_REPLY_DESC_RTK_GET_IMEI&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga105ba58e05ff63890d4ffd9531ae083eacffa4b60c95b563765ed236913cd42c0" name="gga105ba58e05ff63890d4ffd9531ae083eacffa4b60c95b563765ed236913cd42c0"></a>MIP_REPLY_DESC_RTK_GET_IMSI&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga105ba58e05ff63890d4ffd9531ae083ea920f5015dc0be2e37ce88f7b12bc5a29" name="gga105ba58e05ff63890d4ffd9531ae083ea920f5015dc0be2e37ce88f7b12bc5a29"></a>MIP_REPLY_DESC_RTK_GET_ICCID&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga105ba58e05ff63890d4ffd9531ae083ead7aad2b300d66c587c823076767fe0a5" name="gga105ba58e05ff63890d4ffd9531ae083ead7aad2b300d66c587c823076767fe0a5"></a>MIP_REPLY_DESC_RTK_CONNECTED_DEVICE_TYPE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga105ba58e05ff63890d4ffd9531ae083ea8c9c4d41630f36176428aa9651fb2526" name="gga105ba58e05ff63890d4ffd9531ae083ea8c9c4d41630f36176428aa9651fb2526"></a>MIP_REPLY_DESC_RTK_GET_ACT_CODE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga105ba58e05ff63890d4ffd9531ae083ea2cb8ea351c3827fe5d984ebad0bea727" name="gga105ba58e05ff63890d4ffd9531ae083ea2cb8ea351c3827fe5d984ebad0bea727"></a>MIP_REPLY_DESC_RTK_GET_MODEM_FIRMWARE_VERSION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga105ba58e05ff63890d4ffd9531ae083eab11979c2efb95f97da16654b65ae0249" name="gga105ba58e05ff63890d4ffd9531ae083eab11979c2efb95f97da16654b65ae0249"></a>MIP_REPLY_DESC_RTK_GET_RSSI&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga105ba58e05ff63890d4ffd9531ae083eae9ab95d6c61d93447b9e4d9deacebc8b" name="gga105ba58e05ff63890d4ffd9531ae083eae9ab95d6c61d93447b9e4d9deacebc8b"></a>MIP_REPLY_DESC_RTK_SERVICE_STATUS&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
 </div>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="gadaa8ea63c25c145d94bd5857b2ad440b" name="gadaa8ea63c25c145d94bd5857b2ad440b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadaa8ea63c25c145d94bd5857b2ad440b">&#9670;&#160;</a></span>extract_mip_led_action()</h2>
+<a id="ga5e529b1fe46df5b129bb4f5528610904" name="ga5e529b1fe46df5b129bb4f5528610904"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5e529b1fe46df5b129bb4f5528610904">&#9670;&#160;</a></span>mip_led_action</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void mip::C::extract_mip_led_action </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structmip_1_1_c_1_1mip__serializer.html">mip_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__rtk__commands__c.html#ga4e0ec57c9f4273308c71c68d0a586266">mip_led_action</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">enum <a class="el" href="group__rtk__commands__c.html#ga5e529b1fe46df5b129bb4f5528610904">mip::C::mip_led_action</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga5e529b1fe46df5b129bb4f5528610904a9c74e873e48800e2e5860f6e8211e130" name="gga5e529b1fe46df5b129bb4f5528610904a9c74e873e48800e2e5860f6e8211e130"></a>MIP_LED_ACTION_LED_NONE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga5e529b1fe46df5b129bb4f5528610904a6ba93dd58b33cc7c3a0a5f35aef9c249" name="gga5e529b1fe46df5b129bb4f5528610904a6ba93dd58b33cc7c3a0a5f35aef9c249"></a>MIP_LED_ACTION_LED_FLASH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga5e529b1fe46df5b129bb4f5528610904a2f0b4cfda893c9a5adbf3f902c8b60a5" name="gga5e529b1fe46df5b129bb4f5528610904a2f0b4cfda893c9a5adbf3f902c8b60a5"></a>MIP_LED_ACTION_LED_PULSATE&#160;</td><td class="fielddoc"></td></tr>
+</table>
 
 </div>
 </div>
-<a id="ga654af8c5ef4e86580ac8d201f16b9f4e" name="ga654af8c5ef4e86580ac8d201f16b9f4e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga654af8c5ef4e86580ac8d201f16b9f4e">&#9670;&#160;</a></span>extract_mip_media_selector()</h2>
+<a id="gaf7d9f934b9b20db82d5c83427cac6007" name="gaf7d9f934b9b20db82d5c83427cac6007"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf7d9f934b9b20db82d5c83427cac6007">&#9670;&#160;</a></span>mip_media_selector</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void mip::C::extract_mip_media_selector </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structmip_1_1_c_1_1mip__serializer.html">mip_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__rtk__commands__c.html#ga1db3f10cb8a9d5e9ef88a9725fd04e13">mip_media_selector</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">enum <a class="el" href="group__rtk__commands__c.html#gaf7d9f934b9b20db82d5c83427cac6007">mip::C::mip_media_selector</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga37694c48016a950a0aace7985f322f19" name="ga37694c48016a950a0aace7985f322f19"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga37694c48016a950a0aace7985f322f19">&#9670;&#160;</a></span>insert_mip_led_action()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::insert_mip_led_action </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structmip_1_1_c_1_1mip__serializer.html">mip_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="group__rtk__commands__c.html#ga4e0ec57c9f4273308c71c68d0a586266">mip_led_action</a>&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga90f7ed4d51da6a7794d4649ec9034a23" name="ga90f7ed4d51da6a7794d4649ec9034a23"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga90f7ed4d51da6a7794d4649ec9034a23">&#9670;&#160;</a></span>insert_mip_media_selector()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::insert_mip_media_selector </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structmip_1_1_c_1_1mip__serializer.html">mip_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="group__rtk__commands__c.html#ga1db3f10cb8a9d5e9ef88a9725fd04e13">mip_media_selector</a>&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaf7d9f934b9b20db82d5c83427cac6007a946f7c9f67862551d1493926f2e657a5" name="ggaf7d9f934b9b20db82d5c83427cac6007a946f7c9f67862551d1493926f2e657a5"></a>MIP_MEDIA_SELECTOR_MEDIA_EXTERNALFLASH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaf7d9f934b9b20db82d5c83427cac6007a3e36ec41a2cbdc847c57df6cdb7fde9f" name="ggaf7d9f934b9b20db82d5c83427cac6007a3e36ec41a2cbdc847c57df6cdb7fde9f"></a>MIP_MEDIA_SELECTOR_MEDIA_SD&#160;</td><td class="fielddoc"></td></tr>
+</table>
 
 </div>
 </div>

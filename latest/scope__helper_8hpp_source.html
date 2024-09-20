@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MIP SDK: src/mip/extras/scope_helper.hpp Source File</title>
+<title>MIP_SDK: src/cpp/microstrain/extras/scope_helper.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v2.0.0-1-g65a7b37</span>
+   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-137-g8a814ec</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -75,7 +75,7 @@ $(document).ready(function() { init_codefold(0); });
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0652f4f834e91e7f754984a58c1d13cb.html">mip</a></li><li class="navelem"><a class="el" href="dir_bc6fa4e9ef2c4f99bdbdac6d7e4107d5.html">extras</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_dfdbda394c3f7a3aa55229f33a559c41.html">cpp</a></li><li class="navelem"><a class="el" href="dir_7e34c514c45550895477425232eb32f9.html">microstrain</a></li><li class="navelem"><a class="el" href="dir_e567ae745279275e936c16ef14db0cf5.html">extras</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -87,52 +87,54 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;functional&gt;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacemip.html">mip</a></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacemicrostrain.html">microstrain</a></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>{</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keyword">namespace </span>extras</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    {</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        <span class="comment">//Class: ScopeHelper</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        <span class="comment">//    Class that allows a function to be run when this object goes out of scope.</span></div>
-<div class="foldopen" id="foldopen00012" data-start="{" data-end="};">
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="classmip_1_1extras_1_1_scope_helper.html">   12</a></span>        <span class="keyword">class </span><a class="code hl_class" href="classmip_1_1extras_1_1_scope_helper.html">ScopeHelper</a></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        {</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>            <span class="comment">//Variable: m_outOfScopeFunction</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>            <span class="comment">//    The function to run when the ScopeHelper goes out of scope.</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            std::function&lt;void()&gt; m_outOfScopeFunction;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            <span class="comment">//Variable: m_canceled</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            <span class="comment">//    Whether the scope function has been canceled or not.</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            <span class="keywordtype">bool</span> m_canceled;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            <a class="code hl_class" href="classmip_1_1extras_1_1_scope_helper.html">ScopeHelper</a>();                                <span class="comment">//default constructor disabled</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            <a class="code hl_class" href="classmip_1_1extras_1_1_scope_helper.html">ScopeHelper</a>(<span class="keyword">const</span> <a class="code hl_class" href="classmip_1_1extras_1_1_scope_helper.html">ScopeHelper</a>&amp;);            <span class="comment">//copy constructor disabled</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            <a class="code hl_class" href="classmip_1_1extras_1_1_scope_helper.html">ScopeHelper</a>&amp; operator=(<span class="keyword">const</span> <a class="code hl_class" href="classmip_1_1extras_1_1_scope_helper.html">ScopeHelper</a>&amp;);    <span class="comment">//assignment operator disabled</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            <span class="comment">//Constructor: ScopeHelper</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            <span class="comment">//    Creates a ScopeHelper object.</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            <span class="comment">//</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            <span class="comment">//Parameters:</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            <span class="comment">//    scopeFunction - The function to run when the ScopeHelper object is destroyed.</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            <a class="code hl_class" href="classmip_1_1extras_1_1_scope_helper.html">ScopeHelper</a>(std::function&lt;<span class="keywordtype">void</span>()&gt; scopeFunction);</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            <span class="comment">//Destructor: ScopeHelper</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            <span class="comment">//    Runs whatever function was assigned in the creation of the ScopeHelper.</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            <a class="code hl_function" href="classmip_1_1extras_1_1_scope_helper.html#ae5ea07c29e6f4d808645df4a162097e0">~ScopeHelper</a>();</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            <span class="comment">//Function: cancel</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            <span class="comment">//    Sets a flag that indicates the originally set function should NOT be run when</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            <span class="comment">//    the ScopeHelper is destroyed.</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            <span class="keywordtype">void</span> <a class="code hl_function" href="classmip_1_1extras_1_1_scope_helper.html#a75e3d1c5b5848a7772017927235ac46a">cancel</a>();</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        };</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span>extras</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">//Class: ScopeHelper</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">//    Class that allows a function to be run when this object goes out of scope.</span></div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="};">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="classmicrostrain_1_1extras_1_1_scope_helper.html">   13</a></span><span class="keyword">class </span><a class="code hl_class" href="classmicrostrain_1_1extras_1_1_scope_helper.html">ScopeHelper</a></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="comment">//Variable: m_outOfScopeFunction</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="comment">//    The function to run when the ScopeHelper goes out of scope.</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    std::function&lt;void()&gt; m_outOfScopeFunction;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="comment">//Variable: m_canceled</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="comment">//    Whether the scope function has been canceled or not.</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordtype">bool</span> m_canceled;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <a class="code hl_class" href="classmicrostrain_1_1extras_1_1_scope_helper.html">ScopeHelper</a>();                                <span class="comment">//default constructor disabled</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <a class="code hl_class" href="classmicrostrain_1_1extras_1_1_scope_helper.html">ScopeHelper</a>(<span class="keyword">const</span> <a class="code hl_class" href="classmicrostrain_1_1extras_1_1_scope_helper.html">ScopeHelper</a>&amp;);            <span class="comment">//copy constructor disabled</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <a class="code hl_class" href="classmicrostrain_1_1extras_1_1_scope_helper.html">ScopeHelper</a>&amp; operator=(<span class="keyword">const</span> <a class="code hl_class" href="classmicrostrain_1_1extras_1_1_scope_helper.html">ScopeHelper</a>&amp;);    <span class="comment">//assignment operator disabled</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="comment">//Constructor: ScopeHelper</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="comment">//    Creates a ScopeHelper object.</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="comment">//Parameters:</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="comment">//    scopeFunction - The function to run when the ScopeHelper object is destroyed.</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <a class="code hl_class" href="classmicrostrain_1_1extras_1_1_scope_helper.html">ScopeHelper</a>(std::function&lt;<span class="keywordtype">void</span>()&gt; scopeFunction);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="comment">//Destructor: ScopeHelper</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="comment">//    Runs whatever function was assigned in the creation of the ScopeHelper.</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <a class="code hl_function" href="classmicrostrain_1_1extras_1_1_scope_helper.html#a8b83f7b6643f57037500e4d5be99a6d8">~ScopeHelper</a>();</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="comment">//Function: cancel</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="comment">//    Sets a flag that indicates the originally set function should NOT be run when</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="comment">//    the ScopeHelper is destroyed.</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classmicrostrain_1_1extras_1_1_scope_helper.html#a6e0f7819ffee3eda6107699fee15ec35">cancel</a>();</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>};</div>
 </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    } <span class="comment">//namespace extras</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>} <span class="comment">//namespace mip</span></div>
-<div class="ttc" id="aclassmip_1_1extras_1_1_scope_helper_html"><div class="ttname"><a href="classmip_1_1extras_1_1_scope_helper.html">mip::extras::ScopeHelper</a></div><div class="ttdef"><b>Definition</b> scope_helper.hpp:13</div></div>
-<div class="ttc" id="aclassmip_1_1extras_1_1_scope_helper_html_a75e3d1c5b5848a7772017927235ac46a"><div class="ttname"><a href="classmip_1_1extras_1_1_scope_helper.html#a75e3d1c5b5848a7772017927235ac46a">mip::extras::ScopeHelper::cancel</a></div><div class="ttdeci">void cancel()</div><div class="ttdef"><b>Definition</b> scope_helper.cpp:21</div></div>
-<div class="ttc" id="aclassmip_1_1extras_1_1_scope_helper_html_ae5ea07c29e6f4d808645df4a162097e0"><div class="ttname"><a href="classmip_1_1extras_1_1_scope_helper.html#ae5ea07c29e6f4d808645df4a162097e0">mip::extras::ScopeHelper::~ScopeHelper</a></div><div class="ttdeci">~ScopeHelper()</div><div class="ttdef"><b>Definition</b> scope_helper.cpp:13</div></div>
-<div class="ttc" id="anamespacemip_html"><div class="ttname"><a href="namespacemip.html">mip</a></div><div class="ttdoc">A collection of C++ classes and functions covering the full mip api.</div><div class="ttdef"><b>Definition</b> commands_3dm.c:11</div></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>} <span class="comment">//namespace extras</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>} <span class="comment">//namespace microstrain</span></div>
+<div class="ttc" id="aclassmicrostrain_1_1extras_1_1_scope_helper_html"><div class="ttname"><a href="classmicrostrain_1_1extras_1_1_scope_helper.html">microstrain::extras::ScopeHelper</a></div><div class="ttdef"><b>Definition</b> scope_helper.hpp:14</div></div>
+<div class="ttc" id="aclassmicrostrain_1_1extras_1_1_scope_helper_html_a6e0f7819ffee3eda6107699fee15ec35"><div class="ttname"><a href="classmicrostrain_1_1extras_1_1_scope_helper.html#a6e0f7819ffee3eda6107699fee15ec35">microstrain::extras::ScopeHelper::cancel</a></div><div class="ttdeci">void cancel()</div><div class="ttdef"><b>Definition</b> scope_helper.cpp:22</div></div>
+<div class="ttc" id="aclassmicrostrain_1_1extras_1_1_scope_helper_html_a8b83f7b6643f57037500e4d5be99a6d8"><div class="ttname"><a href="classmicrostrain_1_1extras_1_1_scope_helper.html#a8b83f7b6643f57037500e4d5be99a6d8">microstrain::extras::ScopeHelper::~ScopeHelper</a></div><div class="ttdeci">~ScopeHelper()</div><div class="ttdef"><b>Definition</b> scope_helper.cpp:14</div></div>
+<div class="ttc" id="anamespacemicrostrain_html"><div class="ttname"><a href="namespacemicrostrain.html">microstrain</a></div><div class="ttdef"><b>Definition</b> embedded_time.h:8</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

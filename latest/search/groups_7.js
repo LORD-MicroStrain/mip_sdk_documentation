@@ -63,5 +63,5 @@ var searchData=
   ['external_20time_20delta_20cpp_60',['(0xFF,0xD8) External Time Delta [CPP]',['../group__cpp__shared__external__time__delta.html',1,'']]],
   ['external_20timestamp_20c_61',['(0xFF,0xD7) External Timestamp [C]',['../group__c__shared__external__timestamp.html',1,'']]],
   ['external_20timestamp_20cpp_62',['(0xFF,0xD7) External Timestamp [CPP]',['../group__cpp__shared__external__timestamp.html',1,'']]],
-  ['extra_20utilities_63',['Extra utilities',['../group__mip__extras.html',1,'']]]
+  ['extra_20utilities_63',['Extra utilities',['../group__microstrain__extras.html',1,'']]]
 ];

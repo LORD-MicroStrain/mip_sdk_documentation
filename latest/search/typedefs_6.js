@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['quatf_0',['Quatf',['../namespacemip.html#ae48959b6aedea021e3b2fcb024deb8d4',1,'mip']]]
+  ['littleendianserializer_0',['LittleEndianSerializer',['../namespacemicrostrain.html#ae72a69a853b8556fe6cce05a8ea910fb',1,'microstrain']]]
 ];

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MIP SDK: (0xA0,0x01) Built In Test [CPP]</title>
+<title>MIP_SDK: (0xA0,0x01) Built In Test [CPP]</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v2.0.0-1-g65a7b37</span>
+   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-137-g8a814ec</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -71,8 +71,7 @@ $(function() {
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle"><div class="title">(0xA0,0x01) Built In Test [CPP]<div class="ingroups"><a class="el" href="group___mip_data__cpp.html">MIP Data [CPP]</a> &raquo; <a class="el" href="group__system__data__cpp.html">System Data [CPP]</a></div></div></div>
 </div><!--header-->
 <div class="contents">
@@ -81,13 +80,6 @@ $(function() {
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__system_1_1_built_in_test.html">mip::data_system::BuiltInTest</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ga306b56591ee9021f62ef3bc03d7bfd14" id="r_ga306b56591ee9021f62ef3bc03d7bfd14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__system__built__in__test.html#ga306b56591ee9021f62ef3bc03d7bfd14">mip::data_system::insert</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, const <a class="el" href="structmip_1_1data__system_1_1_built_in_test.html">BuiltInTest</a> &amp;self)</td></tr>
-<tr class="separator:ga306b56591ee9021f62ef3bc03d7bfd14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae716a8334bde0de1022bf71633153be3" id="r_gae716a8334bde0de1022bf71633153be3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__system__built__in__test.html#gae716a8334bde0de1022bf71633153be3">mip::data_system::extract</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, <a class="el" href="structmip_1_1data__system_1_1_built_in_test.html">BuiltInTest</a> &amp;self)</td></tr>
-<tr class="separator:gae716a8334bde0de1022bf71633153be3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Contains the continuous built-in-test (BIT) results.</p>
@@ -95,63 +87,6 @@ Functions</h2></td></tr>
 <p>These bits are "sticky" until the next output message. If a fault occurs in between scheduled messages or while the device is idle, the next packet with this field will have the corresponding flags set. The flag is then cleared unless the fault persists.</p>
 <p>Unlike the commanded BIT, some bits may be 1 in certain non-fault situations, so simply checking if the result is all 0s is not very useful. For example, on devices with a built-in GNSS receiver, a "solution fault" bit may be set before the receiver has obtained a position fix. Consult the device manual to determine which bits are of interest for your application.</p>
 <p>All unspecified bits are reserved for future use and must be ignored. </p>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="gae716a8334bde0de1022bf71633153be3" name="gae716a8334bde0de1022bf71633153be3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae716a8334bde0de1022bf71633153be3">&#9670;&#160;</a></span>extract()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::data_system::extract </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1data__system_1_1_built_in_test.html">BuiltInTest</a> &amp;&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga306b56591ee9021f62ef3bc03d7bfd14" name="ga306b56591ee9021f62ef3bc03d7bfd14"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga306b56591ee9021f62ef3bc03d7bfd14">&#9670;&#160;</a></span>insert()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::data_system::insert </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structmip_1_1data__system_1_1_built_in_test.html">BuiltInTest</a> &amp;&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

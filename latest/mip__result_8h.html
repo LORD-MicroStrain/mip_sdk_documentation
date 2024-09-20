@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MIP SDK: src/mip/mip_result.h File Reference</title>
+<title>MIP_SDK: src/c/mip/mip_result.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v2.0.0-1-g65a7b37</span>
+   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-137-g8a814ec</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -70,12 +70,11 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0652f4f834e91e7f754984a58c1d13cb.html">mip</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_3b19ecf29356981f494745fbef7e56bf.html">c</a></li><li class="navelem"><a class="el" href="dir_055b1db5f1a3d744682f684d38e2c4e5.html">mip</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
@@ -88,12 +87,6 @@ $(function() {
 </div>
 <p><a href="mip__result_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_cmd_result.html">mip::CmdResult</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the status of a MIP command.  <a href="structmip_1_1_cmd_result.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacemip" id="r_namespacemip"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip.html">mip</a></td></tr>
@@ -135,16 +128,22 @@ Enumerations</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:gae7148026535b0837c16d36be3ef4c6c8" id="r_gae7148026535b0837c16d36be3ef4c6c8"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__c.html#gae7148026535b0837c16d36be3ef4c6c8">mip::C::mip_cmd_result_to_string</a> (enum <a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> result)</td></tr>
+<tr class="memdesc:gae7148026535b0837c16d36be3ef4c6c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the command result to a string for debugging.  <br /></td></tr>
 <tr class="separator:gae7148026535b0837c16d36be3ef4c6c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf22fe43ba8416c3e7d9c84e5ec7338a8" id="r_gaf22fe43ba8416c3e7d9c84e5ec7338a8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__c.html#gaf22fe43ba8416c3e7d9c84e5ec7338a8">mip::C::mip_cmd_result_is_finished</a> (enum <a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> result)</td></tr>
-<tr class="separator:gaf22fe43ba8416c3e7d9c84e5ec7338a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaec7ecbf556bc65fa3cd5ed4133d9ab29" id="r_gaec7ecbf556bc65fa3cd5ed4133d9ab29"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__c.html#gaec7ecbf556bc65fa3cd5ed4133d9ab29">mip::C::mip_cmd_result_is_finished</a> (enum <a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> status)</td></tr>
+<tr class="memdesc:gaec7ecbf556bc65fa3cd5ed4133d9ab29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if the command has completed, timed out, been cancelled, or otherwise is no longer waiting for a response.  <br /></td></tr>
+<tr class="separator:gaec7ecbf556bc65fa3cd5ed4133d9ab29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0ba1d10504e92c0adf97e66785de16af" id="r_ga0ba1d10504e92c0adf97e66785de16af"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__c.html#ga0ba1d10504e92c0adf97e66785de16af">mip::C::mip_cmd_result_is_reply</a> (enum <a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> result)</td></tr>
+<tr class="memdesc:ga0ba1d10504e92c0adf97e66785de16af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if the result is a reply from the device (i.e. mip_ack).  <br /></td></tr>
 <tr class="separator:ga0ba1d10504e92c0adf97e66785de16af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad34a6e007af795921a00dc6fb0014233" id="r_gad34a6e007af795921a00dc6fb0014233"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__c.html#gad34a6e007af795921a00dc6fb0014233">mip::C::mip_cmd_result_is_status</a> (enum <a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> result)</td></tr>
+<tr class="memdesc:gad34a6e007af795921a00dc6fb0014233"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if the result code was generated by this lib (i.e. mip_cmd_status).  <br /></td></tr>
 <tr class="separator:gad34a6e007af795921a00dc6fb0014233"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga724088c29ae06d2aa55a702297fd1727" id="r_ga724088c29ae06d2aa55a702297fd1727"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__c.html#ga724088c29ae06d2aa55a702297fd1727">mip::C::mip_cmd_result_is_user</a> (enum <a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> result)</td></tr>
+<tr class="memdesc:ga724088c29ae06d2aa55a702297fd1727"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if the result code was generated by user software.  <br /></td></tr>
 <tr class="separator:ga724088c29ae06d2aa55a702297fd1727"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga10413c9d587d3c41838807d1c3a70560" id="r_ga10413c9d587d3c41838807d1c3a70560"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__c.html#ga10413c9d587d3c41838807d1c3a70560">mip::C::mip_cmd_result_is_ack</a> (enum <a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> result)</td></tr>
+<tr class="memdesc:ga10413c9d587d3c41838807d1c3a70560"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if the result is an ack (successful response from the device)  <br /></td></tr>
 <tr class="separator:ga10413c9d587d3c41838807d1c3a70560"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

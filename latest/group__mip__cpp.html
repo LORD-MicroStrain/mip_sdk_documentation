@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MIP SDK: MIP C++ API</title>
+<title>MIP_SDK: MIP C++ API</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v2.0.0-1-g65a7b37</span>
+   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-137-g8a814ec</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -71,9 +71,9 @@ $(function() {
 
 <div class="header">
   <div class="summary">
-<a href="#groups">Modules</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">MIP C++ API</div></div>
 </div><!--header-->
@@ -82,27 +82,12 @@ $(function() {
 <p>This module contains functions and classes for communicating with a MIP device in C++.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="groups" name="groups"></a>
-Modules</h2></td></tr>
-<tr class="memitem:group__mip__serialization__cpp" id="r_group__mip__serialization__cpp"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__serialization__cpp.html">MIP Serialization [CPP]</a></td></tr>
-<tr class="memdesc:group__mip__serialization__cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">(De)serialization in C++. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_field.html">mip::Field</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++ class representing a MIP field.  <a href="classmip_1_1_field.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_descriptor_rate.html">mip::DescriptorRate</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_packet_ref.html">mip::PacketRef</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++ class representing a MIP <a class="el" href="classmip_1_1_packet_ref.html" title="C++ class representing a MIP PacketRef.">PacketRef</a>.  <a href="classmip_1_1_packet_ref.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_sized_packet_buf.html">mip::SizedPacketBuf&lt; BufferSize &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A mip packet with a self-contained buffer (useful with std::vector).  <a href="classmip_1_1_sized_packet_buf.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_parser.html">mip::Parser</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++ class representing a MIP parser.  <a href="classmip_1_1_parser.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_dispatcher.html">mip::Dispatcher</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_vector.html">mip::Vector&lt; T, N &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structmip_1_1_vector.html" title="Vector is a wrapper around an array of some type T, usually float or double.">Vector</a> is a wrapper around an array of some type T, usually float or double.  <a href="structmip_1_1_vector.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_cmd_queue.html">mip::CmdQueue</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++ wrapper around a command queue.  <a href="structmip_1_1_cmd_queue.html#details">More...</a><br /></td></tr>
@@ -110,11 +95,33 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_pending_cmd.html">mip::PendingCmd</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++ class representing the state of a MIP command.  <a href="structmip_1_1_pending_cmd.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_connection.html">mip::Connection</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a type of connection to a MIP device.  <a href="classmip_1_1_connection.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_composite_descriptor.html">mip::CompositeDescriptor</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience struct holding both descriptor set and field descriptor.  <a href="structmip_1_1_composite_descriptor.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_device_interface.html">mip::DeviceInterface</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a connected MIP device.  <a href="classmip_1_1_device_interface.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_field_struct.html">mip::FieldStruct</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_bitfield.html">mip::Bitfield&lt; DerivedT &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A dummy struct which is used to mark bitfield objects.  <a href="structmip_1_1_bitfield.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_typed_result.html">mip::TypedResult&lt; MipCmd &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="structmip_1_1_cmd_result.html" title="Represents the status of a MIP command.">CmdResult</a> that knows the corresponding command type.  <a href="structmip_1_1_typed_result.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_field_view.html">mip::FieldView</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++ class representing a MIP field.  <a href="classmip_1_1_field_view.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_dispatcher.html">mip::Dispatcher</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_interface.html">mip::Interface</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a connected MIP device.  <a href="classmip_1_1_interface.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_packet_view.html">mip::PacketView</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++ class representing a view of a MIP packet.  <a href="classmip_1_1_packet_view.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_sized_packet_buf.html">mip::SizedPacketBuf&lt; BufferSize &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A mip packet with a self-contained buffer (useful with std::vector).  <a href="classmip_1_1_sized_packet_buf.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_parser.html">mip::Parser</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++ class representing a MIP parser.  <a href="classmip_1_1_parser.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_cmd_result.html">mip::CmdResult</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the status of a MIP command.  <a href="structmip_1_1_cmd_result.html#details">More...</a><br /></td></tr>
@@ -122,89 +129,159 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:ga5209d3c0c1d7b0a0613569ba51facda8" id="r_ga5209d3c0c1d7b0a0613569ba51facda8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga5209d3c0c1d7b0a0613569ba51facda8">mip::Vector3f</a> = <a class="el" href="structmip_1_1_vector.html">Vector</a>&lt; float, 3 &gt;</td></tr>
+<tr class="separator:ga5209d3c0c1d7b0a0613569ba51facda8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga67fb1a84896d0908efc64965f5e90914" id="r_ga67fb1a84896d0908efc64965f5e90914"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga67fb1a84896d0908efc64965f5e90914">mip::Vector4f</a> = <a class="el" href="structmip_1_1_vector.html">Vector</a>&lt; float, 4 &gt;</td></tr>
+<tr class="separator:ga67fb1a84896d0908efc64965f5e90914"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga40b65ff470e6f1d6982eb464ee3e59ad" id="r_ga40b65ff470e6f1d6982eb464ee3e59ad"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga40b65ff470e6f1d6982eb464ee3e59ad">mip::Matrix3f</a> = <a class="el" href="structmip_1_1_vector.html">Vector</a>&lt; float, 9 &gt;</td></tr>
+<tr class="separator:ga40b65ff470e6f1d6982eb464ee3e59ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1741c14320601c62cd91791e137dc83f" id="r_ga1741c14320601c62cd91791e137dc83f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga1741c14320601c62cd91791e137dc83f">mip::Vector3d</a> = <a class="el" href="structmip_1_1_vector.html">Vector</a>&lt; double, 3 &gt;</td></tr>
+<tr class="separator:ga1741c14320601c62cd91791e137dc83f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5ec8e25e89406cdcc7e62faf3d0b0558" id="r_ga5ec8e25e89406cdcc7e62faf3d0b0558"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga5ec8e25e89406cdcc7e62faf3d0b0558">mip::Vector4d</a> = <a class="el" href="structmip_1_1_vector.html">Vector</a>&lt; double, 4 &gt;</td></tr>
+<tr class="separator:ga5ec8e25e89406cdcc7e62faf3d0b0558"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac3e5a8dd334f15b794de9b1f1d67af23" id="r_gac3e5a8dd334f15b794de9b1f1d67af23"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#gac3e5a8dd334f15b794de9b1f1d67af23">mip::Matrix3d</a> = <a class="el" href="structmip_1_1_vector.html">Vector</a>&lt; double, 9 &gt;</td></tr>
+<tr class="separator:gac3e5a8dd334f15b794de9b1f1d67af23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae48959b6aedea021e3b2fcb024deb8d4" id="r_gae48959b6aedea021e3b2fcb024deb8d4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#gae48959b6aedea021e3b2fcb024deb8d4">mip::Quatf</a> = <a class="el" href="group__mip__cpp.html#ga67fb1a84896d0908efc64965f5e90914">Vector4f</a></td></tr>
+<tr class="separator:gae48959b6aedea021e3b2fcb024deb8d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3443d81cb98b89e8eece2866465682e4" id="r_ga3443d81cb98b89e8eece2866465682e4"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:ga3443d81cb98b89e8eece2866465682e4"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga3443d81cb98b89e8eece2866465682e4">mip::isField</a> = std::is_base_of&lt; <a class="el" href="structmip_1_1_field_struct.html">FieldStruct</a>, T &gt;</td></tr>
+<tr class="separator:ga3443d81cb98b89e8eece2866465682e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaebec98c6af673e47251cba5f84afb6b8" id="r_gaebec98c6af673e47251cba5f84afb6b8"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:gaebec98c6af673e47251cba5f84afb6b8"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#gaebec98c6af673e47251cba5f84afb6b8">mip::EnableForFieldTypes</a> = std::enable_if&lt; <a class="el" href="group__mip__cpp.html#ga3443d81cb98b89e8eece2866465682e4">isField</a>&lt; T &gt;::value, T &gt;</td></tr>
+<tr class="separator:gaebec98c6af673e47251cba5f84afb6b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga22fdf60376fa438a3282cdf32d641f3b" id="r_ga22fdf60376fa438a3282cdf32d641f3b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga22fdf60376fa438a3282cdf32d641f3b">mip::DispatchHandler</a> = <a class="el" href="structmip_1_1_c_1_1mip__dispatch__handler.html">C::mip_dispatch_handler</a></td></tr>
+<tr class="separator:ga22fdf60376fa438a3282cdf32d641f3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafc42c8a567309e43d95e372b1ea0d2c5" id="r_gafc42c8a567309e43d95e372b1ea0d2c5"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classmip_1_1_sized_packet_buf.html">SizedPacketBuf</a>&lt; mip::PACKET_LENGTH_MAX &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#gafc42c8a567309e43d95e372b1ea0d2c5">mip::PacketBuf</a></td></tr>
 <tr class="memdesc:gafc42c8a567309e43d95e372b1ea0d2c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Typedef for <a class="el" href="classmip_1_1_sized_packet_buf.html" title="A mip packet with a self-contained buffer (useful with std::vector).">SizedPacketBuf</a> of max possible size.  <br /></td></tr>
 <tr class="separator:gafc42c8a567309e43d95e372b1ea0d2c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga22fdf60376fa438a3282cdf32d641f3b" id="r_ga22fdf60376fa438a3282cdf32d641f3b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga22fdf60376fa438a3282cdf32d641f3b">mip::DispatchHandler</a> = <a class="el" href="structmip_1_1_c_1_1mip__dispatch__handler.html">C::mip_dispatch_handler</a></td></tr>
-<tr class="separator:ga22fdf60376fa438a3282cdf32d641f3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ga2dde9cdf5ebc86cf62e8c2591dcb56de" id="r_ga2dde9cdf5ebc86cf62e8c2591dcb56de"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga2dde9cdf5ebc86cf62e8c2591dcb56de">mip::FunctionSelector</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="group__mip__cpp.html#gga2dde9cdf5ebc86cf62e8c2591dcb56dead4b9e47f65b6e79b010582f15785867e">mip::FunctionSelector::WRITE</a> = C::MIP_FUNCTION_WRITE
+, <a class="el" href="group__mip__cpp.html#gga2dde9cdf5ebc86cf62e8c2591dcb56dea3466fab4975481651940ed328aa990e4">mip::FunctionSelector::READ</a> = C::MIP_FUNCTION_READ
+, <a class="el" href="group__mip__cpp.html#gga2dde9cdf5ebc86cf62e8c2591dcb56deaf5cf47ab06d0d98b0d16d10c82d87953">mip::FunctionSelector::SAVE</a> = C::MIP_FUNCTION_SAVE
+, <a class="el" href="group__mip__cpp.html#gga2dde9cdf5ebc86cf62e8c2591dcb56dea615d2885ef7576cedd9aafbb2578f028">mip::FunctionSelector::LOAD</a> = C::MIP_FUNCTION_LOAD
+, <br />
+&#160;&#160;<a class="el" href="group__mip__cpp.html#gga2dde9cdf5ebc86cf62e8c2591dcb56deab5859d8721cfdc0312b2838b9c985bc1">mip::FunctionSelector::RESET</a> = C::MIP_FUNCTION_RESET
+<br />
+ }</td></tr>
+<tr class="separator:ga2dde9cdf5ebc86cf62e8c2591dcb56de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ga6d55d024eb5162c4e8f2267680672e1d" id="r_ga6d55d024eb5162c4e8f2267680672e1d"><td class="memTemplParams" colspan="2">template&lt;typename T , size_t N&gt; </td></tr>
+<tr class="memitem:ga6d55d024eb5162c4e8f2267680672e1d"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga6d55d024eb5162c4e8f2267680672e1d">mip::insert</a> (<a class="el" href="namespacemip.html#a7475074708d6d3e0fa83597b41eb98f8">Serializer</a> &amp;serializer, const <a class="el" href="structmip_1_1_vector.html">Vector</a>&lt; T, N &gt; &amp;v)</td></tr>
+<tr class="separator:ga6d55d024eb5162c4e8f2267680672e1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3b4d5711ad01ac594ea534865c47042b" id="r_ga3b4d5711ad01ac594ea534865c47042b"><td class="memTemplParams" colspan="2">template&lt;typename T , size_t N&gt; </td></tr>
+<tr class="memitem:ga3b4d5711ad01ac594ea534865c47042b"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga3b4d5711ad01ac594ea534865c47042b">mip::extract</a> (<a class="el" href="namespacemip.html#a7475074708d6d3e0fa83597b41eb98f8">Serializer</a> &amp;serializer, <a class="el" href="structmip_1_1_vector.html">Vector</a>&lt; T, N &gt; &amp;v)</td></tr>
+<tr class="separator:ga3b4d5711ad01ac594ea534865c47042b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac35f3b51d7bbd2b7a1f8648e795e6050" id="r_gac35f3b51d7bbd2b7a1f8648e795e6050"><td class="memTemplParams" colspan="2">template&lt;class Derived &gt; </td></tr>
+<tr class="memitem:gac35f3b51d7bbd2b7a1f8648e795e6050"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#gac35f3b51d7bbd2b7a1f8648e795e6050">mip::insert</a> (<a class="el" href="namespacemip.html#a7475074708d6d3e0fa83597b41eb98f8">Serializer</a> &amp;serializer, const <a class="el" href="structmip_1_1_bitfield.html">Bitfield</a>&lt; Derived &gt; &amp;bitfield)</td></tr>
+<tr class="separator:gac35f3b51d7bbd2b7a1f8648e795e6050"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga08db02ae455c12a9d914ffc873d1dce9" id="r_ga08db02ae455c12a9d914ffc873d1dce9"><td class="memTemplParams" colspan="2">template&lt;class Derived &gt; </td></tr>
+<tr class="memitem:ga08db02ae455c12a9d914ffc873d1dce9"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga08db02ae455c12a9d914ffc873d1dce9">mip::extract</a> (<a class="el" href="namespacemip.html#a7475074708d6d3e0fa83597b41eb98f8">Serializer</a> &amp;serializer, <a class="el" href="structmip_1_1_bitfield.html">Bitfield</a>&lt; Derived &gt; &amp;bitfield)</td></tr>
+<tr class="separator:ga08db02ae455c12a9d914ffc873d1dce9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa249fa2e20690c1ce9af1abb2e89f032" id="r_gaa249fa2e20690c1ce9af1abb2e89f032"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#gaa249fa2e20690c1ce9af1abb2e89f032">mip::isValidDescriptorSet</a> (uint8_t descriptorSet)</td></tr>
+<tr class="separator:gaa249fa2e20690c1ce9af1abb2e89f032"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7caa7ffe454624c8de66a66e0fecf217" id="r_ga7caa7ffe454624c8de66a66e0fecf217"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga7caa7ffe454624c8de66a66e0fecf217">mip::isDataDescriptorSet</a> (uint8_t descriptorSet)</td></tr>
+<tr class="separator:ga7caa7ffe454624c8de66a66e0fecf217"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafaac6fa695e353f031d16081d83c3381" id="r_gafaac6fa695e353f031d16081d83c3381"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#gafaac6fa695e353f031d16081d83c3381">mip::isCommandDescriptorSet</a> (uint8_t descriptorSet)</td></tr>
+<tr class="separator:gafaac6fa695e353f031d16081d83c3381"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga926687c28c7f12a1d12d496198d7d59d" id="r_ga926687c28c7f12a1d12d496198d7d59d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga926687c28c7f12a1d12d496198d7d59d">mip::isReservedDescriptorSet</a> (uint8_t descriptorSet)</td></tr>
+<tr class="separator:ga926687c28c7f12a1d12d496198d7d59d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga62207c8ff62728c58f13d55d7bb15421" id="r_ga62207c8ff62728c58f13d55d7bb15421"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga62207c8ff62728c58f13d55d7bb15421">mip::isGnssDataDescriptorSet</a> (uint8_t descriptorSet)</td></tr>
+<tr class="separator:ga62207c8ff62728c58f13d55d7bb15421"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga87c81313d4cd3c71b2e6ec99e3cce386" id="r_ga87c81313d4cd3c71b2e6ec99e3cce386"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga87c81313d4cd3c71b2e6ec99e3cce386">mip::isValidFieldDescriptor</a> (uint8_t fieldDescriptor)</td></tr>
+<tr class="separator:ga87c81313d4cd3c71b2e6ec99e3cce386"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga79f3e05b931d41d5d0af7db3185e8f34" id="r_ga79f3e05b931d41d5d0af7db3185e8f34"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga79f3e05b931d41d5d0af7db3185e8f34">mip::isCommandFieldDescriptor</a> (uint8_t fieldDescriptor)</td></tr>
+<tr class="separator:ga79f3e05b931d41d5d0af7db3185e8f34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4dade541efb4dbb1ca5897b1027b8efd" id="r_ga4dade541efb4dbb1ca5897b1027b8efd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga4dade541efb4dbb1ca5897b1027b8efd">mip::isReplyFieldDescriptor</a> (uint8_t fieldDescriptor)</td></tr>
+<tr class="separator:ga4dade541efb4dbb1ca5897b1027b8efd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6e9d6ee847dbaaa298ebadea2fe46e50" id="r_ga6e9d6ee847dbaaa298ebadea2fe46e50"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga6e9d6ee847dbaaa298ebadea2fe46e50">mip::isResponseFieldDescriptor</a> (uint8_t fieldDescriptor)</td></tr>
+<tr class="separator:ga6e9d6ee847dbaaa298ebadea2fe46e50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa9683e0252717c3fd595fc5f61472d9d" id="r_gaa9683e0252717c3fd595fc5f61472d9d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#gaa9683e0252717c3fd595fc5f61472d9d">mip::isReservedFieldDescriptor</a> (uint8_t fieldDescriptor)</td></tr>
+<tr class="separator:gaa9683e0252717c3fd595fc5f61472d9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa4a0fcbd3b77eabd1114860cfe3b5bed" id="r_gaa4a0fcbd3b77eabd1114860cfe3b5bed"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#gaa4a0fcbd3b77eabd1114860cfe3b5bed">mip::isSharedDataFieldDescriptor</a> (uint8_t fieldDescriptor)</td></tr>
+<tr class="separator:gaa4a0fcbd3b77eabd1114860cfe3b5bed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga989dc72b48ab8ecce81a951be8f984cb" id="r_ga989dc72b48ab8ecce81a951be8f984cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga989dc72b48ab8ecce81a951be8f984cb">mip::connect_interface</a> (<a class="el" href="classmip_1_1_interface.html">mip::Interface</a> &amp;device, <a class="el" href="classmicrostrain_1_1_connection.html">microstrain::Connection</a> &amp;conn)</td></tr>
+<tr class="memdesc:ga989dc72b48ab8ecce81a951be8f984cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets up the mip interface callbacks to point at this object.  <br /></td></tr>
+<tr class="separator:ga989dc72b48ab8ecce81a951be8f984cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa27364a53be4e051b885aff466755581" id="r_gaa27364a53be4e051b885aff466755581"><td class="memTemplParams" colspan="2">template&lt;class Cmd &gt; </td></tr>
+<tr class="memitem:gaa27364a53be4e051b885aff466755581"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#gaa27364a53be4e051b885aff466755581">mip::runCommand</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, const Cmd &amp;cmd, <a class="el" href="namespacemip.html#afce0ba7e576cfb1bffa07cff38fe1847">Timeout</a> additionalTime=0)</td></tr>
+<tr class="separator:gaa27364a53be4e051b885aff466755581"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1bdbaac115bd20e3c4e9386259720fc0" id="r_ga1bdbaac115bd20e3c4e9386259720fc0"><td class="memTemplParams" colspan="2">template&lt;class Cmd &gt; </td></tr>
+<tr class="memitem:ga1bdbaac115bd20e3c4e9386259720fc0"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga1bdbaac115bd20e3c4e9386259720fc0">mip::runCommand</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, const Cmd &amp;cmd, typename Cmd::Response &amp;response, <a class="el" href="namespacemip.html#afce0ba7e576cfb1bffa07cff38fe1847">Timeout</a> additionalTime=0)</td></tr>
+<tr class="separator:ga1bdbaac115bd20e3c4e9386259720fc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2567e5db82bdfaa112ed102b534508cc" id="r_ga2567e5db82bdfaa112ed102b534508cc"><td class="memTemplParams" colspan="2">template&lt;class Cmd , class... Args&gt; </td></tr>
+<tr class="memitem:ga2567e5db82bdfaa112ed102b534508cc"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga2567e5db82bdfaa112ed102b534508cc">mip::runCommand</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, const Args &amp;&amp;... args, <a class="el" href="namespacemip.html#afce0ba7e576cfb1bffa07cff38fe1847">Timeout</a> additionalTime)</td></tr>
+<tr class="separator:ga2567e5db82bdfaa112ed102b534508cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4d95114a9b56c889629509e9e51d9587" id="r_ga4d95114a9b56c889629509e9e51d9587"><td class="memTemplParams" colspan="2">template&lt;class Cmd &gt; </td></tr>
+<tr class="memitem:ga4d95114a9b56c889629509e9e51d9587"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga4d95114a9b56c889629509e9e51d9587">mip::startCommand</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, <a class="el" href="structmip_1_1_c_1_1mip__pending__cmd.html">C::mip_pending_cmd</a> &amp;pending, const Cmd &amp;cmd, <a class="el" href="namespacemip.html#afce0ba7e576cfb1bffa07cff38fe1847">Timeout</a> additionalTime)</td></tr>
+<tr class="separator:ga4d95114a9b56c889629509e9e51d9587"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga34c1057cbcde6a4d6e6ce54cb6c6c3c8" id="r_ga34c1057cbcde6a4d6e6ce54cb6c6c3c8"><td class="memTemplParams" colspan="2">template&lt;class Function &gt; </td></tr>
 <tr class="memitem:ga34c1057cbcde6a4d6e6ce54cb6c6c3c8"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga34c1057cbcde6a4d6e6ce54cb6c6c3c8">mip::parseMipDataFromSource</a> (<a class="el" href="structmip_1_1_c_1_1mip__parser.html">C::mip_parser</a> &amp;parser, Function reader, size_t maxPackets)</td></tr>
 <tr class="memdesc:ga34c1057cbcde6a4d6e6ce54cb6c6c3c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read data from a source into the internal parsing buffer.  <br /></td></tr>
 <tr class="separator:ga34c1057cbcde6a4d6e6ce54cb6c6c3c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa27364a53be4e051b885aff466755581" id="r_gaa27364a53be4e051b885aff466755581"><td class="memTemplParams" colspan="2">template&lt;class Cmd &gt; </td></tr>
-<tr class="memitem:gaa27364a53be4e051b885aff466755581"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#gaa27364a53be4e051b885aff466755581">mip::runCommand</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, const Cmd &amp;cmd, <a class="el" href="namespacemip.html#adf3e3dd725a2c4f8abde99c473000878">Timeout</a> additionalTime=0)</td></tr>
-<tr class="separator:gaa27364a53be4e051b885aff466755581"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1bdbaac115bd20e3c4e9386259720fc0" id="r_ga1bdbaac115bd20e3c4e9386259720fc0"><td class="memTemplParams" colspan="2">template&lt;class Cmd &gt; </td></tr>
-<tr class="memitem:ga1bdbaac115bd20e3c4e9386259720fc0"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga1bdbaac115bd20e3c4e9386259720fc0">mip::runCommand</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, const Cmd &amp;cmd, typename Cmd::Response &amp;response, <a class="el" href="namespacemip.html#adf3e3dd725a2c4f8abde99c473000878">Timeout</a> additionalTime=0)</td></tr>
-<tr class="separator:ga1bdbaac115bd20e3c4e9386259720fc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2567e5db82bdfaa112ed102b534508cc" id="r_ga2567e5db82bdfaa112ed102b534508cc"><td class="memTemplParams" colspan="2">template&lt;class Cmd , class... Args&gt; </td></tr>
-<tr class="memitem:ga2567e5db82bdfaa112ed102b534508cc"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_cmd_result.html">CmdResult</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga2567e5db82bdfaa112ed102b534508cc">mip::runCommand</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, const Args &amp;&amp;... args, <a class="el" href="namespacemip.html#adf3e3dd725a2c4f8abde99c473000878">Timeout</a> additionalTime)</td></tr>
-<tr class="separator:ga2567e5db82bdfaa112ed102b534508cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4d95114a9b56c889629509e9e51d9587" id="r_ga4d95114a9b56c889629509e9e51d9587"><td class="memTemplParams" colspan="2">template&lt;class Cmd &gt; </td></tr>
-<tr class="memitem:ga4d95114a9b56c889629509e9e51d9587"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga4d95114a9b56c889629509e9e51d9587">mip::startCommand</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, <a class="el" href="structmip_1_1_c_1_1mip__pending__cmd.html">C::mip_pending_cmd</a> &amp;pending, const Cmd &amp;cmd, <a class="el" href="namespacemip.html#adf3e3dd725a2c4f8abde99c473000878">Timeout</a> additionalTime)</td></tr>
-<tr class="separator:ga4d95114a9b56c889629509e9e51d9587"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3c099d19ac77cc922c8b2f87441cf6f7" id="r_ga3c099d19ac77cc922c8b2f87441cf6f7"><td class="memTemplParams" colspan="2">template&lt;class T , bool(T::*)(const <a class="el" href="classmip_1_1_packet_ref.html">PacketRef</a> &amp;, <a class="el" href="namespacemip.html#ac74386034393307fd0de0b553ed4fb37">Timestamp</a>) Callback&gt; </td></tr>
+<tr class="memitem:ga663cfbe18f0f912a895bde267a7b158f" id="r_ga663cfbe18f0f912a895bde267a7b158f"><td class="memTemplParams" colspan="2">template&lt;bool(*)(<a class="el" href="classmip_1_1_interface.html">Interface</a> &amp;, const uint8_t *, size_t) Send&gt; </td></tr>
+<tr class="memitem:ga663cfbe18f0f912a895bde267a7b158f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga663cfbe18f0f912a895bde267a7b158f">mip::Interface::setSendFunction</a> ()</td></tr>
+<tr class="memdesc:ga663cfbe18f0f912a895bde267a7b158f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the send callback function (free function version).  <br /></td></tr>
+<tr class="separator:ga663cfbe18f0f912a895bde267a7b158f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf599f785eb63197143ed6e11777b58a7" id="r_gaf599f785eb63197143ed6e11777b58a7"><td class="memTemplParams" colspan="2">template&lt;bool(*)(<a class="el" href="classmip_1_1_interface.html">Interface</a> &amp;, uint8_t *, size_t, <a class="el" href="namespacemip.html#afce0ba7e576cfb1bffa07cff38fe1847">Timeout</a>, size_t *, <a class="el" href="namespacemip.html#ab87086630c94254d17a812e4be159b0a">Timestamp</a> *) Recv&gt; </td></tr>
+<tr class="memitem:gaf599f785eb63197143ed6e11777b58a7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#gaf599f785eb63197143ed6e11777b58a7">mip::Interface::setRecvFunction</a> ()</td></tr>
+<tr class="memdesc:gaf599f785eb63197143ed6e11777b58a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the receive callback function (free function version).  <br /></td></tr>
+<tr class="separator:gaf599f785eb63197143ed6e11777b58a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab35a60676a9f66ee660c4d6dc787e427" id="r_gab35a60676a9f66ee660c4d6dc787e427"><td class="memTemplParams" colspan="2">template&lt;bool(*)(<a class="el" href="classmip_1_1_interface.html">Interface</a> &amp;, <a class="el" href="namespacemip.html#afce0ba7e576cfb1bffa07cff38fe1847">Timeout</a>) Update&gt; </td></tr>
+<tr class="memitem:gab35a60676a9f66ee660c4d6dc787e427"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#gab35a60676a9f66ee660c4d6dc787e427">mip::Interface::setUpdateFunction</a> ()</td></tr>
+<tr class="memdesc:gab35a60676a9f66ee660c4d6dc787e427"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the update callback function (free function version).  <br /></td></tr>
+<tr class="separator:gab35a60676a9f66ee660c4d6dc787e427"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga56015e32fabc942e28faeffebfbdb268" id="r_ga56015e32fabc942e28faeffebfbdb268"><td class="memTemplParams" colspan="2">template&lt;class Derived , bool(Derived::*)(const uint8_t *, size_t) Send&gt; </td></tr>
+<tr class="memitem:ga56015e32fabc942e28faeffebfbdb268"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga56015e32fabc942e28faeffebfbdb268">mip::Interface::setSendFunction</a> ()</td></tr>
+<tr class="memdesc:ga56015e32fabc942e28faeffebfbdb268"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the send callback function (derived member function version).  <br /></td></tr>
+<tr class="separator:ga56015e32fabc942e28faeffebfbdb268"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga58c2d746d6496c4ee8beb14486077c04" id="r_ga58c2d746d6496c4ee8beb14486077c04"><td class="memTemplParams" colspan="2">template&lt;class Derived , bool(Derived::*)(uint8_t *, size_t, <a class="el" href="namespacemip.html#afce0ba7e576cfb1bffa07cff38fe1847">Timeout</a>, size_t *, <a class="el" href="namespacemip.html#ab87086630c94254d17a812e4be159b0a">Timestamp</a> *) Recv&gt; </td></tr>
+<tr class="memitem:ga58c2d746d6496c4ee8beb14486077c04"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga58c2d746d6496c4ee8beb14486077c04">mip::Interface::setRecvFunction</a> ()</td></tr>
+<tr class="memdesc:ga58c2d746d6496c4ee8beb14486077c04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the receive callback function (derived member function version).  <br /></td></tr>
+<tr class="separator:ga58c2d746d6496c4ee8beb14486077c04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5352a5d901ed9d561c34a106a270ae79" id="r_ga5352a5d901ed9d561c34a106a270ae79"><td class="memTemplParams" colspan="2">template&lt;class Derived , bool(Derived::*)(<a class="el" href="namespacemip.html#afce0ba7e576cfb1bffa07cff38fe1847">Timeout</a>) Update&gt; </td></tr>
+<tr class="memitem:ga5352a5d901ed9d561c34a106a270ae79"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga5352a5d901ed9d561c34a106a270ae79">mip::Interface::setUpdateFunction</a> ()</td></tr>
+<tr class="memdesc:ga5352a5d901ed9d561c34a106a270ae79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the update callback function (derived member function version).  <br /></td></tr>
+<tr class="separator:ga5352a5d901ed9d561c34a106a270ae79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga22f7b42a0fa9629f1613dd32736d0090" id="r_ga22f7b42a0fa9629f1613dd32736d0090"><td class="memTemplParams" colspan="2">template&lt;class T , bool(T::*)(const uint8_t *, size_t) Send, bool(T::*)(uint8_t *, size_t, <a class="el" href="namespacemip.html#afce0ba7e576cfb1bffa07cff38fe1847">Timeout</a>, size_t *, <a class="el" href="namespacemip.html#ab87086630c94254d17a812e4be159b0a">Timestamp</a> *) Recv, bool(T::*)(<a class="el" href="namespacemip.html#afce0ba7e576cfb1bffa07cff38fe1847">Timeout</a>) Update = nullptr&gt; </td></tr>
+<tr class="memitem:ga22f7b42a0fa9629f1613dd32736d0090"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga22f7b42a0fa9629f1613dd32736d0090">mip::Interface::setCallbacks</a> (T *object)</td></tr>
+<tr class="memdesc:ga22f7b42a0fa9629f1613dd32736d0090"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the callback functions to a common class object.  <br /></td></tr>
+<tr class="separator:ga22f7b42a0fa9629f1613dd32736d0090"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9dc7c588218e32a60c182f4cefc50b6e" id="r_ga9dc7c588218e32a60c182f4cefc50b6e"><td class="memTemplParams" colspan="2">template&lt;void(*)(void *, const <a class="el" href="classmip_1_1_packet_view.html">PacketView</a> &amp;, <a class="el" href="namespacemip.html#ab87086630c94254d17a812e4be159b0a">Timestamp</a>) Callback&gt; </td></tr>
+<tr class="memitem:ga9dc7c588218e32a60c182f4cefc50b6e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga9dc7c588218e32a60c182f4cefc50b6e">mip::Interface::registerPacketCallback</a> (<a class="el" href="structmip_1_1_c_1_1mip__dispatch__handler.html">C::mip_dispatch_handler</a> &amp;handler, uint8_t descriptorSet, bool afterFields, void *userData=nullptr)</td></tr>
+<tr class="memdesc:ga9dc7c588218e32a60c182f4cefc50b6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a packet callback (free function version).  <br /></td></tr>
+<tr class="separator:ga9dc7c588218e32a60c182f4cefc50b6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga81a19aaab291eba8e80a97e63dacbe01" id="r_ga81a19aaab291eba8e80a97e63dacbe01"><td class="memTemplParams" colspan="2">template&lt;class Object , void(Object::*)(const <a class="el" href="classmip_1_1_packet_view.html">PacketView</a> &amp;, <a class="el" href="namespacemip.html#ab87086630c94254d17a812e4be159b0a">Timestamp</a>) Callback&gt; </td></tr>
+<tr class="memitem:ga81a19aaab291eba8e80a97e63dacbe01"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga81a19aaab291eba8e80a97e63dacbe01">mip::Interface::registerPacketCallback</a> (<a class="el" href="structmip_1_1_c_1_1mip__dispatch__handler.html">C::mip_dispatch_handler</a> &amp;handler, uint8_t descriptorSet, bool afterFields, Object *object)</td></tr>
+<tr class="memdesc:ga81a19aaab291eba8e80a97e63dacbe01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a packet callback (member function version).  <br /></td></tr>
+<tr class="separator:ga81a19aaab291eba8e80a97e63dacbe01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga77e607f61a5d5e6477f246e8a9cd56df" id="r_ga77e607f61a5d5e6477f246e8a9cd56df"><td class="memTemplParams" colspan="2">template&lt;void(*)(void *, const <a class="el" href="classmip_1_1_field_view.html">FieldView</a> &amp;, <a class="el" href="namespacemip.html#ab87086630c94254d17a812e4be159b0a">Timestamp</a>) Callback&gt; </td></tr>
+<tr class="memitem:ga77e607f61a5d5e6477f246e8a9cd56df"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga77e607f61a5d5e6477f246e8a9cd56df">mip::Interface::registerFieldCallback</a> (<a class="el" href="structmip_1_1_c_1_1mip__dispatch__handler.html">C::mip_dispatch_handler</a> &amp;handler, uint8_t descriptorSet, uint8_t fieldDescriptor, void *userData=nullptr)</td></tr>
+<tr class="memdesc:ga77e607f61a5d5e6477f246e8a9cd56df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a field callback (free function version).  <br /></td></tr>
+<tr class="separator:ga77e607f61a5d5e6477f246e8a9cd56df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8d9b300faec8661881e7a90c82a1ea73" id="r_ga8d9b300faec8661881e7a90c82a1ea73"><td class="memTemplParams" colspan="2">template&lt;class Object , void(Object::*)(const <a class="el" href="classmip_1_1_field_view.html">FieldView</a> &amp;field, <a class="el" href="namespacemip.html#ab87086630c94254d17a812e4be159b0a">Timestamp</a>) Callback&gt; </td></tr>
+<tr class="memitem:ga8d9b300faec8661881e7a90c82a1ea73"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga8d9b300faec8661881e7a90c82a1ea73">mip::Interface::registerFieldCallback</a> (<a class="el" href="structmip_1_1_c_1_1mip__dispatch__handler.html">C::mip_dispatch_handler</a> &amp;handler, uint8_t descriptorSet, uint8_t fieldDescriptor, Object *object)</td></tr>
+<tr class="memdesc:ga8d9b300faec8661881e7a90c82a1ea73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a field callback (member function version).  <br /></td></tr>
+<tr class="separator:ga8d9b300faec8661881e7a90c82a1ea73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab840eaf2c57675f834290b0c40bfcebf" id="r_gab840eaf2c57675f834290b0c40bfcebf"><td class="memTemplParams" colspan="2">template&lt;class DataField , void(*)(void *, const DataField &amp;, <a class="el" href="namespacemip.html#ab87086630c94254d17a812e4be159b0a">Timestamp</a>) Callback&gt; </td></tr>
+<tr class="memitem:gab840eaf2c57675f834290b0c40bfcebf"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#gab840eaf2c57675f834290b0c40bfcebf">mip::Interface::registerDataCallback</a> (<a class="el" href="structmip_1_1_c_1_1mip__dispatch__handler.html">C::mip_dispatch_handler</a> &amp;handler, void *userData=nullptr, uint8_t descriptorSet=DataField::DESCRIPTOR_SET)</td></tr>
+<tr class="memdesc:gab840eaf2c57675f834290b0c40bfcebf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a data callback (free function version).  <br /></td></tr>
+<tr class="separator:gab840eaf2c57675f834290b0c40bfcebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa7a093baa936d931588819ad6cd3ecea" id="r_gaa7a093baa936d931588819ad6cd3ecea"><td class="memTemplParams" colspan="2">template&lt;class DataField , class Object , void(Object::*)(const DataField &amp;, <a class="el" href="namespacemip.html#ab87086630c94254d17a812e4be159b0a">Timestamp</a>) Callback&gt; </td></tr>
+<tr class="memitem:gaa7a093baa936d931588819ad6cd3ecea"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#gaa7a093baa936d931588819ad6cd3ecea">mip::Interface::registerDataCallback</a> (<a class="el" href="structmip_1_1_c_1_1mip__dispatch__handler.html">C::mip_dispatch_handler</a> &amp;handler, Object *object, uint8_t descriptorSet=DataField::DESCRIPTOR_SET)</td></tr>
+<tr class="memdesc:gaa7a093baa936d931588819ad6cd3ecea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a data callback (member function version).  <br /></td></tr>
+<tr class="separator:gaa7a093baa936d931588819ad6cd3ecea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabcda7eb9712efd8ab785db591b41cca3" id="r_gabcda7eb9712efd8ab785db591b41cca3"><td class="memTemplParams" colspan="2">template&lt;class DataField &gt; </td></tr>
+<tr class="memitem:gabcda7eb9712efd8ab785db591b41cca3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#gabcda7eb9712efd8ab785db591b41cca3">mip::Interface::registerExtractor</a> (<a class="el" href="structmip_1_1_c_1_1mip__dispatch__handler.html">C::mip_dispatch_handler</a> &amp;handler, DataField *field, uint8_t descriptorSet=DataField::DESCRIPTOR_SET)</td></tr>
+<tr class="separator:gabcda7eb9712efd8ab785db591b41cca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3c099d19ac77cc922c8b2f87441cf6f7" id="r_ga3c099d19ac77cc922c8b2f87441cf6f7"><td class="memTemplParams" colspan="2">template&lt;class T , bool(T::*)(const <a class="el" href="classmip_1_1_packet_view.html">PacketView</a> &amp;, <a class="el" href="namespacemip.html#ab87086630c94254d17a812e4be159b0a">Timestamp</a>) Callback&gt; </td></tr>
 <tr class="memitem:ga3c099d19ac77cc922c8b2f87441cf6f7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga3c099d19ac77cc922c8b2f87441cf6f7">mip::Parser::setCallback</a> (T &amp;object)</td></tr>
 <tr class="memdesc:ga3c099d19ac77cc922c8b2f87441cf6f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the MIP <a class="el" href="classmip_1_1_parser.html" title="C++ class representing a MIP parser.">Parser</a>.  <br /></td></tr>
 <tr class="separator:ga3c099d19ac77cc922c8b2f87441cf6f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab157c25d6da10be3887e16d996298998" id="r_gab157c25d6da10be3887e16d996298998"><td class="memTemplParams" colspan="2">template&lt;bool(*)(<a class="el" href="classmip_1_1_device_interface.html">DeviceInterface</a> &amp;, const uint8_t *, size_t) Send&gt; </td></tr>
-<tr class="memitem:gab157c25d6da10be3887e16d996298998"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#gab157c25d6da10be3887e16d996298998">mip::DeviceInterface::setSendFunction</a> ()</td></tr>
-<tr class="memdesc:gab157c25d6da10be3887e16d996298998"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the send callback function (free function version).  <br /></td></tr>
-<tr class="separator:gab157c25d6da10be3887e16d996298998"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaec766448adf8a4b7ad818018c45bec1a" id="r_gaec766448adf8a4b7ad818018c45bec1a"><td class="memTemplParams" colspan="2">template&lt;bool(*)(<a class="el" href="classmip_1_1_device_interface.html">DeviceInterface</a> &amp;, uint8_t *, size_t, <a class="el" href="namespacemip.html#adf3e3dd725a2c4f8abde99c473000878">Timeout</a>, size_t *, <a class="el" href="namespacemip.html#ac74386034393307fd0de0b553ed4fb37">Timestamp</a> *) Recv&gt; </td></tr>
-<tr class="memitem:gaec766448adf8a4b7ad818018c45bec1a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#gaec766448adf8a4b7ad818018c45bec1a">mip::DeviceInterface::setRecvFunction</a> ()</td></tr>
-<tr class="memdesc:gaec766448adf8a4b7ad818018c45bec1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the receive callback function (free function version).  <br /></td></tr>
-<tr class="separator:gaec766448adf8a4b7ad818018c45bec1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga366225ba5c31c4906f56be549688ae16" id="r_ga366225ba5c31c4906f56be549688ae16"><td class="memTemplParams" colspan="2">template&lt;bool(*)(<a class="el" href="classmip_1_1_device_interface.html">DeviceInterface</a> &amp;, <a class="el" href="namespacemip.html#adf3e3dd725a2c4f8abde99c473000878">Timeout</a>) Update&gt; </td></tr>
-<tr class="memitem:ga366225ba5c31c4906f56be549688ae16"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga366225ba5c31c4906f56be549688ae16">mip::DeviceInterface::setUpdateFunction</a> ()</td></tr>
-<tr class="memdesc:ga366225ba5c31c4906f56be549688ae16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the update callback function (free function version).  <br /></td></tr>
-<tr class="separator:ga366225ba5c31c4906f56be549688ae16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab1e718a8c63ecdfe8648a253d090004d" id="r_gab1e718a8c63ecdfe8648a253d090004d"><td class="memTemplParams" colspan="2">template&lt;class Derived , bool(Derived::*)(const uint8_t *, size_t) Send&gt; </td></tr>
-<tr class="memitem:gab1e718a8c63ecdfe8648a253d090004d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#gab1e718a8c63ecdfe8648a253d090004d">mip::DeviceInterface::setSendFunction</a> ()</td></tr>
-<tr class="memdesc:gab1e718a8c63ecdfe8648a253d090004d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the send callback function (derived member function version).  <br /></td></tr>
-<tr class="separator:gab1e718a8c63ecdfe8648a253d090004d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2a19c50505d3a527449ca99d9df90cac" id="r_ga2a19c50505d3a527449ca99d9df90cac"><td class="memTemplParams" colspan="2">template&lt;class Derived , bool(Derived::*)(uint8_t *, size_t, <a class="el" href="namespacemip.html#adf3e3dd725a2c4f8abde99c473000878">Timeout</a>, size_t *, <a class="el" href="namespacemip.html#ac74386034393307fd0de0b553ed4fb37">Timestamp</a> *) Recv&gt; </td></tr>
-<tr class="memitem:ga2a19c50505d3a527449ca99d9df90cac"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga2a19c50505d3a527449ca99d9df90cac">mip::DeviceInterface::setRecvFunction</a> ()</td></tr>
-<tr class="memdesc:ga2a19c50505d3a527449ca99d9df90cac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the receive callback function (derived member function version).  <br /></td></tr>
-<tr class="separator:ga2a19c50505d3a527449ca99d9df90cac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga63e5cee11d633a44ec4cee9ce9c1b603" id="r_ga63e5cee11d633a44ec4cee9ce9c1b603"><td class="memTemplParams" colspan="2">template&lt;class Derived , bool(Derived::*)(<a class="el" href="namespacemip.html#adf3e3dd725a2c4f8abde99c473000878">Timeout</a>) Update&gt; </td></tr>
-<tr class="memitem:ga63e5cee11d633a44ec4cee9ce9c1b603"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga63e5cee11d633a44ec4cee9ce9c1b603">mip::DeviceInterface::setUpdateFunction</a> ()</td></tr>
-<tr class="memdesc:ga63e5cee11d633a44ec4cee9ce9c1b603"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the update callback function (derived member function version).  <br /></td></tr>
-<tr class="separator:ga63e5cee11d633a44ec4cee9ce9c1b603"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaae160182bd1d469e40caa477a0244333" id="r_gaae160182bd1d469e40caa477a0244333"><td class="memTemplParams" colspan="2">template&lt;class T , bool(T::*)(const uint8_t *, size_t) Send, bool(T::*)(uint8_t *, size_t, <a class="el" href="namespacemip.html#adf3e3dd725a2c4f8abde99c473000878">Timeout</a>, size_t *, <a class="el" href="namespacemip.html#ac74386034393307fd0de0b553ed4fb37">Timestamp</a> *) Recv, bool(T::*)(<a class="el" href="namespacemip.html#adf3e3dd725a2c4f8abde99c473000878">Timeout</a>) Update = nullptr&gt; </td></tr>
-<tr class="memitem:gaae160182bd1d469e40caa477a0244333"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#gaae160182bd1d469e40caa477a0244333">mip::DeviceInterface::setCallbacks</a> (T *object)</td></tr>
-<tr class="memdesc:gaae160182bd1d469e40caa477a0244333"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the callback functions to a common class object.  <br /></td></tr>
-<tr class="separator:gaae160182bd1d469e40caa477a0244333"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacc59b0f8fe307b7d1a14fff523068950" id="r_gacc59b0f8fe307b7d1a14fff523068950"><td class="memTemplParams" colspan="2">template&lt;void(*)(void *, const <a class="el" href="classmip_1_1_packet_ref.html">PacketRef</a> &amp;, <a class="el" href="namespacemip.html#ac74386034393307fd0de0b553ed4fb37">Timestamp</a>) Callback&gt; </td></tr>
-<tr class="memitem:gacc59b0f8fe307b7d1a14fff523068950"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#gacc59b0f8fe307b7d1a14fff523068950">mip::DeviceInterface::registerPacketCallback</a> (<a class="el" href="structmip_1_1_c_1_1mip__dispatch__handler.html">C::mip_dispatch_handler</a> &amp;handler, uint8_t descriptorSet, bool afterFields, void *userData=nullptr)</td></tr>
-<tr class="memdesc:gacc59b0f8fe307b7d1a14fff523068950"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a packet callback (free function version).  <br /></td></tr>
-<tr class="separator:gacc59b0f8fe307b7d1a14fff523068950"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf71804365b4c7a3bffc6cced5f21ba46" id="r_gaf71804365b4c7a3bffc6cced5f21ba46"><td class="memTemplParams" colspan="2">template&lt;class Object , void(Object::*)(const <a class="el" href="classmip_1_1_packet_ref.html">PacketRef</a> &amp;, <a class="el" href="namespacemip.html#ac74386034393307fd0de0b553ed4fb37">Timestamp</a>) Callback&gt; </td></tr>
-<tr class="memitem:gaf71804365b4c7a3bffc6cced5f21ba46"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#gaf71804365b4c7a3bffc6cced5f21ba46">mip::DeviceInterface::registerPacketCallback</a> (<a class="el" href="structmip_1_1_c_1_1mip__dispatch__handler.html">C::mip_dispatch_handler</a> &amp;handler, uint8_t descriptorSet, bool afterFields, Object *object)</td></tr>
-<tr class="memdesc:gaf71804365b4c7a3bffc6cced5f21ba46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a packet callback (member function version).  <br /></td></tr>
-<tr class="separator:gaf71804365b4c7a3bffc6cced5f21ba46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga33f19b733a30d68c30fcb0c96987f430" id="r_ga33f19b733a30d68c30fcb0c96987f430"><td class="memTemplParams" colspan="2">template&lt;void(*)(void *, const <a class="el" href="classmip_1_1_field.html">Field</a> &amp;, <a class="el" href="namespacemip.html#ac74386034393307fd0de0b553ed4fb37">Timestamp</a>) Callback&gt; </td></tr>
-<tr class="memitem:ga33f19b733a30d68c30fcb0c96987f430"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga33f19b733a30d68c30fcb0c96987f430">mip::DeviceInterface::registerFieldCallback</a> (<a class="el" href="structmip_1_1_c_1_1mip__dispatch__handler.html">C::mip_dispatch_handler</a> &amp;handler, uint8_t descriptorSet, uint8_t fieldDescriptor, void *userData=nullptr)</td></tr>
-<tr class="memdesc:ga33f19b733a30d68c30fcb0c96987f430"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a field callback (free function version).  <br /></td></tr>
-<tr class="separator:ga33f19b733a30d68c30fcb0c96987f430"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaee72e78a5831747afe2643d603f6d4d5" id="r_gaee72e78a5831747afe2643d603f6d4d5"><td class="memTemplParams" colspan="2">template&lt;class Object , void(Object::*)(const <a class="el" href="classmip_1_1_field.html">Field</a> &amp;field, <a class="el" href="namespacemip.html#ac74386034393307fd0de0b553ed4fb37">Timestamp</a>) Callback&gt; </td></tr>
-<tr class="memitem:gaee72e78a5831747afe2643d603f6d4d5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#gaee72e78a5831747afe2643d603f6d4d5">mip::DeviceInterface::registerFieldCallback</a> (<a class="el" href="structmip_1_1_c_1_1mip__dispatch__handler.html">C::mip_dispatch_handler</a> &amp;handler, uint8_t descriptorSet, uint8_t fieldDescriptor, Object *object)</td></tr>
-<tr class="memdesc:gaee72e78a5831747afe2643d603f6d4d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a field callback (member function version).  <br /></td></tr>
-<tr class="separator:gaee72e78a5831747afe2643d603f6d4d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaca474f5975ff342a77f10d82d02e6fe6" id="r_gaca474f5975ff342a77f10d82d02e6fe6"><td class="memTemplParams" colspan="2">template&lt;class DataField , void(*)(void *, const DataField &amp;, <a class="el" href="namespacemip.html#ac74386034393307fd0de0b553ed4fb37">Timestamp</a>) Callback&gt; </td></tr>
-<tr class="memitem:gaca474f5975ff342a77f10d82d02e6fe6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#gaca474f5975ff342a77f10d82d02e6fe6">mip::DeviceInterface::registerDataCallback</a> (<a class="el" href="structmip_1_1_c_1_1mip__dispatch__handler.html">C::mip_dispatch_handler</a> &amp;handler, void *userData=nullptr, uint8_t descriptorSet=DataField::DESCRIPTOR_SET)</td></tr>
-<tr class="memdesc:gaca474f5975ff342a77f10d82d02e6fe6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a data callback (free function version).  <br /></td></tr>
-<tr class="separator:gaca474f5975ff342a77f10d82d02e6fe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga61dd7d1aa7704fb3482d517cb67e980a" id="r_ga61dd7d1aa7704fb3482d517cb67e980a"><td class="memTemplParams" colspan="2">template&lt;class DataField , class Object , void(Object::*)(const DataField &amp;, <a class="el" href="namespacemip.html#ac74386034393307fd0de0b553ed4fb37">Timestamp</a>) Callback&gt; </td></tr>
-<tr class="memitem:ga61dd7d1aa7704fb3482d517cb67e980a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga61dd7d1aa7704fb3482d517cb67e980a">mip::DeviceInterface::registerDataCallback</a> (<a class="el" href="structmip_1_1_c_1_1mip__dispatch__handler.html">C::mip_dispatch_handler</a> &amp;handler, Object *object, uint8_t descriptorSet=DataField::DESCRIPTOR_SET)</td></tr>
-<tr class="memdesc:ga61dd7d1aa7704fb3482d517cb67e980a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a data callback (member function version).  <br /></td></tr>
-<tr class="separator:ga61dd7d1aa7704fb3482d517cb67e980a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6cc40c642fe4de908b3b67c8f7c740ec" id="r_ga6cc40c642fe4de908b3b67c8f7c740ec"><td class="memTemplParams" colspan="2">template&lt;class DataField &gt; </td></tr>
-<tr class="memitem:ga6cc40c642fe4de908b3b67c8f7c740ec"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga6cc40c642fe4de908b3b67c8f7c740ec">mip::DeviceInterface::registerExtractor</a> (<a class="el" href="structmip_1_1_c_1_1mip__dispatch__handler.html">C::mip_dispatch_handler</a> &amp;handler, DataField *field, uint8_t descriptorSet=DataField::DESCRIPTOR_SET)</td></tr>
-<tr class="separator:ga6cc40c642fe4de908b3b67c8f7c740ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>This module contains functions and classes for communicating with a MIP device in C++. </p>
@@ -218,6 +295,66 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="group__mip__cpp.html#ga22fdf60376fa438a3282cdf32d641f3b">mip::DispatchHandler</a> = typedef <a class="el" href="structmip_1_1_c_1_1mip__dispatch__handler.html">C::mip_dispatch_handler</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaebec98c6af673e47251cba5f84afb6b8" name="gaebec98c6af673e47251cba5f84afb6b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaebec98c6af673e47251cba5f84afb6b8">&#9670;&#160;</a></span>EnableForFieldTypes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__mip__cpp.html#gaebec98c6af673e47251cba5f84afb6b8">mip::EnableForFieldTypes</a> = typedef std::enable_if&lt;<a class="el" href="group__mip__cpp.html#ga3443d81cb98b89e8eece2866465682e4">isField</a>&lt;T&gt;::value, T&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga3443d81cb98b89e8eece2866465682e4" name="ga3443d81cb98b89e8eece2866465682e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3443d81cb98b89e8eece2866465682e4">&#9670;&#160;</a></span>isField</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__mip__cpp.html#ga3443d81cb98b89e8eece2866465682e4">mip::isField</a> = typedef std::is_base_of&lt;<a class="el" href="structmip_1_1_field_struct.html">FieldStruct</a>, T&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gac3e5a8dd334f15b794de9b1f1d67af23" name="gac3e5a8dd334f15b794de9b1f1d67af23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac3e5a8dd334f15b794de9b1f1d67af23">&#9670;&#160;</a></span>Matrix3d</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__mip__cpp.html#gac3e5a8dd334f15b794de9b1f1d67af23">mip::Matrix3d</a> = typedef <a class="el" href="structmip_1_1_vector.html">Vector</a>&lt;double,9&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga40b65ff470e6f1d6982eb464ee3e59ad" name="ga40b65ff470e6f1d6982eb464ee3e59ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga40b65ff470e6f1d6982eb464ee3e59ad">&#9670;&#160;</a></span>Matrix3f</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__mip__cpp.html#ga40b65ff470e6f1d6982eb464ee3e59ad">mip::Matrix3f</a> = typedef <a class="el" href="structmip_1_1_vector.html">Vector</a>&lt;float,9&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -241,7 +378,551 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="gae48959b6aedea021e3b2fcb024deb8d4" name="gae48959b6aedea021e3b2fcb024deb8d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae48959b6aedea021e3b2fcb024deb8d4">&#9670;&#160;</a></span>Quatf</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__mip__cpp.html#gae48959b6aedea021e3b2fcb024deb8d4">mip::Quatf</a> = typedef <a class="el" href="group__mip__cpp.html#ga67fb1a84896d0908efc64965f5e90914">Vector4f</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga1741c14320601c62cd91791e137dc83f" name="ga1741c14320601c62cd91791e137dc83f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1741c14320601c62cd91791e137dc83f">&#9670;&#160;</a></span>Vector3d</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__mip__cpp.html#ga1741c14320601c62cd91791e137dc83f">mip::Vector3d</a> = typedef <a class="el" href="structmip_1_1_vector.html">Vector</a>&lt;double,3&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga5209d3c0c1d7b0a0613569ba51facda8" name="ga5209d3c0c1d7b0a0613569ba51facda8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5209d3c0c1d7b0a0613569ba51facda8">&#9670;&#160;</a></span>Vector3f</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__mip__cpp.html#ga5209d3c0c1d7b0a0613569ba51facda8">mip::Vector3f</a> = typedef <a class="el" href="structmip_1_1_vector.html">Vector</a>&lt;float,3&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga5ec8e25e89406cdcc7e62faf3d0b0558" name="ga5ec8e25e89406cdcc7e62faf3d0b0558"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5ec8e25e89406cdcc7e62faf3d0b0558">&#9670;&#160;</a></span>Vector4d</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__mip__cpp.html#ga5ec8e25e89406cdcc7e62faf3d0b0558">mip::Vector4d</a> = typedef <a class="el" href="structmip_1_1_vector.html">Vector</a>&lt;double,4&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga67fb1a84896d0908efc64965f5e90914" name="ga67fb1a84896d0908efc64965f5e90914"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga67fb1a84896d0908efc64965f5e90914">&#9670;&#160;</a></span>Vector4f</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__mip__cpp.html#ga67fb1a84896d0908efc64965f5e90914">mip::Vector4f</a> = typedef <a class="el" href="structmip_1_1_vector.html">Vector</a>&lt;float,4&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="ga2dde9cdf5ebc86cf62e8c2591dcb56de" name="ga2dde9cdf5ebc86cf62e8c2591dcb56de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2dde9cdf5ebc86cf62e8c2591dcb56de">&#9670;&#160;</a></span>FunctionSelector</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="group__mip__cpp.html#ga2dde9cdf5ebc86cf62e8c2591dcb56de">mip::FunctionSelector</a> : uint8_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga2dde9cdf5ebc86cf62e8c2591dcb56dead4b9e47f65b6e79b010582f15785867e" name="gga2dde9cdf5ebc86cf62e8c2591dcb56dead4b9e47f65b6e79b010582f15785867e"></a>WRITE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2dde9cdf5ebc86cf62e8c2591dcb56dea3466fab4975481651940ed328aa990e4" name="gga2dde9cdf5ebc86cf62e8c2591dcb56dea3466fab4975481651940ed328aa990e4"></a>READ&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2dde9cdf5ebc86cf62e8c2591dcb56deaf5cf47ab06d0d98b0d16d10c82d87953" name="gga2dde9cdf5ebc86cf62e8c2591dcb56deaf5cf47ab06d0d98b0d16d10c82d87953"></a>SAVE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2dde9cdf5ebc86cf62e8c2591dcb56dea615d2885ef7576cedd9aafbb2578f028" name="gga2dde9cdf5ebc86cf62e8c2591dcb56dea615d2885ef7576cedd9aafbb2578f028"></a>LOAD&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga2dde9cdf5ebc86cf62e8c2591dcb56deab5859d8721cfdc0312b2838b9c985bc1" name="gga2dde9cdf5ebc86cf62e8c2591dcb56deab5859d8721cfdc0312b2838b9c985bc1"></a>RESET&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ga989dc72b48ab8ecce81a951be8f984cb" name="ga989dc72b48ab8ecce81a951be8f984cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga989dc72b48ab8ecce81a951be8f984cb">&#9670;&#160;</a></span>connect_interface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::connect_interface </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmip_1_1_interface.html">mip::Interface</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmicrostrain_1_1_connection.html">microstrain::Connection</a> &amp;&#160;</td>
+          <td class="paramname"><em>conn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets up the mip interface callbacks to point at this object. </p>
+<dl class="section note"><dt>Note</dt><dd>This sets the interface's user pointer to this connection object.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>Device to configure. </td></tr>
+    <tr><td class="paramname">conn</td><td>The connection to set </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga08db02ae455c12a9d914ffc873d1dce9" name="ga08db02ae455c12a9d914ffc873d1dce9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga08db02ae455c12a9d914ffc873d1dce9">&#9670;&#160;</a></span>extract() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t mip::extract </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacemip.html#a7475074708d6d3e0fa83597b41eb98f8">Serializer</a> &amp;&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1_bitfield.html">Bitfield</a>&lt; Derived &gt; &amp;&#160;</td>
+          <td class="paramname"><em>bitfield</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga3b4d5711ad01ac594ea534865c47042b" name="ga3b4d5711ad01ac594ea534865c47042b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3b4d5711ad01ac594ea534865c47042b">&#9670;&#160;</a></span>extract() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , size_t N&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t mip::extract </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacemip.html#a7475074708d6d3e0fa83597b41eb98f8">Serializer</a> &amp;&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1_vector.html">Vector</a>&lt; T, N &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gac35f3b51d7bbd2b7a1f8648e795e6050" name="gac35f3b51d7bbd2b7a1f8648e795e6050"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac35f3b51d7bbd2b7a1f8648e795e6050">&#9670;&#160;</a></span>insert() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t mip::insert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacemip.html#a7475074708d6d3e0fa83597b41eb98f8">Serializer</a> &amp;&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structmip_1_1_bitfield.html">Bitfield</a>&lt; Derived &gt; &amp;&#160;</td>
+          <td class="paramname"><em>bitfield</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga6d55d024eb5162c4e8f2267680672e1d" name="ga6d55d024eb5162c4e8f2267680672e1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6d55d024eb5162c4e8f2267680672e1d">&#9670;&#160;</a></span>insert() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , size_t N&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t mip::insert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacemip.html#a7475074708d6d3e0fa83597b41eb98f8">Serializer</a> &amp;&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structmip_1_1_vector.html">Vector</a>&lt; T, N &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gafaac6fa695e353f031d16081d83c3381" name="gafaac6fa695e353f031d16081d83c3381"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafaac6fa695e353f031d16081d83c3381">&#9670;&#160;</a></span>isCommandDescriptorSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::isCommandDescriptorSet </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>descriptorSet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga79f3e05b931d41d5d0af7db3185e8f34" name="ga79f3e05b931d41d5d0af7db3185e8f34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga79f3e05b931d41d5d0af7db3185e8f34">&#9670;&#160;</a></span>isCommandFieldDescriptor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::isCommandFieldDescriptor </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>fieldDescriptor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga7caa7ffe454624c8de66a66e0fecf217" name="ga7caa7ffe454624c8de66a66e0fecf217"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7caa7ffe454624c8de66a66e0fecf217">&#9670;&#160;</a></span>isDataDescriptorSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::isDataDescriptorSet </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>descriptorSet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga62207c8ff62728c58f13d55d7bb15421" name="ga62207c8ff62728c58f13d55d7bb15421"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga62207c8ff62728c58f13d55d7bb15421">&#9670;&#160;</a></span>isGnssDataDescriptorSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::isGnssDataDescriptorSet </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>descriptorSet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga4dade541efb4dbb1ca5897b1027b8efd" name="ga4dade541efb4dbb1ca5897b1027b8efd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4dade541efb4dbb1ca5897b1027b8efd">&#9670;&#160;</a></span>isReplyFieldDescriptor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::isReplyFieldDescriptor </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>fieldDescriptor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga926687c28c7f12a1d12d496198d7d59d" name="ga926687c28c7f12a1d12d496198d7d59d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga926687c28c7f12a1d12d496198d7d59d">&#9670;&#160;</a></span>isReservedDescriptorSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::isReservedDescriptorSet </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>descriptorSet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa9683e0252717c3fd595fc5f61472d9d" name="gaa9683e0252717c3fd595fc5f61472d9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa9683e0252717c3fd595fc5f61472d9d">&#9670;&#160;</a></span>isReservedFieldDescriptor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::isReservedFieldDescriptor </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>fieldDescriptor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga6e9d6ee847dbaaa298ebadea2fe46e50" name="ga6e9d6ee847dbaaa298ebadea2fe46e50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6e9d6ee847dbaaa298ebadea2fe46e50">&#9670;&#160;</a></span>isResponseFieldDescriptor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::isResponseFieldDescriptor </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>fieldDescriptor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa4a0fcbd3b77eabd1114860cfe3b5bed" name="gaa4a0fcbd3b77eabd1114860cfe3b5bed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa4a0fcbd3b77eabd1114860cfe3b5bed">&#9670;&#160;</a></span>isSharedDataFieldDescriptor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::isSharedDataFieldDescriptor </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>fieldDescriptor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa249fa2e20690c1ce9af1abb2e89f032" name="gaa249fa2e20690c1ce9af1abb2e89f032"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa249fa2e20690c1ce9af1abb2e89f032">&#9670;&#160;</a></span>isValidDescriptorSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::isValidDescriptorSet </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>descriptorSet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga87c81313d4cd3c71b2e6ec99e3cce386" name="ga87c81313d4cd3c71b2e6ec99e3cce386"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga87c81313d4cd3c71b2e6ec99e3cce386">&#9670;&#160;</a></span>isValidFieldDescriptor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::isValidFieldDescriptor </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>fieldDescriptor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ga34c1057cbcde6a4d6e6ce54cb6c6c3c8" name="ga34c1057cbcde6a4d6e6ce54cb6c6c3c8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga34c1057cbcde6a4d6e6ce54cb6c6c3c8">&#9670;&#160;</a></span>parseMipDataFromSource()</h2>
 
@@ -301,16 +982,16 @@ template&lt;class Function &gt; </div>
 
 </div>
 </div>
-<a id="ga61dd7d1aa7704fb3482d517cb67e980a" name="ga61dd7d1aa7704fb3482d517cb67e980a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga61dd7d1aa7704fb3482d517cb67e980a">&#9670;&#160;</a></span>registerDataCallback() <span class="overload">[1/2]</span></h2>
+<a id="gaa7a093baa936d931588819ad6cd3ecea" name="gaa7a093baa936d931588819ad6cd3ecea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa7a093baa936d931588819ad6cd3ecea">&#9670;&#160;</a></span>registerDataCallback() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class DataField , class Object , void(Object::*)(const DataField &amp;, uint8_t, <a class="el" href="namespacemip.html#ac74386034393307fd0de0b553ed4fb37">Timestamp</a>) Callback&gt; </div>
+template&lt;class DataField , class Object , void(Object::*)(const DataField &amp;, uint8_t, <a class="el" href="namespacemip.html#ab87086630c94254d17a812e4be159b0a">Timestamp</a>) Callback&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void mip::DeviceInterface::registerDataCallback </td>
+          <td class="memname">void mip::Interface::registerDataCallback </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1_c_1_1mip__dispatch__handler.html">C::mip_dispatch_handler</a> &amp;&#160;</td>
           <td class="paramname"><em>handler</em>, </td>
@@ -344,15 +1025,15 @@ template&lt;class DataField , class Object , void(Object::*)(const DataField &am
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handler</td><td>This must exist as long as the hander remains registered.</td></tr>
+    <tr><td class="paramname">handler</td><td>This must exist as long as the handler remains registered.</td></tr>
     <tr><td class="paramname">object</td><td>A pointer to the object. The object must exist while the handler remains registered.</td></tr>
-    <tr><td class="paramname">descriptorSet</td><td>If specified, overrides the descriptor set. Intended to be used with with shared data quantities.</td></tr>
+    <tr><td class="paramname">descriptorSet</td><td>If specified, overrides the descriptor set. Intended to be used with shared data quantities.</td></tr>
   </table>
   </dd>
 </dl>
 <p>Example usage: </p><div class="fragment"><div class="line"><span class="keyword">class </span>MySystem</div>
 <div class="line">{</div>
-<div class="line">  <span class="keywordtype">void</span> handleAccel(<span class="keyword">const</span> ScaledAccel&amp; accel, <a class="code hl_typedef" href="namespacemip.html#ac74386034393307fd0de0b553ed4fb37">Timestamp</a> timestamp)</div>
+<div class="line">  <span class="keywordtype">void</span> handleAccel(<span class="keyword">const</span> ScaledAccel&amp; accel, <a class="code hl_typedef" href="namespacemip.html#ab87086630c94254d17a812e4be159b0a">Timestamp</a> timestamp)</div>
 <div class="line">  {</div>
 <div class="line">  }</div>
 <div class="line"> </div>
@@ -362,10 +1043,10 @@ template&lt;class DataField , class Object , void(Object::*)(const DataField &am
 <div class="line">    device.registerDataHandler&lt;ScaledAccel, MySystem, &amp;MySystem::handleAccel&gt;(accelHandler, <span class="keyword">this</span>);</div>
 <div class="line">  }</div>
 <div class="line"> </div>
-<div class="line">  DeviceInterface device;</div>
+<div class="line">  Interface device;</div>
 <div class="line">  DispatchHandler accelHandler;</div>
 <div class="line">};</div>
-<div class="ttc" id="anamespacemip_html_ac74386034393307fd0de0b553ed4fb37"><div class="ttname"><a href="namespacemip.html#ac74386034393307fd0de0b553ed4fb37">mip::Timestamp</a></div><div class="ttdeci">C::mip_timestamp Timestamp</div><div class="ttdef"><b>Definition</b> mip_types.h:56</div></div>
+<div class="ttc" id="anamespacemip_html_ab87086630c94254d17a812e4be159b0a"><div class="ttname"><a href="namespacemip.html#ab87086630c94254d17a812e4be159b0a">mip::Timestamp</a></div><div class="ttdeci">microstrain::EmbeddedTimestamp Timestamp</div><div class="ttdef"><b>Definition</b> mip_types.h:50</div></div>
 </div><!-- fragment --><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">Callback</td><td>A pointer to the function to call. This must be a constant member function pointer.</td></tr>
@@ -374,15 +1055,15 @@ template&lt;class DataField , class Object , void(Object::*)(const DataField &am
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handler</td><td>This must exist as long as the hander remains registered.</td></tr>
+    <tr><td class="paramname">handler</td><td>This must exist as long as the handler remains registered.</td></tr>
     <tr><td class="paramname">object</td><td>A pointer to the object. The object must exist while the handler remains registered.</td></tr>
-    <tr><td class="paramname">descriptorSet</td><td>If specified, overrides the descriptor set. Intended to be used with with shared data quantities.</td></tr>
+    <tr><td class="paramname">descriptorSet</td><td>If specified, overrides the descriptor set. Intended to be used with shared data quantities.</td></tr>
   </table>
   </dd>
 </dl>
 <p>Example usage: </p><div class="fragment"><div class="line"><span class="keyword">class </span>MySystem</div>
 <div class="line">{</div>
-<div class="line">  <span class="keywordtype">void</span> handleAccel(<span class="keyword">const</span> ScaledAccel&amp; accel, uint8_t descriptorSet, <a class="code hl_typedef" href="namespacemip.html#ac74386034393307fd0de0b553ed4fb37">Timestamp</a> timestamp)</div>
+<div class="line">  <span class="keywordtype">void</span> handleAccel(<span class="keyword">const</span> ScaledAccel&amp; accel, uint8_t descriptorSet, <a class="code hl_typedef" href="namespacemip.html#ab87086630c94254d17a812e4be159b0a">Timestamp</a> timestamp)</div>
 <div class="line">  {</div>
 <div class="line">  }</div>
 <div class="line"> </div>
@@ -392,22 +1073,22 @@ template&lt;class DataField , class Object , void(Object::*)(const DataField &am
 <div class="line">    device.registerDataHandler&lt;ScaledAccel, MySystem, &amp;MySystem::handleAccel&gt;(accelHandler, <span class="keyword">this</span>);</div>
 <div class="line">  }</div>
 <div class="line"> </div>
-<div class="line">  DeviceInterface device;</div>
+<div class="line">  Interface device;</div>
 <div class="line">  DispatchHandler accelHandler;</div>
 <div class="line">};</div>
 </div><!-- fragment --> 
 </div>
 </div>
-<a id="gaca474f5975ff342a77f10d82d02e6fe6" name="gaca474f5975ff342a77f10d82d02e6fe6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaca474f5975ff342a77f10d82d02e6fe6">&#9670;&#160;</a></span>registerDataCallback() <span class="overload">[2/2]</span></h2>
+<a id="gab840eaf2c57675f834290b0c40bfcebf" name="gab840eaf2c57675f834290b0c40bfcebf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab840eaf2c57675f834290b0c40bfcebf">&#9670;&#160;</a></span>registerDataCallback() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class DataField , void(*)(void *, const DataField &amp;, uint8_t, <a class="el" href="namespacemip.html#ac74386034393307fd0de0b553ed4fb37">Timestamp</a>) Callback&gt; </div>
+template&lt;class DataField , void(*)(void *, const DataField &amp;, uint8_t, <a class="el" href="namespacemip.html#ab87086630c94254d17a812e4be159b0a">Timestamp</a>) Callback&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void mip::DeviceInterface::registerDataCallback </td>
+          <td class="memname">void mip::Interface::registerDataCallback </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1_c_1_1mip__dispatch__handler.html">C::mip_dispatch_handler</a> &amp;&#160;</td>
           <td class="paramname"><em>handler</em>, </td>
@@ -441,30 +1122,29 @@ template&lt;class DataField , void(*)(void *, const DataField &amp;, uint8_t, <a
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handler</td><td>This must exist as long as the hander remains registered.</td></tr>
+    <tr><td class="paramname">handler</td><td>This must exist as long as the handler remains registered.</td></tr>
     <tr><td class="paramname">userData</td><td>Optional data to pass to the callback function.</td></tr>
-    <tr><td class="paramname">descriptorSet</td><td>If specified, overrides the descriptor set. Intended to be used with with shared data quantities.</td></tr>
+    <tr><td class="paramname">descriptorSet</td><td>If specified, overrides the descriptor set. Intended to be used with shared data quantities.</td></tr>
   </table>
   </dd>
 </dl>
-<p>Example usage: </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> handle_packet(<span class="keywordtype">void</span>* context, <span class="keyword">const</span> <a class="code hl_class" href="classmip_1_1_packet_ref.html">PacketRef</a>&amp; packet, <a class="code hl_typedef" href="namespacemip.html#ac74386034393307fd0de0b553ed4fb37">Timestamp</a> timestamp)</div>
+<p>Example usage: </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> handle_packet(<span class="keywordtype">void</span>* context, <span class="keyword">const</span> PacketRef&amp; packet, <a class="code hl_typedef" href="namespacemip.html#ab87086630c94254d17a812e4be159b0a">Timestamp</a> timestamp)</div>
 <div class="line">{</div>
 <div class="line">  <span class="comment">// Use the packet data</span></div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><a class="code hl_class" href="classmip_1_1_device_interface.html">DeviceInterface</a> device;</div>
+<div class="line"><a class="code hl_class" href="classmip_1_1_interface.html">Interface</a> device;</div>
 <div class="line"><a class="code hl_struct" href="structmip_1_1_c_1_1mip__dispatch__handler.html">DispatchHandler</a> handler;</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup()</div>
 <div class="line">{</div>
 <div class="line">  <span class="comment">// Set up device...</span></div>
 <div class="line"> </div>
-<div class="line">  device.<a class="code hl_function" href="group__mip__cpp.html#gaca474f5975ff342a77f10d82d02e6fe6">registerDataCallback</a>&lt;&amp;handle_packet&gt;(handler, descriptorSet, <span class="keyword">nullptr</span>);</div>
+<div class="line">  device.<a class="code hl_function" href="group__mip__cpp.html#gab840eaf2c57675f834290b0c40bfcebf">registerDataCallback</a>&lt;&amp;handle_packet&gt;(handler, descriptorSet, <span class="keyword">nullptr</span>);</div>
 <div class="line">}</div>
-<div class="ttc" id="aclassmip_1_1_device_interface_html"><div class="ttname"><a href="classmip_1_1_device_interface.html">mip::DeviceInterface</a></div><div class="ttdoc">Represents a connected MIP device.</div><div class="ttdef"><b>Definition</b> mip_device.hpp:178</div></div>
-<div class="ttc" id="aclassmip_1_1_packet_ref_html"><div class="ttname"><a href="classmip_1_1_packet_ref.html">mip::PacketRef</a></div><div class="ttdoc">C++ class representing a MIP PacketRef.</div><div class="ttdef"><b>Definition</b> mip.hpp:138</div></div>
-<div class="ttc" id="agroup__mip__cpp_html_gaca474f5975ff342a77f10d82d02e6fe6"><div class="ttname"><a href="group__mip__cpp.html#gaca474f5975ff342a77f10d82d02e6fe6">mip::DeviceInterface::registerDataCallback</a></div><div class="ttdeci">void registerDataCallback(C::mip_dispatch_handler &amp;handler, void *userData=nullptr, uint8_t descriptorSet=DataField::DESCRIPTOR_SET)</div><div class="ttdoc">Registers a data callback (free function version).</div><div class="ttdef"><b>Definition</b> mip_device.hpp:738</div></div>
-<div class="ttc" id="astructmip_1_1_c_1_1mip__dispatch__handler_html"><div class="ttname"><a href="structmip_1_1_c_1_1mip__dispatch__handler.html">mip::C::mip_dispatch_handler</a></div><div class="ttdoc">Handler information for MIP Packet or Field callbacks.</div><div class="ttdef"><b>Definition</b> mip_dispatch.h:88</div></div>
+<div class="ttc" id="aclassmip_1_1_interface_html"><div class="ttname"><a href="classmip_1_1_interface.html">mip::Interface</a></div><div class="ttdoc">Represents a connected MIP device.</div><div class="ttdef"><b>Definition</b> mip_interface.hpp:56</div></div>
+<div class="ttc" id="agroup__mip__cpp_html_gab840eaf2c57675f834290b0c40bfcebf"><div class="ttname"><a href="group__mip__cpp.html#gab840eaf2c57675f834290b0c40bfcebf">mip::Interface::registerDataCallback</a></div><div class="ttdeci">void registerDataCallback(C::mip_dispatch_handler &amp;handler, void *userData=nullptr, uint8_t descriptorSet=DataField::DESCRIPTOR_SET)</div><div class="ttdoc">Registers a data callback (free function version).</div><div class="ttdef"><b>Definition</b> mip_interface.hpp:620</div></div>
+<div class="ttc" id="astructmip_1_1_c_1_1mip__dispatch__handler_html"><div class="ttname"><a href="structmip_1_1_c_1_1mip__dispatch__handler.html">mip::C::mip_dispatch_handler</a></div><div class="ttdoc">Handler information for MIP Packet or Field callbacks.</div><div class="ttdef"><b>Definition</b> mip_dispatch.h:89</div></div>
 </div><!-- fragment --><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">Callback</td><td>A pointer to the function to call. This must be a constant function pointer.</td></tr>
@@ -473,31 +1153,31 @@ template&lt;class DataField , void(*)(void *, const DataField &amp;, uint8_t, <a
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handler</td><td>This must exist as long as the hander remains registered.</td></tr>
+    <tr><td class="paramname">handler</td><td>This must exist as long as the handler remains registered.</td></tr>
     <tr><td class="paramname">userData</td><td>Optional data to pass to the callback function.</td></tr>
-    <tr><td class="paramname">descriptorSet</td><td>If specified, overrides the descriptor set. Intended to be used with with shared data quantities.</td></tr>
+    <tr><td class="paramname">descriptorSet</td><td>If specified, overrides the descriptor set. Intended to be used with shared data quantities.</td></tr>
   </table>
   </dd>
 </dl>
-<p>Example usage: </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> handle_packet(<span class="keywordtype">void</span>* context, uint8_t descriptorSet, <span class="keyword">const</span> <a class="code hl_class" href="classmip_1_1_packet_ref.html">PacketRef</a>&amp; packet, <a class="code hl_typedef" href="namespacemip.html#ac74386034393307fd0de0b553ed4fb37">Timestamp</a> timestamp)</div>
+<p>Example usage: </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> handle_packet(<span class="keywordtype">void</span>* context, uint8_t descriptorSet, <span class="keyword">const</span> PacketRef&amp; packet, <a class="code hl_typedef" href="namespacemip.html#ab87086630c94254d17a812e4be159b0a">Timestamp</a> timestamp)</div>
 <div class="line">{</div>
 <div class="line">  <span class="comment">// Use the packet data</span></div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><a class="code hl_class" href="classmip_1_1_device_interface.html">DeviceInterface</a> device;</div>
+<div class="line"><a class="code hl_class" href="classmip_1_1_interface.html">Interface</a> device;</div>
 <div class="line"><a class="code hl_struct" href="structmip_1_1_c_1_1mip__dispatch__handler.html">DispatchHandler</a> handler;</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup()</div>
 <div class="line">{</div>
 <div class="line">  <span class="comment">// Set up device...</span></div>
 <div class="line"> </div>
-<div class="line">  device.<a class="code hl_function" href="group__mip__cpp.html#gaca474f5975ff342a77f10d82d02e6fe6">registerDataCallback</a>&lt;&amp;handle_packet&gt;(handler, descriptorSet, <span class="keyword">nullptr</span>);</div>
+<div class="line">  device.<a class="code hl_function" href="group__mip__cpp.html#gab840eaf2c57675f834290b0c40bfcebf">registerDataCallback</a>&lt;&amp;handle_packet&gt;(handler, descriptorSet, <span class="keyword">nullptr</span>);</div>
 <div class="line">}</div>
 </div><!-- fragment --> 
 </div>
 </div>
-<a id="ga6cc40c642fe4de908b3b67c8f7c740ec" name="ga6cc40c642fe4de908b3b67c8f7c740ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6cc40c642fe4de908b3b67c8f7c740ec">&#9670;&#160;</a></span>registerExtractor()</h2>
+<a id="gabcda7eb9712efd8ab785db591b41cca3" name="gabcda7eb9712efd8ab785db591b41cca3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabcda7eb9712efd8ab785db591b41cca3">&#9670;&#160;</a></span>registerExtractor()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -505,7 +1185,7 @@ template&lt;class DataField , void(*)(void *, const DataField &amp;, uint8_t, <a
 template&lt;class DataField &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void mip::DeviceInterface::registerExtractor </td>
+          <td class="memname">void mip::Interface::registerExtractor </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1_c_1_1mip__dispatch__handler.html">C::mip_dispatch_handler</a> &amp;&#160;</td>
           <td class="paramname"><em>handler</em>, </td>
@@ -532,16 +1212,16 @@ template&lt;class DataField &gt; </div>
 
 </div>
 </div>
-<a id="gaee72e78a5831747afe2643d603f6d4d5" name="gaee72e78a5831747afe2643d603f6d4d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaee72e78a5831747afe2643d603f6d4d5">&#9670;&#160;</a></span>registerFieldCallback() <span class="overload">[1/2]</span></h2>
+<a id="ga8d9b300faec8661881e7a90c82a1ea73" name="ga8d9b300faec8661881e7a90c82a1ea73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8d9b300faec8661881e7a90c82a1ea73">&#9670;&#160;</a></span>registerFieldCallback() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Object , void(Object::*)(const <a class="el" href="classmip_1_1_field.html">Field</a> &amp;, <a class="el" href="namespacemip.html#ac74386034393307fd0de0b553ed4fb37">Timestamp</a>) Callback&gt; </div>
+template&lt;class Object , void(Object::*)(const <a class="el" href="classmip_1_1_field_view.html">FieldView</a> &amp;, <a class="el" href="namespacemip.html#ab87086630c94254d17a812e4be159b0a">Timestamp</a>) Callback&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void mip::DeviceInterface::registerFieldCallback </td>
+          <td class="memname">void mip::Interface::registerFieldCallback </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1_c_1_1mip__dispatch__handler.html">C::mip_dispatch_handler</a> &amp;&#160;</td>
           <td class="paramname"><em>handler</em>, </td>
@@ -590,7 +1270,7 @@ template&lt;class Object , void(Object::*)(const <a class="el" href="classmip_1_
 </dl>
 <p>Example usage: </p><div class="fragment"><div class="line"><span class="keyword">class </span>MySystem</div>
 <div class="line">{</div>
-<div class="line">  <span class="keywordtype">void</span> handleField(<span class="keyword">const</span> <a class="code hl_class" href="classmip_1_1_field.html">Field</a>&amp; field, <a class="code hl_typedef" href="namespacemip.html#ac74386034393307fd0de0b553ed4fb37">Timestamp</a> timestamp)</div>
+<div class="line">  <span class="keywordtype">void</span> handleField(<span class="keyword">const</span> Field&amp; field, <a class="code hl_typedef" href="namespacemip.html#ab87086630c94254d17a812e4be159b0a">Timestamp</a> timestamp)</div>
 <div class="line">  {</div>
 <div class="line">  }</div>
 <div class="line"> </div>
@@ -600,23 +1280,22 @@ template&lt;class Object , void(Object::*)(const <a class="el" href="classmip_1_
 <div class="line">    device.registerFieldHandler&lt;MySystem, &amp;MySystem::handleField&gt;(fieldHandler, descriptorSet, fieldDescriptor, <span class="keyword">this</span>);</div>
 <div class="line">  }</div>
 <div class="line"> </div>
-<div class="line">  DeviceInterface device;</div>
+<div class="line">  Interface device;</div>
 <div class="line">  DispatchHandler fieldHandler;</div>
 <div class="line">};</div>
-<div class="ttc" id="aclassmip_1_1_field_html"><div class="ttname"><a href="classmip_1_1_field.html">mip::Field</a></div><div class="ttdoc">C++ class representing a MIP field.</div><div class="ttdef"><b>Definition</b> mip.hpp:46</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
-<a id="ga33f19b733a30d68c30fcb0c96987f430" name="ga33f19b733a30d68c30fcb0c96987f430"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga33f19b733a30d68c30fcb0c96987f430">&#9670;&#160;</a></span>registerFieldCallback() <span class="overload">[2/2]</span></h2>
+<a id="ga77e607f61a5d5e6477f246e8a9cd56df" name="ga77e607f61a5d5e6477f246e8a9cd56df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga77e607f61a5d5e6477f246e8a9cd56df">&#9670;&#160;</a></span>registerFieldCallback() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;void(*)(void *, const <a class="el" href="classmip_1_1_field.html">Field</a> &amp;, <a class="el" href="namespacemip.html#ac74386034393307fd0de0b553ed4fb37">Timestamp</a>) Callback&gt; </div>
+template&lt;void(*)(void *, const <a class="el" href="classmip_1_1_field_view.html">FieldView</a> &amp;, <a class="el" href="namespacemip.html#ab87086630c94254d17a812e4be159b0a">Timestamp</a>) Callback&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void mip::DeviceInterface::registerFieldCallback </td>
+          <td class="memname">void mip::Interface::registerFieldCallback </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1_c_1_1mip__dispatch__handler.html">C::mip_dispatch_handler</a> &amp;&#160;</td>
           <td class="paramname"><em>handler</em>, </td>
@@ -663,34 +1342,34 @@ template&lt;void(*)(void *, const <a class="el" href="classmip_1_1_field.html">F
   </table>
   </dd>
 </dl>
-<p>Example usage: </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> handle_field(<span class="keywordtype">void</span>* context, <span class="keyword">const</span> <a class="code hl_class" href="classmip_1_1_field.html">Field</a>&amp; field, <a class="code hl_typedef" href="namespacemip.html#ac74386034393307fd0de0b553ed4fb37">Timestamp</a> timestamp)</div>
+<p>Example usage: </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> handle_field(<span class="keywordtype">void</span>* context, <span class="keyword">const</span> Field&amp; field, <a class="code hl_typedef" href="namespacemip.html#ab87086630c94254d17a812e4be159b0a">Timestamp</a> timestamp)</div>
 <div class="line">{</div>
 <div class="line">  <span class="comment">// Use the field data</span></div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><a class="code hl_class" href="classmip_1_1_device_interface.html">DeviceInterface</a> device;</div>
+<div class="line"><a class="code hl_class" href="classmip_1_1_interface.html">Interface</a> device;</div>
 <div class="line"><a class="code hl_struct" href="structmip_1_1_c_1_1mip__dispatch__handler.html">DispatchHandler</a> handler;</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup()</div>
 <div class="line">{</div>
 <div class="line">  <span class="comment">// Set up device...</span></div>
 <div class="line"> </div>
-<div class="line">  device.<a class="code hl_function" href="classmip_1_1_device_interface.html#a5675081b816c345c618a09df8a6c94ae">registerFieldCallback</a>&lt;&amp;handle_field&gt;(handler, descriptorSet, <span class="keyword">nullptr</span>);</div>
+<div class="line">  device.<a class="code hl_function" href="classmip_1_1_interface.html#aaf3c332a793f51cf47fa5a4ff6795a7c">registerFieldCallback</a>&lt;&amp;handle_field&gt;(handler, descriptorSet, <span class="keyword">nullptr</span>);</div>
 <div class="line">}</div>
-<div class="ttc" id="aclassmip_1_1_device_interface_html_a5675081b816c345c618a09df8a6c94ae"><div class="ttname"><a href="classmip_1_1_device_interface.html#a5675081b816c345c618a09df8a6c94ae">mip::DeviceInterface::registerFieldCallback</a></div><div class="ttdeci">void registerFieldCallback(C::mip_dispatch_handler &amp;handler, uint8_t descriptorSet, uint8_t fieldDescriptor, C::mip_dispatch_field_callback callback, void *userData)</div><div class="ttdef"><b>Definition</b> mip_device.hpp:289</div></div>
+<div class="ttc" id="aclassmip_1_1_interface_html_aaf3c332a793f51cf47fa5a4ff6795a7c"><div class="ttname"><a href="classmip_1_1_interface.html#aaf3c332a793f51cf47fa5a4ff6795a7c">mip::Interface::registerFieldCallback</a></div><div class="ttdeci">void registerFieldCallback(C::mip_dispatch_handler &amp;handler, uint8_t descriptorSet, uint8_t fieldDescriptor, C::mip_dispatch_field_callback callback, void *userData)</div><div class="ttdef"><b>Definition</b> mip_interface.hpp:167</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
-<a id="gaf71804365b4c7a3bffc6cced5f21ba46" name="gaf71804365b4c7a3bffc6cced5f21ba46"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf71804365b4c7a3bffc6cced5f21ba46">&#9670;&#160;</a></span>registerPacketCallback() <span class="overload">[1/2]</span></h2>
+<a id="ga81a19aaab291eba8e80a97e63dacbe01" name="ga81a19aaab291eba8e80a97e63dacbe01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga81a19aaab291eba8e80a97e63dacbe01">&#9670;&#160;</a></span>registerPacketCallback() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Object , void(Object::*)(const <a class="el" href="classmip_1_1_packet_ref.html">PacketRef</a> &amp;, <a class="el" href="namespacemip.html#ac74386034393307fd0de0b553ed4fb37">Timestamp</a>) Callback&gt; </div>
+template&lt;class Object , void(Object::*)(const <a class="el" href="classmip_1_1_packet_view.html">PacketView</a> &amp;, <a class="el" href="namespacemip.html#ab87086630c94254d17a812e4be159b0a">Timestamp</a>) Callback&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void mip::DeviceInterface::registerPacketCallback </td>
+          <td class="memname">void mip::Interface::registerPacketCallback </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1_c_1_1mip__dispatch__handler.html">C::mip_dispatch_handler</a> &amp;&#160;</td>
           <td class="paramname"><em>handler</em>, </td>
@@ -739,7 +1418,7 @@ template&lt;class Object , void(Object::*)(const <a class="el" href="classmip_1_
 </dl>
 <p>Example usage: </p><div class="fragment"><div class="line"><span class="keyword">class </span>MySystem</div>
 <div class="line">{</div>
-<div class="line">  <span class="keywordtype">void</span> handlePacket(<span class="keyword">const</span> <a class="code hl_class" href="classmip_1_1_packet_ref.html">PacketRef</a>&amp; packet, <a class="code hl_typedef" href="namespacemip.html#ac74386034393307fd0de0b553ed4fb37">Timestamp</a> timestamp)</div>
+<div class="line">  <span class="keywordtype">void</span> handlePacket(<span class="keyword">const</span> PacketRef&amp; packet, <a class="code hl_typedef" href="namespacemip.html#ab87086630c94254d17a812e4be159b0a">Timestamp</a> timestamp)</div>
 <div class="line">  {</div>
 <div class="line">  }</div>
 <div class="line"> </div>
@@ -749,22 +1428,22 @@ template&lt;class Object , void(Object::*)(const <a class="el" href="classmip_1_
 <div class="line">    device.registerPacketHandler&lt;MySystem, &amp;MySystem::handlePacket&gt;(packetHandler, descriptorSet, <span class="keyword">this</span>);</div>
 <div class="line">  }</div>
 <div class="line"> </div>
-<div class="line">  DeviceInterface device;</div>
+<div class="line">  Interface device;</div>
 <div class="line">  DispatchHandler packetHandler;</div>
 <div class="line">};</div>
 </div><!-- fragment --> 
 </div>
 </div>
-<a id="gacc59b0f8fe307b7d1a14fff523068950" name="gacc59b0f8fe307b7d1a14fff523068950"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacc59b0f8fe307b7d1a14fff523068950">&#9670;&#160;</a></span>registerPacketCallback() <span class="overload">[2/2]</span></h2>
+<a id="ga9dc7c588218e32a60c182f4cefc50b6e" name="ga9dc7c588218e32a60c182f4cefc50b6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9dc7c588218e32a60c182f4cefc50b6e">&#9670;&#160;</a></span>registerPacketCallback() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;void(*)(void *, const <a class="el" href="classmip_1_1_packet_ref.html">PacketRef</a> &amp;, <a class="el" href="namespacemip.html#ac74386034393307fd0de0b553ed4fb37">Timestamp</a>) Callback&gt; </div>
+template&lt;void(*)(void *, const <a class="el" href="classmip_1_1_packet_view.html">PacketView</a> &amp;, <a class="el" href="namespacemip.html#ab87086630c94254d17a812e4be159b0a">Timestamp</a>) Callback&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void mip::DeviceInterface::registerPacketCallback </td>
+          <td class="memname">void mip::Interface::registerPacketCallback </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1_c_1_1mip__dispatch__handler.html">C::mip_dispatch_handler</a> &amp;&#160;</td>
           <td class="paramname"><em>handler</em>, </td>
@@ -811,21 +1490,21 @@ template&lt;void(*)(void *, const <a class="el" href="classmip_1_1_packet_ref.ht
   </table>
   </dd>
 </dl>
-<p>Example usage: </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> handle_packet(<span class="keywordtype">void</span>* context, <span class="keyword">const</span> <a class="code hl_class" href="classmip_1_1_packet_ref.html">PacketRef</a>&amp; packet, <a class="code hl_typedef" href="namespacemip.html#ac74386034393307fd0de0b553ed4fb37">Timestamp</a> timestamp)</div>
+<p>Example usage: </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> handle_packet(<span class="keywordtype">void</span>* context, <span class="keyword">const</span> PacketRef&amp; packet, <a class="code hl_typedef" href="namespacemip.html#ab87086630c94254d17a812e4be159b0a">Timestamp</a> timestamp)</div>
 <div class="line">{</div>
 <div class="line">  <span class="comment">// Use the packet data</span></div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><a class="code hl_class" href="classmip_1_1_device_interface.html">DeviceInterface</a> device;</div>
+<div class="line"><a class="code hl_class" href="classmip_1_1_interface.html">Interface</a> device;</div>
 <div class="line"><a class="code hl_struct" href="structmip_1_1_c_1_1mip__dispatch__handler.html">DispatchHandler</a> handler;</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup()</div>
 <div class="line">{</div>
 <div class="line">  <span class="comment">// Set up device...</span></div>
 <div class="line"> </div>
-<div class="line">  device.<a class="code hl_function" href="classmip_1_1_device_interface.html#a8e92b1ca105746b58c0250df2796b77a">registerPacketCallback</a>&lt;&amp;handle_packet&gt;(handler, descriptorSet, <span class="keyword">nullptr</span>);</div>
+<div class="line">  device.<a class="code hl_function" href="classmip_1_1_interface.html#ae3b89c56e3a236edbf433e68370197c2">registerPacketCallback</a>&lt;&amp;handle_packet&gt;(handler, descriptorSet, <span class="keyword">nullptr</span>);</div>
 <div class="line">}</div>
-<div class="ttc" id="aclassmip_1_1_device_interface_html_a8e92b1ca105746b58c0250df2796b77a"><div class="ttname"><a href="classmip_1_1_device_interface.html#a8e92b1ca105746b58c0250df2796b77a">mip::DeviceInterface::registerPacketCallback</a></div><div class="ttdeci">void registerPacketCallback(C::mip_dispatch_handler &amp;handler, uint8_t descriptorSet, bool afterFields, C::mip_dispatch_packet_callback callback, void *userData)</div><div class="ttdef"><b>Definition</b> mip_device.hpp:288</div></div>
+<div class="ttc" id="aclassmip_1_1_interface_html_ae3b89c56e3a236edbf433e68370197c2"><div class="ttname"><a href="classmip_1_1_interface.html#ae3b89c56e3a236edbf433e68370197c2">mip::Interface::registerPacketCallback</a></div><div class="ttdeci">void registerPacketCallback(C::mip_dispatch_handler &amp;handler, uint8_t descriptorSet, bool afterFields, C::mip_dispatch_packet_callback callback, void *userData)</div><div class="ttdef"><b>Definition</b> mip_interface.hpp:166</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -852,7 +1531,7 @@ template&lt;class Cmd , class... Args&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacemip.html#adf3e3dd725a2c4f8abde99c473000878">Timeout</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemip.html#afce0ba7e576cfb1bffa07cff38fe1847">Timeout</a>&#160;</td>
           <td class="paramname"><em>additionalTime</em>&#160;</td>
         </tr>
         <tr>
@@ -888,7 +1567,7 @@ template&lt;class Cmd &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacemip.html#adf3e3dd725a2c4f8abde99c473000878">Timeout</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemip.html#afce0ba7e576cfb1bffa07cff38fe1847">Timeout</a>&#160;</td>
           <td class="paramname"><em>additionalTime</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
@@ -930,7 +1609,7 @@ template&lt;class Cmd &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacemip.html#adf3e3dd725a2c4f8abde99c473000878">Timeout</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemip.html#afce0ba7e576cfb1bffa07cff38fe1847">Timeout</a>&#160;</td>
           <td class="paramname"><em>additionalTime</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
@@ -949,7 +1628,7 @@ template&lt;class Cmd &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class T , bool(T::*)(const <a class="el" href="classmip_1_1_packet_ref.html">PacketRef</a> &amp;, <a class="el" href="namespacemip.html#ac74386034393307fd0de0b553ed4fb37">Timestamp</a>) Callback&gt; </div>
+template&lt;class T , bool(T::*)(const <a class="el" href="classmip_1_1_packet_view.html">PacketView</a> &amp;, <a class="el" href="namespacemip.html#ab87086630c94254d17a812e4be159b0a">Timestamp</a>) Callback&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void mip::Parser::setCallback </td>
@@ -964,12 +1643,12 @@ template&lt;class T , bool(T::*)(const <a class="el" href="classmip_1_1_packet_r
 <p>Initializes the MIP <a class="el" href="classmip_1_1_parser.html" title="C++ class representing a MIP parser.">Parser</a>. </p>
 <p>This version allows binding a member function instead of a C-style callback. Example: </p><div class="fragment"><div class="line"><span class="keyword">struct </span>MyClass</div>
 <div class="line">{</div>
-<div class="line">    <span class="keywordtype">void</span> handlePacket(<span class="keyword">const</span> <a class="code hl_class" href="classmip_1_1_packet_ref.html">PacketRef</a>&amp; packet, <a class="code hl_typedef" href="namespacemip.html#adf3e3dd725a2c4f8abde99c473000878">Timeout</a> timeout);</div>
+<div class="line">    <span class="keywordtype">void</span> handlePacket(<span class="keyword">const</span> PacketRef&amp; packet, <a class="code hl_typedef" href="namespacemip.html#afce0ba7e576cfb1bffa07cff38fe1847">Timeout</a> timeout);</div>
 <div class="line">};</div>
 <div class="line">MyClass myInstance;</div>
 <div class="line"><a class="code hl_class" href="classmip_1_1_parser.html">Parser</a> parser&lt;MyClass, &amp;MyClass::handlePacket&gt;(myInstance);</div>
-<div class="ttc" id="aclassmip_1_1_parser_html"><div class="ttname"><a href="classmip_1_1_parser.html">mip::Parser</a></div><div class="ttdoc">C++ class representing a MIP parser.</div><div class="ttdef"><b>Definition</b> mip.hpp:404</div></div>
-<div class="ttc" id="anamespacemip_html_adf3e3dd725a2c4f8abde99c473000878"><div class="ttname"><a href="namespacemip.html#adf3e3dd725a2c4f8abde99c473000878">mip::Timeout</a></div><div class="ttdeci">C::mip_timeout Timeout</div><div class="ttdef"><b>Definition</b> mip_types.h:57</div></div>
+<div class="ttc" id="aclassmip_1_1_parser_html"><div class="ttname"><a href="classmip_1_1_parser.html">mip::Parser</a></div><div class="ttdoc">C++ class representing a MIP parser.</div><div class="ttdef"><b>Definition</b> mip_parser.hpp:20</div></div>
+<div class="ttc" id="anamespacemip_html_afce0ba7e576cfb1bffa07cff38fe1847"><div class="ttname"><a href="namespacemip.html#afce0ba7e576cfb1bffa07cff38fe1847">mip::Timeout</a></div><div class="ttdeci">microstrain::EmbeddedTimeout Timeout</div><div class="ttdef"><b>Definition</b> mip_types.h:51</div></div>
 </div><!-- fragment --><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>Class type containing the member function to be called. </td></tr>
@@ -986,16 +1665,16 @@ template&lt;class T , bool(T::*)(const <a class="el" href="classmip_1_1_packet_r
 
 </div>
 </div>
-<a id="gaae160182bd1d469e40caa477a0244333" name="gaae160182bd1d469e40caa477a0244333"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaae160182bd1d469e40caa477a0244333">&#9670;&#160;</a></span>setCallbacks()</h2>
+<a id="ga22f7b42a0fa9629f1613dd32736d0090" name="ga22f7b42a0fa9629f1613dd32736d0090"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga22f7b42a0fa9629f1613dd32736d0090">&#9670;&#160;</a></span>setCallbacks()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class T , bool(T::*)(const uint8_t *, size_t) Send, bool(T::*)(uint8_t *, size_t, <a class="el" href="namespacemip.html#adf3e3dd725a2c4f8abde99c473000878">Timeout</a>, size_t *, <a class="el" href="namespacemip.html#ac74386034393307fd0de0b553ed4fb37">Timestamp</a> *) Recv, bool(T::*)(<a class="el" href="namespacemip.html#adf3e3dd725a2c4f8abde99c473000878">Timeout</a>) Update&gt; </div>
+template&lt;class T , bool(T::*)(const uint8_t *, size_t) Send, bool(T::*)(uint8_t *, size_t, <a class="el" href="namespacemip.html#afce0ba7e576cfb1bffa07cff38fe1847">Timeout</a>, size_t *, <a class="el" href="namespacemip.html#ab87086630c94254d17a812e4be159b0a">Timestamp</a> *) Recv, bool(T::*)(<a class="el" href="namespacemip.html#afce0ba7e576cfb1bffa07cff38fe1847">Timeout</a>) Update&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void mip::DeviceInterface::setCallbacks </td>
+          <td class="memname">void mip::Interface::setCallbacks </td>
           <td>(</td>
           <td class="paramtype">T *&#160;</td>
           <td class="paramname"><em>object</em></td><td>)</td>
@@ -1023,27 +1702,27 @@ template&lt;class T , bool(T::*)(const uint8_t *, size_t) Send, bool(T::*)(uint8
 <div class="fragment"><div class="line"><span class="keyword">class </span>DeviceConnection</div>
 <div class="line">{</div>
 <div class="line">    <span class="keywordtype">bool</span> send(<span class="keyword">const</span> uint8_t* data, <span class="keywordtype">size_t</span> length);</div>
-<div class="line">    <span class="keywordtype">bool</span> recv(uint8_t* buffer, <span class="keywordtype">size_t</span> max_length, <a class="code hl_typedef" href="namespacemip.html#adf3e3dd725a2c4f8abde99c473000878">Timeout</a> wait_time, <span class="keywordtype">size_t</span>* length_out, <a class="code hl_typedef" href="namespacemip.html#ac74386034393307fd0de0b553ed4fb37">Timestamp</a>* timestamp_out);</div>
+<div class="line">    <span class="keywordtype">bool</span> recv(uint8_t* buffer, <span class="keywordtype">size_t</span> max_length, <a class="code hl_typedef" href="namespacemip.html#afce0ba7e576cfb1bffa07cff38fe1847">Timeout</a> wait_time, <span class="keywordtype">size_t</span>* length_out, <a class="code hl_typedef" href="namespacemip.html#ab87086630c94254d17a812e4be159b0a">Timestamp</a>* timestamp_out);</div>
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line">DeviceConnection connection;</div>
-<div class="line"><a class="code hl_class" href="classmip_1_1_device_interface.html">mip::DeviceInterface</a> interface;</div>
+<div class="line"><a class="code hl_class" href="classmip_1_1_interface.html">mip::Interface</a> interface;</div>
 <div class="line"> </div>
-<div class="line">interface.<a class="code hl_function" href="group__mip__cpp.html#gaae160182bd1d469e40caa477a0244333">setCallbacks</a>&lt;DeviceConnection, &amp;DeviceConnection::send, &amp;DeviceConnection::recv, <span class="keyword">nullptr</span>&gt;(&amp;connection);</div>
-<div class="ttc" id="agroup__mip__cpp_html_gaae160182bd1d469e40caa477a0244333"><div class="ttname"><a href="group__mip__cpp.html#gaae160182bd1d469e40caa477a0244333">mip::DeviceInterface::setCallbacks</a></div><div class="ttdeci">void setCallbacks(T *object)</div><div class="ttdoc">Sets the callback functions to a common class object.</div><div class="ttdef"><b>Definition</b> mip_device.hpp:505</div></div>
+<div class="line">interface.<a class="code hl_function" href="group__mip__cpp.html#ga22f7b42a0fa9629f1613dd32736d0090">setCallbacks</a>&lt;DeviceConnection, &amp;DeviceConnection::send, &amp;DeviceConnection::recv, <span class="keyword">nullptr</span>&gt;(&amp;connection);</div>
+<div class="ttc" id="agroup__mip__cpp_html_ga22f7b42a0fa9629f1613dd32736d0090"><div class="ttname"><a href="group__mip__cpp.html#ga22f7b42a0fa9629f1613dd32736d0090">mip::Interface::setCallbacks</a></div><div class="ttdeci">void setCallbacks(T *object)</div><div class="ttdoc">Sets the callback functions to a common class object.</div><div class="ttdef"><b>Definition</b> mip_interface.hpp:383</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
-<a id="gaec766448adf8a4b7ad818018c45bec1a" name="gaec766448adf8a4b7ad818018c45bec1a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaec766448adf8a4b7ad818018c45bec1a">&#9670;&#160;</a></span>setRecvFunction() <span class="overload">[1/2]</span></h2>
+<a id="gaf599f785eb63197143ed6e11777b58a7" name="gaf599f785eb63197143ed6e11777b58a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf599f785eb63197143ed6e11777b58a7">&#9670;&#160;</a></span>setRecvFunction() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;bool(*)(<a class="el" href="classmip_1_1_device_interface.html">DeviceInterface</a> &amp;, uint8_t *, size_t, <a class="el" href="namespacemip.html#adf3e3dd725a2c4f8abde99c473000878">Timeout</a>, size_t *, <a class="el" href="namespacemip.html#ac74386034393307fd0de0b553ed4fb37">Timestamp</a> *) Recv&gt; </div>
+template&lt;bool(*)(<a class="el" href="classmip_1_1_interface.html">Interface</a> &amp;, uint8_t *, size_t, <a class="el" href="namespacemip.html#afce0ba7e576cfb1bffa07cff38fe1847">Timeout</a>, size_t *, <a class="el" href="namespacemip.html#ab87086630c94254d17a812e4be159b0a">Timestamp</a> *) Recv&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void mip::DeviceInterface::setRecvFunction </td>
+          <td class="memname">void mip::Interface::setRecvFunction </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1054,23 +1733,23 @@ template&lt;bool(*)(<a class="el" href="classmip_1_1_device_interface.html">Devi
 <p>Sets the receive callback function (free function version). </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">Send</td><td>A compile-time pointer to the callback function. </td></tr>
+    <tr><td class="paramname">Recv</td><td>A compile-time pointer to the callback function. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="ga2a19c50505d3a527449ca99d9df90cac" name="ga2a19c50505d3a527449ca99d9df90cac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2a19c50505d3a527449ca99d9df90cac">&#9670;&#160;</a></span>setRecvFunction() <span class="overload">[2/2]</span></h2>
+<a id="ga58c2d746d6496c4ee8beb14486077c04" name="ga58c2d746d6496c4ee8beb14486077c04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga58c2d746d6496c4ee8beb14486077c04">&#9670;&#160;</a></span>setRecvFunction() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived , bool(Derived::*)(uint8_t *, size_t, <a class="el" href="namespacemip.html#adf3e3dd725a2c4f8abde99c473000878">Timeout</a>, size_t *, <a class="el" href="namespacemip.html#ac74386034393307fd0de0b553ed4fb37">Timestamp</a> *) Recv&gt; </div>
+template&lt;class Derived , bool(Derived::*)(uint8_t *, size_t, <a class="el" href="namespacemip.html#afce0ba7e576cfb1bffa07cff38fe1847">Timeout</a>, size_t *, <a class="el" href="namespacemip.html#ab87086630c94254d17a812e4be159b0a">Timestamp</a> *) Recv&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void mip::DeviceInterface::setRecvFunction </td>
+          <td class="memname">void mip::Interface::setRecvFunction </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1081,25 +1760,25 @@ template&lt;class Derived , bool(Derived::*)(uint8_t *, size_t, <a class="el" hr
 <p>Sets the receive callback function (derived member function version). </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">Derived</td><td>Derived class type. Must inherit from <a class="el" href="classmip_1_1_device_interface.html" title="Represents a connected MIP device.">DeviceInterface</a>. </td></tr>
+    <tr><td class="paramname">Derived</td><td>Derived class type. Must inherit from <a class="el" href="classmip_1_1_interface.html" title="Represents a connected MIP device.">Interface</a>. </td></tr>
     <tr><td class="paramname">Recv</td><td>Compile-time pointer to member function of Derived.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__mip__cpp.html#gab157c25d6da10be3887e16d996298998" title="Sets the send callback function (free function version).">DeviceInterface::setSendFunction()</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__mip__cpp.html#ga663cfbe18f0f912a895bde267a7b158f" title="Sets the send callback function (free function version).">Interface::setSendFunction()</a> </dd></dl>
 
 </div>
 </div>
-<a id="gab157c25d6da10be3887e16d996298998" name="gab157c25d6da10be3887e16d996298998"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab157c25d6da10be3887e16d996298998">&#9670;&#160;</a></span>setSendFunction() <span class="overload">[1/2]</span></h2>
+<a id="ga663cfbe18f0f912a895bde267a7b158f" name="ga663cfbe18f0f912a895bde267a7b158f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga663cfbe18f0f912a895bde267a7b158f">&#9670;&#160;</a></span>setSendFunction() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;bool(*)(<a class="el" href="classmip_1_1_device_interface.html">DeviceInterface</a> &amp;, const uint8_t *, size_t) Send&gt; </div>
+template&lt;bool(*)(<a class="el" href="classmip_1_1_interface.html">Interface</a> &amp;, const uint8_t *, size_t) Send&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void mip::DeviceInterface::setSendFunction </td>
+          <td class="memname">void mip::Interface::setSendFunction </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1117,8 +1796,8 @@ template&lt;bool(*)(<a class="el" href="classmip_1_1_device_interface.html">Devi
 
 </div>
 </div>
-<a id="gab1e718a8c63ecdfe8648a253d090004d" name="gab1e718a8c63ecdfe8648a253d090004d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab1e718a8c63ecdfe8648a253d090004d">&#9670;&#160;</a></span>setSendFunction() <span class="overload">[2/2]</span></h2>
+<a id="ga56015e32fabc942e28faeffebfbdb268" name="ga56015e32fabc942e28faeffebfbdb268"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga56015e32fabc942e28faeffebfbdb268">&#9670;&#160;</a></span>setSendFunction() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1126,7 +1805,7 @@ template&lt;bool(*)(<a class="el" href="classmip_1_1_device_interface.html">Devi
 template&lt;class Derived , bool(Derived::*)(const uint8_t *, size_t) Send&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void mip::DeviceInterface::setSendFunction </td>
+          <td class="memname">void mip::Interface::setSendFunction </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1137,38 +1816,35 @@ template&lt;class Derived , bool(Derived::*)(const uint8_t *, size_t) Send&gt; <
 <p>Sets the send callback function (derived member function version). </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">Derived</td><td>Derived class type. Must inherit from <a class="el" href="classmip_1_1_device_interface.html" title="Represents a connected MIP device.">DeviceInterface</a>. </td></tr>
+    <tr><td class="paramname">Derived</td><td>Derived class type. Must inherit from <a class="el" href="classmip_1_1_interface.html" title="Represents a connected MIP device.">Interface</a>. </td></tr>
     <tr><td class="paramname">Send</td><td>Compile-time pointer to member function of Derived.</td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="keyword">class </span>MyClass : <span class="keyword">public</span> <a class="code hl_class" href="classmip_1_1_device_interface.html">mip::DeviceInterface</a></div>
+<div class="fragment"><div class="line"><span class="keyword">class </span>MyClass : <span class="keyword">public</span> <a class="code hl_class" href="classmip_1_1_interface.html">mip::Interface</a></div>
 <div class="line">{</div>
 <div class="line">    <span class="keywordtype">bool</span> sendToDevice(<span class="keyword">const</span> uint8_t* data, <span class="keywordtype">size_t</span> size);</div>
-<div class="line">    <span class="keywordtype">bool</span> recvFromDevice(uint8_t* data, <span class="keywordtype">size_t</span> max_length, <a class="code hl_typedef" href="namespacemip.html#adf3e3dd725a2c4f8abde99c473000878">Timeout</a> wait_time, <span class="keywordtype">size_t</span>* length_out, <a class="code hl_typedef" href="namespacemip.html#ac74386034393307fd0de0b553ed4fb37">Timestamp</a>* timestamp_out);</div>
+<div class="line">    <span class="keywordtype">bool</span> recvFromDevice(uint8_t* data, <span class="keywordtype">size_t</span> max_length, <a class="code hl_typedef" href="namespacemip.html#afce0ba7e576cfb1bffa07cff38fe1847">Timeout</a> wait_time, <span class="keywordtype">size_t</span>* length_out, <a class="code hl_typedef" href="namespacemip.html#ab87086630c94254d17a812e4be159b0a">Timestamp</a>* timestamp_out);</div>
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line">MyClass instance;</div>
 <div class="line">instance.setSendFunction&lt;MyClass, &amp;MyClass::sendToDevice&gt;();</div>
 <div class="line">instance.setRecvFunction&lt;MyClass, &amp;MyClass::recvFromDevice&gt;();</div>
 <div class="line"> </div>
-<div class="line">instance.setCallbacks&lt;<a class="code hl_class" href="classmip_1_1_connection.html">Connection</a>, &amp;<a class="code hl_function" href="classmip_1_1_connection.html#ad56be6630183ec4cc9cf5f59b4d46e53">Connection::sendToDevice</a>, &amp;<a class="code hl_function" href="classmip_1_1_connection.html#a07b2f8cd73574f0da74fbb0b82a7f1c3">Connection::recvFromDevice</a>&gt;(connection);</div>
-<div class="ttc" id="aclassmip_1_1_connection_html"><div class="ttname"><a href="classmip_1_1_connection.html">mip::Connection</a></div><div class="ttdoc">Represents a type of connection to a MIP device.</div><div class="ttdef"><b>Definition</b> mip_device.hpp:145</div></div>
-<div class="ttc" id="aclassmip_1_1_connection_html_a07b2f8cd73574f0da74fbb0b82a7f1c3"><div class="ttname"><a href="classmip_1_1_connection.html#a07b2f8cd73574f0da74fbb0b82a7f1c3">mip::Connection::recvFromDevice</a></div><div class="ttdeci">virtual bool recvFromDevice(uint8_t *buffer, size_t max_length, Timeout wait_time, size_t *length_out, Timestamp *timestamp_out)=0</div><div class="ttdoc">Receives bytes from the device.</div></div>
-<div class="ttc" id="aclassmip_1_1_connection_html_ad56be6630183ec4cc9cf5f59b4d46e53"><div class="ttname"><a href="classmip_1_1_connection.html#ad56be6630183ec4cc9cf5f59b4d46e53">mip::Connection::sendToDevice</a></div><div class="ttdeci">virtual bool sendToDevice(const uint8_t *data, size_t length)=0</div><div class="ttdoc">Sends bytes to the device.</div></div>
+<div class="line">instance.setCallbacks&lt;Connection, &amp;Connection::sendToDevice, &amp;Connection::recvFromDevice&gt;(connection);</div>
 </div><!-- fragment --> 
 </div>
 </div>
-<a id="ga366225ba5c31c4906f56be549688ae16" name="ga366225ba5c31c4906f56be549688ae16"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga366225ba5c31c4906f56be549688ae16">&#9670;&#160;</a></span>setUpdateFunction() <span class="overload">[1/2]</span></h2>
+<a id="gab35a60676a9f66ee660c4d6dc787e427" name="gab35a60676a9f66ee660c4d6dc787e427"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab35a60676a9f66ee660c4d6dc787e427">&#9670;&#160;</a></span>setUpdateFunction() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;bool(*)(<a class="el" href="classmip_1_1_device_interface.html">DeviceInterface</a> &amp;, <a class="el" href="namespacemip.html#adf3e3dd725a2c4f8abde99c473000878">Timeout</a>) Update&gt; </div>
+template&lt;bool(*)(<a class="el" href="classmip_1_1_interface.html">Interface</a> &amp;, <a class="el" href="namespacemip.html#afce0ba7e576cfb1bffa07cff38fe1847">Timeout</a>) Update&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void mip::DeviceInterface::setUpdateFunction </td>
+          <td class="memname">void mip::Interface::setUpdateFunction </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1179,23 +1855,23 @@ template&lt;bool(*)(<a class="el" href="classmip_1_1_device_interface.html">Devi
 <p>Sets the update callback function (free function version). </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">Send</td><td>A compile-time pointer to the callback function. </td></tr>
+    <tr><td class="paramname">Update</td><td>A compile-time pointer to the callback function. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="ga63e5cee11d633a44ec4cee9ce9c1b603" name="ga63e5cee11d633a44ec4cee9ce9c1b603"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga63e5cee11d633a44ec4cee9ce9c1b603">&#9670;&#160;</a></span>setUpdateFunction() <span class="overload">[2/2]</span></h2>
+<a id="ga5352a5d901ed9d561c34a106a270ae79" name="ga5352a5d901ed9d561c34a106a270ae79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5352a5d901ed9d561c34a106a270ae79">&#9670;&#160;</a></span>setUpdateFunction() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived , bool(Derived::*)(<a class="el" href="namespacemip.html#adf3e3dd725a2c4f8abde99c473000878">Timeout</a>) Update&gt; </div>
+template&lt;class Derived , bool(Derived::*)(<a class="el" href="namespacemip.html#afce0ba7e576cfb1bffa07cff38fe1847">Timeout</a>) Update&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void mip::DeviceInterface::setUpdateFunction </td>
+          <td class="memname">void mip::Interface::setUpdateFunction </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1206,12 +1882,12 @@ template&lt;class Derived , bool(Derived::*)(<a class="el" href="namespacemip.ht
 <p>Sets the update callback function (derived member function version). </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">Derived</td><td>Derived class type. Must inherit from <a class="el" href="classmip_1_1_device_interface.html" title="Represents a connected MIP device.">DeviceInterface</a>. </td></tr>
+    <tr><td class="paramname">Derived</td><td>Derived class type. Must inherit from <a class="el" href="classmip_1_1_interface.html" title="Represents a connected MIP device.">Interface</a>. </td></tr>
     <tr><td class="paramname">Update</td><td>Compile-time pointer to member function of Derived.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__mip__cpp.html#gab157c25d6da10be3887e16d996298998" title="Sets the send callback function (free function version).">DeviceInterface::setSendFunction()</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__mip__cpp.html#ga663cfbe18f0f912a895bde267a7b158f" title="Sets the send callback function (free function version).">Interface::setSendFunction()</a> </dd></dl>
 
 </div>
 </div>
@@ -1244,7 +1920,7 @@ template&lt;class Cmd &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacemip.html#adf3e3dd725a2c4f8abde99c473000878">Timeout</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemip.html#afce0ba7e576cfb1bffa07cff38fe1847">Timeout</a>&#160;</td>
           <td class="paramname"><em>additionalTime</em>&#160;</td>
         </tr>
         <tr>

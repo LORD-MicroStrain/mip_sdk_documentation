@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MIP SDK: src/mip/mip_parser.c File Reference</title>
+<title>MIP_SDK: src/c/mip/mip_parser.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v2.0.0-1-g65a7b37</span>
+   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-137-g8a814ec</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -70,7 +70,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0652f4f834e91e7f754984a58c1d13cb.html">mip</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_3b19ecf29356981f494745fbef7e56bf.html">c</a></li><li class="navelem"><a class="el" href="dir_055b1db5f1a3d744682f684d38e2c4e5.html">mip</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -100,9 +100,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a54e567c6a1f5966cb4ee389f28b83f6e" id="r_a54e567c6a1f5966cb4ee389f28b83f6e"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__parser_8c.html#a54e567c6a1f5966cb4ee389f28b83f6e">mip_parser_parse</a> (mip_parser *parser, const uint8_t *input_buffer, size_t input_count, mip_timestamp timestamp, unsigned int max_packets)</td></tr>
 <tr class="memdesc:a54e567c6a1f5966cb4ee389f28b83f6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses packets from the input data buffer.  <br /></td></tr>
 <tr class="separator:a54e567c6a1f5966cb4ee389f28b83f6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acac4d26774fcccd0cff1039c719c72af" id="r_acac4d26774fcccd0cff1039c719c72af"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__parser_8c.html#acac4d26774fcccd0cff1039c719c72af">mip_parser_parse_one_packet_from_ring</a> (mip_parser *parser, mip_packet *packet_out, mip_timestamp timestamp)</td></tr>
-<tr class="memdesc:acac4d26774fcccd0cff1039c719c72af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a single packet from the internal buffer.  <br /></td></tr>
-<tr class="separator:acac4d26774fcccd0cff1039c719c72af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a4bfadc7379894abe488479fd41827e" id="r_a5a4bfadc7379894abe488479fd41827e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__parser_8c.html#a5a4bfadc7379894abe488479fd41827e">mip_parser_parse_one_packet_from_ring</a> (mip_parser *parser, mip_packet_view *packet_out, mip_timestamp timestamp)</td></tr>
+<tr class="memdesc:a5a4bfadc7379894abe488479fd41827e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a single packet from the internal buffer.  <br /></td></tr>
+<tr class="separator:a5a4bfadc7379894abe488479fd41827e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae79c355aeefe2296b2ed1413f76bcb23" id="r_ae79c355aeefe2296b2ed1413f76bcb23"><td class="memItemLeft" align="right" valign="top">mip_timestamp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__parser_8c.html#ae79c355aeefe2296b2ed1413f76bcb23">mip_parser_timeout</a> (const mip_parser *parser)</td></tr>
 <tr class="memdesc:ae79c355aeefe2296b2ed1413f76bcb23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the packet timeout of the parser.  <br /></td></tr>
 <tr class="separator:ae79c355aeefe2296b2ed1413f76bcb23"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -403,8 +403,8 @@ The parser will do its best to ignore non-MIP data. However, it is possible for 
 
 </div>
 </div>
-<a id="acac4d26774fcccd0cff1039c719c72af" name="acac4d26774fcccd0cff1039c719c72af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acac4d26774fcccd0cff1039c719c72af">&#9670;&#160;</a></span>mip_parser_parse_one_packet_from_ring()</h2>
+<a id="a5a4bfadc7379894abe488479fd41827e" name="a5a4bfadc7379894abe488479fd41827e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a4bfadc7379894abe488479fd41827e">&#9670;&#160;</a></span>mip_parser_parse_one_packet_from_ring()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -418,7 +418,7 @@ The parser will do its best to ignore non-MIP data. However, it is possible for 
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">mip_packet *&#160;</td>
+          <td class="paramtype">mip_packet_view *&#160;</td>
           <td class="paramname"><em>packet_out</em>, </td>
         </tr>
         <tr>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MIP SDK: src/mip/mip_types.h File Reference</title>
+<title>MIP_SDK: src/c/mip/mip_types.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v2.0.0-1-g65a7b37</span>
+   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-137-g8a814ec</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -70,7 +70,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0652f4f834e91e7f754984a58c1d13cb.html">mip</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_3b19ecf29356981f494745fbef7e56bf.html">c</a></li><li class="navelem"><a class="el" href="dir_055b1db5f1a3d744682f684d38e2c4e5.html">mip</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -84,6 +84,7 @@ $(function() {
 <div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;stddef.h&gt;</code><br />
 <code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="embedded__time_8hpp_source.html">microstrain/common/embedded_time.hpp</a>&gt;</code><br />
 </div>
 <p><a href="mip__types_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -104,15 +105,14 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a7a0c2c95e0e72de587a1e92037fe24b9" id="r_a7a0c2c95e0e72de587a1e92037fe24b9"><td class="memItemLeft" align="right" valign="top">typedef uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip_1_1_c.html#a7a0c2c95e0e72de587a1e92037fe24b9">mip::C::mip_timestamp</a></td></tr>
-<tr class="memdesc:a7a0c2c95e0e72de587a1e92037fe24b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type used for packet timestamps and timeouts.  <br /></td></tr>
-<tr class="separator:a7a0c2c95e0e72de587a1e92037fe24b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac478e9c2b3aea362d06961030e329219" id="r_ac478e9c2b3aea362d06961030e329219"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="namespacemip_1_1_c.html#a7a0c2c95e0e72de587a1e92037fe24b9">mip_timestamp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip_1_1_c.html#ac478e9c2b3aea362d06961030e329219">mip::C::mip_timeout</a></td></tr>
-<tr class="separator:ac478e9c2b3aea362d06961030e329219"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac74386034393307fd0de0b553ed4fb37" id="r_ac74386034393307fd0de0b553ed4fb37"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip.html#ac74386034393307fd0de0b553ed4fb37">mip::Timestamp</a> = <a class="el" href="namespacemip_1_1_c.html#a7a0c2c95e0e72de587a1e92037fe24b9">C::mip_timestamp</a></td></tr>
-<tr class="separator:ac74386034393307fd0de0b553ed4fb37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf3e3dd725a2c4f8abde99c473000878" id="r_adf3e3dd725a2c4f8abde99c473000878"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip.html#adf3e3dd725a2c4f8abde99c473000878">mip::Timeout</a> = <a class="el" href="namespacemip_1_1_c.html#ac478e9c2b3aea362d06961030e329219">C::mip_timeout</a></td></tr>
-<tr class="separator:adf3e3dd725a2c4f8abde99c473000878"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a24a1913ffba77cdd608c5fb7575f37" id="r_a8a24a1913ffba77cdd608c5fb7575f37"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="namespacemicrostrain_1_1_c.html#a414dbc5e176e1ea7fd890d8a4353dd6b">microstrain::C::microstrain_embedded_timestamp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip_1_1_c.html#a8a24a1913ffba77cdd608c5fb7575f37">mip::C::mip_timestamp</a></td></tr>
+<tr class="separator:a8a24a1913ffba77cdd608c5fb7575f37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb7a010ab523fc31b023122aa9b8e524" id="r_aeb7a010ab523fc31b023122aa9b8e524"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="namespacemicrostrain_1_1_c.html#a414dbc5e176e1ea7fd890d8a4353dd6b">microstrain::C::microstrain_embedded_timestamp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip_1_1_c.html#aeb7a010ab523fc31b023122aa9b8e524">mip::C::mip_timeout</a></td></tr>
+<tr class="separator:aeb7a010ab523fc31b023122aa9b8e524"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab87086630c94254d17a812e4be159b0a" id="r_ab87086630c94254d17a812e4be159b0a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip.html#ab87086630c94254d17a812e4be159b0a">mip::Timestamp</a> = <a class="el" href="namespacemicrostrain.html#af73e34a0b5ae1565e0e36a769c381ee1">microstrain::EmbeddedTimestamp</a></td></tr>
+<tr class="separator:ab87086630c94254d17a812e4be159b0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afce0ba7e576cfb1bffa07cff38fe1847" id="r_afce0ba7e576cfb1bffa07cff38fe1847"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip.html#afce0ba7e576cfb1bffa07cff38fe1847">mip::Timeout</a> = <a class="el" href="namespacemicrostrain.html#a87678128971532436007682ebe2017c6">microstrain::EmbeddedTimeout</a></td></tr>
+<tr class="separator:afce0ba7e576cfb1bffa07cff38fe1847"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a1261f6e153396902e5d3b86d992fe5e8" name="a1261f6e153396902e5d3b86d992fe5e8"></a>

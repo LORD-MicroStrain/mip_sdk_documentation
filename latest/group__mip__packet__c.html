@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MIP SDK: Mip Packet [C]</title>
+<title>MIP_SDK: Mip Packet [C]</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v2.0.0-1-g65a7b37</span>
+   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-137-g8a814ec</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -88,34 +88,36 @@ Modules</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:group___accessors" id="r_group___accessors"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___accessors.html">Accessors - Functions for accessing information about an existing MIP packet.</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:group___serialization" id="r_group___serialization"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___serialization.html">Serializers - Functions for serializing a MIP packet.</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_c_1_1mip__packet.html">mip::C::mip_packet</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure representing a MIP Packet.  <a href="structmip_1_1_c_1_1mip__packet.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_c_1_1mip__packet__view.html">mip::C::mip_packet_view</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure representing a MIP Packet.  <a href="structmip_1_1_c_1_1mip__packet__view.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga6f448bb3beda765a6f30034bc041dd8c" id="r_ga6f448bb3beda765a6f30034bc041dd8c"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structmip_1_1_c_1_1mip__packet.html">mip::C::mip_packet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__packet__c.html#ga6f448bb3beda765a6f30034bc041dd8c">mip::C::mip_packet</a></td></tr>
-<tr class="memdesc:ga6f448bb3beda765a6f30034bc041dd8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure representing a MIP Packet.  <br /></td></tr>
-<tr class="separator:ga6f448bb3beda765a6f30034bc041dd8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga28b4bb8fcafed70f07fbf8034e5abe01" id="r_ga28b4bb8fcafed70f07fbf8034e5abe01"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structmip_1_1_c_1_1mip__packet__view.html">mip::C::mip_packet_view</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__packet__c.html#ga28b4bb8fcafed70f07fbf8034e5abe01">mip::C::mip_packet_view</a></td></tr>
+<tr class="memdesc:ga28b4bb8fcafed70f07fbf8034e5abe01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure representing a MIP Packet.  <br /></td></tr>
+<tr class="separator:ga28b4bb8fcafed70f07fbf8034e5abe01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Functions for handling MIP packets. </p>
-<p>A MIP Packet is represented by the <a class="el" href="structmip_1_1_c_1_1mip__packet.html" title="Structure representing a MIP Packet.">mip_packet</a> struct.</p>
+<p>A MIP Packet is represented by the <a class="el" href="structmip_1_1_c_1_1mip__packet__view.html" title="Structure representing a MIP Packet.">mip_packet_view</a> struct.</p>
 <div class="fragment"><div class="line">+-------+-------+------+------+------------+-----/ /----+------------+----</div>
 <div class="line">| SYNC1 | SYNC2 | DESC | PLEN |   Field    |     ...    |  Checksum  |  remaining buffer space...</div>
 <div class="line">+-------+-------+------+------+------------+-----/ /----+------------+----</div>
 </div><!-- fragment --> <h2 class="groupheader">Typedef Documentation</h2>
-<a id="ga6f448bb3beda765a6f30034bc041dd8c" name="ga6f448bb3beda765a6f30034bc041dd8c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6f448bb3beda765a6f30034bc041dd8c">&#9670;&#160;</a></span>mip_packet</h2>
+<a id="ga28b4bb8fcafed70f07fbf8034e5abe01" name="ga28b4bb8fcafed70f07fbf8034e5abe01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga28b4bb8fcafed70f07fbf8034e5abe01">&#9670;&#160;</a></span>mip_packet_view</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef struct <a class="el" href="structmip_1_1_c_1_1mip__packet.html">mip::C::mip_packet</a> <a class="el" href="structmip_1_1_c_1_1mip__packet.html">mip::C::mip_packet</a></td>
+          <td class="memname">typedef struct <a class="el" href="structmip_1_1_c_1_1mip__packet__view.html">mip::C::mip_packet_view</a> <a class="el" href="structmip_1_1_c_1_1mip__packet__view.html">mip::C::mip_packet_view</a></td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -16,5 +16,5 @@ var searchData=
   ['update_20with_20time_20cpp_13',['(0x0D,0x1F) External Heading Update With Time [CPP]',['../group__cpp__filter__external__heading__update__with__time.html',1,'']]],
   ['utc_20time_20c_14',['(0x81,0x08) Utc Time [C]',['../group__c__gnss__utc__time.html',1,'']]],
   ['utc_20time_20cpp_15',['(0x81,0x08) Utc Time [CPP]',['../group__cpp__gnss__utc__time.html',1,'']]],
-  ['utilities_16',['utilities',['../group__mip__extras.html',1,'Extra utilities'],['../group__mip__platform.html',1,'Platform specific utilities']]]
+  ['utilities_16',['utilities',['../group__microstrain__extras.html',1,'Extra utilities'],['../group__microstrain__platform.html',1,'Platform specific utilities']]]
 ];

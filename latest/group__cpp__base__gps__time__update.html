@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MIP SDK: (0x01,0x72) Gps Time Update [CPP]</title>
+<title>MIP_SDK: (0x01,0x72) Gps Time Update [CPP]</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v2.0.0-1-g65a7b37</span>
+   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-137-g8a814ec</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -84,72 +84,12 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gabae314f92c1671b33768784f66e424fe" id="r_gabae314f92c1671b33768784f66e424fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__base__gps__time__update.html#gabae314f92c1671b33768784f66e424fe">mip::commands_base::insert</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, const <a class="el" href="structmip_1_1commands__base_1_1_gps_time_update.html">GpsTimeUpdate</a> &amp;self)</td></tr>
-<tr class="separator:gabae314f92c1671b33768784f66e424fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafef1f3b9539f75777022e1957920e163" id="r_gafef1f3b9539f75777022e1957920e163"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__base__gps__time__update.html#gafef1f3b9539f75777022e1957920e163">mip::commands_base::extract</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, <a class="el" href="structmip_1_1commands__base_1_1_gps_time_update.html">GpsTimeUpdate</a> &amp;self)</td></tr>
-<tr class="separator:gafef1f3b9539f75777022e1957920e163"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2f24142f716709fa3f5f4ef97b845f47" id="r_ga2f24142f716709fa3f5f4ef97b845f47"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_typed_result.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__base_1_1_gps_time_update.html">GpsTimeUpdate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__base__gps__time__update.html#ga2f24142f716709fa3f5f4ef97b845f47">mip::commands_base::writeGpsTimeUpdate</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device, <a class="el" href="structmip_1_1commands__base_1_1_gps_time_update.html#a91d9819a4dd5c3016efee11ac87ff2bf">GpsTimeUpdate::FieldId</a> fieldId, uint32_t value)</td></tr>
 <tr class="separator:ga2f24142f716709fa3f5f4ef97b845f47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Set device internal GPS time When combined with a PPS input signal applied to the I/O connector, this command enables complete synchronization of data outputs with an external time base, such as GPS system time. Since the hardware PPS synchronization can only detect the fractional number of seconds when pulses arrive, complete synchronization requires that the user provide the whole number of seconds via this command. After achieving PPS synchronization, this command should be sent twice: once to set the time-of-week and once to set the week number. PPS synchronization can be verified by monitoring the time sync status message (0xA0, 0x02) or the valid flags of any shared external timestamp (0x&ndash;, D7) data field. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gafef1f3b9539f75777022e1957920e163" name="gafef1f3b9539f75777022e1957920e163"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafef1f3b9539f75777022e1957920e163">&#9670;&#160;</a></span>extract()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::commands_base::extract </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1commands__base_1_1_gps_time_update.html">GpsTimeUpdate</a> &amp;&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gabae314f92c1671b33768784f66e424fe" name="gabae314f92c1671b33768784f66e424fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabae314f92c1671b33768784f66e424fe">&#9670;&#160;</a></span>insert()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::commands_base::insert </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structmip_1_1commands__base_1_1_gps_time_update.html">GpsTimeUpdate</a> &amp;&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ga2f24142f716709fa3f5f4ef97b845f47" name="ga2f24142f716709fa3f5f4ef97b845f47"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga2f24142f716709fa3f5f4ef97b845f47">&#9670;&#160;</a></span>writeGpsTimeUpdate()</h2>
 

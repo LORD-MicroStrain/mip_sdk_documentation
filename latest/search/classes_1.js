@@ -24,6 +24,7 @@ var searchData=
   ['bitfield_3c_20statusflagslegacy_20_3e_21',['Bitfield&lt; StatusFlagsLegacy &gt;',['../structmip_1_1_bitfield.html',1,'mip']]],
   ['bitfield_3c_20svflags_20_3e_22',['Bitfield&lt; SVFlags &gt;',['../structmip_1_1_bitfield.html',1,'mip']]],
   ['bitfield_3c_20validflags_20_3e_23',['Bitfield&lt; ValidFlags &gt;',['../structmip_1_1_bitfield.html',1,'mip']]],
-  ['builtintest_24',['builtintest',['../structmip_1_1commands__base_1_1_built_in_test.html',1,'mip::commands_base::BuiltInTest'],['../structmip_1_1data__system_1_1_built_in_test.html',1,'mip::data_system::BuiltInTest']]],
-  ['byte_5fring_5fstate_25',['byte_ring_state',['../structbyte__ring__state.html',1,'']]]
+  ['bitfieldinfo_24',['BitfieldInfo',['../structmip_1_1metadata_1_1_bitfield_info.html',1,'mip::metadata']]],
+  ['builtintest_25',['builtintest',['../structmip_1_1commands__base_1_1_built_in_test.html',1,'mip::commands_base::BuiltInTest'],['../structmip_1_1data__system_1_1_built_in_test.html',1,'mip::data_system::BuiltInTest']]],
+  ['byte_5fring_5fstate_26',['byte_ring_state',['../structbyte__ring__state.html',1,'']]]
 ];

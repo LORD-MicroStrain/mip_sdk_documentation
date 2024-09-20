@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MIP SDK: Mip Dispatch [C]</title>
+<title>MIP_SDK: Mip Dispatch [C]</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v2.0.0-1-g65a7b37</span>
+   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-137-g8a814ec</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -90,34 +90,34 @@ Modules</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga8c4951aee92da2a9da157b4cb8d0b055" id="r_ga8c4951aee92da2a9da157b4cb8d0b055"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mip_dispatch__c.html#ga8c4951aee92da2a9da157b4cb8d0b055">mip::C::mip_dispatch_packet_callback</a>) (void *context, const <a class="el" href="structmip_1_1_c_1_1mip__packet.html">mip_packet</a> *packet, <a class="el" href="namespacemip_1_1_c.html#a7a0c2c95e0e72de587a1e92037fe24b9">mip_timestamp</a> timestamp)</td></tr>
-<tr class="memdesc:ga8c4951aee92da2a9da157b4cb8d0b055"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signature for packet-level callbacks.  <br /></td></tr>
-<tr class="separator:ga8c4951aee92da2a9da157b4cb8d0b055"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1c63fb92e9e2410dc381a4844f0bde93" id="r_ga1c63fb92e9e2410dc381a4844f0bde93"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mip_dispatch__c.html#ga1c63fb92e9e2410dc381a4844f0bde93">mip::C::mip_dispatch_field_callback</a>) (void *context, const <a class="el" href="structmip_1_1_c_1_1mip__field.html">mip_field</a> *field, <a class="el" href="namespacemip_1_1_c.html#a7a0c2c95e0e72de587a1e92037fe24b9">mip_timestamp</a> timestamp)</td></tr>
-<tr class="memdesc:ga1c63fb92e9e2410dc381a4844f0bde93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signature for field-level callbacks.  <br /></td></tr>
-<tr class="separator:ga1c63fb92e9e2410dc381a4844f0bde93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga44c0a5b2338201f0ef85db07f8a0364c" id="r_ga44c0a5b2338201f0ef85db07f8a0364c"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mip_dispatch__c.html#ga44c0a5b2338201f0ef85db07f8a0364c">mip::C::mip_dispatch_extractor</a>) (const <a class="el" href="structmip_1_1_c_1_1mip__field.html">mip_field</a> *field, void *ptr)</td></tr>
-<tr class="memdesc:ga44c0a5b2338201f0ef85db07f8a0364c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signature for extraction callbacks.  <br /></td></tr>
-<tr class="separator:ga44c0a5b2338201f0ef85db07f8a0364c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga29b0f63f4f34c796757047479d38427f" id="r_ga29b0f63f4f34c796757047479d38427f"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mip_dispatch__c.html#ga29b0f63f4f34c796757047479d38427f">mip::C::mip_dispatch_packet_callback</a>) (void *context, const <a class="el" href="structmip_1_1_c_1_1mip__packet__view.html">mip_packet_view</a> *packet, <a class="el" href="namespacemip_1_1_c.html#a8a24a1913ffba77cdd608c5fb7575f37">mip_timestamp</a> timestamp)</td></tr>
+<tr class="memdesc:ga29b0f63f4f34c796757047479d38427f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signature for packet-level callbacks.  <br /></td></tr>
+<tr class="separator:ga29b0f63f4f34c796757047479d38427f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6d9c2aca747e6ea40a7104054432241a" id="r_ga6d9c2aca747e6ea40a7104054432241a"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mip_dispatch__c.html#ga6d9c2aca747e6ea40a7104054432241a">mip::C::mip_dispatch_field_callback</a>) (void *context, const <a class="el" href="structmip_1_1_c_1_1mip__field__view.html">mip_field_view</a> *field, <a class="el" href="namespacemip_1_1_c.html#a8a24a1913ffba77cdd608c5fb7575f37">mip_timestamp</a> timestamp)</td></tr>
+<tr class="memdesc:ga6d9c2aca747e6ea40a7104054432241a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signature for field-level callbacks.  <br /></td></tr>
+<tr class="separator:ga6d9c2aca747e6ea40a7104054432241a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga30f5663974ed1e5cb0e259d440aaa2e8" id="r_ga30f5663974ed1e5cb0e259d440aaa2e8"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mip_dispatch__c.html#ga30f5663974ed1e5cb0e259d440aaa2e8">mip::C::mip_dispatch_extractor</a>) (const <a class="el" href="structmip_1_1_c_1_1mip__field__view.html">mip_field_view</a> *field, void *ptr)</td></tr>
+<tr class="memdesc:ga30f5663974ed1e5cb0e259d440aaa2e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signature for extraction callbacks.  <br /></td></tr>
+<tr class="separator:ga30f5663974ed1e5cb0e259d440aaa2e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ga9d11eb2a1924c8b5112a43cdef5fe16d" id="r_ga9d11eb2a1924c8b5112a43cdef5fe16d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group___mip_dispatch__c.html#gga9d11eb2a1924c8b5112a43cdef5fe16da6b2c30645d37253536260bfad8561678">mip::C::MIP_DISPATCH_ANY_DATA_SET</a> = 0xFF
-, <a class="el" href="group___mip_dispatch__c.html#gga9d11eb2a1924c8b5112a43cdef5fe16daeefeeec5c03d36098a5da7aaba65a963">mip::C::MIP_DISPATCH_ANY_DESCRIPTOR</a> = 0x00
+<tr class="memitem:gacb3a7a2069057799024af6f25527d03c" id="r_gacb3a7a2069057799024af6f25527d03c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group___mip_dispatch__c.html#ggacb3a7a2069057799024af6f25527d03ca6b2c30645d37253536260bfad8561678">mip::C::MIP_DISPATCH_ANY_DATA_SET</a> = 0xFF
+, <a class="el" href="group___mip_dispatch__c.html#ggacb3a7a2069057799024af6f25527d03caeefeeec5c03d36098a5da7aaba65a963">mip::C::MIP_DISPATCH_ANY_DESCRIPTOR</a> = 0x00
  }</td></tr>
-<tr class="separator:ga9d11eb2a1924c8b5112a43cdef5fe16d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:gacb3a7a2069057799024af6f25527d03c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>System for issuing callbacks from MIP packets or fields. </p>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="ga44c0a5b2338201f0ef85db07f8a0364c" name="ga44c0a5b2338201f0ef85db07f8a0364c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga44c0a5b2338201f0ef85db07f8a0364c">&#9670;&#160;</a></span>mip_dispatch_extractor</h2>
+<a id="ga30f5663974ed1e5cb0e259d440aaa2e8" name="ga30f5663974ed1e5cb0e259d440aaa2e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga30f5663974ed1e5cb0e259d440aaa2e8">&#9670;&#160;</a></span>mip_dispatch_extractor</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef bool(* mip::C::mip_dispatch_extractor) (const <a class="el" href="structmip_1_1_c_1_1mip__field.html">mip_field</a> *field, void *ptr)</td>
+          <td class="memname">typedef bool(* mip::C::mip_dispatch_extractor) (const <a class="el" href="structmip_1_1_c_1_1mip__field__view.html">mip_field_view</a> *field, void *ptr)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -125,7 +125,7 @@ Enumerations</h2></td></tr>
 <p>Signature for extraction callbacks. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">field</td><td>A valid <a class="el" href="structmip_1_1_c_1_1mip__field.html" title="A structure representing a MIP field.">mip_field</a>. </td></tr>
+    <tr><td class="paramname">field</td><td>A valid mip_field. </td></tr>
     <tr><td class="paramname">ptr</td><td>A pointer to the destination field structure. </td></tr>
   </table>
   </dd>
@@ -133,14 +133,14 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
-<a id="ga1c63fb92e9e2410dc381a4844f0bde93" name="ga1c63fb92e9e2410dc381a4844f0bde93"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1c63fb92e9e2410dc381a4844f0bde93">&#9670;&#160;</a></span>mip_dispatch_field_callback</h2>
+<a id="ga6d9c2aca747e6ea40a7104054432241a" name="ga6d9c2aca747e6ea40a7104054432241a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6d9c2aca747e6ea40a7104054432241a">&#9670;&#160;</a></span>mip_dispatch_field_callback</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* mip::C::mip_dispatch_field_callback) (void *context, const <a class="el" href="structmip_1_1_c_1_1mip__field.html">mip_field</a> *field, <a class="el" href="namespacemip_1_1_c.html#a7a0c2c95e0e72de587a1e92037fe24b9">mip_timestamp</a> timestamp)</td>
+          <td class="memname">typedef void(* mip::C::mip_dispatch_field_callback) (void *context, const <a class="el" href="structmip_1_1_c_1_1mip__field__view.html">mip_field_view</a> *field, <a class="el" href="namespacemip_1_1_c.html#a8a24a1913ffba77cdd608c5fb7575f37">mip_timestamp</a> timestamp)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -157,14 +157,14 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
-<a id="ga8c4951aee92da2a9da157b4cb8d0b055" name="ga8c4951aee92da2a9da157b4cb8d0b055"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8c4951aee92da2a9da157b4cb8d0b055">&#9670;&#160;</a></span>mip_dispatch_packet_callback</h2>
+<a id="ga29b0f63f4f34c796757047479d38427f" name="ga29b0f63f4f34c796757047479d38427f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga29b0f63f4f34c796757047479d38427f">&#9670;&#160;</a></span>mip_dispatch_packet_callback</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* mip::C::mip_dispatch_packet_callback) (void *context, const <a class="el" href="structmip_1_1_c_1_1mip__packet.html">mip_packet</a> *packet, <a class="el" href="namespacemip_1_1_c.html#a7a0c2c95e0e72de587a1e92037fe24b9">mip_timestamp</a> timestamp)</td>
+          <td class="memname">typedef void(* mip::C::mip_dispatch_packet_callback) (void *context, const <a class="el" href="structmip_1_1_c_1_1mip__packet__view.html">mip_packet_view</a> *packet, <a class="el" href="namespacemip_1_1_c.html#a8a24a1913ffba77cdd608c5fb7575f37">mip_timestamp</a> timestamp)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -182,8 +182,8 @@ Enumerations</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="ga9d11eb2a1924c8b5112a43cdef5fe16d" name="ga9d11eb2a1924c8b5112a43cdef5fe16d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9d11eb2a1924c8b5112a43cdef5fe16d">&#9670;&#160;</a></span>anonymous enum</h2>
+<a id="gacb3a7a2069057799024af6f25527d03c" name="gacb3a7a2069057799024af6f25527d03c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacb3a7a2069057799024af6f25527d03c">&#9670;&#160;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -194,10 +194,10 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga9d11eb2a1924c8b5112a43cdef5fe16da6b2c30645d37253536260bfad8561678" name="gga9d11eb2a1924c8b5112a43cdef5fe16da6b2c30645d37253536260bfad8561678"></a>MIP_DISPATCH_ANY_DATA_SET&#160;</td><td class="fielddoc"><p>Wildcard descriptor set which only includes data packets.</p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggacb3a7a2069057799024af6f25527d03ca6b2c30645d37253536260bfad8561678" name="ggacb3a7a2069057799024af6f25527d03ca6b2c30645d37253536260bfad8561678"></a>MIP_DISPATCH_ANY_DATA_SET&#160;</td><td class="fielddoc"><p>Wildcard descriptor set which only includes data packets.</p>
 <dl class="section note"><dt>Note</dt><dd>This is the same value as shared data descriptor set, but the shared data descriptor set is not real and will never be sent by the device. </dd></dl>
 </td></tr>
-<tr><td class="fieldname"><a id="gga9d11eb2a1924c8b5112a43cdef5fe16daeefeeec5c03d36098a5da7aaba65a963" name="gga9d11eb2a1924c8b5112a43cdef5fe16daeefeeec5c03d36098a5da7aaba65a963"></a>MIP_DISPATCH_ANY_DESCRIPTOR&#160;</td><td class="fielddoc"><p>Any descriptor set or field descriptor. This is not a valid MIP descriptor. </p>
+<tr><td class="fieldname"><a id="ggacb3a7a2069057799024af6f25527d03caeefeeec5c03d36098a5da7aaba65a963" name="ggacb3a7a2069057799024af6f25527d03caeefeeec5c03d36098a5da7aaba65a963"></a>MIP_DISPATCH_ANY_DESCRIPTOR&#160;</td><td class="fielddoc"><p>Any descriptor set or field descriptor. This is not a valid MIP descriptor. </p>
 </td></tr>
 </table>
 

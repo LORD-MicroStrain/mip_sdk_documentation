@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MIP SDK: src/mip/utils/tcp_socket.h File Reference</title>
+<title>MIP_SDK: src/c/microstrain/connections/tcp/tcp_socket.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v2.0.0-1-g65a7b37</span>
+   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-137-g8a814ec</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -70,7 +70,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0652f4f834e91e7f754984a58c1d13cb.html">mip</a></li><li class="navelem"><a class="el" href="dir_676d757825b0463aeb1cf202b772c552.html">utils</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_3b19ecf29356981f494745fbef7e56bf.html">c</a></li><li class="navelem"><a class="el" href="dir_a9b350876afe660af6c01dcd56f4dcc2.html">microstrain</a></li><li class="navelem"><a class="el" href="dir_8989a9a2159ffbdf5fff3244b7f2a3d2.html">connections</a></li><li class="navelem"><a class="el" href="dir_030c2566f90b8887160c85b7857aba93.html">tcp</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -81,7 +81,8 @@ $(function() {
   <div class="headertitle"><div class="title">tcp_socket.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="platform_8h_source.html">microstrain/common/platform.h</a>&gt;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;stddef.h&gt;</code><br />
 <code>#include &lt;stdbool.h&gt;</code><br />
 </div>
@@ -94,22 +95,22 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:gaaa59fea39de1b12bb66b26bdde50171c" id="r_gaaa59fea39de1b12bb66b26bdde50171c"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structtcp__socket.html">tcp_socket</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__tcp.html#gaaa59fea39de1b12bb66b26bdde50171c">tcp_socket</a></td></tr>
+<tr class="memitem:gaaa59fea39de1b12bb66b26bdde50171c" id="r_gaaa59fea39de1b12bb66b26bdde50171c"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structtcp__socket.html">tcp_socket</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__microstrain__tcp.html#gaaa59fea39de1b12bb66b26bdde50171c">tcp_socket</a></td></tr>
 <tr class="separator:gaaa59fea39de1b12bb66b26bdde50171c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga1a4502d1974bfc84efbee8a7e00c1b98" id="r_ga1a4502d1974bfc84efbee8a7e00c1b98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__tcp.html#ga1a4502d1974bfc84efbee8a7e00c1b98">tcp_socket_init</a> (<a class="el" href="structtcp__socket.html">tcp_socket</a> *socket_ptr)</td></tr>
+<tr class="memitem:ga1a4502d1974bfc84efbee8a7e00c1b98" id="r_ga1a4502d1974bfc84efbee8a7e00c1b98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__microstrain__tcp.html#ga1a4502d1974bfc84efbee8a7e00c1b98">tcp_socket_init</a> (<a class="el" href="structtcp__socket.html">tcp_socket</a> *socket_ptr)</td></tr>
 <tr class="separator:ga1a4502d1974bfc84efbee8a7e00c1b98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8991cc57e7f8cc3d120268eb9a009a42" id="r_ga8991cc57e7f8cc3d120268eb9a009a42"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__tcp.html#ga8991cc57e7f8cc3d120268eb9a009a42">tcp_socket_is_open</a> (const <a class="el" href="structtcp__socket.html">tcp_socket</a> *socket_ptr)</td></tr>
+<tr class="memitem:ga8991cc57e7f8cc3d120268eb9a009a42" id="r_ga8991cc57e7f8cc3d120268eb9a009a42"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__microstrain__tcp.html#ga8991cc57e7f8cc3d120268eb9a009a42">tcp_socket_is_open</a> (const <a class="el" href="structtcp__socket.html">tcp_socket</a> *socket_ptr)</td></tr>
 <tr class="separator:ga8991cc57e7f8cc3d120268eb9a009a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0bf1f3a0876c131af3d101dbe377d27a" id="r_ga0bf1f3a0876c131af3d101dbe377d27a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__tcp.html#ga0bf1f3a0876c131af3d101dbe377d27a">tcp_socket_open</a> (<a class="el" href="structtcp__socket.html">tcp_socket</a> *socket_ptr, const char *hostname, uint16_t port, unsigned int timeout_ms)</td></tr>
+<tr class="memitem:ga0bf1f3a0876c131af3d101dbe377d27a" id="r_ga0bf1f3a0876c131af3d101dbe377d27a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__microstrain__tcp.html#ga0bf1f3a0876c131af3d101dbe377d27a">tcp_socket_open</a> (<a class="el" href="structtcp__socket.html">tcp_socket</a> *socket_ptr, const char *hostname, uint16_t port, unsigned int timeout_ms)</td></tr>
 <tr class="separator:ga0bf1f3a0876c131af3d101dbe377d27a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad2373ac67b64a5dfe8d4a925f4ee7435" id="r_gad2373ac67b64a5dfe8d4a925f4ee7435"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__tcp.html#gad2373ac67b64a5dfe8d4a925f4ee7435">tcp_socket_close</a> (<a class="el" href="structtcp__socket.html">tcp_socket</a> *socket_ptr)</td></tr>
+<tr class="memitem:gad2373ac67b64a5dfe8d4a925f4ee7435" id="r_gad2373ac67b64a5dfe8d4a925f4ee7435"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__microstrain__tcp.html#gad2373ac67b64a5dfe8d4a925f4ee7435">tcp_socket_close</a> (<a class="el" href="structtcp__socket.html">tcp_socket</a> *socket_ptr)</td></tr>
 <tr class="separator:gad2373ac67b64a5dfe8d4a925f4ee7435"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4d446c97abc90677d1271d5d13d0e99c" id="r_ga4d446c97abc90677d1271d5d13d0e99c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__tcp.html#ga4d446c97abc90677d1271d5d13d0e99c">tcp_socket_send</a> (<a class="el" href="structtcp__socket.html">tcp_socket</a> *socket_ptr, const void *buffer, size_t num_bytes, size_t *bytes_written)</td></tr>
+<tr class="memitem:ga4d446c97abc90677d1271d5d13d0e99c" id="r_ga4d446c97abc90677d1271d5d13d0e99c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__microstrain__tcp.html#ga4d446c97abc90677d1271d5d13d0e99c">tcp_socket_send</a> (<a class="el" href="structtcp__socket.html">tcp_socket</a> *socket_ptr, const void *buffer, size_t num_bytes, size_t *bytes_written)</td></tr>
 <tr class="separator:ga4d446c97abc90677d1271d5d13d0e99c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4e5e40e920c116625d4bff76cfc680b6" id="r_ga4e5e40e920c116625d4bff76cfc680b6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__tcp.html#ga4e5e40e920c116625d4bff76cfc680b6">tcp_socket_recv</a> (<a class="el" href="structtcp__socket.html">tcp_socket</a> *socket_ptr, void *buffer, size_t num_bytes, size_t *bytes_read)</td></tr>
+<tr class="memitem:ga4e5e40e920c116625d4bff76cfc680b6" id="r_ga4e5e40e920c116625d4bff76cfc680b6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__microstrain__tcp.html#ga4e5e40e920c116625d4bff76cfc680b6">tcp_socket_recv</a> (<a class="el" href="structtcp__socket.html">tcp_socket</a> *socket_ptr, void *buffer, size_t num_bytes, size_t *bytes_read)</td></tr>
 <tr class="separator:ga4e5e40e920c116625d4bff76cfc680b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

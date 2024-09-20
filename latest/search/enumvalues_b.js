@@ -11,8 +11,9 @@ var searchData=
   ['led_5fflash_8',['LED_FLASH',['../group__rtk__commands__cpp.html#gga8688ee4086b5777aaa3fe25dd8944811a77eee53ee2e7517430b7d8b425a2ed0a',1,'mip::commands_rtk']]],
   ['led_5fnone_9',['LED_NONE',['../group__rtk__commands__cpp.html#gga8688ee4086b5777aaa3fe25dd8944811a0f249be00f0a3cd9a3260ea7511d3089',1,'mip::commands_rtk']]],
   ['led_5fpulsate_10',['LED_PULSATE',['../group__rtk__commands__cpp.html#gga8688ee4086b5777aaa3fe25dd8944811a79d3b07a08d7e416ff41956e0eeb31cc',1,'mip::commands_rtk']]],
-  ['llh_11',['LLH',['../group__filter__commands__cpp.html#ggaf94e37c7eb0f2d82250d876d71ec0311a6c457ba2196d11bd28f5272360f59d9b',1,'mip::commands_filter']]],
-  ['load_12',['LOAD',['../namespacemip.html#a2dde9cdf5ebc86cf62e8c2591dcb56dea615d2885ef7576cedd9aafbb2578f028',1,'mip']]],
-  ['lock_5ftime_13',['LOCK_TIME',['../structmip_1_1data__gnss_1_1_raw_1_1_valid_flags.html#a896b931f26ab3d9d16bd4e80b3dff2beafb542989324d5b711b07711c39d8b365',1,'mip::data_gnss::Raw::ValidFlags']]],
-  ['longitude_14',['LONGITUDE',['../structmip_1_1commands__aiding_1_1_pos_llh_1_1_valid_flags.html#ae9f4f6429137f4a68e9449a83bae20baaf5f099fefa8945c55d540d1ce69c0b86',1,'mip::commands_aiding::PosLlh::ValidFlags']]]
+  ['little_11',['little',['../namespacemicrostrain_1_1serialization.html#a2cb773f97949c2746bed939c0ce6d617aaae6635e044ac56046b2893a529b5114',1,'microstrain::serialization']]],
+  ['llh_12',['LLH',['../group__filter__commands__cpp.html#ggaf94e37c7eb0f2d82250d876d71ec0311a6c457ba2196d11bd28f5272360f59d9b',1,'mip::commands_filter']]],
+  ['load_13',['LOAD',['../group__mip__cpp.html#gga2dde9cdf5ebc86cf62e8c2591dcb56dea615d2885ef7576cedd9aafbb2578f028',1,'mip']]],
+  ['lock_5ftime_14',['LOCK_TIME',['../structmip_1_1data__gnss_1_1_raw_1_1_valid_flags.html#a896b931f26ab3d9d16bd4e80b3dff2beafb542989324d5b711b07711c39d8b365',1,'mip::data_gnss::Raw::ValidFlags']]],
+  ['longitude_15',['LONGITUDE',['../structmip_1_1commands__aiding_1_1_pos_llh_1_1_valid_flags.html#ae9f4f6429137f4a68e9449a83bae20baaf5f099fefa8945c55d540d1ce69c0b86',1,'mip::commands_aiding::PosLlh::ValidFlags']]]
 ];

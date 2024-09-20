@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MIP SDK: (0x0D,0x05) Run [CPP]</title>
+<title>MIP_SDK: (0x0D,0x05) Run [CPP]</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v2.0.0-1-g65a7b37</span>
+   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-137-g8a814ec</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -84,10 +84,6 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga38199af07fddbe312d62ab2ed2ee3354" id="r_ga38199af07fddbe312d62ab2ed2ee3354"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__filter__run.html#ga38199af07fddbe312d62ab2ed2ee3354">mip::commands_filter::insert</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, const <a class="el" href="structmip_1_1commands__filter_1_1_run.html">Run</a> &amp;self)</td></tr>
-<tr class="separator:ga38199af07fddbe312d62ab2ed2ee3354"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab0be80716360c5f1c0660bdb67a9f65b" id="r_gab0be80716360c5f1c0660bdb67a9f65b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__filter__run.html#gab0be80716360c5f1c0660bdb67a9f65b">mip::commands_filter::extract</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, <a class="el" href="structmip_1_1commands__filter_1_1_run.html">Run</a> &amp;self)</td></tr>
-<tr class="separator:gab0be80716360c5f1c0660bdb67a9f65b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga96747d130a8207db9a09769af59993a5" id="r_ga96747d130a8207db9a09769af59993a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1_typed_result.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1_run.html">Run</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__filter__run.html#ga96747d130a8207db9a09769af59993a5">mip::commands_filter::run</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">C::mip_interface</a> &amp;device)</td></tr>
 <tr class="separator:ga96747d130a8207db9a09769af59993a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -95,62 +91,6 @@ Functions</h2></td></tr>
 <p>Manual run command.</p>
 <p>If the initialization configuration has the "wait_for_run_command" option enabled, the filter will wait until it receives this command before commencing integration and enabling the Kalman filter. Prior to the receipt of this command, the filter will remain in the filter initialization mode. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gab0be80716360c5f1c0660bdb67a9f65b" name="gab0be80716360c5f1c0660bdb67a9f65b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab0be80716360c5f1c0660bdb67a9f65b">&#9670;&#160;</a></span>extract()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::commands_filter::extract </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1commands__filter_1_1_run.html">Run</a> &amp;&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga38199af07fddbe312d62ab2ed2ee3354" name="ga38199af07fddbe312d62ab2ed2ee3354"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga38199af07fddbe312d62ab2ed2ee3354">&#9670;&#160;</a></span>insert()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::commands_filter::insert </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structmip_1_1commands__filter_1_1_run.html">Run</a> &amp;&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ga96747d130a8207db9a09769af59993a5" name="ga96747d130a8207db9a09769af59993a5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga96747d130a8207db9a09769af59993a5">&#9670;&#160;</a></span>run()</h2>
 

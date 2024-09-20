@@ -12,7 +12,7 @@ var searchData=
   ['llh_20cpp_9',['llh cpp',['../group__cpp__aiding__pos__llh.html',1,'(0x13,0x22) Pos Llh [CPP]'],['../group__cpp__gnss__pos__llh.html',1,'(0x81,0x03) Pos Llh [CPP]'],['../group__cpp__filter__position__llh.html',1,'(0x82,0x01) Position Llh [CPP]']]],
   ['llh_20uncertainty_20c_10',['(0x82,0x08) Position Llh Uncertainty [C]',['../group__c__filter__position__llh__uncertainty.html',1,'']]],
   ['llh_20uncertainty_20cpp_11',['(0x82,0x08) Position Llh Uncertainty [CPP]',['../group__cpp__filter__position__llh__uncertainty.html',1,'']]],
-  ['logging_20c_12',['Mip Logging [C]',['../group__mip__logging.html',1,'']]],
+  ['logging_20c_12',['MicroStrain Logging [C]',['../group__microstrain__logging.html',1,'']]],
   ['lowpass_20filter_20c_13',['lowpass filter c',['../group__c__3dm__imu__lowpass__filter.html',1,'(0x0C,0x50) Imu Lowpass Filter [C]'],['../group__c__3dm__lowpass__filter.html',1,'(0x0C,0x54) Lowpass Filter [C]']]],
   ['lowpass_20filter_20cpp_14',['lowpass filter cpp',['../group__cpp__3dm__imu__lowpass__filter.html',1,'(0x0C,0x50) Imu Lowpass Filter [CPP]'],['../group__cpp__3dm__lowpass__filter.html',1,'(0x0C,0x54) Lowpass Filter [CPP]']]]
 ];

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MIP SDK: src/mip/mip.hpp File Reference</title>
+<title>MIP_SDK: src/cpp/mip/mip.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v2.0.0-1-g65a7b37</span>
+   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-137-g8a814ec</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -70,66 +70,24 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0652f4f834e91e7f754984a58c1d13cb.html">mip</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_dfdbda394c3f7a3aa55229f33a559c41.html">cpp</a></li><li class="navelem"><a class="el" href="dir_d29c97e961aefc9d46d46dac53dee2f3.html">mip</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle"><div class="title">mip.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;cstring&gt;</code><br />
-<code>#include &lt;stdint.h&gt;</code><br />
-<code>#include &lt;stddef.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="mip__packet_8h_source.html">mip_packet.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="mip__field_8h_source.html">mip_field.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="mip__parser_8h_source.html">mip_parser.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="mip__offsets_8h_source.html">mip_offsets.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="descriptors_8h_source.html">definitions/descriptors.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="mip__types_8h_source.html">mip_types.h</a>&quot;</code><br />
-<code>#include &lt;assert.h&gt;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="mip__interface_8hpp_source.html">mip_interface.hpp</a>&quot;</code><br />
 </div>
 <p><a href="mip_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_field.html">mip::Field</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++ class representing a MIP field.  <a href="classmip_1_1_field.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_packet_ref.html">mip::PacketRef</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++ class representing a MIP <a class="el" href="classmip_1_1_packet_ref.html" title="C++ class representing a MIP PacketRef.">PacketRef</a>.  <a href="classmip_1_1_packet_ref.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_packet_ref_1_1_field_iterator.html">mip::PacketRef::FieldIterator</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_sized_packet_buf.html">mip::SizedPacketBuf&lt; BufferSize &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A mip packet with a self-contained buffer (useful with std::vector).  <a href="classmip_1_1_sized_packet_buf.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1_parser.html">mip::Parser</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++ class representing a MIP parser.  <a href="classmip_1_1_parser.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacemip" id="r_namespacemip"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip.html">mip</a></td></tr>
 <tr class="memdesc:namespacemip"><td class="mdescLeft">&#160;</td><td class="mdescRight">A collection of C++ classes and functions covering the full mip api. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:gafc42c8a567309e43d95e372b1ea0d2c5" id="r_gafc42c8a567309e43d95e372b1ea0d2c5"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classmip_1_1_sized_packet_buf.html">SizedPacketBuf</a>&lt; mip::PACKET_LENGTH_MAX &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#gafc42c8a567309e43d95e372b1ea0d2c5">mip::PacketBuf</a></td></tr>
-<tr class="memdesc:gafc42c8a567309e43d95e372b1ea0d2c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Typedef for <a class="el" href="classmip_1_1_sized_packet_buf.html" title="A mip packet with a self-contained buffer (useful with std::vector).">SizedPacketBuf</a> of max possible size.  <br /></td></tr>
-<tr class="separator:gafc42c8a567309e43d95e372b1ea0d2c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ga34c1057cbcde6a4d6e6ce54cb6c6c3c8" id="r_ga34c1057cbcde6a4d6e6ce54cb6c6c3c8"><td class="memTemplParams" colspan="2">template&lt;class Function &gt; </td></tr>
-<tr class="memitem:ga34c1057cbcde6a4d6e6ce54cb6c6c3c8"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga34c1057cbcde6a4d6e6ce54cb6c6c3c8">mip::parseMipDataFromSource</a> (<a class="el" href="structmip_1_1_c_1_1mip__parser.html">C::mip_parser</a> &amp;parser, Function reader, size_t maxPackets)</td></tr>
-<tr class="memdesc:ga34c1057cbcde6a4d6e6ce54cb6c6c3c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read data from a source into the internal parsing buffer.  <br /></td></tr>
-<tr class="separator:ga34c1057cbcde6a4d6e6ce54cb6c6c3c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

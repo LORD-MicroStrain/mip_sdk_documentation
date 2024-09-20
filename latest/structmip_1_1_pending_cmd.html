@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MIP SDK: mip::PendingCmd Struct Reference</title>
+<title>MIP_SDK: mip::PendingCmd Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v2.0.0-1-g65a7b37</span>
+   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-137-g8a814ec</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -84,7 +84,7 @@ $(function() {
 <p>C++ class representing the state of a MIP command.  
  <a href="structmip_1_1_pending_cmd.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="mip__device_8hpp_source.html">mip_device.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="mip__cmdqueue_8hpp_source.html">mip_cmdqueue.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for mip::PendingCmd:</div>
 <div class="dyncontent">
@@ -100,18 +100,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7de966b0a5bb556ac8650f024ef96e59" id="r_a7de966b0a5bb556ac8650f024ef96e59"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_pending_cmd.html#a7de966b0a5bb556ac8650f024ef96e59">PendingCmd</a> ()</td></tr>
 <tr class="memdesc:a7de966b0a5bb556ac8650f024ef96e59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a null pending command in the CmdResult::NONE state.  <br /></td></tr>
 <tr class="separator:a7de966b0a5bb556ac8650f024ef96e59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5420555ceb9e2704c46d195d835b051" id="r_aa5420555ceb9e2704c46d195d835b051"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_pending_cmd.html#aa5420555ceb9e2704c46d195d835b051">PendingCmd</a> (uint8_t descriptorSet, uint8_t fieldDescriptor, <a class="el" href="namespacemip.html#adf3e3dd725a2c4f8abde99c473000878">Timeout</a> additionalTime=0)</td></tr>
+<tr class="memitem:aa5420555ceb9e2704c46d195d835b051" id="r_aa5420555ceb9e2704c46d195d835b051"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_pending_cmd.html#aa5420555ceb9e2704c46d195d835b051">PendingCmd</a> (uint8_t descriptorSet, uint8_t fieldDescriptor, <a class="el" href="namespacemip.html#afce0ba7e576cfb1bffa07cff38fe1847">Timeout</a> additionalTime=0)</td></tr>
 <tr class="memdesc:aa5420555ceb9e2704c46d195d835b051"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a pending command for the given descriptor pair.  <br /></td></tr>
 <tr class="separator:aa5420555ceb9e2704c46d195d835b051"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fc191669056ec51ca3aacbbbb02992a" id="r_a9fc191669056ec51ca3aacbbbb02992a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_pending_cmd.html#a9fc191669056ec51ca3aacbbbb02992a">PendingCmd</a> (uint8_t descriptorSet, uint8_t fieldDescriptor, uint8_t <a class="el" href="structmip_1_1_pending_cmd.html#a07225b2bfd43b8c3623deb0186bb23e4">responseDescriptor</a>, uint8_t *responseBuffer, uint8_t responseBufferSize, <a class="el" href="namespacemip.html#adf3e3dd725a2c4f8abde99c473000878">Timeout</a> additionalTime)</td></tr>
+<tr class="memitem:a9fc191669056ec51ca3aacbbbb02992a" id="r_a9fc191669056ec51ca3aacbbbb02992a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_pending_cmd.html#a9fc191669056ec51ca3aacbbbb02992a">PendingCmd</a> (uint8_t descriptorSet, uint8_t fieldDescriptor, uint8_t <a class="el" href="structmip_1_1_pending_cmd.html#a07225b2bfd43b8c3623deb0186bb23e4">responseDescriptor</a>, uint8_t *responseBuffer, uint8_t responseBufferSize, <a class="el" href="namespacemip.html#afce0ba7e576cfb1bffa07cff38fe1847">Timeout</a> additionalTime)</td></tr>
 <tr class="memdesc:a9fc191669056ec51ca3aacbbbb02992a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a pending command with expected response.  <br /></td></tr>
 <tr class="separator:a9fc191669056ec51ca3aacbbbb02992a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83dd326adada2e98024f696dc41ac93d" id="r_a83dd326adada2e98024f696dc41ac93d"><td class="memTemplParams" colspan="2">template&lt;class Cmd &gt; </td></tr>
-<tr class="memitem:a83dd326adada2e98024f696dc41ac93d"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structmip_1_1_pending_cmd.html#a83dd326adada2e98024f696dc41ac93d">PendingCmd</a> (const Cmd &amp;cmd, <a class="el" href="namespacemip.html#adf3e3dd725a2c4f8abde99c473000878">Timeout</a> additionalTime=0)</td></tr>
+<tr class="memitem:a83dd326adada2e98024f696dc41ac93d"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structmip_1_1_pending_cmd.html#a83dd326adada2e98024f696dc41ac93d">PendingCmd</a> (const Cmd &amp;cmd, <a class="el" href="namespacemip.html#afce0ba7e576cfb1bffa07cff38fe1847">Timeout</a> additionalTime=0)</td></tr>
 <tr class="memdesc:a83dd326adada2e98024f696dc41ac93d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a pending command given the actual command struct.  <br /></td></tr>
 <tr class="separator:a83dd326adada2e98024f696dc41ac93d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6110887b8772273c68c37c7957f5fd00" id="r_a6110887b8772273c68c37c7957f5fd00"><td class="memTemplParams" colspan="2">template&lt;class Cmd &gt; </td></tr>
-<tr class="memitem:a6110887b8772273c68c37c7957f5fd00"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structmip_1_1_pending_cmd.html#a6110887b8772273c68c37c7957f5fd00">PendingCmd</a> (const Cmd &amp;cmd, uint8_t *responseBuffer, uint8_t responseBufferSize, <a class="el" href="namespacemip.html#adf3e3dd725a2c4f8abde99c473000878">Timeout</a> additionalTime=0)</td></tr>
+<tr class="memitem:a6110887b8772273c68c37c7957f5fd00"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structmip_1_1_pending_cmd.html#a6110887b8772273c68c37c7957f5fd00">PendingCmd</a> (const Cmd &amp;cmd, uint8_t *responseBuffer, uint8_t responseBufferSize, <a class="el" href="namespacemip.html#afce0ba7e576cfb1bffa07cff38fe1847">Timeout</a> additionalTime=0)</td></tr>
 <tr class="memdesc:a6110887b8772273c68c37c7957f5fd00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a pending command given the actual command struct and a response buffer.  <br /></td></tr>
 <tr class="separator:a6110887b8772273c68c37c7957f5fd00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9e700d448ae68017781bfed9d1d4a24" id="r_ac9e700d448ae68017781bfed9d1d4a24"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1_pending_cmd.html#ac9e700d448ae68017781bfed9d1d4a24">PendingCmd</a> (const <a class="el" href="structmip_1_1_pending_cmd.html">PendingCmd</a> &amp;)=delete</td></tr>
@@ -135,10 +135,10 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_attribs_structmip_1_1_c_1_1mip__pending__cmd"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_structmip_1_1_c_1_1mip__pending__cmd')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="structmip_1_1_c_1_1mip__pending__cmd.html">mip::C::mip_pending_cmd</a></td></tr>
-<tr class="memitem:a553bc161cecceb3b87fa37fc1048eb98 inherit pub_attribs_structmip_1_1_c_1_1mip__pending__cmd" id="r_a553bc161cecceb3b87fa37fc1048eb98"><td class="memItemLeft" >union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="memitem:a4ccbfa13816b2065e18639759aa0477c inherit pub_attribs_structmip_1_1_c_1_1mip__pending__cmd" id="r_a4ccbfa13816b2065e18639759aa0477c"><td class="memItemLeft" >union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator: inherit pub_attribs_structmip_1_1_c_1_1mip__pending__cmd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a553bc161cecceb3b87fa37fc1048eb98 inherit pub_attribs_structmip_1_1_c_1_1mip__pending__cmd" id="r_a553bc161cecceb3b87fa37fc1048eb98"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom">&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a553bc161cecceb3b87fa37fc1048eb98 inherit pub_attribs_structmip_1_1_c_1_1mip__pending__cmd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ccbfa13816b2065e18639759aa0477c inherit pub_attribs_structmip_1_1_c_1_1mip__pending__cmd" id="r_a4ccbfa13816b2065e18639759aa0477c"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom">&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a4ccbfa13816b2065e18639759aa0477c inherit pub_attribs_structmip_1_1_c_1_1mip__pending__cmd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>C++ class representing the state of a MIP command. </p>
@@ -194,7 +194,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacemip.html#adf3e3dd725a2c4f8abde99c473000878">Timeout</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemip.html#afce0ba7e576cfb1bffa07cff38fe1847">Timeout</a>&#160;</td>
           <td class="paramname"><em>additionalTime</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
@@ -264,7 +264,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacemip.html#adf3e3dd725a2c4f8abde99c473000878">Timeout</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemip.html#afce0ba7e576cfb1bffa07cff38fe1847">Timeout</a>&#160;</td>
           <td class="paramname"><em>additionalTime</em>&#160;</td>
         </tr>
         <tr>
@@ -315,7 +315,7 @@ template&lt;class Cmd &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacemip.html#adf3e3dd725a2c4f8abde99c473000878">Timeout</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemip.html#afce0ba7e576cfb1bffa07cff38fe1847">Timeout</a>&#160;</td>
           <td class="paramname"><em>additionalTime</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
@@ -374,7 +374,7 @@ template&lt;class Cmd &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacemip.html#adf3e3dd725a2c4f8abde99c473000878">Timeout</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemip.html#afce0ba7e576cfb1bffa07cff38fe1847">Timeout</a>&#160;</td>
           <td class="paramname"><em>additionalTime</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
@@ -594,7 +594,7 @@ template&lt;class Cmd &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>src/mip/<a class="el" href="mip__device_8hpp_source.html">mip_device.hpp</a></li>
+<li>src/cpp/mip/<a class="el" href="mip__cmdqueue_8hpp_source.html">mip_cmdqueue.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

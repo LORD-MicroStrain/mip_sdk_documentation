@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MIP SDK: src/mip/mip_interface.c File Reference</title>
+<title>MIP_SDK: src/c/mip/mip_interface.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v2.0.0-1-g65a7b37</span>
+   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-137-g8a814ec</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -70,7 +70,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0652f4f834e91e7f754984a58c1d13cb.html">mip</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_3b19ecf29356981f494745fbef7e56bf.html">c</a></li><li class="navelem"><a class="el" href="dir_055b1db5f1a3d744682f684d38e2c4e5.html">mip</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -81,7 +81,7 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="mip__interface_8h_source.html">mip_interface.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mip__field_8h_source.html">mip_field.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="descriptors_8h_source.html">definitions/descriptors.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mip__descriptors_8h_source.html">mip_descriptors.h</a>&quot;</code><br />
 <code>#include &lt;assert.h&gt;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
 </div><table class="memberdecls">
@@ -144,12 +144,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a8625171b2cc6ee76ad7b52f64ed8c0a0" id="r_a8625171b2cc6ee76ad7b52f64ed8c0a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__interface_8c.html#a8625171b2cc6ee76ad7b52f64ed8c0a0">mip_interface_process_unparsed_packets</a> (mip_interface *device)</td></tr>
 <tr class="memdesc:a8625171b2cc6ee76ad7b52f64ed8c0a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process more packets from the internal buffer.  <br /></td></tr>
 <tr class="separator:a8625171b2cc6ee76ad7b52f64ed8c0a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f5a272e9641737e65ea7ad9b93d00ea" id="r_a8f5a272e9641737e65ea7ad9b93d00ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__interface_8c.html#a8f5a272e9641737e65ea7ad9b93d00ea">mip_interface_receive_packet</a> (mip_interface *device, const mip_packet *packet, mip_timestamp timestamp)</td></tr>
-<tr class="memdesc:a8f5a272e9641737e65ea7ad9b93d00ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes a pre-parsed packet for command replies and data.  <br /></td></tr>
-<tr class="separator:a8f5a272e9641737e65ea7ad9b93d00ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a798f637bd575d108f6d9dd785d4002ad" id="r_a798f637bd575d108f6d9dd785d4002ad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__interface_8c.html#a798f637bd575d108f6d9dd785d4002ad">mip_interface_parse_callback</a> (void *device, const mip_packet *packet, mip_timestamp timestamp)</td></tr>
-<tr class="memdesc:a798f637bd575d108f6d9dd785d4002ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper around mip_interface_receive_packet for use with mip_parser.  <br /></td></tr>
-<tr class="separator:a798f637bd575d108f6d9dd785d4002ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1ff80019d518f2e7c911e7563414755" id="r_aa1ff80019d518f2e7c911e7563414755"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__interface_8c.html#aa1ff80019d518f2e7c911e7563414755">mip_interface_receive_packet</a> (mip_interface *device, const mip_packet_view *packet, mip_timestamp timestamp)</td></tr>
+<tr class="memdesc:aa1ff80019d518f2e7c911e7563414755"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes a pre-parsed packet for command replies and data.  <br /></td></tr>
+<tr class="separator:aa1ff80019d518f2e7c911e7563414755"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5af91ed9a2a42be5eae3ad32015a67e0" id="r_a5af91ed9a2a42be5eae3ad32015a67e0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__interface_8c.html#a5af91ed9a2a42be5eae3ad32015a67e0">mip_interface_parse_callback</a> (void *device, const mip_packet_view *packet, mip_timestamp timestamp)</td></tr>
+<tr class="memdesc:a5af91ed9a2a42be5eae3ad32015a67e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper around mip_interface_receive_packet for use with mip_parser.  <br /></td></tr>
+<tr class="separator:a5af91ed9a2a42be5eae3ad32015a67e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e9949aed4b255ea362978c33c32043d" id="r_a2e9949aed4b255ea362978c33c32043d"><td class="memItemLeft" align="right" valign="top">enum mip_cmd_result&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__interface_8c.html#a2e9949aed4b255ea362978c33c32043d">mip_interface_wait_for_reply</a> (mip_interface *device, mip_pending_cmd *cmd)</td></tr>
 <tr class="memdesc:a2e9949aed4b255ea362978c33c32043d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocks until the pending command completes or times out.  <br /></td></tr>
 <tr class="separator:a2e9949aed4b255ea362978c33c32043d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -159,12 +159,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ac66bb3f761c33e760c3e263b09ae4528" id="r_ac66bb3f761c33e760c3e263b09ae4528"><td class="memItemLeft" align="right" valign="top">enum mip_cmd_result&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__interface_8c.html#ac66bb3f761c33e760c3e263b09ae4528">mip_interface_run_command_with_response</a> (mip_interface *device, uint8_t descriptor_set, uint8_t cmd_descriptor, const uint8_t *cmd_data, uint8_t cmd_length, uint8_t response_descriptor, uint8_t *response_buffer, uint8_t *response_length_inout)</td></tr>
 <tr class="memdesc:ac66bb3f761c33e760c3e263b09ae4528"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs a command using a pre-serialized payload.  <br /></td></tr>
 <tr class="separator:ac66bb3f761c33e760c3e263b09ae4528"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67fcc0d2dd053a6a152ef965f3bc0d23" id="r_a67fcc0d2dd053a6a152ef965f3bc0d23"><td class="memItemLeft" align="right" valign="top">enum mip_cmd_result&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__interface_8c.html#a67fcc0d2dd053a6a152ef965f3bc0d23">mip_interface_run_command_packet</a> (mip_interface *device, const mip_packet *packet, mip_pending_cmd *cmd)</td></tr>
-<tr class="memdesc:a67fcc0d2dd053a6a152ef965f3bc0d23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Similar to mip_interface_start_command_packet but waits for the command to complete.  <br /></td></tr>
-<tr class="separator:a67fcc0d2dd053a6a152ef965f3bc0d23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b56656ff43251e74f9fb147093e442b" id="r_a7b56656ff43251e74f9fb147093e442b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__interface_8c.html#a7b56656ff43251e74f9fb147093e442b">mip_interface_start_command_packet</a> (mip_interface *device, const mip_packet *packet, mip_pending_cmd *cmd)</td></tr>
-<tr class="memdesc:a7b56656ff43251e74f9fb147093e442b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queues the command and sends the packet. Does not wait for completion.  <br /></td></tr>
-<tr class="separator:a7b56656ff43251e74f9fb147093e442b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45b2dade015dce3a995ab0e5d3377074" id="r_a45b2dade015dce3a995ab0e5d3377074"><td class="memItemLeft" align="right" valign="top">enum mip_cmd_result&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__interface_8c.html#a45b2dade015dce3a995ab0e5d3377074">mip_interface_run_command_packet</a> (mip_interface *device, const mip_packet_view *packet, mip_pending_cmd *cmd)</td></tr>
+<tr class="memdesc:a45b2dade015dce3a995ab0e5d3377074"><td class="mdescLeft">&#160;</td><td class="mdescRight">Similar to mip_interface_start_command_packet but waits for the command to complete.  <br /></td></tr>
+<tr class="separator:a45b2dade015dce3a995ab0e5d3377074"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6aa61aa9f0102ff2f8ee8633721714f9" id="r_a6aa61aa9f0102ff2f8ee8633721714f9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__interface_8c.html#a6aa61aa9f0102ff2f8ee8633721714f9">mip_interface_start_command_packet</a> (mip_interface *device, const mip_packet_view *packet, mip_pending_cmd *cmd)</td></tr>
+<tr class="memdesc:a6aa61aa9f0102ff2f8ee8633721714f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queues the command and sends the packet. Does not wait for completion.  <br /></td></tr>
+<tr class="separator:a6aa61aa9f0102ff2f8ee8633721714f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f83502d13a2a4b5a82e8a78618fc0a5" id="r_a5f83502d13a2a4b5a82e8a78618fc0a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__interface_8c.html#a5f83502d13a2a4b5a82e8a78618fc0a5">mip_interface_register_packet_callback</a> (mip_interface *device, mip_dispatch_handler *handler, uint8_t descriptor_set, bool after_fields, mip_dispatch_packet_callback callback, void *user_data)</td></tr>
 <tr class="memdesc:a5f83502d13a2a4b5a82e8a78618fc0a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a callback for packets of the specified descriptor set.  <br /></td></tr>
 <tr class="separator:a5f83502d13a2a4b5a82e8a78618fc0a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -341,8 +341,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a798f637bd575d108f6d9dd785d4002ad" name="a798f637bd575d108f6d9dd785d4002ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a798f637bd575d108f6d9dd785d4002ad">&#9670;&#160;</a></span>mip_interface_parse_callback()</h2>
+<a id="a5af91ed9a2a42be5eae3ad32015a67e0" name="a5af91ed9a2a42be5eae3ad32015a67e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5af91ed9a2a42be5eae3ad32015a67e0">&#9670;&#160;</a></span>mip_interface_parse_callback()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -356,7 +356,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const mip_packet *&#160;</td>
+          <td class="paramtype">const mip_packet_view *&#160;</td>
           <td class="paramname"><em>packet</em>, </td>
         </tr>
         <tr>
@@ -481,8 +481,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a8f5a272e9641737e65ea7ad9b93d00ea" name="a8f5a272e9641737e65ea7ad9b93d00ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f5a272e9641737e65ea7ad9b93d00ea">&#9670;&#160;</a></span>mip_interface_receive_packet()</h2>
+<a id="aa1ff80019d518f2e7c911e7563414755" name="aa1ff80019d518f2e7c911e7563414755"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1ff80019d518f2e7c911e7563414755">&#9670;&#160;</a></span>mip_interface_receive_packet()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -496,7 +496,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const mip_packet *&#160;</td>
+          <td class="paramtype">const mip_packet_view *&#160;</td>
           <td class="paramname"><em>packet</em>, </td>
         </tr>
         <tr>
@@ -879,8 +879,8 @@ False if the receive callback failed (i.e. if it returned false). </dd></dl>
 
 </div>
 </div>
-<a id="a67fcc0d2dd053a6a152ef965f3bc0d23" name="a67fcc0d2dd053a6a152ef965f3bc0d23"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a67fcc0d2dd053a6a152ef965f3bc0d23">&#9670;&#160;</a></span>mip_interface_run_command_packet()</h2>
+<a id="a45b2dade015dce3a995ab0e5d3377074" name="a45b2dade015dce3a995ab0e5d3377074"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45b2dade015dce3a995ab0e5d3377074">&#9670;&#160;</a></span>mip_interface_run_command_packet()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -894,7 +894,7 @@ False if the receive callback failed (i.e. if it returned false). </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const mip_packet *&#160;</td>
+          <td class="paramtype">const mip_packet_view *&#160;</td>
           <td class="paramname"><em>packet</em>, </td>
         </tr>
         <tr>
@@ -1271,8 +1271,8 @@ False if some or all data could not be sent.</dd></dl>
 
 </div>
 </div>
-<a id="a7b56656ff43251e74f9fb147093e442b" name="a7b56656ff43251e74f9fb147093e442b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b56656ff43251e74f9fb147093e442b">&#9670;&#160;</a></span>mip_interface_start_command_packet()</h2>
+<a id="a6aa61aa9f0102ff2f8ee8633721714f9" name="a6aa61aa9f0102ff2f8ee8633721714f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6aa61aa9f0102ff2f8ee8633721714f9">&#9670;&#160;</a></span>mip_interface_start_command_packet()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1286,7 +1286,7 @@ False if some or all data could not be sent.</dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const mip_packet *&#160;</td>
+          <td class="paramtype">const mip_packet_view *&#160;</td>
           <td class="paramname"><em>packet</em>, </td>
         </tr>
         <tr>

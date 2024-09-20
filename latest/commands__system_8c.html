@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MIP SDK: src/mip/definitions/commands_system.c File Reference</title>
+<title>MIP_SDK: src/c/mip/definitions/commands_system.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v2.0.0-1-g65a7b37</span>
+   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-137-g8a814ec</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -70,7 +70,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0652f4f834e91e7f754984a58c1d13cb.html">mip</a></li><li class="navelem"><a class="el" href="dir_b4757d6490426ba3edc823ae097c67e9.html">definitions</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_3b19ecf29356981f494745fbef7e56bf.html">c</a></li><li class="navelem"><a class="el" href="dir_055b1db5f1a3d744682f684d38e2c4e5.html">mip</a></li><li class="navelem"><a class="el" href="dir_bf3b19e9d12bdf720e57281a5e6cc985.html">definitions</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -81,8 +81,8 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="commands__system_8h_source.html">commands_system.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="serialization_8h_source.html">../utils/serialization.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="mip__interface_8h_source.html">../mip_interface.h</a>&quot;</code><br />
+<code>#include &lt;<a class="el" href="mip__serialization_8h_source.html">mip/mip_serialization.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mip__interface_8h_source.html">mip/mip_interface.h</a>&gt;</code><br />
 <code>#include &lt;assert.h&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -95,20 +95,20 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga458c5ec6fa373748687ebc4ae141de27" id="r_ga458c5ec6fa373748687ebc4ae141de27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__system__comm__mode.html#ga458c5ec6fa373748687ebc4ae141de27">mip::C::insert_mip_system_comm_mode_command</a> (<a class="el" href="structmip_1_1_c_1_1mip__serializer.html">mip_serializer</a> *serializer, const <a class="el" href="structmip_1_1_c_1_1mip__system__comm__mode__command.html">mip_system_comm_mode_command</a> *self)</td></tr>
-<tr class="separator:ga458c5ec6fa373748687ebc4ae141de27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga526d074b9df7511b28a15bc7d4655273" id="r_ga526d074b9df7511b28a15bc7d4655273"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__system__comm__mode.html#ga526d074b9df7511b28a15bc7d4655273">mip::C::extract_mip_system_comm_mode_command</a> (<a class="el" href="structmip_1_1_c_1_1mip__serializer.html">mip_serializer</a> *serializer, <a class="el" href="structmip_1_1_c_1_1mip__system__comm__mode__command.html">mip_system_comm_mode_command</a> *self)</td></tr>
-<tr class="separator:ga526d074b9df7511b28a15bc7d4655273"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae3770806382b85aa0dc929e74df4e61d" id="r_gae3770806382b85aa0dc929e74df4e61d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__system__comm__mode.html#gae3770806382b85aa0dc929e74df4e61d">mip::C::insert_mip_system_comm_mode_response</a> (<a class="el" href="structmip_1_1_c_1_1mip__serializer.html">mip_serializer</a> *serializer, const <a class="el" href="structmip_1_1_c_1_1mip__system__comm__mode__response.html">mip_system_comm_mode_response</a> *self)</td></tr>
-<tr class="separator:gae3770806382b85aa0dc929e74df4e61d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5dffac5565b7acc340feb8ba3ae90a6e" id="r_ga5dffac5565b7acc340feb8ba3ae90a6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__system__comm__mode.html#ga5dffac5565b7acc340feb8ba3ae90a6e">mip::C::extract_mip_system_comm_mode_response</a> (<a class="el" href="structmip_1_1_c_1_1mip__serializer.html">mip_serializer</a> *serializer, <a class="el" href="structmip_1_1_c_1_1mip__system__comm__mode__response.html">mip_system_comm_mode_response</a> *self)</td></tr>
-<tr class="separator:ga5dffac5565b7acc340feb8ba3ae90a6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga23cf212cdc954bb509bebe9aa892a89d" id="r_ga23cf212cdc954bb509bebe9aa892a89d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__system__comm__mode.html#ga23cf212cdc954bb509bebe9aa892a89d">mip::C::mip_system_write_comm_mode</a> (struct <a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *device, uint8_t mode)</td></tr>
-<tr class="separator:ga23cf212cdc954bb509bebe9aa892a89d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9639468081553a02abd56bdc63366009" id="r_ga9639468081553a02abd56bdc63366009"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__system__comm__mode.html#ga9639468081553a02abd56bdc63366009">mip::C::mip_system_read_comm_mode</a> (struct <a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *device, uint8_t *mode_out)</td></tr>
-<tr class="separator:ga9639468081553a02abd56bdc63366009"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7a235231ca6cbfe1eea3d76f0c44ddbb" id="r_ga7a235231ca6cbfe1eea3d76f0c44ddbb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__system__comm__mode.html#ga7a235231ca6cbfe1eea3d76f0c44ddbb">mip::C::mip_system_default_comm_mode</a> (struct <a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *device)</td></tr>
-<tr class="separator:ga7a235231ca6cbfe1eea3d76f0c44ddbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0f7db48d0fc30291da8281becbd13a12" id="r_ga0f7db48d0fc30291da8281becbd13a12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__system__comm__mode.html#ga0f7db48d0fc30291da8281becbd13a12">mip::C::insert_mip_system_comm_mode_command</a> (<a class="el" href="structmicrostrain_1_1_c_1_1microstrain__serializer.html">microstrain_serializer</a> *serializer, const <a class="el" href="structmip_1_1_c_1_1mip__system__comm__mode__command.html">mip_system_comm_mode_command</a> *self)</td></tr>
+<tr class="separator:ga0f7db48d0fc30291da8281becbd13a12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga16a92a57d53b665eccce6ff5a116d905" id="r_ga16a92a57d53b665eccce6ff5a116d905"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__system__comm__mode.html#ga16a92a57d53b665eccce6ff5a116d905">mip::C::extract_mip_system_comm_mode_command</a> (<a class="el" href="structmicrostrain_1_1_c_1_1microstrain__serializer.html">microstrain_serializer</a> *serializer, <a class="el" href="structmip_1_1_c_1_1mip__system__comm__mode__command.html">mip_system_comm_mode_command</a> *self)</td></tr>
+<tr class="separator:ga16a92a57d53b665eccce6ff5a116d905"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab1f9ecddc48de4c96ad79f7dce1de2b9" id="r_gab1f9ecddc48de4c96ad79f7dce1de2b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__system__comm__mode.html#gab1f9ecddc48de4c96ad79f7dce1de2b9">mip::C::insert_mip_system_comm_mode_response</a> (<a class="el" href="structmicrostrain_1_1_c_1_1microstrain__serializer.html">microstrain_serializer</a> *serializer, const <a class="el" href="structmip_1_1_c_1_1mip__system__comm__mode__response.html">mip_system_comm_mode_response</a> *self)</td></tr>
+<tr class="separator:gab1f9ecddc48de4c96ad79f7dce1de2b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaf3bee4361cb1bc6b43191da8871fa29" id="r_gaaf3bee4361cb1bc6b43191da8871fa29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__system__comm__mode.html#gaaf3bee4361cb1bc6b43191da8871fa29">mip::C::extract_mip_system_comm_mode_response</a> (<a class="el" href="structmicrostrain_1_1_c_1_1microstrain__serializer.html">microstrain_serializer</a> *serializer, <a class="el" href="structmip_1_1_c_1_1mip__system__comm__mode__response.html">mip_system_comm_mode_response</a> *self)</td></tr>
+<tr class="separator:gaaf3bee4361cb1bc6b43191da8871fa29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad42f648b918027836c6d50eddaeda1f7" id="r_gad42f648b918027836c6d50eddaeda1f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__system__comm__mode.html#gad42f648b918027836c6d50eddaeda1f7">mip::C::mip_system_write_comm_mode</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *device, uint8_t mode)</td></tr>
+<tr class="separator:gad42f648b918027836c6d50eddaeda1f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga40940ed690037a4ad5129568ec499728" id="r_ga40940ed690037a4ad5129568ec499728"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__system__comm__mode.html#ga40940ed690037a4ad5129568ec499728">mip::C::mip_system_read_comm_mode</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *device, uint8_t *mode_out)</td></tr>
+<tr class="separator:ga40940ed690037a4ad5129568ec499728"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga49e98fe5603dbe985a63a48287196345" id="r_ga49e98fe5603dbe985a63a48287196345"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__system__comm__mode.html#ga49e98fe5603dbe985a63a48287196345">mip::C::mip_system_default_comm_mode</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *device)</td></tr>
+<tr class="separator:ga49e98fe5603dbe985a63a48287196345"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

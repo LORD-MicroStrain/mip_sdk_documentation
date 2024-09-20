@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MIP SDK: (0xA0,0x03) Gpio State [CPP]</title>
+<title>MIP_SDK: (0xA0,0x03) Gpio State [CPP]</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v2.0.0-1-g65a7b37</span>
+   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-137-g8a814ec</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -71,8 +71,7 @@ $(function() {
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle"><div class="title">(0xA0,0x03) Gpio State [CPP]<div class="ingroups"><a class="el" href="group___mip_data__cpp.html">MIP Data [CPP]</a> &raquo; <a class="el" href="group__system__data__cpp.html">System Data [CPP]</a></div></div></div>
 </div><!--header-->
 <div class="contents">
@@ -81,13 +80,6 @@ $(function() {
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__system_1_1_gpio_state.html">mip::data_system::GpioState</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:gadd44ca51d143b55887f2fe721788bb05" id="r_gadd44ca51d143b55887f2fe721788bb05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__system__gpio__state.html#gadd44ca51d143b55887f2fe721788bb05">mip::data_system::insert</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, const <a class="el" href="structmip_1_1data__system_1_1_gpio_state.html">GpioState</a> &amp;self)</td></tr>
-<tr class="separator:gadd44ca51d143b55887f2fe721788bb05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga94438f6464d9ab4170250af878993abc" id="r_ga94438f6464d9ab4170250af878993abc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cpp__system__gpio__state.html#ga94438f6464d9ab4170250af878993abc">mip::data_system::extract</a> (<a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;serializer, <a class="el" href="structmip_1_1data__system_1_1_gpio_state.html">GpioState</a> &amp;self)</td></tr>
-<tr class="separator:ga94438f6464d9ab4170250af878993abc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Indicates the state of all of the user GPIO pins.</p>
@@ -95,63 +87,6 @@ Functions</h2></td></tr>
 <p>To synchronize with faster signals and pulses, or for more accurate timestamping, utilize the event system and set the GPIO feature to TIMESTAMP in the 3DM GPIO Configuration command (0x0C,0x41).</p>
 <p>These GPIO states are sampled within one base period of the system data descriptor set.</p>
 <p>To obtain valid readings, the desired pin(s) must be configured to the GPIO feature (either input or output behavior) using the 3DM GPIO Configuration command (0x0C,0x41). Other gpio features may work on some devices but this is not guaranteed. Consult the factory before producing a design relying on reading pins configured to other feature types. </p>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="ga94438f6464d9ab4170250af878993abc" name="ga94438f6464d9ab4170250af878993abc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga94438f6464d9ab4170250af878993abc">&#9670;&#160;</a></span>extract()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::data_system::extract </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1data__system_1_1_gpio_state.html">GpioState</a> &amp;&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gadd44ca51d143b55887f2fe721788bb05" name="gadd44ca51d143b55887f2fe721788bb05"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadd44ca51d143b55887f2fe721788bb05">&#9670;&#160;</a></span>insert()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::data_system::insert </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmip_1_1_serializer.html">Serializer</a> &amp;&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structmip_1_1data__system_1_1_gpio_state.html">GpioState</a> &amp;&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

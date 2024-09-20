@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MIP SDK: src/mip/utils/serial_port.h Source File</title>
+<title>MIP_SDK: src/c/microstrain/connections/serial/serial_port.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v2.0.0-1-g65a7b37</span>
+   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-137-g8a814ec</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -75,7 +75,7 @@ $(document).ready(function() { init_codefold(0); });
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0652f4f834e91e7f754984a58c1d13cb.html">mip</a></li><li class="navelem"><a class="el" href="dir_676d757825b0463aeb1cf202b772c552.html">utils</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_3b19ecf29356981f494745fbef7e56bf.html">c</a></li><li class="navelem"><a class="el" href="dir_a9b350876afe660af6c01dcd56f4dcc2.html">microstrain</a></li><li class="navelem"><a class="el" href="dir_8989a9a2159ffbdf5fff3244b7f2a3d2.html">connections</a></li><li class="navelem"><a class="el" href="dir_42ce9b089839dae5a7da3ffca63c3bf6.html">serial</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -84,65 +84,68 @@ $(document).ready(function() { init_codefold(0); });
 <div class="contents">
 <a href="serial__port_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#ifdef WIN32</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#ifndef WIN32_LEAN_AND_MEAN</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#define WIN32_LEAN_AND_MEAN</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;windows.h&gt;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;poll.h&gt;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;fcntl.h&gt;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;errno.h&gt;</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;string.h&gt;</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;unistd.h&gt;</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;termios.h&gt;</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;sys/ioctl.h&gt;</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="foldopen" id="foldopen00040" data-start="{" data-end="};">
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="structserial__port.html">   40</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structserial__port.html">serial_port</a></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>{</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#ifdef WIN32 </span><span class="comment">//Windows</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    HANDLE <a class="code hl_variable" href="structserial__port.html#a829bac4926b045fde403279858a3f0ae">handle</a>;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#else </span><span class="comment">//Linux</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="structserial__port.html#a829bac4926b045fde403279858a3f0ae">   45</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structserial__port.html#a829bac4926b045fde403279858a3f0ae">handle</a>;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="group__mip__serial.html#ga18e467111ee2c4ad7249fac8cc6ac47f">   47</a></span>} <a class="code hl_struct" href="structserial__port.html">serial_port</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;<a class="code" href="platform_8h.html">microstrain/common/platform.h</a>&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#ifdef MICROSTRAIN_PLATFORM_WINDOWS</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef WIN32_LEAN_AND_MEAN</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define WIN32_LEAN_AND_MEAN</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;windows.h&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;poll.h&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;fcntl.h&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;errno.h&gt;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;unistd.h&gt;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;termios.h&gt;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;sys/ioctl.h&gt;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="foldopen" id="foldopen00042" data-start="{" data-end="};">
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="structserial__port.html">   42</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structserial__port.html">serial_port</a></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>{</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#ifdef MICROSTRAIN_PLATFORM_WINDOWS</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    HANDLE <a class="code hl_variable" href="structserial__port.html#a829bac4926b045fde403279858a3f0ae">handle</a>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#else </span><span class="comment">//Linux</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="structserial__port.html#a829bac4926b045fde403279858a3f0ae">   47</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structserial__port.html#a829bac4926b045fde403279858a3f0ae">handle</a>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="group__microstrain__serial.html#ga18e467111ee2c4ad7249fac8cc6ac47f">   49</a></span>} <a class="code hl_struct" href="structserial__port.html">serial_port</a>;</div>
 </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="keywordtype">void</span> <a class="code hl_function" href="group__mip__serial.html#gabec163ed108c049634b34e43e48c9cd2">serial_port_init</a>(<a class="code hl_struct" href="structserial__port.html">serial_port</a> *port);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keywordtype">bool</span> <a class="code hl_function" href="group__mip__serial.html#ga21191ddf667e39e8ee411b31989ddd18">serial_port_open</a>(<a class="code hl_struct" href="structserial__port.html">serial_port</a> *port, <span class="keyword">const</span> <span class="keywordtype">char</span> *port_str, <span class="keywordtype">int</span> baudrate);</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keywordtype">bool</span> <a class="code hl_function" href="group__mip__serial.html#gab22be2d843a33c8e421bec2dbecfe9b8">serial_port_close</a>(<a class="code hl_struct" href="structserial__port.html">serial_port</a> *port);</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="keywordtype">bool</span> <a class="code hl_function" href="group__mip__serial.html#ga0cde69ba581410334b38e75b4d109aef">serial_port_write</a>(<a class="code hl_struct" href="structserial__port.html">serial_port</a> *port, <span class="keyword">const</span> <span class="keywordtype">void</span> *buffer, <span class="keywordtype">size_t</span> num_bytes, <span class="keywordtype">size_t</span> *bytes_written);</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keywordtype">bool</span> <a class="code hl_function" href="group__mip__serial.html#ga4134cf0b7afa1e0d463ab3757b99c571">serial_port_read</a>(<a class="code hl_struct" href="structserial__port.html">serial_port</a> *port, <span class="keywordtype">void</span> *buffer, <span class="keywordtype">size_t</span> num_bytes, <span class="keywordtype">int</span> wait_time, <span class="keywordtype">size_t</span> *bytes_read);</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>uint32_t <a class="code hl_function" href="group__mip__serial.html#ga274b8566702fcf030b3266aaec09b17c">serial_port_read_count</a>(<a class="code hl_struct" href="structserial__port.html">serial_port</a> *port);</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keywordtype">bool</span> <a class="code hl_function" href="group__mip__serial.html#ga10fccc988cda59890fcd5d3cfd846e61">serial_port_is_open</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structserial__port.html">serial_port</a> *port);</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>}</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="agroup__mip__serial_html_ga0cde69ba581410334b38e75b4d109aef"><div class="ttname"><a href="group__mip__serial.html#ga0cde69ba581410334b38e75b4d109aef">serial_port_write</a></div><div class="ttdeci">bool serial_port_write(serial_port *port, const void *buffer, size_t num_bytes, size_t *bytes_written)</div><div class="ttdef"><b>Definition</b> serial_port.c:274</div></div>
-<div class="ttc" id="agroup__mip__serial_html_ga10fccc988cda59890fcd5d3cfd846e61"><div class="ttname"><a href="group__mip__serial.html#ga10fccc988cda59890fcd5d3cfd846e61">serial_port_is_open</a></div><div class="ttdeci">bool serial_port_is_open(const serial_port *port)</div><div class="ttdef"><b>Definition</b> serial_port.c:419</div></div>
-<div class="ttc" id="agroup__mip__serial_html_ga21191ddf667e39e8ee411b31989ddd18"><div class="ttname"><a href="group__mip__serial.html#ga21191ddf667e39e8ee411b31989ddd18">serial_port_open</a></div><div class="ttdeci">bool serial_port_open(serial_port *port, const char *port_str, int baudrate)</div><div class="ttdef"><b>Definition</b> serial_port.c:73</div></div>
-<div class="ttc" id="agroup__mip__serial_html_ga274b8566702fcf030b3266aaec09b17c"><div class="ttname"><a href="group__mip__serial.html#ga274b8566702fcf030b3266aaec09b17c">serial_port_read_count</a></div><div class="ttdeci">uint32_t serial_port_read_count(serial_port *port)</div><div class="ttdef"><b>Definition</b> serial_port.c:388</div></div>
-<div class="ttc" id="agroup__mip__serial_html_ga4134cf0b7afa1e0d463ab3757b99c571"><div class="ttname"><a href="group__mip__serial.html#ga4134cf0b7afa1e0d463ab3757b99c571">serial_port_read</a></div><div class="ttdeci">bool serial_port_read(serial_port *port, void *buffer, size_t num_bytes, int wait_time, size_t *bytes_read)</div><div class="ttdef"><b>Definition</b> serial_port.c:308</div></div>
-<div class="ttc" id="agroup__mip__serial_html_gab22be2d843a33c8e421bec2dbecfe9b8"><div class="ttname"><a href="group__mip__serial.html#gab22be2d843a33c8e421bec2dbecfe9b8">serial_port_close</a></div><div class="ttdeci">bool serial_port_close(serial_port *port)</div><div class="ttdef"><b>Definition</b> serial_port.c:258</div></div>
-<div class="ttc" id="agroup__mip__serial_html_gabec163ed108c049634b34e43e48c9cd2"><div class="ttname"><a href="group__mip__serial.html#gabec163ed108c049634b34e43e48c9cd2">serial_port_init</a></div><div class="ttdeci">void serial_port_init(serial_port *port)</div><div class="ttdef"><b>Definition</b> serial_port.c:68</div></div>
-<div class="ttc" id="astructserial__port_html"><div class="ttname"><a href="structserial__port.html">serial_port</a></div><div class="ttdef"><b>Definition</b> serial_port.h:41</div></div>
-<div class="ttc" id="astructserial__port_html_a829bac4926b045fde403279858a3f0ae"><div class="ttname"><a href="structserial__port.html#a829bac4926b045fde403279858a3f0ae">serial_port::handle</a></div><div class="ttdeci">int handle</div><div class="ttdef"><b>Definition</b> serial_port.h:45</div></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keywordtype">void</span> <a class="code hl_function" href="group__microstrain__serial.html#gabec163ed108c049634b34e43e48c9cd2">serial_port_init</a>(<a class="code hl_struct" href="structserial__port.html">serial_port</a> *port);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="keywordtype">bool</span> <a class="code hl_function" href="group__microstrain__serial.html#ga21191ddf667e39e8ee411b31989ddd18">serial_port_open</a>(<a class="code hl_struct" href="structserial__port.html">serial_port</a> *port, <span class="keyword">const</span> <span class="keywordtype">char</span> *port_str, <span class="keywordtype">int</span> baudrate);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keywordtype">bool</span> <a class="code hl_function" href="group__microstrain__serial.html#gab22be2d843a33c8e421bec2dbecfe9b8">serial_port_close</a>(<a class="code hl_struct" href="structserial__port.html">serial_port</a> *port);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keywordtype">bool</span> <a class="code hl_function" href="group__microstrain__serial.html#ga0cde69ba581410334b38e75b4d109aef">serial_port_write</a>(<a class="code hl_struct" href="structserial__port.html">serial_port</a> *port, <span class="keyword">const</span> <span class="keywordtype">void</span> *buffer, <span class="keywordtype">size_t</span> num_bytes, <span class="keywordtype">size_t</span> *bytes_written);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keywordtype">bool</span> <a class="code hl_function" href="group__microstrain__serial.html#ga4134cf0b7afa1e0d463ab3757b99c571">serial_port_read</a>(<a class="code hl_struct" href="structserial__port.html">serial_port</a> *port, <span class="keywordtype">void</span> *buffer, <span class="keywordtype">size_t</span> num_bytes, <span class="keywordtype">int</span> wait_time, <span class="keywordtype">size_t</span> *bytes_read);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>uint32_t <a class="code hl_function" href="group__microstrain__serial.html#ga274b8566702fcf030b3266aaec09b17c">serial_port_read_count</a>(<a class="code hl_struct" href="structserial__port.html">serial_port</a> *port);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keywordtype">bool</span> <a class="code hl_function" href="group__microstrain__serial.html#ga10fccc988cda59890fcd5d3cfd846e61">serial_port_is_open</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structserial__port.html">serial_port</a> *port);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>}</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="agroup__microstrain__serial_html_ga0cde69ba581410334b38e75b4d109aef"><div class="ttname"><a href="group__microstrain__serial.html#ga0cde69ba581410334b38e75b4d109aef">serial_port_write</a></div><div class="ttdeci">bool serial_port_write(serial_port *port, const void *buffer, size_t num_bytes, size_t *bytes_written)</div><div class="ttdef"><b>Definition</b> serial_port.c:274</div></div>
+<div class="ttc" id="agroup__microstrain__serial_html_ga10fccc988cda59890fcd5d3cfd846e61"><div class="ttname"><a href="group__microstrain__serial.html#ga10fccc988cda59890fcd5d3cfd846e61">serial_port_is_open</a></div><div class="ttdeci">bool serial_port_is_open(const serial_port *port)</div><div class="ttdef"><b>Definition</b> serial_port.c:418</div></div>
+<div class="ttc" id="agroup__microstrain__serial_html_ga21191ddf667e39e8ee411b31989ddd18"><div class="ttname"><a href="group__microstrain__serial.html#ga21191ddf667e39e8ee411b31989ddd18">serial_port_open</a></div><div class="ttdeci">bool serial_port_open(serial_port *port, const char *port_str, int baudrate)</div><div class="ttdef"><b>Definition</b> serial_port.c:73</div></div>
+<div class="ttc" id="agroup__microstrain__serial_html_ga274b8566702fcf030b3266aaec09b17c"><div class="ttname"><a href="group__microstrain__serial.html#ga274b8566702fcf030b3266aaec09b17c">serial_port_read_count</a></div><div class="ttdeci">uint32_t serial_port_read_count(serial_port *port)</div><div class="ttdef"><b>Definition</b> serial_port.c:387</div></div>
+<div class="ttc" id="agroup__microstrain__serial_html_ga4134cf0b7afa1e0d463ab3757b99c571"><div class="ttname"><a href="group__microstrain__serial.html#ga4134cf0b7afa1e0d463ab3757b99c571">serial_port_read</a></div><div class="ttdeci">bool serial_port_read(serial_port *port, void *buffer, size_t num_bytes, int wait_time, size_t *bytes_read)</div><div class="ttdef"><b>Definition</b> serial_port.c:307</div></div>
+<div class="ttc" id="agroup__microstrain__serial_html_gab22be2d843a33c8e421bec2dbecfe9b8"><div class="ttname"><a href="group__microstrain__serial.html#gab22be2d843a33c8e421bec2dbecfe9b8">serial_port_close</a></div><div class="ttdeci">bool serial_port_close(serial_port *port)</div><div class="ttdef"><b>Definition</b> serial_port.c:258</div></div>
+<div class="ttc" id="agroup__microstrain__serial_html_gabec163ed108c049634b34e43e48c9cd2"><div class="ttname"><a href="group__microstrain__serial.html#gabec163ed108c049634b34e43e48c9cd2">serial_port_init</a></div><div class="ttdeci">void serial_port_init(serial_port *port)</div><div class="ttdef"><b>Definition</b> serial_port.c:68</div></div>
+<div class="ttc" id="aplatform_8h_html"><div class="ttname"><a href="platform_8h.html">platform.h</a></div></div>
+<div class="ttc" id="astructserial__port_html"><div class="ttname"><a href="structserial__port.html">serial_port</a></div><div class="ttdef"><b>Definition</b> serial_port.h:43</div></div>
+<div class="ttc" id="astructserial__port_html_a829bac4926b045fde403279858a3f0ae"><div class="ttname"><a href="structserial__port.html#a829bac4926b045fde403279858a3f0ae">serial_port::handle</a></div><div class="ttdeci">int handle</div><div class="ttdef"><b>Definition</b> serial_port.h:47</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

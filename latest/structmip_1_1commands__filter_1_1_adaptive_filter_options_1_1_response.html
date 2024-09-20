@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MIP SDK: mip::commands_filter::AdaptiveFilterOptions::Response Struct Reference</title>
+<title>MIP_SDK: mip::commands_filter::AdaptiveFilterOptions::Response Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v2.0.0-1-g65a7b37</span>
+   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-137-g8a814ec</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -83,21 +83,24 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="commands__filter_8hpp_source.html">commands_filter.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="definitions_2commands__filter_8hpp_source.html">commands_filter.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6bafdd1cc3a7b3557801e2993bd2ba15" id="r_a6bafdd1cc3a7b3557801e2993bd2ba15"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_adaptive_filter_options_1_1_response.html#a6bafdd1cc3a7b3557801e2993bd2ba15">as_tuple</a> ()</td></tr>
-<tr class="separator:a6bafdd1cc3a7b3557801e2993bd2ba15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8188d88cb97be414b8b9e41d7abc2cf7" id="r_a8188d88cb97be414b8b9e41d7abc2cf7"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_adaptive_filter_options_1_1_response.html#a8188d88cb97be414b8b9e41d7abc2cf7">asTuple</a> () const</td></tr>
+<tr class="separator:a8188d88cb97be414b8b9e41d7abc2cf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a727566ff988e75e620940ed69845a1a3" id="r_a727566ff988e75e620940ed69845a1a3"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_adaptive_filter_options_1_1_response.html#a727566ff988e75e620940ed69845a1a3">asTuple</a> ()</td></tr>
+<tr class="separator:a727566ff988e75e620940ed69845a1a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c0ef8fdf6f44c5e89f04d896e70b64a" id="r_a4c0ef8fdf6f44c5e89f04d896e70b64a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_adaptive_filter_options_1_1_response.html#a4c0ef8fdf6f44c5e89f04d896e70b64a">insert</a> (<a class="el" href="namespacemip.html#a7475074708d6d3e0fa83597b41eb98f8">Serializer</a> &amp;serializer) const</td></tr>
+<tr class="memdesc:a4c0ef8fdf6f44c5e89f04d896e70b64a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialization.  <br /></td></tr>
+<tr class="separator:a4c0ef8fdf6f44c5e89f04d896e70b64a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a039cc999092e1e040adb4f6bba71ed01" id="r_a039cc999092e1e040adb4f6bba71ed01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_adaptive_filter_options_1_1_response.html#a039cc999092e1e040adb4f6bba71ed01">extract</a> (<a class="el" href="namespacemip.html#a7475074708d6d3e0fa83597b41eb98f8">Serializer</a> &amp;serializer)</td></tr>
+<tr class="separator:a039cc999092e1e040adb4f6bba71ed01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a39d08e418ac7380f674406862a8ab640" id="r_a39d08e418ac7380f674406862a8ab640"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_adaptive_filter_options_1_1_response.html#a39d08e418ac7380f674406862a8ab640">level</a> = 0</td></tr>
-<tr class="memdesc:a39d08e418ac7380f674406862a8ab640"><td class="mdescLeft">&#160;</td><td class="mdescRight">Auto-adaptive operating level: <br  />
- 0=Off, <br  />
- 1=Conservative, <br  />
- 2=Moderate (default), <br  />
- 3=Aggressive.  <br /></td></tr>
+<tr class="memdesc:a39d08e418ac7380f674406862a8ab640"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameters.  <br /></td></tr>
 <tr class="separator:a39d08e418ac7380f674406862a8ab640"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a092092a26cf93f9b3a330e5281938a4b" id="r_a092092a26cf93f9b3a330e5281938a4b"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_adaptive_filter_options_1_1_response.html#a092092a26cf93f9b3a330e5281938a4b">time_limit</a> = 0</td></tr>
 <tr class="memdesc:a092092a26cf93f9b3a330e5281938a4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum duration of measurement rejection before entering recovery mode (ms)  <br /></td></tr>
@@ -106,8 +109,9 @@ Public Attributes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:ac87fb712b52203fafed59c57d4d343fa" id="r_ac87fb712b52203fafed59c57d4d343fa"><td class="memItemLeft" align="right" valign="top">static constexpr const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_adaptive_filter_options_1_1_response.html#ac87fb712b52203fafed59c57d4d343fa">DESCRIPTOR_SET</a> = ::mip::commands_filter::DESCRIPTOR_SET</td></tr>
+<tr class="memdesc:ac87fb712b52203fafed59c57d4d343fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Descriptors.  <br /></td></tr>
 <tr class="separator:ac87fb712b52203fafed59c57d4d343fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0ddf856cf5ddf8b52e2a093c4f049b9" id="r_ae0ddf856cf5ddf8b52e2a093c4f049b9"><td class="memItemLeft" align="right" valign="top">static constexpr const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_adaptive_filter_options_1_1_response.html#ae0ddf856cf5ddf8b52e2a093c4f049b9">FIELD_DESCRIPTOR</a> = <a class="el" href="group__filter__commands__cpp.html#gga740591bcc84739c1b5acd1a874a2787cac7f0ac069c3539ff63c3edc139017933">::mip::commands_filter::REPLY_ADAPTIVE_FILTER_OPTIONS</a></td></tr>
+<tr class="memitem:ae0ddf856cf5ddf8b52e2a093c4f049b9" id="r_ae0ddf856cf5ddf8b52e2a093c4f049b9"><td class="memItemLeft" align="right" valign="top">static constexpr const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_adaptive_filter_options_1_1_response.html#ae0ddf856cf5ddf8b52e2a093c4f049b9">FIELD_DESCRIPTOR</a> = <a class="el" href="group__filter__commands__cpp.html#gga42995de3dacfe97ce05d3718e934f620ac7f0ac069c3539ff63c3edc139017933">::mip::commands_filter::REPLY_ADAPTIVE_FILTER_OPTIONS</a></td></tr>
 <tr class="separator:ae0ddf856cf5ddf8b52e2a093c4f049b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08fe575afa3760e9cc232fe85a8b4fa1" id="r_a08fe575afa3760e9cc232fe85a8b4fa1"><td class="memItemLeft" align="right" valign="top">static constexpr const <a class="el" href="structmip_1_1_composite_descriptor.html">CompositeDescriptor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_adaptive_filter_options_1_1_response.html#a08fe575afa3760e9cc232fe85a8b4fa1">DESCRIPTOR</a> = {<a class="el" href="structmip_1_1commands__filter_1_1_adaptive_filter_options_1_1_response.html#ac87fb712b52203fafed59c57d4d343fa">DESCRIPTOR_SET</a>, <a class="el" href="structmip_1_1commands__filter_1_1_adaptive_filter_options_1_1_response.html#ae0ddf856cf5ddf8b52e2a093c4f049b9">FIELD_DESCRIPTOR</a>}</td></tr>
 <tr class="separator:a08fe575afa3760e9cc232fe85a8b4fa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -115,14 +119,12 @@ Static Public Attributes</h2></td></tr>
 <tr class="separator:a526bcde7a7ff7842e2325659d728ed96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b6f24bd55436a73f7ec5e411a8de950" id="r_a3b6f24bd55436a73f7ec5e411a8de950"><td class="memItemLeft" align="right" valign="top">static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_adaptive_filter_options_1_1_response.html#a3b6f24bd55436a73f7ec5e411a8de950">DOC_NAME</a> = &quot;Adaptive Filter Control Response&quot;</td></tr>
 <tr class="separator:a3b6f24bd55436a73f7ec5e411a8de950"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4316aa57e2f7897de1ee42ad5feacbc8" id="r_a4316aa57e2f7897de1ee42ad5feacbc8"><td class="memItemLeft" align="right" valign="top">static constexpr const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_adaptive_filter_options_1_1_response.html#a4316aa57e2f7897de1ee42ad5feacbc8">ECHOED_PARAMS</a> = 0x0000</td></tr>
-<tr class="separator:a4316aa57e2f7897de1ee42ad5feacbc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75d90ba162fa15c7d2f869f99d34b7d1" id="r_a75d90ba162fa15c7d2f869f99d34b7d1"><td class="memItemLeft" align="right" valign="top">static constexpr const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_adaptive_filter_options_1_1_response.html#a75d90ba162fa15c7d2f869f99d34b7d1">COUNTER_PARAMS</a> = 0x00000000</td></tr>
-<tr class="separator:a75d90ba162fa15c7d2f869f99d34b7d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e0d4e33da18719f5a9c01c0dbfaa145" id="r_a3e0d4e33da18719f5a9c01c0dbfaa145"><td class="memItemLeft" align="right" valign="top">static constexpr const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__filter_1_1_adaptive_filter_options_1_1_response.html#a3e0d4e33da18719f5a9c01c0dbfaa145">HAS_FUNCTION_SELECTOR</a> = false</td></tr>
+<tr class="separator:a3e0d4e33da18719f5a9c01c0dbfaa145"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a6bafdd1cc3a7b3557801e2993bd2ba15" name="a6bafdd1cc3a7b3557801e2993bd2ba15"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6bafdd1cc3a7b3557801e2993bd2ba15">&#9670;&#160;</a></span>as_tuple()</h2>
+<a id="a727566ff988e75e620940ed69845a1a3" name="a727566ff988e75e620940ed69845a1a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a727566ff988e75e620940ed69845a1a3">&#9670;&#160;</a></span>asTuple() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -131,7 +133,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">auto mip::commands_filter::AdaptiveFilterOptions::Response::as_tuple </td>
+          <td class="memname">auto mip::commands_filter::AdaptiveFilterOptions::Response::asTuple </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -146,9 +148,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a75d90ba162fa15c7d2f869f99d34b7d1" name="a75d90ba162fa15c7d2f869f99d34b7d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75d90ba162fa15c7d2f869f99d34b7d1">&#9670;&#160;</a></span>COUNTER_PARAMS</h2>
+<a id="a8188d88cb97be414b8b9e41d7abc2cf7" name="a8188d88cb97be414b8b9e41d7abc2cf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8188d88cb97be414b8b9e41d7abc2cf7">&#9670;&#160;</a></span>asTuple() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -157,18 +158,60 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr const uint32_t mip::commands_filter::AdaptiveFilterOptions::Response::COUNTER_PARAMS = 0x00000000</td>
+          <td class="memname">auto mip::commands_filter::AdaptiveFilterOptions::Response::asTuple </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
+<a id="a039cc999092e1e040adb4f6bba71ed01" name="a039cc999092e1e040adb4f6bba71ed01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a039cc999092e1e040adb4f6bba71ed01">&#9670;&#160;</a></span>extract()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::commands_filter::AdaptiveFilterOptions::Response::extract </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacemip.html#a7475074708d6d3e0fa83597b41eb98f8">Serializer</a> &amp;&#160;</td>
+          <td class="paramname"><em>serializer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4c0ef8fdf6f44c5e89f04d896e70b64a" name="a4c0ef8fdf6f44c5e89f04d896e70b64a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c0ef8fdf6f44c5e89f04d896e70b64a">&#9670;&#160;</a></span>insert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::commands_filter::AdaptiveFilterOptions::Response::insert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacemip.html#a7475074708d6d3e0fa83597b41eb98f8">Serializer</a> &amp;&#160;</td>
+          <td class="paramname"><em>serializer</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Serialization. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
 <a id="a08fe575afa3760e9cc232fe85a8b4fa1" name="a08fe575afa3760e9cc232fe85a8b4fa1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a08fe575afa3760e9cc232fe85a8b4fa1">&#9670;&#160;</a></span>DESCRIPTOR</h2>
 
@@ -211,6 +254,8 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Descriptors. </p>
+
 </div>
 </div>
 <a id="a3b6f24bd55436a73f7ec5e411a8de950" name="a3b6f24bd55436a73f7ec5e411a8de950"></a>
@@ -235,8 +280,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a4316aa57e2f7897de1ee42ad5feacbc8" name="a4316aa57e2f7897de1ee42ad5feacbc8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4316aa57e2f7897de1ee42ad5feacbc8">&#9670;&#160;</a></span>ECHOED_PARAMS</h2>
+<a id="ae0ddf856cf5ddf8b52e2a093c4f049b9" name="ae0ddf856cf5ddf8b52e2a093c4f049b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0ddf856cf5ddf8b52e2a093c4f049b9">&#9670;&#160;</a></span>FIELD_DESCRIPTOR</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -245,7 +290,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr const uint32_t mip::commands_filter::AdaptiveFilterOptions::Response::ECHOED_PARAMS = 0x0000</td>
+          <td class="memname">constexpr const uint8_t mip::commands_filter::AdaptiveFilterOptions::Response::FIELD_DESCRIPTOR = <a class="el" href="group__filter__commands__cpp.html#gga42995de3dacfe97ce05d3718e934f620ac7f0ac069c3539ff63c3edc139017933">::mip::commands_filter::REPLY_ADAPTIVE_FILTER_OPTIONS</a></td>
         </tr>
       </table>
   </td>
@@ -257,8 +302,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ae0ddf856cf5ddf8b52e2a093c4f049b9" name="ae0ddf856cf5ddf8b52e2a093c4f049b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0ddf856cf5ddf8b52e2a093c4f049b9">&#9670;&#160;</a></span>FIELD_DESCRIPTOR</h2>
+<a id="a3e0d4e33da18719f5a9c01c0dbfaa145" name="a3e0d4e33da18719f5a9c01c0dbfaa145"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e0d4e33da18719f5a9c01c0dbfaa145">&#9670;&#160;</a></span>HAS_FUNCTION_SELECTOR</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -267,7 +312,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr const uint8_t mip::commands_filter::AdaptiveFilterOptions::Response::FIELD_DESCRIPTOR = <a class="el" href="group__filter__commands__cpp.html#gga740591bcc84739c1b5acd1a874a2787cac7f0ac069c3539ff63c3edc139017933">::mip::commands_filter::REPLY_ADAPTIVE_FILTER_OPTIONS</a></td>
+          <td class="memname">constexpr const bool mip::commands_filter::AdaptiveFilterOptions::Response::HAS_FUNCTION_SELECTOR = false</td>
         </tr>
       </table>
   </td>
@@ -291,6 +336,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Parameters. </p>
 <p>Auto-adaptive operating level: <br  />
  0=Off, <br  />
  1=Conservative, <br  />
@@ -337,8 +383,9 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li>src/mip/definitions/<a class="el" href="commands__filter_8hpp_source.html">commands_filter.hpp</a></li>
+<hr/>The documentation for this struct was generated from the following files:<ul>
+<li>src/cpp/mip/definitions/<a class="el" href="definitions_2commands__filter_8hpp_source.html">commands_filter.hpp</a></li>
+<li>src/cpp/mip/definitions/<a class="el" href="commands__filter_8cpp.html">commands_filter.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

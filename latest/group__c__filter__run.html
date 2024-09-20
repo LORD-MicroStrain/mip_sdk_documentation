@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MIP SDK: (0x0D,0x05) Run [C]</title>
+<title>MIP_SDK: (0x0D,0x05) Run [C]</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v2.0.0-1-g65a7b37</span>
+   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-137-g8a814ec</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -71,22 +71,46 @@ $(function() {
 
 <div class="header">
   <div class="summary">
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">(0x0D,0x05) Run [C]<div class="ingroups"><a class="el" href="group___mip_commands__c.html">MIP Commands [C]</a> &raquo; <a class="el" href="group__filter__commands__c.html">Filter Commands [C]</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:gad3792635eca32b0b8feab36c5af58044" id="r_gad3792635eca32b0b8feab36c5af58044"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="group__c__filter__run.html#gad3792635eca32b0b8feab36c5af58044">mip_filter_run_command</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__filter__run.html#gad3792635eca32b0b8feab36c5af58044">mip::C::mip_filter_run_command</a></td></tr>
+<tr class="memdesc:gad3792635eca32b0b8feab36c5af58044"><td class="mdescLeft">&#160;</td><td class="mdescRight">No parameters (empty struct not allowed in <a class="el" href="namespacemip_1_1_c.html">C</a>)  <br /></td></tr>
+<tr class="separator:gad3792635eca32b0b8feab36c5af58044"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gaeb74386a7f1a315015507657f96179d1" id="r_gaeb74386a7f1a315015507657f96179d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__filter__run.html#gaeb74386a7f1a315015507657f96179d1">mip::C::mip_filter_run</a> (struct <a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *device)</td></tr>
-<tr class="separator:gaeb74386a7f1a315015507657f96179d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac0d9b85812cf4733565e1bd560d58e7a" id="r_gac0d9b85812cf4733565e1bd560d58e7a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__filter__run.html#gac0d9b85812cf4733565e1bd560d58e7a">mip::C::mip_filter_run</a> (<a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *device)</td></tr>
+<tr class="separator:gac0d9b85812cf4733565e1bd560d58e7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Manual run command.</p>
 <p>If the initialization configuration has the "wait_for_run_command" option enabled, the filter will wait until it receives this command before commencing integration and enabling the Kalman filter. Prior to the receipt of this command, the filter will remain in the filter initialization mode. </p>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="gad3792635eca32b0b8feab36c5af58044" name="gad3792635eca32b0b8feab36c5af58044"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad3792635eca32b0b8feab36c5af58044">&#9670;&#160;</a></span>mip_filter_run_command</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="group__c__filter__run.html#gad3792635eca32b0b8feab36c5af58044">mip_filter_run_command</a> <a class="el" href="group__c__filter__run.html#gad3792635eca32b0b8feab36c5af58044">mip::C::mip_filter_run_command</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>No parameters (empty struct not allowed in <a class="el" href="namespacemip_1_1_c.html">C</a>) </p>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gaeb74386a7f1a315015507657f96179d1" name="gaeb74386a7f1a315015507657f96179d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaeb74386a7f1a315015507657f96179d1">&#9670;&#160;</a></span>mip_filter_run()</h2>
+<a id="gac0d9b85812cf4733565e1bd560d58e7a" name="gac0d9b85812cf4733565e1bd560d58e7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac0d9b85812cf4733565e1bd560d58e7a">&#9670;&#160;</a></span>mip_filter_run()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -94,7 +118,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_run </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1_c_1_1mip__interface.html">mip_interface</a> *&#160;</td>
           <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
         </tr>

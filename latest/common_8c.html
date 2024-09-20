@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MIP SDK: src/mip/definitions/common.c File Reference</title>
+<title>MIP_SDK: src/c/mip/definitions/common.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v2.0.0-1-g65a7b37</span>
+   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-137-g8a814ec</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -70,7 +70,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0652f4f834e91e7f754984a58c1d13cb.html">mip</a></li><li class="navelem"><a class="el" href="dir_b4757d6490426ba3edc823ae097c67e9.html">definitions</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_3b19ecf29356981f494745fbef7e56bf.html">c</a></li><li class="navelem"><a class="el" href="dir_055b1db5f1a3d744682f684d38e2c4e5.html">mip</a></li><li class="navelem"><a class="el" href="dir_bf3b19e9d12bdf720e57281a5e6cc985.html">definitions</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -81,7 +81,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="common_8h_source.html">common.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="serialization_8h_source.html">../utils/serialization.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="serialization_8h_source.html">microstrain/common/serialization.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
@@ -90,10 +90,10 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac3505214a84598b233c4d614c901df41" id="r_ac3505214a84598b233c4d614c901df41"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8c.html#ac3505214a84598b233c4d614c901df41">insert_mip_descriptor_rate</a> (mip_serializer *serializer, const mip_descriptor_rate *self)</td></tr>
-<tr class="separator:ac3505214a84598b233c4d614c901df41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9400f95b7f71ab9cabc05d193154b9b2" id="r_a9400f95b7f71ab9cabc05d193154b9b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8c.html#a9400f95b7f71ab9cabc05d193154b9b2">extract_mip_descriptor_rate</a> (mip_serializer *serializer, mip_descriptor_rate *self)</td></tr>
-<tr class="separator:a9400f95b7f71ab9cabc05d193154b9b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf377ebbb5cddd6e8c2856a21553c2d1" id="r_acf377ebbb5cddd6e8c2856a21553c2d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8c.html#acf377ebbb5cddd6e8c2856a21553c2d1">insert_mip_descriptor_rate</a> (microstrain_serializer *serializer, const mip_descriptor_rate *self)</td></tr>
+<tr class="separator:acf377ebbb5cddd6e8c2856a21553c2d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2fe84199952cdc594da6d85ec10bc2b" id="r_af2fe84199952cdc594da6d85ec10bc2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8c.html#af2fe84199952cdc594da6d85ec10bc2b">extract_mip_descriptor_rate</a> (microstrain_serializer *serializer, mip_descriptor_rate *self)</td></tr>
+<tr class="separator:af2fe84199952cdc594da6d85ec10bc2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a3998522236e3a565e69132aeee5b2139" name="a3998522236e3a565e69132aeee5b2139"></a>
@@ -127,22 +127,22 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordtype">void</span> insert_##name(mip_serializer* serializer, <span class="keyword">const</span> name self) \</div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordtype">void</span> insert_##name(microstrain_serializer* serializer, <span class="keyword">const</span> name self) \</div>
 <div class="line">{ \</div>
 <div class="line">    for(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i=0; i&lt;n; i++) \</div>
-<div class="line">        insert_##type(serializer, self[i]); \</div>
+<div class="line">        microstrain_insert_##type(serializer, self[i]); \</div>
 <div class="line">} \</div>
-<div class="line"><span class="keywordtype">void</span> extract_##name(mip_serializer* serializer, name self) \</div>
+<div class="line"><span class="keywordtype">void</span> extract_##name(microstrain_serializer* serializer, name self) \</div>
 <div class="line">{ \</div>
 <div class="line">    for(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i=0; i&lt;n; i++) \</div>
-<div class="line">        extract_##type(serializer, &amp;self[i]); \</div>
+<div class="line">        microstrain_extract_##type(serializer, &amp;self[i]); \</div>
 <div class="line">}</div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a9400f95b7f71ab9cabc05d193154b9b2" name="a9400f95b7f71ab9cabc05d193154b9b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9400f95b7f71ab9cabc05d193154b9b2">&#9670;&#160;</a></span>extract_mip_descriptor_rate()</h2>
+<a id="af2fe84199952cdc594da6d85ec10bc2b" name="af2fe84199952cdc594da6d85ec10bc2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2fe84199952cdc594da6d85ec10bc2b">&#9670;&#160;</a></span>extract_mip_descriptor_rate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -150,7 +150,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void extract_mip_descriptor_rate </td>
           <td>(</td>
-          <td class="paramtype">mip_serializer *&#160;</td>
+          <td class="paramtype">microstrain_serializer *&#160;</td>
           <td class="paramname"><em>serializer</em>, </td>
         </tr>
         <tr>
@@ -169,8 +169,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac3505214a84598b233c4d614c901df41" name="ac3505214a84598b233c4d614c901df41"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3505214a84598b233c4d614c901df41">&#9670;&#160;</a></span>insert_mip_descriptor_rate()</h2>
+<a id="acf377ebbb5cddd6e8c2856a21553c2d1" name="acf377ebbb5cddd6e8c2856a21553c2d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf377ebbb5cddd6e8c2856a21553c2d1">&#9670;&#160;</a></span>insert_mip_descriptor_rate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -178,7 +178,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void insert_mip_descriptor_rate </td>
           <td>(</td>
-          <td class="paramtype">mip_serializer *&#160;</td>
+          <td class="paramtype">microstrain_serializer *&#160;</td>
           <td class="paramname"><em>serializer</em>, </td>
         </tr>
         <tr>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MIP SDK: Mip Interface</title>
+<title>MIP_SDK: Mip Interface</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v2.0.0-1-g65a7b37</span>
+   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-137-g8a814ec</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -81,8 +81,8 @@ Application Interface</h1>
 </div>
 <p>When an application calls one of the command functions, the MIP interface creates a packet, sends it to the device, and waits for a reply. When the reply is received, the command function returns the reply code to the application. If no reply is received, or if an error occurs, the function will return a status code.</p>
 <p>Sending and receiving to or from the device occurs via two functions: </p><ul>
-<li><a class="el" href="classmip_1_1_device_interface.html#a406e3e4300e82a86b0c865ce59b5bc58">mip::DeviceInterface::sendToDevice()</a> or <a class="el" href="mip__interface_8c.html#ae2fa9fd65c16218bd12716658f70f680" title="Sends data to the port (i.e. from this library to the physical device).">mip_interface_send_to_device()</a> for transmission and </li>
-<li><a class="el" href="classmip_1_1_device_interface.html#a6945bb14b90436bf2ea253694a34fdf6">mip::DeviceInterface::recvFromDevice()</a> or <a class="el" href="mip__interface_8c.html#a383ac1249c4e7706271f48f616b85b93" title="Checks for data at the port and reads it into buffer.">mip_interface_recv_from_device()</a> for reception.</li>
+<li><a class="el" href="classmip_1_1_interface.html#a518f65a78d08210e40f8cb79080cd324">mip::Interface::sendToDevice()</a> or <a class="el" href="mip__interface_8c.html#ae2fa9fd65c16218bd12716658f70f680" title="Sends data to the port (i.e. from this library to the physical device).">mip_interface_send_to_device()</a> for transmission and </li>
+<li><a class="el" href="classmip_1_1_interface.html#af3ea5c594c913ea5b352a42ea2b28adf">mip::Interface::recvFromDevice()</a> or <a class="el" href="mip__interface_8c.html#a383ac1249c4e7706271f48f616b85b93" title="Checks for data at the port and reads it into buffer.">mip_interface_recv_from_device()</a> for reception.</li>
 </ul>
 <p>Each of these has a corresponding callback to the application. The application is expected to implement the required behavior for each as described below. Additionally, there is an <a class="el" href="mip_interface.html#update">update function</a>, which handles periodic tasks such as command timeouts and streaming data collection. An application may optionally override the update callback.</p>
 <ul>
@@ -111,19 +111,19 @@ The Dispatch System</h1>
 <p>With the first two options, the callback function will receive a handle to the MIP interface, the associated MIP packet or field, and the reception timestamp.</p>
 <p>An application must register callbacks with the system during initialization. Each method requires a pointer and the MIP descriptor associated with the data of interest. There is no limit on the number of registered dispatchers, though performance may be affected by using too many. Multiple dispatchers may be registered to the same data.</p>
 <dl class="section user"><dt>Packet callbacks</dt><dd></dd></dl>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> packet_callback(<span class="keywordtype">void</span>* userdata, <span class="keyword">const</span> <a class="code hl_class" href="classmip_1_1_packet_ref.html">mip::PacketRef</a>&amp; packet, Timestamp parseTime)</div>
-<div class="ttc" id="aclassmip_1_1_packet_ref_html"><div class="ttname"><a href="classmip_1_1_packet_ref.html">mip::PacketRef</a></div><div class="ttdoc">C++ class representing a MIP PacketRef.</div><div class="ttdef"><b>Definition</b> mip.hpp:138</div></div>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> packet_callback(<span class="keywordtype">void</span>* userdata, <span class="keyword">const</span> <a class="code hl_class" href="classmip_1_1_packet_view.html">mip::PacketView</a>&amp; packet, Timestamp parseTime)</div>
+<div class="ttc" id="aclassmip_1_1_packet_view_html"><div class="ttname"><a href="classmip_1_1_packet_view.html">mip::PacketView</a></div><div class="ttdoc">C++ class representing a view of a MIP packet.</div><div class="ttdef"><b>Definition</b> mip_packet.hpp:36</div></div>
 </div><!-- fragment --><p>Packet callbacks are invoked when a packet is received which matches the registered descriptor set. The descriptor set may also be a wildcard, allowing the application to process any type of packet.</p>
 <p>An application can register a packet callback to occur either before or after the field callbacks for the data in the same packet. For example, to print a summary of the packet before displaying information about each field, an application would set the callback to occur first. Usually applications will set a packet callback to occur last, so that they can determine if all of the fields have been processed.</p>
 <dl class="section user"><dt>Field callbacks</dt><dd></dd></dl>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> field_callback(<span class="keywordtype">void</span>* userdata, <span class="keyword">const</span> <a class="code hl_class" href="classmip_1_1_field.html">mip::Field</a>&amp; field, Timestamp parseTime)</div>
-<div class="ttc" id="aclassmip_1_1_field_html"><div class="ttname"><a href="classmip_1_1_field.html">mip::Field</a></div><div class="ttdoc">C++ class representing a MIP field.</div><div class="ttdef"><b>Definition</b> mip.hpp:46</div></div>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> field_callback(<span class="keywordtype">void</span>* userdata, <span class="keyword">const</span> <a class="code hl_class" href="classmip_1_1_field_view.html">mip::FieldView</a>&amp; field, Timestamp parseTime)</div>
+<div class="ttc" id="aclassmip_1_1_field_view_html"><div class="ttname"><a href="classmip_1_1_field_view.html">mip::FieldView</a></div><div class="ttdoc">C++ class representing a MIP field.</div><div class="ttdef"><b>Definition</b> mip_field.hpp:26</div></div>
 </div><!-- fragment --><p>Similar to packet callbacks, field callbacks are invoked when a MIP field is received which matches the specified descriptor set and field descriptor. Either descriptor may be a wildcard.</p>
 <dl class="section user"><dt>Data pointers</dt><dd></dd></dl>
 <p>Data pointer dispatchers can alleviate a lot of boilerplate code having to do with deserializing a MIP field and storing it somewhere. An application can register a pointer one of the MIP data structures, along with the associated descriptors, and have it automatically updated. The descriptors cannot be wildcards because the type of the data structure is fixed.</p>
 <dl class="section user"><dt>Data callbacks</dt><dd></dd></dl>
 <div class="fragment"><div class="line"><span class="keywordtype">void</span> data_callback(<span class="keywordtype">void</span>* userdata, <span class="keyword">const</span> <a class="code hl_struct" href="structmip_1_1data__sensor_1_1_scaled_accel.html">mip::data_sensor::ScaledAccel</a>&amp; packet, Timestamp parseTime)</div>
-<div class="ttc" id="astructmip_1_1data__sensor_1_1_scaled_accel_html"><div class="ttname"><a href="structmip_1_1data__sensor_1_1_scaled_accel.html">mip::data_sensor::ScaledAccel</a></div><div class="ttdef"><b>Definition</b> data_sensor.hpp:217</div></div>
+<div class="ttc" id="astructmip_1_1data__sensor_1_1_scaled_accel_html"><div class="ttname"><a href="structmip_1_1data__sensor_1_1_scaled_accel.html">mip::data_sensor::ScaledAccel</a></div><div class="ttdef"><b>Definition</b> data_sensor.hpp:231</div></div>
 </div><!-- fragment --><p>Thanks to the power of templates, one additional dispatch mechanism is available for C++ applications. A data callback is similar to a field callback except that instead of getting the raw MIP field data, the function is passed the fully-deserialized data structure.</p>
 <p>Typically an application will register a series of data or field callbacks and write the data to some kind of data structure. Because the order of these callbacks depends on the device configuration, it can be difficult to know which fields belong together in one sample. The solution is to use a packet callback after all of the fields are received. In the case of wraparound "overflow" MIP packets (see the MIP documentation), packets containing a shared timestamp or event source field at the beginning can be used to group data together.</p>
 <h1><a class="anchor" id="update"></a>
@@ -174,7 +174,7 @@ The Update Function</h1>
 <p>Data may be pushed into the system by calling any of these functions: </p><ul>
 <li><a class="el" href="mip__interface_8c.html#a038ef43240f17096f64766f6a955fff2" title="Polls the port for new data or command replies.">mip_interface_default_update()</a> - this is the default behavior. </li>
 <li><a class="el" href="mip__interface_8c.html#a82bbc9760a10376fef5862e5d0660e93" title="Passes data from the device into the parser.">mip_interface_receive_bytes()</a> - process bytes, given a buffer. </li>
-<li><a class="el" href="mip__interface_8c.html#a8f5a272e9641737e65ea7ad9b93d00ea" title="Processes a pre-parsed packet for command replies and data.">mip_interface_receive_packet()</a> - process pre-parsed packets. </li>
+<li><a class="el" href="mip__interface_8c.html#aa1ff80019d518f2e7c911e7563414755" title="Processes a pre-parsed packet for command replies and data.">mip_interface_receive_packet()</a> - process pre-parsed packets. </li>
 <li><a class="el" href="mip__interface_8c.html#a8625171b2cc6ee76ad7b52f64ed8c0a0" title="Process more packets from the internal buffer.">mip_interface_process_unparsed_packets()</a> - continue parsing buffered data. </li>
 </ul>
 </div></div><!-- contents -->

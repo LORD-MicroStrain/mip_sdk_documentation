@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MIP SDK: mip_dispatch_handler - Represents a callback</title>
+<title>MIP_SDK: mip_dispatch_handler - Represents a callback</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP SDK<span id="projectnumber">&#160;v2.0.0-1-g65a7b37</span>
+   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-137-g8a814ec</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -104,9 +104,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga7cb67766d32198165a6d5d62edf3bd29" id="r_ga7cb67766d32198165a6d5d62edf3bd29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mip_dispatch_handler.html#ga7cb67766d32198165a6d5d62edf3bd29">mip::C::mip_dispatcher_remove_all_handlers</a> (<a class="el" href="structmip_1_1_c_1_1mip__dispatcher.html">mip_dispatcher</a> *self)</td></tr>
 <tr class="memdesc:ga7cb67766d32198165a6d5d62edf3bd29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all handlers from the dispatcher.  <br /></td></tr>
 <tr class="separator:ga7cb67766d32198165a6d5d62edf3bd29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga702b114e3c01588778bf7a6c14dc7be0" id="r_ga702b114e3c01588778bf7a6c14dc7be0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mip_dispatch_handler.html#ga702b114e3c01588778bf7a6c14dc7be0">mip::C::mip_dispatcher_dispatch_packet</a> (<a class="el" href="structmip_1_1_c_1_1mip__dispatcher.html">mip_dispatcher</a> *self, const <a class="el" href="structmip_1_1_c_1_1mip__packet.html">mip_packet</a> *packet, <a class="el" href="namespacemip_1_1_c.html#a7a0c2c95e0e72de587a1e92037fe24b9">mip_timestamp</a> timestamp)</td></tr>
-<tr class="memdesc:ga702b114e3c01588778bf7a6c14dc7be0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called to dispatch the callbacks for a given packet.  <br /></td></tr>
-<tr class="separator:ga702b114e3c01588778bf7a6c14dc7be0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5c14b3a90a1b74e7dd5155db5f28cc51" id="r_ga5c14b3a90a1b74e7dd5155db5f28cc51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mip_dispatch_handler.html#ga5c14b3a90a1b74e7dd5155db5f28cc51">mip::C::mip_dispatcher_dispatch_packet</a> (<a class="el" href="structmip_1_1_c_1_1mip__dispatcher.html">mip_dispatcher</a> *self, const <a class="el" href="structmip_1_1_c_1_1mip__packet__view.html">mip_packet_view</a> *packet, <a class="el" href="namespacemip_1_1_c.html#a8a24a1913ffba77cdd608c5fb7575f37">mip_timestamp</a> timestamp)</td></tr>
+<tr class="memdesc:ga5c14b3a90a1b74e7dd5155db5f28cc51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called to dispatch the callbacks for a given packet.  <br /></td></tr>
+<tr class="separator:ga5c14b3a90a1b74e7dd5155db5f28cc51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Typedef Documentation</h2>
@@ -158,8 +158,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga702b114e3c01588778bf7a6c14dc7be0" name="ga702b114e3c01588778bf7a6c14dc7be0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga702b114e3c01588778bf7a6c14dc7be0">&#9670;&#160;</a></span>mip_dispatcher_dispatch_packet()</h2>
+<a id="ga5c14b3a90a1b74e7dd5155db5f28cc51" name="ga5c14b3a90a1b74e7dd5155db5f28cc51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5c14b3a90a1b74e7dd5155db5f28cc51">&#9670;&#160;</a></span>mip_dispatcher_dispatch_packet()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -173,13 +173,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structmip_1_1_c_1_1mip__packet.html">mip_packet</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="structmip_1_1_c_1_1mip__packet__view.html">mip_packet_view</a> *&#160;</td>
           <td class="paramname"><em>packet</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacemip_1_1_c.html#a7a0c2c95e0e72de587a1e92037fe24b9">mip_timestamp</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemip_1_1_c.html#a8a24a1913ffba77cdd608c5fb7575f37">mip_timestamp</a>&#160;</td>
           <td class="paramname"><em>timestamp</em>&#160;</td>
         </tr>
         <tr>
