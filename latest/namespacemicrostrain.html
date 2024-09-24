@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-138-ge38bbec</span>
+   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-140-gef6326c</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -223,6 +223,14 @@ Functions</h2></td></tr>
 <tr class="memitem:a18131708dfe0b4eccd42cc66a1ad043d"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemicrostrain.html#a18131708dfe0b4eccd42cc66a1ad043d">extract</a> (T &amp;value, const uint8_t *buffer, size_t buffer_length, size_t offset=0, bool exact_size=false)</td></tr>
 <tr class="memdesc:a18131708dfe0b4eccd42cc66a1ad043d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deserializes a value from a raw byte buffer.  <br /></td></tr>
 <tr class="separator:a18131708dfe0b4eccd42cc66a1ad043d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab382e6284b0c62561d191a0c6f5ffaa7" id="r_ab382e6284b0c62561d191a0c6f5ffaa7"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespacemicrostrain_1_1serialization.html#a2cb773f97949c2746bed939c0ce6d617">serialization::Endian</a> E, class T &gt; </td></tr>
+<tr class="memitem:ab382e6284b0c62561d191a0c6f5ffaa7"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemicrostrain.html#ab382e6284b0c62561d191a0c6f5ffaa7">insert</a> (T value, <a class="el" href="structmicrostrain_1_1_span.html">microstrain::Span</a>&lt; uint8_t &gt; buffer, size_t offset=0, bool exact_size=false)</td></tr>
+<tr class="memdesc:ab382e6284b0c62561d191a0c6f5ffaa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes a value to a raw byte buffer (span version).  <br /></td></tr>
+<tr class="separator:ab382e6284b0c62561d191a0c6f5ffaa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ac68b12aa3d98acef40711d2ed784a6" id="r_a3ac68b12aa3d98acef40711d2ed784a6"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespacemicrostrain_1_1serialization.html#a2cb773f97949c2746bed939c0ce6d617">serialization::Endian</a> E, class T &gt; </td></tr>
+<tr class="memitem:a3ac68b12aa3d98acef40711d2ed784a6"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemicrostrain.html#a3ac68b12aa3d98acef40711d2ed784a6">extract</a> (T &amp;value, <a class="el" href="structmicrostrain_1_1_span.html">microstrain::Span</a>&lt; const uint8_t &gt; buffer, size_t offset=0, bool exact_size=false)</td></tr>
+<tr class="memdesc:a3ac68b12aa3d98acef40711d2ed784a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deserializes a value from a raw byte buffer (span version).  <br /></td></tr>
+<tr class="separator:a3ac68b12aa3d98acef40711d2ed784a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a2ca05e96abddf932d2607c97dbb6f16e" name="a2ca05e96abddf932d2607c97dbb6f16e"></a>
@@ -315,7 +323,7 @@ Functions</h2></td></tr>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a07682ff65dec35378c41907c1856b438" name="a07682ff65dec35378c41907c1856b438"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07682ff65dec35378c41907c1856b438">&#9670;&#160;</a></span>extract() <span class="overload">[1/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a07682ff65dec35378c41907c1856b438">&#9670;&#160;</a></span>extract() <span class="overload">[1/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -379,7 +387,7 @@ template&lt;<a class="el" href="namespacemicrostrain_1_1serialization.html#a2cb7
 </div>
 </div>
 <a id="a3c00cfa2b6365246c81f825bf92097d2" name="a3c00cfa2b6365246c81f825bf92097d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c00cfa2b6365246c81f825bf92097d2">&#9670;&#160;</a></span>extract() <span class="overload">[2/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c00cfa2b6365246c81f825bf92097d2">&#9670;&#160;</a></span>extract() <span class="overload">[2/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -426,7 +434,7 @@ template&lt;<a class="el" href="namespacemicrostrain_1_1serialization.html#a2cb7
 </div>
 </div>
 <a id="ab68f2aa31738abb11eea24c0a8bb994a" name="ab68f2aa31738abb11eea24c0a8bb994a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab68f2aa31738abb11eea24c0a8bb994a">&#9670;&#160;</a></span>extract() <span class="overload">[3/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab68f2aa31738abb11eea24c0a8bb994a">&#9670;&#160;</a></span>extract() <span class="overload">[3/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -473,7 +481,7 @@ template&lt;<a class="el" href="namespacemicrostrain_1_1serialization.html#a2cb7
 </div>
 </div>
 <a id="ab9ad2b2b3f0710dd0f33edda49646724" name="ab9ad2b2b3f0710dd0f33edda49646724"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab9ad2b2b3f0710dd0f33edda49646724">&#9670;&#160;</a></span>extract() <span class="overload">[4/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9ad2b2b3f0710dd0f33edda49646724">&#9670;&#160;</a></span>extract() <span class="overload">[4/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -520,7 +528,7 @@ template&lt;<a class="el" href="namespacemicrostrain_1_1serialization.html#a2cb7
 </div>
 </div>
 <a id="a5d4aee7cb2411af0b9947e0f597ba07a" name="a5d4aee7cb2411af0b9947e0f597ba07a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d4aee7cb2411af0b9947e0f597ba07a">&#9670;&#160;</a></span>extract() <span class="overload">[5/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d4aee7cb2411af0b9947e0f597ba07a">&#9670;&#160;</a></span>extract() <span class="overload">[5/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -567,7 +575,7 @@ template&lt;<a class="el" href="namespacemicrostrain_1_1serialization.html#a2cb7
 </div>
 </div>
 <a id="aa7b3273b663f97e121a164179a99b032" name="aa7b3273b663f97e121a164179a99b032"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7b3273b663f97e121a164179a99b032">&#9670;&#160;</a></span>extract() <span class="overload">[6/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7b3273b663f97e121a164179a99b032">&#9670;&#160;</a></span>extract() <span class="overload">[6/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -621,7 +629,7 @@ template&lt;<a class="el" href="namespacemicrostrain_1_1serialization.html#a2cb7
 </div>
 </div>
 <a id="abb2c1a72c197ff509ff01e5b2ec3aad3" name="abb2c1a72c197ff509ff01e5b2ec3aad3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb2c1a72c197ff509ff01e5b2ec3aad3">&#9670;&#160;</a></span>extract() <span class="overload">[7/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abb2c1a72c197ff509ff01e5b2ec3aad3">&#9670;&#160;</a></span>extract() <span class="overload">[7/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -668,7 +676,7 @@ template&lt;<a class="el" href="namespacemicrostrain_1_1serialization.html#a2cb7
 </div>
 </div>
 <a id="af403621ae1b5bd053314a0eaac17009e" name="af403621ae1b5bd053314a0eaac17009e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af403621ae1b5bd053314a0eaac17009e">&#9670;&#160;</a></span>extract() <span class="overload">[8/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af403621ae1b5bd053314a0eaac17009e">&#9670;&#160;</a></span>extract() <span class="overload">[8/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -729,7 +737,7 @@ template&lt;<a class="el" href="namespacemicrostrain_1_1serialization.html#a2cb7
 </div>
 </div>
 <a id="a18131708dfe0b4eccd42cc66a1ad043d" name="a18131708dfe0b4eccd42cc66a1ad043d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18131708dfe0b4eccd42cc66a1ad043d">&#9670;&#160;</a></span>extract() <span class="overload">[9/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a18131708dfe0b4eccd42cc66a1ad043d">&#9670;&#160;</a></span>extract() <span class="overload">[9/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -796,7 +804,73 @@ template&lt;<a class="el" href="namespacemicrostrain_1_1serialization.html#a2cb7
     <tr><td class="paramname">buffer</td><td>Pointer to first element of the byte buffer. </td></tr>
     <tr><td class="paramname">buffer_length</td><td>Length/size of buffer. </td></tr>
     <tr><td class="paramname">offset</td><td>Starting offset (default 0). </td></tr>
-    <tr><td class="paramname">exact_size</td><td>Returns true only if exactly buffer_length-offset bytes are written. Default false.</td></tr>
+    <tr><td class="paramname">exact_size</td><td>Returns true only if exactly buffer_length-offset bytes are read. Default false.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>False if the buffer doesn't have enough data. </dd>
+<dd>
+False if exact_size is true and the number of bytes read plus offset didn't equal buffer_length. </dd>
+<dd>
+True otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a3ac68b12aa3d98acef40711d2ed784a6" name="a3ac68b12aa3d98acef40711d2ed784a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ac68b12aa3d98acef40711d2ed784a6">&#9670;&#160;</a></span>extract() <span class="overload">[10/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespacemicrostrain_1_1serialization.html#a2cb773f97949c2746bed939c0ce6d617">serialization::Endian</a> E, class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool microstrain::extract </td>
+          <td>(</td>
+          <td class="paramtype">T &amp;&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1_span.html">microstrain::Span</a>&lt; const uint8_t &gt;&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>offset</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>exact_size</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Deserializes a value from a raw byte buffer (span version). </p>
+<p>Use this overload to read a single value without needing to manually construct a <a class="el" href="classmicrostrain_1_1_serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a> object.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">E</td><td>Endianness of buffer. Must be manually specified. </td></tr>
+    <tr><td class="paramname">T</td><td>Type of value. Automatically deduced from the value parameter.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Parameter to deserialize. This can be any serializable type. </td></tr>
+    <tr><td class="paramname">buffer</td><td>Source buffer span. </td></tr>
+    <tr><td class="paramname">offset</td><td>Starting offset (default 0). </td></tr>
+    <tr><td class="paramname">exact_size</td><td>Returns true only if exactly buffer.size()-offset bytes are read. Default false.</td></tr>
   </table>
   </dd>
 </dl>
@@ -875,7 +949,7 @@ template&lt;class Container &gt; </div>
 </div>
 </div>
 <a id="af1f8a59ef8827e800b464bf6703203ab" name="af1f8a59ef8827e800b464bf6703203ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af1f8a59ef8827e800b464bf6703203ab">&#9670;&#160;</a></span>insert() <span class="overload">[1/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af1f8a59ef8827e800b464bf6703203ab">&#9670;&#160;</a></span>insert() <span class="overload">[1/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -954,7 +1028,7 @@ True otherwise. </dd></dl>
 </div>
 </div>
 <a id="ad1c49d7ff6a16930cf46718520ac2af4" name="ad1c49d7ff6a16930cf46718520ac2af4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1c49d7ff6a16930cf46718520ac2af4">&#9670;&#160;</a></span>insert() <span class="overload">[2/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1c49d7ff6a16930cf46718520ac2af4">&#9670;&#160;</a></span>insert() <span class="overload">[2/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1017,7 +1091,7 @@ template&lt;<a class="el" href="namespacemicrostrain_1_1serialization.html#a2cb7
 </div>
 </div>
 <a id="a31564de29e9315d6a466c8135727e632" name="a31564de29e9315d6a466c8135727e632"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31564de29e9315d6a466c8135727e632">&#9670;&#160;</a></span>insert() <span class="overload">[3/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a31564de29e9315d6a466c8135727e632">&#9670;&#160;</a></span>insert() <span class="overload">[3/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1064,7 +1138,7 @@ template&lt;<a class="el" href="namespacemicrostrain_1_1serialization.html#a2cb7
 </div>
 </div>
 <a id="a009f5f84a4ae376b3acd874185d39f7a" name="a009f5f84a4ae376b3acd874185d39f7a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a009f5f84a4ae376b3acd874185d39f7a">&#9670;&#160;</a></span>insert() <span class="overload">[4/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a009f5f84a4ae376b3acd874185d39f7a">&#9670;&#160;</a></span>insert() <span class="overload">[4/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1111,7 +1185,7 @@ template&lt;<a class="el" href="namespacemicrostrain_1_1serialization.html#a2cb7
 </div>
 </div>
 <a id="a10641ee9bc621c2ce14128629838b9a1" name="a10641ee9bc621c2ce14128629838b9a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a10641ee9bc621c2ce14128629838b9a1">&#9670;&#160;</a></span>insert() <span class="overload">[5/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a10641ee9bc621c2ce14128629838b9a1">&#9670;&#160;</a></span>insert() <span class="overload">[5/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1158,7 +1232,7 @@ template&lt;<a class="el" href="namespacemicrostrain_1_1serialization.html#a2cb7
 </div>
 </div>
 <a id="a38cd011dc1710e35d7a6c1ae7fb98dea" name="a38cd011dc1710e35d7a6c1ae7fb98dea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38cd011dc1710e35d7a6c1ae7fb98dea">&#9670;&#160;</a></span>insert() <span class="overload">[6/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a38cd011dc1710e35d7a6c1ae7fb98dea">&#9670;&#160;</a></span>insert() <span class="overload">[6/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1212,7 +1286,7 @@ template&lt;<a class="el" href="namespacemicrostrain_1_1serialization.html#a2cb7
 </div>
 </div>
 <a id="a07ae70f9210f1ee7f89320e44cbafe27" name="a07ae70f9210f1ee7f89320e44cbafe27"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07ae70f9210f1ee7f89320e44cbafe27">&#9670;&#160;</a></span>insert() <span class="overload">[7/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a07ae70f9210f1ee7f89320e44cbafe27">&#9670;&#160;</a></span>insert() <span class="overload">[7/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1259,7 +1333,7 @@ template&lt;<a class="el" href="namespacemicrostrain_1_1serialization.html#a2cb7
 </div>
 </div>
 <a id="afc5f1f14e4e59dcac58db524a9621078" name="afc5f1f14e4e59dcac58db524a9621078"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc5f1f14e4e59dcac58db524a9621078">&#9670;&#160;</a></span>insert() <span class="overload">[8/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#afc5f1f14e4e59dcac58db524a9621078">&#9670;&#160;</a></span>insert() <span class="overload">[8/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1320,7 +1394,7 @@ template&lt;<a class="el" href="namespacemicrostrain_1_1serialization.html#a2cb7
 </div>
 </div>
 <a id="a48a53b60323af1bef034d1e0c8098839" name="a48a53b60323af1bef034d1e0c8098839"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a48a53b60323af1bef034d1e0c8098839">&#9670;&#160;</a></span>insert() <span class="overload">[9/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a48a53b60323af1bef034d1e0c8098839">&#9670;&#160;</a></span>insert() <span class="overload">[9/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1363,6 +1437,72 @@ template&lt;<a class="el" href="namespacemicrostrain_1_1serialization.html#a2cb7
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The total number of bytes written. </dd></dl>
+
+</div>
+</div>
+<a id="ab382e6284b0c62561d191a0c6f5ffaa7" name="ab382e6284b0c62561d191a0c6f5ffaa7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab382e6284b0c62561d191a0c6f5ffaa7">&#9670;&#160;</a></span>insert() <span class="overload">[10/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespacemicrostrain_1_1serialization.html#a2cb773f97949c2746bed939c0ce6d617">serialization::Endian</a> E, class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool microstrain::insert </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1_span.html">microstrain::Span</a>&lt; uint8_t &gt;&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>offset</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>exact_size</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Serializes a value to a raw byte buffer (span version). </p>
+<p>Use this overload to write a single value without needing to manually construct a <a class="el" href="classmicrostrain_1_1_serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a> object.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">E</td><td>Endianness of buffer. Must be manually specified. </td></tr>
+    <tr><td class="paramname">T</td><td>Type of value. Automatically deduced from the value parameter.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Parameter to serialize. This can be any serializable type. </td></tr>
+    <tr><td class="paramname">buffer</td><td>Source buffer span. </td></tr>
+    <tr><td class="paramname">offset</td><td>Starting offset. Default 0. </td></tr>
+    <tr><td class="paramname">exact_size</td><td>Returns true only if exactly buffer.size()-offset bytes are written. Default false.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>False if the buffer isn't large enough. </dd>
+<dd>
+False if exact_size is true and the number of bytes written didn't equal buffer_length. </dd>
+<dd>
+True otherwise. </dd></dl>
 
 </div>
 </div>

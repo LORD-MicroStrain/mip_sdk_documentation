@@ -20,6 +20,5 @@ var searchData=
   ['data_5fsystem_2ecpp_17',['data_system.cpp',['../data__system_8cpp.html',1,'']]],
   ['data_5fsystem_2eh_18',['data_system.h',['../data__system_8h.html',1,'']]],
   ['data_5fsystem_2ehpp_19',['data_system.hpp',['../definitions_2data__system_8hpp.html',1,'(Global Namespace)'],['../metadata_2definitions_2data__system_8hpp.html',1,'(Global Namespace)']]],
-  ['descriptor_5fid_2ehpp_20',['descriptor_id.hpp',['../descriptor__id_8hpp.html',1,'']]],
-  ['docs_2ec_21',['docs.c',['../docs_8c.html',1,'']]]
+  ['descriptor_5fid_2ehpp_20',['descriptor_id.hpp',['../descriptor__id_8hpp.html',1,'']]]
 ];

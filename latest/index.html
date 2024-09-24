@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-138-ge38bbec</span>
+   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-140-gef6326c</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -73,38 +73,40 @@ $(function() {
   <div class="headertitle"><div class="title">MIP SDK </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Welcome to the official MIP Software Development Kit. This software package provides everything you need to communicate with any MIP-compatible MicroStrain inertial sensor. See <a class="el" href="mip_interface.html">Mip Interface</a> for details on how to get started.</p>
-<dl class="section user"><dt>Main Features</dt><dd></dd></dl>
+<div class="textblock"><p><a class="anchor" id="mainpage"></a></p>
+<p>Welcome to the official MIP Software Development Kit. This software package provides everything you need to communicate with any MIP-compatible MicroStrain inertial sensor. See mip_interface for details on how to get started.</p>
+<h2><a class="anchor" id="autotoc_md3"></a>
+Main Features</h2>
 <ul>
-<li>MIP packet creation </li>
-<li>Send commands using a single function </li>
-<li>Packet parsing and field iteration </li>
-<li>Data field deserialization </li>
-<li>Simple interface requires only two functions to be defined </li>
-<li>Can be used to parse offline binary files </li>
-<li>Dual C and C++ API for maximum usability, safety, flexibility, and convenience. </li>
+<li>MIP packet creation</li>
+<li>Send commands using a single function</li>
+<li>Packet parsing and field iteration</li>
+<li>Data field deserialization</li>
+<li>Simple interface requires only two functions to be defined</li>
+<li>Can be used to parse offline binary files</li>
+<li>Dual C and C++ API for maximum usability, safety, flexibility, and convenience.</li>
 <li>Suitable for bare-metal microcontrollers (Minimal code size and memory footprint, No dynamic memory allocation, No dependence on any RTOS or threading)</li>
 </ul>
 <h1><a class="anchor" id="quickref_cpp"></a>
 Quick Reference [C++]</h1>
 <p>All C++ functions and classes reside within the mip namespace. The C functions can be accessed via the <a class="el" href="namespacemip_1_1_c.html">mip::C</a> namespace.</p>
 <ul>
-<li><a class="el" href="classmip_1_1_interface.html">mip::Interface</a> Top-level MIP interface class. </li>
-<li><a class="el" href="classmip_1_1_packet_view.html">mip::PacketView</a> An interface to a MIP packet for either transmission or reception. </li>
-<li><a class="el" href="group__mip__cpp.html#gafc42c8a567309e43d95e372b1ea0d2c5">mip::PacketBuf</a> Similar to PacketRef but includes the data buffer. </li>
-<li><a class="el" href="classmip_1_1_field_view.html">mip::FieldView</a> An interface to a MIP field within a packet. </li>
-<li><a class="el" href="classmip_1_1_parser.html">mip::Parser</a> MIP parser class for converting received bytes into packets. </li>
-<li><a class="el" href="structmip_1_1_cmd_result.html">mip::CmdResult</a> Stores the status or result of a MIP command.</li>
+<li><a class="el" href="classmip_1_1_interface.html" title="Represents a connected MIP device.">mip::Interface</a> Top-level MIP interface class.</li>
+<li><a class="el" href="classmip_1_1_packet_view.html" title="C++ class representing a view of a MIP packet.">mip::PacketView</a> An interface to a MIP packet for either transmission or reception.</li>
+<li><a class="el" href="group__mip__cpp.html#gafc42c8a567309e43d95e372b1ea0d2c5" title="Typedef for SizedPacketBuf of max possible size.">mip::PacketBuf</a> Similar to PacketRef but includes the data buffer.</li>
+<li><a class="el" href="classmip_1_1_field_view.html" title="C++ class representing a MIP field.">mip::FieldView</a> An interface to a MIP field within a packet.</li>
+<li><a class="el" href="classmip_1_1_parser.html" title="C++ class representing a MIP parser.">mip::Parser</a> MIP parser class for converting received bytes into packets.</li>
+<li><a class="el" href="structmip_1_1_cmd_result.html" title="Represents the status of a MIP command.">mip::CmdResult</a> Stores the status or result of a MIP command.</li>
 </ul>
 <h1><a class="anchor" id="quickref_c"></a>
 Quick Reference [C]</h1>
 <p>C does not support the equivalent of C++ namespaces, so all definitions are global. Most names start with <code>mip_</code> to avoid conflicts. In these documentation pages, objects are referred to by their fully- qualified C++ names for clarity.</p>
 <ul>
-<li><a class="el" href="group__mip__interface__c.html">Mip Interface [C]</a> </li>
-<li><a class="el" href="group__mip__packet__c.html">Mip Packet [C]</a> </li>
-<li><a class="el" href="group__mip__field__c.html">Mip Fields [C]</a> </li>
-<li><a class="el" href="group__mip__parser__c.html">mip_parser [C]</a> </li>
-<li><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result [C]</a> </li>
+<li>[mip_interface (C)](mip_interface_c)</li>
+<li>[mip_packet (C)](mip_packet_c)</li>
+<li>[mip_field (C)](mip_field_c)</li>
+<li>[mip_parser (C)](mip_parser_c)</li>
+<li>[mip_cmd_result (C)](<a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8" title="Represents the status of a MIP command.">mip::C::mip_cmd_result</a>) </li>
 </ul>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->

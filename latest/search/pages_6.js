@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['result_0',['Command Result',['../command_results.html',1,'']]]
+  ['results_0',['Mip Command Results',['../command_results.html',1,'']]]
 ];
