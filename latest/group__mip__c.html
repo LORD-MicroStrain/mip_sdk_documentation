@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MIP_SDK: C API</title>
+<title>MIP_SDK: MIP C API</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -13,7 +13,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -22,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-143-g6f95300</span>
+   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-141-g7a72ec3</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -76,37 +75,31 @@ $(function() {
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">C API<div class="ingroups"><a class="el" href="group__mip.html">MIP</a></div></div></div>
+  <div class="headertitle"><div class="title">MIP C API</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>This module contains functions and classes for communicating with a MIP device in C.  
+<p>This module contains all of the <a class="el" href="namespacemip_1_1_c.html">C</a> submodules.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="groups" name="groups"></a>
 Modules</h2></td></tr>
-<tr class="memitem:group___mip_commands__c" id="r_group___mip_commands__c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mip_commands__c.html">Mip Commands</a></td></tr>
-<tr class="memdesc:group___mip_commands__c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains all MIP command definitions. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:group___mip_data__c" id="r_group___mip_data__c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mip_data__c.html">Mip Data</a></td></tr>
-<tr class="memdesc:group___mip_data__c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains all MIP data definitions. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:group___mip_command_queue__c" id="r_group___mip_command_queue__c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mip_command_queue__c.html">Mip Command Queue</a></td></tr>
+<tr class="memitem:group___mip_command_queue__c" id="r_group___mip_command_queue__c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mip_command_queue__c.html">Mip Command Queue [C]</a></td></tr>
 <tr class="memdesc:group___mip_command_queue__c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functions for handling command responses. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:group___mip_dispatch__c" id="r_group___mip_dispatch__c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mip_dispatch__c.html">Mip Dispatch</a></td></tr>
+<tr class="memitem:group___mip_dispatch__c" id="r_group___mip_dispatch__c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mip_dispatch__c.html">Mip Dispatch [C]</a></td></tr>
 <tr class="memdesc:group___mip_dispatch__c"><td class="mdescLeft">&#160;</td><td class="mdescRight">System for issuing callbacks from MIP packets or fields. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:group__mip__field__c" id="r_group__mip__field__c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__field__c.html">Mip Fields</a></td></tr>
+<tr class="memitem:group__mip__field__c" id="r_group__mip__field__c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__field__c.html">Mip Fields [C]</a></td></tr>
 <tr class="memdesc:group__mip__field__c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functions for processing received MIP fields. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:group__mip__interface__c" id="r_group__mip__interface__c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__interface__c.html">Mip Interface</a></td></tr>
-<tr class="memdesc:group__mip__interface__c"><td class="mdescLeft">&#160;</td><td class="mdescRight">High-level C functions for controlling a MIP device. <br /></td></tr>
+<tr class="memitem:group__mip__interface__c" id="r_group__mip__interface__c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__interface__c.html">Mip Interface [C]</a></td></tr>
+<tr class="memdesc:group__mip__interface__c"><td class="mdescLeft">&#160;</td><td class="mdescRight">High-level <a class="el" href="namespacemip_1_1_c.html">C</a> functions for controlling a MIP device. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:group__mip__packet__c" id="r_group__mip__packet__c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__packet__c.html">Mip Packet</a></td></tr>
-<tr class="memdesc:group__mip__packet__c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functions for building and processing MIP packets. <br /></td></tr>
+<tr class="memitem:group__mip__packet__c" id="r_group__mip__packet__c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__packet__c.html">Mip Packet [C]</a></td></tr>
+<tr class="memdesc:group__mip__packet__c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functions for handling MIP packets. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:group__mip__parser__c" id="r_group__mip__parser__c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__parser__c.html">Mip Parser</a></td></tr>
+<tr class="memitem:group__mip__parser__c" id="r_group__mip__parser__c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__parser__c.html">mip_parser [C]</a></td></tr>
 <tr class="memdesc:group__mip__parser__c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functions for parsing MIP packets. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -162,8 +155,7 @@ Functions</h2></td></tr>
 <tr class="separator:ga10413c9d587d3c41838807d1c3a70560"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>This module contains functions and classes for communicating with a MIP device in C. </p>
-<p>This module contains all of the <a class="el" href="namespacemip_1_1_c.html">C</a> submodules.</p>
+<p>This module contains all of the <a class="el" href="namespacemip_1_1_c.html">C</a> submodules. </p>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="ga11996d27236cfcecb7a2b88476fd415e" name="ga11996d27236cfcecb7a2b88476fd415e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga11996d27236cfcecb7a2b88476fd415e">&#9670;&#160;</a></span>mip_cmd_result</h2>
@@ -178,8 +170,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Represents the status of a MIP command. </p>
-<p>Values that start with MIP_STATUS are status codes from this library. Values that start with MIP_(N)ACK represent replies from the device. Values at or below MIP_STATUS_USER_START (negative values) are reserved for status codes from user code.</p>
-<p>See <a class="el" href="command_results.html">Mip Command Results</a> </p>
+<p>Values that start with MIP_STATUS are status codes from this library. Values that start with MIP_(N)ACK represent replies from the device. Values at or below MIP_STATUS_USER_START (negative values) are reserved for status codes from user code. </p>
 
 </div>
 </div>
@@ -197,8 +188,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Represents the status of a MIP command. </p>
-<p>Values that start with MIP_STATUS are status codes from this library. Values that start with MIP_(N)ACK represent replies from the device. Values at or below MIP_STATUS_USER_START (negative values) are reserved for status codes from user code.</p>
-<p>See <a class="el" href="command_results.html">Mip Command Results</a> </p>
+<p>Values that start with MIP_STATUS are status codes from this library. Values that start with MIP_(N)ACK represent replies from the device. Values at or below MIP_STATUS_USER_START (negative values) are reserved for status codes from user code. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggab3f1cea4c06739d4530f7d8088bd3ed8a560b803f11d80065415145794952a090" name="ggab3f1cea4c06739d4530f7d8088bd3ed8a560b803f11d80065415145794952a090"></a>MIP_STATUS_USER_START&#160;</td><td class="fielddoc"><p>Values defined by user code must be less than or equal to this value. </p>
 </td></tr>

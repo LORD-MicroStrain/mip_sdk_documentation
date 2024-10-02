@@ -13,7 +13,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -22,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-143-g6f95300</span>
+   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-141-g7a72ec3</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -75,7 +74,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="mainpage"></a></p>
-<p>Welcome to the official MIP Software Development Kit. This software package provides everything you need to communicate with any MIP-compatible MicroStrain inertial sensor.</p>
+<p>Welcome to the official MIP Software Development Kit. This software package provides everything you need to communicate with any MIP-compatible MicroStrain inertial sensor. See mip_interface for details on how to get started.</p>
 <h2><a class="anchor" id="autotoc_md3"></a>
 Main Features</h2>
 <ul>
@@ -83,20 +82,15 @@ Main Features</h2>
 <li>Send commands using a single function</li>
 <li>Packet parsing and field iteration</li>
 <li>Data field deserialization</li>
+<li>Simple interface requires only two functions to be defined</li>
 <li>Can be used to parse offline binary files</li>
 <li>Dual C and C++ API for maximum usability, safety, flexibility, and convenience.</li>
-<li>Suitable for bare-metal microcontrollers:<ul>
-<li>Minimal code size and memory footprint</li>
-<li>No dynamic memory allocation</li>
-<li>No dependence on any RTOS or threads</li>
-</ul>
-</li>
+<li>Suitable for bare-metal microcontrollers (Minimal code size and memory footprint, No dynamic memory allocation, No dependence on any RTOS or threading)</li>
 </ul>
 <h1><a class="anchor" id="quickref_cpp"></a>
 Quick Reference [C++]</h1>
-<p>All C++ functions and classes reside within the mip namespace. The C functions can be accessed via the <a class="el" href="namespacemip_1_1_c.html">mip::C</a> namespace. Within this documentation, links to C++ entities are shown in green.</p>
+<p>All C++ functions and classes reside within the mip namespace. The C functions can be accessed via the <a class="el" href="namespacemip_1_1_c.html">mip::C</a> namespace.</p>
 <ul>
-<li><a class="el" href="group__mip__cpp.html">C++ API Overview</a></li>
 <li><a class="el" href="classmip_1_1_interface.html" title="Represents a connected MIP device.">mip::Interface</a> Top-level MIP interface class.</li>
 <li><a class="el" href="classmip_1_1_packet_view.html" title="C++ class representing a view of a MIP packet.">mip::PacketView</a> An interface to a MIP packet for either transmission or reception.</li>
 <li><a class="el" href="group__mip__cpp.html#gafc42c8a567309e43d95e372b1ea0d2c5" title="Typedef for SizedPacketBuf of max possible size.">mip::PacketBuf</a> Similar to PacketRef but includes the data buffer.</li>
@@ -106,14 +100,13 @@ Quick Reference [C++]</h1>
 </ul>
 <h1><a class="anchor" id="quickref_c"></a>
 Quick Reference [C]</h1>
-<p>C does not support the equivalent of C++ namespaces, so all definitions are global. Most names start with <code>mip_</code> to avoid conflicts. In these documentation pages, objects are referred to by their fully- qualified C++ names for clarity. Within this documentation, links to C entities are shown in red.</p>
+<p>C does not support the equivalent of C++ namespaces, so all definitions are global. Most names start with <code>mip_</code> to avoid conflicts. In these documentation pages, objects are referred to by their fully- qualified C++ names for clarity.</p>
 <ul>
-<li><a class="el" href="group__mip__c.html">C API Overview</a></li>
-<li><a class="el" href="group__mip__interface__c.html">mip_interface </a></li>
-<li><a class="el" href="structmip_1_1_c_1_1mip__packet__view.html">mip_packet </a></li>
-<li><a class="el" href="structmip_1_1_c_1_1mip__field__view.html">mip_field </a></li>
-<li><a class="el" href="structmip_1_1_c_1_1mip__parser.html">mip_parser </a></li>
-<li><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> </li>
+<li>[mip_interface (C)](mip_interface_c)</li>
+<li>[mip_packet (C)](mip_packet_c)</li>
+<li>[mip_field (C)](mip_field_c)</li>
+<li>[mip_parser (C)](mip_parser_c)</li>
+<li>[mip_cmd_result (C)](<a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8" title="Represents the status of a MIP command.">mip::C::mip_cmd_result</a>) </li>
 </ul>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->

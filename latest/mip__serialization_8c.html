@@ -13,7 +13,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -22,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-143-g6f95300</span>
+   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-141-g7a72ec3</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -86,19 +85,57 @@ $(function() {
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a2e39fd69ec91fe0630a1daa0ee7dfbd1" id="r_a2e39fd69ec91fe0630a1daa0ee7dfbd1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__serialization_8c.html#a2e39fd69ec91fe0630a1daa0ee7dfbd1">mip_serializer_init_new_field</a> (mip_serializer *serializer, mip_packet_view *packet, uint8_t field_descriptor)</td></tr>
-<tr class="memdesc:a2e39fd69ec91fe0630a1daa0ee7dfbd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a serialization struct for creation of a new field at the end of the packet.  <br /></td></tr>
-<tr class="separator:a2e39fd69ec91fe0630a1daa0ee7dfbd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad29f412687f03cdc3589412bd574f46b" id="r_ad29f412687f03cdc3589412bd574f46b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__serialization_8c.html#ad29f412687f03cdc3589412bd574f46b">mip_serializer_finish_new_field</a> (const mip_serializer *serializer, mip_packet_view *packet)</td></tr>
-<tr class="memdesc:ad29f412687f03cdc3589412bd574f46b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this after a new field allocated by mip_serializer_init_new_field has been written.  <br /></td></tr>
-<tr class="separator:ad29f412687f03cdc3589412bd574f46b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03605a73cfb8ae62aada2a9933c3300c" id="r_a03605a73cfb8ae62aada2a9933c3300c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__serialization_8c.html#a03605a73cfb8ae62aada2a9933c3300c">microstrain_serializer_init_from_field</a> (mip_serializer *serializer, const mip_field_view *field)</td></tr>
-<tr class="memdesc:a03605a73cfb8ae62aada2a9933c3300c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a serialization struct from a microstrain field payload.  <br /></td></tr>
-<tr class="separator:a03605a73cfb8ae62aada2a9933c3300c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4baa9c08eb6d60ef840e327c299e7762" id="r_a4baa9c08eb6d60ef840e327c299e7762"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__serialization_8c.html#a4baa9c08eb6d60ef840e327c299e7762">microstrain_serializer_init_new_field</a> (microstrain_serializer *serializer, mip_packet_view *packet, uint8_t field_descriptor)</td></tr>
+<tr class="memdesc:a4baa9c08eb6d60ef840e327c299e7762"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a serialization struct for creation of a new field at the end of the packet.  <br /></td></tr>
+<tr class="separator:a4baa9c08eb6d60ef840e327c299e7762"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad351f07a20d9e3216d758b8d2bcb83bd" id="r_ad351f07a20d9e3216d758b8d2bcb83bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__serialization_8c.html#ad351f07a20d9e3216d758b8d2bcb83bd">microstrain_serializer_finish_new_field</a> (const microstrain_serializer *serializer, mip_packet_view *packet)</td></tr>
+<tr class="memdesc:ad351f07a20d9e3216d758b8d2bcb83bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this after a new field allocated by microstrain_serializer_init_new_field has been written.  <br /></td></tr>
+<tr class="separator:ad351f07a20d9e3216d758b8d2bcb83bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae83af2b504908359f8e1c086e606c354" id="r_ae83af2b504908359f8e1c086e606c354"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__serialization_8c.html#ae83af2b504908359f8e1c086e606c354">microstrain_serializer_init_from_field</a> (microstrain_serializer *serializer, const mip_field_view *field)</td></tr>
+<tr class="memdesc:ae83af2b504908359f8e1c086e606c354"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a serialization struct from a microstrain field payload.  <br /></td></tr>
+<tr class="separator:ae83af2b504908359f8e1c086e606c354"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a03605a73cfb8ae62aada2a9933c3300c" name="a03605a73cfb8ae62aada2a9933c3300c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a03605a73cfb8ae62aada2a9933c3300c">&#9670;&#160;</a></span>microstrain_serializer_init_from_field()</h2>
+<a id="ad351f07a20d9e3216d758b8d2bcb83bd" name="ad351f07a20d9e3216d758b8d2bcb83bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad351f07a20d9e3216d758b8d2bcb83bd">&#9670;&#160;</a></span>microstrain_serializer_finish_new_field()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void microstrain_serializer_finish_new_field </td>
+          <td>(</td>
+          <td class="paramtype">const microstrain_serializer *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">mip_packet_view *&#160;</td>
+          <td class="paramname"><em>packet</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Call this after a new field allocated by microstrain_serializer_init_new_field has been written. </p>
+<p>This will either finish the field, or abort it if the serializer failed.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">serializer</td><td>Must be created from microstrain_serializer_init_new_field. </td></tr>
+    <tr><td class="paramname">packet</td><td>Must be the original packet. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae83af2b504908359f8e1c086e606c354" name="ae83af2b504908359f8e1c086e606c354"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae83af2b504908359f8e1c086e606c354">&#9670;&#160;</a></span>microstrain_serializer_init_from_field()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -106,7 +143,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void microstrain_serializer_init_from_field </td>
           <td>(</td>
-          <td class="paramtype">mip_serializer *&#160;</td>
+          <td class="paramtype">microstrain_serializer *&#160;</td>
           <td class="paramname"><em>serializer</em>, </td>
         </tr>
         <tr>
@@ -134,54 +171,16 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad29f412687f03cdc3589412bd574f46b" name="ad29f412687f03cdc3589412bd574f46b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad29f412687f03cdc3589412bd574f46b">&#9670;&#160;</a></span>mip_serializer_finish_new_field()</h2>
+<a id="a4baa9c08eb6d60ef840e327c299e7762" name="a4baa9c08eb6d60ef840e327c299e7762"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4baa9c08eb6d60ef840e327c299e7762">&#9670;&#160;</a></span>microstrain_serializer_init_new_field()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void mip_serializer_finish_new_field </td>
+          <td class="memname">void microstrain_serializer_init_new_field </td>
           <td>(</td>
-          <td class="paramtype">const mip_serializer *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">mip_packet_view *&#160;</td>
-          <td class="paramname"><em>packet</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Call this after a new field allocated by mip_serializer_init_new_field has been written. </p>
-<p>This will either finish the field, or abort it if the serializer failed.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">serializer</td><td>Must be created from mip_serializer_init_new_field. </td></tr>
-    <tr><td class="paramname">packet</td><td>Must be the original packet. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a2e39fd69ec91fe0630a1daa0ee7dfbd1" name="a2e39fd69ec91fe0630a1daa0ee7dfbd1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e39fd69ec91fe0630a1daa0ee7dfbd1">&#9670;&#160;</a></span>mip_serializer_init_new_field()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip_serializer_init_new_field </td>
-          <td>(</td>
-          <td class="paramtype">mip_serializer *&#160;</td>
+          <td class="paramtype">microstrain_serializer *&#160;</td>
           <td class="paramname"><em>serializer</em>, </td>
         </tr>
         <tr>
@@ -205,7 +204,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Initialize a serialization struct for creation of a new field at the end of the packet. </p>
-<dl class="section note"><dt>Note</dt><dd>Call mip_serializer_finish_new_field after the data has been serialized.</dd>
+<dl class="section note"><dt>Note</dt><dd>Call microstrain_serializer_finish_new_field after the data has been serialized.</dd>
 <dd>
 Only one new field per packet can be in progress at a time.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>

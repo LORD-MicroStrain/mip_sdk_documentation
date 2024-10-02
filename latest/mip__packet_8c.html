@@ -13,7 +13,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -22,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-143-g6f95300</span>
+   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-141-g7a72ec3</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -89,9 +88,9 @@ $(function() {
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aed391287b26a031e42543771626980ff" id="r_aed391287b26a031e42543771626980ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__packet_8c.html#aed391287b26a031e42543771626980ff">mip_packet_from_buffer</a> (mip_packet_view *packet, const uint8_t *buffer, size_t length)</td></tr>
-<tr class="memdesc:aed391287b26a031e42543771626980ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a MIP packet from an existing buffer.  <br /></td></tr>
-<tr class="separator:aed391287b26a031e42543771626980ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a115862b0b4dccd121ae7034e90fb239b" id="r_a115862b0b4dccd121ae7034e90fb239b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__packet_8c.html#a115862b0b4dccd121ae7034e90fb239b">mip_packet_from_buffer</a> (mip_packet_view *packet, uint8_t *buffer, size_t length)</td></tr>
+<tr class="memdesc:a115862b0b4dccd121ae7034e90fb239b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a MIP packet from an existing buffer.  <br /></td></tr>
+<tr class="separator:a115862b0b4dccd121ae7034e90fb239b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed121fe8d708bf78a0015c2cb7470366" id="r_aed121fe8d708bf78a0015c2cb7470366"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__packet_8c.html#aed121fe8d708bf78a0015c2cb7470366">mip_packet_create</a> (mip_packet_view *packet, uint8_t *buffer, size_t buffer_size, uint8_t descriptor_set)</td></tr>
 <tr class="memdesc:aed121fe8d708bf78a0015c2cb7470366"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a brand-new MIP packet in the given buffer.  <br /></td></tr>
 <tr class="separator:aed121fe8d708bf78a0015c2cb7470366"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,12 +139,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a47455cc03571b882aff9e098df3fc0b6" id="r_a47455cc03571b882aff9e098df3fc0b6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__packet_8c.html#a47455cc03571b882aff9e098df3fc0b6">mip_packet_add_field</a> (mip_packet_view *packet, uint8_t field_descriptor, const uint8_t *payload, uint8_t payload_length)</td></tr>
 <tr class="memdesc:a47455cc03571b882aff9e098df3fc0b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a pre-constructed MIP field to the packet.  <br /></td></tr>
 <tr class="separator:a47455cc03571b882aff9e098df3fc0b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac16b64752f8e683114735f588715dde1" id="r_ac16b64752f8e683114735f588715dde1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__packet_8c.html#ac16b64752f8e683114735f588715dde1">mip_packet_create_field</a> (mip_packet_view *packet, uint8_t field_descriptor, uint8_t payload_length, uint8_t **payload_ptr_out)</td></tr>
-<tr class="memdesc:ac16b64752f8e683114735f588715dde1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a MIP field within the packet and return the payload pointer.  <br /></td></tr>
-<tr class="separator:ac16b64752f8e683114735f588715dde1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a004d949fb889b11969544dbfe42fdb13" id="r_a004d949fb889b11969544dbfe42fdb13"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__packet_8c.html#a004d949fb889b11969544dbfe42fdb13">mip_packet_update_last_field_length</a> (mip_packet_view *packet, uint8_t *payload_ptr, uint8_t new_payload_length)</td></tr>
-<tr class="memdesc:a004d949fb889b11969544dbfe42fdb13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the size of the last field in the packet.  <br /></td></tr>
-<tr class="separator:a004d949fb889b11969544dbfe42fdb13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a461c55fb152c12311c3a512deea6e35a" id="r_a461c55fb152c12311c3a512deea6e35a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__packet_8c.html#a461c55fb152c12311c3a512deea6e35a">mip_packet_alloc_field</a> (mip_packet_view *packet, uint8_t field_descriptor, uint8_t payload_length, uint8_t **const payload_ptr_out)</td></tr>
+<tr class="memdesc:a461c55fb152c12311c3a512deea6e35a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a MIP field within the packet and return the payload pointer.  <br /></td></tr>
+<tr class="separator:a461c55fb152c12311c3a512deea6e35a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19cbb06e541cf99159a939906f6d8c96" id="r_a19cbb06e541cf99159a939906f6d8c96"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__packet_8c.html#a19cbb06e541cf99159a939906f6d8c96">mip_packet_realloc_last_field</a> (mip_packet_view *packet, uint8_t *payload_ptr, uint8_t new_payload_length)</td></tr>
+<tr class="memdesc:a19cbb06e541cf99159a939906f6d8c96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the size of the last field in the packet.  <br /></td></tr>
+<tr class="separator:a19cbb06e541cf99159a939906f6d8c96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9ac38019a7e1015f8cfed5ce2633243" id="r_ac9ac38019a7e1015f8cfed5ce2633243"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__packet_8c.html#ac9ac38019a7e1015f8cfed5ce2633243">mip_packet_cancel_last_field</a> (mip_packet_view *packet, uint8_t *payload_ptr)</td></tr>
 <tr class="memdesc:ac9ac38019a7e1015f8cfed5ce2633243"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the last field from the packet after having allocated it.  <br /></td></tr>
 <tr class="separator:ac9ac38019a7e1015f8cfed5ce2633243"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -219,6 +218,66 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a461c55fb152c12311c3a512deea6e35a" name="a461c55fb152c12311c3a512deea6e35a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a461c55fb152c12311c3a512deea6e35a">&#9670;&#160;</a></span>mip_packet_alloc_field()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mip_packet_alloc_field </td>
+          <td>(</td>
+          <td class="paramtype">mip_packet_view *&#160;</td>
+          <td class="paramname"><em>packet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>field_descriptor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>payload_length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t **const&#160;</td>
+          <td class="paramname"><em>payload_ptr_out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allocate a MIP field within the packet and return the payload pointer. </p>
+<div class="fragment"><div class="line">                              Len   Desc  .---&gt; Payload ptr out</div>
+<div class="line">                               |     |    |</div>
+<div class="line"> Packet Buffer                 V     V    |</div>
+<div class="line">---------------+------------+-   -+-    -+---------------------+----------</div>
+<div class="line"> ...   Header  |   Field    | Len | Desc | (unwritten payload) |</div>
+<div class="line">---------------+------------+-----+------+---------------------+----------</div>
+<div class="line">                            |                                  |</div>
+<div class="line">                    End of last field   ---------------&gt;  End of <span class="keyword">new</span> field</div>
+</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">packet</td><td></td></tr>
+    <tr><td class="paramname">field_descriptor</td><td>The MIP field descriptor (e.g. command or data descriptor). </td></tr>
+    <tr><td class="paramname">payload_length</td><td>The requested length of the field payload (not including the header). If the size is not known ahead of time, pass 0 and inspect the return value to see how much payload data can be written. Then call mip_packet_realloc_field() with the used size and same payload pointer. </td></tr>
+    <tr><td class="paramname">payload_ptr_out</td><td>A pointer to a pointer to the field payload. This will receive the payload pointer into which data should be written.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The amount of space remaining after allocating this field. If this is negative, the field could not be allocated and the payload must not be written. </dd></dl>
+
+</div>
+</div>
 <a id="a426788085d2dbb13cddb90a49eb1aab9" name="a426788085d2dbb13cddb90a49eb1aab9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a426788085d2dbb13cddb90a49eb1aab9">&#9670;&#160;</a></span>mip_packet_buffer()</h2>
 
@@ -287,7 +346,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Removes the last field from the packet after having allocated it. </p>
-<p>Use only after allocating a field with mip_packet_create_field to cancel it. E.g. if it turns out that there isn't enough buffer space to write the payload.</p>
+<p>Use only after allocating a field with mip_packet_alloc_field to cancel it. E.g. if it turns out that there isn't enough buffer space to write the payload.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">packet</td><td></td></tr>
@@ -393,66 +452,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac16b64752f8e683114735f588715dde1" name="ac16b64752f8e683114735f588715dde1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac16b64752f8e683114735f588715dde1">&#9670;&#160;</a></span>mip_packet_create_field()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int mip_packet_create_field </td>
-          <td>(</td>
-          <td class="paramtype">mip_packet_view *&#160;</td>
-          <td class="paramname"><em>packet</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>field_descriptor</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>payload_length</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t **&#160;</td>
-          <td class="paramname"><em>payload_ptr_out</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Allocate a MIP field within the packet and return the payload pointer. </p>
-<div class="fragment"><div class="line">                              Len   Desc  .---&gt; Payload ptr out</div>
-<div class="line">                               |     |    |</div>
-<div class="line"> Packet Buffer                 V     V    |</div>
-<div class="line">---------------+------------+-   -+-    -+---------------------+----------</div>
-<div class="line"> ...   Header  |   Field    | Len | Desc | (unwritten payload) |</div>
-<div class="line">---------------+------------+-----+------+---------------------+----------</div>
-<div class="line">                            |                                  |</div>
-<div class="line">                    End of last field   ---------------&gt;  End of <span class="keyword">new</span> field</div>
-</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">packet</td><td></td></tr>
-    <tr><td class="paramname">field_descriptor</td><td>The MIP field descriptor (e.g. command or data descriptor). </td></tr>
-    <tr><td class="paramname">payload_length</td><td>The requested length of the field payload (not including the header). If the size is not known ahead of time, pass 0 and inspect the return value to see how much payload data can be written. Then call mip_packet_realloc_field() with the used size and same payload pointer. </td></tr>
-    <tr><td class="paramname">payload_ptr_out</td><td>A pointer to a pointer to the field payload. This will receive the payload pointer into which data should be written.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The amount of space remaining after allocating this field. If this is negative, the field could not be allocated and the payload must not be written. </dd></dl>
-
-</div>
-</div>
 <a id="a9b1451f69b143dd1de22ffdcb57b6fb9" name="a9b1451f69b143dd1de22ffdcb57b6fb9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9b1451f69b143dd1de22ffdcb57b6fb9">&#9670;&#160;</a></span>mip_packet_descriptor_set()</h2>
 
@@ -502,8 +501,8 @@ Functions</h2></td></tr>
 </div><!-- fragment --> 
 </div>
 </div>
-<a id="aed391287b26a031e42543771626980ff" name="aed391287b26a031e42543771626980ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed391287b26a031e42543771626980ff">&#9670;&#160;</a></span>mip_packet_from_buffer()</h2>
+<a id="a115862b0b4dccd121ae7034e90fb239b" name="a115862b0b4dccd121ae7034e90fb239b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a115862b0b4dccd121ae7034e90fb239b">&#9670;&#160;</a></span>mip_packet_from_buffer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -517,7 +516,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><em>buffer</em>, </td>
         </tr>
         <tr>
@@ -706,6 +705,52 @@ false if it contains commands or replies. </dd></dl>
 
 </div>
 </div>
+<a id="a19cbb06e541cf99159a939906f6d8c96" name="a19cbb06e541cf99159a939906f6d8c96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19cbb06e541cf99159a939906f6d8c96">&#9670;&#160;</a></span>mip_packet_realloc_last_field()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mip_packet_realloc_last_field </td>
+          <td>(</td>
+          <td class="paramtype">mip_packet_view *&#160;</td>
+          <td class="paramname"><em>packet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>payload_ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>new_payload_length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Changes the size of the last field in the packet. </p>
+<p>Use this in conjunction with <a class="el" href="mip__packet_8c.html#a461c55fb152c12311c3a512deea6e35a" title="Allocate a MIP field within the packet and return the payload pointer.">mip_packet_alloc_field()</a> when the size of the field is not known in advance. Pass a payload size of 0 to alloc_field and check that the returned available space is sufficient, then write the payload and call this function with the actual space used.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">packet</td><td></td></tr>
+    <tr><td class="paramname">payload_ptr</td><td>Pointer to the field payload. This must be the same value returned from alloc_field and must point to the last field. </td></tr>
+    <tr><td class="paramname">new_payload_length</td><td>Length of payload written. Generally it is an error for this to exceed the actual amount of space available in the packet. In this case, the packet is left with just the empty field and the return value will be negative.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The space remaining in the packet after changing the field size. This will be negative if the new length did not fit. </dd></dl>
+
+</div>
+</div>
 <a id="a673b5a87065117952300df5b3e263cde" name="a673b5a87065117952300df5b3e263cde"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a673b5a87065117952300df5b3e263cde">&#9670;&#160;</a></span>mip_packet_remaining_space()</h2>
 
@@ -784,52 +829,6 @@ false if it contains commands or replies. </dd></dl>
 
 <p>Returns the total length of the packet, in bytes. </p>
 <dl class="section return"><dt>Returns</dt><dd>The length of the packet. Always at least MIP_PACKET_LENGTH_MIN. </dd></dl>
-
-</div>
-</div>
-<a id="a004d949fb889b11969544dbfe42fdb13" name="a004d949fb889b11969544dbfe42fdb13"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a004d949fb889b11969544dbfe42fdb13">&#9670;&#160;</a></span>mip_packet_update_last_field_length()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int mip_packet_update_last_field_length </td>
-          <td>(</td>
-          <td class="paramtype">mip_packet_view *&#160;</td>
-          <td class="paramname"><em>packet</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>payload_ptr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>new_payload_length</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Changes the size of the last field in the packet. </p>
-<p>Use this in conjunction with <a class="el" href="mip__packet_8c.html#ac16b64752f8e683114735f588715dde1" title="Allocate a MIP field within the packet and return the payload pointer.">mip_packet_create_field()</a> when the size of the field is not known in advance. Pass a payload size of 0 to alloc_field and check that the returned available space is sufficient, then write the payload and call this function with the actual space used.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">packet</td><td></td></tr>
-    <tr><td class="paramname">payload_ptr</td><td>Pointer to the field payload. This must be the same value returned from alloc_field and must point to the last field. </td></tr>
-    <tr><td class="paramname">new_payload_length</td><td>Length of payload written. Generally it is an error for this to exceed the actual amount of space available in the packet. In this case, the packet is left with just the empty field and the return value will be negative.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The space remaining in the packet after changing the field size. This will be negative if the new length did not fit. </dd></dl>
 
 </div>
 </div>

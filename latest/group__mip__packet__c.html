@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MIP_SDK: Mip Packet</title>
+<title>MIP_SDK: Mip Packet [C]</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -13,7 +13,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -22,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-143-g6f95300</span>
+   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-141-g7a72ec3</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -75,20 +74,21 @@ $(function() {
 <a href="#groups">Modules</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a>  </div>
-  <div class="headertitle"><div class="title">Mip Packet<div class="ingroups"><a class="el" href="group__mip.html">MIP</a> &raquo; <a class="el" href="group__mip__c.html">C API</a></div></div></div>
+  <div class="headertitle"><div class="title">Mip Packet [C]<div class="ingroups"><a class="el" href="group__mip__c.html">MIP C API</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Functions for building and processing MIP packets.  
+<p>Functions for handling MIP packets.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="groups" name="groups"></a>
 Modules</h2></td></tr>
-<tr class="memitem:group___packet_building" id="r_group___packet_building"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___packet_building.html">Packet Building</a></td></tr>
+<tr class="memitem:group___packet_building" id="r_group___packet_building"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___packet_building.html">Packet Building [C]</a></td></tr>
 <tr class="memdesc:group___packet_building"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functions for building new MIP packets. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:group___accessors__c" id="r_group___accessors__c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___accessors__c.html">Accessors</a></td></tr>
-<tr class="memdesc:group___accessors__c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functions for accessing information about an existing MIP packet. <br /></td></tr>
+<tr class="memitem:group___accessors" id="r_group___accessors"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___accessors.html">Accessors - Functions for accessing information about an existing MIP packet.</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:group___serialization" id="r_group___serialization"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___serialization.html">Serializers - Functions for serializing a MIP packet.</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -104,7 +104,7 @@ Typedefs</h2></td></tr>
 <tr class="separator:ga28b4bb8fcafed70f07fbf8034e5abe01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Functions for building and processing MIP packets. </p>
+<p>Functions for handling MIP packets. </p>
 <p>A MIP Packet is represented by the <a class="el" href="structmip_1_1_c_1_1mip__packet__view.html" title="Structure representing a MIP Packet.">mip_packet_view</a> struct.</p>
 <div class="fragment"><div class="line">+-------+-------+------+------+------------+-----/ /----+------------+----</div>
 <div class="line">| SYNC1 | SYNC2 | DESC | PLEN |   Field    |     ...    |  Checksum  |  remaining buffer space...</div>

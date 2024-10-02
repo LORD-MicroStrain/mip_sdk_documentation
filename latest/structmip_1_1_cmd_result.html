@@ -13,7 +13,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -22,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-143-g6f95300</span>
+   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-141-g7a72ec3</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -81,7 +80,7 @@ $(function() {
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="structmip_1_1_cmd_result-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">mip::CmdResult Struct Reference<div class="ingroups"><a class="el" href="group__mip.html">MIP</a> &raquo; <a class="el" href="group__mip__cpp.html">C++ API</a></div></div></div>
+  <div class="headertitle"><div class="title">mip::CmdResult Struct Reference<div class="ingroups"><a class="el" href="group__mip__cpp.html">MIP C++ API</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -193,9 +192,9 @@ Static Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents the status of a MIP command. </p>
 <p>This is the same as the mip_cmd_result enum, but with some convenient member functions and some operator overloads.</p>
-<p><a class="el" href="structmip_1_1_cmd_result.html" title="Represents the status of a MIP command.">CmdResult</a> is convertible to bool, allowing code like the following: </p><div class="fragment"><div class="line"><span class="keywordflow">if</span>( !<a class="code hl_function" href="group__base__ping__cpp.html#gaa258deac0c683fbff1b9b0ab38b90592">mip::commands_base::ping</a>(device) )</div>
+<p><a class="el" href="structmip_1_1_cmd_result.html" title="Represents the status of a MIP command.">CmdResult</a> is convertible to bool, allowing code like the following: </p><div class="fragment"><div class="line"><span class="keywordflow">if</span>( !<a class="code hl_function" href="group__cpp__base__ping.html#gaa258deac0c683fbff1b9b0ab38b90592">mip::commands_base::ping</a>(device) )</div>
 <div class="line">  fprintf(stderr, <span class="stringliteral">&quot;Couldn&#39;t ping the device!\n&quot;</span>);</div>
-<div class="ttc" id="agroup__base__ping__cpp_html_gaa258deac0c683fbff1b9b0ab38b90592"><div class="ttname"><a href="group__base__ping__cpp.html#gaa258deac0c683fbff1b9b0ab38b90592">mip::commands_base::ping</a></div><div class="ttdeci">TypedResult&lt; Ping &gt; ping(C::mip_interface &amp;device)</div><div class="ttdef"><b>Definition</b> commands_base.cpp:73</div></div>
+<div class="ttc" id="agroup__cpp__base__ping_html_gaa258deac0c683fbff1b9b0ab38b90592"><div class="ttname"><a href="group__cpp__base__ping.html#gaa258deac0c683fbff1b9b0ab38b90592">mip::commands_base::ping</a></div><div class="ttdeci">TypedResult&lt; Ping &gt; ping(C::mip_interface &amp;device)</div><div class="ttdef"><b>Definition</b> commands_base.cpp:73</div></div>
 </div><!-- fragment --> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab918250afcaa3b41b53abcd3c262f6bf" name="ab918250afcaa3b41b53abcd3c262f6bf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab918250afcaa3b41b53abcd3c262f6bf">&#9670;&#160;</a></span>CmdResult() <span class="overload">[1/2]</span></h2>
