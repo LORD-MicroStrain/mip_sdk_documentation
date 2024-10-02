@@ -13,6 +13,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -21,7 +22,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-141-g7a72ec3</span>
+   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-143-g6f95300</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -75,14 +76,14 @@ $(function() {
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="known_issues"></a>
 Known Issues and Workarounds</h1>
-<h2><a class="anchor" id="autotoc_md13"></a>
-&lt;tt&gt;suppress_ack&lt;/tt&gt; parameters are not supported</h2>
-<p>Some commands accept a parameter named <code>suppress_ack</code> which acts to prevent the standard ack/nack reply from being returned by the device, e.g. the 3DM Poll Data command. Use of this parameter is not supported in the MIP SDK and will cause the command to appear to time out after a short delay.</p>
-<p>If you do not wish to wait for a reply (i.e. just send the command and continue) you can build and send the command yourself: </p><div class="fragment"><div class="line"><span class="comment">// Create the command with required parameters.</span></div>
+<h2><a class="anchor" id="autotoc_md26"></a>
+suppress_ack parameters are not supported</h2>
+<p>Some commands accept a parameter named <code>suppress_ack</code> which acts to prevent the standard ack/nack reply from being returned by the device, e.g. the 3DM Poll Data command. Use of this parameter is not directly supported by the MIP SDK and will cause the command to appear to time out after a short delay.</p>
+<p>If you wish to use this feature, (i.e. just send the command without waiting for an ACK/NACK), you can build and send the command manually: </p><div class="fragment"><div class="line"><span class="comment">// Create the command with required parameters.</span></div>
 <div class="line"><a class="code hl_struct" href="structmip_1_1commands__3dm_1_1_poll_data.html">mip::commands_3dm::PollData</a> cmd;</div>
 <div class="line"> </div>
 <div class="line">cmd.<a class="code hl_variable" href="structmip_1_1commands__3dm_1_1_poll_data.html#a7d7be7ad163e7b54f0edd7cb86adac0f">desc_set</a> = <a class="code hl_enumvalue" href="group__sensor__data__cpp.html#gga59906ba59974b3547e3a6e27d0d5ed25ae97bd19967b3e301a19d9ce7eb77d919">mip::data_sensor::DESCRIPTOR_SET</a>;</div>
-<div class="line">cmd.<a class="code hl_variable" href="structmip_1_1commands__3dm_1_1_poll_data.html#a71bc8584ca77ae72904cd6c0f63454ef">suppress_ack</a> = <span class="keyword">true</span>;</div>
+<div class="line">cmd.<a class="code hl_variable" href="structmip_1_1commands__3dm_1_1_poll_data.html#a71bc8584ca77ae72904cd6c0f63454ef">suppress_ack</a> = <span class="keyword">true</span>;  <span class="comment">// We can set this since we&#39;re not calling the standard cmd handling functions.</span></div>
 <div class="line">cmd.<a class="code hl_variable" href="structmip_1_1commands__3dm_1_1_poll_data.html#aa634262648b551cf4cbda1fde0e97965">num_descriptors</a> = 2;</div>
 <div class="line">cmd.<a class="code hl_variable" href="structmip_1_1commands__3dm_1_1_poll_data.html#aaec9e17923c86b1646bcad07fda1b1ec">descriptors</a>[0] = <a class="code hl_variable" href="structmip_1_1data__sensor_1_1_scaled_accel.html#a79e485516eb04afcf39d71c2d41dd1cd">mip::data_sensor::ScaledAccel::FIELD_DESCRIPTOR</a>;</div>
 <div class="line">cmd.<a class="code hl_variable" href="structmip_1_1commands__3dm_1_1_poll_data.html#aaec9e17923c86b1646bcad07fda1b1ec">descriptors</a>[1] = <a class="code hl_variable" href="structmip_1_1data__sensor_1_1_scaled_gyro.html#a9e9f87e6112033ebd965724831e8f677">mip::data_sensor::ScaledGyro::FIELD_DESCRIPTOR</a>;</div>
@@ -92,7 +93,7 @@ Known Issues and Workarounds</h1>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Send it to the device.</span></div>
 <div class="line">device.sendCommand(packet);</div>
-<div class="ttc" id="aclassmip_1_1_sized_packet_buf_html"><div class="ttname"><a href="classmip_1_1_sized_packet_buf.html">mip::SizedPacketBuf</a></div><div class="ttdoc">A mip packet with a self-contained buffer (useful with std::vector).</div><div class="ttdef"><b>Definition</b> mip_packet.hpp:245</div></div>
+<div class="ttc" id="aclassmip_1_1_sized_packet_buf_html"><div class="ttname"><a href="classmip_1_1_sized_packet_buf.html">mip::SizedPacketBuf</a></div><div class="ttdoc">A mip packet with a self-contained buffer (useful with std::vector).</div><div class="ttdef"><b>Definition</b> mip_packet.hpp:254</div></div>
 <div class="ttc" id="agroup__sensor__data__cpp_html_gga59906ba59974b3547e3a6e27d0d5ed25ae97bd19967b3e301a19d9ce7eb77d919"><div class="ttname"><a href="group__sensor__data__cpp.html#gga59906ba59974b3547e3a6e27d0d5ed25ae97bd19967b3e301a19d9ce7eb77d919">mip::data_sensor::DESCRIPTOR_SET</a></div><div class="ttdeci">@ DESCRIPTOR_SET</div><div class="ttdef"><b>Definition</b> data_sensor.hpp:31</div></div>
 <div class="ttc" id="astructmip_1_1commands__3dm_1_1_poll_data_html"><div class="ttname"><a href="structmip_1_1commands__3dm_1_1_poll_data.html">mip::commands_3dm::PollData</a></div><div class="ttdef"><b>Definition</b> commands_3dm.hpp:796</div></div>
 <div class="ttc" id="astructmip_1_1commands__3dm_1_1_poll_data_html_a71bc8584ca77ae72904cd6c0f63454ef"><div class="ttname"><a href="structmip_1_1commands__3dm_1_1_poll_data.html#a71bc8584ca77ae72904cd6c0f63454ef">mip::commands_3dm::PollData::suppress_ack</a></div><div class="ttdeci">bool suppress_ack</div><div class="ttdoc">Suppress the usual ACK/NACK reply.</div><div class="ttdef"><b>Definition</b> commands_3dm.hpp:799</div></div>
@@ -101,7 +102,7 @@ Known Issues and Workarounds</h1>
 <div class="ttc" id="astructmip_1_1commands__3dm_1_1_poll_data_html_aaec9e17923c86b1646bcad07fda1b1ec"><div class="ttname"><a href="structmip_1_1commands__3dm_1_1_poll_data.html#aaec9e17923c86b1646bcad07fda1b1ec">mip::commands_3dm::PollData::descriptors</a></div><div class="ttdeci">uint8_t descriptors[82]</div><div class="ttdoc">Descriptor format list.</div><div class="ttdef"><b>Definition</b> commands_3dm.hpp:801</div></div>
 <div class="ttc" id="astructmip_1_1data__sensor_1_1_scaled_accel_html_a79e485516eb04afcf39d71c2d41dd1cd"><div class="ttname"><a href="structmip_1_1data__sensor_1_1_scaled_accel.html#a79e485516eb04afcf39d71c2d41dd1cd">mip::data_sensor::ScaledAccel::FIELD_DESCRIPTOR</a></div><div class="ttdeci">static constexpr const uint8_t FIELD_DESCRIPTOR</div><div class="ttdef"><b>Definition</b> data_sensor.hpp:237</div></div>
 <div class="ttc" id="astructmip_1_1data__sensor_1_1_scaled_gyro_html_a9e9f87e6112033ebd965724831e8f677"><div class="ttname"><a href="structmip_1_1data__sensor_1_1_scaled_gyro.html#a9e9f87e6112033ebd965724831e8f677">mip::data_sensor::ScaledGyro::FIELD_DESCRIPTOR</a></div><div class="ttdeci">static constexpr const uint8_t FIELD_DESCRIPTOR</div><div class="ttdef"><b>Definition</b> data_sensor.hpp:275</div></div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md14"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md27"></a>
 Some commands take longer and may time out</h2>
 <p>This applies to the following commands:</p><ul>
 <li>Device Settings (<a class="el" href="structmip_1_1commands__3dm_1_1_device_settings.html">mip::commands_3dm::DeviceSettings</a>), in particular saving settings.</li>

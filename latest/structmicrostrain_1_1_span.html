@@ -13,6 +13,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -21,7 +22,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-141-g7a72ec3</span>
+   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-143-g6f95300</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -83,6 +84,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Implementation of std::span from C++20.  
+ <a href="structmicrostrain_1_1_span.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="span_8hpp_source.html">span.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
@@ -137,7 +141,13 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:a56c2138330de07cfe3320a97778126e5" id="r_a56c2138330de07cfe3320a97778126e5"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmicrostrain_1_1_span.html#a56c2138330de07cfe3320a97778126e5">extent</a> = Extent</td></tr>
 <tr class="separator:a56c2138330de07cfe3320a97778126e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;class T, size_t Extent = DYNAMIC_EXTENT&gt;<br />
+struct microstrain::Span&lt; T, Extent &gt;</div><p>Implementation of std::span from C++20. </p>
+<p>This class represents a pointer and length. It provides the minimum functionality required by this SDK while trying to be interchangeable with std::span.</p>
+<p><a href="https://en.cppreference.com/w/cpp/container/span">https://en.cppreference.com/w/cpp/container/span</a></p>
+<p>See <a class="el" href="cpp_standards.html">C++ Standard Support</a> </p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a1937c0e3ab8c6677d34e6bb2ad6a9076" name="a1937c0e3ab8c6677d34e6bb2ad6a9076"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1937c0e3ab8c6677d34e6bb2ad6a9076">&#9670;&#160;</a></span>const_pointer</h2>
 

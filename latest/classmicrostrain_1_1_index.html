@@ -13,6 +13,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -21,7 +22,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-141-g7a72ec3</span>
+   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-143-g6f95300</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -138,8 +139,8 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents an index ranging from 0..N excluding N. </p>
 <p>Use this to help avoid off-by-one errors when using indices into arrays at the same time as referring to MIP values which typically start at 1.</p>
-<p>Use the .<a class="el" href="classmicrostrain_1_1_index.html#a1f5e75f8ffc09c35e19d5dcd9ae1bcf2">index()</a> or .<a class="el" href="classmicrostrain_1_1_index.html#a01df34d5b919cee6a4d1ab9e9aff54ac">id()</a> methods to get the actual value, depending on what you need. The <a class="el" href="classmicrostrain_1_1_index.html#a1f5e75f8ffc09c35e19d5dcd9ae1bcf2">index()</a> method returns an unsigned int in the range [0,N-1] while the <a class="el" href="classmicrostrain_1_1_index.html#a01df34d5b919cee6a4d1ab9e9aff54ac">id()</a> method returns an unsigned int in the range [1,N]</p>
-<p><a class="el" href="classmicrostrain_1_1_index.html#a128dae04a99752f9e6226bf16eef20fc">isAssigned()</a> can be used to see if the value is valid, i.e. initialized. isValid(N) can be used to check if the value is within a maximum count.</p>
+<p>Use the <a class="el" href="classmicrostrain_1_1_index.html#a1f5e75f8ffc09c35e19d5dcd9ae1bcf2">index()</a> or <a class="el" href="classmicrostrain_1_1_index.html#a01df34d5b919cee6a4d1ab9e9aff54ac">id()</a> methods to get the actual value, depending on what you need. The <a class="el" href="classmicrostrain_1_1_index.html#a1f5e75f8ffc09c35e19d5dcd9ae1bcf2">index()</a> method returns an unsigned int in the range [0,N-1] while the <a class="el" href="classmicrostrain_1_1_index.html#a01df34d5b919cee6a4d1ab9e9aff54ac">id()</a> method returns an unsigned int in the range [1,N]</p>
+<p><a class="el" href="classmicrostrain_1_1_index.html#a128dae04a99752f9e6226bf16eef20fc">isAssigned()</a> can be used to see if the value is valid, i.e. initialized. <a class="el" href="classmicrostrain_1_1_index.html#ac36b2ed4aa3e4ee054b63e1a9c355036">isValid()</a> can be used to check if the value is within a maximum count.</p>
 <p>The default value with no initialization is INVALID.</p>
 <p>This is interchangeable with the <a class="el" href="classmicrostrain_1_1_id.html" title="Representes an ID number ranging from 1..N including N.">Id</a> class below. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>

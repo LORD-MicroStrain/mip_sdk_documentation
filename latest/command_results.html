@@ -13,6 +13,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -21,7 +22,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-141-g7a72ec3</span>
+   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-143-g6f95300</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -76,7 +77,7 @@ $(function() {
 <div class="textblock"><p>All of the command functions in the MIP SDK return a Command Result. Command results are represented by an 8-bit enum type in both C and C++:</p>
 <ul>
 <li><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_command_result (C)</a></li>
-<li><a class="el" href="structmip_1_1_cmd_result.html">CmdResult (C++)</a></li>
+<li><a class="el" href="structmip_1_1_cmd_result.html">mip::CmdResult (C++)</a></li>
 </ul>
 <p>Command results are divided into two categories, reply codes and status codes. Reply codes are returned by the device directly:</p><ul>
 <li><code>ACK_OK</code> - Ok; The command was successful.</li>
@@ -92,9 +93,9 @@ $(function() {
 <li><code>STATUS_USER</code> - Application-specific codes can also be set. They must be this value or lower (more negative).</li>
 </ul>
 <p>You can use <a class="el" href="group__mip__c.html#ga0ba1d10504e92c0adf97e66785de16af">mip_cmd_result_is_reply()</a> / <a class="el" href="structmip_1_1_cmd_result.html#a7eb337de965d8b389895be9e16ad5574">mip::CmdResult::isReplyCode()</a> and <a class="el" href="group__mip__c.html#gad34a6e007af795921a00dc6fb0014233">mip_cmd_result_is_status()</a> / <a class="el" href="structmip_1_1_cmd_result.html#aa6f5e4cc86a1080e08287f1b37083b5e">mip::CmdResult::isStatusCode()</a> to distinguish between the two categories.</p>
-<p>In C++, CmdResult is implicitly convertible to bool. <code>ACK_OK</code> converts to true while everything else converts to false. This allows compact code like </p><div class="fragment"><div class="line"><span class="keywordflow">if</span>( !<a class="code hl_function" href="group__cpp__base__resume.html#ga7def97dd065c8f3c70c3a471231c899f">mip::commands_base::resume</a>(device) )  <span class="comment">// resume returns a CmdResult</span></div>
+<p>In C++, CmdResult is implicitly convertible to bool. <code>ACK_OK</code> converts to true while everything else converts to false. This allows compact code like </p><div class="fragment"><div class="line"><span class="keywordflow">if</span>( !<a class="code hl_function" href="group__base__resume__cpp.html#ga7def97dd065c8f3c70c3a471231c899f">mip::commands_base::resume</a>(device) )  <span class="comment">// resume returns a CmdResult</span></div>
 <div class="line">    std::fprintf(stderr, <span class="stringliteral">&quot;Failed to resume the sensor\n&quot;</span>);</div>
-<div class="ttc" id="agroup__cpp__base__resume_html_ga7def97dd065c8f3c70c3a471231c899f"><div class="ttname"><a href="group__cpp__base__resume.html#ga7def97dd065c8f3c70c3a471231c899f">mip::commands_base::resume</a></div><div class="ttdeci">TypedResult&lt; Resume &gt; resume(C::mip_interface &amp;device)</div><div class="ttdef"><b>Definition</b> commands_base.cpp:218</div></div>
+<div class="ttc" id="agroup__base__resume__cpp_html_ga7def97dd065c8f3c70c3a471231c899f"><div class="ttname"><a href="group__base__resume__cpp.html#ga7def97dd065c8f3c70c3a471231c899f">mip::commands_base::resume</a></div><div class="ttdeci">TypedResult&lt; Resume &gt; resume(C::mip_interface &amp;device)</div><div class="ttdef"><b>Definition</b> commands_base.cpp:218</div></div>
 </div><!-- fragment --><p>For debugging, the name of command results is available via <a class="el" href="group__mip__c.html#gae7148026535b0837c16d36be3ef4c6c8">mip_cmd_result_to_string()</a> / <a class="el" href="structmip_1_1_cmd_result.html#ad3d955bddd698d61610660d175b545c0">mip::CmdResult::name</a></p>
 <p>In C++, CmdResult defaults to the initial state <code>CmdResult::STATUS_NONE</code>. </p>
 </div></div><!-- contents -->

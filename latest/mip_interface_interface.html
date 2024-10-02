@@ -13,6 +13,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -21,7 +22,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-141-g7a72ec3</span>
+   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-143-g6f95300</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -97,7 +98,7 @@ Application Interface</h1>
 </ul>
 <h1><a class="anchor" id="mip_commands"></a>
 Sending Commands</h1>
-<p>Typically an application will configure the device, initialize some settings, and start streaming. To do so, it must send commands. In many cases, applications will call a single function for each needed command (e.g. <a class="el" href="group___mip_commands__c.html">MIP Commands [C]</a> / <a class="el" href="group___mip_commands__cpp.html">MIP Commands [CPP]</a>). These functions take the command parameters as arguments, send the packet, wait for the reply, and return a result code. Additionally some commands can report back responses from the device.</p>
+<p>Typically an application will configure the device, initialize some settings, and start streaming. To do so, it must send commands. In many cases, applications will call a single function for each needed command (e.g. <a class="el" href="group___mip_commands__c.html">Mip Commands</a> / <a class="el" href="group___mip_commands__cpp.html">MipCommands_cpp</a>). These functions take the command parameters as arguments, send the packet, wait for the reply, and return a result code. Additionally some commands can report back responses from the device.</p>
 <p>The command functions are blocking, that is, they halt execution until the device responds or the command times out.</p>
 <p>Note that since MIP data is received serially and is not buffered, data may be received and processed while waiting for command responses. It is recommended (but not required) to set the device to idle during configuration.</p>
 <h1><a class="anchor" id="mip_dispatch"></a>
@@ -133,7 +134,7 @@ Data callbacks</h2>
 <h1><a class="anchor" id="update"></a>
 The Update Function</h1>
 <p>The application should call <a class="el" href="mip__interface_8c.html#a65014a7ec13d14107f5840653ebfab74" title="Call to process data from the device.">mip_interface_update()</a> periodically to process data sent by the device. This update function will call <a class="el" href="mip__interface_8c.html#a383ac1249c4e7706271f48f616b85b93" title="Checks for data at the port and reads it into buffer.">mip_interface_recv_from_device()</a> to parse packets. When a data packet is received, the list of packet and data callbacks is checked, and any matching callbacks are invoked. The update function should be called at a high enough rate to avoid overflowing the connection buffers. The precision of the reception timestamp is dependent on the update rate.</p>
-<p>The command functions in <a class="el" href="group___mip_commands__c.html">MIP Commands [C]</a> / <a class="el" href="group___mip_commands__cpp.html">MIP Commands [CPP]</a> (e.g. mip::C::mip_write_message_format() / mip::writeMessageFormat()) will block execution until the command completes. Either the device will respond with an ack/nack code, or the command will time out. During this time, the system must be able to receive data from the device in order for command replies to be detected. This occurs via the <a class="el" href="mip__interface_8c.html#a65014a7ec13d14107f5840653ebfab74" title="Call to process data from the device.">mip_interface_update()</a> function as well.</p>
+<p>The command functions in <a class="el" href="group___mip_commands__c.html">Mip Commands</a> / <a class="el" href="group___mip_commands__cpp.html">MipCommands_cpp</a> (e.g. mip::C::mip_write_message_format() / mip::writeMessageFormat()) will block execution until the command completes. Either the device will respond with an ack/nack code, or the command will time out. During this time, the system must be able to receive data from the device in order for command replies to be detected. This occurs via the <a class="el" href="mip__interface_8c.html#a65014a7ec13d14107f5840653ebfab74" title="Call to process data from the device.">mip_interface_update()</a> function as well.</p>
 <h2><a class="anchor" id="autotoc_md9"></a>
 Single-threaded applications</h2>
 <p>For single-threaded applications, data can be read from the port directly from within the command function. While the command is waiting (status code MIP_STATUS_WAITING / CmdResult::STATUS_WAITING), repeated calls to the update function will be made. By default, the update function calls <a class="el" href="mip__interface_8c.html#a383ac1249c4e7706271f48f616b85b93" title="Checks for data at the port and reads it into buffer.">mip_interface_recv_from_device()</a>. Because the function is called from within a loop, it should sleep for a short time to wait for data if none has been received yet. Doing so prevents excessive CPU usage and lowers power consumption.</p>

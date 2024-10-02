@@ -13,6 +13,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -21,7 +22,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-141-g7a72ec3</span>
+   <div id="projectname">MIP_SDK<span id="projectnumber">&#160;v2.0.0-143-g6f95300</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -190,7 +191,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="agroup___mip_dispatch__c_html_ga29b0f63f4f34c796757047479d38427f"><div class="ttname"><a href="group___mip_dispatch__c.html#ga29b0f63f4f34c796757047479d38427f">mip::C::mip_dispatch_packet_callback</a></div><div class="ttdeci">void(* mip_dispatch_packet_callback)(void *context, const mip_packet_view *packet, mip_timestamp timestamp)</div><div class="ttdoc">Signature for packet-level callbacks.</div><div class="ttdef"><b>Definition</b> mip_dispatch.h:39</div></div>
 <div class="ttc" id="agroup___mip_dispatch__c_html_ga30f5663974ed1e5cb0e259d440aaa2e8"><div class="ttname"><a href="group___mip_dispatch__c.html#ga30f5663974ed1e5cb0e259d440aaa2e8">mip::C::mip_dispatch_extractor</a></div><div class="ttdeci">bool(* mip_dispatch_extractor)(const mip_field_view *field, void *ptr)</div><div class="ttdoc">Signature for extraction callbacks.</div><div class="ttdef"><b>Definition</b> mip_dispatch.h:56</div></div>
 <div class="ttc" id="agroup___mip_dispatch__c_html_ga6d9c2aca747e6ea40a7104054432241a"><div class="ttname"><a href="group___mip_dispatch__c.html#ga6d9c2aca747e6ea40a7104054432241a">mip::C::mip_dispatch_field_callback</a></div><div class="ttdeci">void(* mip_dispatch_field_callback)(void *context, const mip_field_view *field, mip_timestamp timestamp)</div><div class="ttdoc">Signature for field-level callbacks.</div><div class="ttdef"><b>Definition</b> mip_dispatch.h:48</div></div>
-<div class="ttc" id="agroup__mip__c_html_gab3f1cea4c06739d4530f7d8088bd3ed8"><div class="ttname"><a href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip::C::mip_cmd_result</a></div><div class="ttdeci">mip_cmd_result</div><div class="ttdoc">Represents the status of a MIP command.</div><div class="ttdef"><b>Definition</b> mip_result.h:26</div></div>
+<div class="ttc" id="agroup__mip__c_html_gab3f1cea4c06739d4530f7d8088bd3ed8"><div class="ttname"><a href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip::C::mip_cmd_result</a></div><div class="ttdeci">mip_cmd_result</div><div class="ttdoc">Represents the status of a MIP command.</div><div class="ttdef"><b>Definition</b> mip_result.h:28</div></div>
 <div class="ttc" id="agroup__mip__interface__c_html_ga04a725bcf412e0c7bc4c7c53b74c5553"><div class="ttname"><a href="group__mip__interface__c.html#ga04a725bcf412e0c7bc4c7c53b74c5553">mip::C::mip_interface_send_to_device</a></div><div class="ttdeci">bool mip_interface_send_to_device(mip_interface *device, const uint8_t *data, size_t length)</div></div>
 <div class="ttc" id="agroup__mip__interface__c_html_ga1ab538fe6a048b11f97174b2f1ecc3de"><div class="ttname"><a href="group__mip__interface__c.html#ga1ab538fe6a048b11f97174b2f1ecc3de">mip::C::mip_send_callback</a></div><div class="ttdeci">bool(* mip_send_callback)(struct mip_interface *device, const uint8_t *data, size_t length)</div><div class="ttdoc">Called from mip_interface_send_to_device() to send data to the device port. The application should fo...</div><div class="ttdef"><b>Definition</b> mip_interface.h:36</div></div>
 <div class="ttc" id="agroup__mip__interface__c_html_ga211b1d911fe427568f2385d4258ccbdf"><div class="ttname"><a href="group__mip__interface__c.html#ga211b1d911fe427568f2385d4258ccbdf">mip::C::mip_interface_run_command_packet</a></div><div class="ttdeci">enum mip_cmd_result mip_interface_run_command_packet(mip_interface *device, const mip_packet_view *packet, mip_pending_cmd *cmd)</div></div>
