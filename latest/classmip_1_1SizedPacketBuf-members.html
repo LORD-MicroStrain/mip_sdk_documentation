@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v2.0.0-160-gfd99dac</span>
+   &#160;<span id="projectnumber">v2.0.0-161-g5903520</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -106,7 +106,7 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="classmip_1_1SizedPacketBuf.html#a87aab57ca43bf0977bd056b5108f0694">SizedPacketBuf</a>(const PacketView &amp;packet)</td><td class="entry"><a class="el" href="classmip_1_1SizedPacketBuf.html">mip::SizedPacketBuf&lt; BufferSize &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">explicit</span></td></tr>
   <tr><td class="entry"><a class="el" href="classmip_1_1SizedPacketBuf.html#a2d26e6c8645e39e2806845128ffcbf21">SizedPacketBuf</a>(const SizedPacketBuf &amp;other)</td><td class="entry"><a class="el" href="classmip_1_1SizedPacketBuf.html">mip::SizedPacketBuf&lt; BufferSize &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classmip_1_1SizedPacketBuf.html#a18e9499d3558e1379fcd13ca75dd9864">SizedPacketBuf</a>(const SizedPacketBuf&lt; OtherSize &gt; &amp;other)</td><td class="entry"><a class="el" href="classmip_1_1SizedPacketBuf.html">mip::SizedPacketBuf&lt; BufferSize &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">explicit</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classmip_1_1SizedPacketBuf.html#a1ab33e238edfcca1ce5572f924152347">SizedPacketBuf</a>(const typename std::enable_if&lt; std::is_class&lt; FieldType &gt;::value &gt;::type &amp;field, uint8_t fieldDescriptor=INVALID_FIELD_DESCRIPTOR)</td><td class="entry"><a class="el" href="classmip_1_1SizedPacketBuf.html">mip::SizedPacketBuf&lt; BufferSize &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classmip_1_1SizedPacketBuf.html#a2c1a3fa1f916c1b1f067be53ace7eb6f">SizedPacketBuf</a>(const FieldType &amp;field, uint8_t fieldDescriptor=INVALID_FIELD_DESCRIPTOR, typename std::enable_if&lt; std::is_class&lt; FieldType &gt;::value, void &gt;::type *=nullptr)</td><td class="entry"><a class="el" href="classmip_1_1SizedPacketBuf.html">mip::SizedPacketBuf&lt; BufferSize &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

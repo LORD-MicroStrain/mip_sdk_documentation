@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v2.0.0-160-gfd99dac</span>
+   &#160;<span id="projectnumber">v2.0.0-161-g5903520</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -114,10 +114,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acd709818657de2bcf81b1fdc960d7c0b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classmip_1_1SizedPacketBuf.html">SizedPacketBuf</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmip_1_1SizedPacketBuf.html#acd709818657de2bcf81b1fdc960d7c0b">operator=</a> (const <a class="el" href="classmip_1_1SizedPacketBuf.html">SizedPacketBuf</a>&lt; OtherSize &gt; &amp;other)</td></tr>
 <tr class="memdesc:acd709818657de2bcf81b1fdc960d7c0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assignment operator, copies data from another buffer to this one.  <a href="classmip_1_1SizedPacketBuf.html#acd709818657de2bcf81b1fdc960d7c0b">More...</a><br /></td></tr>
 <tr class="separator:acd709818657de2bcf81b1fdc960d7c0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ab33e238edfcca1ce5572f924152347"><td class="memTemplParams" colspan="2">template&lt;class FieldType &gt; </td></tr>
-<tr class="memitem:a1ab33e238edfcca1ce5572f924152347"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmip_1_1SizedPacketBuf.html#a1ab33e238edfcca1ce5572f924152347">SizedPacketBuf</a> (const typename std::enable_if&lt; std::is_class&lt; FieldType &gt;::value &gt;::type &amp;field, uint8_t fieldDescriptor=INVALID_FIELD_DESCRIPTOR)</td></tr>
-<tr class="memdesc:a1ab33e238edfcca1ce5572f924152347"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a packet containing just the given field.  <a href="classmip_1_1SizedPacketBuf.html#a1ab33e238edfcca1ce5572f924152347">More...</a><br /></td></tr>
-<tr class="separator:a1ab33e238edfcca1ce5572f924152347"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c1a3fa1f916c1b1f067be53ace7eb6f"><td class="memTemplParams" colspan="2">template&lt;class FieldType &gt; </td></tr>
+<tr class="memitem:a2c1a3fa1f916c1b1f067be53ace7eb6f"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmip_1_1SizedPacketBuf.html#a2c1a3fa1f916c1b1f067be53ace7eb6f">SizedPacketBuf</a> (const FieldType &amp;field, uint8_t fieldDescriptor=INVALID_FIELD_DESCRIPTOR, typename std::enable_if&lt; std::is_class&lt; FieldType &gt;::value, void &gt;::type *=nullptr)</td></tr>
+<tr class="memdesc:a2c1a3fa1f916c1b1f067be53ace7eb6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a packet containing just the given field.  <a href="classmip_1_1SizedPacketBuf.html#a2c1a3fa1f916c1b1f067be53ace7eb6f">More...</a><br /></td></tr>
+<tr class="separator:a2c1a3fa1f916c1b1f067be53ace7eb6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a606a8babe1f8a64e5309342a948b314c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmip_1_1PacketView.html">PacketView</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1SizedPacketBuf.html#a606a8babe1f8a64e5309342a948b314c">ref</a> ()</td></tr>
 <tr class="memdesc:a606a8babe1f8a64e5309342a948b314c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Explicitly obtains a reference to the packet data.  <a href="classmip_1_1SizedPacketBuf.html#a606a8babe1f8a64e5309342a948b314c">More...</a><br /></td></tr>
 <tr class="separator:a606a8babe1f8a64e5309342a948b314c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -354,8 +354,8 @@ template&lt;size_t OtherSize&gt; </div>
 
 </div>
 </div>
-<a id="a1ab33e238edfcca1ce5572f924152347"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ab33e238edfcca1ce5572f924152347">&#9670;&nbsp;</a></span>SizedPacketBuf() <span class="overload">[6/6]</span></h2>
+<a id="a2c1a3fa1f916c1b1f067be53ace7eb6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c1a3fa1f916c1b1f067be53ace7eb6f">&#9670;&nbsp;</a></span>SizedPacketBuf() <span class="overload">[6/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -370,14 +370,20 @@ template&lt;class FieldType &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classmip_1_1SizedPacketBuf.html">mip::SizedPacketBuf</a>&lt; BufferSize &gt;::<a class="el" href="classmip_1_1SizedPacketBuf.html">SizedPacketBuf</a> </td>
           <td>(</td>
-          <td class="paramtype">const typename std::enable_if&lt; std::is_class&lt; FieldType &gt;::value &gt;::type &amp;&#160;</td>
+          <td class="paramtype">const FieldType &amp;&#160;</td>
           <td class="paramname"><em>field</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>fieldDescriptor</em> = <code>INVALID_FIELD_DESCRIPTOR</code>&#160;</td>
+          <td class="paramname"><em>fieldDescriptor</em> = <code>INVALID_FIELD_DESCRIPTOR</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">typename std::enable_if&lt; std::is_class&lt; FieldType &gt;::value, void &gt;::type *&#160;</td>
+          <td class="paramname"> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
