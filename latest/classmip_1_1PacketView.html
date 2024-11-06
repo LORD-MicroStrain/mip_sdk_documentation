@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v2.0.0-162-g1b89fe7</span>
+   &#160;<span id="projectnumber">v2.0.0-163-g188dd2d</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -125,6 +125,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a72838b4117f1c22c99af2fb2bfaa8b61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2871b64dd2eb43964ed7871dbc1a09b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemip.html#a7475074708d6d3e0fa83597b41eb98f8">Serializer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#a2871b64dd2eb43964ed7871dbc1a09b9">createField</a> (uint8_t fieldDescriptor, uint8_t length)</td></tr>
 <tr class="separator:a2871b64dd2eb43964ed7871dbc1a09b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcc6730bb9deb4ebe8d6bfec58f1aa15"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmicrostrain_1_1Span.html">microstrain::Span</a>&lt; const uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#adcc6730bb9deb4ebe8d6bfec58f1aa15">totalSpan</a> () const</td></tr>
+<tr class="memdesc:adcc6730bb9deb4ebe8d6bfec58f1aa15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a span over the whole packet.  <a href="classmip_1_1PacketView.html#adcc6730bb9deb4ebe8d6bfec58f1aa15">More...</a><br /></td></tr>
+<tr class="separator:adcc6730bb9deb4ebe8d6bfec58f1aa15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a0ba28f775287fb6865de65fbf79781"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmicrostrain_1_1Span.html">microstrain::Span</a>&lt; const uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#a8a0ba28f775287fb6865de65fbf79781">payloadSpan</a> () const</td></tr>
+<tr class="memdesc:a8a0ba28f775287fb6865de65fbf79781"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a span over just the payload.  <a href="classmip_1_1PacketView.html#a8a0ba28f775287fb6865de65fbf79781">More...</a><br /></td></tr>
+<tr class="separator:a8a0ba28f775287fb6865de65fbf79781"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23f0e5e25f0bcb890c47f61b3a7ece7e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmip_1_1PacketView_1_1AllocatedField.html">AllocatedField</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#a23f0e5e25f0bcb890c47f61b3a7ece7e">createField</a> (uint8_t fieldDescriptor)</td></tr>
 <tr class="separator:a23f0e5e25f0bcb890c47f61b3a7ece7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31300e8378c6fef1ba39e41545f4faf7"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#a31300e8378c6fef1ba39e41545f4faf7">operator[]</a> (unsigned int index) const</td></tr>
@@ -140,6 +146,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae9d4a62380c51a4540e93eddacd6bdc8"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#ae9d4a62380c51a4540e93eddacd6bdc8">addField</a> (const FieldType &amp;field, uint8_t fieldDescriptor=INVALID_FIELD_DESCRIPTOR)</td></tr>
 <tr class="memdesc:ae9d4a62380c51a4540e93eddacd6bdc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a field of the given type to the packet.  <a href="classmip_1_1PacketView.html#ae9d4a62380c51a4540e93eddacd6bdc8">More...</a><br /></td></tr>
 <tr class="separator:ae9d4a62380c51a4540e93eddacd6bdc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a514e9b59b45e186e8573702fc7198b4c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#a514e9b59b45e186e8573702fc7198b4c">copyPacketTo</a> (uint8_t *buffer, size_t maxLength)</td></tr>
+<tr class="memdesc:a514e9b59b45e186e8573702fc7198b4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies this packet to an external buffer.  <a href="classmip_1_1PacketView.html#a514e9b59b45e186e8573702fc7198b4c">More...</a><br /></td></tr>
+<tr class="separator:a514e9b59b45e186e8573702fc7198b4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a495fbbf6fe134834d500eeba710a4101"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#a495fbbf6fe134834d500eeba710a4101">copyPacketTo</a> (<a class="el" href="structmicrostrain_1_1Span.html">microstrain::Span</a>&lt; uint8_t &gt; buffer)</td></tr>
+<tr class="memdesc:a495fbbf6fe134834d500eeba710a4101"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies this packet to an external buffer (span version).  <a href="classmip_1_1PacketView.html#a495fbbf6fe134834d500eeba710a4101">More...</a><br /></td></tr>
+<tr class="separator:a495fbbf6fe134834d500eeba710a4101"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -483,6 +495,93 @@ template&lt;class FieldType &gt; </div>
 
 </div>
 </div>
+<a id="a495fbbf6fe134834d500eeba710a4101"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a495fbbf6fe134834d500eeba710a4101">&#9670;&nbsp;</a></span>copyPacketTo() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::PacketView::copyPacketTo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1Span.html">microstrain::Span</a>&lt; uint8_t &gt;&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copies this packet to an external buffer (span version). </p>
+<p>This packet must be sane (see isSane()). Undefined behavior otherwise due to lookup of totalLength().</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>Data is copied to this buffer.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if successful. </dd>
+<dd>
+false if maxLength is too short. </dd></dl>
+
+</div>
+</div>
+<a id="a514e9b59b45e186e8573702fc7198b4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a514e9b59b45e186e8573702fc7198b4c">&#9670;&nbsp;</a></span>copyPacketTo() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::PacketView::copyPacketTo </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>maxLength</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copies this packet to an external buffer. </p>
+<p>This packet must be sane (see isSane()). Undefined behavior otherwise due to lookup of totalLength().</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>Data is copied into this location. </td></tr>
+    <tr><td class="paramname">maxLength</td><td>Maximum number of bytes to copy.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if successful. </dd>
+<dd>
+false if maxLength is too short. </dd></dl>
+
+</div>
+</div>
 <a id="a23f0e5e25f0bcb890c47f61b3a7ece7e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a23f0e5e25f0bcb890c47f61b3a7ece7e">&#9670;&nbsp;</a></span>createField() <span class="overload">[1/2]</span></h2>
 
@@ -718,6 +817,60 @@ template&lt;class FieldType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8a0ba28f775287fb6865de65fbf79781"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a0ba28f775287fb6865de65fbf79781">&#9670;&nbsp;</a></span>payloadSpan()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structmicrostrain_1_1Span.html">microstrain::Span</a>&lt;const uint8_t&gt; mip::PacketView::payloadSpan </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets a span over just the payload. </p>
+
+</div>
+</div>
+<a id="adcc6730bb9deb4ebe8d6bfec58f1aa15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcc6730bb9deb4ebe8d6bfec58f1aa15">&#9670;&nbsp;</a></span>totalSpan()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structmicrostrain_1_1Span.html">microstrain::Span</a>&lt;const uint8_t&gt; mip::PacketView::totalSpan </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets a span over the whole packet. </p>
 
 </div>
 </div>
