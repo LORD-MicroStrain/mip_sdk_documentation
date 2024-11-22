@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v2.0.0-163-g188dd2d</span>
+   &#160;<span id="projectnumber">v2.0.0-170-ga30d379</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -299,6 +299,8 @@ $(function() {
 , <a class="el" href="structmip_1_1commands__gnss_1_1RtkDongleConfiguration_1_1Response.html#abaf9aca9a12d845a2f425fa744e89d55">mip::commands_gnss::RtkDongleConfiguration::Response</a>
 , <a class="el" href="structmip_1_1commands__gnss_1_1SignalConfiguration.html#afcfc12ba3222359f4ea966844ec2471e">mip::commands_gnss::SignalConfiguration</a>
 , <a class="el" href="structmip_1_1commands__gnss_1_1SignalConfiguration_1_1Response.html#a6dc60d9ee844916efe51ff7507d46a3a">mip::commands_gnss::SignalConfiguration::Response</a>
+, <a class="el" href="structmip_1_1commands__gnss_1_1SpartnConfiguration.html#ae2501bbf8731e21cfd16771d50e9b017">mip::commands_gnss::SpartnConfiguration</a>
+, <a class="el" href="structmip_1_1commands__gnss_1_1SpartnConfiguration_1_1Response.html#a52357ab6cefaea9c5445b0b698df2514">mip::commands_gnss::SpartnConfiguration::Response</a>
 , <a class="el" href="structmip_1_1commands__rtk_1_1ConnectedDeviceType.html#aacbb9e2e3b830265e67dbb8cd49d77d5">mip::commands_rtk::ConnectedDeviceType</a>
 , <a class="el" href="structmip_1_1commands__rtk_1_1ConnectedDeviceType_1_1Response.html#a51fc423022f96cf477bc452fd557c465">mip::commands_rtk::ConnectedDeviceType::Response</a>
 , <a class="el" href="structmip_1_1commands__rtk_1_1GetActCode.html#a0df5c7811c0b76e58f2f57a0047640d8">mip::commands_rtk::GetActCode</a>
@@ -322,6 +324,8 @@ $(function() {
 , <a class="el" href="structmip_1_1commands__rtk_1_1ServiceStatus_1_1Response.html#ad90a629b01e4de174b5e822df611c37e">mip::commands_rtk::ServiceStatus::Response</a>
 , <a class="el" href="structmip_1_1commands__system_1_1CommMode.html#adc7b610260ec0a19ca072312dc75acde">mip::commands_system::CommMode</a>
 , <a class="el" href="structmip_1_1commands__system_1_1CommMode_1_1Response.html#a40fa898ff7dcc2f87d3d7cfaabb2e03c">mip::commands_system::CommMode::Response</a>
+, <a class="el" href="structmip_1_1commands__system_1_1InterfaceControl.html#aaefb5f59e2cb31c02dd961cd6ac54f1b">mip::commands_system::InterfaceControl</a>
+, <a class="el" href="structmip_1_1commands__system_1_1InterfaceControl_1_1Response.html#a977f3ed38b5c9e1e4c04c295733d9916">mip::commands_system::InterfaceControl::Response</a>
 , <a class="el" href="structmip_1_1data__filter_1_1AccelBias.html#a5cbb9df82476c4a9e4445f278d1ebdbf">mip::data_filter::AccelBias</a>
 , <a class="el" href="structmip_1_1data__filter_1_1AccelBiasUncertainty.html#a1ab853afe73ab392a6fc4bf23c3e306f">mip::data_filter::AccelBiasUncertainty</a>
 , <a class="el" href="structmip_1_1data__filter_1_1AccelScaleFactor.html#a74776a1d46ff78829860200fd5b15c4c">mip::data_filter::AccelScaleFactor</a>
@@ -380,6 +384,8 @@ $(function() {
 , <a class="el" href="structmip_1_1data__filter_1_1VelocityNedUncertainty.html#a1eef0f0951ff0a3131b6ac13b7b34faa">mip::data_filter::VelocityNedUncertainty</a>
 , <a class="el" href="structmip_1_1data__filter_1_1Wgs84GravityMag.html#ae62eb959eeab0a39215f5fb9ee1f5939">mip::data_filter::Wgs84GravityMag</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1BaseStationInfo.html#a48bf88bda81ee80ead170ee272936581">mip::data_gnss::BaseStationInfo</a>
+, <a class="el" href="structmip_1_1data__gnss_1_1BeidouEphemeris.html#a667827220508656af1f322296168d189">mip::data_gnss::BeidouEphemeris</a>
+, <a class="el" href="structmip_1_1data__gnss_1_1BeidouIonoCorr.html#a6805a13f4375a2b914f32c4f3c142d8b">mip::data_gnss::BeidouIonoCorr</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1ClockInfo2.html#a8e79679a704b01a285dc5e3bb2e67031">mip::data_gnss::ClockInfo2</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1ClockInfo.html#a4c3b6f293f9674aecab2d7de61f22c2e">mip::data_gnss::ClockInfo</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1DgpsChannel.html#a7afee8cc1381769d2fbccbb5b07974d3">mip::data_gnss::DgpsChannel</a>
@@ -477,12 +483,10 @@ $(function() {
 , <a class="el" href="structmip_1_1data__filter_1_1GnssDualAntennaStatus.html#a738a413318939f10155ccc102e4f9c65">mip::data_filter::GnssDualAntennaStatus</a>
 , <a class="el" href="structmip_1_1data__filter_1_1HeadingUpdateState.html#abedb1d16a2991ac5e972c0ab0e3bc9e7">mip::data_filter::HeadingUpdateState</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1VelNed.html#a811f718afdc197193f09f4d03b144915">mip::data_gnss::VelNed</a>
+, <a class="el" href="structmip_1_1data__gnss_1_1VelNed_1_1ValidFlags.html#a9f3941d43026371c292541b5ec0293dc">mip::data_gnss::VelNed::ValidFlags</a>
 </li>
 <li>HEADING
 : <a class="el" href="structmip_1_1data__gnss_1_1VelNed_1_1ValidFlags.html#a974696cf6499ed4357b93896747ec928a0ab451e0a6575b03594c8e2bc3252037">mip::data_gnss::VelNed::ValidFlags</a>
-</li>
-<li>heading()
-: <a class="el" href="structmip_1_1data__gnss_1_1VelNed_1_1ValidFlags.html#a9f3941d43026371c292541b5ec0293dc">mip::data_gnss::VelNed::ValidFlags</a>
 </li>
 <li>heading_1sigma
 : <a class="el" href="structmip_1_1C_1_1mip__filter__heading__update__state__data.html#a85b81edcb8f92a4a1117e824fe734b9b">mip::C::mip_filter_heading_update_state_data</a>
@@ -518,7 +522,7 @@ $(function() {
 , <a class="el" href="structmip_1_1commands__filter_1_1ExternalHeadingUpdateWithTime.html#a9c17ef0d7ab645319e509705afeecdf3">mip::commands_filter::ExternalHeadingUpdateWithTime</a>
 </li>
 <li>headingAccuracy()
-: <a class="el" href="structmip_1_1data__gnss_1_1VelNed_1_1ValidFlags.html#aa4dcb66f3873b0335776f74c1548cc0c">mip::data_gnss::VelNed::ValidFlags</a>
+: <a class="el" href="structmip_1_1data__gnss_1_1VelNed_1_1ValidFlags.html#a227df014d70af4fad763fe3d1fde7cc4">mip::data_gnss::VelNed::ValidFlags</a>
 </li>
 <li>HeadingAidType
 : <a class="el" href="structmip_1_1data__filter_1_1HeadAidStatus.html#a4516193e5fc02ad0ced5aca9508448ae">mip::data_filter::HeadAidStatus</a>
@@ -527,27 +531,32 @@ $(function() {
 : <a class="el" href="structmip_1_1data__filter_1_1HeadingUpdateState.html#a7ccc2c00449e0775bacd04f6fe3fa43d">mip::data_filter::HeadingUpdateState</a>
 </li>
 <li>health
-: <a class="el" href="structmip_1_1C_1_1mip__gnss__galileo__ephemeris__data.html#ae1d5c9f62e1f62d089297ec8b231420e">mip::C::mip_gnss_galileo_ephemeris_data</a>
+: <a class="el" href="structmip_1_1C_1_1mip__gnss__beidou__ephemeris__data.html#a80abcfa4f61ba69077a9ba2ef8f594f6">mip::C::mip_gnss_beidou_ephemeris_data</a>
+, <a class="el" href="structmip_1_1C_1_1mip__gnss__galileo__ephemeris__data.html#ae1d5c9f62e1f62d089297ec8b231420e">mip::C::mip_gnss_galileo_ephemeris_data</a>
 , <a class="el" href="structmip_1_1C_1_1mip__gnss__glo__ephemeris__data.html#a74167d1b0e8dfaa0acea59963fa1736c">mip::C::mip_gnss_glo_ephemeris_data</a>
 , <a class="el" href="structmip_1_1C_1_1mip__gnss__gps__ephemeris__data.html#a04d0cb76530cf96e06b088d0f512abcd">mip::C::mip_gnss_gps_ephemeris_data</a>
 , <a class="el" href="structmip_1_1C_1_1mip__gnss__satellite__status__data.html#a95326e524bd2ac6d13c9b59bcec41ec2">mip::C::mip_gnss_satellite_status_data</a>
+, <a class="el" href="structmip_1_1data__gnss_1_1BeidouEphemeris.html#a55cb0d6bfb59353a504abb12889a0f55">mip::data_gnss::BeidouEphemeris</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1GalileoEphemeris.html#a59f54bc40a39eb3458f443b6e27e569d">mip::data_gnss::GalileoEphemeris</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1GloEphemeris.html#a1fe66aab2b0552012f87d92c8e4858f7">mip::data_gnss::GloEphemeris</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1GpsEphemeris.html#a6066e478e6feba3c35e802cbbecaa64a">mip::data_gnss::GpsEphemeris</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1SatelliteStatus.html#a826ef2fcd18a80b376730e128dcad7ef">mip::data_gnss::SatelliteStatus</a>
-, <a class="el" href="structmip_1_1data__gnss_1_1SatelliteStatus_1_1ValidFlags.html#a9371525b8cd4783ccd8ce5d248e4031c">mip::data_gnss::SatelliteStatus::ValidFlags</a>
+, <a class="el" href="structmip_1_1data__gnss_1_1SatelliteStatus_1_1ValidFlags.html#ae788e6b5c6de26b7857debe800fc0de3">mip::data_gnss::SatelliteStatus::ValidFlags</a>
 </li>
 <li>HEALTH
 : <a class="el" href="structmip_1_1data__gnss_1_1SatelliteStatus_1_1ValidFlags.html#aa7e176bb3873568c8c5bc2930d32c2f3a449726f33f8d23b85ad106e04d81596d">mip::data_gnss::SatelliteStatus::ValidFlags</a>
 </li>
 <li>health()
-: <a class="el" href="structmip_1_1data__gnss_1_1SatelliteStatus_1_1ValidFlags.html#ae788e6b5c6de26b7857debe800fc0de3">mip::data_gnss::SatelliteStatus::ValidFlags</a>
+: <a class="el" href="structmip_1_1data__gnss_1_1SatelliteStatus_1_1ValidFlags.html#a9371525b8cd4783ccd8ce5d248e4031c">mip::data_gnss::SatelliteStatus::ValidFlags</a>
+</li>
+<li>healthy()
+: <a class="el" href="structmip_1_1data__gnss_1_1SvInfo_1_1SVFlags.html#a72b5eca4d75b1d0b9e5ebc26b4501f7a">mip::data_gnss::SvInfo::SVFlags</a>
 </li>
 <li>HEALTHY
 : <a class="el" href="structmip_1_1data__gnss_1_1SvInfo_1_1SVFlags.html#aba955f80c3ef8980b3ee4e23778d5757ac1d28d6691f690ee0ee278a309811f72">mip::data_gnss::SvInfo::SVFlags</a>
 </li>
 <li>healthy()
-: <a class="el" href="structmip_1_1data__gnss_1_1SvInfo_1_1SVFlags.html#a72b5eca4d75b1d0b9e5ebc26b4501f7a">mip::data_gnss::SvInfo::SVFlags</a>
+: <a class="el" href="structmip_1_1data__gnss_1_1SvInfo_1_1SVFlags.html#a7e97bab60ab26c6e90f5b40113b19165">mip::data_gnss::SvInfo::SVFlags</a>
 </li>
 <li>height
 : <a class="el" href="structmip_1_1C_1_1mip__aiding__height__above__ellipsoid__command.html#ad925f9d50c899b6ce09af13fd37f764d">mip::C::mip_aiding_height_above_ellipsoid_command</a>
@@ -561,10 +570,9 @@ $(function() {
 : <a class="el" href="structmip_1_1commands__aiding_1_1PosLlh_1_1ValidFlags.html#ae9f4f6429137f4a68e9449a83bae20baa696f7599aca39b5d2976c382e8f3ef09">mip::commands_aiding::PosLlh::ValidFlags</a>
 </li>
 <li>height()
-: <a class="el" href="structmip_1_1commands__aiding_1_1PosLlh_1_1ValidFlags.html#a4c4529d11f5e8f74eb0ae39fde64425a">mip::commands_aiding::PosLlh::ValidFlags</a>
+: <a class="el" href="structmip_1_1commands__aiding_1_1PosLlh_1_1ValidFlags.html#a1c6e97ac9d228b19ae8111a682d418ee">mip::commands_aiding::PosLlh::ValidFlags</a>
 , <a class="el" href="structmip_1_1commands__filter_1_1ExternalGnssUpdate.html#a56d04cfe36fee24ad8ac400ec5959ab0">mip::commands_filter::ExternalGnssUpdate</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1BaseStationInfo.html#abc4c110db72805d0cb1bf50d18dfa261">mip::data_gnss::BaseStationInfo</a>
-, <a class="el" href="structmip_1_1data__gnss_1_1BaseStationInfo_1_1ValidFlags.html#a8e938cff196d89e02ef21e2c7c9308b1">mip::data_gnss::BaseStationInfo::ValidFlags</a>
 </li>
 <li>HEIGHT
 : <a class="el" href="structmip_1_1data__gnss_1_1BaseStationInfo_1_1ValidFlags.html#ada30f4639178ea79e264dc8e8ee76a80ac4c1c615dd2b3e7e319914210559cab2">mip::data_gnss::BaseStationInfo::ValidFlags</a>

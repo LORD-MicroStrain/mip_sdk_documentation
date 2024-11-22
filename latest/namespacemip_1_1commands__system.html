@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v2.0.0-163-g188dd2d</span>
+   &#160;<span id="projectnumber">v2.0.0-170-ga30d379</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -81,22 +81,41 @@ $(function() {
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__system_1_1CommMode.html">CommMode</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html">CommsProtocol</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__system_1_1InterfaceControl.html">InterfaceControl</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:gaff0731487d1ddcc4d0a125515af9f89b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
 &#160;&#160;<a class="el" href="group__system__commands__cpp.html#ggaff0731487d1ddcc4d0a125515af9f89bab835f116336ae08191eecf49f86c43f2">DESCRIPTOR_SET</a> = 0x7F, 
 <a class="el" href="group__system__commands__cpp.html#ggaff0731487d1ddcc4d0a125515af9f89baa5df6a82fa9f71fcd12da43ec49128f7">CMD_ENUMERATE</a> = 0x01, 
+<a class="el" href="group__system__commands__cpp.html#ggaff0731487d1ddcc4d0a125515af9f89ba8f6f826e9db4ef4df3385ab530e7dfad">CMD_INTERFACE_CONTROL</a> = 0x02, 
 <a class="el" href="group__system__commands__cpp.html#ggaff0731487d1ddcc4d0a125515af9f89baafae62cbf9a21655736d1fd8cfa738b3">CMD_COM_MODE</a> = 0x10, 
-<a class="el" href="group__system__commands__cpp.html#ggaff0731487d1ddcc4d0a125515af9f89bae1ad6755d56251390193039de2b1efa4">CMD_HARDWARE_CONTROL</a> = 0x11, 
 <br />
-&#160;&#160;<a class="el" href="group__system__commands__cpp.html#ggaff0731487d1ddcc4d0a125515af9f89ba6fc1f80a7b742416549e19019d48e25d">CMD_HARDWARE_CONTROL_2</a> = 0x12, 
+&#160;&#160;<a class="el" href="group__system__commands__cpp.html#ggaff0731487d1ddcc4d0a125515af9f89bae1ad6755d56251390193039de2b1efa4">CMD_HARDWARE_CONTROL</a> = 0x11, 
+<a class="el" href="group__system__commands__cpp.html#ggaff0731487d1ddcc4d0a125515af9f89ba6fc1f80a7b742416549e19019d48e25d">CMD_HARDWARE_CONTROL_2</a> = 0x12, 
 <a class="el" href="group__system__commands__cpp.html#ggaff0731487d1ddcc4d0a125515af9f89ba75afcadc4a3ebb25003f0a47360fb6f6">REPLY_COM_MODE</a> = 0x90, 
 <a class="el" href="group__system__commands__cpp.html#ggaff0731487d1ddcc4d0a125515af9f89bab247c3bddf906270323376c4fd2d7e3d">REPLY_HARDWARE_CONTROL</a> = 0x91, 
-<a class="el" href="group__system__commands__cpp.html#ggaff0731487d1ddcc4d0a125515af9f89ba7b425ce276f8c3253fe15ac6c3a462ef">REPLY_HARDWARE_CONTROL_2</a> = 0x92
+<br />
+&#160;&#160;<a class="el" href="group__system__commands__cpp.html#ggaff0731487d1ddcc4d0a125515af9f89ba7b425ce276f8c3253fe15ac6c3a462ef">REPLY_HARDWARE_CONTROL_2</a> = 0x92, 
+<a class="el" href="group__system__commands__cpp.html#ggaff0731487d1ddcc4d0a125515af9f89bab0d9bb80b916f89a97bde6d4093d0f8b">REPLY_INTERFACE_CONTROL</a> = 0x82
 <br />
  }</td></tr>
 <tr class="separator:gaff0731487d1ddcc4d0a125515af9f89b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaf00d8b72d7e4ca69808065987028fca"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__system__commands__cpp.html#gaaf00d8b72d7e4ca69808065987028fca">CommsInterface</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="group__system__commands__cpp.html#ggaaf00d8b72d7e4ca69808065987028fcaa5fb1f955b45e38e31789286a1790398d">CommsInterface::ALL</a> = 0, 
+<a class="el" href="group__system__commands__cpp.html#ggaaf00d8b72d7e4ca69808065987028fcaa186495f7da296bf880df3a22a492b378">CommsInterface::MAIN</a> = 1, 
+<a class="el" href="group__system__commands__cpp.html#ggaaf00d8b72d7e4ca69808065987028fcaa02dbc996f1fb7a2b7bd7bf561a61217e">CommsInterface::UART_1</a> = 17, 
+<a class="el" href="group__system__commands__cpp.html#ggaaf00d8b72d7e4ca69808065987028fcaad65fecf1e349bbb6ebbf10d568a0f3d7">CommsInterface::UART_2</a> = 18, 
+<br />
+&#160;&#160;<a class="el" href="group__system__commands__cpp.html#ggaaf00d8b72d7e4ca69808065987028fcaacf005eec5b778034fa814f35d38d3650">CommsInterface::UART_3</a> = 19, 
+<a class="el" href="group__system__commands__cpp.html#ggaaf00d8b72d7e4ca69808065987028fcaa6c6fd6a3032781c2290f0e452e7637b0">CommsInterface::USB_1</a> = 33, 
+<a class="el" href="group__system__commands__cpp.html#ggaaf00d8b72d7e4ca69808065987028fcaa7aa45a6a96c060dcec74a3f1c5280fcd">CommsInterface::USB_2</a> = 34
+<br />
+ }</td></tr>
+<tr class="separator:gaaf00d8b72d7e4ca69808065987028fca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -106,6 +125,16 @@ Functions</h2></td></tr>
 <tr class="separator:gac6344564429a217d960925ec5062ae31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga936b55b2479fc8f0d678e703c561b439"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__system_1_1CommMode.html">CommMode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__system__comm__mode__cpp.html#ga936b55b2479fc8f0d678e703c561b439">defaultCommMode</a> (<a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;device)</td></tr>
 <tr class="separator:ga936b55b2479fc8f0d678e703c561b439"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabe96bc6230a6f6153372601a87ec50db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__system_1_1InterfaceControl.html">InterfaceControl</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__system__interface__control__cpp.html#gabe96bc6230a6f6153372601a87ec50db">writeInterfaceControl</a> (<a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;device, <a class="el" href="group__system__commands__cpp.html#gaaf00d8b72d7e4ca69808065987028fca">CommsInterface</a> interface, <a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html">CommsProtocol</a> protocolsIn, <a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html">CommsProtocol</a> protocolsOut)</td></tr>
+<tr class="separator:gabe96bc6230a6f6153372601a87ec50db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga968b6f5024601833ffe89ab5c490b9a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__system_1_1InterfaceControl.html">InterfaceControl</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__system__interface__control__cpp.html#ga968b6f5024601833ffe89ab5c490b9a7">readInterfaceControl</a> (<a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;device, <a class="el" href="group__system__commands__cpp.html#gaaf00d8b72d7e4ca69808065987028fca">CommsInterface</a> interface, <a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html">CommsProtocol</a> *protocolsInOut, <a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html">CommsProtocol</a> *protocolsOutOut)</td></tr>
+<tr class="separator:ga968b6f5024601833ffe89ab5c490b9a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga838e15ddb358d867b58dad724f804919"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__system_1_1InterfaceControl.html">InterfaceControl</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__system__interface__control__cpp.html#ga838e15ddb358d867b58dad724f804919">saveInterfaceControl</a> (<a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;device, <a class="el" href="group__system__commands__cpp.html#gaaf00d8b72d7e4ca69808065987028fca">CommsInterface</a> interface)</td></tr>
+<tr class="separator:ga838e15ddb358d867b58dad724f804919"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae169ec66445a99f6cbdd53a81a8444ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__system_1_1InterfaceControl.html">InterfaceControl</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__system__interface__control__cpp.html#gae169ec66445a99f6cbdd53a81a8444ad">loadInterfaceControl</a> (<a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;device, <a class="el" href="group__system__commands__cpp.html#gaaf00d8b72d7e4ca69808065987028fca">CommsInterface</a> interface)</td></tr>
+<tr class="separator:gae169ec66445a99f6cbdd53a81a8444ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae2d576d36780788063365cff395871b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__system_1_1InterfaceControl.html">InterfaceControl</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__system__interface__control__cpp.html#gae2d576d36780788063365cff395871b0">defaultInterfaceControl</a> (<a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;device, <a class="el" href="group__system__commands__cpp.html#gaaf00d8b72d7e4ca69808065987028fca">CommsInterface</a> interface)</td></tr>
+<tr class="separator:gae2d576d36780788063365cff395871b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v2.0.0-163-g188dd2d</span>
+   &#160;<span id="projectnumber">v2.0.0-170-ga30d379</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -81,6 +81,8 @@ $(function() {
 , <a class="el" href="structmip_1_1C_1_1mip__3dm__gnss__time__assistance__response.html#ac410f0e98d5512ac597fef94f8ba5881">mip::C::mip_3dm_gnss_time_assistance_response</a>
 , <a class="el" href="structmip_1_1C_1_1mip__filter__timestamp__data.html#a5f557c02dfd0873b53cd26b6a732e9f8">mip::C::mip_filter_timestamp_data</a>
 , <a class="el" href="structmip_1_1C_1_1mip__gnss__base__station__info__data.html#a457cd4cf0847842b8d5a9897205f1132">mip::C::mip_gnss_base_station_info_data</a>
+, <a class="el" href="structmip_1_1C_1_1mip__gnss__beidou__ephemeris__data.html#a361c91d4cdd336953778b3f246aaef78">mip::C::mip_gnss_beidou_ephemeris_data</a>
+, <a class="el" href="structmip_1_1C_1_1mip__gnss__beidou__iono__corr__data.html#a487000cc69dd17459c153f840d6bff1b">mip::C::mip_gnss_beidou_iono_corr_data</a>
 , <a class="el" href="structmip_1_1C_1_1mip__gnss__galileo__ephemeris__data.html#af9c32fd8ecaf152f1f9f5bd938d0a35b">mip::C::mip_gnss_galileo_ephemeris_data</a>
 , <a class="el" href="structmip_1_1C_1_1mip__gnss__galileo__iono__corr__data.html#a48a7d1400f785e4110e6825cd523c470">mip::C::mip_gnss_galileo_iono_corr_data</a>
 , <a class="el" href="structmip_1_1C_1_1mip__gnss__glo__ephemeris__data.html#a8136505ba57f0658530f72ec1e4e835a">mip::C::mip_gnss_glo_ephemeris_data</a>
@@ -103,6 +105,13 @@ $(function() {
 </li>
 <li>week_number
 : <a class="el" href="structmip_1_1data__gnss_1_1BaseStationInfo.html#a0b04e2f48c2e0b43610514a739563b32">mip::data_gnss::BaseStationInfo</a>
+, <a class="el" href="structmip_1_1data__gnss_1_1BeidouEphemeris.html#a9782fc1edd2a5e07feba218578851fb1">mip::data_gnss::BeidouEphemeris</a>
+</li>
+<li>WEEK_NUMBER
+: <a class="el" href="structmip_1_1data__gnss_1_1BeidouIonoCorr_1_1ValidFlags.html#aa1f0bf76975ca0574714e6323097ac27afc82644ea2b7addb03e9b005e698ac80">mip::data_gnss::BeidouIonoCorr::ValidFlags</a>
+</li>
+<li>week_number
+: <a class="el" href="structmip_1_1data__gnss_1_1BeidouIonoCorr.html#a4e74997c02065f18d9b74482d7074595">mip::data_gnss::BeidouIonoCorr</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1GalileoEphemeris.html#a0ba3a3e03caaefbf13e78aff41f2d6f4">mip::data_gnss::GalileoEphemeris</a>
 </li>
 <li>WEEK_NUMBER
@@ -161,18 +170,19 @@ $(function() {
 : <a class="el" href="structmip_1_1data__sensor_1_1GpsTimestamp_1_1ValidFlags.html#a64c4d0d3ea3cccb6d1c81dacfd2107bea90df909334554645d9a8a831dec8f2a1">mip::data_sensor::GpsTimestamp::ValidFlags</a>
 </li>
 <li>weekNumber()
-: <a class="el" href="structmip_1_1data__gnss_1_1BaseStationInfo_1_1ValidFlags.html#a605c741c5e085c9f99eb36b908dc64de">mip::data_gnss::BaseStationInfo::ValidFlags</a>
+: <a class="el" href="structmip_1_1data__gnss_1_1BaseStationInfo_1_1ValidFlags.html#aecfc1533f69e709c9a78c6fd0ee532c1">mip::data_gnss::BaseStationInfo::ValidFlags</a>
+, <a class="el" href="structmip_1_1data__gnss_1_1BeidouIonoCorr_1_1ValidFlags.html#ae33e3ea5634d53521e45e0ad7dd0d4bf">mip::data_gnss::BeidouIonoCorr::ValidFlags</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1GalileoIonoCorr_1_1ValidFlags.html#a447084ad92119c7fb4c30a241aa6ed1f">mip::data_gnss::GalileoIonoCorr::ValidFlags</a>
-, <a class="el" href="structmip_1_1data__gnss_1_1GpsIonoCorr_1_1ValidFlags.html#a6c329aaf5332e96a372353fed513affc">mip::data_gnss::GpsIonoCorr::ValidFlags</a>
-, <a class="el" href="structmip_1_1data__gnss_1_1GpsTime_1_1ValidFlags.html#a67f4b47954c9cb8418059ff72b732fc6">mip::data_gnss::GpsTime::ValidFlags</a>
-, <a class="el" href="structmip_1_1data__gnss_1_1Raw_1_1ValidFlags.html#a6df12b754152687d1ce17df5ecf5ad1d">mip::data_gnss::Raw::ValidFlags</a>
+, <a class="el" href="structmip_1_1data__gnss_1_1GpsIonoCorr_1_1ValidFlags.html#a605565a42a85e2ee48c92d4c6122ea3f">mip::data_gnss::GpsIonoCorr::ValidFlags</a>
+, <a class="el" href="structmip_1_1data__gnss_1_1GpsTime_1_1ValidFlags.html#a9fe784c56f08fff98a1ee55bbab800ce">mip::data_gnss::GpsTime::ValidFlags</a>
+, <a class="el" href="structmip_1_1data__gnss_1_1Raw_1_1ValidFlags.html#a8c3fa343849efc80fd7b1c299e8182c2">mip::data_gnss::Raw::ValidFlags</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1RtkCorrectionsStatus_1_1ValidFlags.html#a4adac5a93c81be634eb572f527b6ae84">mip::data_gnss::RtkCorrectionsStatus::ValidFlags</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1SatelliteStatus_1_1ValidFlags.html#a1d3fa7c5da8bb2acd056b0c913271b9b">mip::data_gnss::SatelliteStatus::ValidFlags</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1SbasInfo_1_1ValidFlags.html#a5717233df0a670d9be4ae7519b33483b">mip::data_gnss::SbasInfo::ValidFlags</a>
 , <a class="el" href="structmip_1_1data__shared_1_1GpsTimestamp_1_1ValidFlags.html#a467c2ae7d60e7293a222ea9f54ae9e8c">mip::data_shared::GpsTimestamp::ValidFlags</a>
 </li>
 <li>weekNumberValid()
-: <a class="el" href="structmip_1_1data__sensor_1_1GpsTimestamp_1_1ValidFlags.html#af229b4e15f2165e5159b951dbe39f976">mip::data_sensor::GpsTimestamp::ValidFlags</a>
+: <a class="el" href="structmip_1_1data__sensor_1_1GpsTimestamp_1_1ValidFlags.html#af9091312d64929c2853ec29f4cc6711d">mip::data_sensor::GpsTimestamp::ValidFlags</a>
 </li>
 </ul>
 </div><!-- contents -->

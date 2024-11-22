@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v2.0.0-163-g188dd2d</span>
+   &#160;<span id="projectnumber">v2.0.0-170-ga30d379</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -76,8 +76,10 @@ $(function() {
 , <a class="el" href="structmip_1_1data__filter_1_1VelocityNedUncertainty.html#a9402ea7258f3ce4a337b624921a5dc76">mip::data_filter::VelocityNedUncertainty</a>
 </li>
 <li>eccentricity
-: <a class="el" href="structmip_1_1C_1_1mip__gnss__galileo__ephemeris__data.html#a5927ed39703fb241776ee3635a2fe245">mip::C::mip_gnss_galileo_ephemeris_data</a>
+: <a class="el" href="structmip_1_1C_1_1mip__gnss__beidou__ephemeris__data.html#a5c894acece55b711214935afd2d40c03">mip::C::mip_gnss_beidou_ephemeris_data</a>
+, <a class="el" href="structmip_1_1C_1_1mip__gnss__galileo__ephemeris__data.html#a5927ed39703fb241776ee3635a2fe245">mip::C::mip_gnss_galileo_ephemeris_data</a>
 , <a class="el" href="structmip_1_1C_1_1mip__gnss__gps__ephemeris__data.html#a23c7d2dcefe272d19879c07b9f2d73a7">mip::C::mip_gnss_gps_ephemeris_data</a>
+, <a class="el" href="structmip_1_1data__gnss_1_1BeidouEphemeris.html#a871d930b4e91ef4ce31e00cea7791dc9">mip::data_gnss::BeidouEphemeris</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1GalileoEphemeris.html#a13ca0f1bb75419f613a30b718c421698">mip::data_gnss::GalileoEphemeris</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1GpsEphemeris.html#a98c55dc2a855578acdfff7e52422e4a6">mip::data_gnss::GpsEphemeris</a>
 </li>
@@ -136,6 +138,8 @@ $(function() {
 , <a class="el" href="structmip_1_1C_1_1mip__filter__wheeled__vehicle__constraint__control__response.html#a061fea3a35a054659e4ea545f5fe6767">mip::C::mip_filter_wheeled_vehicle_constraint_control_response</a>
 , <a class="el" href="structmip_1_1C_1_1mip__gnss__rtk__dongle__configuration__command.html#ab8c15afada6c7402ed13175b28d92133">mip::C::mip_gnss_rtk_dongle_configuration_command</a>
 , <a class="el" href="structmip_1_1C_1_1mip__gnss__rtk__dongle__configuration__response.html#ae18e037f30dd8e20c9937228f85240d4">mip::C::mip_gnss_rtk_dongle_configuration_response</a>
+, <a class="el" href="structmip_1_1C_1_1mip__gnss__spartn__configuration__command.html#acc605d94c603fe673420398b38454820">mip::C::mip_gnss_spartn_configuration_command</a>
+, <a class="el" href="structmip_1_1C_1_1mip__gnss__spartn__configuration__response.html#a2698b733a9b90f72984d119590584ff3">mip::C::mip_gnss_spartn_configuration_response</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1ConingScullingEnable.html#a9a4af6ccd5ad5025cc44eca3e41ff898">mip::commands_3dm::ConingScullingEnable</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1ConingScullingEnable_1_1Response.html#a9e7ba380102aa3c7787bc8090006afab">mip::commands_3dm::ConingScullingEnable::Response</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1ConstellationSettings_1_1Settings.html#ab25ed4902eaf0d3a1c5998e4cc851c40">mip::commands_3dm::ConstellationSettings::Settings</a>
@@ -166,6 +170,8 @@ $(function() {
 , <a class="el" href="structmip_1_1commands__filter_1_1WheeledVehicleConstraintControl_1_1Response.html#aa6020de85490bf676ab9c2b90a84a500">mip::commands_filter::WheeledVehicleConstraintControl::Response</a>
 , <a class="el" href="structmip_1_1commands__gnss_1_1RtkDongleConfiguration.html#a90501034f727d4136bbd33afe10741e2">mip::commands_gnss::RtkDongleConfiguration</a>
 , <a class="el" href="structmip_1_1commands__gnss_1_1RtkDongleConfiguration_1_1Response.html#abf1354f622f5d6f3a9f1cfc9986c6ab2">mip::commands_gnss::RtkDongleConfiguration::Response</a>
+, <a class="el" href="structmip_1_1commands__gnss_1_1SpartnConfiguration.html#a3e954fd42b4a043f02ce1aadfd17b279">mip::commands_gnss::SpartnConfiguration</a>
+, <a class="el" href="structmip_1_1commands__gnss_1_1SpartnConfiguration_1_1Response.html#a5742783152042361270223efd6f6c160">mip::commands_gnss::SpartnConfiguration::Response</a>
 </li>
 <li>enable_sbas
 : <a class="el" href="structmip_1_1C_1_1mip__3dm__gnss__sbas__settings__command.html#aca5ea8ea34d489b51bac2b148bf122af">mip::C::mip_3dm_gnss_sbas_settings_command</a>
@@ -236,6 +242,8 @@ $(function() {
 , <a class="el" href="structmip_1_1metadata_1_1MetadataFor_3_01commands__rtk_1_1LedAction_01_4.html#a8dfd764f06de09a029be6a00eb66ab9e">mip::metadata::MetadataFor&lt; commands_rtk::LedAction &gt;</a>
 , <a class="el" href="structmip_1_1metadata_1_1MetadataFor_3_01commands__rtk_1_1MediaSelector_01_4.html#a81b6e3b96a6307bdeab74a80f8931fbc">mip::metadata::MetadataFor&lt; commands_rtk::MediaSelector &gt;</a>
 , <a class="el" href="structmip_1_1metadata_1_1MetadataFor_3_01commands__rtk_1_1ServiceStatus_1_1ServiceFlags_01_4.html#a671219e372dcca2c54b4e1010ff6c349">mip::metadata::MetadataFor&lt; commands_rtk::ServiceStatus::ServiceFlags &gt;</a>
+, <a class="el" href="structmip_1_1metadata_1_1MetadataFor_3_01commands__system_1_1CommsInterface_01_4.html#a91c3f954e5863d5475a60d6d9da4cb7a">mip::metadata::MetadataFor&lt; commands_system::CommsInterface &gt;</a>
+, <a class="el" href="structmip_1_1metadata_1_1MetadataFor_3_01commands__system_1_1CommsProtocol_01_4.html#a727a90335d30bab3a96c8ae7ab373108">mip::metadata::MetadataFor&lt; commands_system::CommsProtocol &gt;</a>
 , <a class="el" href="structmip_1_1metadata_1_1MetadataFor_3_01data__filter_1_1FilterAidingMeasurementType_01_4.html#a3e587eddb47f9894a537c62547f3ac9a">mip::metadata::MetadataFor&lt; data_filter::FilterAidingMeasurementType &gt;</a>
 , <a class="el" href="structmip_1_1metadata_1_1MetadataFor_3_01data__filter_1_1FilterDynamicsMode_01_4.html#aab6035fb385b37bd2555bd7c951e377b">mip::metadata::MetadataFor&lt; data_filter::FilterDynamicsMode &gt;</a>
 , <a class="el" href="structmip_1_1metadata_1_1MetadataFor_3_01data__filter_1_1FilterMeasurementIndicator_01_4.html#a328f4286997b93b8bbe2a9445934d8e8">mip::metadata::MetadataFor&lt; data_filter::FilterMeasurementIndicator &gt;</a>
@@ -248,6 +256,8 @@ $(function() {
 , <a class="el" href="structmip_1_1metadata_1_1MetadataFor_3_01data__filter_1_1HeadingUpdateState_1_1HeadingSource_01_4.html#aa0d48e507550991202f582e8d7cdef5c">mip::metadata::MetadataFor&lt; data_filter::HeadingUpdateState::HeadingSource &gt;</a>
 , <a class="el" href="structmip_1_1metadata_1_1MetadataFor_3_01data__gnss_1_1BaseStationInfo_1_1IndicatorFlags_01_4.html#a5db21a3a90b5de006904f40d360223a6">mip::metadata::MetadataFor&lt; data_gnss::BaseStationInfo::IndicatorFlags &gt;</a>
 , <a class="el" href="structmip_1_1metadata_1_1MetadataFor_3_01data__gnss_1_1BaseStationInfo_1_1ValidFlags_01_4.html#ac3c8057ff7e9860d58de2ec682bd65af">mip::metadata::MetadataFor&lt; data_gnss::BaseStationInfo::ValidFlags &gt;</a>
+, <a class="el" href="structmip_1_1metadata_1_1MetadataFor_3_01data__gnss_1_1BeidouEphemeris_1_1ValidFlags_01_4.html#a9b2684d79cfe3e73ea92dc0054e1d970">mip::metadata::MetadataFor&lt; data_gnss::BeidouEphemeris::ValidFlags &gt;</a>
+, <a class="el" href="structmip_1_1metadata_1_1MetadataFor_3_01data__gnss_1_1BeidouIonoCorr_1_1ValidFlags_01_4.html#a0acb67d93c50254587dddf5fa6490236">mip::metadata::MetadataFor&lt; data_gnss::BeidouIonoCorr::ValidFlags &gt;</a>
 , <a class="el" href="structmip_1_1metadata_1_1MetadataFor_3_01data__gnss_1_1ClockInfo2_1_1ValidFlags_01_4.html#a813bc0e6faf3bc9ab8296ef5e5c38cef">mip::metadata::MetadataFor&lt; data_gnss::ClockInfo2::ValidFlags &gt;</a>
 , <a class="el" href="structmip_1_1metadata_1_1MetadataFor_3_01data__gnss_1_1ClockInfo_1_1ValidFlags_01_4.html#a58f63a81222f5f7bce42ef00178fb828">mip::metadata::MetadataFor&lt; data_gnss::ClockInfo::ValidFlags &gt;</a>
 , <a class="el" href="structmip_1_1metadata_1_1MetadataFor_3_01data__gnss_1_1DgpsChannel_1_1ValidFlags_01_4.html#a4965af1857f1b08ff3560fe06e1151ae">mip::metadata::MetadataFor&lt; data_gnss::DgpsChannel::ValidFlags &gt;</a>

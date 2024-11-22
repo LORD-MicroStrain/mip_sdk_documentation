@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v2.0.0-163-g188dd2d</span>
+   &#160;<span id="projectnumber">v2.0.0-170-ga30d379</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -298,6 +298,8 @@ $(function() {
 , <a class="el" href="structmip_1_1commands__gnss_1_1RtkDongleConfiguration_1_1Response.html#a4d8ff46534616afbf8b74ae636646680">mip::commands_gnss::RtkDongleConfiguration::Response</a>
 , <a class="el" href="structmip_1_1commands__gnss_1_1SignalConfiguration.html#a5b2e1904cca680dae2ead619dfc913b0">mip::commands_gnss::SignalConfiguration</a>
 , <a class="el" href="structmip_1_1commands__gnss_1_1SignalConfiguration_1_1Response.html#a5469ddb9731fd05c387d7447347b7d7e">mip::commands_gnss::SignalConfiguration::Response</a>
+, <a class="el" href="structmip_1_1commands__gnss_1_1SpartnConfiguration.html#a8695f02dc8904bdc7c654c9f660e7fc8">mip::commands_gnss::SpartnConfiguration</a>
+, <a class="el" href="structmip_1_1commands__gnss_1_1SpartnConfiguration_1_1Response.html#a5090a45eee595c21e392f57513d43d4c">mip::commands_gnss::SpartnConfiguration::Response</a>
 , <a class="el" href="structmip_1_1commands__rtk_1_1ConnectedDeviceType.html#ac2f671617693f72aa26b07789bbab574">mip::commands_rtk::ConnectedDeviceType</a>
 , <a class="el" href="structmip_1_1commands__rtk_1_1ConnectedDeviceType_1_1Response.html#a9c6499bec77c038f660d47b08c5f726a">mip::commands_rtk::ConnectedDeviceType::Response</a>
 , <a class="el" href="structmip_1_1commands__rtk_1_1GetActCode.html#ad1ec08e3dbe0f3cfda60b9d9eecaf5b2">mip::commands_rtk::GetActCode</a>
@@ -321,6 +323,8 @@ $(function() {
 , <a class="el" href="structmip_1_1commands__rtk_1_1ServiceStatus_1_1Response.html#a9a856dd86d3e9a6de9dc091792391a1d">mip::commands_rtk::ServiceStatus::Response</a>
 , <a class="el" href="structmip_1_1commands__system_1_1CommMode.html#a97c92ad7d2226e68404fd28fef49d080">mip::commands_system::CommMode</a>
 , <a class="el" href="structmip_1_1commands__system_1_1CommMode_1_1Response.html#a5dd70d4e3ffcad14731acef26078d3a9">mip::commands_system::CommMode::Response</a>
+, <a class="el" href="structmip_1_1commands__system_1_1InterfaceControl.html#a916071ab09fbd79e019f8890e89bb800">mip::commands_system::InterfaceControl</a>
+, <a class="el" href="structmip_1_1commands__system_1_1InterfaceControl_1_1Response.html#a5d89f7d8a47a0dc8df29609d7dfda0a4">mip::commands_system::InterfaceControl::Response</a>
 , <a class="el" href="structmip_1_1data__filter_1_1AccelBias.html#ad30841248ea2264f5afaeeadc3c87e40">mip::data_filter::AccelBias</a>
 , <a class="el" href="structmip_1_1data__filter_1_1AccelBiasUncertainty.html#ab9a97eca66ff2622d9716afd88362745">mip::data_filter::AccelBiasUncertainty</a>
 , <a class="el" href="structmip_1_1data__filter_1_1AccelScaleFactor.html#acce4db369bf26a456a390deb0cc69292">mip::data_filter::AccelScaleFactor</a>
@@ -379,6 +383,8 @@ $(function() {
 , <a class="el" href="structmip_1_1data__filter_1_1VelocityNedUncertainty.html#a65ba18d4d2cc4a55fa07929be5b5b2d1">mip::data_filter::VelocityNedUncertainty</a>
 , <a class="el" href="structmip_1_1data__filter_1_1Wgs84GravityMag.html#a11c3de5bdaab3e52d920ed4c7b8bb499">mip::data_filter::Wgs84GravityMag</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1BaseStationInfo.html#ad60ca7702e8215381699b89fbd58bd51">mip::data_gnss::BaseStationInfo</a>
+, <a class="el" href="structmip_1_1data__gnss_1_1BeidouEphemeris.html#a45b62644928e002423fb8b901a02568b">mip::data_gnss::BeidouEphemeris</a>
+, <a class="el" href="structmip_1_1data__gnss_1_1BeidouIonoCorr.html#a9c003b2b15da5de7e31ba457fa3b753f">mip::data_gnss::BeidouIonoCorr</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1ClockInfo2.html#aa2ebb2da0e7d0a277e905dfa6f8acd82">mip::data_gnss::ClockInfo2</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1ClockInfo.html#a5bc87352e9d325b7f806b8dbff321c57">mip::data_gnss::ClockInfo</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1DgpsChannel.html#a5f5238ec65fa64e05f0a74a8af2c4608">mip::data_gnss::DgpsChannel</a>
@@ -631,8 +637,10 @@ $(function() {
 , <a class="el" href="structmip_1_1C_1_1mip__filter__wheeled__vehicle__constraint__control__command.html#a9de11604a7b157e3220912e991db7400">mip::C::mip_filter_wheeled_vehicle_constraint_control_command</a>
 , <a class="el" href="structmip_1_1C_1_1mip__gnss__rtk__dongle__configuration__command.html#afbd1ca4950c3a62253f628720864338d">mip::C::mip_gnss_rtk_dongle_configuration_command</a>
 , <a class="el" href="structmip_1_1C_1_1mip__gnss__signal__configuration__command.html#a51659ea91449de8d51839e9909368c6b">mip::C::mip_gnss_signal_configuration_command</a>
+, <a class="el" href="structmip_1_1C_1_1mip__gnss__spartn__configuration__command.html#af1aa2a4742ced885c84bf3062a738fb0">mip::C::mip_gnss_spartn_configuration_command</a>
 , <a class="el" href="structmip_1_1C_1_1mip__rtk__connected__device__type__command.html#a620562c6d6044945b45e90b7b6ff9d78">mip::C::mip_rtk_connected_device_type_command</a>
 , <a class="el" href="structmip_1_1C_1_1mip__system__comm__mode__command.html#accb7099ee30a9a0eef5d310a8f07372c">mip::C::mip_system_comm_mode_command</a>
+, <a class="el" href="structmip_1_1C_1_1mip__system__interface__control__command.html#aa72d5364d7aa658f66113a92b4396195">mip::C::mip_system_interface_control_command</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1AccelBias.html#a08526c706177704bc18cf0afc26ca080">mip::commands_3dm::AccelBias</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1ComplementaryFilter.html#a42d2c36622b94e8f99246609a1b1f236">mip::commands_3dm::ComplementaryFilter</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1ConingScullingEnable.html#a5d9dffc31142e25cf536238af7e656c6">mip::commands_3dm::ConingScullingEnable</a>
@@ -713,8 +721,10 @@ $(function() {
 , <a class="el" href="structmip_1_1commands__filter_1_1WheeledVehicleConstraintControl.html#aa0db4cfb1ef58d6f4422463c346be47d">mip::commands_filter::WheeledVehicleConstraintControl</a>
 , <a class="el" href="structmip_1_1commands__gnss_1_1RtkDongleConfiguration.html#a6612f69e71a32d7b89e8e1eb1dc603bd">mip::commands_gnss::RtkDongleConfiguration</a>
 , <a class="el" href="structmip_1_1commands__gnss_1_1SignalConfiguration.html#af0b04ada16d1aeb4353150d400ea8d7d">mip::commands_gnss::SignalConfiguration</a>
+, <a class="el" href="structmip_1_1commands__gnss_1_1SpartnConfiguration.html#ad97a04bdc1cfb78a1949991160b27e86">mip::commands_gnss::SpartnConfiguration</a>
 , <a class="el" href="structmip_1_1commands__rtk_1_1ConnectedDeviceType.html#a8f721eef8501e937e72a2ffa5931fe3e">mip::commands_rtk::ConnectedDeviceType</a>
 , <a class="el" href="structmip_1_1commands__system_1_1CommMode.html#aaadd1ea8a22bbd4cdc77dcfde6c6e694">mip::commands_system::CommMode</a>
+, <a class="el" href="structmip_1_1commands__system_1_1InterfaceControl.html#a529abf54fbffc4143792c3bca4f02f91">mip::commands_system::InterfaceControl</a>
 </li>
 <li>functions
 : <a class="el" href="structmip_1_1metadata_1_1FieldInfo.html#abaf25903aa3c7e6369869f5fb48ba90f">mip::metadata::FieldInfo</a>

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v2.0.0-163-g188dd2d</span>
+   &#160;<span id="projectnumber">v2.0.0-170-ga30d379</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -66,6 +66,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#groups">Modules</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
 <div class="title">System Commands<div class="ingroups"><a class="el" href="group__mip.html">MIP</a> &raquo; <a class="el" href="group__mip__c.html">MIP C API</a> &raquo; <a class="el" href="group__MipCommands__c.html">Mip Commands</a></div></div>  </div>
@@ -77,19 +78,32 @@ Modules</h2></td></tr>
 <tr class="memitem:group__system__comm__mode__c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__system__comm__mode__c.html">(0x7F,0x10) Comm Mode</a></td></tr>
 <tr class="memdesc:group__system__comm__mode__c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Advanced specialized communication modes. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:group__system__interface__control__c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__system__interface__control__c.html">(0x7F,0x02) Interface Control</a></td></tr>
+<tr class="memdesc:group__system__interface__control__c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reassign port functions. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:gaecd5f7665e029a220c22c9f1abc0847d"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="group__system__commands__c.html#gaeb74906e94e219b5c6bb7c4ef32f6c63">mip_comms_interface</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__system__commands__c.html#gaecd5f7665e029a220c22c9f1abc0847d">mip::C::mip_comms_interface</a></td></tr>
+<tr class="separator:gaecd5f7665e029a220c22c9f1abc0847d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab7ace0910a37d20bb4772919fa7e3d67"><td class="memItemLeft" align="right" valign="top">typedef uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__system__commands__c.html#gab7ace0910a37d20bb4772919fa7e3d67">mip::C::mip_comms_protocol</a></td></tr>
+<tr class="separator:gab7ace0910a37d20bb4772919fa7e3d67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:gac69622c864a870ff252036a4a7886f8f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
 &#160;&#160;<a class="el" href="group__system__commands__c.html#ggac69622c864a870ff252036a4a7886f8fadc836eb3cc6873ab3b4dc2c22c8781c9">mip::C::MIP_SYSTEM_CMD_DESC_SET</a> = 0x7F, 
 <a class="el" href="group__system__commands__c.html#ggac69622c864a870ff252036a4a7886f8fa632e2f4c21560d07308d7588143c1f12">mip::C::MIP_CMD_DESC_MIPNET_ENUMERATE</a> = 0x01, 
+<a class="el" href="group__system__commands__c.html#ggac69622c864a870ff252036a4a7886f8faecda13037451bb0885a6657b90b06bd0">mip::C::MIP_CMD_DESC_SYSTEM_INTERFACE_CONTROL</a> = 0x02, 
 <a class="el" href="group__system__commands__c.html#ggac69622c864a870ff252036a4a7886f8fa89d4fe08237e5f9022720a2be150e4fe">mip::C::MIP_CMD_DESC_SYSTEM_COM_MODE</a> = 0x10, 
-<a class="el" href="group__system__commands__c.html#ggac69622c864a870ff252036a4a7886f8fa9c1a1665dddce2e0754808aa0db07d9f">mip::C::MIP_CMD_DESC_SYSTEM_HARDWARE_CONTROL</a> = 0x11, 
 <br />
-&#160;&#160;<a class="el" href="group__system__commands__c.html#ggac69622c864a870ff252036a4a7886f8fa668e4aa9e2b7c8e41c2a6f5351527fdb">mip::C::MIP_CMD_DESC_SYSTEM_HARDWARE_CONTROL_2</a> = 0x12, 
+&#160;&#160;<a class="el" href="group__system__commands__c.html#ggac69622c864a870ff252036a4a7886f8fa9c1a1665dddce2e0754808aa0db07d9f">mip::C::MIP_CMD_DESC_SYSTEM_HARDWARE_CONTROL</a> = 0x11, 
+<a class="el" href="group__system__commands__c.html#ggac69622c864a870ff252036a4a7886f8fa668e4aa9e2b7c8e41c2a6f5351527fdb">mip::C::MIP_CMD_DESC_SYSTEM_HARDWARE_CONTROL_2</a> = 0x12, 
 <a class="el" href="group__system__commands__c.html#ggac69622c864a870ff252036a4a7886f8fa5c1944f712c45b655fe873a387f13a10">mip::C::MIP_REPLY_DESC_SYSTEM_COM_MODE</a> = 0x90, 
 <a class="el" href="group__system__commands__c.html#ggac69622c864a870ff252036a4a7886f8fab86609816b823e2874c709906d54e93b">mip::C::MIP_REPLY_DESC_SYSTEM_HARDWARE_CONTROL</a> = 0x91, 
-<a class="el" href="group__system__commands__c.html#ggac69622c864a870ff252036a4a7886f8faff9501ddfd065507c381c51de4e6c30f">mip::C::MIP_REPLY_DESC_SYSTEM_HARDWARE_CONTROL_2</a> = 0x92
+<br />
+&#160;&#160;<a class="el" href="group__system__commands__c.html#ggac69622c864a870ff252036a4a7886f8faff9501ddfd065507c381c51de4e6c30f">mip::C::MIP_REPLY_DESC_SYSTEM_HARDWARE_CONTROL_2</a> = 0x92, 
+<a class="el" href="group__system__commands__c.html#ggac69622c864a870ff252036a4a7886f8fa5b738e8979b94ddb928f07d5f2e78148">mip::C::MIP_REPLY_DESC_SYSTEM_INTERFACE_CONTROL</a> = 0x82
 <br />
  }</td></tr>
 <tr class="separator:gac69622c864a870ff252036a4a7886f8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -105,8 +119,49 @@ Enumerations</h2></td></tr>
 <tr class="memitem:ga5e115b6999e14fa568b37479dd8aed0e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group__system__commands__c.html#gga5e115b6999e14fa568b37479dd8aed0ea7feb21f3d612ad31aaab32b7304a7f2a">mip::C::MIP_SYSTEM_COMMAND_COMM_MODE_GPS</a> = 0x03
  }</td></tr>
 <tr class="separator:ga5e115b6999e14fa568b37479dd8aed0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeb74906e94e219b5c6bb7c4ef32f6c63"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__system__commands__c.html#gaeb74906e94e219b5c6bb7c4ef32f6c63">mip::C::mip_comms_interface</a> { <br />
+&#160;&#160;<a class="el" href="group__system__commands__c.html#ggaeb74906e94e219b5c6bb7c4ef32f6c63a018ac516d229c915baeae2b03b9dcfcb">mip::C::MIP_COMMS_INTERFACE_ALL</a> = 0, 
+<a class="el" href="group__system__commands__c.html#ggaeb74906e94e219b5c6bb7c4ef32f6c63a573646d9e1fa68ecebc2c5add84d0936">mip::C::MIP_COMMS_INTERFACE_MAIN</a> = 1, 
+<a class="el" href="group__system__commands__c.html#ggaeb74906e94e219b5c6bb7c4ef32f6c63a965a4c25cb78ae440f7a8f7bc38f2ef1">mip::C::MIP_COMMS_INTERFACE_UART_1</a> = 17, 
+<a class="el" href="group__system__commands__c.html#ggaeb74906e94e219b5c6bb7c4ef32f6c63a6cbd7f5c3a7e401e1c1a46e7169c2ad6">mip::C::MIP_COMMS_INTERFACE_UART_2</a> = 18, 
+<br />
+&#160;&#160;<a class="el" href="group__system__commands__c.html#ggaeb74906e94e219b5c6bb7c4ef32f6c63ae65478331f82072134524a87556d71a9">mip::C::MIP_COMMS_INTERFACE_UART_3</a> = 19, 
+<a class="el" href="group__system__commands__c.html#ggaeb74906e94e219b5c6bb7c4ef32f6c63accdbd8d6645918e437588713c0a013bf">mip::C::MIP_COMMS_INTERFACE_USB_1</a> = 33, 
+<a class="el" href="group__system__commands__c.html#ggaeb74906e94e219b5c6bb7c4ef32f6c63a1c9ba75ece804f6dc498213b5cf9dd91">mip::C::MIP_COMMS_INTERFACE_USB_2</a> = 34
+<br />
+ }</td></tr>
+<tr class="separator:gaeb74906e94e219b5c6bb7c4ef32f6c63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="gaecd5f7665e029a220c22c9f1abc0847d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaecd5f7665e029a220c22c9f1abc0847d">&#9670;&nbsp;</a></span>mip_comms_interface</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="group__system__commands__c.html#gaeb74906e94e219b5c6bb7c4ef32f6c63">mip_comms_interface</a> <a class="el" href="group__system__commands__c.html#gaeb74906e94e219b5c6bb7c4ef32f6c63">mip::C::mip_comms_interface</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gab7ace0910a37d20bb4772919fa7e3d67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab7ace0910a37d20bb4772919fa7e3d67">&#9670;&nbsp;</a></span>mip_comms_protocol</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef uint32_t <a class="el" href="group__system__commands__c.html#gab7ace0910a37d20bb4772919fa7e3d67">mip::C::mip_comms_protocol</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="gac69622c864a870ff252036a4a7886f8f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gac69622c864a870ff252036a4a7886f8f">&#9670;&nbsp;</a></span>anonymous enum</h2>
@@ -122,12 +177,14 @@ Enumerations</h2></td></tr>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggac69622c864a870ff252036a4a7886f8fadc836eb3cc6873ab3b4dc2c22c8781c9"></a>MIP_SYSTEM_CMD_DESC_SET&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ggac69622c864a870ff252036a4a7886f8fa632e2f4c21560d07308d7588143c1f12"></a>MIP_CMD_DESC_MIPNET_ENUMERATE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggac69622c864a870ff252036a4a7886f8faecda13037451bb0885a6657b90b06bd0"></a>MIP_CMD_DESC_SYSTEM_INTERFACE_CONTROL&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ggac69622c864a870ff252036a4a7886f8fa89d4fe08237e5f9022720a2be150e4fe"></a>MIP_CMD_DESC_SYSTEM_COM_MODE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ggac69622c864a870ff252036a4a7886f8fa9c1a1665dddce2e0754808aa0db07d9f"></a>MIP_CMD_DESC_SYSTEM_HARDWARE_CONTROL&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ggac69622c864a870ff252036a4a7886f8fa668e4aa9e2b7c8e41c2a6f5351527fdb"></a>MIP_CMD_DESC_SYSTEM_HARDWARE_CONTROL_2&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ggac69622c864a870ff252036a4a7886f8fa5c1944f712c45b655fe873a387f13a10"></a>MIP_REPLY_DESC_SYSTEM_COM_MODE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ggac69622c864a870ff252036a4a7886f8fab86609816b823e2874c709906d54e93b"></a>MIP_REPLY_DESC_SYSTEM_HARDWARE_CONTROL&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ggac69622c864a870ff252036a4a7886f8faff9501ddfd065507c381c51de4e6c30f"></a>MIP_REPLY_DESC_SYSTEM_HARDWARE_CONTROL_2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggac69622c864a870ff252036a4a7886f8fa5b738e8979b94ddb928f07d5f2e78148"></a>MIP_REPLY_DESC_SYSTEM_INTERFACE_CONTROL&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -196,6 +253,33 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga5e115b6999e14fa568b37479dd8aed0ea7feb21f3d612ad31aaab32b7304a7f2a"></a>MIP_SYSTEM_COMMAND_COMM_MODE_GPS&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="gaeb74906e94e219b5c6bb7c4ef32f6c63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeb74906e94e219b5c6bb7c4ef32f6c63">&#9670;&nbsp;</a></span>mip_comms_interface</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__system__commands__c.html#gaeb74906e94e219b5c6bb7c4ef32f6c63">mip::C::mip_comms_interface</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaeb74906e94e219b5c6bb7c4ef32f6c63a018ac516d229c915baeae2b03b9dcfcb"></a>MIP_COMMS_INTERFACE_ALL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaeb74906e94e219b5c6bb7c4ef32f6c63a573646d9e1fa68ecebc2c5add84d0936"></a>MIP_COMMS_INTERFACE_MAIN&#160;</td><td class="fielddoc"><p>An alias that directs to Main USB if it's connected, or Main UART otherwise. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaeb74906e94e219b5c6bb7c4ef32f6c63a965a4c25cb78ae440f7a8f7bc38f2ef1"></a>MIP_COMMS_INTERFACE_UART_1&#160;</td><td class="fielddoc"><p>First configured UART. Note that this may not mean the first GPIO, if that pin is not set for UART. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaeb74906e94e219b5c6bb7c4ef32f6c63a6cbd7f5c3a7e401e1c1a46e7169c2ad6"></a>MIP_COMMS_INTERFACE_UART_2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaeb74906e94e219b5c6bb7c4ef32f6c63ae65478331f82072134524a87556d71a9"></a>MIP_COMMS_INTERFACE_UART_3&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaeb74906e94e219b5c6bb7c4ef32f6c63accdbd8d6645918e437588713c0a013bf"></a>MIP_COMMS_INTERFACE_USB_1&#160;</td><td class="fielddoc"><p>The first virtual serial port over USB (ie. COM5) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaeb74906e94e219b5c6bb7c4ef32f6c63a1c9ba75ece804f6dc498213b5cf9dd91"></a>MIP_COMMS_INTERFACE_USB_2&#160;</td><td class="fielddoc"><p>The second virtual serial port over USB (ie. COM6), only available on GNSS/INS devices. Recommended for NMEA/RTCM. </p>
+</td></tr>
 </table>
 
 </div>

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v2.0.0-163-g188dd2d</span>
+   &#160;<span id="projectnumber">v2.0.0-170-ga30d379</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -98,6 +98,10 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1C_1_1mip__gnss__signal__configuration__response.html">mip::C::mip_gnss_signal_configuration_response</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1C_1_1mip__gnss__spartn__configuration__command.html">mip::C::mip_gnss_spartn_configuration_command</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1C_1_1mip__gnss__spartn__configuration__response.html">mip::C::mip_gnss_spartn_configuration_response</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1C_1_1mip__gnss__rtk__dongle__configuration__command.html">mip::C::mip_gnss_rtk_dongle_configuration_command</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1C_1_1mip__gnss__rtk__dongle__configuration__response.html">mip::C::mip_gnss_rtk_dongle_configuration_response</a></td></tr>
@@ -124,6 +128,10 @@ Typedefs</h2></td></tr>
 <tr class="separator:ga7d2fe2334759a653ce381ede06bbd5af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3e052e04ca19150d4d79ad6cc928dcf0"><td class="memItemLeft" align="right" valign="top">typedef struct mip_gnss_signal_configuration_response&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss__signal__configuration__c.html#ga3e052e04ca19150d4d79ad6cc928dcf0">mip::C::mip_gnss_signal_configuration_response</a></td></tr>
 <tr class="separator:ga3e052e04ca19150d4d79ad6cc928dcf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac99458248a22d4765278b1a5bf9155f9"><td class="memItemLeft" align="right" valign="top">typedef struct mip_gnss_spartn_configuration_command&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss__spartn__configuration__c.html#gac99458248a22d4765278b1a5bf9155f9">mip::C::mip_gnss_spartn_configuration_command</a></td></tr>
+<tr class="separator:gac99458248a22d4765278b1a5bf9155f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga57810c9a09db7c811fe7039ebb8fc8f1"><td class="memItemLeft" align="right" valign="top">typedef struct mip_gnss_spartn_configuration_response&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss__spartn__configuration__c.html#ga57810c9a09db7c811fe7039ebb8fc8f1">mip::C::mip_gnss_spartn_configuration_response</a></td></tr>
+<tr class="separator:ga57810c9a09db7c811fe7039ebb8fc8f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga69918cf844be333eaddaaa81cf7e4d81"><td class="memItemLeft" align="right" valign="top">typedef struct mip_gnss_rtk_dongle_configuration_command&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss__rtk__dongle__configuration__c.html#ga69918cf844be333eaddaaa81cf7e4d81">mip::C::mip_gnss_rtk_dongle_configuration_command</a></td></tr>
 <tr class="separator:ga69918cf844be333eaddaaa81cf7e4d81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1cf00b104ed83221ee7e3c43e017d7ce"><td class="memItemLeft" align="right" valign="top">typedef struct mip_gnss_rtk_dongle_configuration_response&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss__rtk__dongle__configuration__c.html#ga1cf00b104ed83221ee7e3c43e017d7ce">mip::C::mip_gnss_rtk_dongle_configuration_response</a></td></tr>
@@ -137,9 +145,12 @@ Enumerations</h2></td></tr>
 <a class="el" href="group__gnss__commands__c.html#gga774c152aa55dfda42c811bdfbaa05cd5ade3682aabb840c2b23b58c6d6f4e5fe8">mip::C::MIP_CMD_DESC_GNSS_SIGNAL_CONFIGURATION</a> = 0x02, 
 <a class="el" href="group__gnss__commands__c.html#gga774c152aa55dfda42c811bdfbaa05cd5a02056f701a7b264d6ebbcddc6948167d">mip::C::MIP_CMD_DESC_GNSS_RTK_DONGLE_CONFIGURATION</a> = 0x10, 
 <br />
-&#160;&#160;<a class="el" href="group__gnss__commands__c.html#gga774c152aa55dfda42c811bdfbaa05cd5acb23e2ee31b7af8fe1e3dd5428bc2f4e">mip::C::MIP_REPLY_DESC_GNSS_LIST_RECEIVERS</a> = 0x81, 
+&#160;&#160;<a class="el" href="group__gnss__commands__c.html#gga774c152aa55dfda42c811bdfbaa05cd5abbb97cb50489be08a97d7a0d5bb0ae1b">mip::C::MIP_CMD_DESC_GNSS_SPARTN_CONFIGURATION</a> = 0x20, 
+<a class="el" href="group__gnss__commands__c.html#gga774c152aa55dfda42c811bdfbaa05cd5acb23e2ee31b7af8fe1e3dd5428bc2f4e">mip::C::MIP_REPLY_DESC_GNSS_LIST_RECEIVERS</a> = 0x81, 
 <a class="el" href="group__gnss__commands__c.html#gga774c152aa55dfda42c811bdfbaa05cd5a0203befb6c245404c72767d3143c3504">mip::C::MIP_REPLY_DESC_GNSS_SIGNAL_CONFIGURATION</a> = 0x82, 
-<a class="el" href="group__gnss__commands__c.html#gga774c152aa55dfda42c811bdfbaa05cd5a096c2f8c70d79a3e302b9c36f3378034">mip::C::MIP_REPLY_DESC_GNSS_RTK_DONGLE_CONFIGURATION</a> = 0x90
+<a class="el" href="group__gnss__commands__c.html#gga774c152aa55dfda42c811bdfbaa05cd5a096c2f8c70d79a3e302b9c36f3378034">mip::C::MIP_REPLY_DESC_GNSS_RTK_DONGLE_CONFIGURATION</a> = 0x90, 
+<br />
+&#160;&#160;<a class="el" href="group__gnss__commands__c.html#gga774c152aa55dfda42c811bdfbaa05cd5af7891d5abdea1debff9f579982fd1b5a">mip::C::MIP_REPLY_DESC_GNSS_SPARTN_CONFIGURATION</a> = 0xA0
 <br />
  }</td></tr>
 <tr class="separator:ga774c152aa55dfda42c811bdfbaa05cd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -207,6 +218,24 @@ Functions</h2></td></tr>
 <tr class="separator:gadbcf97c6e27f8f13c2a0e512fe4737d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5c484b59ba71cfc39e1a09bbadc4bf30"><td class="memItemLeft" align="right" valign="top">mip_cmd_result&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss__signal__configuration__c.html#ga5c484b59ba71cfc39e1a09bbadc4bf30">mip::C::mip_gnss_default_signal_configuration</a> (mip_interface *device)</td></tr>
 <tr class="separator:ga5c484b59ba71cfc39e1a09bbadc4bf30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga53145cf170448662ce15369b829cb0c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss__spartn__configuration__c.html#ga53145cf170448662ce15369b829cb0c4">mip::C::insert_mip_gnss_spartn_configuration_command</a> (microstrain_serializer *serializer, const mip_gnss_spartn_configuration_command *self)</td></tr>
+<tr class="separator:ga53145cf170448662ce15369b829cb0c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga870a2a7e89effd9ca57fced94d668519"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss__spartn__configuration__c.html#ga870a2a7e89effd9ca57fced94d668519">mip::C::extract_mip_gnss_spartn_configuration_command</a> (microstrain_serializer *serializer, mip_gnss_spartn_configuration_command *self)</td></tr>
+<tr class="separator:ga870a2a7e89effd9ca57fced94d668519"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga79d2f76a494ebd5f6923e1ae92b9ae7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss__spartn__configuration__c.html#ga79d2f76a494ebd5f6923e1ae92b9ae7a">mip::C::insert_mip_gnss_spartn_configuration_response</a> (microstrain_serializer *serializer, const mip_gnss_spartn_configuration_response *self)</td></tr>
+<tr class="separator:ga79d2f76a494ebd5f6923e1ae92b9ae7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga73d7d7aca91834beda522960354429d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss__spartn__configuration__c.html#ga73d7d7aca91834beda522960354429d9">mip::C::extract_mip_gnss_spartn_configuration_response</a> (microstrain_serializer *serializer, mip_gnss_spartn_configuration_response *self)</td></tr>
+<tr class="separator:ga73d7d7aca91834beda522960354429d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga29ba43c53e6a423b6acc864d115d3cc9"><td class="memItemLeft" align="right" valign="top">mip_cmd_result&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss__spartn__configuration__c.html#ga29ba43c53e6a423b6acc864d115d3cc9">mip::C::mip_gnss_write_spartn_configuration</a> (mip_interface *device, uint8_t enable, uint8_t type, uint32_t current_key_tow, uint16_t current_key_week, const uint8_t *current_key, uint32_t next_key_tow, uint16_t next_key_week, const uint8_t *next_key)</td></tr>
+<tr class="separator:ga29ba43c53e6a423b6acc864d115d3cc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga20e9ad667ab5b76076044d23bb37fa7f"><td class="memItemLeft" align="right" valign="top">mip_cmd_result&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss__spartn__configuration__c.html#ga20e9ad667ab5b76076044d23bb37fa7f">mip::C::mip_gnss_read_spartn_configuration</a> (mip_interface *device, uint8_t *enable_out, uint8_t *type_out, uint32_t *current_key_tow_out, uint16_t *current_key_week_out, uint8_t *current_key_out, uint32_t *next_key_tow_out, uint16_t *next_key_week_out, uint8_t *next_key_out)</td></tr>
+<tr class="separator:ga20e9ad667ab5b76076044d23bb37fa7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga972cde8faa2edfbd4faa2767c4c36ba9"><td class="memItemLeft" align="right" valign="top">mip_cmd_result&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss__spartn__configuration__c.html#ga972cde8faa2edfbd4faa2767c4c36ba9">mip::C::mip_gnss_save_spartn_configuration</a> (mip_interface *device)</td></tr>
+<tr class="separator:ga972cde8faa2edfbd4faa2767c4c36ba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4e97142c43922ed6b84ec147b4a2785f"><td class="memItemLeft" align="right" valign="top">mip_cmd_result&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss__spartn__configuration__c.html#ga4e97142c43922ed6b84ec147b4a2785f">mip::C::mip_gnss_load_spartn_configuration</a> (mip_interface *device)</td></tr>
+<tr class="separator:ga4e97142c43922ed6b84ec147b4a2785f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2101b6205f6f1d4d03fd4d8ab348c28c"><td class="memItemLeft" align="right" valign="top">mip_cmd_result&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss__spartn__configuration__c.html#ga2101b6205f6f1d4d03fd4d8ab348c28c">mip::C::mip_gnss_default_spartn_configuration</a> (mip_interface *device)</td></tr>
+<tr class="separator:ga2101b6205f6f1d4d03fd4d8ab348c28c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae5b78697e0b31b18d0470304135811a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss__rtk__dongle__configuration__c.html#gae5b78697e0b31b18d0470304135811a0">mip::C::insert_mip_gnss_rtk_dongle_configuration_command</a> (microstrain_serializer *serializer, const mip_gnss_rtk_dongle_configuration_command *self)</td></tr>
 <tr class="separator:gae5b78697e0b31b18d0470304135811a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0f5ab90294fb1caa78756590f8e493e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss__rtk__dongle__configuration__c.html#ga0f5ab90294fb1caa78756590f8e493e7">mip::C::extract_mip_gnss_rtk_dongle_configuration_command</a> (microstrain_serializer *serializer, mip_gnss_rtk_dongle_configuration_command *self)</td></tr>

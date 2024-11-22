@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v2.0.0-163-g188dd2d</span>
+   &#160;<span id="projectnumber">v2.0.0-170-ga30d379</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -80,6 +80,10 @@ Modules</h2></td></tr>
 <tr class="memitem:group__gnss__signal__configuration__c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss__signal__configuration__c.html">(0x0E,0x02) Signal Configuration</a></td></tr>
 <tr class="memdesc:group__gnss__signal__configuration__c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the GNSS signals used by the device. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:group__gnss__spartn__configuration__c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss__spartn__configuration__c.html">(0x0E,0x20) Spartn Configuration</a></td></tr>
+<tr class="memdesc:group__gnss__spartn__configuration__c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the SPARTN corrections service parameters. Notes:<br  />
+ <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:group__gnss__rtk__dongle__configuration__c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss__rtk__dongle__configuration__c.html">(0x0E,0x10) Rtk Dongle Configuration</a></td></tr>
 <tr class="memdesc:group__gnss__rtk__dongle__configuration__c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the communications with the RTK Dongle connected to the device. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -92,9 +96,12 @@ Enumerations</h2></td></tr>
 <a class="el" href="group__gnss__commands__c.html#gga774c152aa55dfda42c811bdfbaa05cd5ade3682aabb840c2b23b58c6d6f4e5fe8">mip::C::MIP_CMD_DESC_GNSS_SIGNAL_CONFIGURATION</a> = 0x02, 
 <a class="el" href="group__gnss__commands__c.html#gga774c152aa55dfda42c811bdfbaa05cd5a02056f701a7b264d6ebbcddc6948167d">mip::C::MIP_CMD_DESC_GNSS_RTK_DONGLE_CONFIGURATION</a> = 0x10, 
 <br />
-&#160;&#160;<a class="el" href="group__gnss__commands__c.html#gga774c152aa55dfda42c811bdfbaa05cd5acb23e2ee31b7af8fe1e3dd5428bc2f4e">mip::C::MIP_REPLY_DESC_GNSS_LIST_RECEIVERS</a> = 0x81, 
+&#160;&#160;<a class="el" href="group__gnss__commands__c.html#gga774c152aa55dfda42c811bdfbaa05cd5abbb97cb50489be08a97d7a0d5bb0ae1b">mip::C::MIP_CMD_DESC_GNSS_SPARTN_CONFIGURATION</a> = 0x20, 
+<a class="el" href="group__gnss__commands__c.html#gga774c152aa55dfda42c811bdfbaa05cd5acb23e2ee31b7af8fe1e3dd5428bc2f4e">mip::C::MIP_REPLY_DESC_GNSS_LIST_RECEIVERS</a> = 0x81, 
 <a class="el" href="group__gnss__commands__c.html#gga774c152aa55dfda42c811bdfbaa05cd5a0203befb6c245404c72767d3143c3504">mip::C::MIP_REPLY_DESC_GNSS_SIGNAL_CONFIGURATION</a> = 0x82, 
-<a class="el" href="group__gnss__commands__c.html#gga774c152aa55dfda42c811bdfbaa05cd5a096c2f8c70d79a3e302b9c36f3378034">mip::C::MIP_REPLY_DESC_GNSS_RTK_DONGLE_CONFIGURATION</a> = 0x90
+<a class="el" href="group__gnss__commands__c.html#gga774c152aa55dfda42c811bdfbaa05cd5a096c2f8c70d79a3e302b9c36f3378034">mip::C::MIP_REPLY_DESC_GNSS_RTK_DONGLE_CONFIGURATION</a> = 0x90, 
+<br />
+&#160;&#160;<a class="el" href="group__gnss__commands__c.html#gga774c152aa55dfda42c811bdfbaa05cd5af7891d5abdea1debff9f579982fd1b5a">mip::C::MIP_REPLY_DESC_GNSS_SPARTN_CONFIGURATION</a> = 0xA0
 <br />
  }</td></tr>
 <tr class="separator:ga774c152aa55dfda42c811bdfbaa05cd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -150,9 +157,11 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="gga774c152aa55dfda42c811bdfbaa05cd5a7a95b84b8b187d538ef5cf30df596449"></a>MIP_CMD_DESC_GNSS_LIST_RECEIVERS&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="gga774c152aa55dfda42c811bdfbaa05cd5ade3682aabb840c2b23b58c6d6f4e5fe8"></a>MIP_CMD_DESC_GNSS_SIGNAL_CONFIGURATION&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="gga774c152aa55dfda42c811bdfbaa05cd5a02056f701a7b264d6ebbcddc6948167d"></a>MIP_CMD_DESC_GNSS_RTK_DONGLE_CONFIGURATION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga774c152aa55dfda42c811bdfbaa05cd5abbb97cb50489be08a97d7a0d5bb0ae1b"></a>MIP_CMD_DESC_GNSS_SPARTN_CONFIGURATION&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="gga774c152aa55dfda42c811bdfbaa05cd5acb23e2ee31b7af8fe1e3dd5428bc2f4e"></a>MIP_REPLY_DESC_GNSS_LIST_RECEIVERS&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="gga774c152aa55dfda42c811bdfbaa05cd5a0203befb6c245404c72767d3143c3504"></a>MIP_REPLY_DESC_GNSS_SIGNAL_CONFIGURATION&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="gga774c152aa55dfda42c811bdfbaa05cd5a096c2f8c70d79a3e302b9c36f3378034"></a>MIP_REPLY_DESC_GNSS_RTK_DONGLE_CONFIGURATION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga774c152aa55dfda42c811bdfbaa05cd5af7891d5abdea1debff9f579982fd1b5a"></a>MIP_REPLY_DESC_GNSS_SPARTN_CONFIGURATION&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>

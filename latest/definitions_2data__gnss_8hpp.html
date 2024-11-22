@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v2.0.0-163-g188dd2d</span>
+   &#160;<span id="projectnumber">v2.0.0-170-ga30d379</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -197,6 +197,10 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1GloEphemeris_1_1ValidFlags.html">mip::data_gnss::GloEphemeris::ValidFlags</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1BeidouEphemeris.html">mip::data_gnss::BeidouEphemeris</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1BeidouEphemeris_1_1ValidFlags.html">mip::data_gnss::BeidouEphemeris::ValidFlags</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1GpsIonoCorr.html">mip::data_gnss::GpsIonoCorr</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1GpsIonoCorr_1_1ValidFlags.html">mip::data_gnss::GpsIonoCorr::ValidFlags</a></td></tr>
@@ -204,6 +208,10 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1GalileoIonoCorr.html">mip::data_gnss::GalileoIonoCorr</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1GalileoIonoCorr_1_1ValidFlags.html">mip::data_gnss::GalileoIonoCorr::ValidFlags</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1BeidouIonoCorr.html">mip::data_gnss::BeidouIonoCorr</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1BeidouIonoCorr_1_1ValidFlags.html">mip::data_gnss::BeidouIonoCorr::ValidFlags</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -252,9 +260,11 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__gnss__data__cpp.html#gga458a8cb95733cbdb683bd14f6f11df71a7a80f610b6580bb4ecc0f5c0ac36d60d">mip::data_gnss::DATA_GPS_EPHEMERIS</a> = 0x61, 
 <a class="el" href="group__gnss__data__cpp.html#gga458a8cb95733cbdb683bd14f6f11df71a276c6244aec60a17457469f9951a9984">mip::data_gnss::DATA_GLONASS_EPHEMERIS</a> = 0x62, 
 <a class="el" href="group__gnss__data__cpp.html#gga458a8cb95733cbdb683bd14f6f11df71acd69f98a4805641e9c6b356fbd4786c6">mip::data_gnss::DATA_GALILEO_EPHEMERIS</a> = 0x63, 
-<a class="el" href="group__gnss__data__cpp.html#gga458a8cb95733cbdb683bd14f6f11df71af3363a8d774b643979eb1346903f9c87">mip::data_gnss::DATA_GPS_IONO_CORR</a> = 0x71, 
+<a class="el" href="group__gnss__data__cpp.html#gga458a8cb95733cbdb683bd14f6f11df71a93e65363697abde176a83b81bc4c4e40">mip::data_gnss::DATA_BEIDOU_EPHEMERIS</a> = 0x64, 
 <br />
-&#160;&#160;<a class="el" href="group__gnss__data__cpp.html#gga458a8cb95733cbdb683bd14f6f11df71a18984a35ee17bc6afc97c38d3ff184ec">mip::data_gnss::DATA_GALILEO_IONO_CORR</a> = 0x73
+&#160;&#160;<a class="el" href="group__gnss__data__cpp.html#gga458a8cb95733cbdb683bd14f6f11df71af3363a8d774b643979eb1346903f9c87">mip::data_gnss::DATA_GPS_IONO_CORR</a> = 0x71, 
+<a class="el" href="group__gnss__data__cpp.html#gga458a8cb95733cbdb683bd14f6f11df71a18984a35ee17bc6afc97c38d3ff184ec">mip::data_gnss::DATA_GALILEO_IONO_CORR</a> = 0x73, 
+<a class="el" href="group__gnss__data__cpp.html#gga458a8cb95733cbdb683bd14f6f11df71ad067666a5a0f410b577c7ea7ef6ace12">mip::data_gnss::DATA_BEIDOU_IONO_CORR</a> = 0x74
 <br />
  }</td></tr>
 <tr class="separator:ga458a8cb95733cbdb683bd14f6f11df71"><td class="memSeparator" colspan="2">&#160;</td></tr>

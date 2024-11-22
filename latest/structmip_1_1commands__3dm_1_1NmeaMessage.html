@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v2.0.0-163-g188dd2d</span>
+   &#160;<span id="projectnumber">v2.0.0-170-ga30d379</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -91,9 +91,10 @@ Public Types</h2></td></tr>
 &#160;&#160;<a class="el" href="structmip_1_1commands__3dm_1_1NmeaMessage.html#af4e93784c35351426df2086fc4c56bf2afc115cccaf1643937623d7ecd0bddb8e">MessageID::VTG</a> = 5, 
 <a class="el" href="structmip_1_1commands__3dm_1_1NmeaMessage.html#af4e93784c35351426df2086fc4c56bf2a1d2b7a7b79745325f4b270a38f24a7be">MessageID::HDT</a> = 6, 
 <a class="el" href="structmip_1_1commands__3dm_1_1NmeaMessage.html#af4e93784c35351426df2086fc4c56bf2a177ec88f1770157c912abd69c5051d44">MessageID::ZDA</a> = 7, 
-<a class="el" href="structmip_1_1commands__3dm_1_1NmeaMessage.html#af4e93784c35351426df2086fc4c56bf2a813b9ba36df46f1daee03b25d98e0310">MessageID::MSRA</a> = 129, 
+<a class="el" href="structmip_1_1commands__3dm_1_1NmeaMessage.html#af4e93784c35351426df2086fc4c56bf2a65faccc4f5d12243a687cfe2338ab83d">MessageID::GST</a> = 8, 
 <br />
-&#160;&#160;<a class="el" href="structmip_1_1commands__3dm_1_1NmeaMessage.html#af4e93784c35351426df2086fc4c56bf2a70e2f608b9eaaf3a2929fe312e1f20ec">MessageID::MSRR</a> = 130
+&#160;&#160;<a class="el" href="structmip_1_1commands__3dm_1_1NmeaMessage.html#af4e93784c35351426df2086fc4c56bf2a813b9ba36df46f1daee03b25d98e0310">MessageID::MSRA</a> = 129, 
+<a class="el" href="structmip_1_1commands__3dm_1_1NmeaMessage.html#af4e93784c35351426df2086fc4c56bf2a70e2f608b9eaaf3a2929fe312e1f20ec">MessageID::MSRR</a> = 130
 <br />
  }</td></tr>
 <tr class="separator:af4e93784c35351426df2086fc4c56bf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -165,6 +166,8 @@ Public Attributes</h2></td></tr>
 <tr><td class="fieldname"><a id="af4e93784c35351426df2086fc4c56bf2a1d2b7a7b79745325f4b270a38f24a7be"></a>HDT&#160;</td><td class="fielddoc"><p>Heading, True. Source can be the Filter or GNSS1/2 datasets. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="af4e93784c35351426df2086fc4c56bf2a177ec88f1770157c912abd69c5051d44"></a>ZDA&#160;</td><td class="fielddoc"><p>Time &amp; Date. Source must be the GNSS1 or GNSS2 datasets. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af4e93784c35351426df2086fc4c56bf2a65faccc4f5d12243a687cfe2338ab83d"></a>GST&#160;</td><td class="fielddoc"><p>Position Error Statistics. Source can be the Filter or GNSS1/2 datasets. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="af4e93784c35351426df2086fc4c56bf2a813b9ba36df46f1daee03b25d98e0310"></a>MSRA&#160;</td><td class="fielddoc"><p>MicroStrain proprietary Euler angles. Source must be the Filter dataset. The talker ID must be set to IGNORED. </p>
 </td></tr>

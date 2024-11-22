@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v2.0.0-163-g188dd2d</span>
+   &#160;<span id="projectnumber">v2.0.0-170-ga30d379</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -302,6 +302,8 @@ $(function() {
 , <a class="el" href="structmip_1_1commands__gnss_1_1RtkDongleConfiguration_1_1Response.html#af6d911e3ad4c403c6e855c960e37caf2">mip::commands_gnss::RtkDongleConfiguration::Response</a>
 , <a class="el" href="structmip_1_1commands__gnss_1_1SignalConfiguration.html#ab5ce4f7c911eb35caad81c5c66fca19b">mip::commands_gnss::SignalConfiguration</a>
 , <a class="el" href="structmip_1_1commands__gnss_1_1SignalConfiguration_1_1Response.html#a03dba031521daa23374759867d820e6c">mip::commands_gnss::SignalConfiguration::Response</a>
+, <a class="el" href="structmip_1_1commands__gnss_1_1SpartnConfiguration.html#a41d8bb8d9aa5b20956fb2f43bda64cec">mip::commands_gnss::SpartnConfiguration</a>
+, <a class="el" href="structmip_1_1commands__gnss_1_1SpartnConfiguration_1_1Response.html#a0f955e4186519ac56b6f4d04880189d5">mip::commands_gnss::SpartnConfiguration::Response</a>
 , <a class="el" href="structmip_1_1commands__rtk_1_1ConnectedDeviceType.html#aec995b5a4879389fc2f7f3c224edcb85">mip::commands_rtk::ConnectedDeviceType</a>
 , <a class="el" href="structmip_1_1commands__rtk_1_1ConnectedDeviceType_1_1Response.html#ac944ad849304101fb15ff2e18d46743b">mip::commands_rtk::ConnectedDeviceType::Response</a>
 , <a class="el" href="structmip_1_1commands__rtk_1_1GetActCode.html#a72fdc917150933a0ed6d24bc9f96ba94">mip::commands_rtk::GetActCode</a>
@@ -325,6 +327,8 @@ $(function() {
 , <a class="el" href="structmip_1_1commands__rtk_1_1ServiceStatus_1_1Response.html#a8519664c5e25b9f05ae3001e7a5cca99">mip::commands_rtk::ServiceStatus::Response</a>
 , <a class="el" href="structmip_1_1commands__system_1_1CommMode.html#a8f176a7b66414328c20d243c99f82091">mip::commands_system::CommMode</a>
 , <a class="el" href="structmip_1_1commands__system_1_1CommMode_1_1Response.html#ae2ba66c6693fd3724dbd25023c75be98">mip::commands_system::CommMode::Response</a>
+, <a class="el" href="structmip_1_1commands__system_1_1InterfaceControl.html#ab7d0aa59c254412b2b4d02e6c270943e">mip::commands_system::InterfaceControl</a>
+, <a class="el" href="structmip_1_1commands__system_1_1InterfaceControl_1_1Response.html#a5edf275991b63eef31542ce851f28a66">mip::commands_system::InterfaceControl::Response</a>
 , <a class="el" href="structmip_1_1data__filter_1_1AccelBias.html#ac99328d9f850a1b3fc59bdc222aa5ed7">mip::data_filter::AccelBias</a>
 , <a class="el" href="structmip_1_1data__filter_1_1AccelBiasUncertainty.html#ac68af851b2d5c4346914c215fa6be309">mip::data_filter::AccelBiasUncertainty</a>
 , <a class="el" href="structmip_1_1data__filter_1_1AccelScaleFactor.html#ac1b328e2efd3e3bd62e9bacf8cd50ef5">mip::data_filter::AccelScaleFactor</a>
@@ -383,6 +387,8 @@ $(function() {
 , <a class="el" href="structmip_1_1data__filter_1_1VelocityNedUncertainty.html#a68b2ba48d441f9e289403e888dc9eada">mip::data_filter::VelocityNedUncertainty</a>
 , <a class="el" href="structmip_1_1data__filter_1_1Wgs84GravityMag.html#ab2e2a7ff1c672d4c7c7505581a02c4ef">mip::data_filter::Wgs84GravityMag</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1BaseStationInfo.html#ae1a654f2b5deba2e06f856c43bd99c8e">mip::data_gnss::BaseStationInfo</a>
+, <a class="el" href="structmip_1_1data__gnss_1_1BeidouEphemeris.html#a0a36125b4ff9f9ee005236f53672b46c">mip::data_gnss::BeidouEphemeris</a>
+, <a class="el" href="structmip_1_1data__gnss_1_1BeidouIonoCorr.html#aeba0892ad49e118ae679c9c4d3918242">mip::data_gnss::BeidouIonoCorr</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1ClockInfo2.html#a9846024b2d783be6668f545ff8929ed8">mip::data_gnss::ClockInfo2</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1ClockInfo.html#ac441cae5457ea4511018f40c158dfaff">mip::data_gnss::ClockInfo</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1DgpsChannel.html#a37f43b02a9def9c3217c03dc804006dc">mip::data_gnss::DgpsChannel</a>
@@ -463,9 +469,8 @@ $(function() {
 <li>NANOSECONDS
 : <a class="el" href="structmip_1_1data__shared_1_1ExternalTimestamp_1_1ValidFlags.html#ae86f5f046b0ac45ab1d59463de218fd5ad0545e0cb0149cb6e599b622463a02c7">mip::data_shared::ExternalTimestamp::ValidFlags</a>
 </li>
-<li>nanoseconds()
-: <a class="el" href="structmip_1_1data__shared_1_1ExternalTimestamp_1_1ValidFlags.html#ad5fdd2388897856877332f8898bd0281">mip::data_shared::ExternalTimestamp::ValidFlags</a>
-, <a class="el" href="structmip_1_1data__shared_1_1ReferenceTimestamp.html#aa089e852e3fe8bc2459b5fa29e7f8535">mip::data_shared::ReferenceTimestamp</a>
+<li>nanoseconds
+: <a class="el" href="structmip_1_1data__shared_1_1ReferenceTimestamp.html#aa089e852e3fe8bc2459b5fa29e7f8535">mip::data_shared::ReferenceTimestamp</a>
 </li>
 <li>ndop
 : <a class="el" href="structmip_1_1C_1_1mip__gnss__dop__data.html#ada90be45d0cad55b6c17ff10dfe34644">mip::C::mip_gnss_dop_data</a>
@@ -475,20 +480,44 @@ $(function() {
 <li>NDOP
 : <a class="el" href="structmip_1_1data__gnss_1_1Dop_1_1ValidFlags.html#a1fc83277f187678def65baa8a1e86833ac3e136db1d1da9f932e05675c89d8a53">mip::data_gnss::Dop::ValidFlags</a>
 </li>
-<li>ndop()
-: <a class="el" href="structmip_1_1data__gnss_1_1Dop_1_1ValidFlags.html#a77365458e7852c2c6ede9a5e5e0715d3">mip::data_gnss::Dop::ValidFlags</a>
-</li>
 <li>next()
 : <a class="el" href="classmip_1_1FieldView.html#adb5b28dbaf17a9ae25afac2046ab73f7">mip::FieldView</a>
 </li>
+<li>next_key
+: <a class="el" href="structmip_1_1C_1_1mip__gnss__spartn__configuration__command.html#aec80d9171dd52335c9d671582a4fbd6c">mip::C::mip_gnss_spartn_configuration_command</a>
+, <a class="el" href="structmip_1_1C_1_1mip__gnss__spartn__configuration__response.html#a1389e3aad4910679f8f168cf6f15b3c5">mip::C::mip_gnss_spartn_configuration_response</a>
+, <a class="el" href="structmip_1_1commands__gnss_1_1SpartnConfiguration.html#a543ce82234e0e21d4fd26677d61060d9">mip::commands_gnss::SpartnConfiguration</a>
+, <a class="el" href="structmip_1_1commands__gnss_1_1SpartnConfiguration_1_1Response.html#a652af9b6672f13f5d3819bfb95ae5da1">mip::commands_gnss::SpartnConfiguration::Response</a>
+</li>
+<li>next_key_tow
+: <a class="el" href="structmip_1_1C_1_1mip__gnss__spartn__configuration__command.html#a637f9087e7a5eeaf9916fa825328b9e7">mip::C::mip_gnss_spartn_configuration_command</a>
+, <a class="el" href="structmip_1_1C_1_1mip__gnss__spartn__configuration__response.html#aa0ce7d940badc396eefb47788090e220">mip::C::mip_gnss_spartn_configuration_response</a>
+, <a class="el" href="structmip_1_1commands__gnss_1_1SpartnConfiguration.html#ad2424ddd24b013ce6c11c5573e0b3198">mip::commands_gnss::SpartnConfiguration</a>
+, <a class="el" href="structmip_1_1commands__gnss_1_1SpartnConfiguration_1_1Response.html#af8587f1df8cfebc07374a5b326c2275e">mip::commands_gnss::SpartnConfiguration::Response</a>
+</li>
+<li>next_key_week
+: <a class="el" href="structmip_1_1C_1_1mip__gnss__spartn__configuration__command.html#a49c7bad7ca22a5f16795d52791b5e799">mip::C::mip_gnss_spartn_configuration_command</a>
+, <a class="el" href="structmip_1_1C_1_1mip__gnss__spartn__configuration__response.html#af54230aeed5dd18056aa8a85c23108af">mip::C::mip_gnss_spartn_configuration_response</a>
+, <a class="el" href="structmip_1_1commands__gnss_1_1SpartnConfiguration.html#ace2ec9f405028518b78cf46414bfcbbc">mip::commands_gnss::SpartnConfiguration</a>
+, <a class="el" href="structmip_1_1commands__gnss_1_1SpartnConfiguration_1_1Response.html#a8c4a5ae95ce24903bc684ad586662aa5">mip::commands_gnss::SpartnConfiguration::Response</a>
+</li>
 <li>nextAfter()
 : <a class="el" href="classmip_1_1FieldView.html#a3109ee52a0b1cb6d7fef9e407b0c72d9">mip::FieldView</a>
+</li>
+<li>nmea()
+: <a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html#a1435015524a28f68ca06eab0c13cfd99">mip::commands_system::CommsProtocol</a>
+</li>
+<li>NMEA
+: <a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html#a3c39bec9f934b9a6a1d8affc12e2f611a2c417622ec21f3004b34ea57703630cb">mip::commands_system::CommsProtocol</a>
+</li>
+<li>nmea()
+: <a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html#a6f540321ad0a4d02d12d19098f6ce268">mip::commands_system::CommsProtocol</a>
 </li>
 <li>NMEA_TIMEOUT
 : <a class="el" href="structmip_1_1commands__rtk_1_1GetStatusFlags_1_1StatusFlags.html#aadc3e79c243bb77702f4a323cbae6879a3da5451407b695e60d2c172f210f8582">mip::commands_rtk::GetStatusFlags::StatusFlags</a>
 </li>
 <li>nmeaTimeout()
-: <a class="el" href="structmip_1_1commands__rtk_1_1GetStatusFlags_1_1StatusFlags.html#a3791ce770f89633e6afc385f24e46723">mip::commands_rtk::GetStatusFlags::StatusFlags</a>
+: <a class="el" href="structmip_1_1commands__rtk_1_1GetStatusFlags_1_1StatusFlags.html#a7d67d92a5839b976ed87716796e39d8e">mip::commands_rtk::GetStatusFlags::StatusFlags</a>
 </li>
 <li>NO_FIX
 : <a class="el" href="structmip_1_1data__filter_1_1GnssAidStatusFlags.html#a1ce836756563662c0d8c76698b3943bea4489ff856861bcac772e363fbac1423d">mip::data_filter::GnssAidStatusFlags</a>
@@ -552,12 +581,15 @@ $(function() {
 , <a class="el" href="structmip_1_1commands__rtk_1_1GetStatusFlags_1_1StatusFlags.html#aadc3e79c243bb77702f4a323cbae6879aea69da3ecbe54dbbd2cb365fcbbda323">mip::commands_rtk::GetStatusFlags::StatusFlags</a>
 , <a class="el" href="structmip_1_1commands__rtk_1_1GetStatusFlags_1_1StatusFlagsLegacy.html#a6d952630b90a4cae4177646db34a96eea7c657e5f6711b51bcef862f7ac0cc7e8">mip::commands_rtk::GetStatusFlags::StatusFlagsLegacy</a>
 , <a class="el" href="structmip_1_1commands__rtk_1_1ServiceStatus_1_1ServiceFlags.html#a4f2c8b4f1e8b0c50836f8cc594ef5fa9abff13bb30f17ef1822bf7c2cf0abb8c9">mip::commands_rtk::ServiceStatus::ServiceFlags</a>
+, <a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html#a3c39bec9f934b9a6a1d8affc12e2f611a298d07658be4bae653660e06977c3e0e">mip::commands_system::CommsProtocol</a>
 , <a class="el" href="structmip_1_1data__filter_1_1FilterMeasurementIndicator.html#a5f32bf9315a578292ebcb6c99df6929fa5f5c7b38463be6a23eb2d964662008d3">mip::data_filter::FilterMeasurementIndicator</a>
 , <a class="el" href="structmip_1_1data__filter_1_1FilterStatusFlags.html#acc48c933f3b7a3a7aa66c4934c02df5aa155a21441972e4e83c9fffcc0808327d">mip::data_filter::FilterStatusFlags</a>
 , <a class="el" href="structmip_1_1data__filter_1_1GnssAidStatusFlags.html#a1ce836756563662c0d8c76698b3943bea07e23d5d95a9acbf75066d76f3468a0a">mip::data_filter::GnssAidStatusFlags</a>
 , <a class="el" href="structmip_1_1data__filter_1_1GnssDualAntennaStatus_1_1DualAntennaStatusFlags.html#a695462c978d5d1812d5d966df8414613a517fc049aa05e4b393d53d1c47e9bfe2">mip::data_filter::GnssDualAntennaStatus::DualAntennaStatusFlags</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1BaseStationInfo_1_1IndicatorFlags.html#a0cb42756376b4898f423979191ab2944ae9aad576f93758bb83fc2509eeaed7b8">mip::data_gnss::BaseStationInfo::IndicatorFlags</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1BaseStationInfo_1_1ValidFlags.html#ada30f4639178ea79e264dc8e8ee76a80ae63a3235e977194fa334edcf6cd1bb78">mip::data_gnss::BaseStationInfo::ValidFlags</a>
+, <a class="el" href="structmip_1_1data__gnss_1_1BeidouEphemeris_1_1ValidFlags.html#a0cea213675f38fd1cdb08484271cbaaeab86d46d954996de6e58a5bcbb09c1fe4">mip::data_gnss::BeidouEphemeris::ValidFlags</a>
+, <a class="el" href="structmip_1_1data__gnss_1_1BeidouIonoCorr_1_1ValidFlags.html#aa1f0bf76975ca0574714e6323097ac27a723eebb5c5453989a58f60d241f7543f">mip::data_gnss::BeidouIonoCorr::ValidFlags</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1ClockInfo2_1_1ValidFlags.html#adf3c4705c42457407973c9b1cffd365ca962fc54be30c795ec165a938b25b32f5">mip::data_gnss::ClockInfo2::ValidFlags</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1ClockInfo_1_1ValidFlags.html#a8d66dacf948a9eedf2287c88b5383b96a45c49e63c241965bd39fdb2154762b59">mip::data_gnss::ClockInfo::ValidFlags</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1DgpsChannel_1_1ValidFlags.html#a62691c57fff77853232d066b09143ef7ab6d393e303ab391c14228188803bad9d">mip::data_gnss::DgpsChannel::ValidFlags</a>
@@ -679,7 +711,7 @@ $(function() {
 : <a class="el" href="structmip_1_1data__gnss_1_1FixInfo_1_1ValidFlags.html#ab7ca312d3529eb5adb3fc1222769b404a97a4c7db3240b5448fd9d51c569f5e74">mip::data_gnss::FixInfo::ValidFlags</a>
 </li>
 <li>numChannels()
-: <a class="el" href="structmip_1_1data__gnss_1_1DgpsInfo_1_1ValidFlags.html#adb1db8dc0a5867c646c161a3b2067254">mip::data_gnss::DgpsInfo::ValidFlags</a>
+: <a class="el" href="structmip_1_1data__gnss_1_1DgpsInfo_1_1ValidFlags.html#a35b63ec198f3cd95b6571cd42bf5e5fd">mip::data_gnss::DgpsInfo::ValidFlags</a>
 </li>
 <li>numSv()
 : <a class="el" href="structmip_1_1data__gnss_1_1FixInfo_1_1ValidFlags.html#ae5300ed9e626c40185a6bfb60de1e2c2">mip::data_gnss::FixInfo::ValidFlags</a>

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v2.0.0-163-g188dd2d</span>
+   &#160;<span id="projectnumber">v2.0.0-170-ga30d379</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -80,6 +80,10 @@ Modules</h2></td></tr>
 <tr class="memitem:group__gnss__signal__configuration__cpp"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss__signal__configuration__cpp.html">(0x0E,0x02) Signal Configuration</a></td></tr>
 <tr class="memdesc:group__gnss__signal__configuration__cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the GNSS signals used by the device. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:group__gnss__spartn__configuration__cpp"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss__spartn__configuration__cpp.html">(0x0E,0x20) Spartn Configuration</a></td></tr>
+<tr class="memdesc:group__gnss__spartn__configuration__cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the SPARTN corrections service parameters. Notes:<br  />
+ <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:group__gnss__rtk__dongle__configuration__cpp"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss__rtk__dongle__configuration__cpp.html">(0x0E,0x10) Rtk Dongle Configuration</a></td></tr>
 <tr class="memdesc:group__gnss__rtk__dongle__configuration__cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the communications with the RTK Dongle connected to the device. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -92,9 +96,12 @@ Enumerations</h2></td></tr>
 <a class="el" href="group__gnss__commands__cpp.html#ggab971b74cde3109998f648f7089e4adf8a385990a249bf726e18ed618c655c5892">mip::commands_gnss::CMD_SIGNAL_CONFIGURATION</a> = 0x02, 
 <a class="el" href="group__gnss__commands__cpp.html#ggab971b74cde3109998f648f7089e4adf8aa3e581c6e292fbda4ca4d9b004e1cb4f">mip::commands_gnss::CMD_RTK_DONGLE_CONFIGURATION</a> = 0x10, 
 <br />
-&#160;&#160;<a class="el" href="group__gnss__commands__cpp.html#ggab971b74cde3109998f648f7089e4adf8a92181a8bf0dc289bfb0f0603c886eb74">mip::commands_gnss::REPLY_LIST_RECEIVERS</a> = 0x81, 
+&#160;&#160;<a class="el" href="group__gnss__commands__cpp.html#ggab971b74cde3109998f648f7089e4adf8aa3b9f99e779565b2359cdbdddfe361da">mip::commands_gnss::CMD_SPARTN_CONFIGURATION</a> = 0x20, 
+<a class="el" href="group__gnss__commands__cpp.html#ggab971b74cde3109998f648f7089e4adf8a92181a8bf0dc289bfb0f0603c886eb74">mip::commands_gnss::REPLY_LIST_RECEIVERS</a> = 0x81, 
 <a class="el" href="group__gnss__commands__cpp.html#ggab971b74cde3109998f648f7089e4adf8ada7c33b7c99ba7e439ea6838d7def6b1">mip::commands_gnss::REPLY_SIGNAL_CONFIGURATION</a> = 0x82, 
-<a class="el" href="group__gnss__commands__cpp.html#ggab971b74cde3109998f648f7089e4adf8af1571f028b115dab0124c32149b448c4">mip::commands_gnss::REPLY_RTK_DONGLE_CONFIGURATION</a> = 0x90
+<a class="el" href="group__gnss__commands__cpp.html#ggab971b74cde3109998f648f7089e4adf8af1571f028b115dab0124c32149b448c4">mip::commands_gnss::REPLY_RTK_DONGLE_CONFIGURATION</a> = 0x90, 
+<br />
+&#160;&#160;<a class="el" href="group__gnss__commands__cpp.html#ggab971b74cde3109998f648f7089e4adf8a3fdeeff594af92d8ed846ba37d640211">mip::commands_gnss::REPLY_SPARTN_CONFIGURATION</a> = 0xA0
 <br />
  }</td></tr>
 <tr class="separator:gab971b74cde3109998f648f7089e4adf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -117,9 +124,11 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="ggab971b74cde3109998f648f7089e4adf8a1690e941d8e0e11c0651dd7302f5e04c"></a>CMD_LIST_RECEIVERS&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ggab971b74cde3109998f648f7089e4adf8a385990a249bf726e18ed618c655c5892"></a>CMD_SIGNAL_CONFIGURATION&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ggab971b74cde3109998f648f7089e4adf8aa3e581c6e292fbda4ca4d9b004e1cb4f"></a>CMD_RTK_DONGLE_CONFIGURATION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggab971b74cde3109998f648f7089e4adf8aa3b9f99e779565b2359cdbdddfe361da"></a>CMD_SPARTN_CONFIGURATION&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ggab971b74cde3109998f648f7089e4adf8a92181a8bf0dc289bfb0f0603c886eb74"></a>REPLY_LIST_RECEIVERS&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ggab971b74cde3109998f648f7089e4adf8ada7c33b7c99ba7e439ea6838d7def6b1"></a>REPLY_SIGNAL_CONFIGURATION&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ggab971b74cde3109998f648f7089e4adf8af1571f028b115dab0124c32149b448c4"></a>REPLY_RTK_DONGLE_CONFIGURATION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggab971b74cde3109998f648f7089e4adf8a3fdeeff594af92d8ed846ba37d640211"></a>REPLY_SPARTN_CONFIGURATION&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>

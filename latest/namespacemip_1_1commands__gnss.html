@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v2.0.0-163-g188dd2d</span>
+   &#160;<span id="projectnumber">v2.0.0-170-ga30d379</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -85,6 +85,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__gnss_1_1SignalConfiguration.html">SignalConfiguration</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__gnss_1_1SpartnConfiguration.html">SpartnConfiguration</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -94,9 +96,12 @@ Enumerations</h2></td></tr>
 <a class="el" href="group__gnss__commands__cpp.html#ggab971b74cde3109998f648f7089e4adf8a385990a249bf726e18ed618c655c5892">CMD_SIGNAL_CONFIGURATION</a> = 0x02, 
 <a class="el" href="group__gnss__commands__cpp.html#ggab971b74cde3109998f648f7089e4adf8aa3e581c6e292fbda4ca4d9b004e1cb4f">CMD_RTK_DONGLE_CONFIGURATION</a> = 0x10, 
 <br />
-&#160;&#160;<a class="el" href="group__gnss__commands__cpp.html#ggab971b74cde3109998f648f7089e4adf8a92181a8bf0dc289bfb0f0603c886eb74">REPLY_LIST_RECEIVERS</a> = 0x81, 
+&#160;&#160;<a class="el" href="group__gnss__commands__cpp.html#ggab971b74cde3109998f648f7089e4adf8aa3b9f99e779565b2359cdbdddfe361da">CMD_SPARTN_CONFIGURATION</a> = 0x20, 
+<a class="el" href="group__gnss__commands__cpp.html#ggab971b74cde3109998f648f7089e4adf8a92181a8bf0dc289bfb0f0603c886eb74">REPLY_LIST_RECEIVERS</a> = 0x81, 
 <a class="el" href="group__gnss__commands__cpp.html#ggab971b74cde3109998f648f7089e4adf8ada7c33b7c99ba7e439ea6838d7def6b1">REPLY_SIGNAL_CONFIGURATION</a> = 0x82, 
-<a class="el" href="group__gnss__commands__cpp.html#ggab971b74cde3109998f648f7089e4adf8af1571f028b115dab0124c32149b448c4">REPLY_RTK_DONGLE_CONFIGURATION</a> = 0x90
+<a class="el" href="group__gnss__commands__cpp.html#ggab971b74cde3109998f648f7089e4adf8af1571f028b115dab0124c32149b448c4">REPLY_RTK_DONGLE_CONFIGURATION</a> = 0x90, 
+<br />
+&#160;&#160;<a class="el" href="group__gnss__commands__cpp.html#ggab971b74cde3109998f648f7089e4adf8a3fdeeff594af92d8ed846ba37d640211">REPLY_SPARTN_CONFIGURATION</a> = 0xA0
 <br />
  }</td></tr>
 <tr class="separator:gab971b74cde3109998f648f7089e4adf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -115,6 +120,16 @@ Functions</h2></td></tr>
 <tr class="separator:gac9104c144d12ccc25da96ef60287141f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4eac191b0356e80f3b70fbee930c07ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__gnss_1_1SignalConfiguration.html">SignalConfiguration</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss__signal__configuration__cpp.html#ga4eac191b0356e80f3b70fbee930c07ef">defaultSignalConfiguration</a> (<a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;device)</td></tr>
 <tr class="separator:ga4eac191b0356e80f3b70fbee930c07ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4a51fa8f041cd60331c7433dcb2b595d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__gnss_1_1SpartnConfiguration.html">SpartnConfiguration</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss__spartn__configuration__cpp.html#ga4a51fa8f041cd60331c7433dcb2b595d">writeSpartnConfiguration</a> (<a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;device, uint8_t enable, uint8_t type, uint32_t currentKeyTow, uint16_t currentKeyWeek, const uint8_t *currentKey, uint32_t nextKeyTow, uint16_t nextKeyWeek, const uint8_t *nextKey)</td></tr>
+<tr class="separator:ga4a51fa8f041cd60331c7433dcb2b595d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4611883feb6a9d03e39462478415812a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__gnss_1_1SpartnConfiguration.html">SpartnConfiguration</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss__spartn__configuration__cpp.html#ga4611883feb6a9d03e39462478415812a">readSpartnConfiguration</a> (<a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;device, uint8_t *enableOut, uint8_t *typeOut, uint32_t *currentKeyTowOut, uint16_t *currentKeyWeekOut, uint8_t *currentKeyOut, uint32_t *nextKeyTowOut, uint16_t *nextKeyWeekOut, uint8_t *nextKeyOut)</td></tr>
+<tr class="separator:ga4611883feb6a9d03e39462478415812a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga98a1e6842e8b074a973f0d9acf0ae794"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__gnss_1_1SpartnConfiguration.html">SpartnConfiguration</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss__spartn__configuration__cpp.html#ga98a1e6842e8b074a973f0d9acf0ae794">saveSpartnConfiguration</a> (<a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;device)</td></tr>
+<tr class="separator:ga98a1e6842e8b074a973f0d9acf0ae794"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga432f744afad6c49109a1d5954fa00170"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__gnss_1_1SpartnConfiguration.html">SpartnConfiguration</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss__spartn__configuration__cpp.html#ga432f744afad6c49109a1d5954fa00170">loadSpartnConfiguration</a> (<a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;device)</td></tr>
+<tr class="separator:ga432f744afad6c49109a1d5954fa00170"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad8395b8c7a2a48648cb16b3b64bc49ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__gnss_1_1SpartnConfiguration.html">SpartnConfiguration</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss__spartn__configuration__cpp.html#gad8395b8c7a2a48648cb16b3b64bc49ea">defaultSpartnConfiguration</a> (<a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;device)</td></tr>
+<tr class="separator:gad8395b8c7a2a48648cb16b3b64bc49ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaaa2a7bcafd3e1bd1067e7637d9f2f8c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__gnss_1_1RtkDongleConfiguration.html">RtkDongleConfiguration</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss__rtk__dongle__configuration__cpp.html#gaaa2a7bcafd3e1bd1067e7637d9f2f8c8">writeRtkDongleConfiguration</a> (<a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;device, uint8_t enable, const uint8_t *reserved)</td></tr>
 <tr class="separator:gaaa2a7bcafd3e1bd1067e7637d9f2f8c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa776cd754b77452a948361c3bf5c59aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__gnss_1_1RtkDongleConfiguration.html">RtkDongleConfiguration</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss__rtk__dongle__configuration__cpp.html#gaa776cd754b77452a948361c3bf5c59aa">readRtkDongleConfiguration</a> (<a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;device, uint8_t *enableOut, uint8_t *reservedOut)</td></tr>

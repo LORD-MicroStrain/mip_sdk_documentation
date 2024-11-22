@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v2.0.0-163-g188dd2d</span>
+   &#160;<span id="projectnumber">v2.0.0-170-ga30d379</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -149,11 +149,17 @@ Modules</h2></td></tr>
 <tr class="memitem:group__gnss__glo__ephemeris__c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss__glo__ephemeris__c.html">(0x81,0x62) Glo Ephemeris</a></td></tr>
 <tr class="memdesc:group__gnss__glo__ephemeris__c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Glonass Ephemeris Data. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:group__gnss__beidou__ephemeris__c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss__beidou__ephemeris__c.html">(0x81,0x64) Beidou Ephemeris</a></td></tr>
+<tr class="memdesc:group__gnss__beidou__ephemeris__c"><td class="mdescLeft">&#160;</td><td class="mdescRight">BeiDou Ephemeris Data. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:group__gnss__gps__iono__corr__c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss__gps__iono__corr__c.html">(0x81,0x71) Gps Iono Corr</a></td></tr>
 <tr class="memdesc:group__gnss__gps__iono__corr__c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ionospheric Correction Terms for GNSS. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:group__gnss__galileo__iono__corr__c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss__galileo__iono__corr__c.html">(0x81,0x73) Galileo Iono Corr</a></td></tr>
 <tr class="memdesc:group__gnss__galileo__iono__corr__c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ionospheric Correction Terms for Galileo. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:group__gnss__beidou__iono__corr__c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss__beidou__iono__corr__c.html">(0x81,0x74) Beidou Iono Corr</a></td></tr>
+<tr class="memdesc:group__gnss__beidou__iono__corr__c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ionospheric Correction Terms for BeiDou. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -201,9 +207,11 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__gnss__data__c.html#gga7ed3fe79565c16d94b4f909e6e1ece63a6304c28a793b412a3ebae51363794579">mip::C::MIP_DATA_DESC_GNSS_GPS_EPHEMERIS</a> = 0x61, 
 <a class="el" href="group__gnss__data__c.html#gga7ed3fe79565c16d94b4f909e6e1ece63a531f665a39d51d5c0a2ce389c4688843">mip::C::MIP_DATA_DESC_GNSS_GLONASS_EPHEMERIS</a> = 0x62, 
 <a class="el" href="group__gnss__data__c.html#gga7ed3fe79565c16d94b4f909e6e1ece63a7aa2751fa068d15772f7fc34a5dd7911">mip::C::MIP_DATA_DESC_GNSS_GALILEO_EPHEMERIS</a> = 0x63, 
-<a class="el" href="group__gnss__data__c.html#gga7ed3fe79565c16d94b4f909e6e1ece63a8a52d64823b747479a6de52ab3502d55">mip::C::MIP_DATA_DESC_GNSS_GPS_IONO_CORR</a> = 0x71, 
+<a class="el" href="group__gnss__data__c.html#gga7ed3fe79565c16d94b4f909e6e1ece63a3b66ce60ee8776a01126e308767eafe2">mip::C::MIP_DATA_DESC_GNSS_BEIDOU_EPHEMERIS</a> = 0x64, 
 <br />
-&#160;&#160;<a class="el" href="group__gnss__data__c.html#gga7ed3fe79565c16d94b4f909e6e1ece63a6318a910aa1c9d1447163d2427c0c3fa">mip::C::MIP_DATA_DESC_GNSS_GALILEO_IONO_CORR</a> = 0x73
+&#160;&#160;<a class="el" href="group__gnss__data__c.html#gga7ed3fe79565c16d94b4f909e6e1ece63a8a52d64823b747479a6de52ab3502d55">mip::C::MIP_DATA_DESC_GNSS_GPS_IONO_CORR</a> = 0x71, 
+<a class="el" href="group__gnss__data__c.html#gga7ed3fe79565c16d94b4f909e6e1ece63a6318a910aa1c9d1447163d2427c0c3fa">mip::C::MIP_DATA_DESC_GNSS_GALILEO_IONO_CORR</a> = 0x73, 
+<a class="el" href="group__gnss__data__c.html#gga7ed3fe79565c16d94b4f909e6e1ece63ace813dace1305703df64d6d57a00bc1c">mip::C::MIP_DATA_DESC_GNSS_BEIDOU_IONO_CORR</a> = 0x74
 <br />
  }</td></tr>
 <tr class="separator:ga7ed3fe79565c16d94b4f909e6e1ece63"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -420,8 +428,10 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="gga7ed3fe79565c16d94b4f909e6e1ece63a6304c28a793b412a3ebae51363794579"></a>MIP_DATA_DESC_GNSS_GPS_EPHEMERIS&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="gga7ed3fe79565c16d94b4f909e6e1ece63a531f665a39d51d5c0a2ce389c4688843"></a>MIP_DATA_DESC_GNSS_GLONASS_EPHEMERIS&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="gga7ed3fe79565c16d94b4f909e6e1ece63a7aa2751fa068d15772f7fc34a5dd7911"></a>MIP_DATA_DESC_GNSS_GALILEO_EPHEMERIS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga7ed3fe79565c16d94b4f909e6e1ece63a3b66ce60ee8776a01126e308767eafe2"></a>MIP_DATA_DESC_GNSS_BEIDOU_EPHEMERIS&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="gga7ed3fe79565c16d94b4f909e6e1ece63a8a52d64823b747479a6de52ab3502d55"></a>MIP_DATA_DESC_GNSS_GPS_IONO_CORR&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="gga7ed3fe79565c16d94b4f909e6e1ece63a6318a910aa1c9d1447163d2427c0c3fa"></a>MIP_DATA_DESC_GNSS_GALILEO_IONO_CORR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga7ed3fe79565c16d94b4f909e6e1ece63ace813dace1305703df64d6d57a00bc1c"></a>MIP_DATA_DESC_GNSS_BEIDOU_IONO_CORR&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
