@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">latest-3-g6a483df</span>
+   &#160;<span id="projectnumber">latest-10-ge5b426e</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -144,6 +144,18 @@ Functions</h2></td></tr>
 <tr class="memitem:aba2aab6f193bae41b46af4ab76b9d061"><td class="memTemplParams" colspan="2">template&lt;class Field , class T , auto Ptr&gt; </td></tr>
 <tr class="memitem:aba2aab6f193bae41b46af4ab76b9d061"><td class="memTemplItemLeft" align="right" valign="top">void *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemip_1_1metadata_1_1utils.html#aba2aab6f193bae41b46af4ab76b9d061">access</a> (void *p)</td></tr>
 <tr class="separator:aba2aab6f193bae41b46af4ab76b9d061"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a552a10c04023b6ea94039331991c26ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip_1_1metadata_1_1utils.html#a552a10c04023b6ea94039331991c26ef">serializedType</a> (const <a class="el" href="structmip_1_1metadata_1_1TypeInfo.html">TypeInfo</a> &amp;type)</td></tr>
+<tr class="memdesc:a552a10c04023b6ea94039331991c26ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines the type used for serialization purposes.  <a href="namespacemip_1_1metadata_1_1utils.html#a552a10c04023b6ea94039331991c26ef">More...</a><br /></td></tr>
+<tr class="separator:a552a10c04023b6ea94039331991c26ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7942b3f759bf5e8b3ea1e2d6ed6b08a"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip_1_1metadata_1_1utils.html#af7942b3f759bf5e8b3ea1e2d6ed6b08a">serializedSizeForBasicType</a> (<a class="el" href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525">Type</a> type, const void *info=nullptr)</td></tr>
+<tr class="memdesc:af7942b3f759bf5e8b3ea1e2d6ed6b08a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the size of a basic type (including bitfields and enums if class_ is not NULL).  <a href="namespacemip_1_1metadata_1_1utils.html#af7942b3f759bf5e8b3ea1e2d6ed6b08a">More...</a><br /></td></tr>
+<tr class="separator:af7942b3f759bf5e8b3ea1e2d6ed6b08a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a637df63b72aa2021dd67bc72db5b1b42"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip_1_1metadata_1_1utils.html#a637df63b72aa2021dd67bc72db5b1b42">serializedSizeForBasicType</a> (const <a class="el" href="structmip_1_1metadata_1_1TypeInfo.html">TypeInfo</a> &amp;type)</td></tr>
+<tr class="separator:a637df63b72aa2021dd67bc72db5b1b42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bf7590b363efc5259e7763ade58c965"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip_1_1metadata_1_1utils.html#a3bf7590b363efc5259e7763ade58c965">nameForBasicType</a> (<a class="el" href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525">Type</a> type)</td></tr>
+<tr class="separator:a3bf7590b363efc5259e7763ade58c965"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dfbabb2bc322eb8baf09c67a703ec59"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip_1_1metadata_1_1utils.html#a7dfbabb2bc322eb8baf09c67a703ec59">nameOfType</a> (const <a class="el" href="structmip_1_1metadata_1_1TypeInfo.html">TypeInfo</a> &amp;type)</td></tr>
+<tr class="separator:a7dfbabb2bc322eb8baf09c67a703ec59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="aba2aab6f193bae41b46af4ab76b9d061"></a>
@@ -163,6 +175,154 @@ template&lt;class Field , class T , auto Ptr&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3bf7590b363efc5259e7763ade58c965"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bf7590b363efc5259e7763ade58c965">&#9670;&nbsp;</a></span>nameForBasicType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr const char* mip::metadata::utils::nameForBasicType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525">Type</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7dfbabb2bc322eb8baf09c67a703ec59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dfbabb2bc322eb8baf09c67a703ec59">&#9670;&nbsp;</a></span>nameOfType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr const char* mip::metadata::utils::nameOfType </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structmip_1_1metadata_1_1TypeInfo.html">TypeInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a637df63b72aa2021dd67bc72db5b1b42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a637df63b72aa2021dd67bc72db5b1b42">&#9670;&nbsp;</a></span>serializedSizeForBasicType() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr size_t mip::metadata::utils::serializedSizeForBasicType </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structmip_1_1metadata_1_1TypeInfo.html">TypeInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af7942b3f759bf5e8b3ea1e2d6ed6b08a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7942b3f759bf5e8b3ea1e2d6ed6b08a">&#9670;&nbsp;</a></span>serializedSizeForBasicType() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr size_t mip::metadata::utils::serializedSizeForBasicType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525">Type</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>info</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the size of a basic type (including bitfields and enums if class_ is not NULL). </p>
+
+</div>
+</div>
+<a id="a552a10c04023b6ea94039331991c26ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a552a10c04023b6ea94039331991c26ef">&#9670;&nbsp;</a></span>serializedType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525">Type</a> mip::metadata::utils::serializedType </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structmip_1_1metadata_1_1TypeInfo.html">TypeInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Determines the type used for serialization purposes. </p>
+<p>This essentially translates bitfields and enums to their underlying types.</p>
+<dl class="section return"><dt>Returns</dt><dd>A basic type, such as u8, s32, float, etc. if possible. </dd>
+<dd>
+<a class="el" href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525ab50339a10e1de285ac99d4c3990b8693" title="Invalid/unknown.">Type::NONE</a> if type is NONE or if it's a compound type like a struct or union. </dd></dl>
 
 </div>
 </div>

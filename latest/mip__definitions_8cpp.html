@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">latest-3-g6a483df</span>
+   &#160;<span id="projectnumber">latest-10-ge5b426e</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -69,13 +69,15 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">mip_definitions.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="mip__definitions_8hpp_source.html">mip_definitions.hpp</a>&quot;</code><br />
-<code>#include &lt;<a class="el" href="definitions_2data__shared_8hpp_source.html">mip/definitions/data_shared.hpp</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="mip__metadata_8hpp_source.html">mip_metadata.hpp</a>&quot;</code><br />
+<code>#include &lt;<a class="el" href="metadata_2definitions_2data__shared_8hpp_source.html">mip/metadata/definitions/data_shared.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="metadata_2definitions_2common_8hpp_source.html">mip/metadata/definitions/common.hpp</a>&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -85,6 +87,18 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacemip_1_1metadata"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip_1_1metadata.html">mip::metadata</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a69b36422290aa340ba899c0df065b73b"><td class="memItemLeft" align="right" valign="top">const DescriptorSetInfo *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip_1_1metadata.html#a69b36422290aa340ba899c0df065b73b">mip::metadata::findDescriptorSet</a> (const DescriptorSetSpan &amp;descriptorSets, uint8_t descriptor)</td></tr>
+<tr class="memdesc:a69b36422290aa340ba899c0df065b73b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches for a descriptor set in a list of descriptor sets.  <a href="namespacemip_1_1metadata.html#a69b36422290aa340ba899c0df065b73b">More...</a><br /></td></tr>
+<tr class="separator:a69b36422290aa340ba899c0df065b73b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e6e007ed0dba946c6c594b0a765aa76"><td class="memItemLeft" align="right" valign="top">const FieldInfo *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip_1_1metadata.html#a4e6e007ed0dba946c6c594b0a765aa76">mip::metadata::findField</a> (const DescriptorSetSpan &amp;descriptorSets, <a class="el" href="structmip_1_1CompositeDescriptor.html">mip::CompositeDescriptor</a> descriptor)</td></tr>
+<tr class="memdesc:a4e6e007ed0dba946c6c594b0a765aa76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches for field metadata info by descriptor ID.  <a href="namespacemip_1_1metadata.html#a4e6e007ed0dba946c6c594b0a765aa76">More...</a><br /></td></tr>
+<tr class="separator:a4e6e007ed0dba946c6c594b0a765aa76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40a95e7ca4eea52fdc023cee3537b687"><td class="memItemLeft" align="right" valign="top">const FieldInfo *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip_1_1metadata.html#a40a95e7ca4eea52fdc023cee3537b687">mip::metadata::findField</a> (const DescriptorSetInfo &amp;ds_info, uint8_t field_desc, bool check_shared_data)</td></tr>
+<tr class="memdesc:a40a95e7ca4eea52fdc023cee3537b687"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches for field metadata info by descriptor ID.  <a href="namespacemip_1_1metadata.html#a40a95e7ca4eea52fdc023cee3537b687">More...</a><br /></td></tr>
+<tr class="separator:a40a95e7ca4eea52fdc023cee3537b687"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
