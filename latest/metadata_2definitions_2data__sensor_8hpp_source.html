@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">latest-10-ge5b426e</span>
+   &#160;<span id="projectnumber">latest</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -887,9 +887,9 @@ $(function() {
 <div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;};</div>
 <div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160; </div>
 <div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;<span class="keyword">static</span> constexpr DescriptorSetInfo DATA_SENSOR = {</div>
-<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;    .<a class="code" href="structmip_1_1metadata_1_1DescriptorSetInfo.html#a6a7f71647f352cf6219ff2894b1c84a8">descriptor</a> = <a class="code" href="group__sensor__data__cpp.html#gga59906ba59974b3547e3a6e27d0d5ed25ae97bd19967b3e301a19d9ce7eb77d919">mip::data_sensor::DESCRIPTOR_SET</a>,</div>
-<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;    .name = <span class="stringliteral">&quot;Sensor Data&quot;</span>,</div>
-<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;    .fields = DATA_SENSOR_FIELDS,</div>
+<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;    <span class="comment">/*.descriptor =*/</span> <a class="code" href="group__sensor__data__cpp.html#gga59906ba59974b3547e3a6e27d0d5ed25ae97bd19967b3e301a19d9ce7eb77d919">mip::data_sensor::DESCRIPTOR_SET</a>,</div>
+<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;    <span class="comment">/*.name       =*/</span> <span class="stringliteral">&quot;Sensor Data&quot;</span>,</div>
+<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;    <span class="comment">/*.fields     =*/</span> DATA_SENSOR_FIELDS,</div>
 <div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;};</div>
 <div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160; </div>
 <div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;} <span class="comment">// namespace mip::metadata</span></div>
@@ -932,7 +932,6 @@ $(function() {
 <div class="ttc" id="astructmip_1_1data__sensor_1_1ScaledMag_html"><div class="ttname"><a href="structmip_1_1data__sensor_1_1ScaledMag.html">mip::data_sensor::ScaledMag</a></div><div class="ttdef"><b>Definition:</b> data_sensor.hpp:306</div></div>
 <div class="ttc" id="astructmip_1_1metadata_1_1MetadataFor_3_01data__sensor_1_1InternalTimestamp_01_4_html_a0abef52d06c8d7c1fdfb694fa42421a2"><div class="ttname"><a href="structmip_1_1metadata_1_1MetadataFor_3_01data__sensor_1_1InternalTimestamp_01_4.html#a0abef52d06c8d7c1fdfb694fa42421a2">mip::metadata::MetadataFor&lt; data_sensor::InternalTimestamp &gt;::value</a></div><div class="ttdeci">static constexpr FieldInfo value</div><div class="ttdef"><b>Definition:</b> data_sensor.hpp:469</div></div>
 <div class="ttc" id="anamespacemip_1_1metadata_html_aff2e019f9db2d9068cce26ec201c3525ae738c26bf4ce1037fa81b039a915cbf6"><div class="ttname"><a href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525ae738c26bf4ce1037fa81b039a915cbf6">mip::metadata::Type::FLOAT</a></div><div class="ttdeci">@ FLOAT</div></div>
-<div class="ttc" id="astructmip_1_1metadata_1_1DescriptorSetInfo_html_a6a7f71647f352cf6219ff2894b1c84a8"><div class="ttname"><a href="structmip_1_1metadata_1_1DescriptorSetInfo.html#a6a7f71647f352cf6219ff2894b1c84a8">mip::metadata::DescriptorSetInfo::descriptor</a></div><div class="ttdeci">uint8_t descriptor</div><div class="ttdef"><b>Definition:</b> mip_structures.hpp:225</div></div>
 <div class="ttc" id="astructmip_1_1data__sensor_1_1UpVector_html"><div class="ttname"><a href="structmip_1_1data__sensor_1_1UpVector.html">mip::data_sensor::UpVector</a></div><div class="ttdef"><b>Definition:</b> data_sensor.hpp:867</div></div>
 <div class="ttc" id="astructmip_1_1metadata_1_1MetadataFor_3_01data__sensor_1_1CompOrientationUpdateMatrix_01_4_html_a6d81de9505a1913d0ae049a98b2803ea"><div class="ttname"><a href="structmip_1_1metadata_1_1MetadataFor_3_01data__sensor_1_1CompOrientationUpdateMatrix_01_4.html#a6d81de9505a1913d0ae049a98b2803ea">mip::metadata::MetadataFor&lt; data_sensor::CompOrientationUpdateMatrix &gt;::value</a></div><div class="ttdeci">static constexpr FieldInfo value</div><div class="ttdef"><b>Definition:</b> data_sensor.hpp:413</div></div>
 <div class="ttc" id="astructmip_1_1metadata_1_1MetadataFor_3_01data__sensor_1_1RawMag_01_4_html_ac08787ec8532da7a0afa773bb58513cf"><div class="ttname"><a href="structmip_1_1metadata_1_1MetadataFor_3_01data__sensor_1_1RawMag_01_4.html#ac08787ec8532da7a0afa773bb58513cf">mip::metadata::MetadataFor&lt; data_sensor::RawMag &gt;::value</a></div><div class="ttdeci">static constexpr FieldInfo value</div><div class="ttdef"><b>Definition:</b> data_sensor.hpp:87</div></div>
