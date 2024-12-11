@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">latest</span>
+   &#160;<span id="projectnumber">latest-2-g5066dc1</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -167,7 +167,7 @@ $(function() {
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            <span class="keywordflow">if</span>(ok)</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                ok &amp;= <a class="code" href="group__MipPacketBuilding__c.html#ga4457b5b8eab775ba6beec5fa1c828476">C::mip_packet_update_last_field_length</a>(&amp;m_packet, basePointer(), (uint8_t) usedLength()) &gt;= 0;</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            <span class="keywordflow">if</span>(!ok)</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            <span class="keywordflow">if</span>(!ok &amp;&amp; basePointer())</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                <a class="code" href="group__MipPacketBuilding__c.html#gaece2d00f4d6cb74109d19c8d0d717561">C::mip_packet_cancel_last_field</a>(&amp;m_packet, basePointer());</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            <span class="keywordflow">return</span> ok;</div>
