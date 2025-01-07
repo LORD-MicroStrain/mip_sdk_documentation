@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">latest-36-g987be15</span>
+   &#160;<span id="projectnumber">latest-31-gc17719e</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -123,8 +123,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:ad020ac1a927578218672c3ee95c492bd"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmicrostrain_1_1Connection.html#ad020ac1a927578218672c3ee95c492bd">TYPE</a> = &quot;None&quot;</td></tr>
-<tr class="separator:ad020ac1a927578218672c3ee95c492bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22d52ea7dcdf77ad34e433d45d25a73e"><td class="memItemLeft" align="right" valign="top">static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmicrostrain_1_1Connection.html#a22d52ea7dcdf77ad34e433d45d25a73e">TYPE</a> = &quot;None&quot;</td></tr>
+<tr class="separator:a22d52ea7dcdf77ad34e433d45d25a73e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -135,7 +135,7 @@ Protected Attributes</h2></td></tr>
 <div class="textblock"><p>Represents a type of connection. </p>
 <p>The following methods are pure virtual and must be implemented by a derived class: </p><ul>
 <li><code>bool <a class="el" href="classmicrostrain_1_1Connection.html#ad56be6630183ec4cc9cf5f59b4d46e53" title="Sends bytes to the device.">sendToDevice(const uint8_t* data, size_t length)</a></code> </li>
-<li><code>bool <a class="el" href="classmicrostrain_1_1Connection.html#a3361f33a8b1d5495b7918f0fc25ac07f" title="Receives bytes from the device.">recvFromDevice(uint8_t* buffer, size_t maxLength, unsigned int wait_time_ms, size_t* lengthOut, EmbeddedTimestamp* timestampOut)</a></code> </li>
+<li><code>bool recvFromDevice(uint8_t* buffer, size_t maxLength, unsigned int wait_time_ms, size_t* lengthOut, EmbeddedTimestamp* timestampOut)</code> </li>
 </ul>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2e5e3811e6449a260e3392ee42e35a1e"></a>
@@ -266,7 +266,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classmicrostrain_1_1connections_1_1RecordingConnection.html#a24a3fbaf0ecf3970298165a99b9b91d5">microstrain::connections::RecordingConnection</a>, <a class="el" href="classmicrostrain_1_1connections_1_1TcpConnection.html#a7ba305d05d602f90fa481338cc80577b">microstrain::connections::TcpConnection</a>, and <a class="el" href="classmicrostrain_1_1connections_1_1SerialConnection.html#a7a690184801030fc3ab86adcc092caf5">microstrain::connections::SerialConnection</a>.</p>
+<p>Implemented in <a class="el" href="classmicrostrain_1_1connections_1_1RecordingConnection.html#a24a3fbaf0ecf3970298165a99b9b91d5">microstrain::connections::RecordingConnection</a>, <a class="el" href="classmicrostrain_1_1connections_1_1SerialConnection.html#a7a690184801030fc3ab86adcc092caf5">microstrain::connections::SerialConnection</a>, and <a class="el" href="classmicrostrain_1_1connections_1_1TcpConnection.html#a7ba305d05d602f90fa481338cc80577b">microstrain::connections::TcpConnection</a>.</p>
 
 </div>
 </div>
@@ -293,7 +293,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classmicrostrain_1_1connections_1_1TcpConnection.html#ad9ba0da18a7fbd44e7b00dd95857bb71">microstrain::connections::TcpConnection</a>, <a class="el" href="classmicrostrain_1_1connections_1_1SerialConnection.html#a68ee8ec0105a98a958779a99b635ac70">microstrain::connections::SerialConnection</a>, and <a class="el" href="classmicrostrain_1_1connections_1_1RecordingConnection.html#adae152b0aca0ae0b946add644bc104ec">microstrain::connections::RecordingConnection</a>.</p>
+<p>Implemented in <a class="el" href="classmicrostrain_1_1connections_1_1TcpConnection.html#ad9ba0da18a7fbd44e7b00dd95857bb71">microstrain::connections::TcpConnection</a>, <a class="el" href="classmicrostrain_1_1connections_1_1RecordingConnection.html#adae152b0aca0ae0b946add644bc104ec">microstrain::connections::RecordingConnection</a>, and <a class="el" href="classmicrostrain_1_1connections_1_1SerialConnection.html#a68ee8ec0105a98a958779a99b635ac70">microstrain::connections::SerialConnection</a>.</p>
 
 </div>
 </div>
@@ -320,7 +320,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classmicrostrain_1_1connections_1_1RecordingConnection.html#a4e743b6c2d96a06136a9aed081d5fd44">microstrain::connections::RecordingConnection</a>, <a class="el" href="classmicrostrain_1_1connections_1_1TcpConnection.html#a9d9f2ab2da7ede70168f13d02faf54ad">microstrain::connections::TcpConnection</a>, and <a class="el" href="classmicrostrain_1_1connections_1_1SerialConnection.html#abe4f010720b70c75940fa5357527a291">microstrain::connections::SerialConnection</a>.</p>
+<p>Implemented in <a class="el" href="classmicrostrain_1_1connections_1_1RecordingConnection.html#a4e743b6c2d96a06136a9aed081d5fd44">microstrain::connections::RecordingConnection</a>, <a class="el" href="classmicrostrain_1_1connections_1_1SerialConnection.html#abe4f010720b70c75940fa5357527a291">microstrain::connections::SerialConnection</a>, and <a class="el" href="classmicrostrain_1_1connections_1_1TcpConnection.html#a9d9f2ab2da7ede70168f13d02faf54ad">microstrain::connections::TcpConnection</a>.</p>
 
 </div>
 </div>
@@ -379,10 +379,10 @@ Protected Attributes</h2></td></tr>
 <p>Receives bytes from the device. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">buffer</td><td>Buffer to store the received data in </td></tr>
-    <tr><td class="paramname">max_length</td><td>Max number of bytes that can be read. Should be at most the length of buffer. </td></tr>
-    <tr><td class="paramname">wait_time_ms</td><td>Time to wait for data in milliseconds. </td></tr>
-    <tr><td class="paramname">length_out</td><td>Number of bytes actually read. </td></tr>
+    <tr><td class="paramname">buffer</td><td>Buffer to store the received data in</td></tr>
+    <tr><td class="paramname">max_length</td><td>Max number of bytes that can be read. Should be at most the length of buffer.</td></tr>
+    <tr><td class="paramname">wait_time_ms</td><td>Time to wait for data in milliseconds.</td></tr>
+    <tr><td class="paramname">length_out</td><td>Number of bytes actually read.</td></tr>
     <tr><td class="paramname">timestamp_out</td><td>Timestamp of when the data was received </td></tr>
   </table>
   </dd>
@@ -429,7 +429,7 @@ Protected Attributes</h2></td></tr>
 <p>Sends bytes to the device. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">data</td><td>The data to send to the device </td></tr>
+    <tr><td class="paramname">data</td><td>The data to send to the device</td></tr>
     <tr><td class="paramname">length</td><td>Length of data in bytes </td></tr>
   </table>
   </dd>
@@ -487,8 +487,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ad020ac1a927578218672c3ee95c492bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad020ac1a927578218672c3ee95c492bd">&#9670;&nbsp;</a></span>TYPE</h2>
+<a id="a22d52ea7dcdf77ad34e433d45d25a73e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22d52ea7dcdf77ad34e433d45d25a73e">&#9670;&nbsp;</a></span>TYPE</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -497,7 +497,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr auto microstrain::Connection::TYPE = &quot;None&quot;</td>
+          <td class="memname">constexpr const char* microstrain::Connection::TYPE = &quot;None&quot;</td>
         </tr>
       </table>
   </td>

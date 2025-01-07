@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">latest-36-g987be15</span>
+   &#160;<span id="projectnumber">latest-31-gc17719e</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -1629,7 +1629,7 @@ template&lt;class T , bool(T::*)(const uint8_t *, size_t) Send, bool(T::*)(Timeo
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">object</td><td>An instance of T. The interface's user pointer will be set to this value. All of the callbacks will be invoked on this instance.</td></tr>
+    <tr><td class="paramname">object</td><td>An instance of T. The interface's user pointer will be set to this value. All the callbacks will be invoked on this instance.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1687,7 +1687,7 @@ template&lt;class Derived , bool(Derived::*)(uint8_t *, size_t, Timeout, size_t 
 <p>Sets the receive callback function (derived member function version). </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">Derived</td><td>Derived class type. Must inherit from <a class="el" href="classmip_1_1Interface.html" title="Represents a connected MIP device.">Interface</a>. </td></tr>
+    <tr><td class="paramname">Derived</td><td>Derived class type. Must inherit from <a class="el" href="classmip_1_1Interface.html" title="Represents a connected MIP device.">Interface</a>.</td></tr>
     <tr><td class="paramname">Recv</td><td>Compile-time pointer to member function of Derived.</td></tr>
   </table>
   </dd>
@@ -1737,7 +1737,7 @@ template&lt;class Derived , bool(Derived::*)(const uint8_t *, size_t) Send&gt; <
 <p>Sets the send callback function (derived member function version). </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">Derived</td><td>Derived class type. Must inherit from <a class="el" href="classmip_1_1Interface.html" title="Represents a connected MIP device.">Interface</a>. </td></tr>
+    <tr><td class="paramname">Derived</td><td>Derived class type. Must inherit from <a class="el" href="classmip_1_1Interface.html" title="Represents a connected MIP device.">Interface</a>.</td></tr>
     <tr><td class="paramname">Send</td><td>Compile-time pointer to member function of Derived.</td></tr>
   </table>
   </dd>
@@ -1797,7 +1797,7 @@ template&lt;class Derived , bool(Derived::*)(Timeout, bool) Update&gt; </div>
 <p>Sets the update callback function (derived member function version). </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">Derived</td><td>Derived class type. Must inherit from <a class="el" href="classmip_1_1Interface.html" title="Represents a connected MIP device.">Interface</a>. </td></tr>
+    <tr><td class="paramname">Derived</td><td>Derived class type. Must inherit from <a class="el" href="classmip_1_1Interface.html" title="Represents a connected MIP device.">Interface</a>.</td></tr>
     <tr><td class="paramname">Update</td><td>Compile-time pointer to member function of Derived.</td></tr>
   </table>
   </dd>
@@ -1849,16 +1849,16 @@ template&lt;class Cmd &gt; </div>
 </div>
 </div>
 </div><!-- contents -->
-<div class="ttc" id="aclassmip_1_1Interface_html_af55aa779ca861bd60e1f379367a92700"><div class="ttname"><a href="classmip_1_1Interface.html#af55aa779ca861bd60e1f379367a92700">mip::Interface::recvFromDevice</a></div><div class="ttdeci">bool recvFromDevice(Timeout wait_time, size_t *length_out, Timestamp *timestamp_out)</div><div class="ttdef"><b>Definition:</b> mip_interface.hpp:152</div></div>
-<div class="ttc" id="agroup__mip__cpp_html_ga22f7b42a0fa9629f1613dd32736d0090"><div class="ttname"><a href="group__mip__cpp.html#ga22f7b42a0fa9629f1613dd32736d0090">mip::Interface::setCallbacks</a></div><div class="ttdeci">void setCallbacks(T *object)</div><div class="ttdoc">Sets the callback functions to a common class object.</div><div class="ttdef"><b>Definition:</b> mip_interface.hpp:382</div></div>
-<div class="ttc" id="agroup__mip__cpp_html_ga22fdf60376fa438a3282cdf32d641f3b"><div class="ttname"><a href="group__mip__cpp.html#ga22fdf60376fa438a3282cdf32d641f3b">mip::DispatchHandler</a></div><div class="ttdeci">C::mip_dispatch_handler DispatchHandler</div><div class="ttdef"><b>Definition:</b> mip_interface.hpp:30</div></div>
+<div class="ttc" id="aclassmip_1_1Interface_html_af55aa779ca861bd60e1f379367a92700"><div class="ttname"><a href="classmip_1_1Interface.html#af55aa779ca861bd60e1f379367a92700">mip::Interface::recvFromDevice</a></div><div class="ttdeci">bool recvFromDevice(Timeout wait_time, size_t *length_out, Timestamp *timestamp_out)</div><div class="ttdef"><b>Definition:</b> mip_interface.hpp:153</div></div>
+<div class="ttc" id="agroup__mip__cpp_html_ga22f7b42a0fa9629f1613dd32736d0090"><div class="ttname"><a href="group__mip__cpp.html#ga22f7b42a0fa9629f1613dd32736d0090">mip::Interface::setCallbacks</a></div><div class="ttdeci">void setCallbacks(T *object)</div><div class="ttdoc">Sets the callback functions to a common class object.</div><div class="ttdef"><b>Definition:</b> mip_interface.hpp:374</div></div>
+<div class="ttc" id="agroup__mip__cpp_html_ga22fdf60376fa438a3282cdf32d641f3b"><div class="ttname"><a href="group__mip__cpp.html#ga22fdf60376fa438a3282cdf32d641f3b">mip::DispatchHandler</a></div><div class="ttdeci">C::mip_dispatch_handler DispatchHandler</div><div class="ttdef"><b>Definition:</b> mip_interface.hpp:27</div></div>
 <div class="ttc" id="anamespacemip_html_ab87086630c94254d17a812e4be159b0a"><div class="ttname"><a href="namespacemip.html#ab87086630c94254d17a812e4be159b0a">mip::Timestamp</a></div><div class="ttdeci">microstrain::EmbeddedTimestamp Timestamp</div><div class="ttdef"><b>Definition:</b> mip_types.h:50</div></div>
 <div class="ttc" id="aclassmip_1_1Parser_html_af65365ec71f09d19945fd5d72e11a15c"><div class="ttname"><a href="classmip_1_1Parser.html#af65365ec71f09d19945fd5d72e11a15c">mip::Parser::Parser</a></div><div class="ttdeci">Parser(C::mip_packet_callback callback, void *callbackObject, Timeout timeout)</div><div class="ttdoc">Initializes the MIP parser.</div><div class="ttdef"><b>Definition:</b> mip_parser.hpp:23</div></div>
 <div class="ttc" id="anamespacemip_html_afce0ba7e576cfb1bffa07cff38fe1847"><div class="ttname"><a href="namespacemip.html#afce0ba7e576cfb1bffa07cff38fe1847">mip::Timeout</a></div><div class="ttdeci">microstrain::EmbeddedTimeout Timeout</div><div class="ttdef"><b>Definition:</b> mip_types.h:51</div></div>
 <div class="ttc" id="aclassmip_1_1Parser_html_a642ce6426bc3d3483f031e5c64c05d91"><div class="ttname"><a href="classmip_1_1Parser.html#a642ce6426bc3d3483f031e5c64c05d91">mip::Parser::timeout</a></div><div class="ttdeci">Timeout timeout() const</div><div class="ttdoc">Returns the packet timeout of the parser.</div><div class="ttdef"><b>Definition:</b> mip_parser.hpp:43</div></div>
-<div class="ttc" id="aclassmip_1_1Interface_html"><div class="ttname"><a href="classmip_1_1Interface.html">mip::Interface</a></div><div class="ttdoc">Represents a connected MIP device.</div><div class="ttdef"><b>Definition:</b> mip_interface.hpp:55</div></div>
-<div class="ttc" id="aclassmip_1_1Interface_html_a518f65a78d08210e40f8cb79080cd324"><div class="ttname"><a href="classmip_1_1Interface.html#a518f65a78d08210e40f8cb79080cd324">mip::Interface::sendToDevice</a></div><div class="ttdeci">bool sendToDevice(const uint8_t *data, size_t length)</div><div class="ttdef"><b>Definition:</b> mip_interface.hpp:150</div></div>
-<div class="ttc" id="aclassmip_1_1Interface_html_a6e776f1584c340be502862641aa91895"><div class="ttname"><a href="classmip_1_1Interface.html#a6e776f1584c340be502862641aa91895">mip::Interface::Interface</a></div><div class="ttdeci">Interface(Timeout parseTimeout, Timeout baseReplyTimeout)</div><div class="ttdoc">Initialize the mip_interface components.</div><div class="ttdef"><b>Definition:</b> mip_interface.hpp:64</div></div>
+<div class="ttc" id="aclassmip_1_1Interface_html"><div class="ttname"><a href="classmip_1_1Interface.html">mip::Interface</a></div><div class="ttdoc">Represents a connected MIP device.</div><div class="ttdef"><b>Definition:</b> mip_interface.hpp:50</div></div>
+<div class="ttc" id="aclassmip_1_1Interface_html_a518f65a78d08210e40f8cb79080cd324"><div class="ttname"><a href="classmip_1_1Interface.html#a518f65a78d08210e40f8cb79080cd324">mip::Interface::sendToDevice</a></div><div class="ttdeci">bool sendToDevice(const uint8_t *data, size_t length)</div><div class="ttdef"><b>Definition:</b> mip_interface.hpp:151</div></div>
+<div class="ttc" id="aclassmip_1_1Interface_html_a6e776f1584c340be502862641aa91895"><div class="ttname"><a href="classmip_1_1Interface.html#a6e776f1584c340be502862641aa91895">mip::Interface::Interface</a></div><div class="ttdeci">Interface(Timeout parseTimeout, Timeout baseReplyTimeout)</div><div class="ttdoc">Initialize the mip_interface components.</div><div class="ttdef"><b>Definition:</b> mip_interface.hpp:62</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">latest-36-g987be15</span>
+   &#160;<span id="projectnumber">latest-31-gc17719e</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -268,10 +268,11 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramname">send</td><td>A callback which is called to send data to the device. </td></tr>
     <tr><td class="paramname">recv</td><td>A callback which is called when data needs to be read from the device. </td></tr>
     <tr><td class="paramname">update</td><td>Optional callback which is called to perform routine tasks such as checking for command timeouts. Defaults to mip_interface_default_update. </td></tr>
-    <tr><td class="paramname">user_pointer</td><td>Optional pointer which is passed to the send, recv, and update callbacks. The interface callbacks must be assigned separately (e.g. with <a class="el" href="group__mip__cpp.html#ga989dc72b48ab8ecce81a951be8f984cb" title="Sets up the mip interface callbacks to point at this object.">Connection::connect_interface()</a>) </td></tr>
+    <tr><td class="paramname">user_pointer</td><td>Optional pointer which is passed to the send, recv, and update callbacks.</td></tr>
   </table>
   </dd>
 </dl>
+<p>The interface callbacks must be assigned separately (e.g. with <a class="el" href="group__mip__cpp.html#ga989dc72b48ab8ecce81a951be8f984cb" title="Sets up the mip interface callbacks to point at this object.">Connection::connect_interface()</a>) </p>
 
 </div>
 </div>
@@ -324,7 +325,7 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramname">send</td><td>A callback which is called to send data to the device. </td></tr>
     <tr><td class="paramname">recv</td><td>A callback which is called when data needs to be read from the device. </td></tr>
     <tr><td class="paramname">update</td><td>Optional callback which is called to perform routine tasks such as checking for command timeouts. Defaults to mip_interface_default_update. </td></tr>
-    <tr><td class="paramname">user_pointer</td><td>Optional pointer which is passed to the send, recv, and update callbacks. </td></tr>
+    <tr><td class="paramname">user_pointer</td><td>Optional pointer which is passed to the send, recv, and update callbacks.</td></tr>
     <tr><td class="paramname">connection</td><td>The connection object used to communicate with the device. This object must exist for the life of the DeviceInterface object </td></tr>
   </table>
   </dd>

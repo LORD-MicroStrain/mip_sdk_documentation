@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">latest-36-g987be15</span>
+   &#160;<span id="projectnumber">latest-31-gc17719e</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -94,12 +94,12 @@ Inheritance diagram for microstrain::connections::SerialConnection:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a457b39ea8ef949e24d26125f1910cc99"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmicrostrain_1_1connections_1_1SerialConnection.html#a457b39ea8ef949e24d26125f1910cc99">SerialConnection</a> (std::string portName, uint32_t baudrate)</td></tr>
+<tr class="memitem:a457b39ea8ef949e24d26125f1910cc99"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmicrostrain_1_1connections_1_1SerialConnection.html#a457b39ea8ef949e24d26125f1910cc99">SerialConnection</a> (std::string portName, uint32_t <a class="el" href="classmicrostrain_1_1connections_1_1SerialConnection.html#a6b76e66e71573504d1b806f05469fa44">baudrate</a>)</td></tr>
 <tr class="memdesc:a457b39ea8ef949e24d26125f1910cc99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a Serial <a class="el" href="classmicrostrain_1_1Connection.html" title="Represents a type of connection.">Connection</a> that will communicate with a device over serial.  <a href="classmicrostrain_1_1connections_1_1SerialConnection.html#a457b39ea8ef949e24d26125f1910cc99">More...</a><br /></td></tr>
 <tr class="separator:a457b39ea8ef949e24d26125f1910cc99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4d386a4421c22463036a804463a4970"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmicrostrain_1_1connections_1_1SerialConnection.html#ac4d386a4421c22463036a804463a4970">~SerialConnection</a> ()</td></tr>
-<tr class="memdesc:ac4d386a4421c22463036a804463a4970"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes the underlying serial port.  <a href="classmicrostrain_1_1connections_1_1SerialConnection.html#ac4d386a4421c22463036a804463a4970">More...</a><br /></td></tr>
-<tr class="separator:ac4d386a4421c22463036a804463a4970"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1336c1729ecbc5c080be5cacf7aa43f7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmicrostrain_1_1connections_1_1SerialConnection.html#a1336c1729ecbc5c080be5cacf7aa43f7">~SerialConnection</a> () override</td></tr>
+<tr class="memdesc:a1336c1729ecbc5c080be5cacf7aa43f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes the underlying serial port.  <a href="classmicrostrain_1_1connections_1_1SerialConnection.html#a1336c1729ecbc5c080be5cacf7aa43f7">More...</a><br /></td></tr>
+<tr class="separator:a1336c1729ecbc5c080be5cacf7aa43f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4548cdc4a259d4326a045429ed50510b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmicrostrain_1_1connections_1_1SerialConnection.html#a4548cdc4a259d4326a045429ed50510b">recvFromDevice</a> (uint8_t *buffer, size_t max_length, unsigned int wait_time_ms, size_t *length_out, <a class="el" href="namespacemicrostrain.html#af73e34a0b5ae1565e0e36a769c381ee1">EmbeddedTimestamp</a> *timestamp_out) final</td></tr>
 <tr class="memdesc:a4548cdc4a259d4326a045429ed50510b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receives bytes from the device.  <a href="classmicrostrain_1_1connections_1_1SerialConnection.html#a4548cdc4a259d4326a045429ed50510b">More...</a><br /></td></tr>
 <tr class="separator:a4548cdc4a259d4326a045429ed50510b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -115,8 +115,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abbc459b1124f4862f12529cf2d6bd8ca"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmicrostrain_1_1connections_1_1SerialConnection.html#abbc459b1124f4862f12529cf2d6bd8ca">disconnect</a> () override</td></tr>
 <tr class="memdesc:abbc459b1124f4862f12529cf2d6bd8ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnect from the port.  <a href="classmicrostrain_1_1connections_1_1SerialConnection.html#abbc459b1124f4862f12529cf2d6bd8ca">More...</a><br /></td></tr>
 <tr class="separator:abbc459b1124f4862f12529cf2d6bd8ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a907a7a21562fd744cc322700a66d7dc5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmicrostrain_1_1connections_1_1SerialConnection.html#a907a7a21562fd744cc322700a66d7dc5">connectionInfo</a> (std::string &amp;name, uint32_t &amp;baudrate) const</td></tr>
+<tr class="memitem:a907a7a21562fd744cc322700a66d7dc5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmicrostrain_1_1connections_1_1SerialConnection.html#a907a7a21562fd744cc322700a66d7dc5">connectionInfo</a> (std::string &amp;name, uint32_t &amp;<a class="el" href="classmicrostrain_1_1connections_1_1SerialConnection.html#a6b76e66e71573504d1b806f05469fa44">baudrate</a>) const</td></tr>
 <tr class="separator:a907a7a21562fd744cc322700a66d7dc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b76e66e71573504d1b806f05469fa44"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmicrostrain_1_1connections_1_1SerialConnection.html#a6b76e66e71573504d1b806f05469fa44">baudrate</a> () const</td></tr>
+<tr class="separator:a6b76e66e71573504d1b806f05469fa44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4ffbc986f27ac6442420345e75488bf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmicrostrain_1_1connections_1_1SerialConnection.html#aa4ffbc986f27ac6442420345e75488bf">setBaudrate</a> (uint32_t baud)</td></tr>
+<tr class="memdesc:aa4ffbc986f27ac6442420345e75488bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the baudrate.  <a href="classmicrostrain_1_1connections_1_1SerialConnection.html#aa4ffbc986f27ac6442420345e75488bf">More...</a><br /></td></tr>
+<tr class="separator:aa4ffbc986f27ac6442420345e75488bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a690184801030fc3ab86adcc092caf5"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmicrostrain_1_1connections_1_1SerialConnection.html#a7a690184801030fc3ab86adcc092caf5">interfaceName</a> () const override</td></tr>
 <tr class="separator:a7a690184801030fc3ab86adcc092caf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe4f010720b70c75940fa5357527a291"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmicrostrain_1_1connections_1_1SerialConnection.html#abe4f010720b70c75940fa5357527a291">parameter</a> () const override</td></tr>
@@ -131,11 +136,11 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:abf72e407139d59baad09a2690fdd2325"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmicrostrain_1_1connections_1_1SerialConnection.html#abf72e407139d59baad09a2690fdd2325">TYPE</a> = &quot;Serial&quot;</td></tr>
-<tr class="separator:abf72e407139d59baad09a2690fdd2325"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9aa2bc0fe3904b26b253a48ac125aede"><td class="memItemLeft" align="right" valign="top">static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmicrostrain_1_1connections_1_1SerialConnection.html#a9aa2bc0fe3904b26b253a48ac125aede">TYPE</a> = &quot;Serial&quot;</td></tr>
+<tr class="separator:a9aa2bc0fe3904b26b253a48ac125aede"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_attribs_classmicrostrain_1_1Connection"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classmicrostrain_1_1Connection')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="classmicrostrain_1_1Connection.html">microstrain::Connection</a></td></tr>
-<tr class="memitem:ad020ac1a927578218672c3ee95c492bd inherit pub_static_attribs_classmicrostrain_1_1Connection"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmicrostrain_1_1Connection.html#ad020ac1a927578218672c3ee95c492bd">TYPE</a> = &quot;None&quot;</td></tr>
-<tr class="separator:ad020ac1a927578218672c3ee95c492bd inherit pub_static_attribs_classmicrostrain_1_1Connection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22d52ea7dcdf77ad34e433d45d25a73e inherit pub_static_attribs_classmicrostrain_1_1Connection"><td class="memItemLeft" align="right" valign="top">static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmicrostrain_1_1Connection.html#a22d52ea7dcdf77ad34e433d45d25a73e">TYPE</a> = &quot;None&quot;</td></tr>
+<tr class="separator:a22d52ea7dcdf77ad34e433d45d25a73e inherit pub_static_attribs_classmicrostrain_1_1Connection"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -175,7 +180,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Creates a Serial <a class="el" href="classmicrostrain_1_1Connection.html" title="Represents a type of connection.">Connection</a> that will communicate with a device over serial. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">portName</td><td>Path to the port to connect to. On Windows, this usually looks like "COM&lt;N&gt;", on linux, "/dev/tty&lt;N&gt;" </td></tr>
+    <tr><td class="paramname">portName</td><td>Path to the port to connect to. On Windows, this usually looks like "COM&lt;N&gt;", on linux, "/dev/tty&lt;N&gt;"</td></tr>
     <tr><td class="paramname">baudrate</td><td>Baud rate to open the device at. Note that the device needs to be configured to </td></tr>
   </table>
   </dd>
@@ -183,11 +188,14 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="ac4d386a4421c22463036a804463a4970"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac4d386a4421c22463036a804463a4970">&#9670;&nbsp;</a></span>~SerialConnection()</h2>
+<a id="a1336c1729ecbc5c080be5cacf7aa43f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1336c1729ecbc5c080be5cacf7aa43f7">&#9670;&nbsp;</a></span>~SerialConnection()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">microstrain::connections::SerialConnection::~SerialConnection </td>
@@ -196,6 +204,11 @@ Additional Inherited Members</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Closes the underlying serial port. </p>
@@ -203,6 +216,31 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6b76e66e71573504d1b806f05469fa44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b76e66e71573504d1b806f05469fa44">&#9670;&nbsp;</a></span>baudrate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t microstrain::connections::SerialConnection::baudrate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="abff1c1716e3dcb5f161cc0ea17196dbc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abff1c1716e3dcb5f161cc0ea17196dbc">&#9670;&nbsp;</a></span>connect()</h2>
 
@@ -435,10 +473,10 @@ Additional Inherited Members</h2></td></tr>
 <p>Receives bytes from the device. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">buffer</td><td>Buffer to store the received data in </td></tr>
-    <tr><td class="paramname">max_length</td><td>Max number of bytes that can be read. Should be at most the length of buffer. </td></tr>
-    <tr><td class="paramname">wait_time_ms</td><td>Time to wait for data in milliseconds. </td></tr>
-    <tr><td class="paramname">length_out</td><td>Number of bytes actually read. </td></tr>
+    <tr><td class="paramname">buffer</td><td>Buffer to store the received data in</td></tr>
+    <tr><td class="paramname">max_length</td><td>Max number of bytes that can be read. Should be at most the length of buffer.</td></tr>
+    <tr><td class="paramname">wait_time_ms</td><td>Time to wait for data in milliseconds.</td></tr>
+    <tr><td class="paramname">length_out</td><td>Number of bytes actually read.</td></tr>
     <tr><td class="paramname">timestamp_out</td><td>Timestamp of when the data was received </td></tr>
   </table>
   </dd>
@@ -485,7 +523,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Sends bytes to the device. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">data</td><td>The data to send to the device </td></tr>
+    <tr><td class="paramname">data</td><td>The data to send to the device</td></tr>
     <tr><td class="paramname">length</td><td>Length of data in bytes </td></tr>
   </table>
   </dd>
@@ -495,9 +533,29 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="aa4ffbc986f27ac6442420345e75488bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4ffbc986f27ac6442420345e75488bf">&#9670;&nbsp;</a></span>setBaudrate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool microstrain::connections::SerialConnection::setBaudrate </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>baud</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Change the baudrate. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="abf72e407139d59baad09a2690fdd2325"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf72e407139d59baad09a2690fdd2325">&#9670;&nbsp;</a></span>TYPE</h2>
+<a id="a9aa2bc0fe3904b26b253a48ac125aede"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9aa2bc0fe3904b26b253a48ac125aede">&#9670;&nbsp;</a></span>TYPE</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -506,7 +564,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr auto microstrain::connections::SerialConnection::TYPE = &quot;Serial&quot;</td>
+          <td class="memname">constexpr const char* microstrain::connections::SerialConnection::TYPE = &quot;Serial&quot;</td>
         </tr>
       </table>
   </td>
