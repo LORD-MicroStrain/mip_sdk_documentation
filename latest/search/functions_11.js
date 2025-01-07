@@ -50,7 +50,7 @@ var searchData=
   ['readimumessageformat_9737',['readImuMessageFormat',['../group__dm__imu__message__format__cpp.html#ga66b740b849383dab055c746050bac1a0',1,'mip::commands_3dm']]],
   ['readinclinationsource_9738',['readInclinationSource',['../group__filter__inclination__source__cpp.html#ga9820b77e18d67d6eb2817eb076c9ce1c',1,'mip::commands_filter']]],
   ['readinitializationconfiguration_9739',['readInitializationConfiguration',['../group__filter__initialization__configuration__cpp.html#gaf89e250f26bc171ee03f5c1bd4f126be',1,'mip::commands_filter']]],
-  ['readinterfacecontrol_9740',['readInterfaceControl',['../group__system__interface__control__cpp.html#ga968b6f5024601833ffe89ab5c490b9a7',1,'mip::commands_system']]],
+  ['readinterfacecontrol_9740',['readInterfaceControl',['../group__system__interface__control__cpp.html#ga3e0c0fd34276611098c597088c293749',1,'mip::commands_system']]],
   ['readkinematicconstraint_9741',['readKinematicConstraint',['../group__filter__kinematic__constraint__cpp.html#ga7e98ea890aa5faa029840f629ca7c932',1,'mip::commands_filter']]],
   ['readlowpassfilter_9742',['readLowpassFilter',['../group__dm__lowpass__filter__cpp.html#ga371c599117d7abec9aa3fb2c871f4486',1,'mip::commands_3dm']]],
   ['readmagdipangleerroradaptivemeasurement_9743',['readMagDipAngleErrorAdaptiveMeasurement',['../group__filter__mag__dip__angle__error__adaptive__measurement__cpp.html#ga1a589b535b2f458c8100d64470bb5070',1,'mip::commands_filter']]],

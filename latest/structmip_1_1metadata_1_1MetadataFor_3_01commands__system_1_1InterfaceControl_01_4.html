@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">latest-2-g2e1e70d</span>
+   &#160;<span id="projectnumber">latest-2-g34f3e39</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -129,7 +129,7 @@ Static Public Attributes</h2></td></tr>
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
 <div class="line">        FUNCTION_SELECTOR_PARAM,</div>
 <div class="line">        {</div>
-<div class="line">             <span class="stringliteral">&quot;interface&quot;</span>,</div>
+<div class="line">             <span class="stringliteral">&quot;port&quot;</span>,</div>
 <div class="line">             <span class="stringliteral">&quot;Which physical interface is being selected (USB, serial, etc)&quot;</span>,</div>
 <div class="line">             {<a class="code" href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525a85a1979d26d0ef93dcc13a72fee80705">Type::ENUM</a>, &amp;<a class="code" href="structmip_1_1metadata_1_1MetadataFor_3_01commands__system_1_1CommsInterface_01_4.html#a05dacc8063c65fd305e36d25ed7e1de7">MetadataFor&lt;commands_system::CommsInterface&gt;::value</a>},</div>
 <div class="line">             <span class="keyword">nullptr</span>, </div>
@@ -138,8 +138,8 @@ Static Public Attributes</h2></td></tr>
 <div class="line">             {},</div>
 <div class="line">        },</div>
 <div class="line">        {</div>
-<div class="line">             <span class="stringliteral">&quot;protocols_in&quot;</span>,</div>
-<div class="line">             <span class="stringliteral">&quot;Input protocol(s) enabled. If the protocol supports ACK/NACK or detailed responses, it will be sent over this port even if no corresponding output protocol is set.&quot;</span>,</div>
+<div class="line">             <span class="stringliteral">&quot;protocols_incoming&quot;</span>,</div>
+<div class="line">             <span class="stringliteral">&quot;Input protocol(s) the port will accept. If the protocol supports ACK/NACK or detailed responses, it will be sent over this port even if no corresponding output protocol is set.&quot;</span>,</div>
 <div class="line">             {<a class="code" href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525a6886e0d29007ca152880b30d73ca2adc">Type::BITS</a>, &amp;<a class="code" href="structmip_1_1metadata_1_1MetadataFor_3_01commands__system_1_1CommsProtocol_01_4.html#a1f562009257316b66c651cf7df976807">MetadataFor&lt;commands_system::CommsProtocol&gt;::value</a>},</div>
 <div class="line">             <span class="keyword">nullptr</span>, </div>
 <div class="line">             {<span class="keyword">true</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>},</div>
@@ -147,8 +147,8 @@ Static Public Attributes</h2></td></tr>
 <div class="line">             {},</div>
 <div class="line">        },</div>
 <div class="line">        {</div>
-<div class="line">             <span class="stringliteral">&quot;protocols_out&quot;</span>,</div>
-<div class="line">             <span class="stringliteral">&quot;Output data protocol(s) enabled.&quot;</span>,</div>
+<div class="line">             <span class="stringliteral">&quot;protocols_outgoing&quot;</span>,</div>
+<div class="line">             <span class="stringliteral">&quot;Data protocol(s) the port will output&quot;</span>,</div>
 <div class="line">             {<a class="code" href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525a6886e0d29007ca152880b30d73ca2adc">Type::BITS</a>, &amp;<a class="code" href="structmip_1_1metadata_1_1MetadataFor_3_01commands__system_1_1CommsProtocol_01_4.html#a1f562009257316b66c651cf7df976807">MetadataFor&lt;commands_system::CommsProtocol&gt;::value</a>},</div>
 <div class="line">             <span class="keyword">nullptr</span>, </div>
 <div class="line">             {<span class="keyword">true</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>},</div>
@@ -181,7 +181,7 @@ Static Public Attributes</h2></td></tr>
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
 <div class="line">         <span class="stringliteral">&quot;commands_system::InterfaceControl&quot;</span>,</div>
 <div class="line">         <span class="stringliteral">&quot;Interface Control&quot;</span>,</div>
-<div class="line">         <span class="stringliteral">&quot;Reassign port functions.\n\nResponds over the port that sent the command with an ACK/NACK immediately after the operation is complete. It is the user&#39;s responsibility to not\nsend any critical information or commands while awaiting a response! Doing so while this command processes may cause those packets to be dropped.\n\nConstraints:\n- Limited parsers and data streams are available. Refer to your device manual for more information.\n- The Main port always has a MIP parser and MIP data stream bound. Additionally, Main is the only port that can process interface control commands.\n\nIf response is NACK, no change was made. Here&#39;s what can cause a NACK:\n- The requested protocol isn&#39;t supported on this device, or on this port, or this device doesn&#39;t support that many parsers.\n- The request would break the general constraints listed above, or a device-specific constraint.\n\n&quot;</span>,</div>
+<div class="line">         <span class="stringliteral">&quot;Reassign data protocols, both incoming and outgoing.\n\nResponds over the port that sent the command with an ACK/NACK immediately after the operation is complete. It is the user&#39;s responsibility to not\nsend any critical information or commands while awaiting a response! Doing so while this command processes may cause those packets to be dropped.\n\nConstraints:\n- Limited parsers and data streams are available. Refer to your device manual for more information.\n- The Main port always has a MIP parser and MIP data stream bound. Additionally, Main is the only port that can process interface control commands.\n\nIf response is NACK, no change was made. Here&#39;s what can cause a NACK:\n- The requested protocol isn&#39;t supported on this device, or on this port, or this device doesn&#39;t support that many parsers.\n- The request would break the general constraints listed above, or a device-specific constraint.\n\n&quot;</span>,</div>
 <div class="line">         <a class="code" href="structmip_1_1metadata_1_1MetadataFor_3_01commands__system_1_1InterfaceControl_01_4.html#a2ba7cd580d2b79261f9efba8bd1ef255">parameters</a>,</div>
 <div class="line">         type::DESCRIPTOR,</div>
 <div class="line">         {<span class="keyword">true</span>, <span class="keyword">true</span>, <span class="keyword">true</span>, <span class="keyword">true</span>, <span class="keyword">true</span>},</div>
