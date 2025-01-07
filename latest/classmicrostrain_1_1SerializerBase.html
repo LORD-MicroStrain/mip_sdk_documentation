@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">latest-1-g0529ee0</span>
+   &#160;<span id="projectnumber">latest-36-g987be15</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -101,14 +101,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af994185f67ef9566190af9309f1b024e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30f59a373f4bc9e7e1407480af6c0c74"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmicrostrain_1_1SerializerBase.html#a30f59a373f4bc9e7e1407480af6c0c74">SerializerBase</a> (<a class="el" href="structmicrostrain_1_1Span.html">microstrain::Span</a>&lt; const uint8_t &gt; buffer, size_t offset=0)</td></tr>
 <tr class="separator:a30f59a373f4bc9e7e1407480af6c0c74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5b8ab47ec7527790237f6bafb083174"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmicrostrain_1_1SerializerBase.html#ad5b8ab47ec7527790237f6bafb083174">pointer</a> (size_t required_size)</td></tr>
-<tr class="memdesc:ad5b8ab47ec7527790237f6bafb083174"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtains a pointer to the current offset for reading/writing a value of the specified size. This function does NOT advance the offset value. Generally, you should use <a class="el" href="classmicrostrain_1_1SerializerBase.html#a6d610119298e6725759e893bef17cf21" title="Obtains a pointer to the current offset for reading/writing a value of specified size,...">getPtrAndAdvance()</a> instead.  <a href="classmicrostrain_1_1SerializerBase.html#ad5b8ab47ec7527790237f6bafb083174">More...</a><br /></td></tr>
-<tr class="separator:ad5b8ab47ec7527790237f6bafb083174"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec5acd82a1dc7ff852d23431a7f3d92a"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmicrostrain_1_1SerializerBase.html#aec5acd82a1dc7ff852d23431a7f3d92a">getPointer</a> (size_t required_size)</td></tr>
+<tr class="memdesc:aec5acd82a1dc7ff852d23431a7f3d92a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtains a pointer to the current offset for reading/writing a value of the specified size. This function does NOT advance the offset value. Generally, you should use <a class="el" href="classmicrostrain_1_1SerializerBase.html#a6d610119298e6725759e893bef17cf21" title="Obtains a pointer to the current offset for reading/writing a value of specified size,...">getPtrAndAdvance()</a> instead.  <a href="classmicrostrain_1_1SerializerBase.html#aec5acd82a1dc7ff852d23431a7f3d92a">More...</a><br /></td></tr>
+<tr class="separator:aec5acd82a1dc7ff852d23431a7f3d92a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d610119298e6725759e893bef17cf21"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmicrostrain_1_1SerializerBase.html#a6d610119298e6725759e893bef17cf21">getPtrAndAdvance</a> (size_t size)</td></tr>
-<tr class="memdesc:a6d610119298e6725759e893bef17cf21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtains a pointer to the current offset for reading/writing a value of specified size, and post-increments the offset by that size. Use this function just like <a class="el" href="classmicrostrain_1_1SerializerBase.html#ad5b8ab47ec7527790237f6bafb083174" title="Obtains a pointer to the current offset for reading/writing a value of the specified size....">pointer()</a>.  <a href="classmicrostrain_1_1SerializerBase.html#a6d610119298e6725759e893bef17cf21">More...</a><br /></td></tr>
+<tr class="memdesc:a6d610119298e6725759e893bef17cf21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtains a pointer to the current offset for reading/writing a value of specified size, and post-increments the offset by that size. Use this function just like pointer().  <a href="classmicrostrain_1_1SerializerBase.html#a6d610119298e6725759e893bef17cf21">More...</a><br /></td></tr>
 <tr class="separator:a6d610119298e6725759e893bef17cf21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34da15ab5ca118ae927fb382506de033"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmicrostrain_1_1SerializerBase.html#a34da15ab5ca118ae927fb382506de033">invalidate</a> ()</td></tr>
-<tr class="memdesc:a34da15ab5ca118ae927fb382506de033"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marks the buffer as invalid, i.e. overrun/error state. All further accesses via <a class="el" href="classmicrostrain_1_1SerializerBase.html#ad5b8ab47ec7527790237f6bafb083174" title="Obtains a pointer to the current offset for reading/writing a value of the specified size....">pointer()</a>, <a class="el" href="classmicrostrain_1_1SerializerBase.html#a6d610119298e6725759e893bef17cf21" title="Obtains a pointer to the current offset for reading/writing a value of specified size,...">getPtrAndAdvance()</a>, etc. will fail. (basePointer() and capacity() remain valid)  <a href="classmicrostrain_1_1SerializerBase.html#a34da15ab5ca118ae927fb382506de033">More...</a><br /></td></tr>
+<tr class="memdesc:a34da15ab5ca118ae927fb382506de033"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marks the buffer as invalid, i.e. overrun/error state. All further accesses via pointer(), <a class="el" href="classmicrostrain_1_1SerializerBase.html#a6d610119298e6725759e893bef17cf21" title="Obtains a pointer to the current offset for reading/writing a value of specified size,...">getPtrAndAdvance()</a>, etc. will fail. (basePointer() and capacity() remain valid)  <a href="classmicrostrain_1_1SerializerBase.html#a34da15ab5ca118ae927fb382506de033">More...</a><br /></td></tr>
 <tr class="separator:a34da15ab5ca118ae927fb382506de033"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4aa969e53347706ad7a881c4ed5d8e80"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmicrostrain_1_1SerializerBase.html#a4aa969e53347706ad7a881c4ed5d8e80">setOffset</a> (size_t offset)</td></tr>
 <tr class="memdesc:a4aa969e53347706ad7a881c4ed5d8e80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a new offset and returns the old value. This can be used to save/restore the current offset. Calling <a class="el" href="classmicrostrain_1_1SerializerBase.html#a4aa969e53347706ad7a881c4ed5d8e80" title="Sets a new offset and returns the old value. This can be used to save/restore the current offset....">setOffset()</a> after an overrun with an in-range (i.e. non-overrun) value restores the non-overrun status.  <a href="classmicrostrain_1_1SerializerBase.html#a4aa969e53347706ad7a881c4ed5d8e80">More...</a><br /></td></tr>
@@ -121,7 +121,7 @@ Public Member Functions</h2></td></tr>
 <li>A capacity indicating the total size of the buffer. </li>
 <li>An offset, representing the number of bytes read or written.</li>
 </ul>
-<p>This class works for either reading or writing data. As data is written/ read, the offset is incremented. Through functions such as <a class="el" href="classmicrostrain_1_1SerializerBase.html#ad5b8ab47ec7527790237f6bafb083174" title="Obtains a pointer to the current offset for reading/writing a value of the specified size....">pointer()</a> and <a class="el" href="classmicrostrain_1_1SerializerBase.html#a6d610119298e6725759e893bef17cf21" title="Obtains a pointer to the current offset for reading/writing a value of specified size,...">getPtrAndAdvance()</a>, the next readable/writable location can be accessed. Both of these take a 'required_size' parameter indicating the amount of data intending to be read/written. If sufficient data/space remains, a valid pointer is returned. Otherwise, NULL is returned. The offset is incremented in <a class="el" href="classmicrostrain_1_1SerializerBase.html#a6d610119298e6725759e893bef17cf21" title="Obtains a pointer to the current offset for reading/writing a value of specified size,...">getPtrAndAdvance()</a> regardless. This means the offset can exceed the size/capacity of the buffer. This is an "overrun" condition, and it can be checked with the isOk(), isFinished(), or hasRemaining() functions. This behavior prevents bugs where an object is partially read/written in the case where a larger parameter (say u32) fails but then a smaller one (say u8) succeeds. With this class an overflowing access will cause every following access to fail. Note that "overrun" here does NOT mean that an out-of-bounds access has occurred.</p>
+<p>This class works for either reading or writing data. As data is written/ read, the offset is incremented. Through functions such as pointer() and <a class="el" href="classmicrostrain_1_1SerializerBase.html#a6d610119298e6725759e893bef17cf21" title="Obtains a pointer to the current offset for reading/writing a value of specified size,...">getPtrAndAdvance()</a>, the next readable/writable location can be accessed. Both of these take a 'required_size' parameter indicating the amount of data intending to be read/written. If sufficient data/space remains, a valid pointer is returned. Otherwise, NULL is returned. The offset is incremented in <a class="el" href="classmicrostrain_1_1SerializerBase.html#a6d610119298e6725759e893bef17cf21" title="Obtains a pointer to the current offset for reading/writing a value of specified size,...">getPtrAndAdvance()</a> regardless. This means the offset can exceed the size/capacity of the buffer. This is an "overrun" condition, and it can be checked with the isOk(), isFinished(), or hasRemaining() functions. This behavior prevents bugs where an object is partially read/written in the case where a larger parameter (say u32) fails but then a smaller one (say u8) succeeds. With this class an overflowing access will cause every following access to fail. Note that "overrun" here does NOT mean that an out-of-bounds access has occurred.</p>
 <dl class="section note"><dt>Note</dt><dd>This class can be constructed with a const buffer, however constness is not enforced. It is up to the user to ensure const buffers are not written. </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab259b1fe7bffe91b35e757171640e129"></a>
@@ -270,6 +270,41 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aec5acd82a1dc7ff852d23431a7f3d92a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec5acd82a1dc7ff852d23431a7f3d92a">&#9670;&nbsp;</a></span>getPointer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t* microstrain::SerializerBase::getPointer </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>required_size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obtains a pointer to the current offset for reading/writing a value of the specified size. This function does NOT advance the offset value. Generally, you should use <a class="el" href="classmicrostrain_1_1SerializerBase.html#a6d610119298e6725759e893bef17cf21" title="Obtains a pointer to the current offset for reading/writing a value of specified size,...">getPtrAndAdvance()</a> instead. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">required_size</td><td>How many bytes will be read/written to the pointer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A valid pointer if required_size bytes are available. NULL otherwise. </dd></dl>
+
+</div>
+</div>
 <a id="a6d610119298e6725759e893bef17cf21"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6d610119298e6725759e893bef17cf21">&#9670;&nbsp;</a></span>getPtrAndAdvance()</h2>
 
@@ -294,7 +329,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Obtains a pointer to the current offset for reading/writing a value of specified size, and post-increments the offset by that size. Use this function just like <a class="el" href="classmicrostrain_1_1SerializerBase.html#ad5b8ab47ec7527790237f6bafb083174" title="Obtains a pointer to the current offset for reading/writing a value of the specified size....">pointer()</a>. </p>
+<p>Obtains a pointer to the current offset for reading/writing a value of specified size, and post-increments the offset by that size. Use this function just like pointer(). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">size</td><td>How many bytes will be read/written to the pointer. The offset is increased by this amount. </td></tr>
@@ -331,42 +366,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Marks the buffer as invalid, i.e. overrun/error state. All further accesses via <a class="el" href="classmicrostrain_1_1SerializerBase.html#ad5b8ab47ec7527790237f6bafb083174" title="Obtains a pointer to the current offset for reading/writing a value of the specified size....">pointer()</a>, <a class="el" href="classmicrostrain_1_1SerializerBase.html#a6d610119298e6725759e893bef17cf21" title="Obtains a pointer to the current offset for reading/writing a value of specified size,...">getPtrAndAdvance()</a>, etc. will fail. (basePointer() and capacity() remain valid) </p>
-
-</div>
-</div>
-<a id="ad5b8ab47ec7527790237f6bafb083174"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5b8ab47ec7527790237f6bafb083174">&#9670;&nbsp;</a></span>pointer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t* microstrain::SerializerBase::pointer </td>
-          <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>required_size</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Obtains a pointer to the current offset for reading/writing a value of the specified size. This function does NOT advance the offset value. Generally, you should use <a class="el" href="classmicrostrain_1_1SerializerBase.html#a6d610119298e6725759e893bef17cf21" title="Obtains a pointer to the current offset for reading/writing a value of specified size,...">getPtrAndAdvance()</a> instead. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">required_size</td><td>How many bytes will be read/written to the pointer. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A valid pointer if required_size bytes are available. NULL otherwise. </dd></dl>
+<p>Marks the buffer as invalid, i.e. overrun/error state. All further accesses via pointer(), <a class="el" href="classmicrostrain_1_1SerializerBase.html#a6d610119298e6725759e893bef17cf21" title="Obtains a pointer to the current offset for reading/writing a value of specified size,...">getPtrAndAdvance()</a>, etc. will fail. (basePointer() and capacity() remain valid) </p>
 
 </div>
 </div>

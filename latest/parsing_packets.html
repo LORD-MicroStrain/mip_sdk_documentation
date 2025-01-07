@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">latest-1-g0529ee0</span>
+   &#160;<span id="projectnumber">latest-36-g987be15</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -68,40 +68,63 @@ $(function() {
 <div class="title">Mip Parser </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>The MIP Parser takes in bytes from the device connection or recorded binary file and extracts the packet data. Data is input to the ring buffer and packets are parsed out one at a time and sent to a callback function.</p>
-<p>The parser uses a ring buffer to store data temporarily between reception and parsing. This helps even out processor workload on embedded systems when data arrives in large bursts.</p>
+<div class="textblock"><p>The MIP Parser takes in bytes from the device connection or recorded binary file and extracts valid packets. Data is input to the parser and packets are parsed out one at a time and sent to a callback function.</p>
 <div class="image">
 <object type="image/svg+xml" data="mip_parser.svg" style="pointer-events: none;"></object>
 </div>
    <h1><a class="anchor" id="parsing_data"></a>
 Parsing Data</h1>
-<p>Data is supplied by calling <a class="el" href="group__mip__parser__c.html#gaef053e67bd8b8e8398b863818a3fc270" title="Parses packets from the input data buffer.">mip_parser_parse()</a> / <a class="el" href="classmip_1_1Parser.html#abc0c31c7601f5171752c1e784fd84ac5" title="Parses packets from the input data buffer.">mip::Parser::parse()</a> with a buffer and length. Along with the data, the user must provide a timestamp. The timestamp serves two purposes: to provide a time of reception indicator and to allow the parser to time out waiting for more data.</p>
-<p>The parse function takes an additional parameter, <code>max_packets</code>, which limits the number of packets parsed. This can be used to prevent a large quantity of packets from consuming too much CPU time and denying service to other subsystems. If the limit is reached, parsing stops and the unparsed portion of the data remains in the ring buffer. The constant value MIPPARSER_UNLIMITED_PACKETS disables this limit.</p>
-<p>To continue parsing, call the parse function again. You may choose to not supply any new data by passing NULL and a length of 0. The timestamp should be unchanged from the previous call for highest accuracy, but it's permissible to use the current time as well. If new data is supplied, the new data is appended to the ring buffer and parsing resumes. The timestamp should be the time of the new data. Previously received but unparsed packets will be assigned the new timestamp.</p>
-<p>The application must parse enough packets to keep up with the incoming data stream. Failure to do so will result in the ring buffer becoming full. If this happens, the parse function will return a negative number, indicating the number of bytes that couldn't be copied. This will never happen if max_packets is <code>MIPPARSER_UNLIMITED_PACKETS</code> because all of the data will be processed as soon as it is received.</p>
-<h1><a class="anchor" id="ring_buffer"></a>
-The Ring Buffer</h1>
-<p>The ring buffer's backing buffer is a byte array that is allocated by the application during initialization. It must be large enough to store the biggest burst of data seen at any one time. For example, applications expecting to deal with lots of GNSS-related data will need a bigger buffer because there may be a large number of satellite messages. These messages are sent relatively infrequently but contain a lot of data. If max_packets is <code>MIPPARSER_UNLIMITED_PACKETS</code>, then it needs only 512 bytes (enough for one packet, rounded up to a power of 2).</p>
-<p>In addition to passing data to the parse function, data can be written directly to the ring buffer by obtaining a writable pointer and length from <a class="el" href="group__mip__parser__c.html#ga5ea8146c52227b0f5b5edd091ba4fa38" title="Obtain a pointer into which data may be read for processing.">mip_parser_get_write_ptr()</a>. This may be more efficient by skipping a copy operation. Call <a class="el" href="group__mip__parser__c.html#ga2d3b5a3755b3d2b379f5471fab7e3657" title="Notify the parser that data has been written to the pointer previously obtained via mip_parser_get_wr...">mip_parser_process_written()</a> to tell the parser how many bytes were written to the pointer. Note that the length returned by <code>mip_parser_get_write_ptr</code> can frequently be less than the total available space. An application should call it in a loop as long as there is more data to process and the returned size is greater than 0.</p>
+<p>Data is supplied by calling <a class="el" href="group__mip__parser__c.html#gafbd8fbf443d45e9972e107b999ee36b9" title="Parse packets from a buffer.">mip_parser_parse()</a> / <a class="el" href="classmip_1_1Parser.html#acfe3c11b152160894998ccc3062f5ba0" title="Parse packets from a buffer.">mip::Parser::parse()</a> with a buffer and length. Along with the data, the user must provide a timestamp. The timestamp serves two purposes: to provide a time of reception indicator and to allow the parser to time out waiting for more data.</p>
+<p>The parser will scan the supplied buffer for packets, calling the packet callback for each valid packet. This continues until the entire buffer has been processed. Upon return, the entire buffer has been consumed.</p>
+<p>If a valid packet gets cut off at the end of the buffer (e.g. because it hasn't been received yet), the parser will store the partial packet internally until more data is received. If sufficient data is not received within the set timeout, the first byte of the potential packet is discarded and parsing continues.</p>
+<p>The parse function should be called regularly, even if no new data has been received (pass 0 for the input length). Otherwise, packets will not be able to time out until new data arrives. When parsing a file, it is recommended to call <a class="el" href="group__mip__parser__c.html#ga4169ceaa508424ea086aa3af5d82d998" title="Processes all previously buffered data.">mip_parser_flush()</a> when the end of file is reached to forcibly time out any bad packets near the end.</p>
+<p>Mip packets may be interspersed with other protocols. As long as the mip packets are not fragmented this parser will reject other data and still process the valid packets. Note that checksums are not foolproof however, and it is theoretically possible that random data may appear to be a valid mip packet. For this to occur it would have to contain the sync bytes 0x75, 0x65, and a valid checksum which could occur with a 1/65536 chance. The probability of this happening is extremely low in most cases. (For a run of 6 bytes, the minimum packet size with no payload, the probability is 1/4,294,967,296 since there are 4 bytes which would have to match exactly.) Further still, for an application to process such a packet it would also have to have a recognized descriptor set, appropriate field lengths, and recognized field descriptors.</p>
+<h3><a class="anchor" id="autotoc_md26"></a>
+Direct parsing</h3>
+<p>Data may be read directly into the parser's internal buffer. This may be useful for memory-constrained systems where buffer space is limited. E.g. a UART "byte received" IRQ routine could write directly to the parser buffer one byte at a time.</p>
+<p>To do this, call <a class="el" href="group__mip__parser__c.html#ga665713329a7fa901e01f77d97dcc13fd" title="Gets a pointer into which a small amount of data may be written for parsing.">mip_parser_get_write_ptr()</a> to obtain a writable pointer and amount of available space. Then call <a class="el" href="group__mip__parser__c.html#gafbd8fbf443d45e9972e107b999ee36b9" title="Parse packets from a buffer.">mip_parser_parse()</a> with a NULL input buffer and input length equal to the number of bytes written. At least one byte of free space will always be available, assuming the parse function has been called between writes.</p>
+<p>Avoid using this feature when your data is already in a contiguous buffer since just passing it to the parse function will be significantly faster. Also avoid mixing this method with parsing data from a buffer like normal.</p>
 <h1><a class="anchor" id="packet_timeouts"></a>
 Packet Timeouts</h1>
-<p>In some cases it's possible for a packet to be corrupted during transmission or reception (e.g. EMI while in transit on the wire, serial baud rate too low, etc). If the payload length byte is corrupted, it may falsely indicate that the packet is longer than what was sent. Without a timeout, the parser would wait until this extra data (potentially up to 255 bytes) was received before checking and realizing that the checksum failed. Any following packets would be delayed, possibly causing additional commands to time out and make the device appear temporarily unresponsive. Setting a reasonable timeout ensures that the bad packet is rejected more quickly. The timeout should be set so that a MIP packet of the largest possible size (261 bytes) can be transferred well within the transmission time plus any additional processing delays in the application or operating system. As an example, for a 115200 baud serial link a timeout of 30 ms would be about right. You can use the <a class="el" href="group__mip__parser__c.html#ga519bccb69b9fff2cb3bc8bed2cbcc1f3" title="Computes an appropriate packet timeout for a given serial baud rate.">mip_timeout_from_baudrate()</a> function to compute an appropriate timeout.</p>
+<p>In some cases it's possible for a packet to be corrupted during transmission or reception (e.g. EMI while in transit on the wire, serial baud rate too low, etc). If the payload length byte is corrupted, it may falsely indicate that the packet is longer than what was sent. Without a timeout, the parser would wait until this extra data (potentially up to 255 bytes) was received before checking and realizing that the checksum failed. Any following packets would be delayed, possibly causing additional commands to time out and make the device appear temporarily unresponsive. Setting a reasonable timeout ensures that the bad packet is rejected more quickly.</p>
+<div class="image">
+<object type="image/svg+xml" data="mip_packet_timeout.svg" style="pointer-events: none;"></object>
+</div>
+   <p>The figure above shows a bad packet (or random data that looks like a packet) with a length field that exceeds the number of received bytes. Within that range, there is a valid packet that has been fully received. The timeout allows the parser to process the inner packet without waiting for more data to arrive.</p>
+<p>The timeout should be set so that a MIP packet of the largest possible size (261 bytes) can be transferred well within the transmission time plus any additional processing delays in the application or operating system. As an example, for a 115200 baud serial link a timeout of 30 ms would be about right. You can use the <a class="el" href="group__mip__parser__c.html#ga519bccb69b9fff2cb3bc8bed2cbcc1f3" title="Computes an appropriate packet timeout for a given serial baud rate.">mip_timeout_from_baudrate()</a> function to compute an appropriate timeout.</p>
 <p>See <a class="el" href="namespacemicrostrain_1_1C.html#a414dbc5e176e1ea7fd890d8a4353dd6b">microstrain::C::microstrain_embedded_timestamp</a>microstrain_embedded_timestamp (C)"" or <a class="el" href="namespacemicrostrain.html#af73e34a0b5ae1565e0e36a769c381ee1">microstrain::EmbeddedTimestamp</a> (C++)</p>
 <h1><a class="anchor" id="parsing_process"></a>
 The Packet Parsing Process</h1>
-<p>Packets are parsed from the internal ring buffer one at a time in the parse function.</p>
-<p>If a packet was previously started but not completed previously (due to requiring more data) then the timeout is checked. If too much time has passed, the packet is discarded and the parsing state reset. This check is only performed once per parse call because that is the only point where the timestamp changes.</p>
+<p>The parser contains the following state:</p><ul>
+<li>A timeout, used to determine how long it could take to receive one packet</li>
+<li>The reception timestamp of the start of the most recent packet</li>
+<li>An internal buffer big enough to hold a complete packet</li>
+<li>A counter indicating the number of valid bytes stored in the internal buffer</li>
+<li>Some diagnostics, if enabled by MIP_ENABLE_DIAGNOSTICS.</li>
+</ul>
+<p>The parsing algorithm is centered on a quantity called <code>expected_packet_length</code>, which indicates the number of bytes needed for the packet currently being parsed. It also acts as the parser's state machine. The possible states are as follows. If sufficient data is available, the state is advanced as described here:</p><ul>
+<li>1 - No packet found yet; search for the start of the next packet (SOP). New expected_packet_length is 2.</li>
+<li>2 - SYNC1 (SOP) byte found; check if the next byte SYNC2. New expected_packet_length is 4.</li>
+<li>4 - SYNC1 and SYNC2 received. Read the payload length from the buffer. Update expected_packet_length to the full packet length.</li>
+<li>N&gt;=6 - The full length of the packet is known; Verify the checksum and call the packet callback if valid. Then erase the packet data and restart parsing.</li>
+</ul>
+<p>If insufficient data is available, parsing cannot continue. In this case, the parser function must return to allow the application to fetch more data. However, a timeout check is made first in case the current "packet" is bogus. Before returning, all remaining data is copied from the input buffer to the parser's internal buffer.</p>
+<p>After a packet is processed (valid or otherwise), any remaining bytes in the internal buffer get moved to the start of the buffer. Parsing continues until insufficient data is available. Before returning, all remaining input data is copied from the input buffer to the parser's internal buffer.</p>
+<p>"Available data" means the total number of bytes in either the internal parser buffer or the input buffer. For efficiency reasons, data is only moved to the internal buffer when:</p><ul>
+<li>A complete packet is received (before validating the checksum), or</li>
+<li>The parse function returns (which can only be due to lack of available data).</li>
+</ul>
 <div class="image">
-<object type="image/svg+xml" data="parse_function.svg" style="pointer-events: none;"></object>
+<object type="image/svg+xml" data="mip_parser_parse.svg" style="pointer-events: none;"></object>
 </div>
-   <p>The current status is held by the <code>expected_length</code> variable, which tracks how many bytes are expected to be in the current packet. The parse function enters a loop, checking if there is enough data to complete the next parsing step.</p>
-<div class="image">
-<object type="image/svg+xml" data="parse_one_packet.svg" style="pointer-events: none;"></object>
-</div>
-   <p><code>expected_length</code> starts out as 1 when the parser is searching for the start of a packet. Once a potential start byte (<code>SYNC1</code>) is found, the packet's start time is initialized to the current timestamp and <code>expected_length</code> is bumped up to the size of a mip packet header (4 bytes).</p>
-<p>When the expected length is 4 bytes, the header's SYNC2 byte is checked for validity and the payload length field is read. <code>expected_length</code> is set to the full packet size (computed as the packet header and checksum size plus the payload size).</p>
-<p>Finally, when <code>expected_length</code> is neither of the above two conditions, it means that the entire packet has been received. Note that other values less than 6 (the size of an empty packet) are not possible. At this point, the data is copied out from the ring buffer to a linear buffer for processing. The checksum is verified, and if it passes, the entire packet is dropped from the ring buffer and the callback function is invoked.</p>
-<p>If any of the checks in the above steps fails, such as a wrong SYNC2 byte, a single byte is dropped from the ring buffer and the loop is continued. Only a single byte can be dropped, because rogue SYNC1 bytes or truncated packets may hide real mip packets in what would have been their payload. </p>
+   <p>To improve parsing efficiency, the parser leverages string functions from the C standard library, namely memcpy() and memchr(). These functions are likely to be heavily optimized for each platform. For example, memchr is used inside mip_find_sop(), which searches for the start of a packet. This is faster than iterating the parser loop and dropping one byte at a time until a sync byte is found.</p>
+<p>Original versions of this parser used a ring buffer, which is common on embedded systems for things like UART drivers. The ring buffer was dropped in favor of using memmove() to shift unparsed data in-place. This reduces the number of times each byte must be copied and also speeds up access.</p>
+<p>The packet view passed to the callback always references the internal parser buffer. It's safe to store a reference to this packet until further calls to parse or any other function which may alter the parser's state.</p>
+<h1><a class="anchor" id="autotoc_md27"></a>
+Performance</h1>
+<p>The parser is most efficient when called with large chunks of data. This is because each call to the parser (or any function) has overhead. When reading from a high-speed source such as a file, we recommend parsing chunks of data of at least 512 bytes, ideally 1024 bytes or more. Little improvement is attained beyond 8192 bytes. Performance drops off below 128-byte chunks.</p>
+<p>This data seems to hold for both high-power desktop systems (e.g. Intel i7-1370 and i7-12700K) and embedded systems such as the STM32F767 at 200 MHz. You can benchmark your system by running the TestMipPerf test program.</p>
+<p>For low-speed streams performance isn't critical. In any case, the buffer should be big enough to hold all data received in between parse calls, up to a reasonable maximum size for your application. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 <!-- start footer part -->

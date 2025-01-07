@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">latest-1-g0529ee0</span>
+   &#160;<span id="projectnumber">latest-36-g987be15</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -81,7 +81,7 @@ Serialization in C</h1>
 <h1><a class="anchor" id="serialization_cpp"></a>
 Serialization in C++</h1>
 <p>The MIP SDK includes a complete serialization system in C++. It supports both big- and little-endian buffers and user- defined types.</p>
-<h2><a class="anchor" id="autotoc_md28"></a>
+<h2><a class="anchor" id="autotoc_md30"></a>
 Basic usage</h2>
 <p>To (de)serialize a buffer, follow these steps:</p><ol type="1">
 <li>Create a <a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">microstrain::Serializer</a>, passing in a pointer to your buffer and the size. A starting offset may also be specified for convenience.</li>
@@ -159,7 +159,7 @@ Basic usage</h2>
 <div class="line">    </div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md29"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md31"></a>
 Supported Types</h2>
 <p>The serialization library has support for the following basic types:</p><ul>
 <li>Booleans (as a u8; false-&gt;[0x00], true-&gt;[0x01]; 0x00 reads as false, anything else as true)</li>
@@ -192,7 +192,7 @@ Supported Types</h2>
 <div class="line"><a class="code" href="namespacemicrostrain.html#a5a978dcbb35f175e3079aaaa6eadc450">microstrain::insert</a>(les, vector4, vector3);</div>
 </div><!-- fragment --></li>
 </ul>
-<h2><a class="anchor" id="autotoc_md30"></a>
+<h2><a class="anchor" id="autotoc_md32"></a>
 Serialization "One-liners"</h2>
 <p>For convenience, a few additional methods are provided for serialization in a single line.</p><ul>
 <li>insert to raw buffer</li>
@@ -229,9 +229,9 @@ Serialization "One-liners"</h2>
 <div class="line">     assert(value1.has_value() &amp;&amp; value2.has_value());</div>
 <div class="line">     assert(*value1 == x &amp;&amp; *value2 == x);</div>
 <div class="line">}</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md31"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md33"></a>
 User-defined types</h2>
-<h3><a class="anchor" id="autotoc_md32"></a>
+<h3><a class="anchor" id="autotoc_md34"></a>
 Classes and structs</h3>
 <p>Classes and structs may include one or more of the following member functions to enable serialization support:</p><ul>
 <li><code>void insert(microstrain::BigEndianSerializer&amp; serializer) const</code></li>
@@ -242,7 +242,7 @@ Classes and structs</h3>
 <li><code>template&lt;microstrain::Endian E&gt; void extract(<a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">microstrain::Serializer</a>&lt;E&gt;&amp; serializer)</code></li>
 </ul>
 <p>In addition, the serialization non-member functions may be overloaded as described next.</p>
-<h3><a class="anchor" id="autotoc_md33"></a>
+<h3><a class="anchor" id="autotoc_md35"></a>
 Other user-defined types</h3>
 <p>All serialization goes through <code><a class="el" href="namespacemicrostrain.html#a5a978dcbb35f175e3079aaaa6eadc450" title="Inserts a numeric value to a Serializer.">microstrain::insert</a></code> / <code><a class="el" href="namespacemicrostrain.html#a97f89f7d5ee32b5b34f9fb391111af44" title="Reads a numeric value from a Serializer.">microstrain::extract</a></code>. These are non-member functions and are overloaded for various data types. This makes it possible to extend serialization to new types. Serialization for any custom type may be implemented by overloading the <code>insert</code> or <code>extract</code> functions. For example:</p>
 <div class="fragment"><div class="line"><span class="keyword">namespace </span>custom</div>
@@ -300,7 +300,7 @@ Other user-defined types</h3>
 <div class="line">    </div>
 <div class="line">    assert(foo2 == foo);</div>
 <div class="line">}</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md34"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md36"></a>
 Serialization System Architecture</h2>
 <p>The MIP library implements many custom types and heavily leverages the serialization system. It uses <code>insert</code>/<code>extract</code> overloads, class methods, strongly-typed enums, and arrays.</p>
 <p>The Serializer uses read/write functions from the <a class="el" href="namespacemicrostrain_1_1serialization.html">microstrain::serialization</a> namespace to handle endianness / byteswapping and packing at the lowest level.</p>

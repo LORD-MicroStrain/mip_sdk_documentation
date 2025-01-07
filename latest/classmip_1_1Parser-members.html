@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">latest-1-g0529ee0</span>
+   &#160;<span id="projectnumber">latest-36-g987be15</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -75,14 +75,15 @@ $(function() {
 
 <p>This is the complete list of members for <a class="el" href="classmip_1_1Parser.html">mip::Parser</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classmip_1_1Parser.html#abc0c31c7601f5171752c1e784fd84ac5">parse</a>(const uint8_t *inputBuffer, size_t inputCount, Timestamp timestamp, unsigned int maxPackets=0)</td><td class="entry"><a class="el" href="classmip_1_1Parser.html">mip::Parser</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classmip_1_1Parser.html#a3d3fbb83ce13bad184d327e845f95fc2">Parser</a>(uint8_t *buffer, size_t bufferSize, C::mip_packet_callback callback, void *callbackObject, Timeout timeout)</td><td class="entry"><a class="el" href="classmip_1_1Parser.html">mip::Parser</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classmip_1_1Parser.html#ad36368d90ebc979b9af0e2960fd9b5d7">Parser</a>(uint8_t *buffer, size_t bufferSize, bool(*callback)(void *, const PacketView *, Timestamp), void *callbackObject, Timeout timeout)</td><td class="entry"><a class="el" href="classmip_1_1Parser.html">mip::Parser</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classmip_1_1Parser.html#a4d91c1d52cf5b0f9f5baa1d639b71af0">Parser</a>(uint8_t *buffer, size_t bufferSize, Timeout timeout)</td><td class="entry"><a class="el" href="classmip_1_1Parser.html">mip::Parser</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classmip_1_1Parser.html#a351071906127cac5cb56cfde1a3d6ea6">reset</a>()</td><td class="entry"><a class="el" href="classmip_1_1Parser.html">mip::Parser</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="group__mip__cpp.html#ga3c099d19ac77cc922c8b2f87441cf6f7">setCallback</a>(T &amp;object)</td><td class="entry"><a class="el" href="classmip_1_1Parser.html">mip::Parser</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classmip_1_1Parser.html#abb3290444b447a92aace90c33c4ffc9e">setTimeout</a>(Timeout timeout)</td><td class="entry"><a class="el" href="classmip_1_1Parser.html">mip::Parser</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classmip_1_1Parser.html#a642ce6426bc3d3483f031e5c64c05d91">timeout</a>() const</td><td class="entry"><a class="el" href="classmip_1_1Parser.html">mip::Parser</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmip_1_1Parser.html#acfe3c11b152160894998ccc3062f5ba0">parse</a>(const uint8_t *inputBuffer, size_t inputCount, Timestamp timestamp)</td><td class="entry"><a class="el" href="classmip_1_1Parser.html">mip::Parser</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classmip_1_1Parser.html#a389194e511660459ff7149aeff02fa6c">parse</a>(microstrain::Span&lt; const uint8_t &gt; data, Timestamp timestamp)</td><td class="entry"><a class="el" href="classmip_1_1Parser.html">mip::Parser</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmip_1_1Parser.html#af65365ec71f09d19945fd5d72e11a15c">Parser</a>(C::mip_packet_callback callback, void *callbackObject, Timeout timeout)</td><td class="entry"><a class="el" href="classmip_1_1Parser.html">mip::Parser</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classmip_1_1Parser.html#a0c5b4c52c47e7b5f6c3c8935b2606576">Parser</a>(void(*callback)(void *, const PacketView *, Timestamp), void *callbackObject, Timeout timeout)</td><td class="entry"><a class="el" href="classmip_1_1Parser.html">mip::Parser</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmip_1_1Parser.html#abc8c2a93d575e3425e51d05b79425dc1">Parser</a>(Timeout timeout)</td><td class="entry"><a class="el" href="classmip_1_1Parser.html">mip::Parser</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classmip_1_1Parser.html#a351071906127cac5cb56cfde1a3d6ea6">reset</a>()</td><td class="entry"><a class="el" href="classmip_1_1Parser.html">mip::Parser</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="group__mip__cpp.html#ga3c099d19ac77cc922c8b2f87441cf6f7">setCallback</a>(T &amp;object)</td><td class="entry"><a class="el" href="classmip_1_1Parser.html">mip::Parser</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classmip_1_1Parser.html#abb3290444b447a92aace90c33c4ffc9e">setTimeout</a>(Timeout timeout)</td><td class="entry"><a class="el" href="classmip_1_1Parser.html">mip::Parser</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmip_1_1Parser.html#a642ce6426bc3d3483f031e5c64c05d91">timeout</a>() const</td><td class="entry"><a class="el" href="classmip_1_1Parser.html">mip::Parser</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">latest-1-g0529ee0</span>
+   &#160;<span id="projectnumber">latest-36-g987be15</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -90,30 +90,26 @@ $(function() {
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mip__types_8h.html">mip_types.h</a>&quot;</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mip__version_8h.html">mip_version.h</a>&quot;</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">// MIP Utils</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="byte__ring_8h.html">utils/byte_ring.h</a>&quot;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">// MIP Commands</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="commands__3dm_8h.html">definitions/commands_3dm.h</a>&quot;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="commands__aiding_8h.html">definitions/commands_aiding.h</a>&quot;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="commands__base_8h.html">definitions/commands_base.h</a>&quot;</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="commands__filter_8h.html">definitions/commands_filter.h</a>&quot;</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="commands__gnss_8h.html">definitions/commands_gnss.h</a>&quot;</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="commands__rtk_8h.html">definitions/commands_rtk.h</a>&quot;</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="commands__system_8h.html">definitions/commands_system.h</a>&quot;</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">// MIP Data</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="data__filter_8h.html">definitions/data_filter.h</a>&quot;</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="data__gnss_8h.html">definitions/data_gnss.h</a>&quot;</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="data__sensor_8h.html">definitions/data_sensor.h</a>&quot;</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="data__shared_8h.html">definitions/data_shared.h</a>&quot;</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="data__system_8h.html">definitions/data_system.h</a>&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">// MIP Commands</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="commands__3dm_8h.html">definitions/commands_3dm.h</a>&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="commands__aiding_8h.html">definitions/commands_aiding.h</a>&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="commands__base_8h.html">definitions/commands_base.h</a>&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="commands__filter_8h.html">definitions/commands_filter.h</a>&quot;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="commands__gnss_8h.html">definitions/commands_gnss.h</a>&quot;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="commands__rtk_8h.html">definitions/commands_rtk.h</a>&quot;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="commands__system_8h.html">definitions/commands_system.h</a>&quot;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">// MIP Data</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="data__filter_8h.html">definitions/data_filter.h</a>&quot;</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="data__gnss_8h.html">definitions/data_gnss.h</a>&quot;</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="data__sensor_8h.html">definitions/data_sensor.h</a>&quot;</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="data__shared_8h.html">definitions/data_shared.h</a>&quot;</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="data__system_8h.html">definitions/data_system.h</a>&quot;</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="amip__packet_8h_html"><div class="ttname"><a href="mip__packet_8h.html">mip_packet.h</a></div></div>
 <div class="ttc" id="amip__parser_8h_html"><div class="ttname"><a href="mip__parser_8h.html">mip_parser.h</a></div></div>
 <div class="ttc" id="amip__dispatch_8h_html"><div class="ttname"><a href="mip__dispatch_8h.html">mip_dispatch.h</a></div></div>
 <div class="ttc" id="amip__types_8h_html"><div class="ttname"><a href="mip__types_8h.html">mip_types.h</a></div></div>
-<div class="ttc" id="abyte__ring_8h_html"><div class="ttname"><a href="byte__ring_8h.html">byte_ring.h</a></div></div>
 <div class="ttc" id="amip__cmdqueue_8h_html"><div class="ttname"><a href="mip__cmdqueue_8h.html">mip_cmdqueue.h</a></div></div>
 <div class="ttc" id="acommands__rtk_8h_html"><div class="ttname"><a href="commands__rtk_8h.html">commands_rtk.h</a></div></div>
 <div class="ttc" id="acommands__filter_8h_html"><div class="ttname"><a href="commands__filter_8h.html">commands_filter.h</a></div></div>
