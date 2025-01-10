@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">latest-2-g34f3e39</span>
+   &#160;<span id="projectnumber">v3.0.0-132-ga136fc5</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -107,9 +107,9 @@ $(function() {
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> T, <span class="keywordtype">bool</span> (T::*Callback)(const PacketView&amp;, Timestamp)&gt;</div>
 <div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="group__mip__cpp.html#ga3c099d19ac77cc922c8b2f87441cf6f7">   71</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__mip__cpp.html#ga3c099d19ac77cc922c8b2f87441cf6f7">Parser::setCallback</a>(T&amp; <span class="keywordtype">object</span>)</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;{</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <a class="code" href="group__mip__parser__c.html#ga91de70c19d9857d8b69b276a6ae2c4f6">C::mip_packet_callback</a> callback = [](<span class="keywordtype">void</span>* obj, <span class="keyword">const</span> <a class="code" href="structmip_1_1C_1_1mip__packet__view.html">C::mip_packet_view</a>* pkt, <a class="code" href="namespacemip.html#ab87086630c94254d17a812e4be159b0a">Timestamp</a> timestamp)-&gt;<span class="keywordtype">bool</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <a class="code" href="group__mip__parser__c.html#ga91de70c19d9857d8b69b276a6ae2c4f6">C::mip_packet_callback</a> callback = [](<span class="keywordtype">void</span>* obj, <span class="keyword">const</span> <a class="code" href="structmip_1_1C_1_1mip__packet__view.html">C::mip_packet_view</a>* pkt, <a class="code" href="namespacemip.html#ab87086630c94254d17a812e4be159b0a">Timestamp</a> timestamp)-&gt;<span class="keywordtype">void</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    {</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">return</span> (<span class="keyword">static_cast&lt;</span>T*<span class="keyword">&gt;</span>(obj)-&gt;*Callback)(<a class="code" href="classmip_1_1PacketView.html">PacketView</a>(pkt), timestamp);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        (<span class="keyword">static_cast&lt;</span>T*<span class="keyword">&gt;</span>(obj)-&gt;*Callback)(<a class="code" href="classmip_1_1PacketView.html">PacketView</a>(pkt), timestamp);</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    };</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="group__mip__parser__c.html#gae4d87fe00549f44a43fc835eeae3d7b6">C::mip_parser_set_callback</a>(<span class="keyword">this</span>, callback, &amp;<span class="keywordtype">object</span>);</div>

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">latest-2-g34f3e39</span>
+   &#160;<span id="projectnumber">v3.0.0-132-ga136fc5</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -118,10 +118,12 @@ $(function() {
 <li>tdop
 : <a class="el" href="structmip_1_1C_1_1mip__gnss__dop__data.html#a10225f21a07eca27a6535213f1a8ab97">mip::C::mip_gnss_dop_data</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1Dop.html#a2f2736a44b7b637bb20a1fa48931688b">mip::data_gnss::Dop</a>
-, <a class="el" href="structmip_1_1data__gnss_1_1Dop_1_1ValidFlags.html#aeaf8e8984d78955a376da0168535b835">mip::data_gnss::Dop::ValidFlags</a>
 </li>
 <li>TDOP
 : <a class="el" href="structmip_1_1data__gnss_1_1Dop_1_1ValidFlags.html#a1fc83277f187678def65baa8a1e86833a3a0b062d294acb9664e62fe62b004396">mip::data_gnss::Dop::ValidFlags</a>
+</li>
+<li>tdop()
+: <a class="el" href="structmip_1_1data__gnss_1_1Dop_1_1ValidFlags.html#aeaf8e8984d78955a376da0168535b835">mip::data_gnss::Dop::ValidFlags</a>
 </li>
 <li>TEST
 : <a class="el" href="structmip_1_1commands__3dm_1_1GetEventTriggerStatus_1_1Status.html#aa27b06947ab039c8085d495098531560aeaf7a4f4e73d4463b298220c08ed55d8">mip::commands_3dm::GetEventTriggerStatus::Status</a>
@@ -246,12 +248,10 @@ $(function() {
 </li>
 <li>timebase
 : <a class="el" href="structmip_1_1C_1_1mip__time.html#a93e153d0a52aa1374f20bb58b6a60246">mip::C::mip_time</a>
+, <a class="el" href="structmip_1_1commands__aiding_1_1Time.html#a56e70ce574b4f91ee837a199f33f4dff">mip::commands_aiding::Time</a>
 </li>
 <li>Timebase
 : <a class="el" href="structmip_1_1commands__aiding_1_1Time.html#acef9f94c3d33abd20de2f78fd09acfc3">mip::commands_aiding::Time</a>
-</li>
-<li>timebase
-: <a class="el" href="structmip_1_1commands__aiding_1_1Time.html#a56e70ce574b4f91ee837a199f33f4dff">mip::commands_aiding::Time</a>
 </li>
 <li>timeInitialized()
 : <a class="el" href="structmip_1_1data__sensor_1_1GpsTimestamp_1_1ValidFlags.html#aab979e852d98d4d196f3f4bfb905e742">mip::data_sensor::GpsTimestamp::ValidFlags</a>
@@ -412,12 +412,14 @@ $(function() {
 : <a class="el" href="structmip_1_1C_1_1mip__3dm__get__event__trigger__status__response.html#a3899d14cf43dc7cba42675cb0e8abe08">mip::C::mip_3dm_get_event_trigger_status_response</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1GetEventTriggerStatus_1_1Response.html#a51acf2c5cb56afa80c982dc4372f733d">mip::commands_3dm::GetEventTriggerStatus::Response</a>
 </li>
+<li>TYPE
+: <a class="el" href="classmicrostrain_1_1Connection.html#a22d52ea7dcdf77ad34e433d45d25a73e">microstrain::Connection</a>
+</li>
 <li>type()
 : <a class="el" href="classmicrostrain_1_1Connection.html#aa98d100c05a3a808239a82b82f0f729a">microstrain::Connection</a>
 </li>
 <li>TYPE
-: <a class="el" href="classmicrostrain_1_1Connection.html#a22d52ea7dcdf77ad34e433d45d25a73e">microstrain::Connection</a>
-, <a class="el" href="classmicrostrain_1_1connections_1_1RecordingConnection.html#ac613efdc9e16f56ededad117f0c825e2">microstrain::connections::RecordingConnection</a>
+: <a class="el" href="classmicrostrain_1_1connections_1_1RecordingConnection.html#ac613efdc9e16f56ededad117f0c825e2">microstrain::connections::RecordingConnection</a>
 , <a class="el" href="classmicrostrain_1_1connections_1_1SerialConnection.html#a9aa2bc0fe3904b26b253a48ac125aede">microstrain::connections::SerialConnection</a>
 , <a class="el" href="classmicrostrain_1_1connections_1_1TcpConnection.html#a72dbe4cffc54a3b495b0e91e18cdf200">microstrain::connections::TcpConnection</a>
 , <a class="el" href="classmicrostrain_1_1connections_1_1UsbSerialConnection.html#adec296f6dbb06dc0ee0fc9f2f246483e">microstrain::connections::UsbSerialConnection</a>
@@ -453,11 +455,15 @@ $(function() {
 </li>
 <li>Type
 : <a class="el" href="structmip_1_1commands__3dm_1_1EventTrigger_1_1ThresholdParams.html#af7ad474c722e8f4b32f9015be04cf4be">mip::commands_3dm::EventTrigger::ThresholdParams</a>
-, <a class="el" href="structmip_1_1commands__3dm_1_1EventTrigger.html#a6c69d89e9e11917903fa0636224fbaa4">mip::commands_3dm::EventTrigger</a>
 </li>
 <li>type
 : <a class="el" href="structmip_1_1commands__3dm_1_1EventTrigger.html#a23d2754a0ef2a06958075b387ccbbb64">mip::commands_3dm::EventTrigger</a>
-, <a class="el" href="structmip_1_1commands__3dm_1_1GetEventSupport_1_1Info.html#a67c756cf6aefb16713e4ec31dbd47f14">mip::commands_3dm::GetEventSupport::Info</a>
+</li>
+<li>Type
+: <a class="el" href="structmip_1_1commands__3dm_1_1EventTrigger.html#a6c69d89e9e11917903fa0636224fbaa4">mip::commands_3dm::EventTrigger</a>
+</li>
+<li>type
+: <a class="el" href="structmip_1_1commands__3dm_1_1GetEventSupport_1_1Info.html#a67c756cf6aefb16713e4ec31dbd47f14">mip::commands_3dm::GetEventSupport::Info</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1GetEventTriggerStatus_1_1Entry.html#ae379c877c451de8d6432334c89f74d09">mip::commands_3dm::GetEventTriggerStatus::Entry</a>
 </li>
 <li>Type
@@ -1049,13 +1055,13 @@ $(function() {
 , <a class="el" href="structmip_1_1metadata_1_1MetadataFor_3_01Matrix3f_01_4.html#a1eb72e257f1c8efa101030c8db6dab5b">mip::metadata::MetadataFor&lt; Matrix3f &gt;</a>
 , <a class="el" href="structmip_1_1metadata_1_1MetadataFor_3_01ReplyField_01_4.html#afe7ac361e14c4ade8b17dd131d9cd98a">mip::metadata::MetadataFor&lt; ReplyField &gt;</a>
 , <a class="el" href="structmip_1_1metadata_1_1MetadataFor_3_01Vector_3_01T_00_01N_01_4_01_4.html#ade7f3a7e633d34656045a72e702493d5">mip::metadata::MetadataFor&lt; Vector&lt; T, N &gt; &gt;</a>
-, <a class="el" href="structmip_1_1metadata_1_1ParameterInfo_1_1Condition.html#a595b3b720915a6d1506236729d5d4c7a">mip::metadata::ParameterInfo::Condition</a>
 </li>
 <li>Type
 : <a class="el" href="structmip_1_1metadata_1_1ParameterInfo_1_1Condition.html#a11beb60552f7ad1d99fb27419040a12e">mip::metadata::ParameterInfo::Condition</a>
 </li>
 <li>type
-: <a class="el" href="structmip_1_1metadata_1_1ParameterInfo.html#a30ac5ae8a2f2ba0728069f9cb696bd4d">mip::metadata::ParameterInfo</a>
+: <a class="el" href="structmip_1_1metadata_1_1ParameterInfo_1_1Condition.html#a595b3b720915a6d1506236729d5d4c7a">mip::metadata::ParameterInfo::Condition</a>
+, <a class="el" href="structmip_1_1metadata_1_1ParameterInfo.html#a30ac5ae8a2f2ba0728069f9cb696bd4d">mip::metadata::ParameterInfo</a>
 , <a class="el" href="structmip_1_1metadata_1_1TypeInfo.html#a379d8a87670306931cc4d5e64072c6e3">mip::metadata::TypeInfo</a>
 , <a class="el" href="structmip_1_1metadata_1_1utils_1_1ParamEnum.html#a553781da58bb5928876ebc272798968e">mip::metadata::utils::ParamEnum&lt; Kind &gt;</a>
 , <a class="el" href="structmip_1_1metadata_1_1utils_1_1ParamEnum_3_01Type_1_1BOOL_01_4.html#aac77f3d993589f553cbb7f8c64d6b802">mip::metadata::utils::ParamEnum&lt; Type::BOOL &gt;</a>
