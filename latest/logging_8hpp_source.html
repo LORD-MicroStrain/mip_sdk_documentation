@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-132-ga136fc5</span>
+   &#160;<span id="projectnumber">v3.0.0-133-gb68cef8</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -80,16 +80,16 @@ $(function() {
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemicrostrain.html">microstrain</a></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="namespacemicrostrain.html#ac15cff569854f84eefa97d493f624d49">    9</a></span>&#160;<span class="keyword">enum class</span> <a class="code" href="namespacemicrostrain.html#ac15cff569854f84eefa97d493f624d49">LogLevel</a></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="namespacemicrostrain.html#ac15cff569854f84eefa97d493f624d49a88559a0cfd8250c9d65970cc145c92d4">OFF</a>   = <a class="code" href="group__microstrain__logging.html#ga3d311242e82e86ff1d4487fc64894398">MICROSTRAIN_LOG_LEVEL_OFF</a>,</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="namespacemicrostrain.html#ac15cff569854f84eefa97d493f624d49a19da7170bea36556dde582519795f3fc">FATAL</a> = <a class="code" href="group__microstrain__logging.html#ga58f1bb75cb11e7e5df487cf0d0bfad4b">MICROSTRAIN_LOG_LEVEL_FATAL</a>,</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="namespacemicrostrain.html#ac15cff569854f84eefa97d493f624d49abb1ca97ec761fc37101737ba0aa2e7c5">ERROR</a> = <a class="code" href="group__microstrain__logging.html#ga174dc4091ab07ffd1da5436d0b614a80">MICROSTRAIN_LOG_LEVEL_ERROR</a>,</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="namespacemicrostrain.html#ac15cff569854f84eefa97d493f624d49a32bd8a1db2275458673903bdb84cb277">WARN</a>  = <a class="code" href="group__microstrain__logging.html#ga7e355220a52a5541326f82d35f7bf473">MICROSTRAIN_LOG_LEVEL_WARN</a>,</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="namespacemicrostrain.html#ac15cff569854f84eefa97d493f624d49a551b723eafd6a31d444fcb2f5920fbd3">INFO</a>  = <a class="code" href="group__microstrain__logging.html#ga5f5e8b8154fa65f4f7f56a3c7fb17a6a">MICROSTRAIN_LOG_LEVEL_INFO</a>,</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="namespacemicrostrain.html#ac15cff569854f84eefa97d493f624d49adc30ec20708ef7b0f641ef78b7880a15">DEBUG</a> = <a class="code" href="group__microstrain__logging.html#ga4fe819f13d56e7b72f9ca3f0875f735a">MICROSTRAIN_LOG_LEVEL_DEBUG</a>,</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="namespacemicrostrain.html#ac15cff569854f84eefa97d493f624d49a2d3e4144aa384b18849ab9a8abad74d6">TRACE</a> = <a class="code" href="group__microstrain__logging.html#gac932c773c9e699de14a7066bbb1f44bc">MICROSTRAIN_LOG_LEVEL_TRACE</a>,</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;};</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">//enum class LogLevel</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">//{</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">//    OFF   = MICROSTRAIN_LOG_LEVEL_OFF,</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">//    FATAL = MICROSTRAIN_LOG_LEVEL_FATAL,</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">//    ERROR = MICROSTRAIN_LOG_LEVEL_ERROR,</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">//    WARN  = MICROSTRAIN_LOG_LEVEL_WARN,</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">//    INFO  = MICROSTRAIN_LOG_LEVEL_INFO,</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">//    DEBUG = MICROSTRAIN_LOG_LEVEL_DEBUG,</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">//    TRACE = MICROSTRAIN_LOG_LEVEL_TRACE,</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">//};</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">//namespace logging</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">//{</span></div>
@@ -106,23 +106,8 @@ $(function() {
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;} <span class="comment">// namespace microstrain</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="agroup__microstrain__logging_html_ga4fe819f13d56e7b72f9ca3f0875f735a"><div class="ttname"><a href="group__microstrain__logging.html#ga4fe819f13d56e7b72f9ca3f0875f735a">MICROSTRAIN_LOG_LEVEL_DEBUG</a></div><div class="ttdeci">#define MICROSTRAIN_LOG_LEVEL_DEBUG</div><div class="ttdoc">Debug logs are logged for debug purposes.</div><div class="ttdef"><b>Definition:</b> logging.h:32</div></div>
-<div class="ttc" id="agroup__microstrain__logging_html_ga3d311242e82e86ff1d4487fc64894398"><div class="ttname"><a href="group__microstrain__logging.html#ga3d311242e82e86ff1d4487fc64894398">MICROSTRAIN_LOG_LEVEL_OFF</a></div><div class="ttdeci">#define MICROSTRAIN_LOG_LEVEL_OFF</div><div class="ttdoc">Signifies that the log is turned off.</div><div class="ttdef"><b>Definition:</b> logging.h:27</div></div>
-<div class="ttc" id="agroup__microstrain__logging_html_ga5f5e8b8154fa65f4f7f56a3c7fb17a6a"><div class="ttname"><a href="group__microstrain__logging.html#ga5f5e8b8154fa65f4f7f56a3c7fb17a6a">MICROSTRAIN_LOG_LEVEL_INFO</a></div><div class="ttdeci">#define MICROSTRAIN_LOG_LEVEL_INFO</div><div class="ttdoc">Info logs are logged when some general info needs to be conveyed to the user.</div><div class="ttdef"><b>Definition:</b> logging.h:31</div></div>
-<div class="ttc" id="agroup__microstrain__logging_html_ga174dc4091ab07ffd1da5436d0b614a80"><div class="ttname"><a href="group__microstrain__logging.html#ga174dc4091ab07ffd1da5436d0b614a80">MICROSTRAIN_LOG_LEVEL_ERROR</a></div><div class="ttdeci">#define MICROSTRAIN_LOG_LEVEL_ERROR</div><div class="ttdoc">Error logs are logged when an error occurs.</div><div class="ttdef"><b>Definition:</b> logging.h:29</div></div>
-<div class="ttc" id="agroup__microstrain__logging_html_ga7e355220a52a5541326f82d35f7bf473"><div class="ttname"><a href="group__microstrain__logging.html#ga7e355220a52a5541326f82d35f7bf473">MICROSTRAIN_LOG_LEVEL_WARN</a></div><div class="ttdeci">#define MICROSTRAIN_LOG_LEVEL_WARN</div><div class="ttdoc">Warning logs are logged when something concerning happens that may or not be a mistake.</div><div class="ttdef"><b>Definition:</b> logging.h:30</div></div>
-<div class="ttc" id="agroup__microstrain__logging_html_gac932c773c9e699de14a7066bbb1f44bc"><div class="ttname"><a href="group__microstrain__logging.html#gac932c773c9e699de14a7066bbb1f44bc">MICROSTRAIN_LOG_LEVEL_TRACE</a></div><div class="ttdeci">#define MICROSTRAIN_LOG_LEVEL_TRACE</div><div class="ttdoc">Trace logs are logged in similar cases to debug logs but can be logged in tight loops.</div><div class="ttdef"><b>Definition:</b> logging.h:33</div></div>
-<div class="ttc" id="anamespacemicrostrain_html_ac15cff569854f84eefa97d493f624d49abb1ca97ec761fc37101737ba0aa2e7c5"><div class="ttname"><a href="namespacemicrostrain.html#ac15cff569854f84eefa97d493f624d49abb1ca97ec761fc37101737ba0aa2e7c5">microstrain::LogLevel::ERROR</a></div><div class="ttdeci">@ ERROR</div></div>
-<div class="ttc" id="anamespacemicrostrain_html_ac15cff569854f84eefa97d493f624d49a19da7170bea36556dde582519795f3fc"><div class="ttname"><a href="namespacemicrostrain.html#ac15cff569854f84eefa97d493f624d49a19da7170bea36556dde582519795f3fc">microstrain::LogLevel::FATAL</a></div><div class="ttdeci">@ FATAL</div></div>
-<div class="ttc" id="anamespacemicrostrain_html_ac15cff569854f84eefa97d493f624d49a88559a0cfd8250c9d65970cc145c92d4"><div class="ttname"><a href="namespacemicrostrain.html#ac15cff569854f84eefa97d493f624d49a88559a0cfd8250c9d65970cc145c92d4">microstrain::LogLevel::OFF</a></div><div class="ttdeci">@ OFF</div></div>
 <div class="ttc" id="alogging_8h_html"><div class="ttname"><a href="logging_8h.html">logging.h</a></div></div>
-<div class="ttc" id="anamespacemicrostrain_html_ac15cff569854f84eefa97d493f624d49adc30ec20708ef7b0f641ef78b7880a15"><div class="ttname"><a href="namespacemicrostrain.html#ac15cff569854f84eefa97d493f624d49adc30ec20708ef7b0f641ef78b7880a15">microstrain::LogLevel::DEBUG</a></div><div class="ttdeci">@ DEBUG</div></div>
-<div class="ttc" id="anamespacemicrostrain_html_ac15cff569854f84eefa97d493f624d49a32bd8a1db2275458673903bdb84cb277"><div class="ttname"><a href="namespacemicrostrain.html#ac15cff569854f84eefa97d493f624d49a32bd8a1db2275458673903bdb84cb277">microstrain::LogLevel::WARN</a></div><div class="ttdeci">@ WARN</div></div>
-<div class="ttc" id="anamespacemicrostrain_html_ac15cff569854f84eefa97d493f624d49"><div class="ttname"><a href="namespacemicrostrain.html#ac15cff569854f84eefa97d493f624d49">microstrain::LogLevel</a></div><div class="ttdeci">LogLevel</div><div class="ttdef"><b>Definition:</b> logging.hpp:9</div></div>
-<div class="ttc" id="agroup__microstrain__logging_html_ga58f1bb75cb11e7e5df487cf0d0bfad4b"><div class="ttname"><a href="group__microstrain__logging.html#ga58f1bb75cb11e7e5df487cf0d0bfad4b">MICROSTRAIN_LOG_LEVEL_FATAL</a></div><div class="ttdeci">#define MICROSTRAIN_LOG_LEVEL_FATAL</div><div class="ttdoc">Fatal logs are logged when an unrecoverable error occurs.</div><div class="ttdef"><b>Definition:</b> logging.h:28</div></div>
-<div class="ttc" id="anamespacemicrostrain_html_ac15cff569854f84eefa97d493f624d49a551b723eafd6a31d444fcb2f5920fbd3"><div class="ttname"><a href="namespacemicrostrain.html#ac15cff569854f84eefa97d493f624d49a551b723eafd6a31d444fcb2f5920fbd3">microstrain::LogLevel::INFO</a></div><div class="ttdeci">@ INFO</div></div>
 <div class="ttc" id="anamespacemicrostrain_html"><div class="ttname"><a href="namespacemicrostrain.html">microstrain</a></div><div class="ttdef"><b>Definition:</b> embedded_time.h:8</div></div>
-<div class="ttc" id="anamespacemicrostrain_html_ac15cff569854f84eefa97d493f624d49a2d3e4144aa384b18849ab9a8abad74d6"><div class="ttname"><a href="namespacemicrostrain.html#ac15cff569854f84eefa97d493f624d49a2d3e4144aa384b18849ab9a8abad74d6">microstrain::LogLevel::TRACE</a></div><div class="ttdeci">@ TRACE</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
