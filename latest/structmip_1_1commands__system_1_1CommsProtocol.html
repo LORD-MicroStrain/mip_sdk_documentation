@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-133-gb68cef8</span>
+   &#160;<span id="projectnumber">v3.0.0-135-g10644bb</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -93,13 +93,13 @@ Inheritance diagram for mip::commands_system::CommsProtocol:</div>
 Public Types</h2></td></tr>
 <tr class="memitem:a3c39bec9f934b9a6a1d8affc12e2f611"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html#a3c39bec9f934b9a6a1d8affc12e2f611">_enumType</a> : uint32_t { <br />
 &#160;&#160;<a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html#a3c39bec9f934b9a6a1d8affc12e2f611a298d07658be4bae653660e06977c3e0e">NONE</a> = 0x00000000, 
-<a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html#a3c39bec9f934b9a6a1d8affc12e2f611a7b8b371ad98d9f135ab8ed8ac0ebd3f8">MIP_COMMANDS</a> = 0x00000001, 
-<a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html#a3c39bec9f934b9a6a1d8affc12e2f611adc71aed081c9fcf1fba83ded671cebd0">MIP_DATA</a> = 0x00000002, 
-<a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html#a3c39bec9f934b9a6a1d8affc12e2f611a2c417622ec21f3004b34ea57703630cb">NMEA</a> = 0x00000004, 
+<a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html#a3c39bec9f934b9a6a1d8affc12e2f611a4f4e674c2a92a5e8e5b5a1ebc85b06f4">MIP</a> = 0x00000001, 
+<a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html#a3c39bec9f934b9a6a1d8affc12e2f611a2c417622ec21f3004b34ea57703630cb">NMEA</a> = 0x00000100, 
+<a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html#a3c39bec9f934b9a6a1d8affc12e2f611a6c39735c46e105da43485e272b2264c3">RTCM</a> = 0x00000200, 
 <br />
-&#160;&#160;<a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html#a3c39bec9f934b9a6a1d8affc12e2f611a6c39735c46e105da43485e272b2264c3">RTCM</a> = 0x00000008, 
-<a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html#a3c39bec9f934b9a6a1d8affc12e2f611a04362f0b948757fb86d3357432a72c53">SPARTN</a> = 0x00000010, 
-<a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html#a3c39bec9f934b9a6a1d8affc12e2f611a390832ebd020e555d2fa81eb96c9b479">ALL</a> = 0x0000001F
+&#160;&#160;<a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html#a3c39bec9f934b9a6a1d8affc12e2f611a04362f0b948757fb86d3357432a72c53">SPARTN</a> = 0x01000000, 
+<a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html#a3c39bec9f934b9a6a1d8affc12e2f611a5cd191cfa16730782d0be216225f91f5">UBLOX</a> = 0x02000000, 
+<a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html#a3c39bec9f934b9a6a1d8affc12e2f611a390832ebd020e555d2fa81eb96c9b479">ALL</a> = 0x03000301
 <br />
  }</td></tr>
 <tr class="separator:a3c39bec9f934b9a6a1d8affc12e2f611"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -122,14 +122,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ade8ed6da07bab65e4718200c5503aa4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a514d29a96ff26618024e049c1c17299d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html">CommsProtocol</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html#a514d29a96ff26618024e049c1c17299d">operator&amp;=</a> (uint32_t val)</td></tr>
 <tr class="separator:a514d29a96ff26618024e049c1c17299d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7dff7803d28c57d8eb3eef72ddf2ebe2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html#a7dff7803d28c57d8eb3eef72ddf2ebe2">mipCommands</a> () const</td></tr>
-<tr class="separator:a7dff7803d28c57d8eb3eef72ddf2ebe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13ff3d26a8bcd22bc1e85b5f085a0110"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html#a13ff3d26a8bcd22bc1e85b5f085a0110">mipCommands</a> (bool val)</td></tr>
-<tr class="separator:a13ff3d26a8bcd22bc1e85b5f085a0110"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b6f38294418fb8b4b8b861e1092fbf8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html#a9b6f38294418fb8b4b8b861e1092fbf8">mipData</a> () const</td></tr>
-<tr class="separator:a9b6f38294418fb8b4b8b861e1092fbf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa15e21311ec447a2b2e2ba489d83dc77"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html#aa15e21311ec447a2b2e2ba489d83dc77">mipData</a> (bool val)</td></tr>
-<tr class="separator:aa15e21311ec447a2b2e2ba489d83dc77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31c61a8260ce15163dad0be0e4f32d8e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html#a31c61a8260ce15163dad0be0e4f32d8e">mip</a> () const</td></tr>
+<tr class="separator:a31c61a8260ce15163dad0be0e4f32d8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9433b0034a179164429459ddef896b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html#ae9433b0034a179164429459ddef896b3">mip</a> (bool val)</td></tr>
+<tr class="separator:ae9433b0034a179164429459ddef896b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1435015524a28f68ca06eab0c13cfd99"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html#a1435015524a28f68ca06eab0c13cfd99">nmea</a> () const</td></tr>
 <tr class="separator:a1435015524a28f68ca06eab0c13cfd99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f540321ad0a4d02d12d19098f6ce268"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html#a6f540321ad0a4d02d12d19098f6ce268">nmea</a> (bool val)</td></tr>
@@ -142,6 +138,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac6f9cb1f5ed97c71b9d055b5f40b24d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a330b4fe280e439430588e1e063dc5530"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html#a330b4fe280e439430588e1e063dc5530">spartn</a> (bool val)</td></tr>
 <tr class="separator:a330b4fe280e439430588e1e063dc5530"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f6d208f67e7cb775b4b8a7c29735589"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html#a6f6d208f67e7cb775b4b8a7c29735589">ublox</a> () const</td></tr>
+<tr class="separator:a6f6d208f67e7cb775b4b8a7c29735589"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33c5a810440c790485afed43fd5d3519"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html#a33c5a810440c790485afed43fd5d3519">ublox</a> (bool val)</td></tr>
+<tr class="separator:a33c5a810440c790485afed43fd5d3519"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1144134a8bc421ecd5d587fdbc5df58"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html#ad1144134a8bc421ecd5d587fdbc5df58">allSet</a> () const</td></tr>
 <tr class="separator:ad1144134a8bc421ecd5d587fdbc5df58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9dcbeba9137e453dbf5b73fb52fbe15"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html#ad9dcbeba9137e453dbf5b73fb52fbe15">setAll</a> ()</td></tr>
@@ -181,11 +181,12 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a3c39bec9f934b9a6a1d8affc12e2f611a298d07658be4bae653660e06977c3e0e"></a>NONE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a3c39bec9f934b9a6a1d8affc12e2f611a7b8b371ad98d9f135ab8ed8ac0ebd3f8"></a>MIP_COMMANDS&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a3c39bec9f934b9a6a1d8affc12e2f611adc71aed081c9fcf1fba83ded671cebd0"></a>MIP_DATA&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3c39bec9f934b9a6a1d8affc12e2f611a4f4e674c2a92a5e8e5b5a1ebc85b06f4"></a>MIP&#160;</td><td class="fielddoc"><p>Microstrain Inertial Protocol. </p>
+</td></tr>
 <tr><td class="fieldname"><a id="a3c39bec9f934b9a6a1d8affc12e2f611a2c417622ec21f3004b34ea57703630cb"></a>NMEA&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a3c39bec9f934b9a6a1d8affc12e2f611a6c39735c46e105da43485e272b2264c3"></a>RTCM&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a3c39bec9f934b9a6a1d8affc12e2f611a04362f0b948757fb86d3357432a72c53"></a>SPARTN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3c39bec9f934b9a6a1d8affc12e2f611a5cd191cfa16730782d0be216225f91f5"></a>UBLOX&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a3c39bec9f934b9a6a1d8affc12e2f611a390832ebd020e555d2fa81eb96c9b479"></a>ALL&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
@@ -269,8 +270,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a7dff7803d28c57d8eb3eef72ddf2ebe2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7dff7803d28c57d8eb3eef72ddf2ebe2">&#9670;&nbsp;</a></span>mipCommands() <span class="overload">[1/2]</span></h2>
+<a id="a31c61a8260ce15163dad0be0e4f32d8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31c61a8260ce15163dad0be0e4f32d8e">&#9670;&nbsp;</a></span>mip() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -279,7 +280,7 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool mip::commands_system::CommsProtocol::mipCommands </td>
+          <td class="memname">bool mip::commands_system::CommsProtocol::mip </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -294,8 +295,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a13ff3d26a8bcd22bc1e85b5f085a0110"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13ff3d26a8bcd22bc1e85b5f085a0110">&#9670;&nbsp;</a></span>mipCommands() <span class="overload">[2/2]</span></h2>
+<a id="ae9433b0034a179164429459ddef896b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9433b0034a179164429459ddef896b3">&#9670;&nbsp;</a></span>mip() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -304,58 +305,7 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void mip::commands_system::CommsProtocol::mipCommands </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>val</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9b6f38294418fb8b4b8b861e1092fbf8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b6f38294418fb8b4b8b861e1092fbf8">&#9670;&nbsp;</a></span>mipData() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool mip::commands_system::CommsProtocol::mipData </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa15e21311ec447a2b2e2ba489d83dc77"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa15e21311ec447a2b2e2ba489d83dc77">&#9670;&nbsp;</a></span>mipData() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::commands_system::CommsProtocol::mipData </td>
+          <td class="memname">void mip::commands_system::CommsProtocol::mip </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>val</em></td><td>)</td>
@@ -663,6 +613,57 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void mip::commands_system::CommsProtocol::spartn </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6f6d208f67e7cb775b4b8a7c29735589"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f6d208f67e7cb775b4b8a7c29735589">&#9670;&nbsp;</a></span>ublox() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::commands_system::CommsProtocol::ublox </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a33c5a810440c790485afed43fd5d3519"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33c5a810440c790485afed43fd5d3519">&#9670;&nbsp;</a></span>ublox() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::commands_system::CommsProtocol::ublox </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>val</em></td><td>)</td>
