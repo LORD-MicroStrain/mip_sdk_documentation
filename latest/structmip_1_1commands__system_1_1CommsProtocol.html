@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-135-g10644bb</span>
+   &#160;<span id="projectnumber">v3.0.0-137-ge8b95ea</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -98,8 +98,7 @@ Public Types</h2></td></tr>
 <a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html#a3c39bec9f934b9a6a1d8affc12e2f611a6c39735c46e105da43485e272b2264c3">RTCM</a> = 0x00000200, 
 <br />
 &#160;&#160;<a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html#a3c39bec9f934b9a6a1d8affc12e2f611a04362f0b948757fb86d3357432a72c53">SPARTN</a> = 0x01000000, 
-<a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html#a3c39bec9f934b9a6a1d8affc12e2f611a5cd191cfa16730782d0be216225f91f5">UBLOX</a> = 0x02000000, 
-<a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html#a3c39bec9f934b9a6a1d8affc12e2f611a390832ebd020e555d2fa81eb96c9b479">ALL</a> = 0x03000301
+<a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html#a3c39bec9f934b9a6a1d8affc12e2f611a390832ebd020e555d2fa81eb96c9b479">ALL</a> = 0x01000301
 <br />
  }</td></tr>
 <tr class="separator:a3c39bec9f934b9a6a1d8affc12e2f611"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,10 +137,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac6f9cb1f5ed97c71b9d055b5f40b24d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a330b4fe280e439430588e1e063dc5530"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html#a330b4fe280e439430588e1e063dc5530">spartn</a> (bool val)</td></tr>
 <tr class="separator:a330b4fe280e439430588e1e063dc5530"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f6d208f67e7cb775b4b8a7c29735589"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html#a6f6d208f67e7cb775b4b8a7c29735589">ublox</a> () const</td></tr>
-<tr class="separator:a6f6d208f67e7cb775b4b8a7c29735589"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33c5a810440c790485afed43fd5d3519"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html#a33c5a810440c790485afed43fd5d3519">ublox</a> (bool val)</td></tr>
-<tr class="separator:a33c5a810440c790485afed43fd5d3519"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1144134a8bc421ecd5d587fdbc5df58"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html#ad1144134a8bc421ecd5d587fdbc5df58">allSet</a> () const</td></tr>
 <tr class="separator:ad1144134a8bc421ecd5d587fdbc5df58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9dcbeba9137e453dbf5b73fb52fbe15"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html#ad9dcbeba9137e453dbf5b73fb52fbe15">setAll</a> ()</td></tr>
@@ -186,7 +181,6 @@ Public Attributes</h2></td></tr>
 <tr><td class="fieldname"><a id="a3c39bec9f934b9a6a1d8affc12e2f611a2c417622ec21f3004b34ea57703630cb"></a>NMEA&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a3c39bec9f934b9a6a1d8affc12e2f611a6c39735c46e105da43485e272b2264c3"></a>RTCM&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a3c39bec9f934b9a6a1d8affc12e2f611a04362f0b948757fb86d3357432a72c53"></a>SPARTN&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a3c39bec9f934b9a6a1d8affc12e2f611a5cd191cfa16730782d0be216225f91f5"></a>UBLOX&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a3c39bec9f934b9a6a1d8affc12e2f611a390832ebd020e555d2fa81eb96c9b479"></a>ALL&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
@@ -613,57 +607,6 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void mip::commands_system::CommsProtocol::spartn </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>val</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6f6d208f67e7cb775b4b8a7c29735589"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f6d208f67e7cb775b4b8a7c29735589">&#9670;&nbsp;</a></span>ublox() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool mip::commands_system::CommsProtocol::ublox </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a33c5a810440c790485afed43fd5d3519"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33c5a810440c790485afed43fd5d3519">&#9670;&nbsp;</a></span>ublox() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::commands_system::CommsProtocol::ublox </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>val</em></td><td>)</td>
