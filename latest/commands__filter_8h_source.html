@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-139-gd3238e9</span>
+   &#160;<span id="projectnumber">v3.0.0-142-g62f6c49</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -233,7 +233,7 @@ $(function() {
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;{</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    uint8_t tmp = 0;</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <a class="code" href="group__microstrain__serialization__c.html#gae349cf7f41edb5be584ffaddff0ba991">microstrain_extract_u8</a>(serializer, &amp;tmp);</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    *<span class="keyword">self</span> = tmp;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    *<span class="keyword">self</span> = (<a class="code" href="group__filter__commands__c.html#gae3f10a554468efb1e14a788c48234d2c">mip_filter_reference_frame</a>)tmp;</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;}</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
 <div class="line"><a name="l00175"></a><span class="lineno"><a class="line" href="group__filter__commands__c.html#ga3ddcc8e4e48a71d23c24f030cb2c2d4b">  175</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="group__filter__commands__c.html#ga3ddcc8e4e48a71d23c24f030cb2c2d4b">mip_filter_mag_param_source</a></div>
@@ -252,7 +252,7 @@ $(function() {
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;{</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    uint8_t tmp = 0;</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <a class="code" href="group__microstrain__serialization__c.html#gae349cf7f41edb5be584ffaddff0ba991">microstrain_extract_u8</a>(serializer, &amp;tmp);</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    *<span class="keyword">self</span> = tmp;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    *<span class="keyword">self</span> = (<a class="code" href="group__filter__commands__c.html#ga3ddcc8e4e48a71d23c24f030cb2c2d4b">mip_filter_mag_param_source</a>)tmp;</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;}</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
 <div class="line"><a name="l00194"></a><span class="lineno"><a class="line" href="group__filter__commands__c.html#ga6d677eaa9656fa434b6f6dbc364f70ff">  194</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="group__filter__commands__c.html#ga6d677eaa9656fa434b6f6dbc364f70ff">mip_filter_adaptive_measurement</a></div>
@@ -271,7 +271,7 @@ $(function() {
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;{</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    uint8_t tmp = 0;</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <a class="code" href="group__microstrain__serialization__c.html#gae349cf7f41edb5be584ffaddff0ba991">microstrain_extract_u8</a>(serializer, &amp;tmp);</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    *<span class="keyword">self</span> = tmp;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    *<span class="keyword">self</span> = (<a class="code" href="group__filter__commands__c.html#ga6d677eaa9656fa434b6f6dbc364f70ff">mip_filter_adaptive_measurement</a>)tmp;</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;}</div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160; </div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160; </div>
@@ -315,7 +315,7 @@ $(function() {
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;{</div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    uint16_t tmp = 0;</div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <a class="code" href="group__microstrain__serialization__c.html#ga94d502c3e2e2435f089b8daee5df273b">microstrain_extract_u16</a>(serializer, &amp;tmp);</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    *<span class="keyword">self</span> = tmp;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    *<span class="keyword">self</span> = (<a class="code" href="group__filter__estimation__control__c.html#gad6bc776ddb96740f5c0ede09cb839c3a">mip_filter_estimation_control_command_enable_flags</a>)tmp;</div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;}</div>
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160; </div>
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160; </div>
@@ -408,7 +408,7 @@ $(function() {
 <div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;{</div>
 <div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;    uint8_t tmp = 0;</div>
 <div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;    <a class="code" href="group__microstrain__serialization__c.html#gae349cf7f41edb5be584ffaddff0ba991">microstrain_extract_u8</a>(serializer, &amp;tmp);</div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;    *<span class="keyword">self</span> = tmp;</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;    *<span class="keyword">self</span> = (<a class="code" href="group__filter__tare__orientation__c.html#ga7b381b364346a2b0af53679e1e9a4f0f">mip_filter_tare_orientation_command_mip_tare_axes</a>)tmp;</div>
 <div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;}</div>
 <div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160; </div>
 <div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160; </div>
@@ -455,7 +455,7 @@ $(function() {
 <div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;{</div>
 <div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;    uint8_t tmp = 0;</div>
 <div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;    <a class="code" href="group__microstrain__serialization__c.html#gae349cf7f41edb5be584ffaddff0ba991">microstrain_extract_u8</a>(serializer, &amp;tmp);</div>
-<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;    *<span class="keyword">self</span> = tmp;</div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;    *<span class="keyword">self</span> = (<a class="code" href="group__filter__vehicle__dynamics__mode__c.html#ga641cc633dc8844ddfc07ab5b67fc5edd">mip_filter_vehicle_dynamics_mode_command_dynamics_mode</a>)tmp;</div>
 <div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;}</div>
 <div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160; </div>
 <div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160; </div>
@@ -636,7 +636,7 @@ $(function() {
 <div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;{</div>
 <div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;    uint8_t tmp = 0;</div>
 <div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;    <a class="code" href="group__microstrain__serialization__c.html#gae349cf7f41edb5be584ffaddff0ba991">microstrain_extract_u8</a>(serializer, &amp;tmp);</div>
-<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;    *<span class="keyword">self</span> = tmp;</div>
+<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;    *<span class="keyword">self</span> = (<a class="code" href="group__filter__gnss__source__c.html#gad609f0cc8f8560a0cc7de55a2db1267c">mip_filter_gnss_source_command_source</a>)tmp;</div>
 <div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;}</div>
 <div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160; </div>
 <div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160; </div>
@@ -687,7 +687,7 @@ $(function() {
 <div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;{</div>
 <div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;    uint8_t tmp = 0;</div>
 <div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;    <a class="code" href="group__microstrain__serialization__c.html#gae349cf7f41edb5be584ffaddff0ba991">microstrain_extract_u8</a>(serializer, &amp;tmp);</div>
-<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;    *<span class="keyword">self</span> = tmp;</div>
+<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;    *<span class="keyword">self</span> = (<a class="code" href="group__filter__heading__source__c.html#gaf13fef8e2307311a433ce2c3c20432df">mip_filter_heading_source_command_source</a>)tmp;</div>
 <div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;}</div>
 <div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160; </div>
 <div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160; </div>
@@ -866,7 +866,7 @@ $(function() {
 <div class="line"><a name="l01148"></a><span class="lineno"> 1148</span>&#160;{</div>
 <div class="line"><a name="l01149"></a><span class="lineno"> 1149</span>&#160;    uint8_t tmp = 0;</div>
 <div class="line"><a name="l01150"></a><span class="lineno"> 1150</span>&#160;    <a class="code" href="group__microstrain__serialization__c.html#gae349cf7f41edb5be584ffaddff0ba991">microstrain_extract_u8</a>(serializer, &amp;tmp);</div>
-<div class="line"><a name="l01151"></a><span class="lineno"> 1151</span>&#160;    *<span class="keyword">self</span> = tmp;</div>
+<div class="line"><a name="l01151"></a><span class="lineno"> 1151</span>&#160;    *<span class="keyword">self</span> = (<a class="code" href="group__filter__altitude__aiding__c.html#gabfd9d76b862562cf771cd4f05f7bde3d">mip_filter_altitude_aiding_command_aiding_selector</a>)tmp;</div>
 <div class="line"><a name="l01152"></a><span class="lineno"> 1152</span>&#160;}</div>
 <div class="line"><a name="l01153"></a><span class="lineno"> 1153</span>&#160; </div>
 <div class="line"><a name="l01154"></a><span class="lineno"> 1154</span>&#160; </div>
@@ -911,7 +911,7 @@ $(function() {
 <div class="line"><a name="l01201"></a><span class="lineno"> 1201</span>&#160;{</div>
 <div class="line"><a name="l01202"></a><span class="lineno"> 1202</span>&#160;    uint8_t tmp = 0;</div>
 <div class="line"><a name="l01203"></a><span class="lineno"> 1203</span>&#160;    <a class="code" href="group__microstrain__serialization__c.html#gae349cf7f41edb5be584ffaddff0ba991">microstrain_extract_u8</a>(serializer, &amp;tmp);</div>
-<div class="line"><a name="l01204"></a><span class="lineno"> 1204</span>&#160;    *<span class="keyword">self</span> = tmp;</div>
+<div class="line"><a name="l01204"></a><span class="lineno"> 1204</span>&#160;    *<span class="keyword">self</span> = (<a class="code" href="group__filter__pitch__roll__aiding__c.html#ga66283b537c8dc149e3cfa59eb5f865ef">mip_filter_pitch_roll_aiding_command_aiding_source</a>)tmp;</div>
 <div class="line"><a name="l01205"></a><span class="lineno"> 1205</span>&#160;}</div>
 <div class="line"><a name="l01206"></a><span class="lineno"> 1206</span>&#160; </div>
 <div class="line"><a name="l01207"></a><span class="lineno"> 1207</span>&#160; </div>
@@ -1399,7 +1399,7 @@ $(function() {
 <div class="line"><a name="l01896"></a><span class="lineno"> 1896</span>&#160;{</div>
 <div class="line"><a name="l01897"></a><span class="lineno"> 1897</span>&#160;    uint16_t tmp = 0;</div>
 <div class="line"><a name="l01898"></a><span class="lineno"> 1898</span>&#160;    <a class="code" href="group__microstrain__serialization__c.html#ga94d502c3e2e2435f089b8daee5df273b">microstrain_extract_u16</a>(serializer, &amp;tmp);</div>
-<div class="line"><a name="l01899"></a><span class="lineno"> 1899</span>&#160;    *<span class="keyword">self</span> = tmp;</div>
+<div class="line"><a name="l01899"></a><span class="lineno"> 1899</span>&#160;    *<span class="keyword">self</span> = (<a class="code" href="group__filter__aiding__measurement__enable__c.html#ga6401fe059ffcd302ddb9c5a00c8268c7">mip_filter_aiding_measurement_enable_command_aiding_source</a>)tmp;</div>
 <div class="line"><a name="l01900"></a><span class="lineno"> 1900</span>&#160;}</div>
 <div class="line"><a name="l01901"></a><span class="lineno"> 1901</span>&#160; </div>
 <div class="line"><a name="l01902"></a><span class="lineno"> 1902</span>&#160; </div>
@@ -1481,7 +1481,7 @@ $(function() {
 <div class="line"><a name="l02007"></a><span class="lineno"> 2007</span>&#160;{</div>
 <div class="line"><a name="l02008"></a><span class="lineno"> 2008</span>&#160;    uint8_t tmp = 0;</div>
 <div class="line"><a name="l02009"></a><span class="lineno"> 2009</span>&#160;    <a class="code" href="group__microstrain__serialization__c.html#gae349cf7f41edb5be584ffaddff0ba991">microstrain_extract_u8</a>(serializer, &amp;tmp);</div>
-<div class="line"><a name="l02010"></a><span class="lineno"> 2010</span>&#160;    *<span class="keyword">self</span> = tmp;</div>
+<div class="line"><a name="l02010"></a><span class="lineno"> 2010</span>&#160;    *<span class="keyword">self</span> = (<a class="code" href="group__filter__initialization__configuration__c.html#ga6fa462aefa630fb2530be124f123e455">mip_filter_initialization_configuration_command_alignment_selector</a>)tmp;</div>
 <div class="line"><a name="l02011"></a><span class="lineno"> 2011</span>&#160;}</div>
 <div class="line"><a name="l02012"></a><span class="lineno"> 2012</span>&#160; </div>
 <div class="line"><a name="l02013"></a><span class="lineno"><a class="line" href="group__filter__initialization__configuration__c.html#gac097ffab1f43465f9d366bcc6391b28d"> 2013</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="group__filter__initialization__configuration__c.html#gac097ffab1f43465f9d366bcc6391b28d">mip_filter_initialization_configuration_command_initial_condition_source</a></div>
@@ -1501,7 +1501,7 @@ $(function() {
 <div class="line"><a name="l02027"></a><span class="lineno"> 2027</span>&#160;{</div>
 <div class="line"><a name="l02028"></a><span class="lineno"> 2028</span>&#160;    uint8_t tmp = 0;</div>
 <div class="line"><a name="l02029"></a><span class="lineno"> 2029</span>&#160;    <a class="code" href="group__microstrain__serialization__c.html#gae349cf7f41edb5be584ffaddff0ba991">microstrain_extract_u8</a>(serializer, &amp;tmp);</div>
-<div class="line"><a name="l02030"></a><span class="lineno"> 2030</span>&#160;    *<span class="keyword">self</span> = tmp;</div>
+<div class="line"><a name="l02030"></a><span class="lineno"> 2030</span>&#160;    *<span class="keyword">self</span> = (<a class="code" href="group__filter__initialization__configuration__c.html#gac097ffab1f43465f9d366bcc6391b28d">mip_filter_initialization_configuration_command_initial_condition_source</a>)tmp;</div>
 <div class="line"><a name="l02031"></a><span class="lineno"> 2031</span>&#160;}</div>
 <div class="line"><a name="l02032"></a><span class="lineno"> 2032</span>&#160; </div>
 <div class="line"><a name="l02033"></a><span class="lineno"> 2033</span>&#160; </div>
@@ -1647,7 +1647,7 @@ $(function() {
 <div class="line"><a name="l02211"></a><span class="lineno"> 2211</span>&#160;{</div>
 <div class="line"><a name="l02212"></a><span class="lineno"> 2212</span>&#160;    uint8_t tmp = 0;</div>
 <div class="line"><a name="l02213"></a><span class="lineno"> 2213</span>&#160;    <a class="code" href="group__microstrain__serialization__c.html#gae349cf7f41edb5be584ffaddff0ba991">microstrain_extract_u8</a>(serializer, &amp;tmp);</div>
-<div class="line"><a name="l02214"></a><span class="lineno"> 2214</span>&#160;    *<span class="keyword">self</span> = tmp;</div>
+<div class="line"><a name="l02214"></a><span class="lineno"> 2214</span>&#160;    *<span class="keyword">self</span> = (<a class="code" href="group__filter__ref__point__lever__arm__c.html#ga54cc59e5a49f07fec3de58850e138936">mip_filter_ref_point_lever_arm_command_reference_point_selector</a>)tmp;</div>
 <div class="line"><a name="l02215"></a><span class="lineno"> 2215</span>&#160;}</div>
 <div class="line"><a name="l02216"></a><span class="lineno"> 2216</span>&#160; </div>
 <div class="line"><a name="l02217"></a><span class="lineno"> 2217</span>&#160; </div>

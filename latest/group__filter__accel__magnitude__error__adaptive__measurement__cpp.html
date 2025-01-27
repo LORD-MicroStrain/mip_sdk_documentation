@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-139-gd3238e9</span>
+   &#160;<span id="projectnumber">v3.0.0-142-g62f6c49</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -96,7 +96,7 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Enable or disable the gravity magnitude error adaptive measurement. This function can be used to tune the filter performance in the target application. </p>
 <p>Pick values that give you the least occurrence of invalid EF attitude output. The default values are good for standard low dynamics applications. Increase values for higher dynamic conditions, lower values for lower dynamic. Too low a value will result in excessive heading errors. Higher values increase heading errors when undergoing magnetic field anomalies caused by DC currents, magnets, steel structures,etc.</p>
-<p>Adaptive measurements can be enabled/disabled without the need for providing the additional parameters. In this case, only the function selector and enable value are required; all other parameters will remain at their previous values. When “auto-adaptive” is selected, the filter and limit parameters are ignored. Instead, aiding measurements which rely on the gravity vector will be automatically reweighted by the Kalman filter according to the perceived measurement quality. </p>
+<p>Adaptive measurements can be enabled/disabled without the need for providing the additional parameters. In this case, only the function selector and enable value are required; all other parameters will remain at their previous values. When "auto-adaptive" is selected, the filter and limit parameters are ignored. Instead, aiding measurements which rely on the gravity vector will be automatically reweighted by the Kalman filter according to the perceived measurement quality. </p>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ga3c438ff7ba7a2bb9ca64dce591a7f4a8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga3c438ff7ba7a2bb9ca64dce591a7f4a8">&#9670;&nbsp;</a></span>defaultAccelMagnitudeErrorAdaptiveMeasurement()</h2>

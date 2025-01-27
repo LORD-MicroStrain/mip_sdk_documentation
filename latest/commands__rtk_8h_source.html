@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-139-gd3238e9</span>
+   &#160;<span id="projectnumber">v3.0.0-142-g62f6c49</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -138,7 +138,7 @@ $(function() {
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    uint8_t tmp = 0;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="group__microstrain__serialization__c.html#gae349cf7f41edb5be584ffaddff0ba991">microstrain_extract_u8</a>(serializer, &amp;tmp);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    *<span class="keyword">self</span> = tmp;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    *<span class="keyword">self</span> = (<a class="code" href="group__rtk__commands__c.html#gaf7d9f934b9b20db82d5c83427cac6007">mip_media_selector</a>)tmp;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
 <div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="group__rtk__commands__c.html#ga5e529b1fe46df5b129bb4f5528610904">   80</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="group__rtk__commands__c.html#ga5e529b1fe46df5b129bb4f5528610904">mip_led_action</a></div>
@@ -157,7 +157,7 @@ $(function() {
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;{</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    uint8_t tmp = 0;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="code" href="group__microstrain__serialization__c.html#gae349cf7f41edb5be584ffaddff0ba991">microstrain_extract_u8</a>(serializer, &amp;tmp);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    *<span class="keyword">self</span> = tmp;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    *<span class="keyword">self</span> = (<a class="code" href="group__rtk__commands__c.html#ga5e529b1fe46df5b129bb4f5528610904">mip_led_action</a>)tmp;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
@@ -186,7 +186,7 @@ $(function() {
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;{</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    uint32_t tmp = 0;</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <a class="code" href="group__microstrain__serialization__c.html#gada2949eb089cdc300d16df2f0f906e1c">microstrain_extract_u32</a>(serializer, &amp;tmp);</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    *<span class="keyword">self</span> = tmp;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    *<span class="keyword">self</span> = (<a class="code" href="group__rtk__get__status__flags__c.html#gaa25aa984d4bc6ea0f46759f24137136a">mip_rtk_get_status_flags_command_status_flags_legacy</a>)tmp;</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;}</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
 <div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="group__rtk__get__status__flags__c.html#gac93d8f32bb5421b6c8095999d6574692">  134</a></span>&#160;<span class="keyword">typedef</span> uint32_t <a class="code" href="group__rtk__get__status__flags__c.html#gac93d8f32bb5421b6c8095999d6574692">mip_rtk_get_status_flags_command_status_flags</a>;</div>
@@ -212,7 +212,7 @@ $(function() {
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;{</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    uint32_t tmp = 0;</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <a class="code" href="group__microstrain__serialization__c.html#gada2949eb089cdc300d16df2f0f906e1c">microstrain_extract_u32</a>(serializer, &amp;tmp);</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    *<span class="keyword">self</span> = tmp;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    *<span class="keyword">self</span> = (<a class="code" href="group__rtk__get__status__flags__c.html#gac93d8f32bb5421b6c8095999d6574692">mip_rtk_get_status_flags_command_status_flags</a>)tmp;</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;}</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
@@ -287,7 +287,7 @@ $(function() {
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;{</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    uint8_t tmp = 0;</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <a class="code" href="group__microstrain__serialization__c.html#gae349cf7f41edb5be584ffaddff0ba991">microstrain_extract_u8</a>(serializer, &amp;tmp);</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    *<span class="keyword">self</span> = tmp;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    *<span class="keyword">self</span> = (<a class="code" href="group__rtk__connected__device__type__c.html#gac1a0778d848b649b7381081c263e6e4b">mip_rtk_connected_device_type_command_type</a>)tmp;</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;}</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160; </div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160; </div>
@@ -375,7 +375,7 @@ $(function() {
 <div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;{</div>
 <div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    uint8_t tmp = 0;</div>
 <div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    <a class="code" href="group__microstrain__serialization__c.html#gae349cf7f41edb5be584ffaddff0ba991">microstrain_extract_u8</a>(serializer, &amp;tmp);</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    *<span class="keyword">self</span> = tmp;</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    *<span class="keyword">self</span> = (<a class="code" href="group__rtk__service__status__c.html#ga970e0f1525d6b0dc5f2184c12b6bb955">mip_rtk_service_status_command_service_flags</a>)tmp;</div>
 <div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;}</div>
 <div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160; </div>
 <div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160; </div>

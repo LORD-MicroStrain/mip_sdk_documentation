@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-139-gd3238e9</span>
+   &#160;<span id="projectnumber">v3.0.0-142-g62f6c49</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -355,7 +355,7 @@ $(function() {
 <div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;{</div>
 <div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;    uint16_t tmp = 0;</div>
 <div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;    <a class="code" href="group__microstrain__serialization__c.html#ga94d502c3e2e2435f089b8daee5df273b">microstrain_extract_u16</a>(serializer, &amp;tmp);</div>
-<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;    *<span class="keyword">self</span> = tmp;</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;    *<span class="keyword">self</span> = (<a class="code" href="group__sensor__gps__timestamp__c.html#ga685bc105badad1c4e92e0c8cfaac3313">mip_sensor_gps_timestamp_data_valid_flags</a>)tmp;</div>
 <div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;}</div>
 <div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160; </div>
 <div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160; </div>
@@ -432,7 +432,7 @@ $(function() {
 <div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;{</div>
 <div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;    uint16_t tmp = 0;</div>
 <div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;    <a class="code" href="group__microstrain__serialization__c.html#ga94d502c3e2e2435f089b8daee5df273b">microstrain_extract_u16</a>(serializer, &amp;tmp);</div>
-<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;    *<span class="keyword">self</span> = tmp;</div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;    *<span class="keyword">self</span> = (<a class="code" href="group__sensor__overrange__status__c.html#gab1ef69265071b607a1ed42ff2f178021">mip_sensor_overrange_status_data_status</a>)tmp;</div>
 <div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;}</div>
 <div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160; </div>
 <div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160; </div>
