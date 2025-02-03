@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-144-ga977584</span>
+   &#160;<span id="projectnumber">v3.0.0-152-g79f5c29</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -251,10 +251,198 @@ $(function() {
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    }</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;}</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160; </div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;} <span class="comment">// namespace mip::metadata</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno"><a class="line" href="namespacemip_1_1metadata_1_1utils.html#a0daa2db8dd34f48bc3f9afd0f5417d53">  195</a></span>&#160;constexpr <span class="keywordtype">size_t</span> <a class="code" href="namespacemip_1_1metadata_1_1utils.html#a0daa2db8dd34f48bc3f9afd0f5417d53">sizeForBasicType</a>(<span class="keyword">const</span> <a class="code" href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525">Type</a> type, <span class="keyword">const</span> <span class="keywordtype">void</span>* info = <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;{</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keywordflow">switch</span> (type)</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    {</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525a027acd3aa6b1dd7f26119d3cf0f9a063">Type::CHAR</a>:</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        {</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">sizeof</span>(char);</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        }</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525aa97b2c144243b2b9d2c593ec268b62f5">Type::BOOL</a>:</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        {</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">sizeof</span>(bool);</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        }</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525a6669348b484e3008dca2bfa8e85e40b5">Type::U8</a>:</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        {</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">sizeof</span>(uint8_t);</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        }</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525aafb0fced528eaac5fe170b763cda5975">Type::S8</a>:</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        {</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">sizeof</span>(int8_t);</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        }</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525aef9ef3ebca4d2b64b6ec83808bafa5f2">Type::U16</a>:</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        {</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">sizeof</span>(uint16_t);</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        }</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525a6e0b0886efb94aec797f6b830329b72c">Type::S16</a>:</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        {</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">sizeof</span>(int16_t);</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        }</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525ac8bd5bedff8ef192d39a962afc0e19ee">Type::U32</a>:</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        {</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">sizeof</span>(uint32_t);</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        }</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525aa1e28eee0339658d39a8b4d325b56e9c">Type::S32</a>:</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        {</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">sizeof</span>(int32_t);</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        }</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525a31d65cccd6593e4101db93fb878abcaa">Type::U64</a>:</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        {</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">sizeof</span>(uint64_t);</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        }</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525a115dca124dc6423c7a400b8a8a0270cc">Type::S64</a>:</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        {</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">sizeof</span>(int64_t);</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        }</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525ae738c26bf4ce1037fa81b039a915cbf6">Type::FLOAT</a>:</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        {</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">sizeof</span>(float);</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        }</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525afd3e4ece78a7d422280d5ed379482229">Type::DOUBLE</a>:</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        {</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">sizeof</span>(double);</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        }</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525a85a1979d26d0ef93dcc13a72fee80705">Type::ENUM</a>:</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        {</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;            <span class="keywordflow">if</span> (!info)</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;            {</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;                <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;            }</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160; </div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="namespacemip_1_1metadata_1_1utils.html#a0daa2db8dd34f48bc3f9afd0f5417d53">sizeForBasicType</a>(<span class="keyword">static_cast&lt;</span><span class="keyword">const </span><a class="code" href="structmip_1_1metadata_1_1EnumInfo.html">EnumInfo</a>*<span class="keyword">&gt;</span>(info)-&gt;type);</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        }</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525a6886e0d29007ca152880b30d73ca2adc">Type::BITS</a>:</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        {</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;            <span class="keywordflow">if</span> (!info)</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;            {</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;            }</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160; </div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="namespacemip_1_1metadata_1_1utils.html#a0daa2db8dd34f48bc3f9afd0f5417d53">sizeForBasicType</a>(<span class="keyword">static_cast&lt;</span><span class="keyword">const </span><a class="code" href="structmip_1_1metadata_1_1BitfieldInfo.html">BitfieldInfo</a>*<span class="keyword">&gt;</span>(info)-&gt;type);</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        }</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        {</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;            <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        }</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    }</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;}</div>
+<div class="line"><a name="l00271"></a><span class="lineno"><a class="line" href="namespacemip_1_1metadata_1_1utils.html#a9422a04dd3131c7a96dedcfb6bb90f67">  271</a></span>&#160;constexpr <span class="keywordtype">size_t</span> <a class="code" href="namespacemip_1_1metadata_1_1utils.html#a0daa2db8dd34f48bc3f9afd0f5417d53">sizeForBasicType</a>(<span class="keyword">const</span> <a class="code" href="structmip_1_1metadata_1_1TypeInfo.html">TypeInfo</a>&amp; type) { <span class="keywordflow">return</span> <a class="code" href="namespacemip_1_1metadata_1_1utils.html#a0daa2db8dd34f48bc3f9afd0f5417d53">sizeForBasicType</a>(type.<a class="code" href="structmip_1_1metadata_1_1TypeInfo.html#a379d8a87670306931cc4d5e64072c6e3">type</a>, type.<a class="code" href="structmip_1_1metadata_1_1TypeInfo.html#a41b50814d7c72492d27bd3970b74377c">infoPtr</a>); }</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160; </div>
+<div class="line"><a name="l00277"></a><span class="lineno"><a class="line" href="namespacemip_1_1metadata_1_1utils.html#a5b363294ac4312852086af6a704e8fc2">  277</a></span>&#160;constexpr <span class="keywordtype">size_t</span> <a class="code" href="namespacemip_1_1metadata_1_1utils.html#a5b363294ac4312852086af6a704e8fc2">alignmentForBasicType</a>(<span class="keyword">const</span> <a class="code" href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525">Type</a> type, <span class="keyword">const</span> <span class="keywordtype">void</span>* info = <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;{</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <span class="keywordflow">switch</span> (type)</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    {</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525a027acd3aa6b1dd7f26119d3cf0f9a063">Type::CHAR</a>:</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        {</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">alignof</span>(char);</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        }</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525aa97b2c144243b2b9d2c593ec268b62f5">Type::BOOL</a>:</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        {</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">alignof</span>(bool);</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        }</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525a6669348b484e3008dca2bfa8e85e40b5">Type::U8</a>:</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        {</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">alignof</span>(uint8_t);</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        }</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525aafb0fced528eaac5fe170b763cda5975">Type::S8</a>:</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        {</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">alignof</span>(int8_t);</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        }</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525aef9ef3ebca4d2b64b6ec83808bafa5f2">Type::U16</a>:</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        {</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">alignof</span>(uint16_t);</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        }</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525a6e0b0886efb94aec797f6b830329b72c">Type::S16</a>:</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        {</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">alignof</span>(int16_t);</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        }</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525ac8bd5bedff8ef192d39a962afc0e19ee">Type::U32</a>:</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        {</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">alignof</span>(uint32_t);</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        }</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525aa1e28eee0339658d39a8b4d325b56e9c">Type::S32</a>:</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        {</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">alignof</span>(int32_t);</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        }</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525a31d65cccd6593e4101db93fb878abcaa">Type::U64</a>:</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        {</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">alignof</span>(uint64_t);</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        }</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525a115dca124dc6423c7a400b8a8a0270cc">Type::S64</a>:</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        {</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">alignof</span>(int64_t);</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        }</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525ae738c26bf4ce1037fa81b039a915cbf6">Type::FLOAT</a>:</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        {</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">alignof</span>(float);</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        }</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525afd3e4ece78a7d422280d5ed379482229">Type::DOUBLE</a>:</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        {</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">alignof</span>(double);</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        }</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525a85a1979d26d0ef93dcc13a72fee80705">Type::ENUM</a>:</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        {</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;            <span class="keywordflow">if</span> (!info)</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;            {</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;                <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;            }</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160; </div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="namespacemip_1_1metadata_1_1utils.html#a5b363294ac4312852086af6a704e8fc2">alignmentForBasicType</a>(<span class="keyword">static_cast&lt;</span><span class="keyword">const </span><a class="code" href="structmip_1_1metadata_1_1EnumInfo.html">EnumInfo</a>*<span class="keyword">&gt;</span>(info)-&gt;type);</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        }</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525a6886e0d29007ca152880b30d73ca2adc">Type::BITS</a>:</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        {</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;            <span class="keywordflow">if</span> (!info)</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;            {</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;                <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;            }</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160; </div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="namespacemip_1_1metadata_1_1utils.html#a5b363294ac4312852086af6a704e8fc2">alignmentForBasicType</a>(<span class="keyword">static_cast&lt;</span><span class="keyword">const </span><a class="code" href="structmip_1_1metadata_1_1BitfieldInfo.html">BitfieldInfo</a>*<span class="keyword">&gt;</span>(info)-&gt;type);</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;        }</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;        <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        {</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;            <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;        }</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    }</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;}</div>
+<div class="line"><a name="l00353"></a><span class="lineno"><a class="line" href="namespacemip_1_1metadata_1_1utils.html#a0e928e30c0d5f739a4fe49c573e0dac6">  353</a></span>&#160;constexpr <span class="keywordtype">size_t</span> <a class="code" href="namespacemip_1_1metadata_1_1utils.html#a5b363294ac4312852086af6a704e8fc2">alignmentForBasicType</a>(<span class="keyword">const</span> <a class="code" href="structmip_1_1metadata_1_1TypeInfo.html">TypeInfo</a>&amp; type) { <span class="keywordflow">return</span> <a class="code" href="namespacemip_1_1metadata_1_1utils.html#a5b363294ac4312852086af6a704e8fc2">alignmentForBasicType</a>(type.<a class="code" href="structmip_1_1metadata_1_1TypeInfo.html#a379d8a87670306931cc4d5e64072c6e3">type</a>, type.<a class="code" href="structmip_1_1metadata_1_1TypeInfo.html#a41b50814d7c72492d27bd3970b74377c">infoPtr</a>); }</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160; </div>
+<div class="line"><a name="l00370"></a><span class="lineno"><a class="line" href="namespacemip_1_1metadata_1_1utils.html#ad58cd1de2fea0f1e23a59ec9c661182c">  370</a></span>&#160;<span class="keyword">const</span> <span class="keyword">inline</span> <a class="code" href="structmip_1_1metadata_1_1ParameterInfo.html">ParameterInfo</a>* <a class="code" href="namespacemip_1_1metadata_1_1utils.html#ad58cd1de2fea0f1e23a59ec9c661182c">getParameterInfoFromStructMemberOffset</a>(<span class="keyword">const</span> <span class="keywordtype">size_t</span> offset, <span class="keyword">const</span> <a class="code" href="structmip_1_1metadata_1_1FieldInfo.html">FieldInfo</a>&amp; field_info)</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;{</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    <span class="keywordtype">size_t</span> check_offset = 0;</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160; </div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code" href="structmip_1_1metadata_1_1ParameterInfo.html">ParameterInfo</a>&amp; param : field_info.<a class="code" href="structmip_1_1metadata_1_1StructInfo.html#addeb11aa38bc4b485115aea38640a7d1">parameters</a>)</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    {</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">size_t</span> align = <a class="code" href="namespacemip_1_1metadata_1_1utils.html#a5b363294ac4312852086af6a704e8fc2">alignmentForBasicType</a>(param.<a class="code" href="structmip_1_1metadata_1_1ParameterInfo.html#a30ac5ae8a2f2ba0728069f9cb696bd4d">type</a>);</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160; </div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;        <span class="keywordflow">if</span> (align != 0)</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        {</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">size_t</span> align_offset = check_offset % align;</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160; </div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;            <span class="keywordflow">if</span> (align_offset != 0)</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;            {</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;                check_offset += align - align_offset;</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;            }</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;        }</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160; </div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;        <span class="keywordflow">if</span> (offset == check_offset)</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;        {</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;            <span class="keywordflow">return</span> &amp;param;</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;        }</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160; </div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;        check_offset += <a class="code" href="namespacemip_1_1metadata_1_1utils.html#a0daa2db8dd34f48bc3f9afd0f5417d53">sizeForBasicType</a>(param.<a class="code" href="structmip_1_1metadata_1_1ParameterInfo.html#a30ac5ae8a2f2ba0728069f9cb696bd4d">type</a>);</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    }</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160; </div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;}</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160; </div>
+<div class="line"><a name="l00413"></a><span class="lineno"><a class="line" href="mip__meta__utils_8hpp.html#a2159da8274ec1de193aa06248cbb5a16">  413</a></span>&#160;<span class="preprocessor">#define GET_MIP_METADATA_PARAM_INFO(MipType, MemberField) \</span></div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;<span class="preprocessor">    mip::metadata::utils::getParameterInfoFromStructMemberOffset(offsetof(MipType, MemberField), mip::metadata::MetadataFor&lt;MipType&gt;().value)</span></div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;} <span class="comment">// namespace mip::metadata</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="anamespacemip_1_1metadata_1_1utils_html_a7dfbabb2bc322eb8baf09c67a703ec59"><div class="ttname"><a href="namespacemip_1_1metadata_1_1utils.html#a7dfbabb2bc322eb8baf09c67a703ec59">mip::metadata::utils::nameOfType</a></div><div class="ttdeci">constexpr const char * nameOfType(const TypeInfo &amp;type)</div><div class="ttdef"><b>Definition:</b> mip_meta_utils.hpp:179</div></div>
 <div class="ttc" id="astructmicrostrain_1_1Span_html_ad88b9123bfc843a7d78bae038d79feba"><div class="ttname"><a href="structmicrostrain_1_1Span.html#ad88b9123bfc843a7d78bae038d79feba">microstrain::Span::data</a></div><div class="ttdeci">constexpr pointer data() const noexcept</div><div class="ttdef"><b>Definition:</b> span.hpp:64</div></div>
+<div class="ttc" id="anamespacemip_1_1metadata_1_1utils_html_a5b363294ac4312852086af6a704e8fc2"><div class="ttname"><a href="namespacemip_1_1metadata_1_1utils.html#a5b363294ac4312852086af6a704e8fc2">mip::metadata::utils::alignmentForBasicType</a></div><div class="ttdeci">constexpr size_t alignmentForBasicType(const Type type, const void *info=nullptr)</div><div class="ttdoc">Gets the size of a basic type (including bitfields and enums if info is not NULL).</div><div class="ttdef"><b>Definition:</b> mip_meta_utils.hpp:277</div></div>
 <div class="ttc" id="astructmip_1_1metadata_1_1utils_1_1ParamEnum_html"><div class="ttname"><a href="structmip_1_1metadata_1_1utils_1_1ParamEnum.html">mip::metadata::utils::ParamEnum</a></div><div class="ttdef"><b>Definition:</b> mip_meta_utils.hpp:37</div></div>
 <div class="ttc" id="astructmip_1_1metadata_1_1utils_1_1ParamEnum_3_01Type_1_1CHAR_01_4_html_affb100fd2f48175d2e2c077a55a3a198"><div class="ttname"><a href="structmip_1_1metadata_1_1utils_1_1ParamEnum_3_01Type_1_1CHAR_01_4.html#affb100fd2f48175d2e2c077a55a3a198">mip::metadata::utils::ParamEnum&lt; Type::CHAR &gt;::type</a></div><div class="ttdeci">char type</div><div class="ttdef"><b>Definition:</b> mip_meta_utils.hpp:39</div></div>
 <div class="ttc" id="anamespacemip_1_1metadata_html_aff2e019f9db2d9068cce26ec201c3525a85a1979d26d0ef93dcc13a72fee80705"><div class="ttname"><a href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525a85a1979d26d0ef93dcc13a72fee80705">mip::metadata::Type::ENUM</a></div><div class="ttdeci">@ ENUM</div></div>
@@ -275,20 +463,26 @@ $(function() {
 <div class="ttc" id="anamespacemip_1_1metadata_html_aff2e019f9db2d9068cce26ec201c3525"><div class="ttname"><a href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525">mip::metadata::Type</a></div><div class="ttdeci">Type</div><div class="ttdef"><b>Definition:</b> mip_structures.hpp:23</div></div>
 <div class="ttc" id="anamespacemip_1_1metadata_html_aff2e019f9db2d9068cce26ec201c3525a027acd3aa6b1dd7f26119d3cf0f9a063"><div class="ttname"><a href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525a027acd3aa6b1dd7f26119d3cf0f9a063">mip::metadata::Type::CHAR</a></div><div class="ttdeci">@ CHAR</div></div>
 <div class="ttc" id="astructmip_1_1metadata_1_1utils_1_1ParamEnum_html_a553781da58bb5928876ebc272798968e"><div class="ttname"><a href="structmip_1_1metadata_1_1utils_1_1ParamEnum.html#a553781da58bb5928876ebc272798968e">mip::metadata::utils::ParamEnum::type</a></div><div class="ttdeci">void type</div><div class="ttdef"><b>Definition:</b> mip_meta_utils.hpp:37</div></div>
+<div class="ttc" id="astructmip_1_1metadata_1_1ParameterInfo_html"><div class="ttname"><a href="structmip_1_1metadata_1_1ParameterInfo.html">mip::metadata::ParameterInfo</a></div><div class="ttdef"><b>Definition:</b> mip_structures.hpp:161</div></div>
+<div class="ttc" id="astructmip_1_1metadata_1_1ParameterInfo_html_a30ac5ae8a2f2ba0728069f9cb696bd4d"><div class="ttname"><a href="structmip_1_1metadata_1_1ParameterInfo.html#a30ac5ae8a2f2ba0728069f9cb696bd4d">mip::metadata::ParameterInfo::type</a></div><div class="ttdeci">TypeInfo type</div><div class="ttdoc">Data type.</div><div class="ttdef"><b>Definition:</b> mip_structures.hpp:197</div></div>
 <div class="ttc" id="astructmip_1_1metadata_1_1utils_1_1ParamEnum_3_01Type_1_1DOUBLE_01_4_html_aec125af38ab61483ae9ce8221d6246b8"><div class="ttname"><a href="structmip_1_1metadata_1_1utils_1_1ParamEnum_3_01Type_1_1DOUBLE_01_4.html#aec125af38ab61483ae9ce8221d6246b8">mip::metadata::utils::ParamEnum&lt; Type::DOUBLE &gt;::type</a></div><div class="ttdeci">double type</div><div class="ttdef"><b>Definition:</b> mip_meta_utils.hpp:50</div></div>
 <div class="ttc" id="astructmip_1_1metadata_1_1utils_1_1ParamType_html"><div class="ttname"><a href="structmip_1_1metadata_1_1utils_1_1ParamType.html">mip::metadata::utils::ParamType</a></div><div class="ttdef"><b>Definition:</b> mip_meta_utils.hpp:12</div></div>
 <div class="ttc" id="anamespacemip_1_1metadata_html_aff2e019f9db2d9068cce26ec201c3525aea931da33de8ba05c3635a51c2b25d75"><div class="ttname"><a href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525aea931da33de8ba05c3635a51c2b25d75">mip::metadata::Type::UNION</a></div><div class="ttdeci">@ UNION</div></div>
 <div class="ttc" id="anamespacemip_1_1metadata_html_aff2e019f9db2d9068cce26ec201c3525aafb0fced528eaac5fe170b763cda5975"><div class="ttname"><a href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525aafb0fced528eaac5fe170b763cda5975">mip::metadata::Type::S8</a></div><div class="ttdeci">@ S8</div></div>
 <div class="ttc" id="anamespacemip_1_1metadata_html_aff2e019f9db2d9068cce26ec201c3525ae738c26bf4ce1037fa81b039a915cbf6"><div class="ttname"><a href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525ae738c26bf4ce1037fa81b039a915cbf6">mip::metadata::Type::FLOAT</a></div><div class="ttdeci">@ FLOAT</div></div>
 <div class="ttc" id="anamespacemip_1_1metadata_html_aff2e019f9db2d9068cce26ec201c3525a6e0b0886efb94aec797f6b830329b72c"><div class="ttname"><a href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525a6e0b0886efb94aec797f6b830329b72c">mip::metadata::Type::S16</a></div><div class="ttdeci">@ S16</div></div>
+<div class="ttc" id="anamespacemip_1_1metadata_1_1utils_html_a0daa2db8dd34f48bc3f9afd0f5417d53"><div class="ttname"><a href="namespacemip_1_1metadata_1_1utils.html#a0daa2db8dd34f48bc3f9afd0f5417d53">mip::metadata::utils::sizeForBasicType</a></div><div class="ttdeci">constexpr size_t sizeForBasicType(const Type type, const void *info=nullptr)</div><div class="ttdoc">Gets the size of a basic type (including bitfields and enums if info is not NULL).</div><div class="ttdef"><b>Definition:</b> mip_meta_utils.hpp:195</div></div>
 <div class="ttc" id="anamespacemip_1_1metadata_html_aff2e019f9db2d9068cce26ec201c3525a115dca124dc6423c7a400b8a8a0270cc"><div class="ttname"><a href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525a115dca124dc6423c7a400b8a8a0270cc">mip::metadata::Type::S64</a></div><div class="ttdeci">@ S64</div></div>
 <div class="ttc" id="astructmip_1_1metadata_1_1TypeInfo_html_ac9b487959e2946ce500a9f3692cccbe1"><div class="ttname"><a href="structmip_1_1metadata_1_1TypeInfo.html#ac9b487959e2946ce500a9f3692cccbe1">mip::metadata::TypeInfo::isBasicType</a></div><div class="ttdeci">bool isBasicType() const</div><div class="ttdef"><b>Definition:</b> mip_structures.hpp:60</div></div>
+<div class="ttc" id="anamespacemip_1_1metadata_1_1utils_html_ad58cd1de2fea0f1e23a59ec9c661182c"><div class="ttname"><a href="namespacemip_1_1metadata_1_1utils.html#ad58cd1de2fea0f1e23a59ec9c661182c">mip::metadata::utils::getParameterInfoFromStructMemberOffset</a></div><div class="ttdeci">const ParameterInfo * getParameterInfoFromStructMemberOffset(const size_t offset, const FieldInfo &amp;field_info)</div><div class="ttdoc">Get a pointer to a parameter given the offset of the member in the class/struct.</div><div class="ttdef"><b>Definition:</b> mip_meta_utils.hpp:370</div></div>
 <div class="ttc" id="astructmip_1_1metadata_1_1utils_1_1ParamEnum_3_01Type_1_1U8_01_4_html_ab01090d807a8d28b8d6a781f7395b915"><div class="ttname"><a href="structmip_1_1metadata_1_1utils_1_1ParamEnum_3_01Type_1_1U8_01_4.html#ab01090d807a8d28b8d6a781f7395b915">mip::metadata::utils::ParamEnum&lt; Type::U8 &gt;::type</a></div><div class="ttdeci">uint8_t type</div><div class="ttdef"><b>Definition:</b> mip_meta_utils.hpp:41</div></div>
 <div class="ttc" id="anamespacemip_1_1metadata_html_aff2e019f9db2d9068cce26ec201c3525a31d65cccd6593e4101db93fb878abcaa"><div class="ttname"><a href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525a31d65cccd6593e4101db93fb878abcaa">mip::metadata::Type::U64</a></div><div class="ttdeci">@ U64</div></div>
 <div class="ttc" id="anamespacemip_1_1metadata_html_aff2e019f9db2d9068cce26ec201c3525aa97b2c144243b2b9d2c593ec268b62f5"><div class="ttname"><a href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525aa97b2c144243b2b9d2c593ec268b62f5">mip::metadata::Type::BOOL</a></div><div class="ttdeci">@ BOOL</div></div>
 <div class="ttc" id="astructmip_1_1metadata_1_1utils_1_1ParamEnum_3_01Type_1_1U64_01_4_html_abedc0ab4380a0d4b0678dc6bbd010883"><div class="ttname"><a href="structmip_1_1metadata_1_1utils_1_1ParamEnum_3_01Type_1_1U64_01_4.html#abedc0ab4380a0d4b0678dc6bbd010883">mip::metadata::utils::ParamEnum&lt; Type::U64 &gt;::type</a></div><div class="ttdeci">uint64_t type</div><div class="ttdef"><b>Definition:</b> mip_meta_utils.hpp:47</div></div>
+<div class="ttc" id="astructmip_1_1metadata_1_1FieldInfo_html"><div class="ttname"><a href="structmip_1_1metadata_1_1FieldInfo.html">mip::metadata::FieldInfo</a></div><div class="ttdef"><b>Definition:</b> mip_structures.hpp:216</div></div>
 <div class="ttc" id="anamespacemip_1_1metadata_html_aff2e019f9db2d9068cce26ec201c3525a6669348b484e3008dca2bfa8e85e40b5"><div class="ttname"><a href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525a6669348b484e3008dca2bfa8e85e40b5">mip::metadata::Type::U8</a></div><div class="ttdeci">@ U8</div></div>
 <div class="ttc" id="amip__structures_8hpp_html"><div class="ttname"><a href="mip__structures_8hpp.html">mip_structures.hpp</a></div></div>
+<div class="ttc" id="astructmip_1_1metadata_1_1StructInfo_html_addeb11aa38bc4b485115aea38640a7d1"><div class="ttname"><a href="structmip_1_1metadata_1_1StructInfo.html#addeb11aa38bc4b485115aea38640a7d1">mip::metadata::StructInfo::parameters</a></div><div class="ttdeci">Span&lt; const ParameterInfo &gt; parameters</div><div class="ttdef"><b>Definition:</b> mip_structures.hpp:211</div></div>
 <div class="ttc" id="astructmip_1_1metadata_1_1TypeInfo_html_a41b50814d7c72492d27bd3970b74377c"><div class="ttname"><a href="structmip_1_1metadata_1_1TypeInfo.html#a41b50814d7c72492d27bd3970b74377c">mip::metadata::TypeInfo::infoPtr</a></div><div class="ttdeci">const void * infoPtr</div><div class="ttdef"><b>Definition:</b> mip_structures.hpp:53</div></div>
 <div class="ttc" id="astructmip_1_1metadata_1_1TypeInfo_html_ad0454363bdaed6e47d7c2e45c8c9e1f7"><div class="ttname"><a href="structmip_1_1metadata_1_1TypeInfo.html#ad0454363bdaed6e47d7c2e45c8c9e1f7">mip::metadata::TypeInfo::bitfieldPointer</a></div><div class="ttdeci">const BitfieldInfo * bitfieldPointer() const</div><div class="ttdef"><b>Definition:</b> mip_structures.hpp:56</div></div>
 <div class="ttc" id="astructmip_1_1metadata_1_1utils_1_1ParamEnum_3_01Type_1_1S32_01_4_html_a37c6ced465a4ebabea3edd079c3d284b"><div class="ttname"><a href="structmip_1_1metadata_1_1utils_1_1ParamEnum_3_01Type_1_1S32_01_4.html#a37c6ced465a4ebabea3edd079c3d284b">mip::metadata::utils::ParamEnum&lt; Type::S32 &gt;::type</a></div><div class="ttdeci">int32_t type</div><div class="ttdef"><b>Definition:</b> mip_meta_utils.hpp:46</div></div>

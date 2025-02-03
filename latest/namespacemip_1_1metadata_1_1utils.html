@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-144-ga977584</span>
+   &#160;<span id="projectnumber">v3.0.0-152-g79f5c29</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -156,6 +156,19 @@ Functions</h2></td></tr>
 <tr class="separator:a3bf7590b363efc5259e7763ade58c965"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7dfbabb2bc322eb8baf09c67a703ec59"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip_1_1metadata_1_1utils.html#a7dfbabb2bc322eb8baf09c67a703ec59">nameOfType</a> (const <a class="el" href="structmip_1_1metadata_1_1TypeInfo.html">TypeInfo</a> &amp;type)</td></tr>
 <tr class="separator:a7dfbabb2bc322eb8baf09c67a703ec59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0daa2db8dd34f48bc3f9afd0f5417d53"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip_1_1metadata_1_1utils.html#a0daa2db8dd34f48bc3f9afd0f5417d53">sizeForBasicType</a> (const <a class="el" href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525">Type</a> type, const void *info=nullptr)</td></tr>
+<tr class="memdesc:a0daa2db8dd34f48bc3f9afd0f5417d53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the size of a basic type (including bitfields and enums if info is not NULL).  <a href="namespacemip_1_1metadata_1_1utils.html#a0daa2db8dd34f48bc3f9afd0f5417d53">More...</a><br /></td></tr>
+<tr class="separator:a0daa2db8dd34f48bc3f9afd0f5417d53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9422a04dd3131c7a96dedcfb6bb90f67"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip_1_1metadata_1_1utils.html#a9422a04dd3131c7a96dedcfb6bb90f67">sizeForBasicType</a> (const <a class="el" href="structmip_1_1metadata_1_1TypeInfo.html">TypeInfo</a> &amp;type)</td></tr>
+<tr class="separator:a9422a04dd3131c7a96dedcfb6bb90f67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b363294ac4312852086af6a704e8fc2"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip_1_1metadata_1_1utils.html#a5b363294ac4312852086af6a704e8fc2">alignmentForBasicType</a> (const <a class="el" href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525">Type</a> type, const void *info=nullptr)</td></tr>
+<tr class="memdesc:a5b363294ac4312852086af6a704e8fc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the size of a basic type (including bitfields and enums if info is not NULL).  <a href="namespacemip_1_1metadata_1_1utils.html#a5b363294ac4312852086af6a704e8fc2">More...</a><br /></td></tr>
+<tr class="separator:a5b363294ac4312852086af6a704e8fc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e928e30c0d5f739a4fe49c573e0dac6"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip_1_1metadata_1_1utils.html#a0e928e30c0d5f739a4fe49c573e0dac6">alignmentForBasicType</a> (const <a class="el" href="structmip_1_1metadata_1_1TypeInfo.html">TypeInfo</a> &amp;type)</td></tr>
+<tr class="separator:a0e928e30c0d5f739a4fe49c573e0dac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad58cd1de2fea0f1e23a59ec9c661182c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structmip_1_1metadata_1_1ParameterInfo.html">ParameterInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip_1_1metadata_1_1utils.html#ad58cd1de2fea0f1e23a59ec9c661182c">getParameterInfoFromStructMemberOffset</a> (const size_t offset, const <a class="el" href="structmip_1_1metadata_1_1FieldInfo.html">FieldInfo</a> &amp;field_info)</td></tr>
+<tr class="memdesc:ad58cd1de2fea0f1e23a59ec9c661182c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to a parameter given the offset of the member in the class/struct.  <a href="namespacemip_1_1metadata_1_1utils.html#ad58cd1de2fea0f1e23a59ec9c661182c">More...</a><br /></td></tr>
+<tr class="separator:ad58cd1de2fea0f1e23a59ec9c661182c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="aba2aab6f193bae41b46af4ab76b9d061"></a>
@@ -175,6 +188,118 @@ template&lt;class Field , class T , auto Ptr&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5b363294ac4312852086af6a704e8fc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b363294ac4312852086af6a704e8fc2">&#9670;&nbsp;</a></span>alignmentForBasicType() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr size_t mip::metadata::utils::alignmentForBasicType </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525">Type</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>info</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the size of a basic type (including bitfields and enums if info is not NULL). </p>
+
+</div>
+</div>
+<a id="a0e928e30c0d5f739a4fe49c573e0dac6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e928e30c0d5f739a4fe49c573e0dac6">&#9670;&nbsp;</a></span>alignmentForBasicType() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr size_t mip::metadata::utils::alignmentForBasicType </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structmip_1_1metadata_1_1TypeInfo.html">TypeInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad58cd1de2fea0f1e23a59ec9c661182c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad58cd1de2fea0f1e23a59ec9c661182c">&#9670;&nbsp;</a></span>getParameterInfoFromStructMemberOffset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="structmip_1_1metadata_1_1ParameterInfo.html">ParameterInfo</a>* mip::metadata::utils::getParameterInfoFromStructMemberOffset </td>
+          <td>(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structmip_1_1metadata_1_1FieldInfo.html">FieldInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>field_info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a pointer to a parameter given the offset of the member in the class/struct. </p>
+<dl class="section warning"><dt>Warning</dt><dd>This does not work for nested types, I.E. ClassType.member1.member2</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="mip__meta__utils_8hpp.html#a2159da8274ec1de193aa06248cbb5a16" title="Get a pointer to a parameter given the offset of the member in the class/struct.">GET_MIP_METADATA_PARAM_INFO</a></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">offset</td><td>The offset of the member within the struct/class. Use the C++ offsetof or a variant to get this value</td></tr>
+    <tr><td class="paramname">field_info</td><td>Metadata field info to look up parameter info for</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the parameter info if found, otherwise nullptr </dd></dl>
 
 </div>
 </div>
@@ -323,6 +448,70 @@ template&lt;class Field , class T , auto Ptr&gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>A basic type, such as u8, s32, float, etc. if possible. </dd>
 <dd>
 <a class="el" href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525ab50339a10e1de285ac99d4c3990b8693" title="Invalid/unknown.">Type::NONE</a> if type is NONE or if it's a compound type like a struct or union. </dd></dl>
+
+</div>
+</div>
+<a id="a0daa2db8dd34f48bc3f9afd0f5417d53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0daa2db8dd34f48bc3f9afd0f5417d53">&#9670;&nbsp;</a></span>sizeForBasicType() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr size_t mip::metadata::utils::sizeForBasicType </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525">Type</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>info</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the size of a basic type (including bitfields and enums if info is not NULL). </p>
+
+</div>
+</div>
+<a id="a9422a04dd3131c7a96dedcfb6bb90f67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9422a04dd3131c7a96dedcfb6bb90f67">&#9670;&nbsp;</a></span>sizeForBasicType() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr size_t mip::metadata::utils::sizeForBasicType </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structmip_1_1metadata_1_1TypeInfo.html">TypeInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
