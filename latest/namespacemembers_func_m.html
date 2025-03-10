@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-168-g6a528fe</span>
+   &#160;<span id="projectnumber">v3.0.0-170-g6440bd3</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -208,14 +208,14 @@ $(function() {
 <li>mip_3dm_default_gnss_assisted_fix()
 : <a class="el" href="group__dm__gnss__assisted__fix__c.html#gaa7c3792c289906022413c34039499804">mip::C</a>
 </li>
+<li>mip_3dm_default_gnss_message_format()
+: <a class="el" href="group__dm__gnss__message__format__c.html#gac8c79f152c40cdea6988d26356b11c30">mip::C</a>
+</li>
 <li>mip_3dm_default_gnss_sbas_settings()
 : <a class="el" href="group__dm__gnss__sbas__settings__c.html#ga45449b9053545259afb608d08b5dddb8">mip::C</a>
 </li>
 <li>mip_3dm_default_gpio_config()
 : <a class="el" href="group__dm__gpio__config__c.html#ga6230648d932c57becdbf367b91645ec7">mip::C</a>
-</li>
-<li>mip_3dm_default_gps_message_format()
-: <a class="el" href="group__dm__gps__message__format__c.html#ga1388119d4a8c608037a9077b19215de8">mip::C</a>
 </li>
 <li>mip_3dm_default_gyro_bias()
 : <a class="el" href="group__dm__gyro__bias__c.html#gaf202188de2e8e550f241e4edd478dc48">mip::C</a>
@@ -280,8 +280,8 @@ $(function() {
 <li>mip_3dm_get_event_trigger_status()
 : <a class="el" href="group__dm__get__event__trigger__status__c.html#ga44f0f0e5c5d23f6faf914d32fef44efb">mip::C</a>
 </li>
-<li>mip_3dm_gps_get_base_rate()
-: <a class="el" href="group__dm__gps__get__base__rate__c.html#ga19745843559f7c87a78b1c019eb00ac7">mip::C</a>
+<li>mip_3dm_gnss_get_base_rate()
+: <a class="el" href="group__dm__gnss__get__base__rate__c.html#ga0fc5e09fd98178f816cc95231bb75096">mip::C</a>
 </li>
 <li>mip_3dm_imu_get_base_rate()
 : <a class="el" href="group__dm__imu__get__base__rate__c.html#ga76081a2748786f5071d879fdc1309191">mip::C</a>
@@ -319,14 +319,14 @@ $(function() {
 <li>mip_3dm_load_gnss_assisted_fix()
 : <a class="el" href="group__dm__gnss__assisted__fix__c.html#gaca061776cea0b09b70957176c32fef4d">mip::C</a>
 </li>
+<li>mip_3dm_load_gnss_message_format()
+: <a class="el" href="group__dm__gnss__message__format__c.html#gaa31b1ee6da95bd0c07f620df39149240">mip::C</a>
+</li>
 <li>mip_3dm_load_gnss_sbas_settings()
 : <a class="el" href="group__dm__gnss__sbas__settings__c.html#ga7bc8a019f0b445b05340aa746e73ee7c">mip::C</a>
 </li>
 <li>mip_3dm_load_gpio_config()
 : <a class="el" href="group__dm__gpio__config__c.html#ga0aa311eac064eb2e9aeb1f73dae38254">mip::C</a>
-</li>
-<li>mip_3dm_load_gps_message_format()
-: <a class="el" href="group__dm__gps__message__format__c.html#ga386266e05b0322e8301883f955b3537c">mip::C</a>
 </li>
 <li>mip_3dm_load_gyro_bias()
 : <a class="el" href="group__dm__gyro__bias__c.html#gaeb1d35d80b1d60856f2ceae3e539bc75">mip::C</a>
@@ -418,6 +418,9 @@ $(function() {
 <li>mip_3dm_read_gnss_assisted_fix()
 : <a class="el" href="group__dm__gnss__assisted__fix__c.html#gace9fe176cfb322659d46accfdbf5e281">mip::C</a>
 </li>
+<li>mip_3dm_read_gnss_message_format()
+: <a class="el" href="group__dm__gnss__message__format__c.html#ga20ae87a6ec0daf9daa5bbc0a5aab6af3">mip::C</a>
+</li>
 <li>mip_3dm_read_gnss_sbas_settings()
 : <a class="el" href="group__dm__gnss__sbas__settings__c.html#gae8457df6990141313e9a54f2b36bf642">mip::C</a>
 </li>
@@ -429,9 +432,6 @@ $(function() {
 </li>
 <li>mip_3dm_read_gpio_state()
 : <a class="el" href="group__dm__gpio__state__c.html#ga715f13f42b812acd3bfe38a9553497aa">mip::C</a>
-</li>
-<li>mip_3dm_read_gps_message_format()
-: <a class="el" href="group__dm__gps__message__format__c.html#ga0e2decf9eb6bf3e2c062548765f955ea">mip::C</a>
 </li>
 <li>mip_3dm_read_gyro_bias()
 : <a class="el" href="group__dm__gyro__bias__c.html#ga3079aa33711db02c2b8213071562098c">mip::C</a>
@@ -511,14 +511,14 @@ $(function() {
 <li>mip_3dm_save_gnss_assisted_fix()
 : <a class="el" href="group__dm__gnss__assisted__fix__c.html#ga70adcdf65df94a56d6b7eab832c63eaf">mip::C</a>
 </li>
+<li>mip_3dm_save_gnss_message_format()
+: <a class="el" href="group__dm__gnss__message__format__c.html#ga1c177b39ddd3a853e9bd6292406747c7">mip::C</a>
+</li>
 <li>mip_3dm_save_gnss_sbas_settings()
 : <a class="el" href="group__dm__gnss__sbas__settings__c.html#ga9d18e9d34d0e632f69de9f7aeb2ad27e">mip::C</a>
 </li>
 <li>mip_3dm_save_gpio_config()
 : <a class="el" href="group__dm__gpio__config__c.html#ga0d02b0ed3ee7ade9a061e46771c1db06">mip::C</a>
-</li>
-<li>mip_3dm_save_gps_message_format()
-: <a class="el" href="group__dm__gps__message__format__c.html#gaa5d13141f19520d144553b215761de31">mip::C</a>
 </li>
 <li>mip_3dm_save_gyro_bias()
 : <a class="el" href="group__dm__gyro__bias__c.html#gad3df504acfc1932626edfb98a043e3e4">mip::C</a>
@@ -595,6 +595,9 @@ $(function() {
 <li>mip_3dm_write_gnss_assisted_fix()
 : <a class="el" href="group__dm__gnss__assisted__fix__c.html#gac4de28655e345953f19eaf406bb70f4b">mip::C</a>
 </li>
+<li>mip_3dm_write_gnss_message_format()
+: <a class="el" href="group__dm__gnss__message__format__c.html#gabde1f371e2cec965c2ea2769ab351327">mip::C</a>
+</li>
 <li>mip_3dm_write_gnss_sbas_settings()
 : <a class="el" href="group__dm__gnss__sbas__settings__c.html#ga89396a0809dab60afc02b7758e2e3a0c">mip::C</a>
 </li>
@@ -606,9 +609,6 @@ $(function() {
 </li>
 <li>mip_3dm_write_gpio_state()
 : <a class="el" href="group__dm__gpio__state__c.html#gaca8e0617f39f45e12296ef33cfd4cd5d">mip::C</a>
-</li>
-<li>mip_3dm_write_gps_message_format()
-: <a class="el" href="group__dm__gps__message__format__c.html#ga98e8db778bf3d220ea4bbd55cd537f50">mip::C</a>
 </li>
 <li>mip_3dm_write_gyro_bias()
 : <a class="el" href="group__dm__gyro__bias__c.html#ga3667dde4dbe2b8699a596e7bf219528c">mip::C</a>

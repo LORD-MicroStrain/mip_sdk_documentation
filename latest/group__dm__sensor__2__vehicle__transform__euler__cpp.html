@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-168-g6a528fe</span>
+   &#160;<span id="projectnumber">v3.0.0-170-g6440bd3</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -72,31 +72,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Sets the sensor-to-vehicle frame transformation using Yaw, Pitch, Roll Euler angles. These are the Yaw, Pitch, and Roll mounting angles of the sensor with respect to vehicle frame of reference, and describe the transformation of vectors from the sensor body frame to the vehicle frame.<br  />
- Note: This is the transformation, the inverse of the rotation defined in our legacy products.<br  />
- The transformation may be stored in the device as a matrix or quaternion. When Euler angles are read back from the device, they may not be exactly equal to the Euler angles used to set the transformation, but they are functionally equivalent, such that they result in the same transformation.<br  />
- <br  />
-<br  />
- This transformation to the vehicle frame will be applied to the following output quantities:<br  />
-<br  />
- IMU:<br  />
- Scaled Acceleration<br  />
- Scaled Gyro<br  />
- Scaled Magnetometer<br  />
- Delta Theta<br  />
- Delta Velocity<br  />
- Complementary Filter Orientation<br  />
- <br  />
-<br  />
- Estimation Filter:<br  />
- Estimated Orientation, Quaternion<br  />
- Estimated Orientation, Matrix<br  />
- Estimated Orientation, Euler Angles<br  />
- Estimated Linear Acceleration<br  />
- Estimated Angular Rate<br  />
- Estimated Gravity <a class="el" href="structmip_1_1Vector.html" title="Vector is a wrapper around an array of some type T, usually float or double.">Vector</a><br  />
- <br  />
- Changing this setting will force all low-pass filters, the complementary filter, and the estimation filter to reset.  
+<p>Sets the sensor-to-vehicle frame transformation using Yaw, Pitch, and Roll Euler angles.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -118,9 +94,12 @@ Functions</h2></td></tr>
 <tr class="separator:ga1f9e998438407a5634588105991710c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Sets the sensor-to-vehicle frame transformation using Yaw, Pitch, Roll Euler angles. These are the Yaw, Pitch, and Roll mounting angles of the sensor with respect to vehicle frame of reference, and describe the transformation of vectors from the sensor body frame to the vehicle frame.<br  />
- Note: This is the transformation, the inverse of the rotation defined in our legacy products.<br  />
- The transformation may be stored in the device as a matrix or quaternion. When Euler angles are read back from the device, they may not be exactly equal to the Euler angles used to set the transformation, but they are functionally equivalent, such that they result in the same transformation.<br  />
+<p>Sets the sensor-to-vehicle frame transformation using Yaw, Pitch, and Roll Euler angles. </p>
+<p>These are the Yaw, Pitch, and Roll mounting angles of the sensor with respect to vehicle frame of reference, and describe the transformation of vectors from the sensor body frame to the vehicle frame.<br  />
+</p>
+<p>Note: This is the transformation, the inverse of the rotation defined in our legacy products.<br  />
+</p>
+<p>The transformation may be stored in the device as a matrix or quaternion. When Euler angles are read back from the device, they may not be exactly equal to the Euler angles used to set the transformation, but they are functionally equivalent, such that they result in the same transformation.<br  />
  <br  />
 <br  />
  This transformation to the vehicle frame will be applied to the following output quantities:<br  />

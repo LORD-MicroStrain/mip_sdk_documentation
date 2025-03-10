@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-168-g6a528fe</span>
+   &#160;<span id="projectnumber">v3.0.0-170-g6440bd3</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -150,8 +150,8 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
 <div class="line">         <span class="stringliteral">&quot;ThresholdParams&quot;</span>,</div>
-<div class="line">         <span class="stringliteral">&quot;Thresholdparams&quot;</span>,</div>
-<div class="line">         <span class="stringliteral">&quot;Comparison of a supported MIP field parameter against a set of thresholds.\n\nTriggers when a data quantity meets the comparison criteria. The comparison can be either\na window comparison with high and low thresholds or a periodic interval.\n\nThe data quantity is identified by the MIP descriptor set, field descriptor, and parameter number.\nE.g. Scaled acceleration in the Z direction is specified with desc_set=0x80 (sensor data),\nfield_desc=0x04 (scaled accel), and param_id=3 (the third parameter and Z axis).\n\nThe window comparison can be used for a variety of purposes, such as disabling\na robot&#39;s drive motors if it tips over. In this case, a window comparison could\nbe set up to monitor the roll angle, (0x80,0x0C,3). The lower threshold would be set\nto -pi/2 radians and the upper threshold to pi/2 radians.\n\nThe interval trigger can be used to perform an action periodically if used with\na time field. E.g. to execute the action every 16 ms, set an interval comparison on\nthe GPS time of week parameter (0x80,0xD3,1) with high_thres set to 0.016. The lower\nthreshold determines how long the trigger is active within the 16-ms period.\n\nEither comparison type can be inverted by reversing the threshold values; setting\nlow_thres &gt; high_thres will result in the reverse condition.\n&quot;</span>,</div>
+<div class="line">         <span class="stringliteral">&quot;Trigger Threshold Parameters&quot;</span>,</div>
+<div class="line">         <span class="stringliteral">&quot;Comparison of a supported MIP field parameter against a set of thresholds.\n\nTriggers when a data quantity meets the comparison criteria. The comparison can be either\na window comparison with high and low thresholds or a periodic interval.\n\nThe data quantity is identified by the MIP descriptor set, field descriptor, and parameter number.\nE.g. Scaled acceleration in the Z direction is specified with desc_set=0x80 (sensor data),\nfield_desc=0x04 (scaled accel), and param_id=3 (the third parameter and Z axis).\n\nThe window comparison can be used for a variety of purposes, such as disabling\na robot&#39;s drive motors if it tips over. In this case, a window comparison could\nbe set up to monitor the roll angle, (0x80,0x0C,3). The lower threshold would be set\nto -pi/2 radians and the upper threshold to pi/2 radians.\n\nThe interval trigger can be used to perform an action periodically if used with\na time field. E.g. to execute the action every 16 ms, set an interval comparison on\nthe GPS time of week parameter (0x80,0xD3,1) with high_thres set to 0.016. The lower\nthreshold determines how long the trigger is active within the 16-ms period.\n\nEither comparison type can be inverted by reversing the threshold values; setting\nlow_thres &gt; high_thres will result in the reverse condition.&quot;</span>,</div>
 <div class="line">         <a class="code" href="structmip_1_1metadata_1_1MetadataFor_3_01commands__3dm_1_1EventTrigger_1_1ThresholdParams_01_4.html#a004dd88c7dbd63339a9639e46d580a61">parameters</a>,</div>
 <div class="line">    }</div>
 </div><!-- fragment -->
@@ -161,7 +161,7 @@ Static Public Attributes</h2></td></tr>
 <li>src/cpp/mip/metadata/definitions/<a class="el" href="metadata_2definitions_2commands__3dm_8hpp_source.html">commands_3dm.hpp</a></li>
 </ul>
 </div><!-- contents -->
-<div class="ttc" id="astructmip_1_1metadata_1_1MetadataFor_3_01commands__3dm_1_1EventTrigger_1_1ThresholdParams_01_4_html_a004dd88c7dbd63339a9639e46d580a61"><div class="ttname"><a href="structmip_1_1metadata_1_1MetadataFor_3_01commands__3dm_1_1EventTrigger_1_1ThresholdParams_01_4.html#a004dd88c7dbd63339a9639e46d580a61">mip::metadata::MetadataFor&lt; commands_3dm::EventTrigger::ThresholdParams &gt;::parameters</a></div><div class="ttdeci">static constexpr ParameterInfo parameters[]</div><div class="ttdef"><b>Definition:</b> commands_3dm.hpp:2804</div></div>
+<div class="ttc" id="astructmip_1_1metadata_1_1MetadataFor_3_01commands__3dm_1_1EventTrigger_1_1ThresholdParams_01_4_html_a004dd88c7dbd63339a9639e46d580a61"><div class="ttname"><a href="structmip_1_1metadata_1_1MetadataFor_3_01commands__3dm_1_1EventTrigger_1_1ThresholdParams_01_4.html#a004dd88c7dbd63339a9639e46d580a61">mip::metadata::MetadataFor&lt; commands_3dm::EventTrigger::ThresholdParams &gt;::parameters</a></div><div class="ttdeci">static constexpr ParameterInfo parameters[]</div><div class="ttdef"><b>Definition:</b> commands_3dm.hpp:2224</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

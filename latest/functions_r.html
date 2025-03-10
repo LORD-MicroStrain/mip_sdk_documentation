@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-168-g6a528fe</span>
+   &#160;<span id="projectnumber">v3.0.0-170-g6440bd3</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -122,11 +122,11 @@ $(function() {
 <li>rate
 : <a class="el" href="structmip_1_1C_1_1mip__3dm__filter__get__base__rate__response.html#ac06caf7f845f9af92cb3472e55ae7f89">mip::C::mip_3dm_filter_get_base_rate_response</a>
 , <a class="el" href="structmip_1_1C_1_1mip__3dm__get__base__rate__response.html#a6088c8d9634e949acd0f26ba2f6dd5df">mip::C::mip_3dm_get_base_rate_response</a>
-, <a class="el" href="structmip_1_1C_1_1mip__3dm__gps__get__base__rate__response.html#a84df7eebc38175387a26744f637573d3">mip::C::mip_3dm_gps_get_base_rate_response</a>
+, <a class="el" href="structmip_1_1C_1_1mip__3dm__gnss__get__base__rate__response.html#a28c334de1f1559727f714c6dfc7b0a92">mip::C::mip_3dm_gnss_get_base_rate_response</a>
 , <a class="el" href="structmip_1_1C_1_1mip__3dm__imu__get__base__rate__response.html#a4609265807f5ac73f56ce4222bd11d26">mip::C::mip_3dm_imu_get_base_rate_response</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1FilterGetBaseRate_1_1Response.html#ab154d012b2382855f3aac0505a04a750">mip::commands_3dm::FilterGetBaseRate::Response</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1GetBaseRate_1_1Response.html#a43b621768436a0c3c93467729a51329c">mip::commands_3dm::GetBaseRate::Response</a>
-, <a class="el" href="structmip_1_1commands__3dm_1_1GpsGetBaseRate_1_1Response.html#af96e3ae17da54f565e56dd5d9d3977af">mip::commands_3dm::GpsGetBaseRate::Response</a>
+, <a class="el" href="structmip_1_1commands__3dm_1_1GnssGetBaseRate_1_1Response.html#af6404b095c6bc6d150109a9d74c9956c">mip::commands_3dm::GnssGetBaseRate::Response</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1ImuGetBaseRate_1_1Response.html#a1e56ecd4688b3e27e16eb1823ac0943a">mip::commands_3dm::ImuGetBaseRate::Response</a>
 </li>
 <li>raw_accel
@@ -453,7 +453,7 @@ $(function() {
 : <a class="el" href="structmip_1_1data__gnss_1_1RfErrorDetection.html#aa35cd0d58dda76b6a22e116b5df1fa24">mip::data_gnss::RfErrorDetection</a>
 </li>
 <li>rfBand()
-: <a class="el" href="structmip_1_1data__gnss_1_1RfErrorDetection_1_1ValidFlags.html#ab2199b904b212da06ca07aa21a693717">mip::data_gnss::RfErrorDetection::ValidFlags</a>
+: <a class="el" href="structmip_1_1data__gnss_1_1RfErrorDetection_1_1ValidFlags.html#af23ff5e3a01a17307c9d2d5e15d7fb65">mip::data_gnss::RfErrorDetection::ValidFlags</a>
 </li>
 <li>roll
 : <a class="el" href="structmip_1_1C_1_1mip__3dm__sensor__2__vehicle__transform__euler__command.html#ae26fba5b7e5d3e83501b00c0a15e0339">mip::C::mip_3dm_sensor_2_vehicle_transform_euler_command</a>
@@ -474,8 +474,9 @@ $(function() {
 <li>ROLL
 : <a class="el" href="structmip_1_1commands__filter_1_1TareOrientation_1_1MipTareAxes.html#a0c7b08afc596579b3e324d56bfabdceba8f078f57518d9f8a3bfc50d38d35b0b8">mip::commands_filter::TareOrientation::MipTareAxes</a>
 </li>
-<li>roll
-: <a class="el" href="structmip_1_1data__filter_1_1EulerAngles.html#a63070b2b790b23fec4f9c4758252187f">mip::data_filter::EulerAngles</a>
+<li>roll()
+: <a class="el" href="structmip_1_1commands__filter_1_1TareOrientation_1_1MipTareAxes.html#a5767268d82601e125ceb6a6d8cc82477">mip::commands_filter::TareOrientation::MipTareAxes</a>
+, <a class="el" href="structmip_1_1data__filter_1_1EulerAngles.html#a63070b2b790b23fec4f9c4758252187f">mip::data_filter::EulerAngles</a>
 , <a class="el" href="structmip_1_1data__filter_1_1EulerAnglesUncertainty.html#a235b8af669d3455b14eb75597c4e926b">mip::data_filter::EulerAnglesUncertainty</a>
 , <a class="el" href="structmip_1_1data__sensor_1_1CompEulerAngles.html#a766e53daac22647777035b9a7142a8ef">mip::data_sensor::CompEulerAngles</a>
 </li>
@@ -495,13 +496,13 @@ $(function() {
 : <a class="el" href="structmip_1_1commands__rtk_1_1GetStatusFlags_1_1StatusFlagsLegacy.html#a93bffdc740a1658247b63affcfff76cf">mip::commands_rtk::GetStatusFlags::StatusFlagsLegacy</a>
 </li>
 <li>rsrq()
-: <a class="el" href="structmip_1_1commands__rtk_1_1GetStatusFlags_1_1StatusFlagsLegacy.html#ab9cb13cfa2b725414a592271152d13bd">mip::commands_rtk::GetStatusFlags::StatusFlagsLegacy</a>
+: <a class="el" href="structmip_1_1commands__rtk_1_1GetStatusFlags_1_1StatusFlagsLegacy.html#a80b9dfb65ccda1b63d7cd9a62038d466">mip::commands_rtk::GetStatusFlags::StatusFlagsLegacy</a>
 </li>
 <li>RSRQ
 : <a class="el" href="structmip_1_1commands__rtk_1_1GetStatusFlags_1_1StatusFlagsLegacy.html#a6d952630b90a4cae4177646db34a96eea934c555131d62af039c281feab02e325">mip::commands_rtk::GetStatusFlags::StatusFlagsLegacy</a>
 </li>
 <li>rsrq()
-: <a class="el" href="structmip_1_1commands__rtk_1_1GetStatusFlags_1_1StatusFlagsLegacy.html#a80b9dfb65ccda1b63d7cd9a62038d466">mip::commands_rtk::GetStatusFlags::StatusFlagsLegacy</a>
+: <a class="el" href="structmip_1_1commands__rtk_1_1GetStatusFlags_1_1StatusFlagsLegacy.html#ab9cb13cfa2b725414a592271152d13bd">mip::commands_rtk::GetStatusFlags::StatusFlagsLegacy</a>
 </li>
 <li>rssi
 : <a class="el" href="structmip_1_1C_1_1mip__rtk__get__rssi__response.html#a496230332c3ceacd796d48ce21589994">mip::C::mip_rtk_get_rssi_response</a>
@@ -512,7 +513,6 @@ $(function() {
 </li>
 <li>rssi()
 : <a class="el" href="structmip_1_1commands__rtk_1_1GetStatusFlags_1_1StatusFlags.html#a85665da031f37a767ddc0d6f4f5f4539">mip::commands_rtk::GetStatusFlags::StatusFlags</a>
-, <a class="el" href="structmip_1_1commands__rtk_1_1GetStatusFlags_1_1StatusFlagsLegacy.html#a7a5cd44b1824d6bafa52084434c638c5">mip::commands_rtk::GetStatusFlags::StatusFlagsLegacy</a>
 </li>
 <li>RSSI
 : <a class="el" href="structmip_1_1commands__rtk_1_1GetStatusFlags_1_1StatusFlagsLegacy.html#a6d952630b90a4cae4177646db34a96eeac6641d35e0c1d56f4617fca855dd7c35">mip::commands_rtk::GetStatusFlags::StatusFlagsLegacy</a>
@@ -527,7 +527,7 @@ $(function() {
 : <a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html#a3c39bec9f934b9a6a1d8affc12e2f611a6c39735c46e105da43485e272b2264c3">mip::commands_system::CommsProtocol</a>
 </li>
 <li>runCommand()
-: <a class="el" href="classmip_1_1Interface.html#ab63c8149490bb4f3adc466b0094fabf8">mip::Interface</a>
+: <a class="el" href="classmip_1_1Interface.html#af407b721e6145365d14d0c0edd459070">mip::Interface</a>
 </li>
 </ul>
 </div><!-- contents -->

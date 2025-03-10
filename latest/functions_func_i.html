@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-168-g6a528fe</span>
+   &#160;<span id="projectnumber">v3.0.0-170-g6440bd3</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -171,6 +171,10 @@ $(function() {
 , <a class="el" href="structmip_1_1commands__3dm_1_1GetEventTriggerStatus_1_1Response.html#ad390eec0ed66a62d4d0d2e94e9d5cbe0">mip::commands_3dm::GetEventTriggerStatus::Response</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1GnssAssistedFix.html#a2de6369488744448f142defd4a976473">mip::commands_3dm::GnssAssistedFix</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1GnssAssistedFix_1_1Response.html#aef334dff55e36b15826685c5fd7b94a0">mip::commands_3dm::GnssAssistedFix::Response</a>
+, <a class="el" href="structmip_1_1commands__3dm_1_1GnssGetBaseRate.html#af618e29bc82726bfbf072b819898d6b2">mip::commands_3dm::GnssGetBaseRate</a>
+, <a class="el" href="structmip_1_1commands__3dm_1_1GnssGetBaseRate_1_1Response.html#aab270811626ff64f4dd3ff1c8cc3089f">mip::commands_3dm::GnssGetBaseRate::Response</a>
+, <a class="el" href="structmip_1_1commands__3dm_1_1GnssMessageFormat.html#a34507919bc306c33b29fce160e96d8ea">mip::commands_3dm::GnssMessageFormat</a>
+, <a class="el" href="structmip_1_1commands__3dm_1_1GnssMessageFormat_1_1Response.html#acdaa86791a56112b3c9f0c3b773c5e16">mip::commands_3dm::GnssMessageFormat::Response</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1GnssSbasSettings.html#a981cb0e2102e7a122975700341cb4096">mip::commands_3dm::GnssSbasSettings</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1GnssSbasSettings_1_1Response.html#ad888259569b973b982b3439cfdfcdf35">mip::commands_3dm::GnssSbasSettings::Response</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1GnssTimeAssistance.html#ae73b482eaae2c936599bffc95cfe9651">mip::commands_3dm::GnssTimeAssistance</a>
@@ -179,10 +183,6 @@ $(function() {
 , <a class="el" href="structmip_1_1commands__3dm_1_1GpioConfig_1_1Response.html#a2dba989241b87b9665dc12943a229b94">mip::commands_3dm::GpioConfig::Response</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1GpioState.html#a0799f5dac3677aa4ad42b353f2a0624e">mip::commands_3dm::GpioState</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1GpioState_1_1Response.html#aef4dba716a598dc62448f8fadfd38259">mip::commands_3dm::GpioState::Response</a>
-, <a class="el" href="structmip_1_1commands__3dm_1_1GpsGetBaseRate.html#aa2c3748233a2dd698c7979e3cfed3a21">mip::commands_3dm::GpsGetBaseRate</a>
-, <a class="el" href="structmip_1_1commands__3dm_1_1GpsGetBaseRate_1_1Response.html#a7444ad7a15a473e4e10d2871fb5c3c86">mip::commands_3dm::GpsGetBaseRate::Response</a>
-, <a class="el" href="structmip_1_1commands__3dm_1_1GpsMessageFormat.html#ae2bd6e3ec03e241bbbd8e268e6826f6b">mip::commands_3dm::GpsMessageFormat</a>
-, <a class="el" href="structmip_1_1commands__3dm_1_1GpsMessageFormat_1_1Response.html#a4ba1327c9e6372f469041c85fc570077">mip::commands_3dm::GpsMessageFormat::Response</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1GyroBias.html#aedcae0f4a7694f0ed343a99012f95a81">mip::commands_3dm::GyroBias</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1GyroBias_1_1Response.html#aaeaf484f4d76bd96c65b4aeb150a1747">mip::commands_3dm::GyroBias::Response</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1ImuGetBaseRate.html#a15ff226be537e5afa210cc30202ecd87">mip::commands_3dm::ImuGetBaseRate</a>
@@ -526,16 +526,16 @@ $(function() {
 : <a class="el" href="classmicrostrain_1_1SerializerBase.html#a34da15ab5ca118ae927fb382506de033">microstrain::SerializerBase</a>
 </li>
 <li>ionoCorrection()
-: <a class="el" href="structmip_1_1data__gnss_1_1SbasCorrection_1_1ValidFlags.html#a6babe213b6cae7b51a33beda3c99b9aa">mip::data_gnss::SbasCorrection::ValidFlags</a>
+: <a class="el" href="structmip_1_1data__gnss_1_1SbasCorrection_1_1ValidFlags.html#ab3d71a54b1e0970c120e804ffb2551aa">mip::data_gnss::SbasCorrection::ValidFlags</a>
 </li>
 <li>ipcGnssFault()
 : <a class="el" href="structmip_1_1commands__base_1_1CommandedTestBitsGq7.html#a6ba29bcea50845a91dfd2b30c8416461">mip::commands_base::CommandedTestBitsGq7</a>
 </li>
 <li>ipcImuFault()
-: <a class="el" href="structmip_1_1commands__base_1_1CommandedTestBitsGq7.html#ab84db036ea7ee8bcff17f867699a6d8b">mip::commands_base::CommandedTestBitsGq7</a>
+: <a class="el" href="structmip_1_1commands__base_1_1CommandedTestBitsGq7.html#a1d6b20a0df4f80a870d0e42f7f3a5bd1">mip::commands_base::CommandedTestBitsGq7</a>
 </li>
 <li>ipcNavFault()
-: <a class="el" href="structmip_1_1commands__base_1_1CommandedTestBitsGq7.html#a521c95f9b82bdd028c417276dd567be4">mip::commands_base::CommandedTestBitsGq7</a>
+: <a class="el" href="structmip_1_1commands__base_1_1CommandedTestBitsGq7.html#acbddaa39096ab72c592a1d9d823cc387">mip::commands_base::CommandedTestBitsGq7</a>
 </li>
 <li>isAck()
 : <a class="el" href="structmip_1_1CmdResult.html#a819692a88371f2b593b80e4de62ce9a0">mip::CmdResult</a>
@@ -549,8 +549,8 @@ $(function() {
 </li>
 <li>iscL5()
 : <a class="el" href="structmip_1_1data__gnss_1_1BeidouEphemeris_1_1ValidFlags.html#a95fdd45344607bc14160d8a93d0d1e59">mip::data_gnss::BeidouEphemeris::ValidFlags</a>
-, <a class="el" href="structmip_1_1data__gnss_1_1GalileoEphemeris_1_1ValidFlags.html#af46bc6b3897dad8f94e8f189a98c0ae0">mip::data_gnss::GalileoEphemeris::ValidFlags</a>
-, <a class="el" href="structmip_1_1data__gnss_1_1GpsEphemeris_1_1ValidFlags.html#ad36ae13ddae1e4f5f1bf2058a521d46b">mip::data_gnss::GpsEphemeris::ValidFlags</a>
+, <a class="el" href="structmip_1_1data__gnss_1_1GalileoEphemeris_1_1ValidFlags.html#a19b62262ad9fababe5e967aac8892608">mip::data_gnss::GalileoEphemeris::ValidFlags</a>
+, <a class="el" href="structmip_1_1data__gnss_1_1GpsEphemeris_1_1ValidFlags.html#aaac8a0528f72976f95df4198e7447d15">mip::data_gnss::GpsEphemeris::ValidFlags</a>
 </li>
 <li>isClass()
 : <a class="el" href="structmip_1_1metadata_1_1TypeInfo.html#a6cde65e8bdc6b8a1cc9eb822d52430dc">mip::metadata::TypeInfo</a>

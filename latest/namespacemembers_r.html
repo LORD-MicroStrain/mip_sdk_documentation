@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-168-g6a528fe</span>
+   &#160;<span id="projectnumber">v3.0.0-170-g6440bd3</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -153,6 +153,9 @@ $(function() {
 <li>readGnssAssistedFix()
 : <a class="el" href="group__dm__gnss__assisted__fix__cpp.html#gaca52a9174d5f22e57908f919550851a6">mip::commands_3dm</a>
 </li>
+<li>readGnssMessageFormat()
+: <a class="el" href="group__dm__gnss__message__format__cpp.html#ga84f72c613d2dd44c58457e5d21bd3213">mip::commands_3dm</a>
+</li>
 <li>readGnssSbasSettings()
 : <a class="el" href="group__dm__gnss__sbas__settings__cpp.html#ga4e3330e58f9b5e81766e4e4ff906b31c">mip::commands_3dm</a>
 </li>
@@ -167,9 +170,6 @@ $(function() {
 </li>
 <li>readGpioState()
 : <a class="el" href="group__dm__gpio__state__cpp.html#gaba4135d4f8b5d29d3b66cf02e38ab03e">mip::commands_3dm</a>
-</li>
-<li>readGpsMessageFormat()
-: <a class="el" href="group__dm__gps__message__format__cpp.html#ga40102aa219c09f96c1141e8c31ad4705">mip::commands_3dm</a>
 </li>
 <li>readGravityNoise()
 : <a class="el" href="group__filter__gravity__noise__cpp.html#ga6f937f9ddd5e438c519994e0d32e8984">mip::commands_filter</a>
@@ -375,9 +375,6 @@ $(function() {
 <li>REPLY_COMM_SPEED
 : <a class="el" href="group__base__commands__cpp.html#gga2d08a02f735c488a7c45f71fe2920c5ea98c4aafc5a02f7c899fabca39fe67f33">mip::commands_base</a>
 </li>
-<li>REPLY_COMMUNICATIONS_MODE
-: <a class="el" href="group__dm__commands__cpp.html#gga4b38bc38f3278a33dcea0941f0dc719aa306674e6bde52455dbfa099508878383">mip::commands_3dm</a>
-</li>
 <li>REPLY_CONING_AND_SCULLING_ENABLE
 : <a class="el" href="group__dm__commands__cpp.html#gga4b38bc38f3278a33dcea0941f0dc719aa3c4498f732e53c78f4f7f6146163b08a">mip::commands_3dm</a>
 </li>
@@ -389,9 +386,6 @@ $(function() {
 </li>
 <li>REPLY_DATASTREAM_ENABLE
 : <a class="el" href="group__dm__commands__cpp.html#gga4b38bc38f3278a33dcea0941f0dc719aa95fbf786f7451bded34e4b777261823a">mip::commands_3dm</a>
-</li>
-<li>REPLY_DATASTREAM_FORMAT
-: <a class="el" href="group__dm__commands__cpp.html#gga4b38bc38f3278a33dcea0941f0dc719aaf7aa82fa088c61bd1bbce3d71af5de7e">mip::commands_3dm</a>
 </li>
 <li>REPLY_DECLINATION_SOURCE
 : <a class="el" href="group__filter__commands__cpp.html#gga42995de3dacfe97ce05d3718e934f620a7f7dac17b1b0ca4da70707973879e330">mip::commands_filter</a>
@@ -471,9 +465,6 @@ $(function() {
 <li>REPLY_GNSS_CONSTELLATION_SETTINGS
 : <a class="el" href="group__dm__commands__cpp.html#gga4b38bc38f3278a33dcea0941f0dc719aad47065c430e8a3905a825888842bcd14">mip::commands_3dm</a>
 </li>
-<li>REPLY_GNSS_DYNAMICS_MODE
-: <a class="el" href="group__dm__commands__cpp.html#gga4b38bc38f3278a33dcea0941f0dc719aac359948c5a6b611a85cf0e263b31864e">mip::commands_3dm</a>
-</li>
 <li>REPLY_GNSS_MESSAGE_FORMAT
 : <a class="el" href="group__dm__commands__cpp.html#gga4b38bc38f3278a33dcea0941f0dc719aa4040ea1c08d148e725f32410d9c1cb30">mip::commands_3dm</a>
 </li>
@@ -534,23 +525,11 @@ $(function() {
 <li>REPLY_HOT_START_CONTROL
 : <a class="el" href="group__filter__commands__cpp.html#gga42995de3dacfe97ce05d3718e934f620abc2890e6a0a0ee25a8ce07acb8f53972">mip::commands_filter</a>
 </li>
-<li>REPLY_IMU_ADVANCED_STATUS
-: <a class="el" href="group__dm__commands__cpp.html#gga4b38bc38f3278a33dcea0941f0dc719aadf9d5f2c7dbba66a4fd17a6ca3a93360">mip::commands_3dm</a>
-</li>
 <li>REPLY_IMU_BASE_RATE
 : <a class="el" href="group__dm__commands__cpp.html#gga4b38bc38f3278a33dcea0941f0dc719aa752c69448453c94b6fe26b6552ad99a8">mip::commands_3dm</a>
 </li>
-<li>REPLY_IMU_BASIC_STATUS
-: <a class="el" href="group__dm__commands__cpp.html#gga4b38bc38f3278a33dcea0941f0dc719aa2ff64d89f083664e30c0e5747382f763">mip::commands_3dm</a>
-</li>
 <li>REPLY_IMU_MESSAGE_FORMAT
 : <a class="el" href="group__dm__commands__cpp.html#gga4b38bc38f3278a33dcea0941f0dc719aa259c040789062b5583b79302900e2729">mip::commands_3dm</a>
-</li>
-<li>REPLY_IMU_SIGNAL_SETTINGS
-: <a class="el" href="group__dm__commands__cpp.html#gga4b38bc38f3278a33dcea0941f0dc719aa66ea99737994c893a8108bcc778ca3db">mip::commands_3dm</a>
-</li>
-<li>REPLY_IMU_TIMESTAMP_VALUE
-: <a class="el" href="group__dm__commands__cpp.html#gga4b38bc38f3278a33dcea0941f0dc719aab528fa346dfc12e002970dbdd65b0612">mip::commands_3dm</a>
 </li>
 <li>REPLY_INCLINATION_SOURCE
 : <a class="el" href="group__filter__commands__cpp.html#gga42995de3dacfe97ce05d3718e934f620ae0c08b1880972549e1e1e2295db89028">mip::commands_filter</a>
@@ -609,17 +588,11 @@ $(function() {
 <li>REPLY_POLL_DATA
 : <a class="el" href="group__dm__commands__cpp.html#gga4b38bc38f3278a33dcea0941f0dc719aa8055e36576d9e4938e4170b3af44ebdf">mip::commands_3dm</a>
 </li>
-<li>REPLY_POWER_STATE
-: <a class="el" href="group__dm__commands__cpp.html#gga4b38bc38f3278a33dcea0941f0dc719aaa863c2e0ad8c05212010dbce618f2716">mip::commands_3dm</a>
-</li>
 <li>REPLY_PPS_SOURCE
 : <a class="el" href="group__dm__commands__cpp.html#gga4b38bc38f3278a33dcea0941f0dc719aa0ddb4c175c27fd486893ff0ffd918a11">mip::commands_3dm</a>
 </li>
 <li>REPLY_PRESSURE_NOISE
 : <a class="el" href="group__filter__commands__cpp.html#gga42995de3dacfe97ce05d3718e934f620a916fbb8427adaa35034901ab9d4cb7a4">mip::commands_filter</a>
-</li>
-<li>REPLY_RAW_CLIP_SETTINGS
-: <a class="el" href="group__dm__commands__cpp.html#gga4b38bc38f3278a33dcea0941f0dc719aa899b029f5c34362b73b9c1a9ddb0d89e">mip::commands_3dm</a>
 </li>
 <li>REPLY_REF_POINT_LEVER_ARM
 : <a class="el" href="group__filter__commands__cpp.html#gga42995de3dacfe97ce05d3718e934f620a335f1473a9c683e7cf0554cffb485c44">mip::commands_filter</a>

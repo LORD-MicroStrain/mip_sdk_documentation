@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-168-g6a528fe</span>
+   &#160;<span id="projectnumber">v3.0.0-170-g6440bd3</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -123,6 +123,10 @@ $(function() {
 , <a class="el" href="structmip_1_1commands__3dm_1_1GetEventTriggerStatus_1_1Response.html#a3690890a8c41d1c7b2e07cae8dba9dac">mip::commands_3dm::GetEventTriggerStatus::Response</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1GnssAssistedFix.html#a23c881ac5eca8203f94dae9a3cfb192a">mip::commands_3dm::GnssAssistedFix</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1GnssAssistedFix_1_1Response.html#a23612989e4c22ac80a49e96be3d403f5">mip::commands_3dm::GnssAssistedFix::Response</a>
+, <a class="el" href="structmip_1_1commands__3dm_1_1GnssGetBaseRate.html#a6d42409f7e71f909bef2cf5b1fe5d8d5">mip::commands_3dm::GnssGetBaseRate</a>
+, <a class="el" href="structmip_1_1commands__3dm_1_1GnssGetBaseRate_1_1Response.html#a8ed239a3166fe561b021bafe81e44758">mip::commands_3dm::GnssGetBaseRate::Response</a>
+, <a class="el" href="structmip_1_1commands__3dm_1_1GnssMessageFormat.html#a8ab176a8acd7f2246f84a2c7527bcf8d">mip::commands_3dm::GnssMessageFormat</a>
+, <a class="el" href="structmip_1_1commands__3dm_1_1GnssMessageFormat_1_1Response.html#a4d5a66ea547ffcf483caf39ed189d8c6">mip::commands_3dm::GnssMessageFormat::Response</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1GnssSbasSettings.html#a6445a553af3870786cb96569a03ab14b">mip::commands_3dm::GnssSbasSettings</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1GnssSbasSettings_1_1Response.html#a9c609f7a8c61749fb53b19af6353e342">mip::commands_3dm::GnssSbasSettings::Response</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1GnssTimeAssistance.html#a49524d73d0e2409ad839e596a92c6438">mip::commands_3dm::GnssTimeAssistance</a>
@@ -131,10 +135,6 @@ $(function() {
 , <a class="el" href="structmip_1_1commands__3dm_1_1GpioConfig_1_1Response.html#a06f63041830282c0654f72d05ddb7a75">mip::commands_3dm::GpioConfig::Response</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1GpioState.html#a778f3d8ad940007b9b304caaaa0401ce">mip::commands_3dm::GpioState</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1GpioState_1_1Response.html#a45894c53ff1a7a451a8d45c590a5c995">mip::commands_3dm::GpioState::Response</a>
-, <a class="el" href="structmip_1_1commands__3dm_1_1GpsGetBaseRate.html#a558d2b3bd08d6e9416776e26602cd5bd">mip::commands_3dm::GpsGetBaseRate</a>
-, <a class="el" href="structmip_1_1commands__3dm_1_1GpsGetBaseRate_1_1Response.html#a95aabff8f413093ae177d78ed1e79366">mip::commands_3dm::GpsGetBaseRate::Response</a>
-, <a class="el" href="structmip_1_1commands__3dm_1_1GpsMessageFormat.html#a2c33d0da88c49679b5a86c161568a98b">mip::commands_3dm::GpsMessageFormat</a>
-, <a class="el" href="structmip_1_1commands__3dm_1_1GpsMessageFormat_1_1Response.html#a1d27957b124519ff2fb9512f461fa87f">mip::commands_3dm::GpsMessageFormat::Response</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1GyroBias.html#a9e2f7dcdbd5afcf57b44ced340843fd5">mip::commands_3dm::GyroBias</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1GyroBias_1_1Response.html#a50558d8d3f8fc41dd6fe96d7eaaca35c">mip::commands_3dm::GyroBias::Response</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1ImuGetBaseRate.html#adb873195f786ef8a3c07bab8325cbd4a">mip::commands_3dm::ImuGetBaseRate</a>
@@ -811,11 +811,11 @@ $(function() {
 , <a class="el" href="structmip_1_1C_1_1mip__3dm__event__trigger__command.html#a015a96b327dcd2bf4d9c99a5b0e1d497">mip::C::mip_3dm_event_trigger_command</a>
 , <a class="el" href="structmip_1_1C_1_1mip__3dm__filter__message__format__command.html#a820e05b8c1728878a1b83c1f1f4e32c4">mip::C::mip_3dm_filter_message_format_command</a>
 , <a class="el" href="structmip_1_1C_1_1mip__3dm__gnss__assisted__fix__command.html#a6f07386b2291cafebf2f41cf9095dafd">mip::C::mip_3dm_gnss_assisted_fix_command</a>
+, <a class="el" href="structmip_1_1C_1_1mip__3dm__gnss__message__format__command.html#ac35c6e21748eaca2437a285a57b2eceb">mip::C::mip_3dm_gnss_message_format_command</a>
 , <a class="el" href="structmip_1_1C_1_1mip__3dm__gnss__sbas__settings__command.html#a770815f201a9bcfea064d21f74d3daf1">mip::C::mip_3dm_gnss_sbas_settings_command</a>
 , <a class="el" href="structmip_1_1C_1_1mip__3dm__gnss__time__assistance__command.html#a62ce705d52ba93eee4e46a3edf59d3c3">mip::C::mip_3dm_gnss_time_assistance_command</a>
 , <a class="el" href="structmip_1_1C_1_1mip__3dm__gpio__config__command.html#aa33754abe835de3b86e523892225ddb9">mip::C::mip_3dm_gpio_config_command</a>
 , <a class="el" href="structmip_1_1C_1_1mip__3dm__gpio__state__command.html#ad08ee95882229ac40ce5253256b91c70">mip::C::mip_3dm_gpio_state_command</a>
-, <a class="el" href="structmip_1_1C_1_1mip__3dm__gps__message__format__command.html#ac62d8721d77049fb8639c3d07a955854">mip::C::mip_3dm_gps_message_format_command</a>
 , <a class="el" href="structmip_1_1C_1_1mip__3dm__gyro__bias__command.html#a5a6dfdbe1f0fe8543d18779a1fc5ad9c">mip::C::mip_3dm_gyro_bias_command</a>
 , <a class="el" href="structmip_1_1C_1_1mip__3dm__imu__lowpass__filter__command.html#a3cb65f3165fbb4505cdb47784ad4a15b">mip::C::mip_3dm_imu_lowpass_filter_command</a>
 , <a class="el" href="structmip_1_1C_1_1mip__3dm__imu__message__format__command.html#a9998dfaa08048fd1417aeecc8beb8c72">mip::C::mip_3dm_imu_message_format_command</a>
@@ -895,11 +895,11 @@ $(function() {
 , <a class="el" href="structmip_1_1commands__3dm_1_1EventTrigger.html#a4a14fd9d5a25018ce79a5013596ba9fd">mip::commands_3dm::EventTrigger</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1FilterMessageFormat.html#afeaa7e3db266d1f675911a1dd65f3b8f">mip::commands_3dm::FilterMessageFormat</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1GnssAssistedFix.html#a499179b00b86cf8f2314e1176112844c">mip::commands_3dm::GnssAssistedFix</a>
+, <a class="el" href="structmip_1_1commands__3dm_1_1GnssMessageFormat.html#acb8a0ca5f18f177a430d8136f9328eb4">mip::commands_3dm::GnssMessageFormat</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1GnssSbasSettings.html#ab50a85a94f098f33f44c35e5a291c9f6">mip::commands_3dm::GnssSbasSettings</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1GnssTimeAssistance.html#a205ca49c98cd1f7cd10ab21948f067f8">mip::commands_3dm::GnssTimeAssistance</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1GpioConfig.html#ab4baf993c8e005bf8161e2619dfb9793">mip::commands_3dm::GpioConfig</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1GpioState.html#a347aeba3bbe407515c155d560b7374d1">mip::commands_3dm::GpioState</a>
-, <a class="el" href="structmip_1_1commands__3dm_1_1GpsMessageFormat.html#affdc5859bbcbabbad7fe814df74ea257">mip::commands_3dm::GpsMessageFormat</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1GyroBias.html#acd7254036d2a8fdada25181f67e133c4">mip::commands_3dm::GyroBias</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1ImuLowpassFilter.html#a60457dda48bcf7b25d08bd5411d01676">mip::commands_3dm::ImuLowpassFilter</a>
 , <a class="el" href="structmip_1_1commands__3dm_1_1ImuMessageFormat.html#a70ce099bf0383f6f90407b772b35add6">mip::commands_3dm::ImuMessageFormat</a>
@@ -970,7 +970,7 @@ $(function() {
 , <a class="el" href="structmip_1_1commands__system_1_1InterfaceControl.html#a529abf54fbffc4143792c3bca4f02f91">mip::commands_system::InterfaceControl</a>
 </li>
 <li>FunctionBits()
-: <a class="el" href="structmip_1_1metadata_1_1FunctionBits.html#a518254707d9bd47b5a707e83d5c72f4d">mip::metadata::FunctionBits</a>
+: <a class="el" href="structmip_1_1metadata_1_1FunctionBits.html#a3233d3b827c5ee85c7f11fa927174840">mip::metadata::FunctionBits</a>
 </li>
 <li>functions
 : <a class="el" href="structmip_1_1metadata_1_1FieldInfo.html#a67e97ab5d03a25244cdc7ecad3366794">mip::metadata::FieldInfo</a>

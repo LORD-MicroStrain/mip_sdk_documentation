@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MIP_SDK: (0x0C,0x07) Gps Get Base Rate</title>
+<title>MIP_SDK: (0x0C,0x07) Gnss Get Base Rate</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-168-g6a528fe</span>
+   &#160;<span id="projectnumber">v3.0.0-170-g6440bd3</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -68,7 +68,7 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">(0x0C,0x07) Gps Get Base Rate<div class="ingroups"><a class="el" href="group__mip.html">MIP</a> &raquo; <a class="el" href="group__mip__cpp.html">C++ API</a> &raquo; <a class="el" href="group__MipCommands__cpp.html">Mip Commands</a> &raquo; <a class="el" href="group__dm__commands__cpp.html">3dm Commands</a></div></div>  </div>
+<div class="title">(0x0C,0x07) Gnss Get Base Rate<div class="ingroups"><a class="el" href="group__mip.html">MIP</a> &raquo; <a class="el" href="group__mip__cpp.html">C++ API</a> &raquo; <a class="el" href="group__MipCommands__cpp.html">Mip Commands</a> &raquo; <a class="el" href="group__dm__commands__cpp.html">3dm Commands</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -77,26 +77,26 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1GpsGetBaseRate.html">mip::commands_3dm::GpsGetBaseRate</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1GnssGetBaseRate.html">mip::commands_3dm::GnssGetBaseRate</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gae770edccdcb5e66a49041314a9a59f92"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1GpsGetBaseRate.html">GpsGetBaseRate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dm__gps__get__base__rate__cpp.html#gae770edccdcb5e66a49041314a9a59f92">mip::commands_3dm::gpsGetBaseRate</a> (<a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;device, uint16_t *rateOut)</td></tr>
-<tr class="separator:gae770edccdcb5e66a49041314a9a59f92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga728879c276c17cc36f5f284acbf01e22"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1GnssGetBaseRate.html">GnssGetBaseRate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dm__gnss__get__base__rate__cpp.html#ga728879c276c17cc36f5f284acbf01e22">mip::commands_3dm::gnssGetBaseRate</a> (<a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;device, uint16_t *rateOut)</td></tr>
+<tr class="separator:ga728879c276c17cc36f5f284acbf01e22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Get the base rate for the GNSS data in Hz. </p>
 <p>This is the fastest rate for this type of data available on the device. This is used in conjunction with the GNSS Message Format Command to set streaming data at a specified rate. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gae770edccdcb5e66a49041314a9a59f92"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae770edccdcb5e66a49041314a9a59f92">&#9670;&nbsp;</a></span>gpsGetBaseRate()</h2>
+<a id="ga728879c276c17cc36f5f284acbf01e22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga728879c276c17cc36f5f284acbf01e22">&#9670;&nbsp;</a></span>gnssGetBaseRate()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1GpsGetBaseRate.html">GpsGetBaseRate</a> &gt; mip::commands_3dm::gpsGetBaseRate </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1GnssGetBaseRate.html">GnssGetBaseRate</a> &gt; mip::commands_3dm::gnssGetBaseRate </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
