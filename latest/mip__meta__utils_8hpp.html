@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-187-g93c7302</span>
+   &#160;<span id="projectnumber">v3.0.0-192-g8bd7933</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -156,8 +156,11 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a2159da8274ec1de193aa06248cbb5a16"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__meta__utils_8hpp.html#a2159da8274ec1de193aa06248cbb5a16">GET_MIP_METADATA_PARAM_INFO</a>(MipType,  MemberField)&#160;&#160;&#160;<a class="el" href="namespacemip_1_1metadata_1_1utils.html#ad58cd1de2fea0f1e23a59ec9c661182c">mip::metadata::utils::getParameterInfoFromStructMemberOffset</a>(offsetof(MipType, MemberField), <a class="el" href="structmip_1_1metadata_1_1MetadataFor.html">mip::metadata::MetadataFor</a>&lt;MipType&gt;().value)</td></tr>
-<tr class="memdesc:a2159da8274ec1de193aa06248cbb5a16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to a parameter given the offset of the member in the class/struct.  <a href="mip__meta__utils_8hpp.html#a2159da8274ec1de193aa06248cbb5a16">More...</a><br /></td></tr>
+<tr class="memitem:a664cea15e633fba90e7ce333d3ab1bc3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__meta__utils_8hpp.html#a664cea15e633fba90e7ce333d3ab1bc3">GET_MIP_METADATA_NESTED_PARAM_INFO</a>(MemberParameter,  NestedMemberField)</td></tr>
+<tr class="memdesc:a664cea15e633fba90e7ce333d3ab1bc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to a parameter given the member of a nested class/struct.  <a href="mip__meta__utils_8hpp.html#a664cea15e633fba90e7ce333d3ab1bc3">More...</a><br /></td></tr>
+<tr class="separator:a664cea15e633fba90e7ce333d3ab1bc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2159da8274ec1de193aa06248cbb5a16"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mip__meta__utils_8hpp.html#a2159da8274ec1de193aa06248cbb5a16">GET_MIP_METADATA_PARAM_INFO</a>(MipType,  MemberField)</td></tr>
+<tr class="memdesc:a2159da8274ec1de193aa06248cbb5a16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to a parameter given the member of a class/struct.  <a href="mip__meta__utils_8hpp.html#a2159da8274ec1de193aa06248cbb5a16">More...</a><br /></td></tr>
 <tr class="separator:a2159da8274ec1de193aa06248cbb5a16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -177,21 +180,70 @@ Functions</h2></td></tr>
 <tr class="separator:a3bf7590b363efc5259e7763ade58c965"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7dfbabb2bc322eb8baf09c67a703ec59"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip_1_1metadata_1_1utils.html#a7dfbabb2bc322eb8baf09c67a703ec59">mip::metadata::utils::nameOfType</a> (const TypeInfo &amp;type)</td></tr>
 <tr class="separator:a7dfbabb2bc322eb8baf09c67a703ec59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae479aac7860217154f1d78389d32e63"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip_1_1metadata_1_1utils.html#aae479aac7860217154f1d78389d32e63">mip::metadata::utils::getOffsetForAlignment</a> (const TypeInfo &amp;type, size_t &amp;current_offset)</td></tr>
+<tr class="separator:aae479aac7860217154f1d78389d32e63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9422a04dd3131c7a96dedcfb6bb90f67"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip_1_1metadata_1_1utils.html#a9422a04dd3131c7a96dedcfb6bb90f67">mip::metadata::utils::sizeForBasicType</a> (const TypeInfo &amp;type)</td></tr>
+<tr class="separator:a9422a04dd3131c7a96dedcfb6bb90f67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0daa2db8dd34f48bc3f9afd0f5417d53"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip_1_1metadata_1_1utils.html#a0daa2db8dd34f48bc3f9afd0f5417d53">mip::metadata::utils::sizeForBasicType</a> (const Type type, const void *info=nullptr)</td></tr>
 <tr class="memdesc:a0daa2db8dd34f48bc3f9afd0f5417d53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the size of a basic type (including bitfields and enums if info is not NULL).  <a href="namespacemip_1_1metadata_1_1utils.html#a0daa2db8dd34f48bc3f9afd0f5417d53">More...</a><br /></td></tr>
 <tr class="separator:a0daa2db8dd34f48bc3f9afd0f5417d53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9422a04dd3131c7a96dedcfb6bb90f67"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip_1_1metadata_1_1utils.html#a9422a04dd3131c7a96dedcfb6bb90f67">mip::metadata::utils::sizeForBasicType</a> (const TypeInfo &amp;type)</td></tr>
-<tr class="separator:a9422a04dd3131c7a96dedcfb6bb90f67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e928e30c0d5f739a4fe49c573e0dac6"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip_1_1metadata_1_1utils.html#a0e928e30c0d5f739a4fe49c573e0dac6">mip::metadata::utils::alignmentForBasicType</a> (const TypeInfo &amp;type)</td></tr>
+<tr class="separator:a0e928e30c0d5f739a4fe49c573e0dac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b363294ac4312852086af6a704e8fc2"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip_1_1metadata_1_1utils.html#a5b363294ac4312852086af6a704e8fc2">mip::metadata::utils::alignmentForBasicType</a> (const Type type, const void *info=nullptr)</td></tr>
 <tr class="memdesc:a5b363294ac4312852086af6a704e8fc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the size of a basic type (including bitfields and enums if info is not NULL).  <a href="namespacemip_1_1metadata_1_1utils.html#a5b363294ac4312852086af6a704e8fc2">More...</a><br /></td></tr>
 <tr class="separator:a5b363294ac4312852086af6a704e8fc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e928e30c0d5f739a4fe49c573e0dac6"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip_1_1metadata_1_1utils.html#a0e928e30c0d5f739a4fe49c573e0dac6">mip::metadata::utils::alignmentForBasicType</a> (const TypeInfo &amp;type)</td></tr>
-<tr class="separator:a0e928e30c0d5f739a4fe49c573e0dac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad58cd1de2fea0f1e23a59ec9c661182c"><td class="memItemLeft" align="right" valign="top">const ParameterInfo *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip_1_1metadata_1_1utils.html#ad58cd1de2fea0f1e23a59ec9c661182c">mip::metadata::utils::getParameterInfoFromStructMemberOffset</a> (const size_t offset, const FieldInfo &amp;field_info)</td></tr>
-<tr class="memdesc:ad58cd1de2fea0f1e23a59ec9c661182c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to a parameter given the offset of the member in the class/struct.  <a href="namespacemip_1_1metadata_1_1utils.html#ad58cd1de2fea0f1e23a59ec9c661182c">More...</a><br /></td></tr>
-<tr class="separator:ad58cd1de2fea0f1e23a59ec9c661182c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9070b890949c20c0f9c19397b75fce90"><td class="memItemLeft" align="right" valign="top">const ParameterInfo *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip_1_1metadata_1_1utils.html#a9070b890949c20c0f9c19397b75fce90">mip::metadata::utils::getParameterInfoFromStructMemberOffset</a> (const size_t offset, const StructInfo &amp;field_info)</td></tr>
+<tr class="memdesc:a9070b890949c20c0f9c19397b75fce90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to a parameter given the offset of the member in the class/struct.  <a href="namespacemip_1_1metadata_1_1utils.html#a9070b890949c20c0f9c19397b75fce90">More...</a><br /></td></tr>
+<tr class="separator:a9070b890949c20c0f9c19397b75fce90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc07bfcbb6058865f1aeb8458326defa"><td class="memItemLeft" align="right" valign="top">const ParameterInfo *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip_1_1metadata_1_1utils.html#abc07bfcbb6058865f1aeb8458326defa">mip::metadata::utils::getNestedParameterInfoFromStructMemberOffset</a> (const size_t base_offset, const size_t nested_offset, const StructInfo &amp;field_info)</td></tr>
+<tr class="memdesc:abc07bfcbb6058865f1aeb8458326defa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to a parameter given the offset of the member in the class/struct.  <a href="namespacemip_1_1metadata_1_1utils.html#abc07bfcbb6058865f1aeb8458326defa">More...</a><br /></td></tr>
+<tr class="separator:abc07bfcbb6058865f1aeb8458326defa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9338df20ab65c0351ad2ea482f6a909"><td class="memItemLeft" align="right" valign="top">const ParameterInfo *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip_1_1metadata_1_1utils.html#ae9338df20ab65c0351ad2ea482f6a909">mip::metadata::utils::getParameterInfoForMember</a> (const StructInfo &amp;struct_info, const char *param_name, const size_t dummy=0)</td></tr>
+<tr class="memdesc:ae9338df20ab65c0351ad2ea482f6a909"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to a parameter given the member of a MIP type.  <a href="namespacemip_1_1metadata_1_1utils.html#ae9338df20ab65c0351ad2ea482f6a909">More...</a><br /></td></tr>
+<tr class="separator:ae9338df20ab65c0351ad2ea482f6a909"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a664cea15e633fba90e7ce333d3ab1bc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a664cea15e633fba90e7ce333d3ab1bc3">&#9670;&nbsp;</a></span>GET_MIP_METADATA_NESTED_PARAM_INFO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GET_MIP_METADATA_NESTED_PARAM_INFO</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">MemberParameter, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">NestedMemberField&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="namespacemip_1_1metadata_1_1utils.html#ae9338df20ab65c0351ad2ea482f6a909">mip::metadata::utils::getParameterInfoForMember</a>(<a class="code" href="structmip_1_1metadata_1_1MetadataFor.html">mip::metadata::MetadataFor</a>&lt;decltype(MemberParameter)&gt;::value, #NestedMemberField, \</div>
+<div class="line">offsetof(decltype(MemberParameter), NestedMemberField))</div>
+</div><!-- fragment -->
+<p>Get a pointer to a parameter given the member of a nested class/struct. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">MemberParameter</td><td>Member parameter to get the type of which has metadata</td></tr>
+    <tr><td class="paramname">NestedMemberField</td><td>The member field within the nested parameter type</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacemip_1_1metadata_1_1utils.html#ae9338df20ab65c0351ad2ea482f6a909" title="Get a pointer to a parameter given the member of a MIP type.">mip::metadata::utils::getParameterInfoForMember</a></dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the parameter info if found, otherwise nullptr </dd></dl>
+
+</div>
+</div>
 <a id="a2159da8274ec1de193aa06248cbb5a16"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2159da8274ec1de193aa06248cbb5a16">&#9670;&nbsp;</a></span>GET_MIP_METADATA_PARAM_INFO</h2>
 
@@ -213,26 +265,29 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="namespacemip_1_1metadata_1_1utils.html#ad58cd1de2fea0f1e23a59ec9c661182c">mip::metadata::utils::getParameterInfoFromStructMemberOffset</a>(offsetof(MipType, MemberField), <a class="el" href="structmip_1_1metadata_1_1MetadataFor.html">mip::metadata::MetadataFor</a>&lt;MipType&gt;().value)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Get a pointer to a parameter given the offset of the member in the class/struct. </p>
-<dl class="section warning"><dt>Warning</dt><dd>This does not work for nested types, I.E. ClassType.member1.member2</dd></dl>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="namespacemip_1_1metadata_1_1utils.html#ae9338df20ab65c0351ad2ea482f6a909">mip::metadata::utils::getParameterInfoForMember</a>(<a class="code" href="structmip_1_1metadata_1_1MetadataFor.html">mip::metadata::MetadataFor&lt;MipType&gt;::value</a>, #MemberField, \</div>
+<div class="line">offsetof(MipType, MemberField))</div>
+</div><!-- fragment -->
+<p>Get a pointer to a parameter given the member of a class/struct. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">MipType</td><td>MIP struct/class</td></tr>
-    <tr><td class="paramname">MemberField</td><td>The member field within the MIP struct/class</td></tr>
+    <tr><td class="paramname">MipType</td><td>MIP type that has metadata</td></tr>
+    <tr><td class="paramname">MemberField</td><td>The member field within the MIP type</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacemip_1_1metadata_1_1utils.html#ad58cd1de2fea0f1e23a59ec9c661182c" title="Get a pointer to a parameter given the offset of the member in the class/struct.">mip::metadata::utils::getParameterInfoFromStructMemberOffset</a></dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacemip_1_1metadata_1_1utils.html#ae9338df20ab65c0351ad2ea482f6a909" title="Get a pointer to a parameter given the member of a MIP type.">mip::metadata::utils::getParameterInfoForMember</a></dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to the parameter info if found, otherwise nullptr </dd></dl>
 
 </div>
 </div>
 </div><!-- contents -->
+<div class="ttc" id="anamespacemip_1_1metadata_1_1utils_html_ae9338df20ab65c0351ad2ea482f6a909"><div class="ttname"><a href="namespacemip_1_1metadata_1_1utils.html#ae9338df20ab65c0351ad2ea482f6a909">mip::metadata::utils::getParameterInfoForMember</a></div><div class="ttdeci">const ParameterInfo * getParameterInfoForMember(const StructInfo &amp;struct_info, const char *param_name, const size_t dummy=0)</div><div class="ttdoc">Get a pointer to a parameter given the member of a MIP type.</div><div class="ttdef"><b>Definition:</b> mip_meta_utils.hpp:534</div></div>
+<div class="ttc" id="astructmip_1_1metadata_1_1MetadataFor_html"><div class="ttname"><a href="structmip_1_1metadata_1_1MetadataFor.html">mip::metadata::MetadataFor</a></div><div class="ttdef"><b>Definition:</b> mip_metadata.hpp:15</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
