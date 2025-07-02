@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-192-g8bd7933</span>
+   &#160;<span id="projectnumber">v3.0.0-207-g075e956</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -170,13 +170,15 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">         <span class="stringliteral">&quot;commands_3dm::GnssAssistedFix&quot;</span>,</div>
-<div class="line">         <span class="stringliteral">&quot;GNSS Assisted Fix Settings&quot;</span>,</div>
-<div class="line">         <span class="stringliteral">&quot;Set the options for assisted GNSS fix.\n\nDevices that implement this command have a dedicated GNSS flash memory and a non-volatile FRAM.\nThese storage mechanisms are used to retain information about the last good GNSS fix. This can greatly reduces the TTFF (Time To First Fix) depending on the age of the stored information.\nThe TTFF can be as low as one second, or up to the equivalent of a cold start. There is a small increase in power used when enabling assisted fix.\n\nThe fastest fix will be obtained by supplying the device with a GNSS Assist Time Update message containing the current GPS time immediately after subsequent power up.\nThis allows the device to determine if the last GNSS information saved is still fresh enough to improve the TTFF.\n\nNOTE: Non-volatile GNSS memory is cleared when going from an enabled state to a disabled state.\nWARNING: The clearing operation results in an erase operation on the GNSS Flash. The flash has a limited durability of 100,000 write/erase cycles&quot;</span>,</div>
-<div class="line">         <a class="code" href="structmip_1_1metadata_1_1MetadataFor_3_01commands__3dm_1_1GnssAssistedFix_01_4.html#a5f55cde5d30a688c8fa5075c3e6e4f91">parameters</a>,</div>
-<div class="line">         type::DESCRIPTOR,</div>
-<div class="line">         {<span class="keyword">true</span>, <span class="keyword">true</span>, <span class="keyword">true</span>, <span class="keyword">true</span>, <span class="keyword">true</span>},</div>
-<div class="line">         &amp;MetadataFor&lt;type::Response&gt;::value,</div>
+<div class="line">        {</div>
+<div class="line">             <span class="stringliteral">&quot;commands_3dm::GnssAssistedFix&quot;</span>,</div>
+<div class="line">             <span class="stringliteral">&quot;GNSS Assisted Fix Settings&quot;</span>,</div>
+<div class="line">             <span class="stringliteral">&quot;Set the options for assisted GNSS fix.\n\nDevices that implement this command have a dedicated GNSS flash memory and a non-volatile FRAM.\nThese storage mechanisms are used to retain information about the last good GNSS fix. This can greatly reduces the TTFF (Time To First Fix) depending on the age of the stored information.\nThe TTFF can be as low as one second, or up to the equivalent of a cold start. There is a small increase in power used when enabling assisted fix.\n\nThe fastest fix will be obtained by supplying the device with a GNSS Assist Time Update message containing the current GPS time immediately after subsequent power up.\nThis allows the device to determine if the last GNSS information saved is still fresh enough to improve the TTFF.\n\nNOTE: Non-volatile GNSS memory is cleared when going from an enabled state to a disabled state.\nWARNING: The clearing operation results in an erase operation on the GNSS Flash. The flash has a limited durability of 100,000 write/erase cycles&quot;</span>,</div>
+<div class="line">             <a class="code" href="structmip_1_1metadata_1_1MetadataFor_3_01commands__3dm_1_1GnssAssistedFix_01_4.html#a5f55cde5d30a688c8fa5075c3e6e4f91">parameters</a>,</div>
+<div class="line">        },</div>
+<div class="line">             type::DESCRIPTOR,</div>
+<div class="line">             {<span class="keyword">true</span>, <span class="keyword">true</span>, <span class="keyword">true</span>, <span class="keyword">true</span>, <span class="keyword">true</span>},</div>
+<div class="line">             &amp;MetadataFor&lt;type::Response&gt;::value,</div>
 <div class="line">    }</div>
 </div><!-- fragment -->
 </div>
@@ -187,8 +189,8 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <div class="ttc" id="anamespacemip_1_1metadata_html_aff2e019f9db2d9068cce26ec201c3525a85a1979d26d0ef93dcc13a72fee80705"><div class="ttname"><a href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525a85a1979d26d0ef93dcc13a72fee80705">mip::metadata::Type::ENUM</a></div><div class="ttdeci">@ ENUM</div></div>
 <div class="ttc" id="anamespacemip_1_1metadata_html_aff2e019f9db2d9068cce26ec201c3525a6669348b484e3008dca2bfa8e85e40b5"><div class="ttname"><a href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525a6669348b484e3008dca2bfa8e85e40b5">mip::metadata::Type::U8</a></div><div class="ttdeci">@ U8</div></div>
-<div class="ttc" id="astructmip_1_1metadata_1_1MetadataFor_3_01commands__3dm_1_1GnssAssistedFix_1_1AssistedFixOption_01_4_html_aece01d9618480e21f5a807b53071a2f4"><div class="ttname"><a href="structmip_1_1metadata_1_1MetadataFor_3_01commands__3dm_1_1GnssAssistedFix_1_1AssistedFixOption_01_4.html#aece01d9618480e21f5a807b53071a2f4">mip::metadata::MetadataFor&lt; commands_3dm::GnssAssistedFix::AssistedFixOption &gt;::value</a></div><div class="ttdeci">static constexpr EnumInfo value</div><div class="ttdef"><b>Definition:</b> commands_3dm.hpp:1421</div></div>
-<div class="ttc" id="astructmip_1_1metadata_1_1MetadataFor_3_01commands__3dm_1_1GnssAssistedFix_01_4_html_a5f55cde5d30a688c8fa5075c3e6e4f91"><div class="ttname"><a href="structmip_1_1metadata_1_1MetadataFor_3_01commands__3dm_1_1GnssAssistedFix_01_4.html#a5f55cde5d30a688c8fa5075c3e6e4f91">mip::metadata::MetadataFor&lt; commands_3dm::GnssAssistedFix &gt;::parameters</a></div><div class="ttdeci">static constexpr ParameterInfo parameters[]</div><div class="ttdef"><b>Definition:</b> commands_3dm.hpp:1472</div></div>
+<div class="ttc" id="astructmip_1_1metadata_1_1MetadataFor_3_01commands__3dm_1_1GnssAssistedFix_1_1AssistedFixOption_01_4_html_aece01d9618480e21f5a807b53071a2f4"><div class="ttname"><a href="structmip_1_1metadata_1_1MetadataFor_3_01commands__3dm_1_1GnssAssistedFix_1_1AssistedFixOption_01_4.html#aece01d9618480e21f5a807b53071a2f4">mip::metadata::MetadataFor&lt; commands_3dm::GnssAssistedFix::AssistedFixOption &gt;::value</a></div><div class="ttdeci">static constexpr EnumInfo value</div><div class="ttdef"><b>Definition:</b> commands_3dm.hpp:1479</div></div>
+<div class="ttc" id="astructmip_1_1metadata_1_1MetadataFor_3_01commands__3dm_1_1GnssAssistedFix_01_4_html_a5f55cde5d30a688c8fa5075c3e6e4f91"><div class="ttname"><a href="structmip_1_1metadata_1_1MetadataFor_3_01commands__3dm_1_1GnssAssistedFix_01_4.html#a5f55cde5d30a688c8fa5075c3e6e4f91">mip::metadata::MetadataFor&lt; commands_3dm::GnssAssistedFix &gt;::parameters</a></div><div class="ttdeci">static constexpr ParameterInfo parameters[]</div><div class="ttdef"><b>Definition:</b> commands_3dm.hpp:1532</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

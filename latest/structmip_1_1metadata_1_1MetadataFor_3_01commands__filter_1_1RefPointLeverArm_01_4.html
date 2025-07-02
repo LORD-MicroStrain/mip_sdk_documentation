@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-192-g8bd7933</span>
+   &#160;<span id="projectnumber">v3.0.0-207-g075e956</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -170,13 +170,15 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">         <span class="stringliteral">&quot;commands_filter::RefPointLeverArm&quot;</span>,</div>
-<div class="line">         <span class="stringliteral">&quot;Reference point lever arm&quot;</span>,</div>
-<div class="line">         <span class="stringliteral">&quot;Lever arm offset with respect to the sensor for the indicated point of reference.\nThis is used to change the location of the indicated point of reference, and will affect filter position and velocity outputs.\nChanging this setting from default will result in a global position offset that depends on vehicle attitude,\nand a velocity offset that depends on vehicle attitude and angular rate.\n&lt;br/&gt;The lever arm is defined by a 3-element vector that points from the sensor to the desired reference point, with (x,y,z) components given in the vehicle&#39;s reference frame.\n&lt;br/&gt;&lt;br/&gt;Note, if the reference point selector is set to VEH (1), this setting will affect the following data fields: (0x82, 0x01), (0x82, 0x02), (0x82, 0x40), (0x82, 0x41), and (0x82, 42)\n&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Offset Limits&lt;/b&gt;\n&lt;br/&gt;Reference Point VEH (1): 10 m magnitude (default)&quot;</span>,</div>
-<div class="line">         <a class="code" href="structmip_1_1metadata_1_1MetadataFor_3_01commands__filter_1_1RefPointLeverArm_01_4.html#ab24351d10576e2f29b2332a2059d14f2">parameters</a>,</div>
-<div class="line">         type::DESCRIPTOR,</div>
-<div class="line">         {<span class="keyword">true</span>, <span class="keyword">true</span>, <span class="keyword">true</span>, <span class="keyword">true</span>, <span class="keyword">true</span>},</div>
-<div class="line">         &amp;MetadataFor&lt;type::Response&gt;::value,</div>
+<div class="line">        {</div>
+<div class="line">             <span class="stringliteral">&quot;commands_filter::RefPointLeverArm&quot;</span>,</div>
+<div class="line">             <span class="stringliteral">&quot;Reference point lever arm&quot;</span>,</div>
+<div class="line">             <span class="stringliteral">&quot;Lever arm offset with respect to the sensor for the indicated point of reference.\nThis is used to change the location of the indicated point of reference, and will affect filter position and velocity outputs.\nChanging this setting from default will result in a global position offset that depends on vehicle attitude,\nand a velocity offset that depends on vehicle attitude and angular rate.\n&lt;br/&gt;The lever arm is defined by a 3-element vector that points from the sensor to the desired reference point, with (x,y,z) components given in the vehicle&#39;s reference frame.\n&lt;br/&gt;&lt;br/&gt;Note, if the reference point selector is set to VEH (1), this setting will affect the following data fields: (0x82, 0x01), (0x82, 0x02), (0x82, 0x40), (0x82, 0x41), and (0x82, 42)\n&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Offset Limits&lt;/b&gt;\n&lt;br/&gt;Reference Point VEH (1): 10 m magnitude (default)&quot;</span>,</div>
+<div class="line">             <a class="code" href="structmip_1_1metadata_1_1MetadataFor_3_01commands__filter_1_1RefPointLeverArm_01_4.html#ab24351d10576e2f29b2332a2059d14f2">parameters</a>,</div>
+<div class="line">        },</div>
+<div class="line">             type::DESCRIPTOR,</div>
+<div class="line">             {<span class="keyword">true</span>, <span class="keyword">true</span>, <span class="keyword">true</span>, <span class="keyword">true</span>, <span class="keyword">true</span>},</div>
+<div class="line">             &amp;MetadataFor&lt;type::Response&gt;::value,</div>
 <div class="line">    }</div>
 </div><!-- fragment -->
 </div>
@@ -186,9 +188,9 @@ Static Public Attributes</h2></td></tr>
 </ul>
 </div><!-- contents -->
 <div class="ttc" id="anamespacemip_1_1metadata_html_aff2e019f9db2d9068cce26ec201c3525a85a1979d26d0ef93dcc13a72fee80705"><div class="ttname"><a href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525a85a1979d26d0ef93dcc13a72fee80705">mip::metadata::Type::ENUM</a></div><div class="ttdeci">@ ENUM</div></div>
-<div class="ttc" id="astructmip_1_1metadata_1_1MetadataFor_3_01commands__filter_1_1RefPointLeverArm_1_1ReferencePointSelector_01_4_html_a1801395f8aca27cecafb14b28e8d1fa9"><div class="ttname"><a href="structmip_1_1metadata_1_1MetadataFor_3_01commands__filter_1_1RefPointLeverArm_1_1ReferencePointSelector_01_4.html#a1801395f8aca27cecafb14b28e8d1fa9">mip::metadata::MetadataFor&lt; commands_filter::RefPointLeverArm::ReferencePointSelector &gt;::value</a></div><div class="ttdeci">static constexpr EnumInfo value</div><div class="ttdef"><b>Definition:</b> commands_filter.hpp:3515</div></div>
+<div class="ttc" id="astructmip_1_1metadata_1_1MetadataFor_3_01commands__filter_1_1RefPointLeverArm_1_1ReferencePointSelector_01_4_html_a1801395f8aca27cecafb14b28e8d1fa9"><div class="ttname"><a href="structmip_1_1metadata_1_1MetadataFor_3_01commands__filter_1_1RefPointLeverArm_1_1ReferencePointSelector_01_4.html#a1801395f8aca27cecafb14b28e8d1fa9">mip::metadata::MetadataFor&lt; commands_filter::RefPointLeverArm::ReferencePointSelector &gt;::value</a></div><div class="ttdeci">static constexpr EnumInfo value</div><div class="ttdef"><b>Definition:</b> commands_filter.hpp:3679</div></div>
 <div class="ttc" id="anamespacemip_1_1metadata_html_aff2e019f9db2d9068cce26ec201c3525ab8223be2455e0ea5a0e63e8f018d6fc3"><div class="ttname"><a href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525ab8223be2455e0ea5a0e63e8f018d6fc3">mip::metadata::Type::STRUCT</a></div><div class="ttdeci">@ STRUCT</div></div>
-<div class="ttc" id="astructmip_1_1metadata_1_1MetadataFor_3_01commands__filter_1_1RefPointLeverArm_01_4_html_ab24351d10576e2f29b2332a2059d14f2"><div class="ttname"><a href="structmip_1_1metadata_1_1MetadataFor_3_01commands__filter_1_1RefPointLeverArm_01_4.html#ab24351d10576e2f29b2332a2059d14f2">mip::metadata::MetadataFor&lt; commands_filter::RefPointLeverArm &gt;::parameters</a></div><div class="ttdeci">static constexpr ParameterInfo parameters[]</div><div class="ttdef"><b>Definition:</b> commands_filter.hpp:3566</div></div>
+<div class="ttc" id="astructmip_1_1metadata_1_1MetadataFor_3_01commands__filter_1_1RefPointLeverArm_01_4_html_ab24351d10576e2f29b2332a2059d14f2"><div class="ttname"><a href="structmip_1_1metadata_1_1MetadataFor_3_01commands__filter_1_1RefPointLeverArm_01_4.html#ab24351d10576e2f29b2332a2059d14f2">mip::metadata::MetadataFor&lt; commands_filter::RefPointLeverArm &gt;::parameters</a></div><div class="ttdeci">static constexpr ParameterInfo parameters[]</div><div class="ttdef"><b>Definition:</b> commands_filter.hpp:3732</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-192-g8bd7933</span>
+   &#160;<span id="projectnumber">v3.0.0-207-g075e956</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -179,13 +179,15 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">         <span class="stringliteral">&quot;commands_3dm::ConstellationSettings&quot;</span>,</div>
-<div class="line">         <span class="stringliteral">&quot;Constellation Settings&quot;</span>,</div>
-<div class="line">         <span class="stringliteral">&quot;This command configures which satellite constellations are enabled and how many channels are dedicated to tracking each constellation.\n\nMaximum number of tracking channels to use (total for all constellations):\n0 to max_channels_available (from reply message)\n\nFor each constellation you wish to use, include a ConstellationSettings struct.  Note the following:\n\nTotal number of tracking channels (sum of &#39;reserved_channels&#39; for all constellations) must be &lt;= 32:\n0 -&gt; 32 Number of reserved channels\n0 -&gt; 32 Max number of channels (&gt;= reserved channels)\n\nThe factory default setting is: GPS and GLONASS enabled.  Min/Max for GPS = 8/16, GLONASS = 8/14, SBAS = 1/3, QZSS = 0/3.\n\nWarning: SBAS functionality shall not be used in &#39;safety of life&#39; applications!\nWarning: Any setting that causes the total reserved channels to exceed 32 will result in a NACK.\nWarning: You cannot enable GLONASS and BeiDou at the same time.\nNote:    Enabling SBAS and QZSS augments GPS accuracy.\nNote:    It is recommended to disable GLONASS and BeiDou if a GPS-only antenna or GPS-only SAW filter is used.&quot;</span>,</div>
-<div class="line">         <a class="code" href="structmip_1_1metadata_1_1MetadataFor_3_01commands__3dm_1_1ConstellationSettings_01_4.html#a0421a15bb8b5e533992269f267e16dd4">parameters</a>,</div>
-<div class="line">         type::DESCRIPTOR,</div>
-<div class="line">         {<span class="keyword">true</span>, <span class="keyword">true</span>, <span class="keyword">true</span>, <span class="keyword">true</span>, <span class="keyword">true</span>},</div>
-<div class="line">         &amp;MetadataFor&lt;type::Response&gt;::value,</div>
+<div class="line">        {</div>
+<div class="line">             <span class="stringliteral">&quot;commands_3dm::ConstellationSettings&quot;</span>,</div>
+<div class="line">             <span class="stringliteral">&quot;Constellation Settings&quot;</span>,</div>
+<div class="line">             <span class="stringliteral">&quot;This command configures which satellite constellations are enabled and how many channels are dedicated to tracking each constellation.\n\nMaximum number of tracking channels to use (total for all constellations):\n0 to max_channels_available (from reply message)\n\nFor each constellation you wish to use, include a ConstellationSettings struct.  Note the following:\n\nTotal number of tracking channels (sum of &#39;reserved_channels&#39; for all constellations) must be &lt;= 32:\n0 -&gt; 32 Number of reserved channels\n0 -&gt; 32 Max number of channels (&gt;= reserved channels)\n\nThe factory default setting is: GPS and GLONASS enabled.  Min/Max for GPS = 8/16, GLONASS = 8/14, SBAS = 1/3, QZSS = 0/3.\n\nWarning: SBAS functionality shall not be used in &#39;safety of life&#39; applications!\nWarning: Any setting that causes the total reserved channels to exceed 32 will result in a NACK.\nWarning: You cannot enable GLONASS and BeiDou at the same time.\nNote:    Enabling SBAS and QZSS augments GPS accuracy.\nNote:    It is recommended to disable GLONASS and BeiDou if a GPS-only antenna or GPS-only SAW filter is used.&quot;</span>,</div>
+<div class="line">             <a class="code" href="structmip_1_1metadata_1_1MetadataFor_3_01commands__3dm_1_1ConstellationSettings_01_4.html#a0421a15bb8b5e533992269f267e16dd4">parameters</a>,</div>
+<div class="line">        },</div>
+<div class="line">             type::DESCRIPTOR,</div>
+<div class="line">             {<span class="keyword">true</span>, <span class="keyword">true</span>, <span class="keyword">true</span>, <span class="keyword">true</span>, <span class="keyword">true</span>},</div>
+<div class="line">             &amp;MetadataFor&lt;type::Response&gt;::value,</div>
 <div class="line">    }</div>
 </div><!-- fragment -->
 </div>
@@ -196,8 +198,8 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <div class="ttc" id="anamespacemip_1_1metadata_html_aff2e019f9db2d9068cce26ec201c3525aef9ef3ebca4d2b64b6ec83808bafa5f2"><div class="ttname"><a href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525aef9ef3ebca4d2b64b6ec83808bafa5f2">mip::metadata::Type::U16</a></div><div class="ttdeci">@ U16</div></div>
 <div class="ttc" id="anamespacemip_1_1metadata_html_aff2e019f9db2d9068cce26ec201c3525ab8223be2455e0ea5a0e63e8f018d6fc3"><div class="ttname"><a href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525ab8223be2455e0ea5a0e63e8f018d6fc3">mip::metadata::Type::STRUCT</a></div><div class="ttdeci">@ STRUCT</div></div>
-<div class="ttc" id="astructmip_1_1metadata_1_1MetadataFor_3_01commands__3dm_1_1ConstellationSettings_01_4_html_a0421a15bb8b5e533992269f267e16dd4"><div class="ttname"><a href="structmip_1_1metadata_1_1MetadataFor_3_01commands__3dm_1_1ConstellationSettings_01_4.html#a0421a15bb8b5e533992269f267e16dd4">mip::metadata::MetadataFor&lt; commands_3dm::ConstellationSettings &gt;::parameters</a></div><div class="ttdeci">static constexpr ParameterInfo parameters[]</div><div class="ttdef"><b>Definition:</b> commands_3dm.hpp:1238</div></div>
-<div class="ttc" id="astructmip_1_1metadata_1_1MetadataFor_3_01commands__3dm_1_1ConstellationSettings_1_1Settings_01_4_html_a1890096f13da6d4e077262438813fbb4"><div class="ttname"><a href="structmip_1_1metadata_1_1MetadataFor_3_01commands__3dm_1_1ConstellationSettings_1_1Settings_01_4.html#a1890096f13da6d4e077262438813fbb4">mip::metadata::MetadataFor&lt; commands_3dm::ConstellationSettings::Settings &gt;::value</a></div><div class="ttdeci">static constexpr StructInfo value</div><div class="ttdef"><b>Definition:</b> commands_3dm.hpp:1170</div></div>
+<div class="ttc" id="astructmip_1_1metadata_1_1MetadataFor_3_01commands__3dm_1_1ConstellationSettings_01_4_html_a0421a15bb8b5e533992269f267e16dd4"><div class="ttname"><a href="structmip_1_1metadata_1_1MetadataFor_3_01commands__3dm_1_1ConstellationSettings_01_4.html#a0421a15bb8b5e533992269f267e16dd4">mip::metadata::MetadataFor&lt; commands_3dm::ConstellationSettings &gt;::parameters</a></div><div class="ttdeci">static constexpr ParameterInfo parameters[]</div><div class="ttdef"><b>Definition:</b> commands_3dm.hpp:1290</div></div>
+<div class="ttc" id="astructmip_1_1metadata_1_1MetadataFor_3_01commands__3dm_1_1ConstellationSettings_1_1Settings_01_4_html_a1890096f13da6d4e077262438813fbb4"><div class="ttname"><a href="structmip_1_1metadata_1_1MetadataFor_3_01commands__3dm_1_1ConstellationSettings_1_1Settings_01_4.html#a1890096f13da6d4e077262438813fbb4">mip::metadata::MetadataFor&lt; commands_3dm::ConstellationSettings::Settings &gt;::value</a></div><div class="ttdeci">static constexpr StructInfo value</div><div class="ttdef"><b>Definition:</b> commands_3dm.hpp:1220</div></div>
 <div class="ttc" id="aclassmicrostrain_1_1Index_html"><div class="ttname"><a href="classmicrostrain_1_1Index.html">microstrain::Index</a></div><div class="ttdoc">Represents an index ranging from 0..N excluding N.</div><div class="ttdef"><b>Definition:</b> index.hpp:28</div></div>
 <div class="ttc" id="anamespacemip_1_1metadata_html_aff2e019f9db2d9068cce26ec201c3525a6669348b484e3008dca2bfa8e85e40b5"><div class="ttname"><a href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525a6669348b484e3008dca2bfa8e85e40b5">mip::metadata::Type::U8</a></div><div class="ttdeci">@ U8</div></div>
 <!-- start footer part -->

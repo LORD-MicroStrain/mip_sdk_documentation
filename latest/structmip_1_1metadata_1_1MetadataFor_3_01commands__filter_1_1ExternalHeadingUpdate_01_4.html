@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-192-g8bd7933</span>
+   &#160;<span id="projectnumber">v3.0.0-207-g075e956</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -178,13 +178,15 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">         <span class="stringliteral">&quot;commands_filter::ExternalHeadingUpdate&quot;</span>,</div>
-<div class="line">         <span class="stringliteral">&quot;External Heading Update&quot;</span>,</div>
-<div class="line">         <span class="stringliteral">&quot;Provide a filter measurement from an external heading source\n\nThe heading must be the sensor frame with respect to the NED frame.\n\nThe heading update control must be set to external for this command to update the filter; otherwise it is NACK&#39;d.\nHeading angle uncertainties of &amp;lt;= 0.0 will be NACK&#39;d\n\nPlease refer to your device user manual for information on the maximum rate of this message.\n\nOn -25 models, if the declination source (0x0D, 0x43) is not valid, true heading updates will be NACK&#39;d.\nOn -45 models, if the declination source is invalid, magnetic heading updates will be NACK&#39;d.\n\n&quot;</span>,</div>
-<div class="line">         <a class="code" href="structmip_1_1metadata_1_1MetadataFor_3_01commands__filter_1_1ExternalHeadingUpdate_01_4.html#a64c1fe2852bbfd2e00b21db6b23f4ad5">parameters</a>,</div>
-<div class="line">         type::DESCRIPTOR,</div>
-<div class="line">         NO_FUNCTIONS,</div>
-<div class="line">         <span class="keyword">nullptr</span>,</div>
+<div class="line">        {</div>
+<div class="line">             <span class="stringliteral">&quot;commands_filter::ExternalHeadingUpdate&quot;</span>,</div>
+<div class="line">             <span class="stringliteral">&quot;External Heading Update&quot;</span>,</div>
+<div class="line">             <span class="stringliteral">&quot;Provide a filter measurement from an external heading source\n\nThe heading must be the sensor frame with respect to the NED frame.\n\nThe heading update control must be set to external for this command to update the filter; otherwise it is NACK&#39;d.\nHeading angle uncertainties of &amp;lt;= 0.0 will be NACK&#39;d\n\nPlease refer to your device user manual for information on the maximum rate of this message.\n\nOn -25 models, if the declination source (0x0D, 0x43) is not valid, true heading updates will be NACK&#39;d.\nOn -45 models, if the declination source is invalid, magnetic heading updates will be NACK&#39;d.\n\n&quot;</span>,</div>
+<div class="line">             <a class="code" href="structmip_1_1metadata_1_1MetadataFor_3_01commands__filter_1_1ExternalHeadingUpdate_01_4.html#a64c1fe2852bbfd2e00b21db6b23f4ad5">parameters</a>,</div>
+<div class="line">        },</div>
+<div class="line">             type::DESCRIPTOR,</div>
+<div class="line">             NO_FUNCTIONS,</div>
+<div class="line">             <span class="keyword">nullptr</span>,</div>
 <div class="line">    }</div>
 </div><!-- fragment -->
 </div>
@@ -193,7 +195,7 @@ Static Public Attributes</h2></td></tr>
 <li>src/cpp/mip/metadata/definitions/<a class="el" href="metadata_2definitions_2commands__filter_8hpp_source.html">commands_filter.hpp</a></li>
 </ul>
 </div><!-- contents -->
-<div class="ttc" id="astructmip_1_1metadata_1_1MetadataFor_3_01commands__filter_1_1ExternalHeadingUpdate_01_4_html_a64c1fe2852bbfd2e00b21db6b23f4ad5"><div class="ttname"><a href="structmip_1_1metadata_1_1MetadataFor_3_01commands__filter_1_1ExternalHeadingUpdate_01_4.html#a64c1fe2852bbfd2e00b21db6b23f4ad5">mip::metadata::MetadataFor&lt; commands_filter::ExternalHeadingUpdate &gt;::parameters</a></div><div class="ttdeci">static constexpr ParameterInfo parameters[]</div><div class="ttdef"><b>Definition:</b> commands_filter.hpp:253</div></div>
+<div class="ttc" id="astructmip_1_1metadata_1_1MetadataFor_3_01commands__filter_1_1ExternalHeadingUpdate_01_4_html_a64c1fe2852bbfd2e00b21db6b23f4ad5"><div class="ttname"><a href="structmip_1_1metadata_1_1MetadataFor_3_01commands__filter_1_1ExternalHeadingUpdate_01_4.html#a64c1fe2852bbfd2e00b21db6b23f4ad5">mip::metadata::MetadataFor&lt; commands_filter::ExternalHeadingUpdate &gt;::parameters</a></div><div class="ttdeci">static constexpr ParameterInfo parameters[]</div><div class="ttdef"><b>Definition:</b> commands_filter.hpp:261</div></div>
 <div class="ttc" id="anamespacemip_1_1metadata_html_aff2e019f9db2d9068cce26ec201c3525ae738c26bf4ce1037fa81b039a915cbf6"><div class="ttname"><a href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525ae738c26bf4ce1037fa81b039a915cbf6">mip::metadata::Type::FLOAT</a></div><div class="ttdeci">@ FLOAT</div></div>
 <div class="ttc" id="anamespacemip_1_1metadata_html_aff2e019f9db2d9068cce26ec201c3525a6669348b484e3008dca2bfa8e85e40b5"><div class="ttname"><a href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525a6669348b484e3008dca2bfa8e85e40b5">mip::metadata::Type::U8</a></div><div class="ttdeci">@ U8</div></div>
 <!-- start footer part -->

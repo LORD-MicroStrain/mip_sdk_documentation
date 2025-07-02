@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-192-g8bd7933</span>
+   &#160;<span id="projectnumber">v3.0.0-207-g075e956</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -161,13 +161,15 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">         <span class="stringliteral">&quot;commands_filter::SensorToVehicleRotationQuaternion&quot;</span>,</div>
-<div class="line">         <span class="stringliteral">&quot;Sensor to Vehicle Frame Rotation Quaternion&quot;</span>,</div>
-<div class="line">         <span class="stringliteral">&quot;Set the sensor to vehicle frame rotation using a quaternion.\n\nNote: This is the rotation, the inverse of the transformation.\nThis quaternion defines the rotation from the sensor body frame to the fixed vehicle frame.&lt;br/&gt;\nPlease reference the device Theory of Operation for more information.&lt;br/&gt;\nThe quaternion must be unit length (tolerance 1e-3) or the device will NACK the command.\nThe rotation is stored in the device as a unit quaternion.  When the quaternion elements are read back from the device, they may not\nbe equivalent in value to the quaternion used to set the rotation, due to normalization.&lt;br/&gt;\n&lt;br/&gt;\nQuaternion element definition:&lt;br/&gt;&lt;br/&gt;\n&lt;br/&gt;\nEQSTART Q_{SEN}^{VEH} = \\begin{bmatrix} q_{0} &amp;amp; q_{1}*i  &amp;amp; q_{2}*j  &amp;amp; q_{3}*k \\end{bmatrix} EQEND\n&lt;br/&gt;&lt;br/&gt;\nThis rotation affects the following output quantities:&lt;br/&gt;&lt;br/&gt;\nIMU:&lt;br/&gt;\nScaled Acceleration&lt;br/&gt;\nScaled Gyro&lt;br/&gt;\nScaled Magnetometer&lt;br/&gt;\nDelta Theta&lt;br/&gt;\nDelta Velocity&lt;br/&gt;\n&lt;br/&gt;&lt;br/&gt;\nEstimation Filter:&lt;br/&gt;\nEstimated Orientation, Quaternion&lt;br/&gt;\nEstimated Orientation, Matrix&lt;br/&gt;\nEstimated Orientation, Euler Angles&lt;br/&gt;\nEstimated Linear Acceleration&lt;br/&gt;\nEstimated Angular Rate&lt;br/&gt;\nEstimated Gravity Vector&lt;br/&gt;&quot;</span>,</div>
-<div class="line">         <a class="code" href="structmip_1_1metadata_1_1MetadataFor_3_01commands__filter_1_1SensorToVehicleRotationQuaternion_01_4.html#a72504a5dbaa2b473afd23982aec3abe8">parameters</a>,</div>
-<div class="line">         type::DESCRIPTOR,</div>
-<div class="line">         {<span class="keyword">true</span>, <span class="keyword">true</span>, <span class="keyword">true</span>, <span class="keyword">true</span>, <span class="keyword">true</span>},</div>
-<div class="line">         &amp;MetadataFor&lt;type::Response&gt;::value,</div>
+<div class="line">        {</div>
+<div class="line">             <span class="stringliteral">&quot;commands_filter::SensorToVehicleRotationQuaternion&quot;</span>,</div>
+<div class="line">             <span class="stringliteral">&quot;Sensor to Vehicle Frame Rotation Quaternion&quot;</span>,</div>
+<div class="line">             <span class="stringliteral">&quot;Set the sensor to vehicle frame rotation using a quaternion.\n\nNote: This is the rotation, the inverse of the transformation.\nThis quaternion defines the rotation from the sensor body frame to the fixed vehicle frame.&lt;br/&gt;\nPlease reference the device Theory of Operation for more information.&lt;br/&gt;\nThe quaternion must be unit length (tolerance 1e-3) or the device will NACK the command.\nThe rotation is stored in the device as a unit quaternion.  When the quaternion elements are read back from the device, they may not\nbe equivalent in value to the quaternion used to set the rotation, due to normalization.&lt;br/&gt;\n&lt;br/&gt;\nQuaternion element definition:&lt;br/&gt;&lt;br/&gt;\n&lt;br/&gt;\nEQSTART Q_{SEN}^{VEH} = \\begin{bmatrix} q_{0} &amp;amp; q_{1}*i  &amp;amp; q_{2}*j  &amp;amp; q_{3}*k \\end{bmatrix} EQEND\n&lt;br/&gt;&lt;br/&gt;\nThis rotation affects the following output quantities:&lt;br/&gt;&lt;br/&gt;\nIMU:&lt;br/&gt;\nScaled Acceleration&lt;br/&gt;\nScaled Gyro&lt;br/&gt;\nScaled Magnetometer&lt;br/&gt;\nDelta Theta&lt;br/&gt;\nDelta Velocity&lt;br/&gt;\n&lt;br/&gt;&lt;br/&gt;\nEstimation Filter:&lt;br/&gt;\nEstimated Orientation, Quaternion&lt;br/&gt;\nEstimated Orientation, Matrix&lt;br/&gt;\nEstimated Orientation, Euler Angles&lt;br/&gt;\nEstimated Linear Acceleration&lt;br/&gt;\nEstimated Angular Rate&lt;br/&gt;\nEstimated Gravity Vector&lt;br/&gt;&quot;</span>,</div>
+<div class="line">             <a class="code" href="structmip_1_1metadata_1_1MetadataFor_3_01commands__filter_1_1SensorToVehicleRotationQuaternion_01_4.html#a72504a5dbaa2b473afd23982aec3abe8">parameters</a>,</div>
+<div class="line">        },</div>
+<div class="line">             type::DESCRIPTOR,</div>
+<div class="line">             {<span class="keyword">true</span>, <span class="keyword">true</span>, <span class="keyword">true</span>, <span class="keyword">true</span>, <span class="keyword">true</span>},</div>
+<div class="line">             &amp;MetadataFor&lt;type::Response&gt;::value,</div>
 <div class="line">    }</div>
 </div><!-- fragment -->
 </div>
@@ -176,7 +178,7 @@ Static Public Attributes</h2></td></tr>
 <li>src/cpp/mip/metadata/definitions/<a class="el" href="metadata_2definitions_2commands__filter_8hpp_source.html">commands_filter.hpp</a></li>
 </ul>
 </div><!-- contents -->
-<div class="ttc" id="astructmip_1_1metadata_1_1MetadataFor_3_01commands__filter_1_1SensorToVehicleRotationQuaternion_01_4_html_a72504a5dbaa2b473afd23982aec3abe8"><div class="ttname"><a href="structmip_1_1metadata_1_1MetadataFor_3_01commands__filter_1_1SensorToVehicleRotationQuaternion_01_4.html#a72504a5dbaa2b473afd23982aec3abe8">mip::metadata::MetadataFor&lt; commands_filter::SensorToVehicleRotationQuaternion &gt;::parameters</a></div><div class="ttdeci">static constexpr ParameterInfo parameters[]</div><div class="ttdef"><b>Definition:</b> commands_filter.hpp:696</div></div>
+<div class="ttc" id="astructmip_1_1metadata_1_1MetadataFor_3_01commands__filter_1_1SensorToVehicleRotationQuaternion_01_4_html_a72504a5dbaa2b473afd23982aec3abe8"><div class="ttname"><a href="structmip_1_1metadata_1_1MetadataFor_3_01commands__filter_1_1SensorToVehicleRotationQuaternion_01_4.html#a72504a5dbaa2b473afd23982aec3abe8">mip::metadata::MetadataFor&lt; commands_filter::SensorToVehicleRotationQuaternion &gt;::parameters</a></div><div class="ttdeci">static constexpr ParameterInfo parameters[]</div><div class="ttdef"><b>Definition:</b> commands_filter.hpp:726</div></div>
 <div class="ttc" id="anamespacemip_1_1metadata_html_aff2e019f9db2d9068cce26ec201c3525ab8223be2455e0ea5a0e63e8f018d6fc3"><div class="ttname"><a href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525ab8223be2455e0ea5a0e63e8f018d6fc3">mip::metadata::Type::STRUCT</a></div><div class="ttdeci">@ STRUCT</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
