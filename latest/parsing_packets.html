@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-320-g65219b1</span>
+   &#160;<span id="projectnumber">v3.0.0-343-g605b467</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -74,7 +74,7 @@ $(function() {
 </div>
    <h1><a class="anchor" id="parsing_data"></a>
 Parsing Data</h1>
-<p>Data is supplied by calling <a class="el" href="group__mip__parser__c.html#gafbd8fbf443d45e9972e107b999ee36b9" title="Parse packets from a buffer.">mip_parser_parse()</a> / <a class="el" href="classmip_1_1Parser.html#acfe3c11b152160894998ccc3062f5ba0" title="Parse packets from a buffer.">mip::Parser::parse()</a> with a buffer and length. Along with the data, the user must provide a timestamp. The timestamp serves two purposes: to provide a time of reception indicator and to allow the parser to time out waiting for more data.</p>
+<p>Data is supplied by calling <a class="el" href="group__mip__parser__c.html#gaa3bc3f9362d5c359f0a9b8cd8219f4cf" title="Parse packets from a buffer.">mip_parser_parse()</a> / <a class="el" href="classmip_1_1Parser.html#ac8d46d93371ed182f2cf7045a17e42ca" title="Parse packets from a buffer.">mip::Parser::parse()</a> with a buffer and length. Along with the data, the user must provide a timestamp. The timestamp serves two purposes: to provide a time of reception indicator and to allow the parser to time out waiting for more data.</p>
 <p>The parser will scan the supplied buffer for packets, calling the packet callback for each valid packet. This continues until the entire buffer has been processed. Upon return, the entire buffer has been consumed.</p>
 <p>If a valid packet gets cut off at the end of the buffer (e.g. because it hasn't been received yet), the parser will store the partial packet internally until more data is received. If sufficient data is not received within the set timeout, the first byte of the potential packet is discarded and parsing continues.</p>
 <p>The parse function should be called regularly, even if no new data has been received (pass 0 for the input length). Otherwise, packets will not be able to time out until new data arrives. When parsing a file, it is recommended to call <a class="el" href="group__mip__parser__c.html#ga4169ceaa508424ea086aa3af5d82d998" title="Processes all previously buffered data.">mip_parser_flush()</a> when the end of file is reached to forcibly time out any bad packets near the end.</p>
@@ -82,7 +82,7 @@ Parsing Data</h1>
 <h3><a class="anchor" id="autotoc_md26"></a>
 Direct parsing</h3>
 <p>Data may be read directly into the parser's internal buffer. This may be useful for memory-constrained systems where buffer space is limited. E.g. a UART "byte received" IRQ routine could write directly to the parser buffer one byte at a time.</p>
-<p>To do this, call <a class="el" href="group__mip__parser__c.html#ga665713329a7fa901e01f77d97dcc13fd" title="Gets a pointer into which a small amount of data may be written for parsing.">mip_parser_get_write_ptr()</a> to obtain a writable pointer and amount of available space. Then call <a class="el" href="group__mip__parser__c.html#gafbd8fbf443d45e9972e107b999ee36b9" title="Parse packets from a buffer.">mip_parser_parse()</a> with a NULL input buffer and input length equal to the number of bytes written. At least one byte of free space will always be available, assuming the parse function has been called between writes.</p>
+<p>To do this, call <a class="el" href="group__mip__parser__c.html#ga665713329a7fa901e01f77d97dcc13fd" title="Gets a pointer into which a small amount of data may be written for parsing.">mip_parser_get_write_ptr()</a> to obtain a writable pointer and amount of available space. Then call <a class="el" href="group__mip__parser__c.html#gaa3bc3f9362d5c359f0a9b8cd8219f4cf" title="Parse packets from a buffer.">mip_parser_parse()</a> with a NULL input buffer and input length equal to the number of bytes written. At least one byte of free space will always be available, assuming the parse function has been called between writes.</p>
 <p>Avoid using this feature when your data is already in a contiguous buffer since just passing it to the parse function will be significantly faster. Also avoid mixing this method with parsing data from a buffer like normal.</p>
 <h1><a class="anchor" id="packet_timeouts"></a>
 Packet Timeouts</h1>

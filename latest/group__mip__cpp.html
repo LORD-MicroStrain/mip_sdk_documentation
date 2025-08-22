@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-320-g65219b1</span>
+   &#160;<span id="projectnumber">v3.0.0-343-g605b467</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -298,6 +298,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gabcda7eb9712efd8ab785db591b41cca3"><td class="memTemplParams" colspan="2">template&lt;class DataField &gt; </td></tr>
 <tr class="memitem:gabcda7eb9712efd8ab785db591b41cca3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#gabcda7eb9712efd8ab785db591b41cca3">mip::Interface::registerExtractor</a> (<a class="el" href="structmip_1_1C_1_1mip__dispatch__handler.html">C::mip_dispatch_handler</a> &amp;handler, DataField *field, uint8_t descriptorSet=DataField::DESCRIPTOR_SET)</td></tr>
 <tr class="separator:gabcda7eb9712efd8ab785db591b41cca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga74943c50145051275d853fa5be434f9c"><td class="memTemplParams" colspan="2">template&lt;class FunctionOrLambda &gt; </td></tr>
+<tr class="memitem:ga74943c50145051275d853fa5be434f9c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga74943c50145051275d853fa5be434f9c">mip::Parser::setCallback</a> (FunctionOrLambda function)</td></tr>
+<tr class="separator:ga74943c50145051275d853fa5be434f9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3c099d19ac77cc922c8b2f87441cf6f7"><td class="memTemplParams" colspan="2">template&lt;class T , bool(T::*)(const PacketView &amp;, Timestamp) Callback&gt; </td></tr>
 <tr class="memitem:ga3c099d19ac77cc922c8b2f87441cf6f7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga3c099d19ac77cc922c8b2f87441cf6f7">mip::Parser::setCallback</a> (T &amp;object)</td></tr>
 <tr class="memdesc:ga3c099d19ac77cc922c8b2f87441cf6f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the MIP <a class="el" href="classmip_1_1Parser.html" title="C++ class representing a MIP parser.">Parser</a>.  <a href="group__mip__cpp.html#ga3c099d19ac77cc922c8b2f87441cf6f7">More...</a><br /></td></tr>
@@ -1631,13 +1634,33 @@ template&lt;class Cmd &gt; </div>
 
 </div>
 </div>
-<a id="ga3c099d19ac77cc922c8b2f87441cf6f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3c099d19ac77cc922c8b2f87441cf6f7">&#9670;&nbsp;</a></span>setCallback()</h2>
+<a id="ga74943c50145051275d853fa5be434f9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga74943c50145051275d853fa5be434f9c">&#9670;&nbsp;</a></span>setCallback() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class T , bool(T::*)(const PacketView &amp;, Timestamp) Callback&gt; </div>
+template&lt;class FunctionOrLambda &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::Parser::setCallback </td>
+          <td>(</td>
+          <td class="paramtype">FunctionOrLambda&#160;</td>
+          <td class="paramname"><em>function</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga3c099d19ac77cc922c8b2f87441cf6f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3c099d19ac77cc922c8b2f87441cf6f7">&#9670;&nbsp;</a></span>setCallback() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , bool(*)(T &amp;, const PacketView &amp;, Timestamp) Callback&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void mip::Parser::setCallback </td>
@@ -1652,7 +1675,7 @@ template&lt;class T , bool(T::*)(const PacketView &amp;, Timestamp) Callback&gt;
 <p>Initializes the MIP <a class="el" href="classmip_1_1Parser.html" title="C++ class representing a MIP parser.">Parser</a>. </p>
 <p>This version allows binding a member function instead of a C-style callback. Example: </p><div class="fragment"><div class="line"><span class="keyword">struct </span>MyClass</div>
 <div class="line">{</div>
-<div class="line">    <span class="keywordtype">void</span> handlePacket(<span class="keyword">const</span> PacketRef&amp; packet, <a class="code" href="namespacemip.html#afce0ba7e576cfb1bffa07cff38fe1847">Timeout</a> <a class="code" href="classmip_1_1Parser.html#a642ce6426bc3d3483f031e5c64c05d91">timeout</a>);</div>
+<div class="line">    <span class="keywordtype">bool</span> handlePacket(<span class="keyword">const</span> PacketRef&amp; packet, <a class="code" href="namespacemip.html#afce0ba7e576cfb1bffa07cff38fe1847">Timeout</a> <a class="code" href="classmip_1_1Parser.html#a642ce6426bc3d3483f031e5c64c05d91">timeout</a>);</div>
 <div class="line">};</div>
 <div class="line">MyClass myInstance;</div>
 <div class="line"><a class="code" href="classmip_1_1Parser.html#af65365ec71f09d19945fd5d72e11a15c">Parser</a> parser&lt;MyClass, &amp;MyClass::handlePacket&gt;(myInstance);</div>
@@ -1660,6 +1683,23 @@ template&lt;class T , bool(T::*)(const PacketView &amp;, Timestamp) Callback&gt;
   <table class="tparams">
     <tr><td class="paramname">T</td><td>Class type containing the member function to be called. </td></tr>
     <tr><td class="paramname">Callback</td><td>A pointer to a member function on a T to be called when a packet is parsed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">object</td><td>Instance of T to call the callback.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>This version allows binding a nonmember function instead of a C-style callback. Example: </p><div class="fragment"><div class="line"><span class="keyword">struct </span>MyData {};</div>
+<div class="line"><span class="keywordtype">bool</span> handlePacket(MyData&amp; <span class="keyword">self</span>, <span class="keyword">const</span> PacketRef&amp; packet, <a class="code" href="namespacemip.html#afce0ba7e576cfb1bffa07cff38fe1847">Timeout</a> <a class="code" href="classmip_1_1Parser.html#a642ce6426bc3d3483f031e5c64c05d91">timeout</a>);</div>
+<div class="line">MyData myInstance;</div>
+<div class="line"><a class="code" href="classmip_1_1Parser.html#af65365ec71f09d19945fd5d72e11a15c">Parser</a> parser&lt;MyData, &amp;handlePacket&gt;(myInstance);</div>
+</div><!-- fragment --><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Class type containing the member function to be called. </td></tr>
+    <tr><td class="paramname">Callback</td><td>A pointer to a nonmember function taking a T to be called when a packet is parsed.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2103,7 +2143,7 @@ template&lt;class Cmd &gt; </div>
 <div class="ttc" id="anamespacemip_html_ab87086630c94254d17a812e4be159b0a"><div class="ttname"><a href="namespacemip.html#ab87086630c94254d17a812e4be159b0a">mip::Timestamp</a></div><div class="ttdeci">microstrain::EmbeddedTimestamp Timestamp</div><div class="ttdef"><b>Definition:</b> mip_types.h:50</div></div>
 <div class="ttc" id="aclassmip_1_1Parser_html_af65365ec71f09d19945fd5d72e11a15c"><div class="ttname"><a href="classmip_1_1Parser.html#af65365ec71f09d19945fd5d72e11a15c">mip::Parser::Parser</a></div><div class="ttdeci">Parser(C::mip_packet_callback callback, void *callbackObject, Timeout timeout)</div><div class="ttdoc">Initializes the MIP parser.</div><div class="ttdef"><b>Definition:</b> mip_parser.hpp:23</div></div>
 <div class="ttc" id="anamespacemip_html_afce0ba7e576cfb1bffa07cff38fe1847"><div class="ttname"><a href="namespacemip.html#afce0ba7e576cfb1bffa07cff38fe1847">mip::Timeout</a></div><div class="ttdeci">microstrain::EmbeddedTimeout Timeout</div><div class="ttdef"><b>Definition:</b> mip_types.h:51</div></div>
-<div class="ttc" id="aclassmip_1_1Parser_html_a642ce6426bc3d3483f031e5c64c05d91"><div class="ttname"><a href="classmip_1_1Parser.html#a642ce6426bc3d3483f031e5c64c05d91">mip::Parser::timeout</a></div><div class="ttdeci">Timeout timeout() const</div><div class="ttdoc">Returns the packet timeout of the parser.</div><div class="ttdef"><b>Definition:</b> mip_parser.hpp:43</div></div>
+<div class="ttc" id="aclassmip_1_1Parser_html_a642ce6426bc3d3483f031e5c64c05d91"><div class="ttname"><a href="classmip_1_1Parser.html#a642ce6426bc3d3483f031e5c64c05d91">mip::Parser::timeout</a></div><div class="ttdeci">Timeout timeout() const</div><div class="ttdoc">Returns the packet timeout of the parser.</div><div class="ttdef"><b>Definition:</b> mip_parser.hpp:58</div></div>
 <div class="ttc" id="agroup__mip__cpp_html_ga443f8a32b479956edbdf9b6413c0ed28"><div class="ttname"><a href="group__mip__cpp.html#ga443f8a32b479956edbdf9b6413c0ed28">mip::Interface::setCallbacksDerived</a></div><div class="ttdeci">void setCallbacksDerived()</div><div class="ttdoc">Sets the callback functions to a derived class object.</div><div class="ttdef"><b>Definition:</b> mip_interface.hpp:717</div></div>
 <div class="ttc" id="aclassmip_1_1Interface_html"><div class="ttname"><a href="classmip_1_1Interface.html">mip::Interface</a></div><div class="ttdoc">Represents a connected MIP device.</div><div class="ttdef"><b>Definition:</b> mip_interface.hpp:52</div></div>
 <div class="ttc" id="aclassmip_1_1Interface_html_ad1aec8e745096110360e8b4bbf43d4fd"><div class="ttname"><a href="classmip_1_1Interface.html#ad1aec8e745096110360e8b4bbf43d4fd">mip::Interface::setCallbacksUserPointer</a></div><div class="ttdeci">void setCallbacksUserPointer(T *object)</div></div>

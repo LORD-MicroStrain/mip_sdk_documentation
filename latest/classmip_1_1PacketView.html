@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-320-g65219b1</span>
+   &#160;<span id="projectnumber">v3.0.0-343-g605b467</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -131,6 +131,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8a0ba28f775287fb6865de65fbf79781"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmicrostrain_1_1Span.html">microstrain::Span</a>&lt; const uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#a8a0ba28f775287fb6865de65fbf79781">payloadSpan</a> () const</td></tr>
 <tr class="memdesc:a8a0ba28f775287fb6865de65fbf79781"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a span over just the payload.  <a href="classmip_1_1PacketView.html#a8a0ba28f775287fb6865de65fbf79781">More...</a><br /></td></tr>
 <tr class="separator:a8a0ba28f775287fb6865de65fbf79781"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac34c46618a531320eca60b9f5130c2d5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#ac34c46618a531320eca60b9f5130c2d5">addField</a> (const <a class="el" href="classmip_1_1FieldView.html">FieldView</a> &amp;field)</td></tr>
+<tr class="memdesc:ac34c46618a531320eca60b9f5130c2d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies the given mip field to the packet.  <a href="classmip_1_1PacketView.html#ac34c46618a531320eca60b9f5130c2d5">More...</a><br /></td></tr>
+<tr class="separator:ac34c46618a531320eca60b9f5130c2d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab33ede15dab7baac68131fca22914ef2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#ab33ede15dab7baac68131fca22914ef2">addField</a> (uint8_t fieldDescriptor, <a class="el" href="structmicrostrain_1_1Span.html">microstrain::Span</a>&lt; const uint8_t &gt; payload)</td></tr>
+<tr class="memdesc:ab33ede15dab7baac68131fca22914ef2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a mip field with the given descriptor and copies the given payload.  <a href="classmip_1_1PacketView.html#ab33ede15dab7baac68131fca22914ef2">More...</a><br /></td></tr>
+<tr class="separator:ab33ede15dab7baac68131fca22914ef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23f0e5e25f0bcb890c47f61b3a7ece7e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmip_1_1PacketView_1_1AllocatedField.html">AllocatedField</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#a23f0e5e25f0bcb890c47f61b3a7ece7e">createField</a> (uint8_t fieldDescriptor)</td></tr>
 <tr class="separator:a23f0e5e25f0bcb890c47f61b3a7ece7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31300e8378c6fef1ba39e41545f4faf7"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#a31300e8378c6fef1ba39e41545f4faf7">operator[]</a> (unsigned int index) const</td></tr>
@@ -416,7 +422,7 @@ Static Public Attributes</h2></td></tr>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ae9d4a62380c51a4540e93eddacd6bdc8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae9d4a62380c51a4540e93eddacd6bdc8">&#9670;&nbsp;</a></span>addField()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9d4a62380c51a4540e93eddacd6bdc8">&#9670;&nbsp;</a></span>addField() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -466,6 +472,72 @@ template&lt;class FieldType &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the field was added, false if the packet has insufficient space. </dd></dl>
+
+</div>
+</div>
+<a id="ac34c46618a531320eca60b9f5130c2d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac34c46618a531320eca60b9f5130c2d5">&#9670;&nbsp;</a></span>addField() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::PacketView::addField </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmip_1_1FieldView.html">FieldView</a> &amp;&#160;</td>
+          <td class="paramname"><em>field</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copies the given mip field to the packet. </p>
+
+</div>
+</div>
+<a id="ab33ede15dab7baac68131fca22914ef2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab33ede15dab7baac68131fca22914ef2">&#9670;&nbsp;</a></span>addField() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::PacketView::addField </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>fieldDescriptor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1Span.html">microstrain::Span</a>&lt; const uint8_t &gt;&#160;</td>
+          <td class="paramname"><em>payload</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a mip field with the given descriptor and copies the given payload. </p>
 
 </div>
 </div>
@@ -693,7 +765,7 @@ template&lt;class FieldType &gt; </div>
 </div><div class="memdoc">
 
 <p>Creates a new PacketRef containing a single MIP field from an instance of the field type. </p>
-<p>This works just like the <a class="el" href="classmip_1_1PacketView.html#ae9d4a62380c51a4540e93eddacd6bdc8" title="Adds a field of the given type to the packet.">addField&lt;FieldType&gt;()</a> function but also initializes and finalizes the packet. It is assumed that the field will fit in an empty packet; otherwise the field can't ever be used. The field classes are predefined so this doesn't need runtime checking.</p>
+<p>This works just like the <a class="el" href="classmip_1_1PacketView.html#ac34c46618a531320eca60b9f5130c2d5" title="Copies the given mip field to the packet.">addField&lt;FieldType&gt;()</a> function but also initializes and finalizes the packet. It is assumed that the field will fit in an empty packet; otherwise the field can't ever be used. The field classes are predefined so this doesn't need runtime checking.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">FieldType</td><td>Any field class from a file in the mip/definitions directory.</td></tr>

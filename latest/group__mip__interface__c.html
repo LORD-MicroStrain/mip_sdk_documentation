@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-320-g65219b1</span>
+   &#160;<span id="projectnumber">v3.0.0-343-g605b467</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -129,9 +129,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga44b0500ae8cf2809f934893e2e47b8ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__interface__c.html#ga44b0500ae8cf2809f934893e2e47b8ce">mip::C::mip_interface_update_time</a> (<a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *device, <a class="el" href="namespacemip_1_1C.html#a8a24a1913ffba77cdd608c5fb7575f37">mip_timestamp</a> timestamp)</td></tr>
 <tr class="memdesc:ga44b0500ae8cf2809f934893e2e47b8ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this to ensure that pending commands time out properly.  <a href="group__mip__interface__c.html#ga44b0500ae8cf2809f934893e2e47b8ce">More...</a><br /></td></tr>
 <tr class="separator:ga44b0500ae8cf2809f934893e2e47b8ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga15f97e860ab600fe3982e4ad5b289d65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__interface__c.html#ga15f97e860ab600fe3982e4ad5b289d65">mip::C::mip_interface_parse_callback</a> (void *device, const <a class="el" href="structmip_1_1C_1_1mip__packet__view.html">mip_packet_view</a> *packet, <a class="el" href="namespacemip_1_1C.html#a8a24a1913ffba77cdd608c5fb7575f37">mip_timestamp</a> timestamp)</td></tr>
-<tr class="memdesc:ga15f97e860ab600fe3982e4ad5b289d65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper around mip_interface_input_packet_from_device for use with <a class="el" href="structmip_1_1C_1_1mip__parser.html" title="MIP Parser state.">mip_parser</a>.  <a href="group__mip__interface__c.html#ga15f97e860ab600fe3982e4ad5b289d65">More...</a><br /></td></tr>
-<tr class="separator:ga15f97e860ab600fe3982e4ad5b289d65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3ea80ab781b4d35b41f0ab07fe7beef7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__interface__c.html#ga3ea80ab781b4d35b41f0ab07fe7beef7">mip::C::mip_interface_parse_callback</a> (void *device, const <a class="el" href="structmip_1_1C_1_1mip__packet__view.html">mip_packet_view</a> *packet, <a class="el" href="namespacemip_1_1C.html#a8a24a1913ffba77cdd608c5fb7575f37">mip_timestamp</a> timestamp)</td></tr>
+<tr class="memdesc:ga3ea80ab781b4d35b41f0ab07fe7beef7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper around mip_interface_input_packet_from_device for use with <a class="el" href="structmip_1_1C_1_1mip__parser.html" title="MIP Parser state.">mip_parser</a>.  <a href="group__mip__interface__c.html#ga3ea80ab781b4d35b41f0ab07fe7beef7">More...</a><br /></td></tr>
+<tr class="separator:ga3ea80ab781b4d35b41f0ab07fe7beef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaaaedad73f9ab28beb69e2a1a8c9da636"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__interface__c.html#gaaaedad73f9ab28beb69e2a1a8c9da636">mip::C::mip_interface_wait_for_reply</a> (<a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *device, <a class="el" href="structmip_1_1C_1_1mip__pending__cmd.html">mip_pending_cmd</a> *cmd)</td></tr>
 <tr class="memdesc:gaaaedad73f9ab28beb69e2a1a8c9da636"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocks until the pending command completes or times out.  <a href="group__mip__interface__c.html#gaaaedad73f9ab28beb69e2a1a8c9da636">More...</a><br /></td></tr>
 <tr class="separator:gaaaedad73f9ab28beb69e2a1a8c9da636"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -647,14 +647,14 @@ False if an error occurs and the port cannot be read (e.g. if the port is closed
 
 </div>
 </div>
-<a id="ga15f97e860ab600fe3982e4ad5b289d65"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga15f97e860ab600fe3982e4ad5b289d65">&#9670;&nbsp;</a></span>mip_interface_parse_callback()</h2>
+<a id="ga3ea80ab781b4d35b41f0ab07fe7beef7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3ea80ab781b4d35b41f0ab07fe7beef7">&#9670;&nbsp;</a></span>mip_interface_parse_callback()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void mip::C::mip_interface_parse_callback </td>
+          <td class="memname">bool mip::C::mip_interface_parse_callback </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>device</em>, </td>
@@ -684,10 +684,11 @@ False if an error occurs and the port cannot be read (e.g. if the port is closed
   <table class="params">
     <tr><td class="paramname">device</td><td>Void pointer to the device. Must be a <a class="el" href="structmip_1_1C_1_1mip__interface.html" title="State of the interface for communicating with a MIP device.">mip_interface</a> pointer. </td></tr>
     <tr><td class="paramname">packet</td><td>MIP Packet from the parser. </td></tr>
-    <tr><td class="paramname">timestamp</td><td>Timestamp of the packet. </td></tr>
+    <tr><td class="paramname">timestamp</td><td>Timestamp of the packet.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>true </dd></dl>
 
 </div>
 </div>
