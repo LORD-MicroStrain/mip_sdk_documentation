@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-343-g605b467</span>
+   &#160;<span id="projectnumber">v3.0.0-371-g19a30ae</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -106,8 +106,8 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a024fb88daab4f2e0739cbc0543322209"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmicrostrain_1_1Span.html#a024fb88daab4f2e0739cbc0543322209">Span</a> (<a class="el" href="structmicrostrain_1_1Span.html#a02a683fe27eb4481be278a2126ab7494">pointer</a> ptr)</td></tr>
-<tr class="separator:a024fb88daab4f2e0739cbc0543322209"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae62043a92cd29ad2eca836c35948b3c0"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmicrostrain_1_1Span.html#ae62043a92cd29ad2eca836c35948b3c0">Span</a> (<a class="el" href="structmicrostrain_1_1Span.html#a02a683fe27eb4481be278a2126ab7494">pointer</a> ptr, size_t count)</td></tr>
+<tr class="separator:ae62043a92cd29ad2eca836c35948b3c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49ed7581cd7d0f3c8cf59c48a1ebb91b"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structmicrostrain_1_1Span.html#a02a683fe27eb4481be278a2126ab7494">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmicrostrain_1_1Span.html#a49ed7581cd7d0f3c8cf59c48a1ebb91b">begin</a> () const noexcept</td></tr>
 <tr class="separator:a49ed7581cd7d0f3c8cf59c48a1ebb91b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb7e198673add37b1de5ca22777288e4"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structmicrostrain_1_1Span.html#a02a683fe27eb4481be278a2126ab7494">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmicrostrain_1_1Span.html#adb7e198673add37b1de5ca22777288e4">end</a> () const noexcept</td></tr>
@@ -303,8 +303,8 @@ template&lt;class T , size_t Extent = DYNAMIC_EXTENT&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a024fb88daab4f2e0739cbc0543322209"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a024fb88daab4f2e0739cbc0543322209">&#9670;&nbsp;</a></span>Span()</h2>
+<a id="ae62043a92cd29ad2eca836c35948b3c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae62043a92cd29ad2eca836c35948b3c0">&#9670;&nbsp;</a></span>Span()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -318,8 +318,18 @@ template&lt;class T , size_t Extent = DYNAMIC_EXTENT&gt; </div>
           <td class="memname">constexpr <a class="el" href="structmicrostrain_1_1Span.html">microstrain::Span</a>&lt; T, Extent &gt;::<a class="el" href="structmicrostrain_1_1Span.html">Span</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmicrostrain_1_1Span.html#a02a683fe27eb4481be278a2126ab7494">pointer</a>&#160;</td>
-          <td class="paramname"><em>ptr</em></td><td>)</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>

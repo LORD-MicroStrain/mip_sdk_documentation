@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-343-g605b467</span>
+   &#160;<span id="projectnumber">v3.0.0-371-g19a30ae</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -85,7 +85,7 @@ Serialization in C++</h1>
 Basic usage</h2>
 <p>To (de)serialize a buffer, follow these steps:</p><ol type="1">
 <li>Create a <a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">microstrain::Serializer</a>, passing in a pointer to your buffer and the size. A starting offset may also be specified for convenience.</li>
-<li>Call <a class="el" href="classmicrostrain_1_1Serializer.html#a560773a1565486ac18bfc5238181d7bc" title="Serializes one or more values.">microstrain::Serializer::insert</a> or <a class="el" href="classmicrostrain_1_1Serializer.html#aa0cf22bb580922a0bd6a4e930bb76e5e" title="Deserializes one or more values.">microstrain::Serializer.extract</a> with the values to be (de)serialized. Multiple calls may be made to these functions if needed. When reading an array length from a buffer, it is recommended to use <a class="el" href="classmicrostrain_1_1Serializer.html#ada1cadd3ff4fd48c3d516175bae1ed79" title="Deserializes an integer with maximum permissible value.">microstrain::Serializer::extract_count</a> to specify a maximum count. This helps avoid buffer overrun bugs and associated security vulnerabilities.</li>
+<li>Call <a class="el" href="group__microstrain__serialization__cpp.html#ga560773a1565486ac18bfc5238181d7bc" title="Serializes one or more values.">microstrain::Serializer::insert</a> or <a class="el" href="group__microstrain__serialization__cpp.html#gaa0cf22bb580922a0bd6a4e930bb76e5e" title="Deserializes one or more values.">microstrain::Serializer.extract</a> with the values to be (de)serialized. Multiple calls may be made to these functions if needed. When reading an array length from a buffer, it is recommended to use <a class="el" href="group__microstrain__serialization__cpp.html#gada1cadd3ff4fd48c3d516175bae1ed79" title="Deserializes an integer with maximum permissible value.">microstrain::Serializer::extract_count</a> to specify a maximum count. This helps avoid buffer overrun bugs and associated security vulnerabilities.</li>
 <li>Check if the data was written/read successfully (i.e. fit in the buffer) by calling microstrain::Serializer::isOk or microstrain::Serializer::isFinished (use the latter if the entire buffer should have been used).</li>
 <li>Transmit the written buffer or use the deserialized parameters.</li>
 </ol>
@@ -188,8 +188,8 @@ Supported Types</h2>
 <div class="line">bes.insert(me, basics);</div>
 <div class="line">les.insert(me, basics);</div>
 <div class="line"> </div>
-<div class="line"><a class="code" href="namespacemicrostrain.html#a5a978dcbb35f175e3079aaaa6eadc450">microstrain::insert</a>(bes, vector4, vector3);</div>
-<div class="line"><a class="code" href="namespacemicrostrain.html#a5a978dcbb35f175e3079aaaa6eadc450">microstrain::insert</a>(les, vector4, vector3);</div>
+<div class="line"><a class="code" href="group__microstrain__serialization__cpp.html#ga5a978dcbb35f175e3079aaaa6eadc450">microstrain::insert</a>(bes, vector4, vector3);</div>
+<div class="line"><a class="code" href="group__microstrain__serialization__cpp.html#ga5a978dcbb35f175e3079aaaa6eadc450">microstrain::insert</a>(les, vector4, vector3);</div>
 </div><!-- fragment --></li>
 </ul>
 <h2><a class="anchor" id="autotoc_md32"></a>
@@ -244,7 +244,7 @@ Classes and structs</h3>
 <p>In addition, the serialization non-member functions may be overloaded as described next.</p>
 <h3><a class="anchor" id="autotoc_md35"></a>
 Other user-defined types</h3>
-<p>All serialization goes through <code><a class="el" href="namespacemicrostrain.html#a5a978dcbb35f175e3079aaaa6eadc450" title="Inserts a numeric value to a Serializer.">microstrain::insert</a></code> / <code><a class="el" href="namespacemicrostrain.html#a97f89f7d5ee32b5b34f9fb391111af44" title="Reads a numeric value from a Serializer.">microstrain::extract</a></code>. These are non-member functions and are overloaded for various data types. This makes it possible to extend serialization to new types. Serialization for any custom type may be implemented by overloading the <code>insert</code> or <code>extract</code> functions. For example:</p>
+<p>All serialization goes through <code><a class="el" href="group__microstrain__serialization__cpp.html#ga5a978dcbb35f175e3079aaaa6eadc450" title="Inserts a numeric value to a Serializer.">microstrain::insert</a></code> / <code><a class="el" href="group__microstrain__serialization__cpp.html#ga97f89f7d5ee32b5b34f9fb391111af44" title="Reads a numeric value from a Serializer.">microstrain::extract</a></code>. These are non-member functions and are overloaded for various data types. This makes it possible to extend serialization to new types. Serialization for any custom type may be implemented by overloading the <code>insert</code> or <code>extract</code> functions. For example:</p>
 <div class="fragment"><div class="line"><span class="keyword">namespace </span>custom</div>
 <div class="line">{</div>
 <div class="line">    <span class="comment">// An enum which is not typed and thus cannot use the regular enum methods.</span></div>
@@ -252,17 +252,17 @@ Other user-defined types</h3>
 <div class="line">    </div>
 <div class="line">    <span class="comment">// Insert Foo function which just converts to u8.</span></div>
 <div class="line">    <span class="keyword">template</span>&lt;microstrain::Endian E&gt;</div>
-<div class="line">    <span class="keywordtype">size_t</span> <a class="code" href="namespacemicrostrain.html#a5a978dcbb35f175e3079aaaa6eadc450">insert</a>(<a class="code" href="classmicrostrain_1_1Serializer.html">microstrain::Serializer&lt;E&gt;</a>&amp; serializer, Foo foo)</div>
+<div class="line">    <span class="keywordtype">size_t</span> <a class="code" href="group__microstrain__serialization__cpp.html#ga5a978dcbb35f175e3079aaaa6eadc450">insert</a>(<a class="code" href="classmicrostrain_1_1Serializer.html">microstrain::Serializer&lt;E&gt;</a>&amp; serializer, Foo foo)</div>
 <div class="line">    {</div>
-<div class="line">        <span class="keywordflow">return</span> <a class="code" href="namespacemicrostrain.html#a5a978dcbb35f175e3079aaaa6eadc450">microstrain::insert</a>(serializer, uint8_t(foo));</div>
+<div class="line">        <span class="keywordflow">return</span> <a class="code" href="group__microstrain__serialization__cpp.html#ga5a978dcbb35f175e3079aaaa6eadc450">microstrain::insert</a>(serializer, uint8_t(foo));</div>
 <div class="line">    }</div>
 <div class="line">    </div>
 <div class="line">    <span class="comment">// Extract Foo function which range-checks and converts a u8.</span></div>
 <div class="line">    <span class="keyword">template</span>&lt;microstrain::Endian E&gt;</div>
-<div class="line">    <span class="keywordtype">size_t</span> <a class="code" href="namespacemicrostrain.html#a97f89f7d5ee32b5b34f9fb391111af44">extract</a>(<a class="code" href="classmicrostrain_1_1Serializer.html">microstrain::Serializer&lt;E&gt;</a>&amp; serializer, Foo&amp; foo)</div>
+<div class="line">    <span class="keywordtype">size_t</span> <a class="code" href="group__microstrain__serialization__cpp.html#ga97f89f7d5ee32b5b34f9fb391111af44">extract</a>(<a class="code" href="classmicrostrain_1_1Serializer.html">microstrain::Serializer&lt;E&gt;</a>&amp; serializer, Foo&amp; foo)</div>
 <div class="line">    {</div>
 <div class="line">        uint8_t value;</div>
-<div class="line">        <span class="keywordtype">size_t</span> size = <a class="code" href="namespacemicrostrain.html#a97f89f7d5ee32b5b34f9fb391111af44">microstrain::extract</a>(serializer, value);</div>
+<div class="line">        <span class="keywordtype">size_t</span> size = <a class="code" href="group__microstrain__serialization__cpp.html#ga97f89f7d5ee32b5b34f9fb391111af44">microstrain::extract</a>(serializer, value);</div>
 <div class="line">        <span class="keywordflow">if</span>(serializer.isOk())  <span class="comment">// Optional check</span></div>
 <div class="line">        {</div>
 <div class="line">            <span class="keywordflow">if</span>(value &lt; MAX_FOO)  <span class="comment">// Another optional check</span></div>
@@ -289,14 +289,14 @@ Other user-defined types</h3>
 <div class="line">    <span class="comment">// Despite being in the &#39;custom&#39; namespace, the &#39;insert(Serializer&amp;, Foo)&#39;</span></div>
 <div class="line">    <span class="comment">// function will be found via argument-dependent lookup because</span></div>
 <div class="line">    <span class="comment">// &#39;Foo&#39; is also in that namespace.</span></div>
-<div class="line">    serializer.<a class="code" href="classmicrostrain_1_1Serializer.html#a560773a1565486ac18bfc5238181d7bc">insert</a>(foo);</div>
+<div class="line">    serializer.<a class="code" href="group__microstrain__serialization__cpp.html#ga560773a1565486ac18bfc5238181d7bc">insert</a>(foo);</div>
 <div class="line">    </div>
 <div class="line">    <span class="comment">// Jump back to start of buffer for reading.</span></div>
 <div class="line">    serializer.<a class="code" href="classmicrostrain_1_1SerializerBase.html#a4aa969e53347706ad7a881c4ed5d8e80">setOffset</a>(0);</div>
 <div class="line">    </div>
 <div class="line">    <span class="comment">// Read foo back out and compare to original.</span></div>
 <div class="line">    custom::Foo foo2;</div>
-<div class="line">    serializer.<a class="code" href="classmicrostrain_1_1Serializer.html#aa0cf22bb580922a0bd6a4e930bb76e5e">extract</a>(foo2);</div>
+<div class="line">    serializer.<a class="code" href="group__microstrain__serialization__cpp.html#gaa0cf22bb580922a0bd6a4e930bb76e5e">extract</a>(foo2);</div>
 <div class="line">    </div>
 <div class="line">    assert(foo2 == foo);</div>
 <div class="line">}</div>
@@ -311,14 +311,14 @@ Serialization System Architecture</h2>
 Serialization Diagram</div></div>
     </div></div><!-- contents -->
 </div><!-- PageDoc -->
-<div class="ttc" id="aclassmicrostrain_1_1Serializer_html"><div class="ttname"><a href="classmicrostrain_1_1Serializer.html">microstrain::Serializer</a></div><div class="ttdoc">Serializes or deserializes data to/from a byte buffer.</div><div class="ttdef"><b>Definition:</b> serializer.hpp:125</div></div>
-<div class="ttc" id="aclassmicrostrain_1_1SerializerBase_html_a4aa969e53347706ad7a881c4ed5d8e80"><div class="ttname"><a href="classmicrostrain_1_1SerializerBase.html#a4aa969e53347706ad7a881c4ed5d8e80">microstrain::SerializerBase::setOffset</a></div><div class="ttdeci">size_t setOffset(size_t offset)</div><div class="ttdoc">Sets a new offset and returns the old value. This can be used to save/restore the current offset....</div><div class="ttdef"><b>Definition:</b> serializer.hpp:99</div></div>
-<div class="ttc" id="astructmicrostrain_1_1Span_html"><div class="ttname"><a href="structmicrostrain_1_1Span.html">microstrain::Span</a></div><div class="ttdoc">Implementation of std::span from C++20.</div><div class="ttdef"><b>Definition:</b> span.hpp:41</div></div>
-<div class="ttc" id="aclassmicrostrain_1_1Serializer_html_aa0cf22bb580922a0bd6a4e930bb76e5e"><div class="ttname"><a href="classmicrostrain_1_1Serializer.html#aa0cf22bb580922a0bd6a4e930bb76e5e">microstrain::Serializer::extract</a></div><div class="ttdeci">bool extract(Ts &amp;... values)</div><div class="ttdoc">Deserializes one or more values.</div><div class="ttdef"><b>Definition:</b> serializer.hpp:949</div></div>
-<div class="ttc" id="anamespacemicrostrain_html_a5a978dcbb35f175e3079aaaa6eadc450"><div class="ttname"><a href="namespacemicrostrain.html#a5a978dcbb35f175e3079aaaa6eadc450">microstrain::insert</a></div><div class="ttdeci">std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value, size_t &gt;::type insert(Serializer&lt; E &gt; &amp;buffer, T value)</div><div class="ttdoc">Inserts a numeric value to a Serializer.</div><div class="ttdef"><b>Definition:</b> serializer.hpp:172</div></div>
-<div class="ttc" id="aclassmicrostrain_1_1SerializerBase_html_a34da15ab5ca118ae927fb382506de033"><div class="ttname"><a href="classmicrostrain_1_1SerializerBase.html#a34da15ab5ca118ae927fb382506de033">microstrain::SerializerBase::invalidate</a></div><div class="ttdeci">void invalidate()</div><div class="ttdoc">Marks the buffer as invalid, i.e. overrun/error state. All further accesses via pointer(),...</div><div class="ttdef"><b>Definition:</b> serializer.hpp:92</div></div>
-<div class="ttc" id="anamespacemicrostrain_html_a97f89f7d5ee32b5b34f9fb391111af44"><div class="ttname"><a href="namespacemicrostrain.html#a97f89f7d5ee32b5b34f9fb391111af44">microstrain::extract</a></div><div class="ttdeci">std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value, size_t &gt;::type extract(Serializer&lt; E &gt; &amp;buffer, T &amp;value)</div><div class="ttdoc">Reads a numeric value from a Serializer.</div><div class="ttdef"><b>Definition:</b> serializer.hpp:193</div></div>
-<div class="ttc" id="aclassmicrostrain_1_1Serializer_html_a560773a1565486ac18bfc5238181d7bc"><div class="ttname"><a href="classmicrostrain_1_1Serializer.html#a560773a1565486ac18bfc5238181d7bc">microstrain::Serializer::insert</a></div><div class="ttdeci">bool insert(const Ts &amp;... values)</div><div class="ttdoc">Serializes one or more values.</div><div class="ttdef"><b>Definition:</b> serializer.hpp:923</div></div>
+<div class="ttc" id="agroup__microstrain__serialization__cpp_html_ga97f89f7d5ee32b5b34f9fb391111af44"><div class="ttname"><a href="group__microstrain__serialization__cpp.html#ga97f89f7d5ee32b5b34f9fb391111af44">microstrain::extract</a></div><div class="ttdeci">std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value, size_t &gt;::type extract(Serializer&lt; E &gt; &amp;buffer, T &amp;value)</div><div class="ttdoc">Reads a numeric value from a Serializer.</div><div class="ttdef"><b>Definition:</b> serializer.hpp:203</div></div>
+<div class="ttc" id="aclassmicrostrain_1_1Serializer_html"><div class="ttname"><a href="classmicrostrain_1_1Serializer.html">microstrain::Serializer</a></div><div class="ttdoc">Serializes or deserializes data to/from a byte buffer.</div><div class="ttdef"><b>Definition:</b> serializer.hpp:135</div></div>
+<div class="ttc" id="aclassmicrostrain_1_1SerializerBase_html_a4aa969e53347706ad7a881c4ed5d8e80"><div class="ttname"><a href="classmicrostrain_1_1SerializerBase.html#a4aa969e53347706ad7a881c4ed5d8e80">microstrain::SerializerBase::setOffset</a></div><div class="ttdeci">size_t setOffset(size_t offset)</div><div class="ttdoc">Sets a new offset and returns the old value. This can be used to save/restore the current offset....</div><div class="ttdef"><b>Definition:</b> serializer.hpp:109</div></div>
+<div class="ttc" id="agroup__microstrain__serialization__cpp_html_ga560773a1565486ac18bfc5238181d7bc"><div class="ttname"><a href="group__microstrain__serialization__cpp.html#ga560773a1565486ac18bfc5238181d7bc">microstrain::Serializer::insert</a></div><div class="ttdeci">bool insert(const Ts &amp;... values)</div><div class="ttdoc">Serializes one or more values.</div><div class="ttdef"><b>Definition:</b> serializer.hpp:933</div></div>
+<div class="ttc" id="astructmicrostrain_1_1Span_html"><div class="ttname"><a href="structmicrostrain_1_1Span.html">microstrain::Span</a></div><div class="ttdoc">Implementation of std::span from C++20.</div><div class="ttdef"><b>Definition:</b> span.hpp:42</div></div>
+<div class="ttc" id="agroup__microstrain__serialization__cpp_html_ga5a978dcbb35f175e3079aaaa6eadc450"><div class="ttname"><a href="group__microstrain__serialization__cpp.html#ga5a978dcbb35f175e3079aaaa6eadc450">microstrain::insert</a></div><div class="ttdeci">std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value, size_t &gt;::type insert(Serializer&lt; E &gt; &amp;buffer, T value)</div><div class="ttdoc">Inserts a numeric value to a Serializer.</div><div class="ttdef"><b>Definition:</b> serializer.hpp:182</div></div>
+<div class="ttc" id="agroup__microstrain__serialization__cpp_html_gaa0cf22bb580922a0bd6a4e930bb76e5e"><div class="ttname"><a href="group__microstrain__serialization__cpp.html#gaa0cf22bb580922a0bd6a4e930bb76e5e">microstrain::Serializer::extract</a></div><div class="ttdeci">bool extract(Ts &amp;... values)</div><div class="ttdoc">Deserializes one or more values.</div><div class="ttdef"><b>Definition:</b> serializer.hpp:959</div></div>
+<div class="ttc" id="aclassmicrostrain_1_1SerializerBase_html_a34da15ab5ca118ae927fb382506de033"><div class="ttname"><a href="classmicrostrain_1_1SerializerBase.html#a34da15ab5ca118ae927fb382506de033">microstrain::SerializerBase::invalidate</a></div><div class="ttdeci">void invalidate()</div><div class="ttdoc">Marks the buffer as invalid, i.e. overrun/error state. All further accesses via pointer(),...</div><div class="ttdef"><b>Definition:</b> serializer.hpp:102</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

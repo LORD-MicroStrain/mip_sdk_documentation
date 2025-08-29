@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-343-g605b467</span>
+   &#160;<span id="projectnumber">v3.0.0-371-g19a30ae</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -73,7 +73,7 @@ $(function() {
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">microstrain::C Namespace Reference</div>  </div>
+<div class="title">microstrain::C Namespace Reference<div class="ingroups"><a class="el" href="group__microstrain.html">MicroStrain API</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
@@ -160,6 +160,21 @@ Functions</h2></td></tr>
 <tr class="separator:ga3fb84ba31a710a3ea9418c6e57ada615"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga66250929ad0de28f01eed16adaf16663"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__microstrain__serialization__c.html#ga66250929ad0de28f01eed16adaf16663">microstrain_extract_count</a> (<a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *serializer, uint8_t *count_out, uint8_t max_count)</td></tr>
 <tr class="separator:ga66250929ad0de28f01eed16adaf16663"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5c1815a3d8b2130b06c058bdd6908eb9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__microstrain__strings__c.html#ga5c1815a3d8b2130b06c058bdd6908eb9">microstrain_string_concat</a> (char *buffer, size_t buffer_size, size_t *index, const char *str, size_t str_len)</td></tr>
+<tr class="memdesc:ga5c1815a3d8b2130b06c058bdd6908eb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Concatenate a string into a buffer.  <a href="group__microstrain__strings__c.html#ga5c1815a3d8b2130b06c058bdd6908eb9">More...</a><br /></td></tr>
+<tr class="separator:ga5c1815a3d8b2130b06c058bdd6908eb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1c835f65746ac41c256b8ddee68c7730"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__microstrain__strings__c.html#ga1c835f65746ac41c256b8ddee68c7730">microstrain_string_concat_z</a> (char *buffer, size_t buffer_size, size_t *index, const char *str)</td></tr>
+<tr class="memdesc:ga1c835f65746ac41c256b8ddee68c7730"><td class="mdescLeft">&#160;</td><td class="mdescRight">Concatenate a string into a buffer.  <a href="group__microstrain__strings__c.html#ga1c835f65746ac41c256b8ddee68c7730">More...</a><br /></td></tr>
+<tr class="separator:ga1c835f65746ac41c256b8ddee68c7730"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0ae09b42f3832f2c021a0b62a9a43275"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__microstrain__strings__c.html#ga0ae09b42f3832f2c021a0b62a9a43275">microstrain_string_format_v</a> (char *buffer, size_t buffer_size, size_t *index, const char *fmt, va_list args)</td></tr>
+<tr class="memdesc:ga0ae09b42f3832f2c021a0b62a9a43275"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper for std::vsnprintf with a better interface.  <a href="group__microstrain__strings__c.html#ga0ae09b42f3832f2c021a0b62a9a43275">More...</a><br /></td></tr>
+<tr class="separator:ga0ae09b42f3832f2c021a0b62a9a43275"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga974a60540bb1cd014429dbbcd5b467c8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__microstrain__strings__c.html#ga974a60540bb1cd014429dbbcd5b467c8">microstrain_string_format</a> (char *buffer, size_t buffer_size, size_t *index, const char *fmt,...)</td></tr>
+<tr class="memdesc:ga974a60540bb1cd014429dbbcd5b467c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper for std::snprintf with a better interface.  <a href="group__microstrain__strings__c.html#ga974a60540bb1cd014429dbbcd5b467c8">More...</a><br /></td></tr>
+<tr class="separator:ga974a60540bb1cd014429dbbcd5b467c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8ce840fc52858ca587cbd315b77b6946"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__microstrain__strings__c.html#ga8ce840fc52858ca587cbd315b77b6946">microstrain_string_bytes_to_hex_str</a> (char *buffer, size_t buffer_size, size_t *index, const uint8_t *data, size_t data_size, unsigned int byte_grouping)</td></tr>
+<tr class="memdesc:ga8ce840fc52858ca587cbd315b77b6946"><td class="mdescLeft">&#160;</td><td class="mdescRight">Formats a byte array to a text buffer in hexadecimal.  <a href="group__microstrain__strings__c.html#ga8ce840fc52858ca587cbd315b77b6946">More...</a><br /></td></tr>
+<tr class="separator:ga8ce840fc52858ca587cbd315b77b6946"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a82d49daeef52f3b19a6e5527091c36e5"></a>
