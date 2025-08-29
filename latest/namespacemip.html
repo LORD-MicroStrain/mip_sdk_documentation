@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-371-g19a30ae</span>
+   &#160;<span id="projectnumber">v3.0.0-391-g17cb07f</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -314,6 +314,21 @@ Functions</h2></td></tr>
 <tr class="memitem:ga4d95114a9b56c889629509e9e51d9587"><td class="memTemplParams" colspan="2">template&lt;class Cmd &gt; </td></tr>
 <tr class="memitem:ga4d95114a9b56c889629509e9e51d9587"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga4d95114a9b56c889629509e9e51d9587">startCommand</a> (<a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;device, <a class="el" href="structmip_1_1C_1_1mip__pending__cmd.html">C::mip_pending_cmd</a> &amp;pending, const Cmd &amp;cmd, <a class="el" href="namespacemip.html#afce0ba7e576cfb1bffa07cff38fe1847">Timeout</a> additionalTime)</td></tr>
 <tr class="separator:ga4d95114a9b56c889629509e9e51d9587"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4631e854bcf57b87b7c6304451cdcf43"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__logging__cpp.html#ga4631e854bcf57b87b7c6304451cdcf43">formatPacketBytes</a> (<a class="el" href="structmicrostrain_1_1Span.html">microstrain::Span</a>&lt; char &gt; buffer, size_t *index, const <a class="el" href="classmip_1_1PacketView.html">PacketView</a> &amp;packet)</td></tr>
+<tr class="memdesc:ga4631e854bcf57b87b7c6304451cdcf43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format MIP packet bytes to a string.  <a href="group__mip__logging__cpp.html#ga4631e854bcf57b87b7c6304451cdcf43">More...</a><br /></td></tr>
+<tr class="separator:ga4631e854bcf57b87b7c6304451cdcf43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa7b551feecafcdc7fc50a422ccdbd67c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__logging__cpp.html#gaa7b551feecafcdc7fc50a422ccdbd67c">formatPacket</a> (<a class="el" href="structmicrostrain_1_1Span.html">microstrain::Span</a>&lt; char &gt; buffer, size_t *index, const <a class="el" href="classmip_1_1PacketView.html">PacketView</a> &amp;packet)</td></tr>
+<tr class="memdesc:gaa7b551feecafcdc7fc50a422ccdbd67c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format a MIP packet to a human-readable string.  <a href="group__mip__logging__cpp.html#gaa7b551feecafcdc7fc50a422ccdbd67c">More...</a><br /></td></tr>
+<tr class="separator:gaa7b551feecafcdc7fc50a422ccdbd67c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac42f83da1e9399380efd6cdcd9aa8df0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__logging__cpp.html#gac42f83da1e9399380efd6cdcd9aa8df0">formatField</a> (<a class="el" href="structmicrostrain_1_1Span.html">microstrain::Span</a>&lt; char &gt; buffer, size_t *index, const <a class="el" href="classmip_1_1FieldView.html">FieldView</a> &amp;field)</td></tr>
+<tr class="memdesc:gac42f83da1e9399380efd6cdcd9aa8df0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format a MIP field to a human-readable string.  <a href="group__mip__logging__cpp.html#gac42f83da1e9399380efd6cdcd9aa8df0">More...</a><br /></td></tr>
+<tr class="separator:gac42f83da1e9399380efd6cdcd9aa8df0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaee7107ca456b4057ae7714e1cbb226ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__logging__cpp.html#gaee7107ca456b4057ae7714e1cbb226ee">logPacket</a> (const <a class="el" href="classmip_1_1PacketView.html">PacketView</a> &amp;packet, <a class="el" href="group__microstrain__logging__c.html#ga6e2280c5b0484ccb5e7faafad1dbd062">microstrain_log_level</a> level)</td></tr>
+<tr class="separator:gaee7107ca456b4057ae7714e1cbb226ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0ec1f5960d7654b11343066bcdabfaec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__logging__cpp.html#ga0ec1f5960d7654b11343066bcdabfaec">logField</a> (const <a class="el" href="classmip_1_1FieldView.html">FieldView</a> &amp;field, <a class="el" href="group__microstrain__logging__c.html#ga6e2280c5b0484ccb5e7faafad1dbd062">microstrain_log_level</a> level)</td></tr>
+<tr class="separator:ga0ec1f5960d7654b11343066bcdabfaec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7c3bddd9fd19b067fe04a83881c8c0e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__logging__cpp.html#ga7c3bddd9fd19b067fe04a83881c8c0e2">logPacketVerbose</a> (const <a class="el" href="classmip_1_1PacketView.html">PacketView</a> &amp;packet, <a class="el" href="group__microstrain__logging__c.html#ga6e2280c5b0484ccb5e7faafad1dbd062">microstrain_log_level</a> level)</td></tr>
+<tr class="separator:ga7c3bddd9fd19b067fe04a83881c8c0e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48c6c676f70da8b41cd191f9e034ce4c"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a48c6c676f70da8b41cd191f9e034ce4c"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemip.html#a48c6c676f70da8b41cd191f9e034ce4c">extract</a> (T &amp;object, const uint8_t *buffer, size_t bufferLength, size_t offset=0, bool exactSize=false)</td></tr>
 <tr class="separator:a48c6c676f70da8b41cd191f9e034ce4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
