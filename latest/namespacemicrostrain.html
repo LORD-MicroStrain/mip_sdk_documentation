@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-521-gd8dd613</span>
+   &#160;<span id="projectnumber">v3.0.0-533-g58dc0c0</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -91,6 +91,11 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmicrostrain_1_1ArrayView.html">ArrayView</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a view over a contiguous array of objects, similar to std::span, and is implemented as a pointer and length.  <a href="structmicrostrain_1_1ArrayView.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmicrostrain_1_1ArrayView_3_01T_00_01DYNAMIC__EXTENT_01_4.html">ArrayView&lt; T, DYNAMIC_EXTENT &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmicrostrain_1_1BitfieldMemberIthruJ.html">BitfieldMemberIthruJ</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class which represents part of a bitfield (see <a class="el" href="structmicrostrain_1_1BitfieldMemberN.html" title="A class which represents part of a bitfield.">BitfieldMemberN</a>)  <a href="structmicrostrain_1_1BitfieldMemberIthruJ.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,14 +145,20 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmicrostrain_1_1SerializerBase.html">SerializerBase</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a view of a buffer of bytes of known capacity.  <a href="classmicrostrain_1_1SerializerBase.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmicrostrain_1_1Span.html">Span</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of std::span from C++20.  <a href="structmicrostrain_1_1Span.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmicrostrain_1_1Span_3_01T_00_01DYNAMIC__EXTENT_01_4.html">Span&lt; T, DYNAMIC_EXTENT &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:ab74c8e68701769d676e46bf760aad854"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:ab74c8e68701769d676e46bf760aad854"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemicrostrain.html#ab74c8e68701769d676e46bf760aad854">ConstArrayView</a> = <a class="el" href="structmicrostrain_1_1ArrayView.html">ArrayView</a>&lt; const T &gt;</td></tr>
+<tr class="separator:ab74c8e68701769d676e46bf760aad854"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace61526f6e658ee7eb05a3279fc8ae66"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemicrostrain.html#ace61526f6e658ee7eb05a3279fc8ae66">U8ArrayView</a> = <a class="el" href="structmicrostrain_1_1ArrayView.html">ArrayView</a>&lt; uint8_t &gt;</td></tr>
+<tr class="separator:ace61526f6e658ee7eb05a3279fc8ae66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad10904b5b78aab3f27f0a6fa165d94bc"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemicrostrain.html#ad10904b5b78aab3f27f0a6fa165d94bc">ConstU8ArrayView</a> = <a class="el" href="namespacemicrostrain.html#ab74c8e68701769d676e46bf760aad854">ConstArrayView</a>&lt; uint8_t &gt;</td></tr>
+<tr class="separator:ad10904b5b78aab3f27f0a6fa165d94bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a713e840c6a8f0fd7e825a125ee6dae28"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemicrostrain.html#a713e840c6a8f0fd7e825a125ee6dae28">CharArrayView</a> = <a class="el" href="structmicrostrain_1_1ArrayView.html">ArrayView</a>&lt; char &gt;</td></tr>
+<tr class="separator:a713e840c6a8f0fd7e825a125ee6dae28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a036b8995c523e18903d6f9bc5779242d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemicrostrain.html#a036b8995c523e18903d6f9bc5779242d">ConstCharArrayView</a> = <a class="el" href="namespacemicrostrain.html#ab74c8e68701769d676e46bf760aad854">ConstArrayView</a>&lt; char &gt;</td></tr>
+<tr class="separator:a036b8995c523e18903d6f9bc5779242d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af73e34a0b5ae1565e0e36a769c381ee1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemicrostrain.html#af73e34a0b5ae1565e0e36a769c381ee1">EmbeddedTimestamp</a> = <a class="el" href="namespacemicrostrain_1_1C.html#a414dbc5e176e1ea7fd890d8a4353dd6b">C::microstrain_embedded_timestamp</a></td></tr>
 <tr class="separator:af73e34a0b5ae1565e0e36a769c381ee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87678128971532436007682ebe2017c6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemicrostrain.html#a87678128971532436007682ebe2017c6">EmbeddedTimeout</a> = <a class="el" href="namespacemicrostrain_1_1C.html#a82d49daeef52f3b19a6e5527091c36e5">C::microstrain_embedded_timeout</a></td></tr>
@@ -295,14 +306,14 @@ Functions</h2></td></tr>
 <tr class="memitem:gaa7b3273b663f97e121a164179a99b032"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__microstrain__serialization__cpp.html#gaa7b3273b663f97e121a164179a99b032">extract</a> (<a class="el" href="classmicrostrain_1_1Serializer.html">Serializer</a>&lt; E &gt; &amp;serializer, T *values, size_t count)</td></tr>
 <tr class="memdesc:gaa7b3273b663f97e121a164179a99b032"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads an array from a <a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a>.  <a href="group__microstrain__serialization__cpp.html#gaa7b3273b663f97e121a164179a99b032">More...</a><br /></td></tr>
 <tr class="separator:gaa7b3273b663f97e121a164179a99b032"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga48a53b60323af1bef034d1e0c8098839"><td class="memTemplParams" colspan="2">template&lt;serialization::Endian E, class T &gt; </td></tr>
-<tr class="memitem:ga48a53b60323af1bef034d1e0c8098839"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__microstrain__serialization__cpp.html#ga48a53b60323af1bef034d1e0c8098839">insert</a> (<a class="el" href="classmicrostrain_1_1Serializer.html">Serializer</a>&lt; E &gt; &amp;serializer, <a class="el" href="structmicrostrain_1_1Span.html">microstrain::Span</a>&lt; const T &gt; values)</td></tr>
-<tr class="memdesc:ga48a53b60323af1bef034d1e0c8098839"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes an array to a <a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a> via a <a class="el" href="structmicrostrain_1_1Span.html" title="Implementation of std::span from C++20.">Span</a>.  <a href="group__microstrain__serialization__cpp.html#ga48a53b60323af1bef034d1e0c8098839">More...</a><br /></td></tr>
-<tr class="separator:ga48a53b60323af1bef034d1e0c8098839"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5d4aee7cb2411af0b9947e0f597ba07a"><td class="memTemplParams" colspan="2">template&lt;serialization::Endian E, class T &gt; </td></tr>
-<tr class="memitem:ga5d4aee7cb2411af0b9947e0f597ba07a"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__microstrain__serialization__cpp.html#ga5d4aee7cb2411af0b9947e0f597ba07a">extract</a> (<a class="el" href="classmicrostrain_1_1Serializer.html">Serializer</a>&lt; E &gt; &amp;serializer, <a class="el" href="structmicrostrain_1_1Span.html">microstrain::Span</a>&lt; const T &gt; values)</td></tr>
-<tr class="memdesc:ga5d4aee7cb2411af0b9947e0f597ba07a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads an array from a <a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a> via a <a class="el" href="structmicrostrain_1_1Span.html" title="Implementation of std::span from C++20.">Span</a>.  <a href="group__microstrain__serialization__cpp.html#ga5d4aee7cb2411af0b9947e0f597ba07a">More...</a><br /></td></tr>
-<tr class="separator:ga5d4aee7cb2411af0b9947e0f597ba07a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga413e888768602f0ca85485d488996041"><td class="memTemplParams" colspan="2">template&lt;serialization::Endian E, class T &gt; </td></tr>
+<tr class="memitem:ga413e888768602f0ca85485d488996041"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__microstrain__serialization__cpp.html#ga413e888768602f0ca85485d488996041">insert</a> (<a class="el" href="classmicrostrain_1_1Serializer.html">Serializer</a>&lt; E &gt; &amp;serializer, <a class="el" href="structmicrostrain_1_1ArrayView.html">microstrain::ArrayView</a>&lt; const T &gt; values)</td></tr>
+<tr class="memdesc:ga413e888768602f0ca85485d488996041"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes an array to a <a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a> via a Span.  <a href="group__microstrain__serialization__cpp.html#ga413e888768602f0ca85485d488996041">More...</a><br /></td></tr>
+<tr class="separator:ga413e888768602f0ca85485d488996041"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacfef0822b97c91d0c0cd4340a600abcb"><td class="memTemplParams" colspan="2">template&lt;serialization::Endian E, class T &gt; </td></tr>
+<tr class="memitem:gacfef0822b97c91d0c0cd4340a600abcb"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__microstrain__serialization__cpp.html#gacfef0822b97c91d0c0cd4340a600abcb">extract</a> (<a class="el" href="classmicrostrain_1_1Serializer.html">Serializer</a>&lt; E &gt; &amp;serializer, <a class="el" href="namespacemicrostrain.html#ab74c8e68701769d676e46bf760aad854">microstrain::ConstArrayView</a>&lt; T &gt; values)</td></tr>
+<tr class="memdesc:gacfef0822b97c91d0c0cd4340a600abcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads an array from a <a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a> via an <a class="el" href="structmicrostrain_1_1ArrayView.html" title="Represents a view over a contiguous array of objects, similar to std::span, and is implemented as a p...">ArrayView</a>.  <a href="group__microstrain__serialization__cpp.html#gacfef0822b97c91d0c0cd4340a600abcb">More...</a><br /></td></tr>
+<tr class="separator:gacfef0822b97c91d0c0cd4340a600abcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga07ae70f9210f1ee7f89320e44cbafe27"><td class="memTemplParams" colspan="2">template&lt;serialization::Endian E, class T , size_t N&gt; </td></tr>
 <tr class="memitem:ga07ae70f9210f1ee7f89320e44cbafe27"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__microstrain__serialization__cpp.html#ga07ae70f9210f1ee7f89320e44cbafe27">insert</a> (<a class="el" href="classmicrostrain_1_1Serializer.html">Serializer</a>&lt; E &gt; &amp;serializer, const T(&amp;values)[N])</td></tr>
 <tr class="memdesc:ga07ae70f9210f1ee7f89320e44cbafe27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a fixed-size array to a <a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a>.  <a href="group__microstrain__serialization__cpp.html#ga07ae70f9210f1ee7f89320e44cbafe27">More...</a><br /></td></tr>
@@ -335,16 +346,74 @@ Functions</h2></td></tr>
 <tr class="memitem:ga18131708dfe0b4eccd42cc66a1ad043d"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__microstrain__serialization__cpp.html#ga18131708dfe0b4eccd42cc66a1ad043d">extract</a> (T &amp;value, const uint8_t *buffer, size_t buffer_length, size_t offset=0, bool exact_size=false)</td></tr>
 <tr class="memdesc:ga18131708dfe0b4eccd42cc66a1ad043d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deserializes a value from a raw byte buffer.  <a href="group__microstrain__serialization__cpp.html#ga18131708dfe0b4eccd42cc66a1ad043d">More...</a><br /></td></tr>
 <tr class="separator:ga18131708dfe0b4eccd42cc66a1ad043d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab382e6284b0c62561d191a0c6f5ffaa7"><td class="memTemplParams" colspan="2">template&lt;serialization::Endian E, class T &gt; </td></tr>
-<tr class="memitem:gab382e6284b0c62561d191a0c6f5ffaa7"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__microstrain__serialization__cpp.html#gab382e6284b0c62561d191a0c6f5ffaa7">insert</a> (T value, <a class="el" href="structmicrostrain_1_1Span.html">microstrain::Span</a>&lt; uint8_t &gt; buffer, size_t offset=0, bool exact_size=false)</td></tr>
-<tr class="memdesc:gab382e6284b0c62561d191a0c6f5ffaa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes a value to a raw byte buffer (span version).  <a href="group__microstrain__serialization__cpp.html#gab382e6284b0c62561d191a0c6f5ffaa7">More...</a><br /></td></tr>
-<tr class="separator:gab382e6284b0c62561d191a0c6f5ffaa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3ac68b12aa3d98acef40711d2ed784a6"><td class="memTemplParams" colspan="2">template&lt;serialization::Endian E, class T &gt; </td></tr>
-<tr class="memitem:ga3ac68b12aa3d98acef40711d2ed784a6"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__microstrain__serialization__cpp.html#ga3ac68b12aa3d98acef40711d2ed784a6">extract</a> (T &amp;value, <a class="el" href="structmicrostrain_1_1Span.html">microstrain::Span</a>&lt; const uint8_t &gt; buffer, size_t offset=0, bool exact_size=false)</td></tr>
-<tr class="memdesc:ga3ac68b12aa3d98acef40711d2ed784a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deserializes a value from a raw byte buffer (span version).  <a href="group__microstrain__serialization__cpp.html#ga3ac68b12aa3d98acef40711d2ed784a6">More...</a><br /></td></tr>
-<tr class="separator:ga3ac68b12aa3d98acef40711d2ed784a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3a7482913859299520ae7ee931633193"><td class="memTemplParams" colspan="2">template&lt;serialization::Endian E, class T &gt; </td></tr>
+<tr class="memitem:ga3a7482913859299520ae7ee931633193"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__microstrain__serialization__cpp.html#ga3a7482913859299520ae7ee931633193">insert</a> (T value, <a class="el" href="structmicrostrain_1_1ArrayView.html">microstrain::ArrayView</a>&lt; uint8_t &gt; buffer, size_t offset=0, bool exact_size=false)</td></tr>
+<tr class="memdesc:ga3a7482913859299520ae7ee931633193"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes a value to a raw byte buffer (<a class="el" href="structmicrostrain_1_1ArrayView.html" title="Represents a view over a contiguous array of objects, similar to std::span, and is implemented as a p...">ArrayView</a> version).  <a href="group__microstrain__serialization__cpp.html#ga3a7482913859299520ae7ee931633193">More...</a><br /></td></tr>
+<tr class="separator:ga3a7482913859299520ae7ee931633193"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae80cbe5ec5132c2060bad8be840ab24d"><td class="memTemplParams" colspan="2">template&lt;serialization::Endian E, class T &gt; </td></tr>
+<tr class="memitem:gae80cbe5ec5132c2060bad8be840ab24d"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__microstrain__serialization__cpp.html#gae80cbe5ec5132c2060bad8be840ab24d">extract</a> (T &amp;value, <a class="el" href="namespacemicrostrain.html#ad10904b5b78aab3f27f0a6fa165d94bc">microstrain::ConstU8ArrayView</a> buffer, size_t offset=0, bool exact_size=false)</td></tr>
+<tr class="memdesc:gae80cbe5ec5132c2060bad8be840ab24d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deserializes a value from a raw byte buffer (<a class="el" href="structmicrostrain_1_1ArrayView.html" title="Represents a view over a contiguous array of objects, similar to std::span, and is implemented as a p...">ArrayView</a> version).  <a href="group__microstrain__serialization__cpp.html#gae80cbe5ec5132c2060bad8be840ab24d">More...</a><br /></td></tr>
+<tr class="separator:gae80cbe5ec5132c2060bad8be840ab24d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
+<a id="a713e840c6a8f0fd7e825a125ee6dae28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a713e840c6a8f0fd7e825a125ee6dae28">&#9670;&nbsp;</a></span>CharArrayView</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacemicrostrain.html#a713e840c6a8f0fd7e825a125ee6dae28">microstrain::CharArrayView</a> = typedef <a class="el" href="structmicrostrain_1_1ArrayView.html">ArrayView</a>&lt;char&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab74c8e68701769d676e46bf760aad854"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab74c8e68701769d676e46bf760aad854">&#9670;&nbsp;</a></span>ConstArrayView</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacemicrostrain.html#ab74c8e68701769d676e46bf760aad854">microstrain::ConstArrayView</a> = typedef <a class="el" href="structmicrostrain_1_1ArrayView.html">ArrayView</a>&lt;const T&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a036b8995c523e18903d6f9bc5779242d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a036b8995c523e18903d6f9bc5779242d">&#9670;&nbsp;</a></span>ConstCharArrayView</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacemicrostrain.html#a036b8995c523e18903d6f9bc5779242d">microstrain::ConstCharArrayView</a> = typedef <a class="el" href="namespacemicrostrain.html#ab74c8e68701769d676e46bf760aad854">ConstArrayView</a>&lt;char&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad10904b5b78aab3f27f0a6fa165d94bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad10904b5b78aab3f27f0a6fa165d94bc">&#9670;&nbsp;</a></span>ConstU8ArrayView</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacemicrostrain.html#ad10904b5b78aab3f27f0a6fa165d94bc">microstrain::ConstU8ArrayView</a> = typedef <a class="el" href="namespacemicrostrain.html#ab74c8e68701769d676e46bf760aad854">ConstArrayView</a>&lt;uint8_t&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a87678128971532436007682ebe2017c6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a87678128971532436007682ebe2017c6">&#9670;&nbsp;</a></span>EmbeddedTimeout</h2>
 
@@ -367,6 +436,20 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="namespacemicrostrain.html#af73e34a0b5ae1565e0e36a769c381ee1">microstrain::EmbeddedTimestamp</a> = typedef <a class="el" href="namespacemicrostrain_1_1C.html#a414dbc5e176e1ea7fd890d8a4353dd6b">C::microstrain_embedded_timestamp</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ace61526f6e658ee7eb05a3279fc8ae66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace61526f6e658ee7eb05a3279fc8ae66">&#9670;&nbsp;</a></span>U8ArrayView</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacemicrostrain.html#ace61526f6e658ee7eb05a3279fc8ae66">microstrain::U8ArrayView</a> = typedef <a class="el" href="structmicrostrain_1_1ArrayView.html">ArrayView</a>&lt;uint8_t&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">

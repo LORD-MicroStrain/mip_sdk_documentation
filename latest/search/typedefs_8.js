@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['packetbuf_11297',['PacketBuf',['../group__mip__cpp.html#gafc42c8a567309e43d95e372b1ea0d2c5',1,'mip']]],
-  ['pointer_11298',['pointer',['../structmicrostrain_1_1Span.html#a02a683fe27eb4481be278a2126ab7494',1,'microstrain::Span::pointer()'],['../structmicrostrain_1_1Span_3_01T_00_01DYNAMIC__EXTENT_01_4.html#a07cb542344d9742944cc4fc21be8297f',1,'microstrain::Span&lt; T, DYNAMIC_EXTENT &gt;::pointer()']]]
+  ['packetbuf_11303',['PacketBuf',['../group__mip__cpp.html#gafc42c8a567309e43d95e372b1ea0d2c5',1,'mip']]],
+  ['pointer_11304',['pointer',['../structmicrostrain_1_1ArrayView.html#ad0f0e7bf609f291d0f4bdb33898a95f0',1,'microstrain::ArrayView::pointer()'],['../structmicrostrain_1_1ArrayView_3_01T_00_01DYNAMIC__EXTENT_01_4.html#a0421ab537687fff435e5e48c8bcb8c8e',1,'microstrain::ArrayView&lt; T, DYNAMIC_EXTENT &gt;::pointer()']]]
 ];

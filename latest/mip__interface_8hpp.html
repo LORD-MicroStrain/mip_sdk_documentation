@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-521-gd8dd613</span>
+   &#160;<span id="projectnumber">v3.0.0-533-g58dc0c0</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -112,9 +112,8 @@ Functions</h2></td></tr>
 <tr class="memitem:ga9680f939a07d168d508dcd0207699b89"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga9680f939a07d168d508dcd0207699b89">mip::connect_interface</a> (<a class="el" href="classmip_1_1Interface.html">mip::Interface</a> &amp;device, <a class="el" href="classmicrostrain_1_1Connection.html">Connection</a> &amp;conn)</td></tr>
 <tr class="memdesc:ga9680f939a07d168d508dcd0207699b89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets up the mip interface callbacks to point at this object.  <a href="group__mip__cpp.html#ga9680f939a07d168d508dcd0207699b89">More...</a><br /></td></tr>
 <tr class="separator:ga9680f939a07d168d508dcd0207699b89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa1c8ac817523d517b77685e8f23341f9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#gaa1c8ac817523d517b77685e8f23341f9">mip::recv_from_connection</a> (<a class="el" href="classmicrostrain_1_1Connection.html">Connection</a> *conn, <a class="el" href="structmicrostrain_1_1Span.html">Span</a>&lt; uint8_t &gt; buffer, Timeout timeout, bool, size_t *length_out, Timestamp *timestamp_out)</td></tr>
-<tr class="memdesc:gaa1c8ac817523d517b77685e8f23341f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adapts <a class="el" href="classmicrostrain_1_1Connection.html#ad27833ab71dedd13bd27269ff3d71b31">microstrain::Connection::recvFromDeviceSpan</a> to a signature compatible with mip interface receive callbacks.  <a href="group__mip__cpp.html#gaa1c8ac817523d517b77685e8f23341f9">More...</a><br /></td></tr>
-<tr class="separator:gaa1c8ac817523d517b77685e8f23341f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2a934a1b4378bbb426fd96b8ce500700"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga2a934a1b4378bbb426fd96b8ce500700">mip::recv_from_connection</a> (<a class="el" href="classmicrostrain_1_1Connection.html">microstrain::Connection</a> *conn, <a class="el" href="namespacemicrostrain.html#ace61526f6e658ee7eb05a3279fc8ae66">microstrain::U8ArrayView</a> buffer, Timeout timeout, bool from_cmd, size_t *length_out, Timestamp *timestamp_out)</td></tr>
+<tr class="separator:ga2a934a1b4378bbb426fd96b8ce500700"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa27364a53be4e051b885aff466755581"><td class="memTemplParams" colspan="2">template&lt;class Cmd &gt; </td></tr>
 <tr class="memitem:gaa27364a53be4e051b885aff466755581"><td class="memTemplItemLeft" align="right" valign="top">CmdResult&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#gaa27364a53be4e051b885aff466755581">mip::runCommand</a> (C::mip_interface &amp;device, const Cmd &amp;cmd, Timeout additionalTime=0)</td></tr>
 <tr class="separator:gaa27364a53be4e051b885aff466755581"><td class="memSeparator" colspan="2">&#160;</td></tr>

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-521-gd8dd613</span>
+   &#160;<span id="projectnumber">v3.0.0-533-g58dc0c0</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -1115,11 +1115,8 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a36d471931cd06a932a6ac902b5664106"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip_1_1metadata.html#a36d471931cd06a932a6ac902b5664106">DescriptorSetSpan</a> = <a class="el" href="structmicrostrain_1_1Span.html">microstrain::Span</a>&lt; <a class="el" href="structmip_1_1metadata_1_1DescriptorSetInfo.html">DescriptorSetInfo</a> const  *const  &gt;</td></tr>
-<tr class="separator:a36d471931cd06a932a6ac902b5664106"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d528a8506a2fce15a95f4dc6b388cc0"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a3d528a8506a2fce15a95f4dc6b388cc0"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemip_1_1metadata.html#a3d528a8506a2fce15a95f4dc6b388cc0">Span</a> = <a class="el" href="structmicrostrain_1_1Span.html">microstrain::Span</a>&lt; T &gt;</td></tr>
-<tr class="separator:a3d528a8506a2fce15a95f4dc6b388cc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86ecf09160e13c79a328e15d4472378e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip_1_1metadata.html#a86ecf09160e13c79a328e15d4472378e">DescriptorSetSpan</a> = <a class="el" href="namespacemicrostrain.html#ab74c8e68701769d676e46bf760aad854">microstrain::ConstArrayView</a>&lt; const <a class="el" href="structmip_1_1metadata_1_1DescriptorSetInfo.html">DescriptorSetInfo</a> * &gt;</td></tr>
+<tr class="separator:a86ecf09160e13c79a328e15d4472378e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -1151,10 +1148,10 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a69b36422290aa340ba899c0df065b73b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structmip_1_1metadata_1_1DescriptorSetInfo.html">DescriptorSetInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip_1_1metadata.html#a69b36422290aa340ba899c0df065b73b">findDescriptorSet</a> (const <a class="el" href="namespacemip_1_1metadata.html#a36d471931cd06a932a6ac902b5664106">DescriptorSetSpan</a> &amp;descriptorSets, uint8_t descriptor)</td></tr>
+<tr class="memitem:a69b36422290aa340ba899c0df065b73b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structmip_1_1metadata_1_1DescriptorSetInfo.html">DescriptorSetInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip_1_1metadata.html#a69b36422290aa340ba899c0df065b73b">findDescriptorSet</a> (const <a class="el" href="namespacemip_1_1metadata.html#a86ecf09160e13c79a328e15d4472378e">DescriptorSetSpan</a> &amp;descriptorSets, uint8_t descriptor)</td></tr>
 <tr class="memdesc:a69b36422290aa340ba899c0df065b73b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches for a descriptor set in a list of descriptor sets.  <a href="namespacemip_1_1metadata.html#a69b36422290aa340ba899c0df065b73b">More...</a><br /></td></tr>
 <tr class="separator:a69b36422290aa340ba899c0df065b73b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e6e007ed0dba946c6c594b0a765aa76"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structmip_1_1metadata_1_1FieldInfo.html">FieldInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip_1_1metadata.html#a4e6e007ed0dba946c6c594b0a765aa76">findField</a> (const <a class="el" href="namespacemip_1_1metadata.html#a36d471931cd06a932a6ac902b5664106">DescriptorSetSpan</a> &amp;descriptorSets, <a class="el" href="structmip_1_1CompositeDescriptor.html">mip::CompositeDescriptor</a> descriptor)</td></tr>
+<tr class="memitem:a4e6e007ed0dba946c6c594b0a765aa76"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structmip_1_1metadata_1_1FieldInfo.html">FieldInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip_1_1metadata.html#a4e6e007ed0dba946c6c594b0a765aa76">findField</a> (const <a class="el" href="namespacemip_1_1metadata.html#a86ecf09160e13c79a328e15d4472378e">DescriptorSetSpan</a> &amp;descriptorSets, <a class="el" href="structmip_1_1CompositeDescriptor.html">mip::CompositeDescriptor</a> descriptor)</td></tr>
 <tr class="memdesc:a4e6e007ed0dba946c6c594b0a765aa76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches for field metadata info by descriptor ID.  <a href="namespacemip_1_1metadata.html#a4e6e007ed0dba946c6c594b0a765aa76">More...</a><br /></td></tr>
 <tr class="separator:a4e6e007ed0dba946c6c594b0a765aa76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40a95e7ca4eea52fdc023cee3537b687"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structmip_1_1metadata_1_1FieldInfo.html">FieldInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip_1_1metadata.html#a40a95e7ca4eea52fdc023cee3537b687">findField</a> (const <a class="el" href="structmip_1_1metadata_1_1DescriptorSetInfo.html">DescriptorSetInfo</a> &amp;ds_info, uint8_t field_desc, bool check_shared_data)</td></tr>
@@ -1168,30 +1165,14 @@ Functions</h2></td></tr>
 <tr class="separator:a54a1da18f14744d20c6b9e2d5a8de5e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="a36d471931cd06a932a6ac902b5664106"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a36d471931cd06a932a6ac902b5664106">&#9670;&nbsp;</a></span>DescriptorSetSpan</h2>
+<a id="a86ecf09160e13c79a328e15d4472378e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86ecf09160e13c79a328e15d4472378e">&#9670;&nbsp;</a></span>DescriptorSetSpan</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespacemip_1_1metadata.html#a36d471931cd06a932a6ac902b5664106">mip::metadata::DescriptorSetSpan</a> = typedef <a class="el" href="structmicrostrain_1_1Span.html">microstrain::Span</a>&lt;<a class="el" href="structmip_1_1metadata_1_1DescriptorSetInfo.html">DescriptorSetInfo</a> const* const&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3d528a8506a2fce15a95f4dc6b388cc0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d528a8506a2fce15a95f4dc6b388cc0">&#9670;&nbsp;</a></span>Span</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="namespacemip_1_1metadata.html#a3d528a8506a2fce15a95f4dc6b388cc0">mip::metadata::Span</a> = typedef <a class="el" href="structmicrostrain_1_1Span.html">microstrain::Span</a>&lt;T&gt;</td>
+          <td class="memname">using <a class="el" href="namespacemip_1_1metadata.html#a86ecf09160e13c79a328e15d4472378e">mip::metadata::DescriptorSetSpan</a> = typedef <a class="el" href="namespacemicrostrain.html#ab74c8e68701769d676e46bf760aad854">microstrain::ConstArrayView</a>&lt;const <a class="el" href="structmip_1_1metadata_1_1DescriptorSetInfo.html">DescriptorSetInfo</a> *&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1277,7 +1258,7 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname">const <a class="el" href="structmip_1_1metadata_1_1DescriptorSetInfo.html">DescriptorSetInfo</a> * mip::metadata::findDescriptorSet </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacemip_1_1metadata.html#a36d471931cd06a932a6ac902b5664106">DescriptorSetSpan</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacemip_1_1metadata.html#a86ecf09160e13c79a328e15d4472378e">DescriptorSetSpan</a> &amp;&#160;</td>
           <td class="paramname"><em>descriptorSets</em>, </td>
         </tr>
         <tr>
@@ -1365,7 +1346,7 @@ NULL if the specified descriptor isn't in the list. </dd></dl>
         <tr>
           <td class="memname">const <a class="el" href="structmip_1_1metadata_1_1FieldInfo.html">FieldInfo</a> * mip::metadata::findField </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacemip_1_1metadata.html#a36d471931cd06a932a6ac902b5664106">DescriptorSetSpan</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacemip_1_1metadata.html#a86ecf09160e13c79a328e15d4472378e">DescriptorSetSpan</a> &amp;&#160;</td>
           <td class="paramname"><em>descriptorSets</em>, </td>
         </tr>
         <tr>

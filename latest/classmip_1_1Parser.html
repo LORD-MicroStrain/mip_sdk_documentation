@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-521-gd8dd613</span>
+   &#160;<span id="projectnumber">v3.0.0-533-g58dc0c0</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -119,15 +119,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac8d46d93371ed182f2cf7045a17e42ca"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1Parser.html#ac8d46d93371ed182f2cf7045a17e42ca">parse</a> (const uint8_t *inputBuffer, size_t inputCount, <a class="el" href="namespacemip.html#ab87086630c94254d17a812e4be159b0a">Timestamp</a> timestamp)</td></tr>
 <tr class="memdesc:ac8d46d93371ed182f2cf7045a17e42ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse packets from a buffer.  <a href="classmip_1_1Parser.html#ac8d46d93371ed182f2cf7045a17e42ca">More...</a><br /></td></tr>
 <tr class="separator:ac8d46d93371ed182f2cf7045a17e42ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12ac70c0b3d3b0d3c9df5628d48f1c09"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1Parser.html#a12ac70c0b3d3b0d3c9df5628d48f1c09">parse</a> (<a class="el" href="structmicrostrain_1_1Span.html">microstrain::Span</a>&lt; const uint8_t &gt; data, <a class="el" href="namespacemip.html#ab87086630c94254d17a812e4be159b0a">Timestamp</a> timestamp)</td></tr>
-<tr class="memdesc:a12ac70c0b3d3b0d3c9df5628d48f1c09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse packets from a buffer (span version).  <a href="classmip_1_1Parser.html#a12ac70c0b3d3b0d3c9df5628d48f1c09">More...</a><br /></td></tr>
-<tr class="separator:a12ac70c0b3d3b0d3c9df5628d48f1c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbbddea4f729040f89e055fa494d0812"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1Parser.html#adbbddea4f729040f89e055fa494d0812">parse</a> (<a class="el" href="namespacemicrostrain.html#ad10904b5b78aab3f27f0a6fa165d94bc">microstrain::ConstU8ArrayView</a> data, <a class="el" href="namespacemip.html#ab87086630c94254d17a812e4be159b0a">Timestamp</a> timestamp)</td></tr>
+<tr class="memdesc:adbbddea4f729040f89e055fa494d0812"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse packets from a buffer (U8ArrayView version).  <a href="classmip_1_1Parser.html#adbbddea4f729040f89e055fa494d0812">More...</a><br /></td></tr>
+<tr class="separator:adbbddea4f729040f89e055fa494d0812"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c59ff576a6656a9b70b99288ba6663f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1Parser.html#a3c59ff576a6656a9b70b99288ba6663f">flush</a> ()</td></tr>
 <tr class="memdesc:a3c59ff576a6656a9b70b99288ba6663f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes all previously buffered data.  <a href="classmip_1_1Parser.html#a3c59ff576a6656a9b70b99288ba6663f">More...</a><br /></td></tr>
 <tr class="separator:a3c59ff576a6656a9b70b99288ba6663f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a388388aeedf03f12301b4152c7e086ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmicrostrain_1_1Span.html">microstrain::Span</a>&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1Parser.html#a388388aeedf03f12301b4152c7e086ea">getWritePtr</a> ()</td></tr>
-<tr class="memdesc:a388388aeedf03f12301b4152c7e086ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a pointer into which a small amount of data may be written for parsing.  <a href="classmip_1_1Parser.html#a388388aeedf03f12301b4152c7e086ea">More...</a><br /></td></tr>
-<tr class="separator:a388388aeedf03f12301b4152c7e086ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66fecd792336149d95ee435ae835f3a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemicrostrain.html#ace61526f6e658ee7eb05a3279fc8ae66">microstrain::U8ArrayView</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1Parser.html#a66fecd792336149d95ee435ae835f3a9">getWritePtr</a> ()</td></tr>
+<tr class="memdesc:a66fecd792336149d95ee435ae835f3a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a pointer into which a small amount of data may be written for parsing.  <a href="classmip_1_1Parser.html#a66fecd792336149d95ee435ae835f3a9">More...</a><br /></td></tr>
+<tr class="separator:a66fecd792336149d95ee435ae835f3a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a642ce6426bc3d3483f031e5c64c05d91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemip.html#afce0ba7e576cfb1bffa07cff38fe1847">Timeout</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1Parser.html#a642ce6426bc3d3483f031e5c64c05d91">timeout</a> () const</td></tr>
 <tr class="memdesc:a642ce6426bc3d3483f031e5c64c05d91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the packet timeout of the parser.  <a href="classmip_1_1Parser.html#a642ce6426bc3d3483f031e5c64c05d91">More...</a><br /></td></tr>
 <tr class="separator:a642ce6426bc3d3483f031e5c64c05d91"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -311,8 +311,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a388388aeedf03f12301b4152c7e086ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a388388aeedf03f12301b4152c7e086ea">&#9670;&nbsp;</a></span>getWritePtr()</h2>
+<a id="a66fecd792336149d95ee435ae835f3a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66fecd792336149d95ee435ae835f3a9">&#9670;&nbsp;</a></span>getWritePtr()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -321,7 +321,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmicrostrain_1_1Span.html">microstrain::Span</a>&lt;uint8_t&gt; mip::Parser::getWritePtr </td>
+          <td class="memname"><a class="el" href="namespacemicrostrain.html#ace61526f6e658ee7eb05a3279fc8ae66">microstrain::U8ArrayView</a> mip::Parser::getWritePtr </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -397,8 +397,8 @@ The parser will do its best to ignore non-MIP data. However, it is possible for 
 
 </div>
 </div>
-<a id="a12ac70c0b3d3b0d3c9df5628d48f1c09"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a12ac70c0b3d3b0d3c9df5628d48f1c09">&#9670;&nbsp;</a></span>parse() <span class="overload">[2/2]</span></h2>
+<a id="adbbddea4f729040f89e055fa494d0812"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbbddea4f729040f89e055fa494d0812">&#9670;&nbsp;</a></span>parse() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -409,7 +409,7 @@ The parser will do its best to ignore non-MIP data. However, it is possible for 
         <tr>
           <td class="memname">size_t mip::Parser::parse </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1Span.html">microstrain::Span</a>&lt; const uint8_t &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemicrostrain.html#ad10904b5b78aab3f27f0a6fa165d94bc">microstrain::ConstU8ArrayView</a>&#160;</td>
           <td class="paramname"><em>data</em>, </td>
         </tr>
         <tr>
@@ -431,7 +431,7 @@ The parser will do its best to ignore non-MIP data. However, it is possible for 
 </table>
 </div><div class="memdoc">
 
-<p>Parse packets from a buffer (span version). </p>
+<p>Parse packets from a buffer (U8ArrayView version). </p>
 <p>The buffer may contain non-mip data (e.g. NMEA 0183) which will be ignored.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

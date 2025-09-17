@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-521-gd8dd613</span>
+   &#160;<span id="projectnumber">v3.0.0-533-g58dc0c0</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -68,8 +68,8 @@ $(function() {
 
 <h3><a id="index_b"></a>- b -</h3><ul>
 <li>back()
-: <a class="el" href="structmicrostrain_1_1Span.html#a30c45dc1290ab934889d72226e7678c2">microstrain::Span&lt; T, Extent &gt;</a>
-, <a class="el" href="structmicrostrain_1_1Span_3_01T_00_01DYNAMIC__EXTENT_01_4.html#a4e359c519de0c5b520f9b17819b42ae5">microstrain::Span&lt; T, DYNAMIC_EXTENT &gt;</a>
+: <a class="el" href="structmicrostrain_1_1ArrayView.html#a9b655a9cc04895d9068eb1168de7f46a">microstrain::ArrayView&lt; T, Extent &gt;</a>
+, <a class="el" href="structmicrostrain_1_1ArrayView_3_01T_00_01DYNAMIC__EXTENT_01_4.html#a8a7b05cd32f05ce3df2130660cbf3793">microstrain::ArrayView&lt; T, DYNAMIC_EXTENT &gt;</a>
 </li>
 <li>BASE_STATION_ID
 : <a class="el" href="structmip_1_1data__gnss_1_1DgpsInfo_1_1ValidFlags.html#a68a39e637e011e8dc0e2f0b6ce343256a14a96df56db483402a2d1b246f892097">mip::data_gnss::DgpsInfo::ValidFlags</a>
@@ -104,8 +104,8 @@ $(function() {
 : <a class="el" href="classmicrostrain_1_1connections_1_1SerialConnection.html#a6b76e66e71573504d1b806f05469fa44">microstrain::connections::SerialConnection</a>
 </li>
 <li>begin()
-: <a class="el" href="structmicrostrain_1_1Span.html#a49ed7581cd7d0f3c8cf59c48a1ebb91b">microstrain::Span&lt; T, Extent &gt;</a>
-, <a class="el" href="structmicrostrain_1_1Span_3_01T_00_01DYNAMIC__EXTENT_01_4.html#a27ddbcde988b2f6e9b28687f5511be37">microstrain::Span&lt; T, DYNAMIC_EXTENT &gt;</a>
+: <a class="el" href="structmicrostrain_1_1ArrayView.html#ac9531b7f03780ad6a2144b4eca13f6dc">microstrain::ArrayView&lt; T, Extent &gt;</a>
+, <a class="el" href="structmicrostrain_1_1ArrayView_3_01T_00_01DYNAMIC__EXTENT_01_4.html#a02ba5073399a634893f540a6b2e949d0">microstrain::ArrayView&lt; T, DYNAMIC_EXTENT &gt;</a>
 , <a class="el" href="classmip_1_1CompositeResult.html#a53f967c7807f3b4c7d1e83036f13d076">mip::CompositeResult</a>
 , <a class="el" href="classmip_1_1PacketView.html#af02bc8240144be186f25a394870bf78b">mip::PacketView</a>
 </li>
@@ -212,13 +212,14 @@ $(function() {
 , <a class="el" href="structmip_1_1data__filter_1_1GyroBias.html#a9a97b9b6e96483cafed23ef038204970">mip::data_filter::GyroBias</a>
 , <a class="el" href="structmip_1_1data__filter_1_1MagBias.html#a0b5cb2aeb02dce179058a58d7a536b8e">mip::data_filter::MagBias</a>
 , <a class="el" href="structmip_1_1data__gnss_1_1ClockInfo2.html#ad0c82062d979ce51509399489cb35dd5">mip::data_gnss::ClockInfo2</a>
+, <a class="el" href="structmip_1_1data__gnss_1_1ClockInfo2_1_1ValidFlags.html#aa36509f1ebf502e7e26e431833a5b58c">mip::data_gnss::ClockInfo2::ValidFlags</a>
 </li>
 <li>BIAS
 : <a class="el" href="structmip_1_1data__gnss_1_1ClockInfo2_1_1ValidFlags.html#adf3c4705c42457407973c9b1cffd365ca2ef739df60137819041be225d6405b18">mip::data_gnss::ClockInfo2::ValidFlags</a>
 </li>
-<li>bias()
-: <a class="el" href="structmip_1_1data__gnss_1_1ClockInfo2_1_1ValidFlags.html#aa36509f1ebf502e7e26e431833a5b58c">mip::data_gnss::ClockInfo2::ValidFlags</a>
-, <a class="el" href="structmip_1_1data__gnss_1_1ClockInfo.html#a0fc935733730f4aa46ac0f689fe2b4ce">mip::data_gnss::ClockInfo</a>
+<li>bias
+: <a class="el" href="structmip_1_1data__gnss_1_1ClockInfo.html#a0fc935733730f4aa46ac0f689fe2b4ce">mip::data_gnss::ClockInfo</a>
+, <a class="el" href="structmip_1_1data__gnss_1_1ClockInfo_1_1ValidFlags.html#a203a149f9a31c3e73b208c0bf483e368">mip::data_gnss::ClockInfo::ValidFlags</a>
 </li>
 <li>BIAS
 : <a class="el" href="structmip_1_1data__gnss_1_1ClockInfo_1_1ValidFlags.html#a8d66dacf948a9eedf2287c88b5383b96a44daf88694f1ffebacd77f6c3d6dd7cc">mip::data_gnss::ClockInfo::ValidFlags</a>
@@ -266,16 +267,24 @@ $(function() {
 : <a class="el" href="structmip_1_1metadata_1_1FunctionBits.html#a82b717158d9d40a0578601a0a6b9f537">mip::metadata::FunctionBits</a>
 </li>
 <li>buffer()
-: <a class="el" href="classmip_1_1SizedPacketBuf.html#ac17febb271962f57074ffd611b567415">mip::SizedPacketBuf&lt; BufferSize &gt;</a>
+: <a class="el" href="classmip_1_1PacketView.html#a4dae973ae1a91800afb8db5342364fe1">mip::PacketView</a>
+, <a class="el" href="classmip_1_1SizedPacketBuf.html#aaf2c163f4f362fb9926ec827c2132d92">mip::SizedPacketBuf&lt; BufferSize &gt;</a>
 </li>
 <li>BUFFER_OVERRUN
 : <a class="el" href="structmip_1_1commands__base_1_1CommandedTestBitsGq7.html#a4b36e7f5d0669a98642f4859ccd9c3c4a6ca2940016ff5d6cc26a6b09d6b06ed2">mip::commands_base::CommandedTestBitsGq7</a>
 </li>
 <li>bufferOverrun()
-: <a class="el" href="structmip_1_1commands__base_1_1CommandedTestBitsGq7.html#a08ce379df52cb13fee52d456a81c71ef">mip::commands_base::CommandedTestBitsGq7</a>
+: <a class="el" href="structmip_1_1commands__base_1_1CommandedTestBitsGq7.html#ae700461546f9292ab91540c62949af79">mip::commands_base::CommandedTestBitsGq7</a>
 </li>
-<li>bufferSpan()
-: <a class="el" href="classmip_1_1SizedPacketBuf.html#ab44b72eddb79629322e311cd1863876b">mip::SizedPacketBuf&lt; BufferSize &gt;</a>
+<li>bufferPointer()
+: <a class="el" href="classmip_1_1PacketView.html#a025a1aceb5ace2d6a7b97e5d299a6bd4">mip::PacketView</a>
+, <a class="el" href="classmip_1_1SizedPacketBuf.html#ad060c26964bd45cff9a357c134e21876">mip::SizedPacketBuf&lt; BufferSize &gt;</a>
+</li>
+<li>bufferPointerWr()
+: <a class="el" href="classmip_1_1PacketView.html#a55dbfa826e78c9c517cf96dce8c2f52b">mip::PacketView</a>
+</li>
+<li>bufferWr()
+: <a class="el" href="classmip_1_1PacketView.html#aa9160d77573234d1ed70e0766c157ed6">mip::PacketView</a>
 </li>
 </ul>
 </div><!-- contents -->

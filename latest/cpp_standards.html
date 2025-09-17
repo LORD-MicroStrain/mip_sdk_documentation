@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-521-gd8dd613</span>
+   &#160;<span id="projectnumber">v3.0.0-533-g58dc0c0</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -71,14 +71,10 @@ $(function() {
 <div class="textblock"><p>The MIP SDK requires at least C++14 support, but some parts of the MIP SDK can make use of newer C++ features. These parts are guarded by <code>#ifdefs</code> for the <code>__cplusplus</code> version or <a href="https://en.cppreference.com/w/cpp/feature_test">feature test macros</a> and they will be safely ignored if your compiler lacks support.</p>
 <p>In a few cases however, this can be dangerous when the MIP SDK is built as a library (e.g., MicroStrain pre-built versions from github) and then gets used in a project with a different C++ standard version. If the <code>#ifdef</code> guards cause a different implementation to be selected, then there is a mismatch and a violation of the one-definition rule. This can cause linker errors or mysterious crashes and odd behavior. To avoid this, the MIP SDK requires that the user explicitly opt-in to certain C++ features. This "opt-in" choice must be made identically when the library is compiled and then in the project where it is used (this includes anywhere the MIP SDK headers are included).</p>
 <h1><a class="anchor" id="autotoc_md0"></a>
-std::span</h1>
-<p>A "span" in C++ parlance is the combination of a pointer and length, typically representing a view of an array. The MIP SDK provides an implementation called <code><a class="el" href="structmicrostrain_1_1Span.html" title="Implementation of std::span from C++20.">microstrain::Span</a></code>, which tries to be compatible with <code>std::span</code> from C++20. It includes most, but not all, features from the standard version. If your compiler supports it, you may use <code>std::span</code> instead by defining <code>MICROSTRAIN_USE_STD_SPAN</code>. This will replace the microstrain span implementation with a typedef to <code>std::span</code>.</p>
-<p><a href="https://en.cppreference.com/w/cpp/container/span">https://en.cppreference.com/w/cpp/container/span</a></p>
-<h1><a class="anchor" id="autotoc_md1"></a>
 std::endian</h1>
 <p>The serialization system requires a notion of endianness. By default, an enum called <code>microstrain::Endian</code> is defined which provides integer constants representing big and little endianness. If your compiler supports <code>std::endian</code> from C++20, you may define <code>MICROSTRAIN_USE_STD_ENDIAN</code> in your project. This will replace the microstrain enum with a typedef to <code>std::endian</code>.</p>
 <p><a href="https://en.cppreference.com/w/cpp/types/endian">https://en.cppreference.com/w/cpp/types/endian</a></p>
-<h1><a class="anchor" id="autotoc_md2"></a>
+<h1><a class="anchor" id="autotoc_md1"></a>
 Other Optional C++ Features</h1>
 <p>These features can be used with the MIP SDK if your compiler supports them. No special <code>#defines</code> are necessary as compiled library code is not affected by the choice. They are used by header-only features and no alternative implementations are supplied with which they could conflict.</p>
 <ul>

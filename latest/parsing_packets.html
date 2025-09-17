@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-521-gd8dd613</span>
+   &#160;<span id="projectnumber">v3.0.0-533-g58dc0c0</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -79,7 +79,7 @@ Parsing Data</h1>
 <p>If a valid packet gets cut off at the end of the buffer (e.g. because it hasn't been received yet), the parser will store the partial packet internally until more data is received. If sufficient data is not received within the set timeout, the first byte of the potential packet is discarded and parsing continues.</p>
 <p>The parse function should be called regularly, even if no new data has been received (pass 0 for the input length). Otherwise, packets will not be able to time out until new data arrives. When parsing a file, it is recommended to call <a class="el" href="group__mip__parser__c.html#ga4169ceaa508424ea086aa3af5d82d998" title="Processes all previously buffered data.">mip_parser_flush()</a> when the end of file is reached to forcibly time out any bad packets near the end.</p>
 <p>Mip packets may be interspersed with other protocols. As long as the mip packets are not fragmented this parser will reject other data and still process the valid packets. Note that checksums are not foolproof however, and it is theoretically possible that random data may appear to be a valid mip packet. For this to occur it would have to contain the sync bytes 0x75, 0x65, and a valid checksum which could occur with a 1/65536 chance. The probability of this happening is extremely low in most cases. (For a run of 6 bytes, the minimum packet size with no payload, the probability is 1/4,294,967,296 since there are 4 bytes which would have to match exactly.) Further still, for an application to process such a packet it would also have to have a recognized descriptor set, appropriate field lengths, and recognized field descriptors.</p>
-<h3><a class="anchor" id="autotoc_md26"></a>
+<h3><a class="anchor" id="autotoc_md25"></a>
 Direct parsing</h3>
 <p>Data may be read directly into the parser's internal buffer. This may be useful for memory-constrained systems where buffer space is limited. E.g. a UART "byte received" IRQ routine could write directly to the parser buffer one byte at a time.</p>
 <p>To do this, call <a class="el" href="group__mip__parser__c.html#ga665713329a7fa901e01f77d97dcc13fd" title="Gets a pointer into which a small amount of data may be written for parsing.">mip_parser_get_write_ptr()</a> to obtain a writable pointer and amount of available space. Then call <a class="el" href="group__mip__parser__c.html#gaa3bc3f9362d5c359f0a9b8cd8219f4cf" title="Parse packets from a buffer.">mip_parser_parse()</a> with a NULL input buffer and input length equal to the number of bytes written. At least one byte of free space will always be available, assuming the parse function has been called between writes.</p>
@@ -120,7 +120,7 @@ The Packet Parsing Process</h1>
    <p>To improve parsing efficiency, the parser leverages string functions from the C standard library, namely memcpy() and memchr(). These functions are likely to be heavily optimized for each platform. For example, memchr is used inside mip_find_sop(), which searches for the start of a packet. This is faster than iterating the parser loop and dropping one byte at a time until a sync byte is found.</p>
 <p>Original versions of this parser used a ring buffer, which is common on embedded systems for things like UART drivers. The ring buffer was dropped in favor of using memmove() to shift unparsed data in-place. This reduces the number of times each byte must be copied and also speeds up access.</p>
 <p>The packet view passed to the callback always references the internal parser buffer. It's safe to store a reference to this packet until further calls to parse or any other function which may alter the parser's state.</p>
-<h1><a class="anchor" id="autotoc_md27"></a>
+<h1><a class="anchor" id="autotoc_md26"></a>
 Performance</h1>
 <p>The parser is most efficient when called with large chunks of data. This is because each call to the parser (or any function) has overhead. When reading from a high-speed source such as a file, we recommend parsing chunks of data of at least 512 bytes, ideally 1024 bytes or more. Little improvement is attained beyond 8192 bytes. Performance drops off below 128-byte chunks.</p>
 <p>This data seems to hold for both high-power desktop systems (e.g. Intel i7-1370 and i7-12700K) and embedded systems such as the STM32F767 at 200 MHz. You can benchmark your system by running the TestMipPerf test program.</p>

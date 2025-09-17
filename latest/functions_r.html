@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-521-gd8dd613</span>
+   &#160;<span id="projectnumber">v3.0.0-533-g58dc0c0</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -208,6 +208,9 @@ $(function() {
 <li>RecordingConnectionWrapper()
 : <a class="el" href="classmicrostrain_1_1connections_1_1RecordingConnectionWrapper.html#ad5b928188c9835b23a2fa3836433172b">microstrain::connections::RecordingConnectionWrapper&lt; ConnectionType &gt;</a>
 </li>
+<li>recvBufferFromDevice()
+: <a class="el" href="classmicrostrain_1_1Connection.html#a7374e281cea00e1f445df615673edc46">microstrain::Connection</a>
+</li>
 <li>recvFileBytesWritten()
 : <a class="el" href="classmicrostrain_1_1connections_1_1RecordingConnection.html#a3ed08565dbd2e9e52398f20e3543d832">microstrain::connections::RecordingConnection</a>
 </li>
@@ -216,13 +219,10 @@ $(function() {
 , <a class="el" href="classmicrostrain_1_1connections_1_1RecordingConnection.html#a57e83415c4450d61ff7c1118cfb5efeb">microstrain::connections::RecordingConnection</a>
 , <a class="el" href="classmicrostrain_1_1connections_1_1SerialConnection.html#a4548cdc4a259d4326a045429ed50510b">microstrain::connections::SerialConnection</a>
 , <a class="el" href="classmicrostrain_1_1connections_1_1TcpConnection.html#acc14a36fee8ce3c60009a62808a4341a">microstrain::connections::TcpConnection</a>
-, <a class="el" href="classmip_1_1Interface.html#a4dd61946bb723a049512344eaa5840e3">mip::Interface</a>
+, <a class="el" href="classmip_1_1Interface.html#aafef30124347dd32d4394692473320e0">mip::Interface</a>
 </li>
-<li>recvFromDeviceSpan()
-: <a class="el" href="classmicrostrain_1_1Connection.html#ad27833ab71dedd13bd27269ff3d71b31">microstrain::Connection</a>
-</li>
-<li>recvFromDeviceSpanUpdate()
-: <a class="el" href="classmicrostrain_1_1Connection.html#a5415e5f13a880171e44d8c1c913f5d09">microstrain::Connection</a>
+<li>recvFromDeviceAndUpdateUint8ArrayView()
+: <a class="el" href="classmicrostrain_1_1Connection.html#a4b17bb56b80db17a5889792819c7997f">microstrain::Connection</a>
 </li>
 <li>recvFunction()
 : <a class="el" href="classmip_1_1Interface.html#ac4e156c3e8b97dce446ba4d8bc8dfced">mip::Interface</a>
@@ -240,8 +240,8 @@ $(function() {
 : <a class="el" href="structmip_1_1data__gnss_1_1BaseStationInfo_1_1IndicatorFlags.html#a0cb42756376b4898f423979191ab2944a1954330a6d75a95db6086ac86b077148">mip::data_gnss::BaseStationInfo::IndicatorFlags</a>
 </li>
 <li>reference
-: <a class="el" href="structmicrostrain_1_1Span.html#a56efc6b380b06ae5cdac9ed9f18b4a9c">microstrain::Span&lt; T, Extent &gt;</a>
-, <a class="el" href="structmicrostrain_1_1Span_3_01T_00_01DYNAMIC__EXTENT_01_4.html#aed152204f6df818b2d08e44d4c7ca422">microstrain::Span&lt; T, DYNAMIC_EXTENT &gt;</a>
+: <a class="el" href="structmicrostrain_1_1ArrayView.html#a2c4676cdd44b32a3fddf59da6edd08b9">microstrain::ArrayView&lt; T, Extent &gt;</a>
+, <a class="el" href="structmicrostrain_1_1ArrayView_3_01T_00_01DYNAMIC__EXTENT_01_4.html#aac46f93ae7eb291809ec335682b7c4fe">microstrain::ArrayView&lt; T, DYNAMIC_EXTENT &gt;</a>
 </li>
 <li>reference_coordinates
 : <a class="el" href="structmip_1_1C_1_1mip__filter__rel__pos__configuration__command.html#a63d4e11e3bd2a368e4d036bd3a7606b5">mip::C::mip_filter_rel_pos_configuration_command</a>
@@ -450,7 +450,7 @@ $(function() {
 : <a class="el" href="structmip_1_1data__gnss_1_1RfErrorDetection.html#aa35cd0d58dda76b6a22e116b5df1fa24">mip::data_gnss::RfErrorDetection</a>
 </li>
 <li>rfBand()
-: <a class="el" href="structmip_1_1data__gnss_1_1RfErrorDetection_1_1ValidFlags.html#aa94a16fa931a76e428918eb5d79f20a1">mip::data_gnss::RfErrorDetection::ValidFlags</a>
+: <a class="el" href="structmip_1_1data__gnss_1_1RfErrorDetection_1_1ValidFlags.html#a417f68e2d509c9bc37519e9cda16a5fb">mip::data_gnss::RfErrorDetection::ValidFlags</a>
 </li>
 <li>roll
 : <a class="el" href="structmip_1_1C_1_1mip__3dm__sensor__2__vehicle__transform__euler__command.html#ae26fba5b7e5d3e83501b00c0a15e0339">mip::C::mip_3dm_sensor_2_vehicle_transform_euler_command</a>
@@ -466,13 +466,14 @@ $(function() {
 , <a class="el" href="structmip_1_1commands__filter_1_1SensorToVehicleRotationEuler_1_1Response.html#a980eeb20ceb27e03c025091e68f0fcf8">mip::commands_filter::SensorToVehicleRotationEuler::Response</a>
 , <a class="el" href="structmip_1_1commands__filter_1_1SensorToVehicleRotationEuler.html#aeddad7011713055fcd70a64b7ed12d59">mip::commands_filter::SensorToVehicleRotationEuler</a>
 , <a class="el" href="structmip_1_1commands__filter_1_1SetInitialAttitude.html#a0525628034e6a7aafcf3f489c9f06dfe">mip::commands_filter::SetInitialAttitude</a>
-, <a class="el" href="structmip_1_1commands__filter_1_1TareOrientation_1_1MipTareAxes.html#a063a3cac909ae726105eafc1f4266048">mip::commands_filter::TareOrientation::MipTareAxes</a>
+, <a class="el" href="structmip_1_1commands__filter_1_1TareOrientation_1_1MipTareAxes.html#ac960704c749cc9467e8896232a0b3f2e">mip::commands_filter::TareOrientation::MipTareAxes</a>
 </li>
 <li>ROLL
 : <a class="el" href="structmip_1_1commands__filter_1_1TareOrientation_1_1MipTareAxes.html#a0c7b08afc596579b3e324d56bfabdceba8f078f57518d9f8a3bfc50d38d35b0b8">mip::commands_filter::TareOrientation::MipTareAxes</a>
 </li>
-<li>roll
-: <a class="el" href="structmip_1_1data__filter_1_1EulerAngles.html#a63070b2b790b23fec4f9c4758252187f">mip::data_filter::EulerAngles</a>
+<li>roll()
+: <a class="el" href="structmip_1_1commands__filter_1_1TareOrientation_1_1MipTareAxes.html#a063a3cac909ae726105eafc1f4266048">mip::commands_filter::TareOrientation::MipTareAxes</a>
+, <a class="el" href="structmip_1_1data__filter_1_1EulerAngles.html#a63070b2b790b23fec4f9c4758252187f">mip::data_filter::EulerAngles</a>
 , <a class="el" href="structmip_1_1data__filter_1_1EulerAnglesUncertainty.html#a235b8af669d3455b14eb75597c4e926b">mip::data_filter::EulerAnglesUncertainty</a>
 , <a class="el" href="structmip_1_1data__sensor_1_1CompEulerAngles.html#a766e53daac22647777035b9a7142a8ef">mip::data_sensor::CompEulerAngles</a>
 </li>
@@ -486,13 +487,10 @@ $(function() {
 : <a class="el" href="unionmip_1_1commands__aiding_1_1FrameConfig_1_1Rotation.html#a67d73950ce36d023ce9396e5b6b73ced">mip::commands_aiding::FrameConfig::Rotation</a>
 </li>
 <li>rsrp()
-: <a class="el" href="structmip_1_1commands__rtk_1_1GetStatusFlags_1_1StatusFlagsLegacy.html#a7e434524174bda2bf3974fad53234168">mip::commands_rtk::GetStatusFlags::StatusFlagsLegacy</a>
+: <a class="el" href="structmip_1_1commands__rtk_1_1GetStatusFlags_1_1StatusFlagsLegacy.html#a5f159d8c40631f21c6ecd2052096ad7f">mip::commands_rtk::GetStatusFlags::StatusFlagsLegacy</a>
 </li>
 <li>RSRP
 : <a class="el" href="structmip_1_1commands__rtk_1_1GetStatusFlags_1_1StatusFlagsLegacy.html#a6d952630b90a4cae4177646db34a96eea9c4d58ea500d472e17fe9376ab121df6">mip::commands_rtk::GetStatusFlags::StatusFlagsLegacy</a>
-</li>
-<li>rsrq()
-: <a class="el" href="structmip_1_1commands__rtk_1_1GetStatusFlags_1_1StatusFlagsLegacy.html#a1ab98f81d12d249e81edae8048ba3fb0">mip::commands_rtk::GetStatusFlags::StatusFlagsLegacy</a>
 </li>
 <li>RSRQ
 : <a class="el" href="structmip_1_1commands__rtk_1_1GetStatusFlags_1_1StatusFlagsLegacy.html#a6d952630b90a4cae4177646db34a96eea934c555131d62af039c281feab02e325">mip::commands_rtk::GetStatusFlags::StatusFlagsLegacy</a>
@@ -508,7 +506,7 @@ $(function() {
 : <a class="el" href="structmip_1_1commands__rtk_1_1GetStatusFlags_1_1StatusFlags.html#aadc3e79c243bb77702f4a323cbae6879afbabc3879b1cd6e9e162830ccb60d9bf">mip::commands_rtk::GetStatusFlags::StatusFlags</a>
 </li>
 <li>rssi()
-: <a class="el" href="structmip_1_1commands__rtk_1_1GetStatusFlags_1_1StatusFlags.html#a2b9b83a2e2f37b7915f2be0e036ff7c1">mip::commands_rtk::GetStatusFlags::StatusFlags</a>
+: <a class="el" href="structmip_1_1commands__rtk_1_1GetStatusFlags_1_1StatusFlags.html#a5c74f81574849ee9eaa95733b6c2fa06">mip::commands_rtk::GetStatusFlags::StatusFlags</a>
 , <a class="el" href="structmip_1_1commands__rtk_1_1GetStatusFlags_1_1StatusFlagsLegacy.html#a76533c58a45efc83073f54b07292a79e">mip::commands_rtk::GetStatusFlags::StatusFlagsLegacy</a>
 </li>
 <li>RSSI
@@ -520,11 +518,8 @@ $(function() {
 <li>RTCM
 : <a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html#a3c39bec9f934b9a6a1d8affc12e2f611a6c39735c46e105da43485e272b2264c3">mip::commands_system::CommsProtocol</a>
 </li>
-<li>rtcm()
-: <a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html#a40596c059925c737e6a52586045f78ea">mip::commands_system::CommsProtocol</a>
-</li>
 <li>runCommand()
-: <a class="el" href="classmip_1_1Interface.html#ab63c8149490bb4f3adc466b0094fabf8">mip::Interface</a>
+: <a class="el" href="classmip_1_1Interface.html#af407b721e6145365d14d0c0edd459070">mip::Interface</a>
 </li>
 </ul>
 </div><!-- contents -->

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-521-gd8dd613</span>
+   &#160;<span id="projectnumber">v3.0.0-533-g58dc0c0</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -108,12 +108,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3361f33a8b1d5495b7918f0fc25ac07f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmicrostrain_1_1Connection.html#a3361f33a8b1d5495b7918f0fc25ac07f">recvFromDevice</a> (uint8_t *buffer, size_t max_length, unsigned int wait_time_ms, size_t *length_out, <a class="el" href="namespacemicrostrain.html#af73e34a0b5ae1565e0e36a769c381ee1">EmbeddedTimestamp</a> *timestamp_out)=0</td></tr>
 <tr class="memdesc:a3361f33a8b1d5495b7918f0fc25ac07f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receives bytes from the device.  <a href="classmicrostrain_1_1Connection.html#a3361f33a8b1d5495b7918f0fc25ac07f">More...</a><br /></td></tr>
 <tr class="separator:a3361f33a8b1d5495b7918f0fc25ac07f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada124674406639ff5983286ffbd7f591"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmicrostrain_1_1Connection.html#ada124674406639ff5983286ffbd7f591">sendToDeviceSpan</a> (<a class="el" href="structmicrostrain_1_1Span.html">microstrain::Span</a>&lt; const uint8_t &gt; data)</td></tr>
-<tr class="separator:ada124674406639ff5983286ffbd7f591"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad27833ab71dedd13bd27269ff3d71b31"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmicrostrain_1_1Connection.html#ad27833ab71dedd13bd27269ff3d71b31">recvFromDeviceSpan</a> (<a class="el" href="structmicrostrain_1_1Span.html">microstrain::Span</a>&lt; uint8_t &gt; buffer, unsigned int wait_time_ms, size_t *length_out, <a class="el" href="namespacemicrostrain.html#af73e34a0b5ae1565e0e36a769c381ee1">EmbeddedTimestamp</a> *timestamp_out)</td></tr>
-<tr class="separator:ad27833ab71dedd13bd27269ff3d71b31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5415e5f13a880171e44d8c1c913f5d09"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmicrostrain_1_1Connection.html#a5415e5f13a880171e44d8c1c913f5d09">recvFromDeviceSpanUpdate</a> (<a class="el" href="structmicrostrain_1_1Span.html">microstrain::Span</a>&lt; uint8_t &gt; &amp;buffer, unsigned int wait_time_ms, <a class="el" href="namespacemicrostrain.html#af73e34a0b5ae1565e0e36a769c381ee1">EmbeddedTimestamp</a> *timestamp_out)</td></tr>
-<tr class="separator:a5415e5f13a880171e44d8c1c913f5d09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a053296748ce9a7e61f0f6e48c7b2d6e9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmicrostrain_1_1Connection.html#a053296748ce9a7e61f0f6e48c7b2d6e9">sendBufferToDevice</a> (<a class="el" href="namespacemicrostrain.html#ad10904b5b78aab3f27f0a6fa165d94bc">microstrain::ConstU8ArrayView</a> data)</td></tr>
+<tr class="separator:a053296748ce9a7e61f0f6e48c7b2d6e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7374e281cea00e1f445df615673edc46"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmicrostrain_1_1Connection.html#a7374e281cea00e1f445df615673edc46">recvBufferFromDevice</a> (<a class="el" href="namespacemicrostrain.html#ace61526f6e658ee7eb05a3279fc8ae66">microstrain::U8ArrayView</a> buffer, unsigned int wait_time_ms, size_t *length_out, <a class="el" href="namespacemicrostrain.html#af73e34a0b5ae1565e0e36a769c381ee1">EmbeddedTimestamp</a> *timestamp_out)</td></tr>
+<tr class="separator:a7374e281cea00e1f445df615673edc46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b17bb56b80db17a5889792819c7997f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmicrostrain_1_1Connection.html#a4b17bb56b80db17a5889792819c7997f">recvFromDeviceAndUpdateUint8ArrayView</a> (<a class="el" href="namespacemicrostrain.html#ace61526f6e658ee7eb05a3279fc8ae66">microstrain::U8ArrayView</a> &amp;buffer, unsigned int wait_time_ms, <a class="el" href="namespacemicrostrain.html#af73e34a0b5ae1565e0e36a769c381ee1">EmbeddedTimestamp</a> *timestamp_out)</td></tr>
+<tr class="separator:a4b17bb56b80db17a5889792819c7997f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab654b453709b87c7dd6acd9720910a04"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmicrostrain_1_1Connection.html#ab654b453709b87c7dd6acd9720910a04">isConnected</a> () const =0</td></tr>
 <tr class="separator:ab654b453709b87c7dd6acd9720910a04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75e9b73660b9f57c8ae1e7cc98991c96"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmicrostrain_1_1Connection.html#a75e9b73660b9f57c8ae1e7cc98991c96">connect</a> ()=0</td></tr>
@@ -330,6 +330,54 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a7374e281cea00e1f445df615673edc46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7374e281cea00e1f445df615673edc46">&#9670;&nbsp;</a></span>recvBufferFromDevice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool microstrain::Connection::recvBufferFromDevice </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacemicrostrain.html#ace61526f6e658ee7eb05a3279fc8ae66">microstrain::U8ArrayView</a>&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>wait_time_ms</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>length_out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacemicrostrain.html#af73e34a0b5ae1565e0e36a769c381ee1">EmbeddedTimestamp</a> *&#160;</td>
+          <td class="paramname"><em>timestamp_out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a3361f33a8b1d5495b7918f0fc25ac07f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3361f33a8b1d5495b7918f0fc25ac07f">&#9670;&nbsp;</a></span>recvFromDevice()</h2>
 
@@ -398,8 +446,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ad27833ab71dedd13bd27269ff3d71b31"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad27833ab71dedd13bd27269ff3d71b31">&#9670;&nbsp;</a></span>recvFromDeviceSpan()</h2>
+<a id="a4b17bb56b80db17a5889792819c7997f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b17bb56b80db17a5889792819c7997f">&#9670;&nbsp;</a></span>recvFromDeviceAndUpdateUint8ArrayView()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -408,9 +456,9 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool microstrain::Connection::recvFromDeviceSpan </td>
+          <td class="memname">bool microstrain::Connection::recvFromDeviceAndUpdateUint8ArrayView </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1Span.html">microstrain::Span</a>&lt; uint8_t &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemicrostrain.html#ace61526f6e658ee7eb05a3279fc8ae66">microstrain::U8ArrayView</a> &amp;&#160;</td>
           <td class="paramname"><em>buffer</em>, </td>
         </tr>
         <tr>
@@ -418,12 +466,6 @@ Protected Attributes</h2></td></tr>
           <td></td>
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>wait_time_ms</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t *&#160;</td>
-          <td class="paramname"><em>length_out</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -446,8 +488,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a5415e5f13a880171e44d8c1c913f5d09"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5415e5f13a880171e44d8c1c913f5d09">&#9670;&nbsp;</a></span>recvFromDeviceSpanUpdate()</h2>
+<a id="a053296748ce9a7e61f0f6e48c7b2d6e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a053296748ce9a7e61f0f6e48c7b2d6e9">&#9670;&nbsp;</a></span>sendBufferToDevice()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -456,27 +498,11 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool microstrain::Connection::recvFromDeviceSpanUpdate </td>
+          <td class="memname">bool microstrain::Connection::sendBufferToDevice </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1Span.html">microstrain::Span</a>&lt; uint8_t &gt; &amp;&#160;</td>
-          <td class="paramname"><em>buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="namespacemicrostrain.html#ad10904b5b78aab3f27f0a6fa165d94bc">microstrain::ConstU8ArrayView</a>&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>wait_time_ms</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacemicrostrain.html#af73e34a0b5ae1565e0e36a769c381ee1">EmbeddedTimestamp</a> *&#160;</td>
-          <td class="paramname"><em>timestamp_out</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -532,32 +558,6 @@ Protected Attributes</h2></td></tr>
 </dl>
 
 <p>Implemented in <a class="el" href="classmicrostrain_1_1connections_1_1TcpConnection.html#ae9aa04c5516129650dee0a04172f1478">microstrain::connections::TcpConnection</a>, <a class="el" href="classmicrostrain_1_1connections_1_1RecordingConnection.html#a589e06b981a4a887afe7f6fba990da60">microstrain::connections::RecordingConnection</a>, and <a class="el" href="classmicrostrain_1_1connections_1_1SerialConnection.html#a1da9f68b07f1c949e022caa23b0d6b6c">microstrain::connections::SerialConnection</a>.</p>
-
-</div>
-</div>
-<a id="ada124674406639ff5983286ffbd7f591"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada124674406639ff5983286ffbd7f591">&#9670;&nbsp;</a></span>sendToDeviceSpan()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool microstrain::Connection::sendToDeviceSpan </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1Span.html">microstrain::Span</a>&lt; const uint8_t &gt;&#160;</td>
-          <td class="paramname"><em>data</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
 
 </div>
 </div>

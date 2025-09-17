@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-521-gd8dd613</span>
+   &#160;<span id="projectnumber">v3.0.0-533-g58dc0c0</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -299,9 +299,11 @@ Functions</h2></td></tr>
 <tr class="memitem:ga9680f939a07d168d508dcd0207699b89"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga9680f939a07d168d508dcd0207699b89">connect_interface</a> (<a class="el" href="classmip_1_1Interface.html">mip::Interface</a> &amp;device, <a class="el" href="classmicrostrain_1_1Connection.html">Connection</a> &amp;conn)</td></tr>
 <tr class="memdesc:ga9680f939a07d168d508dcd0207699b89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets up the mip interface callbacks to point at this object.  <a href="group__mip__cpp.html#ga9680f939a07d168d508dcd0207699b89">More...</a><br /></td></tr>
 <tr class="separator:ga9680f939a07d168d508dcd0207699b89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa1c8ac817523d517b77685e8f23341f9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#gaa1c8ac817523d517b77685e8f23341f9">recv_from_connection</a> (<a class="el" href="classmicrostrain_1_1Connection.html">Connection</a> *conn, <a class="el" href="structmicrostrain_1_1Span.html">Span</a>&lt; uint8_t &gt; buffer, <a class="el" href="namespacemip.html#afce0ba7e576cfb1bffa07cff38fe1847">Timeout</a> timeout, bool, size_t *length_out, <a class="el" href="namespacemip.html#ab87086630c94254d17a812e4be159b0a">Timestamp</a> *timestamp_out)</td></tr>
-<tr class="memdesc:gaa1c8ac817523d517b77685e8f23341f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adapts <a class="el" href="classmicrostrain_1_1Connection.html#ad27833ab71dedd13bd27269ff3d71b31">microstrain::Connection::recvFromDeviceSpan</a> to a signature compatible with mip interface receive callbacks.  <a href="group__mip__cpp.html#gaa1c8ac817523d517b77685e8f23341f9">More...</a><br /></td></tr>
-<tr class="separator:gaa1c8ac817523d517b77685e8f23341f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18b5f7fd5dfa8d5cc4dbb23ad2547fa2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip.html#a18b5f7fd5dfa8d5cc4dbb23ad2547fa2">recv_from_connection</a> (<a class="el" href="classmicrostrain_1_1Connection.html">Connection</a> *conn, U8ArrayView buffer, <a class="el" href="namespacemip.html#afce0ba7e576cfb1bffa07cff38fe1847">Timeout</a> timeout, bool, size_t *length_out, <a class="el" href="namespacemip.html#ab87086630c94254d17a812e4be159b0a">Timestamp</a> *timestamp_out)</td></tr>
+<tr class="memdesc:a18b5f7fd5dfa8d5cc4dbb23ad2547fa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adapts <a class="el" href="classmicrostrain_1_1Connection.html#a3361f33a8b1d5495b7918f0fc25ac07f" title="Receives bytes from the device.">microstrain::Connection::recvFromDevice</a> to a signature compatible with mip interface receive callbacks.  <a href="namespacemip.html#a18b5f7fd5dfa8d5cc4dbb23ad2547fa2">More...</a><br /></td></tr>
+<tr class="separator:a18b5f7fd5dfa8d5cc4dbb23ad2547fa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2a934a1b4378bbb426fd96b8ce500700"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga2a934a1b4378bbb426fd96b8ce500700">recv_from_connection</a> (<a class="el" href="classmicrostrain_1_1Connection.html">microstrain::Connection</a> *conn, <a class="el" href="namespacemicrostrain.html#ace61526f6e658ee7eb05a3279fc8ae66">microstrain::U8ArrayView</a> buffer, <a class="el" href="namespacemip.html#afce0ba7e576cfb1bffa07cff38fe1847">Timeout</a> timeout, bool from_cmd, size_t *length_out, <a class="el" href="namespacemip.html#ab87086630c94254d17a812e4be159b0a">Timestamp</a> *timestamp_out)</td></tr>
+<tr class="separator:ga2a934a1b4378bbb426fd96b8ce500700"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa27364a53be4e051b885aff466755581"><td class="memTemplParams" colspan="2">template&lt;class Cmd &gt; </td></tr>
 <tr class="memitem:gaa27364a53be4e051b885aff466755581"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1CmdResult.html">CmdResult</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#gaa27364a53be4e051b885aff466755581">runCommand</a> (<a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;device, const Cmd &amp;cmd, <a class="el" href="namespacemip.html#afce0ba7e576cfb1bffa07cff38fe1847">Timeout</a> additionalTime=0)</td></tr>
 <tr class="separator:gaa27364a53be4e051b885aff466755581"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -314,15 +316,15 @@ Functions</h2></td></tr>
 <tr class="memitem:ga4d95114a9b56c889629509e9e51d9587"><td class="memTemplParams" colspan="2">template&lt;class Cmd &gt; </td></tr>
 <tr class="memitem:ga4d95114a9b56c889629509e9e51d9587"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga4d95114a9b56c889629509e9e51d9587">startCommand</a> (<a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;device, <a class="el" href="structmip_1_1C_1_1mip__pending__cmd.html">C::mip_pending_cmd</a> &amp;pending, const Cmd &amp;cmd, <a class="el" href="namespacemip.html#afce0ba7e576cfb1bffa07cff38fe1847">Timeout</a> additionalTime)</td></tr>
 <tr class="separator:ga4d95114a9b56c889629509e9e51d9587"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4631e854bcf57b87b7c6304451cdcf43"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__logging__cpp.html#ga4631e854bcf57b87b7c6304451cdcf43">formatPacketBytes</a> (<a class="el" href="structmicrostrain_1_1Span.html">microstrain::Span</a>&lt; char &gt; buffer, size_t *index, const <a class="el" href="classmip_1_1PacketView.html">PacketView</a> &amp;packet)</td></tr>
-<tr class="memdesc:ga4631e854bcf57b87b7c6304451cdcf43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format MIP packet bytes to a string.  <a href="group__mip__logging__cpp.html#ga4631e854bcf57b87b7c6304451cdcf43">More...</a><br /></td></tr>
-<tr class="separator:ga4631e854bcf57b87b7c6304451cdcf43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa7b551feecafcdc7fc50a422ccdbd67c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__logging__cpp.html#gaa7b551feecafcdc7fc50a422ccdbd67c">formatPacket</a> (<a class="el" href="structmicrostrain_1_1Span.html">microstrain::Span</a>&lt; char &gt; buffer, size_t *index, const <a class="el" href="classmip_1_1PacketView.html">PacketView</a> &amp;packet)</td></tr>
-<tr class="memdesc:gaa7b551feecafcdc7fc50a422ccdbd67c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format a MIP packet to a human-readable string.  <a href="group__mip__logging__cpp.html#gaa7b551feecafcdc7fc50a422ccdbd67c">More...</a><br /></td></tr>
-<tr class="separator:gaa7b551feecafcdc7fc50a422ccdbd67c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac42f83da1e9399380efd6cdcd9aa8df0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__logging__cpp.html#gac42f83da1e9399380efd6cdcd9aa8df0">formatField</a> (<a class="el" href="structmicrostrain_1_1Span.html">microstrain::Span</a>&lt; char &gt; buffer, size_t *index, const <a class="el" href="classmip_1_1FieldView.html">FieldView</a> &amp;field)</td></tr>
-<tr class="memdesc:gac42f83da1e9399380efd6cdcd9aa8df0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format a MIP field to a human-readable string.  <a href="group__mip__logging__cpp.html#gac42f83da1e9399380efd6cdcd9aa8df0">More...</a><br /></td></tr>
-<tr class="separator:gac42f83da1e9399380efd6cdcd9aa8df0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacc83ecbb9370b87706eef7edf76b76aa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__logging__cpp.html#gacc83ecbb9370b87706eef7edf76b76aa">formatPacketBytes</a> (<a class="el" href="namespacemicrostrain.html#a713e840c6a8f0fd7e825a125ee6dae28">microstrain::CharArrayView</a> buffer, size_t *index, const <a class="el" href="classmip_1_1PacketView.html">PacketView</a> &amp;packet)</td></tr>
+<tr class="memdesc:gacc83ecbb9370b87706eef7edf76b76aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format MIP packet bytes to a string.  <a href="group__mip__logging__cpp.html#gacc83ecbb9370b87706eef7edf76b76aa">More...</a><br /></td></tr>
+<tr class="separator:gacc83ecbb9370b87706eef7edf76b76aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac2768d3fc29461b5e9bd4c38caebe341"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__logging__cpp.html#gac2768d3fc29461b5e9bd4c38caebe341">formatPacket</a> (<a class="el" href="namespacemicrostrain.html#a713e840c6a8f0fd7e825a125ee6dae28">microstrain::CharArrayView</a> buffer, size_t *index, const <a class="el" href="classmip_1_1PacketView.html">PacketView</a> &amp;packet)</td></tr>
+<tr class="memdesc:gac2768d3fc29461b5e9bd4c38caebe341"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format a MIP packet to a human-readable string.  <a href="group__mip__logging__cpp.html#gac2768d3fc29461b5e9bd4c38caebe341">More...</a><br /></td></tr>
+<tr class="separator:gac2768d3fc29461b5e9bd4c38caebe341"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaead7b38b747c2b146776556018bf54bf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__logging__cpp.html#gaead7b38b747c2b146776556018bf54bf">formatField</a> (<a class="el" href="namespacemicrostrain.html#a713e840c6a8f0fd7e825a125ee6dae28">microstrain::CharArrayView</a> buffer, size_t *index, const <a class="el" href="classmip_1_1FieldView.html">FieldView</a> &amp;field)</td></tr>
+<tr class="memdesc:gaead7b38b747c2b146776556018bf54bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format a MIP field to a human-readable string.  <a href="group__mip__logging__cpp.html#gaead7b38b747c2b146776556018bf54bf">More...</a><br /></td></tr>
+<tr class="separator:gaead7b38b747c2b146776556018bf54bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaee7107ca456b4057ae7714e1cbb226ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__logging__cpp.html#gaee7107ca456b4057ae7714e1cbb226ee">logPacket</a> (const <a class="el" href="classmip_1_1PacketView.html">PacketView</a> &amp;packet, <a class="el" href="group__microstrain__logging__c.html#ga6e2280c5b0484ccb5e7faafad1dbd062">microstrain_log_level</a> level)</td></tr>
 <tr class="separator:gaee7107ca456b4057ae7714e1cbb226ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0ec1f5960d7654b11343066bcdabfaec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__logging__cpp.html#ga0ec1f5960d7654b11343066bcdabfaec">logField</a> (const <a class="el" href="classmip_1_1FieldView.html">FieldView</a> &amp;field, <a class="el" href="group__microstrain__logging__c.html#ga6e2280c5b0484ccb5e7faafad1dbd062">microstrain_log_level</a> level)</td></tr>
@@ -552,6 +554,60 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a18b5f7fd5dfa8d5cc4dbb23ad2547fa2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18b5f7fd5dfa8d5cc4dbb23ad2547fa2">&#9670;&nbsp;</a></span>recv_from_connection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::recv_from_connection </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmicrostrain_1_1Connection.html">Connection</a> *&#160;</td>
+          <td class="paramname"><em>conn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">U8ArrayView&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacemip.html#afce0ba7e576cfb1bffa07cff38fe1847">Timeout</a>&#160;</td>
+          <td class="paramname"><em>timeout</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>length_out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacemip.html#ab87086630c94254d17a812e4be159b0a">Timestamp</a> *&#160;</td>
+          <td class="paramname"><em>timestamp_out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adapts <a class="el" href="classmicrostrain_1_1Connection.html#a3361f33a8b1d5495b7918f0fc25ac07f" title="Receives bytes from the device.">microstrain::Connection::recvFromDevice</a> to a signature compatible with mip interface receive callbacks. </p>
 
 </div>
 </div>
