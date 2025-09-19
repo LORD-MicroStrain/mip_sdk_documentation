@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-620-g528a5e6</span>
+   &#160;<span id="projectnumber">v3.0.0-637-g5dcb568</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -95,15 +95,15 @@ Basic usage</h2>
 <div class="line">    <span class="comment">// Byte buffers</span></div>
 <div class="line">    uint8_t buffer_le[128];</div>
 <div class="line">    uint8_t buffer_be[128];</div>
-<div class="line">    </div>
+<div class="line"> </div>
 <div class="line">    <span class="comment">// Create serializers</span></div>
 <div class="line">    <a class="code" href="classmicrostrain_1_1Serializer.html">microstrain::BigEndianSerializer</a>    bes(buffer_be, <span class="keyword">sizeof</span>(buffer_be));</div>
 <div class="line">    <a class="code" href="classmicrostrain_1_1Serializer.html">microstrain::LittleEndianSerializer</a> les(buffer_le, <span class="keyword">sizeof</span>(buffer_le));</div>
-<div class="line">    </div>
+<div class="line"> </div>
 <div class="line">    <span class="comment">// Alternatively, specify the endianness via template argument.</span></div>
 <div class="line">    <span class="comment">//microstrain::Serializer&lt;microstrain::Endian::big   &gt; bes2(buffer_be, sizeof(buffer_be));</span></div>
 <div class="line">    <span class="comment">//microstrain::Serializer&lt;microstrain::Endian::little&gt; les2(buffer_le, sizeof(buffer_le));</span></div>
-<div class="line">    </div>
+<div class="line"> </div>
 <div class="line">    <span class="comment">// Some variables to serialize</span></div>
 <div class="line">    uint8_t  a = 22;</div>
 <div class="line">    int8_t   b = -33;</div>
@@ -112,51 +112,51 @@ Basic usage</h2>
 <div class="line">    uint64_t e = 0x81726354AABBCCDD;</div>
 <div class="line">    <span class="keywordtype">float</span>    f = 1.25f;</div>
 <div class="line">    <span class="keywordtype">double</span>   g = -1.1;</div>
-<div class="line">    </div>
+<div class="line"> </div>
 <div class="line">    <span class="comment">// Serialize all the basic variables.</span></div>
 <div class="line">    bes.insert(a,b,c,d,e,f,g);</div>
 <div class="line">    les.insert(a,b,c,d,e,f,g);</div>
-<div class="line">    </div>
+<div class="line"> </div>
 <div class="line">    <span class="comment">// buffer_be = [0x16, 0xDF, 0x04,0x00, 0xFF,0xF0,0xBD,0xC0, 0x81,0x72,0x63,0x54,0xAA,0xBB,0xCC,0xDD, 0x3F,0xA0,0x00,0x00, 0xBF,0xF1,0x99,0x99,0x99,0x99,0x99,0x9a]</span></div>
 <div class="line">    <span class="comment">// buffer_le = [0x16, 0xDF, 0x00,0x04, 0xC0,0xBD,0xF0,0xFF, 0xDD,0xCC,0xBB,0xAA,0x54,0x63,0x72,0x81, 0x00,0x00,0xA0,0x3F, 0x9a,0x99,0x99,0x99,0x99,0x99,0xF1,0xBF]</span></div>
-<div class="line">    </div>
+<div class="line"> </div>
 <div class="line">    <span class="comment">// Serialize 20 u64s using C-style array or pointer and size.</span></div>
 <div class="line">    uint64_t too_much[20] = {0};</div>
 <div class="line">    bes.insert(too_much);          <span class="comment">// Size is deduced from C-style array.</span></div>
 <div class="line">    les.insert(&amp;too_much[0], 20);  <span class="comment">// 20 items, not 20 bytes.</span></div>
-<div class="line">    </div>
+<div class="line"> </div>
 <div class="line">    <span class="comment">// Too much data! Note: no actual overrun / invalid access of the buffer has occurred.</span></div>
 <div class="line">    <span class="comment">// (20*sizeof(uint64_t) = 160)  &gt;  (sizeof(buffer) = 128)</span></div>
 <div class="line">    assert(!bes.isOk() &amp;&amp; !les.isOk());</div>
-<div class="line">    </div>
+<div class="line"> </div>
 <div class="line">    <span class="comment">// Jump back to the start of the buffer for deserialization.</span></div>
 <div class="line">    <span class="comment">// Note: this clears the overrun condition.</span></div>
 <div class="line">    bes.setOffset(0);</div>
 <div class="line">    les.setOffset(0);</div>
 <div class="line">    assert(bes.isOk() &amp;&amp; les.isOk());</div>
-<div class="line">    </div>
+<div class="line"> </div>
 <div class="line">    <span class="comment">// Deserialize the values.</span></div>
 <div class="line">    bes.extract(a,b,c,d,e,f,g);</div>
 <div class="line">    les.extract(a,b,c,d,e,f,g);</div>
-<div class="line">    </div>
+<div class="line"> </div>
 <div class="line">    <span class="comment">// Check if everything was deserialized successfully.</span></div>
 <div class="line">    <span class="keywordflow">if</span>(!bes.isOk() || !les.isOk())</div>
 <div class="line">     <span class="keywordflow">return</span> 1;</div>
-<div class="line">    </div>
+<div class="line"> </div>
 <div class="line">    <span class="comment">// Jump to specific offset.</span></div>
 <div class="line">    bes.setOffset(4);</div>
 <div class="line">    les.setOffset(4);</div>
-<div class="line">    </div>
+<div class="line"> </div>
 <div class="line">    <span class="comment">// Try to read a value using std::optional (subject to compiler support for C++17).</span></div>
 <div class="line">    std::optional vg = microstrain::extract&lt;int32_t&gt;(bes);</div>
 <div class="line">    assert( vg.has_value() &amp;&amp; *vg == d );</div>
-<div class="line">    </div>
+<div class="line"> </div>
 <div class="line">    <span class="comment">// Reset again</span></div>
 <div class="line">    bes.setOffset(0);</div>
 <div class="line">    les.setOffset(0);</div>
-<div class="line">    </div>
+<div class="line"> </div>
 <div class="line">    <span class="comment">// See following examples</span></div>
-<div class="line">    </div>
+<div class="line"> </div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md30"></a>
@@ -249,14 +249,14 @@ Other user-defined types</h3>
 <div class="line">{</div>
 <div class="line">    <span class="comment">// An enum which is not typed and thus cannot use the regular enum methods.</span></div>
 <div class="line">    <span class="keyword">enum</span> Foo { A=0, B, C, MAX_FOO };</div>
-<div class="line">    </div>
+<div class="line"> </div>
 <div class="line">    <span class="comment">// Insert Foo function which just converts to u8.</span></div>
 <div class="line">    <span class="keyword">template</span>&lt;microstrain::Endian E&gt;</div>
 <div class="line">    <span class="keywordtype">size_t</span> <a class="code" href="group__microstrain__serialization__cpp.html#ga5a978dcbb35f175e3079aaaa6eadc450">insert</a>(<a class="code" href="classmicrostrain_1_1Serializer.html">microstrain::Serializer&lt;E&gt;</a>&amp; serializer, Foo foo)</div>
 <div class="line">    {</div>
 <div class="line">        <span class="keywordflow">return</span> <a class="code" href="group__microstrain__serialization__cpp.html#ga5a978dcbb35f175e3079aaaa6eadc450">microstrain::insert</a>(serializer, uint8_t(foo));</div>
 <div class="line">    }</div>
-<div class="line">    </div>
+<div class="line"> </div>
 <div class="line">    <span class="comment">// Extract Foo function which range-checks and converts a u8.</span></div>
 <div class="line">    <span class="keyword">template</span>&lt;microstrain::Endian E&gt;</div>
 <div class="line">    <span class="keywordtype">size_t</span> <a class="code" href="group__microstrain__serialization__cpp.html#ga97f89f7d5ee32b5b34f9fb391111af44">extract</a>(<a class="code" href="classmicrostrain_1_1Serializer.html">microstrain::Serializer&lt;E&gt;</a>&amp; serializer, Foo&amp; foo)</div>
@@ -280,24 +280,24 @@ Other user-defined types</h3>
 <div class="line">{</div>
 <div class="line">    <span class="comment">// A byte buffer of 8 bytes.</span></div>
 <div class="line">    uint8_t buffer[8];</div>
-<div class="line">    </div>
+<div class="line"> </div>
 <div class="line">    <span class="comment">// Create the serializer, passing in the buffer.</span></div>
 <div class="line">    <a class="code" href="classmicrostrain_1_1Serializer.html">microstrain::BigEndianSerializer</a> serializer(buffer, <span class="keyword">sizeof</span>(buffer));</div>
-<div class="line">    </div>
+<div class="line"> </div>
 <div class="line">    <span class="comment">// Write foo to the buffer.</span></div>
 <div class="line">    <span class="comment">// This calls Serializer::insert, which calls the non-member function &#39;insert&#39;.</span></div>
 <div class="line">    <span class="comment">// Despite being in the &#39;custom&#39; namespace, the &#39;insert(Serializer&amp;, Foo)&#39;</span></div>
 <div class="line">    <span class="comment">// function will be found via argument-dependent lookup because</span></div>
 <div class="line">    <span class="comment">// &#39;Foo&#39; is also in that namespace.</span></div>
 <div class="line">    serializer.<a class="code" href="group__microstrain__serialization__cpp.html#ga560773a1565486ac18bfc5238181d7bc">insert</a>(foo);</div>
-<div class="line">    </div>
+<div class="line"> </div>
 <div class="line">    <span class="comment">// Jump back to start of buffer for reading.</span></div>
 <div class="line">    serializer.<a class="code" href="classmicrostrain_1_1SerializerBase.html#a4aa969e53347706ad7a881c4ed5d8e80">setOffset</a>(0);</div>
-<div class="line">    </div>
+<div class="line"> </div>
 <div class="line">    <span class="comment">// Read foo back out and compare to original.</span></div>
 <div class="line">    custom::Foo foo2;</div>
 <div class="line">    serializer.<a class="code" href="group__microstrain__serialization__cpp.html#gaa0cf22bb580922a0bd6a4e930bb76e5e">extract</a>(foo2);</div>
-<div class="line">    </div>
+<div class="line"> </div>
 <div class="line">    assert(foo2 == foo);</div>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md35"></a>

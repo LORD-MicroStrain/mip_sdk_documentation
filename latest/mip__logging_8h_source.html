@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-620-g528a5e6</span>
+   &#160;<span id="projectnumber">v3.0.0-637-g5dcb568</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -89,41 +89,41 @@ $(function() {
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#if MICROSTRAIN_ENABLE_LOGGING</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#ifdef MICROSTRAIN_LOGGING_ENABLED</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">// Format functions</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__mip__logging__c.html#ga7a27a50574839ae280bc038c2e50a0d6">mip_format_packet_bytes</a>(<span class="keywordtype">char</span>* buffer, <span class="keywordtype">size_t</span> buffer_size, <span class="keywordtype">size_t</span>* index, <span class="keyword">const</span> <a class="code" href="group__mip__packet__c.html#ga28b4bb8fcafed70f07fbf8034e5abe01">mip_packet_view</a>* packet);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keywordtype">bool</span> mip_format_packet_bytes(<span class="keywordtype">char</span>* buffer, <span class="keywordtype">size_t</span> buffer_size, <span class="keywordtype">size_t</span>* index, <span class="keyword">const</span> <a class="code" href="group__mip__packet__c.html#ga28b4bb8fcafed70f07fbf8034e5abe01">mip_packet_view</a>* packet);</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__mip__logging__c.html#ga577a6433bfd7157784edd2b9b6ba4574">mip_format_packet</a>(<span class="keywordtype">char</span>* buffer, <span class="keywordtype">size_t</span> buffer_size, <span class="keywordtype">size_t</span>* index, <span class="keyword">const</span> <a class="code" href="group__mip__packet__c.html#ga28b4bb8fcafed70f07fbf8034e5abe01">mip_packet_view</a>* packet);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">bool</span> mip_format_packet(<span class="keywordtype">char</span>* buffer, <span class="keywordtype">size_t</span> buffer_size, <span class="keywordtype">size_t</span>* index, <span class="keyword">const</span> <a class="code" href="group__mip__packet__c.html#ga28b4bb8fcafed70f07fbf8034e5abe01">mip_packet_view</a>* packet);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__mip__logging__c.html#ga17c5cfe39debb657fcf41c9d72c00858">mip_format_field</a>(<span class="keywordtype">char</span>* buffer, <span class="keywordtype">size_t</span> buffer_size, <span class="keywordtype">size_t</span>* index, <span class="keyword">const</span> <a class="code" href="group__MipFields__c.html#ga98723ffa60d3fe5e08cd043a9d549aba">mip_field_view</a>* field);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keywordtype">bool</span> mip_format_field(<span class="keywordtype">char</span>* buffer, <span class="keywordtype">size_t</span> buffer_size, <span class="keywordtype">size_t</span>* index, <span class="keyword">const</span> <a class="code" href="group__MipFields__c.html#ga98723ffa60d3fe5e08cd043a9d549aba">mip_field_view</a>* field);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">// Logging functions</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__mip__logging__c.html#ga4a7fb5dfc8cdf1e5b19e4e7597e64271">mip_log_packet</a>(<span class="keyword">const</span> <a class="code" href="group__mip__packet__c.html#ga28b4bb8fcafed70f07fbf8034e5abe01">mip_packet_view</a>* packet, <a class="code" href="group__microstrain__logging__c.html#ga6e2280c5b0484ccb5e7faafad1dbd062">microstrain_log_level</a> level);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordtype">void</span> mip_log_packet(<span class="keyword">const</span> <a class="code" href="group__mip__packet__c.html#ga28b4bb8fcafed70f07fbf8034e5abe01">mip_packet_view</a>* packet, <a class="code" href="group__microstrain__logging__c.html#ga6e2280c5b0484ccb5e7faafad1dbd062">microstrain_log_level</a> level);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__mip__logging__c.html#ga297655caae1c06fbe219d3bd569b2945">mip_log_field</a>(<span class="keyword">const</span> <a class="code" href="group__MipFields__c.html#ga98723ffa60d3fe5e08cd043a9d549aba">mip_field_view</a>* field, <a class="code" href="group__microstrain__logging__c.html#ga6e2280c5b0484ccb5e7faafad1dbd062">microstrain_log_level</a> level);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">void</span> mip_log_field(<span class="keyword">const</span> <a class="code" href="group__MipFields__c.html#ga98723ffa60d3fe5e08cd043a9d549aba">mip_field_view</a>* field, <a class="code" href="group__microstrain__logging__c.html#ga6e2280c5b0484ccb5e7faafad1dbd062">microstrain_log_level</a> level);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__mip__logging__c.html#gab6f29ed4bbd4e6c16a34498f796f1628">mip_log_packet_verbose</a>(<span class="keyword">const</span> <a class="code" href="group__mip__packet__c.html#ga28b4bb8fcafed70f07fbf8034e5abe01">mip_packet_view</a>* packet, <a class="code" href="group__microstrain__logging__c.html#ga6e2280c5b0484ccb5e7faafad1dbd062">microstrain_log_level</a> level);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keywordtype">void</span> mip_log_packet_verbose(<span class="keyword">const</span> <a class="code" href="group__mip__packet__c.html#ga28b4bb8fcafed70f07fbf8034e5abe01">mip_packet_view</a>* packet, <a class="code" href="group__microstrain__logging__c.html#ga6e2280c5b0484ccb5e7faafad1dbd062">microstrain_log_level</a> level);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="group__mip__logging__c.html#ga5b5f02527423e597330e61dbae0bf177">   55</a></span>&#160;<span class="preprocessor">#define MIP_LOG_PACKET(packet, level) mip_log_packet(packet, level)</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="group__mip__logging__c.html#ga34d78054ddecf2cb079185ec8386866f">   56</a></span>&#160;<span class="preprocessor">#define MIP_LOG_FIELD(field, level)   mip_log_packet(field, level)</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#define MIP_LOG_PACKET(packet, level) mip_log_packet(packet, level)</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#define MIP_LOG_FIELD(field, level)   mip_log_packet(field, level)</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="group__mip__logging__c.html#ga2e9bcbf96e74d5e979f307b1aab21096">   58</a></span>&#160;<span class="preprocessor">#define MIP_LOG_PACKET_VERBOSE(packet, level) mip_log_packet_verbose(packet, level)</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#define MIP_LOG_PACKET_VERBOSE(packet, level) mip_log_packet_verbose(packet, level)</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#else // MICROSTRAIN_ENABLE_LOGGING</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#else // !MICROSTRAIN_LOGGING_ENABLED</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#define MIP_LOG_PACKET(packet, grouping, level)</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#define MIP_LOG_FIELD(field, grouping, level)</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="group__mip__logging__c.html#gaa80cd374724bb52f3ce135fac6c13ff5">   64</a></span>&#160;<span class="preprocessor">#define MIP_LOG_PACKET(packet, grouping, level)</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="group__mip__logging__c.html#ga0c49ef1b7baa756cb1b9a789432d4949">   65</a></span>&#160;<span class="preprocessor">#define MIP_LOG_FIELD(field, grouping, level)</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#define MIP_LOG_PACKET_VERBOSE(packet, grouping, level)</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#define MIP_LOG_FIELD_VERBOSE(field, grouping, level)</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="group__mip__logging__c.html#gaeab3cb794cf154d3c483f2960e993df3">   67</a></span>&#160;<span class="preprocessor">#define MIP_LOG_PACKET_VERBOSE(packet, grouping, level)</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="group__mip__logging__c.html#ga1f4a5a69e2c746d5aaea99f99b8b4be3">   68</a></span>&#160;<span class="preprocessor">#define MIP_LOG_FIELD_VERBOSE(field, grouping, level)</span></div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif // MICROSTRAIN_ENABLE_LOGGING</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif // MICROSTRAIN_LOGGING_ENABLED</span></div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
@@ -135,16 +135,10 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="amip__packet_8h_html"><div class="ttname"><a href="mip__packet_8h.html">mip_packet.h</a></div></div>
 <div class="ttc" id="anamespacemip_html"><div class="ttname"><a href="namespacemip.html">mip</a></div><div class="ttdoc">A collection of C++ classes and functions covering the full mip api.</div><div class="ttdef"><b>Definition:</b> commands_3dm.c:11</div></div>
-<div class="ttc" id="agroup__mip__logging__c_html_ga4a7fb5dfc8cdf1e5b19e4e7597e64271"><div class="ttname"><a href="group__mip__logging__c.html#ga4a7fb5dfc8cdf1e5b19e4e7597e64271">mip::C::mip_log_packet</a></div><div class="ttdeci">void mip_log_packet(const mip_packet_view *packet, microstrain_log_level level)</div></div>
 <div class="ttc" id="agroup__MipFields__c_html_ga98723ffa60d3fe5e08cd043a9d549aba"><div class="ttname"><a href="group__MipFields__c.html#ga98723ffa60d3fe5e08cd043a9d549aba">mip::C::mip_field_view</a></div><div class="ttdeci">struct mip::C::mip_field_view mip_field_view</div><div class="ttdoc">A structure representing a MIP field.</div></div>
-<div class="ttc" id="agroup__mip__logging__c_html_ga7a27a50574839ae280bc038c2e50a0d6"><div class="ttname"><a href="group__mip__logging__c.html#ga7a27a50574839ae280bc038c2e50a0d6">mip::C::mip_format_packet_bytes</a></div><div class="ttdeci">bool mip_format_packet_bytes(char *buffer, size_t buffer_size, size_t *index, const mip_packet_view *packet)</div></div>
-<div class="ttc" id="agroup__mip__logging__c_html_ga577a6433bfd7157784edd2b9b6ba4574"><div class="ttname"><a href="group__mip__logging__c.html#ga577a6433bfd7157784edd2b9b6ba4574">mip::C::mip_format_packet</a></div><div class="ttdeci">bool mip_format_packet(char *buffer, size_t buffer_size, size_t *index, const mip_packet_view *packet)</div></div>
-<div class="ttc" id="agroup__microstrain__logging__c_html_ga6e2280c5b0484ccb5e7faafad1dbd062"><div class="ttname"><a href="group__microstrain__logging__c.html#ga6e2280c5b0484ccb5e7faafad1dbd062">microstrain_log_level</a></div><div class="ttdeci">microstrain_log_level</div><div class="ttdoc">Logging level enum.</div><div class="ttdef"><b>Definition:</b> logging.h:41</div></div>
+<div class="ttc" id="agroup__microstrain__logging__c_html_ga6e2280c5b0484ccb5e7faafad1dbd062"><div class="ttname"><a href="group__microstrain__logging__c.html#ga6e2280c5b0484ccb5e7faafad1dbd062">microstrain_log_level</a></div><div class="ttdeci">microstrain_log_level</div><div class="ttdoc">Logging level enum.</div><div class="ttdef"><b>Definition:</b> logging.h:87</div></div>
 <div class="ttc" id="amip__field_8h_html"><div class="ttname"><a href="mip__field_8h.html">mip_field.h</a></div></div>
-<div class="ttc" id="agroup__mip__logging__c_html_gab6f29ed4bbd4e6c16a34498f796f1628"><div class="ttname"><a href="group__mip__logging__c.html#gab6f29ed4bbd4e6c16a34498f796f1628">mip::C::mip_log_packet_verbose</a></div><div class="ttdeci">void mip_log_packet_verbose(const mip_packet_view *packet, microstrain_log_level level)</div></div>
 <div class="ttc" id="alogging_8h_html"><div class="ttname"><a href="logging_8h.html">logging.h</a></div></div>
-<div class="ttc" id="agroup__mip__logging__c_html_ga297655caae1c06fbe219d3bd569b2945"><div class="ttname"><a href="group__mip__logging__c.html#ga297655caae1c06fbe219d3bd569b2945">mip::C::mip_log_field</a></div><div class="ttdeci">void mip_log_field(const mip_field_view *field, microstrain_log_level level)</div></div>
-<div class="ttc" id="agroup__mip__logging__c_html_ga17c5cfe39debb657fcf41c9d72c00858"><div class="ttname"><a href="group__mip__logging__c.html#ga17c5cfe39debb657fcf41c9d72c00858">mip::C::mip_format_field</a></div><div class="ttdeci">bool mip_format_field(char *buffer, size_t buffer_size, size_t *index, const mip_field_view *field)</div></div>
 <div class="ttc" id="agroup__mip__packet__c_html_ga28b4bb8fcafed70f07fbf8034e5abe01"><div class="ttname"><a href="group__mip__packet__c.html#ga28b4bb8fcafed70f07fbf8034e5abe01">mip::C::mip_packet_view</a></div><div class="ttdeci">struct mip::C::mip_packet_view mip_packet_view</div><div class="ttdoc">Structure representing a MIP Packet.</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

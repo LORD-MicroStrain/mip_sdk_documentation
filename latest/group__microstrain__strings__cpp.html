@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-620-g528a5e6</span>
+   &#160;<span id="projectnumber">v3.0.0-637-g5dcb568</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -89,12 +89,6 @@ Functions</h2></td></tr>
 <tr class="memitem:gaf0ff687464a22078bbb3e4506a536a5c"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__microstrain__strings__cpp.html#gaf0ff687464a22078bbb3e4506a536a5c">microstrain::strings::concat_l</a> (<a class="el" href="namespacemicrostrain.html#a713e840c6a8f0fd7e825a125ee6dae28">CharArrayView</a> buffer, size_t *index, const char(&amp;str)[N])</td></tr>
 <tr class="memdesc:gaf0ff687464a22078bbb3e4506a536a5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Concatenate a string literal into a buffer.  <a href="group__microstrain__strings__cpp.html#gaf0ff687464a22078bbb3e4506a536a5c">More...</a><br /></td></tr>
 <tr class="separator:gaf0ff687464a22078bbb3e4506a536a5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga94c52551c3d5d8a606bed944abb98a8b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__microstrain__strings__cpp.html#ga94c52551c3d5d8a606bed944abb98a8b">microstrain::strings::format_v</a> (<a class="el" href="namespacemicrostrain.html#a713e840c6a8f0fd7e825a125ee6dae28">CharArrayView</a> buffer, size_t *index, const char *fmt, va_list args)</td></tr>
-<tr class="memdesc:ga94c52551c3d5d8a606bed944abb98a8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper for std::vsnprintf with a better interface.  <a href="group__microstrain__strings__cpp.html#ga94c52551c3d5d8a606bed944abb98a8b">More...</a><br /></td></tr>
-<tr class="separator:ga94c52551c3d5d8a606bed944abb98a8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga49b6ed1651c9b9b2bea3a477852f0206"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__microstrain__strings__cpp.html#ga49b6ed1651c9b9b2bea3a477852f0206">microstrain::strings::format</a> (<a class="el" href="namespacemicrostrain.html#a713e840c6a8f0fd7e825a125ee6dae28">CharArrayView</a> buffer, size_t *index, const char *fmt,...)</td></tr>
-<tr class="memdesc:ga49b6ed1651c9b9b2bea3a477852f0206"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper for std::snprintf with a better interface.  <a href="group__microstrain__strings__cpp.html#ga49b6ed1651c9b9b2bea3a477852f0206">More...</a><br /></td></tr>
-<tr class="separator:ga49b6ed1651c9b9b2bea3a477852f0206"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaba866a6b24d0bd9f4da1cc4a39c2ff3d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__microstrain__strings__cpp.html#gaba866a6b24d0bd9f4da1cc4a39c2ff3d">microstrain::strings::bytesToHexStr</a> (<a class="el" href="namespacemicrostrain.html#a713e840c6a8f0fd7e825a125ee6dae28">CharArrayView</a> buffer, size_t *index, <a class="el" href="namespacemicrostrain.html#ad10904b5b78aab3f27f0a6fa165d94bc">ConstU8ArrayView</a> data, unsigned int byte_grouping)</td></tr>
 <tr class="memdesc:gaba866a6b24d0bd9f4da1cc4a39c2ff3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Formats a byte array to a text buffer in hexadecimal.  <a href="group__microstrain__strings__cpp.html#gaba866a6b24d0bd9f4da1cc4a39c2ff3d">More...</a><br /></td></tr>
 <tr class="separator:gaba866a6b24d0bd9f4da1cc4a39c2ff3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -403,133 +397,6 @@ template&lt;size_t N&gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>True if sufficient buffer space exists or if buffer is NULL. </dd>
 <dd>
 False if buffer is not NULL and insufficient space is available. </dd></dl>
-
-</div>
-</div>
-<a id="ga49b6ed1651c9b9b2bea3a477852f0206"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga49b6ed1651c9b9b2bea3a477852f0206">&#9670;&nbsp;</a></span>format()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool microstrain::strings::format </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacemicrostrain.html#a713e840c6a8f0fd7e825a125ee6dae28">CharArrayView</a>&#160;</td>
-          <td class="paramname"><em>buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t *&#160;</td>
-          <td class="paramname"><em>index</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>fmt</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>...</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Wrapper for std::snprintf with a better interface. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir"></td><td class="paramname">buffer</td><td>Buffer of characters. The size should be the number of characters, including the NULL terminator, that will fit in the buffer. If the pointer is NULL and size is 0, this function will just compute the required buffer size and not write any characters. </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">index</td><td>Position in buffer where string data will be written. It will be updated with the new index and will point to the new NULL terminator position. If insufficient space is available in buffer, index will still be updated even if it exceeds buffer_size. </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">fmt</td><td>Format string similar to printf.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if successful </dd>
-<dd>
-False if an encoding error occurs (see snprintf). The index is unchanged in this case. </dd>
-<dd>
-False if insufficient space is available, unless buffer is NULL. </dd></dl>
-
-</div>
-</div>
-<a id="ga94c52551c3d5d8a606bed944abb98a8b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga94c52551c3d5d8a606bed944abb98a8b">&#9670;&nbsp;</a></span>format_v()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool microstrain::strings::format_v </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacemicrostrain.html#a713e840c6a8f0fd7e825a125ee6dae28">CharArrayView</a>&#160;</td>
-          <td class="paramname"><em>buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t *&#160;</td>
-          <td class="paramname"><em>index</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>fmt</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">va_list&#160;</td>
-          <td class="paramname"><em>args</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Wrapper for std::vsnprintf with a better interface. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir"></td><td class="paramname">buffer</td><td>Buffer of characters. The size should be the number of characters, including the NULL terminator, that will fit in the buffer. If the pointer is NULL and size is 0, this function will just compute the required buffer size and not write any characters. </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">index</td><td>Position in buffer where string data will be written. It will be updated with the new index and will point to the new NULL terminator position. If insufficient space is available in buffer, index will still be updated even if it exceeds buffer_size. </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">fmt</td><td>Format string similar to printf. </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">args</td><td>List of formatting arguments similar to vprintf.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if successful </dd>
-<dd>
-False if an encoding error occurs (see snprintf). The index is unchanged in this case. </dd>
-<dd>
-False if insufficient space is available, unless buffer is NULL. </dd></dl>
 
 </div>
 </div>

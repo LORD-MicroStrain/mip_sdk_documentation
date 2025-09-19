@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-620-g528a5e6</span>
+   &#160;<span id="projectnumber">v3.0.0-637-g5dcb568</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -78,14 +78,42 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;stdarg.h&gt;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
 <code>#include &lt;stddef.h&gt;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
-<code>#include &lt;stdbool.h&gt;</code><br />
 </div>
 <p><a href="logging_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:gada6b0818adc87614debd0d8799b19643"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__microstrain__logging__c.html#gada6b0818adc87614debd0d8799b19643">MICROSTRAIN_LOGGING_LEVEL_OFF_</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:gada6b0818adc87614debd0d8799b19643"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac2fb6a2b243d83727b38a17450a43955"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__microstrain__logging__c.html#gac2fb6a2b243d83727b38a17450a43955">MICROSTRAIN_LOGGING_LEVEL_FATAL_</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:gac2fb6a2b243d83727b38a17450a43955"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafb6682e82a9e0bd68e6c3b96a4a073cd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__microstrain__logging__c.html#gafb6682e82a9e0bd68e6c3b96a4a073cd">MICROSTRAIN_LOGGING_LEVEL_ERROR_</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:gafb6682e82a9e0bd68e6c3b96a4a073cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1cd9a26308d1c7dcf843edb92425edc9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__microstrain__logging__c.html#ga1cd9a26308d1c7dcf843edb92425edc9">MICROSTRAIN_LOGGING_LEVEL_WARN_</a>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:ga1cd9a26308d1c7dcf843edb92425edc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf25b4eeb1a6cce0735e6e17719737d52"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__microstrain__logging__c.html#gaf25b4eeb1a6cce0735e6e17719737d52">MICROSTRAIN_LOGGING_LEVEL_INFO_</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:gaf25b4eeb1a6cce0735e6e17719737d52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1cec96edf7bcbc88b3b893c710498804"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__microstrain__logging__c.html#ga1cec96edf7bcbc88b3b893c710498804">MICROSTRAIN_LOGGING_LEVEL_DEBUG_</a>&#160;&#160;&#160;5</td></tr>
+<tr class="separator:ga1cec96edf7bcbc88b3b893c710498804"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5e2da020413c9df695b2429dbd45d11c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__microstrain__logging__c.html#ga5e2da020413c9df695b2429dbd45d11c">MICROSTRAIN_LOGGING_LEVEL_TRACE_</a>&#160;&#160;&#160;6</td></tr>
+<tr class="separator:ga5e2da020413c9df695b2429dbd45d11c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacf5d15ad82f72b32b7e3f77ce849162f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__microstrain__logging__c.html#gacf5d15ad82f72b32b7e3f77ce849162f">MICROSTRAIN_LOGGING_ENABLED</a></td></tr>
+<tr class="separator:gacf5d15ad82f72b32b7e3f77ce849162f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac9c33aa3a31498677b69627710c95d3c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__microstrain__logging__c.html#gac9c33aa3a31498677b69627710c95d3c">MICROSTRAIN_LOGGING_ENABLED_FATAL</a></td></tr>
+<tr class="separator:gac9c33aa3a31498677b69627710c95d3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga395c374bfc406917d9df2509f9e1daf2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__microstrain__logging__c.html#ga395c374bfc406917d9df2509f9e1daf2">MICROSTRAIN_LOGGING_ENABLED_ERROR</a></td></tr>
+<tr class="separator:ga395c374bfc406917d9df2509f9e1daf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae0a5a7a69c55c55296acd379acabf70e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__microstrain__logging__c.html#gae0a5a7a69c55c55296acd379acabf70e">MICROSTRAIN_LOGGING_ENABLED_WARN</a></td></tr>
+<tr class="separator:gae0a5a7a69c55c55296acd379acabf70e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac247f552271ce6052f1a16bdb8eb6ae7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__microstrain__logging__c.html#gac247f552271ce6052f1a16bdb8eb6ae7">MICROSTRAIN_LOGGING_ENABLED_INFO</a></td></tr>
+<tr class="separator:gac247f552271ce6052f1a16bdb8eb6ae7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2da5e61b6151f83ebb256a0b2d8cdda4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__microstrain__logging__c.html#ga2da5e61b6151f83ebb256a0b2d8cdda4">MICROSTRAIN_LOGGING_ENABLED_DEBUG</a></td></tr>
+<tr class="separator:ga2da5e61b6151f83ebb256a0b2d8cdda4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1dd8aa5591e012fb4bdd5012170deced"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__microstrain__logging__c.html#ga1dd8aa5591e012fb4bdd5012170deced">MICROSTRAIN_LOGGING_ENABLED_TRACE</a></td></tr>
+<tr class="separator:ga1dd8aa5591e012fb4bdd5012170deced"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8e78587ece6162767587e22c1304deea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__microstrain__logging__c.html#ga8e78587ece6162767587e22c1304deea">MICROSTRAIN_LOG_INIT</a>(callback,  level,  user)&#160;&#160;&#160;<a class="el" href="group__microstrain__logging__c.html#gae6e4a71bf3ba3ea9129cf1cd2ae03eed">microstrain_logging_init</a>(callback, level, user)</td></tr>
 <tr class="memdesc:ga8e78587ece6162767587e22c1304deea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper macro used to initialize the MicroStrain logger. This function does not need to be called unless the user wants logging.  <a href="group__microstrain__logging__c.html#ga8e78587ece6162767587e22c1304deea">More...</a><br /></td></tr>
 <tr class="separator:ga8e78587ece6162767587e22c1304deea"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -94,8 +122,6 @@ Macros</h2></td></tr>
 <tr class="separator:ga91d438e9dcfbeeb97104bea2c53a46b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa5207a11a855dc341716a6682d1f3493"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__microstrain__logging__c.html#gaa5207a11a855dc341716a6682d1f3493">MICROSTRAIN_LOG_LOG_V</a>(level,  fmt,  args)&#160;&#160;&#160;<a class="el" href="group__microstrain__logging__c.html#ga4796bd64b27870db8193b8230716dd18">microstrain_logging_log_v</a>(level, fmt, args)</td></tr>
 <tr class="separator:gaa5207a11a855dc341716a6682d1f3493"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga068c33a363cf7fe976c6bbe81980ae42"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__microstrain__logging__c.html#ga068c33a363cf7fe976c6bbe81980ae42">MICROSTRAIN_LOGGING_MAX_LEVEL</a>&#160;&#160;&#160;<a class="el" href="group__microstrain__logging__c.html#gga6e2280c5b0484ccb5e7faafad1dbd062a420059614500c2448e519a657fc4bba1">MICROSTRAIN_LOG_LEVEL_WARN</a></td></tr>
-<tr class="separator:ga068c33a363cf7fe976c6bbe81980ae42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8bb8bf92123079b8f8640afc5c3538b3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__microstrain__logging__c.html#ga8bb8bf92123079b8f8640afc5c3538b3">MICROSTRAIN_LOG_FATAL</a>(...)&#160;&#160;&#160;<a class="el" href="group__microstrain__logging__c.html#ga91d438e9dcfbeeb97104bea2c53a46b6">MICROSTRAIN_LOG_LOG</a>(<a class="el" href="group__microstrain__logging__c.html#gga6e2280c5b0484ccb5e7faafad1dbd062a7bba66b4be328132f99f633140aa25e2">MICROSTRAIN_LOG_LEVEL_FATAL</a>, __VA_ARGS__)</td></tr>
 <tr class="memdesc:ga8bb8bf92123079b8f8640afc5c3538b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper macro used to log data inside the MicroStrain SDK at fatal level.  <a href="group__microstrain__logging__c.html#ga8bb8bf92123079b8f8640afc5c3538b3">More...</a><br /></td></tr>
 <tr class="separator:ga8bb8bf92123079b8f8640afc5c3538b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,14 +177,14 @@ Typedefs</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:ga6e2280c5b0484ccb5e7faafad1dbd062"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__microstrain__logging__c.html#ga6e2280c5b0484ccb5e7faafad1dbd062">microstrain_log_level</a> { <br />
-&#160;&#160;<a class="el" href="group__microstrain__logging__c.html#gga6e2280c5b0484ccb5e7faafad1dbd062a0d2bd8984515062274b86ec43af368df">MICROSTRAIN_LOG_LEVEL_OFF</a> = 0, 
-<a class="el" href="group__microstrain__logging__c.html#gga6e2280c5b0484ccb5e7faafad1dbd062a7bba66b4be328132f99f633140aa25e2">MICROSTRAIN_LOG_LEVEL_FATAL</a> = 1, 
-<a class="el" href="group__microstrain__logging__c.html#gga6e2280c5b0484ccb5e7faafad1dbd062ad9c6db068a1d56890d74df592b17d3aa">MICROSTRAIN_LOG_LEVEL_ERROR</a> = 2, 
-<a class="el" href="group__microstrain__logging__c.html#gga6e2280c5b0484ccb5e7faafad1dbd062a420059614500c2448e519a657fc4bba1">MICROSTRAIN_LOG_LEVEL_WARN</a> = 3, 
+&#160;&#160;<a class="el" href="group__microstrain__logging__c.html#gga6e2280c5b0484ccb5e7faafad1dbd062a0d2bd8984515062274b86ec43af368df">MICROSTRAIN_LOG_LEVEL_OFF</a> = MICROSTRAIN_LOGGING_LEVEL_OFF_, 
+<a class="el" href="group__microstrain__logging__c.html#gga6e2280c5b0484ccb5e7faafad1dbd062a7bba66b4be328132f99f633140aa25e2">MICROSTRAIN_LOG_LEVEL_FATAL</a> = MICROSTRAIN_LOGGING_LEVEL_FATAL_, 
+<a class="el" href="group__microstrain__logging__c.html#gga6e2280c5b0484ccb5e7faafad1dbd062ad9c6db068a1d56890d74df592b17d3aa">MICROSTRAIN_LOG_LEVEL_ERROR</a> = MICROSTRAIN_LOGGING_LEVEL_ERROR_, 
+<a class="el" href="group__microstrain__logging__c.html#gga6e2280c5b0484ccb5e7faafad1dbd062a420059614500c2448e519a657fc4bba1">MICROSTRAIN_LOG_LEVEL_WARN</a> = MICROSTRAIN_LOGGING_LEVEL_WARN_, 
 <br />
-&#160;&#160;<a class="el" href="group__microstrain__logging__c.html#gga6e2280c5b0484ccb5e7faafad1dbd062a3c2c5ab17efa3a930b527ccaa350372b">MICROSTRAIN_LOG_LEVEL_INFO</a> = 4, 
-<a class="el" href="group__microstrain__logging__c.html#gga6e2280c5b0484ccb5e7faafad1dbd062a4ff89075cc7e8ad19152b3f6dcf44884">MICROSTRAIN_LOG_LEVEL_DEBUG</a> = 5, 
-<a class="el" href="group__microstrain__logging__c.html#gga6e2280c5b0484ccb5e7faafad1dbd062a61009fce6e43af487200f7f9a7c34e62">MICROSTRAIN_LOG_LEVEL_TRACE</a> = 6
+&#160;&#160;<a class="el" href="group__microstrain__logging__c.html#gga6e2280c5b0484ccb5e7faafad1dbd062a3c2c5ab17efa3a930b527ccaa350372b">MICROSTRAIN_LOG_LEVEL_INFO</a> = MICROSTRAIN_LOGGING_LEVEL_INFO_, 
+<a class="el" href="group__microstrain__logging__c.html#gga6e2280c5b0484ccb5e7faafad1dbd062a4ff89075cc7e8ad19152b3f6dcf44884">MICROSTRAIN_LOG_LEVEL_DEBUG</a> = MICROSTRAIN_LOGGING_LEVEL_DEBUG_, 
+<a class="el" href="group__microstrain__logging__c.html#gga6e2280c5b0484ccb5e7faafad1dbd062a61009fce6e43af487200f7f9a7c34e62">MICROSTRAIN_LOG_LEVEL_TRACE</a> = MICROSTRAIN_LOGGING_LEVEL_TRACE_
 <br />
  }</td></tr>
 <tr class="memdesc:ga6e2280c5b0484ccb5e7faafad1dbd062"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logging level enum.  <a href="group__microstrain__logging__c.html#ga6e2280c5b0484ccb5e7faafad1dbd062">More...</a><br /></td></tr>

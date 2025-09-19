@@ -1,13 +1,13 @@
 var searchData=
 [
-  ['_7ecmdqueue_6271',['~CmdQueue',['../structmip_1_1CmdQueue.html#a1fd4ce2ae88ffdc811b936e0d28e23fe',1,'mip::CmdQueue']]],
-  ['_7ecmdresult_6272',['~CmdResult',['../structmip_1_1CmdResult.html#a008f3fb15cba4e90221178121159b1bd',1,'mip::CmdResult']]],
-  ['_7econnection_6273',['~Connection',['../classmicrostrain_1_1Connection.html#a79e51f66c17a2218a08a586de59bceae',1,'microstrain::Connection']]],
-  ['_7einterface_6274',['~Interface',['../classmip_1_1Interface.html#ad02b9853ac4f9249b1b41f57591a34b6',1,'mip::Interface']]],
-  ['_7ependingcmd_6275',['~PendingCmd',['../structmip_1_1PendingCmd.html#aa8f118340cfa887633334649ff849b4a',1,'mip::PendingCmd']]],
-  ['_7erecordingconnection_6276',['~RecordingConnection',['../classmicrostrain_1_1connections_1_1RecordingConnection.html#a6b4fd36394ac8a43bb9e7e3a7e1d5acf',1,'microstrain::connections::RecordingConnection']]],
-  ['_7erecordingconnectionwrapper_6277',['~RecordingConnectionWrapper',['../classmicrostrain_1_1connections_1_1RecordingConnectionWrapper.html#a8f9e49f22e0eaf8f873511ce947df7e5',1,'microstrain::connections::RecordingConnectionWrapper']]],
-  ['_7escopehelper_6278',['~ScopeHelper',['../classmicrostrain_1_1extras_1_1ScopeHelper.html#a8b83f7b6643f57037500e4d5be99a6d8',1,'microstrain::extras::ScopeHelper']]],
-  ['_7eserialconnection_6279',['~SerialConnection',['../classmicrostrain_1_1connections_1_1SerialConnection.html#a1336c1729ecbc5c080be5cacf7aa43f7',1,'microstrain::connections::SerialConnection']]],
-  ['_7etcpconnection_6280',['~TcpConnection',['../classmicrostrain_1_1connections_1_1TcpConnection.html#a7b3a9290cc71a07244146d5a1bf4d2a6',1,'microstrain::connections::TcpConnection']]]
+  ['_7ecmdqueue_6275',['~CmdQueue',['../structmip_1_1CmdQueue.html#a1fd4ce2ae88ffdc811b936e0d28e23fe',1,'mip::CmdQueue']]],
+  ['_7ecmdresult_6276',['~CmdResult',['../structmip_1_1CmdResult.html#a008f3fb15cba4e90221178121159b1bd',1,'mip::CmdResult']]],
+  ['_7econnection_6277',['~Connection',['../classmicrostrain_1_1Connection.html#a79e51f66c17a2218a08a586de59bceae',1,'microstrain::Connection']]],
+  ['_7einterface_6278',['~Interface',['../classmip_1_1Interface.html#ad02b9853ac4f9249b1b41f57591a34b6',1,'mip::Interface']]],
+  ['_7ependingcmd_6279',['~PendingCmd',['../structmip_1_1PendingCmd.html#aa8f118340cfa887633334649ff849b4a',1,'mip::PendingCmd']]],
+  ['_7erecordingconnection_6280',['~RecordingConnection',['../classmicrostrain_1_1connections_1_1RecordingConnection.html#a6b4fd36394ac8a43bb9e7e3a7e1d5acf',1,'microstrain::connections::RecordingConnection']]],
+  ['_7erecordingconnectionwrapper_6281',['~RecordingConnectionWrapper',['../classmicrostrain_1_1connections_1_1RecordingConnectionWrapper.html#a8f9e49f22e0eaf8f873511ce947df7e5',1,'microstrain::connections::RecordingConnectionWrapper']]],
+  ['_7escopehelper_6282',['~ScopeHelper',['../classmicrostrain_1_1extras_1_1ScopeHelper.html#a8b83f7b6643f57037500e4d5be99a6d8',1,'microstrain::extras::ScopeHelper']]],
+  ['_7eserialconnection_6283',['~SerialConnection',['../classmicrostrain_1_1connections_1_1SerialConnection.html#a1336c1729ecbc5c080be5cacf7aa43f7',1,'microstrain::connections::SerialConnection']]],
+  ['_7etcpconnection_6284',['~TcpConnection',['../classmicrostrain_1_1connections_1_1TcpConnection.html#a7b3a9290cc71a07244146d5a1bf4d2a6',1,'microstrain::connections::TcpConnection']]]
 ];

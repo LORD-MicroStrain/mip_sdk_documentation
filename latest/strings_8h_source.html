@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-620-g528a5e6</span>
+   &#160;<span id="projectnumber">v3.0.0-637-g5dcb568</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -74,17 +74,21 @@ $(function() {
 <div class="contents">
 <a href="strings_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;stdarg.h&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;stddef.h&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemicrostrain.html">microstrain</a> {</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>C {</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// TODO: Find better way to check for this</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// Used to check if IO operations are supported</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="logging_8h.html">logging.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;stdarg.h&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;stddef.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemicrostrain.html">microstrain</a> {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span>C {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__microstrain__strings__c.html#ga5c1815a3d8b2130b06c058bdd6908eb9">microstrain_string_concat</a>(<span class="keywordtype">char</span>* buffer, <span class="keywordtype">size_t</span> buffer_size, <span class="keywordtype">size_t</span>* index, <span class="keyword">const</span> <span class="keywordtype">char</span>* str, <span class="keywordtype">size_t</span> str_len);</div>
@@ -92,13 +96,13 @@ $(function() {
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
 <div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="group__microstrain__strings__c.html#gaac7e29cc0a3419921d6e2a85f492b3ba">   51</a></span>&#160;<span class="preprocessor">#define microstrain_string_concat_l(buffer, buffer_size, index, str_lit) microstrain_string_concat(buffer, buffer_size, index, str_lit, sizeof(str_lit)-1)</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#if MICROSTRAIN_ENABLE_LOGGING</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">// sprintf is too big for some embedded systems.</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">// Disable it when logging is disabled.</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__microstrain__strings__c.html#ga0ae09b42f3832f2c021a0b62a9a43275">microstrain_string_format_v</a>(<span class="keywordtype">char</span>* buffer, <span class="keywordtype">size_t</span> buffer_size, <span class="keywordtype">size_t</span>* index, <span class="keyword">const</span> <span class="keywordtype">char</span>* fmt, va_list args);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__microstrain__strings__c.html#ga974a60540bb1cd014429dbbcd5b467c8">microstrain_string_format</a>(<span class="keywordtype">char</span>* buffer, <span class="keywordtype">size_t</span> buffer_size, <span class="keywordtype">size_t</span>* index, <span class="keyword">const</span> <span class="keywordtype">char</span>* fmt, ...);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif // MICROSTRAIN_ENABLE_LOGGING</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">// TODO: Use better check for this or move to extras</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#ifdef MICROSTRAIN_LOGGING_ENABLED</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">// sprintf is too big for some embedded systems.</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">// Disable it when logging is disabled.</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__microstrain__strings__c.html#ga0ae09b42f3832f2c021a0b62a9a43275">microstrain_string_format_v</a>(<span class="keywordtype">char</span>* buffer, <span class="keywordtype">size_t</span> buffer_size, <span class="keywordtype">size_t</span>* index, <span class="keyword">const</span> <span class="keywordtype">char</span>* fmt, va_list args);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__microstrain__strings__c.html#ga974a60540bb1cd014429dbbcd5b467c8">microstrain_string_format</a>(<span class="keywordtype">char</span>* buffer, <span class="keywordtype">size_t</span> buffer_size, <span class="keywordtype">size_t</span>* index, <span class="keyword">const</span> <span class="keywordtype">char</span>* fmt, ...);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif // MICROSTRAIN_LOGGING_ENABLED</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__microstrain__strings__c.html#ga8ce840fc52858ca587cbd315b77b6946">microstrain_string_bytes_to_hex_str</a>(<span class="keywordtype">char</span>* buffer, <span class="keywordtype">size_t</span> buffer_size, <span class="keywordtype">size_t</span>* index, <span class="keyword">const</span> uint8_t* data, <span class="keywordtype">size_t</span> data_size, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> byte_grouping);</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
@@ -109,11 +113,12 @@ $(function() {
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;} <span class="comment">// namespace microstrain</span></div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="agroup__microstrain__strings__c_html_ga0ae09b42f3832f2c021a0b62a9a43275"><div class="ttname"><a href="group__microstrain__strings__c.html#ga0ae09b42f3832f2c021a0b62a9a43275">microstrain::C::microstrain_string_format_v</a></div><div class="ttdeci">bool microstrain_string_format_v(char *buffer, size_t buffer_size, size_t *index, const char *fmt, va_list args)</div><div class="ttdoc">Wrapper for std::vsnprintf with a better interface.</div><div class="ttdef"><b>Definition:</b> strings.c:126</div></div>
-<div class="ttc" id="agroup__microstrain__strings__c_html_ga1c835f65746ac41c256b8ddee68c7730"><div class="ttname"><a href="group__microstrain__strings__c.html#ga1c835f65746ac41c256b8ddee68c7730">microstrain::C::microstrain_string_concat_z</a></div><div class="ttdeci">bool microstrain_string_concat_z(char *buffer, size_t buffer_size, size_t *index, const char *str)</div><div class="ttdoc">Concatenate a string into a buffer.</div><div class="ttdef"><b>Definition:</b> strings.c:94</div></div>
-<div class="ttc" id="agroup__microstrain__strings__c_html_ga8ce840fc52858ca587cbd315b77b6946"><div class="ttname"><a href="group__microstrain__strings__c.html#ga8ce840fc52858ca587cbd315b77b6946">microstrain::C::microstrain_string_bytes_to_hex_str</a></div><div class="ttdeci">bool microstrain_string_bytes_to_hex_str(char *buffer, size_t buffer_size, size_t *index, const uint8_t *data, size_t data_size, unsigned int byte_grouping)</div><div class="ttdoc">Formats a byte array to a text buffer in hexadecimal.</div><div class="ttdef"><b>Definition:</b> strings.c:242</div></div>
-<div class="ttc" id="agroup__microstrain__strings__c_html_ga5c1815a3d8b2130b06c058bdd6908eb9"><div class="ttname"><a href="group__microstrain__strings__c.html#ga5c1815a3d8b2130b06c058bdd6908eb9">microstrain::C::microstrain_string_concat</a></div><div class="ttdeci">bool microstrain_string_concat(char *buffer, size_t buffer_size, size_t *index, const char *str, size_t str_len)</div><div class="ttdoc">Concatenate a string into a buffer.</div><div class="ttdef"><b>Definition:</b> strings.c:35</div></div>
-<div class="ttc" id="agroup__microstrain__strings__c_html_ga974a60540bb1cd014429dbbcd5b467c8"><div class="ttname"><a href="group__microstrain__strings__c.html#ga974a60540bb1cd014429dbbcd5b467c8">microstrain::C::microstrain_string_format</a></div><div class="ttdeci">bool microstrain_string_format(char *buffer, size_t buffer_size, size_t *index, const char *fmt,...)</div><div class="ttdoc">Wrapper for std::snprintf with a better interface.</div><div class="ttdef"><b>Definition:</b> strings.c:186</div></div>
+<div class="ttc" id="agroup__microstrain__strings__c_html_ga0ae09b42f3832f2c021a0b62a9a43275"><div class="ttname"><a href="group__microstrain__strings__c.html#ga0ae09b42f3832f2c021a0b62a9a43275">microstrain::C::microstrain_string_format_v</a></div><div class="ttdeci">bool microstrain_string_format_v(char *buffer, size_t buffer_size, size_t *index, const char *fmt, va_list args)</div><div class="ttdoc">Wrapper for std::vsnprintf with a better interface.</div><div class="ttdef"><b>Definition:</b> strings.c:124</div></div>
+<div class="ttc" id="agroup__microstrain__strings__c_html_ga1c835f65746ac41c256b8ddee68c7730"><div class="ttname"><a href="group__microstrain__strings__c.html#ga1c835f65746ac41c256b8ddee68c7730">microstrain::C::microstrain_string_concat_z</a></div><div class="ttdeci">bool microstrain_string_concat_z(char *buffer, size_t buffer_size, size_t *index, const char *str)</div><div class="ttdoc">Concatenate a string into a buffer.</div><div class="ttdef"><b>Definition:</b> strings.c:92</div></div>
+<div class="ttc" id="agroup__microstrain__strings__c_html_ga8ce840fc52858ca587cbd315b77b6946"><div class="ttname"><a href="group__microstrain__strings__c.html#ga8ce840fc52858ca587cbd315b77b6946">microstrain::C::microstrain_string_bytes_to_hex_str</a></div><div class="ttdeci">bool microstrain_string_bytes_to_hex_str(char *buffer, size_t buffer_size, size_t *index, const uint8_t *data, size_t data_size, unsigned int byte_grouping)</div><div class="ttdoc">Formats a byte array to a text buffer in hexadecimal.</div><div class="ttdef"><b>Definition:</b> strings.c:239</div></div>
+<div class="ttc" id="agroup__microstrain__strings__c_html_ga5c1815a3d8b2130b06c058bdd6908eb9"><div class="ttname"><a href="group__microstrain__strings__c.html#ga5c1815a3d8b2130b06c058bdd6908eb9">microstrain::C::microstrain_string_concat</a></div><div class="ttdeci">bool microstrain_string_concat(char *buffer, size_t buffer_size, size_t *index, const char *str, size_t str_len)</div><div class="ttdoc">Concatenate a string into a buffer.</div><div class="ttdef"><b>Definition:</b> strings.c:33</div></div>
+<div class="ttc" id="alogging_8h_html"><div class="ttname"><a href="logging_8h.html">logging.h</a></div></div>
+<div class="ttc" id="agroup__microstrain__strings__c_html_ga974a60540bb1cd014429dbbcd5b467c8"><div class="ttname"><a href="group__microstrain__strings__c.html#ga974a60540bb1cd014429dbbcd5b467c8">microstrain::C::microstrain_string_format</a></div><div class="ttdeci">bool microstrain_string_format(char *buffer, size_t buffer_size, size_t *index, const char *fmt,...)</div><div class="ttdoc">Wrapper for std::snprintf with a better interface.</div><div class="ttdef"><b>Definition:</b> strings.c:184</div></div>
 <div class="ttc" id="anamespacemicrostrain_html"><div class="ttname"><a href="namespacemicrostrain.html">microstrain</a></div><div class="ttdef"><b>Definition:</b> embedded_time.h:8</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
