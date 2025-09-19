@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-534-g6be5866</span>
+   &#160;<span id="projectnumber">v3.0.0-620-g528a5e6</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -82,9 +82,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga1c52341b492cdfc134355dd67094e389"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__microstrain__strings__cpp.html#ga1c52341b492cdfc134355dd67094e389">microstrain::strings::concat</a> (<a class="el" href="namespacemicrostrain.html#a713e840c6a8f0fd7e825a125ee6dae28">CharArrayView</a> buffer, size_t *index, <a class="el" href="namespacemicrostrain.html#a036b8995c523e18903d6f9bc5779242d">ConstCharArrayView</a> str)</td></tr>
 <tr class="memdesc:ga1c52341b492cdfc134355dd67094e389"><td class="mdescLeft">&#160;</td><td class="mdescRight">Concatenate an array of characters into a buffer.  <a href="group__microstrain__strings__cpp.html#ga1c52341b492cdfc134355dd67094e389">More...</a><br /></td></tr>
 <tr class="separator:ga1c52341b492cdfc134355dd67094e389"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac883b51b772ee7b1b938f7107379dee5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__microstrain__strings__cpp.html#gac883b51b772ee7b1b938f7107379dee5">microstrain::strings::concat_z</a> (<a class="el" href="namespacemicrostrain.html#a713e840c6a8f0fd7e825a125ee6dae28">CharArrayView</a> buffer, size_t *index, const char *str, size_t maxLen=size_t(-1))</td></tr>
-<tr class="memdesc:gac883b51b772ee7b1b938f7107379dee5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Concatenate a NULL-terminated <a class="el" href="namespacemicrostrain_1_1C.html">C</a> string into a buffer.  <a href="group__microstrain__strings__cpp.html#gac883b51b772ee7b1b938f7107379dee5">More...</a><br /></td></tr>
-<tr class="separator:gac883b51b772ee7b1b938f7107379dee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac906f839a11344ac927448684a104538"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__microstrain__strings__cpp.html#gac906f839a11344ac927448684a104538">microstrain::strings::concat_cstr</a> (<a class="el" href="namespacemicrostrain.html#a713e840c6a8f0fd7e825a125ee6dae28">CharArrayView</a> buffer, size_t *index, const char *str, size_t maxLen=size_t(-1))</td></tr>
+<tr class="memdesc:gac906f839a11344ac927448684a104538"><td class="mdescLeft">&#160;</td><td class="mdescRight">Concatenate a NULL-terminated <a class="el" href="namespacemicrostrain_1_1C.html">C</a> string into a buffer.  <a href="group__microstrain__strings__cpp.html#gac906f839a11344ac927448684a104538">More...</a><br /></td></tr>
+<tr class="separator:gac906f839a11344ac927448684a104538"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf0ff687464a22078bbb3e4506a536a5c"><td class="memTemplParams" colspan="2">template&lt;size_t N&gt; </td></tr>
 <tr class="memitem:gaf0ff687464a22078bbb3e4506a536a5c"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__microstrain__strings__cpp.html#gaf0ff687464a22078bbb3e4506a536a5c">microstrain::strings::concat_l</a> (<a class="el" href="namespacemicrostrain.html#a713e840c6a8f0fd7e825a125ee6dae28">CharArrayView</a> buffer, size_t *index, const char(&amp;str)[N])</td></tr>
 <tr class="memdesc:gaf0ff687464a22078bbb3e4506a536a5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Concatenate a string literal into a buffer.  <a href="group__microstrain__strings__cpp.html#gaf0ff687464a22078bbb3e4506a536a5c">More...</a><br /></td></tr>
@@ -286,6 +286,73 @@ False if buffer is not NULL and insufficient space is available. </dd></dl>
 
 </div>
 </div>
+<a id="gac906f839a11344ac927448684a104538"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac906f839a11344ac927448684a104538">&#9670;&nbsp;</a></span>concat_cstr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool microstrain::strings::concat_cstr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacemicrostrain.html#a713e840c6a8f0fd7e825a125ee6dae28">CharArrayView</a>&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>maxLen</em> = <code>size_t(-1)</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Concatenate a NULL-terminated <a class="el" href="namespacemicrostrain_1_1C.html">C</a> string into a buffer. </p>
+<p>Equivalent to <code>concat(buffer, buffer_size, index, str, strlen(str));</code>.</p>
+<p>Copies up to <code>maxLen</code> characters, or the first NULL character is reached, whichever comes first. maxLen can be used when it's uncertain if the source buffer is properly terminated.</p>
+<p>Examples: </p><div class="fragment"><div class="line"><span class="keyword">const</span> <span class="keywordtype">char</span>* str = <span class="stringliteral">&quot;To be appended&quot;</span>;</div>
+<div class="line">concat_z(buffer, &amp;index, str);    <span class="comment">// NULL-terminated, no maxlen</span></div>
+<div class="line">concat_z(buffer, &amp;index, str, 5); <span class="comment">// Only copies &quot;To be&quot;</span></div>
+</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">buffer</td><td>Buffer of characters. The size should be the number of characters, including the NULL terminator, that will fit in the buffer. If the pointer is NULL and size is 0, this function will just compute the required buffer size and not write any characters. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">index</td><td>Position in buffer where string data will be written. It will be updated with the new index in all cases. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">str</td><td>String to be appended. NULL-termination is required unless maxLen is given. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">maxLen</td><td>If given, limit to this many characters. Defaults to unlimited.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if sufficient buffer space exists or if buffer is NULL. </dd>
+<dd>
+False if buffer is not NULL and insufficient space is available. </dd></dl>
+
+</div>
+</div>
 <a id="gaf0ff687464a22078bbb3e4506a536a5c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaf0ff687464a22078bbb3e4506a536a5c">&#9670;&nbsp;</a></span>concat_l()</h2>
 
@@ -330,73 +397,6 @@ template&lt;size_t N&gt; </div>
     <tr><td class="paramdir"></td><td class="paramname">buffer</td><td>Buffer of characters. The size should be the number of characters, including the NULL terminator, that will fit in the buffer. If the pointer is NULL and size is 0, this function will just compute the required buffer size and not write any characters. </td></tr>
     <tr><td class="paramdir">[in,out]</td><td class="paramname">index</td><td>Position in buffer where string data will be written. It will be updated with the new index in all cases. </td></tr>
     <tr><td class="paramdir"></td><td class="paramname">str</td><td>String to be appended. Embedded NULL chars are allowed. Use concat_z for strings which are terminated before N characters.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if sufficient buffer space exists or if buffer is NULL. </dd>
-<dd>
-False if buffer is not NULL and insufficient space is available. </dd></dl>
-
-</div>
-</div>
-<a id="gac883b51b772ee7b1b938f7107379dee5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac883b51b772ee7b1b938f7107379dee5">&#9670;&nbsp;</a></span>concat_z()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool microstrain::strings::concat_z </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacemicrostrain.html#a713e840c6a8f0fd7e825a125ee6dae28">CharArrayView</a>&#160;</td>
-          <td class="paramname"><em>buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t *&#160;</td>
-          <td class="paramname"><em>index</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>str</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>maxLen</em> = <code>size_t(-1)</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Concatenate a NULL-terminated <a class="el" href="namespacemicrostrain_1_1C.html">C</a> string into a buffer. </p>
-<p>Equivalent to <code>concat(buffer, buffer_size, index, str, strlen(str));</code>.</p>
-<p>Copies up to <code>maxLen</code> characters, or the first NULL character is reached, whichever comes first. maxLen can be used when it's uncertain if the source buffer is properly terminated.</p>
-<p>Examples: </p><div class="fragment"><div class="line"><span class="keyword">const</span> <span class="keywordtype">char</span>* str = <span class="stringliteral">&quot;To be appended&quot;</span>;</div>
-<div class="line"><a class="code" href="group__microstrain__strings__cpp.html#gac883b51b772ee7b1b938f7107379dee5">concat_z</a>(buffer, &amp;index, str);    <span class="comment">// NULL-terminated, no maxlen</span></div>
-<div class="line"><a class="code" href="group__microstrain__strings__cpp.html#gac883b51b772ee7b1b938f7107379dee5">concat_z</a>(buffer, &amp;index, str, 5); <span class="comment">// Only copies &quot;To be&quot;</span></div>
-</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir"></td><td class="paramname">buffer</td><td>Buffer of characters. The size should be the number of characters, including the NULL terminator, that will fit in the buffer. If the pointer is NULL and size is 0, this function will just compute the required buffer size and not write any characters. </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">index</td><td>Position in buffer where string data will be written. It will be updated with the new index in all cases. </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">str</td><td>String to be appended. NULL-termination is required unless maxLen is given. </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">maxLen</td><td>If given, limit to this many characters. Defaults to unlimited.</td></tr>
   </table>
   </dd>
 </dl>
@@ -534,7 +534,6 @@ False if insufficient space is available, unless buffer is NULL. </dd></dl>
 </div>
 </div>
 </div><!-- contents -->
-<div class="ttc" id="agroup__microstrain__strings__cpp_html_gac883b51b772ee7b1b938f7107379dee5"><div class="ttname"><a href="group__microstrain__strings__cpp.html#gac883b51b772ee7b1b938f7107379dee5">microstrain::strings::concat_z</a></div><div class="ttdeci">bool concat_z(CharArrayView buffer, size_t *index, const char *str, size_t maxLen=size_t(-1))</div><div class="ttdoc">Concatenate a NULL-terminated C string into a buffer.</div><div class="ttdef"><b>Definition:</b> strings.hpp:173</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
