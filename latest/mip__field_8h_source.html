@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-646-g4680b90b</span>
+   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -86,47 +86,47 @@ $(function() {
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="structmip_1_1C_1_1mip__field__view.html">   52</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structmip_1_1C_1_1mip__field__view.html">mip_field_view</a></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">const</span> uint8_t* _payload;    </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    uint8_t _payload_length;    </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    uint8_t _field_descriptor;  </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    uint8_t _descriptor_set;    </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    uint8_t _remaining_length;  </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;} <a class="code" href="group__MipFields__c.html#ga98723ffa60d3fe5e08cd043a9d549aba">mip_field_view</a>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="structmip_1_1C_1_1mip__field__view.html">   53</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structmip_1_1C_1_1mip__field__view.html">mip_field_view</a></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">const</span> uint8_t* _payload;    </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    uint8_t _payload_length;    </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    uint8_t _field_descriptor;  </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    uint8_t _descriptor_set;    </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    uint8_t _remaining_length;  </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;} <a class="code" href="group__MipFields__c.html#ga98723ffa60d3fe5e08cd043a9d549aba">mip_field_view</a>;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__MipFields__c.html#ga5d9e0ce396bdb9b0b9e854871f2e4715">mip_field_init</a>(<a class="code" href="structmip_1_1C_1_1mip__field__view.html">mip_field_view</a>* field, uint8_t descriptor_set, uint8_t field_descriptor, <span class="keyword">const</span> uint8_t* payload, uint8_t payload_length);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;uint8_t <a class="code" href="group__MipFieldAccess__c.html#gaab91d96d9a0187a1b8ddf51e9c996823">mip_field_descriptor_set</a>(<span class="keyword">const</span> <a class="code" href="structmip_1_1C_1_1mip__field__view.html">mip_field_view</a>* field);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;uint8_t <a class="code" href="group__MipFieldAccess__c.html#gaac25fb79c9c51916b4329cdf1e6d369d">mip_field_field_descriptor</a>(<span class="keyword">const</span> <a class="code" href="structmip_1_1C_1_1mip__field__view.html">mip_field_view</a>* field);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;uint8_t <a class="code" href="group__MipFieldAccess__c.html#gaa1faccb58aa4df15ab5be8607fc569e9">mip_field_payload_length</a>(<span class="keyword">const</span> <a class="code" href="structmip_1_1C_1_1mip__field__view.html">mip_field_view</a>* field);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;uint8_t <a class="code" href="group__MipFieldAccess__c.html#ga17e339fb36c508578ac37f769cd3dae0">mip_field_total_length</a>(<span class="keyword">const</span> <a class="code" href="structmip_1_1C_1_1mip__field__view.html">mip_field_view</a>* field);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">const</span> uint8_t* <a class="code" href="group__MipFieldAccess__c.html#gaf69f00c34315a354d370cd3a4a50b968">mip_field_payload</a>(<span class="keyword">const</span> <a class="code" href="structmip_1_1C_1_1mip__field__view.html">mip_field_view</a>* field);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__MipFieldAccess__c.html#ga17595043dedf0700166bb51f2871f370">mip_field_is_valid</a>(<span class="keyword">const</span> <a class="code" href="structmip_1_1C_1_1mip__field__view.html">mip_field_view</a>* field);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__MipFieldIteration__c.html#ga90d1fd852e6cfab86f277226594a83e8">mip_field_init_empty</a>(<a class="code" href="structmip_1_1C_1_1mip__field__view.html">mip_field_view</a>* field);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<a class="code" href="structmip_1_1C_1_1mip__field__view.html">mip_field_view</a> <a class="code" href="group__MipFieldIteration__c.html#gae3510d4c1e7f387b2de8210d5b5c88ce">mip_field_from_header_ptr</a>(<span class="keyword">const</span> uint8_t* header, uint8_t total_length, uint8_t descriptor_set);</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<a class="code" href="structmip_1_1C_1_1mip__field__view.html">mip_field_view</a> <a class="code" href="group__MipFieldIteration__c.html#ga356416a1334520b2126381546e1130d3">mip_field_first_from_packet</a>(<span class="keyword">const</span> <a class="code" href="structmip_1_1C_1_1mip__packet__view.html">mip_packet_view</a>* packet);</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<a class="code" href="structmip_1_1C_1_1mip__field__view.html">mip_field_view</a> <a class="code" href="group__MipFieldIteration__c.html#ga39413a0b2b420d42ed4b88b2a07512b5">mip_field_next_after</a>(<span class="keyword">const</span> <a class="code" href="structmip_1_1C_1_1mip__field__view.html">mip_field_view</a>* field);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__MipFieldIteration__c.html#ga1e60cab0def364188dd7b2f256851539">mip_field_next</a>(<a class="code" href="structmip_1_1C_1_1mip__field__view.html">mip_field_view</a>* field);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__MipFieldIteration__c.html#gaf61688bc5da8a96c5ec443813f7fe169">mip_field_next_in_packet</a>(<a class="code" href="structmip_1_1C_1_1mip__field__view.html">mip_field_view</a>* field, <span class="keyword">const</span> <a class="code" href="structmip_1_1C_1_1mip__packet__view.html">mip_packet_view</a>* packet);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment">// bool mip_field_is_at_end(const struct mip_field* field);</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;} <span class="comment">// extern &quot;C&quot;</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;} <span class="comment">// namespace C</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;} <span class="comment">// namespace mip</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__MipFields__c.html#ga5d9e0ce396bdb9b0b9e854871f2e4715">mip_field_init</a>(<a class="code" href="structmip_1_1C_1_1mip__field__view.html">mip_field_view</a>* field, uint8_t descriptor_set, uint8_t field_descriptor, <span class="keyword">const</span> uint8_t* payload, uint8_t payload_length);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;uint8_t <a class="code" href="group__MipFieldAccess__c.html#gaab91d96d9a0187a1b8ddf51e9c996823">mip_field_descriptor_set</a>(<span class="keyword">const</span> <a class="code" href="structmip_1_1C_1_1mip__field__view.html">mip_field_view</a>* field);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;uint8_t <a class="code" href="group__MipFieldAccess__c.html#gaac25fb79c9c51916b4329cdf1e6d369d">mip_field_field_descriptor</a>(<span class="keyword">const</span> <a class="code" href="structmip_1_1C_1_1mip__field__view.html">mip_field_view</a>* field);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;uint8_t <a class="code" href="group__MipFieldAccess__c.html#gaa1faccb58aa4df15ab5be8607fc569e9">mip_field_payload_length</a>(<span class="keyword">const</span> <a class="code" href="structmip_1_1C_1_1mip__field__view.html">mip_field_view</a>* field);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;uint8_t <a class="code" href="group__MipFieldAccess__c.html#ga17e339fb36c508578ac37f769cd3dae0">mip_field_total_length</a>(<span class="keyword">const</span> <a class="code" href="structmip_1_1C_1_1mip__field__view.html">mip_field_view</a>* field);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">const</span> uint8_t* <a class="code" href="group__MipFieldAccess__c.html#gaf69f00c34315a354d370cd3a4a50b968">mip_field_payload</a>(<span class="keyword">const</span> <a class="code" href="structmip_1_1C_1_1mip__field__view.html">mip_field_view</a>* field);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__MipFieldAccess__c.html#ga17595043dedf0700166bb51f2871f370">mip_field_is_valid</a>(<span class="keyword">const</span> <a class="code" href="structmip_1_1C_1_1mip__field__view.html">mip_field_view</a>* field);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__MipFieldIteration__c.html#ga90d1fd852e6cfab86f277226594a83e8">mip_field_init_empty</a>(<a class="code" href="structmip_1_1C_1_1mip__field__view.html">mip_field_view</a>* field);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<a class="code" href="structmip_1_1C_1_1mip__field__view.html">mip_field_view</a> <a class="code" href="group__MipFieldIteration__c.html#gae3510d4c1e7f387b2de8210d5b5c88ce">mip_field_from_header_ptr</a>(<span class="keyword">const</span> uint8_t* header, uint8_t total_length, uint8_t descriptor_set);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<a class="code" href="structmip_1_1C_1_1mip__field__view.html">mip_field_view</a> <a class="code" href="group__MipFieldIteration__c.html#ga356416a1334520b2126381546e1130d3">mip_field_first_from_packet</a>(<span class="keyword">const</span> <a class="code" href="structmip_1_1C_1_1mip__packet__view.html">mip_packet_view</a>* packet);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<a class="code" href="structmip_1_1C_1_1mip__field__view.html">mip_field_view</a> <a class="code" href="group__MipFieldIteration__c.html#ga39413a0b2b420d42ed4b88b2a07512b5">mip_field_next_after</a>(<span class="keyword">const</span> <a class="code" href="structmip_1_1C_1_1mip__field__view.html">mip_field_view</a>* field);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__MipFieldIteration__c.html#ga1e60cab0def364188dd7b2f256851539">mip_field_next</a>(<a class="code" href="structmip_1_1C_1_1mip__field__view.html">mip_field_view</a>* field);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__MipFieldIteration__c.html#gaf61688bc5da8a96c5ec443813f7fe169">mip_field_next_in_packet</a>(<a class="code" href="structmip_1_1C_1_1mip__field__view.html">mip_field_view</a>* field, <span class="keyword">const</span> <a class="code" href="structmip_1_1C_1_1mip__packet__view.html">mip_packet_view</a>* packet);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment">// bool mip_field_is_at_end(const struct mip_field* field);</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;} <span class="comment">// extern &quot;C&quot;</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;} <span class="comment">// namespace C</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;} <span class="comment">// namespace mip</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="amip__packet_8h_html"><div class="ttname"><a href="mip__packet_8h.html">mip_packet.h</a></div></div>
 <div class="ttc" id="anamespacemip_html"><div class="ttname"><a href="namespacemip.html">mip</a></div><div class="ttdoc">A collection of C++ classes and functions covering the full mip api.</div><div class="ttdef"><b>Definition:</b> commands_3dm.c:11</div></div>
@@ -135,9 +135,9 @@ $(function() {
 <div class="ttc" id="agroup__MipFieldAccess__c_html_ga17e339fb36c508578ac37f769cd3dae0"><div class="ttname"><a href="group__MipFieldAccess__c.html#ga17e339fb36c508578ac37f769cd3dae0">mip::C::mip_field_total_length</a></div><div class="ttdeci">uint8_t mip_field_total_length(const mip_field_view *field)</div><div class="ttdoc">Returns the total length of the field including the header.</div><div class="ttdef"><b>Definition:</b> mip_field.c:76</div></div>
 <div class="ttc" id="agroup__MipFields__c_html_ga98723ffa60d3fe5e08cd043a9d549aba"><div class="ttname"><a href="group__MipFields__c.html#ga98723ffa60d3fe5e08cd043a9d549aba">mip::C::mip_field_view</a></div><div class="ttdeci">struct mip::C::mip_field_view mip_field_view</div><div class="ttdoc">A structure representing a MIP field.</div></div>
 <div class="ttc" id="agroup__MipFieldIteration__c_html_gae3510d4c1e7f387b2de8210d5b5c88ce"><div class="ttname"><a href="group__MipFieldIteration__c.html#gae3510d4c1e7f387b2de8210d5b5c88ce">mip::C::mip_field_from_header_ptr</a></div><div class="ttdeci">mip_field_view mip_field_from_header_ptr(const uint8_t *header, uint8_t total_length, uint8_t descriptor_set)</div><div class="ttdoc">Constructs a mip_field from a pointer to the heaader.</div><div class="ttdef"><b>Definition:</b> mip_field.c:130</div></div>
-<div class="ttc" id="astructmip_1_1C_1_1mip__packet__view_html"><div class="ttname"><a href="structmip_1_1C_1_1mip__packet__view.html">mip::C::mip_packet_view</a></div><div class="ttdoc">Structure representing a MIP Packet.</div><div class="ttdef"><b>Definition:</b> mip_packet.h:50</div></div>
+<div class="ttc" id="astructmip_1_1C_1_1mip__packet__view_html"><div class="ttname"><a href="structmip_1_1C_1_1mip__packet__view.html">mip::C::mip_packet_view</a></div><div class="ttdoc">Structure representing a MIP Packet.</div><div class="ttdef"><b>Definition:</b> mip_packet.h:63</div></div>
 <div class="ttc" id="agroup__MipFieldIteration__c_html_ga39413a0b2b420d42ed4b88b2a07512b5"><div class="ttname"><a href="group__MipFieldIteration__c.html#ga39413a0b2b420d42ed4b88b2a07512b5">mip::C::mip_field_next_after</a></div><div class="ttdeci">mip_field_view mip_field_next_after(const mip_field_view *field)</div><div class="ttdoc">Gets the next field after the specified field.</div><div class="ttdef"><b>Definition:</b> mip_field.c:193</div></div>
-<div class="ttc" id="astructmip_1_1C_1_1mip__field__view_html"><div class="ttname"><a href="structmip_1_1C_1_1mip__field__view.html">mip::C::mip_field_view</a></div><div class="ttdoc">A structure representing a MIP field.</div><div class="ttdef"><b>Definition:</b> mip_field.h:52</div></div>
+<div class="ttc" id="astructmip_1_1C_1_1mip__field__view_html"><div class="ttname"><a href="structmip_1_1C_1_1mip__field__view.html">mip::C::mip_field_view</a></div><div class="ttdoc">A structure representing a MIP field.</div><div class="ttdef"><b>Definition:</b> mip_field.h:53</div></div>
 <div class="ttc" id="agroup__MipFieldIteration__c_html_ga90d1fd852e6cfab86f277226594a83e8"><div class="ttname"><a href="group__MipFieldIteration__c.html#ga90d1fd852e6cfab86f277226594a83e8">mip::C::mip_field_init_empty</a></div><div class="ttdeci">void mip_field_init_empty(mip_field_view *field)</div><div class="ttdoc">Initialize a mip_field struct to an invalid/empty state.</div><div class="ttdef"><b>Definition:</b> mip_field.c:107</div></div>
 <div class="ttc" id="agroup__MipFieldIteration__c_html_ga1e60cab0def364188dd7b2f256851539"><div class="ttname"><a href="group__MipFieldIteration__c.html#ga1e60cab0def364188dd7b2f256851539">mip::C::mip_field_next</a></div><div class="ttdeci">bool mip_field_next(mip_field_view *field)</div><div class="ttdoc">Updates the mip_field to refer to the next field in a packet.</div><div class="ttdef"><b>Definition:</b> mip_field.c:212</div></div>
 <div class="ttc" id="agroup__MipFieldAccess__c_html_gaa1faccb58aa4df15ab5be8607fc569e9"><div class="ttname"><a href="group__MipFieldAccess__c.html#gaa1faccb58aa4df15ab5be8607fc569e9">mip::C::mip_field_payload_length</a></div><div class="ttdeci">uint8_t mip_field_payload_length(const mip_field_view *field)</div><div class="ttdoc">Returns the length of the payload.</div><div class="ttdef"><b>Definition:</b> mip_field.c:66</div></div>

@@ -95,10 +95,9 @@ var searchData=
   ['bool_237',['BOOL',['../namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525aa97b2c144243b2b9d2c593ec268b62f5',1,'mip::metadata']]],
   ['buffer_238',['buffer',['../classmip_1_1PacketView.html#a4dae973ae1a91800afb8db5342364fe1',1,'mip::PacketView::buffer()'],['../classmip_1_1SizedPacketBuf.html#aaf2c163f4f362fb9926ec827c2132d92',1,'mip::SizedPacketBuf::buffer()']]],
   ['buffer_5foverrun_239',['BUFFER_OVERRUN',['../structmip_1_1commands__base_1_1CommandedTestBitsGq7.html#a4b36e7f5d0669a98642f4859ccd9c3c4a6ca2940016ff5d6cc26a6b09d6b06ed2',1,'mip::commands_base::CommandedTestBitsGq7']]],
-  ['bufferoverrun_240',['bufferOverrun',['../structmip_1_1commands__base_1_1CommandedTestBitsGq7.html#a08ce379df52cb13fee52d456a81c71ef',1,'mip::commands_base::CommandedTestBitsGq7::bufferOverrun() const'],['../structmip_1_1commands__base_1_1CommandedTestBitsGq7.html#ae700461546f9292ab91540c62949af79',1,'mip::commands_base::CommandedTestBitsGq7::bufferOverrun(bool val)']]],
-  ['bufferpointer_241',['bufferPointer',['../classmip_1_1PacketView.html#a025a1aceb5ace2d6a7b97e5d299a6bd4',1,'mip::PacketView::bufferPointer()'],['../classmip_1_1SizedPacketBuf.html#ad060c26964bd45cff9a357c134e21876',1,'mip::SizedPacketBuf::bufferPointer()']]],
-  ['bufferpointerwr_242',['bufferPointerWr',['../classmip_1_1PacketView.html#a55dbfa826e78c9c517cf96dce8c2f52b',1,'mip::PacketView']]],
-  ['bufferwr_243',['bufferWr',['../classmip_1_1PacketView.html#aa9160d77573234d1ed70e0766c157ed6',1,'mip::PacketView']]],
-  ['builtintest_244',['BuiltInTest',['../structmip_1_1commands__base_1_1BuiltInTest.html',1,'mip::commands_base::BuiltInTest'],['../structmip_1_1data__system_1_1BuiltInTest.html',1,'mip::data_system::BuiltInTest'],['../group__base__built__in__test__cpp.html#ga17224fd80b104bc1a0f64f39f7d9570f',1,'mip::commands_base::builtInTest()']]],
-  ['bytestohexstr_245',['bytesToHexStr',['../group__microstrain__strings__cpp.html#gaba866a6b24d0bd9f4da1cc4a39c2ff3d',1,'microstrain::strings']]]
+  ['buffer_5fw_240',['buffer_w',['../classmip_1_1PacketView.html#a261241d5d541cc5d2671c7492983d0f4',1,'mip::PacketView']]],
+  ['bufferoverrun_241',['bufferOverrun',['../structmip_1_1commands__base_1_1CommandedTestBitsGq7.html#a08ce379df52cb13fee52d456a81c71ef',1,'mip::commands_base::CommandedTestBitsGq7::bufferOverrun() const'],['../structmip_1_1commands__base_1_1CommandedTestBitsGq7.html#ae700461546f9292ab91540c62949af79',1,'mip::commands_base::CommandedTestBitsGq7::bufferOverrun(bool val)']]],
+  ['builtintest_242',['BuiltInTest',['../structmip_1_1commands__base_1_1BuiltInTest.html',1,'mip::commands_base::BuiltInTest'],['../structmip_1_1data__system_1_1BuiltInTest.html',1,'mip::data_system::BuiltInTest'],['../group__base__built__in__test__cpp.html#ga17224fd80b104bc1a0f64f39f7d9570f',1,'mip::commands_base::builtInTest()']]],
+  ['bytes_243',['bytes',['../classmip_1_1FieldView.html#aadb44797f9a63fa72188689eb3bc2cd5',1,'mip::FieldView']]],
+  ['bytestohexstr_244',['bytesToHexStr',['../group__microstrain__strings__cpp.html#gaba866a6b24d0bd9f4da1cc4a39c2ff3d',1,'microstrain::strings']]]
 ];

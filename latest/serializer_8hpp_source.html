@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-646-g4680b90b</span>
+   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -99,14 +99,14 @@ $(function() {
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="classmicrostrain_1_1SerializerBase.html#ab259b1fe7bffe91b35e757171640e129">SerializerBase</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classmicrostrain_1_1SerializerBase.html#aeac2d26d5ab14cff3dee87aa8097d880">   64</a></span>&#160;    <a class="code" href="classmicrostrain_1_1SerializerBase.html#aeac2d26d5ab14cff3dee87aa8097d880">SerializerBase</a>(uint8_t* ptr, <span class="keywordtype">size_t</span> capacity, <span class="keywordtype">size_t</span> offset=0) : m_ptr(ptr), m_size(capacity), m_offset(offset) {}</div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classmicrostrain_1_1SerializerBase.html#af994185f67ef9566190af9309f1b024e">   65</a></span>&#160;    <a class="code" href="classmicrostrain_1_1SerializerBase.html#af994185f67ef9566190af9309f1b024e">SerializerBase</a>(<span class="keyword">const</span> uint8_t* ptr, <span class="keywordtype">size_t</span> size, <span class="keywordtype">size_t</span> offset=0) : m_ptr(const_cast&lt;uint8_t*&gt;(ptr)), m_size(size), m_offset(offset) {}</div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classmicrostrain_1_1SerializerBase.html#a8d4e0f3557222eb9137cf4fa8b138cb9">   66</a></span>&#160;    <a class="code" href="classmicrostrain_1_1SerializerBase.html#a8d4e0f3557222eb9137cf4fa8b138cb9">SerializerBase</a>(<a class="code" href="structmicrostrain_1_1ArrayView.html">microstrain::ConstU8ArrayView</a> buffer, <span class="keywordtype">size_t</span> offset=0) : m_ptr(const_cast&lt;uint8_t*&gt;(buffer.data())), m_size(buffer.size()), m_offset(offset) {}</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classmicrostrain_1_1SerializerBase.html#a7e6c71a46dd84941c4d161d7e362a233">   64</a></span>&#160;    <a class="code" href="classmicrostrain_1_1SerializerBase.html#a7e6c71a46dd84941c4d161d7e362a233">SerializerBase</a>(uint8_t* ptr, <span class="keywordtype">size_t</span> capacity) : m_ptr(ptr), m_size(capacity), m_offset(0) {}</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classmicrostrain_1_1SerializerBase.html#a1a0c67b6de12b2827b62a1e047b0a45a">   65</a></span>&#160;    <a class="code" href="classmicrostrain_1_1SerializerBase.html#a1a0c67b6de12b2827b62a1e047b0a45a">SerializerBase</a>(<span class="keyword">const</span> uint8_t* ptr, <span class="keywordtype">size_t</span> size) : m_ptr(const_cast&lt;uint8_t*&gt;(ptr)), m_size(size), m_offset(0) {}</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classmicrostrain_1_1SerializerBase.html#a11c426981583eec4009576664215d314">   66</a></span>&#160;    <a class="code" href="classmicrostrain_1_1SerializerBase.html#a11c426981583eec4009576664215d314">SerializerBase</a>(<a class="code" href="structmicrostrain_1_1ArrayView.html">microstrain::ConstU8ArrayView</a> buffer) : m_ptr(const_cast&lt;uint8_t*&gt;(buffer.data())), m_size(buffer.size()), m_offset(0) {}</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">size_t</span> capacity()<span class="keyword">   const </span>{ <span class="keywordflow">return</span> m_size;                 }  </div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">size_t</span> offset()<span class="keyword">     const </span>{ <span class="keywordflow">return</span> m_offset;               }  </div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">size_t</span> usedLength()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> offset();               }  </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">int</span> remaining()<span class="keyword">     const </span>{ <span class="keywordflow">return</span> int(m_size - m_offset); }  </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">int</span>    remaining()<span class="keyword">  const </span>{ <span class="keywordflow">return</span> int(m_size - m_offset); }  </div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">bool</span> isOverrun()<span class="keyword">                  const </span>{ <span class="keywordflow">return</span> m_offset &gt; m_size;        }  </div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">bool</span> isOk()<span class="keyword">                       const </span>{ <span class="keywordflow">return</span> !isOverrun();             }  </div>
@@ -439,146 +439,148 @@ $(function() {
 <div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;<span class="keyword">template</span>&lt;serialization::Endian E, <span class="keyword">class</span> T&gt;</div>
 <div class="line"><a name="l00732"></a><span class="lineno"><a class="line" href="group__microstrain__serialization__cpp.html#gaf1f8a59ef8827e800b464bf6703203ab">  732</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__microstrain__serialization__cpp.html#ga5a978dcbb35f175e3079aaaa6eadc450">insert</a>(<span class="keyword">const</span> T&amp; value, uint8_t* buffer, <span class="keywordtype">size_t</span> buffer_length, <span class="keywordtype">size_t</span> offset=0, <span class="keywordtype">bool</span> exact_size=<span class="keyword">false</span>)</div>
 <div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;{</div>
-<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;    <a class="code" href="classmicrostrain_1_1Serializer.html">Serializer&lt;E&gt;</a> serializer(buffer, buffer_length, offset);</div>
-<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;    serializer.<a class="code" href="group__microstrain__serialization__cpp.html#ga560773a1565486ac18bfc5238181d7bc">insert</a>(value);</div>
-<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;    <span class="keywordflow">return</span> exact_size ? serializer.isFinished() : serializer.isOk();</div>
-<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;}</div>
-<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160; </div>
-<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;<span class="keyword">template</span>&lt;serialization::Endian E, <span class="keyword">class</span> T&gt;</div>
-<div class="line"><a name="l00770"></a><span class="lineno"><a class="line" href="group__microstrain__serialization__cpp.html#ga18131708dfe0b4eccd42cc66a1ad043d">  770</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__microstrain__serialization__cpp.html#ga97f89f7d5ee32b5b34f9fb391111af44">extract</a>(T&amp; value, <span class="keyword">const</span> uint8_t* buffer, <span class="keywordtype">size_t</span> buffer_length, <span class="keywordtype">size_t</span> offset=0, <span class="keywordtype">bool</span> exact_size=<span class="keyword">false</span>)</div>
-<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;{</div>
-<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;    <a class="code" href="classmicrostrain_1_1Serializer.html">Serializer&lt;E&gt;</a> serializer(buffer, buffer_length, offset);</div>
-<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;    <a class="code" href="group__microstrain__serialization__cpp.html#ga97f89f7d5ee32b5b34f9fb391111af44">extract</a>(serializer, value);</div>
-<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;    <span class="keywordflow">return</span> exact_size ? serializer.isFinished() : serializer.isOk();</div>
-<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;}</div>
-<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160; </div>
-<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160; </div>
-<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;<span class="comment">// Raw buffer - ArrayView version</span></div>
+<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;    <a class="code" href="classmicrostrain_1_1Serializer.html">Serializer&lt;E&gt;</a> serializer(buffer, buffer_length);</div>
+<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;    serializer.<a class="code" href="classmicrostrain_1_1SerializerBase.html#a4aa969e53347706ad7a881c4ed5d8e80">setOffset</a>(offset);</div>
+<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;    serializer.<a class="code" href="group__microstrain__serialization__cpp.html#ga560773a1565486ac18bfc5238181d7bc">insert</a>(value);</div>
+<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;    <span class="keywordflow">return</span> exact_size ? serializer.isFinished() : serializer.isOk();</div>
+<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;}</div>
+<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160; </div>
+<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;<span class="keyword">template</span>&lt;serialization::Endian E, <span class="keyword">class</span> T&gt;</div>
+<div class="line"><a name="l00771"></a><span class="lineno"><a class="line" href="group__microstrain__serialization__cpp.html#ga18131708dfe0b4eccd42cc66a1ad043d">  771</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__microstrain__serialization__cpp.html#ga97f89f7d5ee32b5b34f9fb391111af44">extract</a>(T&amp; value, <span class="keyword">const</span> uint8_t* buffer, <span class="keywordtype">size_t</span> buffer_length, <span class="keywordtype">size_t</span> offset=0, <span class="keywordtype">bool</span> exact_size=<span class="keyword">false</span>)</div>
+<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;{</div>
+<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;    <a class="code" href="classmicrostrain_1_1Serializer.html">Serializer&lt;E&gt;</a> serializer(buffer, buffer_length);</div>
+<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;    serializer.<a class="code" href="classmicrostrain_1_1SerializerBase.html#a4aa969e53347706ad7a881c4ed5d8e80">setOffset</a>(offset);</div>
+<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;    <a class="code" href="group__microstrain__serialization__cpp.html#ga97f89f7d5ee32b5b34f9fb391111af44">extract</a>(serializer, value);</div>
+<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;    <span class="keywordflow">return</span> exact_size ? serializer.isFinished() : serializer.isOk();</div>
+<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;}</div>
+<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160; </div>
+<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160; </div>
 <div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160; </div>
-<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;<span class="keyword">template</span>&lt;serialization::Endian E, <span class="keyword">class</span> T&gt;</div>
-<div class="line"><a name="l00801"></a><span class="lineno"><a class="line" href="group__microstrain__serialization__cpp.html#ga3a7482913859299520ae7ee931633193">  801</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__microstrain__serialization__cpp.html#ga5a978dcbb35f175e3079aaaa6eadc450">insert</a>(T value, <a class="code" href="structmicrostrain_1_1ArrayView.html">microstrain::ArrayView&lt;uint8_t&gt;</a> buffer, <span class="keywordtype">size_t</span> offset=0, <span class="keywordtype">bool</span> exact_size=<span class="keyword">false</span>)</div>
-<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;{</div>
-<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;    <span class="keywordflow">return</span> insert&lt;E,T&gt;(value, buffer.<a class="code" href="structmicrostrain_1_1ArrayView.html#a2d219b2829b338f7867aa259a0ffe222">data</a>(), buffer.<a class="code" href="structmicrostrain_1_1ArrayView.html#a22ff9ce358ab8f0580524d09d0c8f8dd">size</a>(), offset, exact_size);</div>
-<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;}</div>
-<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160; </div>
-<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;<span class="keyword">template</span>&lt;serialization::Endian E, <span class="keyword">class</span> T&gt;</div>
-<div class="line"><a name="l00825"></a><span class="lineno"><a class="line" href="group__microstrain__serialization__cpp.html#gae80cbe5ec5132c2060bad8be840ab24d">  825</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__microstrain__serialization__cpp.html#ga97f89f7d5ee32b5b34f9fb391111af44">extract</a>(T&amp; value, <a class="code" href="structmicrostrain_1_1ArrayView.html">microstrain::ConstU8ArrayView</a> buffer, <span class="keywordtype">size_t</span> offset=0, <span class="keywordtype">bool</span> exact_size=<span class="keyword">false</span>)</div>
-<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;{</div>
-<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;    <span class="keywordflow">return</span> extract&lt;E,T&gt;(value, buffer.<a class="code" href="structmicrostrain_1_1ArrayView.html#a2d219b2829b338f7867aa259a0ffe222">data</a>(), buffer.<a class="code" href="structmicrostrain_1_1ArrayView.html#a22ff9ce358ab8f0580524d09d0c8f8dd">size</a>(), offset, exact_size);</div>
-<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;}</div>
-<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160; </div>
-<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;<span class="comment">// Special Deserialization</span></div>
+<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;<span class="comment">// Raw buffer - ArrayView version</span></div>
+<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160; </div>
+<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;<span class="keyword">template</span>&lt;serialization::Endian E, <span class="keyword">class</span> T&gt;</div>
+<div class="line"><a name="l00803"></a><span class="lineno"><a class="line" href="group__microstrain__serialization__cpp.html#ga3a7482913859299520ae7ee931633193">  803</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__microstrain__serialization__cpp.html#ga5a978dcbb35f175e3079aaaa6eadc450">insert</a>(T value, <a class="code" href="structmicrostrain_1_1ArrayView.html">microstrain::ArrayView&lt;uint8_t&gt;</a> buffer, <span class="keywordtype">size_t</span> offset=0, <span class="keywordtype">bool</span> exact_size=<span class="keyword">false</span>)</div>
+<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;{</div>
+<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;    <span class="keywordflow">return</span> insert&lt;E,T&gt;(value, buffer.<a class="code" href="structmicrostrain_1_1ArrayView.html#a2d219b2829b338f7867aa259a0ffe222">data</a>(), buffer.<a class="code" href="structmicrostrain_1_1ArrayView.html#a22ff9ce358ab8f0580524d09d0c8f8dd">size</a>(), offset, exact_size);</div>
+<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;}</div>
+<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160; </div>
+<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;<span class="keyword">template</span>&lt;serialization::Endian E, <span class="keyword">class</span> T&gt;</div>
+<div class="line"><a name="l00827"></a><span class="lineno"><a class="line" href="group__microstrain__serialization__cpp.html#gae80cbe5ec5132c2060bad8be840ab24d">  827</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__microstrain__serialization__cpp.html#ga97f89f7d5ee32b5b34f9fb391111af44">extract</a>(T&amp; value, <a class="code" href="structmicrostrain_1_1ArrayView.html">microstrain::ConstU8ArrayView</a> buffer, <span class="keywordtype">size_t</span> offset=0, <span class="keywordtype">bool</span> exact_size=<span class="keyword">false</span>)</div>
+<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;{</div>
+<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;    <span class="keywordflow">return</span> extract&lt;E,T&gt;(value, buffer.<a class="code" href="structmicrostrain_1_1ArrayView.html#a2d219b2829b338f7867aa259a0ffe222">data</a>(), buffer.<a class="code" href="structmicrostrain_1_1ArrayView.html#a22ff9ce358ab8f0580524d09d0c8f8dd">size</a>(), offset, exact_size);</div>
+<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;}</div>
+<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160; </div>
 <div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160; </div>
-<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;<span class="preprocessor">#ifdef MICROSTRAIN_HAS_OPTIONAL</span></div>
-<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> T, serialization::Endian E&gt;</div>
-<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;std::optional&lt;T&gt; <a class="code" href="group__microstrain__serialization__cpp.html#ga97f89f7d5ee32b5b34f9fb391111af44">extract</a>(Serializer&lt;E&gt;&amp; serializer)</div>
-<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;{</div>
-<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;    T value;</div>
-<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;    <span class="keywordflow">if</span>(extract&lt;E,T&gt;(serializer, value))</div>
-<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;        <span class="keywordflow">return</span> value;</div>
-<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;        <span class="keywordflow">return</span> std::nullopt;</div>
-<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;}</div>
-<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160; </div>
-<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> T, serialization::Endian E&gt;</div>
-<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;std::optional&lt;T&gt; <a class="code" href="group__microstrain__serialization__cpp.html#ga97f89f7d5ee32b5b34f9fb391111af44">extract</a>(<span class="keyword">const</span> uint8_t* buffer, <span class="keywordtype">size_t</span> length, <span class="keywordtype">size_t</span> offset, <span class="keywordtype">bool</span> exact_size=<span class="keyword">false</span>)</div>
-<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;{</div>
-<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;    T value;</div>
-<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;    <span class="keywordflow">if</span>(extract&lt;E,T&gt;(value, buffer, length, offset, exact_size))</div>
-<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;        <span class="keywordflow">return</span> value;</div>
-<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;        <span class="keywordflow">return</span> std::nullopt;</div>
-<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;}</div>
-<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160; </div>
-<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> T, serialization::Endian E&gt;</div>
-<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;std::optional&lt;T&gt; <a class="code" href="group__microstrain__serialization__cpp.html#ga97f89f7d5ee32b5b34f9fb391111af44">extract</a>(<a class="code" href="structmicrostrain_1_1ArrayView.html">microstrain::ConstU8ArrayView</a> buffer, <span class="keywordtype">size_t</span> offset, <span class="keywordtype">bool</span> exact_size=<span class="keyword">false</span>)</div>
-<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;{</div>
-<div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;    T value;</div>
-<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;    <span class="keywordflow">if</span>(extract&lt;E,T&gt;(value, buffer.<a class="code" href="structmicrostrain_1_1ArrayView.html#a2d219b2829b338f7867aa259a0ffe222">data</a>(), buffer.<a class="code" href="structmicrostrain_1_1ArrayView.html#a22ff9ce358ab8f0580524d09d0c8f8dd">size</a>(), offset, exact_size))</div>
-<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;        <span class="keywordflow">return</span> value;</div>
-<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;        <span class="keywordflow">return</span> std::nullopt;</div>
-<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;}</div>
-<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160; </div>
-<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160; </div>
-<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;<span class="comment">// Serializer member functions which depend on the above overloads.</span></div>
+<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;<span class="comment">// Special Deserialization</span></div>
+<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160; </div>
+<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;<span class="preprocessor">#ifdef MICROSTRAIN_HAS_OPTIONAL</span></div>
+<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> T, serialization::Endian E&gt;</div>
+<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;std::optional&lt;T&gt; <a class="code" href="group__microstrain__serialization__cpp.html#ga97f89f7d5ee32b5b34f9fb391111af44">extract</a>(Serializer&lt;E&gt;&amp; serializer)</div>
+<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;{</div>
+<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;    T value;</div>
+<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;    <span class="keywordflow">if</span>(extract&lt;E,T&gt;(serializer, value))</div>
+<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;        <span class="keywordflow">return</span> value;</div>
+<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;        <span class="keywordflow">return</span> std::nullopt;</div>
+<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;}</div>
+<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160; </div>
+<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> T, serialization::Endian E&gt;</div>
+<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;std::optional&lt;T&gt; <a class="code" href="group__microstrain__serialization__cpp.html#ga97f89f7d5ee32b5b34f9fb391111af44">extract</a>(<span class="keyword">const</span> uint8_t* buffer, <span class="keywordtype">size_t</span> length, <span class="keywordtype">size_t</span> offset, <span class="keywordtype">bool</span> exact_size=<span class="keyword">false</span>)</div>
+<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;{</div>
+<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;    T value;</div>
+<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;    <span class="keywordflow">if</span>(extract&lt;E,T&gt;(value, buffer, length, offset, exact_size))</div>
+<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;        <span class="keywordflow">return</span> value;</div>
+<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;        <span class="keywordflow">return</span> std::nullopt;</div>
+<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;}</div>
+<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160; </div>
+<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> T, serialization::Endian E&gt;</div>
+<div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;std::optional&lt;T&gt; <a class="code" href="group__microstrain__serialization__cpp.html#ga97f89f7d5ee32b5b34f9fb391111af44">extract</a>(<a class="code" href="structmicrostrain_1_1ArrayView.html">microstrain::ConstU8ArrayView</a> buffer, <span class="keywordtype">size_t</span> offset, <span class="keywordtype">bool</span> exact_size=<span class="keyword">false</span>)</div>
+<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;{</div>
+<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;    T value;</div>
+<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;    <span class="keywordflow">if</span>(extract&lt;E,T&gt;(value, buffer.<a class="code" href="structmicrostrain_1_1ArrayView.html#a2d219b2829b338f7867aa259a0ffe222">data</a>(), buffer.<a class="code" href="structmicrostrain_1_1ArrayView.html#a22ff9ce358ab8f0580524d09d0c8f8dd">size</a>(), offset, exact_size))</div>
+<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;        <span class="keywordflow">return</span> value;</div>
+<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;        <span class="keywordflow">return</span> std::nullopt;</div>
+<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;}</div>
+<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160; </div>
+<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160; </div>
 <div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;<span class="keyword">template</span>&lt;serialization::Endian E&gt;</div>
-<div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span>... Ts&gt;</div>
-<div class="line"><a name="l00933"></a><span class="lineno"><a class="line" href="group__microstrain__serialization__cpp.html#ga560773a1565486ac18bfc5238181d7bc">  933</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__microstrain__serialization__cpp.html#ga560773a1565486ac18bfc5238181d7bc">Serializer&lt;E&gt;::insert</a>(<span class="keyword">const</span> Ts&amp;... values)</div>
-<div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;{</div>
-<div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;    <span class="comment">// Prevents infinite recursion but allows ADL</span></div>
-<div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;    <span class="comment">// https://stackoverflow.com/questions/13407205/calling-nonmember-instead-of-member-function</span></div>
-<div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;    <span class="keyword">using</span> <a class="code" href="group__microstrain__serialization__cpp.html#ga5a978dcbb35f175e3079aaaa6eadc450">microstrain::insert</a>;</div>
-<div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160; </div>
-<div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;    <a class="code" href="group__microstrain__serialization__cpp.html#ga5a978dcbb35f175e3079aaaa6eadc450">insert</a>(*<span class="keyword">this</span>, values...);</div>
+<div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;<span class="comment">// Serializer member functions which depend on the above overloads.</span></div>
+<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;<span class="keyword">template</span>&lt;serialization::Endian E&gt;</div>
+<div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span>... Ts&gt;</div>
+<div class="line"><a name="l00935"></a><span class="lineno"><a class="line" href="group__microstrain__serialization__cpp.html#ga560773a1565486ac18bfc5238181d7bc">  935</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__microstrain__serialization__cpp.html#ga560773a1565486ac18bfc5238181d7bc">Serializer&lt;E&gt;::insert</a>(<span class="keyword">const</span> Ts&amp;... values)</div>
+<div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;{</div>
+<div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;    <span class="comment">// Prevents infinite recursion but allows ADL</span></div>
+<div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;    <span class="comment">// https://stackoverflow.com/questions/13407205/calling-nonmember-instead-of-member-function</span></div>
+<div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;    <span class="keyword">using</span> <a class="code" href="group__microstrain__serialization__cpp.html#ga5a978dcbb35f175e3079aaaa6eadc450">microstrain::insert</a>;</div>
 <div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160; </div>
-<div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;    <span class="keywordflow">return</span> isOk();</div>
-<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;}</div>
-<div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160; </div>
-<div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;<span class="keyword">template</span>&lt;serialization::Endian E&gt;</div>
-<div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span>... Ts&gt;</div>
-<div class="line"><a name="l00959"></a><span class="lineno"><a class="line" href="group__microstrain__serialization__cpp.html#gaa0cf22bb580922a0bd6a4e930bb76e5e">  959</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__microstrain__serialization__cpp.html#gaa0cf22bb580922a0bd6a4e930bb76e5e">Serializer&lt;E&gt;::extract</a>(Ts&amp;... values)</div>
-<div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;{</div>
-<div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;    <span class="comment">// Prevents infinite recursion but allows ADL</span></div>
-<div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160;    <span class="comment">// https://stackoverflow.com/questions/13407205/calling-nonmember-instead-of-member-function</span></div>
-<div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;    <span class="keyword">using</span> <a class="code" href="group__microstrain__serialization__cpp.html#ga97f89f7d5ee32b5b34f9fb391111af44">microstrain::extract</a>;</div>
-<div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160; </div>
-<div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;    <a class="code" href="group__microstrain__serialization__cpp.html#ga97f89f7d5ee32b5b34f9fb391111af44">extract</a>(*<span class="keyword">this</span>, values...);</div>
+<div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;    <a class="code" href="group__microstrain__serialization__cpp.html#ga5a978dcbb35f175e3079aaaa6eadc450">insert</a>(*<span class="keyword">this</span>, values...);</div>
+<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160; </div>
+<div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;    <span class="keywordflow">return</span> isOk();</div>
+<div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;}</div>
+<div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160; </div>
+<div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;<span class="keyword">template</span>&lt;serialization::Endian E&gt;</div>
+<div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span>... Ts&gt;</div>
+<div class="line"><a name="l00961"></a><span class="lineno"><a class="line" href="group__microstrain__serialization__cpp.html#gaa0cf22bb580922a0bd6a4e930bb76e5e">  961</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__microstrain__serialization__cpp.html#gaa0cf22bb580922a0bd6a4e930bb76e5e">Serializer&lt;E&gt;::extract</a>(Ts&amp;... values)</div>
+<div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160;{</div>
+<div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;    <span class="comment">// Prevents infinite recursion but allows ADL</span></div>
+<div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;    <span class="comment">// https://stackoverflow.com/questions/13407205/calling-nonmember-instead-of-member-function</span></div>
+<div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;    <span class="keyword">using</span> <a class="code" href="group__microstrain__serialization__cpp.html#ga97f89f7d5ee32b5b34f9fb391111af44">microstrain::extract</a>;</div>
 <div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160; </div>
-<div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;    <span class="keywordflow">return</span> isOk();</div>
-<div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;}</div>
-<div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160; </div>
-<div class="line"><a name="l00988"></a><span class="lineno">  988</span>&#160;<span class="keyword">template</span>&lt;serialization::Endian E&gt;</div>
-<div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> T, <span class="keyword">class</span> S&gt;</div>
-<div class="line"><a name="l00990"></a><span class="lineno"><a class="line" href="group__microstrain__serialization__cpp.html#gada1cadd3ff4fd48c3d516175bae1ed79">  990</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__microstrain__serialization__cpp.html#gada1cadd3ff4fd48c3d516175bae1ed79">Serializer&lt;E&gt;::extract_count</a>(T&amp; count, S max_count)</div>
-<div class="line"><a name="l00991"></a><span class="lineno">  991</span>&#160;{</div>
-<div class="line"><a name="l00992"></a><span class="lineno">  992</span>&#160;    <span class="keywordflow">if</span>( this-&gt;<a class="code" href="group__microstrain__serialization__cpp.html#ga97f89f7d5ee32b5b34f9fb391111af44">extract</a>(count) )</div>
-<div class="line"><a name="l00993"></a><span class="lineno">  993</span>&#160;    {</div>
-<div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160;        <span class="keywordflow">if</span>( count &lt;= max_count )</div>
-<div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160; </div>
-<div class="line"><a name="l00997"></a><span class="lineno">  997</span>&#160;        invalidate();</div>
-<div class="line"><a name="l00998"></a><span class="lineno">  998</span>&#160;    }</div>
-<div class="line"><a name="l00999"></a><span class="lineno">  999</span>&#160; </div>
-<div class="line"><a name="l01000"></a><span class="lineno"> 1000</span>&#160;    count = 0;</div>
+<div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;    <a class="code" href="group__microstrain__serialization__cpp.html#ga97f89f7d5ee32b5b34f9fb391111af44">extract</a>(*<span class="keyword">this</span>, values...);</div>
+<div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160; </div>
+<div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;    <span class="keywordflow">return</span> isOk();</div>
+<div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;}</div>
+<div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160; </div>
+<div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160;<span class="keyword">template</span>&lt;serialization::Endian E&gt;</div>
+<div class="line"><a name="l00991"></a><span class="lineno">  991</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> T, <span class="keyword">class</span> S&gt;</div>
+<div class="line"><a name="l00992"></a><span class="lineno"><a class="line" href="group__microstrain__serialization__cpp.html#gada1cadd3ff4fd48c3d516175bae1ed79">  992</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__microstrain__serialization__cpp.html#gada1cadd3ff4fd48c3d516175bae1ed79">Serializer&lt;E&gt;::extract_count</a>(T&amp; count, S max_count)</div>
+<div class="line"><a name="l00993"></a><span class="lineno">  993</span>&#160;{</div>
+<div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160;    <span class="keywordflow">if</span>( this-&gt;<a class="code" href="group__microstrain__serialization__cpp.html#ga97f89f7d5ee32b5b34f9fb391111af44">extract</a>(count) )</div>
+<div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;    {</div>
+<div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160;        <span class="keywordflow">if</span>( count &lt;= max_count )</div>
+<div class="line"><a name="l00997"></a><span class="lineno">  997</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00998"></a><span class="lineno">  998</span>&#160; </div>
+<div class="line"><a name="l00999"></a><span class="lineno">  999</span>&#160;        invalidate();</div>
+<div class="line"><a name="l01000"></a><span class="lineno"> 1000</span>&#160;    }</div>
 <div class="line"><a name="l01001"></a><span class="lineno"> 1001</span>&#160; </div>
-<div class="line"><a name="l01002"></a><span class="lineno"> 1002</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l01003"></a><span class="lineno"> 1003</span>&#160;}</div>
-<div class="line"><a name="l01004"></a><span class="lineno"> 1004</span>&#160; </div>
-<div class="line"><a name="l01005"></a><span class="lineno"> 1005</span>&#160; </div>
-<div class="line"><a name="l01009"></a><span class="lineno"> 1009</span>&#160; </div>
-<div class="line"><a name="l01010"></a><span class="lineno"> 1010</span>&#160;} <span class="comment">// namespace microstrain</span></div>
+<div class="line"><a name="l01002"></a><span class="lineno"> 1002</span>&#160;    count = 0;</div>
+<div class="line"><a name="l01003"></a><span class="lineno"> 1003</span>&#160; </div>
+<div class="line"><a name="l01004"></a><span class="lineno"> 1004</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l01005"></a><span class="lineno"> 1005</span>&#160;}</div>
+<div class="line"><a name="l01006"></a><span class="lineno"> 1006</span>&#160; </div>
+<div class="line"><a name="l01007"></a><span class="lineno"> 1007</span>&#160; </div>
+<div class="line"><a name="l01011"></a><span class="lineno"> 1011</span>&#160; </div>
+<div class="line"><a name="l01012"></a><span class="lineno"> 1012</span>&#160;} <span class="comment">// namespace microstrain</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassmicrostrain_1_1SerializerBase_html_a8d4e0f3557222eb9137cf4fa8b138cb9"><div class="ttname"><a href="classmicrostrain_1_1SerializerBase.html#a8d4e0f3557222eb9137cf4fa8b138cb9">microstrain::SerializerBase::SerializerBase</a></div><div class="ttdeci">SerializerBase(microstrain::ConstU8ArrayView buffer, size_t offset=0)</div><div class="ttdef"><b>Definition:</b> serializer.hpp:66</div></div>
 <div class="ttc" id="agroup__microstrain__serialization__cpp_html_ga97f89f7d5ee32b5b34f9fb391111af44"><div class="ttname"><a href="group__microstrain__serialization__cpp.html#ga97f89f7d5ee32b5b34f9fb391111af44">microstrain::extract</a></div><div class="ttdeci">std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value, size_t &gt;::type extract(Serializer&lt; E &gt; &amp;buffer, T &amp;value)</div><div class="ttdoc">Reads a numeric value from a Serializer.</div><div class="ttdef"><b>Definition:</b> serializer.hpp:203</div></div>
+<div class="ttc" id="aclassmicrostrain_1_1SerializerBase_html_a11c426981583eec4009576664215d314"><div class="ttname"><a href="classmicrostrain_1_1SerializerBase.html#a11c426981583eec4009576664215d314">microstrain::SerializerBase::SerializerBase</a></div><div class="ttdeci">SerializerBase(microstrain::ConstU8ArrayView buffer)</div><div class="ttdef"><b>Definition:</b> serializer.hpp:66</div></div>
 <div class="ttc" id="aclassmicrostrain_1_1Serializer_html_a3b6cf438d008bcf317b50037dd6b4486"><div class="ttname"><a href="classmicrostrain_1_1Serializer.html#a3b6cf438d008bcf317b50037dd6b4486">microstrain::Serializer::ENDIAN</a></div><div class="ttdeci">static const serialization::Endian ENDIAN</div><div class="ttdef"><b>Definition:</b> serializer.hpp:140</div></div>
-<div class="ttc" id="agroup__microstrain__serialization__cpp_html_gada1cadd3ff4fd48c3d516175bae1ed79"><div class="ttname"><a href="group__microstrain__serialization__cpp.html#gada1cadd3ff4fd48c3d516175bae1ed79">microstrain::Serializer::extract_count</a></div><div class="ttdeci">bool extract_count(T &amp;count, S max_count)</div><div class="ttdoc">Deserializes an integer with maximum permissible value.</div><div class="ttdef"><b>Definition:</b> serializer.hpp:990</div></div>
+<div class="ttc" id="agroup__microstrain__serialization__cpp_html_gada1cadd3ff4fd48c3d516175bae1ed79"><div class="ttname"><a href="group__microstrain__serialization__cpp.html#gada1cadd3ff4fd48c3d516175bae1ed79">microstrain::Serializer::extract_count</a></div><div class="ttdeci">bool extract_count(T &amp;count, S max_count)</div><div class="ttdoc">Deserializes an integer with maximum permissible value.</div><div class="ttdef"><b>Definition:</b> serializer.hpp:992</div></div>
 <div class="ttc" id="aclassmicrostrain_1_1Serializer_html"><div class="ttname"><a href="classmicrostrain_1_1Serializer.html">microstrain::Serializer</a></div><div class="ttdoc">Serializes or deserializes data to/from a byte buffer.</div><div class="ttdef"><b>Definition:</b> serializer.hpp:135</div></div>
 <div class="ttc" id="aclassmicrostrain_1_1SerializerBase_html_a4aa969e53347706ad7a881c4ed5d8e80"><div class="ttname"><a href="classmicrostrain_1_1SerializerBase.html#a4aa969e53347706ad7a881c4ed5d8e80">microstrain::SerializerBase::setOffset</a></div><div class="ttdeci">size_t setOffset(size_t offset)</div><div class="ttdoc">Sets a new offset and returns the old value. This can be used to save/restore the current offset....</div><div class="ttdef"><b>Definition:</b> serializer.hpp:109</div></div>
 <div class="ttc" id="aarray__view_8hpp_html"><div class="ttname"><a href="array__view_8hpp.html">array_view.hpp</a></div></div>
 <div class="ttc" id="aplatform_8hpp_html_a47ec10d8c001b6c6d05b8c88c9dbe554"><div class="ttname"><a href="platform_8hpp.html#a47ec10d8c001b6c6d05b8c88c9dbe554">IF_CONSTEXPR</a></div><div class="ttdeci">#define IF_CONSTEXPR</div><div class="ttdef"><b>Definition:</b> platform.hpp:21</div></div>
-<div class="ttc" id="agroup__microstrain__serialization__cpp_html_ga560773a1565486ac18bfc5238181d7bc"><div class="ttname"><a href="group__microstrain__serialization__cpp.html#ga560773a1565486ac18bfc5238181d7bc">microstrain::Serializer::insert</a></div><div class="ttdeci">bool insert(const Ts &amp;... values)</div><div class="ttdoc">Serializes one or more values.</div><div class="ttdef"><b>Definition:</b> serializer.hpp:933</div></div>
+<div class="ttc" id="aclassmicrostrain_1_1SerializerBase_html_a7e6c71a46dd84941c4d161d7e362a233"><div class="ttname"><a href="classmicrostrain_1_1SerializerBase.html#a7e6c71a46dd84941c4d161d7e362a233">microstrain::SerializerBase::SerializerBase</a></div><div class="ttdeci">SerializerBase(uint8_t *ptr, size_t capacity)</div><div class="ttdef"><b>Definition:</b> serializer.hpp:64</div></div>
+<div class="ttc" id="agroup__microstrain__serialization__cpp_html_ga560773a1565486ac18bfc5238181d7bc"><div class="ttname"><a href="group__microstrain__serialization__cpp.html#ga560773a1565486ac18bfc5238181d7bc">microstrain::Serializer::insert</a></div><div class="ttdeci">bool insert(const Ts &amp;... values)</div><div class="ttdoc">Serializes one or more values.</div><div class="ttdef"><b>Definition:</b> serializer.hpp:935</div></div>
 <div class="ttc" id="aclassmicrostrain_1_1SerializerBase_html_a6d610119298e6725759e893bef17cf21"><div class="ttname"><a href="classmicrostrain_1_1SerializerBase.html#a6d610119298e6725759e893bef17cf21">microstrain::SerializerBase::getPtrAndAdvance</a></div><div class="ttdeci">uint8_t * getPtrAndAdvance(size_t size)</div><div class="ttdoc">Obtains a pointer to the current offset for reading/writing a value of specified size,...</div><div class="ttdef"><b>Definition:</b> serializer.hpp:98</div></div>
 <div class="ttc" id="aclassmicrostrain_1_1SerializerBase_html_aec5acd82a1dc7ff852d23431a7f3d92a"><div class="ttname"><a href="classmicrostrain_1_1SerializerBase.html#aec5acd82a1dc7ff852d23431a7f3d92a">microstrain::SerializerBase::getPointer</a></div><div class="ttdeci">uint8_t * getPointer(size_t required_size)</div><div class="ttdoc">Obtains a pointer to the current offset for reading/writing a value of the specified size....</div><div class="ttdef"><b>Definition:</b> serializer.hpp:85</div></div>
 <div class="ttc" id="aclassmicrostrain_1_1SerializerBase_html_ab259b1fe7bffe91b35e757171640e129"><div class="ttname"><a href="classmicrostrain_1_1SerializerBase.html#ab259b1fe7bffe91b35e757171640e129">microstrain::SerializerBase::SerializerBase</a></div><div class="ttdeci">SerializerBase()=default</div></div>
 <div class="ttc" id="aclassmicrostrain_1_1Serializer_html_a97b94f634928f36a4bb0dde8f54a5c46"><div class="ttname"><a href="classmicrostrain_1_1Serializer.html#a97b94f634928f36a4bb0dde8f54a5c46">microstrain::Serializer::extract_count</a></div><div class="ttdeci">bool extract_count(T *count, S max_count)</div><div class="ttdef"><b>Definition:</b> serializer.hpp:146</div></div>
-<div class="ttc" id="aclassmicrostrain_1_1SerializerBase_html_aeac2d26d5ab14cff3dee87aa8097d880"><div class="ttname"><a href="classmicrostrain_1_1SerializerBase.html#aeac2d26d5ab14cff3dee87aa8097d880">microstrain::SerializerBase::SerializerBase</a></div><div class="ttdeci">SerializerBase(uint8_t *ptr, size_t capacity, size_t offset=0)</div><div class="ttdef"><b>Definition:</b> serializer.hpp:64</div></div>
 <div class="ttc" id="aclassmicrostrain_1_1SerializerBase_html"><div class="ttname"><a href="classmicrostrain_1_1SerializerBase.html">microstrain::SerializerBase</a></div><div class="ttdoc">Represents a view of a buffer of bytes of known capacity.</div><div class="ttdef"><b>Definition:</b> serializer.hpp:60</div></div>
 <div class="ttc" id="agroup__microstrain__serialization__cpp_html_ga5a978dcbb35f175e3079aaaa6eadc450"><div class="ttname"><a href="group__microstrain__serialization__cpp.html#ga5a978dcbb35f175e3079aaaa6eadc450">microstrain::insert</a></div><div class="ttdeci">std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value, size_t &gt;::type insert(Serializer&lt; E &gt; &amp;buffer, T value)</div><div class="ttdoc">Inserts a numeric value to a Serializer.</div><div class="ttdef"><b>Definition:</b> serializer.hpp:182</div></div>
 <div class="ttc" id="astructmicrostrain_1_1ArrayView_html_a2d219b2829b338f7867aa259a0ffe222"><div class="ttname"><a href="structmicrostrain_1_1ArrayView.html#a2d219b2829b338f7867aa259a0ffe222">microstrain::ArrayView::data</a></div><div class="ttdeci">constexpr pointer data() const noexcept</div><div class="ttdef"><b>Definition:</b> array_view.hpp:69</div></div>
 <div class="ttc" id="astructmicrostrain_1_1ArrayView_html"><div class="ttname"><a href="structmicrostrain_1_1ArrayView.html">microstrain::ArrayView</a></div><div class="ttdoc">Represents a view over a contiguous array of objects, similar to std::span, and is implemented as a p...</div><div class="ttdef"><b>Definition:</b> array_view.hpp:44</div></div>
-<div class="ttc" id="agroup__microstrain__serialization__cpp_html_gaa0cf22bb580922a0bd6a4e930bb76e5e"><div class="ttname"><a href="group__microstrain__serialization__cpp.html#gaa0cf22bb580922a0bd6a4e930bb76e5e">microstrain::Serializer::extract</a></div><div class="ttdeci">bool extract(Ts &amp;... values)</div><div class="ttdoc">Deserializes one or more values.</div><div class="ttdef"><b>Definition:</b> serializer.hpp:959</div></div>
+<div class="ttc" id="agroup__microstrain__serialization__cpp_html_gaa0cf22bb580922a0bd6a4e930bb76e5e"><div class="ttname"><a href="group__microstrain__serialization__cpp.html#gaa0cf22bb580922a0bd6a4e930bb76e5e">microstrain::Serializer::extract</a></div><div class="ttdeci">bool extract(Ts &amp;... values)</div><div class="ttdoc">Deserializes one or more values.</div><div class="ttdef"><b>Definition:</b> serializer.hpp:961</div></div>
 <div class="ttc" id="aclassmicrostrain_1_1SerializerBase_html_a34da15ab5ca118ae927fb382506de033"><div class="ttname"><a href="classmicrostrain_1_1SerializerBase.html#a34da15ab5ca118ae927fb382506de033">microstrain::SerializerBase::invalidate</a></div><div class="ttdeci">void invalidate()</div><div class="ttdoc">Marks the buffer as invalid, i.e. overrun/error state. All further accesses via pointer(),...</div><div class="ttdef"><b>Definition:</b> serializer.hpp:102</div></div>
-<div class="ttc" id="aclassmicrostrain_1_1SerializerBase_html_af994185f67ef9566190af9309f1b024e"><div class="ttname"><a href="classmicrostrain_1_1SerializerBase.html#af994185f67ef9566190af9309f1b024e">microstrain::SerializerBase::SerializerBase</a></div><div class="ttdeci">SerializerBase(const uint8_t *ptr, size_t size, size_t offset=0)</div><div class="ttdef"><b>Definition:</b> serializer.hpp:65</div></div>
 <div class="ttc" id="astructmicrostrain_1_1ArrayView_html_a22ff9ce358ab8f0580524d09d0c8f8dd"><div class="ttname"><a href="structmicrostrain_1_1ArrayView.html#a22ff9ce358ab8f0580524d09d0c8f8dd">microstrain::ArrayView::size</a></div><div class="ttdeci">constexpr size_t size() const noexcept</div><div class="ttdef"><b>Definition:</b> array_view.hpp:71</div></div>
+<div class="ttc" id="aclassmicrostrain_1_1SerializerBase_html_a1a0c67b6de12b2827b62a1e047b0a45a"><div class="ttname"><a href="classmicrostrain_1_1SerializerBase.html#a1a0c67b6de12b2827b62a1e047b0a45a">microstrain::SerializerBase::SerializerBase</a></div><div class="ttdeci">SerializerBase(const uint8_t *ptr, size_t size)</div><div class="ttdef"><b>Definition:</b> serializer.hpp:65</div></div>
 <div class="ttc" id="anamespacemicrostrain_html"><div class="ttname"><a href="namespacemicrostrain.html">microstrain</a></div><div class="ttdef"><b>Definition:</b> embedded_time.h:8</div></div>
 <div class="ttc" id="anamespacemicrostrain_1_1serialization_html_a2cb773f97949c2746bed939c0ce6d617"><div class="ttname"><a href="namespacemicrostrain_1_1serialization.html#a2cb773f97949c2746bed939c0ce6d617">microstrain::serialization::Endian</a></div><div class="ttdeci">Endian</div><div class="ttdef"><b>Definition:</b> readwrite.hpp:38</div></div>
 <div class="ttc" id="areadwrite_8hpp_html"><div class="ttname"><a href="readwrite_8hpp.html">readwrite.hpp</a></div></div>
