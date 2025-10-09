@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -112,7 +112,6 @@ Functions</h2></td></tr>
 <tr class="separator:gac8c79f152c40cdea6988d26356b11c30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Set, read, or save the format of the GNSS data packet. </p>
 <p>The resulting data messages will maintain the order of descriptors sent in the command. </p>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="ga699b0d272467c6c4aa5c5c8be48d5b6f"></a>
@@ -144,62 +143,6 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gae00822c0bd1d0d417924553b33d079bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae00822c0bd1d0d417924553b33d079bb">&#9670;&nbsp;</a></span>extract_mip_3dm_gnss_message_format_command()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::extract_mip_3dm_gnss_message_format_command </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__3dm__gnss__message__format__command.html">mip_3dm_gnss_message_format_command</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gadf4c9256c7c7789b932192e1d14020cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadf4c9256c7c7789b932192e1d14020cb">&#9670;&nbsp;</a></span>extract_mip_3dm_gnss_message_format_response()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::extract_mip_3dm_gnss_message_format_response </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__3dm__gnss__message__format__response.html">mip_3dm_gnss_message_format_response</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ga9aa6c34672ec3fa041a98c7c73bfa437"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga9aa6c34672ec3fa041a98c7c73bfa437">&#9670;&nbsp;</a></span>insert_mip_3dm_gnss_message_format_command()</h2>
 
@@ -216,6 +159,34 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__3dm__gnss__message__format__command.html">mip_3dm_gnss_message_format_command</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae00822c0bd1d0d417924553b33d079bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae00822c0bd1d0d417924553b33d079bb">&#9670;&nbsp;</a></span>extract_mip_3dm_gnss_message_format_command()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::C::extract_mip_3dm_gnss_message_format_command </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__3dm__gnss__message__format__command.html">mip_3dm_gnss_message_format_command</a> *&#160;</td>
           <td class="paramname"><em>self</em>&#160;</td>
         </tr>
         <tr>
@@ -256,36 +227,62 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gac8c79f152c40cdea6988d26356b11c30"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac8c79f152c40cdea6988d26356b11c30">&#9670;&nbsp;</a></span>mip_3dm_default_gnss_message_format()</h2>
+<a id="gadf4c9256c7c7789b932192e1d14020cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadf4c9256c7c7789b932192e1d14020cb">&#9670;&nbsp;</a></span>extract_mip_3dm_gnss_message_format_response()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_3dm_default_gnss_message_format </td>
+          <td class="memname">void mip::C::extract_mip_3dm_gnss_message_format_response </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__3dm__gnss__message__format__response.html">mip_3dm_gnss_message_format_response</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="gaa31b1ee6da95bd0c07f620df39149240"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa31b1ee6da95bd0c07f620df39149240">&#9670;&nbsp;</a></span>mip_3dm_load_gnss_message_format()</h2>
+<a id="gabde1f371e2cec965c2ea2769ab351327"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabde1f371e2cec965c2ea2769ab351327">&#9670;&nbsp;</a></span>mip_3dm_write_gnss_message_format()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_3dm_load_gnss_message_format </td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_3dm_write_gnss_message_format </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>num_descriptors</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__descriptor__rate.html">mip_descriptor_rate</a> *&#160;</td>
+          <td class="paramname"><em>descriptors</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -350,34 +347,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gabde1f371e2cec965c2ea2769ab351327"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabde1f371e2cec965c2ea2769ab351327">&#9670;&nbsp;</a></span>mip_3dm_write_gnss_message_format()</h2>
+<a id="gaa31b1ee6da95bd0c07f620df39149240"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa31b1ee6da95bd0c07f620df39149240">&#9670;&nbsp;</a></span>mip_3dm_load_gnss_message_format()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_3dm_write_gnss_message_format </td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_3dm_load_gnss_message_format </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>num_descriptors</em>, </td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gac8c79f152c40cdea6988d26356b11c30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac8c79f152c40cdea6988d26356b11c30">&#9670;&nbsp;</a></span>mip_3dm_default_gnss_message_format()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_3dm_default_gnss_message_format </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__descriptor__rate.html">mip_descriptor_rate</a> *&#160;</td>
-          <td class="paramname"><em>descriptors</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

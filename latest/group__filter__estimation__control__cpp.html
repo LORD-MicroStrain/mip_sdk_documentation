@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -94,42 +94,33 @@ Functions</h2></td></tr>
 <tr class="separator:ga5a2089dab8d009ecadf22c004375192d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Estimation Control Flags. </p>
 <p>Controls which parameters are estimated by the Kalman Filter.</p>
 <p>Desired settings should be logically ORed together.</p>
 <p>Examples:</p>
 <p>0x0001 - Enable Gyro Bias Estimation Only 0x0063 - Enable Gyro Bias, Accel Bias, and Mag Auto Hard and Soft Iron Cal States Only </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga5a2089dab8d009ecadf22c004375192d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5a2089dab8d009ecadf22c004375192d">&#9670;&nbsp;</a></span>defaultEstimationControl()</h2>
+<a id="ga83ccd2a0e4ab0f6838b7559a8532ec8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga83ccd2a0e4ab0f6838b7559a8532ec8b">&#9670;&nbsp;</a></span>writeEstimationControl()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1EstimationControl.html">EstimationControl</a> &gt; mip::commands_filter::defaultEstimationControl </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1EstimationControl.html">EstimationControl</a> &gt; mip::commands_filter::writeEstimationControl </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
-          <td></td>
+          <td class="paramname"><em>device</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga1a09621552bddc3fc4a83abd72598233"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1a09621552bddc3fc4a83abd72598233">&#9670;&nbsp;</a></span>loadEstimationControl()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1EstimationControl.html">EstimationControl</a> &gt; mip::commands_filter::loadEstimationControl </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1commands__filter_1_1EstimationControl_1_1EnableFlags.html">EstimationControl::EnableFlags</a>&#160;</td>
+          <td class="paramname"><em>enable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -182,28 +173,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga83ccd2a0e4ab0f6838b7559a8532ec8b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga83ccd2a0e4ab0f6838b7559a8532ec8b">&#9670;&nbsp;</a></span>writeEstimationControl()</h2>
+<a id="ga1a09621552bddc3fc4a83abd72598233"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1a09621552bddc3fc4a83abd72598233">&#9670;&nbsp;</a></span>loadEstimationControl()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1EstimationControl.html">EstimationControl</a> &gt; mip::commands_filter::writeEstimationControl </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1EstimationControl.html">EstimationControl</a> &gt; mip::commands_filter::loadEstimationControl </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1commands__filter_1_1EstimationControl_1_1EnableFlags.html">EstimationControl::EnableFlags</a>&#160;</td>
-          <td class="paramname"><em>enable</em>&#160;</td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga5a2089dab8d009ecadf22c004375192d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5a2089dab8d009ecadf22c004375192d">&#9670;&nbsp;</a></span>defaultEstimationControl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1EstimationControl.html">EstimationControl</a> &gt; mip::commands_filter::defaultEstimationControl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

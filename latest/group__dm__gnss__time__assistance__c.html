@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -106,7 +106,6 @@ Functions</h2></td></tr>
 <tr class="separator:gaf80b2cca925cdfecc71592eb0e839a10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Provide the GNSS subsystem with initial time information. </p>
 <p>This message is required immediately after power up if GNSS Assist was enabled when the device was powered off. This will initialize the subsystem clock to help reduce the time to first fix (TTFF). </p>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="ga587debc72b67945e2a150b584eafe7b6"></a>
@@ -138,62 +137,6 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga1b76c750729144161144f7a50f890910"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1b76c750729144161144f7a50f890910">&#9670;&nbsp;</a></span>extract_mip_3dm_gnss_time_assistance_command()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::extract_mip_3dm_gnss_time_assistance_command </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__3dm__gnss__time__assistance__command.html">mip_3dm_gnss_time_assistance_command</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gacc1bad5fb6cd4a6a148bc01390924bbe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacc1bad5fb6cd4a6a148bc01390924bbe">&#9670;&nbsp;</a></span>extract_mip_3dm_gnss_time_assistance_response()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::extract_mip_3dm_gnss_time_assistance_response </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__3dm__gnss__time__assistance__response.html">mip_3dm_gnss_time_assistance_response</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="gaf77ae28b270d5948ea45cb6938752382"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaf77ae28b270d5948ea45cb6938752382">&#9670;&nbsp;</a></span>insert_mip_3dm_gnss_time_assistance_command()</h2>
 
@@ -210,6 +153,34 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__3dm__gnss__time__assistance__command.html">mip_3dm_gnss_time_assistance_command</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga1b76c750729144161144f7a50f890910"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1b76c750729144161144f7a50f890910">&#9670;&nbsp;</a></span>extract_mip_3dm_gnss_time_assistance_command()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::C::extract_mip_3dm_gnss_time_assistance_command </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__3dm__gnss__time__assistance__command.html">mip_3dm_gnss_time_assistance_command</a> *&#160;</td>
           <td class="paramname"><em>self</em>&#160;</td>
         </tr>
         <tr>
@@ -250,35 +221,23 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gaf80b2cca925cdfecc71592eb0e839a10"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf80b2cca925cdfecc71592eb0e839a10">&#9670;&nbsp;</a></span>mip_3dm_read_gnss_time_assistance()</h2>
+<a id="gacc1bad5fb6cd4a6a148bc01390924bbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacc1bad5fb6cd4a6a148bc01390924bbe">&#9670;&nbsp;</a></span>extract_mip_3dm_gnss_time_assistance_response()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_3dm_read_gnss_time_assistance </td>
+          <td class="memname">void mip::C::extract_mip_3dm_gnss_time_assistance_response </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double *&#160;</td>
-          <td class="paramname"><em>tow_out</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t *&#160;</td>
-          <td class="paramname"><em>week_number_out</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float *&#160;</td>
-          <td class="paramname"><em>accuracy_out</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__3dm__gnss__time__assistance__response.html">mip_3dm_gnss_time_assistance_response</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -319,6 +278,46 @@ Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>accuracy</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaf80b2cca925cdfecc71592eb0e839a10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf80b2cca925cdfecc71592eb0e839a10">&#9670;&nbsp;</a></span>mip_3dm_read_gnss_time_assistance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_3dm_read_gnss_time_assistance </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>tow_out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t *&#160;</td>
+          <td class="paramname"><em>week_number_out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>accuracy_out</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

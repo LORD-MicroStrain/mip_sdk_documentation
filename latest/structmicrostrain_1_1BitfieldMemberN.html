@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -113,7 +113,6 @@ Static Public Attributes</h2></td></tr>
 <div class="textblock"><h3>template&lt;class T, unsigned int BitI, unsigned int Nbits&gt;<br />
 struct microstrain::BitfieldMemberN&lt; T, BitI, Nbits &gt;</h3>
 
-<p>A class which represents part of a bitfield. </p>
 <p>This is used to store the range of bits, to avoid repeating them in get/set function implementations and other situations.</p>
 <p>Usage would typically be like this: </p><div class="fragment"><div class="line"><span class="keyword">using</span> Part1Bits = BitfieldMemberItoJ&lt;uint16_t, 0, 12&gt;;  <span class="comment">// First 12 bits, holding a u16</span></div>
 <div class="line"><span class="keyword">using</span> Part2Bits = BitfieldMemberItoJ&lt;uint8_t, 12, 16&gt;;  <span class="comment">// Last 4 bits as a u8</span></div>
@@ -133,22 +132,6 @@ struct microstrain::BitfieldMemberN&lt; T, BitI, Nbits &gt;</h3>
   </dd>
 </dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a75f49539394238e8be952e1aa0f6f7c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75f49539394238e8be952e1aa0f6f7c3">&#9670;&nbsp;</a></span>BaseType</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T , unsigned int BitI, unsigned int Nbits&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="structmicrostrain_1_1BitfieldMemberN.html">microstrain::BitfieldMemberN</a>&lt; T, BitI, Nbits &gt;::<a class="el" href="structmicrostrain_1_1BitfieldMemberN.html#a75f49539394238e8be952e1aa0f6f7c3">BaseType</a> =  typename <a class="el" href="structmicrostrain_1_1detail_1_1BaseIntegerType.html">detail::BaseIntegerType</a>&lt;T&gt;::type</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a9081a98c1cb3a86225060ab80c47b1a4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9081a98c1cb3a86225060ab80c47b1a4">&#9670;&nbsp;</a></span>Type</h2>
 
@@ -165,37 +148,23 @@ template&lt;class T , unsigned int BitI, unsigned int Nbits&gt; </div>
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a07f28baafa94a9ac6ee7a4192edb1636"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07f28baafa94a9ac6ee7a4192edb1636">&#9670;&nbsp;</a></span>clear()</h2>
+<a id="a75f49539394238e8be952e1aa0f6f7c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75f49539394238e8be952e1aa0f6f7c3">&#9670;&nbsp;</a></span>BaseType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T , unsigned int BitI, unsigned int Nbits&gt; </div>
-<div class="memtemplate">
-template&lt;typename RegType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static constexpr void <a class="el" href="structmicrostrain_1_1BitfieldMemberN.html">microstrain::BitfieldMemberN</a>&lt; T, BitI, Nbits &gt;::clear </td>
-          <td>(</td>
-          <td class="paramtype">RegType &amp;&#160;</td>
-          <td class="paramname"><em>reg</em></td><td>)</td>
-          <td></td>
+          <td class="memname">using <a class="el" href="structmicrostrain_1_1BitfieldMemberN.html">microstrain::BitfieldMemberN</a>&lt; T, BitI, Nbits &gt;::<a class="el" href="structmicrostrain_1_1BitfieldMemberN.html#a75f49539394238e8be952e1aa0f6f7c3">BaseType</a> =  typename <a class="el" href="structmicrostrain_1_1detail_1_1BaseIntegerType.html">detail::BaseIntegerType</a>&lt;T&gt;::type</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
 </div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a7d0cab13a99b68d188b91915f15fae46"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7d0cab13a99b68d188b91915f15fae46">&#9670;&nbsp;</a></span>get()</h2>
 
@@ -255,6 +224,36 @@ template&lt;typename RegType &gt; </div>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a07f28baafa94a9ac6ee7a4192edb1636"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07f28baafa94a9ac6ee7a4192edb1636">&#9670;&nbsp;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , unsigned int BitI, unsigned int Nbits&gt; </div>
+<div class="memtemplate">
+template&lt;typename RegType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr void <a class="el" href="structmicrostrain_1_1BitfieldMemberN.html">microstrain::BitfieldMemberN</a>&lt; T, BitI, Nbits &gt;::clear </td>
+          <td>(</td>
+          <td class="paramtype">RegType &amp;&#160;</td>
+          <td class="paramname"><em>reg</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>

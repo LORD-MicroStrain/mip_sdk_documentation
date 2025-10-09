@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -94,7 +94,6 @@ Functions</h2></td></tr>
 <tr class="separator:gae54e03924c07f4f9467b7618f94cddef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Set the sensor to vehicle frame rotation using a row-major direction cosine matrix. </p>
 <p>Note: This is the rotation, the inverse of the transformation. This matrix defines the rotation from the sensor body frame to the fixed vehicle frame.<br  />
  Please reference the device Theory of Operation for more information.<br  />
  The matrix must be orthonormal (tolerance 1e-3) or the device will NACK the command. The rotation is stored in the device as a quaternion. When the DCM is read back from the device, the components may not be exactly equivalent in value to the DCM used to set the rotation, but they are functionally equivalent.<br  />
@@ -124,36 +123,28 @@ Functions</h2></td></tr>
  Estimated Gravity <a class="el" href="structmip_1_1Vector.html" title="Vector is a wrapper around an array of some type T, usually float or double.">Vector</a><br  />
  </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gae54e03924c07f4f9467b7618f94cddef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae54e03924c07f4f9467b7618f94cddef">&#9670;&nbsp;</a></span>defaultSensorToVehicleRotationDcm()</h2>
+<a id="ga015600f7231bb8b37f9c0830268b3d1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga015600f7231bb8b37f9c0830268b3d1d">&#9670;&nbsp;</a></span>writeSensorToVehicleRotationDcm()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1SensorToVehicleRotationDcm.html">SensorToVehicleRotationDcm</a> &gt; mip::commands_filter::defaultSensorToVehicleRotationDcm </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1SensorToVehicleRotationDcm.html">SensorToVehicleRotationDcm</a> &gt; mip::commands_filter::writeSensorToVehicleRotationDcm </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
-          <td></td>
+          <td class="paramname"><em>device</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gad1b31a8131607c4a97b3c808a7ca5652"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad1b31a8131607c4a97b3c808a7ca5652">&#9670;&nbsp;</a></span>loadSensorToVehicleRotationDcm()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1SensorToVehicleRotationDcm.html">SensorToVehicleRotationDcm</a> &gt; mip::commands_filter::loadSensorToVehicleRotationDcm </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>dcm</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -206,28 +197,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga015600f7231bb8b37f9c0830268b3d1d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga015600f7231bb8b37f9c0830268b3d1d">&#9670;&nbsp;</a></span>writeSensorToVehicleRotationDcm()</h2>
+<a id="gad1b31a8131607c4a97b3c808a7ca5652"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad1b31a8131607c4a97b3c808a7ca5652">&#9670;&nbsp;</a></span>loadSensorToVehicleRotationDcm()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1SensorToVehicleRotationDcm.html">SensorToVehicleRotationDcm</a> &gt; mip::commands_filter::writeSensorToVehicleRotationDcm </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1SensorToVehicleRotationDcm.html">SensorToVehicleRotationDcm</a> &gt; mip::commands_filter::loadSensorToVehicleRotationDcm </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const float *&#160;</td>
-          <td class="paramname"><em>dcm</em>&#160;</td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae54e03924c07f4f9467b7618f94cddef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae54e03924c07f4f9467b7618f94cddef">&#9670;&nbsp;</a></span>defaultSensorToVehicleRotationDcm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1SensorToVehicleRotationDcm.html">SensorToVehicleRotationDcm</a> &gt; mip::commands_filter::defaultSensorToVehicleRotationDcm </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

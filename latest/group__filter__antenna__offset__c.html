@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -112,7 +112,6 @@ Functions</h2></td></tr>
 <tr class="separator:ga7f5dcba82d1a8750a2cf098e7b888eef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Configure the GNSS antenna offset. </p>
 <p>For 5-series products, this is expressed in the sensor frame, from the sensor origin to the GNSS antenna RF center.</p>
 <p>For 7-series products, this is expressed in the vehicle frame, from the sensor origin to the GNSS antenna RF center.</p>
 <p>This command should also be used for CV7 / GV7-INS NMEA Input over GPIO.</p>
@@ -147,62 +146,6 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga65008c1304965df29cd19bd8a53a8a29"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga65008c1304965df29cd19bd8a53a8a29">&#9670;&nbsp;</a></span>extract_mip_filter_antenna_offset_command()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::extract_mip_filter_antenna_offset_command </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__antenna__offset__command.html">mip_filter_antenna_offset_command</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gafbfe9bee7ae66696e4e5a9451b25b005"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafbfe9bee7ae66696e4e5a9451b25b005">&#9670;&nbsp;</a></span>extract_mip_filter_antenna_offset_response()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::extract_mip_filter_antenna_offset_response </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__antenna__offset__response.html">mip_filter_antenna_offset_response</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="gab18c71716d8a4c45fbf3d71148951a1b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gab18c71716d8a4c45fbf3d71148951a1b">&#9670;&nbsp;</a></span>insert_mip_filter_antenna_offset_command()</h2>
 
@@ -219,6 +162,34 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__filter__antenna__offset__command.html">mip_filter_antenna_offset_command</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga65008c1304965df29cd19bd8a53a8a29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga65008c1304965df29cd19bd8a53a8a29">&#9670;&nbsp;</a></span>extract_mip_filter_antenna_offset_command()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::C::extract_mip_filter_antenna_offset_command </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__antenna__offset__command.html">mip_filter_antenna_offset_command</a> *&#160;</td>
           <td class="paramname"><em>self</em>&#160;</td>
         </tr>
         <tr>
@@ -259,36 +230,56 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga7f5dcba82d1a8750a2cf098e7b888eef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7f5dcba82d1a8750a2cf098e7b888eef">&#9670;&nbsp;</a></span>mip_filter_default_antenna_offset()</h2>
+<a id="gafbfe9bee7ae66696e4e5a9451b25b005"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafbfe9bee7ae66696e4e5a9451b25b005">&#9670;&nbsp;</a></span>extract_mip_filter_antenna_offset_response()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_default_antenna_offset </td>
+          <td class="memname">void mip::C::extract_mip_filter_antenna_offset_response </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__antenna__offset__response.html">mip_filter_antenna_offset_response</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="gad8e1f3b810d694b165409e6f8ec25a10"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad8e1f3b810d694b165409e6f8ec25a10">&#9670;&nbsp;</a></span>mip_filter_load_antenna_offset()</h2>
+<a id="ga2fcb5dceeb9d2a0c31d52b5fa973576b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2fcb5dceeb9d2a0c31d52b5fa973576b">&#9670;&nbsp;</a></span>mip_filter_write_antenna_offset()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_load_antenna_offset </td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_write_antenna_offset </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -341,28 +332,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga2fcb5dceeb9d2a0c31d52b5fa973576b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2fcb5dceeb9d2a0c31d52b5fa973576b">&#9670;&nbsp;</a></span>mip_filter_write_antenna_offset()</h2>
+<a id="gad8e1f3b810d694b165409e6f8ec25a10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad8e1f3b810d694b165409e6f8ec25a10">&#9670;&nbsp;</a></span>mip_filter_load_antenna_offset()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_write_antenna_offset </td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_load_antenna_offset </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const float *&#160;</td>
-          <td class="paramname"><em>offset</em>&#160;</td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga7f5dcba82d1a8750a2cf098e7b888eef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7f5dcba82d1a8750a2cf098e7b888eef">&#9670;&nbsp;</a></span>mip_filter_default_antenna_offset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_default_antenna_offset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

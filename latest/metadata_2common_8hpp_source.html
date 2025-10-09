@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -131,7 +131,7 @@ $(function() {
 <div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="structmip_1_1metadata_1_1ReplyField.html">   57</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structmip_1_1metadata_1_1ReplyField.html">ReplyField</a></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    {</div>
 <div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="structmip_1_1metadata_1_1ReplyField.html#add3d58bafe74cb0a09bd2f3eee8ba0b7">   59</a></span>&#160;        <span class="keyword">static</span> constexpr <span class="keyword">inline</span> uint8_t <a class="code" href="structmip_1_1metadata_1_1ReplyField.html#add3d58bafe74cb0a09bd2f3eee8ba0b7">FIELD_DESCRIPTOR</a> = 0xF1;</div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="structmip_1_1metadata_1_1ReplyField.html#a241d4eb6ed7cdc964971912aef3fd2ea">   60</a></span>&#160;        <span class="keyword">static</span> constexpr <span class="keyword">inline</span> <a class="code" href="structmip_1_1CompositeDescriptor.html">CompositeDescriptor</a> <a class="code" href="structmip_1_1metadata_1_1ReplyField.html#a241d4eb6ed7cdc964971912aef3fd2ea">DESCRIPTOR</a> = {INVALID_DESCRIPTOR_SET, <a class="code" href="structmip_1_1metadata_1_1ReplyField.html#add3d58bafe74cb0a09bd2f3eee8ba0b7">FIELD_DESCRIPTOR</a>};</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="structmip_1_1metadata_1_1ReplyField.html#a241d4eb6ed7cdc964971912aef3fd2ea">   60</a></span>&#160;        <span class="keyword">static</span> constexpr <span class="keyword">inline</span> <a class="code" href="structmip_1_1CompositeDescriptor.html">CompositeDescriptor</a> <a class="code" href="structmip_1_1metadata_1_1ReplyField.html#a241d4eb6ed7cdc964971912aef3fd2ea">DESCRIPTOR</a> = {<a class="code" href="group__mip__cpp.html#ga7d8f007ad533e24c95f51bc59dfea374">INVALID_DESCRIPTOR_SET</a>, <a class="code" href="structmip_1_1metadata_1_1ReplyField.html#add3d58bafe74cb0a09bd2f3eee8ba0b7">FIELD_DESCRIPTOR</a>};</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
 <div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="structmip_1_1metadata_1_1ReplyField.html#a2e1d48921017496777831e3d176d1576">   62</a></span>&#160;        uint8_t   <a class="code" href="structmip_1_1metadata_1_1ReplyField.html#a2e1d48921017496777831e3d176d1576">cmd_field_desc</a>;</div>
 <div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="structmip_1_1metadata_1_1ReplyField.html#a4ec7713700d07504b5012ebec180ff48">   63</a></span>&#160;        <a class="code" href="structmip_1_1CmdResult.html">CmdResult</a> <a class="code" href="structmip_1_1metadata_1_1ReplyField.html#a4ec7713700d07504b5012ebec180ff48">result</a>;</div>
@@ -151,7 +151,7 @@ $(function() {
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                <span class="comment">/* .docs       = */</span> <span class="stringliteral">&quot;The field descriptor of the command this field acknowledges.&quot;</span>,</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                <span class="comment">/* .type       = */</span> {<a class="code" href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525a6669348b484e3008dca2bfa8e85e40b5">Type::U8</a>},</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                <span class="comment">/* .accessor   = */</span> <span class="keyword">nullptr</span>, <span class="comment">//utils::access&lt;type, uint8_t, &amp;type::cmd_field_desc&gt;,</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                <span class="comment">/* .attributes = */</span> NO_FUNCTIONS,</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                <span class="comment">/* .attributes = */</span> <a class="code" href="namespacemip_1_1metadata.html#aee414dffae8703eaa53a3e97d34862a7">NO_FUNCTIONS</a>,</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                <span class="comment">/* .count      = */</span> 1,</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                <span class="comment">/* .condition  = */</span> {},</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            },</div>
@@ -160,7 +160,7 @@ $(function() {
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                <span class="comment">/* .docs       = */</span> <span class="stringliteral">&quot;Result of the command.&quot;</span>,</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                <span class="comment">/* .type       = */</span> {<a class="code" href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525a85a1979d26d0ef93dcc13a72fee80705">Type::ENUM</a>, &amp;<a class="code" href="structmip_1_1metadata_1_1MetadataFor.html">MetadataFor&lt;CmdResult&gt;::value</a>},</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                <span class="comment">/* .accessor   = */</span> <span class="keyword">nullptr</span>, <span class="comment">//utils::access&lt;type, CmdResult, &amp;type::result&gt;,</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                <span class="comment">/* .attributes = */</span> NO_FUNCTIONS,</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                <span class="comment">/* .attributes = */</span> <a class="code" href="namespacemip_1_1metadata.html#aee414dffae8703eaa53a3e97d34862a7">NO_FUNCTIONS</a>,</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                <span class="comment">/* .count      = */</span> 1,</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                <span class="comment">/* .condition  = */</span> {},</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            },</div>
@@ -173,7 +173,7 @@ $(function() {
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                <span class="comment">/* .parameters  = */</span> parameters,</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            },</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <span class="comment">/* .descriptor      = */</span> type::DESCRIPTOR,</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            <span class="comment">/* .functions       = */</span> NO_FUNCTIONS,</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            <span class="comment">/* .functions       = */</span> <a class="code" href="namespacemip_1_1metadata.html#aee414dffae8703eaa53a3e97d34862a7">NO_FUNCTIONS</a>,</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <span class="comment">/* .response        = */</span> <span class="keyword">nullptr</span>,</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        };</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    };</div>
@@ -189,7 +189,7 @@ $(function() {
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                <span class="comment">/*. docs       = */</span> <span class="stringliteral">&quot;MIP data descriptor&quot;</span>,</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                <span class="comment">/*. type       = */</span> {<a class="code" href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525a6669348b484e3008dca2bfa8e85e40b5">Type::U8</a>},</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                <span class="comment">/*. accessor   = */</span> <span class="keyword">nullptr</span>, <span class="comment">//utils::access&lt;type, uint8_t, &amp;type::descriptor&gt;,</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                <span class="comment">/*. attributes = */</span> NO_FUNCTIONS,</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                <span class="comment">/*. attributes = */</span> <a class="code" href="namespacemip_1_1metadata.html#aee414dffae8703eaa53a3e97d34862a7">NO_FUNCTIONS</a>,</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                <span class="comment">/*. count      = */</span> 1,</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                <span class="comment">/*. condition  = */</span> {},</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            },</div>
@@ -198,7 +198,7 @@ $(function() {
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                <span class="comment">/* .docs       = */</span> <span class="stringliteral">&quot;Decimation from the base rate&quot;</span>,</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                <span class="comment">/* .type       = */</span> {<a class="code" href="namespacemip_1_1metadata.html#aff2e019f9db2d9068cce26ec201c3525aef9ef3ebca4d2b64b6ec83808bafa5f2">Type::U16</a>},</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                <span class="comment">/* .accessor   = */</span> <span class="keyword">nullptr</span>, <span class="comment">//utils::access&lt;type, uint16_t, &amp;type::decimation&gt;,</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                <span class="comment">/* .attributes = */</span> NO_FUNCTIONS,</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                <span class="comment">/* .attributes = */</span> <a class="code" href="namespacemip_1_1metadata.html#aee414dffae8703eaa53a3e97d34862a7">NO_FUNCTIONS</a>,</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                <span class="comment">/* .count      = */</span> 1,</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                <span class="comment">/* .condition  = */</span> {},</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            },</div>
@@ -224,7 +224,7 @@ $(function() {
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                <span class="comment">/* .docs       = */</span> <span class="stringliteral">&quot;X axis&quot;</span>,</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                <span class="comment">/* .type       = */</span> {<a class="code" href="structmip_1_1metadata_1_1utils_1_1ParamType.html">utils::ParamType&lt;T&gt;::value</a>},</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                <span class="comment">/* .accessor   = */</span> <span class="keyword">nullptr</span>,</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                <span class="comment">/* .attributes = */</span> NO_FUNCTIONS,</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                <span class="comment">/* .attributes = */</span> <a class="code" href="namespacemip_1_1metadata.html#aee414dffae8703eaa53a3e97d34862a7">NO_FUNCTIONS</a>,</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                <span class="comment">/* .count      = */</span> 1,</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                <span class="comment">/* .condition  = */</span> {},</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            },</div>
@@ -233,7 +233,7 @@ $(function() {
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                <span class="comment">/* .docs       = */</span> <span class="stringliteral">&quot;Y axis&quot;</span>,</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                <span class="comment">/* .type       = */</span> {<a class="code" href="structmip_1_1metadata_1_1utils_1_1ParamType.html">utils::ParamType&lt;T&gt;::value</a>},</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                <span class="comment">/* .accessor   = */</span> <span class="keyword">nullptr</span>,</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                <span class="comment">/* .attributes = */</span> NO_FUNCTIONS,</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                <span class="comment">/* .attributes = */</span> <a class="code" href="namespacemip_1_1metadata.html#aee414dffae8703eaa53a3e97d34862a7">NO_FUNCTIONS</a>,</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                <span class="comment">/* .count      = */</span> 1,</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                <span class="comment">/* .condition  = */</span> {},</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;            },</div>
@@ -242,7 +242,7 @@ $(function() {
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                <span class="comment">/* .docs       = */</span> <span class="stringliteral">&quot;Z axis&quot;</span>,</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                <span class="comment">/* .type       = */</span> {<a class="code" href="structmip_1_1metadata_1_1utils_1_1ParamType.html">utils::ParamType&lt;T&gt;::value</a>},</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                <span class="comment">/* .accessor   = */</span> <span class="keyword">nullptr</span>,</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                <span class="comment">/* .attributes = */</span> NO_FUNCTIONS,</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                <span class="comment">/* .attributes = */</span> <a class="code" href="namespacemip_1_1metadata.html#aee414dffae8703eaa53a3e97d34862a7">NO_FUNCTIONS</a>,</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                <span class="comment">/* .count      = */</span> 1,</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                <span class="comment">/* .condition  = */</span> {},</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            },</div>
@@ -251,7 +251,7 @@ $(function() {
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                <span class="comment">/* .docs       = */</span> <span class="stringliteral">&quot;W axis&quot;</span>,</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                <span class="comment">/* .type       = */</span> {<a class="code" href="structmip_1_1metadata_1_1utils_1_1ParamType.html">utils::ParamType&lt;T&gt;::value</a>},</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                <span class="comment">/* .accessor   = */</span> <span class="keyword">nullptr</span>,</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                <span class="comment">/* .attributes = */</span> NO_FUNCTIONS,</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                <span class="comment">/* .attributes = */</span> <a class="code" href="namespacemip_1_1metadata.html#aee414dffae8703eaa53a3e97d34862a7">NO_FUNCTIONS</a>,</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                <span class="comment">/* .count      = */</span> 1,</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                <span class="comment">/* .condition  = */</span> {},</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            },</div>
@@ -305,7 +305,7 @@ $(function() {
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                <span class="comment">/* .docs       = */</span> <span class="stringliteral">&quot;Matrix data&quot;</span>,</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                <span class="comment">/* .type       = */</span> {<a class="code" href="structmip_1_1metadata_1_1utils_1_1ParamType.html">utils::ParamType&lt;T&gt;::value</a>},</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;                <span class="comment">/* .accessor   = */</span> <span class="keyword">nullptr</span>,</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                <span class="comment">/* .attributes = */</span> NO_FUNCTIONS,</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                <span class="comment">/* .attributes = */</span> <a class="code" href="namespacemip_1_1metadata.html#aee414dffae8703eaa53a3e97d34862a7">NO_FUNCTIONS</a>,</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                <span class="comment">/* .count      = */</span> 1,</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                <span class="comment">/* .condition  = */</span> {},</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;            },</div>
@@ -314,7 +314,7 @@ $(function() {
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;                <span class="comment">/* .docs       = */</span> <span class="stringliteral">&quot;Matrix data&quot;</span>,</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                <span class="comment">/* .type       = */</span> {<a class="code" href="structmip_1_1metadata_1_1utils_1_1ParamType.html">utils::ParamType&lt;T&gt;::value</a>},</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;                <span class="comment">/* .accessor   = */</span> <span class="keyword">nullptr</span>,</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                <span class="comment">/* .attributes = */</span> NO_FUNCTIONS,</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                <span class="comment">/* .attributes = */</span> <a class="code" href="namespacemip_1_1metadata.html#aee414dffae8703eaa53a3e97d34862a7">NO_FUNCTIONS</a>,</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                <span class="comment">/* .count      = */</span> 1,</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                <span class="comment">/* .condition  = */</span> {},</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;            },</div>
@@ -323,7 +323,7 @@ $(function() {
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                <span class="comment">/* .docs       = */</span> <span class="stringliteral">&quot;Matrix data&quot;</span>,</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                <span class="comment">/* .type       = */</span> {<a class="code" href="structmip_1_1metadata_1_1utils_1_1ParamType.html">utils::ParamType&lt;T&gt;::value</a>},</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;                <span class="comment">/* .accessor   = */</span> <span class="keyword">nullptr</span>,</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                <span class="comment">/* .attributes = */</span> NO_FUNCTIONS,</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                <span class="comment">/* .attributes = */</span> <a class="code" href="namespacemip_1_1metadata.html#aee414dffae8703eaa53a3e97d34862a7">NO_FUNCTIONS</a>,</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                <span class="comment">/* .count      = */</span> 1,</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;                <span class="comment">/* .condition  = */</span> {},</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;            },</div>
@@ -332,7 +332,7 @@ $(function() {
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                <span class="comment">/* .docs       = */</span> <span class="stringliteral">&quot;Matrix data&quot;</span>,</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                <span class="comment">/* .type       = */</span> {<a class="code" href="structmip_1_1metadata_1_1utils_1_1ParamType.html">utils::ParamType&lt;T&gt;::value</a>},</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                <span class="comment">/* .accessor   = */</span> <span class="keyword">nullptr</span>,</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;                <span class="comment">/* .attributes = */</span> NO_FUNCTIONS,</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;                <span class="comment">/* .attributes = */</span> <a class="code" href="namespacemip_1_1metadata.html#aee414dffae8703eaa53a3e97d34862a7">NO_FUNCTIONS</a>,</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;                <span class="comment">/* .count      = */</span> 1,</div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;                <span class="comment">/* .condition  = */</span> {},</div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;            },</div>
@@ -341,7 +341,7 @@ $(function() {
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;                <span class="comment">/* .docs       = */</span> <span class="stringliteral">&quot;Matrix data&quot;</span>,</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;                <span class="comment">/* .type       = */</span> {<a class="code" href="structmip_1_1metadata_1_1utils_1_1ParamType.html">utils::ParamType&lt;T&gt;::value</a>},</div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;                <span class="comment">/* .accessor   = */</span> <span class="keyword">nullptr</span>,</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;                <span class="comment">/* .attributes = */</span> NO_FUNCTIONS,</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;                <span class="comment">/* .attributes = */</span> <a class="code" href="namespacemip_1_1metadata.html#aee414dffae8703eaa53a3e97d34862a7">NO_FUNCTIONS</a>,</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;                <span class="comment">/* .count      = */</span> 1,</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;                <span class="comment">/* .condition  = */</span> {},</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;            },</div>
@@ -350,7 +350,7 @@ $(function() {
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;                <span class="comment">/* .docs       = */</span> <span class="stringliteral">&quot;Matrix data&quot;</span>,</div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;                <span class="comment">/* .type       = */</span> {<a class="code" href="structmip_1_1metadata_1_1utils_1_1ParamType.html">utils::ParamType&lt;T&gt;::value</a>},</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                <span class="comment">/* .accessor   = */</span> <span class="keyword">nullptr</span>,</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                <span class="comment">/* .attributes = */</span> NO_FUNCTIONS,</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                <span class="comment">/* .attributes = */</span> <a class="code" href="namespacemip_1_1metadata.html#aee414dffae8703eaa53a3e97d34862a7">NO_FUNCTIONS</a>,</div>
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                <span class="comment">/* .count      = */</span> 1,</div>
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                <span class="comment">/* .condition  = */</span> {},</div>
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;            },</div>
@@ -359,7 +359,7 @@ $(function() {
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;                <span class="comment">/* .docs       = */</span> <span class="stringliteral">&quot;Matrix data&quot;</span>,</div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;                <span class="comment">/* .type       = */</span> {<a class="code" href="structmip_1_1metadata_1_1utils_1_1ParamType.html">utils::ParamType&lt;T&gt;::value</a>},</div>
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;                <span class="comment">/* .accessor   = */</span> <span class="keyword">nullptr</span>,</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;                <span class="comment">/* .attributes = */</span> NO_FUNCTIONS,</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;                <span class="comment">/* .attributes = */</span> <a class="code" href="namespacemip_1_1metadata.html#aee414dffae8703eaa53a3e97d34862a7">NO_FUNCTIONS</a>,</div>
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                <span class="comment">/* .count      = */</span> 1,</div>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                <span class="comment">/* .condition  = */</span> {},</div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;            },</div>
@@ -368,7 +368,7 @@ $(function() {
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;                <span class="comment">/* .docs       = */</span> <span class="stringliteral">&quot;Matrix data&quot;</span>,</div>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;                <span class="comment">/* .type       = */</span> {<a class="code" href="structmip_1_1metadata_1_1utils_1_1ParamType.html">utils::ParamType&lt;T&gt;::value</a>},</div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;                <span class="comment">/* .accessor   = */</span> <span class="keyword">nullptr</span>,</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;                <span class="comment">/* .attributes = */</span> NO_FUNCTIONS,</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;                <span class="comment">/* .attributes = */</span> <a class="code" href="namespacemip_1_1metadata.html#aee414dffae8703eaa53a3e97d34862a7">NO_FUNCTIONS</a>,</div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;                <span class="comment">/* .count      = */</span> 1,</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;                <span class="comment">/* .condition  = */</span> {},</div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;            },</div>
@@ -377,7 +377,7 @@ $(function() {
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;                <span class="comment">/* .docs       = */</span> <span class="stringliteral">&quot;Matrix data&quot;</span>,</div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;                <span class="comment">/* .type       = */</span> {<a class="code" href="structmip_1_1metadata_1_1utils_1_1ParamType.html">utils::ParamType&lt;T&gt;::value</a>},</div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;                <span class="comment">/* .accessor   = */</span> <span class="keyword">nullptr</span>,</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;                <span class="comment">/* .attributes = */</span> NO_FUNCTIONS,</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;                <span class="comment">/* .attributes = */</span> <a class="code" href="namespacemip_1_1metadata.html#aee414dffae8703eaa53a3e97d34862a7">NO_FUNCTIONS</a>,</div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;                <span class="comment">/* .count      = */</span> 1,</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;                <span class="comment">/* .condition  = */</span> {},</div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;            },</div>
@@ -411,6 +411,7 @@ $(function() {
 <div class="ttc" id="aclassmicrostrain_1_1Serializer_html"><div class="ttname"><a href="classmicrostrain_1_1Serializer.html">microstrain::Serializer</a></div><div class="ttdoc">Serializes or deserializes data to/from a byte buffer.</div><div class="ttdef"><b>Definition:</b> serializer.hpp:135</div></div>
 <div class="ttc" id="astructmip_1_1CmdResult_html_a5179d910f5fe6a91e89e27f313732f02"><div class="ttname"><a href="structmip_1_1CmdResult.html#a5179d910f5fe6a91e89e27f313732f02">mip::CmdResult::NACK_INVALID_CHECKSUM</a></div><div class="ttdeci">static constexpr C::mip_cmd_result NACK_INVALID_CHECKSUM</div><div class="ttdoc">Reserved.</div><div class="ttdef"><b>Definition:</b> mip_result.hpp:36</div></div>
 <div class="ttc" id="anamespacemip_1_1metadata_html"><div class="ttname"><a href="namespacemip_1_1metadata.html">mip::metadata</a></div><div class="ttdef"><b>Definition:</b> common.hpp:8</div></div>
+<div class="ttc" id="anamespacemip_1_1metadata_html_aee414dffae8703eaa53a3e97d34862a7"><div class="ttname"><a href="namespacemip_1_1metadata.html#aee414dffae8703eaa53a3e97d34862a7">mip::metadata::NO_FUNCTIONS</a></div><div class="ttdeci">static constexpr FunctionBits NO_FUNCTIONS</div><div class="ttdef"><b>Definition:</b> mip_structures.hpp:155</div></div>
 <div class="ttc" id="astructmip_1_1metadata_1_1ReplyField_html"><div class="ttname"><a href="structmip_1_1metadata_1_1ReplyField.html">mip::metadata::ReplyField</a></div><div class="ttdef"><b>Definition:</b> common.hpp:57</div></div>
 <div class="ttc" id="astructmip_1_1CmdResult_html_aefa0e92d5f9ffa9c9be01f89281095fb"><div class="ttname"><a href="structmip_1_1CmdResult.html#aefa0e92d5f9ffa9c9be01f89281095fb">mip::CmdResult::NACK_INVALID_PARAM</a></div><div class="ttdeci">static constexpr C::mip_cmd_result NACK_INVALID_PARAM</div><div class="ttdoc">A parameter was not a supported value.</div><div class="ttdef"><b>Definition:</b> mip_result.hpp:37</div></div>
 <div class="ttc" id="astructmip_1_1metadata_1_1ReplyField_html_a5aebda4c8491088ae9093769703a0010"><div class="ttname"><a href="structmip_1_1metadata_1_1ReplyField.html#a5aebda4c8491088ae9093769703a0010">mip::metadata::ReplyField::extract</a></div><div class="ttdeci">size_t extract(Serializer &amp;buffer)</div><div class="ttdef"><b>Definition:</b> common.hpp:66</div></div>
@@ -436,6 +437,7 @@ $(function() {
 <div class="ttc" id="astructmip_1_1metadata_1_1EnumInfo_html"><div class="ttname"><a href="structmip_1_1metadata_1_1EnumInfo.html">mip::metadata::EnumInfo</a></div><div class="ttdef"><b>Definition:</b> mip_structures.hpp:63</div></div>
 <div class="ttc" id="agroup__microstrain__serialization__cpp_html_gaa0cf22bb580922a0bd6a4e930bb76e5e"><div class="ttname"><a href="group__microstrain__serialization__cpp.html#gaa0cf22bb580922a0bd6a4e930bb76e5e">microstrain::Serializer::extract</a></div><div class="ttdeci">bool extract(Ts &amp;... values)</div><div class="ttdoc">Deserializes one or more values.</div><div class="ttdef"><b>Definition:</b> serializer.hpp:961</div></div>
 <div class="ttc" id="astructmip_1_1CmdResult_html_a0ad8385f37607a4810e3ebeffa22a73d"><div class="ttname"><a href="structmip_1_1CmdResult.html#a0ad8385f37607a4810e3ebeffa22a73d">mip::CmdResult::value</a></div><div class="ttdeci">C::mip_cmd_result value</div><div class="ttdef"><b>Definition:</b> mip_result.hpp:45</div></div>
+<div class="ttc" id="agroup__mip__cpp_html_ga7d8f007ad533e24c95f51bc59dfea374"><div class="ttname"><a href="group__mip__cpp.html#ga7d8f007ad533e24c95f51bc59dfea374">mip::INVALID_DESCRIPTOR_SET</a></div><div class="ttdeci">static constexpr uint8_t INVALID_DESCRIPTOR_SET</div><div class="ttdef"><b>Definition:</b> mip_descriptors.hpp:76</div></div>
 <div class="ttc" id="astructmip_1_1CompositeDescriptor_html"><div class="ttname"><a href="structmip_1_1CompositeDescriptor.html">mip::CompositeDescriptor</a></div><div class="ttdoc">Convenience struct holding both descriptor set and field descriptor.</div><div class="ttdef"><b>Definition:</b> mip_descriptors.hpp:21</div></div>
 <div class="ttc" id="astructmip_1_1CmdResult_html_a26e7d136783c6dbb4788c6aade0d656c"><div class="ttname"><a href="structmip_1_1CmdResult.html#a26e7d136783c6dbb4788c6aade0d656c">mip::CmdResult::NACK_COMMAND_TIMEOUT</a></div><div class="ttdeci">static constexpr C::mip_cmd_result NACK_COMMAND_TIMEOUT</div><div class="ttdoc">Internal device timeout. Use MIP_STATUS_TIMEDOUT for command timeouts.</div><div class="ttdef"><b>Definition:</b> mip_result.hpp:39</div></div>
 <div class="ttc" id="astructmip_1_1metadata_1_1StructInfo_html"><div class="ttname"><a href="structmip_1_1metadata_1_1StructInfo.html">mip::metadata::StructInfo</a></div><div class="ttdef"><b>Definition:</b> mip_structures.hpp:201</div></div>

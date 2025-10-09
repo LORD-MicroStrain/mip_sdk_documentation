@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -131,53 +131,11 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Represents a command awaiting a reply from the device. </p>
 <dl class="section note"><dt>Note</dt><dd>This should be considered an "opaque" structure; its members should be considered an internal implementation detail. Avoid accessing them directly as they are subject to change in future versions of this software. </dd></dl>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga73a4f9afae46f657ee2637fa8d7b3131"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga73a4f9afae46f657ee2637fa8d7b3131">&#9670;&nbsp;</a></span>mip_pending_cmd_check_timeout()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool mip::C::mip_pending_cmd_check_timeout </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__pending__cmd.html">mip_pending_cmd</a> *&#160;</td>
-          <td class="paramname"><em>cmd</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacemip_1_1C.html#a8a24a1913ffba77cdd608c5fb7575f37">mip_timestamp</a>&#160;</td>
-          <td class="paramname"><em>now</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Checks if the command should time out. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">cmd</td><td></td></tr>
-    <tr><td class="paramname">now</td><td>Current time</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if the command should time out. Only possible for MIP_STATUS_WAITING. </dd>
-<dd>
-false if the command should not time out. </dd></dl>
-
-</div>
-</div>
 <a id="ga3e0eadcc136f1f24d3e5f1dca34e0850"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga3e0eadcc136f1f24d3e5f1dca34e0850">&#9670;&nbsp;</a></span>mip_pending_cmd_init()</h2>
 
@@ -209,13 +167,123 @@ false if the command should not time out. </dd></dl>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Initialize a pending command with no reponse data or additional time. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">cmd</td><td></td></tr>
     <tr><td class="paramname">descriptor_set</td><td>Command descriptor set. </td></tr>
     <tr><td class="paramname">field_descriptor</td><td>Command field descriptor. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gaaf29df38f1b10572f29fd379c78406cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaf29df38f1b10572f29fd379c78406cb">&#9670;&nbsp;</a></span>mip_pending_cmd_init_with_timeout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::C::mip_pending_cmd_init_with_timeout </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__pending__cmd.html">mip_pending_cmd</a> *&#160;</td>
+          <td class="paramname"><em>cmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>descriptor_set</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>field_descriptor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacemip_1_1C.html#aeb7a010ab523fc31b023122aa9b8e524">mip_timeout</a>&#160;</td>
+          <td class="paramname"><em>additional_time</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmd</td><td></td></tr>
+    <tr><td class="paramname">descriptor_set</td><td>Command descriptor set. </td></tr>
+    <tr><td class="paramname">field_descriptor</td><td>Command field descriptor. </td></tr>
+    <tr><td class="paramname">additional_time</td><td>Additional time on top of the base reply timeout for this specific command. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga890d7c5572f1d1b195182891217b735b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga890d7c5572f1d1b195182891217b735b">&#9670;&nbsp;</a></span>mip_pending_cmd_init_with_response()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::C::mip_pending_cmd_init_with_response </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__pending__cmd.html">mip_pending_cmd</a> *&#160;</td>
+          <td class="paramname"><em>cmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>descriptor_set</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>field_descriptor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>response_descriptor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>response_buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>response_buffer_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmd</td><td></td></tr>
+    <tr><td class="paramname">descriptor_set</td><td>Command descriptor set. </td></tr>
+    <tr><td class="paramname">field_descriptor</td><td>Command field descriptor. </td></tr>
+    <tr><td class="paramname">response_descriptor</td><td>Optional response data descriptor. Use 0x00 if no data is expected. </td></tr>
+    <tr><td class="paramname">response_buffer</td><td>Optional buffer to hold response data, if any. If NULL, response_buffer_size must be 0. </td></tr>
+    <tr><td class="paramname">response_buffer_size</td><td>Size of the response buffer. The response will be limited to this size. </td></tr>
   </table>
   </dd>
 </dl>
@@ -277,8 +345,6 @@ false if the command should not time out. </dd></dl>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Initialize a pending mip commmand with all parameters. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">cmd</td><td></td></tr>
@@ -294,119 +360,78 @@ false if the command should not time out. </dd></dl>
 
 </div>
 </div>
-<a id="ga890d7c5572f1d1b195182891217b735b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga890d7c5572f1d1b195182891217b735b">&#9670;&nbsp;</a></span>mip_pending_cmd_init_with_response()</h2>
+<a id="ga39369dbec29d4ecb2acb5157eee6e3ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga39369dbec29d4ecb2acb5157eee6e3ba">&#9670;&nbsp;</a></span>mip_pending_cmd_status()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void mip::C::mip_pending_cmd_init_with_response </td>
+          <td class="memname">enum <a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_pending_cmd_status </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__pending__cmd.html">mip_pending_cmd</a> *&#160;</td>
-          <td class="paramname"><em>cmd</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__pending__cmd.html">mip_pending_cmd</a> *&#160;</td>
+          <td class="paramname"><em>cmd</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>descriptor_set</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>field_descriptor</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>response_descriptor</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>response_buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>response_buffer_size</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Initialize a pending mip commmand with expected response data. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">cmd</td><td></td></tr>
-    <tr><td class="paramname">descriptor_set</td><td>Command descriptor set. </td></tr>
-    <tr><td class="paramname">field_descriptor</td><td>Command field descriptor. </td></tr>
-    <tr><td class="paramname">response_descriptor</td><td>Optional response data descriptor. Use 0x00 if no data is expected. </td></tr>
-    <tr><td class="paramname">response_buffer</td><td>Optional buffer to hold response data, if any. If NULL, response_buffer_size must be 0. </td></tr>
-    <tr><td class="paramname">response_buffer_size</td><td>Size of the response buffer. The response will be limited to this size. </td></tr>
-  </table>
-  </dd>
-</dl>
+<dl class="section see"><dt>See also</dt><dd>mip_cmd_status </dd></dl>
 
 </div>
 </div>
-<a id="gaaf29df38f1b10572f29fd379c78406cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaaf29df38f1b10572f29fd379c78406cb">&#9670;&nbsp;</a></span>mip_pending_cmd_init_with_timeout()</h2>
+<a id="ga7e9293372ec5141d9736e56519c0327e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7e9293372ec5141d9736e56519c0327e">&#9670;&nbsp;</a></span>mip_pending_cmd_response_descriptor()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void mip::C::mip_pending_cmd_init_with_timeout </td>
+          <td class="memname">uint8_t mip::C::mip_pending_cmd_response_descriptor </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__pending__cmd.html">mip_pending_cmd</a> *&#160;</td>
-          <td class="paramname"><em>cmd</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__pending__cmd.html">mip_pending_cmd</a> *&#160;</td>
+          <td class="paramname"><em>cmd</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>descriptor_set</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>field_descriptor</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacemip_1_1C.html#aeb7a010ab523fc31b023122aa9b8e524">mip_timeout</a>&#160;</td>
-          <td class="paramname"><em>additional_time</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initialize a pending mip commmand with extra timeout time. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">cmd</td><td></td></tr>
-    <tr><td class="paramname">descriptor_set</td><td>Command descriptor set. </td></tr>
-    <tr><td class="paramname">field_descriptor</td><td>Command field descriptor. </td></tr>
-    <tr><td class="paramname">additional_time</td><td>Additional time on top of the base reply timeout for this specific command. </td></tr>
-  </table>
-  </dd>
-</dl>
+</div>
+</div>
+<a id="ga565126cb0553fd7a4f028132ad80852c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga565126cb0553fd7a4f028132ad80852c">&#9670;&nbsp;</a></span>mip_pending_cmd_response()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t * mip::C::mip_pending_cmd_response </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__pending__cmd.html">mip_pending_cmd</a> *&#160;</td>
+          <td class="paramname"><em>cmd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This function may only be called after the command finishes with an ACK. </p>
+
+</div>
+</div>
+<a id="ga8d9425e3d3d8066cd2c01b65b585ca11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8d9425e3d3d8066cd2c01b65b585ca11">&#9670;&nbsp;</a></span>mip_pending_cmd_response_length()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t mip::C::mip_pending_cmd_response_length </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__pending__cmd.html">mip_pending_cmd</a> *&#160;</td>
+          <td class="paramname"><em>cmd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This function may only be called after the command finishes. If the command completed with a NACK, or if it timed out, the response length will be zero. </p>
 
 </div>
 </div>
@@ -435,8 +460,6 @@ false if the command should not time out. </dd></dl>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Determines how much time is remaining before the command times out. </p>
 <p>For most cases you should instead call <a class="el" href="group__MipPendingCommand__c.html#ga73a4f9afae46f657ee2637fa8d7b3131" title="Checks if the command should time out.">mip_pending_cmd_check_timeout()</a> to know if the command has timed out or not.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -450,86 +473,41 @@ false if the command should not time out. </dd></dl>
 
 </div>
 </div>
-<a id="ga565126cb0553fd7a4f028132ad80852c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga565126cb0553fd7a4f028132ad80852c">&#9670;&nbsp;</a></span>mip_pending_cmd_response()</h2>
+<a id="ga73a4f9afae46f657ee2637fa8d7b3131"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga73a4f9afae46f657ee2637fa8d7b3131">&#9670;&nbsp;</a></span>mip_pending_cmd_check_timeout()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const uint8_t * mip::C::mip_pending_cmd_response </td>
+          <td class="memname">bool mip::C::mip_pending_cmd_check_timeout </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__pending__cmd.html">mip_pending_cmd</a> *&#160;</td>
-          <td class="paramname"><em>cmd</em></td><td>)</td>
-          <td></td>
+          <td class="paramname"><em>cmd</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the response payload pointer. </p>
-<p>This function may only be called after the command finishes with an ACK. </p>
-
-</div>
-</div>
-<a id="ga7e9293372ec5141d9736e56519c0327e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7e9293372ec5141d9736e56519c0327e">&#9670;&nbsp;</a></span>mip_pending_cmd_response_descriptor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname">uint8_t mip::C::mip_pending_cmd_response_descriptor </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__pending__cmd.html">mip_pending_cmd</a> *&#160;</td>
-          <td class="paramname"><em>cmd</em></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="namespacemip_1_1C.html#a8a24a1913ffba77cdd608c5fb7575f37">mip_timestamp</a>&#160;</td>
+          <td class="paramname"><em>now</em>&#160;</td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the response descriptor. </p>
-
-</div>
-</div>
-<a id="ga8d9425e3d3d8066cd2c01b65b585ca11"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8d9425e3d3d8066cd2c01b65b585ca11">&#9670;&nbsp;</a></span>mip_pending_cmd_response_length()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname">uint8_t mip::C::mip_pending_cmd_response_length </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__pending__cmd.html">mip_pending_cmd</a> *&#160;</td>
-          <td class="paramname"><em>cmd</em></td><td>)</td>
           <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Returns the length of the response data. </p>
-<p>This function may only be called after the command finishes. If the command completed with a NACK, or if it timed out, the response length will be zero. </p>
-
-</div>
-</div>
-<a id="ga39369dbec29d4ecb2acb5157eee6e3ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga39369dbec29d4ecb2acb5157eee6e3ba">&#9670;&nbsp;</a></span>mip_pending_cmd_status()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_pending_cmd_status </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__pending__cmd.html">mip_pending_cmd</a> *&#160;</td>
-          <td class="paramname"><em>cmd</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the status of the pending command. </p>
-<dl class="section see"><dt>See also</dt><dd>mip_cmd_status </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmd</td><td></td></tr>
+    <tr><td class="paramname">now</td><td>Current time</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the command should time out. Only possible for MIP_STATUS_WAITING. </dd>
+<dd>
+false if the command should not time out. </dd></dl>
 
 </div>
 </div>

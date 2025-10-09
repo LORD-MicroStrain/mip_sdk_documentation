@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -94,41 +94,32 @@ Functions</h2></td></tr>
 <tr class="separator:gaba13e049003b6a74afced6d83d2ff845"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Set the sensor to vehicle frame offset, expressed in the sensor frame. </p>
 <p>This is a simple offset, not a lever arm. It does not compensate for inertial effects experienced from being offset from the center of gravity/rotation of the vehicle. It simply adds the offset to the position output to express it in the origin of the user's vehicle frame.</p>
 <p>This offset affects the following output quantities: Estimated LLH Position</p>
 <p>The magnitude of the offset vector is limited to 10 meters </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gaba13e049003b6a74afced6d83d2ff845"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaba13e049003b6a74afced6d83d2ff845">&#9670;&nbsp;</a></span>defaultSensorToVehicleOffset()</h2>
+<a id="ga9c0808c1cda68770c69cbf7ab0e214ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9c0808c1cda68770c69cbf7ab0e214ec">&#9670;&nbsp;</a></span>writeSensorToVehicleOffset()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1SensorToVehicleOffset.html">SensorToVehicleOffset</a> &gt; mip::commands_filter::defaultSensorToVehicleOffset </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1SensorToVehicleOffset.html">SensorToVehicleOffset</a> &gt; mip::commands_filter::writeSensorToVehicleOffset </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
-          <td></td>
+          <td class="paramname"><em>device</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gacfaa528b3157943f620dc7e04bda2469"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacfaa528b3157943f620dc7e04bda2469">&#9670;&nbsp;</a></span>loadSensorToVehicleOffset()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1SensorToVehicleOffset.html">SensorToVehicleOffset</a> &gt; mip::commands_filter::loadSensorToVehicleOffset </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -181,28 +172,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga9c0808c1cda68770c69cbf7ab0e214ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9c0808c1cda68770c69cbf7ab0e214ec">&#9670;&nbsp;</a></span>writeSensorToVehicleOffset()</h2>
+<a id="gacfaa528b3157943f620dc7e04bda2469"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacfaa528b3157943f620dc7e04bda2469">&#9670;&nbsp;</a></span>loadSensorToVehicleOffset()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1SensorToVehicleOffset.html">SensorToVehicleOffset</a> &gt; mip::commands_filter::writeSensorToVehicleOffset </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1SensorToVehicleOffset.html">SensorToVehicleOffset</a> &gt; mip::commands_filter::loadSensorToVehicleOffset </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const float *&#160;</td>
-          <td class="paramname"><em>offset</em>&#160;</td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaba13e049003b6a74afced6d83d2ff845"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaba13e049003b6a74afced6d83d2ff845">&#9670;&nbsp;</a></span>defaultSensorToVehicleOffset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1SensorToVehicleOffset.html">SensorToVehicleOffset</a> &gt; mip::commands_filter::defaultSensorToVehicleOffset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -94,74 +94,7 @@ Functions</h2></td></tr>
 <tr class="separator:gaba866a6b24d0bd9f4da1cc4a39c2ff3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>String manipulation in C++. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gaba866a6b24d0bd9f4da1cc4a39c2ff3d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaba866a6b24d0bd9f4da1cc4a39c2ff3d">&#9670;&nbsp;</a></span>bytesToHexStr()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool microstrain::strings::bytesToHexStr </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacemicrostrain.html#a713e840c6a8f0fd7e825a125ee6dae28">CharArrayView</a>&#160;</td>
-          <td class="paramname"><em>buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t *&#160;</td>
-          <td class="paramname"><em>index</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacemicrostrain.html#ad10904b5b78aab3f27f0a6fa165d94bc">ConstU8ArrayView</a>&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>byte_grouping</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Formats a byte array to a text buffer in hexadecimal. </p>
-<p>No additional characters are printed other than the hex values and spaces (if byte_grouping is positive). No leading or trailing space is printed.</p>
-<p>Examples: </p><div class="fragment"></div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir"></td><td class="paramname">buffer</td><td>Buffer of characters. The size should be the number of characters, including the NULL terminator, that will fit in the buffer. If the pointer is NULL and size is 0, this function will just compute the required buffer size and not write any characters. </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">index</td><td>Position in buffer where string data will be written. It will be updated with the new index and will point to the new NULL terminator position. If insufficient space is available in buffer, index will still be updated even if it exceeds buffer_size. </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">data</td><td>Data to be formatted. Can be NULL if data_size is 0. </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">data_size</td><td>Number of bytes from data to print. Must be 0 if data is NULL. </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">byte_grouping</td><td>If greater than zero, a space will be printed every byte_grouping bytes. E.g. a group of 2 will print pairs of bytes separated by spaces.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if successful </dd>
-<dd>
-False if an encoding error occurs (see snprintf). The index is unchanged in this case. </dd>
-<dd>
-False if insufficient space is available, unless buffer is NULL. </dd></dl>
-
-</div>
-</div>
 <a id="ga0df777fa492644345944839e86bf69c1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga0df777fa492644345944839e86bf69c1">&#9670;&nbsp;</a></span>concat() <span class="overload">[1/2]</span></h2>
 
@@ -207,8 +140,6 @@ False if insufficient space is available, unless buffer is NULL. </dd></dl>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Concatenate a string into a buffer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir"></td><td class="paramname">buffer</td><td>Buffer of characters. The size should be the number of characters, including the NULL terminator, that will fit in the buffer. If the pointer is NULL and size is 0, this function will just compute the required buffer size and not write any characters. </td></tr>
@@ -263,8 +194,6 @@ False if buffer is not NULL and insufficient space is available. </dd></dl>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Concatenate an array of characters into a buffer. </p>
 <p>Equivalent to <code>concat(buffer, buffer_size, index, str.data(), str.size());</code>. This version accepts a Span of characters.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -325,8 +254,6 @@ False if buffer is not NULL and insufficient space is available. </dd></dl>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Concatenate a NULL-terminated <a class="el" href="namespacemicrostrain_1_1C.html">C</a> string into a buffer. </p>
 <p>Equivalent to <code>concat(buffer, buffer_size, index, str, strlen(str));</code>.</p>
 <p>Copies up to <code>maxLen</code> characters, or the first NULL character is reached, whichever comes first. maxLen can be used when it's uncertain if the source buffer is properly terminated.</p>
 <p>Examples: </p><div class="fragment"><div class="line"><span class="keyword">const</span> <span class="keywordtype">char</span>* str = <span class="stringliteral">&quot;To be appended&quot;</span>;</div>
@@ -380,8 +307,6 @@ template&lt;size_t N&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Concatenate a string literal into a buffer. </p>
 <p>Equivalent to <code>concat(buffer, buffer_size, index, str, sizeof(str)-1);</code>.</p>
 <p>Use this by passing a string literal directly so that the compiler is able to deduce the size of the string. This avoids the need to call std::strlen.</p>
 <p>Example: <code>concat_l(buffer, &amp;index, "append this string");</code></p>
@@ -397,6 +322,70 @@ template&lt;size_t N&gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>True if sufficient buffer space exists or if buffer is NULL. </dd>
 <dd>
 False if buffer is not NULL and insufficient space is available. </dd></dl>
+
+</div>
+</div>
+<a id="gaba866a6b24d0bd9f4da1cc4a39c2ff3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaba866a6b24d0bd9f4da1cc4a39c2ff3d">&#9670;&nbsp;</a></span>bytesToHexStr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool microstrain::strings::bytesToHexStr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacemicrostrain.html#a713e840c6a8f0fd7e825a125ee6dae28">CharArrayView</a>&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacemicrostrain.html#ad10904b5b78aab3f27f0a6fa165d94bc">ConstU8ArrayView</a>&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>byte_grouping</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>No additional characters are printed other than the hex values and spaces (if byte_grouping is positive). No leading or trailing space is printed.</p>
+<p>Examples: </p><div class="fragment"></div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">buffer</td><td>Buffer of characters. The size should be the number of characters, including the NULL terminator, that will fit in the buffer. If the pointer is NULL and size is 0, this function will just compute the required buffer size and not write any characters. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">index</td><td>Position in buffer where string data will be written. It will be updated with the new index and will point to the new NULL terminator position. If insufficient space is available in buffer, index will still be updated even if it exceeds buffer_size. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">data</td><td>Data to be formatted. Can be NULL if data_size is 0. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">data_size</td><td>Number of bytes from data to print. Must be 0 if data is NULL. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">byte_grouping</td><td>If greater than zero, a space will be printed every byte_grouping bytes. E.g. a group of 2 will print pairs of bytes separated by spaces.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if successful </dd>
+<dd>
+False if an encoding error occurs (see snprintf). The index is unchanged in this case. </dd>
+<dd>
+False if insufficient space is available, unless buffer is NULL. </dd></dl>
 
 </div>
 </div>

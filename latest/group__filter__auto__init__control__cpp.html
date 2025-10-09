@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -94,41 +94,32 @@ Functions</h2></td></tr>
 <tr class="separator:gab8b160501d4f84740587ba51616c828d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Filter Auto-initialization Control. </p>
 <p>Enable/Disable automatic initialization upon device startup.</p>
 <p>Possible enable values:</p>
 <p>0x00 - Disable auto-initialization 0x01 - Enable auto-initialization </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gab8b160501d4f84740587ba51616c828d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab8b160501d4f84740587ba51616c828d">&#9670;&nbsp;</a></span>defaultAutoInitControl()</h2>
+<a id="ga8d6b7b0c6bd66981d35c86e19fdd718a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8d6b7b0c6bd66981d35c86e19fdd718a">&#9670;&nbsp;</a></span>writeAutoInitControl()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1AutoInitControl.html">AutoInitControl</a> &gt; mip::commands_filter::defaultAutoInitControl </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1AutoInitControl.html">AutoInitControl</a> &gt; mip::commands_filter::writeAutoInitControl </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
-          <td></td>
+          <td class="paramname"><em>device</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga103505641eaef03122b9b5fc7256c1fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga103505641eaef03122b9b5fc7256c1fb">&#9670;&nbsp;</a></span>loadAutoInitControl()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1AutoInitControl.html">AutoInitControl</a> &gt; mip::commands_filter::loadAutoInitControl </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>enable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -181,28 +172,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga8d6b7b0c6bd66981d35c86e19fdd718a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8d6b7b0c6bd66981d35c86e19fdd718a">&#9670;&nbsp;</a></span>writeAutoInitControl()</h2>
+<a id="ga103505641eaef03122b9b5fc7256c1fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga103505641eaef03122b9b5fc7256c1fb">&#9670;&nbsp;</a></span>loadAutoInitControl()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1AutoInitControl.html">AutoInitControl</a> &gt; mip::commands_filter::writeAutoInitControl </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1AutoInitControl.html">AutoInitControl</a> &gt; mip::commands_filter::loadAutoInitControl </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>enable</em>&#160;</td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gab8b160501d4f84740587ba51616c828d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab8b160501d4f84740587ba51616c828d">&#9670;&nbsp;</a></span>defaultAutoInitControl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1AutoInitControl.html">AutoInitControl</a> &gt; mip::commands_filter::defaultAutoInitControl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

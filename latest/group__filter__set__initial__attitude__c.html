@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -96,7 +96,6 @@ Functions</h2></td></tr>
 <tr class="separator:ga9109a36472489e1a76b3bbc621886c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Set the sensor initial attitude. </p>
 <p>This command can only be issued in the "Init" state and should be used with a good estimate of the vehicle attitude. The Euler angles are the sensor body frame with respect to the NED frame.</p>
 <p>The valid input ranges are as follows:</p>
 <p>Roll: [-pi, pi] Pitch: [-pi/2, pi/2] Heading: [-pi, pi] </p>
@@ -116,34 +115,6 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gad2dc938e26ec19ebcc63cb7db5bff54d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad2dc938e26ec19ebcc63cb7db5bff54d">&#9670;&nbsp;</a></span>extract_mip_filter_set_initial_attitude_command()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::extract_mip_filter_set_initial_attitude_command </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__set__initial__attitude__command.html">mip_filter_set_initial_attitude_command</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ga8b1ac4258cc4c9ce43496ff37e49b371"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga8b1ac4258cc4c9ce43496ff37e49b371">&#9670;&nbsp;</a></span>insert_mip_filter_set_initial_attitude_command()</h2>
 
@@ -160,6 +131,34 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__filter__set__initial__attitude__command.html">mip_filter_set_initial_attitude_command</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gad2dc938e26ec19ebcc63cb7db5bff54d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad2dc938e26ec19ebcc63cb7db5bff54d">&#9670;&nbsp;</a></span>extract_mip_filter_set_initial_attitude_command()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::C::extract_mip_filter_set_initial_attitude_command </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__set__initial__attitude__command.html">mip_filter_set_initial_attitude_command</a> *&#160;</td>
           <td class="paramname"><em>self</em>&#160;</td>
         </tr>
         <tr>

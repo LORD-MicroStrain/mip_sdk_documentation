@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -94,39 +94,30 @@ Functions</h2></td></tr>
 <tr class="separator:gaa017e1e5aa3b9a7c8af8aacb7a0dc63b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Configure the user specified magnetometer hard iron offset vector. </p>
 <p>The values for this offset are determined empirically by external software algorithms based on calibration data taken after the device is installed in its application. These values can be obtained and set by using Microstrain software tools. Alternatively, on some systems, the auto-mag calibration feature may be used to capture these values in-run. The offset is applied to the scaled magnetometer vector prior to output. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gaa017e1e5aa3b9a7c8af8aacb7a0dc63b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa017e1e5aa3b9a7c8af8aacb7a0dc63b">&#9670;&nbsp;</a></span>defaultMagHardIronOffset()</h2>
+<a id="ga464828a234337e8d368cdc27e7102178"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga464828a234337e8d368cdc27e7102178">&#9670;&nbsp;</a></span>writeMagHardIronOffset()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1MagHardIronOffset.html">MagHardIronOffset</a> &gt; mip::commands_3dm::defaultMagHardIronOffset </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1MagHardIronOffset.html">MagHardIronOffset</a> &gt; mip::commands_3dm::writeMagHardIronOffset </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
-          <td></td>
+          <td class="paramname"><em>device</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga5fb98669226f8f6f1447b15fa7aedd8d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5fb98669226f8f6f1447b15fa7aedd8d">&#9670;&nbsp;</a></span>loadMagHardIronOffset()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1MagHardIronOffset.html">MagHardIronOffset</a> &gt; mip::commands_3dm::loadMagHardIronOffset </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -179,28 +170,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga464828a234337e8d368cdc27e7102178"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga464828a234337e8d368cdc27e7102178">&#9670;&nbsp;</a></span>writeMagHardIronOffset()</h2>
+<a id="ga5fb98669226f8f6f1447b15fa7aedd8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5fb98669226f8f6f1447b15fa7aedd8d">&#9670;&nbsp;</a></span>loadMagHardIronOffset()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1MagHardIronOffset.html">MagHardIronOffset</a> &gt; mip::commands_3dm::writeMagHardIronOffset </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1MagHardIronOffset.html">MagHardIronOffset</a> &gt; mip::commands_3dm::loadMagHardIronOffset </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const float *&#160;</td>
-          <td class="paramname"><em>offset</em>&#160;</td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa017e1e5aa3b9a7c8af8aacb7a0dc63b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa017e1e5aa3b9a7c8af8aacb7a0dc63b">&#9670;&nbsp;</a></span>defaultMagHardIronOffset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1MagHardIronOffset.html">MagHardIronOffset</a> &gt; mip::commands_3dm::defaultMagHardIronOffset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

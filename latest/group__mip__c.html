@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -193,7 +193,6 @@ Functions</h2></td></tr>
 <tr class="separator:ga10413c9d587d3c41838807d1c3a70560"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>This module contains functions and classes for communicating with a MIP device in C. </p>
 <p>This module contains all of the <a class="el" href="namespacemip_1_1C.html">C</a> submodules.</p>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="ga11996d27236cfcecb7a2b88476fd415e"></a>
@@ -207,8 +206,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Represents the status of a MIP command. </p>
 <p>Values that start with MIP_STATUS are status codes from this library. Values that start with MIP_(N)ACK represent replies from the device. Values at or below MIP_STATUS_USER_START (negative values) are reserved for status codes from user code.</p>
 <p>See <a class="el" href="command_results.html">Mip Command Results</a> </p>
 
@@ -226,8 +223,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Represents the status of a MIP command. </p>
 <p>Values that start with MIP_STATUS are status codes from this library. Values that start with MIP_(N)ACK represent replies from the device. Values at or below MIP_STATUS_USER_START (negative values) are reserved for status codes from user code.</p>
 <p>See <a class="el" href="command_results.html">Mip Command Results</a> </p>
 <table class="fieldtable">
@@ -262,31 +257,281 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga0ff2680db9120cb64c2d85929a52e2cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0ff2680db9120cb64c2d85929a52e2cc">&#9670;&nbsp;</a></span>extract_mip_function_selector()</h2>
+<a id="gaaae27667317b9e9ede3cba933532f3f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaae27667317b9e9ede3cba933532f3f9">&#9670;&nbsp;</a></span>mip_is_valid_descriptor_set()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void mip::extract_mip_function_selector </td>
+          <td class="memname">bool mip::mip_is_valid_descriptor_set </td>
           <td>(</td>
-          <td class="paramtype">microstrain_serializer *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>descriptor_set</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">enum mip_function_selector *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">descriptor_set</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the descriptor set is valid. </dd></dl>
+
+</div>
+</div>
+<a id="gaeda3907593b939a4d0ebd159840f8697"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeda3907593b939a4d0ebd159840f8697">&#9670;&nbsp;</a></span>mip_is_data_descriptor_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::mip_is_data_descriptor_set </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>descriptor_set</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">descriptor_set</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the descriptor set represents data. </dd></dl>
+
+</div>
+</div>
+<a id="ga207d66fafbef029ccc5d7e89ef605237"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga207d66fafbef029ccc5d7e89ef605237">&#9670;&nbsp;</a></span>mip_is_cmd_descriptor_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::mip_is_cmd_descriptor_set </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>descriptor_set</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">descriptor_set</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the descriptor set contains commands. </dd></dl>
+
+</div>
+</div>
+<a id="ga72ed9fa1acf9e350834fa66659e2ee28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga72ed9fa1acf9e350834fa66659e2ee28">&#9670;&nbsp;</a></span>mip_is_reserved_descriptor_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::mip_is_reserved_descriptor_set </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>descriptor_set</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">descriptor_set</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the descriptor set is reserved. </dd></dl>
+
+</div>
+</div>
+<a id="ga64d1a03ff784346f09000ee8e94008ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga64d1a03ff784346f09000ee8e94008ca">&#9670;&nbsp;</a></span>mip_is_gnss_data_descriptor_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::mip_is_gnss_data_descriptor_set </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>descriptor_set</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">descriptor_set</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the descriptor set represents GNSS data. </dd></dl>
+
+</div>
+</div>
+<a id="gaeeac51f3d004cc909a2eafa6b7528d84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeeac51f3d004cc909a2eafa6b7528d84">&#9670;&nbsp;</a></span>mip_is_valid_field_descriptor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::mip_is_valid_field_descriptor </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>field_descriptor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">field_descriptor</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the field descriptor is valid. </dd></dl>
+
+</div>
+</div>
+<a id="ga36225b1459053380ae46cf021010044d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga36225b1459053380ae46cf021010044d">&#9670;&nbsp;</a></span>mip_is_cmd_field_descriptor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::mip_is_cmd_field_descriptor </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>field_descriptor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">field_descriptor</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the field descriptor represents a command. </dd></dl>
+
+</div>
+</div>
+<a id="ga34ac79303ab67f097baadb3f9d286d42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga34ac79303ab67f097baadb3f9d286d42">&#9670;&nbsp;</a></span>mip_is_reply_field_descriptor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::mip_is_reply_field_descriptor </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>field_descriptor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">field_descriptor</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the field descriptor represents an ack/nack reply code. </dd></dl>
+
+</div>
+</div>
+<a id="gac820a8499b6a296afbe1b68f08c51012"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac820a8499b6a296afbe1b68f08c51012">&#9670;&nbsp;</a></span>mip_is_response_field_descriptor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::mip_is_response_field_descriptor </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>field_descriptor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The descriptor set is assumed to be a command set.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">field_descriptor</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the associated field contains response data. </dd></dl>
+
+</div>
+</div>
+<a id="ga770069c8f61f3a5deb0aa6ccbc4ca8b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga770069c8f61f3a5deb0aa6ccbc4ca8b7">&#9670;&nbsp;</a></span>mip_is_reserved_cmd_field_descriptor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::mip_is_reserved_cmd_field_descriptor </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>field_descriptor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The descriptor set is assumed to be a command set.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">field_descriptor</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the associated field is neither a command nor response. </dd></dl>
+
+</div>
+</div>
+<a id="gae8d9bc2a154127e9b5a1a4cd10ba6f87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae8d9bc2a154127e9b5a1a4cd10ba6f87">&#9670;&nbsp;</a></span>mip_is_shared_data_field_descriptor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::mip_is_shared_data_field_descriptor </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>field_descriptor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The descriptor set is assumed to be a data set.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">field_descriptor</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the associated field is from the shared data set. </dd></dl>
 
 </div>
 </div>
@@ -318,14 +563,42 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga10413c9d587d3c41838807d1c3a70560"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga10413c9d587d3c41838807d1c3a70560">&#9670;&nbsp;</a></span>mip_cmd_result_is_ack()</h2>
+<a id="ga0ff2680db9120cb64c2d85929a52e2cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0ff2680db9120cb64c2d85929a52e2cc">&#9670;&nbsp;</a></span>extract_mip_function_selector()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool mip::C::mip_cmd_result_is_ack </td>
+          <td class="memname">void mip::extract_mip_function_selector </td>
+          <td>(</td>
+          <td class="paramtype">microstrain_serializer *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">enum mip_function_selector *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae7148026535b0837c16d36be3ef4c6c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae7148026535b0837c16d36be3ef4c6c8">&#9670;&nbsp;</a></span>mip_cmd_result_to_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * mip::C::mip_cmd_result_to_string </td>
           <td>(</td>
           <td class="paramtype">enum <a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a>&#160;</td>
           <td class="paramname"><em>result</em></td><td>)</td>
@@ -333,8 +606,13 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Determines if the result is an ack (successful response from the device) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">result</td><td>Any value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A constant string. </dd></dl>
 
 </div>
 </div>
@@ -354,8 +632,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Determines if the command has completed, timed out, been cancelled, or otherwise is no longer waiting for a response. </p>
-
 </div>
 </div>
 <a id="ga0ba1d10504e92c0adf97e66785de16af"></a>
@@ -373,8 +649,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Determines if the result is a reply from the device (i.e. mip_ack). </p>
 
 </div>
 </div>
@@ -394,8 +668,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Determines if the result code was generated by this lib (i.e. mip_cmd_status). </p>
-
 </div>
 </div>
 <a id="ga724088c29ae06d2aa55a702297fd1727"></a>
@@ -414,18 +686,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Determines if the result code was generated by user software. </p>
-
 </div>
 </div>
-<a id="gae7148026535b0837c16d36be3ef4c6c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae7148026535b0837c16d36be3ef4c6c8">&#9670;&nbsp;</a></span>mip_cmd_result_to_string()</h2>
+<a id="ga10413c9d587d3c41838807d1c3a70560"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga10413c9d587d3c41838807d1c3a70560">&#9670;&nbsp;</a></span>mip_cmd_result_is_ack()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char * mip::C::mip_cmd_result_to_string </td>
+          <td class="memname">bool mip::C::mip_cmd_result_is_ack </td>
           <td>(</td>
           <td class="paramtype">enum <a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a>&#160;</td>
           <td class="paramname"><em>result</em></td><td>)</td>
@@ -433,315 +703,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Converts the command result to a string for debugging. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">result</td><td>Any value.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A constant string. </dd></dl>
-
-</div>
-</div>
-<a id="ga207d66fafbef029ccc5d7e89ef605237"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga207d66fafbef029ccc5d7e89ef605237">&#9670;&nbsp;</a></span>mip_is_cmd_descriptor_set()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool mip::mip_is_cmd_descriptor_set </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>descriptor_set</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Determines if the descriptor set contains commands. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">descriptor_set</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if the descriptor set contains commands. </dd></dl>
-
-</div>
-</div>
-<a id="ga36225b1459053380ae46cf021010044d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga36225b1459053380ae46cf021010044d">&#9670;&nbsp;</a></span>mip_is_cmd_field_descriptor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool mip::mip_is_cmd_field_descriptor </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>field_descriptor</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Determines if the field descriptor is a command. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">field_descriptor</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if the field descriptor represents a command. </dd></dl>
-
-</div>
-</div>
-<a id="gaeda3907593b939a4d0ebd159840f8697"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaeda3907593b939a4d0ebd159840f8697">&#9670;&nbsp;</a></span>mip_is_data_descriptor_set()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool mip::mip_is_data_descriptor_set </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>descriptor_set</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Determines if the descriptor set represents some kind of data. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">descriptor_set</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if the descriptor set represents data. </dd></dl>
-
-</div>
-</div>
-<a id="ga64d1a03ff784346f09000ee8e94008ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga64d1a03ff784346f09000ee8e94008ca">&#9670;&nbsp;</a></span>mip_is_gnss_data_descriptor_set()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool mip::mip_is_gnss_data_descriptor_set </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>descriptor_set</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Determines if the descriptor set represents some kind of GNSS data. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">descriptor_set</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if the descriptor set represents GNSS data. </dd></dl>
-
-</div>
-</div>
-<a id="ga34ac79303ab67f097baadb3f9d286d42"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga34ac79303ab67f097baadb3f9d286d42">&#9670;&nbsp;</a></span>mip_is_reply_field_descriptor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool mip::mip_is_reply_field_descriptor </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>field_descriptor</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Determines if the field descriptor is for an ack/nack reply. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">field_descriptor</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if the field descriptor represents an ack/nack reply code. </dd></dl>
-
-</div>
-</div>
-<a id="ga770069c8f61f3a5deb0aa6ccbc4ca8b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga770069c8f61f3a5deb0aa6ccbc4ca8b7">&#9670;&nbsp;</a></span>mip_is_reserved_cmd_field_descriptor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool mip::mip_is_reserved_cmd_field_descriptor </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>field_descriptor</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Determines if the field descriptor is reserved. </p>
-<p>The descriptor set is assumed to be a command set.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">field_descriptor</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if the associated field is neither a command nor response. </dd></dl>
-
-</div>
-</div>
-<a id="ga72ed9fa1acf9e350834fa66659e2ee28"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga72ed9fa1acf9e350834fa66659e2ee28">&#9670;&nbsp;</a></span>mip_is_reserved_descriptor_set()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool mip::mip_is_reserved_descriptor_set </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>descriptor_set</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Determines if the descriptor is reserved for special purposes. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">descriptor_set</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if the descriptor set is reserved. </dd></dl>
-
-</div>
-</div>
-<a id="gac820a8499b6a296afbe1b68f08c51012"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac820a8499b6a296afbe1b68f08c51012">&#9670;&nbsp;</a></span>mip_is_response_field_descriptor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool mip::mip_is_response_field_descriptor </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>field_descriptor</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Determines if the field descriptor contains response data from a command. </p>
-<p>The descriptor set is assumed to be a command set.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">field_descriptor</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if the associated field contains response data. </dd></dl>
-
-</div>
-</div>
-<a id="gae8d9bc2a154127e9b5a1a4cd10ba6f87"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae8d9bc2a154127e9b5a1a4cd10ba6f87">&#9670;&nbsp;</a></span>mip_is_shared_data_field_descriptor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool mip::mip_is_shared_data_field_descriptor </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>field_descriptor</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Determines if the field descriptor is from the shared data set. </p>
-<p>The descriptor set is assumed to be a data set.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">field_descriptor</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if the associated field is from the shared data set. </dd></dl>
-
-</div>
-</div>
-<a id="gaaae27667317b9e9ede3cba933532f3f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaaae27667317b9e9ede3cba933532f3f9">&#9670;&nbsp;</a></span>mip_is_valid_descriptor_set()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool mip::mip_is_valid_descriptor_set </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>descriptor_set</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Determines if the descriptor set is valid. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">descriptor_set</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if the descriptor set is valid. </dd></dl>
-
-</div>
-</div>
-<a id="gaeeac51f3d004cc909a2eafa6b7528d84"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaeeac51f3d004cc909a2eafa6b7528d84">&#9670;&nbsp;</a></span>mip_is_valid_field_descriptor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool mip::mip_is_valid_field_descriptor </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>field_descriptor</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Determines if the field descriptor is valid. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">field_descriptor</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if the field descriptor is valid. </dd></dl>
 
 </div>
 </div>

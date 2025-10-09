@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -117,7 +117,7 @@ The Packet Parsing Process</h1>
 <div class="image">
 <object type="image/svg+xml" data="mip_parser_parse.svg" style="pointer-events: none;"></object>
 </div>
-   <p>To improve parsing efficiency, the parser leverages string functions from the C standard library, namely memcpy() and memchr(). These functions are likely to be heavily optimized for each platform. For example, memchr is used inside mip_find_sop(), which searches for the start of a packet. This is faster than iterating the parser loop and dropping one byte at a time until a sync byte is found.</p>
+   <p>To improve parsing efficiency, the parser leverages string functions from the C standard library, namely memcpy() and memchr(). These functions are likely to be heavily optimized for each platform. For example, memchr is used inside <a class="el" href="namespacemip_1_1C.html#aedfa2d210182fe8083ba1affbd79d1db" title="Internal function which scans for the next possible packet.">mip_find_sop()</a>, which searches for the start of a packet. This is faster than iterating the parser loop and dropping one byte at a time until a sync byte is found.</p>
 <p>Original versions of this parser used a ring buffer, which is common on embedded systems for things like UART drivers. The ring buffer was dropped in favor of using memmove() to shift unparsed data in-place. This reduces the number of times each byte must be copied and also speeds up access.</p>
 <p>The packet view passed to the callback always references the internal parser buffer. It's safe to store a reference to this packet until further calls to parse or any other function which may alter the parser's state.</p>
 <h1><a class="anchor" id="autotoc_md26"></a>

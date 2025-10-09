@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -71,7 +71,8 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">mip::commands_system Namespace Reference</div>  </div>
 </div><!--header-->
@@ -88,22 +89,22 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:gaff0731487d1ddcc4d0a125515af9f89b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="group__system__commands__cpp.html#ggaff0731487d1ddcc4d0a125515af9f89bab835f116336ae08191eecf49f86c43f2">DESCRIPTOR_SET</a> = 0x7F, 
-<a class="el" href="group__system__commands__cpp.html#ggaff0731487d1ddcc4d0a125515af9f89baa5df6a82fa9f71fcd12da43ec49128f7">CMD_ENUMERATE</a> = 0x01, 
-<a class="el" href="group__system__commands__cpp.html#ggaff0731487d1ddcc4d0a125515af9f89ba8f6f826e9db4ef4df3385ab530e7dfad">CMD_INTERFACE_CONTROL</a> = 0x02, 
-<a class="el" href="group__system__commands__cpp.html#ggaff0731487d1ddcc4d0a125515af9f89baafae62cbf9a21655736d1fd8cfa738b3">CMD_COM_MODE</a> = 0x10, 
+<tr class="memitem:ga75af6292a3b4cb984bcaf109d54e7130"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="group__system__commands__cpp.html#gga75af6292a3b4cb984bcaf109d54e7130ab835f116336ae08191eecf49f86c43f2">DESCRIPTOR_SET</a> = 0x7F, 
+<a class="el" href="group__system__commands__cpp.html#gga75af6292a3b4cb984bcaf109d54e7130aa5df6a82fa9f71fcd12da43ec49128f7">CMD_ENUMERATE</a> = 0x01, 
+<a class="el" href="group__system__commands__cpp.html#gga75af6292a3b4cb984bcaf109d54e7130a8f6f826e9db4ef4df3385ab530e7dfad">CMD_INTERFACE_CONTROL</a> = 0x02, 
+<a class="el" href="group__system__commands__cpp.html#gga75af6292a3b4cb984bcaf109d54e7130aafae62cbf9a21655736d1fd8cfa738b3">CMD_COM_MODE</a> = 0x10, 
 <br />
-&#160;&#160;<a class="el" href="group__system__commands__cpp.html#ggaff0731487d1ddcc4d0a125515af9f89bae1ad6755d56251390193039de2b1efa4">CMD_HARDWARE_CONTROL</a> = 0x11, 
-<a class="el" href="group__system__commands__cpp.html#ggaff0731487d1ddcc4d0a125515af9f89ba6fc1f80a7b742416549e19019d48e25d">CMD_HARDWARE_CONTROL_2</a> = 0x12, 
-<a class="el" href="group__system__commands__cpp.html#ggaff0731487d1ddcc4d0a125515af9f89ba75afcadc4a3ebb25003f0a47360fb6f6">REPLY_COM_MODE</a> = 0x90, 
-<a class="el" href="group__system__commands__cpp.html#ggaff0731487d1ddcc4d0a125515af9f89bab247c3bddf906270323376c4fd2d7e3d">REPLY_HARDWARE_CONTROL</a> = 0x91, 
+&#160;&#160;<a class="el" href="group__system__commands__cpp.html#gga75af6292a3b4cb984bcaf109d54e7130ae1ad6755d56251390193039de2b1efa4">CMD_HARDWARE_CONTROL</a> = 0x11, 
+<a class="el" href="group__system__commands__cpp.html#gga75af6292a3b4cb984bcaf109d54e7130a6fc1f80a7b742416549e19019d48e25d">CMD_HARDWARE_CONTROL_2</a> = 0x12, 
+<a class="el" href="group__system__commands__cpp.html#gga75af6292a3b4cb984bcaf109d54e7130a75afcadc4a3ebb25003f0a47360fb6f6">REPLY_COM_MODE</a> = 0x90, 
+<a class="el" href="group__system__commands__cpp.html#gga75af6292a3b4cb984bcaf109d54e7130ab247c3bddf906270323376c4fd2d7e3d">REPLY_HARDWARE_CONTROL</a> = 0x91, 
 <br />
-&#160;&#160;<a class="el" href="group__system__commands__cpp.html#ggaff0731487d1ddcc4d0a125515af9f89ba7b425ce276f8c3253fe15ac6c3a462ef">REPLY_HARDWARE_CONTROL_2</a> = 0x92, 
-<a class="el" href="group__system__commands__cpp.html#ggaff0731487d1ddcc4d0a125515af9f89bab0d9bb80b916f89a97bde6d4093d0f8b">REPLY_INTERFACE_CONTROL</a> = 0x82
+&#160;&#160;<a class="el" href="group__system__commands__cpp.html#gga75af6292a3b4cb984bcaf109d54e7130a7b425ce276f8c3253fe15ac6c3a462ef">REPLY_HARDWARE_CONTROL_2</a> = 0x92, 
+<a class="el" href="group__system__commands__cpp.html#gga75af6292a3b4cb984bcaf109d54e7130ab0d9bb80b916f89a97bde6d4093d0f8b">REPLY_INTERFACE_CONTROL</a> = 0x82
 <br />
  }</td></tr>
-<tr class="separator:gaff0731487d1ddcc4d0a125515af9f89b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ga75af6292a3b4cb984bcaf109d54e7130"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaaf00d8b72d7e4ca69808065987028fca"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__system__commands__cpp.html#gaaf00d8b72d7e4ca69808065987028fca">CommsInterface</a> : uint8_t { <br />
 &#160;&#160;<a class="el" href="group__system__commands__cpp.html#ggaaf00d8b72d7e4ca69808065987028fcaa5fb1f955b45e38e31789286a1790398d">CommsInterface::ALL</a> = 0, 
 <a class="el" href="group__system__commands__cpp.html#ggaaf00d8b72d7e4ca69808065987028fcaa186495f7da296bf880df3a22a492b378">CommsInterface::MAIN</a> = 1, 
@@ -135,6 +136,17 @@ Functions</h2></td></tr>
 <tr class="separator:ga8d3a3f5415391c15d7e93f9065573091"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga956dbb1bfe451135289533ea418ec69a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__system_1_1InterfaceControl.html">InterfaceControl</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__system__interface__control__cpp.html#ga956dbb1bfe451135289533ea418ec69a">defaultInterfaceControl</a> (<a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;device, <a class="el" href="group__system__commands__cpp.html#gaaf00d8b72d7e4ca69808065987028fca">CommsInterface</a> port)</td></tr>
 <tr class="separator:ga956dbb1bfe451135289533ea418ec69a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga7f025c6fb311b76e33efad42218c1a51"><td class="memItemLeft" align="right" valign="top">static constexpr const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__system__commands__cpp.html#ga7f025c6fb311b76e33efad42218c1a51">MIP_SYSTEM_COMMAND_COMM_MODE_PASSTHRU</a> = 0x00</td></tr>
+<tr class="separator:ga7f025c6fb311b76e33efad42218c1a51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3ca00d10d1105b4ae6e8dbba2b1d95bc"><td class="memItemLeft" align="right" valign="top">static constexpr const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__system__commands__cpp.html#ga3ca00d10d1105b4ae6e8dbba2b1d95bc">MIP_SYSTEM_COMMAND_COMM_MODE_NORMAL</a> = 0x01</td></tr>
+<tr class="separator:ga3ca00d10d1105b4ae6e8dbba2b1d95bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaea4e6eedbafc7392f16d6396adfabd7d"><td class="memItemLeft" align="right" valign="top">static constexpr const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__system__commands__cpp.html#gaea4e6eedbafc7392f16d6396adfabd7d">MIP_SYSTEM_COMMAND_COMM_MODE_IMU</a> = 0x02</td></tr>
+<tr class="separator:gaea4e6eedbafc7392f16d6396adfabd7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2d9a91911f06d3997275a54b3067aa33"><td class="memItemLeft" align="right" valign="top">static constexpr const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__system__commands__cpp.html#ga2d9a91911f06d3997275a54b3067aa33">MIP_SYSTEM_COMMAND_COMM_MODE_GPS</a> = 0x03</td></tr>
+<tr class="separator:ga2d9a91911f06d3997275a54b3067aa33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

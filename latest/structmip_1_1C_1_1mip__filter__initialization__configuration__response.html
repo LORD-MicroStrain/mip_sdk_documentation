@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -110,20 +110,17 @@ Public Attributes</h2></td></tr>
 <tr class="separator:acbf527a6cfc3d10e5a5f8a66e97c5320"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a847eef2383106ae5240ff74533a3ebc1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a847eef2383106ae5240ff74533a3ebc1">&#9670;&nbsp;</a></span>auto_heading_alignment_selector</h2>
+<a id="af37e452b97b9c99aa0064ce7ef8216bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af37e452b97b9c99aa0064ce7ef8216bc">&#9670;&nbsp;</a></span>wait_for_run_command</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__filter__initialization__configuration__c.html#ga6fa462aefa630fb2530be124f123e455">mip_filter_initialization_configuration_command_alignment_selector</a> mip::C::mip_filter_initialization_configuration_response::auto_heading_alignment_selector</td>
+          <td class="memname">uint8_t mip::C::mip_filter_initialization_configuration_response::wait_for_run_command</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p><a class="el" href="structmip_1_1Bitfield.html" title="A dummy struct which is used to mark bitfield objects.">Bitfield</a> specifying the allowed automatic heading alignment methods for automatic initial conditions. Bits are set to 1 to enable, and the correspond to the following: <br  />
- </p>
 
 </div>
 </div>
@@ -139,7 +136,19 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initial condition source: </p>
+</div>
+</div>
+<a id="a847eef2383106ae5240ff74533a3ebc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a847eef2383106ae5240ff74533a3ebc1">&#9670;&nbsp;</a></span>auto_heading_alignment_selector</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__filter__initialization__configuration__c.html#ga6fa462aefa630fb2530be124f123e455">mip_filter_initialization_configuration_command_alignment_selector</a> mip::C::mip_filter_initialization_configuration_response::auto_heading_alignment_selector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -155,8 +164,6 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>User-specified initial platform heading (degrees). </p>
-
 </div>
 </div>
 <a id="a5a4f1dbc1ec100a6bf97bbad875736cf"></a>
@@ -170,24 +177,6 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>User-specified initial platform pitch (degrees) </p>
-
-</div>
-</div>
-<a id="aff4525e69280697034c9d6f61aca968d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff4525e69280697034c9d6f61aca968d">&#9670;&nbsp;</a></span>initial_position</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">mip_vector3f mip::C::mip_filter_initialization_configuration_response::initial_position</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>User-specified initial platform position (units determined by reference frame selector, see note.) </p>
 
 </div>
 </div>
@@ -203,7 +192,19 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>User-specified initial platform roll (degrees) </p>
+</div>
+</div>
+<a id="aff4525e69280697034c9d6f61aca968d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff4525e69280697034c9d6f61aca968d">&#9670;&nbsp;</a></span>initial_position</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mip_vector3f mip::C::mip_filter_initialization_configuration_response::initial_position</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -219,8 +220,6 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>User-specified initial platform velocity (units determined by reference frame selector, see note.) </p>
-
 </div>
 </div>
 <a id="acbf527a6cfc3d10e5a5f8a66e97c5320"></a>
@@ -234,24 +233,6 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>User-specified initial position/velocity reference frames. </p>
-
-</div>
-</div>
-<a id="af37e452b97b9c99aa0064ce7ef8216bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af37e452b97b9c99aa0064ce7ef8216bc">&#9670;&nbsp;</a></span>wait_for_run_command</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t mip::C::mip_filter_initialization_configuration_response::wait_for_run_command</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initialize filter only after receiving "run" command. </p>
 
 </div>
 </div>

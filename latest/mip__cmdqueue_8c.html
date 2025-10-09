@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -140,6 +140,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga27aef4ce0a3f832164b76f51aade8b48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__MipCommandQueue__c.html#ga27aef4ce0a3f832164b76f51aade8b48">mip::C::mip_cmd_queue_dequeue</a> (mip_cmd_queue *queue, mip_pending_cmd *cmd)</td></tr>
 <tr class="memdesc:ga27aef4ce0a3f832164b76f51aade8b48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a pending command from the queue.  <a href="group__MipCommandQueue__c.html#ga27aef4ce0a3f832164b76f51aade8b48">More...</a><br /></td></tr>
 <tr class="separator:ga27aef4ce0a3f832164b76f51aade8b48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9b67cefe592135937365e4cd806c78c"><td class="memItemLeft" align="right" valign="top">static enum mip_cmd_result&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip_1_1C.html#ab9b67cefe592135937365e4cd806c78c">mip::C::process_fields_for_pending_cmd</a> (mip_pending_cmd *pending, const mip_packet_view *packet, mip_timeout base_timeout, mip_timestamp timestamp)</td></tr>
+<tr class="memdesc:ab9b67cefe592135937365e4cd806c78c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterate over a packet, checking for replies to the pending command.  <a href="namespacemip_1_1C.html#ab9b67cefe592135937365e4cd806c78c">More...</a><br /></td></tr>
+<tr class="separator:ab9b67cefe592135937365e4cd806c78c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7304267140ec1b2fc282cd4505b65b88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__MipCommandQueue__c.html#ga7304267140ec1b2fc282cd4505b65b88">mip::C::mip_cmd_queue_process_packet</a> (mip_cmd_queue *queue, const mip_packet_view *packet, mip_timestamp timestamp)</td></tr>
 <tr class="memdesc:ga7304267140ec1b2fc282cd4505b65b88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process an incoming packet and check for replies to pending commands.  <a href="group__MipCommandQueue__c.html#ga7304267140ec1b2fc282cd4505b65b88">More...</a><br /></td></tr>
 <tr class="separator:ga7304267140ec1b2fc282cd4505b65b88"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,14 +160,14 @@ Functions</h2></td></tr>
 <tr class="separator:ga43f7c84706dbc8a4a44720158b5f7c45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a6917ad0741e1c576c011be0ffdd2a713"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6917ad0741e1c576c011be0ffdd2a713">&#9670;&nbsp;</a></span>MIP_INDEX_REPLY_ACK_CODE</h2>
+<a id="ab14b27223b7dd70a8cd246074b704cf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab14b27223b7dd70a8cd246074b704cf0">&#9670;&nbsp;</a></span>MIP_REPLY_DESC_GLOBAL_ACK_NACK</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MIP_INDEX_REPLY_ACK_CODE&#160;&#160;&#160;1</td>
+          <td class="memname">#define MIP_REPLY_DESC_GLOBAL_ACK_NACK&#160;&#160;&#160;0xF1</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -185,14 +188,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ab14b27223b7dd70a8cd246074b704cf0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab14b27223b7dd70a8cd246074b704cf0">&#9670;&nbsp;</a></span>MIP_REPLY_DESC_GLOBAL_ACK_NACK</h2>
+<a id="a6917ad0741e1c576c011be0ffdd2a713"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6917ad0741e1c576c011be0ffdd2a713">&#9670;&nbsp;</a></span>MIP_INDEX_REPLY_ACK_CODE</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MIP_REPLY_DESC_GLOBAL_ACK_NACK&#160;&#160;&#160;0xF1</td>
+          <td class="memname">#define MIP_INDEX_REPLY_ACK_CODE&#160;&#160;&#160;1</td>
         </tr>
       </table>
 </div><div class="memdoc">

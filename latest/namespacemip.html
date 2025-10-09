@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -69,7 +69,8 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">mip Namespace Reference</div>  </div>
 </div><!--header-->
@@ -197,9 +198,9 @@ Typedefs</h2></td></tr>
 <tr class="separator:gaebec98c6af673e47251cba5f84afb6b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga22fdf60376fa438a3282cdf32d641f3b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga22fdf60376fa438a3282cdf32d641f3b">DispatchHandler</a> = <a class="el" href="structmip_1_1C_1_1mip__dispatch__handler.html">C::mip_dispatch_handler</a></td></tr>
 <tr class="separator:ga22fdf60376fa438a3282cdf32d641f3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafc42c8a567309e43d95e372b1ea0d2c5"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classmip_1_1SizedPacketBuf.html">SizedPacketBuf</a>&lt; mip::PACKET_LENGTH_MAX &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#gafc42c8a567309e43d95e372b1ea0d2c5">PacketBuf</a></td></tr>
-<tr class="memdesc:gafc42c8a567309e43d95e372b1ea0d2c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Typedef for <a class="el" href="classmip_1_1SizedPacketBuf.html" title="A mip packet with a self-contained buffer (useful with std::vector).">SizedPacketBuf</a> of max possible size.  <a href="group__mip__cpp.html#gafc42c8a567309e43d95e372b1ea0d2c5">More...</a><br /></td></tr>
-<tr class="separator:gafc42c8a567309e43d95e372b1ea0d2c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga252172e421397b73653bb2dfcc920c18"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classmip_1_1SizedPacketBuf.html">SizedPacketBuf</a>&lt; <a class="el" href="classmip_1_1PacketView.html#af2c45a80c509226011c3d336392b483f">PacketView::LENGTH_MAX</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga252172e421397b73653bb2dfcc920c18">PacketBuf</a></td></tr>
+<tr class="memdesc:ga252172e421397b73653bb2dfcc920c18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Typedef for <a class="el" href="classmip_1_1SizedPacketBuf.html" title="A mip packet with a self-contained buffer (useful with std::vector).">SizedPacketBuf</a> of max possible size.  <a href="group__mip__cpp.html#ga252172e421397b73653bb2dfcc920c18">More...</a><br /></td></tr>
+<tr class="separator:ga252172e421397b73653bb2dfcc920c18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7475074708d6d3e0fa83597b41eb98f8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip.html#a7475074708d6d3e0fa83597b41eb98f8">Serializer</a> = <a class="el" href="group__microstrain__serialization__cpp.html#ga2ca05e96abddf932d2607c97dbb6f16e">microstrain::BigEndianSerializer</a></td></tr>
 <tr class="separator:a7475074708d6d3e0fa83597b41eb98f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -322,10 +323,16 @@ Functions</h2></td></tr>
 <tr class="memitem:ab1faa8ecb4fde257a29f408133c37461"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:ab1faa8ecb4fde257a29f408133c37461"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemip.html#ab1faa8ecb4fde257a29f408133c37461">insert</a> (const T &amp;object, uint8_t *buffer, size_t bufferLength, size_t offset=0)</td></tr>
 <tr class="separator:ab1faa8ecb4fde257a29f408133c37461"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga1d1f26f69ca21c84dfaccabdaed9746a"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga1d1f26f69ca21c84dfaccabdaed9746a">INVALID_FIELD_DESCRIPTOR</a> = <a class="el" href="namespacemip_1_1C.html#af5100307361c84e4825c2176b5c50163ad9149d585f74e18c1ba957de95ebb2c7">C::MIP_INVALID_FIELD_DESCRIPTOR</a></td></tr>
+<tr class="separator:ga1d1f26f69ca21c84dfaccabdaed9746a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7d8f007ad533e24c95f51bc59dfea374"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__cpp.html#ga7d8f007ad533e24c95f51bc59dfea374">INVALID_DESCRIPTOR_SET</a> = <a class="el" href="namespacemip_1_1C.html#af5100307361c84e4825c2176b5c50163a430b8c8246f8f16ec6e0527bc4c10229">C::MIP_INVALID_DESCRIPTOR_SET</a></td></tr>
+<tr class="separator:ga7d8f007ad533e24c95f51bc59dfea374"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A collection of C++ classes and functions covering the full mip api. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__mip__cpp.html" title="This module contains functions and classes for communicating with a MIP device in C++.">C++ API</a> </dd></dl>
+<div class="textblock"><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__mip__cpp.html" title="This module contains functions and classes for communicating with a MIP device in C++.">C++ API</a> </dd></dl>
 </div><h2 class="groupheader">Typedef Documentation</h2>
 <a id="a271bf2e7bf56c01a821ca86f1caf1f39"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a271bf2e7bf56c01a821ca86f1caf1f39">&#9670;&nbsp;</a></span>ModelNumber</h2>
@@ -335,34 +342,6 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="namespacemip_1_1C.html#adbeafaabe27abbefea96f81684b8740e">mip::ModelNumber</a> = typedef <a class="el" href="namespacemip_1_1C.html#adbeafaabe27abbefea96f81684b8740e">C::mip_model_number</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7475074708d6d3e0fa83597b41eb98f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7475074708d6d3e0fa83597b41eb98f8">&#9670;&nbsp;</a></span>Serializer</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="namespacemip.html#a7475074708d6d3e0fa83597b41eb98f8">mip::Serializer</a> = typedef <a class="el" href="group__microstrain__serialization__cpp.html#ga2ca05e96abddf932d2607c97dbb6f16e">microstrain::BigEndianSerializer</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="afce0ba7e576cfb1bffa07cff38fe1847"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afce0ba7e576cfb1bffa07cff38fe1847">&#9670;&nbsp;</a></span>Timeout</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="namespacemip.html#afce0ba7e576cfb1bffa07cff38fe1847">mip::Timeout</a> = typedef <a class="el" href="namespacemicrostrain.html#a87678128971532436007682ebe2017c6">microstrain::EmbeddedTimeout</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -383,7 +362,175 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="afce0ba7e576cfb1bffa07cff38fe1847"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afce0ba7e576cfb1bffa07cff38fe1847">&#9670;&nbsp;</a></span>Timeout</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacemip.html#afce0ba7e576cfb1bffa07cff38fe1847">mip::Timeout</a> = typedef <a class="el" href="namespacemicrostrain.html#a87678128971532436007682ebe2017c6">microstrain::EmbeddedTimeout</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7475074708d6d3e0fa83597b41eb98f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7475074708d6d3e0fa83597b41eb98f8">&#9670;&nbsp;</a></span>Serializer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacemip.html#a7475074708d6d3e0fa83597b41eb98f8">mip::Serializer</a> = typedef <a class="el" href="group__microstrain__serialization__cpp.html#ga2ca05e96abddf932d2607c97dbb6f16e">microstrain::BigEndianSerializer</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a713cfa428d5b5054817b652d4fa63097"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a713cfa428d5b5054817b652d4fa63097">&#9670;&nbsp;</a></span>getModelFromString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacemip_1_1C.html#adbeafaabe27abbefea96f81684b8740e">ModelNumber</a> mip::getModelFromString </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>model_or_serial</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adf8dad6a1bcfe31580d75d9209ae4f8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf8dad6a1bcfe31580d75d9209ae4f8c">&#9670;&nbsp;</a></span>getModelNameFromNumber()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* mip::getModelNameFromNumber </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacemip_1_1C.html#adbeafaabe27abbefea96f81684b8740e">ModelNumber</a>&#160;</td>
+          <td class="paramname"><em>model</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a665f1b4342190dccccef6693475dcdb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a665f1b4342190dccccef6693475dcdb0">&#9670;&nbsp;</a></span>runCommandEx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Cmd , class... Args&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structmip_1_1CompositeResult_1_1Entry.html">CompositeResult::Entry</a> mip::runCommandEx </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmip_1_1Interface.html">Interface</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Cmd &amp;&#160;</td>
+          <td class="paramname"><em>cmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a18b5f7fd5dfa8d5cc4dbb23ad2547fa2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18b5f7fd5dfa8d5cc4dbb23ad2547fa2">&#9670;&nbsp;</a></span>recv_from_connection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::recv_from_connection </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmicrostrain_1_1Connection.html">Connection</a> *&#160;</td>
+          <td class="paramname"><em>conn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">U8ArrayView&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacemip.html#afce0ba7e576cfb1bffa07cff38fe1847">Timeout</a>&#160;</td>
+          <td class="paramname"><em>timeout</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>length_out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacemip.html#ab87086630c94254d17a812e4be159b0a">Timestamp</a> *&#160;</td>
+          <td class="paramname"><em>timestamp_out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a48c6c676f70da8b41cd191f9e034ce4c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a48c6c676f70da8b41cd191f9e034ce4c">&#9670;&nbsp;</a></span>extract()</h2>
 
@@ -429,58 +576,6 @@ template&lt;class T &gt; </div>
           <td></td>
           <td>)</td>
           <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a713cfa428d5b5054817b652d4fa63097"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a713cfa428d5b5054817b652d4fa63097">&#9670;&nbsp;</a></span>getModelFromString()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacemip_1_1C.html#adbeafaabe27abbefea96f81684b8740e">ModelNumber</a> mip::getModelFromString </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>model_or_serial</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="adf8dad6a1bcfe31580d75d9209ae4f8c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf8dad6a1bcfe31580d75d9209ae4f8c">&#9670;&nbsp;</a></span>getModelNameFromNumber()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const char* mip::getModelNameFromNumber </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacemip_1_1C.html#adbeafaabe27abbefea96f81684b8740e">ModelNumber</a>&#160;</td>
-          <td class="paramname"><em>model</em></td><td>)</td>
-          <td></td>
         </tr>
       </table>
   </td>
@@ -538,96 +633,6 @@ template&lt;class T &gt; </div>
 <span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a18b5f7fd5dfa8d5cc4dbb23ad2547fa2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18b5f7fd5dfa8d5cc4dbb23ad2547fa2">&#9670;&nbsp;</a></span>recv_from_connection()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool mip::recv_from_connection </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmicrostrain_1_1Connection.html">Connection</a> *&#160;</td>
-          <td class="paramname"><em>conn</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">U8ArrayView&#160;</td>
-          <td class="paramname"><em>buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacemip.html#afce0ba7e576cfb1bffa07cff38fe1847">Timeout</a>&#160;</td>
-          <td class="paramname"><em>timeout</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t *&#160;</td>
-          <td class="paramname"><em>length_out</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacemip.html#ab87086630c94254d17a812e4be159b0a">Timestamp</a> *&#160;</td>
-          <td class="paramname"><em>timestamp_out</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Adapts <a class="el" href="classmicrostrain_1_1Connection.html#a3361f33a8b1d5495b7918f0fc25ac07f" title="Receives bytes from the device.">microstrain::Connection::recvFromDevice</a> to a signature compatible with mip interface receive callbacks. </p>
-
-</div>
-</div>
-<a id="a665f1b4342190dccccef6693475dcdb0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a665f1b4342190dccccef6693475dcdb0">&#9670;&nbsp;</a></span>runCommandEx()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Cmd , class... Args&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structmip_1_1CompositeResult_1_1Entry.html">CompositeResult::Entry</a> mip::runCommandEx </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmip_1_1Interface.html">Interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Cmd &amp;&#160;</td>
-          <td class="paramname"><em>cmd</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Args &amp;&amp;...&#160;</td>
-          <td class="paramname"><em>args</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
 </div><div class="memdoc">
 
 </div>

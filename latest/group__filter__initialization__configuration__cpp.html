@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -94,39 +94,78 @@ Functions</h2></td></tr>
 <tr class="separator:ga8bfe628fd8a5a0d32b60a4592f6b5927"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Controls the source and values used for initial conditions of the navigation solution. </p>
 <p>Notes: Initial conditions are the position, velocity, and attitude of the platform used when the filter starts running or is reset. For the user specified position array, the units are meters if the ECEF frame is selected, and degrees latitude, degrees longitude, and meters above ellipsoid if the latitude/longitude/height frame is selected. For the user specified velocity array, the units are meters per second, but the reference frame depends on the reference frame selector (ECEF or NED). </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga8bfe628fd8a5a0d32b60a4592f6b5927"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8bfe628fd8a5a0d32b60a4592f6b5927">&#9670;&nbsp;</a></span>defaultInitializationConfiguration()</h2>
+<a id="gad22357a7252d000c5eaf4f0319093d59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad22357a7252d000c5eaf4f0319093d59">&#9670;&nbsp;</a></span>writeInitializationConfiguration()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1InitializationConfiguration.html">InitializationConfiguration</a> &gt; mip::commands_filter::defaultInitializationConfiguration </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1InitializationConfiguration.html">InitializationConfiguration</a> &gt; mip::commands_filter::writeInitializationConfiguration </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
-          <td></td>
+          <td class="paramname"><em>device</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gab966062e6cb2c2ce7ab806f12e26f0bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab966062e6cb2c2ce7ab806f12e26f0bd">&#9670;&nbsp;</a></span>loadInitializationConfiguration()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1InitializationConfiguration.html">InitializationConfiguration</a> &gt; mip::commands_filter::loadInitializationConfiguration </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>waitForRunCommand</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1commands__filter_1_1InitializationConfiguration.html#a7efcf3c12cf820281066eeaf963aa947">InitializationConfiguration::InitialConditionSource</a>&#160;</td>
+          <td class="paramname"><em>initialCondSrc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1commands__filter_1_1InitializationConfiguration_1_1AlignmentSelector.html">InitializationConfiguration::AlignmentSelector</a>&#160;</td>
+          <td class="paramname"><em>autoHeadingAlignmentSelector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>initialHeading</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>initialPitch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>initialRoll</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>initialPosition</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>initialVelocity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__filter__commands__cpp.html#gaf94e37c7eb0f2d82250d876d71ec0311">FilterReferenceFrame</a>&#160;</td>
+          <td class="paramname"><em>referenceFrameSelector</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -227,76 +266,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gad22357a7252d000c5eaf4f0319093d59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad22357a7252d000c5eaf4f0319093d59">&#9670;&nbsp;</a></span>writeInitializationConfiguration()</h2>
+<a id="gab966062e6cb2c2ce7ab806f12e26f0bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab966062e6cb2c2ce7ab806f12e26f0bd">&#9670;&nbsp;</a></span>loadInitializationConfiguration()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1InitializationConfiguration.html">InitializationConfiguration</a> &gt; mip::commands_filter::writeInitializationConfiguration </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1InitializationConfiguration.html">InitializationConfiguration</a> &gt; mip::commands_filter::loadInitializationConfiguration </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>waitForRunCommand</em>, </td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga8bfe628fd8a5a0d32b60a4592f6b5927"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8bfe628fd8a5a0d32b60a4592f6b5927">&#9670;&nbsp;</a></span>defaultInitializationConfiguration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1InitializationConfiguration.html">InitializationConfiguration</a> &gt; mip::commands_filter::defaultInitializationConfiguration </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1commands__filter_1_1InitializationConfiguration.html#a7efcf3c12cf820281066eeaf963aa947">InitializationConfiguration::InitialConditionSource</a>&#160;</td>
-          <td class="paramname"><em>initialCondSrc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1commands__filter_1_1InitializationConfiguration_1_1AlignmentSelector.html">InitializationConfiguration::AlignmentSelector</a>&#160;</td>
-          <td class="paramname"><em>autoHeadingAlignmentSelector</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>initialHeading</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>initialPitch</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>initialRoll</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const float *&#160;</td>
-          <td class="paramname"><em>initialPosition</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const float *&#160;</td>
-          <td class="paramname"><em>initialVelocity</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__filter__commands__cpp.html#gaf94e37c7eb0f2d82250d876d71ec0311">FilterReferenceFrame</a>&#160;</td>
-          <td class="paramname"><em>referenceFrameSelector</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

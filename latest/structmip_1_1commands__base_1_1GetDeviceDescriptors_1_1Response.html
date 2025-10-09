@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -105,7 +105,7 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:ac9a7bfb79fb38da4486048da1eff145d"><td class="memItemLeft" align="right" valign="top">static constexpr const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__base_1_1GetDeviceDescriptors_1_1Response.html#ac9a7bfb79fb38da4486048da1eff145d">DESCRIPTOR_SET</a> = ::mip::commands_base::DESCRIPTOR_SET</td></tr>
 <tr class="memdesc:ac9a7bfb79fb38da4486048da1eff145d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Descriptors.  <a href="structmip_1_1commands__base_1_1GetDeviceDescriptors_1_1Response.html#ac9a7bfb79fb38da4486048da1eff145d">More...</a><br /></td></tr>
 <tr class="separator:ac9a7bfb79fb38da4486048da1eff145d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ffd16cfa04b02638ca27e70c929ce7f"><td class="memItemLeft" align="right" valign="top">static constexpr const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__base_1_1GetDeviceDescriptors_1_1Response.html#a4ffd16cfa04b02638ca27e70c929ce7f">FIELD_DESCRIPTOR</a> = ::<a class="el" href="group__base__commands__cpp.html#gga2d08a02f735c488a7c45f71fe2920c5eab1af69a4d6817896a5968ed4d3e7f0a9">mip::commands_base::REPLY_DEVICE_DESCRIPTORS</a></td></tr>
+<tr class="memitem:a4ffd16cfa04b02638ca27e70c929ce7f"><td class="memItemLeft" align="right" valign="top">static constexpr const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__base_1_1GetDeviceDescriptors_1_1Response.html#a4ffd16cfa04b02638ca27e70c929ce7f">FIELD_DESCRIPTOR</a> = ::<a class="el" href="group__base__commands__cpp.html#gga74448ea3d07f7400e75f984293150de7ab1af69a4d6817896a5968ed4d3e7f0a9">mip::commands_base::REPLY_DEVICE_DESCRIPTORS</a></td></tr>
 <tr class="separator:a4ffd16cfa04b02638ca27e70c929ce7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b759a65c7c0695e768650b7b2be6b41"><td class="memItemLeft" align="right" valign="top">static constexpr const <a class="el" href="structmip_1_1CompositeDescriptor.html">CompositeDescriptor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__base_1_1GetDeviceDescriptors_1_1Response.html#a1b759a65c7c0695e768650b7b2be6b41">DESCRIPTOR</a> = {<a class="el" href="structmip_1_1commands__base_1_1GetDeviceDescriptors_1_1Response.html#ac9a7bfb79fb38da4486048da1eff145d">DESCRIPTOR_SET</a>, <a class="el" href="structmip_1_1commands__base_1_1GetDeviceDescriptors_1_1Response.html#a4ffd16cfa04b02638ca27e70c929ce7f">FIELD_DESCRIPTOR</a>}</td></tr>
 <tr class="separator:a1b759a65c7c0695e768650b7b2be6b41"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -117,8 +117,33 @@ Static Public Attributes</h2></td></tr>
 <tr class="separator:a9c70be2af04a588696e187de74677d13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a8bf5aec9609c14005952fb3cc448b281"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bf5aec9609c14005952fb3cc448b281">&#9670;&nbsp;</a></span>asTuple() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto mip::commands_base::GetDeviceDescriptors::Response::asTuple </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a4ce97c50a3c124856712b8f3f4a9f37e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ce97c50a3c124856712b8f3f4a9f37e">&#9670;&nbsp;</a></span>asTuple() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ce97c50a3c124856712b8f3f4a9f37e">&#9670;&nbsp;</a></span>asTuple() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -142,27 +167,20 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a8bf5aec9609c14005952fb3cc448b281"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8bf5aec9609c14005952fb3cc448b281">&#9670;&nbsp;</a></span>asTuple() <span class="overload">[2/2]</span></h2>
+<a id="a493644e3a797d517c6cb0dcec189ea65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a493644e3a797d517c6cb0dcec189ea65">&#9670;&nbsp;</a></span>insert()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">auto mip::commands_base::GetDeviceDescriptors::Response::asTuple </td>
+          <td class="memname">void mip::commands_base::GetDeviceDescriptors::Response::insert </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="namespacemip.html#a7475074708d6d3e0fa83597b41eb98f8">Serializer</a> &amp;&#160;</td>
+          <td class="paramname"><em>serializer</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
@@ -185,45 +203,31 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a493644e3a797d517c6cb0dcec189ea65"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a493644e3a797d517c6cb0dcec189ea65">&#9670;&nbsp;</a></span>insert()</h2>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ad94f41faf3ac5d179454381eb28cd49a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad94f41faf3ac5d179454381eb28cd49a">&#9670;&nbsp;</a></span>descriptors</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void mip::commands_base::GetDeviceDescriptors::Response::insert </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacemip.html#a7475074708d6d3e0fa83597b41eb98f8">Serializer</a> &amp;&#160;</td>
-          <td class="paramname"><em>serializer</em></td><td>)</td>
-          <td> const</td>
+          <td class="memname">uint16_t mip::commands_base::GetDeviceDescriptors::Response::descriptors[253] = {0}</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Serialization. </p>
-
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a1b759a65c7c0695e768650b7b2be6b41"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b759a65c7c0695e768650b7b2be6b41">&#9670;&nbsp;</a></span>DESCRIPTOR</h2>
+<a id="a64da474e02acb5ff77e2972d6d96e5c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64da474e02acb5ff77e2972d6d96e5c2">&#9670;&nbsp;</a></span>descriptors_count</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr const <a class="el" href="structmip_1_1CompositeDescriptor.html">CompositeDescriptor</a> mip::commands_base::GetDeviceDescriptors::Response::DESCRIPTOR = {<a class="el" href="structmip_1_1commands__base_1_1GetDeviceDescriptors_1_1Response.html#ac9a7bfb79fb38da4486048da1eff145d">DESCRIPTOR_SET</a>, <a class="el" href="structmip_1_1commands__base_1_1GetDeviceDescriptors_1_1Response.html#a4ffd16cfa04b02638ca27e70c929ce7f">FIELD_DESCRIPTOR</a>}</td>
+          <td class="memname">uint8_t mip::commands_base::GetDeviceDescriptors::Response::descriptors_count = 0</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
@@ -248,36 +252,70 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Descriptors. </p>
-
 </div>
 </div>
-<a id="ad94f41faf3ac5d179454381eb28cd49a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad94f41faf3ac5d179454381eb28cd49a">&#9670;&nbsp;</a></span>descriptors</h2>
+<a id="a4ffd16cfa04b02638ca27e70c929ce7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ffd16cfa04b02638ca27e70c929ce7f">&#9670;&nbsp;</a></span>FIELD_DESCRIPTOR</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t mip::commands_base::GetDeviceDescriptors::Response::descriptors[253] = {0}</td>
+          <td class="memname">constexpr const uint8_t mip::commands_base::GetDeviceDescriptors::Response::FIELD_DESCRIPTOR = ::<a class="el" href="group__base__commands__cpp.html#gga74448ea3d07f7400e75f984293150de7ab1af69a4d6817896a5968ed4d3e7f0a9">mip::commands_base::REPLY_DEVICE_DESCRIPTORS</a></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Parameters. </p>
-
 </div>
 </div>
-<a id="a64da474e02acb5ff77e2972d6d96e5c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64da474e02acb5ff77e2972d6d96e5c2">&#9670;&nbsp;</a></span>descriptors_count</h2>
+<a id="a1b759a65c7c0695e768650b7b2be6b41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b759a65c7c0695e768650b7b2be6b41">&#9670;&nbsp;</a></span>DESCRIPTOR</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t mip::commands_base::GetDeviceDescriptors::Response::descriptors_count = 0</td>
+          <td class="memname">constexpr const <a class="el" href="structmip_1_1CompositeDescriptor.html">CompositeDescriptor</a> mip::commands_base::GetDeviceDescriptors::Response::DESCRIPTOR = {<a class="el" href="structmip_1_1commands__base_1_1GetDeviceDescriptors_1_1Response.html#ac9a7bfb79fb38da4486048da1eff145d">DESCRIPTOR_SET</a>, <a class="el" href="structmip_1_1commands__base_1_1GetDeviceDescriptors_1_1Response.html#a4ffd16cfa04b02638ca27e70c929ce7f">FIELD_DESCRIPTOR</a>}</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a811e87979d1ff6683a1f9f240d6608e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a811e87979d1ff6683a1f9f240d6608e3">&#9670;&nbsp;</a></span>NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr const char* mip::commands_base::GetDeviceDescriptors::Response::NAME = &quot;GetDeviceDescriptors::Response&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -304,28 +342,6 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a4ffd16cfa04b02638ca27e70c929ce7f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ffd16cfa04b02638ca27e70c929ce7f">&#9670;&nbsp;</a></span>FIELD_DESCRIPTOR</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr const uint8_t mip::commands_base::GetDeviceDescriptors::Response::FIELD_DESCRIPTOR = ::<a class="el" href="group__base__commands__cpp.html#gga2d08a02f735c488a7c45f71fe2920c5eab1af69a4d6817896a5968ed4d3e7f0a9">mip::commands_base::REPLY_DEVICE_DESCRIPTORS</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a9c70be2af04a588696e187de74677d13"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9c70be2af04a588696e187de74677d13">&#9670;&nbsp;</a></span>HAS_FUNCTION_SELECTOR</h2>
 
@@ -337,28 +353,6 @@ Static Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">constexpr const bool mip::commands_base::GetDeviceDescriptors::Response::HAS_FUNCTION_SELECTOR = false</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a811e87979d1ff6683a1f9f240d6608e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a811e87979d1ff6683a1f9f240d6608e3">&#9670;&nbsp;</a></span>NAME</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr const char* mip::commands_base::GetDeviceDescriptors::Response::NAME = &quot;GetDeviceDescriptors::Response&quot;</td>
         </tr>
       </table>
   </td>

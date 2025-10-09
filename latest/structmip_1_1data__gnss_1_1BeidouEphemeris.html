@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -206,7 +206,7 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:aaff38bf55fc733f2e257447ba8a85894"><td class="memItemLeft" align="right" valign="top">static constexpr const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1BeidouEphemeris.html#aaff38bf55fc733f2e257447ba8a85894">DESCRIPTOR_SET</a> = ::mip::data_gnss::DESCRIPTOR_SET</td></tr>
 <tr class="memdesc:aaff38bf55fc733f2e257447ba8a85894"><td class="mdescLeft">&#160;</td><td class="mdescRight">Descriptors.  <a href="structmip_1_1data__gnss_1_1BeidouEphemeris.html#aaff38bf55fc733f2e257447ba8a85894">More...</a><br /></td></tr>
 <tr class="separator:aaff38bf55fc733f2e257447ba8a85894"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45b62644928e002423fb8b901a02568b"><td class="memItemLeft" align="right" valign="top">static constexpr const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1BeidouEphemeris.html#a45b62644928e002423fb8b901a02568b">FIELD_DESCRIPTOR</a> = ::<a class="el" href="group__gnss__data__cpp.html#gga458a8cb95733cbdb683bd14f6f11df71a93e65363697abde176a83b81bc4c4e40">mip::data_gnss::DATA_BEIDOU_EPHEMERIS</a></td></tr>
+<tr class="memitem:a45b62644928e002423fb8b901a02568b"><td class="memItemLeft" align="right" valign="top">static constexpr const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1BeidouEphemeris.html#a45b62644928e002423fb8b901a02568b">FIELD_DESCRIPTOR</a> = ::<a class="el" href="group__gnss__data__cpp.html#ggaf92fc01759c43659ebe51459a8256348a93e65363697abde176a83b81bc4c4e40">mip::data_gnss::DATA_BEIDOU_EPHEMERIS</a></td></tr>
 <tr class="separator:a45b62644928e002423fb8b901a02568b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39bde4a96ce347747aa71d485c200197"><td class="memItemLeft" align="right" valign="top">static constexpr const <a class="el" href="structmip_1_1CompositeDescriptor.html">CompositeDescriptor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1data__gnss_1_1BeidouEphemeris.html#a39bde4a96ce347747aa71d485c200197">DESCRIPTOR</a> = {<a class="el" href="structmip_1_1data__gnss_1_1BeidouEphemeris.html#aaff38bf55fc733f2e257447ba8a85894">DESCRIPTOR_SET</a>, <a class="el" href="structmip_1_1data__gnss_1_1BeidouEphemeris.html#a45b62644928e002423fb8b901a02568b">FIELD_DESCRIPTOR</a>}</td></tr>
 <tr class="separator:a39bde4a96ce347747aa71d485c200197"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -218,8 +218,33 @@ Static Public Attributes</h2></td></tr>
 <tr class="separator:a667827220508656af1f322296168d189"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab89b4360c4f2eb778f39252fb19af2f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab89b4360c4f2eb778f39252fb19af2f1">&#9670;&nbsp;</a></span>asTuple() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto mip::data_gnss::BeidouEphemeris::asTuple </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a5ab6ee799bdccd7abdf2c02a0c880129"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ab6ee799bdccd7abdf2c02a0c880129">&#9670;&nbsp;</a></span>asTuple() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ab6ee799bdccd7abdf2c02a0c880129">&#9670;&nbsp;</a></span>asTuple() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -243,27 +268,20 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ab89b4360c4f2eb778f39252fb19af2f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab89b4360c4f2eb778f39252fb19af2f1">&#9670;&nbsp;</a></span>asTuple() <span class="overload">[2/2]</span></h2>
+<a id="a5a74a75812d1fa47f145b7aaeee7ff1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a74a75812d1fa47f145b7aaeee7ff1c">&#9670;&nbsp;</a></span>insert()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">auto mip::data_gnss::BeidouEphemeris::asTuple </td>
+          <td class="memname">void mip::data_gnss::BeidouEphemeris::insert </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="namespacemip.html#a7475074708d6d3e0fa83597b41eb98f8">Serializer</a> &amp;&#160;</td>
+          <td class="paramname"><em>serializer</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
@@ -286,216 +304,19 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a5a74a75812d1fa47f145b7aaeee7ff1c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a74a75812d1fa47f145b7aaeee7ff1c">&#9670;&nbsp;</a></span>insert()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::data_gnss::BeidouEphemeris::insert </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacemip.html#a7475074708d6d3e0fa83597b41eb98f8">Serializer</a> &amp;&#160;</td>
-          <td class="paramname"><em>serializer</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Serialization. </p>
-
-</div>
-</div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="ac6ab2b4fbb398ab0b5d08aef85dc1590"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6ab2b4fbb398ab0b5d08aef85dc1590">&#9670;&nbsp;</a></span>a</h2>
+<a id="ac681fd16f01af5ce6aeb6674b3bc8ca6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac681fd16f01af5ce6aeb6674b3bc8ca6">&#9670;&nbsp;</a></span>index</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double mip::data_gnss::BeidouEphemeris::a = 0</td>
+          <td class="memname">uint8_t mip::data_gnss::BeidouEphemeris::index = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Semi-major axis [m]. </p>
-
-</div>
-</div>
-<a id="ad1ef4dfd4f7d28a8be7bd7c965b3f2b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1ef4dfd4f7d28a8be7bd7c965b3f2b9">&#9670;&nbsp;</a></span>a_dot</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double mip::data_gnss::BeidouEphemeris::a_dot = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Semi-major axis rate [m/s]. </p>
-
-</div>
-</div>
-<a id="a07fd3676c1d20e968cce969e4b63956d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07fd3676c1d20e968cce969e4b63956d">&#9670;&nbsp;</a></span>af0</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double mip::data_gnss::BeidouEphemeris::af0 = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Clock bias in [s]. </p>
-
-</div>
-</div>
-<a id="a775aefba0cfe74ad98a65ac715014efc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a775aefba0cfe74ad98a65ac715014efc">&#9670;&nbsp;</a></span>af1</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double mip::data_gnss::BeidouEphemeris::af1 = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Clock drift in [s/s]. </p>
-
-</div>
-</div>
-<a id="a5f559812215733a8f0854b4033aea0b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f559812215733a8f0854b4033aea0b4">&#9670;&nbsp;</a></span>af2</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double mip::data_gnss::BeidouEphemeris::af2 = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Clock drift rate in [s/s^2]. </p>
-
-</div>
-</div>
-<a id="af22cdadcffa63bfe0c0fa9c8c06eb226"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af22cdadcffa63bfe0c0fa9c8c06eb226">&#9670;&nbsp;</a></span>argument_of_perigee</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double mip::data_gnss::BeidouEphemeris::argument_of_perigee = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>[rad]. </p>
-
-</div>
-</div>
-<a id="ab0884912ec3e835bf294013f47b38e0f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab0884912ec3e835bf294013f47b38e0f">&#9670;&nbsp;</a></span>c_ic</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double mip::data_gnss::BeidouEphemeris::c_ic = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Harmonic Correction Term. </p>
-
-</div>
-</div>
-<a id="a9fdee2e32037df98747ed9431abf6630"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9fdee2e32037df98747ed9431abf6630">&#9670;&nbsp;</a></span>c_is</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double mip::data_gnss::BeidouEphemeris::c_is = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Harmonic Correction Term. </p>
-
-</div>
-</div>
-<a id="a0b054eca1e6d7bc57379e05ee851d70c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b054eca1e6d7bc57379e05ee851d70c">&#9670;&nbsp;</a></span>c_rc</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double mip::data_gnss::BeidouEphemeris::c_rc = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Harmonic Correction Term. </p>
-
-</div>
-</div>
-<a id="a6a9be2ad29f0f88c027cba987c3f74d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a9be2ad29f0f88c027cba987c3f74d7">&#9670;&nbsp;</a></span>c_rs</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double mip::data_gnss::BeidouEphemeris::c_rs = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Harmonic Correction Term. </p>
-
-</div>
-</div>
-<a id="accef14199c75bf57afdd2ead96c040ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#accef14199c75bf57afdd2ead96c040ee">&#9670;&nbsp;</a></span>c_uc</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double mip::data_gnss::BeidouEphemeris::c_uc = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Harmonic Correction Term. </p>
-
-</div>
-</div>
-<a id="ab34a9adfa9fd6d5093dd0196a374cd9d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab34a9adfa9fd6d5093dd0196a374cd9d">&#9670;&nbsp;</a></span>c_us</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double mip::data_gnss::BeidouEphemeris::c_us = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Harmonic Correction Term. </p>
+<p>Index of this field in this epoch. </p>
 
 </div>
 </div>
@@ -511,7 +332,243 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Total number of fields in this epoch. </p>
+</div>
+</div>
+<a id="a375384fbaa7f835d0fde2024e206987a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a375384fbaa7f835d0fde2024e206987a">&#9670;&nbsp;</a></span>time_of_week</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double mip::data_gnss::BeidouEphemeris::time_of_week = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9782fc1edd2a5e07feba218578851fb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9782fc1edd2a5e07feba218578851fb1">&#9670;&nbsp;</a></span>week_number</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t mip::data_gnss::BeidouEphemeris::week_number = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7974bf95328e19193f50806f6891f73d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7974bf95328e19193f50806f6891f73d">&#9670;&nbsp;</a></span>satellite_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t mip::data_gnss::BeidouEphemeris::satellite_id = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a55cb0d6bfb59353a504abb12889a0f55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55cb0d6bfb59353a504abb12889a0f55">&#9670;&nbsp;</a></span>health</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t mip::data_gnss::BeidouEphemeris::health = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5be13460e190d7b5dc6b83557c882638"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5be13460e190d7b5dc6b83557c882638">&#9670;&nbsp;</a></span>iodc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t mip::data_gnss::BeidouEphemeris::iodc = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae73d6ee4e87b3f6da5fb3f492e75cdd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae73d6ee4e87b3f6da5fb3f492e75cdd2">&#9670;&nbsp;</a></span>iode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t mip::data_gnss::BeidouEphemeris::iode = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aacf56508cc4cf5a3ce99cb06e98b92d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacf56508cc4cf5a3ce99cb06e98b92d5">&#9670;&nbsp;</a></span>t_oc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double mip::data_gnss::BeidouEphemeris::t_oc = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a07fd3676c1d20e968cce969e4b63956d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07fd3676c1d20e968cce969e4b63956d">&#9670;&nbsp;</a></span>af0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double mip::data_gnss::BeidouEphemeris::af0 = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a775aefba0cfe74ad98a65ac715014efc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a775aefba0cfe74ad98a65ac715014efc">&#9670;&nbsp;</a></span>af1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double mip::data_gnss::BeidouEphemeris::af1 = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5f559812215733a8f0854b4033aea0b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f559812215733a8f0854b4033aea0b4">&#9670;&nbsp;</a></span>af2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double mip::data_gnss::BeidouEphemeris::af2 = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8e29e1edfa41d5111397b249994d65fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e29e1edfa41d5111397b249994d65fd">&#9670;&nbsp;</a></span>t_gd</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double mip::data_gnss::BeidouEphemeris::t_gd = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa79d0e8f175689419a496fb69b58fbd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa79d0e8f175689419a496fb69b58fbd8">&#9670;&nbsp;</a></span>ISC_L1CA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double mip::data_gnss::BeidouEphemeris::ISC_L1CA = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5d20381dd4b1275c7d32a7091b0f68b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d20381dd4b1275c7d32a7091b0f68b6">&#9670;&nbsp;</a></span>ISC_L2C</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double mip::data_gnss::BeidouEphemeris::ISC_L2C = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a33aaf60dabe20d6667982ee89696ac95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33aaf60dabe20d6667982ee89696ac95">&#9670;&nbsp;</a></span>t_oe</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double mip::data_gnss::BeidouEphemeris::t_oe = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac6ab2b4fbb398ab0b5d08aef85dc1590"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6ab2b4fbb398ab0b5d08aef85dc1590">&#9670;&nbsp;</a></span>a</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double mip::data_gnss::BeidouEphemeris::a = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad1ef4dfd4f7d28a8be7bd7c965b3f2b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1ef4dfd4f7d28a8be7bd7c965b3f2b9">&#9670;&nbsp;</a></span>a_dot</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double mip::data_gnss::BeidouEphemeris::a_dot = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a41cac970ef95307029812ffd5b7badc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41cac970ef95307029812ffd5b7badc0">&#9670;&nbsp;</a></span>mean_anomaly</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double mip::data_gnss::BeidouEphemeris::mean_anomaly = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -527,8 +584,6 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>[rad]. </p>
-
 </div>
 </div>
 <a id="ab65ead37e7cf293f53fce94b4a898eba"></a>
@@ -543,7 +598,231 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>[rad/s]. </p>
+</div>
+</div>
+<a id="a871d930b4e91ef4ce31e00cea7791dc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a871d930b4e91ef4ce31e00cea7791dc9">&#9670;&nbsp;</a></span>eccentricity</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double mip::data_gnss::BeidouEphemeris::eccentricity = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af22cdadcffa63bfe0c0fa9c8c06eb226"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af22cdadcffa63bfe0c0fa9c8c06eb226">&#9670;&nbsp;</a></span>argument_of_perigee</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double mip::data_gnss::BeidouEphemeris::argument_of_perigee = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7c586b12bee18d5500f39a9094e049ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c586b12bee18d5500f39a9094e049ac">&#9670;&nbsp;</a></span>omega</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double mip::data_gnss::BeidouEphemeris::omega = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa5f2ceb775da8ef047c03ffb772d468f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5f2ceb775da8ef047c03ffb772d468f">&#9670;&nbsp;</a></span>omega_dot</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double mip::data_gnss::BeidouEphemeris::omega_dot = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adef7148006426001c47b2f5ea9499c9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adef7148006426001c47b2f5ea9499c9f">&#9670;&nbsp;</a></span>inclination</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double mip::data_gnss::BeidouEphemeris::inclination = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4b46f46242eb78cd1d9698b5ef08cc58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b46f46242eb78cd1d9698b5ef08cc58">&#9670;&nbsp;</a></span>inclination_dot</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double mip::data_gnss::BeidouEphemeris::inclination_dot = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab0884912ec3e835bf294013f47b38e0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0884912ec3e835bf294013f47b38e0f">&#9670;&nbsp;</a></span>c_ic</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double mip::data_gnss::BeidouEphemeris::c_ic = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9fdee2e32037df98747ed9431abf6630"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fdee2e32037df98747ed9431abf6630">&#9670;&nbsp;</a></span>c_is</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double mip::data_gnss::BeidouEphemeris::c_is = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="accef14199c75bf57afdd2ead96c040ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accef14199c75bf57afdd2ead96c040ee">&#9670;&nbsp;</a></span>c_uc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double mip::data_gnss::BeidouEphemeris::c_uc = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab34a9adfa9fd6d5093dd0196a374cd9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab34a9adfa9fd6d5093dd0196a374cd9d">&#9670;&nbsp;</a></span>c_us</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double mip::data_gnss::BeidouEphemeris::c_us = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0b054eca1e6d7bc57379e05ee851d70c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b054eca1e6d7bc57379e05ee851d70c">&#9670;&nbsp;</a></span>c_rc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double mip::data_gnss::BeidouEphemeris::c_rc = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6a9be2ad29f0f88c027cba987c3f74d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a9be2ad29f0f88c027cba987c3f74d7">&#9670;&nbsp;</a></span>c_rs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double mip::data_gnss::BeidouEphemeris::c_rs = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af23d19ae2cc84c03e78d939bafae7a95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af23d19ae2cc84c03e78d939bafae7a95">&#9670;&nbsp;</a></span>valid_flags</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structmip_1_1data__gnss_1_1BeidouEphemeris_1_1ValidFlags.html">ValidFlags</a> mip::data_gnss::BeidouEphemeris::valid_flags</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaff38bf55fc733f2e257447ba8a85894"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaff38bf55fc733f2e257447ba8a85894">&#9670;&nbsp;</a></span>DESCRIPTOR_SET</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr const uint8_t mip::data_gnss::BeidouEphemeris::DESCRIPTOR_SET = ::mip::data_gnss::DESCRIPTOR_SET</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a45b62644928e002423fb8b901a02568b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45b62644928e002423fb8b901a02568b">&#9670;&nbsp;</a></span>FIELD_DESCRIPTOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr const uint8_t mip::data_gnss::BeidouEphemeris::FIELD_DESCRIPTOR = ::<a class="el" href="group__gnss__data__cpp.html#ggaf92fc01759c43659ebe51459a8256348a93e65363697abde176a83b81bc4c4e40">mip::data_gnss::DATA_BEIDOU_EPHEMERIS</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -569,8 +848,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aaff38bf55fc733f2e257447ba8a85894"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaff38bf55fc733f2e257447ba8a85894">&#9670;&nbsp;</a></span>DESCRIPTOR_SET</h2>
+<a id="a0a36125b4ff9f9ee005236f53672b46c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a36125b4ff9f9ee005236f53672b46c">&#9670;&nbsp;</a></span>NAME</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -579,7 +858,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr const uint8_t mip::data_gnss::BeidouEphemeris::DESCRIPTOR_SET = ::mip::data_gnss::DESCRIPTOR_SET</td>
+          <td class="memname">constexpr const char* mip::data_gnss::BeidouEphemeris::NAME = &quot;BeidouEphemeris&quot;</td>
         </tr>
       </table>
   </td>
@@ -588,8 +867,6 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Descriptors. </p>
 
 </div>
 </div>
@@ -604,42 +881,6 @@ Static Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">constexpr const char* mip::data_gnss::BeidouEphemeris::DOC_NAME = &quot;BeiDou Ephemeris&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a871d930b4e91ef4ce31e00cea7791dc9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a871d930b4e91ef4ce31e00cea7791dc9">&#9670;&nbsp;</a></span>eccentricity</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double mip::data_gnss::BeidouEphemeris::eccentricity = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a45b62644928e002423fb8b901a02568b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a45b62644928e002423fb8b901a02568b">&#9670;&nbsp;</a></span>FIELD_DESCRIPTOR</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr const uint8_t mip::data_gnss::BeidouEphemeris::FIELD_DESCRIPTOR = ::<a class="el" href="group__gnss__data__cpp.html#gga458a8cb95733cbdb683bd14f6f11df71a93e65363697abde176a83b81bc4c4e40">mip::data_gnss::DATA_BEIDOU_EPHEMERIS</a></td>
         </tr>
       </table>
   </td>
@@ -670,315 +911,6 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="a55cb0d6bfb59353a504abb12889a0f55"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55cb0d6bfb59353a504abb12889a0f55">&#9670;&nbsp;</a></span>health</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t mip::data_gnss::BeidouEphemeris::health = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Satellite and signal health. </p>
-
-</div>
-</div>
-<a id="adef7148006426001c47b2f5ea9499c9f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adef7148006426001c47b2f5ea9499c9f">&#9670;&nbsp;</a></span>inclination</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double mip::data_gnss::BeidouEphemeris::inclination = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Inclination angle [rad]. </p>
-
-</div>
-</div>
-<a id="a4b46f46242eb78cd1d9698b5ef08cc58"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b46f46242eb78cd1d9698b5ef08cc58">&#9670;&nbsp;</a></span>inclination_dot</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double mip::data_gnss::BeidouEphemeris::inclination_dot = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Inclination angle rate of change [rad/s]. </p>
-
-</div>
-</div>
-<a id="ac681fd16f01af5ce6aeb6674b3bc8ca6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac681fd16f01af5ce6aeb6674b3bc8ca6">&#9670;&nbsp;</a></span>index</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t mip::data_gnss::BeidouEphemeris::index = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Parameters. </p>
-<p>Index of this field in this epoch. </p>
-
-</div>
-</div>
-<a id="a5be13460e190d7b5dc6b83557c882638"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5be13460e190d7b5dc6b83557c882638">&#9670;&nbsp;</a></span>iodc</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t mip::data_gnss::BeidouEphemeris::iodc = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Issue of Data Clock. This increments each time the data changes and rolls over at 4. It is used to make sure various raw data elements from different sources line up correctly. </p>
-
-</div>
-</div>
-<a id="ae73d6ee4e87b3f6da5fb3f492e75cdd2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae73d6ee4e87b3f6da5fb3f492e75cdd2">&#9670;&nbsp;</a></span>iode</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t mip::data_gnss::BeidouEphemeris::iode = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Issue of Data Ephemeris. </p>
-
-</div>
-</div>
-<a id="aa79d0e8f175689419a496fb69b58fbd8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa79d0e8f175689419a496fb69b58fbd8">&#9670;&nbsp;</a></span>ISC_L1CA</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double mip::data_gnss::BeidouEphemeris::ISC_L1CA = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Inter-signal correction (L1). </p>
-
-</div>
-</div>
-<a id="a5d20381dd4b1275c7d32a7091b0f68b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d20381dd4b1275c7d32a7091b0f68b6">&#9670;&nbsp;</a></span>ISC_L2C</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double mip::data_gnss::BeidouEphemeris::ISC_L2C = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Inter-signal correction (L2, or L5 if isc_l5 flag is set). </p>
-
-</div>
-</div>
-<a id="a41cac970ef95307029812ffd5b7badc0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a41cac970ef95307029812ffd5b7badc0">&#9670;&nbsp;</a></span>mean_anomaly</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double mip::data_gnss::BeidouEphemeris::mean_anomaly = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>[rad]. </p>
-
-</div>
-</div>
-<a id="a0a36125b4ff9f9ee005236f53672b46c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a36125b4ff9f9ee005236f53672b46c">&#9670;&nbsp;</a></span>NAME</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr const char* mip::data_gnss::BeidouEphemeris::NAME = &quot;BeidouEphemeris&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7c586b12bee18d5500f39a9094e049ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c586b12bee18d5500f39a9094e049ac">&#9670;&nbsp;</a></span>omega</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double mip::data_gnss::BeidouEphemeris::omega = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Longitude of Ascending Node [rad]. </p>
-
-</div>
-</div>
-<a id="aa5f2ceb775da8ef047c03ffb772d468f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa5f2ceb775da8ef047c03ffb772d468f">&#9670;&nbsp;</a></span>omega_dot</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double mip::data_gnss::BeidouEphemeris::omega_dot = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Rate of Right Ascension [rad/s]. </p>
-
-</div>
-</div>
-<a id="a7974bf95328e19193f50806f6891f73d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7974bf95328e19193f50806f6891f73d">&#9670;&nbsp;</a></span>satellite_id</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t mip::data_gnss::BeidouEphemeris::satellite_id = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>GNSS satellite id within the constellation. </p>
-
-</div>
-</div>
-<a id="a8e29e1edfa41d5111397b249994d65fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e29e1edfa41d5111397b249994d65fd">&#9670;&nbsp;</a></span>t_gd</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double mip::data_gnss::BeidouEphemeris::t_gd = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>T Group Delay [s]. </p>
-
-</div>
-</div>
-<a id="aacf56508cc4cf5a3ce99cb06e98b92d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aacf56508cc4cf5a3ce99cb06e98b92d5">&#9670;&nbsp;</a></span>t_oc</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double mip::data_gnss::BeidouEphemeris::t_oc = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Reference time for clock data. </p>
-
-</div>
-</div>
-<a id="a33aaf60dabe20d6667982ee89696ac95"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33aaf60dabe20d6667982ee89696ac95">&#9670;&nbsp;</a></span>t_oe</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double mip::data_gnss::BeidouEphemeris::t_oe = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Reference time for ephemeris in [s]. </p>
-
-</div>
-</div>
-<a id="a375384fbaa7f835d0fde2024e206987a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a375384fbaa7f835d0fde2024e206987a">&#9670;&nbsp;</a></span>time_of_week</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double mip::data_gnss::BeidouEphemeris::time_of_week = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>GPS Time of week [seconds]. </p>
-
-</div>
-</div>
-<a id="af23d19ae2cc84c03e78d939bafae7a95"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af23d19ae2cc84c03e78d939bafae7a95">&#9670;&nbsp;</a></span>valid_flags</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structmip_1_1data__gnss_1_1BeidouEphemeris_1_1ValidFlags.html">ValidFlags</a> mip::data_gnss::BeidouEphemeris::valid_flags</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9782fc1edd2a5e07feba218578851fb1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9782fc1edd2a5e07feba218578851fb1">&#9670;&nbsp;</a></span>week_number</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint16_t mip::data_gnss::BeidouEphemeris::week_number = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>GPS Week since 1980 [weeks]. </p>
 
 </div>
 </div>

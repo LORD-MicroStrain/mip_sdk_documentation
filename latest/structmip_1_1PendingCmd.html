@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -138,8 +138,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a4ccbfa13816b2065e18639759aa0477c inherit pub_attribs_structmip_1_1C_1_1mip__pending__cmd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>C++ class representing the state of a MIP command. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<div class="textblock"></div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7de966b0a5bb556ac8650f024ef96e59"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7de966b0a5bb556ac8650f024ef96e59">&#9670;&nbsp;</a></span>PendingCmd() <span class="overload">[1/6]</span></h2>
 
@@ -162,8 +161,6 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Create a null pending command in the CmdResult::NONE state. </p>
 
 </div>
 </div>
@@ -206,8 +203,6 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Create a pending command for the given descriptor pair. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">descriptorSet</td><td>MIP descriptor set for the command. </td></tr>
@@ -276,8 +271,6 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Create a pending command with expected response. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">descriptorSet</td><td>MIP descriptor set for the command. </td></tr>
@@ -327,8 +320,6 @@ template&lt;class Cmd &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Create a pending command given the actual command struct. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">cmd</td><td>The C++ command struct (this must be the C++ version of the struct, the <a class="el" href="namespacemip_1_1C.html">C</a> struct will not work). It need not be fully populated; this parameter is unused except for its type information. </td></tr>
@@ -386,8 +377,6 @@ template&lt;class Cmd &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Create a pending command given the actual command struct and a response buffer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">cmd</td><td>The C++ command struct (this must be the C++ version of the struct, the <a class="el" href="namespacemip_1_1C.html">C</a> struct will not work). It need not be fully populated; this parameter is unused except for its type information. </td></tr>
@@ -424,8 +413,6 @@ template&lt;class Cmd &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Disable copying and moving. Once queued, a pending command must remain in the same memory location. </p>
-
 </div>
 </div>
 <a id="aa8f118340cfa887633334649ff849b4a"></a>
@@ -450,8 +437,6 @@ template&lt;class Cmd &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Sanity check that the <a class="el" href="structmip_1_1PendingCmd.html" title="C++ class representing the state of a MIP command.">PendingCmd</a> is not deallocated while still in the queue. </p>
 
 </div>
 </div>
@@ -482,8 +467,8 @@ template&lt;class Cmd &gt; </div>
 
 </div>
 </div>
-<a id="a34a279c6864390fcd2539d8ce0add5d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a34a279c6864390fcd2539d8ce0add5d8">&#9670;&nbsp;</a></span>response()</h2>
+<a id="a3419b44ea83dfbb1e81905916106cca8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3419b44ea83dfbb1e81905916106cca8">&#9670;&nbsp;</a></span>status()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -492,7 +477,7 @@ template&lt;class Cmd &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const uint8_t* mip::PendingCmd::response </td>
+          <td class="memname"><a class="el" href="structmip_1_1CmdResult.html">CmdResult</a> mip::PendingCmd::status </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -504,9 +489,6 @@ template&lt;class Cmd &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the response payload pointer. </p>
-<p>This function may only be called after the command finishes with an ACK. </p>
 
 </div>
 </div>
@@ -533,7 +515,31 @@ template&lt;class Cmd &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the response descriptor. </p>
+</div>
+</div>
+<a id="a34a279c6864390fcd2539d8ce0add5d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34a279c6864390fcd2539d8ce0add5d8">&#9670;&nbsp;</a></span>response()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t* mip::PendingCmd::response </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This function may only be called after the command finishes with an ACK. </p>
 
 </div>
 </div>
@@ -559,36 +565,7 @@ template&lt;class Cmd &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the length of the response data. </p>
 <p>This function may only be called after the command finishes. If the command completed with a NACK, or if it timed out, the response length will be zero. </p>
-
-</div>
-</div>
-<a id="a3419b44ea83dfbb1e81905916106cca8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3419b44ea83dfbb1e81905916106cca8">&#9670;&nbsp;</a></span>status()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structmip_1_1CmdResult.html">CmdResult</a> mip::PendingCmd::status </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Gets the status of the pending command. </p>
 
 </div>
 </div>

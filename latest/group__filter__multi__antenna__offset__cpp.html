@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -94,19 +94,18 @@ Functions</h2></td></tr>
 <tr class="separator:ga34c48592e3664e28daf85fb94d924b39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Set the antenna lever arm. </p>
 <p>This command works with devices that utilize multiple antennas. <br  />
 <br  />
 <b>Offset Limit</b>: 10 m magnitude (default) </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga34c48592e3664e28daf85fb94d924b39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga34c48592e3664e28daf85fb94d924b39">&#9670;&nbsp;</a></span>defaultMultiAntennaOffset()</h2>
+<a id="ga1acf8fe51d7733ec806330746d787148"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1acf8fe51d7733ec806330746d787148">&#9670;&nbsp;</a></span>writeMultiAntennaOffset()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1MultiAntennaOffset.html">MultiAntennaOffset</a> &gt; mip::commands_filter::defaultMultiAntennaOffset </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1MultiAntennaOffset.html">MultiAntennaOffset</a> &gt; mip::commands_filter::writeMultiAntennaOffset </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
@@ -115,35 +114,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>receiverId</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga9055fc178f5c770cf5044878ff71d9a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9055fc178f5c770cf5044878ff71d9a4">&#9670;&nbsp;</a></span>loadMultiAntennaOffset()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1MultiAntennaOffset.html">MultiAntennaOffset</a> &gt; mip::commands_filter::loadMultiAntennaOffset </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
+          <td class="paramname"><em>receiverId</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>receiverId</em>&#160;</td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>antennaOffset</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -217,14 +194,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga1acf8fe51d7733ec806330746d787148"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1acf8fe51d7733ec806330746d787148">&#9670;&nbsp;</a></span>writeMultiAntennaOffset()</h2>
+<a id="ga9055fc178f5c770cf5044878ff71d9a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9055fc178f5c770cf5044878ff71d9a4">&#9670;&nbsp;</a></span>loadMultiAntennaOffset()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1MultiAntennaOffset.html">MultiAntennaOffset</a> &gt; mip::commands_filter::writeMultiAntennaOffset </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1MultiAntennaOffset.html">MultiAntennaOffset</a> &gt; mip::commands_filter::loadMultiAntennaOffset </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
@@ -233,13 +210,35 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>receiverId</em>, </td>
+          <td class="paramname"><em>receiverId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga34c48592e3664e28daf85fb94d924b39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga34c48592e3664e28daf85fb94d924b39">&#9670;&nbsp;</a></span>defaultMultiAntennaOffset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1MultiAntennaOffset.html">MultiAntennaOffset</a> &gt; mip::commands_filter::defaultMultiAntennaOffset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const float *&#160;</td>
-          <td class="paramname"><em>antennaOffset</em>&#160;</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>receiverId</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

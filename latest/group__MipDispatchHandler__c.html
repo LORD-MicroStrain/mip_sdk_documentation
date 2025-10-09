@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -107,7 +107,6 @@ Functions</h2></td></tr>
 <tr class="separator:ga30528d28ca451f33ec03bcd63bf53cf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>This represents a binding between a MIP descriptor pair and a callback function. </p>
 <p>This object must be valid for the duration of its registration in a <a class="el" href="structmip_1_1C_1_1mip__dispatcher.html" title="Holds the state of the MIP dispatch system.">mip_dispatcher</a>. It cannot be reinitialized while registered.</p>
 <dl class="section note"><dt>Note</dt><dd>This should be considered an "opaque" structure; its members should be considered an internal implementation detail. Avoid accessing them directly as they are subject to change in future versions of this software. </dd></dl>
 <h2 class="groupheader">Typedef Documentation</h2>
@@ -123,19 +122,17 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Handler information for MIP Packet or Field callbacks. </p>
-
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gaa63edaac5b8813a4ad3dd333a4a359bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa63edaac5b8813a4ad3dd333a4a359bf">&#9670;&nbsp;</a></span>mip_dispatch_handler_init_extractor()</h2>
+<a id="ga6949bdc8395ed92fab2948f1c26ec144"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6949bdc8395ed92fab2948f1c26ec144">&#9670;&nbsp;</a></span>mip_dispatch_handler_init_packet_handler()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void mip::C::mip_dispatch_handler_init_extractor </td>
+          <td class="memname">void mip::C::mip_dispatch_handler_init_packet_handler </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__dispatch__handler.html">mip_dispatch_handler</a> *&#160;</td>
           <td class="paramname"><em>handler</em>, </td>
@@ -149,20 +146,20 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>field_descriptor</em>, </td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>post_callback</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__MipDispatch__c.html#ga30f5663974ed1e5cb0e259d440aaa2e8">mip_dispatch_extractor</a>&#160;</td>
-          <td class="paramname"><em>extractor</em>, </td>
+          <td class="paramtype"><a class="el" href="group__MipDispatch__c.html#ga29b0f63f4f34c796757047479d38427f">mip_dispatch_packet_callback</a>&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>field_ptr</em>&#160;</td>
+          <td class="paramname"><em>user_data</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -171,20 +168,17 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Initialize the dispatch handler with an extraction callback. </p>
-<p>Use this function to automatically populate your data structures with data as it arrives. This avoids the need to implement a switch/case or lots of duplicated code to handle extraction of various data quantities.</p>
+<p>Packets which match the descriptor set will cause the callback to be executed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">handler</td><td></td></tr>
-    <tr><td class="paramname">descriptor_set</td><td>The callback will only be invoked for fields belonging to this descriptor set. It must match the descriptor set corresponding to the extract function and object pointed to by field_ptr. This may be MIP_DISPATCH_ANY_DATA_SET if the field descriptor is from the shared data region.</td></tr>
-    <tr><td class="paramname">field_descriptor</td><td>The callback will only be invoked for fields of this field descriptor. It must match the field descriptor corresponding to the extract function and object pointed to by field_ptr.</td></tr>
-    <tr><td class="paramname">extractor</td><td>The extraction callback function. This is one of the functions in the definitions/data_*.h files with the name <code>extract_&lt;field-type&gt;_from_field</code>.</td></tr>
-    <tr><td class="paramname">field_ptr</td><td>A pointer to the data structure corresponding to the field type handled by the callback function. Cannot be NULL.</td></tr>
+    <tr><td class="paramname">descriptor_set</td><td>The callback will only be invoked for fields belonging to this descriptor set. Can be MIP_DISPATCH_ANY_DESCRIPTOR to match any packet, or MIP_DISPATCH_ANY_DATA_SET to match only data packets. </td></tr>
+    <tr><td class="paramname">post_callback</td><td>If false, the callback is called before any field callbacks from the same packet. If true, the callback is called after field callbacks. </td></tr>
+    <tr><td class="paramname">callback</td><td>The callback function. </td></tr>
+    <tr><td class="paramname">user_data</td><td>Any pointer the user wants to pass into the callback. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section warning"><dt>Warning</dt><dd>The type of field_ptr must match what the callback function expects. Otherwise, the behavior is undefined and your program may experience memory corruption or process crash. </dd></dl>
 
 </div>
 </div>
@@ -231,8 +225,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Initialize the dispatch handler with a field callback. </p>
 <p>Fields which match both the descriptor set and field descriptor will cause the callback function to be executed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -247,14 +239,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga6949bdc8395ed92fab2948f1c26ec144"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6949bdc8395ed92fab2948f1c26ec144">&#9670;&nbsp;</a></span>mip_dispatch_handler_init_packet_handler()</h2>
+<a id="gaa63edaac5b8813a4ad3dd333a4a359bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa63edaac5b8813a4ad3dd333a4a359bf">&#9670;&nbsp;</a></span>mip_dispatch_handler_init_extractor()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void mip::C::mip_dispatch_handler_init_packet_handler </td>
+          <td class="memname">void mip::C::mip_dispatch_handler_init_extractor </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__dispatch__handler.html">mip_dispatch_handler</a> *&#160;</td>
           <td class="paramname"><em>handler</em>, </td>
@@ -268,20 +260,20 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>post_callback</em>, </td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>field_descriptor</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__MipDispatch__c.html#ga29b0f63f4f34c796757047479d38427f">mip_dispatch_packet_callback</a>&#160;</td>
-          <td class="paramname"><em>callback</em>, </td>
+          <td class="paramtype"><a class="el" href="group__MipDispatch__c.html#ga30f5663974ed1e5cb0e259d440aaa2e8">mip_dispatch_extractor</a>&#160;</td>
+          <td class="paramname"><em>extractor</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>user_data</em>&#160;</td>
+          <td class="paramname"><em>field_ptr</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -290,40 +282,18 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Initialize the dispatch handler with a packet callback. </p>
-<p>Packets which match the descriptor set will cause the callback to be executed.</p>
+<p>Use this function to automatically populate your data structures with data as it arrives. This avoids the need to implement a switch/case or lots of duplicated code to handle extraction of various data quantities.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">handler</td><td></td></tr>
-    <tr><td class="paramname">descriptor_set</td><td>The callback will only be invoked for fields belonging to this descriptor set. Can be MIP_DISPATCH_ANY_DESCRIPTOR to match any packet, or MIP_DISPATCH_ANY_DATA_SET to match only data packets. </td></tr>
-    <tr><td class="paramname">post_callback</td><td>If false, the callback is called before any field callbacks from the same packet. If true, the callback is called after field callbacks. </td></tr>
-    <tr><td class="paramname">callback</td><td>The callback function. </td></tr>
-    <tr><td class="paramname">user_data</td><td>Any pointer the user wants to pass into the callback. </td></tr>
+    <tr><td class="paramname">descriptor_set</td><td>The callback will only be invoked for fields belonging to this descriptor set. It must match the descriptor set corresponding to the extract function and object pointed to by field_ptr. This may be MIP_DISPATCH_ANY_DATA_SET if the field descriptor is from the shared data region.</td></tr>
+    <tr><td class="paramname">field_descriptor</td><td>The callback will only be invoked for fields of this field descriptor. It must match the field descriptor corresponding to the extract function and object pointed to by field_ptr.</td></tr>
+    <tr><td class="paramname">extractor</td><td>The extraction callback function. This is one of the functions in the definitions/data_*.h files with the name <code>extract_&lt;field-type&gt;_from_field</code>.</td></tr>
+    <tr><td class="paramname">field_ptr</td><td>A pointer to the data structure corresponding to the field type handled by the callback function. Cannot be NULL.</td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="ga30528d28ca451f33ec03bcd63bf53cf7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga30528d28ca451f33ec03bcd63bf53cf7">&#9670;&nbsp;</a></span>mip_dispatch_handler_is_enabled()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool mip::C::mip_dispatch_handler_is_enabled </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__dispatch__handler.html">mip_dispatch_handler</a> *&#160;</td>
-          <td class="paramname"><em>handler</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Determines if the handler is currently enabled. </p>
-<dl class="section return"><dt>Returns</dt><dd>true if the handler is enabled, false otherwise. </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>The type of field_ptr must match what the callback function expects. Otherwise, the behavior is undefined and your program may experience memory corruption or process crash. </dd></dl>
 
 </div>
 </div>
@@ -352,8 +322,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Enables or disables the handler. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">handler</td><td></td></tr>
@@ -361,6 +329,25 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ga30528d28ca451f33ec03bcd63bf53cf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga30528d28ca451f33ec03bcd63bf53cf7">&#9670;&nbsp;</a></span>mip_dispatch_handler_is_enabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::C::mip_dispatch_handler_is_enabled </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__dispatch__handler.html">mip_dispatch_handler</a> *&#160;</td>
+          <td class="paramname"><em>handler</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>true if the handler is enabled, false otherwise. </dd></dl>
 
 </div>
 </div>

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -94,38 +94,35 @@ Functions</h2></td></tr>
 <tr class="separator:gabb9f2438c8d81ed6f8be901aea0b1a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>The ZUPT is triggered when the scalar magnitude of the GNSS reported velocity vector is equal-to or less than the threshold value. The device will NACK threshold values that are less than zero (i.e.negative.) </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gabb9f2438c8d81ed6f8be901aea0b1a70"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabb9f2438c8d81ed6f8be901aea0b1a70">&#9670;&nbsp;</a></span>defaultAutoZupt()</h2>
+<a id="gaa346fb6b859ffb99ea30e482bdd3b590"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa346fb6b859ffb99ea30e482bdd3b590">&#9670;&nbsp;</a></span>writeAutoZupt()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1AutoZupt.html">AutoZupt</a> &gt; mip::commands_filter::defaultAutoZupt </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1AutoZupt.html">AutoZupt</a> &gt; mip::commands_filter::writeAutoZupt </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
-          <td></td>
+          <td class="paramname"><em>device</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga7cfd4691327aa28dd37384f6b8686f62"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7cfd4691327aa28dd37384f6b8686f62">&#9670;&nbsp;</a></span>loadAutoZupt()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1AutoZupt.html">AutoZupt</a> &gt; mip::commands_filter::loadAutoZupt </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>enable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>threshold</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -184,34 +181,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gaa346fb6b859ffb99ea30e482bdd3b590"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa346fb6b859ffb99ea30e482bdd3b590">&#9670;&nbsp;</a></span>writeAutoZupt()</h2>
+<a id="ga7cfd4691327aa28dd37384f6b8686f62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7cfd4691327aa28dd37384f6b8686f62">&#9670;&nbsp;</a></span>loadAutoZupt()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1AutoZupt.html">AutoZupt</a> &gt; mip::commands_filter::writeAutoZupt </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1AutoZupt.html">AutoZupt</a> &gt; mip::commands_filter::loadAutoZupt </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>enable</em>, </td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gabb9f2438c8d81ed6f8be901aea0b1a70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabb9f2438c8d81ed6f8be901aea0b1a70">&#9670;&nbsp;</a></span>defaultAutoZupt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1AutoZupt.html">AutoZupt</a> &gt; mip::commands_filter::defaultAutoZupt </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>threshold</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

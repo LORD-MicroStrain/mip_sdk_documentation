@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -94,39 +94,30 @@ Functions</h2></td></tr>
 <tr class="separator:ga328e020f95c99dec822d0f2662735e94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Control the source of GNSS information used to update the Kalman Filter. </p>
 <p>Changing the GNSS source while the sensor is in the "running" state may temporarily place it back in the "init" state until the new source of GNSS data is received. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga328e020f95c99dec822d0f2662735e94"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga328e020f95c99dec822d0f2662735e94">&#9670;&nbsp;</a></span>defaultGnssSource()</h2>
+<a id="gad925fa3a7d4ea6461cfb630c5d5ddf03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad925fa3a7d4ea6461cfb630c5d5ddf03">&#9670;&nbsp;</a></span>writeGnssSource()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1GnssSource.html">GnssSource</a> &gt; mip::commands_filter::defaultGnssSource </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1GnssSource.html">GnssSource</a> &gt; mip::commands_filter::writeGnssSource </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
-          <td></td>
+          <td class="paramname"><em>device</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga9af8f4a0926e89f9136f640d326c5cdb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9af8f4a0926e89f9136f640d326c5cdb">&#9670;&nbsp;</a></span>loadGnssSource()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1GnssSource.html">GnssSource</a> &gt; mip::commands_filter::loadGnssSource </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1commands__filter_1_1GnssSource.html#ae8e2581226880694b8e70b3dde491331">GnssSource::Source</a>&#160;</td>
+          <td class="paramname"><em>source</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -179,28 +170,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gad925fa3a7d4ea6461cfb630c5d5ddf03"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad925fa3a7d4ea6461cfb630c5d5ddf03">&#9670;&nbsp;</a></span>writeGnssSource()</h2>
+<a id="ga9af8f4a0926e89f9136f640d326c5cdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9af8f4a0926e89f9136f640d326c5cdb">&#9670;&nbsp;</a></span>loadGnssSource()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1GnssSource.html">GnssSource</a> &gt; mip::commands_filter::writeGnssSource </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1GnssSource.html">GnssSource</a> &gt; mip::commands_filter::loadGnssSource </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1commands__filter_1_1GnssSource.html#ae8e2581226880694b8e70b3dde491331">GnssSource::Source</a>&#160;</td>
-          <td class="paramname"><em>source</em>&#160;</td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga328e020f95c99dec822d0f2662735e94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga328e020f95c99dec822d0f2662735e94">&#9670;&nbsp;</a></span>defaultGnssSource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1GnssSource.html">GnssSource</a> &gt; mip::commands_filter::defaultGnssSource </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

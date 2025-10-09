@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -94,41 +94,38 @@ Functions</h2></td></tr>
 <tr class="separator:gaac8c435855391920cd6afbc156349863"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Set the options for assisted GNSS fix. </p>
 <p>Devices that implement this command have a dedicated GNSS flash memory and a non-volatile FRAM. These storage mechanisms are used to retain information about the last good GNSS fix. This can greatly reduces the TTFF (Time To First Fix) depending on the age of the stored information. The TTFF can be as low as one second, or up to the equivalent of a cold start. There is a small increase in power used when enabling assisted fix.</p>
 <p>The fastest fix will be obtained by supplying the device with a GNSS Assist Time Update message containing the current GPS time immediately after subsequent power up. This allows the device to determine if the last GNSS information saved is still fresh enough to improve the TTFF.</p>
 <p>NOTE: Non-volatile GNSS memory is cleared when going from an enabled state to a disabled state. WARNING: The clearing operation results in an erase operation on the GNSS Flash. The flash has a limited durability of 100,000 write/erase cycles </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gaac8c435855391920cd6afbc156349863"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaac8c435855391920cd6afbc156349863">&#9670;&nbsp;</a></span>defaultGnssAssistedFix()</h2>
+<a id="ga2298b61647544a54d95e888d80d67a39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2298b61647544a54d95e888d80d67a39">&#9670;&nbsp;</a></span>writeGnssAssistedFix()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1GnssAssistedFix.html">GnssAssistedFix</a> &gt; mip::commands_3dm::defaultGnssAssistedFix </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1GnssAssistedFix.html">GnssAssistedFix</a> &gt; mip::commands_3dm::writeGnssAssistedFix </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
-          <td></td>
+          <td class="paramname"><em>device</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga2bd437b407266f8167749da017674215"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2bd437b407266f8167749da017674215">&#9670;&nbsp;</a></span>loadGnssAssistedFix()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1GnssAssistedFix.html">GnssAssistedFix</a> &gt; mip::commands_3dm::loadGnssAssistedFix </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1commands__3dm_1_1GnssAssistedFix.html#a4263dc2201b9706486803930dfd0eb46">GnssAssistedFix::AssistedFixOption</a>&#160;</td>
+          <td class="paramname"><em>option</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -187,34 +184,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga2298b61647544a54d95e888d80d67a39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2298b61647544a54d95e888d80d67a39">&#9670;&nbsp;</a></span>writeGnssAssistedFix()</h2>
+<a id="ga2bd437b407266f8167749da017674215"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2bd437b407266f8167749da017674215">&#9670;&nbsp;</a></span>loadGnssAssistedFix()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1GnssAssistedFix.html">GnssAssistedFix</a> &gt; mip::commands_3dm::writeGnssAssistedFix </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1GnssAssistedFix.html">GnssAssistedFix</a> &gt; mip::commands_3dm::loadGnssAssistedFix </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1commands__3dm_1_1GnssAssistedFix.html#a4263dc2201b9706486803930dfd0eb46">GnssAssistedFix::AssistedFixOption</a>&#160;</td>
-          <td class="paramname"><em>option</em>, </td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaac8c435855391920cd6afbc156349863"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaac8c435855391920cd6afbc156349863">&#9670;&nbsp;</a></span>defaultGnssAssistedFix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1GnssAssistedFix.html">GnssAssistedFix</a> &gt; mip::commands_3dm::defaultGnssAssistedFix </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>flags</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

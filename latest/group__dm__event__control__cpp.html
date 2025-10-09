@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -94,18 +94,17 @@ Functions</h2></td></tr>
 <tr class="separator:ga3fe54e3a5ce01782d92c415e4a8597ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Enables or disables event triggers. </p>
 <p>Triggers can be disabled, enabled, and tested. While disabled, a trigger will not evaluate its logic and effective behave like no trigger is configured. A disabled trigger will not activate any actions. Triggers are disabled by default.</p>
 <p>Use this command to enable (or disable) a trigger, or to place it into a test mode. When in test mode, the trigger logic is disabled but the output is forced to the active state, meaning that it will behave as if the trigger logic is satisfied and any associated actions will execute. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga3fe54e3a5ce01782d92c415e4a8597ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3fe54e3a5ce01782d92c415e4a8597ea">&#9670;&nbsp;</a></span>defaultEventControl()</h2>
+<a id="ga52d97be085de422ad5087c85318df740"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga52d97be085de422ad5087c85318df740">&#9670;&nbsp;</a></span>writeEventControl()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1EventControl.html">EventControl</a> &gt; mip::commands_3dm::defaultEventControl </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1EventControl.html">EventControl</a> &gt; mip::commands_3dm::writeEventControl </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
@@ -114,35 +113,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>instance</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gacf53439f4ae78719e25cd3210f60239e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacf53439f4ae78719e25cd3210f60239e">&#9670;&nbsp;</a></span>loadEventControl()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1EventControl.html">EventControl</a> &gt; mip::commands_3dm::loadEventControl </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
+          <td class="paramname"><em>instance</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>instance</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1commands__3dm_1_1EventControl.html#a0e8c29b4839a750801634e36a802304b">EventControl::Mode</a>&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -216,14 +193,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga52d97be085de422ad5087c85318df740"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga52d97be085de422ad5087c85318df740">&#9670;&nbsp;</a></span>writeEventControl()</h2>
+<a id="gacf53439f4ae78719e25cd3210f60239e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacf53439f4ae78719e25cd3210f60239e">&#9670;&nbsp;</a></span>loadEventControl()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1EventControl.html">EventControl</a> &gt; mip::commands_3dm::writeEventControl </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1EventControl.html">EventControl</a> &gt; mip::commands_3dm::loadEventControl </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
@@ -232,13 +209,35 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>instance</em>, </td>
+          <td class="paramname"><em>instance</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga3fe54e3a5ce01782d92c415e4a8597ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3fe54e3a5ce01782d92c415e4a8597ea">&#9670;&nbsp;</a></span>defaultEventControl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1EventControl.html">EventControl</a> &gt; mip::commands_3dm::defaultEventControl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1commands__3dm_1_1EventControl.html#a0e8c29b4839a750801634e36a802304b">EventControl::Mode</a>&#160;</td>
-          <td class="paramname"><em>mode</em>&#160;</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>instance</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

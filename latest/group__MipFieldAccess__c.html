@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -96,7 +96,6 @@ Functions</h2></td></tr>
 <tr class="separator:ga17595043dedf0700166bb51f2871f370"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Functions for inspecting a MIP field. </p>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="gaab91d96d9a0187a1b8ddf51e9c996823"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaab91d96d9a0187a1b8ddf51e9c996823">&#9670;&nbsp;</a></span>mip_field_descriptor_set()</h2>
@@ -113,8 +112,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Returns the descriptor set of the packet containing this field._. </p>
 
 </div>
 </div>
@@ -134,48 +131,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the field descriptor. </p>
-
-</div>
-</div>
-<a id="ga17595043dedf0700166bb51f2871f370"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga17595043dedf0700166bb51f2871f370">&#9670;&nbsp;</a></span>mip_field_is_valid()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool mip::C::mip_field_is_valid </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__field__view.html">mip_field_view</a> *&#160;</td>
-          <td class="paramname"><em>field</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns true if the field has a valid field descriptor. </p>
-
-</div>
-</div>
-<a id="gaf69f00c34315a354d370cd3a4a50b968"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf69f00c34315a354d370cd3a4a50b968">&#9670;&nbsp;</a></span>mip_field_payload()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const uint8_t * mip::C::mip_field_payload </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__field__view.html">mip_field_view</a> *&#160;</td>
-          <td class="paramname"><em>field</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the payload pointer for the field data. </p>
-
 </div>
 </div>
 <a id="gaa1faccb58aa4df15ab5be8607fc569e9"></a>
@@ -193,8 +148,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Returns the length of the payload. </p>
 
 </div>
 </div>
@@ -214,7 +167,41 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the total length of the field including the header. </p>
+</div>
+</div>
+<a id="gaf69f00c34315a354d370cd3a4a50b968"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf69f00c34315a354d370cd3a4a50b968">&#9670;&nbsp;</a></span>mip_field_payload()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t * mip::C::mip_field_payload </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__field__view.html">mip_field_view</a> *&#160;</td>
+          <td class="paramname"><em>field</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga17595043dedf0700166bb51f2871f370"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga17595043dedf0700166bb51f2871f370">&#9670;&nbsp;</a></span>mip_field_is_valid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::C::mip_field_is_valid </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__field__view.html">mip_field_view</a> *&#160;</td>
+          <td class="paramname"><em>field</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -112,7 +112,6 @@ Functions</h2></td></tr>
 <tr class="separator:ga86b75f4e2bab1fd033232df9b2133fbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Configures the user specified accelerometer bias. </p>
 <p>The user specified bias is subtracted from the calibrated accelerometer output. Value is input in the sensor frame. </p>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="gac6d515e2ee841ef3df01c0399b960388"></a>
@@ -144,62 +143,6 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga475c8ded4c64d384a0da8146a702bbf1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga475c8ded4c64d384a0da8146a702bbf1">&#9670;&nbsp;</a></span>extract_mip_3dm_accel_bias_command()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::extract_mip_3dm_accel_bias_command </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__3dm__accel__bias__command.html">mip_3dm_accel_bias_command</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga0081a5531641c88d1e77bf46455b64a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0081a5531641c88d1e77bf46455b64a8">&#9670;&nbsp;</a></span>extract_mip_3dm_accel_bias_response()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::extract_mip_3dm_accel_bias_response </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__3dm__accel__bias__response.html">mip_3dm_accel_bias_response</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ga1d5ed85965f7e7cb211a917edb8b33d1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga1d5ed85965f7e7cb211a917edb8b33d1">&#9670;&nbsp;</a></span>insert_mip_3dm_accel_bias_command()</h2>
 
@@ -216,6 +159,34 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__3dm__accel__bias__command.html">mip_3dm_accel_bias_command</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga475c8ded4c64d384a0da8146a702bbf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga475c8ded4c64d384a0da8146a702bbf1">&#9670;&nbsp;</a></span>extract_mip_3dm_accel_bias_command()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::C::extract_mip_3dm_accel_bias_command </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__3dm__accel__bias__command.html">mip_3dm_accel_bias_command</a> *&#160;</td>
           <td class="paramname"><em>self</em>&#160;</td>
         </tr>
         <tr>
@@ -256,36 +227,56 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga86b75f4e2bab1fd033232df9b2133fbd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga86b75f4e2bab1fd033232df9b2133fbd">&#9670;&nbsp;</a></span>mip_3dm_default_accel_bias()</h2>
+<a id="ga0081a5531641c88d1e77bf46455b64a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0081a5531641c88d1e77bf46455b64a8">&#9670;&nbsp;</a></span>extract_mip_3dm_accel_bias_response()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_3dm_default_accel_bias </td>
+          <td class="memname">void mip::C::extract_mip_3dm_accel_bias_response </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__3dm__accel__bias__response.html">mip_3dm_accel_bias_response</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ga1695e7731360c333787323638c66dc07"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1695e7731360c333787323638c66dc07">&#9670;&nbsp;</a></span>mip_3dm_load_accel_bias()</h2>
+<a id="ga471ad63d9be9411a6e9e9ca35fd68ac0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga471ad63d9be9411a6e9e9ca35fd68ac0">&#9670;&nbsp;</a></span>mip_3dm_write_accel_bias()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_3dm_load_accel_bias </td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_3dm_write_accel_bias </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>bias</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -338,28 +329,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga471ad63d9be9411a6e9e9ca35fd68ac0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga471ad63d9be9411a6e9e9ca35fd68ac0">&#9670;&nbsp;</a></span>mip_3dm_write_accel_bias()</h2>
+<a id="ga1695e7731360c333787323638c66dc07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1695e7731360c333787323638c66dc07">&#9670;&nbsp;</a></span>mip_3dm_load_accel_bias()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_3dm_write_accel_bias </td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_3dm_load_accel_bias </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const float *&#160;</td>
-          <td class="paramname"><em>bias</em>&#160;</td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga86b75f4e2bab1fd033232df9b2133fbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga86b75f4e2bab1fd033232df9b2133fbd">&#9670;&nbsp;</a></span>mip_3dm_default_accel_bias()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_3dm_default_accel_bias </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

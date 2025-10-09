@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -69,6 +69,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="classmip_1_1FieldView-members.html">List of all members</a>  </div>
@@ -91,6 +92,14 @@ Inheritance diagram for mip::FieldView:</div>
   </map>
 </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a288701af26ef9f590c57f0bd062ca246"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1FieldView.html#a288701af26ef9f590c57f0bd062ca246">Index</a> : uint8_t { <a class="el" href="classmip_1_1FieldView.html#a288701af26ef9f590c57f0bd062ca246aaddeac40406177897b3fccba88558f1c">Index::LENGTH</a> = C::MIP_FIELD_INDEX_LENGTH, 
+<a class="el" href="classmip_1_1FieldView.html#a288701af26ef9f590c57f0bd062ca246a65a6d757dbb571ccc3af9706e9a5f607">Index::DESC</a> = C::MIP_FIELD_INDEX_DESC, 
+<a class="el" href="classmip_1_1FieldView.html#a288701af26ef9f590c57f0bd062ca246aca8fef80e43c8db749b7c9406d535b1a">Index::PAYLOAD</a> = C::MIP_FIELD_INDEX_PAYLOAD
+ }</td></tr>
+<tr class="separator:a288701af26ef9f590c57f0bd062ca246"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad5051df878eb0575924086c1be1a1e48"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1FieldView.html#ad5051df878eb0575924086c1be1a1e48">FieldView</a> ()</td></tr>
@@ -165,13 +174,48 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a23ef8b1b97cf82c92553ffdc97210647"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1FieldView.html#a23ef8b1b97cf82c92553ffdc97210647">MAX_PAYLOAD_LENGTH</a> = <a class="el" href="namespacemip_1_1C.html#acd4eff94bf02877a552f5f3f706c529dad4e7e942b49c68f2a2def678b9ea35c7">C::MIP_FIELD_PAYLOAD_LENGTH_MAX</a></td></tr>
-<tr class="separator:a23ef8b1b97cf82c92553ffdc97210647"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af90e71ad11e17ab0f4a4f412ced4a174"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1FieldView.html#af90e71ad11e17ab0f4a4f412ced4a174">HEADER_LENGTH</a> = <a class="el" href="group__MipFields__c.html#gga7aa2ba143f11ec36cd9779e944d14296aaa13b9baa97c15eca63f79cf46796c04">C::MIP_FIELD_HEADER_LENGTH</a></td></tr>
+<tr class="separator:af90e71ad11e17ab0f4a4f412ced4a174"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a552e4d8300187be4a982ed7bf6ee541b"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1FieldView.html#a552e4d8300187be4a982ed7bf6ee541b">LENGTH_MIN</a> = <a class="el" href="group__MipFields__c.html#gga7aa2ba143f11ec36cd9779e944d14296a10849c0faaab493b8f100bd46d3682ac">C::MIP_FIELD_LENGTH_MIN</a></td></tr>
+<tr class="separator:a552e4d8300187be4a982ed7bf6ee541b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c540f0a6c0334000d993b96b139a469"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1FieldView.html#a5c540f0a6c0334000d993b96b139a469">LENGTH_MAX</a> = <a class="el" href="group__MipFields__c.html#gga7aa2ba143f11ec36cd9779e944d14296a116d0f9f144eeacf23cae862e1faca81">C::MIP_FIELD_LENGTH_MAX</a></td></tr>
+<tr class="separator:a5c540f0a6c0334000d993b96b139a469"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd09b9a9523c5ed3dd11fdd00aa4244e"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1FieldView.html#afd09b9a9523c5ed3dd11fdd00aa4244e">PAYLOAD_LENGTH_MIN</a> = <a class="el" href="group__MipFields__c.html#gga7aa2ba143f11ec36cd9779e944d14296ae050dd08f0f1035a65f5a291736ab855">C::MIP_FIELD_PAYLOAD_LENGTH_MIN</a></td></tr>
+<tr class="separator:afd09b9a9523c5ed3dd11fdd00aa4244e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8af752600467358ffd311e87fcba896"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1FieldView.html#aa8af752600467358ffd311e87fcba896">PAYLOAD_LENGTH_MAX</a> = <a class="el" href="group__MipFields__c.html#gga7aa2ba143f11ec36cd9779e944d14296ad4e7e942b49c68f2a2def678b9ea35c7">C::MIP_FIELD_PAYLOAD_LENGTH_MAX</a></td></tr>
+<tr class="separator:aa8af752600467358ffd311e87fcba896"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>C++ class representing a MIP field. </p>
-<p>This is a thin wrapper around the <a class="el" href="namespacemip_1_1C.html">C</a> mip_field struct. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<div class="textblock"><p>This is a thin wrapper around the <a class="el" href="namespacemip_1_1C.html">C</a> mip_field struct. </p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a288701af26ef9f590c57f0bd062ca246"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a288701af26ef9f590c57f0bd062ca246">&#9670;&nbsp;</a></span>Index</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classmip_1_1FieldView.html#a288701af26ef9f590c57f0bd062ca246">mip::FieldView::Index</a> : uint8_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a288701af26ef9f590c57f0bd062ca246aaddeac40406177897b3fccba88558f1c"></a>LENGTH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a288701af26ef9f590c57f0bd062ca246a65a6d757dbb571ccc3af9706e9a5f607"></a>DESC&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a288701af26ef9f590c57f0bd062ca246aca8fef80e43c8db749b7c9406d535b1a"></a>PAYLOAD&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad5051df878eb0575924086c1be1a1e48"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad5051df878eb0575924086c1be1a1e48">&#9670;&nbsp;</a></span>FieldView() <span class="overload">[1/5]</span></h2>
 
@@ -194,8 +238,6 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Construct an empty MIP field. </p>
 
 </div>
 </div>
@@ -244,8 +286,6 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Constructs a field view given the parameters. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">field</td><td></td></tr>
@@ -298,8 +338,6 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Constructs a mip_field from a pointer to the heaader. </p>
 <p>Generally you should use mip_field_from_packet() or mip_field_create() instead.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -337,8 +375,6 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Creates a Field class from the mip_field <a class="el" href="namespacemip_1_1C.html">C</a> struct. </p>
-
 </div>
 </div>
 <a id="a6be91527c34539431771a4b0696e9ca2"></a>
@@ -375,13 +411,11 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Construct from descriptor and payload bytes. </p>
-
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aadb44797f9a63fa72188689eb3bc2cd5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aadb44797f9a63fa72188689eb3bc2cd5">&#9670;&nbsp;</a></span>bytes()</h2>
+<a id="a772b548e2a824c341d781750bd75bff2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a772b548e2a824c341d781750bd75bff2">&#9670;&nbsp;</a></span>descriptorSet()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -390,7 +424,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacemicrostrain.html#ad10904b5b78aab3f27f0a6fa165d94bc">microstrain::ConstU8ArrayView</a> mip::FieldView::bytes </td>
+          <td class="memname">uint8_t mip::FieldView::descriptorSet </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -403,9 +437,30 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Gets a view of the entire field, including the header. </p>
-<dl class="section note"><dt>Note</dt><dd>You want to use <a class="el" href="classmip_1_1FieldView.html#aa6b8c05a1238c76f9232d56d2e6682df" title="Get a const view of the payload data.">payload()</a> instead if you're trying to extract parameters/data contained within a field.</dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd><a class="el" href="classmip_1_1FieldView.html" title="C++ class representing a MIP field.">FieldView</a> contains a descriptor and payload pointer. It does not guarantee the descriptors are also stored in the same buffer as the payload. This function operates by using a negative index from the payload pointer, so it is up to the user to ensure such an index is safe. Generally, if the field was obtained from an existing packet then the header bytes will be available. E.g. the field was obtained via <code><a class="el" href="classmip_1_1PacketView.html#a29bf807f83a9c9f7cd702eef0fdd4e83" title="Returns the first field in the packet.">PacketView::firstField()</a></code>, <code>for(FieldView field : packet)</code>, etc. then the whole packet, including all fields and their headers, should exist in the buffer. Standalone FieldViews created from a descriptor and payload array may not have header bytes and this function isn't safe in that case. </dd></dl>
+</div>
+</div>
+<a id="a6612350ef6e71662cca8ae01b6559781"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6612350ef6e71662cca8ae01b6559781">&#9670;&nbsp;</a></span>fieldDescriptor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t mip::FieldView::fieldDescriptor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -432,12 +487,10 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the descriptor set and field descriptor. </p>
-
 </div>
 </div>
-<a id="a772b548e2a824c341d781750bd75bff2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a772b548e2a824c341d781750bd75bff2">&#9670;&nbsp;</a></span>descriptorSet()</h2>
+<a id="a129ba8806535a5c72a4b2a4b1131df6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a129ba8806535a5c72a4b2a4b1131df6d">&#9670;&nbsp;</a></span>totalLength()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -446,7 +499,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t mip::FieldView::descriptorSet </td>
+          <td class="memname">uint8_t mip::FieldView::totalLength </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -459,7 +512,216 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the descriptor set of the packet containing this field._. </p>
+</div>
+</div>
+<a id="ae1111e428ba1b234d6e99090ea48acb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1111e428ba1b234d6e99090ea48acb1">&#9670;&nbsp;</a></span>payloadLength()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t mip::FieldView::payloadLength </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa6b8c05a1238c76f9232d56d2e6682df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6b8c05a1238c76f9232d56d2e6682df">&#9670;&nbsp;</a></span>payload() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacemicrostrain.html#ad10904b5b78aab3f27f0a6fa165d94bc">microstrain::ConstU8ArrayView</a> mip::FieldView::payload </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a80591c4b1225e816a1e3d74a03cf2c6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80591c4b1225e816a1e3d74a03cf2c6e">&#9670;&nbsp;</a></span>payload() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t mip::FieldView::payload </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>Byte index into payload. 0 &lt;= index &lt; <a class="el" href="classmip_1_1FieldView.html#ae1111e428ba1b234d6e99090ea48acb1" title="Returns the length of the payload.">payloadLength()</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>payload byte </dd></dl>
+
+</div>
+</div>
+<a id="a27cdb4c8acfd838dda60e2e46aed6698"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27cdb4c8acfd838dda60e2e46aed6698">&#9670;&nbsp;</a></span>operator[]()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t mip::FieldView::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aadb44797f9a63fa72188689eb3bc2cd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadb44797f9a63fa72188689eb3bc2cd5">&#9670;&nbsp;</a></span>bytes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacemicrostrain.html#ad10904b5b78aab3f27f0a6fa165d94bc">microstrain::ConstU8ArrayView</a> mip::FieldView::bytes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section note"><dt>Note</dt><dd>You want to use <a class="el" href="classmip_1_1FieldView.html#aa6b8c05a1238c76f9232d56d2e6682df" title="Get a const view of the payload data.">payload()</a> instead if you're trying to extract parameters/data contained within a field.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd><a class="el" href="classmip_1_1FieldView.html" title="C++ class representing a MIP field.">FieldView</a> contains a descriptor and payload pointer. It does not guarantee the descriptors are also stored in the same buffer as the payload. This function operates by using a negative index from the payload pointer, so it is up to the user to ensure such an index is safe. Generally, if the field was obtained from an existing packet then the header bytes will be available. E.g. the field was obtained via <code><a class="el" href="classmip_1_1PacketView.html#a29bf807f83a9c9f7cd702eef0fdd4e83" title="Returns the first field in the packet.">PacketView::firstField()</a></code>, <code>for(FieldView field : packet)</code>, etc. then the whole packet, including all fields and their headers, should exist in the buffer. Standalone FieldViews created from a descriptor and payload array may not have header bytes and this function isn't safe in that case. </dd></dl>
+
+</div>
+</div>
+<a id="ab5fafb88bd30793730959fc8fdf7068c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5fafb88bd30793730959fc8fdf7068c">&#9670;&nbsp;</a></span>isValid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::FieldView::isValid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3109ee52a0b1cb6d7fef9e407b0c72d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3109ee52a0b1cb6d7fef9e407b0c72d9">&#9670;&nbsp;</a></span>nextAfter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmip_1_1FieldView.html">FieldView</a> mip::FieldView::nextAfter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adb5b28dbaf17a9ae25afac2046ab73f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb5b28dbaf17a9ae25afac2046ab73f7">&#9670;&nbsp;</a></span>next()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::FieldView::next </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -498,8 +760,6 @@ template&lt;class FieldType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Deserializes the field data to specific field struct. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">FieldType</td><td>Any field class from a file in the mip/definitions directory.</td></tr>
@@ -514,87 +774,6 @@ template&lt;class FieldType &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the field was successfully deserialized, or false if the field contains too few bytes (or to many if exact_size is specified). The field data is not valid unless this function returns true. </dd></dl>
-
-</div>
-</div>
-<a id="a6612350ef6e71662cca8ae01b6559781"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6612350ef6e71662cca8ae01b6559781">&#9670;&nbsp;</a></span>fieldDescriptor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t mip::FieldView::fieldDescriptor </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the field descriptor. </p>
-
-</div>
-</div>
-<a id="a01b1d5e797ba4ecdf712c03c60dc376b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a01b1d5e797ba4ecdf712c03c60dc376b">&#9670;&nbsp;</a></span>isCommand()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool mip::FieldView::isCommand </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Determines if the field holds a command. </p>
-
-</div>
-</div>
-<a id="a4e125aa53367d690e41d5fe0bb74b2b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e125aa53367d690e41d5fe0bb74b2b0">&#9670;&nbsp;</a></span>isCommandSet()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool mip::FieldView::isCommandSet </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Determines if the field is from a command descriptor set (a command, reply, or response field). </p>
 
 </div>
 </div>
@@ -621,7 +800,55 @@ template&lt;class FieldType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Determines if the field holds data (and not a command, reply, or response). </p>
+</div>
+</div>
+<a id="a4e125aa53367d690e41d5fe0bb74b2b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e125aa53367d690e41d5fe0bb74b2b0">&#9670;&nbsp;</a></span>isCommandSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::FieldView::isCommandSet </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a01b1d5e797ba4ecdf712c03c60dc376b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01b1d5e797ba4ecdf712c03c60dc376b">&#9670;&nbsp;</a></span>isCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::FieldView::isCommand </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -648,8 +875,6 @@ template&lt;class FieldType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Determines if the field holds an ack/nack reply code. </p>
-
 </div>
 </div>
 <a id="a5e83bf4b5a85ca5bab04510a42e397d4"></a>
@@ -675,236 +900,11 @@ template&lt;class FieldType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Determines if the field holds command response data (not an ack/nack reply). </p>
-
-</div>
-</div>
-<a id="ab5fafb88bd30793730959fc8fdf7068c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab5fafb88bd30793730959fc8fdf7068c">&#9670;&nbsp;</a></span>isValid()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool mip::FieldView::isValid </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns true if the field has a valid field descriptor. </p>
-
-</div>
-</div>
-<a id="adb5b28dbaf17a9ae25afac2046ab73f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb5b28dbaf17a9ae25afac2046ab73f7">&#9670;&nbsp;</a></span>next()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool mip::FieldView::next </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Updates the mip_field to refer to the next field in a packet. </p>
-
-</div>
-</div>
-<a id="a3109ee52a0b1cb6d7fef9e407b0c72d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3109ee52a0b1cb6d7fef9e407b0c72d9">&#9670;&nbsp;</a></span>nextAfter()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classmip_1_1FieldView.html">FieldView</a> mip::FieldView::nextAfter </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Gets the next field after the specified field. </p>
-
-</div>
-</div>
-<a id="a27cdb4c8acfd838dda60e2e46aed6698"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a27cdb4c8acfd838dda60e2e46aed6698">&#9670;&nbsp;</a></span>operator[]()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t mip::FieldView::operator[] </td>
-          <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>index</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa6b8c05a1238c76f9232d56d2e6682df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa6b8c05a1238c76f9232d56d2e6682df">&#9670;&nbsp;</a></span>payload() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacemicrostrain.html#ad10904b5b78aab3f27f0a6fa165d94bc">microstrain::ConstU8ArrayView</a> mip::FieldView::payload </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get a const view of the payload data. </p>
-
-</div>
-</div>
-<a id="a80591c4b1225e816a1e3d74a03cf2c6e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a80591c4b1225e816a1e3d74a03cf2c6e">&#9670;&nbsp;</a></span>payload() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t mip::FieldView::payload </td>
-          <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>index</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Index the payload at the given location. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">index</td><td>Byte index into payload. 0 &lt;= index &lt; <a class="el" href="classmip_1_1FieldView.html#ae1111e428ba1b234d6e99090ea48acb1" title="Returns the length of the payload.">payloadLength()</a>. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>payload byte </dd></dl>
-
-</div>
-</div>
-<a id="ae1111e428ba1b234d6e99090ea48acb1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae1111e428ba1b234d6e99090ea48acb1">&#9670;&nbsp;</a></span>payloadLength()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t mip::FieldView::payloadLength </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the length of the payload. </p>
-
-</div>
-</div>
-<a id="a129ba8806535a5c72a4b2a4b1131df6d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a129ba8806535a5c72a4b2a4b1131df6d">&#9670;&nbsp;</a></span>totalLength()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t mip::FieldView::totalLength </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the total length of the field including the header. </p>
-
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a23ef8b1b97cf82c92553ffdc97210647"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23ef8b1b97cf82c92553ffdc97210647">&#9670;&nbsp;</a></span>MAX_PAYLOAD_LENGTH</h2>
+<a id="af90e71ad11e17ab0f4a4f412ced4a174"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af90e71ad11e17ab0f4a4f412ced4a174">&#9670;&nbsp;</a></span>HEADER_LENGTH</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -913,7 +913,95 @@ template&lt;class FieldType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr size_t mip::FieldView::MAX_PAYLOAD_LENGTH = <a class="el" href="namespacemip_1_1C.html#acd4eff94bf02877a552f5f3f706c529dad4e7e942b49c68f2a2def678b9ea35c7">C::MIP_FIELD_PAYLOAD_LENGTH_MAX</a></td>
+          <td class="memname">constexpr size_t mip::FieldView::HEADER_LENGTH = <a class="el" href="group__MipFields__c.html#gga7aa2ba143f11ec36cd9779e944d14296aaa13b9baa97c15eca63f79cf46796c04">C::MIP_FIELD_HEADER_LENGTH</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a552e4d8300187be4a982ed7bf6ee541b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a552e4d8300187be4a982ed7bf6ee541b">&#9670;&nbsp;</a></span>LENGTH_MIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr size_t mip::FieldView::LENGTH_MIN = <a class="el" href="group__MipFields__c.html#gga7aa2ba143f11ec36cd9779e944d14296a10849c0faaab493b8f100bd46d3682ac">C::MIP_FIELD_LENGTH_MIN</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5c540f0a6c0334000d993b96b139a469"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c540f0a6c0334000d993b96b139a469">&#9670;&nbsp;</a></span>LENGTH_MAX</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr size_t mip::FieldView::LENGTH_MAX = <a class="el" href="group__MipFields__c.html#gga7aa2ba143f11ec36cd9779e944d14296a116d0f9f144eeacf23cae862e1faca81">C::MIP_FIELD_LENGTH_MAX</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afd09b9a9523c5ed3dd11fdd00aa4244e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd09b9a9523c5ed3dd11fdd00aa4244e">&#9670;&nbsp;</a></span>PAYLOAD_LENGTH_MIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr size_t mip::FieldView::PAYLOAD_LENGTH_MIN = <a class="el" href="group__MipFields__c.html#gga7aa2ba143f11ec36cd9779e944d14296ae050dd08f0f1035a65f5a291736ab855">C::MIP_FIELD_PAYLOAD_LENGTH_MIN</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa8af752600467358ffd311e87fcba896"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8af752600467358ffd311e87fcba896">&#9670;&nbsp;</a></span>PAYLOAD_LENGTH_MAX</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr size_t mip::FieldView::PAYLOAD_LENGTH_MAX = <a class="el" href="group__MipFields__c.html#gga7aa2ba143f11ec36cd9779e944d14296ad4e7e942b49c68f2a2def678b9ea35c7">C::MIP_FIELD_PAYLOAD_LENGTH_MAX</a></td>
         </tr>
       </table>
   </td>

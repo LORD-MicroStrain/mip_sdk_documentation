@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -94,39 +94,36 @@ Functions</h2></td></tr>
 <tr class="separator:ga9cce92c3d6b1eea9c05fde9bd3252343"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Set, read, or save the format of the IMU data packet. </p>
 <p>The resulting data messages will maintain the order of descriptors sent in the command. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga9cce92c3d6b1eea9c05fde9bd3252343"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9cce92c3d6b1eea9c05fde9bd3252343">&#9670;&nbsp;</a></span>defaultImuMessageFormat()</h2>
+<a id="ga326c62c827849f9b311502dcb682f6b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga326c62c827849f9b311502dcb682f6b1">&#9670;&nbsp;</a></span>writeImuMessageFormat()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1ImuMessageFormat.html">ImuMessageFormat</a> &gt; mip::commands_3dm::defaultImuMessageFormat </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1ImuMessageFormat.html">ImuMessageFormat</a> &gt; mip::commands_3dm::writeImuMessageFormat </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
-          <td></td>
+          <td class="paramname"><em>device</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gafffbcb5a070beeaf31268083880acd5d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafffbcb5a070beeaf31268083880acd5d">&#9670;&nbsp;</a></span>loadImuMessageFormat()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1ImuMessageFormat.html">ImuMessageFormat</a> &gt; mip::commands_3dm::loadImuMessageFormat </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>numDescriptors</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structmip_1_1DescriptorRate.html">DescriptorRate</a> *&#160;</td>
+          <td class="paramname"><em>descriptors</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -191,34 +188,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga326c62c827849f9b311502dcb682f6b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga326c62c827849f9b311502dcb682f6b1">&#9670;&nbsp;</a></span>writeImuMessageFormat()</h2>
+<a id="gafffbcb5a070beeaf31268083880acd5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafffbcb5a070beeaf31268083880acd5d">&#9670;&nbsp;</a></span>loadImuMessageFormat()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1ImuMessageFormat.html">ImuMessageFormat</a> &gt; mip::commands_3dm::writeImuMessageFormat </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1ImuMessageFormat.html">ImuMessageFormat</a> &gt; mip::commands_3dm::loadImuMessageFormat </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>numDescriptors</em>, </td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga9cce92c3d6b1eea9c05fde9bd3252343"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9cce92c3d6b1eea9c05fde9bd3252343">&#9670;&nbsp;</a></span>defaultImuMessageFormat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1ImuMessageFormat.html">ImuMessageFormat</a> &gt; mip::commands_3dm::defaultImuMessageFormat </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structmip_1_1DescriptorRate.html">DescriptorRate</a> *&#160;</td>
-          <td class="paramname"><em>descriptors</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

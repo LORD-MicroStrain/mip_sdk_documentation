@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -96,7 +96,6 @@ Functions</h2></td></tr>
 <tr class="separator:gab39080cdab5c4ac7dd44dd8a1f60520a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>4x1 vector representation of the quaternion describing the orientation of the device with respect to the NED local-level frame. This quaternion satisfies the following relationship: </p>
 <p>EQSTART p^{veh} = q^{-1} p^{ned} q EQEND<br  />
 </p>
 <p>Where:<br  />
@@ -120,6 +119,34 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ga0865f6bf4eb5c19d062606ec8f061e8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0865f6bf4eb5c19d062606ec8f061e8f">&#9670;&nbsp;</a></span>insert_mip_filter_attitude_quaternion_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::C::insert_mip_filter_attitude_quaternion_data </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__filter__attitude__quaternion__data.html">mip_filter_attitude_quaternion_data</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ga536d6c32b6266cc3257edf7838f536a8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga536d6c32b6266cc3257edf7838f536a8">&#9670;&nbsp;</a></span>extract_mip_filter_attitude_quaternion_data()</h2>
 
@@ -165,34 +192,6 @@ Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>ptr</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga0865f6bf4eb5c19d062606ec8f061e8f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0865f6bf4eb5c19d062606ec8f061e8f">&#9670;&nbsp;</a></span>insert_mip_filter_attitude_quaternion_data()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::insert_mip_filter_attitude_quaternion_data </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__filter__attitude__quaternion__data.html">mip_filter_attitude_quaternion_data</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -94,39 +94,30 @@ Functions</h2></td></tr>
 <tr class="separator:gaac73954a9f4301e30c491b0a77c608bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Tare the device orientation. </p>
 <p>This function uses the current device orientation relative to the NED frame as the current sensor to vehicle transformation. This command is provided as a convenient way to set the sensor to vehicle frame transformation. The filter must be initialized and have a valid attitude output. If the attitude is not valid, an error will be returned. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gaac73954a9f4301e30c491b0a77c608bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaac73954a9f4301e30c491b0a77c608bc">&#9670;&nbsp;</a></span>defaultTareOrientation()</h2>
+<a id="gac99fa676d7d2f4bbf7a53cf1d1479384"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac99fa676d7d2f4bbf7a53cf1d1479384">&#9670;&nbsp;</a></span>writeTareOrientation()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1TareOrientation.html">TareOrientation</a> &gt; mip::commands_filter::defaultTareOrientation </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1TareOrientation.html">TareOrientation</a> &gt; mip::commands_filter::writeTareOrientation </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
-          <td></td>
+          <td class="paramname"><em>device</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gaefb15c5724b11531b7ea2bf9489754d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaefb15c5724b11531b7ea2bf9489754d2">&#9670;&nbsp;</a></span>loadTareOrientation()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1TareOrientation.html">TareOrientation</a> &gt; mip::commands_filter::loadTareOrientation </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1commands__filter_1_1TareOrientation_1_1MipTareAxes.html">TareOrientation::MipTareAxes</a>&#160;</td>
+          <td class="paramname"><em>axes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -179,28 +170,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gac99fa676d7d2f4bbf7a53cf1d1479384"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac99fa676d7d2f4bbf7a53cf1d1479384">&#9670;&nbsp;</a></span>writeTareOrientation()</h2>
+<a id="gaefb15c5724b11531b7ea2bf9489754d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaefb15c5724b11531b7ea2bf9489754d2">&#9670;&nbsp;</a></span>loadTareOrientation()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1TareOrientation.html">TareOrientation</a> &gt; mip::commands_filter::writeTareOrientation </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1TareOrientation.html">TareOrientation</a> &gt; mip::commands_filter::loadTareOrientation </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1commands__filter_1_1TareOrientation_1_1MipTareAxes.html">TareOrientation::MipTareAxes</a>&#160;</td>
-          <td class="paramname"><em>axes</em>&#160;</td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaac73954a9f4301e30c491b0a77c608bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaac73954a9f4301e30c491b0a77c608bc">&#9670;&nbsp;</a></span>defaultTareOrientation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1TareOrientation.html">TareOrientation</a> &gt; mip::commands_filter::defaultTareOrientation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

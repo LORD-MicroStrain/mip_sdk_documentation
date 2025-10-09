@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -94,16 +94,15 @@ Functions</h2></td></tr>
 <tr class="separator:gabf7b2ba09d57c8f957690c3ae102d63f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Lever arm offset for speed measurements. This is used to compensate for an off-center measurement point having a different speed due to rotation of the vehicle. The typical use case for this would be an odometer attached to a wheel on a standard 4-wheeled vehicle. If the odometer is on the left wheel, it will report higher speed on right turns and lower speed on left turns. This is because the outside edge of the curve is longer than the inside edge. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gabf7b2ba09d57c8f957690c3ae102d63f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabf7b2ba09d57c8f957690c3ae102d63f">&#9670;&nbsp;</a></span>defaultSpeedLeverArm()</h2>
+<a id="gad5456ae420d4492cb850328a03cb7119"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad5456ae420d4492cb850328a03cb7119">&#9670;&nbsp;</a></span>writeSpeedLeverArm()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1SpeedLeverArm.html">SpeedLeverArm</a> &gt; mip::commands_filter::defaultSpeedLeverArm </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1SpeedLeverArm.html">SpeedLeverArm</a> &gt; mip::commands_filter::writeSpeedLeverArm </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
@@ -112,35 +111,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>source</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga6e5f00e69d8748ba408dc4c0f93961a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6e5f00e69d8748ba408dc4c0f93961a1">&#9670;&nbsp;</a></span>loadSpeedLeverArm()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1SpeedLeverArm.html">SpeedLeverArm</a> &gt; mip::commands_filter::loadSpeedLeverArm </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
+          <td class="paramname"><em>source</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>source</em>&#160;</td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>leverArmOffset</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -214,14 +191,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gad5456ae420d4492cb850328a03cb7119"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad5456ae420d4492cb850328a03cb7119">&#9670;&nbsp;</a></span>writeSpeedLeverArm()</h2>
+<a id="ga6e5f00e69d8748ba408dc4c0f93961a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6e5f00e69d8748ba408dc4c0f93961a1">&#9670;&nbsp;</a></span>loadSpeedLeverArm()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1SpeedLeverArm.html">SpeedLeverArm</a> &gt; mip::commands_filter::writeSpeedLeverArm </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1SpeedLeverArm.html">SpeedLeverArm</a> &gt; mip::commands_filter::loadSpeedLeverArm </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
@@ -230,13 +207,35 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>source</em>, </td>
+          <td class="paramname"><em>source</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gabf7b2ba09d57c8f957690c3ae102d63f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabf7b2ba09d57c8f957690c3ae102d63f">&#9670;&nbsp;</a></span>defaultSpeedLeverArm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1SpeedLeverArm.html">SpeedLeverArm</a> &gt; mip::commands_filter::defaultSpeedLeverArm </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const float *&#160;</td>
-          <td class="paramname"><em>leverArmOffset</em>&#160;</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>source</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -94,38 +94,35 @@ Functions</h2></td></tr>
 <tr class="separator:ga565d6ac6c77a5b3bc3648181f8b6458e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Configures the basic setup for auto-adaptive filtering. See product manual for a detailed description of this feature. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga565d6ac6c77a5b3bc3648181f8b6458e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga565d6ac6c77a5b3bc3648181f8b6458e">&#9670;&nbsp;</a></span>defaultAdaptiveFilterOptions()</h2>
+<a id="gaa3c83347c06634066977d9cfe739c6b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa3c83347c06634066977d9cfe739c6b2">&#9670;&nbsp;</a></span>writeAdaptiveFilterOptions()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1AdaptiveFilterOptions.html">AdaptiveFilterOptions</a> &gt; mip::commands_filter::defaultAdaptiveFilterOptions </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1AdaptiveFilterOptions.html">AdaptiveFilterOptions</a> &gt; mip::commands_filter::writeAdaptiveFilterOptions </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
-          <td></td>
+          <td class="paramname"><em>device</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gac03f4a1929a383fc88cf2121c568c18d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac03f4a1929a383fc88cf2121c568c18d">&#9670;&nbsp;</a></span>loadAdaptiveFilterOptions()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1AdaptiveFilterOptions.html">AdaptiveFilterOptions</a> &gt; mip::commands_filter::loadAdaptiveFilterOptions </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>timeLimit</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -184,34 +181,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gaa3c83347c06634066977d9cfe739c6b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa3c83347c06634066977d9cfe739c6b2">&#9670;&nbsp;</a></span>writeAdaptiveFilterOptions()</h2>
+<a id="gac03f4a1929a383fc88cf2121c568c18d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac03f4a1929a383fc88cf2121c568c18d">&#9670;&nbsp;</a></span>loadAdaptiveFilterOptions()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1AdaptiveFilterOptions.html">AdaptiveFilterOptions</a> &gt; mip::commands_filter::writeAdaptiveFilterOptions </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1AdaptiveFilterOptions.html">AdaptiveFilterOptions</a> &gt; mip::commands_filter::loadAdaptiveFilterOptions </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>level</em>, </td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga565d6ac6c77a5b3bc3648181f8b6458e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga565d6ac6c77a5b3bc3648181f8b6458e">&#9670;&nbsp;</a></span>defaultAdaptiveFilterOptions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1AdaptiveFilterOptions.html">AdaptiveFilterOptions</a> &gt; mip::commands_filter::defaultAdaptiveFilterOptions </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>timeLimit</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -141,7 +141,6 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><h3>template&lt;typename T, size_t N&gt;<br />
 struct mip::Vector&lt; T, N &gt;</h3>
 
-<p><a class="el" href="structmip_1_1Vector.html" title="Vector is a wrapper around an array of some type T, usually float or double.">Vector</a> is a wrapper around an array of some type T, usually float or double. </p>
 <p>Implicit conversion to/from C-style pointers is provided to allow simple integration with code using plain arrays. </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="adaf3ea92741cddaffb5dec9cef3fcfe2"></a>
@@ -185,8 +184,6 @@ template&lt;typename T , size_t N&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Default constructor, no initialization. </p>
 
 </div>
 </div>
@@ -425,13 +422,39 @@ template&lt;typename T , size_t N&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Copy constructor. </p>
-
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a0fbd1bcfd11d30d3b48e7132fa4541b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0fbd1bcfd11d30d3b48e7132fa4541b7">&#9670;&nbsp;</a></span>copyFrom()</h2>
+<a id="a0c7449953a9ae7ee821fe8e4ada12f4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c7449953a9ae7ee821fe8e4ada12f4d">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structmip_1_1Vector.html">Vector</a>&amp; <a class="el" href="structmip_1_1Vector.html">mip::Vector</a>&lt; T, N &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structmip_1_1Vector.html">Vector</a>&lt; T, N &gt; &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a80ad48796a65bb91694227a505865cbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80ad48796a65bb91694227a505865cbe">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -444,21 +467,11 @@ template&lt;typename U &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="structmip_1_1Vector.html">mip::Vector</a>&lt; T, N &gt;::copyFrom </td>
+          <td class="memname"><a class="el" href="structmip_1_1Vector.html">Vector</a>&amp; <a class="el" href="structmip_1_1Vector.html">mip::Vector</a>&lt; T, N &gt;::operator= </td>
           <td>(</td>
-          <td class="paramtype">const U *&#160;</td>
-          <td class="paramname"><em>ptr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">const <a class="el" href="structmip_1_1Vector.html">Vector</a>&lt; U, N &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>n</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -467,13 +480,60 @@ template&lt;typename U &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Copy data from a pointer and size to this vector. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ptr</td><td>Pointer to data. Can be NULL if n==0. </td></tr>
-    <tr><td class="paramname">n</td><td>Number of elements in ptr. Clamped to N. </td></tr>
-  </table>
-  </dd>
-</dl>
+
+</div>
+</div>
+<a id="a787bdcb1ad17abfb3689c31255b2d1e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a787bdcb1ad17abfb3689c31255b2d1e8">&#9670;&nbsp;</a></span>operator T*()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structmip_1_1Vector.html">mip::Vector</a>&lt; T, N &gt;::operator T* </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7ba958128339c7c714a1ba7b7635feea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ba958128339c7c714a1ba7b7635feea">&#9670;&nbsp;</a></span>operator const T *()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structmip_1_1Vector.html">mip::Vector</a>&lt; T, N &gt;::operator const T * </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -501,8 +561,6 @@ template&lt;typename T , size_t N&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Explicitly convert to a C-style array. </p>
 
 </div>
 </div>
@@ -561,96 +619,10 @@ template&lt;typename U &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Fill all elements with a given value. </p>
-
 </div>
 </div>
-<a id="a7ba958128339c7c714a1ba7b7635feea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ba958128339c7c714a1ba7b7635feea">&#9670;&nbsp;</a></span>operator const T *()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , size_t N&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structmip_1_1Vector.html">mip::Vector</a>&lt; T, N &gt;::operator const T * </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a787bdcb1ad17abfb3689c31255b2d1e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a787bdcb1ad17abfb3689c31255b2d1e8">&#9670;&nbsp;</a></span>operator T*()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , size_t N&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structmip_1_1Vector.html">mip::Vector</a>&lt; T, N &gt;::operator T* </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0c7449953a9ae7ee821fe8e4ada12f4d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c7449953a9ae7ee821fe8e4ada12f4d">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , size_t N&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structmip_1_1Vector.html">Vector</a>&amp; <a class="el" href="structmip_1_1Vector.html">mip::Vector</a>&lt; T, N &gt;::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structmip_1_1Vector.html">Vector</a>&lt; T, N &gt; &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Assignment operator. </p>
-
-</div>
-</div>
-<a id="a80ad48796a65bb91694227a505865cbe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a80ad48796a65bb91694227a505865cbe">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+<a id="a0fbd1bcfd11d30d3b48e7132fa4541b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fbd1bcfd11d30d3b48e7132fa4541b7">&#9670;&nbsp;</a></span>copyFrom()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -663,11 +635,21 @@ template&lt;typename U &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1Vector.html">Vector</a>&amp; <a class="el" href="structmip_1_1Vector.html">mip::Vector</a>&lt; T, N &gt;::operator= </td>
+          <td class="memname">void <a class="el" href="structmip_1_1Vector.html">mip::Vector</a>&lt; T, N &gt;::copyFrom </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structmip_1_1Vector.html">Vector</a>&lt; U, N &gt; &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
+          <td class="paramtype">const U *&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -676,8 +658,13 @@ template&lt;typename U &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Assignment operator from different type (e.g. float to double). </p>
+<p>Copy data from a pointer and size to this vector. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ptr</td><td>Pointer to data. Can be NULL if n==0. </td></tr>
+    <tr><td class="paramname">n</td><td>Number of elements in ptr. Clamped to N. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -705,8 +692,6 @@ template&lt;typename T , size_t N&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Get the size of the array. </p>
 
 </div>
 </div>

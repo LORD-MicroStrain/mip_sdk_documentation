@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -94,20 +94,19 @@ Functions</h2></td></tr>
 <tr class="separator:ga1d6bf2ff68e8ae79fce133d75896779d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Controls the baud rate of a specific port on the device. </p>
 <p>Please see the device user manual for supported baud rates on each port.</p>
 <p>The device will wait until all incoming and outgoing data has been sent, up to a maximum of 250 ms, before applying any change.</p>
 <p>No guarantee is provided as to what happens to commands issued during this delay period; They may or may not be processed and any responses aren't guaranteed to be at one rate or the other. The same applies to data packets.</p>
 <p>It is highly recommended that the device be idle before issuing this command and that it be issued in its own packet. Users should wait 250 ms after sending this command before further interaction. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga1d6bf2ff68e8ae79fce133d75896779d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1d6bf2ff68e8ae79fce133d75896779d">&#9670;&nbsp;</a></span>defaultCommSpeed()</h2>
+<a id="ga5e5b0c743e60305821f2e1dcb36dc5d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5e5b0c743e60305821f2e1dcb36dc5d0">&#9670;&nbsp;</a></span>writeCommSpeed()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__base_1_1CommSpeed.html">CommSpeed</a> &gt; mip::commands_base::defaultCommSpeed </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__base_1_1CommSpeed.html">CommSpeed</a> &gt; mip::commands_base::writeCommSpeed </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
@@ -116,35 +115,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>port</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga2704c7184191ef9f5b4d5f34f318f966"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2704c7184191ef9f5b4d5f34f318f966">&#9670;&nbsp;</a></span>loadCommSpeed()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__base_1_1CommSpeed.html">CommSpeed</a> &gt; mip::commands_base::loadCommSpeed </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
+          <td class="paramname"><em>port</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>port</em>&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>baud</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -218,14 +195,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga5e5b0c743e60305821f2e1dcb36dc5d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5e5b0c743e60305821f2e1dcb36dc5d0">&#9670;&nbsp;</a></span>writeCommSpeed()</h2>
+<a id="ga2704c7184191ef9f5b4d5f34f318f966"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2704c7184191ef9f5b4d5f34f318f966">&#9670;&nbsp;</a></span>loadCommSpeed()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__base_1_1CommSpeed.html">CommSpeed</a> &gt; mip::commands_base::writeCommSpeed </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__base_1_1CommSpeed.html">CommSpeed</a> &gt; mip::commands_base::loadCommSpeed </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
@@ -234,13 +211,35 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>port</em>, </td>
+          <td class="paramname"><em>port</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga1d6bf2ff68e8ae79fce133d75896779d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1d6bf2ff68e8ae79fce133d75896779d">&#9670;&nbsp;</a></span>defaultCommSpeed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__base_1_1CommSpeed.html">CommSpeed</a> &gt; mip::commands_base::defaultCommSpeed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>baud</em>&#160;</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>port</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

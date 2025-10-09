@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -72,6 +72,7 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">mip_packet.h File Reference</div>  </div>
@@ -104,6 +105,40 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ga28b4bb8fcafed70f07fbf8034e5abe01"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structmip_1_1C_1_1mip__packet__view.html">mip::C::mip_packet_view</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__packet__c.html#ga28b4bb8fcafed70f07fbf8034e5abe01">mip::C::mip_packet_view</a></td></tr>
 <tr class="memdesc:ga28b4bb8fcafed70f07fbf8034e5abe01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure representing a MIP Packet.  <a href="group__mip__packet__c.html#ga28b4bb8fcafed70f07fbf8034e5abe01">More...</a><br /></td></tr>
 <tr class="separator:ga28b4bb8fcafed70f07fbf8034e5abe01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae3c168557e3cd39602cf156c3d4f474d"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="group__mip__packet__c.html#gaeb295e31a21e215c02d1bb391920692d">mip::C::mip_packet_index</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__packet__c.html#gae3c168557e3cd39602cf156c3d4f474d">mip::C::mip_packet_index</a></td></tr>
+<tr class="separator:gae3c168557e3cd39602cf156c3d4f474d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga724d7f3c40b4baec45a4b3297d9f388a"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="group__mip__packet__c.html#ga8bb8939ac5656381c588db3185d0743a">mip::C::mip_packet_index_length</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__packet__c.html#ga724d7f3c40b4baec45a4b3297d9f388a">mip::C::mip_packet_index_length</a></td></tr>
+<tr class="separator:ga724d7f3c40b4baec45a4b3297d9f388a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga718d81054650c948e027470bb509d1de"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="group__mip__packet__c.html#ga89fe0bf7c4d5f95ac39447b601a2f5f1">mip::C::mip_packet_sync_byte</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__packet__c.html#ga718d81054650c948e027470bb509d1de">mip::C::mip_packet_sync_byte</a></td></tr>
+<tr class="separator:ga718d81054650c948e027470bb509d1de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:gaeb295e31a21e215c02d1bb391920692d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__packet__c.html#gaeb295e31a21e215c02d1bb391920692d">mip::C::mip_packet_index</a> { <br />
+&#160;&#160;<a class="el" href="group__mip__packet__c.html#ggaeb295e31a21e215c02d1bb391920692daa8e1931e83140b73f371cf8a51e1559c">mip::C::MIP_PACKET_INDEX_SYNC_1</a> = 0, 
+<a class="el" href="group__mip__packet__c.html#ggaeb295e31a21e215c02d1bb391920692da3d8a2da863ccf814367b3dee31677133">mip::C::MIP_PACKET_INDEX_SYNC_2</a> = 1, 
+<a class="el" href="group__mip__packet__c.html#ggaeb295e31a21e215c02d1bb391920692daef1e9615da2541aa65fdf8daebc4318d">mip::C::MIP_PACKET_INDEX_DESC_SET</a> = 2, 
+<a class="el" href="group__mip__packet__c.html#ggaeb295e31a21e215c02d1bb391920692da3e271152afca18212255386fd9e18e75">mip::C::MIP_PACKET_INDEX_LENGTH</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="group__mip__packet__c.html#ggaeb295e31a21e215c02d1bb391920692daf3ff0300cf7d8606b69dc2f28f3f3a89">mip::C::MIP_PACKET_INDEX_PAYLOAD</a> = 4
+<br />
+ }</td></tr>
+<tr class="separator:gaeb295e31a21e215c02d1bb391920692d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8bb8939ac5656381c588db3185d0743a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__packet__c.html#ga8bb8939ac5656381c588db3185d0743a">mip::C::mip_packet_index_length</a> { <br />
+&#160;&#160;<a class="el" href="group__mip__packet__c.html#gga8bb8939ac5656381c588db3185d0743aa00f0d38682e26f82d56e5adfb92a841b">mip::C::MIP_PACKET_HEADER_LENGTH</a> = 4, 
+<a class="el" href="group__mip__packet__c.html#gga8bb8939ac5656381c588db3185d0743aa4a8e8992662d6a03465ef5201786fc44">mip::C::MIP_PACKET_CHECKSUM_LENGTH</a> = 2, 
+<a class="el" href="group__mip__packet__c.html#gga8bb8939ac5656381c588db3185d0743aa06fa3f66c324f561178a2996ed4e364e">mip::C::MIP_PACKET_PAYLOAD_LENGTH_MIN</a> = 0, 
+<a class="el" href="group__mip__packet__c.html#gga8bb8939ac5656381c588db3185d0743aafec9267316dcc76edd0427fbb2a1fe1e">mip::C::MIP_PACKET_PAYLOAD_LENGTH_MAX</a> = 255, 
+<br />
+&#160;&#160;<a class="el" href="group__mip__packet__c.html#gga8bb8939ac5656381c588db3185d0743aa2d87d3bdf1ec2ac43e7ab00e53861109">mip::C::MIP_PACKET_LENGTH_MIN</a> = MIP_PACKET_HEADER_LENGTH + MIP_PACKET_CHECKSUM_LENGTH + MIP_PACKET_PAYLOAD_LENGTH_MIN, 
+<a class="el" href="group__mip__packet__c.html#gga8bb8939ac5656381c588db3185d0743aa7342ea021134e03e7fff02d3d6c6ea8b">mip::C::MIP_PACKET_LENGTH_MAX</a> = MIP_PACKET_HEADER_LENGTH + MIP_PACKET_CHECKSUM_LENGTH + MIP_PACKET_PAYLOAD_LENGTH_MAX
+<br />
+ }</td></tr>
+<tr class="separator:ga8bb8939ac5656381c588db3185d0743a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga89fe0bf7c4d5f95ac39447b601a2f5f1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__packet__c.html#ga89fe0bf7c4d5f95ac39447b601a2f5f1">mip::C::mip_packet_sync_byte</a> { <a class="el" href="group__mip__packet__c.html#gga89fe0bf7c4d5f95ac39447b601a2f5f1a19392ee117eb3176ea2f58b398f01e55">mip::C::MIP_SYNC_1</a> = 0x75, 
+<a class="el" href="group__mip__packet__c.html#gga89fe0bf7c4d5f95ac39447b601a2f5f1ae2594167198f0c49dd42dd35ab270879">mip::C::MIP_SYNC_2</a> = 0x65
+ }</td></tr>
+<tr class="separator:ga89fe0bf7c4d5f95ac39447b601a2f5f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>

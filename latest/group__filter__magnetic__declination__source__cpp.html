@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -94,39 +94,36 @@ Functions</h2></td></tr>
 <tr class="separator:ga402e48b3c54d69a73120657de9061c2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Set/Get the local magnetic field declination angle source. </p>
 <p>This can be used to correct for the local value of declination of the earthmagnetic field. Having a correct value is important for best performance of the auto-mag calibration feature. If you do not have an accurate inclination angle source, it is recommended that you leave the auto-mag calibration feature off. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga402e48b3c54d69a73120657de9061c2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga402e48b3c54d69a73120657de9061c2e">&#9670;&nbsp;</a></span>defaultMagneticDeclinationSource()</h2>
+<a id="ga6443cf345b82cd1c9130a2449bdf95f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6443cf345b82cd1c9130a2449bdf95f5">&#9670;&nbsp;</a></span>writeMagneticDeclinationSource()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1MagneticDeclinationSource.html">MagneticDeclinationSource</a> &gt; mip::commands_filter::defaultMagneticDeclinationSource </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1MagneticDeclinationSource.html">MagneticDeclinationSource</a> &gt; mip::commands_filter::writeMagneticDeclinationSource </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
-          <td></td>
+          <td class="paramname"><em>device</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga2b2b42f420d9a9b70bc4c8c523068467"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2b2b42f420d9a9b70bc4c8c523068467">&#9670;&nbsp;</a></span>loadMagneticDeclinationSource()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1MagneticDeclinationSource.html">MagneticDeclinationSource</a> &gt; mip::commands_filter::loadMagneticDeclinationSource </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="group__filter__commands__cpp.html#ga04d24040ffca234d7c952021e998d18c">FilterMagParamSource</a>&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>declination</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -185,34 +182,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga6443cf345b82cd1c9130a2449bdf95f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6443cf345b82cd1c9130a2449bdf95f5">&#9670;&nbsp;</a></span>writeMagneticDeclinationSource()</h2>
+<a id="ga2b2b42f420d9a9b70bc4c8c523068467"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2b2b42f420d9a9b70bc4c8c523068467">&#9670;&nbsp;</a></span>loadMagneticDeclinationSource()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1MagneticDeclinationSource.html">MagneticDeclinationSource</a> &gt; mip::commands_filter::writeMagneticDeclinationSource </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1MagneticDeclinationSource.html">MagneticDeclinationSource</a> &gt; mip::commands_filter::loadMagneticDeclinationSource </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__filter__commands__cpp.html#ga04d24040ffca234d7c952021e998d18c">FilterMagParamSource</a>&#160;</td>
-          <td class="paramname"><em>source</em>, </td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga402e48b3c54d69a73120657de9061c2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga402e48b3c54d69a73120657de9061c2e">&#9670;&nbsp;</a></span>defaultMagneticDeclinationSource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1MagneticDeclinationSource.html">MagneticDeclinationSource</a> &gt; mip::commands_filter::defaultMagneticDeclinationSource </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>declination</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -112,7 +112,6 @@ Functions</h2></td></tr>
 <tr class="separator:gab5d5c0b76e1f90e715d0b3202aea7fdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Set/Get the local magnetic field inclination angle source. </p>
 <p>This can be used to correct for the local value of inclination (dip angle) of the earthmagnetic field. Having a correct value is important for best performance of the auto-mag calibration feature. If you do not have an accurate inclination angle source, it is recommended that you leave the auto-mag calibration feature off. </p>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="ga82ec95aef4f9527f257bad1893273718"></a>
@@ -144,62 +143,6 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga88232fc6b22f8f8ba402d80f734cb909"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga88232fc6b22f8f8ba402d80f734cb909">&#9670;&nbsp;</a></span>extract_mip_filter_inclination_source_command()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::extract_mip_filter_inclination_source_command </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__inclination__source__command.html">mip_filter_inclination_source_command</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gab2618a5eba5ec8c8902d7077a25b5d15"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab2618a5eba5ec8c8902d7077a25b5d15">&#9670;&nbsp;</a></span>extract_mip_filter_inclination_source_response()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::extract_mip_filter_inclination_source_response </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__inclination__source__response.html">mip_filter_inclination_source_response</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ga31b48d9f22f3378c22749d3d1eeb8f6c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga31b48d9f22f3378c22749d3d1eeb8f6c">&#9670;&nbsp;</a></span>insert_mip_filter_inclination_source_command()</h2>
 
@@ -216,6 +159,34 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__filter__inclination__source__command.html">mip_filter_inclination_source_command</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga88232fc6b22f8f8ba402d80f734cb909"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga88232fc6b22f8f8ba402d80f734cb909">&#9670;&nbsp;</a></span>extract_mip_filter_inclination_source_command()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::C::extract_mip_filter_inclination_source_command </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__inclination__source__command.html">mip_filter_inclination_source_command</a> *&#160;</td>
           <td class="paramname"><em>self</em>&#160;</td>
         </tr>
         <tr>
@@ -256,36 +227,62 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gab5d5c0b76e1f90e715d0b3202aea7fdf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab5d5c0b76e1f90e715d0b3202aea7fdf">&#9670;&nbsp;</a></span>mip_filter_default_inclination_source()</h2>
+<a id="gab2618a5eba5ec8c8902d7077a25b5d15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab2618a5eba5ec8c8902d7077a25b5d15">&#9670;&nbsp;</a></span>extract_mip_filter_inclination_source_response()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_default_inclination_source </td>
+          <td class="memname">void mip::C::extract_mip_filter_inclination_source_response </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__inclination__source__response.html">mip_filter_inclination_source_response</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ga7368256928b91a65183ed348d91580f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7368256928b91a65183ed348d91580f1">&#9670;&nbsp;</a></span>mip_filter_load_inclination_source()</h2>
+<a id="ga5c3335ee725cfe5b5ac12a68b1b754e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5c3335ee725cfe5b5ac12a68b1b754e1">&#9670;&nbsp;</a></span>mip_filter_write_inclination_source()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_load_inclination_source </td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_write_inclination_source </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="group__filter__commands__c.html#ga3ddcc8e4e48a71d23c24f030cb2c2d4b">mip_filter_mag_param_source</a>&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>inclination</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -344,34 +341,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga5c3335ee725cfe5b5ac12a68b1b754e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5c3335ee725cfe5b5ac12a68b1b754e1">&#9670;&nbsp;</a></span>mip_filter_write_inclination_source()</h2>
+<a id="ga7368256928b91a65183ed348d91580f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7368256928b91a65183ed348d91580f1">&#9670;&nbsp;</a></span>mip_filter_load_inclination_source()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_write_inclination_source </td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_load_inclination_source </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__filter__commands__c.html#ga3ddcc8e4e48a71d23c24f030cb2c2d4b">mip_filter_mag_param_source</a>&#160;</td>
-          <td class="paramname"><em>source</em>, </td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gab5d5c0b76e1f90e715d0b3202aea7fdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab5d5c0b76e1f90e715d0b3202aea7fdf">&#9670;&nbsp;</a></span>mip_filter_default_inclination_source()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_default_inclination_source </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>inclination</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

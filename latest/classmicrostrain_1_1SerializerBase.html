@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -115,8 +115,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4aa969e53347706ad7a881c4ed5d8e80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents a view of a buffer of bytes of known capacity. </p>
-<p>The class maintains 3 attributes: </p><ul>
+<div class="textblock"><p>The class maintains 3 attributes: </p><ul>
 <li>A pointer to the first byte of the buffer. </li>
 <li>A capacity indicating the total size of the buffer. </li>
 <li>An offset, representing the number of bytes read or written.</li>
@@ -271,8 +270,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Obtains a pointer to the current offset for reading/writing a value of the specified size. This function does NOT advance the offset value. Generally, you should use <a class="el" href="classmicrostrain_1_1SerializerBase.html#a6d610119298e6725759e893bef17cf21" title="Obtains a pointer to the current offset for reading/writing a value of specified size,...">getPtrAndAdvance()</a> instead. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">required_size</td><td>How many bytes will be read/written to the pointer. </td></tr>
@@ -306,8 +303,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Obtains a pointer to the current offset for reading/writing a value of specified size, and post-increments the offset by that size. Use this function just like pointer(). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">size</td><td>How many bytes will be read/written to the pointer. The offset is increased by this amount. </td></tr>
@@ -344,8 +339,6 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Marks the buffer as invalid, i.e. overrun/error state. All further accesses via pointer(), <a class="el" href="classmicrostrain_1_1SerializerBase.html#a6d610119298e6725759e893bef17cf21" title="Obtains a pointer to the current offset for reading/writing a value of specified size,...">getPtrAndAdvance()</a>, etc. will fail. (basePointer() and capacity() remain valid) </p>
-
 </div>
 </div>
 <a id="a4aa969e53347706ad7a881c4ed5d8e80"></a>
@@ -371,8 +364,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Sets a new offset and returns the old value. This can be used to save/restore the current offset. Calling <a class="el" href="classmicrostrain_1_1SerializerBase.html#a4aa969e53347706ad7a881c4ed5d8e80" title="Sets a new offset and returns the old value. This can be used to save/restore the current offset....">setOffset()</a> after an overrun with an in-range (i.e. non-overrun) value restores the non-overrun status. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">offset</td><td>New offset. Allowed to exceed the size, i.e. an overrun state. </td></tr>

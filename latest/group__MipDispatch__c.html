@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -105,27 +105,25 @@ Enumerations</h2></td></tr>
 <tr class="separator:gacb3a7a2069057799024af6f25527d03c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>System for issuing callbacks from MIP packets or fields. </p>
 <p>The user's application may register handlers in the dispatcher to receive callbacks for reception of various types of data. Packets, fields, and deserialized data callbacks may be registered.</p>
 <dl class="section see"><dt>See also</dt><dd>mip_dispatch </dd></dl>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="ga30f5663974ed1e5cb0e259d440aaa2e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga30f5663974ed1e5cb0e259d440aaa2e8">&#9670;&nbsp;</a></span>mip_dispatch_extractor</h2>
+<a id="ga29b0f63f4f34c796757047479d38427f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga29b0f63f4f34c796757047479d38427f">&#9670;&nbsp;</a></span>mip_dispatch_packet_callback</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef bool(* mip::C::mip_dispatch_extractor) (const <a class="el" href="structmip_1_1C_1_1mip__field__view.html">mip_field_view</a> *field, void *ptr)</td>
+          <td class="memname">typedef void(* mip::C::mip_dispatch_packet_callback) (void *context, const <a class="el" href="structmip_1_1C_1_1mip__packet__view.html">mip_packet_view</a> *packet, <a class="el" href="namespacemip_1_1C.html#a8a24a1913ffba77cdd608c5fb7575f37">mip_timestamp</a> timestamp)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Signature for extraction callbacks. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">field</td><td>A valid mip_field. </td></tr>
-    <tr><td class="paramname">ptr</td><td>A pointer to the destination field structure. </td></tr>
+    <tr><td class="paramname">context</td><td>User-supplied data pointer. </td></tr>
+    <tr><td class="paramname">packet</td><td>The MIP packet triggering this callback. </td></tr>
+    <tr><td class="paramname">timestamp</td><td>The approximate parse time of the packet. </td></tr>
   </table>
   </dd>
 </dl>
@@ -143,8 +141,6 @@ Enumerations</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Signature for field-level callbacks. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">context</td><td>User-supplied data pointer. </td></tr>
@@ -156,24 +152,21 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
-<a id="ga29b0f63f4f34c796757047479d38427f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga29b0f63f4f34c796757047479d38427f">&#9670;&nbsp;</a></span>mip_dispatch_packet_callback</h2>
+<a id="ga30f5663974ed1e5cb0e259d440aaa2e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga30f5663974ed1e5cb0e259d440aaa2e8">&#9670;&nbsp;</a></span>mip_dispatch_extractor</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* mip::C::mip_dispatch_packet_callback) (void *context, const <a class="el" href="structmip_1_1C_1_1mip__packet__view.html">mip_packet_view</a> *packet, <a class="el" href="namespacemip_1_1C.html#a8a24a1913ffba77cdd608c5fb7575f37">mip_timestamp</a> timestamp)</td>
+          <td class="memname">typedef bool(* mip::C::mip_dispatch_extractor) (const <a class="el" href="structmip_1_1C_1_1mip__field__view.html">mip_field_view</a> *field, void *ptr)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Signature for packet-level callbacks. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">context</td><td>User-supplied data pointer. </td></tr>
-    <tr><td class="paramname">packet</td><td>The MIP packet triggering this callback. </td></tr>
-    <tr><td class="paramname">timestamp</td><td>The approximate parse time of the packet. </td></tr>
+    <tr><td class="paramname">field</td><td>A valid mip_field. </td></tr>
+    <tr><td class="paramname">ptr</td><td>A pointer to the destination field structure. </td></tr>
   </table>
   </dd>
 </dl>

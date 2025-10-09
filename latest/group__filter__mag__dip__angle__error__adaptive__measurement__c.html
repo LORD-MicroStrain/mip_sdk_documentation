@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -112,7 +112,6 @@ Functions</h2></td></tr>
 <tr class="separator:gaae4dfa92e77ab148dd239c078c5efe01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Enable or disable the magnetometer dip angle error adaptive measurement. This function can be used to tune the filter performance in the target application. </p>
 <p>Pick values that give you the least occurrence of invalid EF attitude output. The default values are good for standard low dynamics applications. Increase values for higher dynamic conditions, lower values for lower dynamic. Too low a value will result in excessive heading errors. Higher values increase heading errors when undergoing magnetic field anomalies caused by DC currents, magnets, steel structures,etc.</p>
 <p>The magnetometer dip angle adaptive measurement is ignored if the auto-adaptive magnetometer magnitude or auto-adaptive accel magnitude options are selected. </p>
 <h2 class="groupheader">Typedef Documentation</h2>
@@ -145,62 +144,6 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga31d6cb946ae6632322597ac2da260624"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga31d6cb946ae6632322597ac2da260624">&#9670;&nbsp;</a></span>extract_mip_filter_mag_dip_angle_error_adaptive_measurement_command()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::extract_mip_filter_mag_dip_angle_error_adaptive_measurement_command </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__mag__dip__angle__error__adaptive__measurement__command.html">mip_filter_mag_dip_angle_error_adaptive_measurement_command</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga6143f8d8677bb7a38a37163d056c2fed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6143f8d8677bb7a38a37163d056c2fed">&#9670;&nbsp;</a></span>extract_mip_filter_mag_dip_angle_error_adaptive_measurement_response()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::extract_mip_filter_mag_dip_angle_error_adaptive_measurement_response </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__mag__dip__angle__error__adaptive__measurement__response.html">mip_filter_mag_dip_angle_error_adaptive_measurement_response</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ga9627afd446720f2fc1014a2f7e543203"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga9627afd446720f2fc1014a2f7e543203">&#9670;&nbsp;</a></span>insert_mip_filter_mag_dip_angle_error_adaptive_measurement_command()</h2>
 
@@ -217,6 +160,34 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__filter__mag__dip__angle__error__adaptive__measurement__command.html">mip_filter_mag_dip_angle_error_adaptive_measurement_command</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga31d6cb946ae6632322597ac2da260624"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga31d6cb946ae6632322597ac2da260624">&#9670;&nbsp;</a></span>extract_mip_filter_mag_dip_angle_error_adaptive_measurement_command()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::C::extract_mip_filter_mag_dip_angle_error_adaptive_measurement_command </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__mag__dip__angle__error__adaptive__measurement__command.html">mip_filter_mag_dip_angle_error_adaptive_measurement_command</a> *&#160;</td>
           <td class="paramname"><em>self</em>&#160;</td>
         </tr>
         <tr>
@@ -257,36 +228,80 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gaae4dfa92e77ab148dd239c078c5efe01"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaae4dfa92e77ab148dd239c078c5efe01">&#9670;&nbsp;</a></span>mip_filter_default_mag_dip_angle_error_adaptive_measurement()</h2>
+<a id="ga6143f8d8677bb7a38a37163d056c2fed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6143f8d8677bb7a38a37163d056c2fed">&#9670;&nbsp;</a></span>extract_mip_filter_mag_dip_angle_error_adaptive_measurement_response()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_default_mag_dip_angle_error_adaptive_measurement </td>
+          <td class="memname">void mip::C::extract_mip_filter_mag_dip_angle_error_adaptive_measurement_response </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__mag__dip__angle__error__adaptive__measurement__response.html">mip_filter_mag_dip_angle_error_adaptive_measurement_response</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ga1f1e8663df0978da6fb2f8f9d9a23992"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1f1e8663df0978da6fb2f8f9d9a23992">&#9670;&nbsp;</a></span>mip_filter_load_mag_dip_angle_error_adaptive_measurement()</h2>
+<a id="gadc0e828e56cebe765c9daca7b023afd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadc0e828e56cebe765c9daca7b023afd5">&#9670;&nbsp;</a></span>mip_filter_write_mag_dip_angle_error_adaptive_measurement()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_load_mag_dip_angle_error_adaptive_measurement </td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_write_mag_dip_angle_error_adaptive_measurement </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>frequency</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>high_limit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>high_limit_uncertainty</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>minimum_uncertainty</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -363,52 +378,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gadc0e828e56cebe765c9daca7b023afd5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadc0e828e56cebe765c9daca7b023afd5">&#9670;&nbsp;</a></span>mip_filter_write_mag_dip_angle_error_adaptive_measurement()</h2>
+<a id="ga1f1e8663df0978da6fb2f8f9d9a23992"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1f1e8663df0978da6fb2f8f9d9a23992">&#9670;&nbsp;</a></span>mip_filter_load_mag_dip_angle_error_adaptive_measurement()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_write_mag_dip_angle_error_adaptive_measurement </td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_load_mag_dip_angle_error_adaptive_measurement </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>enable</em>, </td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaae4dfa92e77ab148dd239c078c5efe01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaae4dfa92e77ab148dd239c078c5efe01">&#9670;&nbsp;</a></span>mip_filter_default_mag_dip_angle_error_adaptive_measurement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_default_mag_dip_angle_error_adaptive_measurement </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>frequency</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>high_limit</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>high_limit_uncertainty</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>minimum_uncertainty</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

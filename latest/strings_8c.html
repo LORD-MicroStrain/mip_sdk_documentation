@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -69,7 +69,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">strings.c File Reference</div>  </div>
 </div><!--header-->
@@ -94,10 +95,71 @@ Functions</h2></td></tr>
 <tr class="memitem:ga974a60540bb1cd014429dbbcd5b467c8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__microstrain__strings__c.html#ga974a60540bb1cd014429dbbcd5b467c8">microstrain_string_format</a> (char *buffer, size_t buffer_size, size_t *index, const char *fmt,...)</td></tr>
 <tr class="memdesc:ga974a60540bb1cd014429dbbcd5b467c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper for std::snprintf with a better interface.  <a href="group__microstrain__strings__c.html#ga974a60540bb1cd014429dbbcd5b467c8">More...</a><br /></td></tr>
 <tr class="separator:ga974a60540bb1cd014429dbbcd5b467c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50213b9b18b8d47096224cee06f0ebea"><td class="memItemLeft" align="right" valign="top">static char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="strings_8c.html#a50213b9b18b8d47096224cee06f0ebea">nibble_to_hex_char</a> (uint8_t value)</td></tr>
+<tr class="separator:a50213b9b18b8d47096224cee06f0ebea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8ce840fc52858ca587cbd315b77b6946"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__microstrain__strings__c.html#ga8ce840fc52858ca587cbd315b77b6946">microstrain_string_bytes_to_hex_str</a> (char *buffer, size_t buffer_size, size_t *index, const uint8_t *data, size_t data_size, unsigned int byte_grouping)</td></tr>
 <tr class="memdesc:ga8ce840fc52858ca587cbd315b77b6946"><td class="mdescLeft">&#160;</td><td class="mdescRight">Formats a byte array to a text buffer in hexadecimal.  <a href="group__microstrain__strings__c.html#ga8ce840fc52858ca587cbd315b77b6946">More...</a><br /></td></tr>
 <tr class="separator:ga8ce840fc52858ca587cbd315b77b6946"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:add4dc78f27c74f94e0eee33a269c532f"><td class="memItemLeft" align="right" valign="top">static const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="strings_8c.html#add4dc78f27c74f94e0eee33a269c532f">NIBBLE_HEX_TABLE</a> [16]</td></tr>
+<tr class="separator:add4dc78f27c74f94e0eee33a269c532f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a50213b9b18b8d47096224cee06f0ebea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50213b9b18b8d47096224cee06f0ebea">&#9670;&nbsp;</a></span>nibble_to_hex_char()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static char nibble_to_hex_char </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="add4dc78f27c74f94e0eee33a269c532f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add4dc78f27c74f94e0eee33a269c532f">&#9670;&nbsp;</a></span>NIBBLE_HEX_TABLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char NIBBLE_HEX_TABLE[16]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    <span class="charliteral">&#39;0&#39;</span>, <span class="charliteral">&#39;1&#39;</span>, <span class="charliteral">&#39;2&#39;</span>, <span class="charliteral">&#39;3&#39;</span>, <span class="charliteral">&#39;4&#39;</span>, <span class="charliteral">&#39;5&#39;</span>, <span class="charliteral">&#39;6&#39;</span>, <span class="charliteral">&#39;7&#39;</span>,</div>
+<div class="line">    <span class="charliteral">&#39;8&#39;</span>, <span class="charliteral">&#39;9&#39;</span>, <span class="charliteral">&#39;A&#39;</span>, <span class="charliteral">&#39;B&#39;</span>, <span class="charliteral">&#39;C&#39;</span>, <span class="charliteral">&#39;D&#39;</span>, <span class="charliteral">&#39;E&#39;</span>, <span class="charliteral">&#39;F&#39;</span>,</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

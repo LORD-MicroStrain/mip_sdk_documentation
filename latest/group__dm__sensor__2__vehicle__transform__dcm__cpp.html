@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -94,7 +94,6 @@ Functions</h2></td></tr>
 <tr class="separator:gae9bf662cb5268cc331c039208a6159d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Set the sensor to vehicle frame transformation using a using a 3 x 3 direction cosine matrix EQSTART M_{ned}^{veh} EQEND, stored in row-major order in a 9-element array. </p>
 <p>These angles define the transformation of vectors from the sensor body frame to the fixed vehicle frame, according to:<br  />
  EQSTART v^{veh} = M_{sen}^{veh} v^{sen} EQEND<br  />
 </p>
@@ -127,36 +126,28 @@ Functions</h2></td></tr>
  <br  />
  Changing this setting will force all low-pass filters, the complementary filter, and the estimation filter to reset. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gae9bf662cb5268cc331c039208a6159d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae9bf662cb5268cc331c039208a6159d1">&#9670;&nbsp;</a></span>defaultSensor2VehicleTransformDcm()</h2>
+<a id="gab45a84f5d2d174eb9088f194c45b0fc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab45a84f5d2d174eb9088f194c45b0fc4">&#9670;&nbsp;</a></span>writeSensor2VehicleTransformDcm()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1Sensor2VehicleTransformDcm.html">Sensor2VehicleTransformDcm</a> &gt; mip::commands_3dm::defaultSensor2VehicleTransformDcm </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1Sensor2VehicleTransformDcm.html">Sensor2VehicleTransformDcm</a> &gt; mip::commands_3dm::writeSensor2VehicleTransformDcm </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
-          <td></td>
+          <td class="paramname"><em>device</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga81b0915b22c70934729fd0817e3d5258"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga81b0915b22c70934729fd0817e3d5258">&#9670;&nbsp;</a></span>loadSensor2VehicleTransformDcm()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1Sensor2VehicleTransformDcm.html">Sensor2VehicleTransformDcm</a> &gt; mip::commands_3dm::loadSensor2VehicleTransformDcm </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>dcm</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -209,28 +200,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gab45a84f5d2d174eb9088f194c45b0fc4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab45a84f5d2d174eb9088f194c45b0fc4">&#9670;&nbsp;</a></span>writeSensor2VehicleTransformDcm()</h2>
+<a id="ga81b0915b22c70934729fd0817e3d5258"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga81b0915b22c70934729fd0817e3d5258">&#9670;&nbsp;</a></span>loadSensor2VehicleTransformDcm()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1Sensor2VehicleTransformDcm.html">Sensor2VehicleTransformDcm</a> &gt; mip::commands_3dm::writeSensor2VehicleTransformDcm </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1Sensor2VehicleTransformDcm.html">Sensor2VehicleTransformDcm</a> &gt; mip::commands_3dm::loadSensor2VehicleTransformDcm </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const float *&#160;</td>
-          <td class="paramname"><em>dcm</em>&#160;</td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae9bf662cb5268cc331c039208a6159d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae9bf662cb5268cc331c039208a6159d1">&#9670;&nbsp;</a></span>defaultSensor2VehicleTransformDcm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1Sensor2VehicleTransformDcm.html">Sensor2VehicleTransformDcm</a> &gt; mip::commands_3dm::defaultSensor2VehicleTransformDcm </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

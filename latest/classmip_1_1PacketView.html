@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -70,6 +70,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
@@ -100,6 +101,19 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView_1_1FieldIterator.html">FieldIterator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a5d1bf39e2a1136cced7faf8123ef821c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#a5d1bf39e2a1136cced7faf8123ef821c">Index</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="classmip_1_1PacketView.html#a5d1bf39e2a1136cced7faf8123ef821ca859adfcaa74cf1ce7f803348ad0110b8">Index::SYNC_1</a> = C::MIP_PACKET_INDEX_SYNC_1, 
+<a class="el" href="classmip_1_1PacketView.html#a5d1bf39e2a1136cced7faf8123ef821cae6c39745fe0c31de9cf3f925bc5f4e54">Index::SYNC_2</a> = C::MIP_PACKET_INDEX_SYNC_2, 
+<a class="el" href="classmip_1_1PacketView.html#a5d1bf39e2a1136cced7faf8123ef821ca180aa09ea8be495f59a8a56f1bdc1cfc">Index::DESC_SET</a> = C::MIP_PACKET_INDEX_DESC_SET, 
+<a class="el" href="classmip_1_1PacketView.html#a5d1bf39e2a1136cced7faf8123ef821caaddeac40406177897b3fccba88558f1c">Index::LENGTH</a> = C::MIP_PACKET_INDEX_LENGTH, 
+<br />
+&#160;&#160;<a class="el" href="classmip_1_1PacketView.html#a5d1bf39e2a1136cced7faf8123ef821caca8fef80e43c8db749b7c9406d535b1a">Index::PAYLOAD</a> = C::MIP_PACKET_INDEX_PAYLOAD
+<br />
+ }</td></tr>
+<tr class="separator:a5d1bf39e2a1136cced7faf8123ef821c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -135,15 +149,19 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac98408973781d44625de4d10de9fffb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2871b64dd2eb43964ed7871dbc1a09b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemip.html#a7475074708d6d3e0fa83597b41eb98f8">Serializer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#a2871b64dd2eb43964ed7871dbc1a09b9">createField</a> (uint8_t fieldDescriptor, uint8_t length)</td></tr>
 <tr class="separator:a2871b64dd2eb43964ed7871dbc1a09b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afce2ca70b8bad2d8bab11303f1ec506e"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#afce2ca70b8bad2d8bab11303f1ec506e">dataAt</a> (size_t i) const</td></tr>
-<tr class="separator:afce2ca70b8bad2d8bab11303f1ec506e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a246087a03f8d4499af0ab80be30b3cf8"><td class="memItemLeft" align="right" valign="top">uint8_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#a246087a03f8d4499af0ab80be30b3cf8">dataAt</a> (size_t i)</td></tr>
-<tr class="separator:a246087a03f8d4499af0ab80be30b3cf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7625476308daf5568649196f51af3fe8"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#a7625476308daf5568649196f51af3fe8">payloadAt</a> (size_t i) const</td></tr>
-<tr class="separator:a7625476308daf5568649196f51af3fe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cbbdd4f61868e82fec47ffec740a076"><td class="memItemLeft" align="right" valign="top">uint8_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#a3cbbdd4f61868e82fec47ffec740a076">payloadAt</a> (size_t i)</td></tr>
-<tr class="memdesc:a3cbbdd4f61868e82fec47ffec740a076"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get payload byte at index i.  <a href="classmip_1_1PacketView.html#a3cbbdd4f61868e82fec47ffec740a076">More...</a><br /></td></tr>
-<tr class="separator:a3cbbdd4f61868e82fec47ffec740a076"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a586957adf4f439be6bb5627f40400772"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#a586957adf4f439be6bb5627f40400772">dataAt</a> (const size_t i) const</td></tr>
+<tr class="separator:a586957adf4f439be6bb5627f40400772"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35451dfd932eceb156013502abfd41aa"><td class="memItemLeft" align="right" valign="top">uint8_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#a35451dfd932eceb156013502abfd41aa">dataAt</a> (const size_t i)</td></tr>
+<tr class="separator:a35451dfd932eceb156013502abfd41aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac61e605639f7e0acff66eecb6c9229b5"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#ac61e605639f7e0acff66eecb6c9229b5">dataAt</a> (const <a class="el" href="classmip_1_1PacketView.html#a5d1bf39e2a1136cced7faf8123ef821c">Index</a> i) const</td></tr>
+<tr class="separator:ac61e605639f7e0acff66eecb6c9229b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac03ed12782121d2cb288dd861ba45800"><td class="memItemLeft" align="right" valign="top">uint8_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#ac03ed12782121d2cb288dd861ba45800">dataAt</a> (const <a class="el" href="classmip_1_1PacketView.html#a5d1bf39e2a1136cced7faf8123ef821c">Index</a> i)</td></tr>
+<tr class="separator:ac03ed12782121d2cb288dd861ba45800"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d46365ef16d8ca9a57b630563941d34"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#a0d46365ef16d8ca9a57b630563941d34">payloadAt</a> (const size_t i) const</td></tr>
+<tr class="separator:a0d46365ef16d8ca9a57b630563941d34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47a438e16371b06871cd3a7847847dfe"><td class="memItemLeft" align="right" valign="top">uint8_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#a47a438e16371b06871cd3a7847847dfe">payloadAt</a> (const size_t i)</td></tr>
+<tr class="memdesc:a47a438e16371b06871cd3a7847847dfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get payload byte at index i.  <a href="classmip_1_1PacketView.html#a47a438e16371b06871cd3a7847847dfe">More...</a><br /></td></tr>
+<tr class="separator:a47a438e16371b06871cd3a7847847dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a335ad53de9ea67267417486cd6d9c957"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#a335ad53de9ea67267417486cd6d9c957">addField</a> (uint8_t fieldDescriptor, <a class="el" href="namespacemicrostrain.html#ad10904b5b78aab3f27f0a6fa165d94bc">microstrain::ConstU8ArrayView</a> <a class="el" href="classmip_1_1PacketView.html#abfaa502b322cef7f7396c5b0dee13f09">payload</a>)</td></tr>
 <tr class="memdesc:a335ad53de9ea67267417486cd6d9c957"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get writable payload byte at index i.  <a href="classmip_1_1PacketView.html#a335ad53de9ea67267417486cd6d9c957">More...</a><br /></td></tr>
 <tr class="separator:a335ad53de9ea67267417486cd6d9c957"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,7 +178,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a29bf807f83a9c9f7cd702eef0fdd4e83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the first field in the packet.  <a href="classmip_1_1PacketView.html#a29bf807f83a9c9f7cd702eef0fdd4e83">More...</a><br /></td></tr>
 <tr class="separator:a29bf807f83a9c9f7cd702eef0fdd4e83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9d4a62380c51a4540e93eddacd6bdc8"><td class="memTemplParams" colspan="2">template&lt;class FieldType &gt; </td></tr>
-<tr class="memitem:ae9d4a62380c51a4540e93eddacd6bdc8"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#ae9d4a62380c51a4540e93eddacd6bdc8">addField</a> (const FieldType &amp;field, uint8_t fieldDescriptor=INVALID_FIELD_DESCRIPTOR)</td></tr>
+<tr class="memitem:ae9d4a62380c51a4540e93eddacd6bdc8"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#ae9d4a62380c51a4540e93eddacd6bdc8">addField</a> (const FieldType &amp;field, uint8_t fieldDescriptor=<a class="el" href="group__mip__cpp.html#ga1d1f26f69ca21c84dfaccabdaed9746a">INVALID_FIELD_DESCRIPTOR</a>)</td></tr>
 <tr class="memdesc:ae9d4a62380c51a4540e93eddacd6bdc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a field of the given type to the packet.  <a href="classmip_1_1PacketView.html#ae9d4a62380c51a4540e93eddacd6bdc8">More...</a><br /></td></tr>
 <tr class="separator:ae9d4a62380c51a4540e93eddacd6bdc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a175a018a00ca1a818a0e06b47f601d12"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#a175a018a00ca1a818a0e06b47f601d12">copyPacketTo</a> (<a class="el" href="namespacemicrostrain.html#ace61526f6e658ee7eb05a3279fc8ae66">microstrain::U8ArrayView</a> <a class="el" href="classmip_1_1PacketView.html#a4dae973ae1a91800afb8db5342364fe1">buffer</a>) const</td></tr>
@@ -170,25 +188,64 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a14b204a2084d75a67f188eb517113198"><td class="memTemplParams" colspan="2">template&lt;class FieldType &gt; </td></tr>
-<tr class="memitem:a14b204a2084d75a67f188eb517113198"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classmip_1_1PacketView.html">PacketView</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#a14b204a2084d75a67f188eb517113198">createFromField</a> (<a class="el" href="namespacemicrostrain.html#ace61526f6e658ee7eb05a3279fc8ae66">microstrain::U8ArrayView</a> packetBuffer, const FieldType &amp;field, uint8_t fieldDescriptor=INVALID_FIELD_DESCRIPTOR)</td></tr>
+<tr class="memitem:a14b204a2084d75a67f188eb517113198"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classmip_1_1PacketView.html">PacketView</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#a14b204a2084d75a67f188eb517113198">createFromField</a> (<a class="el" href="namespacemicrostrain.html#ace61526f6e658ee7eb05a3279fc8ae66">microstrain::U8ArrayView</a> packetBuffer, const FieldType &amp;field, uint8_t fieldDescriptor=<a class="el" href="group__mip__cpp.html#ga1d1f26f69ca21c84dfaccabdaed9746a">INVALID_FIELD_DESCRIPTOR</a>)</td></tr>
 <tr class="memdesc:a14b204a2084d75a67f188eb517113198"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new PacketRef containing a single MIP field from an instance of the field type.  <a href="classmip_1_1PacketView.html#a14b204a2084d75a67f188eb517113198">More...</a><br /></td></tr>
 <tr class="separator:a14b204a2084d75a67f188eb517113198"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a926c8d11686b3803c1d7b410cfac1487"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#a926c8d11686b3803c1d7b410cfac1487">PAYLOAD_LENGTH_MAX</a> = <a class="el" href="namespacemip_1_1C.html#ae5b418878e1d27de9df937114d223adbafec9267316dcc76edd0427fbb2a1fe1e">C::MIP_PACKET_PAYLOAD_LENGTH_MAX</a></td></tr>
+<tr class="memitem:aadbd9fc575b48b3fd4358d7e75913dfe"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#aadbd9fc575b48b3fd4358d7e75913dfe">SYNC_1</a> = <a class="el" href="group__mip__packet__c.html#gga89fe0bf7c4d5f95ac39447b601a2f5f1a19392ee117eb3176ea2f58b398f01e55">C::MIP_SYNC_1</a></td></tr>
+<tr class="separator:aadbd9fc575b48b3fd4358d7e75913dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7b48bb4469a0f1023958693fbcd62f8"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#aa7b48bb4469a0f1023958693fbcd62f8">SYNC_2</a> = <a class="el" href="group__mip__packet__c.html#gga89fe0bf7c4d5f95ac39447b601a2f5f1ae2594167198f0c49dd42dd35ab270879">C::MIP_SYNC_2</a></td></tr>
+<tr class="separator:aa7b48bb4469a0f1023958693fbcd62f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a370753bc3d9d8cc6ce6ed8d373816260"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#a370753bc3d9d8cc6ce6ed8d373816260">HEADER_LENGTH</a> = <a class="el" href="group__mip__packet__c.html#gga8bb8939ac5656381c588db3185d0743aa00f0d38682e26f82d56e5adfb92a841b">C::MIP_PACKET_HEADER_LENGTH</a></td></tr>
+<tr class="separator:a370753bc3d9d8cc6ce6ed8d373816260"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a464686053776a72f89fd077558b019c4"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#a464686053776a72f89fd077558b019c4">CHECKSUM_LENGTH</a> = <a class="el" href="group__mip__packet__c.html#gga8bb8939ac5656381c588db3185d0743aa4a8e8992662d6a03465ef5201786fc44">C::MIP_PACKET_CHECKSUM_LENGTH</a></td></tr>
+<tr class="separator:a464686053776a72f89fd077558b019c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af39b9b77912fe006b52c91b238999c2e"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#af39b9b77912fe006b52c91b238999c2e">LENGTH_MIN</a> = <a class="el" href="group__mip__packet__c.html#gga8bb8939ac5656381c588db3185d0743aa2d87d3bdf1ec2ac43e7ab00e53861109">C::MIP_PACKET_LENGTH_MIN</a></td></tr>
+<tr class="separator:af39b9b77912fe006b52c91b238999c2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2c45a80c509226011c3d336392b483f"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#af2c45a80c509226011c3d336392b483f">LENGTH_MAX</a> = <a class="el" href="group__mip__packet__c.html#gga8bb8939ac5656381c588db3185d0743aa7342ea021134e03e7fff02d3d6c6ea8b">C::MIP_PACKET_LENGTH_MAX</a></td></tr>
+<tr class="separator:af2c45a80c509226011c3d336392b483f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52ba250bf216d5c34281ccadf6a418c8"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#a52ba250bf216d5c34281ccadf6a418c8">PAYLOAD_LENGTH_MIN</a> = <a class="el" href="group__mip__packet__c.html#gga8bb8939ac5656381c588db3185d0743aa06fa3f66c324f561178a2996ed4e364e">C::MIP_PACKET_PAYLOAD_LENGTH_MIN</a></td></tr>
+<tr class="separator:a52ba250bf216d5c34281ccadf6a418c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a926c8d11686b3803c1d7b410cfac1487"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#a926c8d11686b3803c1d7b410cfac1487">PAYLOAD_LENGTH_MAX</a> = <a class="el" href="group__mip__packet__c.html#gga8bb8939ac5656381c588db3185d0743aafec9267316dcc76edd0427fbb2a1fe1e">C::MIP_PACKET_PAYLOAD_LENGTH_MAX</a></td></tr>
 <tr class="separator:a926c8d11686b3803c1d7b410cfac1487"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b4cd86d59f3e819c4254ad98d45a995"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#a7b4cd86d59f3e819c4254ad98d45a995">PACKET_SIZE_MIN</a> = <a class="el" href="namespacemip_1_1C.html#ae5b418878e1d27de9df937114d223adba2d87d3bdf1ec2ac43e7ab00e53861109">C::MIP_PACKET_LENGTH_MIN</a></td></tr>
-<tr class="separator:a7b4cd86d59f3e819c4254ad98d45a995"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af31d0d502626a0c94a5133cbf33432ba"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#af31d0d502626a0c94a5133cbf33432ba">PACKET_SIZE_MAX</a> = <a class="el" href="namespacemip_1_1C.html#ae5b418878e1d27de9df937114d223adba7342ea021134e03e7fff02d3d6c6ea8b">C::MIP_PACKET_LENGTH_MAX</a></td></tr>
-<tr class="separator:af31d0d502626a0c94a5133cbf33432ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>C++ class representing a view of a MIP packet. </p>
-<p>This is a thin wrapper around the mip_packet_view <a class="el" href="namespacemip_1_1C.html">C</a> structure. Like the <a class="el" href="namespacemip_1_1C.html">C</a> version, it does not contain or own the data buffer. Any of the <a class="el" href="namespacemip_1_1C.html">C</a> functions can be used with the C++ packet class because it inherits from the <a class="el" href="namespacemip_1_1C.html">C</a> struct.</p>
+<div class="textblock"><p>This is a thin wrapper around the mip_packet_view <a class="el" href="namespacemip_1_1C.html">C</a> structure. Like the <a class="el" href="namespacemip_1_1C.html">C</a> version, it does not contain or own the data buffer. Any of the <a class="el" href="namespacemip_1_1C.html">C</a> functions can be used with the C++ packet class because it inherits from the <a class="el" href="namespacemip_1_1C.html">C</a> struct.</p>
 <p>Fields may be iterated over using the C-style methods, with an iterator, or with a range-based for loop: </p><div class="fragment"><div class="line"><span class="keywordflow">for</span>(PacketRef::Iterator iter = packet.begin(); iter != packet.end(); ++iter) { ... }</div>
 <div class="line"><span class="keywordflow">for</span>(Field field : packet) { ... }</div>
-</div><!-- fragment --> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><!-- fragment --> </div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a5d1bf39e2a1136cced7faf8123ef821c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d1bf39e2a1136cced7faf8123ef821c">&#9670;&nbsp;</a></span>Index</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classmip_1_1PacketView.html#a5d1bf39e2a1136cced7faf8123ef821c">mip::PacketView::Index</a> : uint8_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5d1bf39e2a1136cced7faf8123ef821ca859adfcaa74cf1ce7f803348ad0110b8"></a>SYNC_1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5d1bf39e2a1136cced7faf8123ef821cae6c39745fe0c31de9cf3f925bc5f4e54"></a>SYNC_2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5d1bf39e2a1136cced7faf8123ef821ca180aa09ea8be495f59a8a56f1bdc1cfc"></a>DESC_SET&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5d1bf39e2a1136cced7faf8123ef821caaddeac40406177897b3fccba88558f1c"></a>LENGTH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5d1bf39e2a1136cced7faf8123ef821caca8fef80e43c8db749b7c9406d535b1a"></a>PAYLOAD&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a10644e06844f62c02fd32e41639dfa72"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a10644e06844f62c02fd32e41639dfa72">&#9670;&nbsp;</a></span>PacketView() <span class="overload">[1/6]</span></h2>
 
@@ -228,8 +285,6 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Create a brand-new MIP packet in the given buffer. </p>
 <p>Use this along with the packet building functions to create MIP packets.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -276,8 +331,6 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Initializes a MIP packet from an existing buffer. </p>
 <p>Use this when receiving or parsing MIP packets.</p>
 <p>The data in the buffer should be a valid or suspected MIP packet.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -316,8 +369,6 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Constructs a C++ PacketRef class from the base <a class="el" href="namespacemip_1_1C.html">C</a> object. </p>
-
 </div>
 </div>
 <a id="a359da33c2a50ce92421825f390c26c8a"></a>
@@ -343,8 +394,6 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Constructs a C++ PacketRef class from the base <a class="el" href="namespacemip_1_1C.html">C</a> object. </p>
 
 </div>
 </div>
@@ -381,8 +430,6 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Create a new MIP packet in an existing buffer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">buffer</td><td>Place to store the MIP packet bytes. </td></tr>
@@ -416,8 +463,6 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Create a reference to an existing MIP packet. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">buffer</td><td>Buffer containing an existing MIP packet. </td></tr>
@@ -429,153 +474,6 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae9d4a62380c51a4540e93eddacd6bdc8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae9d4a62380c51a4540e93eddacd6bdc8">&#9670;&nbsp;</a></span>addField() <span class="overload">[1/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class FieldType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool mip::PacketView::addField </td>
-          <td>(</td>
-          <td class="paramtype">const FieldType &amp;&#160;</td>
-          <td class="paramname"><em>field</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>fieldDescriptor</em> = <code>INVALID_FIELD_DESCRIPTOR</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Adds a field of the given type to the packet. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">FieldType</td><td>Any field class from a file in the mip/definitions directory.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">field</td><td>Instance of the field to add to the packet. </td></tr>
-    <tr><td class="paramname">fieldDescriptor</td><td>If specified, overrides the field descriptor.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the field was added, false if the packet has insufficient space. </dd></dl>
-
-</div>
-</div>
-<a id="ac34c46618a531320eca60b9f5130c2d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac34c46618a531320eca60b9f5130c2d5">&#9670;&nbsp;</a></span>addField() <span class="overload">[2/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool mip::PacketView::addField </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classmip_1_1FieldView.html">FieldView</a> &amp;&#160;</td>
-          <td class="paramname"><em>field</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Copies the given mip field to the packet. </p>
-
-</div>
-</div>
-<a id="a335ad53de9ea67267417486cd6d9c957"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a335ad53de9ea67267417486cd6d9c957">&#9670;&nbsp;</a></span>addField() <span class="overload">[3/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool mip::PacketView::addField </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>fieldDescriptor</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacemicrostrain.html#ad10904b5b78aab3f27f0a6fa165d94bc">microstrain::ConstU8ArrayView</a>&#160;</td>
-          <td class="paramname"><em>payload</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get writable payload byte at index i. </p>
-<p>Creates a mip field with the given descriptor and a copy of the payload. </p>
-
-</div>
-</div>
-<a id="af02bc8240144be186f25a394870bf78b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af02bc8240144be186f25a394870bf78b">&#9670;&nbsp;</a></span>begin()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classmip_1_1PacketView_1_1FieldIterator.html">FieldIterator</a> mip::PacketView::begin </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Returns a forward iterator to the first field in the packet. </p>
-
-</div>
-</div>
 <a id="a4dae973ae1a91800afb8db5342364fe1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4dae973ae1a91800afb8db5342364fe1">&#9670;&nbsp;</a></span>buffer()</h2>
 
@@ -624,170 +522,6 @@ template&lt;class FieldType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Gets the entire storage buffer for the packet. </p>
-
-</div>
-</div>
-<a id="a175a018a00ca1a818a0e06b47f601d12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a175a018a00ca1a818a0e06b47f601d12">&#9670;&nbsp;</a></span>copyPacketTo()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool mip::PacketView::copyPacketTo </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacemicrostrain.html#ace61526f6e658ee7eb05a3279fc8ae66">microstrain::U8ArrayView</a>&#160;</td>
-          <td class="paramname"><em>buffer</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Copies this packet to an external buffer (span version). </p>
-<p>This packet must be sane (see isSane()). Undefined behavior otherwise due to lookup of totalLength().</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">buffer</td><td>Data is copied to this buffer.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if successful. </dd>
-<dd>
-false if maxLength is too short. </dd></dl>
-
-</div>
-</div>
-<a id="a23f0e5e25f0bcb890c47f61b3a7ece7e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23f0e5e25f0bcb890c47f61b3a7ece7e">&#9670;&nbsp;</a></span>createField() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classmip_1_1PacketView_1_1AllocatedField.html">AllocatedField</a> mip::PacketView::createField </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>fieldDescriptor</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2871b64dd2eb43964ed7871dbc1a09b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2871b64dd2eb43964ed7871dbc1a09b9">&#9670;&nbsp;</a></span>createField() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacemip.html#a7475074708d6d3e0fa83597b41eb98f8">Serializer</a> mip::PacketView::createField </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>fieldDescriptor</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>length</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a14b204a2084d75a67f188eb517113198"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14b204a2084d75a67f188eb517113198">&#9670;&nbsp;</a></span>createFromField()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class FieldType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="classmip_1_1PacketView.html">PacketView</a> mip::PacketView::createFromField </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacemicrostrain.html#ace61526f6e658ee7eb05a3279fc8ae66">microstrain::U8ArrayView</a>&#160;</td>
-          <td class="paramname"><em>packetBuffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const FieldType &amp;&#160;</td>
-          <td class="paramname"><em>field</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>fieldDescriptor</em> = <code>INVALID_FIELD_DESCRIPTOR</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Creates a new PacketRef containing a single MIP field from an instance of the field type. </p>
-<p>This works just like the <a class="el" href="classmip_1_1PacketView.html#a335ad53de9ea67267417486cd6d9c957" title="Get writable payload byte at index i.">addField&lt;FieldType&gt;()</a> function but also initializes and finalizes the packet. It is assumed that the field will fit in an empty packet; otherwise the field can't ever be used. The field classes are predefined so this doesn't need runtime checking.</p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">FieldType</td><td>Any field class from a file in the mip/definitions directory.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">packetBuffer</td><td>Buffer to hold the packet bytes. </td></tr>
-    <tr><td class="paramname">field</td><td>Instance of the field to add to the packet. </td></tr>
-    <tr><td class="paramname">fieldDescriptor</td><td>If specified, overrides the field descriptor.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A PacketRef object containing the field. </dd></dl>
-
 </div>
 </div>
 <a id="a34853d1750c61b32da554d5ea2e66485"></a>
@@ -812,114 +546,6 @@ template&lt;class FieldType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="a246087a03f8d4499af0ab80be30b3cf8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a246087a03f8d4499af0ab80be30b3cf8">&#9670;&nbsp;</a></span>dataAt() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t&amp; mip::PacketView::dataAt </td>
-          <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>i</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="afce2ca70b8bad2d8bab11303f1ec506e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afce2ca70b8bad2d8bab11303f1ec506e">&#9670;&nbsp;</a></span>dataAt() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t mip::PacketView::dataAt </td>
-          <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>i</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5d888c1015396c4caebeabd6889430f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d888c1015396c4caebeabd6889430f8">&#9670;&nbsp;</a></span>end()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classmip_1_1PacketView_1_1FieldIterator.html">FieldIterator</a> mip::PacketView::end </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Returns a sentry object representing the end of fields in the packet. </p>
-
-</div>
-</div>
-<a id="a29bf807f83a9c9f7cd702eef0fdd4e83"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a29bf807f83a9c9f7cd702eef0fdd4e83">&#9670;&nbsp;</a></span>firstField()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classmip_1_1FieldView.html">FieldView</a> mip::PacketView::firstField </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the first field in the packet. </p>
-<p>Subsequent fields can be obtained via the returned Field class, but iteration is best done with <a class="el" href="classmip_1_1PacketView.html#af02bc8240144be186f25a394870bf78b">begin()</a>/end() or the range-based for loop.</p>
-<dl class="section note"><dt>Note</dt><dd>Packets can be empty, so make sure that the returned field is valid before using it.</dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>A Field instance representing the first field (if any). </dd></dl>
 
 </div>
 </div>
@@ -971,12 +597,10 @@ template&lt;class FieldType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Get the payload as raw bytes. </p>
-
 </div>
 </div>
-<a id="a3cbbdd4f61868e82fec47ffec740a076"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3cbbdd4f61868e82fec47ffec740a076">&#9670;&nbsp;</a></span>payloadAt() <span class="overload">[1/2]</span></h2>
+<a id="a2871b64dd2eb43964ed7871dbc1a09b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2871b64dd2eb43964ed7871dbc1a09b9">&#9670;&nbsp;</a></span>createField() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -985,11 +609,21 @@ template&lt;class FieldType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t&amp; mip::PacketView::payloadAt </td>
+          <td class="memname"><a class="el" href="namespacemip.html#a7475074708d6d3e0fa83597b41eb98f8">Serializer</a> mip::PacketView::createField </td>
           <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>i</em></td><td>)</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>fieldDescriptor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -999,12 +633,10 @@ template&lt;class FieldType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Get payload byte at index i. </p>
-
 </div>
 </div>
-<a id="a7625476308daf5568649196f51af3fe8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7625476308daf5568649196f51af3fe8">&#9670;&nbsp;</a></span>payloadAt() <span class="overload">[2/2]</span></h2>
+<a id="a586957adf4f439be6bb5627f40400772"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a586957adf4f439be6bb5627f40400772">&#9670;&nbsp;</a></span>dataAt() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1013,9 +645,9 @@ template&lt;class FieldType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t mip::PacketView::payloadAt </td>
+          <td class="memname">uint8_t mip::PacketView::dataAt </td>
           <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype">const size_t&#160;</td>
           <td class="paramname"><em>i</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -1029,9 +661,8 @@ template&lt;class FieldType &gt; </div>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="af31d0d502626a0c94a5133cbf33432ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af31d0d502626a0c94a5133cbf33432ba">&#9670;&nbsp;</a></span>PACKET_SIZE_MAX</h2>
+<a id="a35451dfd932eceb156013502abfd41aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35451dfd932eceb156013502abfd41aa">&#9670;&nbsp;</a></span>dataAt() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1040,7 +671,455 @@ template&lt;class FieldType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr size_t mip::PacketView::PACKET_SIZE_MAX = <a class="el" href="namespacemip_1_1C.html#ae5b418878e1d27de9df937114d223adba7342ea021134e03e7fff02d3d6c6ea8b">C::MIP_PACKET_LENGTH_MAX</a></td>
+          <td class="memname">uint8_t&amp; mip::PacketView::dataAt </td>
+          <td>(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac61e605639f7e0acff66eecb6c9229b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac61e605639f7e0acff66eecb6c9229b5">&#9670;&nbsp;</a></span>dataAt() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t mip::PacketView::dataAt </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmip_1_1PacketView.html#a5d1bf39e2a1136cced7faf8123ef821c">Index</a>&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac03ed12782121d2cb288dd861ba45800"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac03ed12782121d2cb288dd861ba45800">&#9670;&nbsp;</a></span>dataAt() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t&amp; mip::PacketView::dataAt </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmip_1_1PacketView.html#a5d1bf39e2a1136cced7faf8123ef821c">Index</a>&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0d46365ef16d8ca9a57b630563941d34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d46365ef16d8ca9a57b630563941d34">&#9670;&nbsp;</a></span>payloadAt() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t mip::PacketView::payloadAt </td>
+          <td>(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a47a438e16371b06871cd3a7847847dfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47a438e16371b06871cd3a7847847dfe">&#9670;&nbsp;</a></span>payloadAt() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t&amp; mip::PacketView::payloadAt </td>
+          <td>(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a335ad53de9ea67267417486cd6d9c957"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a335ad53de9ea67267417486cd6d9c957">&#9670;&nbsp;</a></span>addField() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::PacketView::addField </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>fieldDescriptor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacemicrostrain.html#ad10904b5b78aab3f27f0a6fa165d94bc">microstrain::ConstU8ArrayView</a>&#160;</td>
+          <td class="paramname"><em>payload</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Creates a mip field with the given descriptor and a copy of the payload. </p>
+
+</div>
+</div>
+<a id="ac34c46618a531320eca60b9f5130c2d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac34c46618a531320eca60b9f5130c2d5">&#9670;&nbsp;</a></span>addField() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::PacketView::addField </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmip_1_1FieldView.html">FieldView</a> &amp;&#160;</td>
+          <td class="paramname"><em>field</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a23f0e5e25f0bcb890c47f61b3a7ece7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23f0e5e25f0bcb890c47f61b3a7ece7e">&#9670;&nbsp;</a></span>createField() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmip_1_1PacketView_1_1AllocatedField.html">AllocatedField</a> mip::PacketView::createField </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>fieldDescriptor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af02bc8240144be186f25a394870bf78b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af02bc8240144be186f25a394870bf78b">&#9670;&nbsp;</a></span>begin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmip_1_1PacketView_1_1FieldIterator.html">FieldIterator</a> mip::PacketView::begin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns a forward iterator to the first field in the packet. </p>
+
+</div>
+</div>
+<a id="a5d888c1015396c4caebeabd6889430f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d888c1015396c4caebeabd6889430f8">&#9670;&nbsp;</a></span>end()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmip_1_1PacketView_1_1FieldIterator.html">FieldIterator</a> mip::PacketView::end </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns a sentry object representing the end of fields in the packet. </p>
+
+</div>
+</div>
+<a id="a29bf807f83a9c9f7cd702eef0fdd4e83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29bf807f83a9c9f7cd702eef0fdd4e83">&#9670;&nbsp;</a></span>firstField()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmip_1_1FieldView.html">FieldView</a> mip::PacketView::firstField </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Subsequent fields can be obtained via the returned Field class, but iteration is best done with <a class="el" href="classmip_1_1PacketView.html#af02bc8240144be186f25a394870bf78b">begin()</a>/end() or the range-based for loop.</p>
+<dl class="section note"><dt>Note</dt><dd>Packets can be empty, so make sure that the returned field is valid before using it.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A Field instance representing the first field (if any). </dd></dl>
+
+</div>
+</div>
+<a id="ae9d4a62380c51a4540e93eddacd6bdc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9d4a62380c51a4540e93eddacd6bdc8">&#9670;&nbsp;</a></span>addField() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class FieldType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::PacketView::addField </td>
+          <td>(</td>
+          <td class="paramtype">const FieldType &amp;&#160;</td>
+          <td class="paramname"><em>field</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>fieldDescriptor</em> = <code><a class="el" href="group__mip__cpp.html#ga1d1f26f69ca21c84dfaccabdaed9746a">INVALID_FIELD_DESCRIPTOR</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">FieldType</td><td>Any field class from a file in the mip/definitions directory.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">field</td><td>Instance of the field to add to the packet. </td></tr>
+    <tr><td class="paramname">fieldDescriptor</td><td>If specified, overrides the field descriptor.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the field was added, false if the packet has insufficient space. </dd></dl>
+
+</div>
+</div>
+<a id="a14b204a2084d75a67f188eb517113198"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14b204a2084d75a67f188eb517113198">&#9670;&nbsp;</a></span>createFromField()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class FieldType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classmip_1_1PacketView.html">PacketView</a> mip::PacketView::createFromField </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacemicrostrain.html#ace61526f6e658ee7eb05a3279fc8ae66">microstrain::U8ArrayView</a>&#160;</td>
+          <td class="paramname"><em>packetBuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FieldType &amp;&#160;</td>
+          <td class="paramname"><em>field</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>fieldDescriptor</em> = <code><a class="el" href="group__mip__cpp.html#ga1d1f26f69ca21c84dfaccabdaed9746a">INVALID_FIELD_DESCRIPTOR</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This works just like the <a class="el" href="classmip_1_1PacketView.html#a335ad53de9ea67267417486cd6d9c957" title="Get writable payload byte at index i.">addField&lt;FieldType&gt;()</a> function but also initializes and finalizes the packet. It is assumed that the field will fit in an empty packet; otherwise the field can't ever be used. The field classes are predefined so this doesn't need runtime checking.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">FieldType</td><td>Any field class from a file in the mip/definitions directory.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">packetBuffer</td><td>Buffer to hold the packet bytes. </td></tr>
+    <tr><td class="paramname">field</td><td>Instance of the field to add to the packet. </td></tr>
+    <tr><td class="paramname">fieldDescriptor</td><td>If specified, overrides the field descriptor.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A PacketRef object containing the field. </dd></dl>
+
+</div>
+</div>
+<a id="a175a018a00ca1a818a0e06b47f601d12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a175a018a00ca1a818a0e06b47f601d12">&#9670;&nbsp;</a></span>copyPacketTo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::PacketView::copyPacketTo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacemicrostrain.html#ace61526f6e658ee7eb05a3279fc8ae66">microstrain::U8ArrayView</a>&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This packet must be sane (see isSane()). Undefined behavior otherwise due to lookup of totalLength().</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>Data is copied to this buffer.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if successful. </dd>
+<dd>
+false if maxLength is too short. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="aadbd9fc575b48b3fd4358d7e75913dfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadbd9fc575b48b3fd4358d7e75913dfe">&#9670;&nbsp;</a></span>SYNC_1</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t mip::PacketView::SYNC_1 = <a class="el" href="group__mip__packet__c.html#gga89fe0bf7c4d5f95ac39447b601a2f5f1a19392ee117eb3176ea2f58b398f01e55">C::MIP_SYNC_1</a></td>
         </tr>
       </table>
   </td>
@@ -1052,8 +1131,8 @@ template&lt;class FieldType &gt; </div>
 
 </div>
 </div>
-<a id="a7b4cd86d59f3e819c4254ad98d45a995"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b4cd86d59f3e819c4254ad98d45a995">&#9670;&nbsp;</a></span>PACKET_SIZE_MIN</h2>
+<a id="aa7b48bb4469a0f1023958693fbcd62f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7b48bb4469a0f1023958693fbcd62f8">&#9670;&nbsp;</a></span>SYNC_2</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1062,7 +1141,117 @@ template&lt;class FieldType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr size_t mip::PacketView::PACKET_SIZE_MIN = <a class="el" href="namespacemip_1_1C.html#ae5b418878e1d27de9df937114d223adba2d87d3bdf1ec2ac43e7ab00e53861109">C::MIP_PACKET_LENGTH_MIN</a></td>
+          <td class="memname">constexpr uint8_t mip::PacketView::SYNC_2 = <a class="el" href="group__mip__packet__c.html#gga89fe0bf7c4d5f95ac39447b601a2f5f1ae2594167198f0c49dd42dd35ab270879">C::MIP_SYNC_2</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a370753bc3d9d8cc6ce6ed8d373816260"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a370753bc3d9d8cc6ce6ed8d373816260">&#9670;&nbsp;</a></span>HEADER_LENGTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr size_t mip::PacketView::HEADER_LENGTH = <a class="el" href="group__mip__packet__c.html#gga8bb8939ac5656381c588db3185d0743aa00f0d38682e26f82d56e5adfb92a841b">C::MIP_PACKET_HEADER_LENGTH</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a464686053776a72f89fd077558b019c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a464686053776a72f89fd077558b019c4">&#9670;&nbsp;</a></span>CHECKSUM_LENGTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr size_t mip::PacketView::CHECKSUM_LENGTH = <a class="el" href="group__mip__packet__c.html#gga8bb8939ac5656381c588db3185d0743aa4a8e8992662d6a03465ef5201786fc44">C::MIP_PACKET_CHECKSUM_LENGTH</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af39b9b77912fe006b52c91b238999c2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af39b9b77912fe006b52c91b238999c2e">&#9670;&nbsp;</a></span>LENGTH_MIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr size_t mip::PacketView::LENGTH_MIN = <a class="el" href="group__mip__packet__c.html#gga8bb8939ac5656381c588db3185d0743aa2d87d3bdf1ec2ac43e7ab00e53861109">C::MIP_PACKET_LENGTH_MIN</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af2c45a80c509226011c3d336392b483f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2c45a80c509226011c3d336392b483f">&#9670;&nbsp;</a></span>LENGTH_MAX</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr size_t mip::PacketView::LENGTH_MAX = <a class="el" href="group__mip__packet__c.html#gga8bb8939ac5656381c588db3185d0743aa7342ea021134e03e7fff02d3d6c6ea8b">C::MIP_PACKET_LENGTH_MAX</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a52ba250bf216d5c34281ccadf6a418c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52ba250bf216d5c34281ccadf6a418c8">&#9670;&nbsp;</a></span>PAYLOAD_LENGTH_MIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr size_t mip::PacketView::PAYLOAD_LENGTH_MIN = <a class="el" href="group__mip__packet__c.html#gga8bb8939ac5656381c588db3185d0743aa06fa3f66c324f561178a2996ed4e364e">C::MIP_PACKET_PAYLOAD_LENGTH_MIN</a></td>
         </tr>
       </table>
   </td>
@@ -1084,7 +1273,7 @@ template&lt;class FieldType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr size_t mip::PacketView::PAYLOAD_LENGTH_MAX = <a class="el" href="namespacemip_1_1C.html#ae5b418878e1d27de9df937114d223adbafec9267316dcc76edd0427fbb2a1fe1e">C::MIP_PACKET_PAYLOAD_LENGTH_MAX</a></td>
+          <td class="memname">constexpr size_t mip::PacketView::PAYLOAD_LENGTH_MAX = <a class="el" href="group__mip__packet__c.html#gga8bb8939ac5656381c588db3185d0743aafec9267316dcc76edd0427fbb2a1fe1e">C::MIP_PACKET_PAYLOAD_LENGTH_MAX</a></td>
         </tr>
       </table>
   </td>

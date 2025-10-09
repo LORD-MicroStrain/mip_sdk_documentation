@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -94,19 +94,18 @@ Functions</h2></td></tr>
 <tr class="separator:gaec3a3232d9f60e2d9dc9e364cd35fc91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>This command controls the low-pass anti-aliasing filter supported data quantities. </p>
 <p>See the device user manual for data quantities which support the anti-aliasing filter.</p>
 <p>If set to automatic mode, the frequency will track half of the transmission rate of the target descriptor according to the configured message format (0x0C,0x0F). For example, if scaled accel (0x80,0x04) is set to stream at 100 Hz, the filter would be set to 50 Hz. Changing the message format to 200 Hz would automatically adjust the filter to 100 Hz.</p>
 <p>For WRITE, SAVE, LOAD, and DEFAULT function selectors, the descriptor set and/or field descriptor may be 0x00 to set, save, load, or reset the setting for all supported descriptors. The field descriptor must be 0x00 if the descriptor set is 0x00. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gaec3a3232d9f60e2d9dc9e364cd35fc91"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaec3a3232d9f60e2d9dc9e364cd35fc91">&#9670;&nbsp;</a></span>defaultLowpassFilter()</h2>
+<a id="ga290f7f071420229edf9c6f991aafd8bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga290f7f071420229edf9c6f991aafd8bd">&#9670;&nbsp;</a></span>writeLowpassFilter()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1LowpassFilter.html">LowpassFilter</a> &gt; mip::commands_3dm::defaultLowpassFilter </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1LowpassFilter.html">LowpassFilter</a> &gt; mip::commands_3dm::writeLowpassFilter </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
@@ -121,41 +120,25 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>fieldDesc</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga0d5053e836cfa43e21fc97e69f3421d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0d5053e836cfa43e21fc97e69f3421d0">&#9670;&nbsp;</a></span>loadLowpassFilter()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1LowpassFilter.html">LowpassFilter</a> &gt; mip::commands_3dm::loadLowpassFilter </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
+          <td class="paramname"><em>fieldDesc</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>descSet</em>, </td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>fieldDesc</em>&#160;</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>manual</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>frequency</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -253,14 +236,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga290f7f071420229edf9c6f991aafd8bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga290f7f071420229edf9c6f991aafd8bd">&#9670;&nbsp;</a></span>writeLowpassFilter()</h2>
+<a id="ga0d5053e836cfa43e21fc97e69f3421d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0d5053e836cfa43e21fc97e69f3421d0">&#9670;&nbsp;</a></span>loadLowpassFilter()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1LowpassFilter.html">LowpassFilter</a> &gt; mip::commands_3dm::writeLowpassFilter </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1LowpassFilter.html">LowpassFilter</a> &gt; mip::commands_3dm::loadLowpassFilter </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
@@ -275,25 +258,41 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>fieldDesc</em>, </td>
+          <td class="paramname"><em>fieldDesc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaec3a3232d9f60e2d9dc9e364cd35fc91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaec3a3232d9f60e2d9dc9e364cd35fc91">&#9670;&nbsp;</a></span>defaultLowpassFilter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1LowpassFilter.html">LowpassFilter</a> &gt; mip::commands_3dm::defaultLowpassFilter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>enable</em>, </td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>descSet</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>manual</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>frequency</em>&#160;</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>fieldDesc</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

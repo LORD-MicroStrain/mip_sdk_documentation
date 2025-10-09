@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -94,38 +94,41 @@ Functions</h2></td></tr>
 <tr class="separator:ga9f499f1c0abddbe3b947bbb20e880b4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Configures the hardware odometer interface. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga9f499f1c0abddbe3b947bbb20e880b4d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9f499f1c0abddbe3b947bbb20e880b4d">&#9670;&nbsp;</a></span>defaultOdometer()</h2>
+<a id="ga57d317747fe997ccb88fa0a08f8d0638"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga57d317747fe997ccb88fa0a08f8d0638">&#9670;&nbsp;</a></span>writeOdometer()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1Odometer.html">Odometer</a> &gt; mip::commands_3dm::defaultOdometer </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1Odometer.html">Odometer</a> &gt; mip::commands_3dm::writeOdometer </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
-          <td></td>
+          <td class="paramname"><em>device</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gad0801818160696f76d8f31fdd2e3661b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad0801818160696f76d8f31fdd2e3661b">&#9670;&nbsp;</a></span>loadOdometer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1Odometer.html">Odometer</a> &gt; mip::commands_3dm::loadOdometer </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1commands__3dm_1_1Odometer.html#a1044ca5024a6b5a8e608bf9ab65acd76">Odometer::Mode</a>&#160;</td>
+          <td class="paramname"><em>mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>scaling</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>uncertainty</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -190,40 +193,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga57d317747fe997ccb88fa0a08f8d0638"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga57d317747fe997ccb88fa0a08f8d0638">&#9670;&nbsp;</a></span>writeOdometer()</h2>
+<a id="gad0801818160696f76d8f31fdd2e3661b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad0801818160696f76d8f31fdd2e3661b">&#9670;&nbsp;</a></span>loadOdometer()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1Odometer.html">Odometer</a> &gt; mip::commands_3dm::writeOdometer </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1Odometer.html">Odometer</a> &gt; mip::commands_3dm::loadOdometer </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1commands__3dm_1_1Odometer.html#a1044ca5024a6b5a8e608bf9ab65acd76">Odometer::Mode</a>&#160;</td>
-          <td class="paramname"><em>mode</em>, </td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga9f499f1c0abddbe3b947bbb20e880b4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9f499f1c0abddbe3b947bbb20e880b4d">&#9670;&nbsp;</a></span>defaultOdometer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1Odometer.html">Odometer</a> &gt; mip::commands_3dm::defaultOdometer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>scaling</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>uncertainty</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

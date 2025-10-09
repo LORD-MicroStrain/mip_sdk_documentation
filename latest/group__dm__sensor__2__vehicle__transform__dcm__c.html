@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -112,7 +112,6 @@ Functions</h2></td></tr>
 <tr class="separator:gafc04e1b93d9d395325852be47e177b3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Set the sensor to vehicle frame transformation using a using a 3 x 3 direction cosine matrix EQSTART M_{ned}^{veh} EQEND, stored in row-major order in a 9-element array. </p>
 <p>These angles define the transformation of vectors from the sensor body frame to the fixed vehicle frame, according to:<br  />
  EQSTART v^{veh} = M_{sen}^{veh} v^{sen} EQEND<br  />
 </p>
@@ -174,62 +173,6 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gaefa3e9061166f4597facd4c5c653448f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaefa3e9061166f4597facd4c5c653448f">&#9670;&nbsp;</a></span>extract_mip_3dm_sensor_2_vehicle_transform_dcm_command()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::extract_mip_3dm_sensor_2_vehicle_transform_dcm_command </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__3dm__sensor__2__vehicle__transform__dcm__command.html">mip_3dm_sensor_2_vehicle_transform_dcm_command</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga086e8e759c111e3c5bbe7b681eacc87c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga086e8e759c111e3c5bbe7b681eacc87c">&#9670;&nbsp;</a></span>extract_mip_3dm_sensor_2_vehicle_transform_dcm_response()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::extract_mip_3dm_sensor_2_vehicle_transform_dcm_response </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__3dm__sensor__2__vehicle__transform__dcm__response.html">mip_3dm_sensor_2_vehicle_transform_dcm_response</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ga39238fd90bd5dbe65e6e775deaa6d56f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga39238fd90bd5dbe65e6e775deaa6d56f">&#9670;&nbsp;</a></span>insert_mip_3dm_sensor_2_vehicle_transform_dcm_command()</h2>
 
@@ -246,6 +189,34 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__3dm__sensor__2__vehicle__transform__dcm__command.html">mip_3dm_sensor_2_vehicle_transform_dcm_command</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaefa3e9061166f4597facd4c5c653448f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaefa3e9061166f4597facd4c5c653448f">&#9670;&nbsp;</a></span>extract_mip_3dm_sensor_2_vehicle_transform_dcm_command()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::C::extract_mip_3dm_sensor_2_vehicle_transform_dcm_command </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__3dm__sensor__2__vehicle__transform__dcm__command.html">mip_3dm_sensor_2_vehicle_transform_dcm_command</a> *&#160;</td>
           <td class="paramname"><em>self</em>&#160;</td>
         </tr>
         <tr>
@@ -286,36 +257,56 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gafc04e1b93d9d395325852be47e177b3a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafc04e1b93d9d395325852be47e177b3a">&#9670;&nbsp;</a></span>mip_3dm_default_sensor_2_vehicle_transform_dcm()</h2>
+<a id="ga086e8e759c111e3c5bbe7b681eacc87c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga086e8e759c111e3c5bbe7b681eacc87c">&#9670;&nbsp;</a></span>extract_mip_3dm_sensor_2_vehicle_transform_dcm_response()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_3dm_default_sensor_2_vehicle_transform_dcm </td>
+          <td class="memname">void mip::C::extract_mip_3dm_sensor_2_vehicle_transform_dcm_response </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__3dm__sensor__2__vehicle__transform__dcm__response.html">mip_3dm_sensor_2_vehicle_transform_dcm_response</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="gae58614e7ffd6d5280474416d2575d903"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae58614e7ffd6d5280474416d2575d903">&#9670;&nbsp;</a></span>mip_3dm_load_sensor_2_vehicle_transform_dcm()</h2>
+<a id="ga5b5a68498fadfc862d445c97b2688ef8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5b5a68498fadfc862d445c97b2688ef8">&#9670;&nbsp;</a></span>mip_3dm_write_sensor_2_vehicle_transform_dcm()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_3dm_load_sensor_2_vehicle_transform_dcm </td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_3dm_write_sensor_2_vehicle_transform_dcm </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>dcm</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -368,28 +359,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga5b5a68498fadfc862d445c97b2688ef8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5b5a68498fadfc862d445c97b2688ef8">&#9670;&nbsp;</a></span>mip_3dm_write_sensor_2_vehicle_transform_dcm()</h2>
+<a id="gae58614e7ffd6d5280474416d2575d903"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae58614e7ffd6d5280474416d2575d903">&#9670;&nbsp;</a></span>mip_3dm_load_sensor_2_vehicle_transform_dcm()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_3dm_write_sensor_2_vehicle_transform_dcm </td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_3dm_load_sensor_2_vehicle_transform_dcm </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const float *&#160;</td>
-          <td class="paramname"><em>dcm</em>&#160;</td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gafc04e1b93d9d395325852be47e177b3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafc04e1b93d9d395325852be47e177b3a">&#9670;&nbsp;</a></span>mip_3dm_default_sensor_2_vehicle_transform_dcm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_3dm_default_sensor_2_vehicle_transform_dcm </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

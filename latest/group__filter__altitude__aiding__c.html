@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -102,6 +102,10 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ga3a4c969661dc01e2fe42bba5235c3354"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__filter__altitude__aiding__c.html#ga3a4c969661dc01e2fe42bba5235c3354">mip::C::insert_mip_filter_altitude_aiding_command_aiding_selector</a> (<a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *serializer, const <a class="el" href="group__filter__altitude__aiding__c.html#gabfd9d76b862562cf771cd4f05f7bde3d">mip_filter_altitude_aiding_command_aiding_selector</a> self)</td></tr>
+<tr class="separator:ga3a4c969661dc01e2fe42bba5235c3354"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3fb0cbb09c86cfc9d73e22a4c78368fa"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__filter__altitude__aiding__c.html#ga3fb0cbb09c86cfc9d73e22a4c78368fa">mip::C::extract_mip_filter_altitude_aiding_command_aiding_selector</a> (<a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *serializer, <a class="el" href="group__filter__altitude__aiding__c.html#gabfd9d76b862562cf771cd4f05f7bde3d">mip_filter_altitude_aiding_command_aiding_selector</a> *self)</td></tr>
+<tr class="separator:ga3fb0cbb09c86cfc9d73e22a4c78368fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gace91136c53aff19dd8155e847596a349"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__filter__altitude__aiding__c.html#gace91136c53aff19dd8155e847596a349">mip::C::insert_mip_filter_altitude_aiding_command</a> (<a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *serializer, const <a class="el" href="structmip_1_1C_1_1mip__filter__altitude__aiding__command.html">mip_filter_altitude_aiding_command</a> *self)</td></tr>
 <tr class="separator:gace91136c53aff19dd8155e847596a349"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga61422b31b35c13545150a34eb04b968c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__filter__altitude__aiding__c.html#ga61422b31b35c13545150a34eb04b968c">mip::C::extract_mip_filter_altitude_aiding_command</a> (<a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *serializer, <a class="el" href="structmip_1_1C_1_1mip__filter__altitude__aiding__command.html">mip_filter_altitude_aiding_command</a> *self)</td></tr>
@@ -122,23 +126,8 @@ Functions</h2></td></tr>
 <tr class="separator:gad6b3fded399515f871aedf8c82cde3ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Select altitude input for absolute altitude and/or vertical velocity. The primary altitude reading is always GNSS. Aiding inputs are used to improve GNSS altitude readings when GNSS is available and to backup GNSS during outages. </p>
 <p>Pressure altitude is based on "instant sea level pressure" which is dependent on location and weather conditions and can vary by more than 40 meters. </p>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="ga31c16af92a507c84b5b5ff5942ecb918"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga31c16af92a507c84b5b5ff5942ecb918">&#9670;&nbsp;</a></span>mip_filter_altitude_aiding_command</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef struct <a class="el" href="structmip_1_1C_1_1mip__filter__altitude__aiding__command.html">mip_filter_altitude_aiding_command</a> <a class="el" href="structmip_1_1C_1_1mip__filter__altitude__aiding__command.html">mip::C::mip_filter_altitude_aiding_command</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ga5c0cf192f713b77667f816d07095afa4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga5c0cf192f713b77667f816d07095afa4">&#9670;&nbsp;</a></span>mip_filter_altitude_aiding_command_aiding_selector</h2>
 
@@ -147,6 +136,20 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">typedef enum <a class="el" href="group__filter__altitude__aiding__c.html#gabfd9d76b862562cf771cd4f05f7bde3d">mip_filter_altitude_aiding_command_aiding_selector</a> <a class="el" href="group__filter__altitude__aiding__c.html#gabfd9d76b862562cf771cd4f05f7bde3d">mip::C::mip_filter_altitude_aiding_command_aiding_selector</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga31c16af92a507c84b5b5ff5942ecb918"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga31c16af92a507c84b5b5ff5942ecb918">&#9670;&nbsp;</a></span>mip_filter_altitude_aiding_command</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structmip_1_1C_1_1mip__filter__altitude__aiding__command.html">mip_filter_altitude_aiding_command</a> <a class="el" href="structmip_1_1C_1_1mip__filter__altitude__aiding__command.html">mip::C::mip_filter_altitude_aiding_command</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -189,14 +192,17 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga61422b31b35c13545150a34eb04b968c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga61422b31b35c13545150a34eb04b968c">&#9670;&nbsp;</a></span>extract_mip_filter_altitude_aiding_command()</h2>
+<a id="ga3a4c969661dc01e2fe42bba5235c3354"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3a4c969661dc01e2fe42bba5235c3354">&#9670;&nbsp;</a></span>insert_mip_filter_altitude_aiding_command_aiding_selector()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void mip::C::extract_mip_filter_altitude_aiding_command </td>
+          <td class="memname">static void mip::C::insert_mip_filter_altitude_aiding_command_aiding_selector </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
           <td class="paramname"><em>serializer</em>, </td>
@@ -204,7 +210,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__altitude__aiding__command.html">mip_filter_altitude_aiding_command</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__filter__altitude__aiding__c.html#gabfd9d76b862562cf771cd4f05f7bde3d">mip_filter_altitude_aiding_command_aiding_selector</a>&#160;</td>
           <td class="paramname"><em>self</em>&#160;</td>
         </tr>
         <tr>
@@ -213,18 +219,26 @@ Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ga3537f8373e720180235b9dbe0a8b5719"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3537f8373e720180235b9dbe0a8b5719">&#9670;&nbsp;</a></span>extract_mip_filter_altitude_aiding_response()</h2>
+<a id="ga3fb0cbb09c86cfc9d73e22a4c78368fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3fb0cbb09c86cfc9d73e22a4c78368fa">&#9670;&nbsp;</a></span>extract_mip_filter_altitude_aiding_command_aiding_selector()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void mip::C::extract_mip_filter_altitude_aiding_response </td>
+          <td class="memname">static void mip::C::extract_mip_filter_altitude_aiding_command_aiding_selector </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
           <td class="paramname"><em>serializer</em>, </td>
@@ -232,7 +246,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__altitude__aiding__response.html">mip_filter_altitude_aiding_response</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__filter__altitude__aiding__c.html#gabfd9d76b862562cf771cd4f05f7bde3d">mip_filter_altitude_aiding_command_aiding_selector</a> *&#160;</td>
           <td class="paramname"><em>self</em>&#160;</td>
         </tr>
         <tr>
@@ -241,6 +255,11 @@ Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -261,6 +280,34 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__filter__altitude__aiding__command.html">mip_filter_altitude_aiding_command</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga61422b31b35c13545150a34eb04b968c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga61422b31b35c13545150a34eb04b968c">&#9670;&nbsp;</a></span>extract_mip_filter_altitude_aiding_command()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::C::extract_mip_filter_altitude_aiding_command </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__altitude__aiding__command.html">mip_filter_altitude_aiding_command</a> *&#160;</td>
           <td class="paramname"><em>self</em>&#160;</td>
         </tr>
         <tr>
@@ -301,36 +348,56 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gad6b3fded399515f871aedf8c82cde3ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad6b3fded399515f871aedf8c82cde3ae">&#9670;&nbsp;</a></span>mip_filter_default_altitude_aiding()</h2>
+<a id="ga3537f8373e720180235b9dbe0a8b5719"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3537f8373e720180235b9dbe0a8b5719">&#9670;&nbsp;</a></span>extract_mip_filter_altitude_aiding_response()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_default_altitude_aiding </td>
+          <td class="memname">void mip::C::extract_mip_filter_altitude_aiding_response </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__altitude__aiding__response.html">mip_filter_altitude_aiding_response</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ga535b2bf88d820bf3124bbdf074cc3f07"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga535b2bf88d820bf3124bbdf074cc3f07">&#9670;&nbsp;</a></span>mip_filter_load_altitude_aiding()</h2>
+<a id="gafdb2417c840f6bedd51abb80996421e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafdb2417c840f6bedd51abb80996421e6">&#9670;&nbsp;</a></span>mip_filter_write_altitude_aiding()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_load_altitude_aiding </td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_write_altitude_aiding </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="group__filter__altitude__aiding__c.html#gabfd9d76b862562cf771cd4f05f7bde3d">mip_filter_altitude_aiding_command_aiding_selector</a>&#160;</td>
+          <td class="paramname"><em>selector</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -383,28 +450,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gafdb2417c840f6bedd51abb80996421e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafdb2417c840f6bedd51abb80996421e6">&#9670;&nbsp;</a></span>mip_filter_write_altitude_aiding()</h2>
+<a id="ga535b2bf88d820bf3124bbdf074cc3f07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga535b2bf88d820bf3124bbdf074cc3f07">&#9670;&nbsp;</a></span>mip_filter_load_altitude_aiding()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_write_altitude_aiding </td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_load_altitude_aiding </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__filter__altitude__aiding__c.html#gabfd9d76b862562cf771cd4f05f7bde3d">mip_filter_altitude_aiding_command_aiding_selector</a>&#160;</td>
-          <td class="paramname"><em>selector</em>&#160;</td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gad6b3fded399515f871aedf8c82cde3ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad6b3fded399515f871aedf8c82cde3ae">&#9670;&nbsp;</a></span>mip_filter_default_altitude_aiding()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_default_altitude_aiding </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -94,40 +94,31 @@ Functions</h2></td></tr>
 <tr class="separator:gae9d1c92f65583af0d20e907d09eba34e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Gyroscope Noise Standard Deviation. </p>
 <p>Each of the noise values must be greater than 0.0</p>
 <p>The noise value represents process noise in the Estimation Filter. Changing this value modifies how the filter responds to dynamic input and can be used to tune the performance of the filter. Default values provide good performance for most laboratory conditions. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gae9d1c92f65583af0d20e907d09eba34e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae9d1c92f65583af0d20e907d09eba34e">&#9670;&nbsp;</a></span>defaultGyroNoise()</h2>
+<a id="ga967c4eb19a0e779021c8405c5febc7e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga967c4eb19a0e779021c8405c5febc7e8">&#9670;&nbsp;</a></span>writeGyroNoise()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1GyroNoise.html">GyroNoise</a> &gt; mip::commands_filter::defaultGyroNoise </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1GyroNoise.html">GyroNoise</a> &gt; mip::commands_filter::writeGyroNoise </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
-          <td></td>
+          <td class="paramname"><em>device</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga7e979f1a72c005769fdbdbcc131612e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7e979f1a72c005769fdbdbcc131612e2">&#9670;&nbsp;</a></span>loadGyroNoise()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1GyroNoise.html">GyroNoise</a> &gt; mip::commands_filter::loadGyroNoise </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>noise</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -180,28 +171,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga967c4eb19a0e779021c8405c5febc7e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga967c4eb19a0e779021c8405c5febc7e8">&#9670;&nbsp;</a></span>writeGyroNoise()</h2>
+<a id="ga7e979f1a72c005769fdbdbcc131612e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7e979f1a72c005769fdbdbcc131612e2">&#9670;&nbsp;</a></span>loadGyroNoise()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1GyroNoise.html">GyroNoise</a> &gt; mip::commands_filter::writeGyroNoise </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1GyroNoise.html">GyroNoise</a> &gt; mip::commands_filter::loadGyroNoise </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const float *&#160;</td>
-          <td class="paramname"><em>noise</em>&#160;</td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae9d1c92f65583af0d20e907d09eba34e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae9d1c92f65583af0d20e907d09eba34e">&#9670;&nbsp;</a></span>defaultGyroNoise()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1GyroNoise.html">GyroNoise</a> &gt; mip::commands_filter::defaultGyroNoise </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

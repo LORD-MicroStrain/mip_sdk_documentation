@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -94,38 +94,35 @@ Functions</h2></td></tr>
 <tr class="separator:ga45e8456e5b9a5aeecb01f1551a8d515e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Set, read, or save the NMEA message format. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga45e8456e5b9a5aeecb01f1551a8d515e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga45e8456e5b9a5aeecb01f1551a8d515e">&#9670;&nbsp;</a></span>defaultNmeaMessageFormat()</h2>
+<a id="gab1ab136187caeb0d0dd75638dd3e03b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab1ab136187caeb0d0dd75638dd3e03b4">&#9670;&nbsp;</a></span>writeNmeaMessageFormat()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1NmeaMessageFormat.html">NmeaMessageFormat</a> &gt; mip::commands_3dm::defaultNmeaMessageFormat </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1NmeaMessageFormat.html">NmeaMessageFormat</a> &gt; mip::commands_3dm::writeNmeaMessageFormat </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
-          <td></td>
+          <td class="paramname"><em>device</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga07189209981d7917110b8da84ca04996"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga07189209981d7917110b8da84ca04996">&#9670;&nbsp;</a></span>loadNmeaMessageFormat()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1NmeaMessageFormat.html">NmeaMessageFormat</a> &gt; mip::commands_3dm::loadNmeaMessageFormat </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structmip_1_1commands__3dm_1_1NmeaMessage.html">NmeaMessage</a> *&#160;</td>
+          <td class="paramname"><em>formatEntries</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -190,34 +187,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gab1ab136187caeb0d0dd75638dd3e03b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab1ab136187caeb0d0dd75638dd3e03b4">&#9670;&nbsp;</a></span>writeNmeaMessageFormat()</h2>
+<a id="ga07189209981d7917110b8da84ca04996"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga07189209981d7917110b8da84ca04996">&#9670;&nbsp;</a></span>loadNmeaMessageFormat()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1NmeaMessageFormat.html">NmeaMessageFormat</a> &gt; mip::commands_3dm::writeNmeaMessageFormat </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1NmeaMessageFormat.html">NmeaMessageFormat</a> &gt; mip::commands_3dm::loadNmeaMessageFormat </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>count</em>, </td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga45e8456e5b9a5aeecb01f1551a8d515e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga45e8456e5b9a5aeecb01f1551a8d515e">&#9670;&nbsp;</a></span>defaultNmeaMessageFormat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1NmeaMessageFormat.html">NmeaMessageFormat</a> &gt; mip::commands_3dm::defaultNmeaMessageFormat </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structmip_1_1commands__3dm_1_1NmeaMessage.html">NmeaMessage</a> *&#160;</td>
-          <td class="paramname"><em>formatEntries</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

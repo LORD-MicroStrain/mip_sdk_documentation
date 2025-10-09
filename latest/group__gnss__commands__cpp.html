@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -66,7 +66,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#groups">Modules</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">Gnss Commands<div class="ingroups"><a class="el" href="group__mip.html">MIP</a> &raquo; <a class="el" href="group__mip__cpp.html">C++ API</a> &raquo; <a class="el" href="group__MipCommands__cpp.html">Mip Commands</a></div></div>  </div>
 </div><!--header-->
@@ -90,26 +91,51 @@ Modules</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:gab971b74cde3109998f648f7089e4adf8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="group__gnss__commands__cpp.html#ggab971b74cde3109998f648f7089e4adf8ac43277f580b01e8a95748c642fe03a6a">mip::commands_gnss::DESCRIPTOR_SET</a> = 0x0E, 
-<a class="el" href="group__gnss__commands__cpp.html#ggab971b74cde3109998f648f7089e4adf8a1690e941d8e0e11c0651dd7302f5e04c">mip::commands_gnss::CMD_LIST_RECEIVERS</a> = 0x01, 
-<a class="el" href="group__gnss__commands__cpp.html#ggab971b74cde3109998f648f7089e4adf8a385990a249bf726e18ed618c655c5892">mip::commands_gnss::CMD_SIGNAL_CONFIGURATION</a> = 0x02, 
-<a class="el" href="group__gnss__commands__cpp.html#ggab971b74cde3109998f648f7089e4adf8aa3e581c6e292fbda4ca4d9b004e1cb4f">mip::commands_gnss::CMD_RTK_DONGLE_CONFIGURATION</a> = 0x10, 
+<tr class="memitem:gad39a0a23f10584abf02d2ecdd9c4b12c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="group__gnss__commands__cpp.html#ggad39a0a23f10584abf02d2ecdd9c4b12cac43277f580b01e8a95748c642fe03a6a">mip::commands_gnss::DESCRIPTOR_SET</a> = 0x0E, 
+<a class="el" href="group__gnss__commands__cpp.html#ggad39a0a23f10584abf02d2ecdd9c4b12ca1690e941d8e0e11c0651dd7302f5e04c">mip::commands_gnss::CMD_LIST_RECEIVERS</a> = 0x01, 
+<a class="el" href="group__gnss__commands__cpp.html#ggad39a0a23f10584abf02d2ecdd9c4b12ca385990a249bf726e18ed618c655c5892">mip::commands_gnss::CMD_SIGNAL_CONFIGURATION</a> = 0x02, 
+<a class="el" href="group__gnss__commands__cpp.html#ggad39a0a23f10584abf02d2ecdd9c4b12caa3e581c6e292fbda4ca4d9b004e1cb4f">mip::commands_gnss::CMD_RTK_DONGLE_CONFIGURATION</a> = 0x10, 
 <br />
-&#160;&#160;<a class="el" href="group__gnss__commands__cpp.html#ggab971b74cde3109998f648f7089e4adf8aa3b9f99e779565b2359cdbdddfe361da">mip::commands_gnss::CMD_SPARTN_CONFIGURATION</a> = 0x20, 
-<a class="el" href="group__gnss__commands__cpp.html#ggab971b74cde3109998f648f7089e4adf8a92181a8bf0dc289bfb0f0603c886eb74">mip::commands_gnss::REPLY_LIST_RECEIVERS</a> = 0x81, 
-<a class="el" href="group__gnss__commands__cpp.html#ggab971b74cde3109998f648f7089e4adf8ada7c33b7c99ba7e439ea6838d7def6b1">mip::commands_gnss::REPLY_SIGNAL_CONFIGURATION</a> = 0x82, 
-<a class="el" href="group__gnss__commands__cpp.html#ggab971b74cde3109998f648f7089e4adf8af1571f028b115dab0124c32149b448c4">mip::commands_gnss::REPLY_RTK_DONGLE_CONFIGURATION</a> = 0x90, 
+&#160;&#160;<a class="el" href="group__gnss__commands__cpp.html#ggad39a0a23f10584abf02d2ecdd9c4b12caa3b9f99e779565b2359cdbdddfe361da">mip::commands_gnss::CMD_SPARTN_CONFIGURATION</a> = 0x20, 
+<a class="el" href="group__gnss__commands__cpp.html#ggad39a0a23f10584abf02d2ecdd9c4b12ca92181a8bf0dc289bfb0f0603c886eb74">mip::commands_gnss::REPLY_LIST_RECEIVERS</a> = 0x81, 
+<a class="el" href="group__gnss__commands__cpp.html#ggad39a0a23f10584abf02d2ecdd9c4b12cada7c33b7c99ba7e439ea6838d7def6b1">mip::commands_gnss::REPLY_SIGNAL_CONFIGURATION</a> = 0x82, 
+<a class="el" href="group__gnss__commands__cpp.html#ggad39a0a23f10584abf02d2ecdd9c4b12caf1571f028b115dab0124c32149b448c4">mip::commands_gnss::REPLY_RTK_DONGLE_CONFIGURATION</a> = 0x90, 
 <br />
-&#160;&#160;<a class="el" href="group__gnss__commands__cpp.html#ggab971b74cde3109998f648f7089e4adf8a3fdeeff594af92d8ed846ba37d640211">mip::commands_gnss::REPLY_SPARTN_CONFIGURATION</a> = 0xA0
+&#160;&#160;<a class="el" href="group__gnss__commands__cpp.html#ggad39a0a23f10584abf02d2ecdd9c4b12ca3fdeeff594af92d8ed846ba37d640211">mip::commands_gnss::REPLY_SPARTN_CONFIGURATION</a> = 0xA0
 <br />
  }</td></tr>
-<tr class="separator:gab971b74cde3109998f648f7089e4adf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:gad39a0a23f10584abf02d2ecdd9c4b12c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga0f28a7cb79a6a1c8eff50f66ee6f6061"><td class="memItemLeft" align="right" valign="top">static constexpr const uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss__commands__cpp.html#ga0f28a7cb79a6a1c8eff50f66ee6f6061">mip::commands_gnss::GNSS_GPS_ENABLE_L1CA</a> = 0x0001</td></tr>
+<tr class="separator:ga0f28a7cb79a6a1c8eff50f66ee6f6061"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7a87578a79aeabc0858bd7b9a9b3ae45"><td class="memItemLeft" align="right" valign="top">static constexpr const uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss__commands__cpp.html#ga7a87578a79aeabc0858bd7b9a9b3ae45">mip::commands_gnss::GNSS_GPS_ENABLE_L2C</a> = 0x0002</td></tr>
+<tr class="separator:ga7a87578a79aeabc0858bd7b9a9b3ae45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8c7e2110bad720a3ad90eb99eacb495b"><td class="memItemLeft" align="right" valign="top">static constexpr const uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss__commands__cpp.html#ga8c7e2110bad720a3ad90eb99eacb495b">mip::commands_gnss::GNSS_GPS_ENABLE_L5</a> = 0x0004</td></tr>
+<tr class="separator:ga8c7e2110bad720a3ad90eb99eacb495b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3285dd2f803993b152274ea638eea2fc"><td class="memItemLeft" align="right" valign="top">static constexpr const uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss__commands__cpp.html#ga3285dd2f803993b152274ea638eea2fc">mip::commands_gnss::GNSS_GLONASS_ENABLE_L1OF</a> = 0x0001</td></tr>
+<tr class="separator:ga3285dd2f803993b152274ea638eea2fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad332031df22713d9c0ca4fd868a4a383"><td class="memItemLeft" align="right" valign="top">static constexpr const uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss__commands__cpp.html#gad332031df22713d9c0ca4fd868a4a383">mip::commands_gnss::GNSS_GLONASS_ENABLE_L2OF</a> = 0x0002</td></tr>
+<tr class="separator:gad332031df22713d9c0ca4fd868a4a383"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeeb8098f73a69d9588b4490564f9bd9d"><td class="memItemLeft" align="right" valign="top">static constexpr const uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss__commands__cpp.html#gaeeb8098f73a69d9588b4490564f9bd9d">mip::commands_gnss::GNSS_GALILEO_ENABLE_E1</a> = 0x0001</td></tr>
+<tr class="separator:gaeeb8098f73a69d9588b4490564f9bd9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad3a7e02cdf79aa2da96c485426ffc9bd"><td class="memItemLeft" align="right" valign="top">static constexpr const uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss__commands__cpp.html#gad3a7e02cdf79aa2da96c485426ffc9bd">mip::commands_gnss::GNSS_GALILEO_ENABLE_E5B</a> = 0x0002</td></tr>
+<tr class="separator:gad3a7e02cdf79aa2da96c485426ffc9bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf828f5dab36c47e21dbb5672e0cdf592"><td class="memItemLeft" align="right" valign="top">static constexpr const uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss__commands__cpp.html#gaf828f5dab36c47e21dbb5672e0cdf592">mip::commands_gnss::GNSS_GALILEO_ENABLE_E5A</a> = 0x0004</td></tr>
+<tr class="separator:gaf828f5dab36c47e21dbb5672e0cdf592"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaad635792b83e32ea3532fafc479108fe"><td class="memItemLeft" align="right" valign="top">static constexpr const uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss__commands__cpp.html#gaad635792b83e32ea3532fafc479108fe">mip::commands_gnss::GNSS_BEIDOU_ENABLE_B1</a> = 0x0001</td></tr>
+<tr class="separator:gaad635792b83e32ea3532fafc479108fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6e0e6ee42a391873cfcbcecfc2dcbdc8"><td class="memItemLeft" align="right" valign="top">static constexpr const uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss__commands__cpp.html#ga6e0e6ee42a391873cfcbcecfc2dcbdc8">mip::commands_gnss::GNSS_BEIDOU_ENABLE_B2</a> = 0x0002</td></tr>
+<tr class="separator:ga6e0e6ee42a391873cfcbcecfc2dcbdc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0c4deb41ae7d33825126759dec204dbb"><td class="memItemLeft" align="right" valign="top">static constexpr const uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gnss__commands__cpp.html#ga0c4deb41ae7d33825126759dec204dbb">mip::commands_gnss::GNSS_BEIDOU_ENABLE_B2A</a> = 0x0004</td></tr>
+<tr class="separator:ga0c4deb41ae7d33825126759dec204dbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="gab971b74cde3109998f648f7089e4adf8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab971b74cde3109998f648f7089e4adf8">&#9670;&nbsp;</a></span>anonymous enum</h2>
+<a id="gad39a0a23f10584abf02d2ecdd9c4b12c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad39a0a23f10584abf02d2ecdd9c4b12c">&#9670;&nbsp;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -120,16 +146,259 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggab971b74cde3109998f648f7089e4adf8ac43277f580b01e8a95748c642fe03a6a"></a>DESCRIPTOR_SET&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggab971b74cde3109998f648f7089e4adf8a1690e941d8e0e11c0651dd7302f5e04c"></a>CMD_LIST_RECEIVERS&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggab971b74cde3109998f648f7089e4adf8a385990a249bf726e18ed618c655c5892"></a>CMD_SIGNAL_CONFIGURATION&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggab971b74cde3109998f648f7089e4adf8aa3e581c6e292fbda4ca4d9b004e1cb4f"></a>CMD_RTK_DONGLE_CONFIGURATION&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggab971b74cde3109998f648f7089e4adf8aa3b9f99e779565b2359cdbdddfe361da"></a>CMD_SPARTN_CONFIGURATION&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggab971b74cde3109998f648f7089e4adf8a92181a8bf0dc289bfb0f0603c886eb74"></a>REPLY_LIST_RECEIVERS&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggab971b74cde3109998f648f7089e4adf8ada7c33b7c99ba7e439ea6838d7def6b1"></a>REPLY_SIGNAL_CONFIGURATION&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggab971b74cde3109998f648f7089e4adf8af1571f028b115dab0124c32149b448c4"></a>REPLY_RTK_DONGLE_CONFIGURATION&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggab971b74cde3109998f648f7089e4adf8a3fdeeff594af92d8ed846ba37d640211"></a>REPLY_SPARTN_CONFIGURATION&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggad39a0a23f10584abf02d2ecdd9c4b12cac43277f580b01e8a95748c642fe03a6a"></a>DESCRIPTOR_SET&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggad39a0a23f10584abf02d2ecdd9c4b12ca1690e941d8e0e11c0651dd7302f5e04c"></a>CMD_LIST_RECEIVERS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggad39a0a23f10584abf02d2ecdd9c4b12ca385990a249bf726e18ed618c655c5892"></a>CMD_SIGNAL_CONFIGURATION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggad39a0a23f10584abf02d2ecdd9c4b12caa3e581c6e292fbda4ca4d9b004e1cb4f"></a>CMD_RTK_DONGLE_CONFIGURATION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggad39a0a23f10584abf02d2ecdd9c4b12caa3b9f99e779565b2359cdbdddfe361da"></a>CMD_SPARTN_CONFIGURATION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggad39a0a23f10584abf02d2ecdd9c4b12ca92181a8bf0dc289bfb0f0603c886eb74"></a>REPLY_LIST_RECEIVERS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggad39a0a23f10584abf02d2ecdd9c4b12cada7c33b7c99ba7e439ea6838d7def6b1"></a>REPLY_SIGNAL_CONFIGURATION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggad39a0a23f10584abf02d2ecdd9c4b12caf1571f028b115dab0124c32149b448c4"></a>REPLY_RTK_DONGLE_CONFIGURATION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggad39a0a23f10584abf02d2ecdd9c4b12ca3fdeeff594af92d8ed846ba37d640211"></a>REPLY_SPARTN_CONFIGURATION&#160;</td><td class="fielddoc"></td></tr>
 </table>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ga0f28a7cb79a6a1c8eff50f66ee6f6061"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0f28a7cb79a6a1c8eff50f66ee6f6061">&#9670;&nbsp;</a></span>GNSS_GPS_ENABLE_L1CA</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr const uint16_t mip::commands_gnss::GNSS_GPS_ENABLE_L1CA = 0x0001</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga7a87578a79aeabc0858bd7b9a9b3ae45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7a87578a79aeabc0858bd7b9a9b3ae45">&#9670;&nbsp;</a></span>GNSS_GPS_ENABLE_L2C</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr const uint16_t mip::commands_gnss::GNSS_GPS_ENABLE_L2C = 0x0002</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga8c7e2110bad720a3ad90eb99eacb495b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8c7e2110bad720a3ad90eb99eacb495b">&#9670;&nbsp;</a></span>GNSS_GPS_ENABLE_L5</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr const uint16_t mip::commands_gnss::GNSS_GPS_ENABLE_L5 = 0x0004</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga3285dd2f803993b152274ea638eea2fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3285dd2f803993b152274ea638eea2fc">&#9670;&nbsp;</a></span>GNSS_GLONASS_ENABLE_L1OF</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr const uint16_t mip::commands_gnss::GNSS_GLONASS_ENABLE_L1OF = 0x0001</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gad332031df22713d9c0ca4fd868a4a383"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad332031df22713d9c0ca4fd868a4a383">&#9670;&nbsp;</a></span>GNSS_GLONASS_ENABLE_L2OF</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr const uint16_t mip::commands_gnss::GNSS_GLONASS_ENABLE_L2OF = 0x0002</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaeeb8098f73a69d9588b4490564f9bd9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeeb8098f73a69d9588b4490564f9bd9d">&#9670;&nbsp;</a></span>GNSS_GALILEO_ENABLE_E1</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr const uint16_t mip::commands_gnss::GNSS_GALILEO_ENABLE_E1 = 0x0001</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gad3a7e02cdf79aa2da96c485426ffc9bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad3a7e02cdf79aa2da96c485426ffc9bd">&#9670;&nbsp;</a></span>GNSS_GALILEO_ENABLE_E5B</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr const uint16_t mip::commands_gnss::GNSS_GALILEO_ENABLE_E5B = 0x0002</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaf828f5dab36c47e21dbb5672e0cdf592"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf828f5dab36c47e21dbb5672e0cdf592">&#9670;&nbsp;</a></span>GNSS_GALILEO_ENABLE_E5A</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr const uint16_t mip::commands_gnss::GNSS_GALILEO_ENABLE_E5A = 0x0004</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaad635792b83e32ea3532fafc479108fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaad635792b83e32ea3532fafc479108fe">&#9670;&nbsp;</a></span>GNSS_BEIDOU_ENABLE_B1</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr const uint16_t mip::commands_gnss::GNSS_BEIDOU_ENABLE_B1 = 0x0001</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga6e0e6ee42a391873cfcbcecfc2dcbdc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6e0e6ee42a391873cfcbcecfc2dcbdc8">&#9670;&nbsp;</a></span>GNSS_BEIDOU_ENABLE_B2</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr const uint16_t mip::commands_gnss::GNSS_BEIDOU_ENABLE_B2 = 0x0002</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga0c4deb41ae7d33825126759dec204dbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0c4deb41ae7d33825126759dec204dbb">&#9670;&nbsp;</a></span>GNSS_BEIDOU_ENABLE_B2A</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr const uint16_t mip::commands_gnss::GNSS_BEIDOU_ENABLE_B2A = 0x0004</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

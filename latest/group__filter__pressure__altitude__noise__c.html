@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -112,7 +112,6 @@ Functions</h2></td></tr>
 <tr class="separator:gae869e1a01b92167cb93827b5e7f0c2f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Set the expected pressure altitude noise 1-sigma values. This function can be used to tune the filter performance in the target application. </p>
 <p>The noise value must be greater than 0.0</p>
 <p>This noise value represents pressure altitude model noise in the Estimation Filter. A lower value will increase responsiveness of the sensor to pressure changes, however height estimates will be more susceptible to error from air pressure fluctuations not due to changes in altitude. Default values provide good performance for most laboratory conditions. </p>
 <h2 class="groupheader">Typedef Documentation</h2>
@@ -145,62 +144,6 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga0c6af7980b9e4fa0fe1036ac37580b6b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0c6af7980b9e4fa0fe1036ac37580b6b">&#9670;&nbsp;</a></span>extract_mip_filter_pressure_altitude_noise_command()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::extract_mip_filter_pressure_altitude_noise_command </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__pressure__altitude__noise__command.html">mip_filter_pressure_altitude_noise_command</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga9728720f12f89a842b271fc62ad0949a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9728720f12f89a842b271fc62ad0949a">&#9670;&nbsp;</a></span>extract_mip_filter_pressure_altitude_noise_response()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::extract_mip_filter_pressure_altitude_noise_response </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__pressure__altitude__noise__response.html">mip_filter_pressure_altitude_noise_response</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ga6513210fe3d2bfc44db224017c273be4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga6513210fe3d2bfc44db224017c273be4">&#9670;&nbsp;</a></span>insert_mip_filter_pressure_altitude_noise_command()</h2>
 
@@ -217,6 +160,34 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__filter__pressure__altitude__noise__command.html">mip_filter_pressure_altitude_noise_command</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga0c6af7980b9e4fa0fe1036ac37580b6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0c6af7980b9e4fa0fe1036ac37580b6b">&#9670;&nbsp;</a></span>extract_mip_filter_pressure_altitude_noise_command()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::C::extract_mip_filter_pressure_altitude_noise_command </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__pressure__altitude__noise__command.html">mip_filter_pressure_altitude_noise_command</a> *&#160;</td>
           <td class="paramname"><em>self</em>&#160;</td>
         </tr>
         <tr>
@@ -257,36 +228,56 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gae869e1a01b92167cb93827b5e7f0c2f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae869e1a01b92167cb93827b5e7f0c2f2">&#9670;&nbsp;</a></span>mip_filter_default_pressure_altitude_noise()</h2>
+<a id="ga9728720f12f89a842b271fc62ad0949a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9728720f12f89a842b271fc62ad0949a">&#9670;&nbsp;</a></span>extract_mip_filter_pressure_altitude_noise_response()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_default_pressure_altitude_noise </td>
+          <td class="memname">void mip::C::extract_mip_filter_pressure_altitude_noise_response </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__pressure__altitude__noise__response.html">mip_filter_pressure_altitude_noise_response</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="gae53476c8c8290d04061fe1cbc9396575"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae53476c8c8290d04061fe1cbc9396575">&#9670;&nbsp;</a></span>mip_filter_load_pressure_altitude_noise()</h2>
+<a id="ga62d695c4eeacaab7770fb90e29002373"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga62d695c4eeacaab7770fb90e29002373">&#9670;&nbsp;</a></span>mip_filter_write_pressure_altitude_noise()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_load_pressure_altitude_noise </td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_write_pressure_altitude_noise </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>noise</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -339,28 +330,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga62d695c4eeacaab7770fb90e29002373"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga62d695c4eeacaab7770fb90e29002373">&#9670;&nbsp;</a></span>mip_filter_write_pressure_altitude_noise()</h2>
+<a id="gae53476c8c8290d04061fe1cbc9396575"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae53476c8c8290d04061fe1cbc9396575">&#9670;&nbsp;</a></span>mip_filter_load_pressure_altitude_noise()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_write_pressure_altitude_noise </td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_load_pressure_altitude_noise </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>noise</em>&#160;</td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae869e1a01b92167cb93827b5e7f0c2f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae869e1a01b92167cb93827b5e7f0c2f2">&#9670;&nbsp;</a></span>mip_filter_default_pressure_altitude_noise()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_default_pressure_altitude_noise </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

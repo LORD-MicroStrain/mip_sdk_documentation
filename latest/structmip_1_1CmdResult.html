@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -185,8 +185,7 @@ Static Public Attributes</h2></td></tr>
 <tr class="separator:a01b901536ee1f904101901142c6f8ceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents the status of a MIP command. </p>
-<p>This is the same as the mip_cmd_result enum, but with some convenient member functions and some operator overloads.</p>
+<div class="textblock"><p>This is the same as the mip_cmd_result enum, but with some convenient member functions and some operator overloads.</p>
 <p><a class="el" href="structmip_1_1CmdResult.html" title="Represents the status of a MIP command.">CmdResult</a> is convertible to bool, allowing code like the following: </p><div class="fragment"><div class="line"><span class="keywordflow">if</span>( !<a class="code" href="group__base__ping__cpp.html#gaa258deac0c683fbff1b9b0ab38b90592">mip::commands_base::ping</a>(device) )</div>
 <div class="line">  fprintf(stderr, <span class="stringliteral">&quot;Couldn&#39;t ping the device!\n&quot;</span>);</div>
 </div><!-- fragment --> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -267,6 +266,84 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0fd1b4d62ded82207ec1f004f15c71a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fd1b4d62ded82207ec1f004f15c71a1">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structmip_1_1CmdResult.html">CmdResult</a>&amp; mip::CmdResult::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structmip_1_1CmdResult.html">CmdResult</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6be8d053ef0598634ef617aef9d40aea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6be8d053ef0598634ef617aef9d40aea">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structmip_1_1CmdResult.html">CmdResult</a>&amp; mip::CmdResult::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">C::mip_cmd_result</a>&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac0a2edd4cbba16539e7dacf377a76cf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0a2edd4cbba16539e7dacf377a76cf6">&#9670;&nbsp;</a></span>userResult()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr <a class="el" href="structmip_1_1CmdResult.html">CmdResult</a> mip::CmdResult::userResult </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a91f72430f7d6feb77d77841f2903e97f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a91f72430f7d6feb77d77841f2903e97f">&#9670;&nbsp;</a></span>fromAckNack()</h2>
 
@@ -293,8 +370,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a819692a88371f2b593b80e4de62ce9a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a819692a88371f2b593b80e4de62ce9a0">&#9670;&nbsp;</a></span>isAck()</h2>
+<a id="a931633346470c0d5869b8c7acbd2d0b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a931633346470c0d5869b8c7acbd2d0b5">&#9670;&nbsp;</a></span>operator const void *()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -303,7 +380,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool mip::CmdResult::isAck </td>
+          <td class="memname">mip::CmdResult::operator const void * </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -318,8 +395,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a748c5e10d6ac2df5cacbf70540a2312e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a748c5e10d6ac2df5cacbf70540a2312e">&#9670;&nbsp;</a></span>isFinished()</h2>
+<a id="a9275a6e20f03e6b62b78a5068214436c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9275a6e20f03e6b62b78a5068214436c">&#9670;&nbsp;</a></span>operator!()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -328,7 +405,136 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool mip::CmdResult::isFinished </td>
+          <td class="memname">bool mip::CmdResult::operator! </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9ee51f0721f44e687ea3bd95ab10cc75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ee51f0721f44e687ea3bd95ab10cc75">&#9670;&nbsp;</a></span>operator==() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool mip::CmdResult::operator== </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1CmdResult.html">CmdResult</a>&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a29fc3da806d6eba933e3ff19fc52a660"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29fc3da806d6eba933e3ff19fc52a660">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool <a class="el" href="structmip_1_1CmdResult.html#a9275a6e20f03e6b62b78a5068214436c">mip::CmdResult::operator!</a>= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1CmdResult.html">CmdResult</a>&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a081855b45bae8e9c5b66ec72e3a161dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a081855b45bae8e9c5b66ec72e3a161dd">&#9670;&nbsp;</a></span>operator==() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool mip::CmdResult::operator== </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">C::mip_cmd_result</a>&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab0d8fd5176665936d979e3a76169b9f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0d8fd5176665936d979e3a76169b9f0">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool <a class="el" href="structmip_1_1CmdResult.html#a9275a6e20f03e6b62b78a5068214436c">mip::CmdResult::operator!</a>= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">C::mip_cmd_result</a>&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1b995beb4eaee95b85645dc84eaae79c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b995beb4eaee95b85645dc84eaae79c">&#9670;&nbsp;</a></span>name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* mip::CmdResult::name </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -393,8 +599,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a1b995beb4eaee95b85645dc84eaae79c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b995beb4eaee95b85645dc84eaae79c">&#9670;&nbsp;</a></span>name()</h2>
+<a id="a748c5e10d6ac2df5cacbf70540a2312e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a748c5e10d6ac2df5cacbf70540a2312e">&#9670;&nbsp;</a></span>isFinished()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -403,7 +609,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const char* mip::CmdResult::name </td>
+          <td class="memname">bool mip::CmdResult::isFinished </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -418,8 +624,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a931633346470c0d5869b8c7acbd2d0b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a931633346470c0d5869b8c7acbd2d0b5">&#9670;&nbsp;</a></span>operator const void *()</h2>
+<a id="a819692a88371f2b593b80e4de62ce9a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a819692a88371f2b593b80e4de62ce9a0">&#9670;&nbsp;</a></span>isAck()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -428,7 +634,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">mip::CmdResult::operator const void * </td>
+          <td class="memname">bool mip::CmdResult::isAck </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -437,213 +643,6 @@ Static Public Attributes</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9275a6e20f03e6b62b78a5068214436c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9275a6e20f03e6b62b78a5068214436c">&#9670;&nbsp;</a></span>operator!()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool mip::CmdResult::operator! </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab0d8fd5176665936d979e3a76169b9f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab0d8fd5176665936d979e3a76169b9f0">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr bool <a class="el" href="structmip_1_1CmdResult.html#a9275a6e20f03e6b62b78a5068214436c">mip::CmdResult::operator!</a>= </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">C::mip_cmd_result</a>&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a29fc3da806d6eba933e3ff19fc52a660"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a29fc3da806d6eba933e3ff19fc52a660">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr bool <a class="el" href="structmip_1_1CmdResult.html#a9275a6e20f03e6b62b78a5068214436c">mip::CmdResult::operator!</a>= </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1CmdResult.html">CmdResult</a>&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6be8d053ef0598634ef617aef9d40aea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6be8d053ef0598634ef617aef9d40aea">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structmip_1_1CmdResult.html">CmdResult</a>&amp; mip::CmdResult::operator= </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">C::mip_cmd_result</a>&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0fd1b4d62ded82207ec1f004f15c71a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0fd1b4d62ded82207ec1f004f15c71a1">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structmip_1_1CmdResult.html">CmdResult</a>&amp; mip::CmdResult::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structmip_1_1CmdResult.html">CmdResult</a> &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a081855b45bae8e9c5b66ec72e3a161dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a081855b45bae8e9c5b66ec72e3a161dd">&#9670;&nbsp;</a></span>operator==() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr bool mip::CmdResult::operator== </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">C::mip_cmd_result</a>&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9ee51f0721f44e687ea3bd95ab10cc75"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ee51f0721f44e687ea3bd95ab10cc75">&#9670;&nbsp;</a></span>operator==() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr bool mip::CmdResult::operator== </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1CmdResult.html">CmdResult</a>&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac0a2edd4cbba16539e7dacf377a76cf6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac0a2edd4cbba16539e7dacf377a76cf6">&#9670;&nbsp;</a></span>userResult()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static constexpr <a class="el" href="structmip_1_1CmdResult.html">CmdResult</a> mip::CmdResult::userResult </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>n</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -651,8 +650,8 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a3f6d876fb3b1370d15d13d11b83666ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f6d876fb3b1370d15d13d11b83666ff">&#9670;&nbsp;</a></span>ACK_OK</h2>
+<a id="a3ae4f1e3dc5d860f554986a415566411"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ae4f1e3dc5d860f554986a415566411">&#9670;&nbsp;</a></span>STATUS_USER</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -661,7 +660,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">C::mip_cmd_result</a> mip::CmdResult::ACK_OK = <a class="el" href="group__mip__c.html#ggab3f1cea4c06739d4530f7d8088bd3ed8a49fd1b171186b192ed867e4e6d2db662">C::MIP_ACK_OK</a></td>
+          <td class="memname">constexpr <a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">C::mip_cmd_result</a> mip::CmdResult::STATUS_USER = <a class="el" href="group__mip__c.html#ggab3f1cea4c06739d4530f7d8088bd3ed8a560b803f11d80065415145794952a090">C::MIP_STATUS_USER_START</a></td>
         </tr>
       </table>
   </td>
@@ -670,152 +669,6 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Command completed successfully. </p>
-
-</div>
-</div>
-<a id="a1d2d2a371c0998e83fd815700639966f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d2d2a371c0998e83fd815700639966f">&#9670;&nbsp;</a></span>NACK_COMMAND_FAILED</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr <a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">C::mip_cmd_result</a> mip::CmdResult::NACK_COMMAND_FAILED = <a class="el" href="group__mip__c.html#ggab3f1cea4c06739d4530f7d8088bd3ed8a9cb3f76b39f7cacb7d0227ad84c9e1a4">C::MIP_NACK_COMMAND_FAILED</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The device could not complete the command. </p>
-
-</div>
-</div>
-<a id="a26e7d136783c6dbb4788c6aade0d656c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a26e7d136783c6dbb4788c6aade0d656c">&#9670;&nbsp;</a></span>NACK_COMMAND_TIMEOUT</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr <a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">C::mip_cmd_result</a> mip::CmdResult::NACK_COMMAND_TIMEOUT = <a class="el" href="group__mip__c.html#ggab3f1cea4c06739d4530f7d8088bd3ed8aedf0c1f3f4a3e176f294ea4c8b5dfc8d">C::MIP_NACK_COMMAND_TIMEOUT</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Internal device timeout. Use MIP_STATUS_TIMEDOUT for command timeouts. </p>
-
-</div>
-</div>
-<a id="a9c6781b08c2dcf0e0709d8a5c2a22c41"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c6781b08c2dcf0e0709d8a5c2a22c41">&#9670;&nbsp;</a></span>NACK_COMMAND_UNKNOWN</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr <a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">C::mip_cmd_result</a> mip::CmdResult::NACK_COMMAND_UNKNOWN = <a class="el" href="group__mip__c.html#ggab3f1cea4c06739d4530f7d8088bd3ed8abd462a487d9ff876161c847ecccf668f">C::MIP_NACK_COMMAND_UNKNOWN</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Command not supported. </p>
-
-</div>
-</div>
-<a id="a5179d910f5fe6a91e89e27f313732f02"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5179d910f5fe6a91e89e27f313732f02">&#9670;&nbsp;</a></span>NACK_INVALID_CHECKSUM</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr <a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">C::mip_cmd_result</a> mip::CmdResult::NACK_INVALID_CHECKSUM = <a class="el" href="group__mip__c.html#ggab3f1cea4c06739d4530f7d8088bd3ed8a2e70da5f45cf798e22d3d64b4ba744e2">C::MIP_NACK_INVALID_CHECKSUM</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reserved. </p>
-
-</div>
-</div>
-<a id="aefa0e92d5f9ffa9c9be01f89281095fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aefa0e92d5f9ffa9c9be01f89281095fb">&#9670;&nbsp;</a></span>NACK_INVALID_PARAM</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr <a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">C::mip_cmd_result</a> mip::CmdResult::NACK_INVALID_PARAM = <a class="el" href="group__mip__c.html#ggab3f1cea4c06739d4530f7d8088bd3ed8ae87e58cf6403f481e7d67bdd13f41b25">C::MIP_NACK_INVALID_PARAM</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>A parameter was not a supported value. </p>
-
-</div>
-</div>
-<a id="a53eced6c13da61e2dafac9fedf14d81b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a53eced6c13da61e2dafac9fedf14d81b">&#9670;&nbsp;</a></span>STATUS_CANCELLED</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr <a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">C::mip_cmd_result</a> mip::CmdResult::STATUS_CANCELLED = <a class="el" href="group__mip__c.html#ggab3f1cea4c06739d4530f7d8088bd3ed8adf2fa7107589b4e5cb2ad121324fd8a5">C::MIP_STATUS_CANCELLED</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Command was canceled in software. </p>
 
 </div>
 </div>
@@ -839,12 +692,10 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Command could not be executed (error sending/receiving) </p>
-
 </div>
 </div>
-<a id="aa4fbe93aa9bfb94c819e642a45e3c58f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa4fbe93aa9bfb94c819e642a45e3c58f">&#9670;&nbsp;</a></span>STATUS_NONE</h2>
+<a id="a53eced6c13da61e2dafac9fedf14d81b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53eced6c13da61e2dafac9fedf14d81b">&#9670;&nbsp;</a></span>STATUS_CANCELLED</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -853,7 +704,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">C::mip_cmd_result</a> mip::CmdResult::STATUS_NONE = <a class="el" href="group__mip__c.html#ggab3f1cea4c06739d4530f7d8088bd3ed8ad090f31e281d325fa22708354bc2dbe5">C::MIP_STATUS_NONE</a></td>
+          <td class="memname">constexpr <a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">C::mip_cmd_result</a> mip::CmdResult::STATUS_CANCELLED = <a class="el" href="group__mip__c.html#ggab3f1cea4c06739d4530f7d8088bd3ed8adf2fa7107589b4e5cb2ad121324fd8a5">C::MIP_STATUS_CANCELLED</a></td>
         </tr>
       </table>
   </td>
@@ -863,12 +714,10 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Command has been initialized but not queued yet. </p>
-
 </div>
 </div>
-<a id="a01b901536ee1f904101901142c6f8ceb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a01b901536ee1f904101901142c6f8ceb">&#9670;&nbsp;</a></span>STATUS_PENDING</h2>
+<a id="a6e73f08eaf0723eae43cf584b145485d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e73f08eaf0723eae43cf584b145485d">&#9670;&nbsp;</a></span>STATUS_TIMEDOUT</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -877,7 +726,29 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">C::mip_cmd_result</a> mip::CmdResult::STATUS_PENDING = <a class="el" href="structmip_1_1CmdResult.html#af1a282324c6793c7692b4572671a5347">STATUS_QUEUED</a></td>
+          <td class="memname">constexpr <a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">C::mip_cmd_result</a> mip::CmdResult::STATUS_TIMEDOUT = <a class="el" href="group__mip__c.html#ggab3f1cea4c06739d4530f7d8088bd3ed8a3f8a0f6291eb2a7dcf49d65952b0ec63">C::MIP_STATUS_TIMEDOUT</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a44a5b9e1417ff6a916d3de5e041d628e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44a5b9e1417ff6a916d3de5e041d628e">&#9670;&nbsp;</a></span>STATUS_WAITING</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">C::mip_cmd_result</a> mip::CmdResult::STATUS_WAITING = <a class="el" href="group__mip__c.html#ggab3f1cea4c06739d4530f7d8088bd3ed8a10ae9a3565d0dc9f49a72c4c8b20b9e7">C::MIP_STATUS_WAITING</a></td>
         </tr>
       </table>
   </td>
@@ -909,12 +780,10 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Command has been queued but the I/O update hasn't run yet. </p>
-
 </div>
 </div>
-<a id="a6e73f08eaf0723eae43cf584b145485d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e73f08eaf0723eae43cf584b145485d">&#9670;&nbsp;</a></span>STATUS_TIMEDOUT</h2>
+<a id="aa4fbe93aa9bfb94c819e642a45e3c58f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4fbe93aa9bfb94c819e642a45e3c58f">&#9670;&nbsp;</a></span>STATUS_NONE</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -923,7 +792,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">C::mip_cmd_result</a> mip::CmdResult::STATUS_TIMEDOUT = <a class="el" href="group__mip__c.html#ggab3f1cea4c06739d4530f7d8088bd3ed8a3f8a0f6291eb2a7dcf49d65952b0ec63">C::MIP_STATUS_TIMEDOUT</a></td>
+          <td class="memname">constexpr <a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">C::mip_cmd_result</a> mip::CmdResult::STATUS_NONE = <a class="el" href="group__mip__c.html#ggab3f1cea4c06739d4530f7d8088bd3ed8ad090f31e281d325fa22708354bc2dbe5">C::MIP_STATUS_NONE</a></td>
         </tr>
       </table>
   </td>
@@ -933,12 +802,10 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reply was not received before timeout expired. </p>
-
 </div>
 </div>
-<a id="a3ae4f1e3dc5d860f554986a415566411"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ae4f1e3dc5d860f554986a415566411">&#9670;&nbsp;</a></span>STATUS_USER</h2>
+<a id="a3f6d876fb3b1370d15d13d11b83666ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f6d876fb3b1370d15d13d11b83666ff">&#9670;&nbsp;</a></span>ACK_OK</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -947,7 +814,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">C::mip_cmd_result</a> mip::CmdResult::STATUS_USER = <a class="el" href="group__mip__c.html#ggab3f1cea4c06739d4530f7d8088bd3ed8a560b803f11d80065415145794952a090">C::MIP_STATUS_USER_START</a></td>
+          <td class="memname">constexpr <a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">C::mip_cmd_result</a> mip::CmdResult::ACK_OK = <a class="el" href="group__mip__c.html#ggab3f1cea4c06739d4530f7d8088bd3ed8a49fd1b171186b192ed867e4e6d2db662">C::MIP_ACK_OK</a></td>
         </tr>
       </table>
   </td>
@@ -957,12 +824,10 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Values defined by user code must be less than or equal to this value. </p>
-
 </div>
 </div>
-<a id="a44a5b9e1417ff6a916d3de5e041d628e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a44a5b9e1417ff6a916d3de5e041d628e">&#9670;&nbsp;</a></span>STATUS_WAITING</h2>
+<a id="a9c6781b08c2dcf0e0709d8a5c2a22c41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c6781b08c2dcf0e0709d8a5c2a22c41">&#9670;&nbsp;</a></span>NACK_COMMAND_UNKNOWN</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -971,7 +836,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">C::mip_cmd_result</a> mip::CmdResult::STATUS_WAITING = <a class="el" href="group__mip__c.html#ggab3f1cea4c06739d4530f7d8088bd3ed8a10ae9a3565d0dc9f49a72c4c8b20b9e7">C::MIP_STATUS_WAITING</a></td>
+          <td class="memname">constexpr <a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">C::mip_cmd_result</a> mip::CmdResult::NACK_COMMAND_UNKNOWN = <a class="el" href="group__mip__c.html#ggab3f1cea4c06739d4530f7d8088bd3ed8abd462a487d9ff876161c847ecccf668f">C::MIP_NACK_COMMAND_UNKNOWN</a></td>
         </tr>
       </table>
   </td>
@@ -981,7 +846,115 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Waiting for command reply (timeout timer has started). </p>
+</div>
+</div>
+<a id="a5179d910f5fe6a91e89e27f313732f02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5179d910f5fe6a91e89e27f313732f02">&#9670;&nbsp;</a></span>NACK_INVALID_CHECKSUM</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">C::mip_cmd_result</a> mip::CmdResult::NACK_INVALID_CHECKSUM = <a class="el" href="group__mip__c.html#ggab3f1cea4c06739d4530f7d8088bd3ed8a2e70da5f45cf798e22d3d64b4ba744e2">C::MIP_NACK_INVALID_CHECKSUM</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aefa0e92d5f9ffa9c9be01f89281095fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefa0e92d5f9ffa9c9be01f89281095fb">&#9670;&nbsp;</a></span>NACK_INVALID_PARAM</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">C::mip_cmd_result</a> mip::CmdResult::NACK_INVALID_PARAM = <a class="el" href="group__mip__c.html#ggab3f1cea4c06739d4530f7d8088bd3ed8ae87e58cf6403f481e7d67bdd13f41b25">C::MIP_NACK_INVALID_PARAM</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1d2d2a371c0998e83fd815700639966f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d2d2a371c0998e83fd815700639966f">&#9670;&nbsp;</a></span>NACK_COMMAND_FAILED</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">C::mip_cmd_result</a> mip::CmdResult::NACK_COMMAND_FAILED = <a class="el" href="group__mip__c.html#ggab3f1cea4c06739d4530f7d8088bd3ed8a9cb3f76b39f7cacb7d0227ad84c9e1a4">C::MIP_NACK_COMMAND_FAILED</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a26e7d136783c6dbb4788c6aade0d656c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26e7d136783c6dbb4788c6aade0d656c">&#9670;&nbsp;</a></span>NACK_COMMAND_TIMEOUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">C::mip_cmd_result</a> mip::CmdResult::NACK_COMMAND_TIMEOUT = <a class="el" href="group__mip__c.html#ggab3f1cea4c06739d4530f7d8088bd3ed8aedf0c1f3f4a3e176f294ea4c8b5dfc8d">C::MIP_NACK_COMMAND_TIMEOUT</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a01b901536ee1f904101901142c6f8ceb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01b901536ee1f904101901142c6f8ceb">&#9670;&nbsp;</a></span>STATUS_PENDING</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">C::mip_cmd_result</a> mip::CmdResult::STATUS_PENDING = <a class="el" href="structmip_1_1CmdResult.html#af1a282324c6793c7692b4572671a5347">STATUS_QUEUED</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

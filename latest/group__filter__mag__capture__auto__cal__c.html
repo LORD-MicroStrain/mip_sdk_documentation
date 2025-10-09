@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -98,7 +98,6 @@ Functions</h2></td></tr>
 <tr class="separator:ga859b2155fbb47d571de9adb14fa81808"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>This command captures the current value of the auto-calibration, applies it to the current fixed hard and soft iron calibration coefficients, and replaces the current fixed hard and soft iron calibration coefficients with the new values. This may be used in place of (or in addition to) a manual hard and soft iron calibration utility. This command also resets the auto-calibration coefficients. Function selector SAVE is the same as issuing the 0x0C, 0x3A and 0x0C, 0x3B commands with the SAVE function selector. </p>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="ga097d1ee45e4007b2b0827e71af62935f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga097d1ee45e4007b2b0827e71af62935f">&#9670;&nbsp;</a></span>mip_filter_mag_capture_auto_cal_command</h2>
@@ -115,34 +114,6 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga186a0fc0e5362caeca2b744c502a8a0b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga186a0fc0e5362caeca2b744c502a8a0b">&#9670;&nbsp;</a></span>extract_mip_filter_mag_capture_auto_cal_command()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::extract_mip_filter_mag_capture_auto_cal_command </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__mag__capture__auto__cal__command.html">mip_filter_mag_capture_auto_cal_command</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="gaaaded53af8ee407a8c17a6364fe284ae"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaaaded53af8ee407a8c17a6364fe284ae">&#9670;&nbsp;</a></span>insert_mip_filter_mag_capture_auto_cal_command()</h2>
 
@@ -171,18 +142,28 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga859b2155fbb47d571de9adb14fa81808"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga859b2155fbb47d571de9adb14fa81808">&#9670;&nbsp;</a></span>mip_filter_save_mag_capture_auto_cal()</h2>
+<a id="ga186a0fc0e5362caeca2b744c502a8a0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga186a0fc0e5362caeca2b744c502a8a0b">&#9670;&nbsp;</a></span>extract_mip_filter_mag_capture_auto_cal_command()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_save_mag_capture_auto_cal </td>
+          <td class="memname">void mip::C::extract_mip_filter_mag_capture_auto_cal_command </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__mag__capture__auto__cal__command.html">mip_filter_mag_capture_auto_cal_command</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -197,6 +178,24 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_write_mag_capture_auto_cal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga859b2155fbb47d571de9adb14fa81808"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga859b2155fbb47d571de9adb14fa81808">&#9670;&nbsp;</a></span>mip_filter_save_mag_capture_auto_cal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_save_mag_capture_auto_cal </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
           <td class="paramname"><em>device</em></td><td>)</td>

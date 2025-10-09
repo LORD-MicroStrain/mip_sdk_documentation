@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -102,7 +102,6 @@ Functions</h2></td></tr>
 <tr class="separator:ga4e5e40e920c116625d4bff76cfc680b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Simple implementation for reading and writing to a tcp client socket. </p>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="gaaa59fea39de1b12bb66b26bdde50171c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaaa59fea39de1b12bb66b26bdde50171c">&#9670;&nbsp;</a></span>tcp_socket</h2>
@@ -119,24 +118,6 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gad2373ac67b64a5dfe8d4a925f4ee7435"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad2373ac67b64a5dfe8d4a925f4ee7435">&#9670;&nbsp;</a></span>tcp_socket_close()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool tcp_socket_close </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structtcp__socket.html">tcp_socket</a> *&#160;</td>
-          <td class="paramname"><em>socket_ptr</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ga1a4502d1974bfc84efbee8a7e00c1b98"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga1a4502d1974bfc84efbee8a7e00c1b98">&#9670;&nbsp;</a></span>tcp_socket_init()</h2>
 
@@ -213,40 +194,18 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga4e5e40e920c116625d4bff76cfc680b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4e5e40e920c116625d4bff76cfc680b6">&#9670;&nbsp;</a></span>tcp_socket_recv()</h2>
+<a id="gad2373ac67b64a5dfe8d4a925f4ee7435"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad2373ac67b64a5dfe8d4a925f4ee7435">&#9670;&nbsp;</a></span>tcp_socket_close()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool tcp_socket_recv </td>
+          <td class="memname">bool tcp_socket_close </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structtcp__socket.html">tcp_socket</a> *&#160;</td>
-          <td class="paramname"><em>socket_ptr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>socket_ptr</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>num_bytes</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t *&#160;</td>
-          <td class="paramname"><em>bytes_read</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -282,6 +241,46 @@ Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">size_t *&#160;</td>
           <td class="paramname"><em>bytes_written</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga4e5e40e920c116625d4bff76cfc680b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4e5e40e920c116625d4bff76cfc680b6">&#9670;&nbsp;</a></span>tcp_socket_recv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool tcp_socket_recv </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtcp__socket.html">tcp_socket</a> *&#160;</td>
+          <td class="paramname"><em>socket_ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num_bytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>bytes_read</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

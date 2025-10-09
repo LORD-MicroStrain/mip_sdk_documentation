@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -94,40 +94,31 @@ Functions</h2></td></tr>
 <tr class="separator:ga161fc8b9d46981900b9bc7c5882f8646"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Set the expected soft iron matrix noise 1-sigma values. This function can be used to tune the filter performance in the target application. </p>
 <p>Noise values must be greater than 0.0</p>
 <p>The noise value represents process noise in the Estimation Filter. Changing this value modifies how the filter responds to dynamic input and can be used to tune the performance of the filter. Default values provide good performance for most laboratory conditions. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga161fc8b9d46981900b9bc7c5882f8646"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga161fc8b9d46981900b9bc7c5882f8646">&#9670;&nbsp;</a></span>defaultSoftIronMatrixNoise()</h2>
+<a id="ga8d40509e2f29a917c060b3d6898f090c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8d40509e2f29a917c060b3d6898f090c">&#9670;&nbsp;</a></span>writeSoftIronMatrixNoise()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1SoftIronMatrixNoise.html">SoftIronMatrixNoise</a> &gt; mip::commands_filter::defaultSoftIronMatrixNoise </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1SoftIronMatrixNoise.html">SoftIronMatrixNoise</a> &gt; mip::commands_filter::writeSoftIronMatrixNoise </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
-          <td></td>
+          <td class="paramname"><em>device</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gadaf15d428dc26f2f39c156ea7dd1ab7d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadaf15d428dc26f2f39c156ea7dd1ab7d">&#9670;&nbsp;</a></span>loadSoftIronMatrixNoise()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1SoftIronMatrixNoise.html">SoftIronMatrixNoise</a> &gt; mip::commands_filter::loadSoftIronMatrixNoise </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>noise</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -180,28 +171,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga8d40509e2f29a917c060b3d6898f090c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8d40509e2f29a917c060b3d6898f090c">&#9670;&nbsp;</a></span>writeSoftIronMatrixNoise()</h2>
+<a id="gadaf15d428dc26f2f39c156ea7dd1ab7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadaf15d428dc26f2f39c156ea7dd1ab7d">&#9670;&nbsp;</a></span>loadSoftIronMatrixNoise()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1SoftIronMatrixNoise.html">SoftIronMatrixNoise</a> &gt; mip::commands_filter::writeSoftIronMatrixNoise </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1SoftIronMatrixNoise.html">SoftIronMatrixNoise</a> &gt; mip::commands_filter::loadSoftIronMatrixNoise </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const float *&#160;</td>
-          <td class="paramname"><em>noise</em>&#160;</td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga161fc8b9d46981900b9bc7c5882f8646"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga161fc8b9d46981900b9bc7c5882f8646">&#9670;&nbsp;</a></span>defaultSoftIronMatrixNoise()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1SoftIronMatrixNoise.html">SoftIronMatrixNoise</a> &gt; mip::commands_filter::defaultSoftIronMatrixNoise </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

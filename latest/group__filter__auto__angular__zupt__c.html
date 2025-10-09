@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -112,7 +112,6 @@ Functions</h2></td></tr>
 <tr class="separator:gaa00754d0168c4001f0ec08efc8118ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Zero Angular Rate Update The ZUPT is triggered when the scalar magnitude of the angular rate vector is equal-to or less than the threshold value. The device will NACK threshold values that are less than zero (i.e.negative.) </p>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="gab91924f9c84ac4a837bb0e814965be23"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gab91924f9c84ac4a837bb0e814965be23">&#9670;&nbsp;</a></span>mip_filter_auto_angular_zupt_command</h2>
@@ -143,62 +142,6 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga16efd84af934f555b1562c762f2da189"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga16efd84af934f555b1562c762f2da189">&#9670;&nbsp;</a></span>extract_mip_filter_auto_angular_zupt_command()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::extract_mip_filter_auto_angular_zupt_command </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__auto__angular__zupt__command.html">mip_filter_auto_angular_zupt_command</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga5ea60cca0f674f2ea6baa7367e41e77f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5ea60cca0f674f2ea6baa7367e41e77f">&#9670;&nbsp;</a></span>extract_mip_filter_auto_angular_zupt_response()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::extract_mip_filter_auto_angular_zupt_response </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__auto__angular__zupt__response.html">mip_filter_auto_angular_zupt_response</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ga173105fd6cbfb6f12312d139014e4a14"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga173105fd6cbfb6f12312d139014e4a14">&#9670;&nbsp;</a></span>insert_mip_filter_auto_angular_zupt_command()</h2>
 
@@ -215,6 +158,34 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__filter__auto__angular__zupt__command.html">mip_filter_auto_angular_zupt_command</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga16efd84af934f555b1562c762f2da189"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga16efd84af934f555b1562c762f2da189">&#9670;&nbsp;</a></span>extract_mip_filter_auto_angular_zupt_command()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::C::extract_mip_filter_auto_angular_zupt_command </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__auto__angular__zupt__command.html">mip_filter_auto_angular_zupt_command</a> *&#160;</td>
           <td class="paramname"><em>self</em>&#160;</td>
         </tr>
         <tr>
@@ -255,36 +226,62 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gaa00754d0168c4001f0ec08efc8118ef4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa00754d0168c4001f0ec08efc8118ef4">&#9670;&nbsp;</a></span>mip_filter_default_auto_angular_zupt()</h2>
+<a id="ga5ea60cca0f674f2ea6baa7367e41e77f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5ea60cca0f674f2ea6baa7367e41e77f">&#9670;&nbsp;</a></span>extract_mip_filter_auto_angular_zupt_response()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_default_auto_angular_zupt </td>
+          <td class="memname">void mip::C::extract_mip_filter_auto_angular_zupt_response </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__auto__angular__zupt__response.html">mip_filter_auto_angular_zupt_response</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ga067345e9a5567632c1100f4a6a859fc0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga067345e9a5567632c1100f4a6a859fc0">&#9670;&nbsp;</a></span>mip_filter_load_auto_angular_zupt()</h2>
+<a id="ga80ac304eade613732c48cb71409ab0a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga80ac304eade613732c48cb71409ab0a5">&#9670;&nbsp;</a></span>mip_filter_write_auto_angular_zupt()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_load_auto_angular_zupt </td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_write_auto_angular_zupt </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>enable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>threshold</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -343,34 +340,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga80ac304eade613732c48cb71409ab0a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga80ac304eade613732c48cb71409ab0a5">&#9670;&nbsp;</a></span>mip_filter_write_auto_angular_zupt()</h2>
+<a id="ga067345e9a5567632c1100f4a6a859fc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga067345e9a5567632c1100f4a6a859fc0">&#9670;&nbsp;</a></span>mip_filter_load_auto_angular_zupt()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_write_auto_angular_zupt </td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_load_auto_angular_zupt </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>enable</em>, </td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa00754d0168c4001f0ec08efc8118ef4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa00754d0168c4001f0ec08efc8118ef4">&#9670;&nbsp;</a></span>mip_filter_default_auto_angular_zupt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_default_auto_angular_zupt </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>threshold</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -112,7 +112,6 @@ Functions</h2></td></tr>
 <tr class="separator:ga30eceaf43a3004ae2689061865d2dddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Lever arm offset for speed measurements. This is used to compensate for an off-center measurement point having a different speed due to rotation of the vehicle. The typical use case for this would be an odometer attached to a wheel on a standard 4-wheeled vehicle. If the odometer is on the left wheel, it will report higher speed on right turns and lower speed on left turns. This is because the outside edge of the curve is longer than the inside edge. </p>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="ga10227ca8d51fcc462b9b9a3557fded0c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga10227ca8d51fcc462b9b9a3557fded0c">&#9670;&nbsp;</a></span>mip_filter_speed_lever_arm_command</h2>
@@ -143,62 +142,6 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gac238c8d37224d7336b14e4fe53ed6da7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac238c8d37224d7336b14e4fe53ed6da7">&#9670;&nbsp;</a></span>extract_mip_filter_speed_lever_arm_command()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::extract_mip_filter_speed_lever_arm_command </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__speed__lever__arm__command.html">mip_filter_speed_lever_arm_command</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga15cfa1784cc60f23b3fa32edd557cded"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga15cfa1784cc60f23b3fa32edd557cded">&#9670;&nbsp;</a></span>extract_mip_filter_speed_lever_arm_response()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::extract_mip_filter_speed_lever_arm_response </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__speed__lever__arm__response.html">mip_filter_speed_lever_arm_response</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ga9119d1627ec483810cde1fb033f2419c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga9119d1627ec483810cde1fb033f2419c">&#9670;&nbsp;</a></span>insert_mip_filter_speed_lever_arm_command()</h2>
 
@@ -215,6 +158,34 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__filter__speed__lever__arm__command.html">mip_filter_speed_lever_arm_command</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gac238c8d37224d7336b14e4fe53ed6da7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac238c8d37224d7336b14e4fe53ed6da7">&#9670;&nbsp;</a></span>extract_mip_filter_speed_lever_arm_command()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::C::extract_mip_filter_speed_lever_arm_command </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__speed__lever__arm__command.html">mip_filter_speed_lever_arm_command</a> *&#160;</td>
           <td class="paramname"><em>self</em>&#160;</td>
         </tr>
         <tr>
@@ -255,23 +226,23 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga30eceaf43a3004ae2689061865d2dddd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga30eceaf43a3004ae2689061865d2dddd">&#9670;&nbsp;</a></span>mip_filter_default_speed_lever_arm()</h2>
+<a id="ga15cfa1784cc60f23b3fa32edd557cded"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga15cfa1784cc60f23b3fa32edd557cded">&#9670;&nbsp;</a></span>extract_mip_filter_speed_lever_arm_response()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_default_speed_lever_arm </td>
+          <td class="memname">void mip::C::extract_mip_filter_speed_lever_arm_response </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>source</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__speed__lever__arm__response.html">mip_filter_speed_lever_arm_response</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -283,14 +254,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gab8d38bb94c139c08177d8a0c407fe85d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab8d38bb94c139c08177d8a0c407fe85d">&#9670;&nbsp;</a></span>mip_filter_load_speed_lever_arm()</h2>
+<a id="ga7375fcca5ea2898e8ec92e6eefbd098b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7375fcca5ea2898e8ec92e6eefbd098b">&#9670;&nbsp;</a></span>mip_filter_write_speed_lever_arm()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_load_speed_lever_arm </td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_write_speed_lever_arm </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
           <td class="paramname"><em>device</em>, </td>
@@ -299,7 +270,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>source</em>&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>lever_arm_offset</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -373,14 +350,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga7375fcca5ea2898e8ec92e6eefbd098b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7375fcca5ea2898e8ec92e6eefbd098b">&#9670;&nbsp;</a></span>mip_filter_write_speed_lever_arm()</h2>
+<a id="gab8d38bb94c139c08177d8a0c407fe85d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab8d38bb94c139c08177d8a0c407fe85d">&#9670;&nbsp;</a></span>mip_filter_load_speed_lever_arm()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_write_speed_lever_arm </td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_load_speed_lever_arm </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
           <td class="paramname"><em>device</em>, </td>
@@ -389,13 +366,35 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>source</em>, </td>
+          <td class="paramname"><em>source</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga30eceaf43a3004ae2689061865d2dddd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga30eceaf43a3004ae2689061865d2dddd">&#9670;&nbsp;</a></span>mip_filter_default_speed_lever_arm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_default_speed_lever_arm </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const float *&#160;</td>
-          <td class="paramname"><em>lever_arm_offset</em>&#160;</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>source</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

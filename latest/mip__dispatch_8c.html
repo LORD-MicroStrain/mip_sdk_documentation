@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -124,6 +124,17 @@ Functions</h2></td></tr>
 <tr class="memitem:ga7cb67766d32198165a6d5d62edf3bd29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__MipDispatcher__c.html#ga7cb67766d32198165a6d5d62edf3bd29">mip::C::mip_dispatcher_remove_all_handlers</a> (mip_dispatcher *self)</td></tr>
 <tr class="memdesc:ga7cb67766d32198165a6d5d62edf3bd29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all handlers from the dispatcher.  <a href="group__MipDispatcher__c.html#ga7cb67766d32198165a6d5d62edf3bd29">More...</a><br /></td></tr>
 <tr class="separator:ga7cb67766d32198165a6d5d62edf3bd29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af891e7bf06feb7eca3b8589202541a8b"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip_1_1C.html#af891e7bf06feb7eca3b8589202541a8b">mip::C::mip_dispatch_is_descriptor_set_match</a> (uint8_t desc_set, uint8_t handler_desc_set)</td></tr>
+<tr class="separator:af891e7bf06feb7eca3b8589202541a8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae79c0215f61755160fd1fdbd4863bbf"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip_1_1C.html#aae79c0215f61755160fd1fdbd4863bbf">mip::C::mip_dispatcher_call_packet_callbacks</a> (mip_dispatcher *self, const mip_packet_view *packet, mip_timestamp timestamp, bool post)</td></tr>
+<tr class="memdesc:aae79c0215f61755160fd1fdbd4863bbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called to dispatch packet callback before and after field iteration.  <a href="namespacemip_1_1C.html#aae79c0215f61755160fd1fdbd4863bbf">More...</a><br /></td></tr>
+<tr class="separator:aae79c0215f61755160fd1fdbd4863bbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d81b4c61a6a4d31d21e4f9c1b2eae8b"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip_1_1C.html#a2d81b4c61a6a4d31d21e4f9c1b2eae8b">mip::C::mip_dispatch_is_descriptor_match</a> (uint8_t desc_set, uint8_t field_desc, uint8_t handler_desc_set, uint8_t handler_field_desc)</td></tr>
+<tr class="memdesc:a2d81b4c61a6a4d31d21e4f9c1b2eae8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if the field matches the dispatcher.  <a href="namespacemip_1_1C.html#a2d81b4c61a6a4d31d21e4f9c1b2eae8b">More...</a><br /></td></tr>
+<tr class="separator:a2d81b4c61a6a4d31d21e4f9c1b2eae8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0aa2c428f50d6e1b155389cf133a532"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip_1_1C.html#af0aa2c428f50d6e1b155389cf133a532">mip::C::mip_dispatcher_call_field_callbacks</a> (mip_dispatcher *self, const mip_field_view *field, mip_timestamp timestamp)</td></tr>
+<tr class="memdesc:af0aa2c428f50d6e1b155389cf133a532"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called to dispatch packet callback before and after field iteration.  <a href="namespacemip_1_1C.html#af0aa2c428f50d6e1b155389cf133a532">More...</a><br /></td></tr>
+<tr class="separator:af0aa2c428f50d6e1b155389cf133a532"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5c14b3a90a1b74e7dd5155db5f28cc51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__MipDispatcher__c.html#ga5c14b3a90a1b74e7dd5155db5f28cc51">mip::C::mip_dispatcher_dispatch_packet</a> (mip_dispatcher *self, const mip_packet_view *packet, mip_timestamp timestamp)</td></tr>
 <tr class="memdesc:ga5c14b3a90a1b74e7dd5155db5f28cc51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called to dispatch the callbacks for a given packet.  <a href="group__MipDispatcher__c.html#ga5c14b3a90a1b74e7dd5155db5f28cc51">More...</a><br /></td></tr>
 <tr class="separator:ga5c14b3a90a1b74e7dd5155db5f28cc51"><td class="memSeparator" colspan="2">&#160;</td></tr>

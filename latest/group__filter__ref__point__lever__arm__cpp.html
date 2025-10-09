@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -100,44 +100,35 @@ Functions</h2></td></tr>
 <tr class="separator:gab7bf4c1b6353919f01b91eb712dcac32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Lever arm offset with respect to the sensor for the indicated point of reference. This is used to change the location of the indicated point of reference, and will affect filter position and velocity outputs. Changing this setting from default will result in a global position offset that depends on vehicle attitude, and a velocity offset that depends on vehicle attitude and angular rate. <br  />
-The lever arm is defined by a 3-element vector that points from the sensor to the desired reference point, with (x,y,z) components given in the vehicle's reference frame. <br  />
-<br  />
-Note, if the reference point selector is set to VEH (1), this setting will affect the following data fields: (0x82, 0x01), (0x82, 0x02), (0x82, 0x40), (0x82, 0x41), and (0x82, 42) <br  />
-<br  />
-<b>Offset Limits</b> <br  />
-Reference Point VEH (1): 10 m magnitude (default) </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gab7bf4c1b6353919f01b91eb712dcac32"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab7bf4c1b6353919f01b91eb712dcac32">&#9670;&nbsp;</a></span>defaultRefPointLeverArm()</h2>
+<a id="gacf809d1d0f3dacfdc94e5b42429219d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacf809d1d0f3dacfdc94e5b42429219d9">&#9670;&nbsp;</a></span>writeRefPointLeverArm()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1RefPointLeverArm.html">RefPointLeverArm</a> &gt; mip::commands_filter::defaultRefPointLeverArm </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1RefPointLeverArm.html">RefPointLeverArm</a> &gt; mip::commands_filter::writeRefPointLeverArm </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
-          <td></td>
+          <td class="paramname"><em>device</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gae69c424a6aea292b2d27c836479e7378"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae69c424a6aea292b2d27c836479e7378">&#9670;&nbsp;</a></span>loadRefPointLeverArm()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1RefPointLeverArm.html">RefPointLeverArm</a> &gt; mip::commands_filter::loadRefPointLeverArm </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1commands__filter_1_1RefPointLeverArm.html#a64351ac012aa1c5feaf4b7fcb2301e1a">RefPointLeverArm::ReferencePointSelector</a>&#160;</td>
+          <td class="paramname"><em>refPointSel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>leverArmOffset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -196,34 +187,36 @@ Reference Point VEH (1): 10 m magnitude (default) </p>
 
 </div>
 </div>
-<a id="gacf809d1d0f3dacfdc94e5b42429219d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacf809d1d0f3dacfdc94e5b42429219d9">&#9670;&nbsp;</a></span>writeRefPointLeverArm()</h2>
+<a id="gae69c424a6aea292b2d27c836479e7378"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae69c424a6aea292b2d27c836479e7378">&#9670;&nbsp;</a></span>loadRefPointLeverArm()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1RefPointLeverArm.html">RefPointLeverArm</a> &gt; mip::commands_filter::writeRefPointLeverArm </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1RefPointLeverArm.html">RefPointLeverArm</a> &gt; mip::commands_filter::loadRefPointLeverArm </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1commands__filter_1_1RefPointLeverArm.html#a64351ac012aa1c5feaf4b7fcb2301e1a">RefPointLeverArm::ReferencePointSelector</a>&#160;</td>
-          <td class="paramname"><em>refPointSel</em>, </td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gab7bf4c1b6353919f01b91eb712dcac32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab7bf4c1b6353919f01b91eb712dcac32">&#9670;&nbsp;</a></span>defaultRefPointLeverArm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1RefPointLeverArm.html">RefPointLeverArm</a> &gt; mip::commands_filter::defaultRefPointLeverArm </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const float *&#160;</td>
-          <td class="paramname"><em>leverArmOffset</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

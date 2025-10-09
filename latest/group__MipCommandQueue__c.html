@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -126,59 +126,80 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Holds a list of pending commands. </p>
 <p>Currently only one command may be pending at a time.</p>
 <dl class="section note"><dt>Note</dt><dd>This should be considered an "opaque" structure; its members should be considered an internal implementation detail. Avoid accessing them directly as they are subject to change in future versions of this software. </dd></dl>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga43f7c84706dbc8a4a44720158b5f7c45"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga43f7c84706dbc8a4a44720158b5f7c45">&#9670;&nbsp;</a></span>mip_cmd_queue_base_reply_timeout()</h2>
+<a id="ga03ff5d25ee6c5a58e9c34de62f27462c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga03ff5d25ee6c5a58e9c34de62f27462c">&#9670;&nbsp;</a></span>mip_cmd_queue_init()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacemip_1_1C.html#aeb7a010ab523fc31b023122aa9b8e524">mip_timeout</a> mip::C::mip_cmd_queue_base_reply_timeout </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__cmd__queue.html">mip_cmd_queue</a> *&#160;</td>
-          <td class="paramname"><em>queue</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Gets the base reply timeout for all commands. </p>
-<dl class="section return"><dt>Returns</dt><dd>The minimum time to wait for a reply to any command. </dd></dl>
-
-</div>
-</div>
-<a id="gad751353e2cf8debe98da1e1d488d0d86"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad751353e2cf8debe98da1e1d488d0d86">&#9670;&nbsp;</a></span>mip_cmd_queue_clear()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::mip_cmd_queue_clear </td>
+          <td class="memname">void mip::C::mip_cmd_queue_init </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__cmd__queue.html">mip_cmd_queue</a> *&#160;</td>
-          <td class="paramname"><em>queue</em></td><td>)</td>
+          <td class="paramname"><em>queue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="namespacemip_1_1C.html#aeb7a010ab523fc31b023122aa9b8e524">mip_timeout</a>&#160;</td>
+          <td class="paramname"><em>base_reply_timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Clears the command queue. </p>
-<p>This must be called from the same thread context as the update function.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">queue</td><td></td></tr>
+    <tr><td class="paramname">base_reply_timeout</td><td>The minimum timeout given to all MIP commands. Additional time may be given to specific commands which take longer. This is intended to be used to accommodate long communication latencies, such as when using a TCP connection. </td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="gaf3db8e719c85266ba57536d04c527818"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf3db8e719c85266ba57536d04c527818">&#9670;&nbsp;</a></span>mip_cmd_queue_enqueue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::C::mip_cmd_queue_enqueue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__cmd__queue.html">mip_cmd_queue</a> *&#160;</td>
+          <td class="paramname"><em>queue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__pending__cmd.html">mip_pending_cmd</a> *&#160;</td>
+          <td class="paramname"><em>cmd</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">queue</td><td></td></tr>
+    <tr><td class="paramname">cmd</td><td>Listens for replies to this command.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>Warning</dt><dd>The command must not be deallocated or go out of scope while the mip_cmd_status_is_finished returns false. </dd></dl>
 
 </div>
 </div>
@@ -208,18 +229,41 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Removes a pending command from the queue. </p>
-
 </div>
 </div>
-<a id="gaf3db8e719c85266ba57536d04c527818"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf3db8e719c85266ba57536d04c527818">&#9670;&nbsp;</a></span>mip_cmd_queue_enqueue()</h2>
+<a id="gad751353e2cf8debe98da1e1d488d0d86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad751353e2cf8debe98da1e1d488d0d86">&#9670;&nbsp;</a></span>mip_cmd_queue_clear()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void mip::C::mip_cmd_queue_enqueue </td>
+          <td class="memname">void mip::C::mip_cmd_queue_clear </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__cmd__queue.html">mip_cmd_queue</a> *&#160;</td>
+          <td class="paramname"><em>queue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This must be called from the same thread context as the update function.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">queue</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga6fd00b028be11325ff5c673f4afd7e8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6fd00b028be11325ff5c673f4afd7e8a">&#9670;&nbsp;</a></span>mip_cmd_queue_update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::C::mip_cmd_queue_update </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__cmd__queue.html">mip_cmd_queue</a> *&#160;</td>
           <td class="paramname"><em>queue</em>, </td>
@@ -227,8 +271,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__pending__cmd.html">mip_pending_cmd</a> *&#160;</td>
-          <td class="paramname"><em>cmd</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemip_1_1C.html#a8a24a1913ffba77cdd608c5fb7575f37">mip_timestamp</a>&#160;</td>
+          <td class="paramname"><em>now</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -237,27 +281,25 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Queue a command to wait for replies. </p>
+<p>Call this during the device update if no calls to mip_cmd_queue_process_packet are made (e.g. because no packets were received). It is safe to call this in either case.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">queue</td><td></td></tr>
-    <tr><td class="paramname">cmd</td><td>Listens for replies to this command.</td></tr>
+    <tr><td class="paramname">now</td><td></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section warning"><dt>Warning</dt><dd>The command must not be deallocated or go out of scope while the mip_cmd_status_is_finished returns false. </dd></dl>
 
 </div>
 </div>
-<a id="ga03ff5d25ee6c5a58e9c34de62f27462c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga03ff5d25ee6c5a58e9c34de62f27462c">&#9670;&nbsp;</a></span>mip_cmd_queue_init()</h2>
+<a id="ga186b9dea81c4802a80203bcb471d7973"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga186b9dea81c4802a80203bcb471d7973">&#9670;&nbsp;</a></span>mip_cmd_queue_set_base_reply_timeout()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void mip::C::mip_cmd_queue_init </td>
+          <td class="memname">void mip::C::mip_cmd_queue_set_base_reply_timeout </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__cmd__queue.html">mip_cmd_queue</a> *&#160;</td>
           <td class="paramname"><em>queue</em>, </td>
@@ -266,7 +308,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="namespacemip_1_1C.html#aeb7a010ab523fc31b023122aa9b8e524">mip_timeout</a>&#160;</td>
-          <td class="paramname"><em>base_reply_timeout</em>&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -275,15 +317,33 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Initializes a command queue. </p>
+<p>The base reply timeout is the minimum time to wait for a reply. Takes effect for any commands queued after this function call.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">queue</td><td></td></tr>
-    <tr><td class="paramname">base_reply_timeout</td><td>The minimum timeout given to all MIP commands. Additional time may be given to specific commands which take longer. This is intended to be used to accommodate long communication latencies, such as when using a TCP connection. </td></tr>
+    <tr><td class="paramname">timeout</td><td></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ga43f7c84706dbc8a4a44720158b5f7c45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga43f7c84706dbc8a4a44720158b5f7c45">&#9670;&nbsp;</a></span>mip_cmd_queue_base_reply_timeout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacemip_1_1C.html#aeb7a010ab523fc31b023122aa9b8e524">mip_timeout</a> mip::C::mip_cmd_queue_base_reply_timeout </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__cmd__queue.html">mip_cmd_queue</a> *&#160;</td>
+          <td class="paramname"><em>queue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The minimum time to wait for a reply to any command. </dd></dl>
 
 </div>
 </div>
@@ -318,90 +378,12 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Process an incoming packet and check for replies to pending commands. </p>
 <p>Call this from the Mip_parser callback, passing the arguments directly.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">queue</td><td></td></tr>
     <tr><td class="paramname">packet</td><td>The received MIP packet. Assumed to be valid. </td></tr>
     <tr><td class="paramname">timestamp</td><td>The time the packet was received </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ga186b9dea81c4802a80203bcb471d7973"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga186b9dea81c4802a80203bcb471d7973">&#9670;&nbsp;</a></span>mip_cmd_queue_set_base_reply_timeout()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::mip_cmd_queue_set_base_reply_timeout </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__cmd__queue.html">mip_cmd_queue</a> *&#160;</td>
-          <td class="paramname"><em>queue</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacemip_1_1C.html#aeb7a010ab523fc31b023122aa9b8e524">mip_timeout</a>&#160;</td>
-          <td class="paramname"><em>timeout</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sets the base reply timeout for all commands. </p>
-<p>The base reply timeout is the minimum time to wait for a reply. Takes effect for any commands queued after this function call.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">queue</td><td></td></tr>
-    <tr><td class="paramname">timeout</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ga6fd00b028be11325ff5c673f4afd7e8a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6fd00b028be11325ff5c673f4afd7e8a">&#9670;&nbsp;</a></span>mip_cmd_queue_update()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::mip_cmd_queue_update </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__cmd__queue.html">mip_cmd_queue</a> *&#160;</td>
-          <td class="paramname"><em>queue</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacemip_1_1C.html#a8a24a1913ffba77cdd608c5fb7575f37">mip_timestamp</a>&#160;</td>
-          <td class="paramname"><em>now</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Call periodically to make sure commands time out if no packets are received. </p>
-<p>Call this during the device update if no calls to mip_cmd_queue_process_packet are made (e.g. because no packets were received). It is safe to call this in either case.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">queue</td><td></td></tr>
-    <tr><td class="paramname">now</td><td></td></tr>
   </table>
   </dd>
 </dl>

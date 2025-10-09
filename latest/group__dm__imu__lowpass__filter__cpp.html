@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -94,19 +94,18 @@ Functions</h2></td></tr>
 <tr class="separator:ga4619226e128c39d6dd0a6c84c9d50ecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Advanced configuration for the IMU data quantity low-pass filters. </p>
 <p>Deprecated, use the lowpass filter (0x0C,0x54) command instead.</p>
 <p>The scaled data quantities are by default filtered through a single-pole IIR low-pass filter which is configured with a -3dB cutoff frequency of half the reporting frequency (set by decimation factor in the IMU Message Format command) to prevent aliasing on a per data quantity basis. This advanced configuration command allows for the cutoff frequency to be configured independently of the data reporting frequency as well as allowing for a complete bypass of the digital low-pass filter.</p>
 <p>Possible data descriptors: 0x04 - Scaled accelerometer data 0x05 - Scaled gyro data 0x06 - Scaled magnetometer data (if applicable) 0x17 - Scaled pressure data (if applicable) </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga4619226e128c39d6dd0a6c84c9d50ecf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4619226e128c39d6dd0a6c84c9d50ecf">&#9670;&nbsp;</a></span>defaultImuLowpassFilter()</h2>
+<a id="gaa81d740eba48b530e86802f1c04428e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa81d740eba48b530e86802f1c04428e3">&#9670;&nbsp;</a></span>writeImuLowpassFilter()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1ImuLowpassFilter.html">ImuLowpassFilter</a> &gt; mip::commands_3dm::defaultImuLowpassFilter </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1ImuLowpassFilter.html">ImuLowpassFilter</a> &gt; mip::commands_3dm::writeImuLowpassFilter </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
@@ -115,35 +114,31 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>targetDescriptor</em>&#160;</td>
+          <td class="paramname"><em>targetDescriptor</em>, </td>
         </tr>
         <tr>
+          <td class="paramkey"></td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gacf0fe1f73841194da89fc9bdc37389b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacf0fe1f73841194da89fc9bdc37389b2">&#9670;&nbsp;</a></span>loadImuLowpassFilter()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1ImuLowpassFilter.html">ImuLowpassFilter</a> &gt; mip::commands_3dm::loadImuLowpassFilter </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>manual</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>frequency</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>targetDescriptor</em>&#160;</td>
+          <td class="paramname"><em>reserved</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -235,14 +230,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gaa81d740eba48b530e86802f1c04428e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa81d740eba48b530e86802f1c04428e3">&#9670;&nbsp;</a></span>writeImuLowpassFilter()</h2>
+<a id="gacf0fe1f73841194da89fc9bdc37389b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacf0fe1f73841194da89fc9bdc37389b2">&#9670;&nbsp;</a></span>loadImuLowpassFilter()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1ImuLowpassFilter.html">ImuLowpassFilter</a> &gt; mip::commands_3dm::writeImuLowpassFilter </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1ImuLowpassFilter.html">ImuLowpassFilter</a> &gt; mip::commands_3dm::loadImuLowpassFilter </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
@@ -251,31 +246,35 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>targetDescriptor</em>, </td>
+          <td class="paramname"><em>targetDescriptor</em>&#160;</td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>enable</em>, </td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga4619226e128c39d6dd0a6c84c9d50ecf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4619226e128c39d6dd0a6c84c9d50ecf">&#9670;&nbsp;</a></span>defaultImuLowpassFilter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>manual</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>frequency</em>, </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1ImuLowpassFilter.html">ImuLowpassFilter</a> &gt; mip::commands_3dm::defaultImuLowpassFilter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>reserved</em>&#160;</td>
+          <td class="paramname"><em>targetDescriptor</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

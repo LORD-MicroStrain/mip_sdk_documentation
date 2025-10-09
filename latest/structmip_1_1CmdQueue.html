@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -116,8 +116,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4c201803b7d68c2260cefa297afc630d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>C++ wrapper around a command queue. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<div class="textblock"></div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="afbbc278d5884d6c876b68c7b6b090efe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afbbc278d5884d6c876b68c7b6b090efe">&#9670;&nbsp;</a></span>CmdQueue() <span class="overload">[1/2]</span></h2>
 
@@ -196,8 +195,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a08644fd4c154adfdcd9c9b75fe3bbc3d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a08644fd4c154adfdcd9c9b75fe3bbc3d">&#9670;&nbsp;</a></span>baseReplyTimeout()</h2>
+<a id="a2ca917ffcb355fb4e18f25d1764a46b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ca917ffcb355fb4e18f25d1764a46b8">&#9670;&nbsp;</a></span>operator=()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -206,23 +205,24 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacemip.html#afce0ba7e576cfb1bffa07cff38fe1847">Timeout</a> mip::CmdQueue::baseReplyTimeout </td>
+          <td class="memname"><a class="el" href="structmip_1_1CmdQueue.html">CmdQueue</a>&amp; mip::CmdQueue::operator= </td>
           <td>(</td>
+          <td class="paramtype">const <a class="el" href="structmip_1_1CmdQueue.html">CmdQueue</a> &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a5a2963dc7f728507374ecce272dfb90d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a2963dc7f728507374ecce272dfb90d">&#9670;&nbsp;</a></span>clear()</h2>
+<a id="aa3e647e0db0ade18d21d1b4e0cc13a9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3e647e0db0ade18d21d1b4e0cc13a9a">&#9670;&nbsp;</a></span>enqueue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -231,9 +231,10 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void mip::CmdQueue::clear </td>
+          <td class="memname">void mip::CmdQueue::enqueue </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__pending__cmd.html">C::mip_pending_cmd</a> &amp;&#160;</td>
+          <td class="paramname"><em>cmd</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -272,8 +273,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa3e647e0db0ade18d21d1b4e0cc13a9a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3e647e0db0ade18d21d1b4e0cc13a9a">&#9670;&nbsp;</a></span>enqueue()</h2>
+<a id="a5a2963dc7f728507374ecce272dfb90d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a2963dc7f728507374ecce272dfb90d">&#9670;&nbsp;</a></span>clear()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -282,10 +283,9 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void mip::CmdQueue::enqueue </td>
+          <td class="memname">void mip::CmdQueue::clear </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__pending__cmd.html">C::mip_pending_cmd</a> &amp;&#160;</td>
-          <td class="paramname"><em>cmd</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -298,8 +298,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a2ca917ffcb355fb4e18f25d1764a46b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ca917ffcb355fb4e18f25d1764a46b8">&#9670;&nbsp;</a></span>operator=()</h2>
+<a id="a62a3fbfaf971b33d06eec7f619b027ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62a3fbfaf971b33d06eec7f619b027ad">&#9670;&nbsp;</a></span>update()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -308,47 +308,11 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1CmdQueue.html">CmdQueue</a>&amp; mip::CmdQueue::operator= </td>
+          <td class="memname">void mip::CmdQueue::update </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structmip_1_1CmdQueue.html">CmdQueue</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4c201803b7d68c2260cefa297afc630d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c201803b7d68c2260cefa297afc630d">&#9670;&nbsp;</a></span>processPacket()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::CmdQueue::processPacket </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__packet__view.html">C::mip_packet_view</a> &amp;&#160;</td>
-          <td class="paramname"><em>packet</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="namespacemip.html#ab87086630c94254d17a812e4be159b0a">Timestamp</a>&#160;</td>
-          <td class="paramname"><em>timestamp</em>&#160;</td>
-        </tr>
-        <tr>
+          <td class="paramname"><em>now</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -386,8 +350,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a62a3fbfaf971b33d06eec7f619b027ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62a3fbfaf971b33d06eec7f619b027ad">&#9670;&nbsp;</a></span>update()</h2>
+<a id="a08644fd4c154adfdcd9c9b75fe3bbc3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08644fd4c154adfdcd9c9b75fe3bbc3d">&#9670;&nbsp;</a></span>baseReplyTimeout()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -396,11 +360,46 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void mip::CmdQueue::update </td>
+          <td class="memname"><a class="el" href="namespacemip.html#afce0ba7e576cfb1bffa07cff38fe1847">Timeout</a> mip::CmdQueue::baseReplyTimeout </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacemip.html#ab87086630c94254d17a812e4be159b0a">Timestamp</a>&#160;</td>
-          <td class="paramname"><em>now</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4c201803b7d68c2260cefa297afc630d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c201803b7d68c2260cefa297afc630d">&#9670;&nbsp;</a></span>processPacket()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::CmdQueue::processPacket </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__packet__view.html">C::mip_packet_view</a> &amp;&#160;</td>
+          <td class="paramname"><em>packet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="namespacemip.html#ab87086630c94254d17a812e4be159b0a">Timestamp</a>&#160;</td>
+          <td class="paramname"><em>timestamp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>

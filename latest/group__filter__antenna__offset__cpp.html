@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -94,42 +94,33 @@ Functions</h2></td></tr>
 <tr class="separator:ga7f294be18d4a9e91376b29681f149d50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Configure the GNSS antenna offset. </p>
 <p>For 5-series products, this is expressed in the sensor frame, from the sensor origin to the GNSS antenna RF center.</p>
 <p>For 7-series products, this is expressed in the vehicle frame, from the sensor origin to the GNSS antenna RF center.</p>
 <p>This command should also be used for CV7 / GV7-INS NMEA Input over GPIO.</p>
 <p>The magnitude of the offset vector is limited to 10 meters </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga7f294be18d4a9e91376b29681f149d50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7f294be18d4a9e91376b29681f149d50">&#9670;&nbsp;</a></span>defaultAntennaOffset()</h2>
+<a id="gac937c22e632f55c8782f56b42631b393"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac937c22e632f55c8782f56b42631b393">&#9670;&nbsp;</a></span>writeAntennaOffset()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1AntennaOffset.html">AntennaOffset</a> &gt; mip::commands_filter::defaultAntennaOffset </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1AntennaOffset.html">AntennaOffset</a> &gt; mip::commands_filter::writeAntennaOffset </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
-          <td></td>
+          <td class="paramname"><em>device</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga32591c1da45bb3c5158b8dcd8a3519ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga32591c1da45bb3c5158b8dcd8a3519ad">&#9670;&nbsp;</a></span>loadAntennaOffset()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1AntennaOffset.html">AntennaOffset</a> &gt; mip::commands_filter::loadAntennaOffset </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -182,28 +173,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gac937c22e632f55c8782f56b42631b393"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac937c22e632f55c8782f56b42631b393">&#9670;&nbsp;</a></span>writeAntennaOffset()</h2>
+<a id="ga32591c1da45bb3c5158b8dcd8a3519ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga32591c1da45bb3c5158b8dcd8a3519ad">&#9670;&nbsp;</a></span>loadAntennaOffset()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1AntennaOffset.html">AntennaOffset</a> &gt; mip::commands_filter::writeAntennaOffset </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1AntennaOffset.html">AntennaOffset</a> &gt; mip::commands_filter::loadAntennaOffset </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const float *&#160;</td>
-          <td class="paramname"><em>offset</em>&#160;</td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga7f294be18d4a9e91376b29681f149d50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7f294be18d4a9e91376b29681f149d50">&#9670;&nbsp;</a></span>defaultAntennaOffset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1AntennaOffset.html">AntennaOffset</a> &gt; mip::commands_filter::defaultAntennaOffset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

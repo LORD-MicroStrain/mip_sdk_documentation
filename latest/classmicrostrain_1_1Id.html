@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -119,8 +119,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aafc1a3275bab01b0651a6b4eaf0848c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Representes an ID number ranging from 1..N including N. </p>
-<p>This is interchangeable with the <a class="el" href="classmicrostrain_1_1Index.html" title="Represents an index ranging from 0..N excluding N.">Index</a> class. </p>
+<div class="textblock"><p>This is interchangeable with the <a class="el" href="classmicrostrain_1_1Index.html" title="Represents an index ranging from 0..N excluding N.">Index</a> class. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3c849308eb3e1d0caf66572bb2c4119f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3c849308eb3e1d0caf66572bb2c4119f">&#9670;&nbsp;</a></span>Id() <span class="overload">[1/3]</span></h2>
@@ -200,8 +199,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a5cc256ddddfacb0f6640e1dc310ada15"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5cc256ddddfacb0f6640e1dc310ada15">&#9670;&nbsp;</a></span>clear()</h2>
+<a id="aa969f67655a454b21f0029bd9cb79996"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa969f67655a454b21f0029bd9cb79996">&#9670;&nbsp;</a></span>setFromIndex()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -210,10 +209,62 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr void microstrain::Id::clear </td>
+          <td class="memname">constexpr <a class="el" href="classmicrostrain_1_1Id.html">Id</a>&amp; microstrain::Id::setFromIndex </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a20a74975fa42deadafd09f2d8d2be4a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20a74975fa42deadafd09f2d8d2be4a0">&#9670;&nbsp;</a></span>setFromId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classmicrostrain_1_1Id.html">Id</a>&amp; microstrain::Id::setFromId </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a12165b7822bbc6e3d1b1470841528ab5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12165b7822bbc6e3d1b1470841528ab5">&#9670;&nbsp;</a></span>index()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr unsigned int microstrain::Id::index </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -250,8 +301,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a12165b7822bbc6e3d1b1470841528ab5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a12165b7822bbc6e3d1b1470841528ab5">&#9670;&nbsp;</a></span>index()</h2>
+<a id="a2c5864f72bdcb3922303c643f5e798f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c5864f72bdcb3922303c643f5e798f2">&#9670;&nbsp;</a></span>operator==()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -260,9 +311,36 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr unsigned int microstrain::Id::index </td>
+          <td class="memname">constexpr bool microstrain::Id::operator== </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classmicrostrain_1_1Id.html">Id</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aae5463a31479787285862671753baae3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae5463a31479787285862671753baae3">&#9670;&nbsp;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool microstrain::Id::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmicrostrain_1_1Id.html">Id</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -326,8 +404,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aae5463a31479787285862671753baae3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae5463a31479787285862671753baae3">&#9670;&nbsp;</a></span>operator!=()</h2>
+<a id="a5cc256ddddfacb0f6640e1dc310ada15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cc256ddddfacb0f6640e1dc310ada15">&#9670;&nbsp;</a></span>clear()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -336,11 +414,10 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr bool microstrain::Id::operator!= </td>
+          <td class="memname">constexpr void microstrain::Id::clear </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classmicrostrain_1_1Id.html">Id</a> &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td> const</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
@@ -377,8 +454,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a5fa05b11dc5710c062f87bc129a88fed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5fa05b11dc5710c062f87bc129a88fed">&#9670;&nbsp;</a></span>operator++() <span class="overload">[2/2]</span></h2>
+<a id="a905b5173d60dd9fbdf1e9b8e80882c73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a905b5173d60dd9fbdf1e9b8e80882c73">&#9670;&nbsp;</a></span>operator--() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -387,9 +464,8 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classmicrostrain_1_1Id.html">Id</a> microstrain::Id::operator++ </td>
+          <td class="memname"><a class="el" href="classmicrostrain_1_1Id.html">Id</a>&amp; microstrain::Id::operator-- </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -403,8 +479,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a905b5173d60dd9fbdf1e9b8e80882c73"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a905b5173d60dd9fbdf1e9b8e80882c73">&#9670;&nbsp;</a></span>operator--() <span class="overload">[1/2]</span></h2>
+<a id="a5fa05b11dc5710c062f87bc129a88fed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fa05b11dc5710c062f87bc129a88fed">&#9670;&nbsp;</a></span>operator++() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -413,8 +489,9 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classmicrostrain_1_1Id.html">Id</a>&amp; microstrain::Id::operator-- </td>
+          <td class="memname"><a class="el" href="classmicrostrain_1_1Id.html">Id</a> microstrain::Id::operator++ </td>
           <td>(</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -468,84 +545,6 @@ Public Member Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classmicrostrain_1_1Index.html">Index</a> &amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2c5864f72bdcb3922303c643f5e798f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c5864f72bdcb3922303c643f5e798f2">&#9670;&nbsp;</a></span>operator==()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr bool microstrain::Id::operator== </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classmicrostrain_1_1Id.html">Id</a> &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a20a74975fa42deadafd09f2d8d2be4a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a20a74975fa42deadafd09f2d8d2be4a0">&#9670;&nbsp;</a></span>setFromId()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr <a class="el" href="classmicrostrain_1_1Id.html">Id</a>&amp; microstrain::Id::setFromId </td>
-          <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>id</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa969f67655a454b21f0029bd9cb79996"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa969f67655a454b21f0029bd9cb79996">&#9670;&nbsp;</a></span>setFromIndex()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr <a class="el" href="classmicrostrain_1_1Id.html">Id</a>&amp; microstrain::Id::setFromIndex </td>
-          <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>index</em></td><td>)</td>
           <td></td>
         </tr>
       </table>

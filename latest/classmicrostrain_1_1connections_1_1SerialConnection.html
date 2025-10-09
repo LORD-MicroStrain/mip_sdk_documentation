@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -155,8 +155,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:ad15bfd18acce56107d7b7d83b884a440 inherit pro_attribs_classmicrostrain_1_1Connection"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Can be used on Windows, OSX, or linux to communicate with a MIP device over serial. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<div class="textblock"></div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a457b39ea8ef949e24d26125f1910cc99"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a457b39ea8ef949e24d26125f1910cc99">&#9670;&nbsp;</a></span>SerialConnection()</h2>
 
@@ -182,8 +181,6 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Creates a Serial <a class="el" href="classmicrostrain_1_1Connection.html" title="Represents a type of connection.">Connection</a> that will communicate with a device over serial. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">portName</td><td>Path to the port to connect to. On Windows, this usually looks like "COM&lt;N&gt;", on linux, "/dev/tty&lt;N&gt;"</td></tr>
@@ -217,213 +214,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Closes the underlying serial port. </p>
-
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a6b76e66e71573504d1b806f05469fa44"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b76e66e71573504d1b806f05469fa44">&#9670;&nbsp;</a></span>baudrate()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t microstrain::connections::SerialConnection::baudrate </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="abff1c1716e3dcb5f161cc0ea17196dbc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abff1c1716e3dcb5f161cc0ea17196dbc">&#9670;&nbsp;</a></span>connect()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool microstrain::connections::SerialConnection::connect </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Connect to the port. </p>
-
-<p>Implements <a class="el" href="classmicrostrain_1_1Connection.html#a75e9b73660b9f57c8ae1e7cc98991c96">microstrain::Connection</a>.</p>
-
-</div>
-</div>
-<a id="a907a7a21562fd744cc322700a66d7dc5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a907a7a21562fd744cc322700a66d7dc5">&#9670;&nbsp;</a></span>connectionInfo()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void microstrain::connections::SerialConnection::connectionInfo </td>
-          <td>(</td>
-          <td class="paramtype">std::string &amp;&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t &amp;&#160;</td>
-          <td class="paramname"><em>baudrate</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="abbc459b1124f4862f12529cf2d6bd8ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abbc459b1124f4862f12529cf2d6bd8ca">&#9670;&nbsp;</a></span>disconnect()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool microstrain::connections::SerialConnection::disconnect </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Disconnect from the port. </p>
-
-<p>Implements <a class="el" href="classmicrostrain_1_1Connection.html#a0773fa522ebe9e0406652781a940bbac">microstrain::Connection</a>.</p>
-
-</div>
-</div>
-<a id="a7a690184801030fc3ab86adcc092caf5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a690184801030fc3ab86adcc092caf5">&#9670;&nbsp;</a></span>interfaceName()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const char* microstrain::connections::SerialConnection::interfaceName </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="classmicrostrain_1_1Connection.html#a62c0ca228c86914d8ddd4c40ca98684d">microstrain::Connection</a>.</p>
-
-</div>
-</div>
-<a id="a68ee8ec0105a98a958779a99b635ac70"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a68ee8ec0105a98a958779a99b635ac70">&#9670;&nbsp;</a></span>isConnected()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool microstrain::connections::SerialConnection::isConnected </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Check if the port is connected. </p>
-
-<p>Implements <a class="el" href="classmicrostrain_1_1Connection.html#ab654b453709b87c7dd6acd9720910a04">microstrain::Connection</a>.</p>
-
-</div>
-</div>
-<a id="abe4f010720b70c75940fa5357527a291"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe4f010720b70c75940fa5357527a291">&#9670;&nbsp;</a></span>parameter()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t microstrain::connections::SerialConnection::parameter </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="classmicrostrain_1_1Connection.html#a8a72231fdd54a61fdb5c9ba7e04f4748">microstrain::Connection</a>.</p>
-
-</div>
-</div>
 <a id="a4548cdc4a259d4326a045429ed50510b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4548cdc4a259d4326a045429ed50510b">&#9670;&nbsp;</a></span>recvFromDevice()</h2>
 
@@ -475,8 +268,6 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Receives bytes from the device. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">buffer</td><td>Buffer to store the received data in</td></tr>
@@ -525,8 +316,6 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Sends bytes to the device. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">data</td><td>The data to send to the device</td></tr>
@@ -536,6 +325,148 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 
 <p>Implements <a class="el" href="classmicrostrain_1_1Connection.html#ad56be6630183ec4cc9cf5f59b4d46e53">microstrain::Connection</a>.</p>
+
+</div>
+</div>
+<a id="a68ee8ec0105a98a958779a99b635ac70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68ee8ec0105a98a958779a99b635ac70">&#9670;&nbsp;</a></span>isConnected()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool microstrain::connections::SerialConnection::isConnected </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classmicrostrain_1_1Connection.html#ab654b453709b87c7dd6acd9720910a04">microstrain::Connection</a>.</p>
+
+</div>
+</div>
+<a id="abff1c1716e3dcb5f161cc0ea17196dbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abff1c1716e3dcb5f161cc0ea17196dbc">&#9670;&nbsp;</a></span>connect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool microstrain::connections::SerialConnection::connect </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classmicrostrain_1_1Connection.html#a75e9b73660b9f57c8ae1e7cc98991c96">microstrain::Connection</a>.</p>
+
+</div>
+</div>
+<a id="abbc459b1124f4862f12529cf2d6bd8ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbc459b1124f4862f12529cf2d6bd8ca">&#9670;&nbsp;</a></span>disconnect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool microstrain::connections::SerialConnection::disconnect </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classmicrostrain_1_1Connection.html#a0773fa522ebe9e0406652781a940bbac">microstrain::Connection</a>.</p>
+
+</div>
+</div>
+<a id="a907a7a21562fd744cc322700a66d7dc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a907a7a21562fd744cc322700a66d7dc5">&#9670;&nbsp;</a></span>connectionInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void microstrain::connections::SerialConnection::connectionInfo </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t &amp;&#160;</td>
+          <td class="paramname"><em>baudrate</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6b76e66e71573504d1b806f05469fa44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b76e66e71573504d1b806f05469fa44">&#9670;&nbsp;</a></span>baudrate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t microstrain::connections::SerialConnection::baudrate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -555,7 +486,59 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Change the baudrate. </p>
+</div>
+</div>
+<a id="a7a690184801030fc3ab86adcc092caf5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a690184801030fc3ab86adcc092caf5">&#9670;&nbsp;</a></span>interfaceName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* microstrain::connections::SerialConnection::interfaceName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classmicrostrain_1_1Connection.html#a62c0ca228c86914d8ddd4c40ca98684d">microstrain::Connection</a>.</p>
+
+</div>
+</div>
+<a id="abe4f010720b70c75940fa5357527a291"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe4f010720b70c75940fa5357527a291">&#9670;&nbsp;</a></span>parameter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t microstrain::connections::SerialConnection::parameter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classmicrostrain_1_1Connection.html#a8a72231fdd54a61fdb5c9ba7e04f4748">microstrain::Connection</a>.</p>
 
 </div>
 </div>

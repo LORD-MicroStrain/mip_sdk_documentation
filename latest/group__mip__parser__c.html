@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -138,7 +138,6 @@ Functions</h2></td></tr>
 <tr class="separator:ga519bccb69b9fff2cb3bc8bed2cbcc1f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Functions for parsing MIP packets. </p>
 <p>See <a class="el" href="parsing_packets.html">Mip Parser</a></p>
 <p>Typical usage: </p><ul>
 <li>Declare a <a class="el" href="structmip_1_1C_1_1mip__parser.html" title="MIP Parser state.">mip_parser</a> struct </li>
@@ -159,8 +158,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Specifies the default timeout for a MIP parser, assuming timestamps are in milliseconds. </p>
-
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
@@ -175,8 +172,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Callback function which receives parsed MIP packets. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">user</td><td>A user-specified pointer which will be given the callback_object parameter which was previously passed to mip_parser_init. </td></tr>
@@ -200,160 +195,11 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>MIP <a class="el" href="classmip_1_1Parser.html" title="C++ class representing a MIP parser.">Parser</a> state. </p>
 <dl class="section note"><dt>Note</dt><dd>This should be considered an "opaque" structure; its members should be considered an internal implementation detail. Avoid accessing them directly as they are subject to change in future versions of this software. </dd></dl>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gac4bbc9c954c86695869a5c17258e03fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac4bbc9c954c86695869a5c17258e03fb">&#9670;&nbsp;</a></span>mip_parser_callback()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__mip__parser__c.html#ga03a7f91bb53f364bbd14c6db26c7617f">mip_packet_callback</a> mip::C::mip_parser_callback </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__parser.html">mip_parser</a> *&#160;</td>
-          <td class="paramname"><em>parser</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>mip_parser_callback </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">parser</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the packet callback function. </dd></dl>
-
-</div>
-</div>
-<a id="gaceb97f49e14df07d85ce08ff17232d32"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaceb97f49e14df07d85ce08ff17232d32">&#9670;&nbsp;</a></span>mip_parser_callback_object()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void * mip::C::mip_parser_callback_object </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__parser.html">mip_parser</a> *&#160;</td>
-          <td class="paramname"><em>parser</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>mip_parser_callback </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">parser</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the packet callback user data pointer. </dd></dl>
-
-</div>
-</div>
-<a id="gae980efff4b3880040a3045e0a203e106"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae980efff4b3880040a3045e0a203e106">&#9670;&nbsp;</a></span>mip_parser_current_timestamp()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacemip_1_1C.html#a8a24a1913ffba77cdd608c5fb7575f37">mip_timestamp</a> mip::C::mip_parser_current_timestamp </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__parser.html">mip_parser</a> *&#160;</td>
-          <td class="paramname"><em>parser</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Gets the timestamp of the last parsed packet. </p>
-<p>This is only valid after a valid packet has been parsed.</p>
-<p>This function is provided to allow additional calls to <a class="el" href="group__mip__parser__c.html#gaa3bc3f9362d5c359f0a9b8cd8219f4cf" title="Parse packets from a buffer.">mip_parser_parse()</a> with no input data (buffer=NULL and length=0) when max_packets &gt; 0. The additional calls can use the same timestamp because no new data will be processed.</p>
-<p>There are two possible situations after the last call to parse:</p><ol type="1">
-<li>Either max_packets was reached, meaning at least one packet was parsed, and thus the timestamp is valid, or</li>
-<li>More data is required, in which case this time may not be valid, but it won't matter because an additional call to parse won't produce a new packet to be timestamped. </li>
-</ol>
-
-</div>
-</div>
-<a id="ga4169ceaa508424ea086aa3af5d82d998"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4169ceaa508424ea086aa3af5d82d998">&#9670;&nbsp;</a></span>mip_parser_flush()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::mip_parser_flush </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__parser.html">mip_parser</a> *&#160;</td>
-          <td class="paramname"><em>parser</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Processes all previously buffered data. </p>
-<p>Call this at the end of reading a binary file to ensure that any trailing packets are fully processed.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">parser</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ga665713329a7fa901e01f77d97dcc13fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga665713329a7fa901e01f77d97dcc13fd">&#9670;&nbsp;</a></span>mip_parser_get_write_ptr()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint_least16_t mip::C::mip_parser_get_write_ptr </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__parser.html">mip_parser</a> *&#160;</td>
-          <td class="paramname"><em>parser</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t **&#160;</td>
-          <td class="paramname"><em>ptr_out</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Gets a pointer into which a small amount of data may be written for parsing. </p>
-<p>Generally you should call mip_parser_parse with your input buffer directly. This method may be more efficient for data which arrives in small chunks by avoiding an intermediate buffer. However, for large chunks of data (e.g. reading from a file) it's more efficient to declare a bigger buffer (at least 1024 bytes) and parse that instead.</p>
-<p>@caution If you use this function, you must call mip_parser_parse with input_buffer=NULL and input_length equal to the number of bytes written into the parser. Otherwise the data will be lost.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir"></td><td class="paramname">parser</td><td></td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">ptr_out</td><td>Pointer to a pointer which will be set to an internal buffer location.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The maximum number of bytes which may be written to the parser. This will never be more than the maximum MIP packet size. </dd></dl>
-
-</div>
-</div>
 <a id="ga54bf470ed57858c6483968e812308fb3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga54bf470ed57858c6483968e812308fb3">&#9670;&nbsp;</a></span>mip_parser_init()</h2>
 
@@ -391,8 +237,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Initializes the MIP parser. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">parser</td><td></td></tr>
@@ -442,8 +286,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Parse packets from a buffer. </p>
 <p>The buffer may contain non-mip data (e.g. NMEA 0183) which will be ignored.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -458,6 +300,31 @@ Functions</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>The timestamp of a packet is based on the time the packet was parsed. Packets received during an earlier parse call may be timestamped with the time from a later parse call, but will never be timestamped before they were actually received.</dd>
 <dd>
 The parser will do its best to ignore non-MIP data. However, it is possible for some binary data to appear to be a MIP packet if it contains the two-byte sequence 0x75, 0x65. This may cause temporary stalls in parsed data if the following bytes suggest that more data is needed to complete the "packet". Once the fake packet times out or enough data is received, real MIP packets received in the meantime will be properly parsed. Note that the 16-bit checksum has a 1 in 65,536 chance of appearing to be valid at random. </dd></dl>
+
+</div>
+</div>
+<a id="ga4169ceaa508424ea086aa3af5d82d998"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4169ceaa508424ea086aa3af5d82d998">&#9670;&nbsp;</a></span>mip_parser_flush()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::C::mip_parser_flush </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__parser.html">mip_parser</a> *&#160;</td>
+          <td class="paramname"><em>parser</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Call this at the end of reading a binary file to ensure that any trailing packets are fully processed.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parser</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -476,12 +343,101 @@ The parser will do its best to ignore non-MIP data. However, it is possible for 
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Resets the MIP parser. </p>
 <p>Clears the current packet and internal buffer. The parser will be restored as if mip_parser_init had just been called.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">parser</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga665713329a7fa901e01f77d97dcc13fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga665713329a7fa901e01f77d97dcc13fd">&#9670;&nbsp;</a></span>mip_parser_get_write_ptr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint_least16_t mip::C::mip_parser_get_write_ptr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__parser.html">mip_parser</a> *&#160;</td>
+          <td class="paramname"><em>parser</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t **&#160;</td>
+          <td class="paramname"><em>ptr_out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Generally you should call mip_parser_parse with your input buffer directly. This method may be more efficient for data which arrives in small chunks by avoiding an intermediate buffer. However, for large chunks of data (e.g. reading from a file) it's more efficient to declare a bigger buffer (at least 1024 bytes) and parse that instead.</p>
+<p>@caution If you use this function, you must call mip_parser_parse with input_buffer=NULL and input_length equal to the number of bytes written into the parser. Otherwise the data will be lost.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">parser</td><td></td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">ptr_out</td><td>Pointer to a pointer which will be set to an internal buffer location.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The maximum number of bytes which may be written to the parser. This will never be more than the maximum MIP packet size. </dd></dl>
+
+</div>
+</div>
+<a id="ga6ec005011b45ab2e1d02ac6fb4ba38e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6ec005011b45ab2e1d02ac6fb4ba38e8">&#9670;&nbsp;</a></span>mip_parser_timeout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacemip_1_1C.html#aeb7a010ab523fc31b023122aa9b8e524">mip_timeout</a> mip::C::mip_parser_timeout </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__parser.html">mip_parser</a> *&#160;</td>
+          <td class="paramname"><em>parser</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaca7d1f29de32505f98b72c321456b30b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaca7d1f29de32505f98b72c321456b30b">&#9670;&nbsp;</a></span>mip_parser_set_timeout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::C::mip_parser_set_timeout </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__parser.html">mip_parser</a> *&#160;</td>
+          <td class="paramname"><em>parser</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacemip_1_1C.html#aeb7a010ab523fc31b023122aa9b8e524">mip_timeout</a>&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parser</td><td></td></tr>
+    <tr><td class="paramname">timeout</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -519,8 +475,6 @@ The parser will do its best to ignore non-MIP data. However, it is possible for 
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>mip_parser_set_callback </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">parser</td><td></td></tr>
@@ -532,51 +486,14 @@ The parser will do its best to ignore non-MIP data. However, it is possible for 
 
 </div>
 </div>
-<a id="gaca7d1f29de32505f98b72c321456b30b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaca7d1f29de32505f98b72c321456b30b">&#9670;&nbsp;</a></span>mip_parser_set_timeout()</h2>
+<a id="gac4bbc9c954c86695869a5c17258e03fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac4bbc9c954c86695869a5c17258e03fb">&#9670;&nbsp;</a></span>mip_parser_callback()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void mip::C::mip_parser_set_timeout </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__parser.html">mip_parser</a> *&#160;</td>
-          <td class="paramname"><em>parser</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacemip_1_1C.html#aeb7a010ab523fc31b023122aa9b8e524">mip_timeout</a>&#160;</td>
-          <td class="paramname"><em>timeout</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Changes the timeout of the MIP parser. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">parser</td><td></td></tr>
-    <tr><td class="paramname">timeout</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ga6ec005011b45ab2e1d02ac6fb4ba38e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6ec005011b45ab2e1d02ac6fb4ba38e8">&#9670;&nbsp;</a></span>mip_parser_timeout()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacemip_1_1C.html#aeb7a010ab523fc31b023122aa9b8e524">mip_timeout</a> mip::C::mip_parser_timeout </td>
+          <td class="memname"><a class="el" href="group__mip__parser__c.html#ga03a7f91bb53f364bbd14c6db26c7617f">mip_packet_callback</a> mip::C::mip_parser_callback </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__parser.html">mip_parser</a> *&#160;</td>
           <td class="paramname"><em>parser</em></td><td>)</td>
@@ -584,8 +501,62 @@ The parser will do its best to ignore non-MIP data. However, it is possible for 
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parser</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the packet callback function. </dd></dl>
 
-<p>Returns the packet timeout of the parser. </p>
+</div>
+</div>
+<a id="gaceb97f49e14df07d85ce08ff17232d32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaceb97f49e14df07d85ce08ff17232d32">&#9670;&nbsp;</a></span>mip_parser_callback_object()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * mip::C::mip_parser_callback_object </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__parser.html">mip_parser</a> *&#160;</td>
+          <td class="paramname"><em>parser</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parser</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the packet callback user data pointer. </dd></dl>
+
+</div>
+</div>
+<a id="gae980efff4b3880040a3045e0a203e106"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae980efff4b3880040a3045e0a203e106">&#9670;&nbsp;</a></span>mip_parser_current_timestamp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacemip_1_1C.html#a8a24a1913ffba77cdd608c5fb7575f37">mip_timestamp</a> mip::C::mip_parser_current_timestamp </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__parser.html">mip_parser</a> *&#160;</td>
+          <td class="paramname"><em>parser</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This is only valid after a valid packet has been parsed.</p>
+<p>This function is provided to allow additional calls to <a class="el" href="group__mip__parser__c.html#gaa3bc3f9362d5c359f0a9b8cd8219f4cf" title="Parse packets from a buffer.">mip_parser_parse()</a> with no input data (buffer=NULL and length=0) when max_packets &gt; 0. The additional calls can use the same timestamp because no new data will be processed.</p>
+<p>There are two possible situations after the last call to parse:</p><ol type="1">
+<li>Either max_packets was reached, meaning at least one packet was parsed, and thus the timestamp is valid, or</li>
+<li>More data is required, in which case this time may not be valid, but it won't matter because an additional call to parse won't produce a new packet to be timestamped. </li>
+</ol>
 
 </div>
 </div>
@@ -604,8 +575,6 @@ The parser will do its best to ignore non-MIP data. However, it is possible for 
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Computes an appropriate packet timeout for a given serial baud rate. </p>
 <dl class="section note"><dt>Note</dt><dd>This function assumes a standard serial port with 10 symbols per byte: 1 start bit, 8 data bits, and 1 stop bit.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

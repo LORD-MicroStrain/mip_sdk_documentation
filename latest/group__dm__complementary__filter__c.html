@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -112,7 +112,6 @@ Functions</h2></td></tr>
 <tr class="separator:ga606760bdf7a50ee12ca7d0982b67c3a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Configure the settings for the complementary filter which produces the following (0x80) descriptor set values: attitude matrix (0x80,09), quaternion (0x80,0A), and Euler angle (0x80,0<a class="el" href="namespacemip_1_1C.html">C</a>) outputs. </p>
 <p>The filter can be configured to correct for pitch and roll using the accelerometer (with the assumption that linear acceleration is minimal), and to correct for heading using the magnetometer (with the assumption that the local magnetic field is dominated by the Earth's own magnetic field). Pitch/roll and heading corrections each have their own configurable time constants, with a valid range of 1-1000 seconds. The default time constant is 10 seconds. </p>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="ga07840697ccfd6d9806b0c757ad4b8958"></a>
@@ -144,62 +143,6 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga136a300314d046b2c2e53090e09dce76"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga136a300314d046b2c2e53090e09dce76">&#9670;&nbsp;</a></span>extract_mip_3dm_complementary_filter_command()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::extract_mip_3dm_complementary_filter_command </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__3dm__complementary__filter__command.html">mip_3dm_complementary_filter_command</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga88f6e663da809bbde4f0427bccbe3e1f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga88f6e663da809bbde4f0427bccbe3e1f">&#9670;&nbsp;</a></span>extract_mip_3dm_complementary_filter_response()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::extract_mip_3dm_complementary_filter_response </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__3dm__complementary__filter__response.html">mip_3dm_complementary_filter_response</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ga2edf1b173dc1b26877420b8768dd6550"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga2edf1b173dc1b26877420b8768dd6550">&#9670;&nbsp;</a></span>insert_mip_3dm_complementary_filter_command()</h2>
 
@@ -216,6 +159,34 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__3dm__complementary__filter__command.html">mip_3dm_complementary_filter_command</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga136a300314d046b2c2e53090e09dce76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga136a300314d046b2c2e53090e09dce76">&#9670;&nbsp;</a></span>extract_mip_3dm_complementary_filter_command()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::C::extract_mip_3dm_complementary_filter_command </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__3dm__complementary__filter__command.html">mip_3dm_complementary_filter_command</a> *&#160;</td>
           <td class="paramname"><em>self</em>&#160;</td>
         </tr>
         <tr>
@@ -256,36 +227,74 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga606760bdf7a50ee12ca7d0982b67c3a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga606760bdf7a50ee12ca7d0982b67c3a9">&#9670;&nbsp;</a></span>mip_3dm_default_complementary_filter()</h2>
+<a id="ga88f6e663da809bbde4f0427bccbe3e1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga88f6e663da809bbde4f0427bccbe3e1f">&#9670;&nbsp;</a></span>extract_mip_3dm_complementary_filter_response()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_3dm_default_complementary_filter </td>
+          <td class="memname">void mip::C::extract_mip_3dm_complementary_filter_response </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__3dm__complementary__filter__response.html">mip_3dm_complementary_filter_response</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="gab8c2d1d5baa9bb5b297326c7297bc640"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab8c2d1d5baa9bb5b297326c7297bc640">&#9670;&nbsp;</a></span>mip_3dm_load_complementary_filter()</h2>
+<a id="ga83a7c5d5967047411adb34f9632a3f1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga83a7c5d5967047411adb34f9632a3f1b">&#9670;&nbsp;</a></span>mip_3dm_write_complementary_filter()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_3dm_load_complementary_filter </td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_3dm_write_complementary_filter </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>pitch_roll_enable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>heading_enable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>pitch_roll_time_constant</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>heading_time_constant</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -356,46 +365,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga83a7c5d5967047411adb34f9632a3f1b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga83a7c5d5967047411adb34f9632a3f1b">&#9670;&nbsp;</a></span>mip_3dm_write_complementary_filter()</h2>
+<a id="gab8c2d1d5baa9bb5b297326c7297bc640"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab8c2d1d5baa9bb5b297326c7297bc640">&#9670;&nbsp;</a></span>mip_3dm_load_complementary_filter()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_3dm_write_complementary_filter </td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_3dm_load_complementary_filter </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>pitch_roll_enable</em>, </td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga606760bdf7a50ee12ca7d0982b67c3a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga606760bdf7a50ee12ca7d0982b67c3a9">&#9670;&nbsp;</a></span>mip_3dm_default_complementary_filter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_3dm_default_complementary_filter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>heading_enable</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>pitch_roll_time_constant</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>heading_time_constant</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

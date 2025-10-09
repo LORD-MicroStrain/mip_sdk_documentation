@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -99,38 +99,6 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a5d7e5a28a5684023810c1d8c3e849e32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="ae763f40470b0d9bc85e776e87838f27b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae763f40470b0d9bc85e776e87838f27b">&#9670;&nbsp;</a></span>enable</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool mip::C::mip_3dm_imu_lowpass_filter_command::enable</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The target data will be filtered if this is true. </p>
-
-</div>
-</div>
-<a id="aa64731780c5ba9505cb86c7070e12533"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa64731780c5ba9505cb86c7070e12533">&#9670;&nbsp;</a></span>frequency</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint16_t mip::C::mip_3dm_imu_lowpass_filter_command::frequency</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>-3dB cutoff frequency in Hz. Will not affect filtering if 'manual' is false. </p>
-
-</div>
-</div>
 <a id="a3cb65f3165fbb4505cdb47784ad4a15b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3cb65f3165fbb4505cdb47784ad4a15b">&#9670;&nbsp;</a></span>function</h2>
 
@@ -139,6 +107,34 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="namespacemip_1_1C.html#a8e3ad8286a6d95f5426f658e58b9785c">mip_function_selector</a> mip::C::mip_3dm_imu_lowpass_filter_command::function</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab5777511b3991334ae15621418e141fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5777511b3991334ae15621418e141fd">&#9670;&nbsp;</a></span>target_descriptor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t mip::C::mip_3dm_imu_lowpass_filter_command::target_descriptor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae763f40470b0d9bc85e776e87838f27b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae763f40470b0d9bc85e776e87838f27b">&#9670;&nbsp;</a></span>enable</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::C::mip_3dm_imu_lowpass_filter_command::enable</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -157,7 +153,19 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>If false, the cutoff frequency is set to half of the streaming rate as configured by the message format command. Otherwise, the cutoff frequency is set according to the following 'frequency' parameter. </p>
+</div>
+</div>
+<a id="aa64731780c5ba9505cb86c7070e12533"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa64731780c5ba9505cb86c7070e12533">&#9670;&nbsp;</a></span>frequency</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t mip::C::mip_3dm_imu_lowpass_filter_command::frequency</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -172,24 +180,6 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Reserved, set to 0x00. </p>
-
-</div>
-</div>
-<a id="ab5777511b3991334ae15621418e141fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab5777511b3991334ae15621418e141fd">&#9670;&nbsp;</a></span>target_descriptor</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t mip::C::mip_3dm_imu_lowpass_filter_command::target_descriptor</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Field descriptor of filtered quantity within the Sensor data set. Supported values are accel (0x04), gyro (0x05), mag (0x06), and pressure (0x17), provided the data is supported by the device. Except with the READ function selector, this can be 0 to apply to all of the above quantities. </p>
 
 </div>
 </div>

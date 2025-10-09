@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -166,7 +166,7 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:a28334ee384efb8e67f3f3a36975040a8"><td class="memItemLeft" align="right" valign="top">static constexpr const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1GpioConfig.html#a28334ee384efb8e67f3f3a36975040a8">DESCRIPTOR_SET</a> = ::mip::commands_3dm::DESCRIPTOR_SET</td></tr>
 <tr class="memdesc:a28334ee384efb8e67f3f3a36975040a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Descriptors.  <a href="structmip_1_1commands__3dm_1_1GpioConfig.html#a28334ee384efb8e67f3f3a36975040a8">More...</a><br /></td></tr>
 <tr class="separator:a28334ee384efb8e67f3f3a36975040a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97a9aaf4efd9613f7edb77653e5a1aef"><td class="memItemLeft" align="right" valign="top">static constexpr const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1GpioConfig.html#a97a9aaf4efd9613f7edb77653e5a1aef">FIELD_DESCRIPTOR</a> = ::<a class="el" href="group__dm__commands__cpp.html#gga4b38bc38f3278a33dcea0941f0dc719aaca5c5490fe82930ed8c00b87a9457a60">mip::commands_3dm::CMD_GPIO_CONFIG</a></td></tr>
+<tr class="memitem:a97a9aaf4efd9613f7edb77653e5a1aef"><td class="memItemLeft" align="right" valign="top">static constexpr const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1GpioConfig.html#a97a9aaf4efd9613f7edb77653e5a1aef">FIELD_DESCRIPTOR</a> = ::<a class="el" href="group__dm__commands__cpp.html#ggaf8587e14320e0bd3d72b427c39354b83aca5c5490fe82930ed8c00b87a9457a60">mip::commands_3dm::CMD_GPIO_CONFIG</a></td></tr>
 <tr class="separator:a97a9aaf4efd9613f7edb77653e5a1aef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54b7dc51c3b5ecbf74f646d3880c3e00"><td class="memItemLeft" align="right" valign="top">static constexpr const <a class="el" href="structmip_1_1CompositeDescriptor.html">CompositeDescriptor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1commands__3dm_1_1GpioConfig.html#a54b7dc51c3b5ecbf74f646d3880c3e00">DESCRIPTOR</a> = {<a class="el" href="structmip_1_1commands__3dm_1_1GpioConfig.html#a28334ee384efb8e67f3f3a36975040a8">DESCRIPTOR_SET</a>, <a class="el" href="structmip_1_1commands__3dm_1_1GpioConfig.html#a97a9aaf4efd9613f7edb77653e5a1aef">FIELD_DESCRIPTOR</a>}</td></tr>
 <tr class="separator:a54b7dc51c3b5ecbf74f646d3880c3e00"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -178,6 +178,42 @@ Static Public Attributes</h2></td></tr>
 <tr class="separator:a5c9bd5506d0b94d83d76bbddab16bab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a3b84a64735e3544162334c717f4c721e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b84a64735e3544162334c717f4c721e">&#9670;&nbsp;</a></span>Feature</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="structmip_1_1commands__3dm_1_1GpioConfig.html#a3b84a64735e3544162334c717f4c721e">mip::commands_3dm::GpioConfig::Feature</a> : uint8_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a3b84a64735e3544162334c717f4c721ea3bc180bd00be2c60a3a5a68e0dd49503"></a>UNUSED&#160;</td><td class="fielddoc"><p>The pin is not used. It may be technically possible to read the pin state in this mode, but this is not guaranteed to be true of all devices or pins. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3b84a64735e3544162334c717f4c721eaa4b03abff0e37da035d6fc0f9a4b1235"></a>GPIO&#160;</td><td class="fielddoc"><p>General purpose input or output. Use this for direct control of pin output state or to stream the state of the pin. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3b84a64735e3544162334c717f4c721ea1c319b3f8c6d3297eab099e1ee0e930b"></a>PPS&#160;</td><td class="fielddoc"><p>Pulse per second input or output. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3b84a64735e3544162334c717f4c721ea9e1de45ee3c680d9a2ff400816f05e0f"></a>ENCODER&#160;</td><td class="fielddoc"><p>Motor encoder/odometer input. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3b84a64735e3544162334c717f4c721ea87fb568bfdc633ffd5dee0f22cb4606c"></a>TIMESTAMP&#160;</td><td class="fielddoc"><p>Precision Timestamping. Use with Event Trigger Configuration (0x0C,0x2E). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3b84a64735e3544162334c717f4c721eacec5769b01fb096efaf0d6186823c78f"></a>UART&#160;</td><td class="fielddoc"><p>UART data or control lines. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="addcf8e9c83c0fbb3a237165364a05e06"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#addcf8e9c83c0fbb3a237165364a05e06">&#9670;&nbsp;</a></span>Behavior</h2>
 
@@ -232,70 +268,9 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a3b84a64735e3544162334c717f4c721e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b84a64735e3544162334c717f4c721e">&#9670;&nbsp;</a></span>Feature</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="structmip_1_1commands__3dm_1_1GpioConfig.html#a3b84a64735e3544162334c717f4c721e">mip::commands_3dm::GpioConfig::Feature</a> : uint8_t</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a3b84a64735e3544162334c717f4c721ea3bc180bd00be2c60a3a5a68e0dd49503"></a>UNUSED&#160;</td><td class="fielddoc"><p>The pin is not used. It may be technically possible to read the pin state in this mode, but this is not guaranteed to be true of all devices or pins. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a3b84a64735e3544162334c717f4c721eaa4b03abff0e37da035d6fc0f9a4b1235"></a>GPIO&#160;</td><td class="fielddoc"><p>General purpose input or output. Use this for direct control of pin output state or to stream the state of the pin. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a3b84a64735e3544162334c717f4c721ea1c319b3f8c6d3297eab099e1ee0e930b"></a>PPS&#160;</td><td class="fielddoc"><p>Pulse per second input or output. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a3b84a64735e3544162334c717f4c721ea9e1de45ee3c680d9a2ff400816f05e0f"></a>ENCODER&#160;</td><td class="fielddoc"><p>Motor encoder/odometer input. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a3b84a64735e3544162334c717f4c721ea87fb568bfdc633ffd5dee0f22cb4606c"></a>TIMESTAMP&#160;</td><td class="fielddoc"><p>Precision Timestamping. Use with Event Trigger Configuration (0x0C,0x2E). </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a3b84a64735e3544162334c717f4c721eacec5769b01fb096efaf0d6186823c78f"></a>UART&#160;</td><td class="fielddoc"><p>UART data or control lines. </p>
-</td></tr>
-</table>
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a15c542cc689b0a312bb1bbe55459bff5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a15c542cc689b0a312bb1bbe55459bff5">&#9670;&nbsp;</a></span>asTuple() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto mip::commands_3dm::GpioConfig::asTuple </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a5e1ed42d5d64b0321216bfdf7965ded6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e1ed42d5d64b0321216bfdf7965ded6">&#9670;&nbsp;</a></span>asTuple() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e1ed42d5d64b0321216bfdf7965ded6">&#9670;&nbsp;</a></span>asTuple() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -308,6 +283,31 @@ Static Public Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a15c542cc689b0a312bb1bbe55459bff5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15c542cc689b0a312bb1bbe55459bff5">&#9670;&nbsp;</a></span>asTuple() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto mip::commands_3dm::GpioConfig::asTuple </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
@@ -345,6 +345,24 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a6d9bf25e7d6e3b4140e2247ae5e53098"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d9bf25e7d6e3b4140e2247ae5e53098">&#9670;&nbsp;</a></span>insert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::commands_3dm::GpioConfig::insert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacemip.html#a7475074708d6d3e0fa83597b41eb98f8">Serializer</a> &amp;&#160;</td>
+          <td class="paramname"><em>serializer</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a8558ea5f048dd94bfa96c424340d4b6a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8558ea5f048dd94bfa96c424340d4b6a">&#9670;&nbsp;</a></span>extract()</h2>
 
@@ -363,27 +381,49 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a6d9bf25e7d6e3b4140e2247ae5e53098"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d9bf25e7d6e3b4140e2247ae5e53098">&#9670;&nbsp;</a></span>insert()</h2>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ab4baf993c8e005bf8161e2619dfb9793"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4baf993c8e005bf8161e2619dfb9793">&#9670;&nbsp;</a></span>function</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void mip::commands_3dm::GpioConfig::insert </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacemip.html#a7475074708d6d3e0fa83597b41eb98f8">Serializer</a> &amp;&#160;</td>
-          <td class="paramname"><em>serializer</em></td><td>)</td>
-          <td> const</td>
+          <td class="memname"><a class="el" href="group__mip__cpp.html#ga2dde9cdf5ebc86cf62e8c2591dcb56de">FunctionSelector</a> mip::commands_3dm::GpioConfig::function = static_cast&lt;<a class="el" href="group__mip__cpp.html#ga2dde9cdf5ebc86cf62e8c2591dcb56de">FunctionSelector</a>&gt;(0)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Serialization. </p>
+</div>
+</div>
+<a id="af3a16302bed0873ddc993db089edd3a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3a16302bed0873ddc993db089edd3a1">&#9670;&nbsp;</a></span>pin</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t mip::commands_3dm::GpioConfig::pin = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
+<a id="aca0aa237c52201a502e19cb3ad9322b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca0aa237c52201a502e19cb3ad9322b4">&#9670;&nbsp;</a></span>feature</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structmip_1_1commands__3dm_1_1GpioConfig.html#a3b84a64735e3544162334c717f4c721e">Feature</a> mip::commands_3dm::GpioConfig::feature = static_cast&lt;<a class="el" href="structmip_1_1commands__3dm_1_1GpioConfig.html#a3b84a64735e3544162334c717f4c721e">Feature</a>&gt;(0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aecae753718d1d8490c1854e9cfa18332"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aecae753718d1d8490c1854e9cfa18332">&#9670;&nbsp;</a></span>behavior</h2>
 
@@ -396,28 +436,18 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Select an appropriate value from the enumeration based on the selected feature (e.g. for PPS, select one of the values prefixed with PPS_.) </p>
-
 </div>
 </div>
-<a id="a54b7dc51c3b5ecbf74f646d3880c3e00"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54b7dc51c3b5ecbf74f646d3880c3e00">&#9670;&nbsp;</a></span>DESCRIPTOR</h2>
+<a id="acffb7c063f6afceb020cd829db0b3270"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acffb7c063f6afceb020cd829db0b3270">&#9670;&nbsp;</a></span>pin_mode</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr const <a class="el" href="structmip_1_1CompositeDescriptor.html">CompositeDescriptor</a> mip::commands_3dm::GpioConfig::DESCRIPTOR = {<a class="el" href="structmip_1_1commands__3dm_1_1GpioConfig.html#a28334ee384efb8e67f3f3a36975040a8">DESCRIPTOR_SET</a>, <a class="el" href="structmip_1_1commands__3dm_1_1GpioConfig.html#a97a9aaf4efd9613f7edb77653e5a1aef">FIELD_DESCRIPTOR</a>}</td>
+          <td class="memname"><a class="el" href="structmip_1_1commands__3dm_1_1GpioConfig_1_1PinMode.html">PinMode</a> mip::commands_3dm::GpioConfig::pin_mode</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
@@ -442,46 +472,6 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Descriptors. </p>
-
-</div>
-</div>
-<a id="acdcb70770fa39f32abcf604fb3475963"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acdcb70770fa39f32abcf604fb3475963">&#9670;&nbsp;</a></span>DOC_NAME</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr const char* mip::commands_3dm::GpioConfig::DOC_NAME = &quot;GPIO Configuration&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aca0aa237c52201a502e19cb3ad9322b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca0aa237c52201a502e19cb3ad9322b4">&#9670;&nbsp;</a></span>feature</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structmip_1_1commands__3dm_1_1GpioConfig.html#a3b84a64735e3544162334c717f4c721e">Feature</a> mip::commands_3dm::GpioConfig::feature = static_cast&lt;<a class="el" href="structmip_1_1commands__3dm_1_1GpioConfig.html#a3b84a64735e3544162334c717f4c721e">Feature</a>&gt;(0)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Determines how the pin will be used. </p>
-
 </div>
 </div>
 <a id="a97a9aaf4efd9613f7edb77653e5a1aef"></a>
@@ -494,7 +484,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr const uint8_t mip::commands_3dm::GpioConfig::FIELD_DESCRIPTOR = ::<a class="el" href="group__dm__commands__cpp.html#gga4b38bc38f3278a33dcea0941f0dc719aaca5c5490fe82930ed8c00b87a9457a60">mip::commands_3dm::CMD_GPIO_CONFIG</a></td>
+          <td class="memname">constexpr const uint8_t mip::commands_3dm::GpioConfig::FIELD_DESCRIPTOR = ::<a class="el" href="group__dm__commands__cpp.html#ggaf8587e14320e0bd3d72b427c39354b83aca5c5490fe82930ed8c00b87a9457a60">mip::commands_3dm::CMD_GPIO_CONFIG</a></td>
         </tr>
       </table>
   </td>
@@ -506,24 +496,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ab4baf993c8e005bf8161e2619dfb9793"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab4baf993c8e005bf8161e2619dfb9793">&#9670;&nbsp;</a></span>function</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__mip__cpp.html#ga2dde9cdf5ebc86cf62e8c2591dcb56de">FunctionSelector</a> mip::commands_3dm::GpioConfig::function = static_cast&lt;<a class="el" href="group__mip__cpp.html#ga2dde9cdf5ebc86cf62e8c2591dcb56de">FunctionSelector</a>&gt;(0)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Parameters. </p>
-
-</div>
-</div>
-<a id="a5c9bd5506d0b94d83d76bbddab16bab9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5c9bd5506d0b94d83d76bbddab16bab9">&#9670;&nbsp;</a></span>HAS_FUNCTION_SELECTOR</h2>
+<a id="a54b7dc51c3b5ecbf74f646d3880c3e00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54b7dc51c3b5ecbf74f646d3880c3e00">&#9670;&nbsp;</a></span>DESCRIPTOR</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -532,7 +506,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr const bool mip::commands_3dm::GpioConfig::HAS_FUNCTION_SELECTOR = true</td>
+          <td class="memname">constexpr const <a class="el" href="structmip_1_1CompositeDescriptor.html">CompositeDescriptor</a> mip::commands_3dm::GpioConfig::DESCRIPTOR = {<a class="el" href="structmip_1_1commands__3dm_1_1GpioConfig.html#a28334ee384efb8e67f3f3a36975040a8">DESCRIPTOR_SET</a>, <a class="el" href="structmip_1_1commands__3dm_1_1GpioConfig.html#a97a9aaf4efd9613f7edb77653e5a1aef">FIELD_DESCRIPTOR</a>}</td>
         </tr>
       </table>
   </td>
@@ -566,35 +540,47 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="af3a16302bed0873ddc993db089edd3a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af3a16302bed0873ddc993db089edd3a1">&#9670;&nbsp;</a></span>pin</h2>
+<a id="acdcb70770fa39f32abcf604fb3475963"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdcb70770fa39f32abcf604fb3475963">&#9670;&nbsp;</a></span>DOC_NAME</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t mip::commands_3dm::GpioConfig::pin = 0</td>
+          <td class="memname">constexpr const char* mip::commands_3dm::GpioConfig::DOC_NAME = &quot;GPIO Configuration&quot;</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>GPIO pin number counting from 1. For save, load, and default function selectors, this can be 0 to select all pins. </p>
-
 </div>
 </div>
-<a id="acffb7c063f6afceb020cd829db0b3270"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acffb7c063f6afceb020cd829db0b3270">&#9670;&nbsp;</a></span>pin_mode</h2>
+<a id="a5c9bd5506d0b94d83d76bbddab16bab9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c9bd5506d0b94d83d76bbddab16bab9">&#9670;&nbsp;</a></span>HAS_FUNCTION_SELECTOR</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1commands__3dm_1_1GpioConfig_1_1PinMode.html">PinMode</a> mip::commands_3dm::GpioConfig::pin_mode</td>
+          <td class="memname">constexpr const bool mip::commands_3dm::GpioConfig::HAS_FUNCTION_SELECTOR = true</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-
-<p>GPIO configuration. May be restricted depending on device, pin, feature, and behavior. See device user manual. </p>
 
 </div>
 </div>

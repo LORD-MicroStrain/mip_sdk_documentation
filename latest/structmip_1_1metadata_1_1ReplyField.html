@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -98,36 +98,10 @@ Public Attributes</h2></td></tr>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:add3d58bafe74cb0a09bd2f3eee8ba0b7"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1metadata_1_1ReplyField.html#add3d58bafe74cb0a09bd2f3eee8ba0b7">FIELD_DESCRIPTOR</a> = 0xF1</td></tr>
 <tr class="separator:add3d58bafe74cb0a09bd2f3eee8ba0b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a241d4eb6ed7cdc964971912aef3fd2ea"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="structmip_1_1CompositeDescriptor.html">CompositeDescriptor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1metadata_1_1ReplyField.html#a241d4eb6ed7cdc964971912aef3fd2ea">DESCRIPTOR</a> = {INVALID_DESCRIPTOR_SET, <a class="el" href="structmip_1_1metadata_1_1ReplyField.html#add3d58bafe74cb0a09bd2f3eee8ba0b7">FIELD_DESCRIPTOR</a>}</td></tr>
+<tr class="memitem:a241d4eb6ed7cdc964971912aef3fd2ea"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="structmip_1_1CompositeDescriptor.html">CompositeDescriptor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmip_1_1metadata_1_1ReplyField.html#a241d4eb6ed7cdc964971912aef3fd2ea">DESCRIPTOR</a> = {<a class="el" href="group__mip__cpp.html#ga7d8f007ad533e24c95f51bc59dfea374">INVALID_DESCRIPTOR_SET</a>, <a class="el" href="structmip_1_1metadata_1_1ReplyField.html#add3d58bafe74cb0a09bd2f3eee8ba0b7">FIELD_DESCRIPTOR</a>}</td></tr>
 <tr class="separator:a241d4eb6ed7cdc964971912aef3fd2ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a5aebda4c8491088ae9093769703a0010"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5aebda4c8491088ae9093769703a0010">&#9670;&nbsp;</a></span>extract()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t mip::metadata::ReplyField::extract </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacemip.html#a7475074708d6d3e0fa83597b41eb98f8">Serializer</a> &amp;&#160;</td>
-          <td class="paramname"><em>buffer</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a7101733f0a4b80c42dac8fe0e3c9d747"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7101733f0a4b80c42dac8fe0e3c9d747">&#9670;&nbsp;</a></span>insert()</h2>
 
@@ -154,23 +128,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a2e1d48921017496777831e3d176d1576"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e1d48921017496777831e3d176d1576">&#9670;&nbsp;</a></span>cmd_field_desc</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t mip::metadata::ReplyField::cmd_field_desc</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a241d4eb6ed7cdc964971912aef3fd2ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a241d4eb6ed7cdc964971912aef3fd2ea">&#9670;&nbsp;</a></span>DESCRIPTOR</h2>
+<a id="a5aebda4c8491088ae9093769703a0010"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5aebda4c8491088ae9093769703a0010">&#9670;&nbsp;</a></span>extract()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -179,18 +138,23 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="structmip_1_1CompositeDescriptor.html">CompositeDescriptor</a> mip::metadata::ReplyField::DESCRIPTOR = {INVALID_DESCRIPTOR_SET, <a class="el" href="structmip_1_1metadata_1_1ReplyField.html#add3d58bafe74cb0a09bd2f3eee8ba0b7">FIELD_DESCRIPTOR</a>}</td>
+          <td class="memname">size_t mip::metadata::ReplyField::extract </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacemip.html#a7475074708d6d3e0fa83597b41eb98f8">Serializer</a> &amp;&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
 <a id="add3d58bafe74cb0a09bd2f3eee8ba0b7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#add3d58bafe74cb0a09bd2f3eee8ba0b7">&#9670;&nbsp;</a></span>FIELD_DESCRIPTOR</h2>
 
@@ -209,6 +173,42 @@ Static Public Attributes</h2></td></tr>
 <span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
   </tr>
 </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a241d4eb6ed7cdc964971912aef3fd2ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a241d4eb6ed7cdc964971912aef3fd2ea">&#9670;&nbsp;</a></span>DESCRIPTOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="structmip_1_1CompositeDescriptor.html">CompositeDescriptor</a> mip::metadata::ReplyField::DESCRIPTOR = {<a class="el" href="group__mip__cpp.html#ga7d8f007ad533e24c95f51bc59dfea374">INVALID_DESCRIPTOR_SET</a>, <a class="el" href="structmip_1_1metadata_1_1ReplyField.html#add3d58bafe74cb0a09bd2f3eee8ba0b7">FIELD_DESCRIPTOR</a>}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2e1d48921017496777831e3d176d1576"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e1d48921017496777831e3d176d1576">&#9670;&nbsp;</a></span>cmd_field_desc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t mip::metadata::ReplyField::cmd_field_desc</td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>

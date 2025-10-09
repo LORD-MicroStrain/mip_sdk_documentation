@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -140,8 +140,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aafd1bb627130e387701005920c4dfc87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents the device firmware version. </p>
-<p>Device firmware is of the form X.Y.ZZ, where:</p><ul>
+<div class="textblock"><p>Device firmware is of the form X.Y.ZZ, where:</p><ul>
 <li>X is the major version, exactly 1 digit.</li>
 <li>Y is the minor version, exactly 1 digit.</li>
 <li>Z is the patch version, exactly 2 digits.</li>
@@ -268,8 +267,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="adc79e800340e611a2f73a265cb16120d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc79e800340e611a2f73a265cb16120d">&#9670;&nbsp;</a></span>asU16() <span class="overload">[1/2]</span></h2>
+<a id="a9f7d0d8d5abe04aef4c92b667c5f1851"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f7d0d8d5abe04aef4c92b667c5f1851">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -278,23 +277,24 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t&amp; mip::FirmwareVersion::asU16 </td>
+          <td class="memname"><a class="el" href="classmip_1_1FirmwareVersion.html">FirmwareVersion</a>&amp; mip::FirmwareVersion::operator= </td>
           <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmip_1_1FirmwareVersion.html">FirmwareVersion</a> &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a754d0c6273dd29dafef382084811e030"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a754d0c6273dd29dafef382084811e030">&#9670;&nbsp;</a></span>asU16() <span class="overload">[2/2]</span></h2>
+<a id="acd384cd6bd6a622ac3d8e8340f037a4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd384cd6bd6a622ac3d8e8340f037a4e">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -303,115 +303,11 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t mip::FirmwareVersion::asU16 </td>
+          <td class="memname"><a class="el" href="classmip_1_1FirmwareVersion.html">FirmwareVersion</a>&amp; mip::FirmwareVersion::operator= </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2433538d68b6145f07677715911c465d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2433538d68b6145f07677715911c465d">&#9670;&nbsp;</a></span>fromParts()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::FirmwareVersion::fromParts </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>major</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>version</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>minor</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>patch</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7b1985b8dfa38ec3fe124b57176e2d28"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b1985b8dfa38ec3fe124b57176e2d28">&#9670;&nbsp;</a></span>fromString()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool mip::FirmwareVersion::fromString </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>str</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>length</em> = <code>-1</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Reads a standard-format string (X.Y.ZZ\0 or XYZZ\0). </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">str</td><td>Input string. Can be unterminated if length is specified.</td></tr>
-    <tr><td class="paramname">length</td><td>Limits reading this many chars from str. Can be larger if str is terminated. Use -1 if unknown and str is terminated.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if a valid version was parsed. </dd></dl>
-
-</div>
-</div>
-<a id="ac39928ebf122ba4526ab97d69ba10e6a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac39928ebf122ba4526ab97d69ba10e6a">&#9670;&nbsp;</a></span>isDevVersion()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool mip::FirmwareVersion::isDevVersion </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
         </tr>
       </table>
   </td>
@@ -434,6 +330,56 @@ Public Member Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">bool mip::FirmwareVersion::isNull </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac96798cd303aa1051a128d9a97e505cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac96798cd303aa1051a128d9a97e505cf">&#9670;&nbsp;</a></span>isValid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::FirmwareVersion::isValid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac39928ebf122ba4526ab97d69ba10e6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac39928ebf122ba4526ab97d69ba10e6a">&#9670;&nbsp;</a></span>isDevVersion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::FirmwareVersion::isDevVersion </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -498,8 +444,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac96798cd303aa1051a128d9a97e505cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac96798cd303aa1051a128d9a97e505cf">&#9670;&nbsp;</a></span>isValid()</h2>
+<a id="a754d0c6273dd29dafef382084811e030"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a754d0c6273dd29dafef382084811e030">&#9670;&nbsp;</a></span>asU16() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -508,10 +454,77 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool mip::FirmwareVersion::isValid </td>
+          <td class="memname">uint16_t mip::FirmwareVersion::asU16 </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adc79e800340e611a2f73a265cb16120d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc79e800340e611a2f73a265cb16120d">&#9670;&nbsp;</a></span>asU16() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t&amp; mip::FirmwareVersion::asU16 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2433538d68b6145f07677715911c465d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2433538d68b6145f07677715911c465d">&#9670;&nbsp;</a></span>fromParts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::FirmwareVersion::fromParts </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>major</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>minor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>patch</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -573,8 +586,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a1c6a0a9858f34f02ac16ddeb3517aac8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c6a0a9858f34f02ac16ddeb3517aac8">&#9670;&nbsp;</a></span>operator!=()</h2>
+<a id="a4be2a10a1c6dcf56ea2b04a99043521b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4be2a10a1c6dcf56ea2b04a99043521b">&#9670;&nbsp;</a></span>patch()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -583,7 +596,32 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool mip::FirmwareVersion::operator!= </td>
+          <td class="memname">uint8_t mip::FirmwareVersion::patch </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af25cb0b3244f35f21eeacb5c7d132599"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af25cb0b3244f35f21eeacb5c7d132599">&#9670;&nbsp;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::FirmwareVersion::operator== </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classmip_1_1FirmwareVersion.html">FirmwareVersion</a>&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
@@ -599,8 +637,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="adc78ae0648abb4d3d4bc5ced68cafa5c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc78ae0648abb4d3d4bc5ced68cafa5c">&#9670;&nbsp;</a></span>operator&lt;()</h2>
+<a id="a1c6a0a9858f34f02ac16ddeb3517aac8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c6a0a9858f34f02ac16ddeb3517aac8">&#9670;&nbsp;</a></span>operator!=()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -609,7 +647,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool mip::FirmwareVersion::operator&lt; </td>
+          <td class="memname">bool mip::FirmwareVersion::operator!= </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classmip_1_1FirmwareVersion.html">FirmwareVersion</a>&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
@@ -651,8 +689,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a9f7d0d8d5abe04aef4c92b667c5f1851"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f7d0d8d5abe04aef4c92b667c5f1851">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+<a id="ade0c2c3c5fbc56fe44dd966e2eb5569c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade0c2c3c5fbc56fe44dd966e2eb5569c">&#9670;&nbsp;</a></span>operator&gt;=()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -661,37 +699,11 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classmip_1_1FirmwareVersion.html">FirmwareVersion</a>&amp; mip::FirmwareVersion::operator= </td>
+          <td class="memname">bool mip::FirmwareVersion::operator&gt;= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classmip_1_1FirmwareVersion.html">FirmwareVersion</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="acd384cd6bd6a622ac3d8e8340f037a4e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd384cd6bd6a622ac3d8e8340f037a4e">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classmip_1_1FirmwareVersion.html">FirmwareVersion</a>&amp; mip::FirmwareVersion::operator= </td>
-          <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>version</em></td><td>)</td>
-          <td></td>
+          <td class="paramtype"><a class="el" href="classmip_1_1FirmwareVersion.html">FirmwareVersion</a>&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -703,8 +715,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af25cb0b3244f35f21eeacb5c7d132599"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af25cb0b3244f35f21eeacb5c7d132599">&#9670;&nbsp;</a></span>operator==()</h2>
+<a id="adc78ae0648abb4d3d4bc5ced68cafa5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc78ae0648abb4d3d4bc5ced68cafa5c">&#9670;&nbsp;</a></span>operator&lt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -713,7 +725,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool mip::FirmwareVersion::operator== </td>
+          <td class="memname">bool mip::FirmwareVersion::operator&lt; </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classmip_1_1FirmwareVersion.html">FirmwareVersion</a>&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
@@ -755,79 +767,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ade0c2c3c5fbc56fe44dd966e2eb5569c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade0c2c3c5fbc56fe44dd966e2eb5569c">&#9670;&nbsp;</a></span>operator&gt;=()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool mip::FirmwareVersion::operator&gt;= </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmip_1_1FirmwareVersion.html">FirmwareVersion</a>&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4be2a10a1c6dcf56ea2b04a99043521b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4be2a10a1c6dcf56ea2b04a99043521b">&#9670;&nbsp;</a></span>patch()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t mip::FirmwareVersion::patch </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aafd1bb627130e387701005920c4dfc87"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aafd1bb627130e387701005920c4dfc87">&#9670;&nbsp;</a></span>toString() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string mip::FirmwareVersion::toString </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Convert a <a class="el" href="classmip_1_1FirmwareVersion.html" title="Represents the device firmware version.">FirmwareVersion</a> to a string separated by periods. </p>
-<p>This is different from Version::toString in that the patch number uses zero-padding. </p>
-
-</div>
-</div>
 <a id="a22afc31fbcee51862fa6626910087f23"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a22afc31fbcee51862fa6626910087f23">&#9670;&nbsp;</a></span>toString() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a22afc31fbcee51862fa6626910087f23">&#9670;&nbsp;</a></span>toString() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -851,8 +792,6 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Convert the version to a string in the standard X.Y.ZZ format. </p>
 <dl class="section note"><dt>Note</dt><dd>The result is unspecified for invalid version numbers.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -861,6 +800,60 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a7b1985b8dfa38ec3fe124b57176e2d28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b1985b8dfa38ec3fe124b57176e2d28">&#9670;&nbsp;</a></span>fromString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::FirmwareVersion::fromString </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>length</em> = <code>-1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>Input string. Can be unterminated if length is specified.</td></tr>
+    <tr><td class="paramname">length</td><td>Limits reading this many chars from str. Can be larger if str is terminated. Use -1 if unknown and str is terminated.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if a valid version was parsed. </dd></dl>
+
+</div>
+</div>
+<a id="aafd1bb627130e387701005920c4dfc87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafd1bb627130e387701005920c4dfc87">&#9670;&nbsp;</a></span>toString() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string mip::FirmwareVersion::toString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This is different from Version::toString in that the patch number uses zero-padding. </p>
 
 </div>
 </div>

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -94,7 +94,6 @@ Functions</h2></td></tr>
 <tr class="separator:ga06cca18db5e52009d7ccf5860b6511e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Defines an aiding frame associated with a specific sensor frame ID. The frame ID used in this command should mirror the frame ID used in the aiding command (if that aiding measurement is measured in this reference frame). </p>
 <p>This transform satisfies the following relationship:</p>
 <p>EQSTART p^{veh} = R p^{sensor_frame} + t EQEND<br  />
 </p>
@@ -109,14 +108,14 @@ Functions</h2></td></tr>
 <p>Example: GNSS antenna lever arm</p>
 <p>Frame ID: 1 Format: 1 (Euler) Translation: [0,1,] (GNSS with a 1 meter Y offset in the vehicle frame) Rotation: [0,0,0,0] (Rotational component is not relevant for GNSS measurements, set to zero) </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga06cca18db5e52009d7ccf5860b6511e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga06cca18db5e52009d7ccf5860b6511e9">&#9670;&nbsp;</a></span>defaultFrameConfig()</h2>
+<a id="ga32006ebcee42528792d75448a09690a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga32006ebcee42528792d75448a09690a9">&#9670;&nbsp;</a></span>writeFrameConfig()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__aiding_1_1FrameConfig.html">FrameConfig</a> &gt; mip::commands_aiding::defaultFrameConfig </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__aiding_1_1FrameConfig.html">FrameConfig</a> &gt; mip::commands_aiding::writeFrameConfig </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
@@ -125,35 +124,31 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>frameId</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga5845c3453286ffdac7205f612f57270d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5845c3453286ffdac7205f612f57270d">&#9670;&nbsp;</a></span>loadFrameConfig()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__aiding_1_1FrameConfig.html">FrameConfig</a> &gt; mip::commands_aiding::loadFrameConfig </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
+          <td class="paramname"><em>frameId</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>frameId</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1commands__aiding_1_1FrameConfig.html#a72a49d432c88ff2602da2cec723df5a3">FrameConfig::Format</a>&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>trackingEnabled</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>translation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="unionmip_1_1commands__aiding_1_1FrameConfig_1_1Rotation.html">FrameConfig::Rotation</a> &amp;&#160;</td>
+          <td class="paramname"><em>rotation</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -245,14 +240,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga32006ebcee42528792d75448a09690a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga32006ebcee42528792d75448a09690a9">&#9670;&nbsp;</a></span>writeFrameConfig()</h2>
+<a id="ga5845c3453286ffdac7205f612f57270d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5845c3453286ffdac7205f612f57270d">&#9670;&nbsp;</a></span>loadFrameConfig()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__aiding_1_1FrameConfig.html">FrameConfig</a> &gt; mip::commands_aiding::writeFrameConfig </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__aiding_1_1FrameConfig.html">FrameConfig</a> &gt; mip::commands_aiding::loadFrameConfig </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
@@ -261,31 +256,35 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>frameId</em>, </td>
+          <td class="paramname"><em>frameId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga06cca18db5e52009d7ccf5860b6511e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga06cca18db5e52009d7ccf5860b6511e9">&#9670;&nbsp;</a></span>defaultFrameConfig()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__aiding_1_1FrameConfig.html">FrameConfig</a> &gt; mip::commands_aiding::defaultFrameConfig </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1commands__aiding_1_1FrameConfig.html#a72a49d432c88ff2602da2cec723df5a3">FrameConfig::Format</a>&#160;</td>
-          <td class="paramname"><em>format</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>trackingEnabled</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const float *&#160;</td>
-          <td class="paramname"><em>translation</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="unionmip_1_1commands__aiding_1_1FrameConfig_1_1Rotation.html">FrameConfig::Rotation</a> &amp;&#160;</td>
-          <td class="paramname"><em>rotation</em>&#160;</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>frameId</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

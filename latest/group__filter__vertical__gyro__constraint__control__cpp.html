@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -94,39 +94,30 @@ Functions</h2></td></tr>
 <tr class="separator:ga9d093999f22b8ca2e00288f72f7e7b19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Configure the vertical gyro kinematic constraint. </p>
 <p>When enabled and no valid GNSS measurements are available, the filter uses the accelerometers to track pitch and roll under the assumption that the sensor platform is not undergoing linear acceleration. This constraint is useful to maintain accurate pitch and roll during GNSS signal outages. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga9d093999f22b8ca2e00288f72f7e7b19"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9d093999f22b8ca2e00288f72f7e7b19">&#9670;&nbsp;</a></span>defaultVerticalGyroConstraintControl()</h2>
+<a id="gac879e9fc7f4b2bcde965a3dfc95eea0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac879e9fc7f4b2bcde965a3dfc95eea0b">&#9670;&nbsp;</a></span>writeVerticalGyroConstraintControl()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1VerticalGyroConstraintControl.html">VerticalGyroConstraintControl</a> &gt; mip::commands_filter::defaultVerticalGyroConstraintControl </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1VerticalGyroConstraintControl.html">VerticalGyroConstraintControl</a> &gt; mip::commands_filter::writeVerticalGyroConstraintControl </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
-          <td></td>
+          <td class="paramname"><em>device</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga42f897f687742ca20dc2597adb5f6bff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga42f897f687742ca20dc2597adb5f6bff">&#9670;&nbsp;</a></span>loadVerticalGyroConstraintControl()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1VerticalGyroConstraintControl.html">VerticalGyroConstraintControl</a> &gt; mip::commands_filter::loadVerticalGyroConstraintControl </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>enable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -179,28 +170,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gac879e9fc7f4b2bcde965a3dfc95eea0b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac879e9fc7f4b2bcde965a3dfc95eea0b">&#9670;&nbsp;</a></span>writeVerticalGyroConstraintControl()</h2>
+<a id="ga42f897f687742ca20dc2597adb5f6bff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga42f897f687742ca20dc2597adb5f6bff">&#9670;&nbsp;</a></span>loadVerticalGyroConstraintControl()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1VerticalGyroConstraintControl.html">VerticalGyroConstraintControl</a> &gt; mip::commands_filter::writeVerticalGyroConstraintControl </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1VerticalGyroConstraintControl.html">VerticalGyroConstraintControl</a> &gt; mip::commands_filter::loadVerticalGyroConstraintControl </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>enable</em>&#160;</td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga9d093999f22b8ca2e00288f72f7e7b19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9d093999f22b8ca2e00288f72f7e7b19">&#9670;&nbsp;</a></span>defaultVerticalGyroConstraintControl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1VerticalGyroConstraintControl.html">VerticalGyroConstraintControl</a> &gt; mip::commands_filter::defaultVerticalGyroConstraintControl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -94,43 +94,34 @@ Functions</h2></td></tr>
 <tr class="separator:gaf1ecce4d539584252b0909009c832263"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Control the source of heading information used to update the Kalman Filter. </p>
 <ol type="1">
 <li>To use internal GNSS velocity vector for heading updates, the target application must have minimal (preferably no) side-slip. This option is good for wheeled vehicles.</li>
 <li>On some devices, when using GNSS velocity vector for heading updates, the X-axis of the device must align with the direction of travel. Please reference the user guide for your particular device to determine if this limitation is applicable.</li>
 <li>When none is selected, the heading estimate can still converge if GNSS is available and sufficient dynamic motion (change in direction of travel and acceleration) is experienced. The heading may drift when: stationary, traveling at a constant speed, or during a constant course over ground. </li>
 </ol>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gaf1ecce4d539584252b0909009c832263"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf1ecce4d539584252b0909009c832263">&#9670;&nbsp;</a></span>defaultHeadingSource()</h2>
+<a id="gaec8ac6299372bab5a2d6ce7e30053296"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaec8ac6299372bab5a2d6ce7e30053296">&#9670;&nbsp;</a></span>writeHeadingSource()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1HeadingSource.html">HeadingSource</a> &gt; mip::commands_filter::defaultHeadingSource </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1HeadingSource.html">HeadingSource</a> &gt; mip::commands_filter::writeHeadingSource </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
-          <td></td>
+          <td class="paramname"><em>device</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga5850b88a3611395d94f4ec84404f42f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5850b88a3611395d94f4ec84404f42f7">&#9670;&nbsp;</a></span>loadHeadingSource()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1HeadingSource.html">HeadingSource</a> &gt; mip::commands_filter::loadHeadingSource </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1commands__filter_1_1HeadingSource.html#a8b60e40aa069f286ed3b2577f0a7cf7c">HeadingSource::Source</a>&#160;</td>
+          <td class="paramname"><em>source</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -183,28 +174,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gaec8ac6299372bab5a2d6ce7e30053296"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaec8ac6299372bab5a2d6ce7e30053296">&#9670;&nbsp;</a></span>writeHeadingSource()</h2>
+<a id="ga5850b88a3611395d94f4ec84404f42f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5850b88a3611395d94f4ec84404f42f7">&#9670;&nbsp;</a></span>loadHeadingSource()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1HeadingSource.html">HeadingSource</a> &gt; mip::commands_filter::writeHeadingSource </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1HeadingSource.html">HeadingSource</a> &gt; mip::commands_filter::loadHeadingSource </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1commands__filter_1_1HeadingSource.html#a8b60e40aa069f286ed3b2577f0a7cf7c">HeadingSource::Source</a>&#160;</td>
-          <td class="paramname"><em>source</em>&#160;</td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaf1ecce4d539584252b0909009c832263"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf1ecce4d539584252b0909009c832263">&#9670;&nbsp;</a></span>defaultHeadingSource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1HeadingSource.html">HeadingSource</a> &gt; mip::commands_filter::defaultHeadingSource </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

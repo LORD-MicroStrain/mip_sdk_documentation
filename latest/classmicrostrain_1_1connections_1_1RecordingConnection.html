@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -159,8 +159,7 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:ad15bfd18acce56107d7b7d83b884a440 inherit pro_attribs_classmicrostrain_1_1Connection"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Can be used with another connection to communicate with a device, and record the data at the same time. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<div class="textblock"></div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a68bf1cc0fe1cfb413c6d953f55f21080"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a68bf1cc0fe1cfb413c6d953f55f21080">&#9670;&nbsp;</a></span>RecordingConnection()</h2>
 
@@ -192,8 +191,6 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Creates a <a class="el" href="classmicrostrain_1_1connections_1_1RecordingConnection.html" title="Can be used with another connection to communicate with a device, and record the data at the same tim...">RecordingConnection</a> that will write received bytes to recvStream, and sent bytes to sendStream. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">connection</td><td><a class="el" href="classmicrostrain_1_1Connection.html" title="Represents a type of connection.">Connection</a> object that will actually communicate with the device</td></tr>
@@ -231,6 +228,144 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a589e06b981a4a887afe7f6fba990da60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a589e06b981a4a887afe7f6fba990da60">&#9670;&nbsp;</a></span>sendToDevice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool microstrain::connections::RecordingConnection::sendToDevice </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>The data to send to the device</td></tr>
+    <tr><td class="paramname">length</td><td>Length of data in bytes </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classmicrostrain_1_1Connection.html#ad56be6630183ec4cc9cf5f59b4d46e53">microstrain::Connection</a>.</p>
+
+</div>
+</div>
+<a id="a57e83415c4450d61ff7c1118cfb5efeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57e83415c4450d61ff7c1118cfb5efeb">&#9670;&nbsp;</a></span>recvFromDevice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool microstrain::connections::RecordingConnection::recvFromDevice </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>max_length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>wait_time_ms</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>length_out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacemicrostrain.html#af73e34a0b5ae1565e0e36a769c381ee1">EmbeddedTimestamp</a> *&#160;</td>
+          <td class="paramname"><em>timestamp_out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>Buffer to store the received data in</td></tr>
+    <tr><td class="paramname">max_length</td><td>Max number of bytes that can be read. Should be at most the length of buffer.</td></tr>
+    <tr><td class="paramname">wait_time_ms</td><td>Time to wait for data in milliseconds.</td></tr>
+    <tr><td class="paramname">length_out</td><td>Number of bytes actually read.</td></tr>
+    <tr><td class="paramname">timestamp_out</td><td>Timestamp of when the data was received </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classmicrostrain_1_1Connection.html#a3361f33a8b1d5495b7918f0fc25ac07f">microstrain::Connection</a>.</p>
+
+</div>
+</div>
+<a id="adae152b0aca0ae0b946add644bc104ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adae152b0aca0ae0b946add644bc104ec">&#9670;&nbsp;</a></span>isConnected()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool microstrain::connections::RecordingConnection::isConnected </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classmicrostrain_1_1Connection.html#ab654b453709b87c7dd6acd9720910a04">microstrain::Connection</a>.</p>
+
+</div>
+</div>
 <a id="ae7b9d8a1f60ad0282a0e456d2140a0f7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae7b9d8a1f60ad0282a0e456d2140a0f7">&#9670;&nbsp;</a></span>connect()</h2>
 
@@ -312,33 +447,6 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="adae152b0aca0ae0b946add644bc104ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adae152b0aca0ae0b946add644bc104ec">&#9670;&nbsp;</a></span>isConnected()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool microstrain::connections::RecordingConnection::isConnected </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="classmicrostrain_1_1Connection.html#ab654b453709b87c7dd6acd9720910a04">microstrain::Connection</a>.</p>
-
-</div>
-</div>
 <a id="a4e743b6c2d96a06136a9aed081d5fd44"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4e743b6c2d96a06136a9aed081d5fd44">&#9670;&nbsp;</a></span>parameter()</h2>
 
@@ -391,74 +499,6 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a57e83415c4450d61ff7c1118cfb5efeb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a57e83415c4450d61ff7c1118cfb5efeb">&#9670;&nbsp;</a></span>recvFromDevice()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool microstrain::connections::RecordingConnection::recvFromDevice </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>max_length</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>wait_time_ms</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t *&#160;</td>
-          <td class="paramname"><em>length_out</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacemicrostrain.html#af73e34a0b5ae1565e0e36a769c381ee1">EmbeddedTimestamp</a> *&#160;</td>
-          <td class="paramname"><em>timestamp_out</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Receives bytes from the device. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">buffer</td><td>Buffer to store the received data in</td></tr>
-    <tr><td class="paramname">max_length</td><td>Max number of bytes that can be read. Should be at most the length of buffer.</td></tr>
-    <tr><td class="paramname">wait_time_ms</td><td>Time to wait for data in milliseconds.</td></tr>
-    <tr><td class="paramname">length_out</td><td>Number of bytes actually read.</td></tr>
-    <tr><td class="paramname">timestamp_out</td><td>Timestamp of when the data was received </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="classmicrostrain_1_1Connection.html#a3361f33a8b1d5495b7918f0fc25ac07f">microstrain::Connection</a>.</p>
-
-</div>
-</div>
 <a id="aebe10cffd265113a6698c7ebf9060e24"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aebe10cffd265113a6698c7ebf9060e24">&#9670;&nbsp;</a></span>sendFileBytesWritten()</h2>
 
@@ -484,8 +524,9 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a589e06b981a4a887afe7f6fba990da60"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a589e06b981a4a887afe7f6fba990da60">&#9670;&nbsp;</a></span>sendToDevice()</h2>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ac613efdc9e16f56ededad117f0c825e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac613efdc9e16f56ededad117f0c825e2">&#9670;&nbsp;</a></span>TYPE</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -494,44 +535,18 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool microstrain::connections::RecordingConnection::sendToDevice </td>
-          <td>(</td>
-          <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>length</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">constexpr const char* microstrain::connections::RecordingConnection::TYPE = &quot;Recording&quot;</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Sends bytes to the device. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">data</td><td>The data to send to the device</td></tr>
-    <tr><td class="paramname">length</td><td>Length of data in bytes </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="classmicrostrain_1_1Connection.html#ad56be6630183ec4cc9cf5f59b4d46e53">microstrain::Connection</a>.</p>
-
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
 <a id="afbae518bfbd426f1418e0d69a0cd6ea0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afbae518bfbd426f1418e0d69a0cd6ea0">&#9670;&nbsp;</a></span>mConnection</h2>
 
@@ -576,28 +591,6 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a03404533ec55a6ce4fff7183ce309e58"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a03404533ec55a6ce4fff7183ce309e58">&#9670;&nbsp;</a></span>mRecvFileWritten</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint64_t microstrain::connections::RecordingConnection::mRecvFileWritten = 0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="aff21ff01805649a565344ca13c7fd086"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aff21ff01805649a565344ca13c7fd086">&#9670;&nbsp;</a></span>mSendFile</h2>
 
@@ -609,6 +602,28 @@ Protected Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">std::ostream* microstrain::connections::RecordingConnection::mSendFile</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a03404533ec55a6ce4fff7183ce309e58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03404533ec55a6ce4fff7183ce309e58">&#9670;&nbsp;</a></span>mRecvFileWritten</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t microstrain::connections::RecordingConnection::mRecvFileWritten = 0</td>
         </tr>
       </table>
   </td>
@@ -636,28 +651,6 @@ Protected Attributes</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac613efdc9e16f56ededad117f0c825e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac613efdc9e16f56ededad117f0c825e2">&#9670;&nbsp;</a></span>TYPE</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr const char* microstrain::connections::RecordingConnection::TYPE = &quot;Recording&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

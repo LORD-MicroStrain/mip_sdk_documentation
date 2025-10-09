@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -67,7 +67,8 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">(0x0C,0x2C) Get Event Trigger Status<div class="ingroups"><a class="el" href="group__mip.html">MIP</a> &raquo; <a class="el" href="group__mip__c.html">MIP C API</a> &raquo; <a class="el" href="group__MipCommands__c.html">Mip Commands</a> &raquo; <a class="el" href="group__dm__commands__c.html">3dm Commands</a></div></div>  </div>
 </div><!--header-->
@@ -95,6 +96,10 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ga66bf2a8ab6a393b16f60c83dcb084115"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dm__get__event__trigger__status__c.html#ga66bf2a8ab6a393b16f60c83dcb084115">mip::C::insert_mip_3dm_get_event_trigger_status_command_status</a> (<a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *serializer, const <a class="el" href="group__dm__get__event__trigger__status__c.html#ga5db70f3f592cf0088fe97b0d4498f82f">mip_3dm_get_event_trigger_status_command_status</a> self)</td></tr>
+<tr class="separator:ga66bf2a8ab6a393b16f60c83dcb084115"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafedef60e649af04380ea2e20c04d4a59"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dm__get__event__trigger__status__c.html#gafedef60e649af04380ea2e20c04d4a59">mip::C::extract_mip_3dm_get_event_trigger_status_command_status</a> (<a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *serializer, <a class="el" href="group__dm__get__event__trigger__status__c.html#ga5db70f3f592cf0088fe97b0d4498f82f">mip_3dm_get_event_trigger_status_command_status</a> *self)</td></tr>
+<tr class="separator:gafedef60e649af04380ea2e20c04d4a59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa935de185b335ae7628478f9526bce21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dm__get__event__trigger__status__c.html#gaa935de185b335ae7628478f9526bce21">mip::C::insert_mip_3dm_get_event_trigger_status_command_entry</a> (<a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *serializer, const <a class="el" href="structmip_1_1C_1_1mip__3dm__get__event__trigger__status__command__entry.html">mip_3dm_get_event_trigger_status_command_entry</a> *self)</td></tr>
 <tr class="separator:gaa935de185b335ae7628478f9526bce21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2422bf88bca7483d3860043bc9c146c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dm__get__event__trigger__status__c.html#ga2422bf88bca7483d3860043bc9c146c3">mip::C::extract_mip_3dm_get_event_trigger_status_command_entry</a> (<a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *serializer, <a class="el" href="structmip_1_1C_1_1mip__3dm__get__event__trigger__status__command__entry.html">mip_3dm_get_event_trigger_status_command_entry</a> *self)</td></tr>
@@ -109,17 +114,33 @@ Functions</h2></td></tr>
 <tr class="separator:ga5ddcb35f04bc819271c6c5f9c34f5166"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga44f0f0e5c5d23f6faf914d32fef44efb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dm__get__event__trigger__status__c.html#ga44f0f0e5c5d23f6faf914d32fef44efb">mip::C::mip_3dm_get_event_trigger_status</a> (<a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *device, uint8_t requested_count, const uint8_t *requested_instances, uint8_t *count_out, uint8_t count_out_max, <a class="el" href="structmip_1_1C_1_1mip__3dm__get__event__trigger__status__command__entry.html">mip_3dm_get_event_trigger_status_command_entry</a> *triggers_out)</td></tr>
 <tr class="separator:ga44f0f0e5c5d23f6faf914d32fef44efb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga5862d95d4a8cc7388b305e529481b552"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="group__dm__get__event__trigger__status__c.html#ga5db70f3f592cf0088fe97b0d4498f82f">mip_3dm_get_event_trigger_status_command_status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dm__get__event__trigger__status__c.html#ga5862d95d4a8cc7388b305e529481b552">mip::C::MIP_3DM_GET_EVENT_TRIGGER_STATUS_COMMAND_STATUS_NONE</a> = 0x00</td></tr>
+<tr class="separator:ga5862d95d4a8cc7388b305e529481b552"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad06e09e03035d1c21b0a6b2ce81bb8d9"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="group__dm__get__event__trigger__status__c.html#ga5db70f3f592cf0088fe97b0d4498f82f">mip_3dm_get_event_trigger_status_command_status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dm__get__event__trigger__status__c.html#gad06e09e03035d1c21b0a6b2ce81bb8d9">mip::C::MIP_3DM_GET_EVENT_TRIGGER_STATUS_COMMAND_STATUS_ACTIVE</a> = 0x01</td></tr>
+<tr class="memdesc:gad06e09e03035d1c21b0a6b2ce81bb8d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if the trigger is currently active (either due to its logic or being in test mode).  <a href="group__dm__get__event__trigger__status__c.html#gad06e09e03035d1c21b0a6b2ce81bb8d9">More...</a><br /></td></tr>
+<tr class="separator:gad06e09e03035d1c21b0a6b2ce81bb8d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf6186c38f917e2f7faabb53696d8c299"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="group__dm__get__event__trigger__status__c.html#ga5db70f3f592cf0088fe97b0d4498f82f">mip_3dm_get_event_trigger_status_command_status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dm__get__event__trigger__status__c.html#gaf6186c38f917e2f7faabb53696d8c299">mip::C::MIP_3DM_GET_EVENT_TRIGGER_STATUS_COMMAND_STATUS_ENABLED</a> = 0x02</td></tr>
+<tr class="memdesc:gaf6186c38f917e2f7faabb53696d8c299"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if the trigger is enabled.  <a href="group__dm__get__event__trigger__status__c.html#gaf6186c38f917e2f7faabb53696d8c299">More...</a><br /></td></tr>
+<tr class="separator:gaf6186c38f917e2f7faabb53696d8c299"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0f0957fec47bfe237728bff6f339b4e5"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="group__dm__get__event__trigger__status__c.html#ga5db70f3f592cf0088fe97b0d4498f82f">mip_3dm_get_event_trigger_status_command_status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dm__get__event__trigger__status__c.html#ga0f0957fec47bfe237728bff6f339b4e5">mip::C::MIP_3DM_GET_EVENT_TRIGGER_STATUS_COMMAND_STATUS_TEST</a> = 0x04</td></tr>
+<tr class="memdesc:ga0f0957fec47bfe237728bff6f339b4e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if the trigger is in test mode.  <a href="group__dm__get__event__trigger__status__c.html#ga0f0957fec47bfe237728bff6f339b4e5">More...</a><br /></td></tr>
+<tr class="separator:ga0f0957fec47bfe237728bff6f339b4e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8dddd1ba271513ba806bf06e24b5344c"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="group__dm__get__event__trigger__status__c.html#ga5db70f3f592cf0088fe97b0d4498f82f">mip_3dm_get_event_trigger_status_command_status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dm__get__event__trigger__status__c.html#ga8dddd1ba271513ba806bf06e24b5344c">mip::C::MIP_3DM_GET_EVENT_TRIGGER_STATUS_COMMAND_STATUS_ALL</a> = 0x07</td></tr>
+<tr class="separator:ga8dddd1ba271513ba806bf06e24b5344c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="ga34ae887436147206a3a417f02bc1d297"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga34ae887436147206a3a417f02bc1d297">&#9670;&nbsp;</a></span>mip_3dm_get_event_trigger_status_command</h2>
+<a id="ga5db70f3f592cf0088fe97b0d4498f82f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5db70f3f592cf0088fe97b0d4498f82f">&#9670;&nbsp;</a></span>mip_3dm_get_event_trigger_status_command_status</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef struct <a class="el" href="structmip_1_1C_1_1mip__3dm__get__event__trigger__status__command.html">mip_3dm_get_event_trigger_status_command</a> <a class="el" href="structmip_1_1C_1_1mip__3dm__get__event__trigger__status__command.html">mip::C::mip_3dm_get_event_trigger_status_command</a></td>
+          <td class="memname">typedef uint8_t <a class="el" href="group__dm__get__event__trigger__status__c.html#ga5db70f3f592cf0088fe97b0d4498f82f">mip::C::mip_3dm_get_event_trigger_status_command_status</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -140,14 +161,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga5db70f3f592cf0088fe97b0d4498f82f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5db70f3f592cf0088fe97b0d4498f82f">&#9670;&nbsp;</a></span>mip_3dm_get_event_trigger_status_command_status</h2>
+<a id="ga34ae887436147206a3a417f02bc1d297"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga34ae887436147206a3a417f02bc1d297">&#9670;&nbsp;</a></span>mip_3dm_get_event_trigger_status_command</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef uint8_t <a class="el" href="group__dm__get__event__trigger__status__c.html#ga5db70f3f592cf0088fe97b0d4498f82f">mip::C::mip_3dm_get_event_trigger_status_command_status</a></td>
+          <td class="memname">typedef struct <a class="el" href="structmip_1_1C_1_1mip__3dm__get__event__trigger__status__command.html">mip_3dm_get_event_trigger_status_command</a> <a class="el" href="structmip_1_1C_1_1mip__3dm__get__event__trigger__status__command.html">mip::C::mip_3dm_get_event_trigger_status_command</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -169,14 +190,17 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga2a4cdb94f180d1cf4e48797bd7848e82"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2a4cdb94f180d1cf4e48797bd7848e82">&#9670;&nbsp;</a></span>extract_mip_3dm_get_event_trigger_status_command()</h2>
+<a id="ga66bf2a8ab6a393b16f60c83dcb084115"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga66bf2a8ab6a393b16f60c83dcb084115">&#9670;&nbsp;</a></span>insert_mip_3dm_get_event_trigger_status_command_status()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void mip::C::extract_mip_3dm_get_event_trigger_status_command </td>
+          <td class="memname">static void mip::C::insert_mip_3dm_get_event_trigger_status_command_status </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
           <td class="paramname"><em>serializer</em>, </td>
@@ -184,7 +208,76 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__3dm__get__event__trigger__status__command.html">mip_3dm_get_event_trigger_status_command</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__dm__get__event__trigger__status__c.html#ga5db70f3f592cf0088fe97b0d4498f82f">mip_3dm_get_event_trigger_status_command_status</a>&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gafedef60e649af04380ea2e20c04d4a59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafedef60e649af04380ea2e20c04d4a59">&#9670;&nbsp;</a></span>extract_mip_3dm_get_event_trigger_status_command_status()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void mip::C::extract_mip_3dm_get_event_trigger_status_command_status </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__dm__get__event__trigger__status__c.html#ga5db70f3f592cf0088fe97b0d4498f82f">mip_3dm_get_event_trigger_status_command_status</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa935de185b335ae7628478f9526bce21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa935de185b335ae7628478f9526bce21">&#9670;&nbsp;</a></span>insert_mip_3dm_get_event_trigger_status_command_entry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::C::insert_mip_3dm_get_event_trigger_status_command_entry </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__3dm__get__event__trigger__status__command__entry.html">mip_3dm_get_event_trigger_status_command_entry</a> *&#160;</td>
           <td class="paramname"><em>self</em>&#160;</td>
         </tr>
         <tr>
@@ -225,34 +318,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga5ddcb35f04bc819271c6c5f9c34f5166"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5ddcb35f04bc819271c6c5f9c34f5166">&#9670;&nbsp;</a></span>extract_mip_3dm_get_event_trigger_status_response()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::extract_mip_3dm_get_event_trigger_status_response </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__3dm__get__event__trigger__status__response.html">mip_3dm_get_event_trigger_status_response</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="gaa0d67ea9c91ddc9f8de3b2be142c6f4c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaa0d67ea9c91ddc9f8de3b2be142c6f4c">&#9670;&nbsp;</a></span>insert_mip_3dm_get_event_trigger_status_command()</h2>
 
@@ -281,14 +346,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gaa935de185b335ae7628478f9526bce21"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa935de185b335ae7628478f9526bce21">&#9670;&nbsp;</a></span>insert_mip_3dm_get_event_trigger_status_command_entry()</h2>
+<a id="ga2a4cdb94f180d1cf4e48797bd7848e82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2a4cdb94f180d1cf4e48797bd7848e82">&#9670;&nbsp;</a></span>extract_mip_3dm_get_event_trigger_status_command()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void mip::C::insert_mip_3dm_get_event_trigger_status_command_entry </td>
+          <td class="memname">void mip::C::extract_mip_3dm_get_event_trigger_status_command </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
           <td class="paramname"><em>serializer</em>, </td>
@@ -296,7 +361,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__3dm__get__event__trigger__status__command__entry.html">mip_3dm_get_event_trigger_status_command_entry</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__3dm__get__event__trigger__status__command.html">mip_3dm_get_event_trigger_status_command</a> *&#160;</td>
           <td class="paramname"><em>self</em>&#160;</td>
         </tr>
         <tr>
@@ -325,6 +390,34 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__3dm__get__event__trigger__status__response.html">mip_3dm_get_event_trigger_status_response</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga5ddcb35f04bc819271c6c5f9c34f5166"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5ddcb35f04bc819271c6c5f9c34f5166">&#9670;&nbsp;</a></span>extract_mip_3dm_get_event_trigger_status_response()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::C::extract_mip_3dm_get_event_trigger_status_response </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__3dm__get__event__trigger__status__response.html">mip_3dm_get_event_trigger_status_response</a> *&#160;</td>
           <td class="paramname"><em>self</em>&#160;</td>
         </tr>
         <tr>
@@ -385,6 +478,117 @@ Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ga5862d95d4a8cc7388b305e529481b552"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5862d95d4a8cc7388b305e529481b552">&#9670;&nbsp;</a></span>MIP_3DM_GET_EVENT_TRIGGER_STATUS_COMMAND_STATUS_NONE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="group__dm__get__event__trigger__status__c.html#ga5db70f3f592cf0088fe97b0d4498f82f">mip_3dm_get_event_trigger_status_command_status</a> mip::C::MIP_3DM_GET_EVENT_TRIGGER_STATUS_COMMAND_STATUS_NONE = 0x00</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gad06e09e03035d1c21b0a6b2ce81bb8d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad06e09e03035d1c21b0a6b2ce81bb8d9">&#9670;&nbsp;</a></span>MIP_3DM_GET_EVENT_TRIGGER_STATUS_COMMAND_STATUS_ACTIVE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="group__dm__get__event__trigger__status__c.html#ga5db70f3f592cf0088fe97b0d4498f82f">mip_3dm_get_event_trigger_status_command_status</a> mip::C::MIP_3DM_GET_EVENT_TRIGGER_STATUS_COMMAND_STATUS_ACTIVE = 0x01</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaf6186c38f917e2f7faabb53696d8c299"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf6186c38f917e2f7faabb53696d8c299">&#9670;&nbsp;</a></span>MIP_3DM_GET_EVENT_TRIGGER_STATUS_COMMAND_STATUS_ENABLED</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="group__dm__get__event__trigger__status__c.html#ga5db70f3f592cf0088fe97b0d4498f82f">mip_3dm_get_event_trigger_status_command_status</a> mip::C::MIP_3DM_GET_EVENT_TRIGGER_STATUS_COMMAND_STATUS_ENABLED = 0x02</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga0f0957fec47bfe237728bff6f339b4e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0f0957fec47bfe237728bff6f339b4e5">&#9670;&nbsp;</a></span>MIP_3DM_GET_EVENT_TRIGGER_STATUS_COMMAND_STATUS_TEST</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="group__dm__get__event__trigger__status__c.html#ga5db70f3f592cf0088fe97b0d4498f82f">mip_3dm_get_event_trigger_status_command_status</a> mip::C::MIP_3DM_GET_EVENT_TRIGGER_STATUS_COMMAND_STATUS_TEST = 0x04</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga8dddd1ba271513ba806bf06e24b5344c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8dddd1ba271513ba806bf06e24b5344c">&#9670;&nbsp;</a></span>MIP_3DM_GET_EVENT_TRIGGER_STATUS_COMMAND_STATUS_ALL</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="group__dm__get__event__trigger__status__c.html#ga5db70f3f592cf0088fe97b0d4498f82f">mip_3dm_get_event_trigger_status_command_status</a> mip::C::MIP_3DM_GET_EVENT_TRIGGER_STATUS_COMMAND_STATUS_ALL = 0x07</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>

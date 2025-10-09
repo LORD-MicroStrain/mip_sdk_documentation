@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -86,7 +86,6 @@ Functions</h2></td></tr>
 <tr class="separator:ga5a0ac78ec556b1314e0c0914deab5cf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Lists the available trigger or action types. </p>
 <p>There are a limited number of trigger and action slots available in the device. Up to M triggers and N actions can be configured at once in slots 1..M and 1..N respectively. M and N are identified by the max_instances field in the response with the appropriate query selector.</p>
 <p>Each slot can be configured as one of a variety of different types of triggers or actions. The supported types are enumerated in the response to this command. Additionally, there is a limit on the number of a given type. In other words, while the device may support M triggers in total, only a few of them maybe usable as a given type. This limit helps optimize device resources. The limit is identified in the count field.</p>
 <p>All of the information in this command is available in the user manual. This command provides a programmatic method for obtaining the information. </p>

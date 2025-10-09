@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -112,7 +112,6 @@ Functions</h2></td></tr>
 <tr class="separator:gae4c55dcbe01b15554ad4bc3c7bfbdb22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Set the sensor-to-vehicle frame transformation using unit length quaternion. </p>
 <p>Note: This is the transformation, the inverse of the rotation.</p>
 <p>This quaternion describes the transformation of vectors from the sensor body frame to the vehicle frame of reference, and satisfies the following relationship:<br  />
 </p>
@@ -175,62 +174,6 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gadd0d05c8056f167ccfbfd0ddf7a1a635"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadd0d05c8056f167ccfbfd0ddf7a1a635">&#9670;&nbsp;</a></span>extract_mip_3dm_sensor_2_vehicle_transform_quaternion_command()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::extract_mip_3dm_sensor_2_vehicle_transform_quaternion_command </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__3dm__sensor__2__vehicle__transform__quaternion__command.html">mip_3dm_sensor_2_vehicle_transform_quaternion_command</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gadcbf85f34a7a0afb440eb7075a40c8bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadcbf85f34a7a0afb440eb7075a40c8bb">&#9670;&nbsp;</a></span>extract_mip_3dm_sensor_2_vehicle_transform_quaternion_response()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::extract_mip_3dm_sensor_2_vehicle_transform_quaternion_response </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__3dm__sensor__2__vehicle__transform__quaternion__response.html">mip_3dm_sensor_2_vehicle_transform_quaternion_response</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="gaaea5bad63488a017b52868675c3fedbb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaaea5bad63488a017b52868675c3fedbb">&#9670;&nbsp;</a></span>insert_mip_3dm_sensor_2_vehicle_transform_quaternion_command()</h2>
 
@@ -247,6 +190,34 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__3dm__sensor__2__vehicle__transform__quaternion__command.html">mip_3dm_sensor_2_vehicle_transform_quaternion_command</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gadd0d05c8056f167ccfbfd0ddf7a1a635"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadd0d05c8056f167ccfbfd0ddf7a1a635">&#9670;&nbsp;</a></span>extract_mip_3dm_sensor_2_vehicle_transform_quaternion_command()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::C::extract_mip_3dm_sensor_2_vehicle_transform_quaternion_command </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__3dm__sensor__2__vehicle__transform__quaternion__command.html">mip_3dm_sensor_2_vehicle_transform_quaternion_command</a> *&#160;</td>
           <td class="paramname"><em>self</em>&#160;</td>
         </tr>
         <tr>
@@ -287,36 +258,56 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gae4c55dcbe01b15554ad4bc3c7bfbdb22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae4c55dcbe01b15554ad4bc3c7bfbdb22">&#9670;&nbsp;</a></span>mip_3dm_default_sensor_2_vehicle_transform_quaternion()</h2>
+<a id="gadcbf85f34a7a0afb440eb7075a40c8bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadcbf85f34a7a0afb440eb7075a40c8bb">&#9670;&nbsp;</a></span>extract_mip_3dm_sensor_2_vehicle_transform_quaternion_response()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_3dm_default_sensor_2_vehicle_transform_quaternion </td>
+          <td class="memname">void mip::C::extract_mip_3dm_sensor_2_vehicle_transform_quaternion_response </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__3dm__sensor__2__vehicle__transform__quaternion__response.html">mip_3dm_sensor_2_vehicle_transform_quaternion_response</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="gac94f336076bb2f70752a9414140fb407"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac94f336076bb2f70752a9414140fb407">&#9670;&nbsp;</a></span>mip_3dm_load_sensor_2_vehicle_transform_quaternion()</h2>
+<a id="ga256df171c38e92c2d082be1196eac8dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga256df171c38e92c2d082be1196eac8dc">&#9670;&nbsp;</a></span>mip_3dm_write_sensor_2_vehicle_transform_quaternion()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_3dm_load_sensor_2_vehicle_transform_quaternion </td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_3dm_write_sensor_2_vehicle_transform_quaternion </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>q</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -369,28 +360,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga256df171c38e92c2d082be1196eac8dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga256df171c38e92c2d082be1196eac8dc">&#9670;&nbsp;</a></span>mip_3dm_write_sensor_2_vehicle_transform_quaternion()</h2>
+<a id="gac94f336076bb2f70752a9414140fb407"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac94f336076bb2f70752a9414140fb407">&#9670;&nbsp;</a></span>mip_3dm_load_sensor_2_vehicle_transform_quaternion()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_3dm_write_sensor_2_vehicle_transform_quaternion </td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_3dm_load_sensor_2_vehicle_transform_quaternion </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const float *&#160;</td>
-          <td class="paramname"><em>q</em>&#160;</td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae4c55dcbe01b15554ad4bc3c7bfbdb22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae4c55dcbe01b15554ad4bc3c7bfbdb22">&#9670;&nbsp;</a></span>mip_3dm_default_sensor_2_vehicle_transform_quaternion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_3dm_default_sensor_2_vehicle_transform_quaternion </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

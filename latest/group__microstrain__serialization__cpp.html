@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -180,7 +180,6 @@ Functions</h2></td></tr>
 <tr class="separator:gada1cadd3ff4fd48c3d516175bae1ed79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>(De)serialization in C++. </p>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="ga2ca05e96abddf932d2607c97dbb6f16e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga2ca05e96abddf932d2607c97dbb6f16e">&#9670;&nbsp;</a></span>BigEndianSerializer</h2>
@@ -211,8 +210,158 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ga5a978dcbb35f175e3079aaaa6eadc450"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5a978dcbb35f175e3079aaaa6eadc450">&#9670;&nbsp;</a></span>insert() <span class="overload">[1/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;serialization::Endian E, class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::enable_if&lt;std::is_arithmetic&lt;T&gt;::value, size_t&gt;::type microstrain::insert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmicrostrain_1_1Serializer.html">Serializer</a>&lt; E &gt; &amp;&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">E</td><td>Endianness of buffer. Automatically deduced from the serializer parameter. </td></tr>
+    <tr><td class="paramname">T</td><td>Type of the value to write. Automatically deduced from the value parameter.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td><a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a> object pointing to the destination buffer. </td></tr>
+    <tr><td class="paramname">value</td><td>A number to write to the buffer. Can be bool, int, uint32_t, float, etc.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The size of T, for consistency. </dd></dl>
+
+</div>
+</div>
+<a id="ga97f89f7d5ee32b5b34f9fb391111af44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga97f89f7d5ee32b5b34f9fb391111af44">&#9670;&nbsp;</a></span>extract() <span class="overload">[1/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;serialization::Endian E, class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::enable_if&lt;std::is_arithmetic&lt;T&gt;::value, size_t&gt;::type microstrain::extract </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmicrostrain_1_1Serializer.html">Serializer</a>&lt; E &gt; &amp;&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">E</td><td>Endianness of buffer. Automatically deduced from the serializer parameter. </td></tr>
+    <tr><td class="paramname">T</td><td>Type of the value to read. Automatically deduced from the value parameter.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">buffer</td><td><a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a> object pointing to the source buffer. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">value</td><td>The read value is stored in this variable. Can be a reference to bool, int, uint32_t, float, etc.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The size of T, for consistency. </dd></dl>
+
+</div>
+</div>
+<a id="ga31b807d6f4f495a8b005379c0a810fe0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga31b807d6f4f495a8b005379c0a810fe0">&#9670;&nbsp;</a></span>insert() <span class="overload">[2/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;serialization::Endian E, class T , decltype &amp;::insert  = nullptr&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::enable_if&lt;std::is_class&lt;T&gt;::value , size_t&gt;::type microstrain::insert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmicrostrain_1_1Serializer.html">microstrain::Serializer</a>&lt; E &gt; &amp;&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>object</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Example: </p><div class="fragment"><div class="line"><span class="keyword">class </span>Foo</div>
+<div class="line">{</div>
+<div class="line">    <span class="keywordtype">int</span> x, y;</div>
+<div class="line">    <span class="keywordtype">float</span> z;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// E.g. for big endian serialization:</span></div>
+<div class="line">    <span class="keywordtype">void</span> <a class="code" href="group__microstrain__serialization__cpp.html#ga5a978dcbb35f175e3079aaaa6eadc450">insert</a>(<a class="code" href="classmicrostrain_1_1Serializer.html">microstrain::BigEndianSerializer</a>&amp; serializer)<span class="keyword"> const </span>{</div>
+<div class="line">        <a class="code" href="group__microstrain__serialization__cpp.html#ga5a978dcbb35f175e3079aaaa6eadc450">insert</a>(serializer, x, y, z);  <span class="comment">// Write x, y, and z parameters.</span></div>
+<div class="line">    }</div>
+<div class="line">    <span class="comment">// OR, if both big and little serialization are desired:</span></div>
+<div class="line">    <span class="keyword">template</span>&lt;microstrain::Endian E&gt;</div>
+<div class="line">    <span class="keywordtype">void</span> <a class="code" href="group__microstrain__serialization__cpp.html#ga5a978dcbb35f175e3079aaaa6eadc450">insert</a>(<a class="code" href="classmicrostrain_1_1Serializer.html">microstrain::Serializer&lt;E&gt;</a>&amp; serializer)<span class="keyword"> const </span>{</div>
+<div class="line">        <a class="code" href="group__microstrain__serialization__cpp.html#ga5a978dcbb35f175e3079aaaa6eadc450">insert</a>(serializer, x, y, z);  <span class="comment">// Write x, y, and z parameters.</span></div>
+<div class="line">    }</div>
+<div class="line">};</div>
+</div><!-- fragment --><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">E</td><td>Endianness of buffer. Automatically deduced from the serializer parameter. </td></tr>
+    <tr><td class="paramname">T</td><td>Type of the class. Automatically deduced from the object parameter.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">serializer</td><td><a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a> object pointing to the destination buffer. </td></tr>
+    <tr><td class="paramname">object</td><td>The class to write to the buffer.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of bytes written. </dd></dl>
+
+</div>
+</div>
 <a id="ga70a1482538358531247f736c00848595"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga70a1482538358531247f736c00848595">&#9670;&nbsp;</a></span>extract() <span class="overload">[1/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga70a1482538358531247f736c00848595">&#9670;&nbsp;</a></span>extract() <span class="overload">[2/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -238,8 +387,6 @@ template&lt;serialization::Endian E, class T , decltype &amp;::extract  = nullpt
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Reads a class object from a <a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a>. This overload is available to any class which defines a method <code>extract</code>. It shall take a <a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a> reference as the sole parameter. </p>
 <p>Example: </p><div class="fragment"><div class="line"><span class="keyword">class </span>Foo</div>
 <div class="line">{</div>
 <div class="line">    <span class="keywordtype">int</span> x, y;</div>
@@ -273,8 +420,8 @@ template&lt;serialization::Endian E, class T , decltype &amp;::extract  = nullpt
 
 </div>
 </div>
-<a id="ga97f89f7d5ee32b5b34f9fb391111af44"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga97f89f7d5ee32b5b34f9fb391111af44">&#9670;&nbsp;</a></span>extract() <span class="overload">[2/10]</span></h2>
+<a id="ga38cd011dc1710e35d7a6c1ae7fb98dea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga38cd011dc1710e35d7a6c1ae7fb98dea">&#9670;&nbsp;</a></span>insert() <span class="overload">[3/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -282,54 +429,7 @@ template&lt;serialization::Endian E, class T , decltype &amp;::extract  = nullpt
 template&lt;serialization::Endian E, class T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::enable_if&lt;std::is_arithmetic&lt;T&gt;::value, size_t&gt;::type microstrain::extract </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmicrostrain_1_1Serializer.html">Serializer</a>&lt; E &gt; &amp;&#160;</td>
-          <td class="paramname"><em>buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">T &amp;&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Reads a numeric value from a <a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a>. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">E</td><td>Endianness of buffer. Automatically deduced from the serializer parameter. </td></tr>
-    <tr><td class="paramname">T</td><td>Type of the value to read. Automatically deduced from the value parameter.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir"></td><td class="paramname">buffer</td><td><a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a> object pointing to the source buffer. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">value</td><td>The read value is stored in this variable. Can be a reference to bool, int, uint32_t, float, etc.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The size of T, for consistency. </dd></dl>
-
-</div>
-</div>
-<a id="gab9ad2b2b3f0710dd0f33edda49646724"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab9ad2b2b3f0710dd0f33edda49646724">&#9670;&nbsp;</a></span>extract() <span class="overload">[3/10]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;serialization::Endian E, class T , size_t N&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t microstrain::extract </td>
+          <td class="memname">size_t microstrain::insert </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classmicrostrain_1_1Serializer.html">Serializer</a>&lt; E &gt; &amp;&#160;</td>
           <td class="paramname"><em>serializer</em>, </td>
@@ -337,8 +437,14 @@ template&lt;serialization::Endian E, class T , size_t N&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::array&lt; T, N &gt; &amp;&#160;</td>
-          <td class="paramname"><em>values</em>&#160;</td>
+          <td class="paramtype">const T *&#160;</td>
+          <td class="paramname"><em>values</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -347,8 +453,6 @@ template&lt;serialization::Endian E, class T , size_t N&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Reads a std::array from a <a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a>. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">E</td><td>Endianness of buffer. Automatically deduced from the serializer parameter. </td></tr>
@@ -358,64 +462,18 @@ template&lt;serialization::Endian E, class T , size_t N&gt; </div>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">serializer</td><td><a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a> object pointing to the source buffer. </td></tr>
-    <tr><td class="paramname">values</td><td>std::array of values</td></tr>
+    <tr><td class="paramname">serializer</td><td><a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a> object pointing to the destination buffer. </td></tr>
+    <tr><td class="paramname">values</td><td>Pointer to the first value in the array. </td></tr>
+    <tr><td class="paramname">count</td><td>Number of elements in the array to write.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The total number of bytes read. </dd></dl>
-
-</div>
-</div>
-<a id="gacfef0822b97c91d0c0cd4340a600abcb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacfef0822b97c91d0c0cd4340a600abcb">&#9670;&nbsp;</a></span>extract() <span class="overload">[4/10]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;serialization::Endian E, class T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t microstrain::extract </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmicrostrain_1_1Serializer.html">Serializer</a>&lt; E &gt; &amp;&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacemicrostrain.html#ab74c8e68701769d676e46bf760aad854">microstrain::ConstArrayView</a>&lt; T &gt;&#160;</td>
-          <td class="paramname"><em>values</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Reads an array from a <a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a> via an <a class="el" href="structmicrostrain_1_1ArrayView.html" title="Represents a view over a contiguous array of objects, similar to std::span, and is implemented as a p...">ArrayView</a>. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">E</td><td>Endianness of buffer. Automatically deduced from the serializer parameter. </td></tr>
-    <tr><td class="paramname">T</td><td>Type of array elements. Automatically deduced from the values parameter.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">serializer</td><td><a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a> object pointing to the source buffer. </td></tr>
-    <tr><td class="paramname">values</td><td><a class="el" href="structmicrostrain_1_1ArrayView.html" title="Represents a view over a contiguous array of objects, similar to std::span, and is implemented as a p...">ArrayView</a> containing pointer and count.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The total number of bytes read. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The total number of bytes written. </dd></dl>
 
 </div>
 </div>
 <a id="gaa7b3273b663f97e121a164179a99b032"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa7b3273b663f97e121a164179a99b032">&#9670;&nbsp;</a></span>extract() <span class="overload">[5/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa7b3273b663f97e121a164179a99b032">&#9670;&nbsp;</a></span>extract() <span class="overload">[3/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -447,8 +505,6 @@ template&lt;serialization::Endian E, class T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Reads an array from a <a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a>. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">E</td><td>Endianness of buffer. Automatically deduced from the serializer parameter. </td></tr>
@@ -468,8 +524,143 @@ template&lt;serialization::Endian E, class T &gt; </div>
 
 </div>
 </div>
+<a id="ga413e888768602f0ca85485d488996041"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga413e888768602f0ca85485d488996041">&#9670;&nbsp;</a></span>insert() <span class="overload">[4/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;serialization::Endian E, class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t microstrain::insert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmicrostrain_1_1Serializer.html">Serializer</a>&lt; E &gt; &amp;&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1ArrayView.html">microstrain::ArrayView</a>&lt; const T &gt;&#160;</td>
+          <td class="paramname"><em>values</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">E</td><td>Endianness of buffer. Automatically deduced from the serializer parameter. </td></tr>
+    <tr><td class="paramname">T</td><td>Type of array elements. Automatically deduced from the values parameter.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">serializer</td><td><a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a> object pointing to the destination buffer. </td></tr>
+    <tr><td class="paramname">values</td><td><a class="el" href="structmicrostrain_1_1ArrayView.html" title="Represents a view over a contiguous array of objects, similar to std::span, and is implemented as a p...">ArrayView</a> containing pointer and count.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The total number of bytes written. </dd></dl>
+
+</div>
+</div>
+<a id="gacfef0822b97c91d0c0cd4340a600abcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacfef0822b97c91d0c0cd4340a600abcb">&#9670;&nbsp;</a></span>extract() <span class="overload">[4/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;serialization::Endian E, class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t microstrain::extract </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmicrostrain_1_1Serializer.html">Serializer</a>&lt; E &gt; &amp;&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacemicrostrain.html#ab74c8e68701769d676e46bf760aad854">microstrain::ConstArrayView</a>&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>values</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">E</td><td>Endianness of buffer. Automatically deduced from the serializer parameter. </td></tr>
+    <tr><td class="paramname">T</td><td>Type of array elements. Automatically deduced from the values parameter.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">serializer</td><td><a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a> object pointing to the source buffer. </td></tr>
+    <tr><td class="paramname">values</td><td><a class="el" href="structmicrostrain_1_1ArrayView.html" title="Represents a view over a contiguous array of objects, similar to std::span, and is implemented as a p...">ArrayView</a> containing pointer and count.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The total number of bytes read. </dd></dl>
+
+</div>
+</div>
+<a id="ga07ae70f9210f1ee7f89320e44cbafe27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga07ae70f9210f1ee7f89320e44cbafe27">&#9670;&nbsp;</a></span>insert() <span class="overload">[5/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;serialization::Endian E, class T , size_t N&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t microstrain::insert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmicrostrain_1_1Serializer.html">Serializer</a>&lt; E &gt; &amp;&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T(&amp;)&#160;</td>
+          <td class="paramname"><em>values</em>[N]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">E</td><td>Endianness of buffer. Automatically deduced from the serializer parameter. </td></tr>
+    <tr><td class="paramname">T</td><td>Type of array elements. Automatically deduced from the values parameter.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">serializer</td><td><a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a> object pointing to the destination buffer. </td></tr>
+    <tr><td class="paramname">values</td><td>C-style array of values</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The total number of bytes written. </dd></dl>
+
+</div>
+</div>
 <a id="gabb2c1a72c197ff509ff01e5b2ec3aad3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabb2c1a72c197ff509ff01e5b2ec3aad3">&#9670;&nbsp;</a></span>extract() <span class="overload">[6/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gabb2c1a72c197ff509ff01e5b2ec3aad3">&#9670;&nbsp;</a></span>extract() <span class="overload">[5/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -495,8 +686,6 @@ template&lt;serialization::Endian E, class T , size_t N&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Reads a fixed-size array from a <a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a>. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">E</td><td>Endianness of buffer. Automatically deduced from the serializer parameter. </td></tr>
@@ -512,6 +701,155 @@ template&lt;serialization::Endian E, class T , size_t N&gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The total number of bytes read. </dd></dl>
+
+</div>
+</div>
+<a id="ga10641ee9bc621c2ce14128629838b9a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga10641ee9bc621c2ce14128629838b9a1">&#9670;&nbsp;</a></span>insert() <span class="overload">[6/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;serialization::Endian E, class T , size_t N&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t microstrain::insert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmicrostrain_1_1Serializer.html">Serializer</a>&lt; E &gt; &amp;&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::array&lt; T, N &gt; &amp;&#160;</td>
+          <td class="paramname"><em>values</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">E</td><td>Endianness of buffer. Automatically deduced from the serializer parameter. </td></tr>
+    <tr><td class="paramname">T</td><td>Type of array elements. Automatically deduced from the values parameter.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">serializer</td><td><a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a> object pointing to the destination buffer. </td></tr>
+    <tr><td class="paramname">values</td><td>std::array of values</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The total number of bytes written. </dd></dl>
+
+</div>
+</div>
+<a id="gab9ad2b2b3f0710dd0f33edda49646724"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab9ad2b2b3f0710dd0f33edda49646724">&#9670;&nbsp;</a></span>extract() <span class="overload">[6/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;serialization::Endian E, class T , size_t N&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t microstrain::extract </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmicrostrain_1_1Serializer.html">Serializer</a>&lt; E &gt; &amp;&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::array&lt; T, N &gt; &amp;&#160;</td>
+          <td class="paramname"><em>values</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">E</td><td>Endianness of buffer. Automatically deduced from the serializer parameter. </td></tr>
+    <tr><td class="paramname">T</td><td>Type of array elements. Automatically deduced from the values parameter.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">serializer</td><td><a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a> object pointing to the source buffer. </td></tr>
+    <tr><td class="paramname">values</td><td>std::array of values</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The total number of bytes read. </dd></dl>
+
+</div>
+</div>
+<a id="gafc5f1f14e4e59dcac58db524a9621078"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafc5f1f14e4e59dcac58db524a9621078">&#9670;&nbsp;</a></span>insert() <span class="overload">[7/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;serialization::Endian E, typename T0 , typename T1 , typename... Ts&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t microstrain::insert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmicrostrain_1_1Serializer.html">Serializer</a>&lt; E &gt; &amp;&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T0 &amp;&#160;</td>
+          <td class="paramname"><em>value0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T1 &amp;&#160;</td>
+          <td class="paramname"><em>value1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Ts...&#160;</td>
+          <td class="paramname"><em>values</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This function is equivalent to calling insert on each parameter in sequence.</p>
+<p>This function can make use of C++17 fold expressions to improve performance by combining the buffer bounds checks when all types are of known size (i.e. numeric types).</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">E</td><td>Endianness of buffer. Automatically deduced from the serializer parameter. </td></tr>
+    <tr><td class="paramname">Ts</td><td>Types of values. Automatically deduced from the values parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">serializer</td><td><a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a> object pointing to the destination buffer. </td></tr>
+    <tr><td class="paramname">values</td><td>One or more parameters to be written.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The total number of bytes written. </dd></dl>
 
 </div>
 </div>
@@ -554,8 +892,6 @@ template&lt;serialization::Endian E, typename T0 , typename T1 , typename... Ts&
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Reads multiple values from a <a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a>. </p>
 <p>This function is equivalent to calling extract on each parameter in sequence.</p>
 <p>This function can make use of C++17 fold expressions to improve performance by combining the buffer bounds checks when all types are of known size (i.e. numeric types).</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
@@ -573,6 +909,83 @@ template&lt;serialization::Endian E, typename T0 , typename T1 , typename... Ts&
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The total number of bytes read. </dd></dl>
+
+</div>
+</div>
+<a id="gaf1f8a59ef8827e800b464bf6703203ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf1f8a59ef8827e800b464bf6703203ab">&#9670;&nbsp;</a></span>insert() <span class="overload">[8/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;serialization::Endian E, class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool microstrain::insert </td>
+          <td>(</td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>buffer_length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>offset</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>exact_size</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Use this overload to write a single value without needing to manually construct a <a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a> object.</p>
+<p>Example: </p><div class="fragment"><div class="line">uint8_t buffer[256];</div>
+<div class="line">uint32_t value = 16909060; <span class="comment">// 0x01020304</span></div>
+<div class="line">insert&lt;microstrain::Endian::big&gt;(value, buffer, <span class="keyword">sizeof</span>(buffer), 0, <span class="keyword">false</span>);</div>
+<div class="line"><span class="comment">// Buffer = [0x01, 0x02, 0x03, 0x04]</span></div>
+<div class="line">insert&lt;microstrain::Endian::little&gt;(value, buffer, <span class="keyword">sizeof</span>(buffer), 0, <span class="keyword">false</span>);</div>
+<div class="line"><span class="comment">// Buffer = [0x04, 0x03, 0x02, 0x01]</span></div>
+</div><!-- fragment --><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">E</td><td>Endianness of buffer. Must be manually specified. </td></tr>
+    <tr><td class="paramname">T</td><td>Type of value. Automatically deduced from the value parameter.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Parameter to serialize. This can be any serializable type. </td></tr>
+    <tr><td class="paramname">buffer</td><td>Pointer to first element of the byte buffer. </td></tr>
+    <tr><td class="paramname">buffer_length</td><td>Length/size of buffer. </td></tr>
+    <tr><td class="paramname">offset</td><td>Starting offset. Default 0. </td></tr>
+    <tr><td class="paramname">exact_size</td><td>Returns true only if exactly buffer_length plus offset bytes are written. Default false.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>False if the buffer isn't large enough. </dd>
+<dd>
+False if exact_size is true and the number of bytes written didn't equal buffer_length. </dd>
+<dd>
+True otherwise. </dd></dl>
 
 </div>
 </div>
@@ -621,8 +1034,6 @@ template&lt;serialization::Endian E, class T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Deserializes a value from a raw byte buffer. </p>
 <p>Use this overload to read a single value without needing to manually construct a <a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a> object.</p>
 <p>Example: </p><div class="fragment"><div class="line">uint8_t buffer[4] = {0x01, 0x02, 0x03, 0x04};</div>
 <div class="line">uint32_t value_BE;</div>
@@ -651,6 +1062,70 @@ template&lt;serialization::Endian E, class T &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>False if the buffer doesn't have enough data. </dd>
 <dd>
 False if exact_size is true and the number of bytes read plus offset didn't equal buffer_length. </dd>
+<dd>
+True otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="ga3a7482913859299520ae7ee931633193"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3a7482913859299520ae7ee931633193">&#9670;&nbsp;</a></span>insert() <span class="overload">[9/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;serialization::Endian E, class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool microstrain::insert </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1ArrayView.html">microstrain::ArrayView</a>&lt; uint8_t &gt;&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>offset</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>exact_size</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Use this overload to write a single value without needing to manually construct a <a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a> object.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">E</td><td>Endianness of buffer. Must be manually specified. </td></tr>
+    <tr><td class="paramname">T</td><td>Type of value. Automatically deduced from the value parameter.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Parameter to serialize. This can be any serializable type. </td></tr>
+    <tr><td class="paramname">buffer</td><td>Source buffer span. </td></tr>
+    <tr><td class="paramname">offset</td><td>Starting offset. Default 0. </td></tr>
+    <tr><td class="paramname">exact_size</td><td>Returns true only if exactly buffer.size()-offset bytes are written. Default false.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>False if the buffer isn't large enough. </dd>
+<dd>
+False if exact_size is true and the number of bytes written didn't equal buffer_length. </dd>
 <dd>
 True otherwise. </dd></dl>
 
@@ -695,8 +1170,6 @@ template&lt;serialization::Endian E, class T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Deserializes a value from a raw byte buffer (<a class="el" href="structmicrostrain_1_1ArrayView.html" title="Represents a view over a contiguous array of objects, similar to std::span, and is implemented as a p...">ArrayView</a> version). </p>
 <p>Use this overload to read a single value without needing to manually construct a <a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a> object.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
@@ -722,6 +1195,42 @@ True otherwise. </dd></dl>
 
 </div>
 </div>
+<a id="ga560773a1565486ac18bfc5238181d7bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga560773a1565486ac18bfc5238181d7bc">&#9670;&nbsp;</a></span>insert() <span class="overload">[10/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;serialization::Endian E&gt; </div>
+<div class="memtemplate">
+template&lt;typename... Ts&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classmicrostrain_1_1Serializer.html">microstrain::Serializer</a>&lt; E &gt;::insert </td>
+          <td>(</td>
+          <td class="paramtype">const Ts &amp;...&#160;</td>
+          <td class="paramname"><em>values</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This function defers to the non-member function <a class="el" href="group__microstrain__serialization__cpp.html#ga5a978dcbb35f175e3079aaaa6eadc450" title="Inserts a numeric value to a Serializer.">microstrain::insert</a>. By doing so, it allows the user to provide custom overloads for their own types. Any type supported by the non-member functions may be used here.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Ts</td><td>Types of values to serialize.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">values</td><td>One or more parameters to serialize.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if all values were successfully written. </dd></dl>
+
+</div>
+</div>
 <a id="gaa0cf22bb580922a0bd6a4e930bb76e5e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaa0cf22bb580922a0bd6a4e930bb76e5e">&#9670;&nbsp;</a></span>extract() <span class="overload">[10/10]</span></h2>
 
@@ -741,8 +1250,6 @@ template&lt;typename... Ts&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Deserializes one or more values. </p>
 <p>This function defers to the non-member function <a class="el" href="group__microstrain__serialization__cpp.html#ga97f89f7d5ee32b5b34f9fb391111af44" title="Reads a numeric value from a Serializer.">microstrain::extract</a>. By doing so, it allows the user to provide custom overloads for their own types. Any type supported by the non-member functions may be used here.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
@@ -789,8 +1296,6 @@ template&lt;class T , class S &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Deserializes an integer with maximum permissible value. </p>
 <p>This function is intended to be used with protocols which have embedded length fields. This function returns false and invalidates the serializer if the count is too large.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
@@ -807,554 +1312,6 @@ template&lt;class T , class S &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the count was successfully read and is less than or equal to max_count. </dd></dl>
-
-</div>
-</div>
-<a id="gaf1f8a59ef8827e800b464bf6703203ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf1f8a59ef8827e800b464bf6703203ab">&#9670;&nbsp;</a></span>insert() <span class="overload">[1/10]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;serialization::Endian E, class T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">bool microstrain::insert </td>
-          <td>(</td>
-          <td class="paramtype">const T &amp;&#160;</td>
-          <td class="paramname"><em>value</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>buffer_length</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>offset</em> = <code>0</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>exact_size</em> = <code>false</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Serializes a value to a raw byte buffer. </p>
-<p>Use this overload to write a single value without needing to manually construct a <a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a> object.</p>
-<p>Example: </p><div class="fragment"><div class="line">uint8_t buffer[256];</div>
-<div class="line">uint32_t value = 16909060; <span class="comment">// 0x01020304</span></div>
-<div class="line">insert&lt;microstrain::Endian::big&gt;(value, buffer, <span class="keyword">sizeof</span>(buffer), 0, <span class="keyword">false</span>);</div>
-<div class="line"><span class="comment">// Buffer = [0x01, 0x02, 0x03, 0x04]</span></div>
-<div class="line">insert&lt;microstrain::Endian::little&gt;(value, buffer, <span class="keyword">sizeof</span>(buffer), 0, <span class="keyword">false</span>);</div>
-<div class="line"><span class="comment">// Buffer = [0x04, 0x03, 0x02, 0x01]</span></div>
-</div><!-- fragment --><dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">E</td><td>Endianness of buffer. Must be manually specified. </td></tr>
-    <tr><td class="paramname">T</td><td>Type of value. Automatically deduced from the value parameter.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">value</td><td>Parameter to serialize. This can be any serializable type. </td></tr>
-    <tr><td class="paramname">buffer</td><td>Pointer to first element of the byte buffer. </td></tr>
-    <tr><td class="paramname">buffer_length</td><td>Length/size of buffer. </td></tr>
-    <tr><td class="paramname">offset</td><td>Starting offset. Default 0. </td></tr>
-    <tr><td class="paramname">exact_size</td><td>Returns true only if exactly buffer_length plus offset bytes are written. Default false.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>False if the buffer isn't large enough. </dd>
-<dd>
-False if exact_size is true and the number of bytes written didn't equal buffer_length. </dd>
-<dd>
-True otherwise. </dd></dl>
-
-</div>
-</div>
-<a id="ga560773a1565486ac18bfc5238181d7bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga560773a1565486ac18bfc5238181d7bc">&#9670;&nbsp;</a></span>insert() <span class="overload">[2/10]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;serialization::Endian E&gt; </div>
-<div class="memtemplate">
-template&lt;typename... Ts&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classmicrostrain_1_1Serializer.html">microstrain::Serializer</a>&lt; E &gt;::insert </td>
-          <td>(</td>
-          <td class="paramtype">const Ts &amp;...&#160;</td>
-          <td class="paramname"><em>values</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Serializes one or more values. </p>
-<p>This function defers to the non-member function <a class="el" href="group__microstrain__serialization__cpp.html#ga5a978dcbb35f175e3079aaaa6eadc450" title="Inserts a numeric value to a Serializer.">microstrain::insert</a>. By doing so, it allows the user to provide custom overloads for their own types. Any type supported by the non-member functions may be used here.</p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">Ts</td><td>Types of values to serialize.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">values</td><td>One or more parameters to serialize.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if all values were successfully written. </dd></dl>
-
-</div>
-</div>
-<a id="ga31b807d6f4f495a8b005379c0a810fe0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga31b807d6f4f495a8b005379c0a810fe0">&#9670;&nbsp;</a></span>insert() <span class="overload">[3/10]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;serialization::Endian E, class T , decltype &amp;::insert  = nullptr&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">std::enable_if&lt;std::is_class&lt;T&gt;::value , size_t&gt;::type microstrain::insert </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmicrostrain_1_1Serializer.html">microstrain::Serializer</a>&lt; E &gt; &amp;&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const T &amp;&#160;</td>
-          <td class="paramname"><em>object</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Writes a class object to a <a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a>. This overload is available to any class which defines a method <code>insert</code>. It shall take a <a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a> reference as the sole parameter. </p>
-<p>Example: </p><div class="fragment"><div class="line"><span class="keyword">class </span>Foo</div>
-<div class="line">{</div>
-<div class="line">    <span class="keywordtype">int</span> x, y;</div>
-<div class="line">    <span class="keywordtype">float</span> z;</div>
-<div class="line"> </div>
-<div class="line">    <span class="comment">// E.g. for big endian serialization:</span></div>
-<div class="line">    <span class="keywordtype">void</span> <a class="code" href="group__microstrain__serialization__cpp.html#ga5a978dcbb35f175e3079aaaa6eadc450">insert</a>(<a class="code" href="classmicrostrain_1_1Serializer.html">microstrain::BigEndianSerializer</a>&amp; serializer)<span class="keyword"> const </span>{</div>
-<div class="line">        <a class="code" href="group__microstrain__serialization__cpp.html#ga5a978dcbb35f175e3079aaaa6eadc450">insert</a>(serializer, x, y, z);  <span class="comment">// Write x, y, and z parameters.</span></div>
-<div class="line">    }</div>
-<div class="line">    <span class="comment">// OR, if both big and little serialization are desired:</span></div>
-<div class="line">    <span class="keyword">template</span>&lt;microstrain::Endian E&gt;</div>
-<div class="line">    <span class="keywordtype">void</span> <a class="code" href="group__microstrain__serialization__cpp.html#ga5a978dcbb35f175e3079aaaa6eadc450">insert</a>(<a class="code" href="classmicrostrain_1_1Serializer.html">microstrain::Serializer&lt;E&gt;</a>&amp; serializer)<span class="keyword"> const </span>{</div>
-<div class="line">        <a class="code" href="group__microstrain__serialization__cpp.html#ga5a978dcbb35f175e3079aaaa6eadc450">insert</a>(serializer, x, y, z);  <span class="comment">// Write x, y, and z parameters.</span></div>
-<div class="line">    }</div>
-<div class="line">};</div>
-</div><!-- fragment --><dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">E</td><td>Endianness of buffer. Automatically deduced from the serializer parameter. </td></tr>
-    <tr><td class="paramname">T</td><td>Type of the class. Automatically deduced from the object parameter.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">serializer</td><td><a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a> object pointing to the destination buffer. </td></tr>
-    <tr><td class="paramname">object</td><td>The class to write to the buffer.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The number of bytes written. </dd></dl>
-
-</div>
-</div>
-<a id="ga5a978dcbb35f175e3079aaaa6eadc450"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5a978dcbb35f175e3079aaaa6eadc450">&#9670;&nbsp;</a></span>insert() <span class="overload">[4/10]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;serialization::Endian E, class T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">std::enable_if&lt;std::is_arithmetic&lt;T&gt;::value, size_t&gt;::type microstrain::insert </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmicrostrain_1_1Serializer.html">Serializer</a>&lt; E &gt; &amp;&#160;</td>
-          <td class="paramname"><em>buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Inserts a numeric value to a <a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a>. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">E</td><td>Endianness of buffer. Automatically deduced from the serializer parameter. </td></tr>
-    <tr><td class="paramname">T</td><td>Type of the value to write. Automatically deduced from the value parameter.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">buffer</td><td><a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a> object pointing to the destination buffer. </td></tr>
-    <tr><td class="paramname">value</td><td>A number to write to the buffer. Can be bool, int, uint32_t, float, etc.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The size of T, for consistency. </dd></dl>
-
-</div>
-</div>
-<a id="ga10641ee9bc621c2ce14128629838b9a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga10641ee9bc621c2ce14128629838b9a1">&#9670;&nbsp;</a></span>insert() <span class="overload">[5/10]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;serialization::Endian E, class T , size_t N&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t microstrain::insert </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmicrostrain_1_1Serializer.html">Serializer</a>&lt; E &gt; &amp;&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::array&lt; T, N &gt; &amp;&#160;</td>
-          <td class="paramname"><em>values</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Writes a std::array to a <a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a>. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">E</td><td>Endianness of buffer. Automatically deduced from the serializer parameter. </td></tr>
-    <tr><td class="paramname">T</td><td>Type of array elements. Automatically deduced from the values parameter.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">serializer</td><td><a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a> object pointing to the destination buffer. </td></tr>
-    <tr><td class="paramname">values</td><td>std::array of values</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The total number of bytes written. </dd></dl>
-
-</div>
-</div>
-<a id="ga38cd011dc1710e35d7a6c1ae7fb98dea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga38cd011dc1710e35d7a6c1ae7fb98dea">&#9670;&nbsp;</a></span>insert() <span class="overload">[6/10]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;serialization::Endian E, class T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t microstrain::insert </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmicrostrain_1_1Serializer.html">Serializer</a>&lt; E &gt; &amp;&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const T *&#160;</td>
-          <td class="paramname"><em>values</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>count</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Writes an array to a <a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a>. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">E</td><td>Endianness of buffer. Automatically deduced from the serializer parameter. </td></tr>
-    <tr><td class="paramname">T</td><td>Type of array elements. Automatically deduced from the values parameter.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">serializer</td><td><a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a> object pointing to the destination buffer. </td></tr>
-    <tr><td class="paramname">values</td><td>Pointer to the first value in the array. </td></tr>
-    <tr><td class="paramname">count</td><td>Number of elements in the array to write.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The total number of bytes written. </dd></dl>
-
-</div>
-</div>
-<a id="ga07ae70f9210f1ee7f89320e44cbafe27"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga07ae70f9210f1ee7f89320e44cbafe27">&#9670;&nbsp;</a></span>insert() <span class="overload">[7/10]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;serialization::Endian E, class T , size_t N&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t microstrain::insert </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmicrostrain_1_1Serializer.html">Serializer</a>&lt; E &gt; &amp;&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const T(&amp;)&#160;</td>
-          <td class="paramname"><em>values</em>[N]&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Writes a fixed-size array to a <a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a>. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">E</td><td>Endianness of buffer. Automatically deduced from the serializer parameter. </td></tr>
-    <tr><td class="paramname">T</td><td>Type of array elements. Automatically deduced from the values parameter.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">serializer</td><td><a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a> object pointing to the destination buffer. </td></tr>
-    <tr><td class="paramname">values</td><td>C-style array of values</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The total number of bytes written. </dd></dl>
-
-</div>
-</div>
-<a id="gafc5f1f14e4e59dcac58db524a9621078"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafc5f1f14e4e59dcac58db524a9621078">&#9670;&nbsp;</a></span>insert() <span class="overload">[8/10]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;serialization::Endian E, typename T0 , typename T1 , typename... Ts&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t microstrain::insert </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmicrostrain_1_1Serializer.html">Serializer</a>&lt; E &gt; &amp;&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const T0 &amp;&#160;</td>
-          <td class="paramname"><em>value0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const T1 &amp;&#160;</td>
-          <td class="paramname"><em>value1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Ts...&#160;</td>
-          <td class="paramname"><em>values</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Writes multiple values to a <a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a>. </p>
-<p>This function is equivalent to calling insert on each parameter in sequence.</p>
-<p>This function can make use of C++17 fold expressions to improve performance by combining the buffer bounds checks when all types are of known size (i.e. numeric types).</p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">E</td><td>Endianness of buffer. Automatically deduced from the serializer parameter. </td></tr>
-    <tr><td class="paramname">Ts</td><td>Types of values. Automatically deduced from the values parameters.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">serializer</td><td><a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a> object pointing to the destination buffer. </td></tr>
-    <tr><td class="paramname">values</td><td>One or more parameters to be written.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The total number of bytes written. </dd></dl>
-
-</div>
-</div>
-<a id="ga413e888768602f0ca85485d488996041"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga413e888768602f0ca85485d488996041">&#9670;&nbsp;</a></span>insert() <span class="overload">[9/10]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;serialization::Endian E, class T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t microstrain::insert </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmicrostrain_1_1Serializer.html">Serializer</a>&lt; E &gt; &amp;&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1ArrayView.html">microstrain::ArrayView</a>&lt; const T &gt;&#160;</td>
-          <td class="paramname"><em>values</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Writes an array to a <a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a> via a Span. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">E</td><td>Endianness of buffer. Automatically deduced from the serializer parameter. </td></tr>
-    <tr><td class="paramname">T</td><td>Type of array elements. Automatically deduced from the values parameter.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">serializer</td><td><a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a> object pointing to the destination buffer. </td></tr>
-    <tr><td class="paramname">values</td><td><a class="el" href="structmicrostrain_1_1ArrayView.html" title="Represents a view over a contiguous array of objects, similar to std::span, and is implemented as a p...">ArrayView</a> containing pointer and count.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The total number of bytes written. </dd></dl>
-
-</div>
-</div>
-<a id="ga3a7482913859299520ae7ee931633193"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3a7482913859299520ae7ee931633193">&#9670;&nbsp;</a></span>insert() <span class="overload">[10/10]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;serialization::Endian E, class T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">bool microstrain::insert </td>
-          <td>(</td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>value</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1ArrayView.html">microstrain::ArrayView</a>&lt; uint8_t &gt;&#160;</td>
-          <td class="paramname"><em>buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>offset</em> = <code>0</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>exact_size</em> = <code>false</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Serializes a value to a raw byte buffer (<a class="el" href="structmicrostrain_1_1ArrayView.html" title="Represents a view over a contiguous array of objects, similar to std::span, and is implemented as a p...">ArrayView</a> version). </p>
-<p>Use this overload to write a single value without needing to manually construct a <a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a> object.</p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">E</td><td>Endianness of buffer. Must be manually specified. </td></tr>
-    <tr><td class="paramname">T</td><td>Type of value. Automatically deduced from the value parameter.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">value</td><td>Parameter to serialize. This can be any serializable type. </td></tr>
-    <tr><td class="paramname">buffer</td><td>Source buffer span. </td></tr>
-    <tr><td class="paramname">offset</td><td>Starting offset. Default 0. </td></tr>
-    <tr><td class="paramname">exact_size</td><td>Returns true only if exactly buffer.size()-offset bytes are written. Default false.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>False if the buffer isn't large enough. </dd>
-<dd>
-False if exact_size is true and the number of bytes written didn't equal buffer_length. </dd>
-<dd>
-True otherwise. </dd></dl>
 
 </div>
 </div>

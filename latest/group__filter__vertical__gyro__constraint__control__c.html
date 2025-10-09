@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -112,7 +112,6 @@ Functions</h2></td></tr>
 <tr class="separator:ga5444fc53a0affdbb79f89f7bd6840ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Configure the vertical gyro kinematic constraint. </p>
 <p>When enabled and no valid GNSS measurements are available, the filter uses the accelerometers to track pitch and roll under the assumption that the sensor platform is not undergoing linear acceleration. This constraint is useful to maintain accurate pitch and roll during GNSS signal outages. </p>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="ga9b560767357a78c6b1e7d6bb01f9dc63"></a>
@@ -144,62 +143,6 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gabaabfadbc1362e82a1f937ebb02dfc13"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabaabfadbc1362e82a1f937ebb02dfc13">&#9670;&nbsp;</a></span>extract_mip_filter_vertical_gyro_constraint_control_command()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::extract_mip_filter_vertical_gyro_constraint_control_command </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__vertical__gyro__constraint__control__command.html">mip_filter_vertical_gyro_constraint_control_command</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga4d2beb307a80a10697b9192a16022cc8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4d2beb307a80a10697b9192a16022cc8">&#9670;&nbsp;</a></span>extract_mip_filter_vertical_gyro_constraint_control_response()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::extract_mip_filter_vertical_gyro_constraint_control_response </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__vertical__gyro__constraint__control__response.html">mip_filter_vertical_gyro_constraint_control_response</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ga0eccebed3c7d309a1b52c3b0f28d912e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga0eccebed3c7d309a1b52c3b0f28d912e">&#9670;&nbsp;</a></span>insert_mip_filter_vertical_gyro_constraint_control_command()</h2>
 
@@ -216,6 +159,34 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__filter__vertical__gyro__constraint__control__command.html">mip_filter_vertical_gyro_constraint_control_command</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gabaabfadbc1362e82a1f937ebb02dfc13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabaabfadbc1362e82a1f937ebb02dfc13">&#9670;&nbsp;</a></span>extract_mip_filter_vertical_gyro_constraint_control_command()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::C::extract_mip_filter_vertical_gyro_constraint_control_command </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__vertical__gyro__constraint__control__command.html">mip_filter_vertical_gyro_constraint_control_command</a> *&#160;</td>
           <td class="paramname"><em>self</em>&#160;</td>
         </tr>
         <tr>
@@ -256,36 +227,56 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga5444fc53a0affdbb79f89f7bd6840ae2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5444fc53a0affdbb79f89f7bd6840ae2">&#9670;&nbsp;</a></span>mip_filter_default_vertical_gyro_constraint_control()</h2>
+<a id="ga4d2beb307a80a10697b9192a16022cc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4d2beb307a80a10697b9192a16022cc8">&#9670;&nbsp;</a></span>extract_mip_filter_vertical_gyro_constraint_control_response()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_default_vertical_gyro_constraint_control </td>
+          <td class="memname">void mip::C::extract_mip_filter_vertical_gyro_constraint_control_response </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__vertical__gyro__constraint__control__response.html">mip_filter_vertical_gyro_constraint_control_response</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ga48655f6860be7ef18d9d98119a447919"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga48655f6860be7ef18d9d98119a447919">&#9670;&nbsp;</a></span>mip_filter_load_vertical_gyro_constraint_control()</h2>
+<a id="ga612a00b800ca91bf17c2fd71f72826b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga612a00b800ca91bf17c2fd71f72826b5">&#9670;&nbsp;</a></span>mip_filter_write_vertical_gyro_constraint_control()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_load_vertical_gyro_constraint_control </td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_write_vertical_gyro_constraint_control </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>enable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -338,28 +329,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga612a00b800ca91bf17c2fd71f72826b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga612a00b800ca91bf17c2fd71f72826b5">&#9670;&nbsp;</a></span>mip_filter_write_vertical_gyro_constraint_control()</h2>
+<a id="ga48655f6860be7ef18d9d98119a447919"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga48655f6860be7ef18d9d98119a447919">&#9670;&nbsp;</a></span>mip_filter_load_vertical_gyro_constraint_control()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_write_vertical_gyro_constraint_control </td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_load_vertical_gyro_constraint_control </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>enable</em>&#160;</td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga5444fc53a0affdbb79f89f7bd6840ae2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5444fc53a0affdbb79f89f7bd6840ae2">&#9670;&nbsp;</a></span>mip_filter_default_vertical_gyro_constraint_control()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_default_vertical_gyro_constraint_control </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -94,7 +94,6 @@ Functions</h2></td></tr>
 <tr class="separator:ga956dbb1bfe451135289533ea418ec69a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Reassign data protocols, both incoming and outgoing. </p>
 <p>Responds over the port that sent the command with an ACK/NACK immediately after the operation is complete. It is the user's responsibility to not send any critical information or commands while awaiting a response! Doing so while this command processes may cause those packets to be dropped.</p>
 <p>Constraints:</p><ul>
 <li>Limited parsers and data streams are available. Refer to your device manual for more information.</li>
@@ -105,14 +104,14 @@ Functions</h2></td></tr>
 <li>The request would break the general constraints listed above, or a device-specific constraint. </li>
 </ul>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga956dbb1bfe451135289533ea418ec69a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga956dbb1bfe451135289533ea418ec69a">&#9670;&nbsp;</a></span>defaultInterfaceControl()</h2>
+<a id="ga26e00bf0f69fb60952825e13e028563c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga26e00bf0f69fb60952825e13e028563c">&#9670;&nbsp;</a></span>writeInterfaceControl()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__system_1_1InterfaceControl.html">InterfaceControl</a> &gt; mip::commands_system::defaultInterfaceControl </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__system_1_1InterfaceControl.html">InterfaceControl</a> &gt; mip::commands_system::writeInterfaceControl </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
@@ -121,35 +120,19 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="group__system__commands__cpp.html#gaaf00d8b72d7e4ca69808065987028fca">CommsInterface</a>&#160;</td>
-          <td class="paramname"><em>port</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga8d3a3f5415391c15d7e93f9065573091"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8d3a3f5415391c15d7e93f9065573091">&#9670;&nbsp;</a></span>loadInterfaceControl()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__system_1_1InterfaceControl.html">InterfaceControl</a> &gt; mip::commands_system::loadInterfaceControl </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
+          <td class="paramname"><em>port</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__system__commands__cpp.html#gaaf00d8b72d7e4ca69808065987028fca">CommsInterface</a>&#160;</td>
-          <td class="paramname"><em>port</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html">CommsProtocol</a>&#160;</td>
+          <td class="paramname"><em>protocolsIncoming</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html">CommsProtocol</a>&#160;</td>
+          <td class="paramname"><em>protocolsOutgoing</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -229,14 +212,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga26e00bf0f69fb60952825e13e028563c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga26e00bf0f69fb60952825e13e028563c">&#9670;&nbsp;</a></span>writeInterfaceControl()</h2>
+<a id="ga8d3a3f5415391c15d7e93f9065573091"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8d3a3f5415391c15d7e93f9065573091">&#9670;&nbsp;</a></span>loadInterfaceControl()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__system_1_1InterfaceControl.html">InterfaceControl</a> &gt; mip::commands_system::writeInterfaceControl </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__system_1_1InterfaceControl.html">InterfaceControl</a> &gt; mip::commands_system::loadInterfaceControl </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
@@ -245,19 +228,35 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="group__system__commands__cpp.html#gaaf00d8b72d7e4ca69808065987028fca">CommsInterface</a>&#160;</td>
-          <td class="paramname"><em>port</em>, </td>
+          <td class="paramname"><em>port</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga956dbb1bfe451135289533ea418ec69a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga956dbb1bfe451135289533ea418ec69a">&#9670;&nbsp;</a></span>defaultInterfaceControl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__system_1_1InterfaceControl.html">InterfaceControl</a> &gt; mip::commands_system::defaultInterfaceControl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html">CommsProtocol</a>&#160;</td>
-          <td class="paramname"><em>protocolsIncoming</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1commands__system_1_1CommsProtocol.html">CommsProtocol</a>&#160;</td>
-          <td class="paramname"><em>protocolsOutgoing</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__system__commands__cpp.html#gaaf00d8b72d7e4ca69808065987028fca">CommsInterface</a>&#160;</td>
+          <td class="paramname"><em>port</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

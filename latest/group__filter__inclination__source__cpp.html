@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -94,39 +94,36 @@ Functions</h2></td></tr>
 <tr class="separator:ga66515995750dbecee98b8ee6bac70e16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Set/Get the local magnetic field inclination angle source. </p>
 <p>This can be used to correct for the local value of inclination (dip angle) of the earthmagnetic field. Having a correct value is important for best performance of the auto-mag calibration feature. If you do not have an accurate inclination angle source, it is recommended that you leave the auto-mag calibration feature off. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga66515995750dbecee98b8ee6bac70e16"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga66515995750dbecee98b8ee6bac70e16">&#9670;&nbsp;</a></span>defaultInclinationSource()</h2>
+<a id="ga7b34bcc4b349425da7b58db2a7d02bc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7b34bcc4b349425da7b58db2a7d02bc8">&#9670;&nbsp;</a></span>writeInclinationSource()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1InclinationSource.html">InclinationSource</a> &gt; mip::commands_filter::defaultInclinationSource </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1InclinationSource.html">InclinationSource</a> &gt; mip::commands_filter::writeInclinationSource </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
-          <td></td>
+          <td class="paramname"><em>device</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga72b77da6148325cb8245f95b15f1544c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga72b77da6148325cb8245f95b15f1544c">&#9670;&nbsp;</a></span>loadInclinationSource()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1InclinationSource.html">InclinationSource</a> &gt; mip::commands_filter::loadInclinationSource </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="group__filter__commands__cpp.html#ga04d24040ffca234d7c952021e998d18c">FilterMagParamSource</a>&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>inclination</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -185,34 +182,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga7b34bcc4b349425da7b58db2a7d02bc8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7b34bcc4b349425da7b58db2a7d02bc8">&#9670;&nbsp;</a></span>writeInclinationSource()</h2>
+<a id="ga72b77da6148325cb8245f95b15f1544c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga72b77da6148325cb8245f95b15f1544c">&#9670;&nbsp;</a></span>loadInclinationSource()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1InclinationSource.html">InclinationSource</a> &gt; mip::commands_filter::writeInclinationSource </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1InclinationSource.html">InclinationSource</a> &gt; mip::commands_filter::loadInclinationSource </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__filter__commands__cpp.html#ga04d24040ffca234d7c952021e998d18c">FilterMagParamSource</a>&#160;</td>
-          <td class="paramname"><em>source</em>, </td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga66515995750dbecee98b8ee6bac70e16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga66515995750dbecee98b8ee6bac70e16">&#9670;&nbsp;</a></span>defaultInclinationSource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1InclinationSource.html">InclinationSource</a> &gt; mip::commands_filter::defaultInclinationSource </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>inclination</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

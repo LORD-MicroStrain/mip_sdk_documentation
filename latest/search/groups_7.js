@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['gnss_20commands_13244',['Gnss Commands',['../group__gnss__commands__c.html',1,'']]],
-  ['gnss_20commands_13245',['Gnss Commands',['../group__gnss__commands__cpp.html',1,'']]],
-  ['gnss_20data_13246',['Gnss Data',['../group__gnss__data__c.html',1,'']]],
-  ['gnss_20data_13247',['Gnss Data',['../group__gnss__data__cpp.html',1,'']]]
+  ['examples_20_5bc_5d_15157',['Examples [C]',['../group__examples__c.html',1,'']]],
+  ['examples_20_5bcpp_5d_15158',['Examples [CPP]',['../group__examples__cpp.html',1,'']]],
+  ['extra_20utilities_15159',['Extra utilities',['../group__microstrain__extras.html',1,'']]]
 ];

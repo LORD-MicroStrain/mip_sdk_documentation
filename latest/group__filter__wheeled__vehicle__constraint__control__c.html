@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -112,7 +112,6 @@ Functions</h2></td></tr>
 <tr class="separator:gae8300961f22197c85ad5f130e292a1c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Configure the wheeled vehicle kinematic constraint. </p>
 <p>When enabled, the filter uses the assumption that velocity is constrained to the primary vehicle axis. By convention, the primary vehicle axis is the vehicle X-axis (note: the sensor may be physically installed in any orientation on the vehicle if the appropriate mounting transformation has been specified). This constraint will typically improve heading estimates for vehicles where the assumption is valid, such as an automobile, particularly when GNSS coverage is intermittent. </p>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="gae1df320fdbc54cfe7acaac8b261a9969"></a>
@@ -144,62 +143,6 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gab08de12dc98daad08b7af274ca9a94ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab08de12dc98daad08b7af274ca9a94ef">&#9670;&nbsp;</a></span>extract_mip_filter_wheeled_vehicle_constraint_control_command()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::extract_mip_filter_wheeled_vehicle_constraint_control_command </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__wheeled__vehicle__constraint__control__command.html">mip_filter_wheeled_vehicle_constraint_control_command</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gae99e921d578d82269787889855e4936f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae99e921d578d82269787889855e4936f">&#9670;&nbsp;</a></span>extract_mip_filter_wheeled_vehicle_constraint_control_response()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::extract_mip_filter_wheeled_vehicle_constraint_control_response </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__wheeled__vehicle__constraint__control__response.html">mip_filter_wheeled_vehicle_constraint_control_response</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ga2e344960436cde6fe4120306ff454069"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga2e344960436cde6fe4120306ff454069">&#9670;&nbsp;</a></span>insert_mip_filter_wheeled_vehicle_constraint_control_command()</h2>
 
@@ -216,6 +159,34 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__filter__wheeled__vehicle__constraint__control__command.html">mip_filter_wheeled_vehicle_constraint_control_command</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gab08de12dc98daad08b7af274ca9a94ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab08de12dc98daad08b7af274ca9a94ef">&#9670;&nbsp;</a></span>extract_mip_filter_wheeled_vehicle_constraint_control_command()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::C::extract_mip_filter_wheeled_vehicle_constraint_control_command </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__wheeled__vehicle__constraint__control__command.html">mip_filter_wheeled_vehicle_constraint_control_command</a> *&#160;</td>
           <td class="paramname"><em>self</em>&#160;</td>
         </tr>
         <tr>
@@ -256,36 +227,56 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gae8300961f22197c85ad5f130e292a1c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae8300961f22197c85ad5f130e292a1c4">&#9670;&nbsp;</a></span>mip_filter_default_wheeled_vehicle_constraint_control()</h2>
+<a id="gae99e921d578d82269787889855e4936f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae99e921d578d82269787889855e4936f">&#9670;&nbsp;</a></span>extract_mip_filter_wheeled_vehicle_constraint_control_response()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_default_wheeled_vehicle_constraint_control </td>
+          <td class="memname">void mip::C::extract_mip_filter_wheeled_vehicle_constraint_control_response </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__wheeled__vehicle__constraint__control__response.html">mip_filter_wheeled_vehicle_constraint_control_response</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ga708f45c0326f7a8a38ba4566103f8a9f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga708f45c0326f7a8a38ba4566103f8a9f">&#9670;&nbsp;</a></span>mip_filter_load_wheeled_vehicle_constraint_control()</h2>
+<a id="gae9bd8cb6ebced44ae616397a4d34d9e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae9bd8cb6ebced44ae616397a4d34d9e9">&#9670;&nbsp;</a></span>mip_filter_write_wheeled_vehicle_constraint_control()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_load_wheeled_vehicle_constraint_control </td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_write_wheeled_vehicle_constraint_control </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>enable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -338,28 +329,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gae9bd8cb6ebced44ae616397a4d34d9e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae9bd8cb6ebced44ae616397a4d34d9e9">&#9670;&nbsp;</a></span>mip_filter_write_wheeled_vehicle_constraint_control()</h2>
+<a id="ga708f45c0326f7a8a38ba4566103f8a9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga708f45c0326f7a8a38ba4566103f8a9f">&#9670;&nbsp;</a></span>mip_filter_load_wheeled_vehicle_constraint_control()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_write_wheeled_vehicle_constraint_control </td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_load_wheeled_vehicle_constraint_control </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>enable</em>&#160;</td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae8300961f22197c85ad5f130e292a1c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae8300961f22197c85ad5f130e292a1c4">&#9670;&nbsp;</a></span>mip_filter_default_wheeled_vehicle_constraint_control()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_default_wheeled_vehicle_constraint_control </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

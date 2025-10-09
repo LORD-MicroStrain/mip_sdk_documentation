@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -137,19 +137,17 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a74354a9816ef8e8b196f1e7b7257a3b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a5360e95245e864603667b477d40eb053"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5360e95245e864603667b477d40eb053">&#9670;&nbsp;</a></span>carrier_phase</h2>
+<a id="ad7277399bb8d783354d78c7231521969"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7277399bb8d783354d78c7231521969">&#9670;&nbsp;</a></span>index</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double mip::C::mip_gnss_raw_data::carrier_phase</td>
+          <td class="memname">uint8_t mip::C::mip_gnss_raw_data::index</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Carrier phase measurement [Carrier periods]. </p>
 
 </div>
 </div>
@@ -165,214 +163,6 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Total number of fields in this epoch. </p>
-
-</div>
-</div>
-<a id="a087c37d28da8942d5468bd7e46e8f53f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a087c37d28da8942d5468bd7e46e8f53f">&#9670;&nbsp;</a></span>doppler</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float mip::C::mip_gnss_raw_data::doppler</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Measured doppler shift [Hz]. </p>
-
-</div>
-</div>
-<a id="acd3e2fb381e7aa3855f170f6bbf049a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd3e2fb381e7aa3855f170f6bbf049a6">&#9670;&nbsp;</a></span>doppler_uncert</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float mip::C::mip_gnss_raw_data::doppler_uncert</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Uncertainty of the measured doppler shift [Hz]. </p>
-
-</div>
-</div>
-<a id="aa7ff540048b04a7110e67f5c509cdf52"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7ff540048b04a7110e67f5c509cdf52">&#9670;&nbsp;</a></span>gnss_id</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__gnss__data__c.html#ga2a4021951635e755d8cbf39da7fc8bbc">mip_gnss_constellation_id</a> mip::C::mip_gnss_raw_data::gnss_id</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad7277399bb8d783354d78c7231521969"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7277399bb8d783354d78c7231521969">&#9670;&nbsp;</a></span>index</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t mip::C::mip_gnss_raw_data::index</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Index of this field in this epoch. </p>
-
-</div>
-</div>
-<a id="a15db79c0f08a1ee6184cb7786b730550"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a15db79c0f08a1ee6184cb7786b730550">&#9670;&nbsp;</a></span>lock_time</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float mip::C::mip_gnss_raw_data::lock_time</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>DOC Minimum carrier phase lock time [s]. Note: the maximum value is dependent on the receiver. </p>
-
-</div>
-</div>
-<a id="ae84b6bb9e9b5f6bac95f687500ff88f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae84b6bb9e9b5f6bac95f687500ff88f1">&#9670;&nbsp;</a></span>phase_uncert</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float mip::C::mip_gnss_raw_data::phase_uncert</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Uncertainty of the phase measurement [Carrier periods]. </p>
-
-</div>
-</div>
-<a id="aa7188c7778ea7c163d9f5b89e14f03ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7188c7778ea7c163d9f5b89e14f03ac">&#9670;&nbsp;</a></span>pseudorange</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double mip::C::mip_gnss_raw_data::pseudorange</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Pseudo-range measurement [meters]. </p>
-
-</div>
-</div>
-<a id="aec35b11df2cb26ee68c1dd1702a659cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec35b11df2cb26ee68c1dd1702a659cd">&#9670;&nbsp;</a></span>quality</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__gnss__raw__c.html#ga8f2520375e0b9475cbd335982348a46d">mip_gnss_raw_data_gnss_signal_quality</a> mip::C::mip_gnss_raw_data::quality</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Indicator of signal quality. </p>
-
-</div>
-</div>
-<a id="a6bfb48cf4ef1c1090a3736d38cd17b94"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6bfb48cf4ef1c1090a3736d38cd17b94">&#9670;&nbsp;</a></span>range_uncert</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float mip::C::mip_gnss_raw_data::range_uncert</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Uncertainty of the pseudo-range measurement [m]. </p>
-
-</div>
-</div>
-<a id="a42f35b8cf55fcc00427bcabddb3a6744"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a42f35b8cf55fcc00427bcabddb3a6744">&#9670;&nbsp;</a></span>receiver_id</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint16_t mip::C::mip_gnss_raw_data::receiver_id</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>When the measurement comes from RTCM, this will be the reference station ID; otherwise, it's the receiver number (1,2,...) </p>
-
-</div>
-</div>
-<a id="a29f753e26a0f1c39728416e09e5adad9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a29f753e26a0f1c39728416e09e5adad9">&#9670;&nbsp;</a></span>satellite_id</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t mip::C::mip_gnss_raw_data::satellite_id</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>GNSS satellite id within the constellation. </p>
-
-</div>
-</div>
-<a id="a961ece0dac183e93f94879e350a2b7af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a961ece0dac183e93f94879e350a2b7af">&#9670;&nbsp;</a></span>signal_id</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__gnss__data__c.html#ga126298928cc8e15ca831f8135c0fa8e2">mip_gnss_signal_id</a> mip::C::mip_gnss_raw_data::signal_id</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Signal identifier for the satellite. </p>
-
-</div>
-</div>
-<a id="a92470fcedfefe725f303ef9849af74d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92470fcedfefe725f303ef9849af74d1">&#9670;&nbsp;</a></span>signal_strength</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float mip::C::mip_gnss_raw_data::signal_strength</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Carrier to noise ratio [dBHz]. </p>
-
 </div>
 </div>
 <a id="a530f25eac70fb483519d0e8080c1113a"></a>
@@ -383,38 +173,6 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">double mip::C::mip_gnss_raw_data::time_of_week</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>GPS Time of week [seconds]. </p>
-
-</div>
-</div>
-<a id="ab4a7801ee1206aa3ac682be07cf212a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab4a7801ee1206aa3ac682be07cf212a5">&#9670;&nbsp;</a></span>tracking_channel</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t mip::C::mip_gnss_raw_data::tracking_channel</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Channel the receiver is using to track this satellite. </p>
-
-</div>
-</div>
-<a id="a74354a9816ef8e8b196f1e7b7257a3b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a74354a9816ef8e8b196f1e7b7257a3b8">&#9670;&nbsp;</a></span>valid_flags</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__gnss__raw__c.html#ga96c9330b07a649a5666186622e64328f">mip_gnss_raw_data_valid_flags</a> mip::C::mip_gnss_raw_data::valid_flags</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -433,7 +191,215 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>GPS Week since 1980 [weeks]. </p>
+</div>
+</div>
+<a id="a42f35b8cf55fcc00427bcabddb3a6744"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42f35b8cf55fcc00427bcabddb3a6744">&#9670;&nbsp;</a></span>receiver_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t mip::C::mip_gnss_raw_data::receiver_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab4a7801ee1206aa3ac682be07cf212a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4a7801ee1206aa3ac682be07cf212a5">&#9670;&nbsp;</a></span>tracking_channel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t mip::C::mip_gnss_raw_data::tracking_channel</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa7ff540048b04a7110e67f5c509cdf52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7ff540048b04a7110e67f5c509cdf52">&#9670;&nbsp;</a></span>gnss_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__gnss__data__c.html#ga2a4021951635e755d8cbf39da7fc8bbc">mip_gnss_constellation_id</a> mip::C::mip_gnss_raw_data::gnss_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a29f753e26a0f1c39728416e09e5adad9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29f753e26a0f1c39728416e09e5adad9">&#9670;&nbsp;</a></span>satellite_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t mip::C::mip_gnss_raw_data::satellite_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a961ece0dac183e93f94879e350a2b7af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a961ece0dac183e93f94879e350a2b7af">&#9670;&nbsp;</a></span>signal_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__gnss__data__c.html#ga126298928cc8e15ca831f8135c0fa8e2">mip_gnss_signal_id</a> mip::C::mip_gnss_raw_data::signal_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a92470fcedfefe725f303ef9849af74d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92470fcedfefe725f303ef9849af74d1">&#9670;&nbsp;</a></span>signal_strength</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float mip::C::mip_gnss_raw_data::signal_strength</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aec35b11df2cb26ee68c1dd1702a659cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec35b11df2cb26ee68c1dd1702a659cd">&#9670;&nbsp;</a></span>quality</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__gnss__raw__c.html#ga8f2520375e0b9475cbd335982348a46d">mip_gnss_raw_data_gnss_signal_quality</a> mip::C::mip_gnss_raw_data::quality</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa7188c7778ea7c163d9f5b89e14f03ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7188c7778ea7c163d9f5b89e14f03ac">&#9670;&nbsp;</a></span>pseudorange</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double mip::C::mip_gnss_raw_data::pseudorange</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5360e95245e864603667b477d40eb053"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5360e95245e864603667b477d40eb053">&#9670;&nbsp;</a></span>carrier_phase</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double mip::C::mip_gnss_raw_data::carrier_phase</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a087c37d28da8942d5468bd7e46e8f53f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a087c37d28da8942d5468bd7e46e8f53f">&#9670;&nbsp;</a></span>doppler</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float mip::C::mip_gnss_raw_data::doppler</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6bfb48cf4ef1c1090a3736d38cd17b94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bfb48cf4ef1c1090a3736d38cd17b94">&#9670;&nbsp;</a></span>range_uncert</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float mip::C::mip_gnss_raw_data::range_uncert</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae84b6bb9e9b5f6bac95f687500ff88f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae84b6bb9e9b5f6bac95f687500ff88f1">&#9670;&nbsp;</a></span>phase_uncert</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float mip::C::mip_gnss_raw_data::phase_uncert</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acd3e2fb381e7aa3855f170f6bbf049a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd3e2fb381e7aa3855f170f6bbf049a6">&#9670;&nbsp;</a></span>doppler_uncert</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float mip::C::mip_gnss_raw_data::doppler_uncert</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a15db79c0f08a1ee6184cb7786b730550"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15db79c0f08a1ee6184cb7786b730550">&#9670;&nbsp;</a></span>lock_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float mip::C::mip_gnss_raw_data::lock_time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a74354a9816ef8e8b196f1e7b7257a3b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74354a9816ef8e8b196f1e7b7257a3b8">&#9670;&nbsp;</a></span>valid_flags</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__gnss__raw__c.html#ga96c9330b07a649a5666186622e64328f">mip_gnss_raw_data_valid_flags</a> mip::C::mip_gnss_raw_data::valid_flags</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

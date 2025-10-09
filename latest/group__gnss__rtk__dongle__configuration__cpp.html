@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -94,38 +94,35 @@ Functions</h2></td></tr>
 <tr class="separator:ga0a60953651079939c932dfdcb3009fa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Configure the communications with the RTK Dongle connected to the device. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga0a60953651079939c932dfdcb3009fa6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0a60953651079939c932dfdcb3009fa6">&#9670;&nbsp;</a></span>defaultRtkDongleConfiguration()</h2>
+<a id="gaaa2a7bcafd3e1bd1067e7637d9f2f8c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaa2a7bcafd3e1bd1067e7637d9f2f8c8">&#9670;&nbsp;</a></span>writeRtkDongleConfiguration()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__gnss_1_1RtkDongleConfiguration.html">RtkDongleConfiguration</a> &gt; mip::commands_gnss::defaultRtkDongleConfiguration </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__gnss_1_1RtkDongleConfiguration.html">RtkDongleConfiguration</a> &gt; mip::commands_gnss::writeRtkDongleConfiguration </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
-          <td></td>
+          <td class="paramname"><em>device</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga82ddc601f56fe26a7f663a6775002d41"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga82ddc601f56fe26a7f663a6775002d41">&#9670;&nbsp;</a></span>loadRtkDongleConfiguration()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__gnss_1_1RtkDongleConfiguration.html">RtkDongleConfiguration</a> &gt; mip::commands_gnss::loadRtkDongleConfiguration </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>enable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>reserved</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -184,34 +181,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gaaa2a7bcafd3e1bd1067e7637d9f2f8c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaaa2a7bcafd3e1bd1067e7637d9f2f8c8">&#9670;&nbsp;</a></span>writeRtkDongleConfiguration()</h2>
+<a id="ga82ddc601f56fe26a7f663a6775002d41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga82ddc601f56fe26a7f663a6775002d41">&#9670;&nbsp;</a></span>loadRtkDongleConfiguration()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__gnss_1_1RtkDongleConfiguration.html">RtkDongleConfiguration</a> &gt; mip::commands_gnss::writeRtkDongleConfiguration </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__gnss_1_1RtkDongleConfiguration.html">RtkDongleConfiguration</a> &gt; mip::commands_gnss::loadRtkDongleConfiguration </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>enable</em>, </td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga0a60953651079939c932dfdcb3009fa6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0a60953651079939c932dfdcb3009fa6">&#9670;&nbsp;</a></span>defaultRtkDongleConfiguration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__gnss_1_1RtkDongleConfiguration.html">RtkDongleConfiguration</a> &gt; mip::commands_gnss::defaultRtkDongleConfiguration </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>reserved</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

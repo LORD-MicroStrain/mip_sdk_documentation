@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -97,22 +97,6 @@ Public Attributes</h2></td></tr>
 <tr class="separator:aca242785f563035b670f261f5f03fd44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a8515c8568903a691139f7351e9c5b91c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8515c8568903a691139f7351e9c5b91c">&#9670;&nbsp;</a></span>frame_id</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t mip::C::mip_aiding_vel_body_frame_command::frame_id</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Source ID for this estimate (source_id == 0 indicates this sensor, source_id &gt; 0 indicates an external estimate). </p>
-
-</div>
-</div>
 <a id="a8229c1ba08759d9a052415cd4eebfbea"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8229c1ba08759d9a052415cd4eebfbea">&#9670;&nbsp;</a></span>time</h2>
 
@@ -125,39 +109,19 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Timestamp of the measurement. </p>
-
 </div>
 </div>
-<a id="ad73f867f859f005c92f49311dc1415d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad73f867f859f005c92f49311dc1415d0">&#9670;&nbsp;</a></span>uncertainty</h2>
+<a id="a8515c8568903a691139f7351e9c5b91c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8515c8568903a691139f7351e9c5b91c">&#9670;&nbsp;</a></span>frame_id</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">mip_vector3f mip::C::mip_aiding_vel_body_frame_command::uncertainty</td>
+          <td class="memname">uint8_t mip::C::mip_aiding_vel_body_frame_command::frame_id</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>[m/s] 1-sigma uncertainty. Cannot be 0 unless the corresponding valid flags are 0. </p>
-
-</div>
-</div>
-<a id="aca242785f563035b670f261f5f03fd44"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca242785f563035b670f261f5f03fd44">&#9670;&nbsp;</a></span>valid_flags</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__aiding__vel__body__frame__c.html#ga2d81a15dc02aaae20222d2c25feafc38">mip_aiding_vel_body_frame_command_valid_flags</a> mip::C::mip_aiding_vel_body_frame_command::valid_flags</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Valid flags. Axes with 0 will be completely ignored. </p>
 
 </div>
 </div>
@@ -173,7 +137,33 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>[m/s] </p>
+</div>
+</div>
+<a id="ad73f867f859f005c92f49311dc1415d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad73f867f859f005c92f49311dc1415d0">&#9670;&nbsp;</a></span>uncertainty</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mip_vector3f mip::C::mip_aiding_vel_body_frame_command::uncertainty</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aca242785f563035b670f261f5f03fd44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca242785f563035b670f261f5f03fd44">&#9670;&nbsp;</a></span>valid_flags</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__aiding__vel__body__frame__c.html#ga2d81a15dc02aaae20222d2c25feafc38">mip_aiding_vel_body_frame_command_valid_flags</a> mip::C::mip_aiding_vel_body_frame_command::valid_flags</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

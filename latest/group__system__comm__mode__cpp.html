@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -90,22 +90,31 @@ Functions</h2></td></tr>
 <tr class="separator:ga936b55b2479fc8f0d678e703c561b439"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Advanced specialized communication modes. </p>
 <p>This command allows the user to communicate directly with various subsystems which may be present in MIP devices (i.e. IMU, GNSS, etc.) Please see the specific device's user manual for possible modes.</p>
 <p>This command responds with an ACK/NACK just prior to switching to the new protocol. For all functions except 0x01 (use new settings), the new communications mode value is ignored. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga936b55b2479fc8f0d678e703c561b439"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga936b55b2479fc8f0d678e703c561b439">&#9670;&nbsp;</a></span>defaultCommMode()</h2>
+<a id="ga40022c91181017de2449116e2f1cff94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga40022c91181017de2449116e2f1cff94">&#9670;&nbsp;</a></span>writeCommMode()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__system_1_1CommMode.html">CommMode</a> &gt; mip::commands_system::defaultCommMode </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__system_1_1CommMode.html">CommMode</a> &gt; mip::commands_system::writeCommMode </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -140,28 +149,18 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga40022c91181017de2449116e2f1cff94"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga40022c91181017de2449116e2f1cff94">&#9670;&nbsp;</a></span>writeCommMode()</h2>
+<a id="ga936b55b2479fc8f0d678e703c561b439"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga936b55b2479fc8f0d678e703c561b439">&#9670;&nbsp;</a></span>defaultCommMode()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__system_1_1CommMode.html">CommMode</a> &gt; mip::commands_system::writeCommMode </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__system_1_1CommMode.html">CommMode</a> &gt; mip::commands_system::defaultCommMode </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>mode</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -76,7 +76,6 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="mip__parser_8h_source.html">mip_parser.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="mip__offsets_8h_source.html">mip_offsets.h</a>&quot;</code><br />
 <code>#include &lt;assert.h&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
 </div><table class="memberdecls">
@@ -96,6 +95,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ga0a0efb3d8c6af48d3141b69d763c916f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__parser__c.html#ga0a0efb3d8c6af48d3141b69d763c916f">mip::C::mip_parser_reset</a> (mip_parser *parser)</td></tr>
 <tr class="memdesc:ga0a0efb3d8c6af48d3141b69d763c916f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the MIP parser.  <a href="group__mip__parser__c.html#ga0a0efb3d8c6af48d3141b69d763c916f">More...</a><br /></td></tr>
 <tr class="separator:ga0a0efb3d8c6af48d3141b69d763c916f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedfa2d210182fe8083ba1affbd79d1db"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip_1_1C.html#aedfa2d210182fe8083ba1affbd79d1db">mip::C::mip_find_sop</a> (const uint8_t *buffer, size_t buffer_len, size_t *offset_ptr)</td></tr>
+<tr class="memdesc:aedfa2d210182fe8083ba1affbd79d1db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal function which scans for the next possible packet.  <a href="namespacemip_1_1C.html#aedfa2d210182fe8083ba1affbd79d1db">More...</a><br /></td></tr>
+<tr class="separator:aedfa2d210182fe8083ba1affbd79d1db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6917b957d10640b132a7fcbe8183909"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemip_1_1C.html#ab6917b957d10640b132a7fcbe8183909">mip::C::mip_parser_discard</a> (mip_parser *parser, size_t offset)</td></tr>
+<tr class="memdesc:ab6917b957d10640b132a7fcbe8183909"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discards data from the internal buffer.  <a href="namespacemip_1_1C.html#ab6917b957d10640b132a7fcbe8183909">More...</a><br /></td></tr>
+<tr class="separator:ab6917b957d10640b132a7fcbe8183909"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa3bc3f9362d5c359f0a9b8cd8219f4cf"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mip__parser__c.html#gaa3bc3f9362d5c359f0a9b8cd8219f4cf">mip::C::mip_parser_parse</a> (mip_parser *parser, const uint8_t *input_buffer, size_t input_length, mip_timestamp timestamp)</td></tr>
 <tr class="memdesc:gaa3bc3f9362d5c359f0a9b8cd8219f4cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse packets from a buffer.  <a href="group__mip__parser__c.html#gaa3bc3f9362d5c359f0a9b8cd8219f4cf">More...</a><br /></td></tr>
 <tr class="separator:gaa3bc3f9362d5c359f0a9b8cd8219f4cf"><td class="memSeparator" colspan="2">&#160;</td></tr>

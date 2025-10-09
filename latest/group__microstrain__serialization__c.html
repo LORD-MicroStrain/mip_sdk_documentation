@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -156,7 +156,6 @@ Functions</h2></td></tr>
 <tr class="separator:ga66250929ad0de28f01eed16adaf16663"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>(De)serialization in <a class="el" href="namespacemicrostrain_1_1C.html">C</a>. </p>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="gac8cb2617b55cac80c412a0bab1a9ef23"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gac8cb2617b55cac80c412a0bab1a9ef23">&#9670;&nbsp;</a></span>microstrain_serializer</h2>
@@ -169,77 +168,19 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Structure used for serialization. </p>
 <dl class="section note"><dt>Note</dt><dd>This should be considered an "opaque" structure; its members should be considered an internal implementation detail. Avoid accessing them directly as they are subject to change in future versions of this software. </dd></dl>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga099155cf118f81db7859a1971e24f78e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga099155cf118f81db7859a1971e24f78e">&#9670;&nbsp;</a></span>microstrain_extract_bool()</h2>
+<a id="ga58320955b3d0bd856b859c018c36639e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga58320955b3d0bd856b859c018c36639e">&#9670;&nbsp;</a></span>microstrain_serializer_init_insertion()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void microstrain::C::microstrain_extract_bool </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool *&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga37f9fb37a064a99757cd7037e32c0183"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga37f9fb37a064a99757cd7037e32c0183">&#9670;&nbsp;</a></span>microstrain_extract_char()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void microstrain::C::microstrain_extract_char </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga66250929ad0de28f01eed16adaf16663"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga66250929ad0de28f01eed16adaf16663">&#9670;&nbsp;</a></span>microstrain_extract_count()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void microstrain::C::microstrain_extract_count </td>
+          <td class="memname">void microstrain::C::microstrain_serializer_init_insertion </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
           <td class="paramname"><em>serializer</em>, </td>
@@ -248,13 +189,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>count_out</em>, </td>
+          <td class="paramname"><em>buffer</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>max_count</em>&#160;</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>buffer_size</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -266,14 +207,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga3fb84ba31a710a3ea9418c6e57ada615"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3fb84ba31a710a3ea9418c6e57ada615">&#9670;&nbsp;</a></span>microstrain_extract_double()</h2>
+<a id="gae492d6b950e1d60d1ca2a8a4727d2c66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae492d6b950e1d60d1ca2a8a4727d2c66">&#9670;&nbsp;</a></span>microstrain_serializer_init_extraction()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void microstrain::C::microstrain_extract_double </td>
+          <td class="memname">void microstrain::C::microstrain_serializer_init_extraction </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
           <td class="paramname"><em>serializer</em>, </td>
@@ -281,8 +222,14 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double *&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>buffer_size</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -294,252 +241,90 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga8a6ee2558595b3c92839537ccc9d617f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8a6ee2558595b3c92839537ccc9d617f">&#9670;&nbsp;</a></span>microstrain_extract_float()</h2>
+<a id="ga26a622ce4045d1d6242fad45b8fbc742"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga26a622ce4045d1d6242fad45b8fbc742">&#9670;&nbsp;</a></span>microstrain_serializer_capacity()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void microstrain::C::microstrain_extract_float </td>
+          <td class="memname">size_t microstrain::C::microstrain_serializer_capacity </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">const <a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">float *&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ga3a3455b3386e4110dde88471a1eb2314"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3a3455b3386e4110dde88471a1eb2314">&#9670;&nbsp;</a></span>microstrain_extract_s16()</h2>
+<a id="gac37c58069e667152dc7de8809d08c44c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac37c58069e667152dc7de8809d08c44c">&#9670;&nbsp;</a></span>microstrain_serializer_length()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void microstrain::C::microstrain_extract_s16 </td>
+          <td class="memname">size_t microstrain::C::microstrain_serializer_length </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">const <a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">int16_t *&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ga463fefac338ec4ab69992d8225cc1601"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga463fefac338ec4ab69992d8225cc1601">&#9670;&nbsp;</a></span>microstrain_extract_s32()</h2>
+<a id="ga45702a65be2c7135fb69b0afe793c864"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga45702a65be2c7135fb69b0afe793c864">&#9670;&nbsp;</a></span>microstrain_serializer_remaining()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void microstrain::C::microstrain_extract_s32 </td>
+          <td class="memname">int microstrain::C::microstrain_serializer_remaining </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">const <a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">int32_t *&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="gaccfd66bf0cece06ee38d67832ef36c3f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaccfd66bf0cece06ee38d67832ef36c3f">&#9670;&nbsp;</a></span>microstrain_extract_s64()</h2>
+<a id="ga58c8f70427ed5142aa830ff7fb7c0291"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga58c8f70427ed5142aa830ff7fb7c0291">&#9670;&nbsp;</a></span>microstrain_serializer_is_ok()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void microstrain::C::microstrain_extract_s64 </td>
+          <td class="memname">bool microstrain::C::microstrain_serializer_is_ok </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">const <a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">int64_t *&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ga8b0f53f263ca9952065dd3b13223c5ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8b0f53f263ca9952065dd3b13223c5ed">&#9670;&nbsp;</a></span>microstrain_extract_s8()</h2>
+<a id="ga05ea5668a26d6b23804ff34dd9aa98b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga05ea5668a26d6b23804ff34dd9aa98b3">&#9670;&nbsp;</a></span>microstrain_serializer_is_complete()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void microstrain::C::microstrain_extract_s8 </td>
+          <td class="memname">bool microstrain::C::microstrain_serializer_is_complete </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">const <a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">int8_t *&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga94d502c3e2e2435f089b8daee5df273b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga94d502c3e2e2435f089b8daee5df273b">&#9670;&nbsp;</a></span>microstrain_extract_u16()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void microstrain::C::microstrain_extract_u16 </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t *&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gada2949eb089cdc300d16df2f0f906e1c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gada2949eb089cdc300d16df2f0f906e1c">&#9670;&nbsp;</a></span>microstrain_extract_u32()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void microstrain::C::microstrain_extract_u32 </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t *&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga17211b5b187bc0effe444a544d82e7c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga17211b5b187bc0effe444a544d82e7c9">&#9670;&nbsp;</a></span>microstrain_extract_u64()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void microstrain::C::microstrain_extract_u64 </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint64_t *&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gae349cf7f41edb5be584ffaddff0ba991"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae349cf7f41edb5be584ffaddff0ba991">&#9670;&nbsp;</a></span>microstrain_extract_u8()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void microstrain::C::microstrain_extract_u8 </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -602,14 +387,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga1776bae114b014c7d251693b2d217cb1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1776bae114b014c7d251693b2d217cb1">&#9670;&nbsp;</a></span>microstrain_insert_double()</h2>
+<a id="ga5ad38901d4c5d1876efd2aeadf6cf0bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5ad38901d4c5d1876efd2aeadf6cf0bd">&#9670;&nbsp;</a></span>microstrain_insert_u8()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void microstrain::C::microstrain_insert_double </td>
+          <td class="memname">void microstrain::C::microstrain_insert_u8 </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
           <td class="paramname"><em>serializer</em>, </td>
@@ -617,147 +402,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga21212ba820ee3795dfa91302041c6c8d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga21212ba820ee3795dfa91302041c6c8d">&#9670;&nbsp;</a></span>microstrain_insert_float()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void microstrain::C::microstrain_insert_float </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga4dd53efc561ef3e6e4efe2fd06c9185b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4dd53efc561ef3e6e4efe2fd06c9185b">&#9670;&nbsp;</a></span>microstrain_insert_s16()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void microstrain::C::microstrain_insert_s16 </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int16_t&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga50c76103ace50adcc8ffac8321a76912"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga50c76103ace50adcc8ffac8321a76912">&#9670;&nbsp;</a></span>microstrain_insert_s32()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void microstrain::C::microstrain_insert_s32 </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int32_t&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gac14d5b52d303f04fef282b93197e1d40"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac14d5b52d303f04fef282b93197e1d40">&#9670;&nbsp;</a></span>microstrain_insert_s64()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void microstrain::C::microstrain_insert_s64 </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int64_t&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gaf3c4fab397cdc168436d250badfd553a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf3c4fab397cdc168436d250badfd553a">&#9670;&nbsp;</a></span>microstrain_insert_s8()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void microstrain::C::microstrain_insert_s8 </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int8_t&#160;</td>
+          <td class="paramtype">uint8_t&#160;</td>
           <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>
@@ -854,14 +499,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga5ad38901d4c5d1876efd2aeadf6cf0bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5ad38901d4c5d1876efd2aeadf6cf0bd">&#9670;&nbsp;</a></span>microstrain_insert_u8()</h2>
+<a id="gaf3c4fab397cdc168436d250badfd553a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf3c4fab397cdc168436d250badfd553a">&#9670;&nbsp;</a></span>microstrain_insert_s8()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void microstrain::C::microstrain_insert_u8 </td>
+          <td class="memname">void microstrain::C::microstrain_insert_s8 </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
           <td class="paramname"><em>serializer</em>, </td>
@@ -869,7 +514,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramtype">int8_t&#160;</td>
           <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>
@@ -882,32 +527,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga26a622ce4045d1d6242fad45b8fbc742"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga26a622ce4045d1d6242fad45b8fbc742">&#9670;&nbsp;</a></span>microstrain_serializer_capacity()</h2>
+<a id="ga4dd53efc561ef3e6e4efe2fd06c9185b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4dd53efc561ef3e6e4efe2fd06c9185b">&#9670;&nbsp;</a></span>microstrain_insert_s16()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">size_t microstrain::C::microstrain_serializer_capacity </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gae492d6b950e1d60d1ca2a8a4727d2c66"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae492d6b950e1d60d1ca2a8a4727d2c66">&#9670;&nbsp;</a></span>microstrain_serializer_init_extraction()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void microstrain::C::microstrain_serializer_init_extraction </td>
+          <td class="memname">void microstrain::C::microstrain_insert_s16 </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
           <td class="paramname"><em>serializer</em>, </td>
@@ -915,14 +542,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>buffer_size</em>&#160;</td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -934,14 +555,182 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga58320955b3d0bd856b859c018c36639e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga58320955b3d0bd856b859c018c36639e">&#9670;&nbsp;</a></span>microstrain_serializer_init_insertion()</h2>
+<a id="ga50c76103ace50adcc8ffac8321a76912"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga50c76103ace50adcc8ffac8321a76912">&#9670;&nbsp;</a></span>microstrain_insert_s32()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void microstrain::C::microstrain_serializer_init_insertion </td>
+          <td class="memname">void microstrain::C::microstrain_insert_s32 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gac14d5b52d303f04fef282b93197e1d40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac14d5b52d303f04fef282b93197e1d40">&#9670;&nbsp;</a></span>microstrain_insert_s64()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void microstrain::C::microstrain_insert_s64 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga21212ba820ee3795dfa91302041c6c8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga21212ba820ee3795dfa91302041c6c8d">&#9670;&nbsp;</a></span>microstrain_insert_float()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void microstrain::C::microstrain_insert_float </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga1776bae114b014c7d251693b2d217cb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1776bae114b014c7d251693b2d217cb1">&#9670;&nbsp;</a></span>microstrain_insert_double()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void microstrain::C::microstrain_insert_double </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga099155cf118f81db7859a1971e24f78e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga099155cf118f81db7859a1971e24f78e">&#9670;&nbsp;</a></span>microstrain_extract_bool()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void microstrain::C::microstrain_extract_bool </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga37f9fb37a064a99757cd7037e32c0183"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga37f9fb37a064a99757cd7037e32c0183">&#9670;&nbsp;</a></span>microstrain_extract_char()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void microstrain::C::microstrain_extract_char </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae349cf7f41edb5be584ffaddff0ba991"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae349cf7f41edb5be584ffaddff0ba991">&#9670;&nbsp;</a></span>microstrain_extract_u8()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void microstrain::C::microstrain_extract_u8 </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
           <td class="paramname"><em>serializer</em>, </td>
@@ -950,13 +739,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>buffer_size</em>&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -968,72 +751,286 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga05ea5668a26d6b23804ff34dd9aa98b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga05ea5668a26d6b23804ff34dd9aa98b3">&#9670;&nbsp;</a></span>microstrain_serializer_is_complete()</h2>
+<a id="ga94d502c3e2e2435f089b8daee5df273b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga94d502c3e2e2435f089b8daee5df273b">&#9670;&nbsp;</a></span>microstrain_extract_u16()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool microstrain::C::microstrain_serializer_is_complete </td>
+          <td class="memname">void microstrain::C::microstrain_extract_u16 </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">uint16_t *&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ga58c8f70427ed5142aa830ff7fb7c0291"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga58c8f70427ed5142aa830ff7fb7c0291">&#9670;&nbsp;</a></span>microstrain_serializer_is_ok()</h2>
+<a id="gada2949eb089cdc300d16df2f0f906e1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gada2949eb089cdc300d16df2f0f906e1c">&#9670;&nbsp;</a></span>microstrain_extract_u32()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool microstrain::C::microstrain_serializer_is_ok </td>
+          <td class="memname">void microstrain::C::microstrain_extract_u32 </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="gac37c58069e667152dc7de8809d08c44c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac37c58069e667152dc7de8809d08c44c">&#9670;&nbsp;</a></span>microstrain_serializer_length()</h2>
+<a id="ga17211b5b187bc0effe444a544d82e7c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga17211b5b187bc0effe444a544d82e7c9">&#9670;&nbsp;</a></span>microstrain_extract_u64()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">size_t microstrain::C::microstrain_serializer_length </td>
+          <td class="memname">void microstrain::C::microstrain_extract_u64 </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">uint64_t *&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ga45702a65be2c7135fb69b0afe793c864"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga45702a65be2c7135fb69b0afe793c864">&#9670;&nbsp;</a></span>microstrain_serializer_remaining()</h2>
+<a id="ga8b0f53f263ca9952065dd3b13223c5ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8b0f53f263ca9952065dd3b13223c5ed">&#9670;&nbsp;</a></span>microstrain_extract_s8()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int microstrain::C::microstrain_serializer_remaining </td>
+          <td class="memname">void microstrain::C::microstrain_extract_s8 </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int8_t *&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga3a3455b3386e4110dde88471a1eb2314"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3a3455b3386e4110dde88471a1eb2314">&#9670;&nbsp;</a></span>microstrain_extract_s16()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void microstrain::C::microstrain_extract_s16 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t *&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga463fefac338ec4ab69992d8225cc1601"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga463fefac338ec4ab69992d8225cc1601">&#9670;&nbsp;</a></span>microstrain_extract_s32()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void microstrain::C::microstrain_extract_s32 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t *&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaccfd66bf0cece06ee38d67832ef36c3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaccfd66bf0cece06ee38d67832ef36c3f">&#9670;&nbsp;</a></span>microstrain_extract_s64()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void microstrain::C::microstrain_extract_s64 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t *&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga8a6ee2558595b3c92839537ccc9d617f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8a6ee2558595b3c92839537ccc9d617f">&#9670;&nbsp;</a></span>microstrain_extract_float()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void microstrain::C::microstrain_extract_float </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga3fb84ba31a710a3ea9418c6e57ada615"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3fb84ba31a710a3ea9418c6e57ada615">&#9670;&nbsp;</a></span>microstrain_extract_double()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void microstrain::C::microstrain_extract_double </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga66250929ad0de28f01eed16adaf16663"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga66250929ad0de28f01eed16adaf16663">&#9670;&nbsp;</a></span>microstrain_extract_count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void microstrain::C::microstrain_extract_count </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>count_out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>max_count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -95,8 +95,6 @@ Functions</h2></td></tr>
 <tr class="separator:gad8395b8c7a2a48648cb16b3b64bc49ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Configure the SPARTN corrections service parameters. Notes:<br  />
- </p>
 <ul>
 <li>Enable and type settings will only update after a power cycle <br  />
 </li>
@@ -105,36 +103,70 @@ Functions</h2></td></tr>
 <li>Key information can be updated while running </li>
 </ul>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gad8395b8c7a2a48648cb16b3b64bc49ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad8395b8c7a2a48648cb16b3b64bc49ea">&#9670;&nbsp;</a></span>defaultSpartnConfiguration()</h2>
+<a id="ga4a51fa8f041cd60331c7433dcb2b595d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4a51fa8f041cd60331c7433dcb2b595d">&#9670;&nbsp;</a></span>writeSpartnConfiguration()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__gnss_1_1SpartnConfiguration.html">SpartnConfiguration</a> &gt; mip::commands_gnss::defaultSpartnConfiguration </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__gnss_1_1SpartnConfiguration.html">SpartnConfiguration</a> &gt; mip::commands_gnss::writeSpartnConfiguration </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
-          <td></td>
+          <td class="paramname"><em>device</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga432f744afad6c49109a1d5954fa00170"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga432f744afad6c49109a1d5954fa00170">&#9670;&nbsp;</a></span>loadSpartnConfiguration()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__gnss_1_1SpartnConfiguration.html">SpartnConfiguration</a> &gt; mip::commands_gnss::loadSpartnConfiguration </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>enable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>currentKeyTow</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>currentKeyWeek</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>currentKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>nextKeyTow</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>nextKeyWeek</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>nextKey</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -229,70 +261,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga4a51fa8f041cd60331c7433dcb2b595d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4a51fa8f041cd60331c7433dcb2b595d">&#9670;&nbsp;</a></span>writeSpartnConfiguration()</h2>
+<a id="ga432f744afad6c49109a1d5954fa00170"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga432f744afad6c49109a1d5954fa00170">&#9670;&nbsp;</a></span>loadSpartnConfiguration()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__gnss_1_1SpartnConfiguration.html">SpartnConfiguration</a> &gt; mip::commands_gnss::writeSpartnConfiguration </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__gnss_1_1SpartnConfiguration.html">SpartnConfiguration</a> &gt; mip::commands_gnss::loadSpartnConfiguration </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>enable</em>, </td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gad8395b8c7a2a48648cb16b3b64bc49ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad8395b8c7a2a48648cb16b3b64bc49ea">&#9670;&nbsp;</a></span>defaultSpartnConfiguration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__gnss_1_1SpartnConfiguration.html">SpartnConfiguration</a> &gt; mip::commands_gnss::defaultSpartnConfiguration </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>type</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>currentKeyTow</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>currentKeyWeek</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>currentKey</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>nextKeyTow</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>nextKeyWeek</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>nextKey</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

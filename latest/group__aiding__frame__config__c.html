@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -106,6 +106,10 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:gaa6f6b77e87171b3c45f71f6e8bcf2388"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__aiding__frame__config__c.html#gaa6f6b77e87171b3c45f71f6e8bcf2388">mip::C::insert_mip_aiding_frame_config_command_format</a> (<a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *serializer, const <a class="el" href="group__aiding__frame__config__c.html#ga8395847066e135edd63b3bdfffb1f41d">mip_aiding_frame_config_command_format</a> self)</td></tr>
+<tr class="separator:gaa6f6b77e87171b3c45f71f6e8bcf2388"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga77e3568e62eccd686c4e992e39dc6900"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__aiding__frame__config__c.html#ga77e3568e62eccd686c4e992e39dc6900">mip::C::extract_mip_aiding_frame_config_command_format</a> (<a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *serializer, <a class="el" href="group__aiding__frame__config__c.html#ga8395847066e135edd63b3bdfffb1f41d">mip_aiding_frame_config_command_format</a> *self)</td></tr>
+<tr class="separator:ga77e3568e62eccd686c4e992e39dc6900"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacc4c7901e502dede364c06dd75763877"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__aiding__frame__config__c.html#gacc4c7901e502dede364c06dd75763877">mip::C::insert_mip_aiding_frame_config_command</a> (<a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *serializer, const <a class="el" href="structmip_1_1C_1_1mip__aiding__frame__config__command.html">mip_aiding_frame_config_command</a> *self)</td></tr>
 <tr class="separator:gacc4c7901e502dede364c06dd75763877"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadfd75004ff6bcdcf107436eabd904717"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__aiding__frame__config__c.html#gadfd75004ff6bcdcf107436eabd904717">mip::C::extract_mip_aiding_frame_config_command</a> (<a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *serializer, <a class="el" href="structmip_1_1C_1_1mip__aiding__frame__config__command.html">mip_aiding_frame_config_command</a> *self)</td></tr>
@@ -126,7 +130,6 @@ Functions</h2></td></tr>
 <tr class="separator:gaffca354339ff5efc086cc787e137a49e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Defines an aiding frame associated with a specific sensor frame ID. The frame ID used in this command should mirror the frame ID used in the aiding command (if that aiding measurement is measured in this reference frame). </p>
 <p>This transform satisfies the following relationship:</p>
 <p>EQSTART p^{veh} = R p^{sensor_frame} + t EQEND<br  />
 </p>
@@ -141,20 +144,6 @@ Functions</h2></td></tr>
 <p>Example: GNSS antenna lever arm</p>
 <p>Frame ID: 1 Format: 1 (Euler) Translation: [0,1,] (GNSS with a 1 meter Y offset in the vehicle frame) Rotation: [0,0,0,0] (Rotational component is not relevant for GNSS measurements, set to zero) </p>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="gacf1cc54447226a0dddf0cd0166f84453"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacf1cc54447226a0dddf0cd0166f84453">&#9670;&nbsp;</a></span>mip_aiding_frame_config_command</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef struct <a class="el" href="structmip_1_1C_1_1mip__aiding__frame__config__command.html">mip_aiding_frame_config_command</a> <a class="el" href="structmip_1_1C_1_1mip__aiding__frame__config__command.html">mip::C::mip_aiding_frame_config_command</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="gafaa043f6e5e3ae7cd828bc679627768f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gafaa043f6e5e3ae7cd828bc679627768f">&#9670;&nbsp;</a></span>mip_aiding_frame_config_command_format</h2>
 
@@ -177,6 +166,20 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">typedef union <a class="el" href="unionmip_1_1C_1_1mip__aiding__frame__config__command__rotation.html">mip_aiding_frame_config_command_rotation</a> <a class="el" href="unionmip_1_1C_1_1mip__aiding__frame__config__command__rotation.html">mip::C::mip_aiding_frame_config_command_rotation</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gacf1cc54447226a0dddf0cd0166f84453"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacf1cc54447226a0dddf0cd0166f84453">&#9670;&nbsp;</a></span>mip_aiding_frame_config_command</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structmip_1_1C_1_1mip__aiding__frame__config__command.html">mip_aiding_frame_config_command</a> <a class="el" href="structmip_1_1C_1_1mip__aiding__frame__config__command.html">mip::C::mip_aiding_frame_config_command</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -219,14 +222,17 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gadfd75004ff6bcdcf107436eabd904717"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadfd75004ff6bcdcf107436eabd904717">&#9670;&nbsp;</a></span>extract_mip_aiding_frame_config_command()</h2>
+<a id="gaa6f6b77e87171b3c45f71f6e8bcf2388"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa6f6b77e87171b3c45f71f6e8bcf2388">&#9670;&nbsp;</a></span>insert_mip_aiding_frame_config_command_format()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void mip::C::extract_mip_aiding_frame_config_command </td>
+          <td class="memname">static void mip::C::insert_mip_aiding_frame_config_command_format </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
           <td class="paramname"><em>serializer</em>, </td>
@@ -234,7 +240,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__aiding__frame__config__command.html">mip_aiding_frame_config_command</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__aiding__frame__config__c.html#ga8395847066e135edd63b3bdfffb1f41d">mip_aiding_frame_config_command_format</a>&#160;</td>
           <td class="paramname"><em>self</em>&#160;</td>
         </tr>
         <tr>
@@ -243,18 +249,26 @@ Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ga8e23bfcf8eaaa7dda9cc9d4ef41d257c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8e23bfcf8eaaa7dda9cc9d4ef41d257c">&#9670;&nbsp;</a></span>extract_mip_aiding_frame_config_response()</h2>
+<a id="ga77e3568e62eccd686c4e992e39dc6900"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga77e3568e62eccd686c4e992e39dc6900">&#9670;&nbsp;</a></span>extract_mip_aiding_frame_config_command_format()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void mip::C::extract_mip_aiding_frame_config_response </td>
+          <td class="memname">static void mip::C::extract_mip_aiding_frame_config_command_format </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
           <td class="paramname"><em>serializer</em>, </td>
@@ -262,7 +276,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__aiding__frame__config__response.html">mip_aiding_frame_config_response</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__aiding__frame__config__c.html#ga8395847066e135edd63b3bdfffb1f41d">mip_aiding_frame_config_command_format</a> *&#160;</td>
           <td class="paramname"><em>self</em>&#160;</td>
         </tr>
         <tr>
@@ -271,6 +285,11 @@ Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -291,6 +310,34 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__aiding__frame__config__command.html">mip_aiding_frame_config_command</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gadfd75004ff6bcdcf107436eabd904717"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadfd75004ff6bcdcf107436eabd904717">&#9670;&nbsp;</a></span>extract_mip_aiding_frame_config_command()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::C::extract_mip_aiding_frame_config_command </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__aiding__frame__config__command.html">mip_aiding_frame_config_command</a> *&#160;</td>
           <td class="paramname"><em>self</em>&#160;</td>
         </tr>
         <tr>
@@ -331,23 +378,23 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gaffca354339ff5efc086cc787e137a49e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaffca354339ff5efc086cc787e137a49e">&#9670;&nbsp;</a></span>mip_aiding_default_frame_config()</h2>
+<a id="ga8e23bfcf8eaaa7dda9cc9d4ef41d257c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8e23bfcf8eaaa7dda9cc9d4ef41d257c">&#9670;&nbsp;</a></span>extract_mip_aiding_frame_config_response()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_aiding_default_frame_config </td>
+          <td class="memname">void mip::C::extract_mip_aiding_frame_config_response </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>frame_id</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__aiding__frame__config__response.html">mip_aiding_frame_config_response</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -359,14 +406,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gaa4e8ee5f988560be90ee88bf5b9a3843"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa4e8ee5f988560be90ee88bf5b9a3843">&#9670;&nbsp;</a></span>mip_aiding_load_frame_config()</h2>
+<a id="gab47031611198d9552ff3f8936fa27505"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab47031611198d9552ff3f8936fa27505">&#9670;&nbsp;</a></span>mip_aiding_write_frame_config()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_aiding_load_frame_config </td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_aiding_write_frame_config </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
           <td class="paramname"><em>device</em>, </td>
@@ -375,7 +422,31 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>frame_id</em>&#160;</td>
+          <td class="paramname"><em>frame_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__aiding__frame__config__c.html#ga8395847066e135edd63b3bdfffb1f41d">mip_aiding_frame_config_command_format</a>&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>tracking_enabled</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>translation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="unionmip_1_1C_1_1mip__aiding__frame__config__command__rotation.html">mip_aiding_frame_config_command_rotation</a> *&#160;</td>
+          <td class="paramname"><em>rotation</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -467,14 +538,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gab47031611198d9552ff3f8936fa27505"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab47031611198d9552ff3f8936fa27505">&#9670;&nbsp;</a></span>mip_aiding_write_frame_config()</h2>
+<a id="gaa4e8ee5f988560be90ee88bf5b9a3843"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa4e8ee5f988560be90ee88bf5b9a3843">&#9670;&nbsp;</a></span>mip_aiding_load_frame_config()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_aiding_write_frame_config </td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_aiding_load_frame_config </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
           <td class="paramname"><em>device</em>, </td>
@@ -483,31 +554,35 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>frame_id</em>, </td>
+          <td class="paramname"><em>frame_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaffca354339ff5efc086cc787e137a49e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaffca354339ff5efc086cc787e137a49e">&#9670;&nbsp;</a></span>mip_aiding_default_frame_config()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_aiding_default_frame_config </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__aiding__frame__config__c.html#ga8395847066e135edd63b3bdfffb1f41d">mip_aiding_frame_config_command_format</a>&#160;</td>
-          <td class="paramname"><em>format</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>tracking_enabled</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const float *&#160;</td>
-          <td class="paramname"><em>translation</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="unionmip_1_1C_1_1mip__aiding__frame__config__command__rotation.html">mip_aiding_frame_config_command_rotation</a> *&#160;</td>
-          <td class="paramname"><em>rotation</em>&#160;</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>frame_id</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

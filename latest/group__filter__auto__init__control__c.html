@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -112,7 +112,6 @@ Functions</h2></td></tr>
 <tr class="separator:gaa7b034c60e14ec9950f61f2f4313340e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Filter Auto-initialization Control. </p>
 <p>Enable/Disable automatic initialization upon device startup.</p>
 <p>Possible enable values:</p>
 <p>0x00 - Disable auto-initialization 0x01 - Enable auto-initialization </p>
@@ -146,62 +145,6 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga5cedb403fc8640f447deeb6ad9b8ab7b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5cedb403fc8640f447deeb6ad9b8ab7b">&#9670;&nbsp;</a></span>extract_mip_filter_auto_init_control_command()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::extract_mip_filter_auto_init_control_command </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__auto__init__control__command.html">mip_filter_auto_init_control_command</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gac6f64886da254cf61739932e79f70bcc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac6f64886da254cf61739932e79f70bcc">&#9670;&nbsp;</a></span>extract_mip_filter_auto_init_control_response()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::extract_mip_filter_auto_init_control_response </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__auto__init__control__response.html">mip_filter_auto_init_control_response</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ga89558c4b30416ad2b1f940b079e78104"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga89558c4b30416ad2b1f940b079e78104">&#9670;&nbsp;</a></span>insert_mip_filter_auto_init_control_command()</h2>
 
@@ -218,6 +161,34 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__filter__auto__init__control__command.html">mip_filter_auto_init_control_command</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga5cedb403fc8640f447deeb6ad9b8ab7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5cedb403fc8640f447deeb6ad9b8ab7b">&#9670;&nbsp;</a></span>extract_mip_filter_auto_init_control_command()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::C::extract_mip_filter_auto_init_control_command </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__auto__init__control__command.html">mip_filter_auto_init_control_command</a> *&#160;</td>
           <td class="paramname"><em>self</em>&#160;</td>
         </tr>
         <tr>
@@ -258,36 +229,56 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gaa7b034c60e14ec9950f61f2f4313340e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa7b034c60e14ec9950f61f2f4313340e">&#9670;&nbsp;</a></span>mip_filter_default_auto_init_control()</h2>
+<a id="gac6f64886da254cf61739932e79f70bcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac6f64886da254cf61739932e79f70bcc">&#9670;&nbsp;</a></span>extract_mip_filter_auto_init_control_response()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_default_auto_init_control </td>
+          <td class="memname">void mip::C::extract_mip_filter_auto_init_control_response </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__auto__init__control__response.html">mip_filter_auto_init_control_response</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ga838668ee8eb3e71e81368f7fd244247a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga838668ee8eb3e71e81368f7fd244247a">&#9670;&nbsp;</a></span>mip_filter_load_auto_init_control()</h2>
+<a id="ga92e77e7e99d11a075abf4e25d8ec4714"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga92e77e7e99d11a075abf4e25d8ec4714">&#9670;&nbsp;</a></span>mip_filter_write_auto_init_control()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_load_auto_init_control </td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_write_auto_init_control </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>enable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -340,28 +331,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga92e77e7e99d11a075abf4e25d8ec4714"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga92e77e7e99d11a075abf4e25d8ec4714">&#9670;&nbsp;</a></span>mip_filter_write_auto_init_control()</h2>
+<a id="ga838668ee8eb3e71e81368f7fd244247a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga838668ee8eb3e71e81368f7fd244247a">&#9670;&nbsp;</a></span>mip_filter_load_auto_init_control()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_write_auto_init_control </td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_load_auto_init_control </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>enable</em>&#160;</td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa7b034c60e14ec9950f61f2f4313340e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa7b034c60e14ec9950f61f2f4313340e">&#9670;&nbsp;</a></span>mip_filter_default_auto_init_control()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_default_auto_init_control </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

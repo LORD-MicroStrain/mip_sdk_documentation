@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -107,6 +107,10 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:gaaf14dc27aef80b409badeec40bb1d855"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__filter__ref__point__lever__arm__c.html#gaaf14dc27aef80b409badeec40bb1d855">mip::C::insert_mip_filter_ref_point_lever_arm_command_reference_point_selector</a> (<a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *serializer, const <a class="el" href="group__filter__ref__point__lever__arm__c.html#ga54cc59e5a49f07fec3de58850e138936">mip_filter_ref_point_lever_arm_command_reference_point_selector</a> self)</td></tr>
+<tr class="separator:gaaf14dc27aef80b409badeec40bb1d855"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaccd68ce59dc07dd568219507ae95d871"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__filter__ref__point__lever__arm__c.html#gaccd68ce59dc07dd568219507ae95d871">mip::C::extract_mip_filter_ref_point_lever_arm_command_reference_point_selector</a> (<a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *serializer, <a class="el" href="group__filter__ref__point__lever__arm__c.html#ga54cc59e5a49f07fec3de58850e138936">mip_filter_ref_point_lever_arm_command_reference_point_selector</a> *self)</td></tr>
+<tr class="separator:gaccd68ce59dc07dd568219507ae95d871"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8106674e8c055cf3619a1984f77282b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__filter__ref__point__lever__arm__c.html#ga8106674e8c055cf3619a1984f77282b7">mip::C::insert_mip_filter_ref_point_lever_arm_command</a> (<a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *serializer, const <a class="el" href="structmip_1_1C_1_1mip__filter__ref__point__lever__arm__command.html">mip_filter_ref_point_lever_arm_command</a> *self)</td></tr>
 <tr class="separator:ga8106674e8c055cf3619a1984f77282b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9f30199dc5f7b84bdcb80889cd7d79f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__filter__ref__point__lever__arm__c.html#ga9f30199dc5f7b84bdcb80889cd7d79f3">mip::C::extract_mip_filter_ref_point_lever_arm_command</a> (<a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *serializer, <a class="el" href="structmip_1_1C_1_1mip__filter__ref__point__lever__arm__command.html">mip_filter_ref_point_lever_arm_command</a> *self)</td></tr>
@@ -127,28 +131,7 @@ Functions</h2></td></tr>
 <tr class="separator:ga7d7818b481aa15645445bd9439c76ecb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Lever arm offset with respect to the sensor for the indicated point of reference. This is used to change the location of the indicated point of reference, and will affect filter position and velocity outputs. Changing this setting from default will result in a global position offset that depends on vehicle attitude, and a velocity offset that depends on vehicle attitude and angular rate. <br  />
-The lever arm is defined by a 3-element vector that points from the sensor to the desired reference point, with (x,y,z) components given in the vehicle's reference frame. <br  />
-<br  />
-Note, if the reference point selector is set to VEH (1), this setting will affect the following data fields: (0x82, 0x01), (0x82, 0x02), (0x82, 0x40), (0x82, 0x41), and (0x82, 42) <br  />
-<br  />
-<b>Offset Limits</b> <br  />
-Reference Point VEH (1): 10 m magnitude (default) </p>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="ga17ca7a522468ecca5bf159e3624c4d6c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga17ca7a522468ecca5bf159e3624c4d6c">&#9670;&nbsp;</a></span>mip_filter_ref_point_lever_arm_command</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef struct <a class="el" href="structmip_1_1C_1_1mip__filter__ref__point__lever__arm__command.html">mip_filter_ref_point_lever_arm_command</a> <a class="el" href="structmip_1_1C_1_1mip__filter__ref__point__lever__arm__command.html">mip::C::mip_filter_ref_point_lever_arm_command</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ga2daaf68798af5a9bb2f4d7bfbcd1b9b5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga2daaf68798af5a9bb2f4d7bfbcd1b9b5">&#9670;&nbsp;</a></span>mip_filter_ref_point_lever_arm_command_reference_point_selector</h2>
 
@@ -157,6 +140,20 @@ Reference Point VEH (1): 10 m magnitude (default) </p>
       <table class="memname">
         <tr>
           <td class="memname">typedef enum <a class="el" href="group__filter__ref__point__lever__arm__c.html#ga54cc59e5a49f07fec3de58850e138936">mip_filter_ref_point_lever_arm_command_reference_point_selector</a> <a class="el" href="group__filter__ref__point__lever__arm__c.html#ga54cc59e5a49f07fec3de58850e138936">mip::C::mip_filter_ref_point_lever_arm_command_reference_point_selector</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga17ca7a522468ecca5bf159e3624c4d6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga17ca7a522468ecca5bf159e3624c4d6c">&#9670;&nbsp;</a></span>mip_filter_ref_point_lever_arm_command</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structmip_1_1C_1_1mip__filter__ref__point__lever__arm__command.html">mip_filter_ref_point_lever_arm_command</a> <a class="el" href="structmip_1_1C_1_1mip__filter__ref__point__lever__arm__command.html">mip::C::mip_filter_ref_point_lever_arm_command</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -197,14 +194,17 @@ Reference Point VEH (1): 10 m magnitude (default) </p>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga9f30199dc5f7b84bdcb80889cd7d79f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9f30199dc5f7b84bdcb80889cd7d79f3">&#9670;&nbsp;</a></span>extract_mip_filter_ref_point_lever_arm_command()</h2>
+<a id="gaaf14dc27aef80b409badeec40bb1d855"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaf14dc27aef80b409badeec40bb1d855">&#9670;&nbsp;</a></span>insert_mip_filter_ref_point_lever_arm_command_reference_point_selector()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void mip::C::extract_mip_filter_ref_point_lever_arm_command </td>
+          <td class="memname">static void mip::C::insert_mip_filter_ref_point_lever_arm_command_reference_point_selector </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
           <td class="paramname"><em>serializer</em>, </td>
@@ -212,7 +212,7 @@ Reference Point VEH (1): 10 m magnitude (default) </p>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__ref__point__lever__arm__command.html">mip_filter_ref_point_lever_arm_command</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__filter__ref__point__lever__arm__c.html#ga54cc59e5a49f07fec3de58850e138936">mip_filter_ref_point_lever_arm_command_reference_point_selector</a>&#160;</td>
           <td class="paramname"><em>self</em>&#160;</td>
         </tr>
         <tr>
@@ -221,18 +221,26 @@ Reference Point VEH (1): 10 m magnitude (default) </p>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="gad418dc4f10a5c2457b619318e39c7c6d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad418dc4f10a5c2457b619318e39c7c6d">&#9670;&nbsp;</a></span>extract_mip_filter_ref_point_lever_arm_response()</h2>
+<a id="gaccd68ce59dc07dd568219507ae95d871"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaccd68ce59dc07dd568219507ae95d871">&#9670;&nbsp;</a></span>extract_mip_filter_ref_point_lever_arm_command_reference_point_selector()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void mip::C::extract_mip_filter_ref_point_lever_arm_response </td>
+          <td class="memname">static void mip::C::extract_mip_filter_ref_point_lever_arm_command_reference_point_selector </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
           <td class="paramname"><em>serializer</em>, </td>
@@ -240,7 +248,7 @@ Reference Point VEH (1): 10 m magnitude (default) </p>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__ref__point__lever__arm__response.html">mip_filter_ref_point_lever_arm_response</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__filter__ref__point__lever__arm__c.html#ga54cc59e5a49f07fec3de58850e138936">mip_filter_ref_point_lever_arm_command_reference_point_selector</a> *&#160;</td>
           <td class="paramname"><em>self</em>&#160;</td>
         </tr>
         <tr>
@@ -249,6 +257,11 @@ Reference Point VEH (1): 10 m magnitude (default) </p>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -269,6 +282,34 @@ Reference Point VEH (1): 10 m magnitude (default) </p>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__filter__ref__point__lever__arm__command.html">mip_filter_ref_point_lever_arm_command</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga9f30199dc5f7b84bdcb80889cd7d79f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9f30199dc5f7b84bdcb80889cd7d79f3">&#9670;&nbsp;</a></span>extract_mip_filter_ref_point_lever_arm_command()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::C::extract_mip_filter_ref_point_lever_arm_command </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__ref__point__lever__arm__command.html">mip_filter_ref_point_lever_arm_command</a> *&#160;</td>
           <td class="paramname"><em>self</em>&#160;</td>
         </tr>
         <tr>
@@ -309,36 +350,62 @@ Reference Point VEH (1): 10 m magnitude (default) </p>
 
 </div>
 </div>
-<a id="ga7d7818b481aa15645445bd9439c76ecb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7d7818b481aa15645445bd9439c76ecb">&#9670;&nbsp;</a></span>mip_filter_default_ref_point_lever_arm()</h2>
+<a id="gad418dc4f10a5c2457b619318e39c7c6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad418dc4f10a5c2457b619318e39c7c6d">&#9670;&nbsp;</a></span>extract_mip_filter_ref_point_lever_arm_response()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_default_ref_point_lever_arm </td>
+          <td class="memname">void mip::C::extract_mip_filter_ref_point_lever_arm_response </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__ref__point__lever__arm__response.html">mip_filter_ref_point_lever_arm_response</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ga0891f574dfb8efb071b369d87c9c9f0e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0891f574dfb8efb071b369d87c9c9f0e">&#9670;&nbsp;</a></span>mip_filter_load_ref_point_lever_arm()</h2>
+<a id="ga137490bf44fab3eacc1dd61b71bbe97c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga137490bf44fab3eacc1dd61b71bbe97c">&#9670;&nbsp;</a></span>mip_filter_write_ref_point_lever_arm()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_load_ref_point_lever_arm </td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_write_ref_point_lever_arm </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="group__filter__ref__point__lever__arm__c.html#ga54cc59e5a49f07fec3de58850e138936">mip_filter_ref_point_lever_arm_command_reference_point_selector</a>&#160;</td>
+          <td class="paramname"><em>ref_point_sel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>lever_arm_offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -397,34 +464,36 @@ Reference Point VEH (1): 10 m magnitude (default) </p>
 
 </div>
 </div>
-<a id="ga137490bf44fab3eacc1dd61b71bbe97c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga137490bf44fab3eacc1dd61b71bbe97c">&#9670;&nbsp;</a></span>mip_filter_write_ref_point_lever_arm()</h2>
+<a id="ga0891f574dfb8efb071b369d87c9c9f0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0891f574dfb8efb071b369d87c9c9f0e">&#9670;&nbsp;</a></span>mip_filter_load_ref_point_lever_arm()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_write_ref_point_lever_arm </td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_load_ref_point_lever_arm </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__filter__ref__point__lever__arm__c.html#ga54cc59e5a49f07fec3de58850e138936">mip_filter_ref_point_lever_arm_command_reference_point_selector</a>&#160;</td>
-          <td class="paramname"><em>ref_point_sel</em>, </td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga7d7818b481aa15645445bd9439c76ecb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7d7818b481aa15645445bd9439c76ecb">&#9670;&nbsp;</a></span>mip_filter_default_ref_point_lever_arm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_default_ref_point_lever_arm </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const float *&#160;</td>
-          <td class="paramname"><em>lever_arm_offset</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -96,7 +96,6 @@ Functions</h2></td></tr>
 <tr class="separator:gadb790c1eda49fc1d3c84c357dd8ddfb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Poll the device for an GNSS message with the specified format. </p>
 <p>This function polls for a GNSS message using the provided format. The resulting message will maintain the order of descriptors sent in the command and any unrecognized descriptors are ignored. If the format is not provided, the device will attempt to use the stored format (set with the Set GNSS Message Format command.) If no format is provided and there is no stored format, the device will respond with a NACK. The reply packet contains an ACK/NACK field. The polled data packet is sent separately as a GNSS Data packet. </p>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="ga163a9b213b2ca2cfa02003a93d18d824"></a>
@@ -114,34 +113,6 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga96c77e662b429e03aa033ce245cbbfce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga96c77e662b429e03aa033ce245cbbfce">&#9670;&nbsp;</a></span>extract_mip_3dm_poll_gnss_message_command()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::extract_mip_3dm_poll_gnss_message_command </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__3dm__poll__gnss__message__command.html">mip_3dm_poll_gnss_message_command</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ga659d48d0f275eb6c13289e532d480242"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga659d48d0f275eb6c13289e532d480242">&#9670;&nbsp;</a></span>insert_mip_3dm_poll_gnss_message_command()</h2>
 
@@ -158,6 +129,34 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__3dm__poll__gnss__message__command.html">mip_3dm_poll_gnss_message_command</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga96c77e662b429e03aa033ce245cbbfce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga96c77e662b429e03aa033ce245cbbfce">&#9670;&nbsp;</a></span>extract_mip_3dm_poll_gnss_message_command()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::C::extract_mip_3dm_poll_gnss_message_command </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__3dm__poll__gnss__message__command.html">mip_3dm_poll_gnss_message_command</a> *&#160;</td>
           <td class="paramname"><em>self</em>&#160;</td>
         </tr>
         <tr>

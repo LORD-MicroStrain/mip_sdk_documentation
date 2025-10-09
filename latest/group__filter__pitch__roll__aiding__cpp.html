@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -94,38 +94,29 @@ Functions</h2></td></tr>
 <tr class="separator:ga6eec599fdda360d7fcb904bb46548b41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Select pitch/roll aiding input. Pitch/roll reading is always derived from GNSS corrected inertial solution. Aiding inputs are used to improve that solution during periods of low dynamics and GNSS outages. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga6eec599fdda360d7fcb904bb46548b41"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6eec599fdda360d7fcb904bb46548b41">&#9670;&nbsp;</a></span>defaultPitchRollAiding()</h2>
+<a id="ga2cec14e521e85b5188bd830d9d860b83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2cec14e521e85b5188bd830d9d860b83">&#9670;&nbsp;</a></span>writePitchRollAiding()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1PitchRollAiding.html">PitchRollAiding</a> &gt; mip::commands_filter::defaultPitchRollAiding </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1PitchRollAiding.html">PitchRollAiding</a> &gt; mip::commands_filter::writePitchRollAiding </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
-          <td></td>
+          <td class="paramname"><em>device</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gab734c1c7f7de527b464e477d6e13c017"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab734c1c7f7de527b464e477d6e13c017">&#9670;&nbsp;</a></span>loadPitchRollAiding()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1PitchRollAiding.html">PitchRollAiding</a> &gt; mip::commands_filter::loadPitchRollAiding </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1commands__filter_1_1PitchRollAiding.html#ae9027d892064fca84a831a23cb40afe5">PitchRollAiding::AidingSource</a>&#160;</td>
+          <td class="paramname"><em>source</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -178,28 +169,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga2cec14e521e85b5188bd830d9d860b83"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2cec14e521e85b5188bd830d9d860b83">&#9670;&nbsp;</a></span>writePitchRollAiding()</h2>
+<a id="gab734c1c7f7de527b464e477d6e13c017"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab734c1c7f7de527b464e477d6e13c017">&#9670;&nbsp;</a></span>loadPitchRollAiding()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1PitchRollAiding.html">PitchRollAiding</a> &gt; mip::commands_filter::writePitchRollAiding </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1PitchRollAiding.html">PitchRollAiding</a> &gt; mip::commands_filter::loadPitchRollAiding </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1commands__filter_1_1PitchRollAiding.html#ae9027d892064fca84a831a23cb40afe5">PitchRollAiding::AidingSource</a>&#160;</td>
-          <td class="paramname"><em>source</em>&#160;</td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga6eec599fdda360d7fcb904bb46548b41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6eec599fdda360d7fcb904bb46548b41">&#9670;&nbsp;</a></span>defaultPitchRollAiding()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1PitchRollAiding.html">PitchRollAiding</a> &gt; mip::commands_filter::defaultPitchRollAiding </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

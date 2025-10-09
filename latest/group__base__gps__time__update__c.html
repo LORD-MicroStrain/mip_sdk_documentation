@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -98,6 +98,10 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ga82e87c46e343f603e52de8dcbd91a711"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__base__gps__time__update__c.html#ga82e87c46e343f603e52de8dcbd91a711">mip::C::insert_mip_base_gps_time_update_command_field_id</a> (<a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *serializer, const <a class="el" href="group__base__gps__time__update__c.html#gab216f217828dc388fc2885e3855e65a8">mip_base_gps_time_update_command_field_id</a> self)</td></tr>
+<tr class="separator:ga82e87c46e343f603e52de8dcbd91a711"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac5050855e4d73518f1ab8c2b1b04d1ee"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__base__gps__time__update__c.html#gac5050855e4d73518f1ab8c2b1b04d1ee">mip::C::extract_mip_base_gps_time_update_command_field_id</a> (<a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *serializer, <a class="el" href="group__base__gps__time__update__c.html#gab216f217828dc388fc2885e3855e65a8">mip_base_gps_time_update_command_field_id</a> *self)</td></tr>
+<tr class="separator:gac5050855e4d73518f1ab8c2b1b04d1ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafec318119e574e80158a5d81ccd3aee1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__base__gps__time__update__c.html#gafec318119e574e80158a5d81ccd3aee1">mip::C::insert_mip_base_gps_time_update_command</a> (<a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *serializer, const <a class="el" href="structmip_1_1C_1_1mip__base__gps__time__update__command.html">mip_base_gps_time_update_command</a> *self)</td></tr>
 <tr class="separator:gafec318119e574e80158a5d81ccd3aee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga45339ba4c37948b2f22897ddb54b6ccf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__base__gps__time__update__c.html#ga45339ba4c37948b2f22897ddb54b6ccf">mip::C::extract_mip_base_gps_time_update_command</a> (<a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *serializer, <a class="el" href="structmip_1_1C_1_1mip__base__gps__time__update__command.html">mip_base_gps_time_update_command</a> *self)</td></tr>
@@ -106,22 +110,7 @@ Functions</h2></td></tr>
 <tr class="separator:gad333a062d0e248ec06f951e2e3a1ffe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Set device internal GPS time When combined with a PPS input signal applied to the I/O connector, this command enables complete synchronization of data outputs with an external time base, such as GPS system time. Since the hardware PPS synchronization can only detect the fractional number of seconds when pulses arrive, complete synchronization requires that the user provide the whole number of seconds via this command. After achieving PPS synchronization, this command should be sent twice: once to set the time-of-week and once to set the week number. PPS synchronization can be verified by monitoring the time sync status message (0xA0, 0x02) or the valid flags of any shared external timestamp (0x&ndash;, D7) data field. </p>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="ga99253b025e760d8efc49b26c27d43031"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga99253b025e760d8efc49b26c27d43031">&#9670;&nbsp;</a></span>mip_base_gps_time_update_command</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef struct <a class="el" href="structmip_1_1C_1_1mip__base__gps__time__update__command.html">mip_base_gps_time_update_command</a> <a class="el" href="structmip_1_1C_1_1mip__base__gps__time__update__command.html">mip::C::mip_base_gps_time_update_command</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ga0e39f928a3eb86ef6eaa83e78fc3e4aa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga0e39f928a3eb86ef6eaa83e78fc3e4aa">&#9670;&nbsp;</a></span>mip_base_gps_time_update_command_field_id</h2>
 
@@ -130,6 +119,20 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">typedef enum <a class="el" href="group__base__gps__time__update__c.html#gab216f217828dc388fc2885e3855e65a8">mip_base_gps_time_update_command_field_id</a> <a class="el" href="group__base__gps__time__update__c.html#gab216f217828dc388fc2885e3855e65a8">mip::C::mip_base_gps_time_update_command_field_id</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga99253b025e760d8efc49b26c27d43031"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga99253b025e760d8efc49b26c27d43031">&#9670;&nbsp;</a></span>mip_base_gps_time_update_command</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structmip_1_1C_1_1mip__base__gps__time__update__command.html">mip_base_gps_time_update_command</a> <a class="el" href="structmip_1_1C_1_1mip__base__gps__time__update__command.html">mip::C::mip_base_gps_time_update_command</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -158,14 +161,17 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga45339ba4c37948b2f22897ddb54b6ccf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga45339ba4c37948b2f22897ddb54b6ccf">&#9670;&nbsp;</a></span>extract_mip_base_gps_time_update_command()</h2>
+<a id="ga82e87c46e343f603e52de8dcbd91a711"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga82e87c46e343f603e52de8dcbd91a711">&#9670;&nbsp;</a></span>insert_mip_base_gps_time_update_command_field_id()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void mip::C::extract_mip_base_gps_time_update_command </td>
+          <td class="memname">static void mip::C::insert_mip_base_gps_time_update_command_field_id </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
           <td class="paramname"><em>serializer</em>, </td>
@@ -173,7 +179,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__base__gps__time__update__command.html">mip_base_gps_time_update_command</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__base__gps__time__update__c.html#gab216f217828dc388fc2885e3855e65a8">mip_base_gps_time_update_command_field_id</a>&#160;</td>
           <td class="paramname"><em>self</em>&#160;</td>
         </tr>
         <tr>
@@ -182,6 +188,47 @@ Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gac5050855e4d73518f1ab8c2b1b04d1ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac5050855e4d73518f1ab8c2b1b04d1ee">&#9670;&nbsp;</a></span>extract_mip_base_gps_time_update_command_field_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void mip::C::extract_mip_base_gps_time_update_command_field_id </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__base__gps__time__update__c.html#gab216f217828dc388fc2885e3855e65a8">mip_base_gps_time_update_command_field_id</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -202,6 +249,34 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__base__gps__time__update__command.html">mip_base_gps_time_update_command</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga45339ba4c37948b2f22897ddb54b6ccf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga45339ba4c37948b2f22897ddb54b6ccf">&#9670;&nbsp;</a></span>extract_mip_base_gps_time_update_command()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::C::extract_mip_base_gps_time_update_command </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__base__gps__time__update__command.html">mip_base_gps_time_update_command</a> *&#160;</td>
           <td class="paramname"><em>self</em>&#160;</td>
         </tr>
         <tr>

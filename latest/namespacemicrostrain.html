@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -68,7 +68,8 @@ $(function() {
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">microstrain Namespace Reference<div class="ingroups"><a class="el" href="group__microstrain.html">MicroStrain API</a></div></div>  </div>
 </div><!--header-->
@@ -354,22 +355,13 @@ Functions</h2></td></tr>
 <tr class="memitem:gae80cbe5ec5132c2060bad8be840ab24d"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__microstrain__serialization__cpp.html#gae80cbe5ec5132c2060bad8be840ab24d">extract</a> (T &amp;value, <a class="el" href="namespacemicrostrain.html#ad10904b5b78aab3f27f0a6fa165d94bc">microstrain::ConstU8ArrayView</a> buffer, size_t offset=0, bool exact_size=false)</td></tr>
 <tr class="memdesc:gae80cbe5ec5132c2060bad8be840ab24d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deserializes a value from a raw byte buffer (<a class="el" href="structmicrostrain_1_1ArrayView.html" title="Represents a view over a contiguous array of objects, similar to std::span, and is implemented as a p...">ArrayView</a> version).  <a href="group__microstrain__serialization__cpp.html#gae80cbe5ec5132c2060bad8be840ab24d">More...</a><br /></td></tr>
 <tr class="separator:gae80cbe5ec5132c2060bad8be840ab24d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a82eff139a82b0254f117becdaca30784"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemicrostrain.html#a82eff139a82b0254f117becdaca30784">DYNAMIC_EXTENT</a> = SIZE_MAX</td></tr>
+<tr class="separator:a82eff139a82b0254f117becdaca30784"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="a713e840c6a8f0fd7e825a125ee6dae28"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a713e840c6a8f0fd7e825a125ee6dae28">&#9670;&nbsp;</a></span>CharArrayView</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="namespacemicrostrain.html#a713e840c6a8f0fd7e825a125ee6dae28">microstrain::CharArrayView</a> = typedef <a class="el" href="structmicrostrain_1_1ArrayView.html">ArrayView</a>&lt;char&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ab74c8e68701769d676e46bf760aad854"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab74c8e68701769d676e46bf760aad854">&#9670;&nbsp;</a></span>ConstArrayView</h2>
 
@@ -380,62 +372,6 @@ template&lt;class T &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="namespacemicrostrain.html#ab74c8e68701769d676e46bf760aad854">microstrain::ConstArrayView</a> = typedef <a class="el" href="structmicrostrain_1_1ArrayView.html">ArrayView</a>&lt;const T&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a036b8995c523e18903d6f9bc5779242d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a036b8995c523e18903d6f9bc5779242d">&#9670;&nbsp;</a></span>ConstCharArrayView</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="namespacemicrostrain.html#a036b8995c523e18903d6f9bc5779242d">microstrain::ConstCharArrayView</a> = typedef <a class="el" href="namespacemicrostrain.html#ab74c8e68701769d676e46bf760aad854">ConstArrayView</a>&lt;char&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad10904b5b78aab3f27f0a6fa165d94bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad10904b5b78aab3f27f0a6fa165d94bc">&#9670;&nbsp;</a></span>ConstU8ArrayView</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="namespacemicrostrain.html#ad10904b5b78aab3f27f0a6fa165d94bc">microstrain::ConstU8ArrayView</a> = typedef <a class="el" href="namespacemicrostrain.html#ab74c8e68701769d676e46bf760aad854">ConstArrayView</a>&lt;uint8_t&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a87678128971532436007682ebe2017c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a87678128971532436007682ebe2017c6">&#9670;&nbsp;</a></span>EmbeddedTimeout</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="namespacemicrostrain.html#a87678128971532436007682ebe2017c6">microstrain::EmbeddedTimeout</a> = typedef <a class="el" href="namespacemicrostrain_1_1C.html#a82d49daeef52f3b19a6e5527091c36e5">C::microstrain_embedded_timeout</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af73e34a0b5ae1565e0e36a769c381ee1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af73e34a0b5ae1565e0e36a769c381ee1">&#9670;&nbsp;</a></span>EmbeddedTimestamp</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="namespacemicrostrain.html#af73e34a0b5ae1565e0e36a769c381ee1">microstrain::EmbeddedTimestamp</a> = typedef <a class="el" href="namespacemicrostrain_1_1C.html#a414dbc5e176e1ea7fd890d8a4353dd6b">C::microstrain_embedded_timestamp</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -456,155 +392,77 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
+<a id="ad10904b5b78aab3f27f0a6fa165d94bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad10904b5b78aab3f27f0a6fa165d94bc">&#9670;&nbsp;</a></span>ConstU8ArrayView</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacemicrostrain.html#ad10904b5b78aab3f27f0a6fa165d94bc">microstrain::ConstU8ArrayView</a> = typedef <a class="el" href="namespacemicrostrain.html#ab74c8e68701769d676e46bf760aad854">ConstArrayView</a>&lt;uint8_t&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a713e840c6a8f0fd7e825a125ee6dae28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a713e840c6a8f0fd7e825a125ee6dae28">&#9670;&nbsp;</a></span>CharArrayView</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacemicrostrain.html#a713e840c6a8f0fd7e825a125ee6dae28">microstrain::CharArrayView</a> = typedef <a class="el" href="structmicrostrain_1_1ArrayView.html">ArrayView</a>&lt;char&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a036b8995c523e18903d6f9bc5779242d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a036b8995c523e18903d6f9bc5779242d">&#9670;&nbsp;</a></span>ConstCharArrayView</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacemicrostrain.html#a036b8995c523e18903d6f9bc5779242d">microstrain::ConstCharArrayView</a> = typedef <a class="el" href="namespacemicrostrain.html#ab74c8e68701769d676e46bf760aad854">ConstArrayView</a>&lt;char&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af73e34a0b5ae1565e0e36a769c381ee1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af73e34a0b5ae1565e0e36a769c381ee1">&#9670;&nbsp;</a></span>EmbeddedTimestamp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacemicrostrain.html#af73e34a0b5ae1565e0e36a769c381ee1">microstrain::EmbeddedTimestamp</a> = typedef <a class="el" href="namespacemicrostrain_1_1C.html#a414dbc5e176e1ea7fd890d8a4353dd6b">C::microstrain_embedded_timestamp</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a87678128971532436007682ebe2017c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87678128971532436007682ebe2017c6">&#9670;&nbsp;</a></span>EmbeddedTimeout</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacemicrostrain.html#a87678128971532436007682ebe2017c6">microstrain::EmbeddedTimeout</a> = typedef <a class="el" href="namespacemicrostrain_1_1C.html#a82d49daeef52f3b19a6e5527091c36e5">C::microstrain_embedded_timeout</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a526f28ca8ecd085ad3e0055a2ebc915d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a526f28ca8ecd085ad3e0055a2ebc915d">&#9670;&nbsp;</a></span>accum_sat()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T , class U &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr T&amp; microstrain::accum_sat </td>
-          <td>(</td>
-          <td class="paramtype">T &amp;&#160;</td>
-          <td class="paramname"><em>counter</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">U&#160;</td>
-          <td class="paramname"><em>amount</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Add a value to an accumulator and prevent it from overflowing. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>Type of the accumulator. Let the compiler deduce this. </td></tr>
-    <tr><td class="paramname">U</td><td>Type of the value being added. Let the compiler deduce this.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">counter</td><td>Accumulator variable to modify. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>Value to add to counter.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A reference the the accumulator. </dd></dl>
-
-</div>
-</div>
-<a id="aba0de67fdba4b16b2d1109526992120e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba0de67fdba4b16b2d1109526992120e">&#9670;&nbsp;</a></span>add_sat()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr T microstrain::add_sat </td>
-          <td>(</td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>y</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>see <a href="https://en.cppreference.com/w/cpp/numeric/add_sat">https://en.cppreference.com/w/cpp/numeric/add_sat</a> </p>
-
-</div>
-</div>
-<a id="ad0a3e1d0dd90765ee79c3e76b7c9abd0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0a3e1d0dd90765ee79c3e76b7c9abd0">&#9670;&nbsp;</a></span>assign_sat()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T , class U &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr void microstrain::assign_sat </td>
-          <td>(</td>
-          <td class="paramtype">T &amp;&#160;</td>
-          <td class="paramname"><em>destination</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">U&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Assign an integral value to a destination variable, clamping its value to the range of the destination type. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>Destination type. Let the compiler deduce this. </td></tr>
-    <tr><td class="paramname">U</td><td>Source type. Let the compiler deduce this.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">destination</td><td>Variable in which to store the value. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>Value to store in destination. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a94c3bb593ef98ad866494f8204322944"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a94c3bb593ef98ad866494f8204322944">&#9670;&nbsp;</a></span>bitmaskFirstN()</h2>
 
@@ -630,8 +488,6 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Creates a bitmask with 1s in the first N bits, i.e. bits [0..N). </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>An unsigned integral type.</td></tr>
@@ -648,8 +504,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a0eb0cbea9f3843863f56f0568ad8583d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0eb0cbea9f3843863f56f0568ad8583d">&#9670;&nbsp;</a></span>bitmaskIthruJ()</h2>
+<a id="a482839f361bc5939dfe673ed51efbe3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a482839f361bc5939dfe673ed51efbe3b">&#9670;&nbsp;</a></span>bitmaskN()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -660,7 +516,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr T microstrain::bitmaskIthruJ </td>
+          <td class="memname">constexpr T microstrain::bitmaskN </td>
           <td>(</td>
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>bitI</em>, </td>
@@ -669,7 +525,7 @@ template&lt;typename T &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>bitJ</em>&#160;</td>
+          <td class="paramname"><em>nbits</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -683,8 +539,6 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Creates a bitmask with bits [bitI..bitJ] set to 1 (includes bit J). </p>
 <p>If bitI == bitJ, then the result will have exactly one bit set.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
@@ -694,7 +548,7 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">bitI</td><td>The 0-based index of the first 1 bit. Must not exceed the number of bits in T. </td></tr>
+    <tr><td class="paramname">bitI</td><td>The 0-based index of the first 1 bit. Must be LESS than the number of bits in T (and not equal). </td></tr>
     <tr><td class="paramname">bitJ</td><td>The 0-based index of the the last 1 bit. Must be greater than or equal to bitI and cannot exceed the number of bits in T.</td></tr>
   </table>
   </dd>
@@ -738,8 +592,6 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Creates a bitmask with bits [bitI..bitJ) set to 1 (excludes bit J). </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>An unsigned integral type.</td></tr>
@@ -757,8 +609,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a482839f361bc5939dfe673ed51efbe3b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a482839f361bc5939dfe673ed51efbe3b">&#9670;&nbsp;</a></span>bitmaskN()</h2>
+<a id="a0eb0cbea9f3843863f56f0568ad8583d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0eb0cbea9f3843863f56f0568ad8583d">&#9670;&nbsp;</a></span>bitmaskIthruJ()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -769,8 +621,177 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr T microstrain::bitmaskN </td>
+          <td class="memname">constexpr T microstrain::bitmaskIthruJ </td>
           <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>bitI</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>bitJ</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>If bitI == bitJ, then the result will have exactly one bit set.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>An unsigned integral type.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bitI</td><td>The 0-based index of the first 1 bit. Must not exceed the number of bits in T. </td></tr>
+    <tr><td class="paramname">bitJ</td><td>The 0-based index of the the last 1 bit. Must be greater than or equal to bitI and cannot exceed the number of bits in T.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the bitmask </dd></dl>
+
+</div>
+</div>
+<a id="a98d7401842520096df2dc98439c67c38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98d7401842520096df2dc98439c67c38">&#9670;&nbsp;</a></span>testBit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename RegType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool microstrain::testBit </td>
+          <td>(</td>
+          <td class="paramtype">RegType&#160;</td>
+          <td class="paramname"><em>reg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>bit</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">RegType</td><td>An integral type. Let the compiler deduce this in most cases.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">reg</td><td>Value containing the bit to check. </td></tr>
+    <tr><td class="paramname">bit</td><td>The 0-based index of the bit to check in val. Must be less than the number of bits in RegType.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the bit is set, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a2aa1365cf8273fe2d410582c880e3e84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2aa1365cf8273fe2d410582c880e3e84">&#9670;&nbsp;</a></span>setBit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename RegType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr void microstrain::setBit </td>
+          <td>(</td>
+          <td class="paramtype">RegType &amp;&#160;</td>
+          <td class="paramname"><em>reg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>bit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>value</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">RegType</td><td>An integral type. Let the compiler deduce this.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">reg</td><td>Value to be modified. </td></tr>
+    <tr><td class="paramname">bit</td><td>The 0-based index of the bit to modify. Must be less than the number of bits in RegType. </td></tr>
+    <tr><td class="paramname">value</td><td>Sets the bit to this value. Default true. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac1d788de2a6ff5d7f6c9d44e123b695f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1d788de2a6ff5d7f6c9d44e123b695f">&#9670;&nbsp;</a></span>getBitsN()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename RegType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr RegType microstrain::getBitsN </td>
+          <td>(</td>
+          <td class="paramtype">RegType&#160;</td>
+          <td class="paramname"><em>reg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>bitI</em>, </td>
         </tr>
@@ -792,28 +813,26 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Creates a bitmask with N '1' bits starting at bit I. </p>
-<p>If bitI == bitJ, then the result will have exactly one bit set.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>An unsigned integral type.</td></tr>
+    <tr><td class="paramname">RegType</td><td>An unsigned integral type. Let the compiler deduce this.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">bitI</td><td>The 0-based index of the first 1 bit. Must be LESS than the number of bits in T (and not equal). </td></tr>
-    <tr><td class="paramname">bitJ</td><td>The 0-based index of the the last 1 bit. Must be greater than or equal to bitI and cannot exceed the number of bits in T.</td></tr>
+    <tr><td class="paramname">reg</td><td>Register value. </td></tr>
+    <tr><td class="paramname">bitI</td><td>The 0-based index of the first bit to extract. Must be less than the number of bits in RegType. </td></tr>
+    <tr><td class="paramname">nbits</td><td>How many consecutive bits to extract.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the bitmask </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The value stored in bits [bitI..bitI+N) as the same type as reg. </dd></dl>
 
 </div>
 </div>
-<a id="a25c1fd465c82bd0d9d3bf3a4b443b587"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25c1fd465c82bd0d9d3bf3a4b443b587">&#9670;&nbsp;</a></span>clearBitsIthruJ()</h2>
+<a id="af11797af364892f5a1c5cc191ade8776"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af11797af364892f5a1c5cc191ade8776">&#9670;&nbsp;</a></span>getBitsItoJ()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -824,9 +843,9 @@ template&lt;typename RegType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr void microstrain::clearBitsIthruJ </td>
+          <td class="memname">constexpr RegType microstrain::getBitsItoJ </td>
           <td>(</td>
-          <td class="paramtype">RegType &amp;&#160;</td>
+          <td class="paramtype">RegType&#160;</td>
           <td class="paramname"><em>reg</em>, </td>
         </tr>
         <tr>
@@ -853,8 +872,124 @@ template&lt;typename RegType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">RegType</td><td>An unsigned integral type. Let the compiler deduce this.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">reg</td><td>Register value. </td></tr>
+    <tr><td class="paramname">bitI</td><td>The 0-based index of the first bit to extract. Must be less than the number of bits in RegType. </td></tr>
+    <tr><td class="paramname">bitJ</td><td>The 0-based index of the bit after last bit to extract. Must be greater than or equal to bitI and cannot exceed the number of bits in RegType.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The value stored in bits [bitI..bitJ) as the same type as reg. </dd></dl>
 
-<p>Sets a series of consecutive bits in a variable to 0. </p>
+</div>
+</div>
+<a id="afd7d6be4c0593e2670eabbd31f9fa5f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd7d6be4c0593e2670eabbd31f9fa5f1">&#9670;&nbsp;</a></span>getBitsIthruJ()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename RegType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr RegType microstrain::getBitsIthruJ </td>
+          <td>(</td>
+          <td class="paramtype">RegType&#160;</td>
+          <td class="paramname"><em>reg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>bitI</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>bitJ</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">RegType</td><td>An unsigned integral type. Let the compiler deduce this.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">reg</td><td>Register value. </td></tr>
+    <tr><td class="paramname">bitI</td><td>The 0-based index of the first bit to extract. Must be less than the number of bits in RegType. </td></tr>
+    <tr><td class="paramname">bitJ</td><td>The 0-based index of the last bit to extract. Must be greater than or equal to bitI and less than the number of bits in RegType.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The value stored in bits [bitI..bitJ] as the same type as reg. </dd></dl>
+
+</div>
+</div>
+<a id="a3f714f5dd131f735e9f55d0ec31e16a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f714f5dd131f735e9f55d0ec31e16a3">&#9670;&nbsp;</a></span>setBitsN() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename RegType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr void microstrain::setBitsN </td>
+          <td>(</td>
+          <td class="paramtype">RegType &amp;&#160;</td>
+          <td class="paramname"><em>reg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>bitI</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>nbits</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">RegType</td><td>An unsigned integral type. Let the compiler deduce this.</td></tr>
@@ -865,15 +1000,15 @@ template&lt;typename RegType &gt; </div>
   <table class="params">
     <tr><td class="paramname">reg</td><td>Value to be modified. </td></tr>
     <tr><td class="paramname">bitI</td><td>The 0-based index of the first affected bit. </td></tr>
-    <tr><td class="paramname">bitJ</td><td>The 0-based index of the last affected bit. </td></tr>
+    <tr><td class="paramname">nbits</td><td>Number of consecutive bits to set to '1'. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a0c013c007a7abe246a2f81d2d5a42f3d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c013c007a7abe246a2f81d2d5a42f3d">&#9670;&nbsp;</a></span>clearBitsItoJ()</h2>
+<a id="afb4ba1b91580e540aef4f03082ada0d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb4ba1b91580e540aef4f03082ada0d1">&#9670;&nbsp;</a></span>setBitsItoJ() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -884,7 +1019,7 @@ template&lt;typename RegType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr void microstrain::clearBitsItoJ </td>
+          <td class="memname">constexpr void microstrain::setBitsItoJ </td>
           <td>(</td>
           <td class="paramtype">RegType &amp;&#160;</td>
           <td class="paramname"><em>reg</em>, </td>
@@ -913,8 +1048,6 @@ template&lt;typename RegType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Sets a series of consecutive bits in a variable to 0. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">RegType</td><td>An unsigned integral type. Let the compiler deduce this.</td></tr>
@@ -926,6 +1059,64 @@ template&lt;typename RegType &gt; </div>
     <tr><td class="paramname">reg</td><td>Value to be modified. </td></tr>
     <tr><td class="paramname">bitI</td><td>The 0-based index of the first affected bit. </td></tr>
     <tr><td class="paramname">bitJ</td><td>The 0-based index of the bit after the last affected bit. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a05394cde5ae5a19632a101424c0a7c62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05394cde5ae5a19632a101424c0a7c62">&#9670;&nbsp;</a></span>setBitsIthruJ()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename RegType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr void microstrain::setBitsIthruJ </td>
+          <td>(</td>
+          <td class="paramtype">RegType &amp;&#160;</td>
+          <td class="paramname"><em>reg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>bitI</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>bitJ</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">RegType</td><td>An unsigned integral type. Let the compiler deduce this.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">reg</td><td>Value to be modified. </td></tr>
+    <tr><td class="paramname">bitI</td><td>The 0-based index of the first affected bit. </td></tr>
+    <tr><td class="paramname">bitJ</td><td>The 0-based index of the last affected bit. </td></tr>
   </table>
   </dd>
 </dl>
@@ -973,8 +1164,6 @@ template&lt;typename RegType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Sets a series of consecutive bits in a variable to 0. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">RegType</td><td>An unsigned integral type. Let the compiler deduce this.</td></tr>
@@ -992,55 +1181,8 @@ template&lt;typename RegType &gt; </div>
 
 </div>
 </div>
-<a id="ga97f89f7d5ee32b5b34f9fb391111af44"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga97f89f7d5ee32b5b34f9fb391111af44">&#9670;&nbsp;</a></span>extract()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;serialization::Endian E, class T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">std::enable_if&lt;std::is_enum&lt;T&gt;::value, size_t&gt;::type microstrain::extract </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmicrostrain_1_1Serializer.html">Serializer</a>&lt; E &gt; &amp;&#160;</td>
-          <td class="paramname"><em>buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">T &amp;&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Reads an enum from a <a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a>. For this to work properly, the enum must have its underlying type specified, i.e., like <code>enum Foo : uint32_t { /*...*&zwj;/ };</code> </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">E</td><td>Endianness of buffer. Automatically deduced from the serializer parameter. </td></tr>
-    <tr><td class="paramname">T</td><td>Type of the enum. Automatically deduced from the underlying type of the enum.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir"></td><td class="paramname">buffer</td><td><a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a> object pointing to the source buffer. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">value</td><td>The value will be stored in this variable.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The size of T, for consistency. </dd></dl>
-
-</div>
-</div>
-<a id="afd7d6be4c0593e2670eabbd31f9fa5f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd7d6be4c0593e2670eabbd31f9fa5f1">&#9670;&nbsp;</a></span>getBitsIthruJ()</h2>
+<a id="a0c013c007a7abe246a2f81d2d5a42f3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c013c007a7abe246a2f81d2d5a42f3d">&#9670;&nbsp;</a></span>clearBitsItoJ()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1051,9 +1193,9 @@ template&lt;typename RegType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr RegType microstrain::getBitsIthruJ </td>
+          <td class="memname">constexpr void microstrain::clearBitsItoJ </td>
           <td>(</td>
-          <td class="paramtype">RegType&#160;</td>
+          <td class="paramtype">RegType &amp;&#160;</td>
           <td class="paramname"><em>reg</em>, </td>
         </tr>
         <tr>
@@ -1080,8 +1222,6 @@ template&lt;typename RegType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Extracts a bitfield from a variable value. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">RegType</td><td>An unsigned integral type. Let the compiler deduce this.</td></tr>
@@ -1090,18 +1230,17 @@ template&lt;typename RegType &gt; </div>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">reg</td><td>Register value. </td></tr>
-    <tr><td class="paramname">bitI</td><td>The 0-based index of the first bit to extract. Must be less than the number of bits in RegType. </td></tr>
-    <tr><td class="paramname">bitJ</td><td>The 0-based index of the last bit to extract. Must be greater than or equal to bitI and less than the number of bits in RegType.</td></tr>
+    <tr><td class="paramname">reg</td><td>Value to be modified. </td></tr>
+    <tr><td class="paramname">bitI</td><td>The 0-based index of the first affected bit. </td></tr>
+    <tr><td class="paramname">bitJ</td><td>The 0-based index of the bit after the last affected bit. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The value stored in bits [bitI..bitJ] as the same type as reg. </dd></dl>
 
 </div>
 </div>
-<a id="af11797af364892f5a1c5cc191ade8776"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af11797af364892f5a1c5cc191ade8776">&#9670;&nbsp;</a></span>getBitsItoJ()</h2>
+<a id="a25c1fd465c82bd0d9d3bf3a4b443b587"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25c1fd465c82bd0d9d3bf3a4b443b587">&#9670;&nbsp;</a></span>clearBitsIthruJ()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1112,9 +1251,9 @@ template&lt;typename RegType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr RegType microstrain::getBitsItoJ </td>
+          <td class="memname">constexpr void microstrain::clearBitsIthruJ </td>
           <td>(</td>
-          <td class="paramtype">RegType&#160;</td>
+          <td class="paramtype">RegType &amp;&#160;</td>
           <td class="paramname"><em>reg</em>, </td>
         </tr>
         <tr>
@@ -1141,8 +1280,6 @@ template&lt;typename RegType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Extracts a bitfield from a variable value. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">RegType</td><td>An unsigned integral type. Let the compiler deduce this.</td></tr>
@@ -1151,31 +1288,30 @@ template&lt;typename RegType &gt; </div>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">reg</td><td>Register value. </td></tr>
-    <tr><td class="paramname">bitI</td><td>The 0-based index of the first bit to extract. Must be less than the number of bits in RegType. </td></tr>
-    <tr><td class="paramname">bitJ</td><td>The 0-based index of the bit after last bit to extract. Must be greater than or equal to bitI and cannot exceed the number of bits in RegType.</td></tr>
+    <tr><td class="paramname">reg</td><td>Value to be modified. </td></tr>
+    <tr><td class="paramname">bitI</td><td>The 0-based index of the first affected bit. </td></tr>
+    <tr><td class="paramname">bitJ</td><td>The 0-based index of the last affected bit. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The value stored in bits [bitI..bitJ) as the same type as reg. </dd></dl>
 
 </div>
 </div>
-<a id="ac1d788de2a6ff5d7f6c9d44e123b695f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac1d788de2a6ff5d7f6c9d44e123b695f">&#9670;&nbsp;</a></span>getBitsN()</h2>
+<a id="af967cc3ae70a66fbafaa7558f3287bbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af967cc3ae70a66fbafaa7558f3287bbc">&#9670;&nbsp;</a></span>setBitsN() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename RegType &gt; </div>
+template&lt;typename RegType , typename ValType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr RegType microstrain::getBitsN </td>
+          <td class="memname">constexpr void microstrain::setBitsN </td>
           <td>(</td>
-          <td class="paramtype">RegType&#160;</td>
+          <td class="paramtype">RegType &amp;&#160;</td>
           <td class="paramname"><em>reg</em>, </td>
         </tr>
         <tr>
@@ -1188,7 +1324,13 @@ template&lt;typename RegType &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>nbits</em>&#160;</td>
+          <td class="paramname"><em>nbits</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ValType&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1202,110 +1344,58 @@ template&lt;typename RegType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Extracts a bitfield from a variable value. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">RegType</td><td>An unsigned integral type. Let the compiler deduce this.</td></tr>
+    <tr><td class="paramname">RegType</td><td>An unsigned integral type. Let the compiler deduce this. </td></tr>
+    <tr><td class="paramname">ValType</td><td>An integral type used for the input value. Let the compiler deduce this.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">reg</td><td>Register value. </td></tr>
-    <tr><td class="paramname">bitI</td><td>The 0-based index of the first bit to extract. Must be less than the number of bits in RegType. </td></tr>
-    <tr><td class="paramname">nbits</td><td>How many consecutive bits to extract.</td></tr>
+    <tr><td class="paramname">reg</td><td>Value to be modified. </td></tr>
+    <tr><td class="paramname">bitI</td><td>The 0-based index of the first bit of value in reg. </td></tr>
+    <tr><td class="paramname">nbits</td><td>Number of consecutive bits used to represent the value in reg. </td></tr>
+    <tr><td class="paramname">value</td><td>Value to insert into reg at bit I. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The value stored in bits [bitI..bitI+N) as the same type as reg. </dd></dl>
 
 </div>
 </div>
-<a id="a0f0c754eb1001cdcf7d3578fdaa57fbb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f0c754eb1001cdcf7d3578fdaa57fbb">&#9670;&nbsp;</a></span>indexOrDefault()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Container , typename Value &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">auto microstrain::indexOrDefault </td>
-          <td>(</td>
-          <td class="paramtype">Container &amp;&#160;</td>
-          <td class="paramname"><em>container</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classmicrostrain_1_1Index.html">Index</a>&#160;</td>
-          <td class="paramname"><em>index</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Value&#160;</td>
-          <td class="paramname"><em>default_</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac6657f7e52ff2e558bcbace9cbe143c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6657f7e52ff2e558bcbace9cbe143c1">&#9670;&nbsp;</a></span>indexOrNull()</h2>
+<a id="a9c0e13302f9bae7dc600419064407249"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c0e13302f9bae7dc600419064407249">&#9670;&nbsp;</a></span>setBitsItoJ() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Container &gt; </div>
+template&lt;typename RegType , typename ValType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">auto* microstrain::indexOrNull </td>
+          <td class="memname">constexpr void microstrain::setBitsItoJ </td>
           <td>(</td>
-          <td class="paramtype">Container &amp;&#160;</td>
-          <td class="paramname"><em>container</em>, </td>
+          <td class="paramtype">RegType &amp;&#160;</td>
+          <td class="paramname"><em>reg</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classmicrostrain_1_1Index.html">Index</a>&#160;</td>
-          <td class="paramname"><em>index</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga5a978dcbb35f175e3079aaaa6eadc450"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5a978dcbb35f175e3079aaaa6eadc450">&#9670;&nbsp;</a></span>insert()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;serialization::Endian E, class T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">std::enable_if&lt;std::is_enum&lt;T&gt;::value, size_t&gt;::type microstrain::insert </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmicrostrain_1_1Serializer.html">Serializer</a>&lt; E &gt; &amp;&#160;</td>
-          <td class="paramname"><em>buffer</em>, </td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>bitI</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">T&#160;</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>bitJ</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ValType&#160;</td>
           <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>
@@ -1314,24 +1404,28 @@ template&lt;serialization::Endian E, class T &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-
-<p>Writes an enum to a <a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a>. For this to work properly, the enum must have its underlying type specified, i.e., like <code>enum Foo : uint32_t { /*...*&zwj;/ };</code> </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">E</td><td>Endianness of buffer. Automatically deduced from the serializer parameter. </td></tr>
-    <tr><td class="paramname">T</td><td>Type of the enum. Automatically deduced from the underlying type of the enum.</td></tr>
+    <tr><td class="paramname">RegType</td><td>An unsigned integral type. Let the compiler deduce this. </td></tr>
+    <tr><td class="paramname">ValType</td><td>An integral type used for the input value. Let the compiler deduce this.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">buffer</td><td><a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a> object pointing to the destination buffer. </td></tr>
-    <tr><td class="paramname">value</td><td>The enum value to write to the buffer.</td></tr>
+    <tr><td class="paramname">reg</td><td>Value to be modified. </td></tr>
+    <tr><td class="paramname">bitI</td><td>The 0-based index of the first bit of value in reg. </td></tr>
+    <tr><td class="paramname">bitJ</td><td>The 0-based index of the bit after the last affected bit. </td></tr>
+    <tr><td class="paramname">value</td><td>Value to insert into reg at bit I. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The size of T, for consistency. </dd></dl>
 
 </div>
 </div>
@@ -1382,8 +1476,6 @@ template&lt;typename RegType , typename ValType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Writes a value to a specific set of bits in a variable as if it were a bitfield. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">RegType</td><td>An unsigned integral type. Let the compiler deduce this. </td></tr>
@@ -1400,6 +1492,285 @@ template&lt;typename RegType , typename ValType &gt; </div>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="aba0de67fdba4b16b2d1109526992120e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba0de67fdba4b16b2d1109526992120e">&#9670;&nbsp;</a></span>add_sat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr T microstrain::add_sat </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>see <a href="https://en.cppreference.com/w/cpp/numeric/add_sat">https://en.cppreference.com/w/cpp/numeric/add_sat</a> </p>
+
+</div>
+</div>
+<a id="a095eee7d149e595252aa69933a758ade"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a095eee7d149e595252aa69933a758ade">&#9670;&nbsp;</a></span>sub_sat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr T microstrain::sub_sat </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>see <a href="https://en.cppreference.com/w/cpp/numeric/sub_sat">https://en.cppreference.com/w/cpp/numeric/sub_sat</a> </p>
+
+</div>
+</div>
+<a id="a1213390192faa954b4dbe348dd7d4fe7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1213390192faa954b4dbe348dd7d4fe7">&#9670;&nbsp;</a></span>saturate_cast()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , class U &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr T microstrain::saturate_cast </td>
+          <td>(</td>
+          <td class="paramtype">U&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>See <a href="https://en.cppreference.com/w/cpp/numeric/saturate_cast">https://en.cppreference.com/w/cpp/numeric/saturate_cast</a></p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Result type. </td></tr>
+    <tr><td class="paramname">U</td><td>Source type. Let the compiler deduce this.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Value to cast.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The value of x, clamped to the valid range of T. </dd></dl>
+
+</div>
+</div>
+<a id="ad0a3e1d0dd90765ee79c3e76b7c9abd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0a3e1d0dd90765ee79c3e76b7c9abd0">&#9670;&nbsp;</a></span>assign_sat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , class U &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr void microstrain::assign_sat </td>
+          <td>(</td>
+          <td class="paramtype">T &amp;&#160;</td>
+          <td class="paramname"><em>destination</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">U&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Destination type. Let the compiler deduce this. </td></tr>
+    <tr><td class="paramname">U</td><td>Source type. Let the compiler deduce this.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">destination</td><td>Variable in which to store the value. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>Value to store in destination. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a526f28ca8ecd085ad3e0055a2ebc915d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a526f28ca8ecd085ad3e0055a2ebc915d">&#9670;&nbsp;</a></span>accum_sat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , class U &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr T&amp; microstrain::accum_sat </td>
+          <td>(</td>
+          <td class="paramtype">T &amp;&#160;</td>
+          <td class="paramname"><em>counter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">U&#160;</td>
+          <td class="paramname"><em>amount</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Type of the accumulator. Let the compiler deduce this. </td></tr>
+    <tr><td class="paramname">U</td><td>Type of the value being added. Let the compiler deduce this.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">counter</td><td>Accumulator variable to modify. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>Value to add to counter.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference the the accumulator. </dd></dl>
+
+</div>
+</div>
+<a id="a71e571766b879ac639352885ba6328b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71e571766b879ac639352885ba6328b1">&#9670;&nbsp;</a></span>reduce_sat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , class U &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr T&amp; microstrain::reduce_sat </td>
+          <td>(</td>
+          <td class="paramtype">T &amp;&#160;</td>
+          <td class="paramname"><em>counter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">U&#160;</td>
+          <td class="paramname"><em>amount</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Type of the accumulator. Let the compiler deduce this. </td></tr>
+    <tr><td class="paramname">U</td><td>Type of the value being subtracted. Let the compiler deduce this.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">counter</td><td>Accumulator variable to modify. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>Value to subtract from counter.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference the the accumulator. </dd></dl>
 
 </div>
 </div>
@@ -1475,319 +1846,135 @@ template&lt;typename RegType , typename ValType &gt; </div>
 
 </div>
 </div>
-<a id="a71e571766b879ac639352885ba6328b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a71e571766b879ac639352885ba6328b1">&#9670;&nbsp;</a></span>reduce_sat()</h2>
+<a id="ac6657f7e52ff2e558bcbace9cbe143c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6657f7e52ff2e558bcbace9cbe143c1">&#9670;&nbsp;</a></span>indexOrNull()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class T , class U &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
+template&lt;class Container &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">constexpr T&amp; microstrain::reduce_sat </td>
+          <td class="memname">auto* microstrain::indexOrNull </td>
           <td>(</td>
+          <td class="paramtype">Container &amp;&#160;</td>
+          <td class="paramname"><em>container</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmicrostrain_1_1Index.html">Index</a>&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0f0c754eb1001cdcf7d3578fdaa57fbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f0c754eb1001cdcf7d3578fdaa57fbb">&#9670;&nbsp;</a></span>indexOrDefault()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Container , typename Value &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">auto microstrain::indexOrDefault </td>
+          <td>(</td>
+          <td class="paramtype">Container &amp;&#160;</td>
+          <td class="paramname"><em>container</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmicrostrain_1_1Index.html">Index</a>&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Value&#160;</td>
+          <td class="paramname"><em>default_</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga5a978dcbb35f175e3079aaaa6eadc450"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5a978dcbb35f175e3079aaaa6eadc450">&#9670;&nbsp;</a></span>insert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;serialization::Endian E, class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::enable_if&lt;std::is_enum&lt;T&gt;::value, size_t&gt;::type microstrain::insert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmicrostrain_1_1Serializer.html">Serializer</a>&lt; E &gt; &amp;&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">E</td><td>Endianness of buffer. Automatically deduced from the serializer parameter. </td></tr>
+    <tr><td class="paramname">T</td><td>Type of the enum. Automatically deduced from the underlying type of the enum.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td><a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a> object pointing to the destination buffer. </td></tr>
+    <tr><td class="paramname">value</td><td>The enum value to write to the buffer.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The size of T, for consistency. </dd></dl>
+
+</div>
+</div>
+<a id="ga97f89f7d5ee32b5b34f9fb391111af44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga97f89f7d5ee32b5b34f9fb391111af44">&#9670;&nbsp;</a></span>extract()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;serialization::Endian E, class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::enable_if&lt;std::is_enum&lt;T&gt;::value, size_t&gt;::type microstrain::extract </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmicrostrain_1_1Serializer.html">Serializer</a>&lt; E &gt; &amp;&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">T &amp;&#160;</td>
-          <td class="paramname"><em>counter</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">U&#160;</td>
-          <td class="paramname"><em>amount</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Subtract a value from an accumulator and prevent it from overflowing. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>Type of the accumulator. Let the compiler deduce this. </td></tr>
-    <tr><td class="paramname">U</td><td>Type of the value being subtracted. Let the compiler deduce this.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">counter</td><td>Accumulator variable to modify. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>Value to subtract from counter.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A reference the the accumulator. </dd></dl>
-
-</div>
-</div>
-<a id="a1213390192faa954b4dbe348dd7d4fe7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1213390192faa954b4dbe348dd7d4fe7">&#9670;&nbsp;</a></span>saturate_cast()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T , class U &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr T microstrain::saturate_cast </td>
-          <td>(</td>
-          <td class="paramtype">U&#160;</td>
-          <td class="paramname"><em>x</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Convert an integral value to a different integral type while preventing overflow. </p>
-<p>See <a href="https://en.cppreference.com/w/cpp/numeric/saturate_cast">https://en.cppreference.com/w/cpp/numeric/saturate_cast</a></p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>Result type. </td></tr>
-    <tr><td class="paramname">U</td><td>Source type. Let the compiler deduce this.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">x</td><td>Value to cast.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The value of x, clamped to the valid range of T. </dd></dl>
-
-</div>
-</div>
-<a id="a2aa1365cf8273fe2d410582c880e3e84"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2aa1365cf8273fe2d410582c880e3e84">&#9670;&nbsp;</a></span>setBit()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename RegType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr void microstrain::setBit </td>
-          <td>(</td>
-          <td class="paramtype">RegType &amp;&#160;</td>
-          <td class="paramname"><em>reg</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>bit</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>value</em> = <code>true</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets a specific bit in a variable to a specified value. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">RegType</td><td>An integral type. Let the compiler deduce this.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">reg</td><td>Value to be modified. </td></tr>
-    <tr><td class="paramname">bit</td><td>The 0-based index of the bit to modify. Must be less than the number of bits in RegType. </td></tr>
-    <tr><td class="paramname">value</td><td>Sets the bit to this value. Default true. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a05394cde5ae5a19632a101424c0a7c62"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05394cde5ae5a19632a101424c0a7c62">&#9670;&nbsp;</a></span>setBitsIthruJ()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename RegType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr void microstrain::setBitsIthruJ </td>
-          <td>(</td>
-          <td class="paramtype">RegType &amp;&#160;</td>
-          <td class="paramname"><em>reg</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>bitI</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>bitJ</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets a series of consecutive bits in a variable to 1. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">RegType</td><td>An unsigned integral type. Let the compiler deduce this.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">reg</td><td>Value to be modified. </td></tr>
-    <tr><td class="paramname">bitI</td><td>The 0-based index of the first affected bit. </td></tr>
-    <tr><td class="paramname">bitJ</td><td>The 0-based index of the last affected bit. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="afb4ba1b91580e540aef4f03082ada0d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afb4ba1b91580e540aef4f03082ada0d1">&#9670;&nbsp;</a></span>setBitsItoJ() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename RegType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr void microstrain::setBitsItoJ </td>
-          <td>(</td>
-          <td class="paramtype">RegType &amp;&#160;</td>
-          <td class="paramname"><em>reg</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>bitI</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>bitJ</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets a series of consecutive bits in a variable to 1. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">RegType</td><td>An unsigned integral type. Let the compiler deduce this.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">reg</td><td>Value to be modified. </td></tr>
-    <tr><td class="paramname">bitI</td><td>The 0-based index of the first affected bit. </td></tr>
-    <tr><td class="paramname">bitJ</td><td>The 0-based index of the bit after the last affected bit. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a9c0e13302f9bae7dc600419064407249"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c0e13302f9bae7dc600419064407249">&#9670;&nbsp;</a></span>setBitsItoJ() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename RegType , typename ValType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr void microstrain::setBitsItoJ </td>
-          <td>(</td>
-          <td class="paramtype">RegType &amp;&#160;</td>
-          <td class="paramname"><em>reg</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>bitI</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>bitJ</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ValType&#160;</td>
           <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>
@@ -1796,251 +1983,45 @@ template&lt;typename RegType , typename ValType &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-
-<p>Writes a value to a specific set of bits in a variable as if it were a bitfield. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">RegType</td><td>An unsigned integral type. Let the compiler deduce this. </td></tr>
-    <tr><td class="paramname">ValType</td><td>An integral type used for the input value. Let the compiler deduce this.</td></tr>
+    <tr><td class="paramname">E</td><td>Endianness of buffer. Automatically deduced from the serializer parameter. </td></tr>
+    <tr><td class="paramname">T</td><td>Type of the enum. Automatically deduced from the underlying type of the enum.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">reg</td><td>Value to be modified. </td></tr>
-    <tr><td class="paramname">bitI</td><td>The 0-based index of the first bit of value in reg. </td></tr>
-    <tr><td class="paramname">bitJ</td><td>The 0-based index of the bit after the last affected bit. </td></tr>
-    <tr><td class="paramname">value</td><td>Value to insert into reg at bit I. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">buffer</td><td><a class="el" href="classmicrostrain_1_1Serializer.html" title="Serializes or deserializes data to/from a byte buffer.">Serializer</a> object pointing to the source buffer. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">value</td><td>The value will be stored in this variable.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The size of T, for consistency. </dd></dl>
 
 </div>
 </div>
-<a id="a3f714f5dd131f735e9f55d0ec31e16a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f714f5dd131f735e9f55d0ec31e16a3">&#9670;&nbsp;</a></span>setBitsN() <span class="overload">[1/2]</span></h2>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a82eff139a82b0254f117becdaca30784"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82eff139a82b0254f117becdaca30784">&#9670;&nbsp;</a></span>DYNAMIC_EXTENT</h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename RegType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr void microstrain::setBitsN </td>
-          <td>(</td>
-          <td class="paramtype">RegType &amp;&#160;</td>
-          <td class="paramname"><em>reg</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>bitI</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>nbits</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">constexpr size_t microstrain::DYNAMIC_EXTENT = SIZE_MAX</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Sets a series of consecutive bits in a variable to 1. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">RegType</td><td>An unsigned integral type. Let the compiler deduce this.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">reg</td><td>Value to be modified. </td></tr>
-    <tr><td class="paramname">bitI</td><td>The 0-based index of the first affected bit. </td></tr>
-    <tr><td class="paramname">nbits</td><td>Number of consecutive bits to set to '1'. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="af967cc3ae70a66fbafaa7558f3287bbc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af967cc3ae70a66fbafaa7558f3287bbc">&#9670;&nbsp;</a></span>setBitsN() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename RegType , typename ValType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr void microstrain::setBitsN </td>
-          <td>(</td>
-          <td class="paramtype">RegType &amp;&#160;</td>
-          <td class="paramname"><em>reg</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>bitI</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>nbits</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ValType&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Writes a value to a specific set of bits in a variable as if it were a bitfield. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">RegType</td><td>An unsigned integral type. Let the compiler deduce this. </td></tr>
-    <tr><td class="paramname">ValType</td><td>An integral type used for the input value. Let the compiler deduce this.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">reg</td><td>Value to be modified. </td></tr>
-    <tr><td class="paramname">bitI</td><td>The 0-based index of the first bit of value in reg. </td></tr>
-    <tr><td class="paramname">nbits</td><td>Number of consecutive bits used to represent the value in reg. </td></tr>
-    <tr><td class="paramname">value</td><td>Value to insert into reg at bit I. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a095eee7d149e595252aa69933a758ade"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a095eee7d149e595252aa69933a758ade">&#9670;&nbsp;</a></span>sub_sat()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr T microstrain::sub_sat </td>
-          <td>(</td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>y</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>see <a href="https://en.cppreference.com/w/cpp/numeric/sub_sat">https://en.cppreference.com/w/cpp/numeric/sub_sat</a> </p>
-
-</div>
-</div>
-<a id="a98d7401842520096df2dc98439c67c38"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98d7401842520096df2dc98439c67c38">&#9670;&nbsp;</a></span>testBit()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename RegType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr bool microstrain::testBit </td>
-          <td>(</td>
-          <td class="paramtype">RegType&#160;</td>
-          <td class="paramname"><em>reg</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>bit</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Checks if a specific bit in a value is set. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">RegType</td><td>An integral type. Let the compiler deduce this in most cases.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">reg</td><td>Value containing the bit to check. </td></tr>
-    <tr><td class="paramname">bit</td><td>The 0-based index of the bit to check in val. Must be less than the number of bits in RegType.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the bit is set, false otherwise. </dd></dl>
 
 </div>
 </div>

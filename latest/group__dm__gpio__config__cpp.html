@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -94,19 +94,18 @@ Functions</h2></td></tr>
 <tr class="separator:ga8d28a2148d105a3d4af5f47b3b6a922f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Configures the user GPIO pins on the connector for use with several built-in functions or for general input or output. </p>
 <p>GPIO pins are device-dependent. Some features are only available on certain pins. Some behaviors require specific configurations. Consult the device user manual for restrictions and default settings.</p>
 <p>To avoid glitches on GPIOs configured as an output in a mode other than GPIO, always configure the relevant function before setting up the pin with this command. Otherwise, the pin state will be undefined between this command and the one to set up the feature. For input pins, use this command first so the state is well-defined when the feature is initialized.</p>
 <p>Some configurations can only be active on one pin at a time. If such configuration is applied to a second pin, the second one will take precedence and the original pin's configuration will be reset. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga8d28a2148d105a3d4af5f47b3b6a922f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8d28a2148d105a3d4af5f47b3b6a922f">&#9670;&nbsp;</a></span>defaultGpioConfig()</h2>
+<a id="ga154d69d85cd54aa90d1131acba435fce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga154d69d85cd54aa90d1131acba435fce">&#9670;&nbsp;</a></span>writeGpioConfig()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1GpioConfig.html">GpioConfig</a> &gt; mip::commands_3dm::defaultGpioConfig </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1GpioConfig.html">GpioConfig</a> &gt; mip::commands_3dm::writeGpioConfig </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
@@ -115,35 +114,25 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>pin</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gacbdb9826b6bc6db1cf7b889493c4bcae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacbdb9826b6bc6db1cf7b889493c4bcae">&#9670;&nbsp;</a></span>loadGpioConfig()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1GpioConfig.html">GpioConfig</a> &gt; mip::commands_3dm::loadGpioConfig </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
+          <td class="paramname"><em>pin</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>pin</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1commands__3dm_1_1GpioConfig.html#a3b84a64735e3544162334c717f4c721e">GpioConfig::Feature</a>&#160;</td>
+          <td class="paramname"><em>feature</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1commands__3dm_1_1GpioConfig.html#addcf8e9c83c0fbb3a237165364a05e06">GpioConfig::Behavior</a>&#160;</td>
+          <td class="paramname"><em>behavior</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1commands__3dm_1_1GpioConfig_1_1PinMode.html">GpioConfig::PinMode</a>&#160;</td>
+          <td class="paramname"><em>pinMode</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -229,14 +218,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga154d69d85cd54aa90d1131acba435fce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga154d69d85cd54aa90d1131acba435fce">&#9670;&nbsp;</a></span>writeGpioConfig()</h2>
+<a id="gacbdb9826b6bc6db1cf7b889493c4bcae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacbdb9826b6bc6db1cf7b889493c4bcae">&#9670;&nbsp;</a></span>loadGpioConfig()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1GpioConfig.html">GpioConfig</a> &gt; mip::commands_3dm::writeGpioConfig </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1GpioConfig.html">GpioConfig</a> &gt; mip::commands_3dm::loadGpioConfig </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
@@ -245,25 +234,35 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>pin</em>, </td>
+          <td class="paramname"><em>pin</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga8d28a2148d105a3d4af5f47b3b6a922f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8d28a2148d105a3d4af5f47b3b6a922f">&#9670;&nbsp;</a></span>defaultGpioConfig()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1GpioConfig.html">GpioConfig</a> &gt; mip::commands_3dm::defaultGpioConfig </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1commands__3dm_1_1GpioConfig.html#a3b84a64735e3544162334c717f4c721e">GpioConfig::Feature</a>&#160;</td>
-          <td class="paramname"><em>feature</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1commands__3dm_1_1GpioConfig.html#addcf8e9c83c0fbb3a237165364a05e06">GpioConfig::Behavior</a>&#160;</td>
-          <td class="paramname"><em>behavior</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1commands__3dm_1_1GpioConfig_1_1PinMode.html">GpioConfig::PinMode</a>&#160;</td>
-          <td class="paramname"><em>pinMode</em>&#160;</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>pin</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

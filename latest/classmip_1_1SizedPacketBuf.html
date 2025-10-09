@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -93,7 +93,7 @@ Inheritance diagram for mip::SizedPacketBuf&lt; BufferSize &gt;:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac92d3224ced59f168ed043b33a83c7bf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1SizedPacketBuf.html#ac92d3224ced59f168ed043b33a83c7bf">SizedPacketBuf</a> (uint8_t descriptorSet=INVALID_DESCRIPTOR_SET)</td></tr>
+<tr class="memitem:ac92d3224ced59f168ed043b33a83c7bf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1SizedPacketBuf.html#ac92d3224ced59f168ed043b33a83c7bf">SizedPacketBuf</a> (uint8_t descriptorSet=<a class="el" href="group__mip__cpp.html#ga7d8f007ad533e24c95f51bc59dfea374">INVALID_DESCRIPTOR_SET</a>)</td></tr>
 <tr class="separator:ac92d3224ced59f168ed043b33a83c7bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a109fb8ad8a4b750f2b3af5eb7f6f3b20"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1SizedPacketBuf.html#a109fb8ad8a4b750f2b3af5eb7f6f3b20">SizedPacketBuf</a> (<a class="el" href="namespacemicrostrain.html#ad10904b5b78aab3f27f0a6fa165d94bc">microstrain::ConstU8ArrayView</a> <a class="el" href="classmip_1_1PacketView.html#a34853d1750c61b32da554d5ea2e66485">data</a>)</td></tr>
 <tr class="memdesc:a109fb8ad8a4b750f2b3af5eb7f6f3b20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct by copying an existing buffer.  <a href="classmip_1_1SizedPacketBuf.html#a109fb8ad8a4b750f2b3af5eb7f6f3b20">More...</a><br /></td></tr>
@@ -116,7 +116,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:acd709818657de2bcf81b1fdc960d7c0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assignment operator, copies data from another buffer to this one.  <a href="classmip_1_1SizedPacketBuf.html#acd709818657de2bcf81b1fdc960d7c0b">More...</a><br /></td></tr>
 <tr class="separator:acd709818657de2bcf81b1fdc960d7c0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c1a3fa1f916c1b1f067be53ace7eb6f"><td class="memTemplParams" colspan="2">template&lt;class FieldType &gt; </td></tr>
-<tr class="memitem:a2c1a3fa1f916c1b1f067be53ace7eb6f"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmip_1_1SizedPacketBuf.html#a2c1a3fa1f916c1b1f067be53ace7eb6f">SizedPacketBuf</a> (const FieldType &amp;field, uint8_t fieldDescriptor=INVALID_FIELD_DESCRIPTOR, typename std::enable_if&lt; std::is_class&lt; FieldType &gt;::value, void &gt;::type *=nullptr)</td></tr>
+<tr class="memitem:a2c1a3fa1f916c1b1f067be53ace7eb6f"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmip_1_1SizedPacketBuf.html#a2c1a3fa1f916c1b1f067be53ace7eb6f">SizedPacketBuf</a> (const FieldType &amp;field, uint8_t fieldDescriptor=<a class="el" href="group__mip__cpp.html#ga1d1f26f69ca21c84dfaccabdaed9746a">INVALID_FIELD_DESCRIPTOR</a>, typename std::enable_if&lt; std::is_class&lt; FieldType &gt;::value, void &gt;::type *=nullptr)</td></tr>
 <tr class="memdesc:a2c1a3fa1f916c1b1f067be53ace7eb6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a packet containing just the given field.  <a href="classmip_1_1SizedPacketBuf.html#a2c1a3fa1f916c1b1f067be53ace7eb6f">More...</a><br /></td></tr>
 <tr class="separator:a2c1a3fa1f916c1b1f067be53ace7eb6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a606a8babe1f8a64e5309342a948b314c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmip_1_1PacketView.html">PacketView</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1SizedPacketBuf.html#a606a8babe1f8a64e5309342a948b314c">ref</a> ()</td></tr>
@@ -167,15 +167,19 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac98408973781d44625de4d10de9fffb0 inherit pub_methods_classmip_1_1PacketView"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2871b64dd2eb43964ed7871dbc1a09b9 inherit pub_methods_classmip_1_1PacketView"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemip.html#a7475074708d6d3e0fa83597b41eb98f8">Serializer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#a2871b64dd2eb43964ed7871dbc1a09b9">createField</a> (uint8_t fieldDescriptor, uint8_t length)</td></tr>
 <tr class="separator:a2871b64dd2eb43964ed7871dbc1a09b9 inherit pub_methods_classmip_1_1PacketView"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afce2ca70b8bad2d8bab11303f1ec506e inherit pub_methods_classmip_1_1PacketView"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#afce2ca70b8bad2d8bab11303f1ec506e">dataAt</a> (size_t i) const</td></tr>
-<tr class="separator:afce2ca70b8bad2d8bab11303f1ec506e inherit pub_methods_classmip_1_1PacketView"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a246087a03f8d4499af0ab80be30b3cf8 inherit pub_methods_classmip_1_1PacketView"><td class="memItemLeft" align="right" valign="top">uint8_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#a246087a03f8d4499af0ab80be30b3cf8">dataAt</a> (size_t i)</td></tr>
-<tr class="separator:a246087a03f8d4499af0ab80be30b3cf8 inherit pub_methods_classmip_1_1PacketView"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7625476308daf5568649196f51af3fe8 inherit pub_methods_classmip_1_1PacketView"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#a7625476308daf5568649196f51af3fe8">payloadAt</a> (size_t i) const</td></tr>
-<tr class="separator:a7625476308daf5568649196f51af3fe8 inherit pub_methods_classmip_1_1PacketView"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cbbdd4f61868e82fec47ffec740a076 inherit pub_methods_classmip_1_1PacketView"><td class="memItemLeft" align="right" valign="top">uint8_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#a3cbbdd4f61868e82fec47ffec740a076">payloadAt</a> (size_t i)</td></tr>
-<tr class="memdesc:a3cbbdd4f61868e82fec47ffec740a076 inherit pub_methods_classmip_1_1PacketView"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get payload byte at index i.  <a href="classmip_1_1PacketView.html#a3cbbdd4f61868e82fec47ffec740a076">More...</a><br /></td></tr>
-<tr class="separator:a3cbbdd4f61868e82fec47ffec740a076 inherit pub_methods_classmip_1_1PacketView"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a586957adf4f439be6bb5627f40400772 inherit pub_methods_classmip_1_1PacketView"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#a586957adf4f439be6bb5627f40400772">dataAt</a> (const size_t i) const</td></tr>
+<tr class="separator:a586957adf4f439be6bb5627f40400772 inherit pub_methods_classmip_1_1PacketView"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35451dfd932eceb156013502abfd41aa inherit pub_methods_classmip_1_1PacketView"><td class="memItemLeft" align="right" valign="top">uint8_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#a35451dfd932eceb156013502abfd41aa">dataAt</a> (const size_t i)</td></tr>
+<tr class="separator:a35451dfd932eceb156013502abfd41aa inherit pub_methods_classmip_1_1PacketView"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac61e605639f7e0acff66eecb6c9229b5 inherit pub_methods_classmip_1_1PacketView"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#ac61e605639f7e0acff66eecb6c9229b5">dataAt</a> (const <a class="el" href="classmip_1_1PacketView.html#a5d1bf39e2a1136cced7faf8123ef821c">Index</a> i) const</td></tr>
+<tr class="separator:ac61e605639f7e0acff66eecb6c9229b5 inherit pub_methods_classmip_1_1PacketView"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac03ed12782121d2cb288dd861ba45800 inherit pub_methods_classmip_1_1PacketView"><td class="memItemLeft" align="right" valign="top">uint8_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#ac03ed12782121d2cb288dd861ba45800">dataAt</a> (const <a class="el" href="classmip_1_1PacketView.html#a5d1bf39e2a1136cced7faf8123ef821c">Index</a> i)</td></tr>
+<tr class="separator:ac03ed12782121d2cb288dd861ba45800 inherit pub_methods_classmip_1_1PacketView"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d46365ef16d8ca9a57b630563941d34 inherit pub_methods_classmip_1_1PacketView"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#a0d46365ef16d8ca9a57b630563941d34">payloadAt</a> (const size_t i) const</td></tr>
+<tr class="separator:a0d46365ef16d8ca9a57b630563941d34 inherit pub_methods_classmip_1_1PacketView"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47a438e16371b06871cd3a7847847dfe inherit pub_methods_classmip_1_1PacketView"><td class="memItemLeft" align="right" valign="top">uint8_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#a47a438e16371b06871cd3a7847847dfe">payloadAt</a> (const size_t i)</td></tr>
+<tr class="memdesc:a47a438e16371b06871cd3a7847847dfe inherit pub_methods_classmip_1_1PacketView"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get payload byte at index i.  <a href="classmip_1_1PacketView.html#a47a438e16371b06871cd3a7847847dfe">More...</a><br /></td></tr>
+<tr class="separator:a47a438e16371b06871cd3a7847847dfe inherit pub_methods_classmip_1_1PacketView"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a335ad53de9ea67267417486cd6d9c957 inherit pub_methods_classmip_1_1PacketView"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#a335ad53de9ea67267417486cd6d9c957">addField</a> (uint8_t fieldDescriptor, <a class="el" href="namespacemicrostrain.html#ad10904b5b78aab3f27f0a6fa165d94bc">microstrain::ConstU8ArrayView</a> <a class="el" href="classmip_1_1PacketView.html#abfaa502b322cef7f7396c5b0dee13f09">payload</a>)</td></tr>
 <tr class="memdesc:a335ad53de9ea67267417486cd6d9c957 inherit pub_methods_classmip_1_1PacketView"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get writable payload byte at index i.  <a href="classmip_1_1PacketView.html#a335ad53de9ea67267417486cd6d9c957">More...</a><br /></td></tr>
 <tr class="separator:a335ad53de9ea67267417486cd6d9c957 inherit pub_methods_classmip_1_1PacketView"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -192,7 +196,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a29bf807f83a9c9f7cd702eef0fdd4e83 inherit pub_methods_classmip_1_1PacketView"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the first field in the packet.  <a href="classmip_1_1PacketView.html#a29bf807f83a9c9f7cd702eef0fdd4e83">More...</a><br /></td></tr>
 <tr class="separator:a29bf807f83a9c9f7cd702eef0fdd4e83 inherit pub_methods_classmip_1_1PacketView"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9d4a62380c51a4540e93eddacd6bdc8 inherit pub_methods_classmip_1_1PacketView"><td class="memTemplParams" colspan="2">template&lt;class FieldType &gt; </td></tr>
-<tr class="memitem:ae9d4a62380c51a4540e93eddacd6bdc8 inherit pub_methods_classmip_1_1PacketView"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#ae9d4a62380c51a4540e93eddacd6bdc8">addField</a> (const FieldType &amp;field, uint8_t fieldDescriptor=INVALID_FIELD_DESCRIPTOR)</td></tr>
+<tr class="memitem:ae9d4a62380c51a4540e93eddacd6bdc8 inherit pub_methods_classmip_1_1PacketView"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#ae9d4a62380c51a4540e93eddacd6bdc8">addField</a> (const FieldType &amp;field, uint8_t fieldDescriptor=<a class="el" href="group__mip__cpp.html#ga1d1f26f69ca21c84dfaccabdaed9746a">INVALID_FIELD_DESCRIPTOR</a>)</td></tr>
 <tr class="memdesc:ae9d4a62380c51a4540e93eddacd6bdc8 inherit pub_methods_classmip_1_1PacketView"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a field of the given type to the packet.  <a href="classmip_1_1PacketView.html#ae9d4a62380c51a4540e93eddacd6bdc8">More...</a><br /></td></tr>
 <tr class="separator:ae9d4a62380c51a4540e93eddacd6bdc8 inherit pub_methods_classmip_1_1PacketView"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a175a018a00ca1a818a0e06b47f601d12 inherit pub_methods_classmip_1_1PacketView"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#a175a018a00ca1a818a0e06b47f601d12">copyPacketTo</a> (<a class="el" href="namespacemicrostrain.html#ace61526f6e658ee7eb05a3279fc8ae66">microstrain::U8ArrayView</a> <a class="el" href="classmip_1_1PacketView.html#a4dae973ae1a91800afb8db5342364fe1">buffer</a>) const</td></tr>
@@ -201,24 +205,44 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_classmip_1_1PacketView"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classmip_1_1PacketView')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classmip_1_1PacketView.html">mip::PacketView</a></td></tr>
+<tr class="memitem:a5d1bf39e2a1136cced7faf8123ef821c inherit pub_types_classmip_1_1PacketView"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#a5d1bf39e2a1136cced7faf8123ef821c">Index</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="classmip_1_1PacketView.html#a5d1bf39e2a1136cced7faf8123ef821ca859adfcaa74cf1ce7f803348ad0110b8">Index::SYNC_1</a> = C::MIP_PACKET_INDEX_SYNC_1, 
+<a class="el" href="classmip_1_1PacketView.html#a5d1bf39e2a1136cced7faf8123ef821cae6c39745fe0c31de9cf3f925bc5f4e54">Index::SYNC_2</a> = C::MIP_PACKET_INDEX_SYNC_2, 
+<a class="el" href="classmip_1_1PacketView.html#a5d1bf39e2a1136cced7faf8123ef821ca180aa09ea8be495f59a8a56f1bdc1cfc">Index::DESC_SET</a> = C::MIP_PACKET_INDEX_DESC_SET, 
+<a class="el" href="classmip_1_1PacketView.html#a5d1bf39e2a1136cced7faf8123ef821caaddeac40406177897b3fccba88558f1c">Index::LENGTH</a> = C::MIP_PACKET_INDEX_LENGTH, 
+<br />
+&#160;&#160;<a class="el" href="classmip_1_1PacketView.html#a5d1bf39e2a1136cced7faf8123ef821caca8fef80e43c8db749b7c9406d535b1a">Index::PAYLOAD</a> = C::MIP_PACKET_INDEX_PAYLOAD
+<br />
+ }</td></tr>
+<tr class="separator:a5d1bf39e2a1136cced7faf8123ef821c inherit pub_types_classmip_1_1PacketView"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classmip_1_1PacketView"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classmip_1_1PacketView')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classmip_1_1PacketView.html">mip::PacketView</a></td></tr>
 <tr class="memitem:a14b204a2084d75a67f188eb517113198 inherit pub_static_methods_classmip_1_1PacketView"><td class="memTemplParams" colspan="2">template&lt;class FieldType &gt; </td></tr>
-<tr class="memitem:a14b204a2084d75a67f188eb517113198 inherit pub_static_methods_classmip_1_1PacketView"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classmip_1_1PacketView.html">PacketView</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#a14b204a2084d75a67f188eb517113198">createFromField</a> (<a class="el" href="namespacemicrostrain.html#ace61526f6e658ee7eb05a3279fc8ae66">microstrain::U8ArrayView</a> packetBuffer, const FieldType &amp;field, uint8_t fieldDescriptor=INVALID_FIELD_DESCRIPTOR)</td></tr>
+<tr class="memitem:a14b204a2084d75a67f188eb517113198 inherit pub_static_methods_classmip_1_1PacketView"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classmip_1_1PacketView.html">PacketView</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#a14b204a2084d75a67f188eb517113198">createFromField</a> (<a class="el" href="namespacemicrostrain.html#ace61526f6e658ee7eb05a3279fc8ae66">microstrain::U8ArrayView</a> packetBuffer, const FieldType &amp;field, uint8_t fieldDescriptor=<a class="el" href="group__mip__cpp.html#ga1d1f26f69ca21c84dfaccabdaed9746a">INVALID_FIELD_DESCRIPTOR</a>)</td></tr>
 <tr class="memdesc:a14b204a2084d75a67f188eb517113198 inherit pub_static_methods_classmip_1_1PacketView"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new PacketRef containing a single MIP field from an instance of the field type.  <a href="classmip_1_1PacketView.html#a14b204a2084d75a67f188eb517113198">More...</a><br /></td></tr>
 <tr class="separator:a14b204a2084d75a67f188eb517113198 inherit pub_static_methods_classmip_1_1PacketView"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_attribs_classmip_1_1PacketView"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classmip_1_1PacketView')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="classmip_1_1PacketView.html">mip::PacketView</a></td></tr>
-<tr class="memitem:a926c8d11686b3803c1d7b410cfac1487 inherit pub_static_attribs_classmip_1_1PacketView"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#a926c8d11686b3803c1d7b410cfac1487">PAYLOAD_LENGTH_MAX</a> = <a class="el" href="namespacemip_1_1C.html#ae5b418878e1d27de9df937114d223adbafec9267316dcc76edd0427fbb2a1fe1e">C::MIP_PACKET_PAYLOAD_LENGTH_MAX</a></td></tr>
+<tr class="memitem:aadbd9fc575b48b3fd4358d7e75913dfe inherit pub_static_attribs_classmip_1_1PacketView"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#aadbd9fc575b48b3fd4358d7e75913dfe">SYNC_1</a> = <a class="el" href="group__mip__packet__c.html#gga89fe0bf7c4d5f95ac39447b601a2f5f1a19392ee117eb3176ea2f58b398f01e55">C::MIP_SYNC_1</a></td></tr>
+<tr class="separator:aadbd9fc575b48b3fd4358d7e75913dfe inherit pub_static_attribs_classmip_1_1PacketView"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7b48bb4469a0f1023958693fbcd62f8 inherit pub_static_attribs_classmip_1_1PacketView"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#aa7b48bb4469a0f1023958693fbcd62f8">SYNC_2</a> = <a class="el" href="group__mip__packet__c.html#gga89fe0bf7c4d5f95ac39447b601a2f5f1ae2594167198f0c49dd42dd35ab270879">C::MIP_SYNC_2</a></td></tr>
+<tr class="separator:aa7b48bb4469a0f1023958693fbcd62f8 inherit pub_static_attribs_classmip_1_1PacketView"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a370753bc3d9d8cc6ce6ed8d373816260 inherit pub_static_attribs_classmip_1_1PacketView"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#a370753bc3d9d8cc6ce6ed8d373816260">HEADER_LENGTH</a> = <a class="el" href="group__mip__packet__c.html#gga8bb8939ac5656381c588db3185d0743aa00f0d38682e26f82d56e5adfb92a841b">C::MIP_PACKET_HEADER_LENGTH</a></td></tr>
+<tr class="separator:a370753bc3d9d8cc6ce6ed8d373816260 inherit pub_static_attribs_classmip_1_1PacketView"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a464686053776a72f89fd077558b019c4 inherit pub_static_attribs_classmip_1_1PacketView"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#a464686053776a72f89fd077558b019c4">CHECKSUM_LENGTH</a> = <a class="el" href="group__mip__packet__c.html#gga8bb8939ac5656381c588db3185d0743aa4a8e8992662d6a03465ef5201786fc44">C::MIP_PACKET_CHECKSUM_LENGTH</a></td></tr>
+<tr class="separator:a464686053776a72f89fd077558b019c4 inherit pub_static_attribs_classmip_1_1PacketView"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af39b9b77912fe006b52c91b238999c2e inherit pub_static_attribs_classmip_1_1PacketView"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#af39b9b77912fe006b52c91b238999c2e">LENGTH_MIN</a> = <a class="el" href="group__mip__packet__c.html#gga8bb8939ac5656381c588db3185d0743aa2d87d3bdf1ec2ac43e7ab00e53861109">C::MIP_PACKET_LENGTH_MIN</a></td></tr>
+<tr class="separator:af39b9b77912fe006b52c91b238999c2e inherit pub_static_attribs_classmip_1_1PacketView"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2c45a80c509226011c3d336392b483f inherit pub_static_attribs_classmip_1_1PacketView"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#af2c45a80c509226011c3d336392b483f">LENGTH_MAX</a> = <a class="el" href="group__mip__packet__c.html#gga8bb8939ac5656381c588db3185d0743aa7342ea021134e03e7fff02d3d6c6ea8b">C::MIP_PACKET_LENGTH_MAX</a></td></tr>
+<tr class="separator:af2c45a80c509226011c3d336392b483f inherit pub_static_attribs_classmip_1_1PacketView"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52ba250bf216d5c34281ccadf6a418c8 inherit pub_static_attribs_classmip_1_1PacketView"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#a52ba250bf216d5c34281ccadf6a418c8">PAYLOAD_LENGTH_MIN</a> = <a class="el" href="group__mip__packet__c.html#gga8bb8939ac5656381c588db3185d0743aa06fa3f66c324f561178a2996ed4e364e">C::MIP_PACKET_PAYLOAD_LENGTH_MIN</a></td></tr>
+<tr class="separator:a52ba250bf216d5c34281ccadf6a418c8 inherit pub_static_attribs_classmip_1_1PacketView"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a926c8d11686b3803c1d7b410cfac1487 inherit pub_static_attribs_classmip_1_1PacketView"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#a926c8d11686b3803c1d7b410cfac1487">PAYLOAD_LENGTH_MAX</a> = <a class="el" href="group__mip__packet__c.html#gga8bb8939ac5656381c588db3185d0743aafec9267316dcc76edd0427fbb2a1fe1e">C::MIP_PACKET_PAYLOAD_LENGTH_MAX</a></td></tr>
 <tr class="separator:a926c8d11686b3803c1d7b410cfac1487 inherit pub_static_attribs_classmip_1_1PacketView"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b4cd86d59f3e819c4254ad98d45a995 inherit pub_static_attribs_classmip_1_1PacketView"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#a7b4cd86d59f3e819c4254ad98d45a995">PACKET_SIZE_MIN</a> = <a class="el" href="namespacemip_1_1C.html#ae5b418878e1d27de9df937114d223adba2d87d3bdf1ec2ac43e7ab00e53861109">C::MIP_PACKET_LENGTH_MIN</a></td></tr>
-<tr class="separator:a7b4cd86d59f3e819c4254ad98d45a995 inherit pub_static_attribs_classmip_1_1PacketView"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af31d0d502626a0c94a5133cbf33432ba inherit pub_static_attribs_classmip_1_1PacketView"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmip_1_1PacketView.html#af31d0d502626a0c94a5133cbf33432ba">PACKET_SIZE_MAX</a> = <a class="el" href="namespacemip_1_1C.html#ae5b418878e1d27de9df937114d223adba7342ea021134e03e7fff02d3d6c6ea8b">C::MIP_PACKET_LENGTH_MAX</a></td></tr>
-<tr class="separator:af31d0d502626a0c94a5133cbf33432ba inherit pub_static_attribs_classmip_1_1PacketView"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;size_t BufferSize&gt;<br />
 class mip::SizedPacketBuf&lt; BufferSize &gt;</h3>
 
-<p>A mip packet with a self-contained buffer (useful with std::vector). </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac92d3224ced59f168ed043b33a83c7bf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac92d3224ced59f168ed043b33a83c7bf">&#9670;&nbsp;</a></span>SizedPacketBuf() <span class="overload">[1/6]</span></h2>
@@ -235,7 +259,7 @@ template&lt;size_t BufferSize&gt; </div>
           <td class="memname"><a class="el" href="classmip_1_1SizedPacketBuf.html">mip::SizedPacketBuf</a>&lt; BufferSize &gt;::<a class="el" href="classmip_1_1SizedPacketBuf.html">SizedPacketBuf</a> </td>
           <td>(</td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>descriptorSet</em> = <code>INVALID_DESCRIPTOR_SET</code></td><td>)</td>
+          <td class="paramname"><em>descriptorSet</em> = <code><a class="el" href="group__mip__cpp.html#ga7d8f007ad533e24c95f51bc59dfea374">INVALID_DESCRIPTOR_SET</a></code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -274,8 +298,6 @@ template&lt;size_t BufferSize&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Construct by copying an existing buffer. </p>
-
 </div>
 </div>
 <a id="a87aab57ca43bf0977bd056b5108f0694"></a>
@@ -304,8 +326,6 @@ template&lt;size_t BufferSize&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Creates a PacketBuf by copying an existing packet. </p>
-
 </div>
 </div>
 <a id="a2d26e6c8645e39e2806845128ffcbf21"></a>
@@ -333,8 +353,6 @@ template&lt;size_t BufferSize&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Copy constructor. </p>
 
 </div>
 </div>
@@ -366,8 +384,6 @@ template&lt;size_t OtherSize&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Copy constructor (required to insert packets into std::vector in some cases). </p>
-
 </div>
 </div>
 <a id="a2c1a3fa1f916c1b1f067be53ace7eb6f"></a>
@@ -393,7 +409,7 @@ template&lt;class FieldType &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>fieldDescriptor</em> = <code>INVALID_FIELD_DESCRIPTOR</code>, </td>
+          <td class="paramname"><em>fieldDescriptor</em> = <code><a class="el" href="group__mip__cpp.html#ga1d1f26f69ca21c84dfaccabdaed9746a">INVALID_FIELD_DESCRIPTOR</a></code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -413,8 +429,6 @@ template&lt;class FieldType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Create a packet containing just the given field. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">FieldType</td><td>Type of the MIP field. This can't be explicitly specified due to being a constructor.</td></tr>
@@ -432,107 +446,6 @@ template&lt;class FieldType &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aaf2c163f4f362fb9926ec827c2132d92"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf2c163f4f362fb9926ec827c2132d92">&#9670;&nbsp;</a></span>buffer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;size_t BufferSize&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structmicrostrain_1_1ArrayView.html">microstrain::ArrayView</a>&lt;uint8_t, BufferSize&gt; <a class="el" href="classmip_1_1SizedPacketBuf.html">mip::SizedPacketBuf</a>&lt; BufferSize &gt;::buffer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns an ArrayView covering the entire buffer. </p>
-
-</div>
-</div>
-<a id="a481d8637404071369c4273e203faabaf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a481d8637404071369c4273e203faabaf">&#9670;&nbsp;</a></span>copyFrom() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;size_t BufferSize&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classmip_1_1SizedPacketBuf.html">mip::SizedPacketBuf</a>&lt; BufferSize &gt;::copyFrom </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classmip_1_1PacketView.html">PacketView</a> &amp;&#160;</td>
-          <td class="paramname"><em>packet</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Copies an existing packet. The packet is assumed to be valid (undefined behavior otherwise). </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">packet</td><td>A "sane" (isSane()) mip packet. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ae90b7171e433375f4bbeee28329c12c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae90b7171e433375f4bbeee28329c12c3">&#9670;&nbsp;</a></span>copyFrom() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;size_t BufferSize&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classmip_1_1SizedPacketBuf.html">mip::SizedPacketBuf</a>&lt; BufferSize &gt;::copyFrom </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacemicrostrain.html#ad10904b5b78aab3f27f0a6fa165d94bc">microstrain::ConstU8ArrayView</a>&#160;</td>
-          <td class="paramname"><em>data</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Copies the data from a U8ArrayView to this buffer. The data is not inspected. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">data</td><td>Packet data to copy. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a9b370bd9ed30d31306cffa1decfe202e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9b370bd9ed30d31306cffa1decfe202e">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
 
@@ -558,8 +471,6 @@ template&lt;size_t BufferSize&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Copy assignment operator. </p>
 
 </div>
 </div>
@@ -591,8 +502,6 @@ template&lt;size_t OtherSize&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Assignment operator, copies data from another buffer to this one. </p>
-
 </div>
 </div>
 <a id="a606a8babe1f8a64e5309342a948b314c"></a>
@@ -619,8 +528,6 @@ template&lt;size_t BufferSize&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Explicitly obtains a reference to the packet data. </p>
 
 </div>
 </div>
@@ -649,7 +556,100 @@ template&lt;size_t BufferSize&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Explicitly obtains a const reference to the packet data. </p>
+</div>
+</div>
+<a id="aaf2c163f4f362fb9926ec827c2132d92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf2c163f4f362fb9926ec827c2132d92">&#9670;&nbsp;</a></span>buffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t BufferSize&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structmicrostrain_1_1ArrayView.html">microstrain::ArrayView</a>&lt;uint8_t, BufferSize&gt; <a class="el" href="classmip_1_1SizedPacketBuf.html">mip::SizedPacketBuf</a>&lt; BufferSize &gt;::buffer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae90b7171e433375f4bbeee28329c12c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae90b7171e433375f4bbeee28329c12c3">&#9670;&nbsp;</a></span>copyFrom() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t BufferSize&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmip_1_1SizedPacketBuf.html">mip::SizedPacketBuf</a>&lt; BufferSize &gt;::copyFrom </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacemicrostrain.html#ad10904b5b78aab3f27f0a6fa165d94bc">microstrain::ConstU8ArrayView</a>&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>Packet data to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a481d8637404071369c4273e203faabaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a481d8637404071369c4273e203faabaf">&#9670;&nbsp;</a></span>copyFrom() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t BufferSize&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmip_1_1SizedPacketBuf.html">mip::SizedPacketBuf</a>&lt; BufferSize &gt;::copyFrom </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmip_1_1PacketView.html">PacketView</a> &amp;&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">packet</td><td>A "sane" (isSane()) mip packet. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

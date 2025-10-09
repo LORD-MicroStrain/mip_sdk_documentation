@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -94,38 +94,29 @@ Functions</h2></td></tr>
 <tr class="separator:gaeb33b4bd8e1529c13e78a431228a9625"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Controls the Pulse Per Second (PPS) source. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gaeb33b4bd8e1529c13e78a431228a9625"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaeb33b4bd8e1529c13e78a431228a9625">&#9670;&nbsp;</a></span>defaultPpsSource()</h2>
+<a id="ga023cb757716d446898917bb2c056ce00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga023cb757716d446898917bb2c056ce00">&#9670;&nbsp;</a></span>writePpsSource()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1PpsSource.html">PpsSource</a> &gt; mip::commands_3dm::defaultPpsSource </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1PpsSource.html">PpsSource</a> &gt; mip::commands_3dm::writePpsSource </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
-          <td></td>
+          <td class="paramname"><em>device</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga80147a110b40d03d0c1f3b7a54a91162"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga80147a110b40d03d0c1f3b7a54a91162">&#9670;&nbsp;</a></span>loadPpsSource()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1PpsSource.html">PpsSource</a> &gt; mip::commands_3dm::loadPpsSource </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1commands__3dm_1_1PpsSource.html#a8b008a6819a38ee38ff29a221396c02f">PpsSource::Source</a>&#160;</td>
+          <td class="paramname"><em>source</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -178,28 +169,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga023cb757716d446898917bb2c056ce00"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga023cb757716d446898917bb2c056ce00">&#9670;&nbsp;</a></span>writePpsSource()</h2>
+<a id="ga80147a110b40d03d0c1f3b7a54a91162"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga80147a110b40d03d0c1f3b7a54a91162">&#9670;&nbsp;</a></span>loadPpsSource()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1PpsSource.html">PpsSource</a> &gt; mip::commands_3dm::writePpsSource </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1PpsSource.html">PpsSource</a> &gt; mip::commands_3dm::loadPpsSource </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1commands__3dm_1_1PpsSource.html#a8b008a6819a38ee38ff29a221396c02f">PpsSource::Source</a>&#160;</td>
-          <td class="paramname"><em>source</em>&#160;</td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaeb33b4bd8e1529c13e78a431228a9625"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeb33b4bd8e1529c13e78a431228a9625">&#9670;&nbsp;</a></span>defaultPpsSource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1PpsSource.html">PpsSource</a> &gt; mip::commands_3dm::defaultPpsSource </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

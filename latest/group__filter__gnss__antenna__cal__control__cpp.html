@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -94,39 +94,36 @@ Functions</h2></td></tr>
 <tr class="separator:gabe0bbb45225a8e34fd204fc16be3ce18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Configure the GNSS antenna lever arm calibration. </p>
 <p>When enabled, the filter will enable lever arm error tracking, up to the maximum offset specified. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gabe0bbb45225a8e34fd204fc16be3ce18"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabe0bbb45225a8e34fd204fc16be3ce18">&#9670;&nbsp;</a></span>defaultGnssAntennaCalControl()</h2>
+<a id="gab9fe0e326ec4512c555b98ccd3064b23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab9fe0e326ec4512c555b98ccd3064b23">&#9670;&nbsp;</a></span>writeGnssAntennaCalControl()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1GnssAntennaCalControl.html">GnssAntennaCalControl</a> &gt; mip::commands_filter::defaultGnssAntennaCalControl </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1GnssAntennaCalControl.html">GnssAntennaCalControl</a> &gt; mip::commands_filter::writeGnssAntennaCalControl </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
-          <td></td>
+          <td class="paramname"><em>device</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gac049ea6a31fc197082d317016e89e29c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac049ea6a31fc197082d317016e89e29c">&#9670;&nbsp;</a></span>loadGnssAntennaCalControl()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1GnssAntennaCalControl.html">GnssAntennaCalControl</a> &gt; mip::commands_filter::loadGnssAntennaCalControl </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>enable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>maxOffset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -185,34 +182,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gab9fe0e326ec4512c555b98ccd3064b23"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab9fe0e326ec4512c555b98ccd3064b23">&#9670;&nbsp;</a></span>writeGnssAntennaCalControl()</h2>
+<a id="gac049ea6a31fc197082d317016e89e29c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac049ea6a31fc197082d317016e89e29c">&#9670;&nbsp;</a></span>loadGnssAntennaCalControl()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1GnssAntennaCalControl.html">GnssAntennaCalControl</a> &gt; mip::commands_filter::writeGnssAntennaCalControl </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1GnssAntennaCalControl.html">GnssAntennaCalControl</a> &gt; mip::commands_filter::loadGnssAntennaCalControl </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>enable</em>, </td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gabe0bbb45225a8e34fd204fc16be3ce18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabe0bbb45225a8e34fd204fc16be3ce18">&#9670;&nbsp;</a></span>defaultGnssAntennaCalControl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1GnssAntennaCalControl.html">GnssAntennaCalControl</a> &gt; mip::commands_filter::defaultGnssAntennaCalControl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>maxOffset</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

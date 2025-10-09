@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -140,6 +140,24 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a91fb79ea739fbc0394729789d28aac92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91fb79ea739fbc0394729789d28aac92">&#9670;&nbsp;</a></span>insert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::commands_aiding::Time::insert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacemip.html#a7475074708d6d3e0fa83597b41eb98f8">Serializer</a> &amp;&#160;</td>
+          <td class="paramname"><em>serializer</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a7ac1264fd7d5a0498f7a7bbb0faa26f7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7ac1264fd7d5a0498f7a7bbb0faa26f7">&#9670;&nbsp;</a></span>extract()</h2>
 
@@ -158,40 +176,19 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a91fb79ea739fbc0394729789d28aac92"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91fb79ea739fbc0394729789d28aac92">&#9670;&nbsp;</a></span>insert()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::commands_aiding::Time::insert </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacemip.html#a7475074708d6d3e0fa83597b41eb98f8">Serializer</a> &amp;&#160;</td>
-          <td class="paramname"><em>serializer</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Serialization. </p>
-
-</div>
-</div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a4d38f73ff9f941c7f4c6012bae78f42f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d38f73ff9f941c7f4c6012bae78f42f">&#9670;&nbsp;</a></span>nanoseconds</h2>
+<a id="a56e70ce574b4f91ee837a199f33f4dff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56e70ce574b4f91ee837a199f33f4dff">&#9670;&nbsp;</a></span>timebase</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint64_t mip::commands_aiding::Time::nanoseconds = 0</td>
+          <td class="memname"><a class="el" href="structmip_1_1commands__aiding_1_1Time.html#acef9f94c3d33abd20de2f78fd09acfc3">Timebase</a> mip::commands_aiding::Time::timebase = static_cast&lt;<a class="el" href="structmip_1_1commands__aiding_1_1Time.html#acef9f94c3d33abd20de2f78fd09acfc3">Timebase</a>&gt;(0)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Nanoseconds since the timebase epoch. </p>
+<p>Timebase reference, e.g. internal, external, GPS, UTC, etc. </p>
 
 </div>
 </div>
@@ -207,24 +204,19 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Reserved, set to 0x01. </p>
-
 </div>
 </div>
-<a id="a56e70ce574b4f91ee837a199f33f4dff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a56e70ce574b4f91ee837a199f33f4dff">&#9670;&nbsp;</a></span>timebase</h2>
+<a id="a4d38f73ff9f941c7f4c6012bae78f42f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d38f73ff9f941c7f4c6012bae78f42f">&#9670;&nbsp;</a></span>nanoseconds</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1commands__aiding_1_1Time.html#acef9f94c3d33abd20de2f78fd09acfc3">Timebase</a> mip::commands_aiding::Time::timebase = static_cast&lt;<a class="el" href="structmip_1_1commands__aiding_1_1Time.html#acef9f94c3d33abd20de2f78fd09acfc3">Timebase</a>&gt;(0)</td>
+          <td class="memname">uint64_t mip::commands_aiding::Time::nanoseconds = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Parameters. </p>
-<p>Timebase reference, e.g. internal, external, GPS, UTC, etc. </p>
 
 </div>
 </div>

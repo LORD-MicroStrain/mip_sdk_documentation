@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -102,6 +102,10 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ga7ecdb76eaa334c3cf2d230c6bcaaacbd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__filter__pitch__roll__aiding__c.html#ga7ecdb76eaa334c3cf2d230c6bcaaacbd">mip::C::insert_mip_filter_pitch_roll_aiding_command_aiding_source</a> (<a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *serializer, const <a class="el" href="group__filter__pitch__roll__aiding__c.html#ga66283b537c8dc149e3cfa59eb5f865ef">mip_filter_pitch_roll_aiding_command_aiding_source</a> self)</td></tr>
+<tr class="separator:ga7ecdb76eaa334c3cf2d230c6bcaaacbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9426a1ec442e42c30ab76ce24a073153"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__filter__pitch__roll__aiding__c.html#ga9426a1ec442e42c30ab76ce24a073153">mip::C::extract_mip_filter_pitch_roll_aiding_command_aiding_source</a> (<a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *serializer, <a class="el" href="group__filter__pitch__roll__aiding__c.html#ga66283b537c8dc149e3cfa59eb5f865ef">mip_filter_pitch_roll_aiding_command_aiding_source</a> *self)</td></tr>
+<tr class="separator:ga9426a1ec442e42c30ab76ce24a073153"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa851fe8c2b29a7ea2e89d86de07dec00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__filter__pitch__roll__aiding__c.html#gaa851fe8c2b29a7ea2e89d86de07dec00">mip::C::insert_mip_filter_pitch_roll_aiding_command</a> (<a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *serializer, const <a class="el" href="structmip_1_1C_1_1mip__filter__pitch__roll__aiding__command.html">mip_filter_pitch_roll_aiding_command</a> *self)</td></tr>
 <tr class="separator:gaa851fe8c2b29a7ea2e89d86de07dec00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4c5af84f852a32542ab27ca6da4d2fa6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__filter__pitch__roll__aiding__c.html#ga4c5af84f852a32542ab27ca6da4d2fa6">mip::C::extract_mip_filter_pitch_roll_aiding_command</a> (<a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *serializer, <a class="el" href="structmip_1_1C_1_1mip__filter__pitch__roll__aiding__command.html">mip_filter_pitch_roll_aiding_command</a> *self)</td></tr>
@@ -122,22 +126,7 @@ Functions</h2></td></tr>
 <tr class="separator:ga6639a81fcafb03132218b6174aff967c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Select pitch/roll aiding input. Pitch/roll reading is always derived from GNSS corrected inertial solution. Aiding inputs are used to improve that solution during periods of low dynamics and GNSS outages. </p>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="ga8e762811b408abfb203312d381dafad5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8e762811b408abfb203312d381dafad5">&#9670;&nbsp;</a></span>mip_filter_pitch_roll_aiding_command</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef struct <a class="el" href="structmip_1_1C_1_1mip__filter__pitch__roll__aiding__command.html">mip_filter_pitch_roll_aiding_command</a> <a class="el" href="structmip_1_1C_1_1mip__filter__pitch__roll__aiding__command.html">mip::C::mip_filter_pitch_roll_aiding_command</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ga4776c08c12898598e156738cd8a83a94"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga4776c08c12898598e156738cd8a83a94">&#9670;&nbsp;</a></span>mip_filter_pitch_roll_aiding_command_aiding_source</h2>
 
@@ -146,6 +135,20 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">typedef enum <a class="el" href="group__filter__pitch__roll__aiding__c.html#ga66283b537c8dc149e3cfa59eb5f865ef">mip_filter_pitch_roll_aiding_command_aiding_source</a> <a class="el" href="group__filter__pitch__roll__aiding__c.html#ga66283b537c8dc149e3cfa59eb5f865ef">mip::C::mip_filter_pitch_roll_aiding_command_aiding_source</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga8e762811b408abfb203312d381dafad5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8e762811b408abfb203312d381dafad5">&#9670;&nbsp;</a></span>mip_filter_pitch_roll_aiding_command</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structmip_1_1C_1_1mip__filter__pitch__roll__aiding__command.html">mip_filter_pitch_roll_aiding_command</a> <a class="el" href="structmip_1_1C_1_1mip__filter__pitch__roll__aiding__command.html">mip::C::mip_filter_pitch_roll_aiding_command</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -188,14 +191,17 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga4c5af84f852a32542ab27ca6da4d2fa6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4c5af84f852a32542ab27ca6da4d2fa6">&#9670;&nbsp;</a></span>extract_mip_filter_pitch_roll_aiding_command()</h2>
+<a id="ga7ecdb76eaa334c3cf2d230c6bcaaacbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7ecdb76eaa334c3cf2d230c6bcaaacbd">&#9670;&nbsp;</a></span>insert_mip_filter_pitch_roll_aiding_command_aiding_source()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void mip::C::extract_mip_filter_pitch_roll_aiding_command </td>
+          <td class="memname">static void mip::C::insert_mip_filter_pitch_roll_aiding_command_aiding_source </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
           <td class="paramname"><em>serializer</em>, </td>
@@ -203,7 +209,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__pitch__roll__aiding__command.html">mip_filter_pitch_roll_aiding_command</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__filter__pitch__roll__aiding__c.html#ga66283b537c8dc149e3cfa59eb5f865ef">mip_filter_pitch_roll_aiding_command_aiding_source</a>&#160;</td>
           <td class="paramname"><em>self</em>&#160;</td>
         </tr>
         <tr>
@@ -212,18 +218,26 @@ Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ga657229a78ce379bdd4378922c609a1b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga657229a78ce379bdd4378922c609a1b8">&#9670;&nbsp;</a></span>extract_mip_filter_pitch_roll_aiding_response()</h2>
+<a id="ga9426a1ec442e42c30ab76ce24a073153"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9426a1ec442e42c30ab76ce24a073153">&#9670;&nbsp;</a></span>extract_mip_filter_pitch_roll_aiding_command_aiding_source()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void mip::C::extract_mip_filter_pitch_roll_aiding_response </td>
+          <td class="memname">static void mip::C::extract_mip_filter_pitch_roll_aiding_command_aiding_source </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
           <td class="paramname"><em>serializer</em>, </td>
@@ -231,7 +245,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__pitch__roll__aiding__response.html">mip_filter_pitch_roll_aiding_response</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__filter__pitch__roll__aiding__c.html#ga66283b537c8dc149e3cfa59eb5f865ef">mip_filter_pitch_roll_aiding_command_aiding_source</a> *&#160;</td>
           <td class="paramname"><em>self</em>&#160;</td>
         </tr>
         <tr>
@@ -240,6 +254,11 @@ Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -260,6 +279,34 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__filter__pitch__roll__aiding__command.html">mip_filter_pitch_roll_aiding_command</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga4c5af84f852a32542ab27ca6da4d2fa6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4c5af84f852a32542ab27ca6da4d2fa6">&#9670;&nbsp;</a></span>extract_mip_filter_pitch_roll_aiding_command()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::C::extract_mip_filter_pitch_roll_aiding_command </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__pitch__roll__aiding__command.html">mip_filter_pitch_roll_aiding_command</a> *&#160;</td>
           <td class="paramname"><em>self</em>&#160;</td>
         </tr>
         <tr>
@@ -300,36 +347,56 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga6639a81fcafb03132218b6174aff967c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6639a81fcafb03132218b6174aff967c">&#9670;&nbsp;</a></span>mip_filter_default_pitch_roll_aiding()</h2>
+<a id="ga657229a78ce379bdd4378922c609a1b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga657229a78ce379bdd4378922c609a1b8">&#9670;&nbsp;</a></span>extract_mip_filter_pitch_roll_aiding_response()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_default_pitch_roll_aiding </td>
+          <td class="memname">void mip::C::extract_mip_filter_pitch_roll_aiding_response </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__pitch__roll__aiding__response.html">mip_filter_pitch_roll_aiding_response</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="gad96b07bc69e72c9155f99fcea9dd7d66"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad96b07bc69e72c9155f99fcea9dd7d66">&#9670;&nbsp;</a></span>mip_filter_load_pitch_roll_aiding()</h2>
+<a id="gac47c5eac080983e1ca86d6c5802a44e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac47c5eac080983e1ca86d6c5802a44e5">&#9670;&nbsp;</a></span>mip_filter_write_pitch_roll_aiding()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_load_pitch_roll_aiding </td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_write_pitch_roll_aiding </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="group__filter__pitch__roll__aiding__c.html#ga66283b537c8dc149e3cfa59eb5f865ef">mip_filter_pitch_roll_aiding_command_aiding_source</a>&#160;</td>
+          <td class="paramname"><em>source</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -382,28 +449,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gac47c5eac080983e1ca86d6c5802a44e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac47c5eac080983e1ca86d6c5802a44e5">&#9670;&nbsp;</a></span>mip_filter_write_pitch_roll_aiding()</h2>
+<a id="gad96b07bc69e72c9155f99fcea9dd7d66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad96b07bc69e72c9155f99fcea9dd7d66">&#9670;&nbsp;</a></span>mip_filter_load_pitch_roll_aiding()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_write_pitch_roll_aiding </td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_load_pitch_roll_aiding </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__filter__pitch__roll__aiding__c.html#ga66283b537c8dc149e3cfa59eb5f865ef">mip_filter_pitch_roll_aiding_command_aiding_source</a>&#160;</td>
-          <td class="paramname"><em>source</em>&#160;</td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga6639a81fcafb03132218b6174aff967c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6639a81fcafb03132218b6174aff967c">&#9670;&nbsp;</a></span>mip_filter_default_pitch_roll_aiding()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_default_pitch_roll_aiding </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

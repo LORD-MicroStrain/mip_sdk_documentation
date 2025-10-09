@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -112,7 +112,6 @@ Functions</h2></td></tr>
 <tr class="separator:ga2345e861dfe3641f5eb923206833d95e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Advanced configuration for the IMU data quantity low-pass filters. </p>
 <p>Deprecated, use the lowpass filter (0x0C,0x54) command instead.</p>
 <p>The scaled data quantities are by default filtered through a single-pole IIR low-pass filter which is configured with a -3dB cutoff frequency of half the reporting frequency (set by decimation factor in the IMU Message Format command) to prevent aliasing on a per data quantity basis. This advanced configuration command allows for the cutoff frequency to be configured independently of the data reporting frequency as well as allowing for a complete bypass of the digital low-pass filter.</p>
 <p>Possible data descriptors: 0x04 - Scaled accelerometer data 0x05 - Scaled gyro data 0x06 - Scaled magnetometer data (if applicable) 0x17 - Scaled pressure data (if applicable) </p>
@@ -146,62 +145,6 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga347d4e67fd2850796d51c7fa5af6b8bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga347d4e67fd2850796d51c7fa5af6b8bd">&#9670;&nbsp;</a></span>extract_mip_3dm_imu_lowpass_filter_command()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::extract_mip_3dm_imu_lowpass_filter_command </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__3dm__imu__lowpass__filter__command.html">mip_3dm_imu_lowpass_filter_command</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga857e35b3315f19b6c5e93963dad097a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga857e35b3315f19b6c5e93963dad097a2">&#9670;&nbsp;</a></span>extract_mip_3dm_imu_lowpass_filter_response()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::extract_mip_3dm_imu_lowpass_filter_response </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__3dm__imu__lowpass__filter__response.html">mip_3dm_imu_lowpass_filter_response</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="gae1a4d06c0f5ba1082df95b301ec239c4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gae1a4d06c0f5ba1082df95b301ec239c4">&#9670;&nbsp;</a></span>insert_mip_3dm_imu_lowpass_filter_command()</h2>
 
@@ -218,6 +161,34 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__3dm__imu__lowpass__filter__command.html">mip_3dm_imu_lowpass_filter_command</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga347d4e67fd2850796d51c7fa5af6b8bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga347d4e67fd2850796d51c7fa5af6b8bd">&#9670;&nbsp;</a></span>extract_mip_3dm_imu_lowpass_filter_command()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::C::extract_mip_3dm_imu_lowpass_filter_command </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__3dm__imu__lowpass__filter__command.html">mip_3dm_imu_lowpass_filter_command</a> *&#160;</td>
           <td class="paramname"><em>self</em>&#160;</td>
         </tr>
         <tr>
@@ -258,23 +229,23 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga2345e861dfe3641f5eb923206833d95e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2345e861dfe3641f5eb923206833d95e">&#9670;&nbsp;</a></span>mip_3dm_default_imu_lowpass_filter()</h2>
+<a id="ga857e35b3315f19b6c5e93963dad097a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga857e35b3315f19b6c5e93963dad097a2">&#9670;&nbsp;</a></span>extract_mip_3dm_imu_lowpass_filter_response()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_3dm_default_imu_lowpass_filter </td>
+          <td class="memname">void mip::C::extract_mip_3dm_imu_lowpass_filter_response </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>target_descriptor</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__3dm__imu__lowpass__filter__response.html">mip_3dm_imu_lowpass_filter_response</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -286,14 +257,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga72b73d38a799efb92214605c42665e33"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga72b73d38a799efb92214605c42665e33">&#9670;&nbsp;</a></span>mip_3dm_load_imu_lowpass_filter()</h2>
+<a id="ga0b1b27bb4de3d618a4cf9e3425ca869c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0b1b27bb4de3d618a4cf9e3425ca869c">&#9670;&nbsp;</a></span>mip_3dm_write_imu_lowpass_filter()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_3dm_load_imu_lowpass_filter </td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_3dm_write_imu_lowpass_filter </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
           <td class="paramname"><em>device</em>, </td>
@@ -302,7 +273,31 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>target_descriptor</em>&#160;</td>
+          <td class="paramname"><em>target_descriptor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>manual</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>frequency</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>reserved</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -394,14 +389,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga0b1b27bb4de3d618a4cf9e3425ca869c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0b1b27bb4de3d618a4cf9e3425ca869c">&#9670;&nbsp;</a></span>mip_3dm_write_imu_lowpass_filter()</h2>
+<a id="ga72b73d38a799efb92214605c42665e33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga72b73d38a799efb92214605c42665e33">&#9670;&nbsp;</a></span>mip_3dm_load_imu_lowpass_filter()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_3dm_write_imu_lowpass_filter </td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_3dm_load_imu_lowpass_filter </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
           <td class="paramname"><em>device</em>, </td>
@@ -410,31 +405,35 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>target_descriptor</em>, </td>
+          <td class="paramname"><em>target_descriptor</em>&#160;</td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>enable</em>, </td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga2345e861dfe3641f5eb923206833d95e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2345e861dfe3641f5eb923206833d95e">&#9670;&nbsp;</a></span>mip_3dm_default_imu_lowpass_filter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>manual</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>frequency</em>, </td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_3dm_default_imu_lowpass_filter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>reserved</em>&#160;</td>
+          <td class="paramname"><em>target_descriptor</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

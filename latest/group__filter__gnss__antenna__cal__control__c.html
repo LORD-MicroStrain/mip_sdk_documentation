@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -112,7 +112,6 @@ Functions</h2></td></tr>
 <tr class="separator:ga571b568b9bb5f8cf219630868ca00528"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Configure the GNSS antenna lever arm calibration. </p>
 <p>When enabled, the filter will enable lever arm error tracking, up to the maximum offset specified. </p>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="gaae1823850515bc350ecf1ee0dd7ccc22"></a>
@@ -144,62 +143,6 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gaf891ba702f5dcb93e7f22d0db99d1904"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf891ba702f5dcb93e7f22d0db99d1904">&#9670;&nbsp;</a></span>extract_mip_filter_gnss_antenna_cal_control_command()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::extract_mip_filter_gnss_antenna_cal_control_command </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__gnss__antenna__cal__control__command.html">mip_filter_gnss_antenna_cal_control_command</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga667ae5acd83f4a1f03b69146776b57ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga667ae5acd83f4a1f03b69146776b57ff">&#9670;&nbsp;</a></span>extract_mip_filter_gnss_antenna_cal_control_response()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::extract_mip_filter_gnss_antenna_cal_control_response </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__gnss__antenna__cal__control__response.html">mip_filter_gnss_antenna_cal_control_response</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ga04350a9bb680d883dd809d753902ae83"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga04350a9bb680d883dd809d753902ae83">&#9670;&nbsp;</a></span>insert_mip_filter_gnss_antenna_cal_control_command()</h2>
 
@@ -216,6 +159,34 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__filter__gnss__antenna__cal__control__command.html">mip_filter_gnss_antenna_cal_control_command</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaf891ba702f5dcb93e7f22d0db99d1904"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf891ba702f5dcb93e7f22d0db99d1904">&#9670;&nbsp;</a></span>extract_mip_filter_gnss_antenna_cal_control_command()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::C::extract_mip_filter_gnss_antenna_cal_control_command </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__gnss__antenna__cal__control__command.html">mip_filter_gnss_antenna_cal_control_command</a> *&#160;</td>
           <td class="paramname"><em>self</em>&#160;</td>
         </tr>
         <tr>
@@ -256,36 +227,62 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga571b568b9bb5f8cf219630868ca00528"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga571b568b9bb5f8cf219630868ca00528">&#9670;&nbsp;</a></span>mip_filter_default_gnss_antenna_cal_control()</h2>
+<a id="ga667ae5acd83f4a1f03b69146776b57ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga667ae5acd83f4a1f03b69146776b57ff">&#9670;&nbsp;</a></span>extract_mip_filter_gnss_antenna_cal_control_response()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_default_gnss_antenna_cal_control </td>
+          <td class="memname">void mip::C::extract_mip_filter_gnss_antenna_cal_control_response </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__gnss__antenna__cal__control__response.html">mip_filter_gnss_antenna_cal_control_response</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ga64c59dfbcc73b3b029b5b96c7db6e7b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga64c59dfbcc73b3b029b5b96c7db6e7b3">&#9670;&nbsp;</a></span>mip_filter_load_gnss_antenna_cal_control()</h2>
+<a id="gaa9d47ee60613ef9dc1c1f93637f71097"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa9d47ee60613ef9dc1c1f93637f71097">&#9670;&nbsp;</a></span>mip_filter_write_gnss_antenna_cal_control()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_load_gnss_antenna_cal_control </td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_write_gnss_antenna_cal_control </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>enable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>max_offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -344,34 +341,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gaa9d47ee60613ef9dc1c1f93637f71097"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa9d47ee60613ef9dc1c1f93637f71097">&#9670;&nbsp;</a></span>mip_filter_write_gnss_antenna_cal_control()</h2>
+<a id="ga64c59dfbcc73b3b029b5b96c7db6e7b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga64c59dfbcc73b3b029b5b96c7db6e7b3">&#9670;&nbsp;</a></span>mip_filter_load_gnss_antenna_cal_control()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_write_gnss_antenna_cal_control </td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_load_gnss_antenna_cal_control </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>enable</em>, </td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga571b568b9bb5f8cf219630868ca00528"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga571b568b9bb5f8cf219630868ca00528">&#9670;&nbsp;</a></span>mip_filter_default_gnss_antenna_cal_control()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_default_gnss_antenna_cal_control </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>max_offset</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

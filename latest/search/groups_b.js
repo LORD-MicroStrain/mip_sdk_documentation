@@ -1,12 +1,7 @@
 var searchData=
 [
-  ['serial_20port_13282',['Serial Port',['../group__microstrain__serial.html',1,'']]],
-  ['sensor_20data_13283',['Sensor Data',['../group__sensor__data__c.html',1,'']]],
-  ['sensor_20data_13284',['Sensor Data',['../group__sensor__data__cpp.html',1,'']]],
-  ['shared_20data_13285',['Shared Data',['../group__shared__data__c.html',1,'']]],
-  ['shared_20data_13286',['Shared Data',['../group__shared__data__cpp.html',1,'']]],
-  ['system_20commands_13287',['System Commands',['../group__system__commands__c.html',1,'']]],
-  ['system_20commands_13288',['System Commands',['../group__system__commands__cpp.html',1,'']]],
-  ['system_20data_13289',['System Data',['../group__system__data__c.html',1,'']]],
-  ['system_20data_13290',['System Data',['../group__system__data__cpp.html',1,'']]]
+  ['platform_20specific_20utilities_15198',['Platform specific utilities',['../group__microstrain__platform.html',1,'']]],
+  ['packet_20inspection_15199',['Packet Inspection',['../group__MipPacketAccessors__c.html',1,'']]],
+  ['packet_20building_15200',['Packet Building',['../group__MipPacketBuilding__c.html',1,'']]],
+  ['pending_20mip_20commands_15201',['Pending Mip Commands',['../group__MipPendingCommand__c.html',1,'']]]
 ];

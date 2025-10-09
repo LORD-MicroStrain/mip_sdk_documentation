@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -112,7 +112,6 @@ Functions</h2></td></tr>
 <tr class="separator:ga5c484b59ba71cfc39e1a09bbadc4bf30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Configure the GNSS signals used by the device. </p>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="ga7d2fe2334759a653ce381ede06bbd5af"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga7d2fe2334759a653ce381ede06bbd5af">&#9670;&nbsp;</a></span>mip_gnss_signal_configuration_command</h2>
@@ -143,62 +142,6 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga031c9eac9586a605cf3c590835476c0b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga031c9eac9586a605cf3c590835476c0b">&#9670;&nbsp;</a></span>extract_mip_gnss_signal_configuration_command()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::extract_mip_gnss_signal_configuration_command </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__gnss__signal__configuration__command.html">mip_gnss_signal_configuration_command</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gaf78388424932be1f175d59f7e32897b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf78388424932be1f175d59f7e32897b0">&#9670;&nbsp;</a></span>extract_mip_gnss_signal_configuration_response()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::extract_mip_gnss_signal_configuration_response </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__gnss__signal__configuration__response.html">mip_gnss_signal_configuration_response</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="gad76046984b456114922704b6e18d65aa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gad76046984b456114922704b6e18d65aa">&#9670;&nbsp;</a></span>insert_mip_gnss_signal_configuration_command()</h2>
 
@@ -215,6 +158,34 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__gnss__signal__configuration__command.html">mip_gnss_signal_configuration_command</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga031c9eac9586a605cf3c590835476c0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga031c9eac9586a605cf3c590835476c0b">&#9670;&nbsp;</a></span>extract_mip_gnss_signal_configuration_command()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::C::extract_mip_gnss_signal_configuration_command </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__gnss__signal__configuration__command.html">mip_gnss_signal_configuration_command</a> *&#160;</td>
           <td class="paramname"><em>self</em>&#160;</td>
         </tr>
         <tr>
@@ -255,36 +226,80 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga5c484b59ba71cfc39e1a09bbadc4bf30"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5c484b59ba71cfc39e1a09bbadc4bf30">&#9670;&nbsp;</a></span>mip_gnss_default_signal_configuration()</h2>
+<a id="gaf78388424932be1f175d59f7e32897b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf78388424932be1f175d59f7e32897b0">&#9670;&nbsp;</a></span>extract_mip_gnss_signal_configuration_response()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_gnss_default_signal_configuration </td>
+          <td class="memname">void mip::C::extract_mip_gnss_signal_configuration_response </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__gnss__signal__configuration__response.html">mip_gnss_signal_configuration_response</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="gadbcf97c6e27f8f13c2a0e512fe4737d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadbcf97c6e27f8f13c2a0e512fe4737d4">&#9670;&nbsp;</a></span>mip_gnss_load_signal_configuration()</h2>
+<a id="gaf2289bb68c3b74c220c0767f1b50cedd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf2289bb68c3b74c220c0767f1b50cedd">&#9670;&nbsp;</a></span>mip_gnss_write_signal_configuration()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_gnss_load_signal_configuration </td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_gnss_write_signal_configuration </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>gps_enable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>glonass_enable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>galileo_enable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>beidou_enable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>reserved</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -361,52 +376,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gaf2289bb68c3b74c220c0767f1b50cedd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf2289bb68c3b74c220c0767f1b50cedd">&#9670;&nbsp;</a></span>mip_gnss_write_signal_configuration()</h2>
+<a id="gadbcf97c6e27f8f13c2a0e512fe4737d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadbcf97c6e27f8f13c2a0e512fe4737d4">&#9670;&nbsp;</a></span>mip_gnss_load_signal_configuration()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_gnss_write_signal_configuration </td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_gnss_load_signal_configuration </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>gps_enable</em>, </td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga5c484b59ba71cfc39e1a09bbadc4bf30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5c484b59ba71cfc39e1a09bbadc4bf30">&#9670;&nbsp;</a></span>mip_gnss_default_signal_configuration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_gnss_default_signal_configuration </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>glonass_enable</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>galileo_enable</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>beidou_enable</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>reserved</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

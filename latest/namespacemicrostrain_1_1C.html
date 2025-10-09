@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -177,20 +177,6 @@ Functions</h2></td></tr>
 <tr class="separator:ga8ce840fc52858ca587cbd315b77b6946"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="a82d49daeef52f3b19a6e5527091c36e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a82d49daeef52f3b19a6e5527091c36e5">&#9670;&nbsp;</a></span>microstrain_embedded_timeout</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="namespacemicrostrain_1_1C.html#a414dbc5e176e1ea7fd890d8a4353dd6b">microstrain_embedded_timestamp</a> <a class="el" href="namespacemicrostrain_1_1C.html#a82d49daeef52f3b19a6e5527091c36e5">microstrain::C::microstrain_embedded_timeout</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a414dbc5e176e1ea7fd890d8a4353dd6b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a414dbc5e176e1ea7fd890d8a4353dd6b">&#9670;&nbsp;</a></span>microstrain_embedded_timestamp</h2>
 
@@ -202,9 +188,21 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Type used for packet timestamps and timeouts. </p>
 <p>Timestamps must be monotonic except for overflow at the maximum value back to 0. The units can be anything, but typically are milliseconds. Choose a long enough unit so that consecutive calls to the parser will not exceed half of the maximum value for this type. For milliseconds, the time to overflow is approximately 50 days, so the parser should be invoked at least every 25 days. Failure to observe this requirement may result in false timeouts or delays in getting parsed packets. </p>
+
+</div>
+</div>
+<a id="a82d49daeef52f3b19a6e5527091c36e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82d49daeef52f3b19a6e5527091c36e5">&#9670;&nbsp;</a></span>microstrain_embedded_timeout</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="namespacemicrostrain_1_1C.html#a414dbc5e176e1ea7fd890d8a4353dd6b">microstrain_embedded_timestamp</a> <a class="el" href="namespacemicrostrain_1_1C.html#a82d49daeef52f3b19a6e5527091c36e5">microstrain::C::microstrain_embedded_timeout</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

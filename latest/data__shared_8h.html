@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -73,7 +73,8 @@ $(function() {
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">data_shared.h File Reference</div>  </div>
 </div><!--header-->
@@ -187,6 +188,10 @@ Functions</h2></td></tr>
 <tr class="separator:ga99d4c6291153cf0d05e16e80ee96b17c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaabc4781f79c98fc296c3fa073c8ff431"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__shared__delta__ticks__c.html#gaabc4781f79c98fc296c3fa073c8ff431">mip::C::extract_mip_shared_delta_ticks_data_from_field</a> (const mip_field_view *field, void *ptr)</td></tr>
 <tr class="separator:gaabc4781f79c98fc296c3fa073c8ff431"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf50c91cbc6c675ed653161ac18fccf13"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__shared__gps__timestamp__c.html#gaf50c91cbc6c675ed653161ac18fccf13">mip::C::insert_mip_shared_gps_timestamp_data_valid_flags</a> (microstrain_serializer *serializer, const mip_shared_gps_timestamp_data_valid_flags self)</td></tr>
+<tr class="separator:gaf50c91cbc6c675ed653161ac18fccf13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae19bdea6fc21fec1a2099aaae07efdba"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__shared__gps__timestamp__c.html#gae19bdea6fc21fec1a2099aaae07efdba">mip::C::extract_mip_shared_gps_timestamp_data_valid_flags</a> (microstrain_serializer *serializer, mip_shared_gps_timestamp_data_valid_flags *self)</td></tr>
+<tr class="separator:gae19bdea6fc21fec1a2099aaae07efdba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga694d4b055e8fc0505f1e293b758bcdfc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__shared__gps__timestamp__c.html#ga694d4b055e8fc0505f1e293b758bcdfc">mip::C::insert_mip_shared_gps_timestamp_data</a> (microstrain_serializer *serializer, const mip_shared_gps_timestamp_data *self)</td></tr>
 <tr class="separator:ga694d4b055e8fc0505f1e293b758bcdfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa8511a2657e5c9c29cd4af922137b1e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__shared__gps__timestamp__c.html#gaa8511a2657e5c9c29cd4af922137b1e2">mip::C::extract_mip_shared_gps_timestamp_data</a> (microstrain_serializer *serializer, mip_shared_gps_timestamp_data *self)</td></tr>
@@ -211,18 +216,54 @@ Functions</h2></td></tr>
 <tr class="separator:ga80c50fef80bb489b58bac538c6f56c2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga04bb8a066f98bc02f6aef38312d2788a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__shared__reference__time__delta__c.html#ga04bb8a066f98bc02f6aef38312d2788a">mip::C::extract_mip_shared_reference_time_delta_data_from_field</a> (const mip_field_view *field, void *ptr)</td></tr>
 <tr class="separator:ga04bb8a066f98bc02f6aef38312d2788a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab95158d078e3e709e8cdd0d1304f8c7b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__shared__external__timestamp__c.html#gab95158d078e3e709e8cdd0d1304f8c7b">mip::C::insert_mip_shared_external_timestamp_data_valid_flags</a> (microstrain_serializer *serializer, const mip_shared_external_timestamp_data_valid_flags self)</td></tr>
+<tr class="separator:gab95158d078e3e709e8cdd0d1304f8c7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac6657a07cb34125558492c4c1815db9d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__shared__external__timestamp__c.html#gac6657a07cb34125558492c4c1815db9d">mip::C::extract_mip_shared_external_timestamp_data_valid_flags</a> (microstrain_serializer *serializer, mip_shared_external_timestamp_data_valid_flags *self)</td></tr>
+<tr class="separator:gac6657a07cb34125558492c4c1815db9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf36b31fee33d5eb3da67415f91a6b948"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__shared__external__timestamp__c.html#gaf36b31fee33d5eb3da67415f91a6b948">mip::C::insert_mip_shared_external_timestamp_data</a> (microstrain_serializer *serializer, const mip_shared_external_timestamp_data *self)</td></tr>
 <tr class="separator:gaf36b31fee33d5eb3da67415f91a6b948"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac69759a59f527619e412cd75472f0db4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__shared__external__timestamp__c.html#gac69759a59f527619e412cd75472f0db4">mip::C::extract_mip_shared_external_timestamp_data</a> (microstrain_serializer *serializer, mip_shared_external_timestamp_data *self)</td></tr>
 <tr class="separator:gac69759a59f527619e412cd75472f0db4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga808f232bede71df710f6f4b8f3b21171"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__shared__external__timestamp__c.html#ga808f232bede71df710f6f4b8f3b21171">mip::C::extract_mip_shared_external_timestamp_data_from_field</a> (const mip_field_view *field, void *ptr)</td></tr>
 <tr class="separator:ga808f232bede71df710f6f4b8f3b21171"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1c632afe713e879b1da176b6c732e74e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__shared__external__time__delta__c.html#ga1c632afe713e879b1da176b6c732e74e">mip::C::insert_mip_shared_external_time_delta_data_valid_flags</a> (microstrain_serializer *serializer, const mip_shared_external_time_delta_data_valid_flags self)</td></tr>
+<tr class="separator:ga1c632afe713e879b1da176b6c732e74e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga64e44cdf44b3d2c0223e99792d9fa29d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__shared__external__time__delta__c.html#ga64e44cdf44b3d2c0223e99792d9fa29d">mip::C::extract_mip_shared_external_time_delta_data_valid_flags</a> (microstrain_serializer *serializer, mip_shared_external_time_delta_data_valid_flags *self)</td></tr>
+<tr class="separator:ga64e44cdf44b3d2c0223e99792d9fa29d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga10bb65dfdb72c501947f256d75805bf8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__shared__external__time__delta__c.html#ga10bb65dfdb72c501947f256d75805bf8">mip::C::insert_mip_shared_external_time_delta_data</a> (microstrain_serializer *serializer, const mip_shared_external_time_delta_data *self)</td></tr>
 <tr class="separator:ga10bb65dfdb72c501947f256d75805bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga110c54e427cd5696f68198f3bdbd6c91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__shared__external__time__delta__c.html#ga110c54e427cd5696f68198f3bdbd6c91">mip::C::extract_mip_shared_external_time_delta_data</a> (microstrain_serializer *serializer, mip_shared_external_time_delta_data *self)</td></tr>
 <tr class="separator:ga110c54e427cd5696f68198f3bdbd6c91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga10822cc1643ae26235e1d3d1ba721ad4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__shared__external__time__delta__c.html#ga10822cc1643ae26235e1d3d1ba721ad4">mip::C::extract_mip_shared_external_time_delta_data_from_field</a> (const mip_field_view *field, void *ptr)</td></tr>
 <tr class="separator:ga10822cc1643ae26235e1d3d1ba721ad4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:gaeb6d6493866efcf3784c0785ea13e297"><td class="memItemLeft" align="right" valign="top">static const mip_shared_gps_timestamp_data_valid_flags&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__shared__gps__timestamp__c.html#gaeb6d6493866efcf3784c0785ea13e297">mip::C::MIP_SHARED_GPS_TIMESTAMP_DATA_VALID_FLAGS_NONE</a> = 0x0000</td></tr>
+<tr class="separator:gaeb6d6493866efcf3784c0785ea13e297"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga948686359313eb322fb331ac5a7444d5"><td class="memItemLeft" align="right" valign="top">static const mip_shared_gps_timestamp_data_valid_flags&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__shared__gps__timestamp__c.html#ga948686359313eb322fb331ac5a7444d5">mip::C::MIP_SHARED_GPS_TIMESTAMP_DATA_VALID_FLAGS_TOW</a> = 0x0001</td></tr>
+<tr class="memdesc:ga948686359313eb322fb331ac5a7444d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whole number seconds TOW has been set.  <a href="group__shared__gps__timestamp__c.html#ga948686359313eb322fb331ac5a7444d5">More...</a><br /></td></tr>
+<tr class="separator:ga948686359313eb322fb331ac5a7444d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaee5809da01e9c491424c4b75e20c232f"><td class="memItemLeft" align="right" valign="top">static const mip_shared_gps_timestamp_data_valid_flags&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__shared__gps__timestamp__c.html#gaee5809da01e9c491424c4b75e20c232f">mip::C::MIP_SHARED_GPS_TIMESTAMP_DATA_VALID_FLAGS_WEEK_NUMBER</a> = 0x0002</td></tr>
+<tr class="memdesc:gaee5809da01e9c491424c4b75e20c232f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Week number has been set.  <a href="group__shared__gps__timestamp__c.html#gaee5809da01e9c491424c4b75e20c232f">More...</a><br /></td></tr>
+<tr class="separator:gaee5809da01e9c491424c4b75e20c232f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga265903bc4983becb73147a4c323465c0"><td class="memItemLeft" align="right" valign="top">static const mip_shared_gps_timestamp_data_valid_flags&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__shared__gps__timestamp__c.html#ga265903bc4983becb73147a4c323465c0">mip::C::MIP_SHARED_GPS_TIMESTAMP_DATA_VALID_FLAGS_TIME_VALID</a> = 0x0003</td></tr>
+<tr class="memdesc:ga265903bc4983becb73147a4c323465c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Both TOW and Week Number have been set.  <a href="group__shared__gps__timestamp__c.html#ga265903bc4983becb73147a4c323465c0">More...</a><br /></td></tr>
+<tr class="separator:ga265903bc4983becb73147a4c323465c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga486b198aff0c30b534b378e793b5b497"><td class="memItemLeft" align="right" valign="top">static const mip_shared_gps_timestamp_data_valid_flags&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__shared__gps__timestamp__c.html#ga486b198aff0c30b534b378e793b5b497">mip::C::MIP_SHARED_GPS_TIMESTAMP_DATA_VALID_FLAGS_ALL</a> = 0x0003</td></tr>
+<tr class="separator:ga486b198aff0c30b534b378e793b5b497"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7af419f302614f9de4cb8f7cca8988ff"><td class="memItemLeft" align="right" valign="top">static const mip_shared_external_timestamp_data_valid_flags&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__shared__external__timestamp__c.html#ga7af419f302614f9de4cb8f7cca8988ff">mip::C::MIP_SHARED_EXTERNAL_TIMESTAMP_DATA_VALID_FLAGS_NONE</a> = 0x0000</td></tr>
+<tr class="separator:ga7af419f302614f9de4cb8f7cca8988ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga66b8755d34af412d63a8dc4244a15779"><td class="memItemLeft" align="right" valign="top">static const mip_shared_external_timestamp_data_valid_flags&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__shared__external__timestamp__c.html#ga66b8755d34af412d63a8dc4244a15779">mip::C::MIP_SHARED_EXTERNAL_TIMESTAMP_DATA_VALID_FLAGS_NANOSECONDS</a> = 0x0001</td></tr>
+<tr class="separator:ga66b8755d34af412d63a8dc4244a15779"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9ea30d0e5bef71f56801e423d6130646"><td class="memItemLeft" align="right" valign="top">static const mip_shared_external_timestamp_data_valid_flags&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__shared__external__timestamp__c.html#ga9ea30d0e5bef71f56801e423d6130646">mip::C::MIP_SHARED_EXTERNAL_TIMESTAMP_DATA_VALID_FLAGS_ALL</a> = 0x0001</td></tr>
+<tr class="separator:ga9ea30d0e5bef71f56801e423d6130646"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga73e1e9eb24e22c5a8308574713b7c8fb"><td class="memItemLeft" align="right" valign="top">static const mip_shared_external_time_delta_data_valid_flags&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__shared__external__time__delta__c.html#ga73e1e9eb24e22c5a8308574713b7c8fb">mip::C::MIP_SHARED_EXTERNAL_TIME_DELTA_DATA_VALID_FLAGS_NONE</a> = 0x0000</td></tr>
+<tr class="separator:ga73e1e9eb24e22c5a8308574713b7c8fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga00c55167a3b34c2785184d3d6b1f2d29"><td class="memItemLeft" align="right" valign="top">static const mip_shared_external_time_delta_data_valid_flags&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__shared__external__time__delta__c.html#ga00c55167a3b34c2785184d3d6b1f2d29">mip::C::MIP_SHARED_EXTERNAL_TIME_DELTA_DATA_VALID_FLAGS_DT_NANOS</a> = 0x0001</td></tr>
+<tr class="separator:ga00c55167a3b34c2785184d3d6b1f2d29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1e383946704c616bde507d0d267791d9"><td class="memItemLeft" align="right" valign="top">static const mip_shared_external_time_delta_data_valid_flags&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__shared__external__time__delta__c.html#ga1e383946704c616bde507d0d267791d9">mip::C::MIP_SHARED_EXTERNAL_TIME_DELTA_DATA_VALID_FLAGS_ALL</a> = 0x0001</td></tr>
+<tr class="separator:ga1e383946704c616bde507d0d267791d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -131,8 +131,8 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a7940ab6aba2044725f2a6cdf777c7d0c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7940ab6aba2044725f2a6cdf777c7d0c">&#9670;&nbsp;</a></span>read() <span class="overload">[1/2]</span></h2>
+<a id="a9df57f323dddc5cc6e4090b7cbf75016"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9df57f323dddc5cc6e4090b7cbf75016">&#9670;&nbsp;</a></span>write()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -140,11 +140,21 @@ Functions</h2></td></tr>
 template&lt;Endian E, class T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">T microstrain::serialization::read </td>
+          <td class="memname">std::enable_if&lt;std::is_arithmetic&lt;T&gt;::value, size_t&gt;::type microstrain::serialization::write </td>
           <td>(</td>
-          <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>buffer</em></td><td>)</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -152,7 +162,7 @@ template&lt;Endian E, class T &gt; </div>
 </div>
 </div>
 <a id="a4f415c308b88fe4ff31a303e625b3b26"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f415c308b88fe4ff31a303e625b3b26">&#9670;&nbsp;</a></span>read() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f415c308b88fe4ff31a303e625b3b26">&#9670;&nbsp;</a></span>read() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -181,8 +191,8 @@ template&lt;Endian E, class T &gt; </div>
 
 </div>
 </div>
-<a id="a9df57f323dddc5cc6e4090b7cbf75016"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9df57f323dddc5cc6e4090b7cbf75016">&#9670;&nbsp;</a></span>write()</h2>
+<a id="a7940ab6aba2044725f2a6cdf777c7d0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7940ab6aba2044725f2a6cdf777c7d0c">&#9670;&nbsp;</a></span>read() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -190,21 +200,11 @@ template&lt;Endian E, class T &gt; </div>
 template&lt;Endian E, class T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::enable_if&lt;std::is_arithmetic&lt;T&gt;::value, size_t&gt;::type microstrain::serialization::write </td>
+          <td class="memname">T microstrain::serialization::read </td>
           <td>(</td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

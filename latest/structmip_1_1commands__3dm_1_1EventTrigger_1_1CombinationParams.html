@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -127,6 +127,24 @@ Static Public Attributes</h2></td></tr>
 <tr class="separator:adaa0c035ba715afe9f2bd78054214da7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4ba603712faaca1208f3a022e7c91ef3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ba603712faaca1208f3a022e7c91ef3">&#9670;&nbsp;</a></span>insert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::commands_3dm::EventTrigger::CombinationParams::insert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacemip.html#a7475074708d6d3e0fa83597b41eb98f8">Serializer</a> &amp;&#160;</td>
+          <td class="paramname"><em>serializer</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a807775741e6396e47354091b138eeaa8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a807775741e6396e47354091b138eeaa8">&#9670;&nbsp;</a></span>extract()</h2>
 
@@ -145,45 +163,9 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a4ba603712faaca1208f3a022e7c91ef3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ba603712faaca1208f3a022e7c91ef3">&#9670;&nbsp;</a></span>insert()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::commands_3dm::EventTrigger::CombinationParams::insert </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacemip.html#a7475074708d6d3e0fa83597b41eb98f8">Serializer</a> &amp;&#160;</td>
-          <td class="paramname"><em>serializer</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Serialization. </p>
-
-</div>
-</div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="ad75baa38318adc659e2ae08ef38cd598"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad75baa38318adc659e2ae08ef38cd598">&#9670;&nbsp;</a></span>input_triggers</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t mip::commands_3dm::EventTrigger::CombinationParams::input_triggers[4] = {0}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>List of trigger IDs for inputs. Use 0 for unused inputs. </p>
-
-</div>
-</div>
-<a id="a669748788f4ae735382ee6438d85a3ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a669748788f4ae735382ee6438d85a3ef">&#9670;&nbsp;</a></span>LOGIC_AB_OR_C</h2>
+<a id="a13685a37d9f09f7cdcab7a830ae7aa17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13685a37d9f09f7cdcab7a830ae7aa17">&#9670;&nbsp;</a></span>LOGIC_NEVER</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -192,7 +174,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr const uint16_t mip::commands_3dm::EventTrigger::CombinationParams::LOGIC_AB_OR_C = 0xF8F8</td>
+          <td class="memname">constexpr const uint16_t mip::commands_3dm::EventTrigger::CombinationParams::LOGIC_NEVER = 0x0000</td>
         </tr>
       </table>
   </td>
@@ -226,8 +208,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="adaa0c035ba715afe9f2bd78054214da7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adaa0c035ba715afe9f2bd78054214da7">&#9670;&nbsp;</a></span>LOGIC_AND</h2>
+<a id="a733cc2df23b91641e450f3b482e07575"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a733cc2df23b91641e450f3b482e07575">&#9670;&nbsp;</a></span>LOGIC_NONE</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -236,7 +218,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr const uint16_t mip::commands_3dm::EventTrigger::CombinationParams::LOGIC_AND = 0x8000</td>
+          <td class="memname">constexpr const uint16_t mip::commands_3dm::EventTrigger::CombinationParams::LOGIC_NONE = 0x0001</td>
         </tr>
       </table>
   </td>
@@ -248,8 +230,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a54bdf97daf63a27ee9d29816e34e0def"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54bdf97daf63a27ee9d29816e34e0def">&#9670;&nbsp;</a></span>LOGIC_AND_AB</h2>
+<a id="a078acd353bac88c9fc3d710accc03a47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a078acd353bac88c9fc3d710accc03a47">&#9670;&nbsp;</a></span>LOGIC_OR</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -258,7 +240,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr const uint16_t mip::commands_3dm::EventTrigger::CombinationParams::LOGIC_AND_AB = 0x8888</td>
+          <td class="memname">constexpr const uint16_t mip::commands_3dm::EventTrigger::CombinationParams::LOGIC_OR = 0xFFFE</td>
         </tr>
       </table>
   </td>
@@ -292,8 +274,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a13685a37d9f09f7cdcab7a830ae7aa17"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13685a37d9f09f7cdcab7a830ae7aa17">&#9670;&nbsp;</a></span>LOGIC_NEVER</h2>
+<a id="ad0994758667e8673e0ec7ea1d3e9c3f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0994758667e8673e0ec7ea1d3e9c3f9">&#9670;&nbsp;</a></span>LOGIC_XOR_ONE</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -302,29 +284,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr const uint16_t mip::commands_3dm::EventTrigger::CombinationParams::LOGIC_NEVER = 0x0000</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a733cc2df23b91641e450f3b482e07575"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a733cc2df23b91641e450f3b482e07575">&#9670;&nbsp;</a></span>LOGIC_NONE</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr const uint16_t mip::commands_3dm::EventTrigger::CombinationParams::LOGIC_NONE = 0x0001</td>
+          <td class="memname">constexpr const uint16_t mip::commands_3dm::EventTrigger::CombinationParams::LOGIC_XOR_ONE = 0x0116</td>
         </tr>
       </table>
   </td>
@@ -424,8 +384,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a078acd353bac88c9fc3d710accc03a47"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a078acd353bac88c9fc3d710accc03a47">&#9670;&nbsp;</a></span>LOGIC_OR</h2>
+<a id="a54bdf97daf63a27ee9d29816e34e0def"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54bdf97daf63a27ee9d29816e34e0def">&#9670;&nbsp;</a></span>LOGIC_AND_AB</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -434,7 +394,51 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr const uint16_t mip::commands_3dm::EventTrigger::CombinationParams::LOGIC_OR = 0xFFFE</td>
+          <td class="memname">constexpr const uint16_t mip::commands_3dm::EventTrigger::CombinationParams::LOGIC_AND_AB = 0x8888</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a669748788f4ae735382ee6438d85a3ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a669748788f4ae735382ee6438d85a3ef">&#9670;&nbsp;</a></span>LOGIC_AB_OR_C</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr const uint16_t mip::commands_3dm::EventTrigger::CombinationParams::LOGIC_AB_OR_C = 0xF8F8</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adaa0c035ba715afe9f2bd78054214da7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adaa0c035ba715afe9f2bd78054214da7">&#9670;&nbsp;</a></span>LOGIC_AND</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr const uint16_t mip::commands_3dm::EventTrigger::CombinationParams::LOGIC_AND = 0x8000</td>
         </tr>
       </table>
   </td>
@@ -457,30 +461,20 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p><a class="el" href="unionmip_1_1commands__3dm_1_1EventTrigger_1_1Parameters.html">Parameters</a>. </p>
 <p>The last column of a truth table describing the output given the state of each input. </p>
 
 </div>
 </div>
-<a id="ad0994758667e8673e0ec7ea1d3e9c3f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0994758667e8673e0ec7ea1d3e9c3f9">&#9670;&nbsp;</a></span>LOGIC_XOR_ONE</h2>
+<a id="ad75baa38318adc659e2ae08ef38cd598"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad75baa38318adc659e2ae08ef38cd598">&#9670;&nbsp;</a></span>input_triggers</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr const uint16_t mip::commands_3dm::EventTrigger::CombinationParams::LOGIC_XOR_ONE = 0x0116</td>
+          <td class="memname">uint8_t mip::commands_3dm::EventTrigger::CombinationParams::input_triggers[4] = {0}</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>

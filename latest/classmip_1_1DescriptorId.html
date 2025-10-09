@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -117,8 +117,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af8971de5ea19f8ffff19676853e85045"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A combination of a MIP descriptor pair and u16 ID value. </p>
-<p>Used by <a class="el" href="classmip_1_1CompositeResult.html" title="Represents a list of zero or more actions and their results.">CompositeResult</a> as a way to identify both MIP and non-MIP entries. </p>
+<div class="textblock"><p>Used by <a class="el" href="classmip_1_1CompositeResult.html" title="Represents a list of zero or more actions and their results.">CompositeResult</a> as a way to identify both MIP and non-MIP entries. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a176719cbd04919a96f5450e09f58d293"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a176719cbd04919a96f5450e09f58d293">&#9670;&nbsp;</a></span>DescriptorId() <span class="overload">[1/4]</span></h2>
@@ -250,8 +249,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a5e621d75a6298c91e77553d86315ffe2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e621d75a6298c91e77553d86315ffe2">&#9670;&nbsp;</a></span>asU32()</h2>
+<a id="a8698c22044273ca120cc66f7944cd689"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8698c22044273ca120cc66f7944cd689">&#9670;&nbsp;</a></span>isNull()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -260,57 +259,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t mip::DescriptorId::asU32 </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae0be4cb30c810e4848ed2094ec261f9a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0be4cb30c810e4848ed2094ec261f9a">&#9670;&nbsp;</a></span>descriptor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structmip_1_1CompositeDescriptor.html">CompositeDescriptor</a> mip::DescriptorId::descriptor </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad2644898cb98d6df9927d2400de1fa6b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2644898cb98d6df9927d2400de1fa6b">&#9670;&nbsp;</a></span>index()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint16_t mip::DescriptorId::index </td>
+          <td class="memname">bool mip::DescriptorId::isNull </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -375,8 +324,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a8698c22044273ca120cc66f7944cd689"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8698c22044273ca120cc66f7944cd689">&#9670;&nbsp;</a></span>isNull()</h2>
+<a id="ae0be4cb30c810e4848ed2094ec261f9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0be4cb30c810e4848ed2094ec261f9a">&#9670;&nbsp;</a></span>descriptor()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -385,9 +334,85 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool mip::DescriptorId::isNull </td>
+          <td class="memname"><a class="el" href="structmip_1_1CompositeDescriptor.html">CompositeDescriptor</a> mip::DescriptorId::descriptor </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad2644898cb98d6df9927d2400de1fa6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2644898cb98d6df9927d2400de1fa6b">&#9670;&nbsp;</a></span>index()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t mip::DescriptorId::index </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5e621d75a6298c91e77553d86315ffe2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e621d75a6298c91e77553d86315ffe2">&#9670;&nbsp;</a></span>asU32()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t mip::DescriptorId::asU32 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1e5ef8f4e36554f8f540fdd1c2766c8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e5ef8f4e36554f8f540fdd1c2766c8e">&#9670;&nbsp;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::DescriptorId::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmip_1_1DescriptorId.html">DescriptorId</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -411,32 +436,6 @@ Public Member Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">bool mip::DescriptorId::operator!= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classmip_1_1DescriptorId.html">DescriptorId</a> &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac2a13b07e390a32f928c72bc63155196"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2a13b07e390a32f928c72bc63155196">&#9670;&nbsp;</a></span>operator&lt;()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool mip::DescriptorId::operator&lt; </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classmip_1_1DescriptorId.html">DescriptorId</a> &amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
@@ -478,8 +477,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a1e5ef8f4e36554f8f540fdd1c2766c8e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e5ef8f4e36554f8f540fdd1c2766c8e">&#9670;&nbsp;</a></span>operator==()</h2>
+<a id="ae34a8d3d03aabc1585f6faa4689b3cbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae34a8d3d03aabc1585f6faa4689b3cbb">&#9670;&nbsp;</a></span>operator&gt;=()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -488,7 +487,33 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool mip::DescriptorId::operator== </td>
+          <td class="memname">bool mip::DescriptorId::operator&gt;= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmip_1_1DescriptorId.html">DescriptorId</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac2a13b07e390a32f928c72bc63155196"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2a13b07e390a32f928c72bc63155196">&#9670;&nbsp;</a></span>operator&lt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::DescriptorId::operator&lt; </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classmip_1_1DescriptorId.html">DescriptorId</a> &amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
@@ -515,32 +540,6 @@ Public Member Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">bool mip::DescriptorId::operator&gt; </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classmip_1_1DescriptorId.html">DescriptorId</a> &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae34a8d3d03aabc1585f6faa4689b3cbb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae34a8d3d03aabc1585f6faa4689b3cbb">&#9670;&nbsp;</a></span>operator&gt;=()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool mip::DescriptorId::operator&gt;= </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classmip_1_1DescriptorId.html">DescriptorId</a> &amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -110,19 +110,17 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a8c504800183701449b8cde11c3b96a47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a8f7f113ebc1cd5745bc1315f0bde5609"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f7f113ebc1cd5745bc1315f0bde5609">&#9670;&nbsp;</a></span>azimuth</h2>
+<a id="a4ff34ef49ee171fa22c6a6a594f2ef3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ff34ef49ee171fa22c6a6a594f2ef3b">&#9670;&nbsp;</a></span>index</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float mip::C::mip_gnss_satellite_status_data::azimuth</td>
+          <td class="memname">uint8_t mip::C::mip_gnss_satellite_status_data::index</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Azimuth of the satellite relative to the rover [degrees]. </p>
 
 </div>
 </div>
@@ -138,86 +136,6 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Total number of fields in this epoch. </p>
-
-</div>
-</div>
-<a id="a7615f46ad9513cdd2570f31ed38e3d0f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7615f46ad9513cdd2570f31ed38e3d0f">&#9670;&nbsp;</a></span>elevation</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float mip::C::mip_gnss_satellite_status_data::elevation</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Elevation of the satellite relative to the rover [degrees]. </p>
-
-</div>
-</div>
-<a id="ae2622c43dbfcd8745dadc05544470515"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2622c43dbfcd8745dadc05544470515">&#9670;&nbsp;</a></span>gnss_id</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__gnss__data__c.html#ga2a4021951635e755d8cbf39da7fc8bbc">mip_gnss_constellation_id</a> mip::C::mip_gnss_satellite_status_data::gnss_id</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a95326e524bd2ac6d13c9b59bcec41ec2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a95326e524bd2ac6d13c9b59bcec41ec2">&#9670;&nbsp;</a></span>health</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool mip::C::mip_gnss_satellite_status_data::health</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>True if the satellite is healthy. </p>
-
-</div>
-</div>
-<a id="a4ff34ef49ee171fa22c6a6a594f2ef3b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ff34ef49ee171fa22c6a6a594f2ef3b">&#9670;&nbsp;</a></span>index</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t mip::C::mip_gnss_satellite_status_data::index</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Index of this field in this epoch. </p>
-
-</div>
-</div>
-<a id="aa7c4231450b3d68f76026129751700e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7c4231450b3d68f76026129751700e3">&#9670;&nbsp;</a></span>satellite_id</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t mip::C::mip_gnss_satellite_status_data::satellite_id</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>GNSS satellite id within the constellation. </p>
-
 </div>
 </div>
 <a id="adcbeca0aef453752d0449e73a82bdd67"></a>
@@ -228,22 +146,6 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">double mip::C::mip_gnss_satellite_status_data::time_of_week</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>GPS Time of week [seconds]. </p>
-
-</div>
-</div>
-<a id="a8c504800183701449b8cde11c3b96a47"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c504800183701449b8cde11c3b96a47">&#9670;&nbsp;</a></span>valid_flags</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__gnss__satellite__status__c.html#ga6985663bd9016eb7aa10f8a096ef6f68">mip_gnss_satellite_status_data_valid_flags</a> mip::C::mip_gnss_satellite_status_data::valid_flags</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -262,7 +164,89 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>GPS Week since 1980 [weeks]. </p>
+</div>
+</div>
+<a id="ae2622c43dbfcd8745dadc05544470515"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2622c43dbfcd8745dadc05544470515">&#9670;&nbsp;</a></span>gnss_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__gnss__data__c.html#ga2a4021951635e755d8cbf39da7fc8bbc">mip_gnss_constellation_id</a> mip::C::mip_gnss_satellite_status_data::gnss_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa7c4231450b3d68f76026129751700e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7c4231450b3d68f76026129751700e3">&#9670;&nbsp;</a></span>satellite_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t mip::C::mip_gnss_satellite_status_data::satellite_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7615f46ad9513cdd2570f31ed38e3d0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7615f46ad9513cdd2570f31ed38e3d0f">&#9670;&nbsp;</a></span>elevation</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float mip::C::mip_gnss_satellite_status_data::elevation</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8f7f113ebc1cd5745bc1315f0bde5609"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f7f113ebc1cd5745bc1315f0bde5609">&#9670;&nbsp;</a></span>azimuth</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float mip::C::mip_gnss_satellite_status_data::azimuth</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a95326e524bd2ac6d13c9b59bcec41ec2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95326e524bd2ac6d13c9b59bcec41ec2">&#9670;&nbsp;</a></span>health</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::C::mip_gnss_satellite_status_data::health</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8c504800183701449b8cde11c3b96a47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c504800183701449b8cde11c3b96a47">&#9670;&nbsp;</a></span>valid_flags</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__gnss__satellite__status__c.html#ga6985663bd9016eb7aa10f8a096ef6f68">mip_gnss_satellite_status_data_valid_flags</a> mip::C::mip_gnss_satellite_status_data::valid_flags</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

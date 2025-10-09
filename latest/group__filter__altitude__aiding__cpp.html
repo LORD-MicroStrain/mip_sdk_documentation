@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -94,39 +94,30 @@ Functions</h2></td></tr>
 <tr class="separator:ga656a64d018490603ecc66e46b3b6a70c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Select altitude input for absolute altitude and/or vertical velocity. The primary altitude reading is always GNSS. Aiding inputs are used to improve GNSS altitude readings when GNSS is available and to backup GNSS during outages. </p>
 <p>Pressure altitude is based on "instant sea level pressure" which is dependent on location and weather conditions and can vary by more than 40 meters. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga656a64d018490603ecc66e46b3b6a70c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga656a64d018490603ecc66e46b3b6a70c">&#9670;&nbsp;</a></span>defaultAltitudeAiding()</h2>
+<a id="gab2d0842b4b864717f9b14ba970e6400e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab2d0842b4b864717f9b14ba970e6400e">&#9670;&nbsp;</a></span>writeAltitudeAiding()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1AltitudeAiding.html">AltitudeAiding</a> &gt; mip::commands_filter::defaultAltitudeAiding </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1AltitudeAiding.html">AltitudeAiding</a> &gt; mip::commands_filter::writeAltitudeAiding </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
-          <td></td>
+          <td class="paramname"><em>device</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga78aa3d5e3a1a61441bf8713f06adbd2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga78aa3d5e3a1a61441bf8713f06adbd2e">&#9670;&nbsp;</a></span>loadAltitudeAiding()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1AltitudeAiding.html">AltitudeAiding</a> &gt; mip::commands_filter::loadAltitudeAiding </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1commands__filter_1_1AltitudeAiding.html#a9cc2259d82c82d67867caf4b9ae0b72f">AltitudeAiding::AidingSelector</a>&#160;</td>
+          <td class="paramname"><em>selector</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -179,28 +170,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gab2d0842b4b864717f9b14ba970e6400e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab2d0842b4b864717f9b14ba970e6400e">&#9670;&nbsp;</a></span>writeAltitudeAiding()</h2>
+<a id="ga78aa3d5e3a1a61441bf8713f06adbd2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga78aa3d5e3a1a61441bf8713f06adbd2e">&#9670;&nbsp;</a></span>loadAltitudeAiding()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1AltitudeAiding.html">AltitudeAiding</a> &gt; mip::commands_filter::writeAltitudeAiding </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1AltitudeAiding.html">AltitudeAiding</a> &gt; mip::commands_filter::loadAltitudeAiding </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1commands__filter_1_1AltitudeAiding.html#a9cc2259d82c82d67867caf4b9ae0b72f">AltitudeAiding::AidingSelector</a>&#160;</td>
-          <td class="paramname"><em>selector</em>&#160;</td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga656a64d018490603ecc66e46b3b6a70c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga656a64d018490603ecc66e46b3b6a70c">&#9670;&nbsp;</a></span>defaultAltitudeAiding()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1AltitudeAiding.html">AltitudeAiding</a> &gt; mip::commands_filter::defaultAltitudeAiding </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

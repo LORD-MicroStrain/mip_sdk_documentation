@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -113,8 +113,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Creates a connection object given the interface name and a parameter. </p>
 <dl class="section note"><dt>Note</dt><dd>This only creates the connection object; it does not open it. Call <code>connection-&gt;connect()</code> to open it.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -123,33 +121,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="afd33fe69ad3b17f9dd02fa65b7b0c697"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd33fe69ad3b17f9dd02fa65b7b0c697">&#9670;&nbsp;</a></span>isNetworkInterfaceName()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool mip::platform::isNetworkInterfaceName </td>
-          <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
-          <td class="paramname"><em>interface_name</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Determines if the name corresponds to a URL or IP address. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">interface_name</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the interface could be a URL or IP address. False otherwise. </dd></dl>
 
 </div>
 </div>
@@ -168,8 +139,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Determines if the name corresponds to a serial port device. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">interface_name</td><td></td></tr>
@@ -177,6 +146,31 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the interface is likely a serial port. False otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="afd33fe69ad3b17f9dd02fa65b7b0c697"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd33fe69ad3b17f9dd02fa65b7b0c697">&#9670;&nbsp;</a></span>isNetworkInterfaceName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mip::platform::isNetworkInterfaceName </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>interface_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">interface_name</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the interface could be a URL or IP address. False otherwise. </dd></dl>
 
 </div>
 </div>

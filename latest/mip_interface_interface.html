@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -107,7 +107,7 @@ The Dispatch System</h1>
 <p>An application must register callbacks with the system during initialization. Each method requires a pointer and the MIP descriptor associated with the data of interest. There is no limit on the number of registered dispatchers, though performance may be affected by using too many. Multiple dispatchers may be registered to the same data.</p>
 <h2><a class="anchor" id="autotoc_md4"></a>
 Packet callbacks</h2>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> packet_callback(<span class="keywordtype">void</span>* userdata, <span class="keyword">const</span> <a class="code" href="classmip_1_1PacketView.html">mip::PacketView</a>&amp; packet, <a class="code" href="namespacemip.html#ab87086630c94254d17a812e4be159b0a">Timestamp</a> parseTime)</div>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> <a class="code" href="group____5__series__stream__imu__example__c.html#gaa42b241c859d611f98904def4d939e44">packet_callback</a>(<span class="keywordtype">void</span>* userdata, <span class="keyword">const</span> <a class="code" href="classmip_1_1PacketView.html">mip::PacketView</a>&amp; packet, <a class="code" href="namespacemip.html#ab87086630c94254d17a812e4be159b0a">Timestamp</a> parseTime)</div>
 </div><!-- fragment --><p>Packet callbacks are invoked when a packet is received which matches the registered descriptor set. The descriptor set may also be a wildcard, allowing the application to process any type of packet.</p>
 <p>An application can register a packet callback to occur either before or after the field callbacks for the data in the same packet. For example, to print a summary of the packet before displaying information about each field, an application would set the callback to occur first. Usually applications will set a packet callback to occur last, so that they can determine if all of the fields have been processed.</p>
 <h2><a class="anchor" id="autotoc_md5"></a>
@@ -178,9 +178,10 @@ Using a custom update function for other purposes</h2>
 <div class="ttc" id="agroup__mip__interface__c_html_gaf35d6a824e64ec29031a219fbeccd99a"><div class="ttname"><a href="group__mip__interface__c.html#gaf35d6a824e64ec29031a219fbeccd99a">mip::C::mip_interface_default_update</a></div><div class="ttdeci">bool mip_interface_default_update(mip_interface *device, mip_timeout wait_time, bool from_cmd)</div><div class="ttdoc">Polls the port for new data or command replies.</div><div class="ttdef"><b>Definition:</b> mip_interface.c:404</div></div>
 <div class="ttc" id="agroup__mip__interface__c_html_ga5f13668bc0b14554cf70db4dada8de6b"><div class="ttname"><a href="group__mip__interface__c.html#ga5f13668bc0b14554cf70db4dada8de6b">mip::C::mip_interface_set_update_function</a></div><div class="ttdeci">void mip_interface_set_update_function(mip_interface *device, mip_update_callback callback)</div><div class="ttdoc">Sets the update function.</div><div class="ttdef"><b>Definition:</b> mip_interface.c:245</div></div>
 <div class="ttc" id="astructmip_1_1data__sensor_1_1ScaledAccel_html"><div class="ttname"><a href="structmip_1_1data__sensor_1_1ScaledAccel.html">mip::data_sensor::ScaledAccel</a></div><div class="ttdef"><b>Definition:</b> data_sensor.hpp:230</div></div>
-<div class="ttc" id="aclassmip_1_1FieldView_html"><div class="ttname"><a href="classmip_1_1FieldView.html">mip::FieldView</a></div><div class="ttdoc">C++ class representing a MIP field.</div><div class="ttdef"><b>Definition:</b> mip_field.hpp:25</div></div>
+<div class="ttc" id="agroup____5__series__stream__imu__example__c_html_gaa42b241c859d611f98904def4d939e44"><div class="ttname"><a href="group____5__series__stream__imu__example__c.html#gaa42b241c859d611f98904def4d939e44">packet_callback</a></div><div class="ttdeci">static void packet_callback(void *_user, const mip_packet_view *_packet_view, mip_timestamp _timestamp)</div><div class="ttdoc">Callback function that processes received MIP packets.</div><div class="ttdef"><b>Definition:</b> 5_series_stream_imu_example.c:681</div></div>
+<div class="ttc" id="aclassmip_1_1FieldView_html"><div class="ttname"><a href="classmip_1_1FieldView.html">mip::FieldView</a></div><div class="ttdoc">C++ class representing a MIP field.</div><div class="ttdef"><b>Definition:</b> mip_field.hpp:24</div></div>
 <div class="ttc" id="anamespacemip_html_ab87086630c94254d17a812e4be159b0a"><div class="ttname"><a href="namespacemip.html#ab87086630c94254d17a812e4be159b0a">mip::Timestamp</a></div><div class="ttdeci">microstrain::EmbeddedTimestamp Timestamp</div><div class="ttdef"><b>Definition:</b> mip_types.h:50</div></div>
-<div class="ttc" id="aclassmip_1_1PacketView_html"><div class="ttname"><a href="classmip_1_1PacketView.html">mip::PacketView</a></div><div class="ttdoc">C++ class representing a view of a MIP packet.</div><div class="ttdef"><b>Definition:</b> mip_packet.hpp:35</div></div>
+<div class="ttc" id="aclassmip_1_1PacketView_html"><div class="ttname"><a href="classmip_1_1PacketView.html">mip::PacketView</a></div><div class="ttdoc">C++ class representing a view of a MIP packet.</div><div class="ttdef"><b>Definition:</b> mip_packet.hpp:34</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -112,7 +112,6 @@ Functions</h2></td></tr>
 <tr class="separator:ga6b5de0bb202234ad53f08494cb1b9e32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Enable or disable the magnetometer magnitude error adaptive measurement. This feature will reject magnetometer readings that are out of range of the thresholds specified (fixed adaptive) or calculated internally (auto-adaptive). </p>
 <p>Pick values that give you the least occurrence of invalid EF attitude output. The default values are good for standard low dynamics applications. Increase values for higher dynamic conditions, lower values for lower dynamic. Too low a value will result in excessive heading errors. Higher values increase heading errors when undergoing magnetic field anomalies caused by DC currents, magnets, steel structures,etc. </p>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="ga4c31472358f021b79c351cf791446c6e"></a>
@@ -144,62 +143,6 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga109183c30c73b8ce5ea76194a97197e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga109183c30c73b8ce5ea76194a97197e6">&#9670;&nbsp;</a></span>extract_mip_filter_mag_magnitude_error_adaptive_measurement_command()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::extract_mip_filter_mag_magnitude_error_adaptive_measurement_command </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__mag__magnitude__error__adaptive__measurement__command.html">mip_filter_mag_magnitude_error_adaptive_measurement_command</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gab5cfba4d5257078a62a73419ad9b1493"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab5cfba4d5257078a62a73419ad9b1493">&#9670;&nbsp;</a></span>extract_mip_filter_mag_magnitude_error_adaptive_measurement_response()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::extract_mip_filter_mag_magnitude_error_adaptive_measurement_response </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__mag__magnitude__error__adaptive__measurement__response.html">mip_filter_mag_magnitude_error_adaptive_measurement_response</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="gae09aa78cf8c949cfc2d9c282edbeed76"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gae09aa78cf8c949cfc2d9c282edbeed76">&#9670;&nbsp;</a></span>insert_mip_filter_mag_magnitude_error_adaptive_measurement_command()</h2>
 
@@ -216,6 +159,34 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__filter__mag__magnitude__error__adaptive__measurement__command.html">mip_filter_mag_magnitude_error_adaptive_measurement_command</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga109183c30c73b8ce5ea76194a97197e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga109183c30c73b8ce5ea76194a97197e6">&#9670;&nbsp;</a></span>extract_mip_filter_mag_magnitude_error_adaptive_measurement_command()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::C::extract_mip_filter_mag_magnitude_error_adaptive_measurement_command </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__mag__magnitude__error__adaptive__measurement__command.html">mip_filter_mag_magnitude_error_adaptive_measurement_command</a> *&#160;</td>
           <td class="paramname"><em>self</em>&#160;</td>
         </tr>
         <tr>
@@ -256,36 +227,92 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga6b5de0bb202234ad53f08494cb1b9e32"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6b5de0bb202234ad53f08494cb1b9e32">&#9670;&nbsp;</a></span>mip_filter_default_mag_magnitude_error_adaptive_measurement()</h2>
+<a id="gab5cfba4d5257078a62a73419ad9b1493"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab5cfba4d5257078a62a73419ad9b1493">&#9670;&nbsp;</a></span>extract_mip_filter_mag_magnitude_error_adaptive_measurement_response()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_default_mag_magnitude_error_adaptive_measurement </td>
+          <td class="memname">void mip::C::extract_mip_filter_mag_magnitude_error_adaptive_measurement_response </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__mag__magnitude__error__adaptive__measurement__response.html">mip_filter_mag_magnitude_error_adaptive_measurement_response</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ga7c9f4aa94624a5528d6d550dd678510c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7c9f4aa94624a5528d6d550dd678510c">&#9670;&nbsp;</a></span>mip_filter_load_mag_magnitude_error_adaptive_measurement()</h2>
+<a id="ga1f4bcd4c2435a847c42e3cba5568fbc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1f4bcd4c2435a847c42e3cba5568fbc8">&#9670;&nbsp;</a></span>mip_filter_write_mag_magnitude_error_adaptive_measurement()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_load_mag_magnitude_error_adaptive_measurement </td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_write_mag_magnitude_error_adaptive_measurement </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="group__filter__commands__c.html#ga6d677eaa9656fa434b6f6dbc364f70ff">mip_filter_adaptive_measurement</a>&#160;</td>
+          <td class="paramname"><em>adaptive_measurement</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>frequency</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>low_limit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>high_limit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>low_limit_uncertainty</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>high_limit_uncertainty</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>minimum_uncertainty</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -374,64 +401,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga1f4bcd4c2435a847c42e3cba5568fbc8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1f4bcd4c2435a847c42e3cba5568fbc8">&#9670;&nbsp;</a></span>mip_filter_write_mag_magnitude_error_adaptive_measurement()</h2>
+<a id="ga7c9f4aa94624a5528d6d550dd678510c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7c9f4aa94624a5528d6d550dd678510c">&#9670;&nbsp;</a></span>mip_filter_load_mag_magnitude_error_adaptive_measurement()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_write_mag_magnitude_error_adaptive_measurement </td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_load_mag_magnitude_error_adaptive_measurement </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__filter__commands__c.html#ga6d677eaa9656fa434b6f6dbc364f70ff">mip_filter_adaptive_measurement</a>&#160;</td>
-          <td class="paramname"><em>adaptive_measurement</em>, </td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga6b5de0bb202234ad53f08494cb1b9e32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6b5de0bb202234ad53f08494cb1b9e32">&#9670;&nbsp;</a></span>mip_filter_default_mag_magnitude_error_adaptive_measurement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_default_mag_magnitude_error_adaptive_measurement </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>frequency</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>low_limit</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>high_limit</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>low_limit_uncertainty</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>high_limit_uncertainty</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>minimum_uncertainty</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

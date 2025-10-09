@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -94,7 +94,6 @@ Functions</h2></td></tr>
 <tr class="separator:ga1aae5e74bf9b8e8d728288be931a441b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Set the sensor-to-vehicle frame transformation using unit length quaternion. </p>
 <p>Note: This is the transformation, the inverse of the rotation.</p>
 <p>This quaternion describes the transformation of vectors from the sensor body frame to the vehicle frame of reference, and satisfies the following relationship:<br  />
 </p>
@@ -128,36 +127,28 @@ Functions</h2></td></tr>
  <br  />
  Changing this setting will force all low-pass filters, the complementary filter, and the estimation filter to reset. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga1aae5e74bf9b8e8d728288be931a441b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1aae5e74bf9b8e8d728288be931a441b">&#9670;&nbsp;</a></span>defaultSensor2VehicleTransformQuaternion()</h2>
+<a id="ga447ce4c9ae4694a9f47d65ac4051c486"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga447ce4c9ae4694a9f47d65ac4051c486">&#9670;&nbsp;</a></span>writeSensor2VehicleTransformQuaternion()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1Sensor2VehicleTransformQuaternion.html">Sensor2VehicleTransformQuaternion</a> &gt; mip::commands_3dm::defaultSensor2VehicleTransformQuaternion </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1Sensor2VehicleTransformQuaternion.html">Sensor2VehicleTransformQuaternion</a> &gt; mip::commands_3dm::writeSensor2VehicleTransformQuaternion </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
-          <td></td>
+          <td class="paramname"><em>device</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gac25960b76914700afc58afe7ae9918e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac25960b76914700afc58afe7ae9918e6">&#9670;&nbsp;</a></span>loadSensor2VehicleTransformQuaternion()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1Sensor2VehicleTransformQuaternion.html">Sensor2VehicleTransformQuaternion</a> &gt; mip::commands_3dm::loadSensor2VehicleTransformQuaternion </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>q</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -210,28 +201,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga447ce4c9ae4694a9f47d65ac4051c486"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga447ce4c9ae4694a9f47d65ac4051c486">&#9670;&nbsp;</a></span>writeSensor2VehicleTransformQuaternion()</h2>
+<a id="gac25960b76914700afc58afe7ae9918e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac25960b76914700afc58afe7ae9918e6">&#9670;&nbsp;</a></span>loadSensor2VehicleTransformQuaternion()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1Sensor2VehicleTransformQuaternion.html">Sensor2VehicleTransformQuaternion</a> &gt; mip::commands_3dm::writeSensor2VehicleTransformQuaternion </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1Sensor2VehicleTransformQuaternion.html">Sensor2VehicleTransformQuaternion</a> &gt; mip::commands_3dm::loadSensor2VehicleTransformQuaternion </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const float *&#160;</td>
-          <td class="paramname"><em>q</em>&#160;</td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga1aae5e74bf9b8e8d728288be931a441b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1aae5e74bf9b8e8d728288be931a441b">&#9670;&nbsp;</a></span>defaultSensor2VehicleTransformQuaternion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1Sensor2VehicleTransformQuaternion.html">Sensor2VehicleTransformQuaternion</a> &gt; mip::commands_3dm::defaultSensor2VehicleTransformQuaternion </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

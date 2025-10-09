@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -112,7 +112,6 @@ Functions</h2></td></tr>
 <tr class="separator:ga1a27b49cd25121351e8c4ada6ac3e609"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Set/Get the local magnetic field magnitude source. </p>
 <p>This is used to specify the local magnitude of the earth's magnetic field. Having a correct value for magnitude is important for best performance of the auto-mag calibration feature and for the magnetometer adaptive magnitude. If you do not have an accurate value for the local magnetic field magnitude, it is recommended that you leave the auto-mag calibration feature off. </p>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="gace70685ec20974ef101e002a5d75f374"></a>
@@ -144,62 +143,6 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga71f34d6f591b658a619fdd01ad29b885"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga71f34d6f591b658a619fdd01ad29b885">&#9670;&nbsp;</a></span>extract_mip_filter_mag_field_magnitude_source_command()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::extract_mip_filter_mag_field_magnitude_source_command </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__mag__field__magnitude__source__command.html">mip_filter_mag_field_magnitude_source_command</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga3aef633a26b3f9f4ad369beb25ece047"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3aef633a26b3f9f4ad369beb25ece047">&#9670;&nbsp;</a></span>extract_mip_filter_mag_field_magnitude_source_response()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::extract_mip_filter_mag_field_magnitude_source_response </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__mag__field__magnitude__source__response.html">mip_filter_mag_field_magnitude_source_response</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="gaf12fbcfd11b5a745f58ca539cebd6e6f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaf12fbcfd11b5a745f58ca539cebd6e6f">&#9670;&nbsp;</a></span>insert_mip_filter_mag_field_magnitude_source_command()</h2>
 
@@ -216,6 +159,34 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__filter__mag__field__magnitude__source__command.html">mip_filter_mag_field_magnitude_source_command</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga71f34d6f591b658a619fdd01ad29b885"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga71f34d6f591b658a619fdd01ad29b885">&#9670;&nbsp;</a></span>extract_mip_filter_mag_field_magnitude_source_command()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::C::extract_mip_filter_mag_field_magnitude_source_command </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__mag__field__magnitude__source__command.html">mip_filter_mag_field_magnitude_source_command</a> *&#160;</td>
           <td class="paramname"><em>self</em>&#160;</td>
         </tr>
         <tr>
@@ -256,36 +227,62 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga1a27b49cd25121351e8c4ada6ac3e609"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1a27b49cd25121351e8c4ada6ac3e609">&#9670;&nbsp;</a></span>mip_filter_default_mag_field_magnitude_source()</h2>
+<a id="ga3aef633a26b3f9f4ad369beb25ece047"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3aef633a26b3f9f4ad369beb25ece047">&#9670;&nbsp;</a></span>extract_mip_filter_mag_field_magnitude_source_response()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_default_mag_field_magnitude_source </td>
+          <td class="memname">void mip::C::extract_mip_filter_mag_field_magnitude_source_response </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__mag__field__magnitude__source__response.html">mip_filter_mag_field_magnitude_source_response</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ga9ae87f4519c0b6d934d9eae46ce3fce4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9ae87f4519c0b6d934d9eae46ce3fce4">&#9670;&nbsp;</a></span>mip_filter_load_mag_field_magnitude_source()</h2>
+<a id="ga81cbd2a713601f9a9e1924eb4ae29cac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga81cbd2a713601f9a9e1924eb4ae29cac">&#9670;&nbsp;</a></span>mip_filter_write_mag_field_magnitude_source()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_load_mag_field_magnitude_source </td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_write_mag_field_magnitude_source </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="group__filter__commands__c.html#ga3ddcc8e4e48a71d23c24f030cb2c2d4b">mip_filter_mag_param_source</a>&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>magnitude</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -344,34 +341,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga81cbd2a713601f9a9e1924eb4ae29cac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga81cbd2a713601f9a9e1924eb4ae29cac">&#9670;&nbsp;</a></span>mip_filter_write_mag_field_magnitude_source()</h2>
+<a id="ga9ae87f4519c0b6d934d9eae46ce3fce4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9ae87f4519c0b6d934d9eae46ce3fce4">&#9670;&nbsp;</a></span>mip_filter_load_mag_field_magnitude_source()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_write_mag_field_magnitude_source </td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_load_mag_field_magnitude_source </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__filter__commands__c.html#ga3ddcc8e4e48a71d23c24f030cb2c2d4b">mip_filter_mag_param_source</a>&#160;</td>
-          <td class="paramname"><em>source</em>, </td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga1a27b49cd25121351e8c4ada6ac3e609"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1a27b49cd25121351e8c4ada6ac3e609">&#9670;&nbsp;</a></span>mip_filter_default_mag_field_magnitude_source()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_default_mag_field_magnitude_source </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>magnitude</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

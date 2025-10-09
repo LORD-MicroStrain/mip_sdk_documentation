@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -88,49 +88,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga5beb196a1235e072567d528df3dd1ac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Provide the GNSS subsystem with initial time information. </p>
 <p>This message is required immediately after power up if GNSS Assist was enabled when the device was powered off. This will initialize the subsystem clock to help reduce the time to first fix (TTFF). </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga5beb196a1235e072567d528df3dd1ac6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5beb196a1235e072567d528df3dd1ac6">&#9670;&nbsp;</a></span>readGnssTimeAssistance()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1GnssTimeAssistance.html">GnssTimeAssistance</a> &gt; mip::commands_3dm::readGnssTimeAssistance </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double *&#160;</td>
-          <td class="paramname"><em>towOut</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t *&#160;</td>
-          <td class="paramname"><em>weekNumberOut</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float *&#160;</td>
-          <td class="paramname"><em>accuracyOut</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="gae52bc6a0fd705def808b0a2921ef07a2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gae52bc6a0fd705def808b0a2921ef07a2">&#9670;&nbsp;</a></span>writeGnssTimeAssistance()</h2>
 
@@ -160,6 +119,46 @@ Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>accuracy</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga5beb196a1235e072567d528df3dd1ac6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5beb196a1235e072567d528df3dd1ac6">&#9670;&nbsp;</a></span>readGnssTimeAssistance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__3dm_1_1GnssTimeAssistance.html">GnssTimeAssistance</a> &gt; mip::commands_3dm::readGnssTimeAssistance </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>towOut</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t *&#160;</td>
+          <td class="paramname"><em>weekNumberOut</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>accuracyOut</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

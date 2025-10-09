@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -112,7 +112,6 @@ Functions</h2></td></tr>
 <tr class="separator:gab40cbf4648c84dbc107496a2018756fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Configure the user specified magnetometer soft iron offset matrix. </p>
 <p>The values for this matrix are determined empirically by external software algorithms based on calibration data taken after the device is installed in its application. These values can be obtained and set by using Microstrain software tools. Alternatively, on some systems, the auto-mag calibration feature may be used to capture these values in-run. The matrix is applied to the scaled magnetometer vector prior to output.</p>
 <p>The matrix is in row major order: EQSTART M = \begin{bmatrix} 0 &amp; 1 &amp; 2 \\ 3 &amp; 4 &amp; 5 \\ 6 &amp; 7 &amp; 8 \end{bmatrix} EQEND </p>
 <h2 class="groupheader">Typedef Documentation</h2>
@@ -145,62 +144,6 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga73d40a5e40765e5a4662dd102a7f03f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga73d40a5e40765e5a4662dd102a7f03f8">&#9670;&nbsp;</a></span>extract_mip_3dm_mag_soft_iron_matrix_command()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::extract_mip_3dm_mag_soft_iron_matrix_command </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__3dm__mag__soft__iron__matrix__command.html">mip_3dm_mag_soft_iron_matrix_command</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gaa12873af6ee5b703ca5fb36e2ed4fa63"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa12873af6ee5b703ca5fb36e2ed4fa63">&#9670;&nbsp;</a></span>extract_mip_3dm_mag_soft_iron_matrix_response()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::extract_mip_3dm_mag_soft_iron_matrix_response </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__3dm__mag__soft__iron__matrix__response.html">mip_3dm_mag_soft_iron_matrix_response</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ga2d4d5573005baa7670026ee9aff9e3c7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga2d4d5573005baa7670026ee9aff9e3c7">&#9670;&nbsp;</a></span>insert_mip_3dm_mag_soft_iron_matrix_command()</h2>
 
@@ -217,6 +160,34 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__3dm__mag__soft__iron__matrix__command.html">mip_3dm_mag_soft_iron_matrix_command</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga73d40a5e40765e5a4662dd102a7f03f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga73d40a5e40765e5a4662dd102a7f03f8">&#9670;&nbsp;</a></span>extract_mip_3dm_mag_soft_iron_matrix_command()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::C::extract_mip_3dm_mag_soft_iron_matrix_command </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__3dm__mag__soft__iron__matrix__command.html">mip_3dm_mag_soft_iron_matrix_command</a> *&#160;</td>
           <td class="paramname"><em>self</em>&#160;</td>
         </tr>
         <tr>
@@ -257,36 +228,56 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gab40cbf4648c84dbc107496a2018756fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab40cbf4648c84dbc107496a2018756fb">&#9670;&nbsp;</a></span>mip_3dm_default_mag_soft_iron_matrix()</h2>
+<a id="gaa12873af6ee5b703ca5fb36e2ed4fa63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa12873af6ee5b703ca5fb36e2ed4fa63">&#9670;&nbsp;</a></span>extract_mip_3dm_mag_soft_iron_matrix_response()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_3dm_default_mag_soft_iron_matrix </td>
+          <td class="memname">void mip::C::extract_mip_3dm_mag_soft_iron_matrix_response </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__3dm__mag__soft__iron__matrix__response.html">mip_3dm_mag_soft_iron_matrix_response</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="gac884d6b50e5eb9ef1aea9b7584542a00"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac884d6b50e5eb9ef1aea9b7584542a00">&#9670;&nbsp;</a></span>mip_3dm_load_mag_soft_iron_matrix()</h2>
+<a id="ga295ce8f337758abb799c65d0462a984a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga295ce8f337758abb799c65d0462a984a">&#9670;&nbsp;</a></span>mip_3dm_write_mag_soft_iron_matrix()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_3dm_load_mag_soft_iron_matrix </td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_3dm_write_mag_soft_iron_matrix </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -339,28 +330,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga295ce8f337758abb799c65d0462a984a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga295ce8f337758abb799c65d0462a984a">&#9670;&nbsp;</a></span>mip_3dm_write_mag_soft_iron_matrix()</h2>
+<a id="gac884d6b50e5eb9ef1aea9b7584542a00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac884d6b50e5eb9ef1aea9b7584542a00">&#9670;&nbsp;</a></span>mip_3dm_load_mag_soft_iron_matrix()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_3dm_write_mag_soft_iron_matrix </td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_3dm_load_mag_soft_iron_matrix </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const float *&#160;</td>
-          <td class="paramname"><em>offset</em>&#160;</td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gab40cbf4648c84dbc107496a2018756fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab40cbf4648c84dbc107496a2018756fb">&#9670;&nbsp;</a></span>mip_3dm_default_mag_soft_iron_matrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_3dm_default_mag_soft_iron_matrix </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -185,6 +185,8 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ga89d5ddf647aedfbd947f1e64ab08adeb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__microstrain__logging__c.html#ga89d5ddf647aedfbd947f1e64ab08adeb">microstrain_log_unused_v</a> (const char *fmt,...)</td></tr>
+<tr class="separator:ga89d5ddf647aedfbd947f1e64ab08adeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae6e4a71bf3ba3ea9129cf1cd2ae03eed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__microstrain__logging__c.html#gae6e4a71bf3ba3ea9129cf1cd2ae03eed">microstrain_logging_init</a> (const <a class="el" href="group__microstrain__logging__c.html#gac20db7b2281b50c04ed7f030fcf5f0b2">microstrain_log_callback</a> callback, const <a class="el" href="group__microstrain__logging__c.html#ga6e2280c5b0484ccb5e7faafad1dbd062">microstrain_log_level</a> level, void *user)</td></tr>
 <tr class="memdesc:gae6e4a71bf3ba3ea9129cf1cd2ae03eed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the logger with a callback and user data. Call MICROSTRAIN_LOG_INIT instead of using this function directly. This function does not have to be called unless the user wants logging.  <a href="group__microstrain__logging__c.html#gae6e4a71bf3ba3ea9129cf1cd2ae03eed">More...</a><br /></td></tr>
 <tr class="separator:gae6e4a71bf3ba3ea9129cf1cd2ae03eed"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -211,368 +213,197 @@ Functions</h2></td></tr>
 <tr class="separator:ga23fc8368359cc3fef79b62ed08aea1c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Logging functions in C. </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="gae66ba953d069b75623403533604035c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae66ba953d069b75623403533604035c0">&#9670;&nbsp;</a></span>MICROSTRAIN_LOG_BYTES</h2>
+<a id="gada6b0818adc87614debd0d8799b19643"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gada6b0818adc87614debd0d8799b19643">&#9670;&nbsp;</a></span>MICROSTRAIN_LOGGING_LEVEL_OFF_</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MICROSTRAIN_LOG_BYTES</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">level, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">msg, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">data, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">length&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="group__microstrain__logging__c.html#ga23fc8368359cc3fef79b62ed08aea1c8">microstrain_log_bytes</a>(level, msg, data, length)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Helper macro used to log bytes as a hex sting. </p>
-
-</div>
-</div>
-<a id="ga34ae7c36d26c06754d4ab274cd59380c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga34ae7c36d26c06754d4ab274cd59380c">&#9670;&nbsp;</a></span>MICROSTRAIN_LOG_BYTES_TRACE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MICROSTRAIN_LOG_BYTES_TRACE</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">msg, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">data, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">length&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="group__microstrain__logging__c.html#ga23fc8368359cc3fef79b62ed08aea1c8">microstrain_log_bytes</a>(<a class="el" href="group__microstrain__logging__c.html#gga6e2280c5b0484ccb5e7faafad1dbd062a61009fce6e43af487200f7f9a7c34e62">MICROSTRAIN_LOG_LEVEL_TRACE</a>, msg, data, length)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Helper macro used to log bytes as a hex sting at trace level. </p>
-<p>This optimizes out to a NO-OP when MICROSTRAIN_LOGGING_ENABLED_TRACE is not defined. </p>
-
-</div>
-</div>
-<a id="gaf295a2bd8fd463a946787bc57ef972c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf295a2bd8fd463a946787bc57ef972c1">&#9670;&nbsp;</a></span>MICROSTRAIN_LOG_DEBUG</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MICROSTRAIN_LOG_DEBUG</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>...</em></td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="group__microstrain__logging__c.html#ga91d438e9dcfbeeb97104bea2c53a46b6">MICROSTRAIN_LOG_LOG</a>(<a class="el" href="group__microstrain__logging__c.html#gga6e2280c5b0484ccb5e7faafad1dbd062a4ff89075cc7e8ad19152b3f6dcf44884">MICROSTRAIN_LOG_LEVEL_DEBUG</a>, __VA_ARGS__)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Helper macro used to log data inside the MicroStrain SDK at debug level. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">context</td><td>Context of what called this function. Could be a mip device, serial connection, etc. </td></tr>
-    <tr><td class="paramname">fmt</td><td>printf style format string </td></tr>
-    <tr><td class="paramname">...</td><td>Variadic args used to populate the fmt string </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ga27458f49ea20ba1012177b16ea5bb2ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga27458f49ea20ba1012177b16ea5bb2ee">&#9670;&nbsp;</a></span>MICROSTRAIN_LOG_DEBUG_V</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MICROSTRAIN_LOG_DEBUG_V</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">fmt, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">args&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="group__microstrain__logging__c.html#gaa5207a11a855dc341716a6682d1f3493">MICROSTRAIN_LOG_LOG_V</a>(<a class="el" href="group__microstrain__logging__c.html#gga6e2280c5b0484ccb5e7faafad1dbd062a4ff89075cc7e8ad19152b3f6dcf44884">MICROSTRAIN_LOG_LEVEL_DEBUG</a>, fmt, args)</td>
+          <td class="memname">#define MICROSTRAIN_LOGGING_LEVEL_OFF_&#160;&#160;&#160;0</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ga232a882d48ff241c3bf096e53fdb48fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga232a882d48ff241c3bf096e53fdb48fe">&#9670;&nbsp;</a></span>MICROSTRAIN_LOG_ERROR</h2>
+<a id="gac2fb6a2b243d83727b38a17450a43955"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac2fb6a2b243d83727b38a17450a43955">&#9670;&nbsp;</a></span>MICROSTRAIN_LOGGING_LEVEL_FATAL_</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MICROSTRAIN_LOG_ERROR</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>...</em></td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="group__microstrain__logging__c.html#ga91d438e9dcfbeeb97104bea2c53a46b6">MICROSTRAIN_LOG_LOG</a>(<a class="el" href="group__microstrain__logging__c.html#gga6e2280c5b0484ccb5e7faafad1dbd062ad9c6db068a1d56890d74df592b17d3aa">MICROSTRAIN_LOG_LEVEL_ERROR</a>, __VA_ARGS__)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Helper macro used to log data inside the MicroStrain SDK at error level. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">context</td><td>Context of what called this function. Could be a mip device, serial connection, etc. </td></tr>
-    <tr><td class="paramname">fmt</td><td>printf style format string </td></tr>
-    <tr><td class="paramname">...</td><td>Variadic args used to populate the fmt string </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ga3f685ca6c21f6c490e883d546136d82b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3f685ca6c21f6c490e883d546136d82b">&#9670;&nbsp;</a></span>MICROSTRAIN_LOG_ERROR_V</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MICROSTRAIN_LOG_ERROR_V</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">fmt, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">args&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="group__microstrain__logging__c.html#gaa5207a11a855dc341716a6682d1f3493">MICROSTRAIN_LOG_LOG_V</a>(<a class="el" href="group__microstrain__logging__c.html#gga6e2280c5b0484ccb5e7faafad1dbd062ad9c6db068a1d56890d74df592b17d3aa">MICROSTRAIN_LOG_LEVEL_ERROR</a>, fmt, args)</td>
+          <td class="memname">#define MICROSTRAIN_LOGGING_LEVEL_FATAL_&#160;&#160;&#160;1</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ga6023704cadc5bf61215b7ce74443397c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6023704cadc5bf61215b7ce74443397c">&#9670;&nbsp;</a></span>MICROSTRAIN_LOG_ERROR_WITH_ERRNO</h2>
+<a id="gafb6682e82a9e0bd68e6c3b96a4a073cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafb6682e82a9e0bd68e6c3b96a4a073cd">&#9670;&nbsp;</a></span>MICROSTRAIN_LOGGING_LEVEL_ERROR_</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MICROSTRAIN_LOG_ERROR_WITH_ERRNO</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">msg</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="group__microstrain__logging__c.html#ga232a882d48ff241c3bf096e53fdb48fe">MICROSTRAIN_LOG_ERROR</a>(msg &quot;: %d %s\n&quot;, errno, strerror(errno))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Helper macro used to log an error message from a syscall. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">msg</td><td>A plain C-string without any printf-style formatters. The resulting log message will be "&lt;message here&gt;: &lt;error-code&gt; &lt;error-description&gt;\n". </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ga6edb68d503d7b4bd6def92a4b0912b07"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6edb68d503d7b4bd6def92a4b0912b07">&#9670;&nbsp;</a></span>MICROSTRAIN_LOG_ERROR_WITH_ERRNO_EX</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MICROSTRAIN_LOG_ERROR_WITH_ERRNO_EX</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">msg, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>...</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="group__microstrain__logging__c.html#ga232a882d48ff241c3bf096e53fdb48fe">MICROSTRAIN_LOG_ERROR</a>(msg &quot;: %d %s\n&quot;, __VA_ARGS__, errno, strerror(errno))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Helper macro used to log an error message from a syscall. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">msg</td><td>A plain C-string which includes one or more printf-style formatters. </td></tr>
-    <tr><td class="paramname">...</td><td>Arguments corresponding to the format codes in msg. The resulting log message will be "&lt;message here&gt;: &lt;error-code&gt; &lt;error-description&gt;\n". </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ga8bb8bf92123079b8f8640afc5c3538b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8bb8bf92123079b8f8640afc5c3538b3">&#9670;&nbsp;</a></span>MICROSTRAIN_LOG_FATAL</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MICROSTRAIN_LOG_FATAL</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>...</em></td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="group__microstrain__logging__c.html#ga91d438e9dcfbeeb97104bea2c53a46b6">MICROSTRAIN_LOG_LOG</a>(<a class="el" href="group__microstrain__logging__c.html#gga6e2280c5b0484ccb5e7faafad1dbd062a7bba66b4be328132f99f633140aa25e2">MICROSTRAIN_LOG_LEVEL_FATAL</a>, __VA_ARGS__)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Helper macro used to log data inside the MicroStrain SDK at fatal level. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">context</td><td>Context of what called this function. Could be a mip device, serial connection, etc. </td></tr>
-    <tr><td class="paramname">fmt</td><td>printf style format string </td></tr>
-    <tr><td class="paramname">...</td><td>Variadic args used to populate the fmt string </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ga11c5f9b4229a77c07665cb5f5f49abf6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga11c5f9b4229a77c07665cb5f5f49abf6">&#9670;&nbsp;</a></span>MICROSTRAIN_LOG_FATAL_V</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MICROSTRAIN_LOG_FATAL_V</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">fmt, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">args&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="group__microstrain__logging__c.html#gaa5207a11a855dc341716a6682d1f3493">MICROSTRAIN_LOG_LOG_V</a>(<a class="el" href="group__microstrain__logging__c.html#gga6e2280c5b0484ccb5e7faafad1dbd062a7bba66b4be328132f99f633140aa25e2">MICROSTRAIN_LOG_LEVEL_FATAL</a>, fmt, args)</td>
+          <td class="memname">#define MICROSTRAIN_LOGGING_LEVEL_ERROR_&#160;&#160;&#160;2</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ga9011d2c3ce30e15629853d4ac34310d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9011d2c3ce30e15629853d4ac34310d5">&#9670;&nbsp;</a></span>MICROSTRAIN_LOG_INFO</h2>
+<a id="ga1cd9a26308d1c7dcf843edb92425edc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1cd9a26308d1c7dcf843edb92425edc9">&#9670;&nbsp;</a></span>MICROSTRAIN_LOGGING_LEVEL_WARN_</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MICROSTRAIN_LOG_INFO</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>...</em></td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="group__microstrain__logging__c.html#ga91d438e9dcfbeeb97104bea2c53a46b6">MICROSTRAIN_LOG_LOG</a>(<a class="el" href="group__microstrain__logging__c.html#gga6e2280c5b0484ccb5e7faafad1dbd062a3c2c5ab17efa3a930b527ccaa350372b">MICROSTRAIN_LOG_LEVEL_INFO</a>, __VA_ARGS__)</td>
+          <td class="memname">#define MICROSTRAIN_LOGGING_LEVEL_WARN_&#160;&#160;&#160;3</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Helper macro used to log data inside the MicroStrain SDK at info level. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">context</td><td>Context of what called this function. Could be a mip device, serial connection, etc. </td></tr>
-    <tr><td class="paramname">fmt</td><td>printf style format string </td></tr>
-    <tr><td class="paramname">...</td><td>Variadic args used to populate the fmt string </td></tr>
-  </table>
-  </dd>
-</dl>
-
 </div>
 </div>
-<a id="ga0026f24b28cd46308be166fd0e1c98b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0026f24b28cd46308be166fd0e1c98b4">&#9670;&nbsp;</a></span>MICROSTRAIN_LOG_INFO_V</h2>
+<a id="gaf25b4eeb1a6cce0735e6e17719737d52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf25b4eeb1a6cce0735e6e17719737d52">&#9670;&nbsp;</a></span>MICROSTRAIN_LOGGING_LEVEL_INFO_</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MICROSTRAIN_LOG_INFO_V</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">fmt, </td>
+          <td class="memname">#define MICROSTRAIN_LOGGING_LEVEL_INFO_&#160;&#160;&#160;4</td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga1cec96edf7bcbc88b3b893c710498804"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1cec96edf7bcbc88b3b893c710498804">&#9670;&nbsp;</a></span>MICROSTRAIN_LOGGING_LEVEL_DEBUG_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">args&#160;</td>
+          <td class="memname">#define MICROSTRAIN_LOGGING_LEVEL_DEBUG_&#160;&#160;&#160;5</td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga5e2da020413c9df695b2429dbd45d11c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5e2da020413c9df695b2429dbd45d11c">&#9670;&nbsp;</a></span>MICROSTRAIN_LOGGING_LEVEL_TRACE_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="group__microstrain__logging__c.html#gaa5207a11a855dc341716a6682d1f3493">MICROSTRAIN_LOG_LOG_V</a>(<a class="el" href="group__microstrain__logging__c.html#gga6e2280c5b0484ccb5e7faafad1dbd062a3c2c5ab17efa3a930b527ccaa350372b">MICROSTRAIN_LOG_LEVEL_INFO</a>, fmt, args)</td>
+          <td class="memname">#define MICROSTRAIN_LOGGING_LEVEL_TRACE_&#160;&#160;&#160;6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gacf5d15ad82f72b32b7e3f77ce849162f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacf5d15ad82f72b32b7e3f77ce849162f">&#9670;&nbsp;</a></span>MICROSTRAIN_LOGGING_ENABLED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MICROSTRAIN_LOGGING_ENABLED</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gac9c33aa3a31498677b69627710c95d3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac9c33aa3a31498677b69627710c95d3c">&#9670;&nbsp;</a></span>MICROSTRAIN_LOGGING_ENABLED_FATAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MICROSTRAIN_LOGGING_ENABLED_FATAL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga395c374bfc406917d9df2509f9e1daf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga395c374bfc406917d9df2509f9e1daf2">&#9670;&nbsp;</a></span>MICROSTRAIN_LOGGING_ENABLED_ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MICROSTRAIN_LOGGING_ENABLED_ERROR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae0a5a7a69c55c55296acd379acabf70e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae0a5a7a69c55c55296acd379acabf70e">&#9670;&nbsp;</a></span>MICROSTRAIN_LOGGING_ENABLED_WARN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MICROSTRAIN_LOGGING_ENABLED_WARN</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gac247f552271ce6052f1a16bdb8eb6ae7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac247f552271ce6052f1a16bdb8eb6ae7">&#9670;&nbsp;</a></span>MICROSTRAIN_LOGGING_ENABLED_INFO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MICROSTRAIN_LOGGING_ENABLED_INFO</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga2da5e61b6151f83ebb256a0b2d8cdda4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2da5e61b6151f83ebb256a0b2d8cdda4">&#9670;&nbsp;</a></span>MICROSTRAIN_LOGGING_ENABLED_DEBUG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MICROSTRAIN_LOGGING_ENABLED_DEBUG</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga1dd8aa5591e012fb4bdd5012170deced"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1dd8aa5591e012fb4bdd5012170deced">&#9670;&nbsp;</a></span>MICROSTRAIN_LOGGING_ENABLED_TRACE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MICROSTRAIN_LOGGING_ENABLED_TRACE</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -610,8 +441,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Helper macro used to initialize the MicroStrain logger. This function does not need to be called unless the user wants logging. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">callback</td><td>The callback to execute when there is data to log </td></tr>
@@ -648,8 +477,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Helper macro used to log data inside the MicroStrain SDK. Prefer specific log level functions like MICROSTRAIN_LOG_INFO, etc. when possible. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">user</td><td>User data pointer </td></tr>
@@ -696,23 +523,21 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga41c0c3dc4c3d6e77be0b2133e988e1b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga41c0c3dc4c3d6e77be0b2133e988e1b5">&#9670;&nbsp;</a></span>MICROSTRAIN_LOG_TRACE</h2>
+<a id="ga8bb8bf92123079b8f8640afc5c3538b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8bb8bf92123079b8f8640afc5c3538b3">&#9670;&nbsp;</a></span>MICROSTRAIN_LOG_FATAL</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MICROSTRAIN_LOG_TRACE</td>
+          <td class="memname">#define MICROSTRAIN_LOG_FATAL</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>...</em></td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="group__microstrain__logging__c.html#ga91d438e9dcfbeeb97104bea2c53a46b6">MICROSTRAIN_LOG_LOG</a>(<a class="el" href="group__microstrain__logging__c.html#gga6e2280c5b0484ccb5e7faafad1dbd062a61009fce6e43af487200f7f9a7c34e62">MICROSTRAIN_LOG_LEVEL_TRACE</a>, __VA_ARGS__)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="group__microstrain__logging__c.html#ga91d438e9dcfbeeb97104bea2c53a46b6">MICROSTRAIN_LOG_LOG</a>(<a class="el" href="group__microstrain__logging__c.html#gga6e2280c5b0484ccb5e7faafad1dbd062a7bba66b4be328132f99f633140aa25e2">MICROSTRAIN_LOG_LEVEL_FATAL</a>, __VA_ARGS__)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Helper macro used to log data inside the MicroStrain SDK at trace level. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">context</td><td>Context of what called this function. Could be a mip device, serial connection, etc. </td></tr>
@@ -724,14 +549,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga1f561dc10ad8faeab7a5b2904197e35a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1f561dc10ad8faeab7a5b2904197e35a">&#9670;&nbsp;</a></span>MICROSTRAIN_LOG_TRACE_V</h2>
+<a id="ga11c5f9b4229a77c07665cb5f5f49abf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga11c5f9b4229a77c07665cb5f5f49abf6">&#9670;&nbsp;</a></span>MICROSTRAIN_LOG_FATAL_V</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MICROSTRAIN_LOG_TRACE_V</td>
+          <td class="memname">#define MICROSTRAIN_LOG_FATAL_V</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">fmt, </td>
@@ -745,7 +570,61 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="group__microstrain__logging__c.html#gaa5207a11a855dc341716a6682d1f3493">MICROSTRAIN_LOG_LOG_V</a>(<a class="el" href="group__microstrain__logging__c.html#gga6e2280c5b0484ccb5e7faafad1dbd062a61009fce6e43af487200f7f9a7c34e62">MICROSTRAIN_LOG_LEVEL_TRACE</a>, fmt, args)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="group__microstrain__logging__c.html#gaa5207a11a855dc341716a6682d1f3493">MICROSTRAIN_LOG_LOG_V</a>(<a class="el" href="group__microstrain__logging__c.html#gga6e2280c5b0484ccb5e7faafad1dbd062a7bba66b4be328132f99f633140aa25e2">MICROSTRAIN_LOG_LEVEL_FATAL</a>, fmt, args)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga232a882d48ff241c3bf096e53fdb48fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga232a882d48ff241c3bf096e53fdb48fe">&#9670;&nbsp;</a></span>MICROSTRAIN_LOG_ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MICROSTRAIN_LOG_ERROR</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em></td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="group__microstrain__logging__c.html#ga91d438e9dcfbeeb97104bea2c53a46b6">MICROSTRAIN_LOG_LOG</a>(<a class="el" href="group__microstrain__logging__c.html#gga6e2280c5b0484ccb5e7faafad1dbd062ad9c6db068a1d56890d74df592b17d3aa">MICROSTRAIN_LOG_LEVEL_ERROR</a>, __VA_ARGS__)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>Context of what called this function. Could be a mip device, serial connection, etc. </td></tr>
+    <tr><td class="paramname">fmt</td><td>printf style format string </td></tr>
+    <tr><td class="paramname">...</td><td>Variadic args used to populate the fmt string </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga3f685ca6c21f6c490e883d546136d82b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3f685ca6c21f6c490e883d546136d82b">&#9670;&nbsp;</a></span>MICROSTRAIN_LOG_ERROR_V</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MICROSTRAIN_LOG_ERROR_V</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">fmt, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">args&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="group__microstrain__logging__c.html#gaa5207a11a855dc341716a6682d1f3493">MICROSTRAIN_LOG_LOG_V</a>(<a class="el" href="group__microstrain__logging__c.html#gga6e2280c5b0484ccb5e7faafad1dbd062ad9c6db068a1d56890d74df592b17d3aa">MICROSTRAIN_LOG_LEVEL_ERROR</a>, fmt, args)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -767,8 +646,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Helper macro used to log data inside the MicroStrain SDK at warn level. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">context</td><td>Context of what called this function. Could be a mip device, serial connection, etc. </td></tr>
@@ -808,228 +685,303 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gacf5d15ad82f72b32b7e3f77ce849162f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacf5d15ad82f72b32b7e3f77ce849162f">&#9670;&nbsp;</a></span>MICROSTRAIN_LOGGING_ENABLED</h2>
+<a id="ga9011d2c3ce30e15629853d4ac34310d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9011d2c3ce30e15629853d4ac34310d5">&#9670;&nbsp;</a></span>MICROSTRAIN_LOG_INFO</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MICROSTRAIN_LOGGING_ENABLED</td>
+          <td class="memname">#define MICROSTRAIN_LOG_INFO</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em></td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="group__microstrain__logging__c.html#ga91d438e9dcfbeeb97104bea2c53a46b6">MICROSTRAIN_LOG_LOG</a>(<a class="el" href="group__microstrain__logging__c.html#gga6e2280c5b0484ccb5e7faafad1dbd062a3c2c5ab17efa3a930b527ccaa350372b">MICROSTRAIN_LOG_LEVEL_INFO</a>, __VA_ARGS__)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga2da5e61b6151f83ebb256a0b2d8cdda4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2da5e61b6151f83ebb256a0b2d8cdda4">&#9670;&nbsp;</a></span>MICROSTRAIN_LOGGING_ENABLED_DEBUG</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MICROSTRAIN_LOGGING_ENABLED_DEBUG</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga395c374bfc406917d9df2509f9e1daf2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga395c374bfc406917d9df2509f9e1daf2">&#9670;&nbsp;</a></span>MICROSTRAIN_LOGGING_ENABLED_ERROR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MICROSTRAIN_LOGGING_ENABLED_ERROR</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gac9c33aa3a31498677b69627710c95d3c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac9c33aa3a31498677b69627710c95d3c">&#9670;&nbsp;</a></span>MICROSTRAIN_LOGGING_ENABLED_FATAL</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MICROSTRAIN_LOGGING_ENABLED_FATAL</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gac247f552271ce6052f1a16bdb8eb6ae7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac247f552271ce6052f1a16bdb8eb6ae7">&#9670;&nbsp;</a></span>MICROSTRAIN_LOGGING_ENABLED_INFO</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MICROSTRAIN_LOGGING_ENABLED_INFO</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga1dd8aa5591e012fb4bdd5012170deced"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1dd8aa5591e012fb4bdd5012170deced">&#9670;&nbsp;</a></span>MICROSTRAIN_LOGGING_ENABLED_TRACE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MICROSTRAIN_LOGGING_ENABLED_TRACE</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gae0a5a7a69c55c55296acd379acabf70e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae0a5a7a69c55c55296acd379acabf70e">&#9670;&nbsp;</a></span>MICROSTRAIN_LOGGING_ENABLED_WARN</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MICROSTRAIN_LOGGING_ENABLED_WARN</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga1cec96edf7bcbc88b3b893c710498804"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1cec96edf7bcbc88b3b893c710498804">&#9670;&nbsp;</a></span>MICROSTRAIN_LOGGING_LEVEL_DEBUG_</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MICROSTRAIN_LOGGING_LEVEL_DEBUG_&#160;&#160;&#160;5</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gafb6682e82a9e0bd68e6c3b96a4a073cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafb6682e82a9e0bd68e6c3b96a4a073cd">&#9670;&nbsp;</a></span>MICROSTRAIN_LOGGING_LEVEL_ERROR_</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MICROSTRAIN_LOGGING_LEVEL_ERROR_&#160;&#160;&#160;2</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gac2fb6a2b243d83727b38a17450a43955"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac2fb6a2b243d83727b38a17450a43955">&#9670;&nbsp;</a></span>MICROSTRAIN_LOGGING_LEVEL_FATAL_</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MICROSTRAIN_LOGGING_LEVEL_FATAL_&#160;&#160;&#160;1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gaf25b4eeb1a6cce0735e6e17719737d52"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf25b4eeb1a6cce0735e6e17719737d52">&#9670;&nbsp;</a></span>MICROSTRAIN_LOGGING_LEVEL_INFO_</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MICROSTRAIN_LOGGING_LEVEL_INFO_&#160;&#160;&#160;4</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gada6b0818adc87614debd0d8799b19643"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gada6b0818adc87614debd0d8799b19643">&#9670;&nbsp;</a></span>MICROSTRAIN_LOGGING_LEVEL_OFF_</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MICROSTRAIN_LOGGING_LEVEL_OFF_&#160;&#160;&#160;0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga5e2da020413c9df695b2429dbd45d11c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5e2da020413c9df695b2429dbd45d11c">&#9670;&nbsp;</a></span>MICROSTRAIN_LOGGING_LEVEL_TRACE_</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MICROSTRAIN_LOGGING_LEVEL_TRACE_&#160;&#160;&#160;6</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga1cd9a26308d1c7dcf843edb92425edc9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1cd9a26308d1c7dcf843edb92425edc9">&#9670;&nbsp;</a></span>MICROSTRAIN_LOGGING_LEVEL_WARN_</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MICROSTRAIN_LOGGING_LEVEL_WARN_&#160;&#160;&#160;3</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a id="gac20db7b2281b50c04ed7f030fcf5f0b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac20db7b2281b50c04ed7f030fcf5f0b2">&#9670;&nbsp;</a></span>microstrain_log_callback</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef void(* microstrain_log_callback) (void *user, const <a class="el" href="group__microstrain__logging__c.html#ga6e2280c5b0484ccb5e7faafad1dbd062">microstrain_log_level</a> level, const char *fmt, va_list args)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Callback function typedef for custom logging behavior. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">user</td><td>User data pointer </td></tr>
-    <tr><td class="paramname">level</td><td>The log level that this log should be logged at </td></tr>
+    <tr><td class="paramname">context</td><td>Context of what called this function. Could be a mip device, serial connection, etc. </td></tr>
     <tr><td class="paramname">fmt</td><td>printf style format string </td></tr>
-    <tr><td class="paramname">args</td><td>Variadic args used to populate the fmt string </td></tr>
+    <tr><td class="paramname">...</td><td>Variadic args used to populate the fmt string </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
+<a id="ga0026f24b28cd46308be166fd0e1c98b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0026f24b28cd46308be166fd0e1c98b4">&#9670;&nbsp;</a></span>MICROSTRAIN_LOG_INFO_V</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MICROSTRAIN_LOG_INFO_V</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">fmt, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">args&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="group__microstrain__logging__c.html#gaa5207a11a855dc341716a6682d1f3493">MICROSTRAIN_LOG_LOG_V</a>(<a class="el" href="group__microstrain__logging__c.html#gga6e2280c5b0484ccb5e7faafad1dbd062a3c2c5ab17efa3a930b527ccaa350372b">MICROSTRAIN_LOG_LEVEL_INFO</a>, fmt, args)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaf295a2bd8fd463a946787bc57ef972c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf295a2bd8fd463a946787bc57ef972c1">&#9670;&nbsp;</a></span>MICROSTRAIN_LOG_DEBUG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MICROSTRAIN_LOG_DEBUG</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em></td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="group__microstrain__logging__c.html#ga91d438e9dcfbeeb97104bea2c53a46b6">MICROSTRAIN_LOG_LOG</a>(<a class="el" href="group__microstrain__logging__c.html#gga6e2280c5b0484ccb5e7faafad1dbd062a4ff89075cc7e8ad19152b3f6dcf44884">MICROSTRAIN_LOG_LEVEL_DEBUG</a>, __VA_ARGS__)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>Context of what called this function. Could be a mip device, serial connection, etc. </td></tr>
+    <tr><td class="paramname">fmt</td><td>printf style format string </td></tr>
+    <tr><td class="paramname">...</td><td>Variadic args used to populate the fmt string </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga27458f49ea20ba1012177b16ea5bb2ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga27458f49ea20ba1012177b16ea5bb2ee">&#9670;&nbsp;</a></span>MICROSTRAIN_LOG_DEBUG_V</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MICROSTRAIN_LOG_DEBUG_V</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">fmt, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">args&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="group__microstrain__logging__c.html#gaa5207a11a855dc341716a6682d1f3493">MICROSTRAIN_LOG_LOG_V</a>(<a class="el" href="group__microstrain__logging__c.html#gga6e2280c5b0484ccb5e7faafad1dbd062a4ff89075cc7e8ad19152b3f6dcf44884">MICROSTRAIN_LOG_LEVEL_DEBUG</a>, fmt, args)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga41c0c3dc4c3d6e77be0b2133e988e1b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga41c0c3dc4c3d6e77be0b2133e988e1b5">&#9670;&nbsp;</a></span>MICROSTRAIN_LOG_TRACE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MICROSTRAIN_LOG_TRACE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em></td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="group__microstrain__logging__c.html#ga91d438e9dcfbeeb97104bea2c53a46b6">MICROSTRAIN_LOG_LOG</a>(<a class="el" href="group__microstrain__logging__c.html#gga6e2280c5b0484ccb5e7faafad1dbd062a61009fce6e43af487200f7f9a7c34e62">MICROSTRAIN_LOG_LEVEL_TRACE</a>, __VA_ARGS__)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>Context of what called this function. Could be a mip device, serial connection, etc. </td></tr>
+    <tr><td class="paramname">fmt</td><td>printf style format string </td></tr>
+    <tr><td class="paramname">...</td><td>Variadic args used to populate the fmt string </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga1f561dc10ad8faeab7a5b2904197e35a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1f561dc10ad8faeab7a5b2904197e35a">&#9670;&nbsp;</a></span>MICROSTRAIN_LOG_TRACE_V</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MICROSTRAIN_LOG_TRACE_V</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">fmt, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">args&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="group__microstrain__logging__c.html#gaa5207a11a855dc341716a6682d1f3493">MICROSTRAIN_LOG_LOG_V</a>(<a class="el" href="group__microstrain__logging__c.html#gga6e2280c5b0484ccb5e7faafad1dbd062a61009fce6e43af487200f7f9a7c34e62">MICROSTRAIN_LOG_LEVEL_TRACE</a>, fmt, args)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae66ba953d069b75623403533604035c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae66ba953d069b75623403533604035c0">&#9670;&nbsp;</a></span>MICROSTRAIN_LOG_BYTES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MICROSTRAIN_LOG_BYTES</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">level, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">msg, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">data, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">length&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="group__microstrain__logging__c.html#ga23fc8368359cc3fef79b62ed08aea1c8">microstrain_log_bytes</a>(level, msg, data, length)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga34ae7c36d26c06754d4ab274cd59380c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga34ae7c36d26c06754d4ab274cd59380c">&#9670;&nbsp;</a></span>MICROSTRAIN_LOG_BYTES_TRACE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MICROSTRAIN_LOG_BYTES_TRACE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">msg, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">data, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">length&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="group__microstrain__logging__c.html#ga23fc8368359cc3fef79b62ed08aea1c8">microstrain_log_bytes</a>(<a class="el" href="group__microstrain__logging__c.html#gga6e2280c5b0484ccb5e7faafad1dbd062a61009fce6e43af487200f7f9a7c34e62">MICROSTRAIN_LOG_LEVEL_TRACE</a>, msg, data, length)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This optimizes out to a NO-OP when MICROSTRAIN_LOGGING_ENABLED_TRACE is not defined. </p>
+
+</div>
+</div>
+<a id="ga6023704cadc5bf61215b7ce74443397c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6023704cadc5bf61215b7ce74443397c">&#9670;&nbsp;</a></span>MICROSTRAIN_LOG_ERROR_WITH_ERRNO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MICROSTRAIN_LOG_ERROR_WITH_ERRNO</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">msg</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="group__microstrain__logging__c.html#ga232a882d48ff241c3bf096e53fdb48fe">MICROSTRAIN_LOG_ERROR</a>(msg &quot;: %d %s\n&quot;, errno, strerror(errno))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msg</td><td>A plain C-string without any printf-style formatters. The resulting log message will be "&lt;message here&gt;: &lt;error-code&gt; &lt;error-description&gt;\n". </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga6edb68d503d7b4bd6def92a4b0912b07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6edb68d503d7b4bd6def92a4b0912b07">&#9670;&nbsp;</a></span>MICROSTRAIN_LOG_ERROR_WITH_ERRNO_EX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MICROSTRAIN_LOG_ERROR_WITH_ERRNO_EX</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">msg, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="group__microstrain__logging__c.html#ga232a882d48ff241c3bf096e53fdb48fe">MICROSTRAIN_LOG_ERROR</a>(msg &quot;: %d %s\n&quot;, __VA_ARGS__, errno, strerror(errno))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msg</td><td>A plain C-string which includes one or more printf-style formatters. </td></tr>
+    <tr><td class="paramname">...</td><td>Arguments corresponding to the format codes in msg. The resulting log message will be "&lt;message here&gt;: &lt;error-code&gt; &lt;error-description&gt;\n". </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
 <a id="ga855f460b3601cb34d57ea67dd32018d5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga855f460b3601cb34d57ea67dd32018d5">&#9670;&nbsp;</a></span>microstrain_log_level</h2>
 
@@ -1042,7 +994,28 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Logging level enum. </p>
+</div>
+</div>
+<a id="gac20db7b2281b50c04ed7f030fcf5f0b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac20db7b2281b50c04ed7f030fcf5f0b2">&#9670;&nbsp;</a></span>microstrain_log_callback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* microstrain_log_callback) (void *user, const <a class="el" href="group__microstrain__logging__c.html#ga6e2280c5b0484ccb5e7faafad1dbd062">microstrain_log_level</a> level, const char *fmt, va_list args)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">user</td><td>User data pointer </td></tr>
+    <tr><td class="paramname">level</td><td>The log level that this log should be logged at </td></tr>
+    <tr><td class="paramname">fmt</td><td>printf style format string </td></tr>
+    <tr><td class="paramname">args</td><td>Variadic args used to populate the fmt string </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1058,8 +1031,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Logging level enum. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga6e2280c5b0484ccb5e7faafad1dbd062a0d2bd8984515062274b86ec43af368df"></a>MICROSTRAIN_LOG_LEVEL_OFF&#160;</td><td class="fielddoc"><p>Signifies that the log is turned off. </p>
 </td></tr>
@@ -1080,35 +1051,26 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga23fc8368359cc3fef79b62ed08aea1c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga23fc8368359cc3fef79b62ed08aea1c8">&#9670;&nbsp;</a></span>microstrain_log_bytes()</h2>
+<a id="ga89d5ddf647aedfbd947f1e64ab08adeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga89d5ddf647aedfbd947f1e64ab08adeb">&#9670;&nbsp;</a></span>microstrain_log_unused_v()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void microstrain_log_bytes </td>
+          <td class="memname">static void microstrain_log_unused_v </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__microstrain__logging__c.html#ga6e2280c5b0484ccb5e7faafad1dbd062">microstrain_log_level</a>&#160;</td>
-          <td class="paramname"><em>level</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>msg</em>, </td>
+          <td class="paramname"><em>fmt</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>length</em>&#160;</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1116,40 +1078,12 @@ Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-
-<p>Print bytes in hex to the log. </p>
-<dl class="section note"><dt>Note</dt><dd>Currently this function is limited to 1024 output characters, or about 400 bytes (5 chars per 2-byte group including a space).</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">level</td><td>Logging level. This function does nothing unless the current log level is at least this value. </td></tr>
-    <tr><td class="paramname">msg</td><td>Message to print immediately before the data. No space is appended. Use an empty string to print just the data. </td></tr>
-    <tr><td class="paramname">data</td><td>Data to be printed in hex. </td></tr>
-    <tr><td class="paramname">length</td><td>Length of the data to print. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="gaad615da6926638722a8f530c3455284b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaad615da6926638722a8f530c3455284b">&#9670;&nbsp;</a></span>microstrain_logging_callback()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__microstrain__logging__c.html#gac20db7b2281b50c04ed7f030fcf5f0b2">microstrain_log_callback</a> microstrain_logging_callback </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Gets the currently active logging callback. </p>
-<dl class="section return"><dt>Returns</dt><dd>The currently active logging callback </dd></dl>
 
 </div>
 </div>
@@ -1184,8 +1118,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Initializes the logger with a callback and user data. Call MICROSTRAIN_LOG_INIT instead of using this function directly. This function does not have to be called unless the user wants logging. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">callback</td><td>The callback to execute when there is data to log </td></tr>
@@ -1194,6 +1126,25 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="gaad615da6926638722a8f530c3455284b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaad615da6926638722a8f530c3455284b">&#9670;&nbsp;</a></span>microstrain_logging_callback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__microstrain__logging__c.html#gac20db7b2281b50c04ed7f030fcf5f0b2">microstrain_log_callback</a> microstrain_logging_callback </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The currently active logging callback </dd></dl>
 
 </div>
 </div>
@@ -1212,32 +1163,66 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Gets the currently active logging level. </p>
 <dl class="section return"><dt>Returns</dt><dd>The currently active logging level </dd></dl>
 
 </div>
 </div>
-<a id="ga00cfca911d15e9ff94836daaaba0c20b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga00cfca911d15e9ff94836daaaba0c20b">&#9670;&nbsp;</a></span>microstrain_logging_level_name()</h2>
+<a id="ga1fcdca9ddc02a6efcf0f648f3917128d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1fcdca9ddc02a6efcf0f648f3917128d">&#9670;&nbsp;</a></span>microstrain_logging_user_data()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char* microstrain_logging_level_name </td>
+          <td class="memname">void* microstrain_logging_user_data </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__microstrain__logging__c.html#ga6e2280c5b0484ccb5e7faafad1dbd062">microstrain_log_level</a>&#160;</td>
-          <td class="paramname"><em>level</em></td><td>)</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The currently active logging user data </dd></dl>
 
-<p>Returns a string representing the given log level. </p>
+</div>
+</div>
+<a id="ga4796bd64b27870db8193b8230716dd18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4796bd64b27870db8193b8230716dd18">&#9670;&nbsp;</a></span>microstrain_logging_log_v()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void microstrain_logging_log_v </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="group__microstrain__logging__c.html#ga6e2280c5b0484ccb5e7faafad1dbd062">microstrain_log_level</a>&#160;</td>
+          <td class="paramname"><em>level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">va_list&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">level</td><td>The returned string is statically-allocated and shall not be freed nor modified. The strings are padded to a uniform length for consistent alignment in log files. </td></tr>
+    <tr><td class="paramname">user</td><td>User data pointer </td></tr>
+    <tr><td class="paramname">level</td><td>The log level that this log should be logged at </td></tr>
+    <tr><td class="paramname">fmt</td><td>printf style format string </td></tr>
+    <tr><td class="paramname">args</td><td>Variadic args used to populate the fmt string </td></tr>
   </table>
   </dd>
 </dl>
@@ -1275,8 +1260,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Internal log function called by logging macros. Call MICROSTRAIN_LOG_* macros instead of using this function directly. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">user</td><td>User data pointer </td></tr>
@@ -1289,14 +1272,38 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga4796bd64b27870db8193b8230716dd18"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4796bd64b27870db8193b8230716dd18">&#9670;&nbsp;</a></span>microstrain_logging_log_v()</h2>
+<a id="ga00cfca911d15e9ff94836daaaba0c20b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga00cfca911d15e9ff94836daaaba0c20b">&#9670;&nbsp;</a></span>microstrain_logging_level_name()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void microstrain_logging_log_v </td>
+          <td class="memname">const char* microstrain_logging_level_name </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="group__microstrain__logging__c.html#ga6e2280c5b0484ccb5e7faafad1dbd062">microstrain_log_level</a>&#160;</td>
+          <td class="paramname"><em>level</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">level</td><td>The returned string is statically-allocated and shall not be freed nor modified. The strings are padded to a uniform length for consistent alignment in log files. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga23fc8368359cc3fef79b62ed08aea1c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga23fc8368359cc3fef79b62ed08aea1c8">&#9670;&nbsp;</a></span>microstrain_log_bytes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void microstrain_log_bytes </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__microstrain__logging__c.html#ga6e2280c5b0484ccb5e7faafad1dbd062">microstrain_log_level</a>&#160;</td>
           <td class="paramname"><em>level</em>, </td>
@@ -1305,13 +1312,19 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>fmt</em>, </td>
+          <td class="paramname"><em>msg</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">va_list&#160;</td>
-          <td class="paramname"><em>args</em>&#160;</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1320,38 +1333,16 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Internal log function called by variadic logging macros. Call MICROSTRAIN_LOG_*_V macros instead of using this function directly. </p>
+<dl class="section note"><dt>Note</dt><dd>Currently this function is limited to 1024 output characters, or about 400 bytes (5 chars per 2-byte group including a space).</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">user</td><td>User data pointer </td></tr>
-    <tr><td class="paramname">level</td><td>The log level that this log should be logged at </td></tr>
-    <tr><td class="paramname">fmt</td><td>printf style format string </td></tr>
-    <tr><td class="paramname">args</td><td>Variadic args used to populate the fmt string </td></tr>
+    <tr><td class="paramname">level</td><td>Logging level. This function does nothing unless the current log level is at least this value. </td></tr>
+    <tr><td class="paramname">msg</td><td>Message to print immediately before the data. No space is appended. Use an empty string to print just the data. </td></tr>
+    <tr><td class="paramname">data</td><td>Data to be printed in hex. </td></tr>
+    <tr><td class="paramname">length</td><td>Length of the data to print. </td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="ga1fcdca9ddc02a6efcf0f648f3917128d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1fcdca9ddc02a6efcf0f648f3917128d">&#9670;&nbsp;</a></span>microstrain_logging_user_data()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void* microstrain_logging_user_data </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Gets the currently active logging user data. </p>
-<dl class="section return"><dt>Returns</dt><dd>The currently active logging user data </dd></dl>
 
 </div>
 </div>

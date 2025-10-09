@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -112,7 +112,6 @@ Functions</h2></td></tr>
 <tr class="separator:gaa6d850488ba2c021c3b425ed176ee8d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Gyroscope Bias Model Parameters. </p>
 <p>Noise values must be greater than 0.0 </p>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="ga7a0eb9bde0e8c45c47f25b84a74d24cd"></a>
@@ -144,62 +143,6 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga187cc695220e3e7da6cdb4788c1b0686"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga187cc695220e3e7da6cdb4788c1b0686">&#9670;&nbsp;</a></span>extract_mip_filter_gyro_bias_model_command()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::extract_mip_filter_gyro_bias_model_command </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__gyro__bias__model__command.html">mip_filter_gyro_bias_model_command</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga79186e69e1b52e47dc4642292a45cda0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga79186e69e1b52e47dc4642292a45cda0">&#9670;&nbsp;</a></span>extract_mip_filter_gyro_bias_model_response()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::extract_mip_filter_gyro_bias_model_response </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__gyro__bias__model__response.html">mip_filter_gyro_bias_model_response</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ga25fbc16f8b5d46d8da994717349cf7ad"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga25fbc16f8b5d46d8da994717349cf7ad">&#9670;&nbsp;</a></span>insert_mip_filter_gyro_bias_model_command()</h2>
 
@@ -216,6 +159,34 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__filter__gyro__bias__model__command.html">mip_filter_gyro_bias_model_command</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga187cc695220e3e7da6cdb4788c1b0686"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga187cc695220e3e7da6cdb4788c1b0686">&#9670;&nbsp;</a></span>extract_mip_filter_gyro_bias_model_command()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::C::extract_mip_filter_gyro_bias_model_command </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__gyro__bias__model__command.html">mip_filter_gyro_bias_model_command</a> *&#160;</td>
           <td class="paramname"><em>self</em>&#160;</td>
         </tr>
         <tr>
@@ -256,36 +227,62 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gaa6d850488ba2c021c3b425ed176ee8d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa6d850488ba2c021c3b425ed176ee8d2">&#9670;&nbsp;</a></span>mip_filter_default_gyro_bias_model()</h2>
+<a id="ga79186e69e1b52e47dc4642292a45cda0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga79186e69e1b52e47dc4642292a45cda0">&#9670;&nbsp;</a></span>extract_mip_filter_gyro_bias_model_response()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_default_gyro_bias_model </td>
+          <td class="memname">void mip::C::extract_mip_filter_gyro_bias_model_response </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__filter__gyro__bias__model__response.html">mip_filter_gyro_bias_model_response</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ga71da0f2c348e6892d418700b9d09fb62"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga71da0f2c348e6892d418700b9d09fb62">&#9670;&nbsp;</a></span>mip_filter_load_gyro_bias_model()</h2>
+<a id="ga2dec1baa34aeb1e4f401cd6f63684dff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2dec1baa34aeb1e4f401cd6f63684dff">&#9670;&nbsp;</a></span>mip_filter_write_gyro_bias_model()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_load_gyro_bias_model </td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_write_gyro_bias_model </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>beta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>noise</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -344,34 +341,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga2dec1baa34aeb1e4f401cd6f63684dff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2dec1baa34aeb1e4f401cd6f63684dff">&#9670;&nbsp;</a></span>mip_filter_write_gyro_bias_model()</h2>
+<a id="ga71da0f2c348e6892d418700b9d09fb62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga71da0f2c348e6892d418700b9d09fb62">&#9670;&nbsp;</a></span>mip_filter_load_gyro_bias_model()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_write_gyro_bias_model </td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_load_gyro_bias_model </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const float *&#160;</td>
-          <td class="paramname"><em>beta</em>, </td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa6d850488ba2c021c3b425ed176ee8d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa6d850488ba2c021c3b425ed176ee8d2">&#9670;&nbsp;</a></span>mip_filter_default_gyro_bias_model()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_filter_default_gyro_bias_model </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const float *&#160;</td>
-          <td class="paramname"><em>noise</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

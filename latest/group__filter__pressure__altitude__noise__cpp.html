@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -94,40 +94,31 @@ Functions</h2></td></tr>
 <tr class="separator:gaeff1fffe44835de8b1270c2f24bd4501"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Set the expected pressure altitude noise 1-sigma values. This function can be used to tune the filter performance in the target application. </p>
 <p>The noise value must be greater than 0.0</p>
 <p>This noise value represents pressure altitude model noise in the Estimation Filter. A lower value will increase responsiveness of the sensor to pressure changes, however height estimates will be more susceptible to error from air pressure fluctuations not due to changes in altitude. Default values provide good performance for most laboratory conditions. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gaeff1fffe44835de8b1270c2f24bd4501"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaeff1fffe44835de8b1270c2f24bd4501">&#9670;&nbsp;</a></span>defaultPressureAltitudeNoise()</h2>
+<a id="ga82d8b153a4ea646c1a12fe627686794e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga82d8b153a4ea646c1a12fe627686794e">&#9670;&nbsp;</a></span>writePressureAltitudeNoise()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1PressureAltitudeNoise.html">PressureAltitudeNoise</a> &gt; mip::commands_filter::defaultPressureAltitudeNoise </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1PressureAltitudeNoise.html">PressureAltitudeNoise</a> &gt; mip::commands_filter::writePressureAltitudeNoise </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
-          <td></td>
+          <td class="paramname"><em>device</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gaab79bf819aa05a6887f3d2ac9ba53620"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaab79bf819aa05a6887f3d2ac9ba53620">&#9670;&nbsp;</a></span>loadPressureAltitudeNoise()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1PressureAltitudeNoise.html">PressureAltitudeNoise</a> &gt; mip::commands_filter::loadPressureAltitudeNoise </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>noise</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -180,28 +171,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga82d8b153a4ea646c1a12fe627686794e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga82d8b153a4ea646c1a12fe627686794e">&#9670;&nbsp;</a></span>writePressureAltitudeNoise()</h2>
+<a id="gaab79bf819aa05a6887f3d2ac9ba53620"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaab79bf819aa05a6887f3d2ac9ba53620">&#9670;&nbsp;</a></span>loadPressureAltitudeNoise()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1PressureAltitudeNoise.html">PressureAltitudeNoise</a> &gt; mip::commands_filter::writePressureAltitudeNoise </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1PressureAltitudeNoise.html">PressureAltitudeNoise</a> &gt; mip::commands_filter::loadPressureAltitudeNoise </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>noise</em>&#160;</td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaeff1fffe44835de8b1270c2f24bd4501"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeff1fffe44835de8b1270c2f24bd4501">&#9670;&nbsp;</a></span>defaultPressureAltitudeNoise()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1PressureAltitudeNoise.html">PressureAltitudeNoise</a> &gt; mip::commands_filter::defaultPressureAltitudeNoise </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

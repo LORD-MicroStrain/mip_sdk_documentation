@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -104,7 +104,6 @@ Functions</h2></td></tr>
 <tr class="separator:ga11d0f33f0fd13bfe47e1d229ccabdccb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Samples gyro for a specified time range and writes the averaged result to the Gyro Bias vector in RAM. </p>
 <p>The device will average the gyro output for the duration of "averaging_time_ms." To store the resulting vector in non-volatile memory, use the Set Gyro Bias command. IMPORTANT: The device must be stationary and experiencing minimum vibration for the duration of "averaging_time_ms" Averaging Time range: 1000 to 30,000 </p>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="ga28b93a6f92bb31c8538cc54cdb339576"></a>
@@ -136,62 +135,6 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga511cea84e4c6680725ca75968e045841"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga511cea84e4c6680725ca75968e045841">&#9670;&nbsp;</a></span>extract_mip_3dm_capture_gyro_bias_command()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::extract_mip_3dm_capture_gyro_bias_command </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__3dm__capture__gyro__bias__command.html">mip_3dm_capture_gyro_bias_command</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga6279c7f3c8babe22c7b99d022626965e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6279c7f3c8babe22c7b99d022626965e">&#9670;&nbsp;</a></span>extract_mip_3dm_capture_gyro_bias_response()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::extract_mip_3dm_capture_gyro_bias_response </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__3dm__capture__gyro__bias__response.html">mip_3dm_capture_gyro_bias_response</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ga0f0ec3c344f4470ed744ad55344b2281"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga0f0ec3c344f4470ed744ad55344b2281">&#9670;&nbsp;</a></span>insert_mip_3dm_capture_gyro_bias_command()</h2>
 
@@ -220,6 +163,34 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ga511cea84e4c6680725ca75968e045841"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga511cea84e4c6680725ca75968e045841">&#9670;&nbsp;</a></span>extract_mip_3dm_capture_gyro_bias_command()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::C::extract_mip_3dm_capture_gyro_bias_command </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__3dm__capture__gyro__bias__command.html">mip_3dm_capture_gyro_bias_command</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="gae7983a84f4564b0ec38a7ff7bcd10544"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gae7983a84f4564b0ec38a7ff7bcd10544">&#9670;&nbsp;</a></span>insert_mip_3dm_capture_gyro_bias_response()</h2>
 
@@ -236,6 +207,34 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__3dm__capture__gyro__bias__response.html">mip_3dm_capture_gyro_bias_response</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga6279c7f3c8babe22c7b99d022626965e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6279c7f3c8babe22c7b99d022626965e">&#9670;&nbsp;</a></span>extract_mip_3dm_capture_gyro_bias_response()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::C::extract_mip_3dm_capture_gyro_bias_response </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__3dm__capture__gyro__bias__response.html">mip_3dm_capture_gyro_bias_response</a> *&#160;</td>
           <td class="paramname"><em>self</em>&#160;</td>
         </tr>
         <tr>

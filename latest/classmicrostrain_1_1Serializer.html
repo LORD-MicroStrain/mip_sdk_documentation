@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -148,7 +148,6 @@ Static Public Attributes</h2></td></tr>
 <div class="textblock"><h3>template&lt;serialization::Endian E&gt;<br />
 class microstrain::Serializer&lt; E &gt;</h3>
 
-<p>Serializes or deserializes data to/from a byte buffer. </p>
 <p>Create one of these to handle serialization or deserialization of one or more values to/from a buffer of bytes.</p>
 <p>You can use <code>this-&gt;insert</code>/<code>extract</code> or directly call the <code>insert</code>/<code>extract</code> non- member functions taking a serializer reference.</p>
 <p>The endianness is included as part of the Serializer's type so that it doesn't have to be repeatedly re-specified. It is not included as a runtime parameter for performance reasons (most of the time only a buffer of a known, specific endianness is required).</p>
@@ -223,8 +222,32 @@ template&lt;serialization::Endian E&gt; </div>
 
 </div>
 </div>
+<a id="a7e6c71a46dd84941c4d161d7e362a233"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e6c71a46dd84941c4d161d7e362a233">&#9670;&nbsp;</a></span>SerializerBase() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;serialization::Endian E&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">microstrain::SerializerBase::SerializerBase</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a1a0c67b6de12b2827b62a1e047b0a45a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a0c67b6de12b2827b62a1e047b0a45a">&#9670;&nbsp;</a></span>SerializerBase() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a0c67b6de12b2827b62a1e047b0a45a">&#9670;&nbsp;</a></span>SerializerBase() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -248,31 +271,7 @@ template&lt;serialization::Endian E&gt; </div>
 </div>
 </div>
 <a id="a11c426981583eec4009576664215d314"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11c426981583eec4009576664215d314">&#9670;&nbsp;</a></span>SerializerBase() <span class="overload">[3/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;serialization::Endian E&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">microstrain::SerializerBase::SerializerBase</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7e6c71a46dd84941c4d161d7e362a233"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e6c71a46dd84941c4d161d7e362a233">&#9670;&nbsp;</a></span>SerializerBase() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a11c426981583eec4009576664215d314">&#9670;&nbsp;</a></span>SerializerBase() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">

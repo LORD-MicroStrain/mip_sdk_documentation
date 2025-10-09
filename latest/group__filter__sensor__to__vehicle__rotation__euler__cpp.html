@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -94,7 +94,6 @@ Functions</h2></td></tr>
 <tr class="separator:ga12589271a8afd8caab3a73e486ee1735"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Set the sensor to vehicle frame rotation using Yaw, Pitch, Roll Euler angles. </p>
 <p>Note: This is the rotation, the inverse of the transformation. These angles define the rotation from the sensor body frame to the fixed vehicle frame.<br  />
  Please reference the device Theory of Operation for more information.<br  />
  The rotation is stored in the device as a quaternion. When Euler angles are read back from the device, they may not be equivalent in value to the Euler angles used to set the rotation, but they are functionally equivalent.<br  />
@@ -119,36 +118,40 @@ Functions</h2></td></tr>
  Estimated Gravity <a class="el" href="structmip_1_1Vector.html" title="Vector is a wrapper around an array of some type T, usually float or double.">Vector</a><br  />
  </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga12589271a8afd8caab3a73e486ee1735"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga12589271a8afd8caab3a73e486ee1735">&#9670;&nbsp;</a></span>defaultSensorToVehicleRotationEuler()</h2>
+<a id="gaec9d9dffffdcfccffd444b172e7d3cf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaec9d9dffffdcfccffd444b172e7d3cf1">&#9670;&nbsp;</a></span>writeSensorToVehicleRotationEuler()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1SensorToVehicleRotationEuler.html">SensorToVehicleRotationEuler</a> &gt; mip::commands_filter::defaultSensorToVehicleRotationEuler </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1SensorToVehicleRotationEuler.html">SensorToVehicleRotationEuler</a> &gt; mip::commands_filter::writeSensorToVehicleRotationEuler </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
-          <td></td>
+          <td class="paramname"><em>device</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga6c064f915b6ec6e0caecce87dc4fc1a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6c064f915b6ec6e0caecce87dc4fc1a1">&#9670;&nbsp;</a></span>loadSensorToVehicleRotationEuler()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1SensorToVehicleRotationEuler.html">SensorToVehicleRotationEuler</a> &gt; mip::commands_filter::loadSensorToVehicleRotationEuler </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>roll</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>pitch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>yaw</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -213,40 +216,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gaec9d9dffffdcfccffd444b172e7d3cf1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaec9d9dffffdcfccffd444b172e7d3cf1">&#9670;&nbsp;</a></span>writeSensorToVehicleRotationEuler()</h2>
+<a id="ga6c064f915b6ec6e0caecce87dc4fc1a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6c064f915b6ec6e0caecce87dc4fc1a1">&#9670;&nbsp;</a></span>loadSensorToVehicleRotationEuler()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1SensorToVehicleRotationEuler.html">SensorToVehicleRotationEuler</a> &gt; mip::commands_filter::writeSensorToVehicleRotationEuler </td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1SensorToVehicleRotationEuler.html">SensorToVehicleRotationEuler</a> &gt; mip::commands_filter::loadSensorToVehicleRotationEuler </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>roll</em>, </td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga12589271a8afd8caab3a73e486ee1735"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga12589271a8afd8caab3a73e486ee1735">&#9670;&nbsp;</a></span>defaultSensorToVehicleRotationEuler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
+          <td class="memname"><a class="el" href="structmip_1_1TypedResult.html">TypedResult</a>&lt; <a class="el" href="structmip_1_1commands__filter_1_1SensorToVehicleRotationEuler.html">SensorToVehicleRotationEuler</a> &gt; mip::commands_filter::defaultSensorToVehicleRotationEuler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">C::mip_interface</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>pitch</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>yaw</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

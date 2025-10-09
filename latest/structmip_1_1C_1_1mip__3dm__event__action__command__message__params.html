@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -94,22 +94,6 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a07b272fdd3df34bea104cf35fa52a5fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="af02c67f2888aad6dd55ad4c880d81569"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af02c67f2888aad6dd55ad4c880d81569">&#9670;&nbsp;</a></span>decimation</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint16_t mip::C::mip_3dm_event_action_command_message_params::decimation</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Decimation from the base rate. If 0, a packet is emitted each time the trigger activates. Otherwise, packets will be streamed while the trigger is active. The internal decimation counter is reset if the trigger deactivates. </p>
-
-</div>
-</div>
 <a id="a4036884bd763500023d043c767c02357"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4036884bd763500023d043c767c02357">&#9670;&nbsp;</a></span>desc_set</h2>
 
@@ -122,23 +106,19 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>MIP data descriptor set. </p>
-
 </div>
 </div>
-<a id="a07b272fdd3df34bea104cf35fa52a5fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07b272fdd3df34bea104cf35fa52a5fa">&#9670;&nbsp;</a></span>descriptors</h2>
+<a id="af02c67f2888aad6dd55ad4c880d81569"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af02c67f2888aad6dd55ad4c880d81569">&#9670;&nbsp;</a></span>decimation</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t mip::C::mip_3dm_event_action_command_message_params::descriptors[20]</td>
+          <td class="memname">uint16_t mip::C::mip_3dm_event_action_command_message_params::decimation</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>List of field descriptors. </p>
 
 </div>
 </div>
@@ -154,7 +134,19 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Number of mip fields in the packet. Limited to 12. </p>
+</div>
+</div>
+<a id="a07b272fdd3df34bea104cf35fa52a5fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07b272fdd3df34bea104cf35fa52a5fa">&#9670;&nbsp;</a></span>descriptors</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t mip::C::mip_3dm_event_action_command_message_params::descriptors[20]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MIP_SDK
-   &#160;<span id="projectnumber">v3.0.0-666-g225d0608</span>
+   &#160;<span id="projectnumber">v3.0.0-733-g822ad7b2</span>
    </div>
    <div id="projectbrief">MicroStrain Communications Library for embedded systems</div>
   </td>
@@ -112,7 +112,6 @@ Functions</h2></td></tr>
 <tr class="separator:gaee8a590f3bcb824e081c19cf27b2be44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Changes the IMU sensor gain. </p>
 <p>This allows you to optimize the range to get the best accuracy and performance while minimizing over-range events.</p>
 <p>Use the 3DM Get Calibrated Sensor Ranges (0x0C,0x53) command to determine the appropriate setting value for your application. Using values other than those specified may result in a NACK or inaccurate measurement data. </p>
 <h2 class="groupheader">Typedef Documentation</h2>
@@ -145,62 +144,6 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gab0f24b6dff82dbe3d789b5ce27c69f4f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab0f24b6dff82dbe3d789b5ce27c69f4f">&#9670;&nbsp;</a></span>extract_mip_3dm_sensor_range_command()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::extract_mip_3dm_sensor_range_command </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__3dm__sensor__range__command.html">mip_3dm_sensor_range_command</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gac99af135fdb44071b3b6ab7e5366d1c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac99af135fdb44071b3b6ab7e5366d1c1">&#9670;&nbsp;</a></span>extract_mip_3dm_sensor_range_response()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mip::C::extract_mip_3dm_sensor_range_response </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__3dm__sensor__range__response.html">mip_3dm_sensor_range_response</a> *&#160;</td>
-          <td class="paramname"><em>self</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="gacd3bb7bd01bb31a99c267520eade1857"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gacd3bb7bd01bb31a99c267520eade1857">&#9670;&nbsp;</a></span>insert_mip_3dm_sensor_range_command()</h2>
 
@@ -217,6 +160,34 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="structmip_1_1C_1_1mip__3dm__sensor__range__command.html">mip_3dm_sensor_range_command</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gab0f24b6dff82dbe3d789b5ce27c69f4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab0f24b6dff82dbe3d789b5ce27c69f4f">&#9670;&nbsp;</a></span>extract_mip_3dm_sensor_range_command()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mip::C::extract_mip_3dm_sensor_range_command </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__3dm__sensor__range__command.html">mip_3dm_sensor_range_command</a> *&#160;</td>
           <td class="paramname"><em>self</em>&#160;</td>
         </tr>
         <tr>
@@ -257,23 +228,23 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gaee8a590f3bcb824e081c19cf27b2be44"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaee8a590f3bcb824e081c19cf27b2be44">&#9670;&nbsp;</a></span>mip_3dm_default_sensor_range()</h2>
+<a id="gac99af135fdb44071b3b6ab7e5366d1c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac99af135fdb44071b3b6ab7e5366d1c1">&#9670;&nbsp;</a></span>extract_mip_3dm_sensor_range_response()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_3dm_default_sensor_range </td>
+          <td class="memname">void mip::C::extract_mip_3dm_sensor_range_response </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
+          <td class="paramtype"><a class="el" href="structmicrostrain_1_1C_1_1microstrain__serializer.html">microstrain_serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__dm__commands__c.html#ga722916ea67dd679e4d6066ed077d5644">mip_sensor_range_type</a>&#160;</td>
-          <td class="paramname"><em>sensor</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__3dm__sensor__range__response.html">mip_3dm_sensor_range_response</a> *&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -285,14 +256,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga0468c633edd72058f4489701f388618c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0468c633edd72058f4489701f388618c">&#9670;&nbsp;</a></span>mip_3dm_load_sensor_range()</h2>
+<a id="gae895a7bdbc5b5b258df8734ee9fe83b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae895a7bdbc5b5b258df8734ee9fe83b2">&#9670;&nbsp;</a></span>mip_3dm_write_sensor_range()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_3dm_load_sensor_range </td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_3dm_write_sensor_range </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
           <td class="paramname"><em>device</em>, </td>
@@ -301,7 +272,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="group__dm__commands__c.html#ga722916ea67dd679e4d6066ed077d5644">mip_sensor_range_type</a>&#160;</td>
-          <td class="paramname"><em>sensor</em>&#160;</td>
+          <td class="paramname"><em>sensor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>setting</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -375,14 +352,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gae895a7bdbc5b5b258df8734ee9fe83b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae895a7bdbc5b5b258df8734ee9fe83b2">&#9670;&nbsp;</a></span>mip_3dm_write_sensor_range()</h2>
+<a id="ga0468c633edd72058f4489701f388618c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0468c633edd72058f4489701f388618c">&#9670;&nbsp;</a></span>mip_3dm_load_sensor_range()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_3dm_write_sensor_range </td>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_3dm_load_sensor_range </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
           <td class="paramname"><em>device</em>, </td>
@@ -391,13 +368,35 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="group__dm__commands__c.html#ga722916ea67dd679e4d6066ed077d5644">mip_sensor_range_type</a>&#160;</td>
-          <td class="paramname"><em>sensor</em>, </td>
+          <td class="paramname"><em>sensor</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaee8a590f3bcb824e081c19cf27b2be44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaee8a590f3bcb824e081c19cf27b2be44">&#9670;&nbsp;</a></span>mip_3dm_default_sensor_range()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__mip__c.html#gab3f1cea4c06739d4530f7d8088bd3ed8">mip_cmd_result</a> mip::C::mip_3dm_default_sensor_range </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmip_1_1C_1_1mip__interface.html">mip_interface</a> *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>setting</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__dm__commands__c.html#ga722916ea67dd679e4d6066ed077d5644">mip_sensor_range_type</a>&#160;</td>
+          <td class="paramname"><em>sensor</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
